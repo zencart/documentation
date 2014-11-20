@@ -1,6 +1,6 @@
    - Contributing
-     - [Introduction](contributing/introduction.md) 
-     - [Github Workflow](contributing/github_workflow.md)
-     - [Pull Requests](contributing/pull_requests.md)
-     - [Issues](contributing/issues.md)
+     - [Introduction](introduction.md) 
+     - [Github Workflow](contrib_docs/github_workflow.md)
+     - [Pull Requests](contrib_docs/pull_requests.md)
+     - [Issues](contrib_docs/issues.md)
    
