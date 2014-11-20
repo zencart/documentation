@@ -33,7 +33,7 @@ vagrant box add zencart/habitat https://s3.amazonaws.com/zencart-vagrant-boxes/h
 
 Update your hosts file
 >
-`UbuntuMac OSX`
+`Ubuntu Mac OSX`
 >
 /etc/hosts  
 >
@@ -47,7 +47,7 @@ And add this line
 172.22.22.22 zen.local  
 172.22.22.22 devdocs.local
 
-Before you start up the VM you may want to customise the environment. If so see the Customising Page otherwise you can start the VM.
+Before you start up the VM you may want to customise the environment. If so see the [Customising](customising.md) Page otherwise you can start the VM.
 >
 `Command Line`
 >
