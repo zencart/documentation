@@ -9,4 +9,5 @@ With default settings, it will link a current checkout of the v160 github reposi
 
 A yaml based configuration system lets you customize your system by adding new shared directories which may map to new websites, and automatically clone other github repositories/branches into those websites.
 
-`You can contribute to this documentation using the gh-pages branch of the Habitat repository.`
+
+You can contribute to this documentation by forking the [zencart/documentation](https://github.com/zencart/documentation) repository on github.
