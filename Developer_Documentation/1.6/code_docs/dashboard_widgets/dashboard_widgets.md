@@ -18,37 +18,35 @@ So in v1.6 we have introduced the concept of dashboard widgets. Each widget is a
 
 As mentioned earlier, widgets consist of 2 parts, A class file that builds the information that will be displayed in the widget, and a template that displays that information.
 
-The class files are stored in /includes/classes/dashboardWidgets/
+The class files are stored in admin/includes/library/zencart/DashboardWidget/src
 
-and the template files are stored in /includes/template/dashboardWidgets
+and the template files are stored in admin/includes/template/dashboardWidgets
 
 ## Class Files
 
 ```php
-class zcDashboardWidgetOrderSummary extends zcDashboardWidgetBase
+class OrderSummary extends AbstractWidget
 {
   public function prepareContent()
   {
     global $db;
     $tplVars = array();
     $orders_status = $db->Execute("select orders_status_name, orders_status_id from " . TABLE_ORDERS_STATUS . " where language_id = '" . $_SESSION['languages_id'] . "'");
- 
+
     while (!$orders_status->EOF)
     {
       $orders_pending = $db->Execute("select count(*) as count from " . TABLE_ORDERS . " where orders_status = '" . $orders_status->fields['orders_status_id'] . "'");
- 
-      $tplVars['content'][] = array('text'=> '<a href="' . zen_href_link(FILENAME_ORDERS, 'selected_box=customers&status=' . $orders_status->fields['orders_status_id'], 'NONSSL') . '">' . $orders_status->fields['orders_status_name'] . '</a>', 'value'=>$orders_pending->fields['count']);
+
+      $tplVars['content'][] = array('text'=> '<a href="' . \zen_href_link(FILENAME_ORDERS, 'selected_box=customers&status=' . $orders_status->fields['orders_status_id'], 'NONSSL') . '">' . $orders_status->fields['orders_status_name'] . '</a>', 'value'=>$orders_pending->fields['count']);
       $orders_status->MoveNext();
     }
     return $tplVars;
   }
 }
 ```
-The structure of the class file is fairly simple. The file itself should be named like class.zcDashboardWidgetWidgetName.php. The class named zcDashboardWidgetWidgetName and should extend the zcDashboardWidget class.
+The structure of the class file is fairly simple. 
 
-The actual WidgetName part will become important when we look at how we install a widget into the shop database.
-
-The widget class needs only one function called prepareContent. (see line 3 in the example above)
+The class needs only one function called prepareContent. (see line 3 in the example above)
 
 This function simply prepares an array containing the information that needs to be displayed in the template, returning it as shown in line 19 above.
 
