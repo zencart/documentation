@@ -1,8 +1,10 @@
 - [Multi Language Menus](code_docs/multi_language_menus/introduction.md)
-- Listing Boxes
-	- [Introduction](code_docs/listing_boxes/introduction.md)
+- [Listing Boxes](code_docs/listing_boxes/introduction.md)
 	- [Box Classes](code_docs/listing_boxes/box_classes.md)
 	- [Filter Classes](code_docs/listing_boxes/filter_classes.md)
 	- [Formatter Classes](code_docs/listing_boxes/formatter_classes.md)
 	- [Templates](code_docs/listing_boxes/templates.md)
 	- [Database Schema](code_docs/listing_boxes/schema.md)
+- [Pagination](code_docs/pagination/pagination.md)
+- [Request Class](code_docs/request/request.md)
+- [Admin Dashboard Widgets](code_docs/dashboard_widgets/dashboard_widgets.md)
