@@ -1,5 +1,5 @@
-Box Classes
-===========
+# Box Classes
+
 Classes for listing boxes are stored in includes/library/zencart/listingBox/src/Box which should be  namespaced as ZenCart\ListingBox\Box 
 
 The class definition should look like
@@ -21,13 +21,11 @@ public function initTitle()
 
 There are other methods in AbstractListingBox that can be overridden to allow for more customization and these will be discussed later.
 
-Instantiation
-===
+# Instantiation
 
 Listing boxes can be instantiated in 2 ways. Either as a single listing box or as a group of listing boxes.
 
-Single Box Instantiation 
----
+## Single Box Instantiation
 
 ```php
 1. $box = new \ZenCart\ListingBox\Build ($zcDiContainer, new \ZenCart\ListingBox\Box\ProductsDefault());
@@ -46,8 +44,8 @@ In Line 1 when instantiating the class we use the Listing Box build class. This 
 The first parameter is a Dependency Injection container that is now created by default by the Zen Cart InitSystem and stored in a global variable $zcDiContainer.
 The second parameter is an instantiation of the Listing Box class we want to build, in the example above, this is the ProductsDefault class.
 
-Group Instantiation
----
+## Group Instantiation
+
 
 ```php
 1. $listingBoxManager = new \ZenCart\ListingBox\Manager();
@@ -62,4 +60,79 @@ Line 3 assigns the output to a $tplVars array.
 
 see [Database Schema](schema.md)
 
+## _construct method
+
+The _construct method must define 2 arrays, using 
+
+
+__$this->setProductQuery()__
+
+and
+
+__$this->setOutputLayout()__
+
+## productQuery 
+
+$this->productQuery is an array that is used to define an SQL query. As such it has array elements to define JOIN tables, WHERE clauses, ORDER BY clauses, LIMIT clauses etc.
+
+```php
+        $this->setProductQuery(array(
+            'isRandom' => false,
+            'isPaginated' => true,
+            'filters' => array(
+                array(
+                    'name' => 'DisplayOrderSorter',
+                    'parameters' => array(
+                        'defaultSortOrder' => PRODUCT_ALL_LIST_SORT_DEFAULT
+                    )
+                )
+            ),
+            'derivedItems' => array(
+                array(
+                    'field' => 'displayPrice',
+                    'handler' => 'displayPriceBuilder'
+                ),
+                array(
+                    'field' => 'productCpath',
+                    'handler' => 'productCpathBuilder'
+                )
+            ),
+            'joinTables' => array(
+                'TABLE_PRODUCTS_DESCRIPTION' => array(
+                    'table' => TABLE_PRODUCTS_DESCRIPTION,
+                    'alias' => 'pd',
+                    'type' => 'left',
+                    'fkeyFieldLeft' => 'products_id',
+                    'addColumns' => true
+                ),
+                'TABLE_MANUFACTURERS' => array(
+                    'table' => TABLE_MANUFACTURERS,
+                    'alias' => 'm',
+                    'type' => 'left',
+                    'fkeyFieldLeft' => 'manufacturers_id',
+                    'addColumns' => true
+                )
+            ),
+            'whereClauses' => array(
+                array(
+                    'table' => TABLE_PRODUCTS_DESCRIPTION,
+                    'field' => 'language_id',
+                    'value' => $_SESSION ['languages_id'],
+                    'type' => 'AND'
+                ),
+                array(
+                    'table' => TABLE_PRODUCTS,
+                    'field' => 'products_status',
+                    'value' => 1,
+                    'type' => 'AND'
+                )
+            )
+        ));
+```
+
+## outputLayout
+
+The outputLayout array must contain the 'formatter' option. Other options are dependant on the formatter used.
+
+See Listing Box Formatter Classes for more details.
 
