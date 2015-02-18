@@ -29,15 +29,12 @@ Listing boxes can be instantiated in 2 ways. Either as a single listing box or a
 
 ```php
 1. $box = new \ZenCart\ListingBox\Build ($zcDiContainer, new \ZenCart\ListingBox\Box\ProductsDefault());
-2. $box->init();
 3. $tplVars['listingBox'] = $box->getTemplateVariables ();
 ```
 
 Line 1 Instantiates the class.
 
-Line 2 Runs the init method of the Listing Box Class.
-
-Line 3 Gets the output from the Listing box class. This output is an array, and while it's format is somewhat customizable, it will always contain an array key = 'formattedItems' that will be used in the template.
+Line 2 Gets the output from the Listing box class. This output is an array, and while it's format is somewhat customizable, it will always contain an array key = 'formattedItems' that will be used in the template.
 
 In Line 1 when instantiating the class we use the Listing Box build class. This takes 2 parameters.
 
