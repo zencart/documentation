@@ -3,11 +3,11 @@ Customising Habitat
 
 When habitat first creates the development environment, it looks for a file called Habitat.local.yaml, which it will use to provision you Virtual Machine.
 
-If Habitat.local.yaml does not exist, it will copy the included Habitat.yaml.example to Habitat.local.yaml
+If `Habitat.local.yaml` does not exist, it will copy the included `Habitat.yaml.example` to `Habitat.local.yaml`
 
 By default the example file will do a checkout of the latest v160 branch from Github. If you want that checkout to say be your forked branch, then you will need to create the Habitat.local.yaml first.
 
-`Note` If you make changes to the yaml file after doing Vagrant up, you will need to run ...
+**Note** If you make changes to the yaml file after doing `Vagrant up`, you will need to run ...
 >
 `Command Line`  
 >
