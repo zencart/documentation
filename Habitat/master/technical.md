@@ -1,10 +1,12 @@
-Technical Specs.
-=========
+# Technical Specs.
+
+The Habitat Virtual Machine  is built using [zencart/pioneer](https://github.com/zencart/pioneer)
 
 Software Installed
-Ubuntu 14.04.1 LTS
-trusty64 x86
-Apache 2.4.10 with SSL
+
+Ubuntu 14.04.1 LTS trusty64 x86
+
+Apache 2.4.10 with SSL along with the following modules
 
     mod_access_compat
     mod_alias
@@ -28,10 +30,10 @@ Apache 2.4.10 with SSL
     mod_status
 
 MySQL 5.5.38
+
 PHP 5.5.15
 
 git 1.9.1
-Composer
 
 Composer 2014-08-05 version
 
