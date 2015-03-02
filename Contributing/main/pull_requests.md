@@ -2,9 +2,9 @@ This article is intended to help provide a basic understanding of contributing t
 
 ## Quick Reference for Newcomers to git or github
 
-For the basics of learning git, see: [https://help.github.com/categories/54/articles](https://help.github.com/categories/54/articles)
+For the basics of learning git, see: [https://help.github.com/categories/bootcamp/](https://help.github.com/categories/bootcamp/)
 
-For the basics of learning github, see:[https://help.github.com/articles/what-are-other-good-resources-for-learning-git-and-github](https://help.github.com/articles/what-are-other-good-resources-for-learning-git-and-github)
+For the basics of learning github, see: [https://help.github.com/articles/good-resources-for-learning-git-and-github/](https://help.github.com/articles/good-resources-for-learning-git-and-github/)
 
 To collaborate by sharing your code suggestions, you will need to "fork" our public repository.
 For the basics of understanding forking and how to manage that fork, see: [https://help.github.com/articles/fork-a-repo](https://help.github.com/articles/fork-a-repo)
@@ -25,7 +25,7 @@ We recommend working with one of the following first two options.
 
 * [SourceTree](http://www.sourcetreeapp.com/) for Windows and Mac - this is another good free desktop application, presently owned by Atlassian, which does a good job of giving you access to all the power of git/github/bitbucket/mercurial in an easy visual interface.
 
-* There's another option, which we're not recommending here, since it has an important limitation when working with forked repositories: It doesn't support multiple remotes, which means you'll need to use the command line to keep your checkouts up to date with our central repository's branches else you'll have problems when issuing pull requests. That other option is github's own application: Github Desktop for [Windows](https://windows.github.com/) or [Mac](https://mac.github.com/) - these are free desktop applications written by Github, and make visual interaction easy when working only with your own repositories but not regularly contributing to someone else's projects.
+* There's another option, which we're NOT recommending here, since (at the time of this writing) it has an important limitation when working with forked repositories: It doesn't support multiple remotes, which means you'll need to use the command line to keep your checkouts up to date with our central repository's branches else you'll have problems when issuing pull requests. That other option is github's own application: Github Desktop for [Windows](https://windows.github.com/) or [Mac](https://mac.github.com/) - these are free desktop applications written by Github, and make visual interaction easy when working only with your own repositories but not regularly contributing to someone else's projects.
 
 
 
@@ -38,6 +38,8 @@ Here's the workflow you'll want to use as a collaborator with Zen Cart&reg; and 
 First, before you can contribute code, you must sign the Contributor License Agreement, basically saying that you willingly offer your contributions for use without compensation or restriction and that your contributions are entirely yours and not copyrighted or licensed by someone else under restrictive rules.
 
 If you have not signed the CLA using the email address or username you use for github, we cannot accept your pull request.
+
+(LINK TO SIGN CLA WILL BE ADDED HERE SHORTLY)
     
 ### Basic setup
  1. github account
@@ -171,28 +173,28 @@ Now that you've made some commits to git on your local PC, you must push them to
   4. Click OK
   5. That's it! Now all the commits you've made in that branch on your PC will show up in your Github account.
 
-### Pull Request
+### Pull Request (aka "PR")
 
-After you've pushed your working branch to your own github account, you will need to create a [Pull Request](https://github.com/thoughtbot/zencart/compare/) in order to ask the Zen Cart developer team to review it and consider it for inclusion in core code. You can read more about [Pull Requests on github help pages](https://help.github.com/articles/using-pull-requests).
+After you've pushed your working branch (ie: containing your new commits) to your own Github account, you will need to create a [Pull Request](https://help.github.com/articles/using-pull-requests/) in order to ask the Zen Cart developer team to review it and consider it for inclusion in core code.
 
 You'll do this from your browser:
 
-1. Go to your github account in your browser.
+1. Go to your Github account in your browser.
 2. Go to *your* Zen Cart zc-v1-series repository.
-3. You will see a green "Compare and Pull Request" button. Click it.
+3. You will see a green "Compare and Pull Request" button. Click it. (If it's been several hours since you did the push, it might not show the green bar. In that case, click the 'Branches' link, where you will see a Pull Request button next to each of your branches. Click the one next to the branch you want to do the pull request from.)
 4. Now you can review the collection of commits and file changes, and add a descriptive message to the pull request. If you're fixing something that's already got an open issue for it, be sure that the issue number is included in your Pull Request message. ie: #101. If you believe your Pull Request fully fixes the open issue, then say "Fixes #101", as the keyword "Fixes" helps do proper cleanup of tickets once closed.
 5. TIP: If you are contributing to Zen Cart v160, be sure that your pull request "compare" is indeed being compared against the `zencart:v160` branch.
 6. Click the next green button to Create Pull Request
 7. Now you [wait for others to review your code](https://github.com/thoughtbot/guides/tree/master/code-review). The Zen Cart developers (and anyone else who has clicked "Watch" on the Zen Cart main repository) will get an alert about the pull request. Anyone wishing to reply with their opinions of what you've submitted can engage in dialog with you and one another while the code is reviewed. 
 8. If your code hasn't complied with the coding standards, or has bugs or is incomplete, you may be asked to submit more commits to rectify the problems. In that case, you will repeat the steps above for making code changes, making commits, and pushing those commits to github. As long as you push to the same branch on github, then all those commits will automatically be included in the pull request, so reviewers can see the updates you push.
-9. Once the core team decides what to do with it, they have basically three options: to accept it (merge the pull request) or defer it (until a later date) or reject it (not merge it and close the pull request). Github will automatically email you about all updates and comments made about your Pull Request.
+9. Once the core team decides what to do with it, they have basically three options: to accept it (merge the pull request) or defer it (until a later date) or reject it (not merge it and close the pull request). Github will automatically email you about all updates and comments made about your Pull Request.  (NOTE: Your PR won't be merged until you have signed the CLA.)
 
 ### Keeping Your Local Branch Current
 
 When you or others make pull requests that are accepted into the Zen Cart core repository, that will make your own local copy be outdated. To keep current, you must periodically bring in the changes from the "upstream remote" we created earlier.
 
 * command line:
- 1. type: `git checkout v160`
+ 1. type: `git checkout v160` (ie: if you're going to pull changes from the `v160` branch)
  2. type: `git pull upstream`
 
 * SourceTree:
@@ -221,4 +223,4 @@ There are many more great resources explaining how all of this works. Some which
 * [git protocol by thoughtbot](https://github.com/thoughtbot/guides/tree/master/protocol/git)
 * [code review process](https://github.com/thoughtbot/guides/tree/master/code-review)
 
-&copy; 2014 Zen Cart&reg; Creative Commons 3.0
+&copy; 2014-2015 Zen Cart&reg; Creative Commons 3.0
