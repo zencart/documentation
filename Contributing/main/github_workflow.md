@@ -27,6 +27,8 @@ We recommend working with one of the following first two options.
 
 * There's another option, which we're NOT recommending here, since (at the time of this writing) it has an important limitation when working with forked repositories: It doesn't support multiple remotes, which means you'll need to use the command line to keep your checkouts up to date with our central repository's branches else you'll have problems when issuing pull requests. That other option is github's own application: Github Desktop for [Windows](https://windows.github.com/) or [Mac](https://mac.github.com/) - these are free desktop applications written by Github, and make visual interaction easy when working only with your own repositories but not regularly contributing to someone else's projects.
 
+* While you won't find us documenting how to use them, there are several [other git GUI client apps](http://git-scm.com/downloads/guis)
+
 
 
 ## Workflow
