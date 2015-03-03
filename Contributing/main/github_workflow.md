@@ -151,10 +151,11 @@ You can make multiple commits (that is, stage the files and commit them) towards
 
 ### ABOUT COMMIT MESSAGES
 
-* The "subject" or "first line" of a commit message should be no more than 50 characters. 
-* The next lines can have as much detail as you like. Consider using [Github Markdown syntax](https://help.github.com/articles/github-flavored-markdown) for any formatting you might wish to include in the message. Feel free to use blank lines, and even use hyphens to create bulleted lists (hyphen plus a space)
-* If you're contributing code to help with or fix an "Issue" that's already listed on the [Zen Cart github Issues](https://github.com/zencart/zc-v1-series/issues?state=open) page, include that issue number in your commit message, with the hashtag in front of it, like this: #101 for issue number 101.
-* See the CONTRIBUTING.md file in the Zen Cart repository for guidance on commit messages, coding standards, and more.
+1. The "subject" or "first line" of a commit message should be no more than 50 characters. 
+2. The next lines can have as much detail as you like. Consider using [Github Markdown syntax](https://help.github.com/articles/github-flavored-markdown) for any formatting you might wish to include in the message. Feel free to use blank lines, and even use hyphens to create bulleted lists (hyphen plus a space)
+3. If you're contributing code to help with an "Issue" that's already listed on the [Zen Cart github Issues](https://github.com/zencart/zc-v1-series/issues?state=open) page, include that issue number in your commit message, with the hashtag in front of it, like this: #101 for issue number 101.
+4. Further to the point above, if your commit ["fixes" or "closes" or "resolves" an existing open issue then include the word "Fixes" before the issue number](https://help.github.com/articles/closing-issues-via-commit-messages/), ie: "Fixes #101" somewhere in your commit message. This will cause Github to close the "issue" ticket when your pull request is merged, and helps keep things tidy.
+5. If you're committing code that addresses a bug reported on the Zen Cart support forum, include the URL for that bug from the forum, so we can cross-reference it.
 
 ### Pushing Commits To Github
 
