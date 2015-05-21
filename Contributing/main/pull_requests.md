@@ -23,9 +23,11 @@ We recommend working with one of the following first two options.
 
 * command line. Purists will use the command line, for reasons they will pine eloquently about if asked. There are hundreds of resources online showing how to use all the git features via command line, starting with the links at the top of this page.
 
-* [SourceTree](http://www.sourcetreeapp.com/) for Windows and Mac - this is another good free desktop application, presently owned by Atlassian, which does a good job of giving you access to all the power of git/github/bitbucket/mercurial in an easy visual interface.
+* [SourceTree](http://www.sourcetreeapp.com/) for Windows and Mac - this is another good free desktop application which does a good job of giving you access to all the power of git/github/bitbucket/mercurial in an easy visual interface. We highly recommend using SourceTree due to its simplicity.
 
 * There's another option, which we're NOT recommending here, since (at the time of this writing) it has an important limitation when working with forked repositories: It doesn't support multiple remotes, which means you'll need to use the command line to keep your checkouts up to date with our central repository's branches else you'll have problems when issuing pull requests. That other option is github's own application: Github Desktop for [Windows](https://windows.github.com/) or [Mac](https://mac.github.com/) - these are free desktop applications written by Github, and make visual interaction easy when working only with your own repositories but not regularly contributing to someone else's projects.
+
+* While you won't find us documenting how to use them, there are several [other git GUI client apps](http://git-scm.com/downloads/guis)
 
 
 
@@ -54,19 +56,19 @@ If you have not signed the CLA using the email address or username you use for g
  2. Go to **your** fork of the Zen Cart repository: `https://github.com/YOURNAMEHERE/zc-v1-series`
  3. Halfway down the right side of the page you'll see a URL in a textbox, with a clipboard icon next to it. It probably says "HTTPS clone URL" above it. You'll want to click the clipboard to copy that URL to your computer's clipboard.
 
-Now switch to your desktop application of choice and use that URL to clone the repository locally
+Now switch to your desktop application of choice and use that URL to clone the repository locally:
 
 * command line: 
  1. pick a working directory on your PC
  2. cd into that directory
  3. type:  `git clone PASTE-THAT-URL-HERE .`
 
-* SourceTree:
+* [SourceTree](http://www.sourcetreeapp.com/):
  1. Choose File, New Clone...
  2. In the Source Path/URL, paste the URL you copied from github
  3. For the destination path, pick a folder on your PC
- 4. For the bookmark name, call it whatever friendly name you want to remember this repo by. It will show up in SourceTree's bookmarks list of repositories you've got.
-	5. Click Clone or OK to have it start the clone. It will take a few seconds for it to download the repository contents to your computer.
+ 4. For the bookmark name, call it whatever friendly name you want to remember this repo by. It will show up in [SourceTree](http://www.sourcetreeapp.com/)'s bookmarks list of repositories you've got.
+ 5. Click Clone or OK to have it start the clone. It will take a few seconds for it to download the repository contents to your computer.
 	
 ### Add an upstream remote
 
@@ -77,7 +79,7 @@ To keep your own fork up-to-date, you'll need to periodically merge updates from
  2. type: `git remote add upstream https://github.com/zencart/zc-v1-series.git`
  3. type: `git fetch upstream`
 
-*   SourceTree:
+* [SourceTree](http://www.sourcetreeapp.com/):
  1. Choose Repositories from the main menu
  2. Choose Repository Settings...
  3. Click Add
@@ -91,10 +93,11 @@ Any time you're going to contribute code changes, you'll want to first make a wo
 
 ##### Pick a branch name
 
-Decide on a new branch name. (The branch name should be brief, but meaningful; ideally a max of 6 words, all hyphenated, no spaces.)
+ Decide on a new branch name. (The branch name should be brief, but meaningful; ideally a max of 6 words, all hyphenated, no spaces.)
 
 ##### Make the branch
-Now use that name for name-of-your-branch-here, below:
+
+ Now use that name for name-of-your-branch-here, below:
 
 * command line:
  1. cd into the directory of the repository you're intending to make changes to
@@ -102,7 +105,7 @@ Now use that name for name-of-your-branch-here, below:
  3. Type: `git branch -b name-of-your-new-branch-here v160`
  4. Type: `git checkout name-of-your-new-branch-here`
       
-* SourceTree:
+* [SourceTree](http://www.sourcetreeapp.com/):
  1. First, make sure you're in "Log View"  (View, Log View)
  2. Find where it shows `upstream/v160`, and right-click on that row. Choose Branch... from the pop-up menu
  3. Give it the new branch name
@@ -137,7 +140,7 @@ You can make multiple commits (that is, stage the files and commit them) towards
   7. Save the message using whatever method your text editor uses to save-and-exit
   8. This will have the commit saved locally. You can continue working and making more commits until you're ready to push them all up to github (see pushing commits below)
 
- * SourceTree:
+ * [SourceTree](http://www.sourcetreeapp.com/):
 
   1. First, go into File Status view. Click on "Working Copy" in the left nav menu under File Status. Or, use the View menu and choose File Status View.
   2. Here you'll see a list of files on-screen which have changed in some way (edits, adds, deletes)
@@ -151,10 +154,11 @@ You can make multiple commits (that is, stage the files and commit them) towards
 
 ### ABOUT COMMIT MESSAGES
 
-* The "subject" or "first line" of a commit message should be no more than 50 characters. 
-* The next lines can have as much detail as you like. Consider using [Github Markdown syntax](https://help.github.com/articles/github-flavored-markdown) for any formatting you might wish to include in the message. Feel free to use blank lines, and even use hyphens to create bulleted lists (hyphen plus a space)
-* If you're contributing code to help with or fix an "Issue" that's already listed on the [Zen Cart github Issues](https://github.com/zencart/zc-v1-series/issues?state=open) page, include that issue number in your commit message, with the hashtag in front of it, like this: #101 for issue number 101.
-* See the CONTRIBUTING.md file in the Zen Cart repository for guidance on commit messages, coding standards, and more.
+1. The "subject" or "first line" of a commit message should be no more than 50 characters. 
+2. The next lines can have as much detail as you like. Consider using [Github Markdown syntax](https://help.github.com/articles/github-flavored-markdown) for any formatting you might wish to include in the message. Feel free to use blank lines, and even use hyphens to create bulleted lists (hyphen plus a space)
+3. If you're contributing code to help with an "Issue" that's already listed on the [Zen Cart github Issues](https://github.com/zencart/zc-v1-series/issues?state=open) page, include that issue number in your commit message, with the hashtag in front of it, like this: #101 for issue number 101.
+4. Further to the point above, if your commit ["fixes" or "closes" or "resolves" an existing open issue then include the word "Fixes" before the issue number](https://help.github.com/articles/closing-issues-via-commit-messages/), ie: "Fixes #101" somewhere in your commit message. This will cause Github to close the "issue" ticket when your pull request is merged, and helps keep things tidy.
+5. If you're committing code that addresses a bug reported on the Zen Cart support forum, include the URL for that bug from the forum, so we can cross-reference it.
 
 ### Pushing Commits To Github
 
@@ -165,7 +169,7 @@ Now that you've made some commits to git on your local PC, you must push them to
   1. again, cd into the directory of your working repository
   2. type `git push origin name-of-my-working-branch`
 
- * SourceTree:
+ * [SourceTree](http://www.sourcetreeapp.com/):
 
   1. Click the Push button in the top button bar.
   2. From the pulldown for "Push to repository", be sure that "origin" is selected. That's **your** github repository, and you must push to there.
@@ -173,7 +177,9 @@ Now that you've made some commits to git on your local PC, you must push them to
   4. Click OK
   5. That's it! Now all the commits you've made in that branch on your PC will show up in your Github account.
 
-### Pull Request (aka "PR")
+### Pull Request
+
+(You'll also see `Pull Request` referred to as a `PR`)
 
 After you've pushed your working branch (ie: containing your new commits) to your own Github account, you will need to create a [Pull Request](https://help.github.com/articles/using-pull-requests/) in order to ask the Zen Cart developer team to review it and consider it for inclusion in core code.
 
@@ -197,7 +203,7 @@ When you or others make pull requests that are accepted into the Zen Cart core r
  1. type: `git checkout v160` (ie: if you're going to pull changes from the `v160` branch)
  2. type: `git pull upstream`
 
-* SourceTree:
+* [SourceTree](http://www.sourcetreeapp.com/):
  1. Click the Pull button in the top button bar
  2. For Pull From Repository, choose "upstream" from the pulldown menu
  3. For Remote Branch To Pull, choose "v160"
@@ -207,10 +213,10 @@ When you or others make pull requests that are accepted into the Zen Cart core r
 ### Cleaning up old branches, or grabbing new branches
 From time to time you and others will add or remove branches from the github repositories, and you will want to keep your PC in sync with those.
 
-*   command line:
+* command line:
  1. type: `git fetch upstream`
  
-*   SourceTree:
+* [SourceTree](http://www.sourcetreeapp.com/):
  1. Click the Fetch button on the button bar
  2. There are 3 checkboxes. Check them all. (You could opt to not prune/delete any local branches you've created, if you want to preserve them to understand your own work history, by unchecking the corresponding box.)
 (You could also fetch from individual remotes manually, and prune only when fetching from upstream, but never prune when fetching from your own github master) 
@@ -223,4 +229,8 @@ There are many more great resources explaining how all of this works. Some which
 * [git protocol by thoughtbot](https://github.com/thoughtbot/guides/tree/master/protocol/git)
 * [code review process](https://github.com/thoughtbot/guides/tree/master/code-review)
 
+
+
 &copy; 2014-2015 Zen Cart&reg; Creative Commons 3.0
+
+*The SourceTree name is copyright Atlassian. Zen Cart receives no compensation or consideration for recommending SourceTree; we simply find it to be an extremely capable and useful app for beginners and novices alike.*
