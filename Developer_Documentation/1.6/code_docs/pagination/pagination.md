@@ -70,8 +70,8 @@ totalPages
 
 The QueryFactory adapter class expects its data array to be formatted as follows 
 
-['sqlQueries']['main'] is an sql query string to select the items to be paginated.  
-['sqlQueries']['count'] is an sql query string to get the total item count for the items to be paginated.  
+['mainSql'] is an sql query string to select the items to be paginated.  
+['count'] is an sql query string to get the total item count for the items to be paginated.  
 ['dbConn'] is a queryfactory connection object. e.g. the global $db variable.  
 
 e.g.
@@ -82,32 +82,61 @@ e.g.
     
 setting the params
 
-     $currentPage = zcRequest::readGet('page', 1); 
+     $currentPage = $zcRequest->readGet('page', 1); 
      $params['currentPage'] = $currentPage;  
-     $params['itemsPerPage'] = 1;
+     $params['itemsPerPage'] = 10;
      
 then instantiate the adapter
 
      $ds = new QueryFactory($data, $params);
 
+results can then be gotten using 
 
+     $results = $ds->getResults()
+     
+     
 ## Scroller Classes
 
 ### Introduction
 
+There are lots of different ways to show pagination controls in a template.  
+Legacy Zen Cart has one way of doing it,  
+Google has another way of doing it. 
 
+Scroller classes allow for different methods of building the Link list that a template will render.
+
+### Interface
+
+Scroller classes need only provide a public process method.
 
 ### Parameters
 
-scrollerLinkParams
-maxPageLinks
-cmd
-linkParams
-exclude
-pagingVarName
-disableZenGetAllGetParams
-currentPage
-totalPages
+#### pagingVarName 
+
+This is the name of the URL GET parameter that denotes the current page.
+e.g. localhost.com/main_page=list?page=1
+by default his is set to `page`
+
+####cmd 
+
+cmd represents the current page controller. 
+e.g. in catalog where we have a url like 
+localhost.com/main_page=reviews 
+cmd would be `reviews`
 
 
+#### scrollerLinkParams 
+#### maxPageLinks 
+#### exclude 
+#### disableZenGetAllGetParams 
+#### currentPage 
+#### totalPages 
+
+### Results
+
+The public process method should create a results array containing the following 
+
+
+
+### Example using the Standard Scroller
 
