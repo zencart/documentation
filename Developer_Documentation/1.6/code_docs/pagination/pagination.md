@@ -125,12 +125,30 @@ localhost.com/main_page=reviews
 cmd would be `reviews`
 
 
-#### scrollerLinkParams 
+#### scrollerLinkParams (optional)
+
+When building the href links for scroller outout, these params will be added to the link.
+Should take the form of a string like `linkParam1=value1&LinkParam2=value2`
+
 #### maxPageLinks 
+
+
 #### exclude 
-#### disableZenGetAllGetParams 
+
+Generally, page links will use the zen_get_all_get_params() function to add GET params to the paging links,
+you can add GET params to exclude using this array;
+
+#### disableZenGetAllGetParams
+ 
+Don't use zen_get_all_get_params to build paging links.
+ 
 #### currentPage 
+
+An integer value for the current page being displayed, will default to 1
+
 #### totalPages 
+
+The total number of pages that the Adapter class returned.
 
 ### Results
 
@@ -140,3 +158,6 @@ The public process method should create a results array containing the following
 
 ### Example using the Standard Scroller
 
+        $params = array('pagingVarName'=>'page', 'scrollerLinkParams'=>'', 'itemsPerPage'=>'10', 'currentItem'=>'1', 'currentPage'=>'1', 'maxPageLinks'=>'10', 'cmd'=>'countries');
+        $scroller = new Standard($ds, $params);
+        $dsr = $scroller->getResults();
