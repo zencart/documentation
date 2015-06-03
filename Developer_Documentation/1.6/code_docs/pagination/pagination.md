@@ -152,8 +152,23 @@ The total number of pages that the Adapter class returned.
 
 ### Results
 
-The public process method should create a results array containing the following 
+The public process method should create a results array containing values to be used in the paginator output template.
+The format of this array is flexible, being dependant on how you want the view output to be rendered, but a look at the 
+standard scroller should provide some hints as to the general values that should be returned.
 
+
+        $results['linkList']
+        $results['pagingVarName']
+        $results['hasItems']
+        $results['nextPage']
+        $results['totalItems']
+        $results['prevPage']
+        $results['fromItem']
+        $results['toItem']
+        $results['flagHasPrevious']
+        $results['flagHasNext']
+        $results['previousLink']
+        $results['nextLink']
 
 
 ### Example using the Standard Scroller
@@ -161,3 +176,14 @@ The public process method should create a results array containing the following
         $params = array('pagingVarName'=>'page', 'scrollerLinkParams'=>'', 'itemsPerPage'=>'10', 'currentItem'=>'1', 'currentPage'=>'1', 'maxPageLinks'=>'10', 'cmd'=>'countries');
         $scroller = new Standard($ds, $params);
         $dsr = $scroller->getResults();
+
+How you pass the $dsr results to the template is up to you. 
+Remember, templates currently will need to have variables in the Global scope. 
+So you may need to do something like 
+
+$GLOBALS['tplVars']['paginator'] = $dsr;
+
+and you can then access the results in the template 
+i.e. 
+
+    <?php if ($tplVars['paginator']['flagHasPrevious']) { ?>
