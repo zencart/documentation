@@ -52,8 +52,10 @@ The class should be defined in the library/zencart/listingbox/src/filters direct
 class and implement the FilterInterface class
 
 e.g. 
-class DisplayOrderSorter extends AbstractFilter implements FilterInterface
+`class DisplayOrderSorter extends AbstractFilter implements FilterInterface`
 
 
 ### parameters
+
+Parameters are dependant on the filter class and are passed as an array of key/value pairs.
 
