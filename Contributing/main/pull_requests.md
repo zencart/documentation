@@ -160,7 +160,7 @@ You can make multiple commits (that is, stage the files and commit them) towards
 4. Further to the point above, if your commit ["fixes" or "closes" or "resolves" an existing open issue then include the word "Fixes" before the issue number](https://help.github.com/articles/closing-issues-via-commit-messages/), ie: "Fixes #101" somewhere in your commit message. This will cause Github to close the "issue" ticket when your pull request is merged, and helps keep things tidy.
 5. If you're committing code that addresses a bug reported on the Zen Cart support forum, include the URL for that bug from the forum, so we can cross-reference it.
 
-Suggested reading: [7 Principles for Good Commit Messages](http://chris.beams.io/posts/git-commit/)
+Suggested reading: [7 Principles for Good Commit Messages](http://chris.beams.io/posts/git-commit/#seven-rules)
 
 
 ### Pushing Commits To Github
