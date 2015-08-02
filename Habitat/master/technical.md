@@ -4,9 +4,9 @@ The Habitat Virtual Machine  is built using [zencart/pioneer](https://github.com
 
 Software Installed
 
-Ubuntu 14.04.1 LTS trusty64 x86
+Ubuntu 14.04.2 LTS trusty64 x86
 
-Apache 2.4.10 with SSL along with the following modules
+Apache 2.4.12 with SSL along with the following modules
 
     mod_access_compat
     mod_alias
@@ -23,44 +23,41 @@ Apache 2.4.10 with SSL along with the following modules
     mod_filter
     mod_mime
     mod_mpm_prefork
+    mod_negotiation
     mod_php5
+    mod_rewrite
     mod_setenvif
     mod_socache_shmcb
     mod_ssl
     mod_status
 
-MySQL 5.5.38
+MySQL 5.5.43
 
-PHP 5.5.15
+phpMyAdmin 4.0.10
+
+PHP 5.6.10
+
+    Customized PHP configurations:
+        error_reporting = E_ALL
+        display_errors = On
+        memory_limit = 512M
+        date.timezone = UTC
+        post_max_size = 512M
+        upload_max_filesize = 512M
+        html_errors = Off
+        error_log = \home\vagrant\habitat\php_errors.log 
+            (Thus the error_log is mapped to the host machine for easy reference)
+
 
 git 1.9.1
 
-Composer 2014-08-05 version
+Composer 1.0-dev 2015-06-26
 
-Other tools installed via composer
+Other tools installed via Composer
 
-    guzzle/guzzle
-    pdepend/pdepend
-    phpmd/phpmd
-    phpunit/php-code-coverage
-    phpunit/php-file-iterator
-    phpunit/php-text-template
-    phpunit/php-timer
-    phpunit/php-token-stream
-    phpunit/phpunit
-    phpunit/phpunit-mock-objects
-    psr/log
-    satooshi/php-coveralls
-    sebastian/diff
-    sebastian/environment
-    sebastian/exporter
-    sebastian/version
-    squizlabs/php_codesniffer
-    symfony/config
-    symfony/console
-    symfony/dependency-injection
-    symfony/event-dispatcher
-    symfony/filesystem
-    symfony/stopwatch
-    symfony/yaml
-
+    phpunit
+    phpmd
+    php_codesniffer
+    php-coveralls
+    vfsStream
+    phpdocumentor
