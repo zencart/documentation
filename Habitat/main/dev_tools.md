@@ -4,6 +4,18 @@ Development Tools
 More coming Soon
 
 
+phpMyAdmin
+----------
+
+phpMyAdmin is pre-installed on the vm, and can be easily accessed via `http://172.22.22.22/phpmyadmin` and logging in as zencart/zencart.
+
+###TIP:
+>For easy importing of .sql files, note that on your host PC there is a `habitat/tmp` folder. This is shared with phpMyAdmin and makes quick importing of .sql files very simple.
+
+>1. Simply copy any desired .sql files to your host PC's `habitat/tmp` folder
+2. Open phpmyadmin in your browser, `select a database`, and then click the `Import` button. There will be a dropdown available with a list of all the .sql files above.
+
+
 Database Backup and Restore
 ---------------------------
 
