@@ -1,10 +1,13 @@
 #Coding Standards
 -----------------
 ## Old Standard
-Legacy code has used a modified phpBB coding style, with notable characteristics such as "indent with 2 spaces, not tabs", "The opening brace for class and function definitions, as well as if/else statements, was kept on the same line", etc.
+Legacy Zen Cart code has used a modified *phpBB* coding style, with notable characteristics such as "indent with 2 spaces, not tabs", and "The opening brace (ie: `{`) for `class` and `function` definitions, as well as `if/else` statements, was kept on the same line", etc.
 
 ## New Standard: PSR-2
-In the interest of progressively modernizing the code, going forward we are adopting the PSR-2 coding standard (which also includes PSR-1 standards).
+In the interest of progressively modernizing the code, going forward we are adopting [the PSR-2 coding standard](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) (which also includes PSR-1 standards).
+
+### Difference from the "Old Standard"
+To be clear: PSR-2 uses "4 spaces instead of tabs", and puts the `{` braces on a new line when used with `class` and `function` declarations (but on the same line when used with controls structures such as `if`, `for`', `foreach`, `switch` or `while` loops.)
 
 ##When to use PSR-2
 So, new code should use the PSR-2 standard. That is, when new files are created such as new functions or class files, they should use the PSR-2 standard.
@@ -23,10 +26,10 @@ This is for the purpose of maintainability, and controlling understanding of the
 
 It is appropriate to use comments to explain what is happening in a given section of the code. This is so that other programmers coming after you (and you included!) can quickly understand intended the logic.
 
-Standard phpDocumentor coding standards are the preferred approach, as well as inline comments approximately every 10 lines of code. 
+The standard phpDocumentor coding standard (ie: common PHP DocBlock syntax) is the preferred approach, as well as inline comments approximately every 10 lines of code. 
 
 
-## What about files containing both HTML and PHP?
+##What about files containing both HTML and PHP?
 Where possible, (new) code should always output HTML/CSS/JS directly, and NOT use PHP to echo the HTML.
 
 Code-editing programs can understand the HTML and PHP distinctly if the HTML/CSS/JS are "raw text".  So, it becomes problematic if HTML is "echoed" via PHP.
@@ -42,3 +45,7 @@ Examples:
 ```php
 <?php echo ' <div class=xxxxxx">' . sprintf(LANGUAGE_DEFINE, ...) . '</div>'; ?>
 ```
+
+## Namespaced Autoloading
+The [PSR-4 autoloading standard](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md) is used for handling code in the \ZenCart namespace (ie: the files in `/includes/library`).
+
