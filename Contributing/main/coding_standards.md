@@ -7,7 +7,35 @@ Legacy Zen Cart code has used a modified *phpBB* coding style, with notable char
 In the interest of progressively modernizing the code, going forward we are adopting [the PSR-2 coding standard](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) (which also includes PSR-1 standards).
 
 ### Difference from the "Old Standard"
-To be clear: PSR-2 uses "4 spaces instead of tabs", and puts the `{` braces on a new line when used with `class` and `function` declarations (but on the same line when used with controls structures such as `if`, `for`', `foreach`, `switch` or `while` loops.)
+To be clear: PSR-2 uses "4 spaces instead of tabs", and puts the opening `{` braces on a new line when used with `class` and `function` declarations (but keeps them on the same line when used with controls structures such as `if`, `for`, `foreach`, `switch` or `while` loops.)
+
+For example, the old style would be:
+
+```php
+class foo extends baz {
+  function bar() {
+    if ($var1 == $var2) {
+      // do something
+    }
+    return;
+  }
+}
+```
+
+and the new PSR-2 equivalent would be:
+
+```php
+class foo extends baz
+{
+    function bar() 
+    {
+        if ($var1 == $var2) {
+            // do something
+        }
+        return;
+    }
+}
+```
 
 ##When to use PSR-2
 So, new code should use the PSR-2 standard. That is, when new files are created such as new functions or class files, they should use the PSR-2 standard.
