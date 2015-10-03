@@ -14,9 +14,9 @@ Two things to note here.
 
 2) The controller supports legacy code, such that if an admin action class for `categories` does not exist it will default back to using `admin_dir/categories.php`
 
-Admin action classes are stored in the `admin_dir/includes/classes/actions/admin/` directory
+Admin action classes are stored in the `/includes/library/zencart/Controllers/src/admin/` directory
 
-The action class must extend one of the abstract base admin classes, currently either `zcActionAdminBase` or `zcActionAdminLeadBase`
+The action class must extend one of the abstract base admin classes, currently either `AbstractController` or `AbstractLeadController`
 
 
 How it works
@@ -34,4 +34,4 @@ If no 'action' parameter exists then the default `mainExecute` method will be ca
 
 If an action class does not exist, then again it assumes that we are trying to load legacy code. e.g. if `cmd=categories` it will load `admin/categories.php`
 
-As mentioned earlier, Admin action classes should extend the `zcActionAdminBase` class, or another class that has `zcActionAdminBase` as its ultimate parent.
+As mentioned earlier, Admin action classes should extend the `AbstractController` class, or another class that has `AbstractController` as its ultimate parent.
