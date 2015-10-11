@@ -59,3 +59,48 @@ e.g.
 
 Parameters are dependant on the filter class and are passed as an array of key/value pairs.
 
+## Filter Classes
+
+Classes for filters are stored in includes/library/zencart/listingBox/src/Filters which should be namespaced as ZenCart\ListingBox\filters 
+
+The class definition should look like
+
+class CategoryFilter extends AbstractFilter implements FilterInterface
+
+Only one method must be defined 
+
+```php
+public function filterItem(array $listingQuery);
+```
+
+which will contain the logic to carry out the filtering. 
+
+for example 
+
+```php
+class AlphaFilter extends AbstractFilter implements FilterInterface
+{
+    /**
+     * @param array $listingQuery
+     * @return array
+     */
+    public function filterItem(array $listingQuery)
+    {
+        if ((int)$this->request->readGet('alpha_filter_id', 0) == 0) {
+            return $listingQuery;
+        }
+        $alphaSortListSearch = explode(';', '0:reset_placeholder;' . PRODUCT_LIST_ALPHA_SORTER_LIST);
+        for ($j = 0, $n = sizeof($alphaSortListSearch); $j < $n; $j++) {
+            if ((int)$this->request->readGet('alpha_filter_id') == $j) {
+                $elements = explode(':', $alphaSortListSearch [$j]);
+                $pattern = str_replace(',', '', $elements [1]);
+                $listingQuery ['whereClauses'] [] = array(
+                    'custom' => " AND pd.products_name REGEXP '^[" . $pattern . "]' "
+                );
+                break;
+            }
+        }
+        return $listingQuery;
+    }
+}
+```
