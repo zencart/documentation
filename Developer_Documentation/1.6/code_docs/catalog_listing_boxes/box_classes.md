@@ -130,6 +130,3 @@ Other entries can define derived items, filter methods etc.
 ```
 
 The outputLayout array must contain the 'formatter' option. Other options are dependant on the formatter used.
-
-See Listing Box Formatter Classes for more details.
-

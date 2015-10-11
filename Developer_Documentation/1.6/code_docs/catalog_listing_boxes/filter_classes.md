@@ -73,7 +73,7 @@ Only one method must be defined
 public function filterItem(array $listingQuery);
 ```
 
-which will contain the logic to carry out the filtering. 
+which will contain the logic to carry out the filtering, and return an amended listingQuery array.
 
 for example 
 
