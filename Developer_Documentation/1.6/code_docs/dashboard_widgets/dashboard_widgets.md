@@ -1,5 +1,7 @@
 # Introduction
 
+`WARNING: it is expected that the interface to dashboard widgets will change before 1.6 is released to better support the use of new controllers/ajax interfaces`
+
 In previous versions of Zen Cart the admin home page contains a number of boxes displaying various statistics/information that may be relevant to the Shop Owner.
 
 e.g. Recent Orders, Recent Customers. Whos-Online etc.

@@ -10,3 +10,4 @@
 - [Admin Dashboard Widgets](code_docs/dashboard_widgets/dashboard_widgets.md)
 - [Admin Action Classes](code_docs/admin_action_classes/introduction.md)
 - [Admin Lead pages](code_docs/admin_lead_pages/introduction.md)
+- [QueryBuilder](code_docs/queryBuilder/introduction.md)
