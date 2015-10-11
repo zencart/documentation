@@ -8,15 +8,10 @@ class AllDefault extends AbstractListingBox
 
 The AbstractListingBox class contains most of the logic for building listing box output. The actual listing box class that is used to build a custom listing box generally needs to define only a very few methods.
 
-Two methods that must be defined are
+Only one method must be defined 
 
 ```php
-public function __construct()
-```
-and
-
-```php
-public function initTitle()
+public function initQueryAndLayout()
 ```
 
 There are other methods in AbstractListingBox that can be overridden to allow for more customization and these will be discussed later.
@@ -57,33 +52,18 @@ Line 3 assigns the output to a $tplVars array.
 
 see [Database Schema](schema.md)
 
-## _construct method
+## initQueryAndLayout()
 
-The _construct method must define 2 arrays, using 
+The initQueryAndLayout method must define 2 arrays 
 
 
-__$this->setProductQuery()__
+## listingQuery 
 
-and
-
-__$this->setOutputLayout()__
-
-## productQuery 
-
-$this->productQuery is an array that is used to define an SQL query. As such it has array elements to define JOIN tables, WHERE clauses, ORDER BY clauses, LIMIT clauses etc.
+$this->listingQuery is an array that is used to define an SQL query. As such it has array elements to define JOIN tables, WHERE clauses, ORDER BY clauses, LIMIT clauses etc.
+Other entries can define derived items, filter methods etc.
 
 ```php
-        $this->setProductQuery(array(
-            'isRandom' => false,
-            'isPaginated' => true,
-            'filters' => array(
-                array(
-                    'name' => 'DisplayOrderSorter',
-                    'parameters' => array(
-                        'defaultSortOrder' => PRODUCT_ALL_LIST_SORT_DEFAULT
-                    )
-                )
-            ),
+        $this->listingQuery = array(
             'derivedItems' => array(
                 array(
                     'field' => 'displayPrice',
@@ -94,6 +74,13 @@ $this->productQuery is an array that is used to define an SQL query. As such it 
                     'handler' => 'productCpathBuilder'
                 )
             ),
+            'filters' => array(
+                array(
+                    'name' => 'CategoryFilter',
+                    'parameters' => array()
+                ),
+            ),
+            'queryLimit' => MAX_DISPLAY_NEW_PRODUCTS,
             'joinTables' => array(
                 'TABLE_PRODUCTS_DESCRIPTION' => array(
                     'table' => TABLE_PRODUCTS_DESCRIPTION,
@@ -101,16 +88,15 @@ $this->productQuery is an array that is used to define an SQL query. As such it 
                     'type' => 'left',
                     'fkeyFieldLeft' => 'products_id',
                     'addColumns' => true
-                ),
-                'TABLE_MANUFACTURERS' => array(
-                    'table' => TABLE_MANUFACTURERS,
-                    'alias' => 'm',
-                    'type' => 'left',
-                    'fkeyFieldLeft' => 'manufacturers_id',
-                    'addColumns' => true
                 )
             ),
             'whereClauses' => array(
+                array(
+                    'table' => TABLE_PRODUCTS,
+                    'field' => 'products_status',
+                    'value' => 1,
+                    'type' => 'AND'
+                ),
                 array(
                     'table' => TABLE_PRODUCTS_DESCRIPTION,
                     'field' => 'language_id',
@@ -118,16 +104,30 @@ $this->productQuery is an array that is used to define an SQL query. As such it 
                     'type' => 'AND'
                 ),
                 array(
-                    'table' => TABLE_PRODUCTS,
-                    'field' => 'products_status',
-                    'value' => 1,
-                    'type' => 'AND'
+                    'custom' => zen_get_new_date_range()
                 )
+            ),
+            'orderBys' => array(
+                array(
+                    'field' => 'RAND()',
+                    'type' => 'mysql'
+                ),
             )
-        ));
+        );
 ```
 
 ## outputLayout
+
+```php
+        $this->outputLayout = array(
+            'boxTitle' => sprintf(TABLE_HEADING_NEW_PRODUCTS, strftime('%B')),
+            'formatter' => array('class' => 'Columnar',
+                                 'template' => 'tpl_listingbox_columnar.php',
+                                 'params' => array(
+                                     'columnCount' => SHOW_PRODUCT_INFO_COLUMNS_NEW_PRODUCTS),
+            ),
+        );
+```
 
 The outputLayout array must contain the 'formatter' option. Other options are dependant on the formatter used.
 
