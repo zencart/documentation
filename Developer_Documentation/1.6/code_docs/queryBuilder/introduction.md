@@ -22,6 +22,7 @@ so we can instantiate and run the query builder in two ways.
 
 Whether we pass the definition in the constructor or the process method, the definition can include the following entries.
 
++ mainTable
 + mainTableName
 + mainTableAlias
 + mainTableFkeyField
@@ -33,13 +34,34 @@ Whether we pass the definition in the constructor or the process method, the def
 + whereClauses
 + orderBys
 
+
+## mainTable
+
 ## mainTableName
+
+Optional, and by default is set to TABLE_PRODUCTS.
+Or set by ['maintable']['name']
+
 ## mainTableAlias
-##mainTableFkeyField
+
+Optional and by default is set to 'p'
+Or set by ['maintable']['mainTableAlias']
+
+## mainTableFkeyField
+
+Optional and by default is set to 'products_id'
+Or set by ['maintable']['fkeyFieldLeft']
+
 ## tableAliases
+
 ## selectList
+
 ## filters
+
 ## derivedItems
+
 ## joinTables
+
 ## whereClauses
+
 ## orderBys
