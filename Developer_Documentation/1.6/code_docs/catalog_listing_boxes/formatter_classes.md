@@ -47,4 +47,47 @@ It is assumed that the template will be in includes/templates/templates_default/
 
 The params entry is optional and if set will define parameters used to customize the formatter output.
 
+## Formatter Classes
+
+As mentioned earlier formatter classes should extend the AbstractFormatter class and implement the FormatterInterface class.
+
+e.g. 
+
+```php
+class Columnar extends AbstractFormatter implements FormatterInterface
+{
+    /**
+     *
+     */
+    public function format()
+    {
+        $items = $this->itemList;
+        $formatterParams = $this->outputLayout['formatter']['params'];
+        $columnCount = $formatterParams['columnCount'];
+        $row = 0;
+        $col = 0;
+        $listBoxContents = array();
+        if (count($items) == 0) {
+            return;
+        }
+        $col_width = floor(100 / $columnCount);
+        if (count($items) < $columnCount || $columnCount == 0) {
+            $col_width = floor(100 / count($items));
+        }
+        foreach ($items as $item) {
+            $item ['colWidth'] = $col_width;
+            $item ['useImage'] = ($item ['products_image'] != '' || PRODUCTS_IMAGE_NO_IMAGE_STATUS != 0) ? true : false;
+            $listBoxContents [$row] [$col] = $item;
+            $col++;
+            if ($col > ($columnCount - 1)) {
+                $col = 0;
+                $row++;
+            }
+        }
+        $this->formattedResults = $listBoxContents;
+    }
+}
+```
+
+Note also that the formatter class takes the unformatted array `$this->itemList` and after formatting assigns it to `$this->formattedResults`.
 
