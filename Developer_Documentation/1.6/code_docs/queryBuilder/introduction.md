@@ -37,6 +37,16 @@ Whether we pass the definition in the constructor or the process method, the def
 
 ## mainTable
 
+If set the mainTable entry should consist of an array.
+
+e,g, 
+
+['mainTable'] = array('table' => TABLE_PRODUCTS, 'alias' => 'p', 'fKeyFieldLeft' => 'products_id');
+
+The 'table' entry wil be mapped to 'mainTableName'
+The 'alias' entry will be mapped to 'mainTableAilas'
+The 'fKeyFieldLeft will be mapped to the 'mainTableFKeyField'
+
 ## mainTableName
 
 Optional, and by default is set to TABLE_PRODUCTS.
@@ -54,7 +64,14 @@ Or set by ['maintable']['fkeyFieldLeft']
 
 ## tableAliases
 
+Associates a table alias with a table name. 
+Generally these associations are handled internally for the main table and join tables.  
+However if needed take the form of 
+
 ## selectList
+
+Generally the fields selected from a query are managed automatically. However there are times when you may want to add something to the select list, especially if you want to alias it.
+
 
 ## filters
 
@@ -65,3 +82,6 @@ Or set by ['maintable']['fkeyFieldLeft']
 ## whereClauses
 
 ## orderBys
+
+# Examples
+
