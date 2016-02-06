@@ -1,1 +1,1 @@
-- [Admin Sanitization](code_docs/admin_samitization.md)
+- [Admin Sanitization](code_docs/admin_sanitization.md)
