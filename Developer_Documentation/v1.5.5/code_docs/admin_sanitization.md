@@ -51,17 +51,22 @@ Zen Cart defines the following default sanitizerx
 
 + SIMPLE_ALPHANUM_PLUS
 
+
     GET Values only
     
     Uses [^\/ 0-9a-zA-Z_:@.-] regex
       
+      
 + CONVERT_INT
+
 
     GET and POST values
     
     converts value to Integer
     
+    
 + FILE_DIR_REGEX
+
 
     POST values only 
     
@@ -70,47 +75,62 @@ Zen Cart defines the following default sanitizerx
     
 + ALPHANUM_DASH_UNDERSCORE
 
+
     GET and POST values
     
     Uses '/[^a-z0-9_-]/i' regex
     
+    
 + PRODUCT_NAME_REGEX
+
 
     GET and POST values
     
     Uses '~(<\/?scri|on(load|mouse|error|read|key)=|= ?(\(|")|<!)~i' regex
     
+    
 + META_TAGS
+
 
     POST Values only (Deep)
     
     Uses '~(load=|= ?\(|<![^-])~i' regex
     
+    
 + SANITIZE_EMAIL
+
 
     GET and POST values
     
     Uses filter_var($_POST[$key], FILTER_SANITIZE_EMAIL)
 
+
 + PRODUCT_DESC_REGEX
+
 
     POST Values only (Deep)
     
     Uses '~(load=|= ?\(|<![^-])~i' regex
     
+    
 + PRODUCT_URL_REGEX
+
 
     POST Values only (Deep)
     
     Uses '~([^a-z0-9\'!#$&%@();:/=?_\~\[\]-]|[><])~i' regex
     
+    
 + CURRENCY_VALUE_REGEX
+
 
     POST Values only
     
     Uses preg_replace('/[^a-z0-9_,\.\-]/i', '', $_POST[$key])
 
+
 + PRODUCT_NAME_DEEP_REGEX
+
 
     POST Values only (Deep)
     
@@ -122,6 +142,8 @@ Zen Cart defines the following default sanitizerx
 
 + STRICT_SANITIZE_KEYS
 
+
+### Overriding Default Sanitization Group Entries
 
 ### Custom Sanitizers 
 
