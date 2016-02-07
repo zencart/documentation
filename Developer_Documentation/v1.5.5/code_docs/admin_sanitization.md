@@ -36,7 +36,92 @@ keep your plugin compatible with v1.5.5 code.
 
 ### Parameter naming
 
+GET/POST parameters will be sanitized based on their name and the sanitization group assingned to them. 
+Therefore if you are writing a  plugin and use a parameter name that already exists in Zen Cart that parameter will be 
+sanitized accordingto the group it is assigned to in core code. 
+
+For example the 'action' parameter is assigned to the SIMPLE_ALPHANUM_PLUS group, and the sanitization for that group 
+will always be applied to it. 
+
+You should therefore be careful in naming the GET/POST parameters that your plugin uses.
+
 ### Default Sanitization Groups
+
+Zen Cart defines the following default sanitizerx
+
++ SIMPLE_ALPHANUM_PLUS
+
+    GET Values only
+    
+    Uses [^\/ 0-9a-zA-Z_:@.-] regex
+      
++ CONVERT_INT
+
+    GET and POST values
+    
+    converts value to Integer
+    
++ FILE_DIR_REGEX
+
+    POST values only 
+    
+    uses '~[^0-9a-z\.!@#\$%^&\()`_+\-' . preg_quote(DIRECTORY_SEPARATOR) . '\~]~i'; regex
+    
+    
++ ALPHANUM_DASH_UNDERSCORE
+
+    GET and POST values
+    
+    Uses '/[^a-z0-9_-]/i' regex
+    
++ PRODUCT_NAME_REGEX
+
+    GET and POST values
+    
+    Uses '~(<\/?scri|on(load|mouse|error|read|key)=|= ?(\(|")|<!)~i' regex
+    
++ META_TAGS
+
+    POST Values only (Deep)
+    
+    Uses '~(load=|= ?\(|<![^-])~i' regex
+    
++ SANITIZE_EMAIL
+
+    GET and POST values
+    
+    Uses filter_var($_POST[$key], FILTER_SANITIZE_EMAIL)
+
++ PRODUCT_DESC_REGEX
+
+    POST Values only (Deep)
+    
+    Uses '~(load=|= ?\(|<![^-])~i' regex
+    
++ PRODUCT_URL_REGEX
+
+    POST Values only (Deep)
+    
+    Uses '~([^a-z0-9\'!#$&%@();:/=?_\~\[\]-]|[><])~i' regex
+    
++ CURRENCY_VALUE_REGEX
+
+    POST Values only
+    
+    Uses preg_replace('/[^a-z0-9_,\.\-]/i', '', $_POST[$key])
+
++ PRODUCT_NAME_DEEP_REGEX
+
+    POST Values only (Deep)
+    
+    Uses '~(<\/?scri|on(load|mouse|error|read|key)=|= ?(\(|")|<!)~i' regex
+    
+
++ STRICT_SANITIZE_VALUES
+
+
++ STRICT_SANITIZE_KEYS
+
 
 ### Custom Sanitizers 
 
