@@ -140,6 +140,9 @@ Zen Cart defines the following default sanitizerx
 + STRICT_SANITIZE_VALUES
 
 
+    Any parameters not previously sanitized will be sanitized witrh this mehhod. Altjough you can pass a list of parameters
+    not to sanitize. 
+
 + STRICT_SANITIZE_KEYS
 
 
