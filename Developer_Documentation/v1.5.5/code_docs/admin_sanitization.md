@@ -22,12 +22,12 @@ versions of those plugins are available, ie: that support the new v1.5.5 sanitiz
 If new versions are not available, or you need to keep your current admin working while you update, then you can disable
 the strict(default) sanitization by doing the following:
 
-Create a new disable_strict_sanitize.php file in your admin/includes/extra_configures directory.
+Create a new `disable_strict_sanitize.php` file in your `/admin/includes/extra_configures/` directory.
 The contents of this file should be 
-
+```
   <?php
   define('DO_STRICT_SANITIZATION', false);
-
+```
 We encourage you to NOT do that unless truly necessary, and even then only as a temporary measure until your affected plugins have written their own custom sanitizers as described later in this document.
 
 
@@ -133,7 +133,9 @@ Zen Cart defines the following default case-insensitive sanitizers:
     Any parameters not previously sanitized will be sanitized with this method. Although you can pass a list of parameters
     not to sanitize. 
 
+
 + `STRICT_SANITIZE_KEYS`
+
 	All POST and GET "keys" containing any `<` or `>` symbols in the key will be `unset()`
 
 
