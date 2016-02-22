@@ -107,7 +107,7 @@ Zen Cart defines the following default case-insensitive sanitizers:
     Uses `(load=|= ?\(|<![^-])` regex
     
     
-+ `PRODUCT_URL_REGEX`
++ `WORDS_AND_SYMBOLS_REGEX`
 
     POST Values only (Deep)
     
@@ -139,8 +139,8 @@ Zen Cart defines the following default case-insensitive sanitizers:
 	All POST and GET "keys" containing any `<` or `>` symbols in the key will be `unset()`
 
 
-### Overriding Default Sanitization Group Entries
-
 ### Custom Sanitizers 
+
+### Overriding Default Sanitization Group Entries
 
 
