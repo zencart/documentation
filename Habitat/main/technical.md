@@ -1,8 +1,6 @@
 # Technical Specs.
 
-The Habitat Virtual Machine  is built using [zencart/pioneer](https://github.com/zencart/pioneer)
-
-Software Installed
+##Software Installed in Habitat
 
 Ubuntu 14.04.2 LTS trusty64 x86
 
@@ -53,6 +51,8 @@ git 1.9.1
 
 Composer 1.0-dev 2015-06-26
 
+    You can update `composer` to the latest version from the Habitat console by running `composer self-update`
+
 Other tools installed via Composer
 
     phpunit
@@ -61,3 +61,15 @@ Other tools installed via Composer
     php-coveralls
     vfsStream
     phpdocumentor
+
+
+Updating
+
+    From time to time updates will be published for the Habitat VM.
+    But in the meantime if you need to apply updates, use `vagrant ssh` and run `sudo apt-get update && apt-get upgrade`
+
+
+
+
+
+The Habitat Virtual Machine is built using [zencart/pioneer](https://github.com/zencart/pioneer)
