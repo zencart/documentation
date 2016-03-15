@@ -41,7 +41,7 @@
     - `post_max_size` = 512M
     - `upload_max_filesize` = 512M
     - `html_errors` = Off
-    - `error_log` = `\home\vagrant\habitat\php_errors.log` _(Thus the `error_log` is mapped to the host machine for easy reference)_
+    - `error_log` = `\home\vagrant\habitat\php_errors.log` (Thus the `error_log` is mapped to the host machine for easy reference)
 
 - git 1.9.1
 
