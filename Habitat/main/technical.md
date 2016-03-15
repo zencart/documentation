@@ -51,7 +51,7 @@ git 1.9.1
 
 Composer 1.0-dev 2015-06-26
 
-    You can update `composer` to the latest version from the Habitat console by running `composer self-update`
+_You can update `composer` to the latest version from the Habitat console by running `composer self-update`_
 
 Other tools installed via Composer
 
@@ -63,10 +63,11 @@ Other tools installed via Composer
     phpdocumentor
 
 
-Updating
+##Updating
 
-    From time to time updates will be published for the Habitat VM.
-    But in the meantime if you need to apply updates, use `vagrant ssh` and run `sudo apt-get update && apt-get upgrade`
+From time to time updates will be published for the Habitat VM.
+
+But in the meantime if you need to apply updates, use `vagrant ssh` and run `sudo apt-get update && apt-get upgrade`
 
 
 
