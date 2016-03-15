@@ -47,7 +47,7 @@
 
 - Composer 1.0-dev 2015-06-26
 
-  _You can update `composer` to the latest version from the Habitat console by running `composer self-update`_
+  _You can update `composer` to the latest version from the Habitat console (via `vagrant ssh`) by running `composer self-update`_
 
 - Other tools installed via Composer
 
@@ -59,7 +59,7 @@
   - phpdocumentor
 
 
-##Updating
+###Updating
 
 From time to time updates will be published for the Habitat VM.
 
@@ -68,5 +68,5 @@ But in the meantime if you need to apply updates, use `vagrant ssh` and run `sud
 
 
 
-
+### Source
 The Habitat Virtual Machine is built using [zencart/pioneer](https://github.com/zencart/pioneer)
