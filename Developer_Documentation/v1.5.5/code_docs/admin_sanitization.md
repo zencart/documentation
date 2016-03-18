@@ -138,9 +138,24 @@ Zen Cart defines the following default case-insensitive sanitizers:
 
 	All POST and GET "keys" containing any `<` or `>` symbols in the key will be `unset()`
 
+### Overriding Default Sanitization Group Entries
+
+Plugins can add parameters to the global $adminSanitizationConfig variable. 
+For example.
+if you want to add a paramater called my_img_dir to the FILE_DIR_REGEX sanitizer, then you should create a file 
+in the admin/extra_configures directory which contains the following code.
+
+    <?php
+    $current = isset($adminSanitizationConfig['FILE_DIR_REGEX']) ? $adminSanitizationConfig['FILE_DIR_REGEX'] : array();
+    $adminSanitizationConfig['FILE_DIR_REGEX'] = array_merge($current, array('my_img_dir'));
+    
+Note. 
+
+Adding entries to the STRICT_SANITIZE_VALUES group does not mean they will have the sanitization for this group applied, rather 
+they will be ignored for this group. This can be a quick way of testing plugin code, until you decide what actual group 
+your parameters should be sanitized with. especially if your parameters need a custom sanitization group.
 
 ### Custom Sanitizers 
 
-### Overriding Default Sanitization Group Entries
 
 
