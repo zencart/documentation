@@ -69,8 +69,8 @@ Zen Cart defines the following default case-insensitive sanitizers:
 
     POST values only 
     
-    uses `[^0-9a-z\.!@#\$%^&\()``_+\-' . preg_quote(DIRECTORY_SEPARATOR) . '\~]` regex
-    
+    uses `[^0-9a-z.!@#$%^& ()`_+-~/\\]` regex
+
     
 + `ALPHANUM_DASH_UNDERSCORE`
 
@@ -83,7 +83,7 @@ Zen Cart defines the following default case-insensitive sanitizers:
 
     GET and POST values
     
-    Uses `(<\/?scri|on(load|mouse|error|read|key)(up|down)? ?=|[^(class)] ?= ?(\(|")|<!)` regex
+    Uses `(<\/?scri|on(load|mouse|error|read|key)(up|down)? ?=|[^(class|style)] ?= ?(\(|")|<!)` regex
     
     
 + `META_TAGS`
@@ -125,7 +125,7 @@ Zen Cart defines the following default case-insensitive sanitizers:
 
     POST Values only (Deep)
     
-    Uses `(<\/?scri|on(load|mouse|error|read|key)(up|down)? ?=|[^(class)] ?= ?(\(|")|<!)` regex
+    Uses `(<\/?scri|on(load|mouse|error|read|key)(up|down)? ?=|[^(class|style)] ?= ?(\(|")|<!)` regex
     
 
 + `STRICT_SANITIZE_VALUES`
