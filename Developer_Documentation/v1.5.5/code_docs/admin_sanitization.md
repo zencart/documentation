@@ -69,8 +69,8 @@ Zen Cart defines the following default case-insensitive sanitizers:
 
     POST values only 
     
-    uses `[^0-9a-z\.!@#\$%^&\()``_+\-' . preg_quote(DIRECTORY_SEPARATOR) . '\~]` regex
-    
+    uses `[^0-9a-z.!@#$%^& ()`_+-~/\\]` regex
+
     
 + `ALPHANUM_DASH_UNDERSCORE`
 
