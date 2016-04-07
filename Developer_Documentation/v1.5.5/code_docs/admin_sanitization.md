@@ -95,7 +95,7 @@ There will be occassions where a plugin uses a parameter name that is already ad
 ### Addding Parameters/Groups
 
 If a plugin needs to define it's own sanitization or override the sanitization for an already defined parameter, it 
-should create a php file in `/admin/includes/extra_configures/`
+should create a php file in `/admin/includes/extra_datafiles/`
 
 An example of the contents might be 
 
