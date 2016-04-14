@@ -9,7 +9,7 @@ e.g.
  https://github.com/zencart/zc-v1-series/blob/v154/admin/includes/init_includes/init_sanitize.php
 
 and sanitization may have been done on an individual parameter basis, mainly at output, 
-using htmlspecialchars (`zen__output_string_protected()`).
+using htmlspecialchars (`zen_output_string_protected()`).
 
 The reason no stronger sanitization was used was twofold:
 
