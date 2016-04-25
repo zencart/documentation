@@ -102,7 +102,7 @@ Any time you're going to contribute code changes, you'll want to first make a wo
 * command line:
  1. cd into the directory of the repository you're intending to make changes to
  2. In this example we'll be branching from the v160 branch
- 3. Type: `git branch -b name-of-your-new-branch-here v160`
+ 3. Type: `git branch name-of-your-new-branch-here v160`
  4. Type: `git checkout name-of-your-new-branch-here`
       
 * [SourceTree](http://www.sourcetreeapp.com/):
