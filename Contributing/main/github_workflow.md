@@ -200,11 +200,13 @@ You'll do this from your browser:
 
 ### Keeping Your Local Branch Current
 
-When you or others make pull requests that are accepted into the Zen Cart core repository, that will make your own local copy be outdated. To keep current, you must periodically bring in the changes from the "upstream remote" we created earlier.
+When you or others make pull requests that are accepted into the Zen Cart core repository, that will make your own local copy be outdated. To keep current, you must periodically bring in the changes from the "upstream remote" we created earlier.  (see: https://help.github.com/articles/syncing-a-fork/)
 
 * command line:
- 1. type: `git checkout v160` (ie: if you're going to pull changes from the `v160` branch)
- 2. type: `git pull upstream`
+ 1. type: `git fetch upstream`
+ 2. type: `git checkout v160` (ie: if you're going to pull changes from the `v160` branch)
+ 3. type: `git merge upstream/v160` (merges your local copy with the upstream remote)
+ 4. type: `git push` (brings your forked repository up-to-date)
 
 * [SourceTree](http://www.sourcetreeapp.com/):
  1. Click the Pull button in the top button bar
