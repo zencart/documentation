@@ -13,5 +13,8 @@ The currently available Manuals are :-
 
 [Habitat Development Environment](/Habitat) 
 
+[Release History](//Release_Notes) 
+
+
 You can also contribute to this documentation via [our github repository](https://github.com/zencart/documentation) 
 
