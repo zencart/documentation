@@ -5,7 +5,7 @@ This site contains documentation related to the [Zen Cart e-commerce system](hrr
  
 The site is organized into a number of Manuals.
 
-THe currently available Manuals are :-
+The currently available Manuals are :-
 
 [Contributing to Zen Cart](/Contributing/main) 
 
