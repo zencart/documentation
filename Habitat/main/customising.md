@@ -57,7 +57,7 @@ By default it contains:
                   - domain: zen.local
                     dir: v160
                     skeleton: apache.default
-                    git_url: https://github.com/zencart/zc-v1-series.git
+                    git_url: https://github.com/zencart/zencart.git
                     branch: v160
                   - domain: devdocs.local
                     dir: devdocs
@@ -97,7 +97,7 @@ Currently only the `apache.default` skeleton is used.
 
 ####git_url:
 
-This directive is optional, but if set will be used as the repository to clone. It is typical to use a github.com or bitbucket.org URL here, for example: `https://github.com/zencart/zc-v1-series.git`
+This directive is optional, but if set will be used as the repository to clone. It is typical to use a github.com or bitbucket.org URL here, for example: `https://github.com/zencart/zencart.git`
 
 ####branch:
 

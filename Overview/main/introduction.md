@@ -1,7 +1,7 @@
 Documentation Site
 ==================
 
-This site contains documentation related to the [Zen Cart e-commerce system](hrrps::/www.zen-cart.com), and other projects related to Zen Cart.
+This site contains documentation related to the [Zen Cart e-commerce system](https::/www.zen-cart.com), and other projects related to Zen Cart.
  
 The site is organized into a number of Manuals.
 

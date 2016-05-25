@@ -6,7 +6,7 @@ In versions prior to v1.5.5 very little was done in terms of globally sanitizing
 
 There was some global sanitization done for $_GET parameters 
 e.g. 
- https://github.com/zencart/zc-v1-series/blob/v154/admin/includes/init_includes/init_sanitize.php
+ https://github.com/zencart/zencart/blob/v154/admin/includes/init_includes/init_sanitize.php
 
 and sanitization may have been done on an individual parameter basis, mainly at output, 
 using htmlspecialchars (`zen_output_string_protected()`).

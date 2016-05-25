@@ -47,13 +47,13 @@ If you have not signed the CLA using the email address or username you use for g
  1. github account
   * Create a github account at [www.github.com](http://www.github.com)
  2. Fork the Repository
-  * On the github site, [fork the project's repository](https://help.github.com/articles/fork-a-repo) (at the time of this writing, the main ZC repository is at [https://github.com/zencart/zc-v1-series](https://github.com/zencart/zc-v1-series)).  This makes a copy of that repository into your own github account, which is where you will upload your changes since you only have "write" permissions in your own account.
+  * On the github site, [fork the project's repository](https://help.github.com/articles/fork-a-repo) (at the time of this writing, the main ZC repository is at [https://github.com/zencart/zencart](https://github.com/zencart/zencart)).  This makes a copy of that repository into your own github account, which is where you will upload your changes since you only have "write" permissions in your own account.
  3. Clone the repository to your own computer. (see below)
 
 ### Cloning a repository
 * Get the URL for the repository you're cloning
  1. Go to **your** github account page
- 2. Go to **your** fork of the Zen Cart repository: `https://github.com/YOURNAMEHERE/zc-v1-series`
+ 2. Go to **your** fork of the Zen Cart repository: `https://github.com/YOURNAMEHERE/zencart`
  3. Halfway down the right side of the page you'll see a URL in a textbox, with a clipboard icon next to it. It probably says "HTTPS clone URL" above it. You'll want to click the clipboard to copy that URL to your computer's clipboard.
 
 Now switch to your desktop application of choice and use that URL to clone the repository locally:
@@ -76,7 +76,7 @@ To keep your own fork up-to-date, you'll need to periodically merge updates from
 
 * command line:
  1. cd into the directory of the repository you're adding the remote to
- 2. type: `git remote add upstream https://github.com/zencart/zc-v1-series.git`
+ 2. type: `git remote add upstream https://github.com/zencart/zencart.git`
  3. type: `git fetch upstream`
 
 * [SourceTree](http://www.sourcetreeapp.com/):
@@ -84,7 +84,7 @@ To keep your own fork up-to-date, you'll need to periodically merge updates from
  2. Choose Repository Settings...
  3. Click Add
  4. For Remote Name, use: **upstream**
- 5. For the URL use: `https://github.com/zencart/zc-v1-series.git`
+ 5. For the URL use: `https://github.com/zencart/zencart.git`
  6. For the github username, enter your own github account name
  7. Click OK
  
@@ -102,7 +102,7 @@ Any time you're going to contribute code changes, you'll want to first make a wo
 * command line:
  1. cd into the directory of the repository you're intending to make changes to
  2. In this example we'll be branching from the v160 branch
- 3. Type: `git branch -b name-of-your-new-branch-here v160`
+ 3. Type: `git branch name-of-your-new-branch-here v160`
  4. Type: `git checkout name-of-your-new-branch-here`
       
 * [SourceTree](http://www.sourcetreeapp.com/):
@@ -156,7 +156,7 @@ You can make multiple commits (that is, stage the files and commit them) towards
 
 1. The "subject" or "first line" of a commit message should be no more than 50 characters. 
 2. The next lines can have as much detail as you like. Consider using [Github Markdown syntax](https://help.github.com/articles/github-flavored-markdown) for any formatting you might wish to include in the message. Feel free to use blank lines, and even use hyphens to create bulleted lists (hyphen plus a space)
-3. If you're contributing code to help with an "Issue" that's already listed on the [Zen Cart github Issues](https://github.com/zencart/zc-v1-series/issues?state=open) page, include that issue number in your commit message, with the hashtag in front of it, like this: #101 for issue number 101.
+3. If you're contributing code to help with an "Issue" that's already listed on the [Zen Cart github Issues](https://github.com/zencart/zencart/issues?state=open) page, include that issue number in your commit message, with the hashtag in front of it, like this: #101 for issue number 101.
 4. Further to the point above, if your commit ["fixes" or "closes" or "resolves" an existing open issue then include the word "Fixes" before the issue number](https://help.github.com/articles/closing-issues-via-commit-messages/), ie: "Fixes #101" somewhere in your commit message. This will cause Github to close the "issue" ticket when your pull request is merged, and helps keep things tidy.
 5. If you're committing code that addresses a bug reported on the Zen Cart support forum, include the URL for that bug from the forum, so we can cross-reference it.
 
@@ -189,7 +189,7 @@ After you've pushed your working branch (ie: containing your new commits) to you
 You'll do this from your browser:
 
 1. Go to your Github account in your browser.
-2. Go to *your* Zen Cart zc-v1-series repository.
+2. Go to *your* zencart repository.
 3. You will see a green "Compare and Pull Request" button. Click it. (If it's been several hours since you did the push, it might not show the green bar. In that case, click the 'Branches' link, where you will see a Pull Request button next to each of your branches. Click the one next to the branch you want to do the pull request from.)
 4. Now you can review the collection of commits and file changes, and add a descriptive message to the pull request. If you're fixing something that's already got an open issue for it, be sure that the issue number is included in your Pull Request message. ie: #101. If you believe your Pull Request fully fixes the open issue, then say "Fixes #101", as the keyword "Fixes" helps do proper cleanup of tickets once closed.
 5. TIP: If you are contributing to Zen Cart v160, be sure that your pull request "compare" is indeed being compared against the `zencart:v160` branch.
@@ -200,11 +200,13 @@ You'll do this from your browser:
 
 ### Keeping Your Local Branch Current
 
-When you or others make pull requests that are accepted into the Zen Cart core repository, that will make your own local copy be outdated. To keep current, you must periodically bring in the changes from the "upstream remote" we created earlier.
+When you or others make pull requests that are accepted into the Zen Cart core repository, that will make your own local copy be outdated. To keep current, you must periodically bring in the changes from the "upstream remote" we created earlier.  (see: https://help.github.com/articles/syncing-a-fork/)
 
 * command line:
- 1. type: `git checkout v160` (ie: if you're going to pull changes from the `v160` branch)
- 2. type: `git pull upstream`
+ 1. type: `git fetch upstream`
+ 2. type: `git checkout v160` (ie: if you're going to pull changes from the `v160` branch)
+ 3. type: `git merge upstream/v160` (merges your local copy with the upstream remote)
+ 4. type: `git push` (brings your forked repository up-to-date)
 
 * [SourceTree](http://www.sourcetreeapp.com/):
  1. Click the Pull button in the top button bar

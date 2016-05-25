@@ -15,7 +15,7 @@ We welcome bug reports. Please ensure your bug reports align with the following 
 To post your issue on github:
 
 1. Login to [Github](https://www.github.com/)
-2. Navigate to the [Zen Cart repository "Issues"](https://github.com/zencart/zc-v1-series/issues) page
+2. Navigate to the [Zen Cart repository "Issues"](https://github.com/zencart/zencart/issues) page
 3. Check whether your issue has already been reported. If so, click on that existing issue and add a comment to it, explaining exactly how your situation is similar.
 4. If your issue isn't already reported, click on the "New Issue" button and supply the info explained above. Be thorough and as detailed as possible.
 
