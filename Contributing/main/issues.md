@@ -24,6 +24,6 @@ More information on [Github Issue Reporting](https://guides.github.com/features/
 
 
 
-&copy; 2014-2015 Zen Cart&reg; Creative Commons 3.0
+---
 
-
+&copy; 2014-2016 Zen Cart&reg; Creative Commons 3.0
