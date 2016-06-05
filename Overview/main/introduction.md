@@ -9,11 +9,13 @@ The currently available Manuals are :
 
 [Contributing to Zen Cart](/Contributing/main) 
 
-[Zen Cart Developer Documentation](/Developer_Documentation) 
+[Developer Documentation](/Developer_Documentation) 
 
 [Habitat Development Environment](/Habitat) 
 
 [Release History](/Release_Notes) 
+
+[EU Digital VAT](/EU_Digital_VAT/master) 
 
 
 You can also contribute to this documentation via [our github repository](https://github.com/zencart/documentation) 
