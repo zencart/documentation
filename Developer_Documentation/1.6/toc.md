@@ -1,3 +1,4 @@
+- [Introduction](introduction.md)
 - [Multi Language Menus](code_docs/multi_language_menus/introduction.md)
 - [Catalog Listing Boxes](code_docs/catalog_listing_boxes/introduction.md)
 	- [Box Classes](code_docs/catalog_listing_boxes/box_classes.md)
@@ -9,5 +10,5 @@
 - [Request Class](code_docs/request/request.md)
 - [Admin Dashboard Widgets](code_docs/dashboard_widgets/dashboard_widgets.md)
 - [Admin Action Classes](code_docs/admin_action_classes/introduction.md)
-- [Admin Lead pages](code_docs/admin_lead_pages/introduction.md)
+- [Admin LEAD pages](code_docs/admin_lead_pages/introduction.md)
 - [QueryBuilder](code_docs/queryBuilder/introduction.md)
