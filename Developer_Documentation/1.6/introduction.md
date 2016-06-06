@@ -6,6 +6,11 @@ which is meant to make life easier for those developing with/for Zen Cart, and t
 
 To help developers we are also creating lots of new documentation resources for that code.
 
+## Getting Composer 
+If you don't yet have composer installed, do this first: 
+ * go to `getcomposer.org`
+ * download and install 
+ * follow the Getting Started instructions. 
 
 ## Generating code-level documentation (php-documentor)
 
