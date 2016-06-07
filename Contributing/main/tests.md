@@ -21,6 +21,9 @@ Run all tests, using:
 
 `phpunit -c testFramework/unittests/phpunit.xml`
 
+
+### Running Individual Tests
+
 While you are debugging a specific test (such as one you're adding, see below), you may want to just call it in isolation rather than running the entire test suite.
 The syntax for doing this is:
 
@@ -34,16 +37,15 @@ For example,
 ## Adding Tests
 To add a new test, create your test in an appropriate subdir under `testFramework/unittests`.
 
-Note that if you have defined constants in your file, you may have to use the trick of setting the class global variables
+### Test Tips
+* Note that if you have defined constants in your file, you may have to use the trick of setting the class global variables as is done in `testFramework/unittests/testsSundry/AdminLoggingTest.php`:
 
 ```
     protected $preserveGlobalState = FALSE;
     protected $runTestInSeparateProcess = TRUE;
 ```
 
-as is done in `testFramework/unittests/testsSundry/AdminLoggingTest.php`
-
-If you want to put your tests in a new folder at the level of `testFramework/unittests`, remember to add the new foldername to `phpunit.xml`.
+* If you want to put your tests in a new folder at the level of `testFramework/unittests`, remember to add the new foldername to `phpunit.xml`.
 
 
 
@@ -51,9 +53,7 @@ If you want to put your tests in a new folder at the level of `testFramework/uni
 
 
 # Web Tests
-Some features can only be properly tested by running them through a browser.
-
-We do this using Selenium and Firefox.
+Some features can only be properly tested by running them through a browser. We do this using Selenium and Firefox.
 
 ## Preparation and Setup for Web Tests
 1. Follow the Prep/Setup above for Unit Testing, as these are dependencies for the Web Tests
