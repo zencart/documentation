@@ -58,21 +58,30 @@ We do this using Selenium and Firefox.
 ## Preparation and Setup for Web Tests
 1. Follow the Prep/Setup above for Unit Testing, as these are dependencies for the Web Tests
 2. [Install a Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) if one isn't already on your computer
-3. Download [Selenium Server Standalone](http://docs.seleniumhq.org/download/) Java Agent
-4. Install [Firefox](http://getfirefox.com) if not already present
-5. OPTIONAL: create a separate clean "profile" in Firefox, and tell Selenium to use this profile to be used in your tests
+3. Download [Selenium Server Standalone](http://docs.seleniumhq.org/download/) Java Agent. This will give you a `selenium-server-standalone-<version>.jar` file.
+4. Install [Firefox](http://getfirefox.com) if not already present. 
+
+>Be aware that sometimes the "latest" Firefox may not work with Selenium ... so occasionally may need to use an older Firefox version, or upgrade Selenium to a newer version.
+
+
+## Preparing custom configurations
+WebTests need to run from a local webserver, so you need a MySQL+Apache/Nginx (or equivalent) setup already present on your computer, and need to be able to access it from your installed Firefox browser. The Zen Cart Habitat server is ideal for this.
+
+Since the webtests will run zc_install, be prepared for your database to be wiped out and your configure.php files to be updated.
+
+In the `testFramework/config/` folder there is a `localconfig_EXAMPLE.php` file. Make a copy of that file and configure it to suit your local environment:
+
+ 1. filename: `localconfig_YOURUSERNAME.php` ... ie: if I login to my PC as `bill` then the filename would be: `localconfig_bill.php`
+ 
+ 2. Inside the file, edit the `define` statements to reflect your local webserver's domain name, database credentials, etc for your Zen Cart dev site.  If you're running in a Zen Cart Habitat environment, the `WEBTEST_ADMIN_PASSWORD_INSTALL` should be set to `developer1`.
+
 
 ## Running Web Tests
 a) Start Selenium engine from command line:
 
-    java -jar <path_to>/selenium-server-standalone-<version>.jar
+    java -jar <path_to>/selenium-server-standalone-<version>.jar -trustAllSSLCertificates
 
-or, to also specify a custom Firefox user profile, use:
-
-	java -jar <path_to>/selenium-server-standalone-<version>.jar -firefoxProfileTemplate "<path_to>/Firefox/Profiles/<profile_name_here>" &
-
-b) Start the webtests:
+b) Start the webtests in another terminal window:
 
 	phpunit -c testFramework/webtests/phpunit.xml
-
 
