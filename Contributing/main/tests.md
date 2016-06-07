@@ -47,7 +47,7 @@ If you want to put your tests in a new folder at the level of `testFramework/uni
 
 
 
---
+--------------------------------------
 
 
 # Web Tests
@@ -57,9 +57,22 @@ We do this using Selenium and Firefox.
 
 ## Preparation and Setup for Web Tests
 1. Follow the Prep/Setup above for Unit Testing, as these are dependencies for the Web Tests
-2. install Selenium
-3. install Firefox
-4. OPTIONAL: create a separate clean "profile" in Firefox, and a custom testConfig file to specify this profile to be used in your tests
+2. [Install a Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) if one isn't already on your computer
+3. Download [Selenium Server Standalone](http://docs.seleniumhq.org/download/) Java Agent
+4. Install [Firefox](http://getfirefox.com) if not already present
+5. OPTIONAL: create a separate clean "profile" in Firefox, and tell Selenium to use this profile to be used in your tests
 
 ## Running Web Tests
-... more to follow here ...
+a) Start Selenium engine from command line:
+
+    java -jar <path_to>/selenium-server-standalone-<version>.jar
+
+or, to also specify a custom Firefox user profile, use:
+
+	java -jar <path_to>/selenium-server-standalone-<version>.jar -firefoxProfileTemplate "<path_to>/Firefox/Profiles/<profile_name_here>" &
+
+b) Start the webtests:
+
+	phpunit -c testFramework/webtests/phpunit.xml
+
+
