@@ -218,7 +218,6 @@ If you would like to install the demo data, select yes.
 We recommend that you install the demo data to familiarize yourself with many of the examples created that explain and demonstrate the vast number of features available in Zen Cart®.  
 
 You may also decide later to set up a test site with the demo data AND a separate working site for your live data so that you have the ability to refer back to the demo data for help and to see examples of a feature.  This is an excellent way to learn how things work, and then try your hand at setting up your own site and testing to be sure you've done things right. Later on it can be used to help you test an upgrade or test new features you're working on before affecting your live site.  
-</div>
 
 After you click Save Store Settings, there will be some hesitation as the database tables are created and the demo data is optionally loaded. You will see some progress indicators as the database is loaded.  
 
