@@ -1,3 +1,4 @@
+- [Introduction](introduction.md)
 - [First Steps](#first_steps)
 - [Customizing Your Store](#customizing_your_store)
 - [Running Your Business](#running_your_business)
