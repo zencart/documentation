@@ -1,7 +1,7 @@
 # Tutorials
 
-<i>Migrators please note: if you view source on this document, you'll see how the old categories map on to new ones.</i>
-
+This site is intended to replace the old Tutorials/FAQ content 
+on the zen-cart.com site. 
 
 <span id="first_steps"></span>
 ## First Steps
