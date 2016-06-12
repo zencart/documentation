@@ -12,3 +12,4 @@
 - [Admin Action Classes](code_docs/admin_action_classes/introduction.md)
 - [Admin LEAD pages](code_docs/admin_lead_pages/introduction.md)
 - [QueryBuilder](code_docs/queryBuilder/introduction.md)
+- [Database](code_docs/database/introduction.md)
