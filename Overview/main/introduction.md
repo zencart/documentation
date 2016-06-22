@@ -5,7 +5,7 @@ This site contains documentation related to the [Zen Cart e-commerce system](htt
  
 The site is organized into a number of Manuals.
 
-The currently available Manuals are :
+The currently available Manuals are:
 
 [Contributing to Zen Cart](/Contributing/main) 
 
@@ -17,6 +17,7 @@ The currently available Manuals are :
 
 [EU Digital VAT](/EU_Digital_VAT/master) 
 
+[Tutorials](/Tutorials/main) - Prototype only
 
-You can also contribute to this documentation via [our github repository](https://github.com/zencart/documentation) 
+You may contribute to this documentation via [our github repository](https://github.com/zencart/documentation). 
 
