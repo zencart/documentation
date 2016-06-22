@@ -206,9 +206,9 @@ When you or others make pull requests that are accepted into the Zen Cart core r
 * command line:
  1. type: `git fetch upstream`
  2. type: `git checkout v160` (ie: if you're going to pull changes from the `v160` branch)
- 3. type: `git submodule update --init` to update any dependencies
- 4. type: `git merge upstream/v160` (merges your local copy with the upstream remote)
- 5. type: `git push` (brings your forked repository up-to-date)
+ 3. type: `git merge upstream/v160` (merges your local copy with the upstream remote)
+ 4. type: `git push` (brings your forked repository up-to-date)
+ 5. type: `git submodule update --init --recursive` (updates all dependencies on your local copy)
 
 * [SourceTree](http://www.sourcetreeapp.com/):
  1. Click the Pull button in the top button bar
