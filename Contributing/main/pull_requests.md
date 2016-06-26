@@ -62,7 +62,6 @@ Now switch to your desktop application of choice and use that URL to clone the r
  1. pick a working directory on your PC
  2. cd into that directory
  3. type: `git clone PASTE-THAT-URL-HERE .` (note the `.` at the end, which says "put it in the current directory")
- 4. type: `git submodule update --init` to update any dependencies
 
 * [SourceTree](http://www.sourcetreeapp.com/):
  1. Choose File, New Clone...
@@ -206,9 +205,8 @@ When you or others make pull requests that are accepted into the Zen Cart core r
 * command line:
  1. type: `git fetch upstream`
  2. type: `git checkout v160` (ie: if you're going to pull changes from the `v160` branch)
- 3. type: `git submodule update --init` to update any dependencies
- 4. type: `git merge upstream/v160` (merges your local copy with the upstream remote)
- 5. type: `git push` (brings your forked repository up-to-date)
+ 3. type: `git merge upstream/v160` (merges your local copy with the upstream remote)
+ 4. type: `git push` (brings your forked repository up-to-date)
 
 * [SourceTree](http://www.sourcetreeapp.com/):
  1. Click the Pull button in the top button bar
@@ -216,7 +214,6 @@ When you or others make pull requests that are accepted into the Zen Cart core r
  3. For Remote Branch To Pull, choose "v160"
  4. Leave the "commit merged changes immediately" box checked, and the others unchecked.
  5. Click OK
- 6. (SourceTree automatically updates submodules by default.)
 
 ### Cleaning up old branches, or grabbing new branches
 From time to time you and others will add or remove branches from the github repositories, and you will want to keep your PC in sync with those.
