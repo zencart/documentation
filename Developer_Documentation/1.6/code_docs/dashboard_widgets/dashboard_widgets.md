@@ -6,7 +6,7 @@ In previous versions of Zen Cart the admin home page contains a number of boxes 
 
 e.g. Recent Orders, Recent Customers. Whos-Online etc.
 
-There are 3 problems with the current approach.
+There are 3 problems with the pre-1.6.0 approach.
 
 1. It's not really possible for 3rd party developers to add extra boxes to that display without hacking core code.
 
