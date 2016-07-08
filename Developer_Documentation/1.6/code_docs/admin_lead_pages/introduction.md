@@ -61,7 +61,7 @@ Reports (pages using the LEAD infrastructure but without edit, add or delete
 capability) start with "ReportStats" instead of "Lead".  So for the report 
 which is reached using `admin/index.php?cmd=stats_products_lowstock`, 
 the corresponding QueryBuilderDefinitions class  
-would be `ReportStatsProductsLowtock.php` in `includes/library/zencart/QueryBuilderDefinitions/src/definitions/`.
+would be `ReportStatsProductsLowStock.php` in `includes/library/zencart/QueryBuilderDefinitions/src/definitions/`.
 
 The QueryBuilderDefinitions object is built out in the call initQueryAndLayout().
 
@@ -77,7 +77,7 @@ The QueryBuilderDefinitions object is built out in the call initQueryAndLayout()
 * language - Flag which indicates the table has translations (boolean, default false)
 * singleTable - Flag which indicates whether translations are in the same table vs another table (boolean, default: false)
 * languageInfoTable - Table where translations are stored (string)
-* languageKeyField - some tables use languages_id and some use language_id as their key; this field indicates which value to use (string, default: languages_id) 
+* languageKeyField - some tables use `languages_id` and some use `language_id` as their key; this field indicates which value to use (string, default: `languages_id`) 
 * isPaginated - Whether all results should be shown on one page, or broken up so that only a specific number are displayed with navigation buttons to go forward and backward in the complete set (boolean, default true)
 * pagination - Structure controlling display of pagination controls (array)
 
@@ -86,7 +86,7 @@ The QueryBuilderDefinitions object is built out in the call initQueryAndLayout()
 * relatedLinks - Second set of boxes on the left hand side of a LEAD page (array of arrays)
 * listMap - The order in which the fields are displayed when viewing the list (array of strings)
 * editMap - The order in which the fields are displayed when editing an entry (array of strings)
-* showActionLinkListList - The first set of boxes on teh left hand side of a LEAD Page (boolean, default true) 
+* showActionLinkListList - The first set of boxes on the left hand side of a LEAD Page (boolean, default true) 
 * allowAdd - Whether or not you are allowed to add new items to this list (boolean, default true). 
 * fields 
 * fieldFormatter
@@ -108,3 +108,40 @@ example:
                     )                    
 ```
 
+
+Language Handling
+=================
+
+## Language Files 
+
+Language file names have the name of the command, so using again the example of the low stock report `admin/index.php?cmd=stats_products_lowstock`, 
+the language file would be 
+`includes/languages/english/stats_products_lowstock.php`.  
+
+The only rules around strings in this file relate to the strings required by the LEAD framework.  The "List" button, which is the first of the buttons on the left side of the LEAD page, requires the define `TEXT_LEAD_ACTION_LIST`.
+The "Add" button requires the define `TEXT_LEAD_ACTION_ADD_ENTRY`.  
+
+
+## Language Handling in Queries
+
+Some queries which join tables containing a language key field will need to use only the current language.  This is specified in the `whereClauses` and `bindVars` of the `listingQuery`.  
+
+```
+            'whereClauses' => array(
+                array(
+                    'type' => 'AND',
+                    'table' => TABLE_PRODUCTS_DESCRIPTION,
+                    'field' => 'language_id',
+                    'value' => ':language_id:'
+                )
+            ),  
+            'bindVars' => array(
+                array(
+                    ':language_id:',
+                    $_SESSION ['languages_id'],
+                    'integer'
+                )   
+            ),  
+```
+ 
+For an example of this, see `includes/library/zencart/QueryBuilderDefinitions/src/definitions/LeadGeoZonesDetail.php
