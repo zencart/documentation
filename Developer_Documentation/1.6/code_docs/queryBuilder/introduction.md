@@ -1,7 +1,7 @@
 # Introduction
 
-The Querybuilder class allows for the construction of sql queries based on an array format to define base tables, foreign keys, select options, where options and other options. 
-It is used by a number of other classes, such as listingBoxes, LEAD pages etc.
+The QueryBuilder class allows for the construction of sql queries based on an array format to define base tables, foreign keys, select options, where options and other options. 
+It is used by a number of other classes, such as QueryBuilderDefinitions, LEAD pages etc.
 
 While initially written to produce queries against the Products Table, it can be used to produce queries against any table used by Zen Cart.
 

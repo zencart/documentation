@@ -1,12 +1,15 @@
-# Box Classes
+# definition Classes
 
-Classes for listing boxes are stored in includes/library/zencart/listingBox/src/Box which should be  namespaced as ZenCart\ListingBox\Box 
+The definitions were previously called "listing boxes", and you will 
+see that this naming convention sometimes carries over.
+
+Classes for definitions are stored in includes/library/zencart/QueryBuilderDefinitions/src/definitions which should be  namespaced as ZenCart\QueryBuilderDefinitions\definitions
 
 The class definition should look like
 
-class AllDefault extends AbstractListingBox
+class myDefinition extends AbstractLeadDefinition
 
-The AbstractListingBox class contains most of the logic for building listing box output. The actual listing box class that is used to build a custom listing box generally needs to define only a very few methods.
+The AbstractLeadDefinition class contains most of the logic for building definition output. The actual class that is used to build a custom definition generally needs to define only a very few methods.
 
 Only one method must be defined 
 
@@ -14,34 +17,32 @@ Only one method must be defined
 public function initQueryAndLayout()
 ```
 
-There are other methods in AbstractListingBox that can be overridden to allow for more customization and these will be discussed later.
+There are other methods in AbstractLeadDefinition that can be overridden to allow for more customization and these will be discussed later.
 
 # Instantiation
 
-Listing boxes can be instantiated in 2 ways. Either as a single listing box or as a group of listing boxes.
+definitions boxes can be instantiated in 2 ways. Either as a single definition or as a group of definitions. 
 
 ## Single Box Instantiation
 
 ```php
-1. $box = new \ZenCart\ListingBox\Build ($zcDiContainer, new \ZenCart\ListingBox\Box\ProductsDefault());
-3. $tplVars['listingBox'] = $box->getTemplateVariables ();
+1. $box = new ZenCart\QueryBuilderDefinitions\definitions\FeaturedProductsPage($zcRequest, $db);
+2. $tplVars['listingBox'] = $box->getTplVars();
 ```
 
 Line 1 Instantiates the class.
 
-Line 2 Gets the output from the Listing box class. This output is an array, and while it's format is somewhat customizable, it will always contain an array key = 'formattedItems' that will be used in the template.
+Line 2 Gets the output from the class. This output is an array, and while it's format is somewhat customizable, it will always contain an array key = 'formattedItems' that will be used in the template.
 
-In Line 1 when instantiating the class we use the Listing Box build class. This takes 2 parameters.
-
-The first parameter is a Dependency Injection container that is now created by default by the Zen Cart InitSystem and stored in a global variable $zcDiContainer.
-The second parameter is an instantiation of the Listing Box class we want to build, in the example above, this is the ProductsDefault class.
+Note that between line 1 and line 2 there are additional steps to build
+the output of the box.
 
 ## Group Instantiation
 
 
 ```php
-1. $listingBoxManager = new \ZenCart\ListingBox\Manager();
-2. $listingBoxes = $listingBoxManager->buildListingBoxes ('INDEX_DEFAULT', $zcDiContainer);
+1. $listingBoxManager = new ZenCart\QueryBuilderDefinitions\Manager('INDEX_DEFAULT', $db, $zcRequest);
+2. $listingBoxes = $listingBoxManager->getListingBoxes ();
 3. $tplVars['listingBoxes'] = $listingBoxes;
 ```
 Line 1 instantiates the listing box group manager.
@@ -130,3 +131,6 @@ Other entries can define derived items, filter methods etc.
 ```
 
 The outputLayout array must contain the 'formatter' option. Other options are dependant on the formatter used.
+
+More details on the fields listingQuery and outputLayout are provided in 
+[Admin LEAD pages](code_docs/admin_lead_pages/introduction.md).

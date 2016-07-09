@@ -48,7 +48,7 @@ Each filter entry requires 2 parameters
 
 ### name
 This is the name of the class that manages the filter.
-The class should be defined in the library/zencart/listingbox/src/filters directory and should extend the AbstractFilter
+The class should be defined in the library/zencart/QueryBuilderDefinitions/src/filters directory and should extend the AbstractFilter
 class and implement the FilterInterface class
 
 e.g. 
@@ -61,7 +61,7 @@ Parameters are dependant on the filter class and are passed as an array of key/v
 
 ## Filter Classes
 
-Classes for filters are stored in includes/library/zencart/listingBox/src/Filters which should be namespaced as ZenCart\ListingBox\filters 
+Classes for filters are stored in includes/library/zencart/QueryBuilderDefinitions/src/filters which should be namespaced as ZenCart\QueryBuilderDefinitions\filters 
 
 The class definition should look like
 
