@@ -13,8 +13,8 @@
 - [Admin LEAD pages](code_docs/admin_lead_pages/introduction.md)
 - [QueryBuilder](code_docs/queryBuilder/introduction.md)
 - [Database](code_docs/database/introduction.md)
-- [Externally Hosted Downloads] (code_docs/external_downloads/externally_hosted_downloads.md)
+- [Externally Hosted Downloads](code_docs/external_downloads/externally_hosted_downloads.md)
 - Template Customization
-    - [PHP] (template_customization/php/introduction.md)
-	- [CSS and JavaScript] (template_customization/css_and_javascript/css_and_javascript.md)
-	
+    - [PHP](template_customization/php/introduction.md)
+    - [CSS and JavaScript](template_customization/css_and_javascript/css_and_javascript.md)
+
