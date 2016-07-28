@@ -19,9 +19,13 @@ To post your issue on github:
 3. Check whether your issue has already been reported. If so, click on that existing issue and add a comment to it, explaining exactly how your situation is similar.
 4. If your issue isn't already reported, click on the "New Issue" button and supply the info explained above. Be thorough and as detailed as possible.
 
+# Issue Labels
+
+After you have posted an issue on Github, a Team Member may assign various labels to your Issue.
+
+
 # Reference Guide
 More information on [Github Issue Reporting](https://guides.github.com/features/issues/)
-
 
 
 ---
