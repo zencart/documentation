@@ -30,20 +30,20 @@ The current labels are :-
     2. Catalog
     3. Checkout
 2. Issue Type
-    1. Possible Bug
-    2. Confirmed Bug
-    3. Enhancement
+    1. Possible Bug (Where you have suggested that a bug exists, but this has not been confirmed)
+    2. Confirmed Bug (where someone else has provided confirmation of the bug)
+    3. Enhancement 
     4. Code Reformatting
     6. Feature Request
     7. Question
-    8. Refactoring/Optimizing
-    9. Styling
+    8. Refactoring/Optimizing 
+    9. Styling (where it relates to output html and/or css)
 3. Issue Status
-    1. Up For Grabs
-    2. First Timers Only
-    3. In Progress
-    4. Duplicate
-    5. On Hold
+    1. Up For Grabs (not assigned to a particular user)
+    2. First Timers Only (for simple fixes to encourage those that have not committed before)
+    3. In Progress ( Normally automatically added when a PR references an issue)
+    4. Duplicate (Should reference the duplicate issue)
+    5. On Hold 
     6. Won't Fix
   
   
