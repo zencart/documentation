@@ -23,7 +23,32 @@ To post your issue on github:
 
 After you have posted an issue on Github, a Team Member may assign various labels to your Issue.
 
+The current labels are :- 
 
+1. Code Location 
+    1. Admin 
+    2. Catalog
+    3. Checkout
+2. Issue Type
+    1. Possible Bug
+    2. Confirmed Bug
+    3. Enhancement
+    4. Code Reformatting
+    5. Enhancement
+    6. Feature Request
+    7. Question
+    8. Refactoring/Optimizing
+    9. Styling
+3. Issue Status
+    1. Up For Grabs
+    2. First Timers Only
+    3. In Progress
+    4. Duplicate
+    5. On Hold
+    6. Won't Fix
+  
+  
+  
 # Reference Guide
 More information on [Github Issue Reporting](https://guides.github.com/features/issues/)
 
