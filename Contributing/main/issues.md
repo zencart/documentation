@@ -34,7 +34,6 @@ The current labels are :-
     2. Confirmed Bug
     3. Enhancement
     4. Code Reformatting
-    5. Enhancement
     6. Feature Request
     7. Question
     8. Refactoring/Optimizing
