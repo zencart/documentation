@@ -74,6 +74,8 @@ The QueryBuilderDefinitions object is built out in the call initQueryAndLayout()
 * mainTable - The first table in the query (array)
 * joinTables - Additional tables in the query which are joined with a foreign key (array) 
 * whereClauses - The WHERE statement used in the query (array)
+* groupBys - The GROUP BY statement used in the query (array)
+* orderBys - The ORDER BY statement used in the query (array)
 * language - Flag which indicates the table has translations (boolean, default false)
 * singleTable - Flag which indicates whether translations are in the same table vs another table (boolean, default: false)
 * languageInfoTable - Table where translations are stored (string)
@@ -88,11 +90,21 @@ The QueryBuilderDefinitions object is built out in the call initQueryAndLayout()
 * editMap - The order in which the fields are displayed when editing an entry (array of strings)
 * showActionLinkListList - The first set of boxes on the left hand side of a LEAD Page (boolean, default true) 
 * allowAdd - Whether or not you are allowed to add new items to this list (boolean, default true). 
-* fields 
-* fieldFormatter
-* formatter 
+* fields - provides specifics on how individual fields should be queried and displayed
+* formatter - The formatter takes data from the query and organizes it so the template may display it
 
 ##### Fields in outputLayout->fields 
+
+* bindVarsType - The type of the variable used as a parameter in the query.  (This is used in the `$db->bindVars` call.
+* language - Flag which indicates the table has translations (boolean, default false)
+* layout: array showing how field is to be displayed.  Contains: 
+  * title - title to be used as the column header
+  * type - data type of field
+  * size - width of column 
+* total - whether the column should be totaled in the last line.  Possible values are: 
+  * currencySum (add all figures and display total as a currency value)
+  * count (count number of rows on the page)
+  * sum (add all figures and display total)  
 
 example:
 ```
@@ -145,3 +157,15 @@ Some queries which join tables containing a language key field will need to use 
 ```
  
 For an example of this, see `includes/library/zencart/QueryBuilderDefinitions/src/definitions/LeadGeoZonesDetail.php
+
+## Process Flow and Filenames 
+The flow of logic when building a LEAD report on the admin side uses both catalog and admin side files, so you may need to look on the catalog side to determine where changes need to be make when working on a LEAD report.
+
+The file naming conventions were touched on above, but now we'll walk through a whole example for the flow when an admin requests Locations/Taxes->Countries (`admin/index.php?cmd=countries`): 
+ 
+* The controller is `includes/library/zencart/Controllers/src/admin/Countries.php`
+* The language file is `admin/includes/languages/english/countries.php`
+* The query for the report is `includes/library/zencart/QueryBuilderDefinitions/src/definitions/LeadCountries.php`
+* The template matching `tplCountries.php` does not exist, so the template is  `admin/includes/template/templates/tplAdminLead.php`
+
+
