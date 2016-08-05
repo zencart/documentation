@@ -82,7 +82,11 @@ The QueryBuilderDefinitions object is built out in the call initQueryAndLayout()
 * languageKeyField - some tables use `languages_id` and some use `language_id` as their key; this field indicates which value to use (string, default: `languages_id`) 
 * isPaginated - Whether all results should be shown on one page, or broken up so that only a specific number are displayed with navigation buttons to go forward and backward in the complete set (boolean, default true)
 * pagination - Structure controlling display of pagination controls (array)
+* derivedItems - fields which are not stored in the database but must be constructed out of other fields (array)
 
+##### Fields in listingQuery->derivedItems
+* field - name of the field to be constructed
+* handler - a function, typically defined in either `includes/library/zencart/QueryBuilder/src/DerivedItemManager.php` or the `initQueryAndLayout` function of the class, which returns the value of the field 
   
 #### Fields in outputLayout 
 * relatedLinks - Second set of boxes on the left hand side of a LEAD page (array of arrays)
@@ -91,13 +95,22 @@ The QueryBuilderDefinitions object is built out in the call initQueryAndLayout()
 * showActionLinkListList - The first set of boxes on the left hand side of a LEAD Page (boolean, default true) 
 * allowAdd - Whether or not you are allowed to add new items to this list (boolean, default true). 
 * fields - provides specifics on how individual fields should be queried and displayed
+* boxTitle - provides a title for centerbox or page   
 * formatter - The formatter takes data from the query and organizes it so the template may display it
+
+##### Fields in outputLayout->formatter
+* class - One of the classes in `includes/library/zencart/QueryBuilderDefinitions/src/formatters`
+* template - template used when drawing the page 
+* params - settings for output: 
+  * columnCount - number of columns to use for the box 
+* sortMainPage - controls how the box is sorted with respect to other boxes on the index listing page
+
 
 ##### Fields in outputLayout->fields 
 
 * bindVarsType - The type of the variable used as a parameter in the query.  (This is used in the `$db->bindVars` call.
 * language - Flag which indicates the table has translations (boolean, default false)
-* layout: array showing how field is to be displayed.  Contains: 
+* layout: array of arrays showing how field is to be displayed.  Keys for top level array are `common` (for add and update), `edit` (for update) and `list` (for listing display).  Each array entry contains: 
   * title - title to be used as the column header
   * type - data type of field
   * size - width of column 
