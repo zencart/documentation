@@ -1,7 +1,7 @@
 Introduction
 ============
 
-QueryBuilderDefinitions are lists of product items that appear in the main content area of a Zen Cart page. Examples are the Specials/Feature/new and upcoming product lists that appear mainly on the home page and sometimes on other pages as well.
+ListingQueryAndOutput are lists of product items that appear in the main content area of a Zen Cart page. Examples are the Specials/Feature/new and upcoming product lists that appear mainly on the home page and sometimes on other pages as well.
 
 In previous versions of Zen Cart each listing box had its own code that used hard coded queries and fixed templates to show the output. This has proven inflexible and makes it difficult for 3rd party contributions to add or alter these, without changing core code or templates.
 

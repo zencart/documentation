@@ -4,7 +4,7 @@ Formatter classes take the ordered list of items that are produced by the listin
 
 ## Defining Formatters
 
-Formatters are defined as part of the $this->outputLayout definition in the initQueryAndLayout method of a listing box class.
+Formatters are defined as part of the $this->outputLayout definition in the initQueryAndOutput method of a listing box class.
 
 e.g. 
 

@@ -48,22 +48,22 @@ There may be reasons to override methods in the AbstractLeadController and examp
 LEAD Controller names are expected to follow Camel Case conventions.  So 
 for the command `admin/index.php?cmd=geo_zones`, the Controller would be `GeoZones.php` in `includes/library/zencart/Controllers/src/admin/`.
 
-QueryBuilderDefinitions Classes
+ListingQueryAndOutput Classes
 ==============================
 
-The main workhorse of the LEAD pages are the QueryBuilderDefinitions classes.
+The main workhorse of the LEAD pages are the ListingQueryAndOutput classes.
 
-QueryBuilderDefinitions file names are also expected to follow Camel Case conventions, and to start with the string "Lead".  So 
-continuing with the example `admin/index.php?cmd=geo_zones`, the QueryBuilderDefinitions 
-would be `LeadGeoZones.php` in `includes/library/zencart/QueryBuilderDefinitions/src/definitions/`.
+ListingQueryAndOutput file names are also expected to follow Camel Case conventions, and to start with the string "Lead".  So 
+continuing with the example `admin/index.php?cmd=geo_zones`, the ListingQueryAndOutput 
+would be `LeadGeoZones.php` in `includes/library/zencart/ListingQueryAndOutput/src/definitions/`.
 
 Reports (pages using the LEAD infrastructure but without edit, add or delete
 capability) start with "ReportStats" instead of "Lead".  So for the report 
 which is reached using `admin/index.php?cmd=stats_products_lowstock`, 
-the corresponding QueryBuilderDefinitions class  
-would be `ReportStatsProductsLowStock.php` in `includes/library/zencart/QueryBuilderDefinitions/src/definitions/`.
+the corresponding ListingQueryAndOutput class  
+would be `ReportStatsProductsLowStock.php` in `includes/library/zencart/ListingQueryAndOutput/src/definitions/`.
 
-The QueryBuilderDefinitions object is built out in the call initQueryAndLayout().
+The ListingQueryAndOutput object is built out in the call initQueryAndOutput().
 
 ### Objects in QueryBuilderDefinition:
 * listingQuery - array of fields controlling the query of data to be displayed
@@ -74,6 +74,7 @@ The QueryBuilderDefinitions object is built out in the call initQueryAndLayout()
 * mainTable - The first table in the query (array)
 * joinTables - Additional tables in the query which are joined with a foreign key (array) 
 * whereClauses - The WHERE statement used in the query (array)
+* selectList - Fields specified in the listMap which must be calculated from database fields, not just queried (array) 
 * groupBys - The GROUP BY statement used in the query (array)
 * orderBys - The ORDER BY statement used in the query (array)
 * language - Flag which indicates the table has translations (boolean, default false)
@@ -86,7 +87,7 @@ The QueryBuilderDefinitions object is built out in the call initQueryAndLayout()
 
 ##### Fields in listingQuery->derivedItems
 * field - name of the field to be constructed
-* handler - a function, typically defined in either `includes/library/zencart/QueryBuilder/src/DerivedItemManager.php` or the `initQueryAndLayout` function of the class, which returns the value of the field 
+* handler - a function, typically defined in either `includes/library/zencart/QueryBuilder/src/DerivedItemManager.php` or the `initQueryAndOutput` function of the class, which returns the value of the field 
   
 #### Fields in outputLayout 
 * relatedLinks - Second set of boxes on the left hand side of a LEAD page (array of arrays)
@@ -99,7 +100,7 @@ The QueryBuilderDefinitions object is built out in the call initQueryAndLayout()
 * formatter - The formatter takes data from the query and organizes it so the template may display it
 
 ##### Fields in outputLayout->formatter
-* class - One of the classes in `includes/library/zencart/QueryBuilderDefinitions/src/formatters`
+* class - One of the classes in `includes/library/zencart/ListingQueryAndOutput/src/formatters`
 * template - template used when drawing the page 
 * params - settings for output: 
   * columnCount - number of columns to use for the box 
@@ -132,6 +133,13 @@ example:
                         )
                     )                    
 ```
+
+Building Queries 
+=================
+ 
+Queries are built piece by piece from the listingQuery and outputLayout structures described above. The first time you create a new query, the easiest approach is likely to simply review how a similar query was constructed and use that approach. 
+
+
 
 
 Language Handling
@@ -169,7 +177,7 @@ Some queries which join tables containing a language key field will need to use 
             ),  
 ```
  
-For an example of this, see `includes/library/zencart/QueryBuilderDefinitions/src/definitions/LeadGeoZonesDetail.php
+For an example of this, see `includes/library/zencart/ListingQueryAndOutput/src/definitions/LeadGeoZonesDetail.php
 
 ## Process Flow and Filenames 
 The flow of logic when building a LEAD report on the admin side uses both catalog and admin side files, so you may need to look on the catalog side to determine where changes need to be make when working on a LEAD report.
@@ -178,7 +186,7 @@ The file naming conventions were touched on above, but now we'll walk through a 
  
 * The controller is `includes/library/zencart/Controllers/src/admin/Countries.php`
 * The language file is `admin/includes/languages/english/countries.php`
-* The query for the report is `includes/library/zencart/QueryBuilderDefinitions/src/definitions/LeadCountries.php`
+* The query for the report is `includes/library/zencart/ListingQueryAndOutput/src/definitions/LeadCountries.php`
 * The template matching `tplCountries.php` does not exist, so the template is  `admin/includes/template/templates/tplAdminLead.php`
 
 
