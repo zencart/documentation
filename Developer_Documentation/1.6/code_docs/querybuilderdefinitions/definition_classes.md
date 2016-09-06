@@ -3,7 +3,7 @@
 The definitions were previously called "listing boxes", and you will 
 see that this naming convention sometimes carries over.
 
-Classes for definitions are stored in includes/library/zencart/QueryBuilderDefinitions/src/definitions which should be  namespaced as ZenCart\QueryBuilderDefinitions\definitions
+Classes for definitions are stored in includes/library/zencart/ListingQueryAndOutput/src/definitions which should be  namespaced as ZenCart\ListingQueryAndOutput\definitions
 
 The class definition should look like
 
@@ -14,7 +14,7 @@ The AbstractLeadDefinition class contains most of the logic for building definit
 Only one method must be defined 
 
 ```php
-public function initQueryAndLayout()
+public function initQueryAndOutput()
 ```
 
 There are other methods in AbstractLeadDefinition that can be overridden to allow for more customization and these will be discussed later.
@@ -26,7 +26,7 @@ definitions boxes can be instantiated in 2 ways. Either as a single definition o
 ## Single Box Instantiation
 
 ```php
-1. $box = new ZenCart\QueryBuilderDefinitions\definitions\FeaturedProductsPage($zcRequest, $db);
+1. $box = new ZenCart\ListingQueryAndOutput\definitions\FeaturedProductsPage($zcRequest, $db);
 2. $tplVars['listingBox'] = $box->getTplVars();
 ```
 
@@ -41,7 +41,7 @@ the output of the box.
 
 
 ```php
-1. $listingBoxManager = new ZenCart\QueryBuilderDefinitions\Manager('INDEX_DEFAULT', $db, $zcRequest);
+1. $listingBoxManager = new ZenCart\ListingQueryAndOutput\Manager('INDEX_DEFAULT', $db, $zcRequest);
 2. $listingBoxes = $listingBoxManager->getListingBoxes ();
 3. $tplVars['listingBoxes'] = $listingBoxes;
 ```
@@ -53,9 +53,9 @@ Line 3 assigns the output to a $tplVars array.
 
 see [Database Schema](schema.md)
 
-## initQueryAndLayout()
+## initQueryAndOutput()
 
-The initQueryAndLayout method must define 2 arrays 
+The initQueryAndOutput method must define 2 arrays 
 
 
 ## listingQuery 

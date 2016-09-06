@@ -1,6 +1,6 @@
 - [Introduction](introduction.md)
 - [Multi Language Menus](code_docs/multi_language_menus/introduction.md)
-- [QueryBuilderDefinitions](code_docs/querybuilderdefinitions/introduction.md)
+- [ListingQueryAndOutput](code_docs/querybuilderdefinitions/introduction.md)
 	- [Definition Classes](code_docs/querybuilderdefinitions/definition_classes.md)
 	- [Filter Classes](code_docs/querybuilderdefinitions/filter_classes.md)
 	- [Formatter Classes](code_docs/querybuilderdefinitions/formatter_classes.md)
