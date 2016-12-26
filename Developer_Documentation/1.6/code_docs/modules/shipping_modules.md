@@ -1,7 +1,7 @@
 # Introduction
 A shipping module applies a shipping cost to an order, based on some calculation method.  Each shipping module requires a minimum of two files:
 1. A `class` file: /includes/modules/shipping/`modulename`.php
-2. A `language` file: /includes/languages/`current_language`/modules/shipping/`modulename`.php
+1. A `language` file: /includes/languages/`current_language`/modules/shipping/`modulename`.php
 
 The `language` file contains all the translatable language text for the module while the `class` file contains the module's processing portion.  A shipping module can include one or more `methods`.
 
@@ -60,7 +60,7 @@ error | No | string | If an error results from the quote's generation, this fiel
 Each element of the `methods` array contains the following fields (depending on the shipping module, there might be additional fields):
 
 Element Name | Type | Description
--- | -- | --
+------------ | ---- | -----------
 id | string | A unique string (for the current shipping module) that identifies this "method".
 title | string | A text string containing the title to display for the current method.
 cost | float | The cost associated with the current shipping method.
