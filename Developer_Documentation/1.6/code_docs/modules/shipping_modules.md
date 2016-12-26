@@ -1,5 +1,6 @@
 # Introduction
 A shipping module applies a shipping cost to an order, based on some calculation method.  Each shipping module requires a minimum of two files:
+
 1. A `class` file: /includes/modules/shipping/`modulename`.php
 1. A `language` file: /includes/languages/`current_language`/modules/shipping/`modulename`.php
 
