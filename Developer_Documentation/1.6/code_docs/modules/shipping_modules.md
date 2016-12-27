@@ -19,7 +19,8 @@ class myshipping extends base
   ...
 }
 ```
-**Note:** Since an order's shipping selection is stored as a the underscore (_) delimited combination of a shipping module's name and the shipping-method selected, a shipping module's `name` **cannot** include an underscore!
+**Note:** Since an order's shipping selection is stored as a string combining a shipping module's name plus an underscore (_) plus the shipping-method selected, a shipping module's `name` **cannot** include an underscore!
+
 
 ### Class Variables
 A shipping-module's class definition includes, at a minimum, the following publicly-available variables:
@@ -104,7 +105,7 @@ class myshipping extends base
 ```
 
 ##### General Quote (all methods)
-When the `quote` function is called with an input `$method` value of '' (an empty string), the function returns an array containing quotes for **all** methods it provides, as illustrated by the following example.  One `methods` array entry is provided for each *method* applicable to the current order.
+When the `quote` function is called with an input `$method` value of '' (an empty string), the function returns an array containing quotes for **all** methods it provides.  One `methods` array entry is provided for each *method* applicable to the current order.
 
 This form of the function call is used by the *Shipping Estimator* and in the shipping-method selection provided by the `checkout_shipping` page's handling.
 
