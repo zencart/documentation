@@ -25,7 +25,9 @@ We recommend working with one of the following first two options.
 
 * [SourceTree](http://www.sourcetreeapp.com/) for Windows and Mac - this is another good free desktop application which does a good job of giving you access to all the power of git/github/bitbucket/mercurial in an easy visual interface. We highly recommend using SourceTree due to its simplicity.
 
-* There's another option, which we're NOT recommending here, since (at the time of this writing) it has an important limitation when working with forked repositories: It doesn't support multiple remotes, which means you'll need to use the command line to keep your checkouts up to date with our central repository's branches else you'll have problems when issuing pull requests. That other option is github's own application: Github Desktop for [Windows](https://windows.github.com/) or [Mac](https://mac.github.com/) - these are free desktop applications written by Github, and make visual interaction easy when working only with your own repositories but not regularly contributing to someone else's projects.
+ When you first set up SourceTree, it will ask you to log in to your Atlassian account. The account is free, and no side-effects, and no personal information needs to be provided  besides name/email.
+
+* There's another option, which we're NOT recommending here, as it UI is very complicated. Also (at the time of this writing) it has an important limitation when working with forked repositories: It doesn't support multiple remotes, which means you'll need to use the command line to keep your checkouts up to date with our central repository's branches else you'll have problems when issuing pull requests. That other option is github's own application: Github Desktop for [Windows](https://windows.github.com/) or [Mac](https://mac.github.com/) - these are free desktop applications written by Github, and make visual interaction **easy when working only with your own repositories but not when regularly contributing to someone else's projects**.
 
 * While you won't find us documenting how to use them, there are several [other git GUI client apps](http://git-scm.com/downloads/guis)
 
@@ -238,6 +240,6 @@ There are many more great resources explaining how all of this works. Some which
 
 ---
 
-&copy; 2014-2016 Zen Cart&reg; Creative Commons 3.0
+&copy; 2014-2017 Zen Cart&reg; Creative Commons 3.0
 
 *The SourceTree name is copyright Atlassian. Zen Cart receives no compensation or consideration for recommending SourceTree; we simply find it to be an extremely capable and useful app for beginners and novices alike.*
