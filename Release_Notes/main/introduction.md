@@ -115,3 +115,6 @@ Zen Cart® Release Date History
 
 12/31/2016 - v1.5.5d
 
+03/02/2017 - v1.5.5e
+
+
