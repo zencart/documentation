@@ -27,7 +27,7 @@ We recommend working with one of the following first two options.
 
  When you first set up SourceTree, it will ask you to log in to your Atlassian account. The account is free, and no side-effects, and no personal information needs to be provided  besides name/email.
 
-* There's another option, which we're NOT recommending here, as it UI is very complicated. Also (at the time of this writing) it has an important limitation when working with forked repositories: It doesn't support multiple remotes, which means you'll need to use the command line to keep your checkouts up to date with our central repository's branches else you'll have problems when issuing pull requests. That other option is github's own application: Github Desktop for [Windows](https://windows.github.com/) or [Mac](https://mac.github.com/) - these are free desktop applications written by Github, and make visual interaction **easy when working only with your own repositories but not when regularly contributing to someone else's projects**.
+* There's another option, which we're NOT recommending here, as it's UI is very complicated. Also (at the time of this writing) it has an important limitation when working with forked repositories: It doesn't support multiple remotes, which means you'll need to use the command line to keep your checkouts up to date with our central repository's branches else you'll have problems when issuing pull requests. That other option is github's own application: Github Desktop for [Windows](https://windows.github.com/) or [Mac](https://mac.github.com/) - these are free desktop applications written by Github, and make visual interaction **easy when working only with your own repositories but not when regularly contributing to someone else's projects**.
 
 * While you won't find us documenting how to use them, there are several [other git GUI client apps](http://git-scm.com/downloads/guis)
 
@@ -49,7 +49,7 @@ If you have not signed the CLA using the email address or username you use for g
  1. github account
   * Create a github account at [www.github.com](http://www.github.com)
  2. Fork the Repository
-  * On the github site, [fork the project's repository](https://help.github.com/articles/fork-a-repo) (at the time of this writing, the main ZC repository is at [https://github.com/zencart/zencart](https://github.com/zencart/zencart)).  This makes a copy of that repository into your own github account, which is where you will upload your changes since you only have "write" permissions in your own account.
+  * On the github site, [fork the project's repository](https://help.github.com/articles/fork-a-repo) (at the time of this writing, the main ZC repository is at [https://github.com/zencart/zencart](https://github.com/zencart/zencart)).  This makes a copy of that repository into your own github account, which is where you will upload your changes since you only have "write" permissions in your own repository.
  3. Clone the repository to your own computer. (see below)
 
 ### Cloning a repository
@@ -89,6 +89,7 @@ To keep your own fork up-to-date, you'll need to periodically merge updates from
  5. For the URL use: `https://github.com/zencart/zencart.git`
  6. For the github username, enter your own github account name
  7. Click OK
+ 8. Click Fetch
  
 ### Making a working-branch
 Any time you're going to contribute code changes, you'll want to first make a working branch. (For more on branches, see the glossary and other git references at the top of this page.) Branches are how git keeps different versions of changes separate from each other until such time as someone approves merging them together into the main branch.
@@ -147,7 +148,7 @@ You can make multiple commits (that is, stage the files and commit them) towards
   1. First, go into File Status view. Click on "Working Copy" in the left nav menu under File Status. Or, use the View menu and choose File Status View.
   2. Here you'll see a list of files on-screen which have changed in some way (edits, adds, deletes)
   3. You can also see exactly what's changed by clicking on those files and viewing the "diff" on the other side of the screen.
-  4. For each file that you wish to include in the current commit, highlight it in the bottom part of the window, and click the Add button on the button-bar. It may ask you to confirm that you wish to Add it. (The Windows version has a tiny up-arrow that lets you do the staging as well, instead of using the Add from the top button-bar).
+  4. For each file that you wish to include in the current commit, highlight it in the bottom part of the window, and click the Stage Selected button on the button-bar. It may ask you to confirm that you wish to Add it. (The Windows version has a tiny up-arrow that lets you do the staging as well, instead of using the Add from the top button-bar).
   5. Once your files are all staged, click the Commit button in the button bar
   6. This will open a dialog where you can supply a commit message. See the guidance around commit messages in the next section below.
   7. Click the commit button in the bottom right.
