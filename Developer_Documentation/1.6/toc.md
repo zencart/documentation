@@ -14,6 +14,9 @@
 - [QueryBuilder](code_docs/queryBuilder/introduction.md)
 - [Database](code_docs/database/introduction.md)
 - [Externally Hosted Downloads](code_docs/external_downloads/externally_hosted_downloads.md)
+- Modules
+	- [Order-Total Modules](code_docs/modules/order_total_modules.md)
+	- [Shipping Modules](code_docs/modules/shipping_modules.md)
 - Template Customization
     - [PHP](template_customization/php/introduction.md)
     - [CSS and JavaScript](template_customization/css_and_javascript/css_and_javascript.md)
