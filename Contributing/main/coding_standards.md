@@ -60,7 +60,7 @@ The standard phpDocumentor coding standard (ie: common PHP DocBlock syntax) is t
 ##What about files containing both HTML and PHP?
 Where possible, (new) code should always output HTML/CSS/JS directly, and NOT use PHP to echo the HTML.
 
-Code-editing programs can understand the HTML and PHP distinctly if the HTML/CSS/JS are "raw text".  So, it becomes problematic if HTML is "echoed" via PHP.
+Code-editing programs can properly parse and display HTML/CSS/JS if they are entered in "raw text" - but they can't if they are "echoed" via PHP.
 
 Examples:
 
@@ -73,6 +73,11 @@ Examples:
 ```php
 <?php echo ' <div class=xxxxxx">' . sprintf(LANGUAGE_DEFINE, ...) . '</div>'; ?>
 ```
+## Separating content, markup and logic 
+Where possible, try to keep these things separate:
+- Files in `includes/languages` should contain strings (not HTML/CSS markup);
+- Files in `includes/modules` and `includes/functions` should be where logic resides (not markup);  
+- Files in `includes/templates` should be where display markup resides (not extensive logic).
 
 ## Namespaced Autoloading
 The [PSR-4 autoloading standard](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md) is used for handling code in the \ZenCart namespace (ie: the files in `/includes/library`).
