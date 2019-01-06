@@ -241,6 +241,6 @@ There are many more great resources explaining how all of this works. Some which
 
 ---
 
-&copy; 2014-2018 Zen Cart&reg; Creative Commons 3.0
+&copy; 2014-2019 Zen Cart&reg; Creative Commons 3.0
 
 *The SourceTree name is copyright Atlassian. Zen Cart receives no compensation or consideration for recommending SourceTree; we simply find it to be an extremely capable and useful app for beginners and novices alike.*
