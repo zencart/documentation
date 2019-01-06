@@ -3,7 +3,7 @@ Multi Language Configuration Menus
 
 
 
-In 1.6, you can now have multilanguage Configuration menu entries.  However, the creation of the language strings for the Configuration menu is done differently from the regular way other strings in a language pack are created.
+In v2, you can now have multilanguage Configuration menu entries.  However, the creation of the language strings for the Configuration menu is done differently from the regular way other strings in a language pack are created.
 
 To add strings for your a new language for the Configuration Menu, look up the database entry in the zc_install/sql/install/mysql_zencart.sql file. 
 
