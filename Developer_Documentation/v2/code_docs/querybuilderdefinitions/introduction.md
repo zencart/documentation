@@ -5,7 +5,7 @@ ListingQueryAndOutput are lists of product items that appear in the main content
 
 In previous versions of Zen Cart each listing box had its own code that used hard coded queries and fixed templates to show the output. This has proven inflexible and makes it difficult for 3rd party contributions to add or alter these, without changing core code or templates.
 
-To address this, Zen Cart v1.6.0 includes a Class based system for building listing box output  and simpler more designer friendly templates for displaying the results.
+To address this, Zen Cart v2 includes a Class based system for building listing box output  and simpler more designer friendly templates for displaying the results.
 
 The system contains 4 main parts.
 

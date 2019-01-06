@@ -1,5 +1,5 @@
 # Introduction
-A number of changes have been made in 1.5.5 and 1.6 to make interacting with the database simpler.
+A number of changes have been made in 1.5.5 and v2 to make interacting with the database simpler.
 
 ## Looping
 Starting with v1.5.5 looping through database queries no longer requires the complex while loop, and can instead use a simple foreach iterator. This is more intuitive and more maintainable.

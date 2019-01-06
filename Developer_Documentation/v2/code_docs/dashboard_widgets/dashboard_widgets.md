@@ -1,12 +1,12 @@
 # Introduction
 
-`WARNING: it is expected that the interface to dashboard widgets will change before 1.6 is released to better support the use of new controllers/ajax interfaces`
+`WARNING: it is expected that the interface to dashboard widgets will change before v2 is released to better support the use of new controllers/ajax interfaces`
 
 In previous versions of Zen Cart the admin home page contains a number of boxes displaying various statistics/information that may be relevant to the Shop Owner.
 
 e.g. Recent Orders, Recent Customers. Whos-Online etc.
 
-There are 3 problems with the pre-1.6.0 approach.
+There are 3 problems with the pre-v2 approach.
 
 1. It's not really possible for 3rd party developers to add extra boxes to that display without hacking core code.
 
@@ -14,7 +14,7 @@ There are 3 problems with the pre-1.6.0 approach.
 
 1. There is no simple way to re-order the information so that more relevant information has higher priority.
 
-So in v1.6 we have introduced the concept of dashboard widgets. Each widget is a self contained pairing of code/template that can be displayed on the admin home page. The store owner can drag and drop each widget, so allowing information important to the store owner to have greater priority. Widgets can be deleted from the dashboard if the store owner wishes, and they can add widgets to the dashboard even when these are provided by third parties. Widgets can be independently dynamically refreshed, so that the information they display is always relevant. Widgets can also be restricted using the Admin Profiles system used in v1.5+.
+So in v2 we have introduced the concept of dashboard widgets. Each widget is a self contained pairing of code/template that can be displayed on the admin home page. The store owner can drag and drop each widget, so allowing information important to the store owner to have greater priority. Widgets can be deleted from the dashboard if the store owner wishes, and they can add widgets to the dashboard even when these are provided by third parties. Widgets can be independently dynamically refreshed, so that the information they display is always relevant. Widgets can also be restricted using the Admin Profiles system used in v1.5+.
 
 # How to build a widget
 

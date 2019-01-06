@@ -1,7 +1,7 @@
-Introduction to 1.6
-===================
+Introduction to v2
+==================
 
-Zen Cart v1.6 represents a major shift from previous versions. We are introducing a lot of new re-written code,
+Zen Cart v2 represents a major shift from previous versions. We are introducing a lot of new re-written code,
 which is meant to make life easier for those developing with/for Zen Cart, and to make plugin code easier to install. 
 
 To help developers we are also creating lots of new documentation resources for that code.

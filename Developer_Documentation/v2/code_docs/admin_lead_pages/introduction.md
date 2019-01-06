@@ -5,7 +5,7 @@ The Zen Cart Administration Interface contains a number of pages that are used t
 
 What is common amongst these pages is that they initially show a paginated list of entries, and then allow you to edit an existing entry, add new entries, and delete entries.
 
-The pre-1.6.0 pages that manage these lists have a number of problems. They are difficult to create easily, they are almost impossible to customize using add-ons and the code is usually quite messy, with php code interspersed with output HTML.
+The pre-v2 pages that manage these lists have a number of problems. They are difficult to create easily, they are almost impossible to customize using add-ons and the code is usually quite messy, with php code interspersed with output HTML.
 
 The new style admin LEAD (List/Edit/Add/Delete) pages are completely object oriented. Code is separate from the output templates. They are easy to create, in fact a lot of LEAD pages can be created by simply defining some simple array structures.
 

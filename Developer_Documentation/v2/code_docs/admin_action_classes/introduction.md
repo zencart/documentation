@@ -3,7 +3,7 @@ Introduction
 
 Admin action classes are a new way of writing code for admin pages. Previously admin pages were called using a URL like `http://localhost/admin_dir/categories.php` and each page was a mixture of procedural php and html.
 
-Zen Cart v1.6 allows you to write code that is object oriented and separates code from html.
+Zen Cart v2 allows you to write code that is object oriented and separates code from html.
 
 It does this by using a similar URL structure to catalog (storefront). Instead of accessing code for a 'page' directly, it uses a `front controller`.
 e.g the URL `http://localhost/admin_dir/categories.php` would be written as `http://localhost/admin_dir/index.php?cmd=categories`
