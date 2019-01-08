@@ -7,7 +7,7 @@ This class has lots of problems.
 2. It's difficult to change the html output
 3. It is bound to using sql results. 
 
-For v160 we realised we needed to have a better class structure for doing pagination. 
+For v2, we realised we needed to have a better class structure for doing pagination. 
 The new structure defines 2 sets of objects. 
 
 `Adapters,` which are responsible for producing the lists of items that might appear in a paginated view.

@@ -5,7 +5,7 @@ When Habitat first creates the development environment, it looks for a file call
 
 If `Habitat.yaml` does not exist, it will copy the included `Habitat.yaml.example` to `Habitat.yaml`
 
-By default the example file will do a checkout of the latest v160 branch from Github. If you want that checkout to say be your forked branch, then you will need to create the Habitat.yaml first and adjust it to point to your own forked repo instead of the github.com/zencart repo.
+By default the example file will do a checkout of the latest develop branch from Github. If you want that checkout to say be your forked branch, then you will need to create the Habitat.yaml first and adjust it to point to your own forked repo instead of the github.com/zencart repo.
 
 **Note** If you make changes to the yaml file after doing `Vagrant up`, you will need to run ...
 >
@@ -55,10 +55,10 @@ By default it contains:
 
                 sites:
                   - domain: zen.local
-                    dir: v160
+                    dir: develop
                     skeleton: apache.default
                     git_url: https://github.com/zencart/zencart.git
-                    branch: v160
+                    branch: develop
                   - domain: devdocs.local
                     dir: devdocs
                     skeleton: apache.default

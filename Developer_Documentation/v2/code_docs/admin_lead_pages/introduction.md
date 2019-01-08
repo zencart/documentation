@@ -11,7 +11,7 @@ The new style admin LEAD (List/Edit/Add/Delete) pages are completely object orie
 
 The LEAD pages also integrate a simple filtering system, that allows the admin user to select a subset of the items in the list.
 
-LEAD pages leverage a number of new classes/structures which have been added to v160:
+LEAD pages leverage a number of new classes/structures which have been added to v2:
 
 * Admin Action Controllers define a new way of writing admin pages, where the code is separated from the template.
  

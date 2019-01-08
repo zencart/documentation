@@ -1,6 +1,6 @@
 # Code Development
 
-The Habitat VM initially links a domain, `zen.local`, to a checkout of the Zen Cart® v160 branch, unless you have customised the Habitat.local.yaml.
+The Habitat VM initially links a domain, `zen.local`, to a checkout of the Zen Cart® develop branch, unless you have customised the Habitat.local.yaml.
 
 You should be able to just open a browser and enter the http://zen.local URL to see the site.
 The directory that the code is stored in within the VM is shared to the habitat directory that was created earlier under the habitat/web/zen folder.

@@ -62,7 +62,7 @@ From the command line you can do
 cd habitat/tools  
 ./unittest DIRNAME
 
-The option given to the unittest script is a reference to a site in your habitat VM. In other words it should match the `dir` option given in a `sites:` block of your yaml file. To run the tests on the `v160` branch, on your host machine you'd use `./unittest v160`
+The option given to the unittest script is a reference to a site in your habitat VM. In other words it should match the `dir` option given in a `sites:` block of your yaml file. To run the tests on the `develop` branch, on your host machine you'd use `./unittest develop`
 
 
 phpDocumentor
