@@ -1,7 +1,6 @@
 # Tutorials
 
-This site is intended to replace the old Tutorials/FAQ content 
-on the zen-cart.com site. 
+This site is intended to (eventually) replace the old Tutorials/FAQ content on the zen-cart.com site. 
 
 <span id="first_steps"></span>
 ## First Steps
