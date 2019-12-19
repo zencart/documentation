@@ -11,8 +11,6 @@ The currently available Manuals are:
 
 [Developer Documentation](/Developer_Documentation) 
 
-[Habitat Development Environment](/Habitat) 
-
 [Release History](/Release_Notes) 
 
 [EU Digital VAT](/EU_Digital_VAT/master) 

@@ -1,6 +1,9 @@
 Welcome to Habitat
 ==================
 
+>NOTE: We are no longer maintaining Habitat, since 2018. You are free to use it, or even use Laravel Homestead if you wish.
+We're leaving this documentation up temporarily for your reference in case you are still using Habitat yourself. We will probably remove this section of the docs in 2020.
+
 Habitat is a [Vagrant](https://www.vagrantup.com/)-based virtual machine, with the ability to custom-provision the VM automatically based on settings you decide.
 
 This is great for use on a laptop for portable offline use, or for doing development testing without installing special versions of PHP/MySQL/Apache/etc.
