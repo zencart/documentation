@@ -1,0 +1,287 @@
+---
+title: Admin Request Sanitization
+weight: 1
+---
+
+## Introduction / History 
+
+In versions prior to v1.5.5 very little was done in terms of globally sanitizing $_GET or $_POST parameters in Admin code.
+
+There was some global sanitization done for $_GET parameters 
+e.g. 
+ https://github.com/zencart/zencart/blob/v154/admin/includes/init_includes/init_sanitize.php
+
+and sanitization may have been done on an individual parameter basis, mainly at output, 
+using htmlspecialchars (`zen_output_string_protected()`).
+
+The reason no stronger sanitization was used was twofold:
+
+Firstly, Admin allows lots of parameters to include what would be considered dangerous characters. 
+e.g. product descriptions allow script tags, and other inputs allow some html, such as product names.
+
+Secondly, core code uses CSRF tokens for all form interactions. The use of these tokens mitigate against against any 
+exploiting of XSS, unless an admin session is already available. 
+
+However, reports such as https://www.trustwave.com/Resources/SpiderLabs-Blog/TWSL2016-006--Multiple-XSS-Vulnerabilities-reported-for-Zen-Cart/
+made us reconsider. 
+While we still contend that the CSRF protection mitigates these supposed XSS vulnerabilities, there are three good reasons to address them with extra sanitization.
+
+1. We cannot guarantee that 3rd party plugins use the CSRF token system (although there are some safeties to ensure they do).
+
+2. PCI scanning software may detect XSS vulnerabilities, even given the CSRF mitigation. (particularly where the scanner bypasses/grants admin logins)
+
+3. Good security practice.
+
+We have therefore introduced a new sanitization class into v1.5.5 which takes a much more aggressive stance than previous code. 
+
+The new code is likely to have an affect on plugins that add or change admin functionality. To mitigate this some 
+overrides and switches have been allowed for. This documentation should allow plugin authors and sites that 
+already use plugins to workaround potential problems.
+
+The new code introduces a number of sanitization groups. Each group performs a sanitization on specific GET/POST 
+parameters. For GET/POST parameters that are not already sanitized within these groups we then run a 
+default sanitization (ie: simply running `htmlspecialchars()` on it).
+
+## TEMPORARILY Disabling Strict Sanitization
+
+If you find that some of your admin plugins are no longer working properly then you should look first to see if new 
+versions of those plugins are available, ie: that support the new v1.5.5 sanitization. 
+
+If new versions are not available, or you need to keep your current admin working while you update, then you can disable
+the strict(default) sanitization by doing the following:
+
+Create a new `disable_strict_sanitize.php` file in your `/admin/includes/extra_configures/` directory.
+The contents of this file should be 
+
+```
+  <?php
+  define('DO_STRICT_SANITIZATION', false);
+```
+
+We encourage you to NOT do that unless truly necessary, and even then only as a temporary measure until your affected plugins have written their own custom sanitizers as described later in this document.
+
+## Logging
+
+The AdminSanitizer class can log the actions it takes, and this may be helpful in debugging problems with plugins.
+
+Logging is enabled/disabled using the DO_DEBUG_SANITIZATION define.
+
+To enable logging create a new file in `/admin/includes/extra_configures/` that contains 
+
+```
+  <?php
+  define('DO_DEBUG_SANITIZATION', true);
+```
+
+## For Developers. How to use the sanitization in plugins.
+
+If you are a developer who wants to update your current code, or you are developing a new plugin, the following
+are some tips to keep your plugin compatible with v1.5.5 core functionality.
+
+
+### Parameter Naming
+
+GET/POST parameters will be sanitized based on their parameter name and the sanitization group assigned to them. 
+Therefore if you are writing a plugin and use a parameter name that already exists in Zen Cart that parameter will be 
+sanitized according to the group it is already assigned to in core code. 
+
+For example the `action` parameter is assigned to the `SIMPLE_ALPHANUM_PLUS` group, and the sanitization for that group 
+will always be applied to it.
+
+There will be occasions where a plugin uses a parameter name that is already added to a sanitization group, and rewriting
+ plugin code may be onerous. For these cases it is possible to override sanitization on a per page basis.
+
+
+### Adding Parameters/Groups
+
+If a plugin needs to define it's own sanitization or override the sanitization for an already defined parameter, it 
+should create a php file in `/admin/includes/extra_datafiles/`
+
+An example of the contents might be 
+
+    $sanitizer = AdminRequestSanitizer::getInstance();
+    $group = array(
+        'id' => array('sanitizerType' => 'CONVERT_INT', 'method' => 'both', 'pages' => array('edit_orders'), 'params' => array()),
+        );
+    $sanitizer->addComplexSanitization($group);
+
+or
+
+
+    $sanitizer = AdminRequestSanitizer::getInstance();
+    $group = array(
+      'col_html_text' => array('sanitizerType' => 'PRODUCT_DESC_REGEX', 'method' => 'post'),
+        );
+    $sanitizer->addComplexSanitization($group);
+
+The structure of the defining array is:
+
+1. sanitizerType = The name of a sanitizer group (see the group names below) 
+2. method = get|post|both
+3. pages = (optional) an array of pages (ie: for edit_orders.php specify 'edit_orders' here) which this sanitizer rule will be applied to; (if not supplied, will apply to all pages)
+4. params = (optional) this is used only for the MULTI_DIMENSIONAL sanitizer, which explained below.
+
+
+### General Sanitization Groups
+
+Zen Cart defines the following default case-insensitive sanitizers:
+
++ `SIMPLE_ALPHANUM_PLUS`
+
+    GET Values only
+    
+    Uses `[^\/ 0-9a-zA-Z_:@.-]` regex
+      
+      
++ `CONVERT_INT`
+
+    GET and POST values
+    
+    converts value to Integer
+    
++ `FILE_DIR_REGEX`
+
+    POST values only 
+    
+    uses `[^0-9a-z.!@#$%^& ()`_+-~/\\]` regex
+
+    
++ `ALPHANUM_DASH_UNDERSCORE`
+
+    GET and POST values
+    
+    Uses `[^a-z0-9_-]` regex
+    
+    
++ `WORDS_AND_SYMBOLS_REGEX`
+
+    GET and POST values
+    
+    Uses `(<\/?scri|on(load|mouse|error|read|key)(up|down)? ?=|[^(class|style)] ?= ?(\(|")|<!)` regex
+    
+    
++ `META_TAGS`
+
+    POST Values only (Deep)
+    
+    Uses `(load=|= ?\(|<![^-])` regex
+    
+    
++ `SANITIZE_EMAIL`
+
+    GET and POST values
+    
+    Uses `filter_var($_POST[$key], FILTER_SANITIZE_EMAIL)`
+
+
++ `PRODUCT_DESC_REGEX`
+
+    POST Values only (Deep)
+    
+    Uses `(load=|= ?\(|<![^-])` regex
+    
+    
++ `WORDS_AND_SYMBOLS_REGEX`
+
+    POST Values only (Deep)
+    
+    Uses `([^a-z0-9\'!#$&%@();:/=?_\~\[\]-]|[><])` regex
+    
+    
++ `CURRENCY_VALUE_REGEX`
+
+    POST Values only
+    
+    Uses `[^a-z0-9_,\.\-]` regex
+
+
++ `PRODUCT_NAME_DEEP_REGEX`
+
+    POST Values only (Deep)
+    
+    Uses `(<\/?scri|on(load|mouse|error|read|key)(up|down)? ?=|[^(class|style)] ?= ?(\(|")|<!)` regex
+    
++ `NULL_ACTION`
+
+    GET/POST Values
+    
+    Skips sanitization for the relevant parameter.
+
++ `STRICT_SANITIZE_VALUES`
+
+    Any parameters not previously sanitized will be sanitized with this method. 
+
+
++ `STRICT_SANITIZE_KEYS`
+
+	All POST and GET "keys" containing any `<` or `>` symbols in the key will be `unset()`
+
+
+### MULTI_DIMENSIONAL Sanitization
+
+The MULTI_DIMENSIONAL sanitizer is special in that it defines sanitization for an array of parameters, rather
+than one parameter as other sanitizers do.
+
+For example, if you post the following array 
+
+    [update_products] => Array
+        (
+            [13] => Array
+                (
+                    [qty] => 1
+                    [name] => Microsoft IntelliMouse Explorer
+                    [onetime_charges] => 0.0000
+                    [attr] => Array
+                        (
+                            [3] => Array
+                                (
+                                    [value] => 11
+                                    [type] => 0
+                                )
+
+                        )
+
+                    [model] => MSIMEXP
+                    [tax] => 0
+                    [final_price] => 70.95  
+
+normal sanitizers would only address the outer `update_products` parameter, while what you really want to do is define 
+parameters for `qty` `name` `onetime_charges` etc, and you also want to sanitize the attr sub array recursively.
+
+to address this, you can define a MULTI_DIMENSIONAL sanitizer like this :-
+
+    $sanitizer = AdminRequestSanitizer::getInstance();
+    $group = array(
+        'update_products' => array(
+            'sanitizerType' => 'MULTI_DIMENSIONAL',
+            'method' => 'post',
+            'pages' => array('edit_orders'),
+            'params' => array(
+                'update_products' => array('sanitizerType' => 'CONVERT_INT'),
+                'qty' => array('sanitizerType' => 'CONVERT_INT'),
+                'name' => array('sanitizerType' => 'WORDS_AND_SYMBOLS_REGEX'),
+                'onetime_charges' => array('sanitizerType' => 'CURRENCY_VALUE_REGEX'),
+                'attr' => array(
+                    'sanitizerType' => 'MULTI_DIMENSIONAL',
+                    'params' => array(
+                        'attr' => array('sanitizerType' => 'CONVERT_INT'),
+                        'value' => array('sanitizerType' => 'CONVERT_INT'),
+                        'type' => array('sanitizerType' => 'CONVERT_INT')
+                    )
+                ),
+                'model' => array('sanitizerType' => 'WORDS_AND_SYMBOLS_REGEX'),
+                'tax' => array('sanitizerType' => 'WORDS_AND_SYMBOLS_REGEX'),
+                'final_price' => array('sanitizerType' => 'WORDS_AND_SYMBOLS_REGEX'),
+            )
+        )
+    );
+    $sanitizer->addComplexSanitization($group);
+
+Note that sanitizers for sub parameters are defined in the `params` array and that you can recursively define 
+deeper arrays with a further MULTI_DIMENSIONAL sanitizer array.
+
+
+### Custom Sanitizers 
+tbd
+
+
