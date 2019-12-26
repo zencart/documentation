@@ -1,5 +1,5 @@
 [build]
-command = "hugo -b https://docs.zen-cart.com"
+command = "cd themes/docsy && git submodule update -f --init && cd ../.. && hugo -b https://docs.zen-cart.com"
 publish = "public"
 
 [context.production.environment]
