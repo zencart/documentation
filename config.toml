@@ -82,7 +82,7 @@ github_project_repo = "https://github.com/zencart/zencart"
 # github_subdir = ""
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
-#gcs_engine_id = ""
+gcs_engine_id = "002174146992605760163:h8yy4dqzbsp"
 
 # Enable Algolia DocSearch
 algolia_docsearch = false
