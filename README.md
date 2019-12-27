@@ -37,7 +37,7 @@ Edit content in the Content folders.
 Now the site can be built with Hugo. During development, you can have Hugo spin up a local webserver and watch for changes.
 
 ```
-cd [directory where this repo is cloned]
+cd [directory where these files are located]
 hugo server
 ```
 
