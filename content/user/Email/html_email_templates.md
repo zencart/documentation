@@ -215,4 +215,4 @@ $ADDRESS_BILLING_DETAIL (Billing address on order)
 $PAYMENT_METHOD_TEXT ("Payment Method:")  
 $PAYMENT_METHOD_TITLE (Payment method selected)  
 $PAYMENT_METHOD_FOOTER (Payment method footer, if any)
-````
+```
