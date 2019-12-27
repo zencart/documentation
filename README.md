@@ -4,6 +4,13 @@
 
 Merged PRs to the Content area of this repo automatically deploy to https://docs.zen-cart.com
 
+## Content
+
+The core content of the generated docs comes from the `/content/dev` and `/content/user` folders. 
+
+**Please do not make edits to other folders.**
+
+
 ## Local Dev Testing
 
 First ensure that Hugo is installed on your system.
