@@ -15,9 +15,8 @@ This site is intended to (eventually) replace the old Tutorials/FAQ content on t
 Installing
 Quick Start Guide  
 -->
-<span id="first_steps"></span>
 ## First Steps
-- [Installing Zen Cart](first_steps/how_do_i_install.md)
+- [Installing Zen Cart](first_steps/how_do_i_install)
 
 
 <!-- old:
@@ -29,23 +28,20 @@ Template Customization/ Building Overrides
 EZ-Pages
 Sideboxes
 -->
-<span id="customizing_your_store"></span>
 ## Customizing Your Store
-- [Adding Additional Images to a Product](customizing/adding_multiple_images_to_a_product.md)
-- [Turning off Additional Images](customizing/turning_off_additional_images.md)
+- [Adding Additional Images to a Product](customizing/adding_multiple_images_to_a_product)
+- [Turning off Additional Images](customizing/turning_off_additional_images)
 
 <!-- old:
 Order Processing / Customer Management
 -->
-<span id="running_your_business"></span>
 ## Running Your Business
-- [Resetting the Downloads Counter](running/downloads_counter.md)
+- [Resetting the Downloads Counter](running/downloads_counter)
 
 ## Technical Issues
-- [HTML Email Template System](technical/html_email_templates.md)
+- [HTML Email Template System](email/html_email_templates)
 
 
-<span id="learning_more"></span>
 ## Learning More 
-
+(no content for this section yet)
 
