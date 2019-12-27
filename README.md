@@ -10,6 +10,10 @@ The core content of the generated docs comes from the `/content/dev` and `/conte
 
 **Please do not make edits to other folders.**
 
+The files are in Markdown format, but also include a brief "header", based on Hugo syntax.
+
+The repository is based on the [Docsy](https://www.docsy.dev/docs/) Documentation Template.
+
 
 ## Local Dev Testing
 
