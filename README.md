@@ -10,7 +10,15 @@ The core content of the generated docs comes from the `/content/dev` and `/conte
 
 **Please do not make edits to other folders.**
 
-The files are in Markdown format, but also include a brief "header", based on Hugo syntax.
+The files are in Markdown format, but also include a brief YAML "header" using the following syntax:
+```yaml
+---
+title: Page Title Goes Here
+weight: 1
+---
+```
+
+The `weight` parameter indicates sort order of display amongst files at the same folder level.
 
 The repository is based on the [Docsy](https://www.docsy.dev/docs/) Documentation Template.
 
