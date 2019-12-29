@@ -27,20 +27,21 @@ The repository is based on the [Docsy](https://www.docsy.dev/docs/) Documentatio
 
 First ensure that Hugo is installed on your system. On a Mac, use homebrew:
 
-```
+```sh
 brew install hugo
 ```
 
+```sh
 git clone git@github.com:zencart/documentation.git zendocs
 cd zendocs
 git submodule update --init --recursive
-
+```
 
 Edit content in the `content` folders.
 
 Now the site can be served locally with Hugo. During development, you can have Hugo spin up a local webserver and watch for changes.
 
-```
+```sh
 cd zendocs
 hugo server
 ```
