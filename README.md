@@ -25,19 +25,23 @@ The repository is based on the [Docsy](https://www.docsy.dev/docs/) Documentatio
 
 ## Local Dev Testing
 
-First ensure that Hugo is installed on your system.
+First ensure that Hugo is installed on your system. On a Mac, use homebrew:
 
 ```
 brew install hugo
 ```
 
-Edit content in the Content folders.
+git clone git@github.com:zencart/documentation.git zendocs
+cd zendocs
+git submodule update --init --recursive
 
 
-Now the site can be built with Hugo. During development, you can have Hugo spin up a local webserver and watch for changes.
+Edit content in the `content` folders.
+
+Now the site can be served locally with Hugo. During development, you can have Hugo spin up a local webserver and watch for changes.
 
 ```
-cd [directory where these files are located]
+cd zendocs
 hugo server
 ```
 
