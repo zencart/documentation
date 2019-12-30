@@ -6,7 +6,7 @@ Merged PRs to the Content area of this repo automatically deploy to https://docs
 
 ## Content
 
-The core content of the generated docs comes from the `/content/dev` and `/content/user` folders. 
+Create and update files in the `content/dev` and `content/user` folders.  
 
 **Please do not make edits to other folders.**
 
@@ -20,16 +20,18 @@ weight: 1
 
 The `weight` parameter indicates sort order of display amongst files at the same folder level.
 
-The repository is based on the [Docsy](https://www.docsy.dev/docs/) Documentation Template.
+If you create a new folder (such as for a category/topic), be sure to create an `_index.md` file, following the example from an existing folder. 
 
 
 ## Local Dev Testing
 
-First ensure that Hugo is installed on your system. On a Mac, use homebrew:
+First ensure that Hugo (v0.53 or greater) is installed on your system. On a Mac, use homebrew:
 
 ```
-brew install hugo
+brew install hugo && brew upgrade hugo
 ```
+
+Then clone this project and do a submodule update to get all its dependencies:
 
 ```
 git clone git@github.com:zencart/documentation.git zendocs
@@ -37,14 +39,15 @@ cd zendocs
 git submodule update --init --recursive
 ```
 
-Edit content in the `content` folders.
-
 Now the site can be served locally with Hugo. During development, you can have Hugo spin up a local webserver and watch for changes.
 
 ```
 cd zendocs
 hugo server
 ```
+
+The repository is based on the [Docsy](https://www.docsy.dev/docs/) Documentation Template, in case you need a reference for troubleshooting purposes.
+
 
 ## Contributing
 
