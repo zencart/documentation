@@ -31,13 +31,17 @@ First ensure that Hugo is installed on your system. On a Mac, use homebrew:
 brew install hugo
 ```
 
+Note: you will need to have a recent version of Hugo.  If `hugo version` returns a value less than 0.53, should should update it (`brew upgrade hugo` on a Mac). 
+
+Then do a submodule update in the folder where you checked out this project. 
+
 ```
 git clone git@github.com:zencart/documentation.git zendocs
 cd zendocs
 git submodule update --init --recursive
 ```
 
-Edit content in the `content` folders.
+Create and update files in the `content/dev` and `content/user` folders.  If you create a new folder under one of these folders, be sure to create an `_index.md` file, following the example from an existing folder. 
 
 Now the site can be served locally with Hugo. During development, you can have Hugo spin up a local webserver and watch for changes.
 
