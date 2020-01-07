@@ -1,8 +1,10 @@
 ---
-title: Upgrading plugins for 1.5 Compatibility
+title: Upgrading old plugins for 1.5 Compatibility
 category: plugins
 weight: 1
 ---
+
+
 A number of features have been changed or added in v1.5.0. This may have broken some addons which were built for older versions. The following information may be helpful as you prepare to upgrade your site and/or convert your custom code or addons to work with v1.5
 
 ## Admin Menu Controls
