@@ -1,9 +1,9 @@
 ---
-title: Github Workflow
+title: Github Workflow + Pull Requests
 weight: 3
 ---
 
-This article is intended to help provide a basic understanding of contributing to forked repositories on github.
+This article is intended to help provide a basic understanding of contributing to forked repositories on github, including forking, updating your local copy, and **making Pull Requests**.
 
 ## Quick Reference for Newcomers to git or github
 
