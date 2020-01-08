@@ -1,7 +1,10 @@
 ---
 title: History of Release Dates
+linkTitle: History of Release Dates
+description: Release Dates for Zen Cart 
+weight: 100 
+layout: docs
 category: Zen Cart
-weight: 1
 ---
 
 Zen Cart® Release Date History
