@@ -1,9 +1,8 @@
 ---
-title: Contributing!
+title: Introduction
 weight: 1
 ---
-Introduction
-============
+
 
 One of the joys of Open Source projects is the collective sharing of knowledge, skill, and creativity ... for the common good of everyone.
 
