@@ -4,8 +4,6 @@ category: email
 weight: 1
 ---
 
-# The HTML Email Template System 
-
 ### Email System Settings relating to rich text messages:
 
 In Admin->Configuration->E-Mail Options

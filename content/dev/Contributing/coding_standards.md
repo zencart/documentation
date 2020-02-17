@@ -3,8 +3,6 @@ title: Coding Standards
 weight: 2
 ---
 
-# Coding Standards
-
 ## Old Standard
 Legacy Zen Cart code has used a modified *phpBB* coding style, with notable characteristics such as "indent with 2 spaces, not tabs", and "The opening brace (ie: `{`) for `class` and `function` definitions, as well as `if/else` statements, was kept on the same line", etc.
 
