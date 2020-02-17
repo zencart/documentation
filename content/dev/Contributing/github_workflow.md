@@ -235,7 +235,7 @@ From time to time you and others will add or remove branches from the github rep
 (You could also fetch from individual remotes manually, and prune only when fetching from upstream, but never prune when fetching from your own github master) 
  3. Click OK
 
-##References
+## References
 
 There are many more great resources explaining how all of this works. Some which you might wish to review include:
 
@@ -248,4 +248,4 @@ There are many more great resources explaining how all of this works. Some which
 
 &copy; 2014-2018 Zen Cart&reg; Creative Commons 3.0
 
-*The SourceTree name is copyright Atlassian. Zen Cart receives no compensation or consideration for recommending SourceTree; we simply find it to be an extremely capable and useful app for beginners and novices alike.*
+*The SourceTree name is copyright Atlassian. Zen Cart receives no compensation or consideration for recommending SourceTree; we simply find it to be an extremely capable and useful app for beginners and experienced developers alike.* 
