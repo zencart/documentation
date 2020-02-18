@@ -6,7 +6,7 @@ weight: 1
 
 The email logo is contained in the file `email/header.jpg`. 
 
-Replace this file wiht your logo, then update the files which specify
+Replace this file with your logo, then update the files which specify
 this filename and the logo's dimensions.  
 
 For admin, this file is `admin/includes/languages/english/email_extras.php`. 
