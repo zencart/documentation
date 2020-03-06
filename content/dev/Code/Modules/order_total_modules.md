@@ -1,3 +1,6 @@
+---
+title: Order Total Modules
+---
 # Introduction
 Zen Cart *order-total* modules are used to calculate (and display) sub-totals, taxes, totals and other intermediary values for an order. *Order-total* modules can also calculate discounts or other subtractions from the amount a customer owes for an order. Each module includes, at a minimum, two files:
 
