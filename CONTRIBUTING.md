@@ -1,6 +1,20 @@
-# Documentation Standards 
+# Contributing to Zen Cart Documentation 
 
-Please follow these rules when adding new documentation files to the `/content/user` folder: 
+Thanks for contributing to the Zen Cart documentation!  
+
+The intention is for documentation in this repository to replace the 
+legacy Wiki and FAQs/Tutorials page on zen-cart.com. 
+
+## Getting Started 
+To get started, follow the guidelines in the project's README file 
+for cloning and setting up the repo and running `Hugo` locally. 
+
+Submit your changes as Pull Requests, following the documentation standards
+provided below.  
+
+## Documentation Standards 
+
+Please follow these rules when adding new documentation files to the `/content/user` and `/content/dev` folders: 
 
 - Begin each file with a block that looks like:
 <pre>
