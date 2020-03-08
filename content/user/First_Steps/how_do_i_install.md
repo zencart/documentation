@@ -238,7 +238,7 @@ Providing there were no errors during installation, you should be able to now en
 
 # After Installation
 
-a) [RENAME YOUR ADMIN FOLDER.  Instructions here.](http://www.zen-cart.com/content.php?75)  
+a) [RENAME YOUR ADMIN FOLDER.  Instructions here.](/user/running/rename_admin/)
 
 b) When you enter the Catalog, you will receive security warnings about the configure.php files and the `/zc_install` directory.  
 
