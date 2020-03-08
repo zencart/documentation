@@ -38,13 +38,15 @@ The value of `weight` denotes a sort-order. Please choose a value that makes sen
 
 OLD WAY: 
 <pre>
-Check out the &lt;a href="https://www.zen-cart.com/content.php?48-what-are-the-server-requirements-to-run-zen-cart" target="_blank"&gt;Server Requirements For Running Zen Cart&lt;/a&gt;
+Check out the &lt;a href="https://www.zen-cart.com/content.php?48-what-are-the-server-requirements-to-run-zen-cart" target="&#95;blank"&gt;Server Requirements For Running Zen Cart&lt;/a&gt;
 </pre>
 
 NEW WAY: 
 
 <pre>
-Check out the &lt;a href="/user/First_Steps/server_requirements.md" target="_blank"&gt;Server Requirements For Running Zen Cart&lt;/a&gt;
+Check out the &lt;a href="/user/First_Steps/server_requirements.md" target="&#95;blank"&gt;Server Requirements For Running Zen Cart&lt;/a&gt;
 </pre>
+
+- Be sure to remove any references to the legacy Wiki in the same way. 
 
 - If you are converting an old file from the Tutorials/FAQ area, try using an [HTML to Markdown converter](https://www.browserling.com/tools/html-to-markdown).  It may make the process faster and easier. 
