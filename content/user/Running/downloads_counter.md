@@ -4,7 +4,6 @@ category: Orders
 weight: 1
 ---
 
-# Resetting the Downloads Counter 
 "I sell a digital product and a customer misplaced his download. Is there a way to update recent purchase and simply add two or three more downloads?"
 
 Sure ... Admin->Customers->Orders ... find his order..... Edit it ... at the bottom where you can update the Order Status, change it to "Update" and click the Update button.  You might want to add some comments in the "Comments" box explaining the update, which will be emailed to them.
