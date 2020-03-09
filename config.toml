@@ -129,6 +129,6 @@ no = 'Sorry to hear that. Please <a href="https://github.com/zencart/documentati
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
     name = "GitHub"
-    url = "https://github.com/zencart/zencart"
+    url = "https://github.com/zencart/documentation"
     icon = "fab fa-github"
-        desc = "Development takes place here!"
+    desc = "Documentation repository" 
