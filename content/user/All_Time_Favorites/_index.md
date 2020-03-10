@@ -9,5 +9,13 @@ layout: docs
 <!-- unlike other _index.md files, this one SHOULD have direct links -->
 <!-- please keep in alphabetic order -->
 
-* [Emails are not being received](./Email/emails_not_received.md)
+* [Admin Password - Reset or Change](user/troubleshooting/reset_admin_password/) 
+* [Emails are not being received](/user/Email/emails_not_received.md)
 
+* [Taxes - how much do I charge?](/user/localization/taxes/)
+
+* [Version Information for PHP, MySQL and Zen Cart](/user/first_steps/version/)
+
+* [Zen Cart download - How do I get it?](/user/first_steps/get_zen_cart/)
+
+* [Zen Cart forum - Why can't I post?](/user/first_steps/forum_issues/)
