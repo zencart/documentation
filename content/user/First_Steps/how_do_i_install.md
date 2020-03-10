@@ -264,8 +264,8 @@ Next, you will want to delete the <span class="filename">/catalog/zc_install</sp
 
 # Next Steps
 
-For information on ["First Steps To Set Up Your Online Shop"](http://www.zen-cart.com/wiki/index.php/Basic_Checklist), see the Wiki entry discussing a **[Basic Checklist](http://www.zen-cart.com/wiki/index.php/Basic_Checklist)**. 
+For information on first steps to setting up your online shop, see the article [basic checklist](/user/first_steps/basic_checklist/). 
 
 You should also familiarize yourself with the Zen Cart® Developers Toolkit, located in your store's Admin area, under "Tools". This will help you locate almost anything you want to customize in your shop!
 
-Once you're set up and ready to start announcing your URL to the public, you should FIRST review Site Security Recommendations to be sure your site is safe and not vulnerable to hackers. The most up-to-date version of this file can be found on the [Zen Cart® Wiki under Important Security Recommendations](http://www.zen-cart.com/wiki/index.php/Important_Site_Security_Recommendations).
+Once you're set up and ready to start announcing your URL to the public, you should FIRST review Site Security Recommendations to be sure your site is safe and not vulnerable to hackers. The most up-to-date version of this file can be found in the article [Important Security Recommendations](https://www.zen-cart.com/docs/important_site_security_recommendations.html). 

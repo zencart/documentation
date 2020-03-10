@@ -16,7 +16,7 @@ This is a basic guide to upgrading Zen Cart®. If you have not yet installed Zen
 
 To upgrade Zen Cart®, you'll need the same basic tools you used to install and customize it in the first place: An FTP program, a text editor friendly to HTML/PHP code, phpMyAdmin or equivalent access to your MySQL database, and your Control Panel for managing your webspace.  
 
-Additionally, you will find a file-comparison tool (see here for a list of recommended tools: [http://www.zen-cart.com/wiki/index.php/Useful_Tools](http://www.zen-cart.com/wiki/index.php/Useful_Tools) ) is invaluable. (The free tools offer 2-way comparison. The more advanced paid-for tools offer 3-way comparisons which can be very handy, but costly.)  
+Additionally, you will find a file-comparison tool.  See the list of [Useful Tools](/user/first_steps/useful_tools/) for suggestions.  Note that free tools offer 2-way comparison. The more advanced paid-for tools offer 3-way comparisons which can be very handy, but costly.
 
 Upgrading follows 3 easy steps. We suggest you take your time going through each stage carefully and methodically. Don't rush the process. And as always, be sure you keep good backups first.  
 
