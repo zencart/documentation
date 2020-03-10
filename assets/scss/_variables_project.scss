@@ -4,3 +4,13 @@ Add styles or override variables from the theme here.
 
 */
 
+#mainpage_legacy {
+  list-style-type:none;
+}
+#mainpage_legacy > li { 
+  font-weight: bold;
+}
+#mainpage_legacy > li > a { 
+  color: yellow;
+  text-decoration: underline; 
+}
