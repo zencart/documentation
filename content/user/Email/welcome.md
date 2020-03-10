@@ -30,6 +30,6 @@ Products Reviews - Share your opinions on products with our other customers.
 10. Upload the changes back to your server.
 
 NOTE: It's recommended that you place your customized file in an Overrides folder, like this:
-`includes/languages/english/YOUR_TEMPLATE/create_account.php`.
-....where `YOUR_TEMPLATE` is the name of the custom template you've been developing for your site.
+`includes/languages/english/YOURTEMPLATE/create_account.php`.
+....where `YOURTEMPLATE` is the name of the custom template you've been developing for your site.
 
