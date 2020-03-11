@@ -51,7 +51,7 @@ Optional: Additionally, *IF* you have no intentions of supporting downloadable p
 
 It is recommended for additional security that you rename your _admin_ directory after installation. This way, it will be significantly harder for hackers to find your admin area or attempt any attack on breaking into it.
 
-[Instructions for renaming your admin folder can be found in this article.](http://www.zen-cart.com/content.php?75-how-do-i-rename-my-admin-folder-to-prevent-unauthorized-access)
+[Instructions for renaming your admin folder can be found in this article](/user/running/rename_admin).
 
 If your server doesn't support use of .htaccess files, you'll need to work with your hosting company to come up with a way to provide the security protections offered by the supplied .htaccess files but using *your* server's available tools. If you cannot come up with alternate measures, you should reconsider whether your current hosting service is really adequate for the security appropriate to eCommerce.
 

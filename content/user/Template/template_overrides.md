@@ -1,5 +1,5 @@
 ---
-title: The Template Overrides System 
+title: Template Overrides System 
 category: template 
 weight: 1
 ---

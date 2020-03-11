@@ -25,7 +25,8 @@ When this happens, there is often also an entry in the server's errorlog, which 
 
 The built-in debug logging will create files <font color="#0000FF">**in your website's /logs/ folder**</font>, named "<font color="#0000FF">**myDebug-xxxxxx.log**</font>" (or "myDebug-adm-xxxxxxx.log" if they are from the admin side).  
 (To access these files, use your FTP program to connect to your webserver. Your hosting company can help you with how to do that.)  
-(If there are no myDebug-xxxxxxxxxxx.log files in your /logs/ folder, then you might need to [make your /logs/ folder writable.](http://www.zen-cart.com/content.php?51-how-do-i-set-permissions-on-files-folders) Contact your hosting company's help desk if you need assistance with that.)  
+(If there are no myDebug-xxxxxxxxxxx.log files in your /logs/ folder, then you might need to [make your /logs/ folder writable.](/user/installing/permissions).
+Contact your hosting company's help desk if you need assistance with that.)  
 You'll want to read the contents of these files to see what the actual PHP errors are.  
 Then search this FAQ area for your error message and/or see the "Dealing with Error Messages" section, later in this article.  
 
