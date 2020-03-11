@@ -30,7 +30,7 @@ The value of `weight` denotes a sort-order. Please choose a value that makes sen
 - Don't use a headline starting with #.  The `title` in the block above is sufficient.
 
 - Use backticks for denoting code and filenames.  For example `includes/classes/shopping_cart.php` should be coded as 
-<pre>`includes/classes/shopping_cart.php`</pre>
+`includes/classes/shopping_cart.php`
 
 - If you do need to escape an underscore outside of backticks, you can use a backslash, like this: `\_`.  
 
@@ -44,9 +44,32 @@ Check out the &lt;a href="https://www.zen-cart.com/content.php?48-what-are-the-s
 NEW WAY: 
 
 <pre>
-Check out the &lt;a href="/user/First_Steps/server_requirements.md" target="&#95;blank"&gt;Server Requirements For Running Zen Cart&lt;/a&gt;
+Check out the &lt;a href="/user/first_steps/server_requirements" target="&#95;blank"&gt;Server Requirements For Running Zen Cart&lt;/a&gt;
 </pre>
 
-- Be sure to remove any references to the legacy Wiki in the same way. 
+or, in the markdown syntax, 
+
+<pre>
+Check out the [Server Requirements for Running Zen Cart](/user/first_steps/server_requirements). 
+</pre>
+
+
+- Be sure to remove any references to the legacy Wiki in the same way. All content should be using the new doc site moving forward.
 
 - If you are converting an old file from the Tutorials/FAQ area, try using an [HTML to Markdown converter](https://www.browserling.com/tools/html-to-markdown).  It may make the process faster and easier. 
+
+- Be sure to remove the `.md` extension when creating a link.  For example do this: 
+
+<pre>
+Check out the [Server Requirements for Running Zen Cart](/user/first_steps/server_requirements).  
+</pre> 
+
+not this: 
+
+<pre>
+Check out the [Server Requirements for Running Zen Cart](/user/first_steps/server_requirements.md).  
+</pre> 
+
+- Even though the folder names are upper case, use lower case when building the link.  For example, rather than `/First_Steps/`, use `/first_steps/`, as seen in the examples above.
+
+- For consistency, use the standard variables `YOURTEMPLATE` and `YOURLANGUAGE` where they are required (i.e. do not use underscores or another convention for identifying these things. 

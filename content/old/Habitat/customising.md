@@ -151,7 +151,7 @@ This is a list of private RSA keys you want copied to the VM. This can be useful
 
 ###localize_tools:
 
-This determines whether to map the vm's `/tools` folder to your host machine. This is required (useful) to run the supplied unittesting tools. See the [Tools](dev-tools.md) documentation.
+This determines whether to map the vm's `/tools` folder to your host machine. This is required (useful) to run the supplied unittesting tools. See the [Tools](dev-tools) documentation.
 
 The default is `true`
 

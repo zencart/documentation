@@ -41,7 +41,7 @@ e.g.
 #### template
 
 This is the name of the template used to display the listing box. 
-It is assumed that the template will be in includes/templates/templates_default/listingboxes or includes/templates/YOUR_TEMPLATE/listingboxes directory.
+It is assumed that the template will be in includes/templates/templates_default/listingboxes or includes/templates/YOURTEMPLATE/listingboxes directory.
 
 #### params
 

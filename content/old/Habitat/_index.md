@@ -4,9 +4,9 @@ category: Development
 weight: 1
 ---
 
-- [Introduction](introduction.md)
-- [Installation](installation.md)
-- [Development](code_dev.md)
-- [Customising](customising.md)
-- [Tools](dev_tools.md)
-- [Technical](technical.md)
+- [Introduction](introduction)
+- [Installation](installation)
+- [Development](code_dev)
+- [Customising](customising)
+- [Tools](dev_tools)
+- [Technical](technical)

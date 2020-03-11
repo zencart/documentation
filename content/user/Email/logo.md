@@ -19,7 +19,7 @@ You will want to update the block
   define ('EMAIL_LOGO_ALT_TITLE_TEXT', 'Zen Cart! The Art of E-commerce');
 </pre> 
 
-For the storefront, copy the file `includes/languages/english/email_extras.php` to `includes/languages/english/YOUR_TEMPLATE/email_extras.php` and update the same block of `define` statements.
+For the storefront, copy the file `includes/languages/english/email_extras.php` to `includes/languages/english/YOURTEMPLATE/email_extras.php` and update the same block of `define` statements.
 
 Sometimes the change will not show up right away in emails that have already been sent and viewed, due to caching. Simply close your email program and re-open it to see the change take effect.  If your email is browser-based, clear your browser cache to see the change. 
 
