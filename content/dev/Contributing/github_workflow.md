@@ -114,7 +114,7 @@ Any time you're going to contribute code changes, you'll want to first make a wo
  4. Type: `git checkout name-of-your-new-branch-here`
       
 * [SourceTree](http://www.sourcetreeapp.com/):
- 1. First, make sure you're in "Log View"  (View, Log View)
+ 1. First, make sure you're in "History View"  (View, History View)
  2. Find where it shows `upstream/develop`, and right-click on that row. Choose Branch... from the pop-up menu
  3. Give it the new branch name
  4. Leave the "checkout new branch" box checked
