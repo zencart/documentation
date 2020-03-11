@@ -9,8 +9,11 @@ layout: docs
 <!-- unlike other _index.md files, this one SHOULD have direct links -->
 <!-- please keep in alphabetic order -->
 
-* [Admin Password - Reset or Change](user/troubleshooting/reset_admin_password/) 
+* [Blank Page](/user/troubleshooting/blank_page/)
+
 * [Emails are not being received](/user/Email/emails_not_received.md)
+
+* [Password (Admin) - Reset or Change](user/troubleshooting/reset_admin_password/) 
 
 * [Taxes - how much do I charge?](/user/localization/taxes/)
 

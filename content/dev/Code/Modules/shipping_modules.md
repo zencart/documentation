@@ -1,6 +1,11 @@
 ---
 title: Shipping Modules
 ---
+<style>
+pre > code {
+white-space: pre-wrap !important;
+}
+</style>
 # Introduction
 A shipping module applies a shipping cost to an order, based on some calculation method.  Each shipping module requires a minimum of two files:
 

@@ -19,8 +19,7 @@ The reason no stronger sanitization was used was twofold:
 Firstly, Admin allows lots of parameters to include what would be considered dangerous characters. 
 e.g. product descriptions allow script tags, and other inputs allow some html, such as product names.
 
-Secondly, core code uses CSRF tokens for all form interactions. The use of these tokens mitigate against against any 
-exploiting of XSS, unless an admin session is already available. 
+Secondly, core code uses CSRF tokens for all form interactions. The use of these tokens mitigates against any exploiting of XSS, unless an admin session is already available. 
 
 However, reports such as https://www.trustwave.com/Resources/SpiderLabs-Blog/TWSL2016-006--Multiple-XSS-Vulnerabilities-reported-for-Zen-Cart/
 made us reconsider. 
@@ -34,18 +33,18 @@ While we still contend that the CSRF protection mitigates these supposed XSS vul
 
 We have therefore introduced a new sanitization class into v1.5.5 which takes a much more aggressive stance than previous code. 
 
-The new code is likely to have an affect on plugins that add or change admin functionality. To mitigate this some 
+The new code is likely to have an effect on plugins that add or change admin functionality. To mitigate this some 
 overrides and switches have been allowed for. This documentation should allow plugin authors and sites that 
 already use plugins to workaround potential problems.
 
 The new code introduces a number of sanitization groups. Each group performs a sanitization on specific GET/POST 
 parameters. For GET/POST parameters that are not already sanitized within these groups we then run a 
-default sanitization (ie: simply running `htmlspecialchars()` on it).
+default sanitization (i.e.: simply running `htmlspecialchars()` on it).
 
 ## TEMPORARILY Disabling Strict Sanitization
 
 If you find that some of your admin plugins are no longer working properly then you should look first to see if new 
-versions of those plugins are available, ie: that support the new v1.5.5 sanitization. 
+versions of those plugins are available, i.e.: that support the new v1.5.5 sanitization. 
 
 If new versions are not available, or you need to keep your current admin working while you update, then you can disable
 the strict(default) sanitization by doing the following:
@@ -82,10 +81,10 @@ are some tips to keep your plugin compatible with v1.5.5 core functionality.
 ### Parameter Naming
 
 GET/POST parameters will be sanitized based on their parameter name and the sanitization group assigned to them. 
-Therefore if you are writing a plugin and use a parameter name that already exists in Zen Cart that parameter will be 
+Therefore, if you are writing a plugin and use a parameter name that already exists in Zen Cart that parameter will be 
 sanitized according to the group it is already assigned to in core code. 
 
-For example the `action` parameter is assigned to the `SIMPLE_ALPHANUM_PLUS` group, and the sanitization for that group 
+For example, the `action` parameter is assigned to the `SIMPLE_ALPHANUM_PLUS` group, and the sanitization for that group 
 will always be applied to it.
 
 There will be occasions where a plugin uses a parameter name that is already added to a sanitization group, and rewriting
@@ -94,7 +93,7 @@ There will be occasions where a plugin uses a parameter name that is already add
 
 ### Adding Parameters/Groups
 
-If a plugin needs to define it's own sanitization or override the sanitization for an already defined parameter, it 
+If a plugin needs to define its own sanitization or override the sanitization for an already defined parameter, it 
 should create a php file in `/admin/includes/extra_datafiles/`
 
 An example of the contents might be 
@@ -118,7 +117,7 @@ The structure of the defining array is:
 
 1. sanitizerType = The name of a sanitizer group (see the group names below) 
 2. method = get|post|both
-3. pages = (optional) an array of pages (ie: for edit_orders.php specify 'edit_orders' here) which this sanitizer rule will be applied to; (if not supplied, will apply to all pages)
+3. pages = (optional) an array of pages (i.e.: for edit_orders.php specify 'edit_orders' here) which this sanitizer rule will be applied to; (if not supplied, will apply to all pages)
 4. params = (optional) this is used only for the MULTI_DIMENSIONAL sanitizer, which explained below.
 
 
@@ -248,7 +247,7 @@ For example, if you post the following array
 normal sanitizers would only address the outer `update_products` parameter, while what you really want to do is define 
 parameters for `qty` `name` `onetime_charges` etc, and you also want to sanitize the attr sub array recursively.
 
-to address this, you can define a MULTI_DIMENSIONAL sanitizer like this :-
+to address this, you can define a MULTI_DIMENSIONAL sanitizer like this:-
 
     $sanitizer = AdminRequestSanitizer::getInstance();
     $group = array(

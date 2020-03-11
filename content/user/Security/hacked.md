@@ -1,0 +1,17 @@
+---
+title: Responding to a hack
+category: security
+weight: 1
+---
+
+## Apply Security Fixes applicable to your version
+
+1\. If any **[security fixes](/forum/forumdisplay.php?f=2)** have been posted for your version, be sure you have installed them.  
+
+## Site Audit to look for damaged or added files
+
+2\. You will need to do a full site audit to be sure all files are as you expect them to be. **[These steps can be used as a guide.](/user/running/diagnosing_obscure_issues/)**
+
+## Secure Your Site Using the Security Recommendations
+
+3\. Ensure that you have secured your site following the recommendations provided with the code. [**An online copy is here for your convenience**](http://tutorials.zen-cart.com/index.php?article=73).
