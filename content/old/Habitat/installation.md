@@ -53,7 +53,7 @@ And add this line
 172.22.22.22 zen.local  
 172.22.22.22 devdocs.local
 
-Before you start up the VM you may want to customise the environment. If so see the [Customising](customising.md) page before starting the VM.
+Before you start up the VM you may want to customise the environment. If so see the [Customising](customising) page before starting the VM.
 
 To start the VM:
 >

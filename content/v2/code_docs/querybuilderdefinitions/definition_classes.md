@@ -51,7 +51,7 @@ Line 2 tells the listing box manager to build all the listing boxes in the group
 
 Line 3 assigns the output to a $tplVars array.
 
-see [Database Schema](schema.md)
+see [Database Schema](schema)
 
 ## initQueryAndOutput()
 
@@ -133,4 +133,4 @@ Other entries can define derived items, filter methods etc.
 The outputLayout array must contain the 'formatter' option. Other options are dependant on the formatter used.
 
 More details on the fields listingQuery and outputLayout are provided in 
-[Admin LEAD pages](code_docs/admin_lead_pages/introduction.md).
+[Admin LEAD pages](code_docs/admin_lead_pages/introduction).

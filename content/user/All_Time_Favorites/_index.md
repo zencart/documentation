@@ -11,7 +11,7 @@ layout: docs
 
 * [Blank Page](/user/troubleshooting/blank_page/)
 
-* [Emails are not being received](/user/Email/emails_not_received.md)
+* [Emails are not being received](/user/email/emails_not_received)
 
 * [Password (Admin) - Reset or Change](user/troubleshooting/reset_admin_password/) 
 

@@ -151,4 +151,4 @@ It is wise to **NOT use the following symbols** in your image filenames:
 Also, in case it's not self-evident, the files have to actually exist on your server. So, if you're selecting the "Use an image on the server" instead of uploading a file directly, and things aren't showing up, then that probably means the image file you specified doesn't actually exist on the server.  
 
 If you wish to bypass the multiple image capability, you have two options, which are explained in the tutorial 
-[Turning off Additional Images](customizing/turning_off_additional_images.md).
+[Turning off Additional Images](customizing/turning_off_additional_images).

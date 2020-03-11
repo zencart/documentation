@@ -24,11 +24,11 @@ Where do I start?
 -----------------
 It's really as easy as 1-2-3 ...
 
-1. Start with reviewing the [Issues](issues.md) document, as a guide to first steps about exploring the issue further, checking whether it's already being addressed someplace, whether it's a core bug vs a "bugs-me bug", along with how to report the issue to the dev team and community for further discussion using Github Issues or the Zen Cart Support Forum.
+1. Start with reviewing the [Issues](issues) document, as a guide to first steps about exploring the issue further, checking whether it's already being addressed someplace, whether it's a core bug vs a "bugs-me bug", along with how to report the issue to the dev team and community for further discussion using Github Issues or the Zen Cart Support Forum.
 
   If you're simply "looking for ways to get started", take a look at the existing [Zen Cart Issues on Github](https://github.com/zencart/zencart/issues) for issues that are tagged with "up-for-grabs" or "first-timers-only".
 
-2. If you're going to contribute code, read through the [Github Workflow](github_workflow.md) document to learn more about setting up git and github, cloning the repository, creating a branch in which to make your code changes, and how to submit a [Pull Request](pull_requests.md)
+2. If you're going to contribute code, read through the [Github Workflow](github_workflow) document to learn more about setting up git and github, cloning the repository, creating a branch in which to make your code changes, and how to submit a [Pull Request](pull_requests)
 
-3. As you start working on your code changes and pull request, review the [Coding Standards](coding_standards.md) guide to ensure that your code matches both the formatting and testing requirements. If you're submitting a new feature and know how to write PHP code tests, please be sure to submit tests with your code.
+3. As you start working on your code changes and pull request, review the [Coding Standards](coding_standards) guide to ensure that your code matches both the formatting and testing requirements. If you're submitting a new feature and know how to write PHP code tests, please be sure to submit tests with your code.
 
