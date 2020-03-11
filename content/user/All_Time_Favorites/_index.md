@@ -9,5 +9,6 @@ layout: docs
 <!-- unlike other _index.md files, this one SHOULD have direct links -->
 <!-- please keep in alphabetic order -->
 
-* [Emails are not being received](./Email/emails_not_received.md)
+* [Blank Page](/user/troubleshooting/blank_page/)
+* [Emails are not being received](/user/email/emails_not_received.md)
 
