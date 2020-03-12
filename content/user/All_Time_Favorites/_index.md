@@ -1,6 +1,5 @@
 ---
 title: All Time Favorites
-linkTitle: Running
 description: Frequently asked questions about Zen Cart 
 weight: 10
 layout: docs
