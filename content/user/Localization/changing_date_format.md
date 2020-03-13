@@ -127,7 +127,7 @@ and replace with:
 `define('ENTRY_DATE_OF_BIRTH_TEXT', '* (eg. 21/05/1970)');`
 
 
-### 6\. Open file admin/includes/languages/<YOURLANGUAGE>.php
+### 6\. Open file admin/includes/languages/YOURLANGUAGE.php
 
 (this file cannot be over-ridden at present, so you will need to edit the file directly and be careful to reapply the changes if you upgrade to a later version of Zen Cart)  
 
