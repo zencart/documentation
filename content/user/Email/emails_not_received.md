@@ -7,9 +7,9 @@ weight: 1
 Sometimes your mail server configuration requires a particular format in order to send messages.
 Options to try include:
 
-1. Emails Must Be Sent From Known Domain ... enable this so that the "From" address is set properly
+1. Enable `Emails Must Be Sent From Known Domain` so that the "From" address is set properly
 1. Try a different Email Transport method.  Try "php".  If you're using "sendmail", try "sendmail -f".  If you're using SMTP, try SMTPAUTH.
-1. ALWAYS test on a NON-free email address... do not test with a yahoo, hotmail, msn, aol, etc address exclusively.
+1. ALWAYS test on a NON-free email address.  Do not test with a yahoo, hotmail, msn, aol, etc address exclusively.
 1. ALWAYS check to see whether a junk mail filter, spam block, or other blacklist system may have trapped your message before it could be delivered
 1. Try enabling the Email Archiving feature. (Note: this can chew up server database disk space quickly.) Then use the Email Archive Viewer contribution to check and see whether Zen Cart really processed the email for sending. If it did, then the problem is related to how PHP is processing your messages after they leave Zen Cart. 
 

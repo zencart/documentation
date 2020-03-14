@@ -13,7 +13,7 @@ If you choose to use a packaged installer from someplace else, make sure you ask
 
 # NEW INSTALLATION
 
-# Getting Started ...
+# Getting Started
 
 This is a basic guide to installing Zen Cart®. If you already have Zen Cart® installed and wish to upgrade from a previous version to this new release, please see the **[Upgrade Instructions](http://www.zen-cart.com/upgrade)** and the **What's New documentation**.  
 
@@ -21,15 +21,15 @@ This is a basic guide to installing Zen Cart®. If you already have Zen Cart® i
 
 You have downloaded the Zen Cart® software for an online shopping cart.
 
-Questions to ask yourself ...
+Questions to ask yourself:
 
 ### 1\. Do you have a domain?
 
-If No, stop ... see our [Certified Hosting](http://www.zen-cart.com/hosting) Sites and find a fast, reliable hosting site that can help you register your own personal domain as well as provide for your hosting needs that meet the Zen Cart® software requirements ...
+If No, stop, and see our [Certified Hosting](http://www.zen-cart.com/hosting) Sites and find a fast, reliable hosting site that can help you register your own personal domain as well as provide for your hosting needs that meet the Zen Cart® software requirements.
 
 ### 2\. Do you have FTP software?
 
-If No, stop ... you need to obtain a decent FTP software package such as [FileZilla](http://filezilla.sourceforge.net/) to transfer files back and forth from your computer to your webserver (the computer on the internet where you have your domain hosted). 
+If No, stop.  You need to obtain a decent FTP software package such as [FileZilla](http://filezilla.sourceforge.net/) to transfer files back and forth from your computer to your webserver (the computer on the internet where you have your domain hosted). 
 
 <span class="error">**NOTE:** Many people have had timeout and other problems when using programs like SmartFTP and CuteFTP. We recommend that you do NOT use these problematic programs.  
 
@@ -40,10 +40,10 @@ If No, stop ... you need to obtain a decent FTP software package such as [FileZi
 
 ### 3\. Do you have a good Text Editor?
 
-If No stop ... you will need a good Text Editing software such as [Notepad++](http://notepad-plus.sourceforge.net/) (free), [UltraEdit](http://ultraedit.com/), [CrimsonEditor](http://crimsoneditor.com/) (free), [BBedit/TextWrangler](http://www.barebones.com/)(Mac), Kedit (linux), or some other type of Text Editor for modifying the files in the Zen Cart® software ...
+If No stop.  You will need a good Text Editing software such as [Notepad++](http://notepad-plus.sourceforge.net/) (free), [UltraEdit](http://ultraedit.com/), [CrimsonEditor](http://crimsoneditor.com/) (free), [BBedit/TextWrangler](http://www.barebones.com/)(Mac), Kedit (linux), or some other type of Text Editor for modifying the files in the Zen Cart® software.
 
-<span class="error">**Note:** <u>do **not** use cPanel for editing files,</u> <u>or MS Word</u> or other software designed for fancy writing ... you want a nice clean Text Editor.</span>  
-You can use the Windows Notepad... but this is limited in capabilities and the size of files that it can open and often can cause more harm than good ... (Notepad++ mentioned above is the most recommended choice.)  
+<span class="error">**Note:** <u>do **not** use cPanel for editing files,</u> <u>or MS Word</u> or other software designed for fancy writing.  Instead, you want a nice clean Text Editor.</span>  
+You can use the Windows Notepad, but this is limited in capabilities and the size of files that it can open and often can cause more harm than good. (Notepad++ mentioned above is the most recommended choice.)  
 
 ### 4\. Do you have access to your webhosting control panel to create a MySQL database and user?
 
@@ -53,7 +53,7 @@ BEFORE YOU PROCEED, make sure you have access to a MySQL database, and username/
 
 ### All set?
 
-If you have answered Yes to all 4 of these questions, then you are ready to go on ...
+If you have answered Yes to all 4 of these questions, then you are ready to go on. 
 
 ### ZIP file
 
@@ -81,11 +81,11 @@ etc, etc, etc
 
 Basically, in your FTP area look for a "www" or "public_html" or "htdocs" or "httpdocs" or "wwwroot" folder. These are the common folder names for what is referred to as the "webroot", which is where all website content is served from.  
 
-Your Zen Cart files (or *any* files to run your website, for that matter) need to be under that folder. If they're not, then you're going to get "not found" errors ... because the content is not found!
+Your Zen Cart files (or *any* files to run your website, for that matter) need to be under that folder. If they're not, then you're going to get "not found" errors - because the content is not found!
 
 If it's unclear where the publicly-accessible files are to be uploaded, ask your hosting company for assistance in determining what your "webroot" folder should be.
 
-REMEMBER ... this guide uses the "/catalog" folder AS AN EXAMPLE.   You don't "have to" use "/catalog".  You could use something else, or nothing at all if you prefer to install in the "root" (which is the "base" of your website).
+REMEMBER: this guide uses the "/catalog" folder AS AN EXAMPLE.   You don't "have to" use "/catalog".  You could use something else, or nothing at all if you prefer to install in the "root" (which is the "base" of your website).
 
 # **Creating the configure.php files**
 
@@ -99,7 +99,7 @@ Rename this file to `configure.php` and change the permissions to 777 (read-writ
 Next, on the server locate the file: `/catalog/admin/includes/dist-configure.php`  
 Rename this file to <span class="filename">configure.php</span> and change the permissions to 777 (read-write-execute for all)  
 
-**NOTE FOR IIS USERS:** If you are using IIS for Windows hosting, the "chmod 777" idea for permissions settings is likely foreign to you. In IIS, under Windows, you need to right-click on the file (or folders in the next section below), and choose Properties. Then under the Security tab, ensure that the"**Internet Guest Account**", identified usually as: `MACHINE_NAME\IUSR_MACHINE_NAME` ... has at least "read" and "write" privileges... likely best to give "modify" as well. This should be done on each file/folder indicated. (If the `IUSR_MACHINE_NAME` account isn't listed, click "Add" and add that account from the list, and then set the required permissions.) (Note: `_MACHINE_NAME` above refers to the "machine name" or "computer name" configured by the server administrator to "name" the server.)  
+**NOTE FOR IIS USERS:** If you are using IIS for Windows hosting, the "chmod 777" idea for permissions settings is likely foreign to you. In IIS, under Windows, you need to right-click on the file (or folders in the next section below), and choose Properties. Then under the Security tab, ensure that the"**Internet Guest Account**", identified usually as: `MACHINE_NAME\IUSR_MACHINE_NAME` has at least "read" and "write" privileges.  It is likely best to give "modify" as well. This should be done on each file/folder indicated. (If the `IUSR_MACHINE_NAME` account isn't listed, click "Add" and add that account from the list, and then set the required permissions.) (Note: `_MACHINE_NAME` above refers to the "machine name" or "computer name" configured by the server administrator to "name" the server.)  
 
 
 # Set Permissions on folders
@@ -243,7 +243,7 @@ a) [RENAME YOUR ADMIN FOLDER.  Instructions here.](/user/running/rename_admin/)
 b) When you enter the Catalog, you will receive security warnings about the configure.php files and the `/zc_install` directory.  
 
 **configure.php files**  
-You will now want to change the permissions on the configure.php files with <span class="filename">chmod 644</span> (or 444 depending on your server...and sometimes setting 444 cannot be done via FTP, in which case use your host's control panel or file manager to set the permissions level.)  
+You will now want to change the permissions on the configure.php files with <span class="filename">chmod 644</span> (or 444 depending on your server, and sometimes setting 444 cannot be done via FTP, in which case use your host's control panel or file manager to set the permissions level.)  
 
 These are located here (remember, "catalog" is what we used as an example here -- your site may or may not include "catalog" as a folder name):  
 
@@ -259,7 +259,7 @@ If you have any errors or problems, most of these can be corrected by minor adju
 c) Remove the **zc_install directory**  
 Next, you will want to delete the <span class="filename">/catalog/zc_install</span> directory  
 
-(If you are only testing and plan to install again, you could rename the folder to something like: <span class="filename">/catalog/zc_install_complete until you take your site live. </span> NOTE: use a different name than <span class="filename">zc_install_complete</span> as some hacker may try using it, having read this help file.  Do NOT leave a zc_install folder on the server of a live site....for security reasons.)  
+(If you are only testing and plan to install again, you could rename the folder to something like: <span class="filename">/catalog/zc_install_complete until you take your site live. </span> NOTE: use a different name than <span class="filename">zc_install_complete</span> as some hacker may try using it, having read this help file.  Do NOT leave a zc_install folder on the server of a live site for security reasons.)  
 
 
 # Next Steps

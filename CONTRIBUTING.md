@@ -73,3 +73,11 @@ Check out the [Server Requirements for Running Zen Cart](/user/first_steps/serve
 - Even though the folder names are upper case, use lower case when building the link.  For example, rather than `/First_Steps/`, use `/first_steps/`, as seen in the examples above.
 
 - For consistency, use the standard variables `YOURTEMPLATE` and `YOURLANGUAGE` where they are required (i.e. do not use underscores or another convention for identifying these things. 
+
+- Use arrow notation for describing click paths in the Admin, rather than ellipses.  For example, use
+
+`Configuration->EZ-Pages Settings` 
+
+rather than 
+
+`Configuration ... EZ-Pages Settings`.

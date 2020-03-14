@@ -33,13 +33,14 @@ Then you copy the file called
 Next, open 
 `includes/templates/YOURTEMPLATE/template_info.php` in your text editor. Change the information below between each set of single quotes to suit your new template. Remember to keep the single quotes. Your template name does not need to be identical to your folder name, and you can use spaces to make it read well, but it is best to make them similar. Leave the space between the quotes for the template screenshot field empty for now, since you don’t have one yet.
 
-<pre><span class="Code"><?php  
+<pre>
+&lt;?php  
 $template_name = 'YOURTEMPLATE';  
 $template_version = 'Version 1.0';  
 $template_author = '<enter your name here>';  
 $template_description = 'This is my own template, created for my site at www.example.com';  
 $template_screenshot = '';  
-?></span>  
+?&gt;
 </pre>
 
 When you've finished, your new file structure should look as follows:
