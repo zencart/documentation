@@ -1,13 +1,10 @@
 ---
-title: History of Release Dates
-description: Release Dates for Zen Cart 
-weight: 100 
-layout: docs
-category: Zen Cart
+title: Release History
+category: about 
+weight: 1
 ---
 
-Zen Cart® Release Date History
-==============================
+This is the release history of the Zen Cart product.
 
 07/16/2019 - v1.5.6c
 
