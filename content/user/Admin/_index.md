@@ -1,7 +1,6 @@
 ---
-title: Admin 
-linkTitle: Admin System 
-description: Admin controls 
+title: Admin System
+description: Admin controls and how to use them
 weight: 100 
 layout: docs
 ---
