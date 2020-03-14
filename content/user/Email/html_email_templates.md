@@ -24,7 +24,8 @@ You can enter customizable TEXT-ONLY content in the lower section, which will be
 
 ## HOW TO USE the HTML Mail Template System
 
-The email template system operates through the <span class="filename">email_*.htm</span> files in your <span class="filename">/email</span> folder.
+The email template system operates through the 
+`email_*.htm` files in your `/email` folder.
 
 ## MULTIPLE LANGUAGES
 

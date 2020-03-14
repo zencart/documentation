@@ -10,7 +10,7 @@ Preamble worth reading: [How-do-I-rebuild-my-site-on-the-new-version-instead-of-
 
 NOTE: For each new release, there are important documents in the [/docs](https://www.zen-cart.com/docs/) folder of the Zen Cart ZIP file.  Please check this folder for any special notes about the version you are upgrading from/to.  
 
-## Getting Started ...  
+## Getting Started 
 
 This is a basic guide to upgrading Zen Cart®. If you have not yet installed Zen Cart®, please see the [/docs/1.readme_installation.html](https://www.zen-cart.com/docs/1.readme_installation.html) file for installation instructions.  
 
@@ -68,7 +68,8 @@ Simple language edits will be just a matter of copy-and-paste.
 Programming changes to core components will be more difficult and require significant testing.  
 You may find WinMerge handy at this stage to apply edits as well. However, you will see many extra differences that may not be related to your own customizations, or that may conflict. Be careful making changes to program code.  
 
-Note that there will be several changes you will have to make to files that you have overridden using the template overrides system. Thus, you'll want to compare files from <span class="filename">/includes/templates/MYTEMPLATE/*</span> to <span class="filename">/includes/template/template_default/*</span> ... and the same with language file overrides, sideboxes, etc.  
+Note that there will be several changes you will have to make to files that you have overridden using the template overrides system. Thus, you'll want to compare files from 
+`/includes/templates/MYTEMPLATE/*` to `/includes/template/template_default/*`, and the same with language file overrides, sideboxes, etc.  
 
 </div>
 

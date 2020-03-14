@@ -17,9 +17,9 @@ Products Reviews - Share your opinions on products with our other customers.
 
 4. Open the Developers Toolkit (Admin->Tools->Developers Tool Kit )
 
-5. Paste those words "exactly" as they appeared on the email... into the first search box.
+5. Paste those words exactly as they appeared on the email into the first search box.
 
-6. From the first drop-down, choose "All Language files..."
+6. From the first drop-down, choose "All Language Files"
 
 7. Click Search
 
@@ -31,5 +31,5 @@ Products Reviews - Share your opinions on products with our other customers.
 
 NOTE: It's recommended that you place your customized file in an Overrides folder, like this:
 `includes/languages/english/YOURTEMPLATE/create_account.php`.
-....where `YOURTEMPLATE` is the name of the custom template you've been developing for your site.
+where `YOURTEMPLATE` is the name of the custom template you've been developing for your site.
 

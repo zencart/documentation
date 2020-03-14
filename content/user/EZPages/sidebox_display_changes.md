@@ -1,5 +1,5 @@
 ---
-title: Sidebox enabling/disabling on EZPages 
+title: Sidebox enabling/disabling on EZ-Pages 
 category: ezpages
 weight: 1
 ---

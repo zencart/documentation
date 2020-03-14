@@ -1,5 +1,5 @@
 ---
-title: What are EZPages? 
+title: What are EZ-Pages? 
 category: ezpages
 weight: 1
 ---

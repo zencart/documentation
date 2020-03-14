@@ -81,13 +81,17 @@ Remember only files which have been modified should be copied to your /YOURTEMPL
 
 *   YOURTEMPLATE file names - **/includes/filenames.php**
 
-> You've created a YOURTEMPLATE page (about_us) and need to reference the filename.  
->     Create a new file (about_us_filenames.php) which would include the following:  
->     <span class="Code"><?php  
->     // About Us Filename Define  
->     define('FILENAME_ABOUT_US', 'about_us');  
->     ?></span>  
->     Save the file to **/includes/extra_datafiles/about_us_filenames.php** and upload it to your server.
+You've created a YOURTEMPLATE page (about_us) and need to reference the filename.  
+Create a new file (about_us_filenames.php) which would include the following:  
+
+<pre>
+&lt;?php  
+// About Us Filename Define  
+define('FILENAME_ABOUT_US', 'about_us');  
+?&gt;
+</pre>
+
+Save the file to **/includes/extra_datafiles/about_us_filenames.php** and upload it to your server.
 
 **Note:** These files will be called automatically, as would any other file in this directory, thereby telling the system what your YOURTEMPLATE filenames are.  
 
@@ -97,9 +101,9 @@ Remember only files which have been modified should be copied to your /YOURTEMPL
 >     Create a new file (ups_track_database_tables.php) which would include the following:  
 <pre>
 &lt;?php  
-> // UPS Tracking Table  
-> define ('TABLE_UPS_TRACK', 'ups_track');  
-> ?&gt;
+// UPS Tracking Table  
+define ('TABLE_UPS_TRACK', 'ups_track');  
+?&gt;
 </pre>
 
 > Save the file to /includes/extra_datafiles/usps_track_database_tables.php and upload it to your server.
@@ -110,11 +114,13 @@ Extra Javascript for an existing file
 
 > You need to load some javascript for your bizrate account, so that it loads from the existing page (checkout_success.php) after the order has completed.  
 >     Create a new file named jscript_bizrate.js which would include the following:  
-> <span class="Code"><script language="javascript" type="text/javascript"><!--  
-> whatever the heck bizrate gave you  
-> //--></script></span>   
->   
-> Save the file to /includes/modules/pages/checkout_success and upload it to your server.
+<pre>
+&lt;script language="javascript" type="text/javascript"&gt;
+ whatever the heck bizrate gave you  
+&lt;/script&gt;
+</pre>
+
+ Save the file to /includes/modules/pages/checkout_success and upload it to your server.
 
 **Zen Cart® Upgrades**  
 

@@ -1,5 +1,5 @@
 ---
-title: Sitemap support for EZPages 
+title: Sitemap support for EZ-Pages 
 category: ezpages
 weight: 1
 ---

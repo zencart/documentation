@@ -11,9 +11,9 @@ If you are installing Zen Cart v1.5.0 or newer, for the first time, and not pres
 ## TO CONVERT TO UTF8:
 
 1\. Use this [conversion utility to convert your data to UTF8](http://www.zen-cart.com/downloads.php?do=file&id=1318) (AFTER MAKING AND TESTING A DATABASE BACKUP): [http://www.zen-cart.com/downloads.php?do=file&id=1318](http://www.zen-cart.com/downloads.php?do=file&id=1318)  
-2\. (If you installed your site NEW since v1.5.0 or newer, then the following are ALREADY done for you. But, if you UPGRADED from a version prior to 1.5.0, then you will need to double-check each of the following ...)  
+2\. (If you installed your site NEW since v1.5.0 or newer, then the following are ALREADY done for you. But, if you UPGRADED from a version prior to 1.5.0, then you will need to double-check each of the following:)  
 
-1.  Edit <font color="#ff0000">/admin/includes/languages/english.php</font> (and all other language_name.php files in that folder) and set the define for CHARSET to 'utf-8'.  
+1.  Edit <font color="#ff0000">/admin/includes/languages/english.php</font> (and all other <i>language_name</i>.php files in that folder) and set the define for CHARSET to 'utf-8'.  
     Do the same with the <font color="#ff0000">non-admin /includes/languages/english.php</font> (and other language_name.php files in that folder)  
     ... AND ...
 2.  Also edit your <font color="#ff0000">two configure.php files</font> to set DB_CHARSET to 'utf8':  

@@ -75,13 +75,13 @@ And for product-images, make sure you don't have spaces and hyphens in the produ
 * * *
 
 **Other Information**  
-If you are using Yahoo Hosting, you might want to enable their script logs: [http://help.yahoo.com/l/us/yahoo/sma...hp/php-05.html](http://help.yahoo.com/l/us/yahoo/smallbusiness/webhosting/php/php-05.html)  
+If you are using Yahoo Hosting, you might want to enable their [script logs](http://help.yahoo.com/l/us/yahoo/smallbusiness/webhosting/php/php-05.html)  
 
 * * *
 
 ### Advanced Developer Option. (THIS APPROACH IS *NOT* NEEDED FOR MOST SITUATIONS!!!!)
 
-While **<font color="#ff0000">the built-in myDebug-xxxxxx.log method above is far more reliable and secure</font>** (since messages are never shown in your customers' browser), another way to help identify ***where*** an error is happening is to show the errors on your browser. The drawback to this is that your customers can also see the errors, and search engines might catch them too ... which could be embarrassing, AND WILL CAUSE YOUR SITE TO FAIL PCI SECURITY SCANS.  
+While **<font color="#ff0000">the built-in myDebug-xxxxxx.log method above is far more reliable and secure</font>** (since messages are never shown in your customers' browser), another way to help identify ***where*** an error is happening is to show the errors on your browser. The drawback to this is that your customers can also see the errors, and search engines might catch them too, which could be embarrassing, AND WILL CAUSE YOUR SITE TO FAIL PCI SECURITY SCANS.  
 To attempt to show PHP debug errors on-screen, create and upload a new file, like this:  
 Filename: **/includes/<u>local</u>/configure.php**  
 
