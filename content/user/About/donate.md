@@ -6,16 +6,16 @@ weight: 1
 
 Show your appreciation for the great support and fantastic shopping cart software by making a donation today!
 
-<div style="width: 500px; height: 150px; padding: 10px; border: 1px solid black; margin: auto;">
-
 Make your donations to the team the fast, easy way through PayPal.  
 For convenient monthly payments use the links below.
+<br /><br />
 
-<div style="float: left; width: 20%; text-align: center;">
+<div style="width: 500px; padding: 10px; border: 1px solid black; margin: auto;">
+
+<div style="float: left; text-align: center;">
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input type="hidden" name="cmd" value="_xclick-subscriptions"> <input type="hidden" name="business" value="paypal@zen-cart.com"> <input type="hidden" name="item_name" value="Buy the Zen Cart Team some coffee!"> <input type="hidden" name="no_shipping" value="1"> <input type="hidden" name="no_note" value="1"> <input type="hidden" name="currency_code" value="USD"> <input type="image" src="https://www.zen-cart.com/images/paypal_5.gif" name="submit" alt="Donate $5.00 a month the easy way with PayPal"> <input type="hidden" name="a3" value="5.00"> <input type="hidden" name="p3" value="1"> <input type="hidden" name="t3" value="M"> <input type="hidden" name="src" value="1"> <input type="hidden" name="sra" value="1"></form>
 
-</div>
 
 <div style="float: left; width: 20%; text-align: center;">
 
@@ -35,7 +35,7 @@ For convenient monthly payments use the links below.
 
 </div>
 
-<div style="float: left; width: 20%; text-align: center;">
+<div style="float: left; text-align: center;">
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input type="hidden" name="cmd" value="_xclick-subscriptions"> <input type="hidden" name="business" value="paypal@zen-cart.com"> <input type="hidden" name="item_name" value="Buy the Zen Cart Team some coffee!"> <input type="hidden" name="no_shipping" value="1"> <input type="hidden" name="no_note" value="1"> <input type="hidden" name="currency_code" value="USD"> <input type="image" src="https://www.zen-cart.com/images/paypal_50.gif" name="submit" alt="Donate $50.00 a month the easy way with PayPal"> <input type="hidden" name="a3" value="50.00"> <input type="hidden" name="p3" value="1"> <input type="hidden" name="t3" value="M"> <input type="hidden" name="src" value="1"> <input type="hidden" name="sra" value="1"></form>
 
@@ -47,7 +47,7 @@ For convenient monthly payments use the links below.
 
 </div>
 
-<div style="float: left; width: 50%; text-align: center;">
+<div style="text-align: center">
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input type="hidden" name="cmd" value="_xclick-subscriptions"> <input type="hidden" name="business" value="paypal@zen-cart.com"> <input type="hidden" name="item_name" value="Buy the Zen Cart Team some coffee!"> <input type="hidden" name="no_shipping" value="1"> <input type="hidden" name="no_note" value="1"> <input type="hidden" name="currency_code" value="USD"> <input type="image" src="https://www.zen-cart.com/images/paypal_200.gif" name="submit" alt="Donate $200.00 a month the easy way with PayPal"> <input type="hidden" name="a3" value="200.00"> <input type="hidden" name="p3" value="1"> <input type="hidden" name="t3" value="M"> <input type="hidden" name="src" value="1"> <input type="hidden" name="sra" value="1"></form>
 
@@ -55,11 +55,13 @@ For convenient monthly payments use the links below.
 
 </div>
 
-<div style="width: 500px; padding: 10px; margin-top: 20px; border: 1px solid black; margin: auto">
+<div style="width: 500px; padding: 10px; margin-top: 20px;">
 
 <div style="text-align: center; margin: 0 28%">
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input type="hidden" name="cmd" value="_xclick-subscriptions"> <input type="hidden" name="business" value="paypal@zen-cart.com"> <input type="hidden" name="item_name" value="Support the Zen Cart(tm) Project"> <input type="hidden" name="no_shipping" value="1"> <input type="hidden" name="no_note" value="1"> <input type="hidden" name="src" value="1"> <input type="hidden" name="currency_code" value="USD"> <input type="hidden" name="bn" value="zencart">
+
+</div>
 
 <table>
 
@@ -81,7 +83,7 @@ For convenient monthly payments use the links below.
 
 </table>
 
-<input type="hidden" name="option_select0" value="Send"> <input type="hidden" name="option_amount0" value="250.00"> <input type="hidden" name="option_period0" value="M"> <input type="hidden" name="option_frequency0" value="1"> <input type="hidden" name="option_select1" value="Send"> <input type="hidden" name="option_amount1" value="300.00"> <input type="hidden" name="option_period1" value="M"> <input type="hidden" name="option_frequency1" value="1"> <input type="hidden" name="option_select2" value="Send"> <input type="hidden" name="option_amount2" value="500.00"> <input type="hidden" name="option_period2" value="M"> <input type="hidden" name="option_frequency2" value="1"> <input type="hidden" name="option_select3" value="Send"> <input type="hidden" name="option_amount3" value="750.00"> <input type="hidden" name="option_period3" value="M"> <input type="hidden" name="option_frequency3" value="1"> <input type="hidden" name="option_select4" value="Send"> <input type="hidden" name="option_amount4" value="1000.00"> <input type="hidden" name="option_period4" value="M"> <input type="hidden" name="option_frequency4" value="1"> <input type="hidden" name="option_index" value="0"> <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribe_SM.gif" border="0" name="submit" alt="Donate with PayPal"> ![](https://www.paypalobjects.com/en_US/i/scr/pixel.gif)</form>
+<input type="hidden" name="option_select0" value="Send"> <input type="hidden" name="option_amount0" value="250.00"> <input type="hidden" name="option_period0" value="M"> <input type="hidden" name="option_frequency0" value="1"> <input type="hidden" name="option_select1" value="Send"> <input type="hidden" name="option_amount1" value="300.00"> <input type="hidden" name="option_period1" value="M"> <input type="hidden" name="option_frequency1" value="1"> <input type="hidden" name="option_select2" value="Send"> <input type="hidden" name="option_amount2" value="500.00"> <input type="hidden" name="option_period2" value="M"> <input type="hidden" name="option_frequency2" value="1"> <input type="hidden" name="option_select3" value="Send"> <input type="hidden" name="option_amount3" value="750.00"> <input type="hidden" name="option_period3" value="M"> <input type="hidden" name="option_frequency3" value="1"> <input type="hidden" name="option_select4" value="Send"> <input type="hidden" name="option_amount4" value="1000.00"> <input type="hidden" name="option_period4" value="M"> <input type="hidden" name="option_frequency4" value="1"> <input type="hidden" name="option_index" value="0"> <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribe_SM.gif" border="0" name="submit" alt="Donate with PayPal"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>
 
 </div>
 
