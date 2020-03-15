@@ -6,31 +6,31 @@ weight: 1
 
 ### Configuration
 
-*   [My Store](/user/admin_pages/pages/configuration_mystore) — General information about your site.
-*   [Minimum Values](/user/admin_pages/pages/configuration_minimumvalues) — Defines minimum values for various options in validation of user input.
-*   [Maximum Values](/user/admin_pages/pages/configuration_maximumvalues/) — Defines maximum values for various items that will appear on each page/in each block.
-*   [Images](/user/admin_pages/pages/configuration_images/) — Controls size of images on each page/each type of content.
-*   [Customer Details](/user/admin_pages/pages/configuration_customerdetails/) — Controls options to include in _User Login/Registration_ and _My Account_ pages.
-*   [Shipping/Packaging](/user/admin_pages/pages/configuration_shippingpackaging/) — General shipping information including locations, weight and size limits, etc.
-*   [Product Listing](/user/admin_pages/pages/configuration_productlisting/) — Controls appearance of main _Product Listing_ pages.
-*   [Stock](/user/admin_pages/pages/configuration_stock/) — Control various options regarding stock control.
-*   [Logging](/user/admin_pages/pages/configuration_logging/) — Controls how events are logged.
-*   [E-Mail Options](/user/admin_pages/pages/configuration_emailoptions/) — Various email configuration options.
-*   [Attribute Settings](/user/admin_pages/pages/configuration_attributesettings/) — Controls how product attributes are handled.
-*   [GZip Compression](/user/admin_pages/pages/configuration_gzipcompression/) — Controls compression settings if the information is transmitted to the user's web browser in compressed format.
-*   [Sessions](/user/admin_pages/pages/configuration_sessions/) - Controls PHP Sessions settings.
-*   [Regulations](/user/admin_pages/pages/configuration_regulations/) — Provision of terms and conditions for customers.
-*   [GV Coupons](/user/admin_pages/pages/configuration_gvcoupons/) — Various configuration options for the _Gift Voucher_ module.
-*   [Credit Cards](/user/admin_pages/pages/configuration_creditcards/) — Determine which credit cards to accept.
-*   [Product Info](/user/admin_pages/pages/configuration_productinfo/) — Basic options controlling elements to include on _Product Info_ page.
-*   [Layout Settings](/user/admin_pages/pages/configuration_layoutsettings/) — Controls certain layout options.
-*   [Website Maintenance](/user/admin_pages/pages/configuration_websitemaintenance/) — Controls how your store appears to customers when it is down for maintenance.
-*   [New Listing](/user/admin_pages/pages/configuration_newlisting/) — How and where certain product listing information for new listings are displayed.
-*   [Featured Listing](/user/admin_pages/pages/configuration_featuredlisting/) — How and where certain product listing information for featured listings are displayed.
-*   [All Listing](/user/admin_pages/pages/configuration_alllisting/) — How and where certain product listing information for all listings are displayed.
-*   [Index Listing](/user/admin_pages/pages/configuration_indexlisting/) — Whether certain items show on main page.
-*   [Define Page Status](/user/admin_pages/pages/configuration_definepagestatus/) — Controls whether define pages editor text is used and whether a link to a certain page is displayed.
-*   [EZ-Pages Settings](/user/admin_pages/pages/configuration_ezpagessettings/) — Various options to configure the EZ-Pages; an easy way to add new pages of content.
+*   [My Store](/user/admin_pages/configuration/configuration_mystore) — General information about your site.
+*   [Minimum Values](/user/admin_pages/configuration/configuration_minimumvalues) — Defines minimum values for various options in validation of user input.
+*   [Maximum Values](/user/admin_pages/configuration/configuration_maximumvalues/) — Defines maximum values for various items that will appear on each page/in each block.
+*   [Images](/user/admin_pages/configuration/configuration_images/) — Controls size of images on each page/each type of content.
+*   [Customer Details](/user/admin_pages/configuration/configuration_customerdetails/) — Controls options to include in _User Login/Registration_ and _My Account_ pages.
+*   [Shipping/Packaging](/user/admin_pages/configuration/configuration_shippingpackaging/) — General shipping information including locations, weight and size limits, etc.
+*   [Product Listing](/user/admin_pages/configuration/configuration_productlisting/) — Controls appearance of main _Product Listing_ pages.
+*   [Stock](/user/admin_pages/configuration/configuration_stock/) — Control various options regarding stock control.
+*   [Logging](/user/admin_pages/configuration/configuration_logging/) — Controls how events are logged.
+*   [E-Mail Options](/user/admin_pages/configuration/configuration_emailoptions/) — Various email configuration options.
+*   [Attribute Settings](/user/admin_pages/configuration/configuration_attributesettings/) — Controls how product attributes are handled.
+*   [GZip Compression](/user/admin_pages/configuration/configuration_gzipcompression/) — Controls compression settings if the information is transmitted to the user's web browser in compressed format.
+*   [Sessions](/user/admin_pages/configuration/configuration_sessions/) - Controls PHP Sessions settings.
+*   [Regulations](/user/admin_pages/configuration/configuration_regulations/) — Provision of terms and conditions for customers.
+*   [GV Coupons](/user/admin_pages/configuration/configuration_gvcoupons/) — Various configuration options for the _Gift Voucher_ module.
+*   [Credit Cards](/user/admin_pages/configuration/configuration_creditcards/) — Determine which credit cards to accept.
+*   [Product Info](/user/admin_pages/configuration/configuration_productinfo/) — Basic options controlling elements to include on _Product Info_ page.
+*   [Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/) — Controls certain layout options.
+*   [Website Maintenance](/user/admin_pages/configuration/configuration_websitemaintenance/) — Controls how your store appears to customers when it is down for maintenance.
+*   [New Listing](/user/admin_pages/configuration/configuration_newlisting/) — How and where certain product listing information for new listings are displayed.
+*   [Featured Listing](/user/admin_pages/configuration/configuration_featuredlisting/) — How and where certain product listing information for featured listings are displayed.
+*   [All Listing](/user/admin_pages/configuration/configuration_alllisting/) — How and where certain product listing information for all listings are displayed.
+*   [Index Listing](/user/admin_pages/configuration/configuration_indexlisting/) — Whether certain items show on main page.
+*   [Define Page Status](/user/admin_pages/configuration/configuration_definepagestatus/) — Controls whether define pages editor text is used and whether a link to a certain page is displayed.
+*   [EZ-Pages Settings](/user/admin_pages/configuration/configuration_ezpagessettings/) — Various options to configure the EZ-Pages; an easy way to add new pages of content.
 
 ### Catalog
 
