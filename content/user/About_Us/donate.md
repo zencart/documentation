@@ -1,6 +1,6 @@
 ---
 title: Donate
-category: about 
+category: about_us
 weight: 1
 ---
 
