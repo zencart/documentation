@@ -1,5 +1,5 @@
 ---
-title: How to set up the Authorize.net AIM payment module
+title: Authorize.net AIM Payment Module
 category: modules
 weight: 1
 ---

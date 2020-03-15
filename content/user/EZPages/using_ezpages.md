@@ -1,7 +1,7 @@
 ---
 title: Using EZ-Pages 
 category: ezpages
-weight: 1
+weight: -1
 ---
 
 ## How do I add text to the EZ-Page Sidebox
