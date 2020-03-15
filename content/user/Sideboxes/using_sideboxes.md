@@ -1,7 +1,7 @@
 ---
 title: Using Sideboxes 
 category: sideboxes
-weight: 1
+weight: -1
 ---
 
 Miscellaneous Questions about Sideboxes 
