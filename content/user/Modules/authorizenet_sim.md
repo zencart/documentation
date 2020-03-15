@@ -1,5 +1,5 @@
 ---
-title: How to set up the Authorize.net SIM payment module
+title: Authorize.net SIM Payment Module
 category: modules 
 weight: 1
 ---
