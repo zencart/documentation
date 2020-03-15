@@ -161,7 +161,7 @@ The best way to upload is to upload the ENTIRE includes directory from the unzip
 *   If your admin folder is named ABCDEF, rename the admin folder in the unzipped mod to ABCDEF, and upload the entire folder.
 *   If the unzipped file contains template specific files, rename the containing directories to the name of your template. For instance, if your template is named "blue" and the mod has a directory named
 
-    <pre>includes/modules/YOUR_TEMPLATE/
+    <pre>includes/modules/YOURTEMPLATE/
     </pre>
 
     rename this to

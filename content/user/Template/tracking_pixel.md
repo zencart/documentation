@@ -20,8 +20,8 @@ To do it with a javascript file, simply create the following file:
 /includes/modules/pages/checkout_success/jscript_myaffiliate_program.php  
 
 b) template file:  
-To do it with a template file, you'll need the following file on your server: /includes/templates/YOUR_CUSTOM_TEMPLATE_NAME/checkout_success/tpl_footer.php (replacing YOUR_CUSTOM_TEMPLATE_NAME with the name of your actual custom template, of course)  
-If you don't already have that checkout_success folder at that location, create it. And then copy the tpl_footer.php file from your /includes/templates/YOUR_CUSTOM_TEMPLATE_NAME/common/tpl_footer.php ... or if you don't have one there, get it from template_default.  
+To do it with a template file, you'll need the following file on your server: /includes/templates/YOURTEMPLATE/checkout_success/tpl_footer.php (replacing YOURTEMPLATE with the name of your actual custom template, of course)  
+If you don't already have that checkout_success folder at that location, create it. And then copy the tpl_footer.php file from your /includes/templates/YOURTEMPLATE/common/tpl_footer.php ... or if you don't have one there, get it from template_default.  
 
 2\. Using your favorite reliable text editor (such as Sublime Text or Notepad++), edit the file, and paste the code snippet from your beloved affiliate company at the bottom of the file.  
 Save the file, but leave it open in your editor.  
