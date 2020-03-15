@@ -1,6 +1,6 @@
 ---
 title: Custom code - am I obligated to share it?
-category: about 
+category: about_us
 weight: 1
 ---
 

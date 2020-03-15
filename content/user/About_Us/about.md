@@ -1,6 +1,6 @@
 ---
 title: Bug Reports, Code Contributions, Security and Fees
-category: about 
+category: about_us
 weight: 1
 ---
 
@@ -9,7 +9,7 @@ weight: 1
 Zen Cart takes bug reports seriously, and endeavors to find resolutions to them immediately. You'll observe that we tend to post solutions for bugfixes as soon as we have them. This does not always mean a new "release", unless there is something fairly major. Patches are issued sparingly in the interest of keeping code both manageable and still current.  
 
 We encourage all users to make bug reports.  
-To understand the importance of doing so, please see [this article](/user/about/bug_reporting). 
+To understand the importance of doing so, please see [this article](/user/about_us/bug_reporting/). 
 
 ## **Security Reports**
 
@@ -25,5 +25,5 @@ It's also important to note that community-supplied contributions are written at
 
 
 ## **Fees**
-There is no fee for using Zen Cart. You can download and use it. subject to the terms of the license, for free. However, if you find it useful, you are encouraged to [make a donation](/user/about/donate/) to help support the ongoing development and improvement of the product.
+There is no fee for using Zen Cart. You can download and use it. subject to the terms of the license, for free. However, if you find it useful, you are encouraged to [make a donation](/user/about_us/donate/) to help support the ongoing development and improvement of the product.
 

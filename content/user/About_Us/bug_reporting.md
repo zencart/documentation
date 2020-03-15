@@ -1,6 +1,6 @@
 ---
 title: Why should I make bug reports?
-category: about 
+category: about_us
 weight: 1
 ---
 

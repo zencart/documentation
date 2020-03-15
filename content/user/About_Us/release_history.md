@@ -1,6 +1,6 @@
 ---
 title: Release History
-category: about 
+category: about_us
 weight: 1
 ---
 
