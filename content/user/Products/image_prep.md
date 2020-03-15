@@ -38,7 +38,7 @@ _NOTE: the basic "images" (thumbnails, normal-size images) should be uploaded vi
 
 Start by deciding on the size you want the large image to display at.  
 
-NB. As mentioned earlier, you can’t set the dimensions of the large image in ZC but it will display at the dimensions you upload it, although you may have to tweak the javascript file for the pop-up window to open at the size you want. The file you need to edit is **/includes/modules/pages/product_info/jscript_main.php**. In the function `popupWindow(url)` change width= and height= to your sizes. (You can also decide whether or not you want scrollbars by setting `scrollbars=no` or `scrollbars=yes`.) Then save the file to **includes/modules/YOUR_TEMPLATE/pages/product_info/**  
+NB. As mentioned earlier, you can’t set the dimensions of the large image in ZC but it will display at the dimensions you upload it, although you may have to tweak the javascript file for the pop-up window to open at the size you want. The file you need to edit is **/includes/modules/pages/product_info/jscript_main.php**. In the function `popupWindow(url)` change width= and height= to your sizes. (You can also decide whether or not you want scrollbars by setting `scrollbars=no` or `scrollbars=yes`.) Then save the file to **includes/modules/YOURTEMPLATE/pages/product_info/**  
 
 You shouldn’t choose a size larger than that of the original (if you have to expand it, you’re liable to lose quality). For most purposes, making the large image 400 or perhaps 500 pixels wide should be sufficient although if you’re working from a digital camera, you may want to choose a size that is a direct proportion of the camera output such as 480 or 640.  
 
