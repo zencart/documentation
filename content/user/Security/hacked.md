@@ -14,4 +14,4 @@ weight: 1
 
 ## Secure Your Site Using the Security Recommendations
 
-3\. Ensure that you have secured your site following the recommendations provided with the code. [**An online copy is here for your convenience**](http://tutorials.zen-cart.com/index.php?article=73).
+3\. Ensure that you have secured your site following the recommendations [provided with the code](https://www.zen-cart.com/docs/important_site_security_recommendations.html).

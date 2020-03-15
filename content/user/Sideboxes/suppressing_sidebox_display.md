@@ -10,7 +10,8 @@ Let's use the featured product sidebox as an example.
 
 Create an over-ride for the sidebox's module file. For the featured products sidebox, this would involve copying includes/modules/sideboxes/featured_products.php to includes/modules/sideboxes/YOURTEMPLATE/featured_products.php.  
 
-Open up your new sidebox module file and take a look at the code. In Zen Cart 1.3.x most will look something like this  
+Open up your new sidebox module file and take a look at the code. 
+Generally it will look something like this  
 
 <pre>
 &lt;?php  
@@ -22,7 +23,7 @@ BIG COMMENT BLOCK
 
   if ($show_featured == true) {  
 
-  MAIN PROCESSING BLOCK  
+    // MAIN PROCESSING BLOCK  
 
   }  
 ?&gt; 
@@ -34,7 +35,7 @@ $show_featured= true;
 </pre>
 into  
 <pre>
-if ($this_is_home_page) {  
+  if ($this_is_home_page) {  
     $show_featured = true;  
   } else {  
     $show_featured = false;  
