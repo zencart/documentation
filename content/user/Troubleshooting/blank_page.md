@@ -48,7 +48,7 @@ How to read the errors:
 
 *   Note that many error/warning messages will be a result of previous error/warning messages.  
     <font color="#FF0000">**Deal with them in the order they appear**,</font> and don't blame the later errors until the earlier ones are dealt with first.
-*   One of the MOST COMMON errors you'll see is addressed here: [Warning: Headers Already Sent ...](http://tutorials.zen-cart.com/index.php?article=87)
+*   One of the MOST COMMON errors you'll see is addressed here: [Warning: Headers Already Sent ...](/user/troubleshooting/warning_headers_already_sent).
 *   Use the search option on this page to find answers to any other errors you find.
 
 ## 3\. Common customization errors

@@ -7,8 +7,10 @@ The database is a collection of tables. Tables are like spreadsheets, storing da
 
 ## Where do I find the database files?
 
-A database is not stored in any files that are directly accessible to you as a storeowner. Instead, you access it via phpMyAdmin or similar tools, and query (request) data from the database according to what you wish to read from it.  
-In the case of taking a [backup](http://tutorials.zen-cart.com/index.php?article=103), you're exporting the entire database content into one great big file that can be used for offline storage, or restoring if needed. That's the only way *you* will ever see the database as "a file".  
+A database is not stored in any files that are directly accessible to you as a storeowner. Instead, you access it via phpMyAdmin or similar tools, and query (request) data from the database according to what you wish to read from it.  In the case of taking a 
+[backup](/user/miscellaneous/backup/). 
+you're exporting the entire database content into one great big file that can be used for offline storage, or restoring if needed. That's the only way *you* will ever see the database as "a file".  
+
 (Aside: Technically speaking, it *does* store everything in "files", but they're machine-code files, and meaningless to you unless you're a SQL and Server guru with super-advanced abilities to understand 0s and 1s with your eyes closed.)  
 
 ## How are databases connected to Zen Cart?
