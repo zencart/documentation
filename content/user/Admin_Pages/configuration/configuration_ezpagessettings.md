@@ -1,7 +1,7 @@
 ---
 title: Configuration-EZ-Pages Settings
 category: admin_pages
-weight: 1
+weight: 250
 ---
 
 <b>EZ-Pages Display Status - HeaderBar</b>

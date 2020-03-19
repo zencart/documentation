@@ -1,7 +1,7 @@
 ---
 title: Configuration-Sessions
 category: admin_pages
-weight: 1
+weight: 130
 ---
 
 <b>Session Directory</b>

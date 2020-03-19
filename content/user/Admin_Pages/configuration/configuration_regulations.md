@@ -1,7 +1,7 @@
 ---
 title: Configuration-Regulations
 category: admin_pages
-weight: 1
+weight: 140
 ---
 
 <b>Confirm Terms and Conditions During Checkout Procedure</b>

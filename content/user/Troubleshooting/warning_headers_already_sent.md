@@ -10,7 +10,7 @@ Warning: Cannot modify header information - headers already sent by (output star
 
 *Common Cause:*
 This warning is often caused by a blank space or extra line at the beginning or end of a .php file.  
-Check the error for the filename that generated the error (ie: the "output started at...." filename), open that file in your text editor and remove the extra spaces or lines immediately <u>before the first</u> **<?php** marks in the file, <u>or after the</u> closing **?>**  
+Check the error for the filename that generated the error (ie: the "output started at...." filename), open that file in your text editor and remove the extra spaces or lines immediately <u>before the first</u> **&lt;?php** marks in the file, <u>or after the</u> closing **?>**  
 
 **<u>Other Causes: Syntax errors</u>**  
 In the example above, you'll see 
@@ -27,7 +27,9 @@ includes/something_else.php on line 67
 
 If the "headers already sent" error appears AFTER any other error, then you need to fix that other error FIRST. (The error message itself is what caused headers to be sent, so fixing that error will cause the second error to go away too.)  
 
-If the "started at" refers to line 1, then it's either a space before the opening **<?php** tag or it's **incorrect encoding** on the file.  
+If the "started at" refers to line 1, then the root cause is one of two things: 
+- a space (possibly a blank line) before the opening **&lt;?php** tag or 
+- **incorrect encoding** on the file.  
 
 Remember, if your language is in UTF8, then you MUST encode the file as "UTF8-without-BOM", else the BOM (byte-order-mark, an invisible character at the beginning of the file) will cause this same headers-already-sent error.  
 

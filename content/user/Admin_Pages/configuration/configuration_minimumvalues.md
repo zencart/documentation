@@ -1,7 +1,7 @@
 ---
 title: Configuration-Minimum Values
 category: admin_pages
-weight: 1
+weight: 20
 ---
 
 <b>First Name</b>

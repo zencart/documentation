@@ -1,7 +1,7 @@
 ---
 title: Configuration-Layout Settings
 category: admin_pages
-weight: 1
+weight: 180
 ---
 
 <b>Column Width - Left Boxes</b>

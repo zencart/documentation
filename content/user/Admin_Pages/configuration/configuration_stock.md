@@ -1,7 +1,7 @@
 ---
 title: Configuration-Stock
 category: admin_pages
-weight: 1
+weight: 80
 ---
 
 <b>Check stock level</b>

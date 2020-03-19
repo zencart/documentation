@@ -1,7 +1,7 @@
 ---
 title: Configuration-Index Listing
 category: admin_pages
-weight: 1
+weight: 230
 ---
 
 <b>Show New Products on Main Page</b>

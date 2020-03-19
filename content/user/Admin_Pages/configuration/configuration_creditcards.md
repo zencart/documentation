@@ -1,7 +1,7 @@
 ---
 title: Configuration-Credit Cards
 category: admin_pages
-weight: 1
+weight: 160 
 ---
 
 <b>Credit Card Enable Status - VISA</b>

@@ -1,7 +1,7 @@
 ---
 title: Configuration-Logging
 category: admin_pages
-weight: 1
+weight: 90
 ---
 
 <b>Log Database Queries</b>

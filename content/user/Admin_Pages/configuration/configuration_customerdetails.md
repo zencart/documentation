@@ -1,7 +1,7 @@
 ---
 title: Configuration-Customer Details
 category: admin_pages
-weight: 1
+weight: 50
 ---
 
 <b>Email Salutation</b>

@@ -1,7 +1,7 @@
 ---
 title: Configuration-E-Mail Options
 category: admin_pages
-weight: 1
+weight: 100
 ---
 
 <b>E-Mail Transport Method</b>
