@@ -10,7 +10,7 @@ If it's not already installed, click Install to enable it.
 
 ## Creating Coupons
 
-Now, in your Admin area, you have a menu item entitled "Gift Certificates/Coupons".  Click on the Coupon Admin option.  
+Now, in your Admin area, you have a menu item entitled "Discounts".  Click on the Coupon Admin option.  
 
 Next, you create a coupon by clicking Insert.  (Or Edit to edit an existing coupon.)  
 Fill in the details.  

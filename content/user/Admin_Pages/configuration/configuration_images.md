@@ -1,7 +1,7 @@
 ---
 title: Configuration-Images
 category: admin_pages
-weight: 1
+weight: 40
 ---
 
 <b>Small Image Width</b>

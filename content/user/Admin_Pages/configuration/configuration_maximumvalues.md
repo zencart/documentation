@@ -1,7 +1,7 @@
 ---
 title: Configuration-Maximum Values
 category: admin_pages
-weight: 1
+weight: 30
 ---
 
 <b>Address Book Entries</b>

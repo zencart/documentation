@@ -1,7 +1,7 @@
 ---
 title: Configuration-Attribute Settings
 category: admin_pages
-weight: 1
+weight: 110
 ---
 
 <b>Enable Downloads</b>

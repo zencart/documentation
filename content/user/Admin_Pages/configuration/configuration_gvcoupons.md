@@ -1,7 +1,7 @@
 ---
 title: Configuration-GV Coupons
 category: admin_pages
-weight: 1
+weight: 150
 ---
 
 <b>Default Order Status For Zero Balance Orders</b>

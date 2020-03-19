@@ -1,7 +1,7 @@
 ---
 title: Configuration-Product Info
 category: admin_pages
-weight: 1
+weight: 170
 ---
 
 <b>Previous Next - Button and Image Status</b>

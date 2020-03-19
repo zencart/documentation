@@ -11,7 +11,16 @@ If you installed your Zen Cart using Fantastico or perhaps had a friend or subco
 This page shows you how to copy files into your cart. This is just one part of installation; there may be many associated tasks that need to be done. 
 Most contributions come with a README file; please take the time to review it to get the whole picture of how installation is to be done.  
 
-Reading the instructions **before** starting installation is a great way to reduce grief. 
+Reading the instructions **before** starting installation is a great way to reduce grief.  This cannot be overstated.  Even a straightforward mod like 
+[Simple Google Analytics](https://www.zen-cart.com/downloads.php?do=file&id=272) 
+has steps in the README which must be done manually for the mod to work; 
+simply uploading the files under `includes` is not sufficient. 
+
+Why do mod authors do this?  Most often, it is done because the files that 
+need to be updated manually are generally very customized on a per cart 
+and per template 
+basis (in the example of Google Analytics above, it's `includes/templates/YOURTEMPLATE/common/tpl_main_page.php` that needs to be modified, and including 
+this file as a whole would make no sense because it is always customized.  
 
 ## Getting Started
 

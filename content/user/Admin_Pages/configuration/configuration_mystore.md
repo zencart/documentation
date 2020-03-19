@@ -1,7 +1,7 @@
 ---
 title: Configuration-My Store
 category: admin_pages
-weight: 1
+weight: 10
 ---
 
 <b>Store Name</b>

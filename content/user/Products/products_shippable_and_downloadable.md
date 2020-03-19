@@ -10,7 +10,7 @@ First, let's make sure that you have Products setup correctly ...
 
 Do you use Always Free Shipping or 0 weight to mean Free Shipping?  
 
-If so, be sure that you have set the Configuration ... Shipping/Packaging ...  
+If so, go to Configuration -> Shipping/Packaging and check the settings 
 
 <pre>
 Order Free Shipping 0 Weight Status  
@@ -21,9 +21,9 @@ If there is no weight to the order, does the order have Free Shipping?
 Note: When using Free Shipping, Enable the Free Shipping Module this will only show when shipping is free.
 </pre>
 
-NOTE: the Free Shipping module that is referenced here is called the FREE SHIPPING! freeshipper shipping module ...  
+NOTE: the Free Shipping module that is referenced here is called the FREE SHIPPING! freeshipper shipping module 
 
-Next, let's look at a Download Product, one that is ONLY a Download ...  
+Next, let's look at a Download Product, one that is ONLY a Download
 
 Downloads are NOT set to Virtual Product and NOT set to Always Free Shipping ... they are already "recognized" as Free shipping by virtue of the Download filename on the Attributes ...  
 
@@ -82,7 +82,7 @@ A Product that is a Download OR a Physical Product, is setup like a Normal Produ
 
 I prefer that the Attribute hold the Weight or the Download so the Product does not look moofy with a Negative weight on the Attribute ...  
 
-NOTE: Attribute Weight can be turned off in the Catalog ... Product Type ... EDIT LAYOUT ...  
+NOTE: Attribute Weight can be turned off in the Catalog -> Product Type -> EDIT LAYOUT ...  
 
 Now, back to the Combo Product which is BOTH a Physical Product and a Download at the SAME time ...  
 

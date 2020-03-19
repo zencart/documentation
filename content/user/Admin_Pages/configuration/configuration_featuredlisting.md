@@ -1,7 +1,7 @@
 ---
 title: Configuration-Featured Listing
 category: admin_pages
-weight: 1
+weight: 210
 ---
 
 <b>Display Product Image</b>

@@ -120,7 +120,7 @@ It is wise to observe caution while working in your admin area:
 
 ## 8\. Protect your "define pages" content in "html_includes"
 
-After you have finished editing your define pages ([Admin > Tools > Define Pages Editor](http://www.zen-cart.com/wiki/index.php/Admin_-_Tools_-_Define_Pages_Editor "Admin - Tools - Define Pages Editor")), you should protect them:
+After you have finished editing your define pages in [Admin > Tools > Define Pages Editor](/user/admin_pages/tools/define_pages/), you should protect them:
 
 A. Download a copy of them to your PC using your FTP software. They are located in the /includes/languages/english/html_includes folder and subfolders.
 
@@ -196,7 +196,7 @@ On Windows hosts, setting files read-only is usually sufficient. Should double-c
 The folders for which installation suggests read-write access for setup are these. If your site supports .htaccess protection, then you should use it for these folders.
 
 *   /**cache**  
-    This is used to cache session and database information. The BEST security protection for this is to move it to a folder "above" the public_html/htdocs/www area, so that it's not accessible via a browser. (Requires changes to DIR_FS_SQL_CACHE setting in configure.php files as well as [Admin > Configuration > Sessions > Session Directory](http://www.zen-cart.com/wiki/index.php/Admin_-_Configuration_-_Sessions#Session_Directory "Admin - Configuration - Sessions").
+    This is used to cache session and database information. The BEST security protection for this is to move it to a folder "above" the public_html/htdocs/www area, so that it's not accessible via a browser. (Requires changes to DIR_FS_SQL_CACHE setting in configure.php files as well as [Admin > Configuration > Sessions > Session Directory](/user/admin_pages/configuration/configuration_sessions).
 *   /**images**  
     See other suggestions earlier.
 *   /**includes/languages/english/html_includes**  
@@ -211,7 +211,8 @@ The folders for which installation suggests read-write access for setup are thes
 *   /**admin/backups**  
     This is used by automated backup routines to store database backups. Optional.
 *   /**admin/images/graphs**  
-    This is used by the [Admin > Tools > Banner Manager](http://www.zen-cart.com/wiki/index.php/Admin_-_Tools_-_Banner_Manager "Admin - Tools - Banner Manager") for updating/displaying bar graphs related to banner usage. If not writable, this feature is ignored.
+    This is used by the [Admin > Tools > Banner Manager](/user/admin_pages/tools/banner_manager) 
+for updating/displaying bar graphs related to banner usage. If not writable, this feature is ignored.
 
 <a id="12._Remove_the_print_URL_feature_from_your_browser" name="12._Remove_the_print_URL_feature_from_your_browser"></a>
 

@@ -81,3 +81,18 @@ Check out the [Server Requirements for Running Zen Cart](/user/first_steps/serve
 rather than 
 
 `Configuration ... EZ-Pages Settings`.
+
+## Cleanup of Legacy Content and Markup  
+
+- If you see a page that contains Wiki-style (or other legacy) markup like 
+
+`## <span class="mw-headline" id="Adding_Currencies">Adding Currencies</span>
+`
+
+please simplify it to just use Markdown markup, i.e. 
+
+
+- If you see a page that contains a notation like `FIXME - page needs work`, this means the page was simply copied straight from the legacy Wiki or Tutorials area, and it should be verified against the latest Zen Cart release for accuracy.  Please edit as needed and submit a PR.
+
+
+

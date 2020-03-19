@@ -1,7 +1,7 @@
 ---
 title: Configuration-GZip Compression
 category: admin_pages
-weight: 1
+weight: 120
 ---
 
 <b>Enable GZip Compression</b>

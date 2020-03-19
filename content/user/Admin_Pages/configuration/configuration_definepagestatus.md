@@ -1,7 +1,7 @@
 ---
 title: Configuration-Define Page Status
 category: admin_pages
-weight: 1
+weight: 240 
 ---
 
 <b>Define Main Page Status</b>

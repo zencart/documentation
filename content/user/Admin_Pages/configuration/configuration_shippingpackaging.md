@@ -1,7 +1,7 @@
 ---
 title: Configuration-Shipping/Packaging
 category: admin_pages
-weight: 1
+weight: 60
 ---
 
 <b>Country of Origin</b>
