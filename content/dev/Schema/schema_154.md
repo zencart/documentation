@@ -1,11 +1,11 @@
 ---
-title: Schema for 1.5.5 
-category: schema
-weight: 10
+title: Zen Cart 1.5.4 Schema 
+category: schema 
+weight: -154 
 ---
 # Database Schema
 
-[address_book](#address_book)    [address_format](#address_format)    [admin](#admin)    [admin_activity_log](#admin_activity_log)    [admin_menus](#admin_menus)    [admin_pages](#admin_pages)    [admin_pages_to_profiles](#admin_pages_to_profiles)    [admin_profiles](#admin_profiles)    [authorizenet](#authorizenet)    [banners](#banners)    [banners_history](#banners_history)    [categories](#categories)    [categories_description](#categories_description)    [configuration](#configuration)    [configuration_group](#configuration_group)    [counter](#counter)    [counter_history](#counter_history)    [countries](#countries)    [coupon_email_track](#coupon_email_track)    [coupon_gv_customer](#coupon_gv_customer)    [coupon_gv_queue](#coupon_gv_queue)    [coupon_redeem_track](#coupon_redeem_track)    [coupon_restrict](#coupon_restrict)    [coupons](#coupons)    [coupons_description](#coupons_description)    [currencies](#currencies)    [customers](#customers)    [customers_basket](#customers_basket)    [customers_basket_attributes](#customers_basket_attributes)    [customers_info](#customers_info)    [db_cache](#db_cache)    [email_archive](#email_archive)    [ezpages](#ezpages)    [featured](#featured)    [files_uploaded](#files_uploaded)    [geo_zones](#geo_zones)    [get_terms_to_filter](#get_terms_to_filter)    [group_pricing](#group_pricing)    [languages](#languages)    [layout_boxes](#layout_boxes)    [manufacturers](#manufacturers)    [manufacturers_info](#manufacturers_info)    [media_clips](#media_clips)    [media_manager](#media_manager)    [media_to_products](#media_to_products)    [media_types](#media_types)    [meta_tags_categories_description](#meta_tags_categories_description)    [meta_tags_products_description](#meta_tags_products_description)    [music_genre](#music_genre)    [newsletters](#newsletters)    [orders](#orders)    [orders_products](#orders_products)    [orders_products_attributes](#orders_products_attributes)    [orders_products_download](#orders_products_download)    [orders_status](#orders_status)    [orders_status_history](#orders_status_history)    [orders_total](#orders_total)    [paypal](#paypal)    [paypal_payment_status](#paypal_payment_status)    [paypal_payment_status_history](#paypal_payment_status_history)    [paypal_session](#paypal_session)    [paypal_testing](#paypal_testing)    [product_music_extra](#product_music_extra)    [product_type_layout](#product_type_layout)    [product_types](#product_types)    [product_types_to_category](#product_types_to_category)    [products](#products)    [products_attributes](#products_attributes)    [products_attributes_download](#products_attributes_download)    [products_description](#products_description)    [products_discount_quantity](#products_discount_quantity)    [products_notifications](#products_notifications)    [products_options](#products_options)    [products_options_types](#products_options_types)    [products_options_values](#products_options_values)    [products_options_values_to_products_options](#products_options_values_to_products_options)    [products_to_categories](#products_to_categories)    [project_version](#project_version)    [project_version_history](#project_version_history)    [query_builder](#query_builder)    [record_artists](#record_artists)    [record_artists_info](#record_artists_info)    [record_company](#record_company)    [record_company_info](#record_company_info)    [reviews](#reviews)    [reviews_description](#reviews_description)    [salemaker_sales](#salemaker_sales)    [sessions](#sessions)    [specials](#specials)    [tax_class](#tax_class)    [tax_rates](#tax_rates)    [template_select](#template_select)    [upgrade_exceptions](#upgrade_exceptions)    [whos_online](#whos_online)    [zones](#zones)    [zones_to_geo_zones](#zones_to_geo_zones)  
+[address_book](#address_book)    [address_format](#address_format)    [admin](#admin)    [admin_activity_log](#admin_activity_log)    [admin_menus](#admin_menus)    [admin_pages](#admin_pages)    [admin_pages_to_profiles](#admin_pages_to_profiles)    [admin_profiles](#admin_profiles)    [authorizenet](#authorizenet)    [banners](#banners)    [banners_history](#banners_history)    [categories](#categories)    [categories_description](#categories_description)    [configuration](#configuration)    [configuration_group](#configuration_group)    [counter](#counter)    [counter_history](#counter_history)    [countries](#countries)    [coupon_email_track](#coupon_email_track)    [coupon_gv_customer](#coupon_gv_customer)    [coupon_gv_queue](#coupon_gv_queue)    [coupon_redeem_track](#coupon_redeem_track)    [coupon_restrict](#coupon_restrict)    [coupons](#coupons)    [coupons_description](#coupons_description)    [currencies](#currencies)    [customers](#customers)    [customers_basket](#customers_basket)    [customers_basket_attributes](#customers_basket_attributes)    [customers_info](#customers_info)    [db_cache](#db_cache)    [email_archive](#email_archive)    [ezpages](#ezpages)    [featured](#featured)    [files_uploaded](#files_uploaded)    [geo_zones](#geo_zones)    [get_terms_to_filter](#get_terms_to_filter)    [group_pricing](#group_pricing)    [languages](#languages)    [layout_boxes](#layout_boxes)    [manufacturers](#manufacturers)    [manufacturers_info](#manufacturers_info)    [media_clips](#media_clips)    [media_manager](#media_manager)    [media_to_products](#media_to_products)    [media_types](#media_types)    [meta_tags_categories_description](#meta_tags_categories_description)    [meta_tags_products_description](#meta_tags_products_description)    [music_genre](#music_genre)    [newsletters](#newsletters)    [orders](#orders)    [orders_products](#orders_products)    [orders_products_attributes](#orders_products_attributes)    [orders_products_download](#orders_products_download)    [orders_status](#orders_status)    [orders_status_history](#orders_status_history)    [orders_total](#orders_total)    [paypal](#paypal)    [paypal_payment_status](#paypal_payment_status)    [paypal_payment_status_history](#paypal_payment_status_history)    [paypal_session](#paypal_session)    [paypal_testing](#paypal_testing)    [product_music_extra](#product_music_extra)    [product_type_layout](#product_type_layout)    [product_types](#product_types)    [product_types_to_category](#product_types_to_category)    [products](#products)    [products_attributes](#products_attributes)    [products_attributes_download](#products_attributes_download)    [products_description](#products_description)    [products_discount_quantity](#products_discount_quantity)    [products_notifications](#products_notifications)    [products_options](#products_options)    [products_options_types](#products_options_types)    [products_options_values](#products_options_values)    [products_options_values_to_products_options](#products_options_values_to_products_options)    [products_to_categories](#products_to_categories)    [project_version](#project_version)    [project_version_history](#project_version_history)    [query_builder](#query_builder)    [record_artists](#record_artists)    [record_artists_info](#record_artists_info)    [record_company](#record_company)    [record_company_info](#record_company_info)    [reviews](#reviews)    [reviews_description](#reviews_description)    [salemaker_sales](#salemaker_sales)    [sessions](#sessions)    [specials](#specials)    [tax_class](#tax_class)    [tax_rates](#tax_rates)    [template_select](#template_select)    [upgrade_exceptions](#upgrade_exceptions)    [whos_online](#whos_online)    [zones](#zones)    [zones_to_geo_zones](#zones_to_geo_zones) 
 
 ## address_book
 
@@ -35,7 +35,11 @@ weight: 10
 
 <tr>
 
-<td>**address_book_id**</td>
+<td>
+
+**address_book_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -55,7 +59,305 @@ weight: 10
 
 <tr>
 
-<td>[customers_id](#customers)</td>
+<td>
+
+[customers_id](#customers)</td>
+
+<td>int(11)</td>
+
+<td></td>
+
+<td>NO</td>
+
+<td>MUL</td>
+
+<td>0</td>
+
+<td></td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>entry_gender</td>
+
+<td>char(1)</td>
+
+<td>utf8_general_ci</td>
+
+<td>NO</td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>entry_company</td>
+
+<td>varchar(64)</td>
+
+<td>utf8_general_ci</td>
+
+<td>YES</td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>entry_firstname</td>
+
+<td>varchar(32)</td>
+
+<td>utf8_general_ci</td>
+
+<td>NO</td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>entry_lastname</td>
+
+<td>varchar(32)</td>
+
+<td>utf8_general_ci</td>
+
+<td>NO</td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>entry_street_address</td>
+
+<td>varchar(64)</td>
+
+<td>utf8_general_ci</td>
+
+<td>NO</td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>entry_suburb</td>
+
+<td>varchar(32)</td>
+
+<td>utf8_general_ci</td>
+
+<td>YES</td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>entry_postcode</td>
+
+<td>varchar(10)</td>
+
+<td>utf8_general_ci</td>
+
+<td>NO</td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>entry_city</td>
+
+<td>varchar(32)</td>
+
+<td>utf8_general_ci</td>
+
+<td>NO</td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>entry_state</td>
+
+<td>varchar(32)</td>
+
+<td>utf8_general_ci</td>
+
+<td>YES</td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>entry_country_id</td>
+
+<td>int(11)</td>
+
+<td></td>
+
+<td>NO</td>
+
+<td></td>
+
+<td>0</td>
+
+<td></td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>entry_zone_id</td>
+
+<td>int(11)</td>
+
+<td></td>
+
+<td>NO</td>
+
+<td></td>
+
+<td>0</td>
+
+<td></td>
+
+<td></td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+## address_book
+
+<table>
+
+<tbody>
+
+<tr>
+
+<td>Field</td>
+
+<td>Type</td>
+
+<td>Collation</td>
+
+<td>Null</td>
+
+<td>Key</td>
+
+<td>Default</td>
+
+<td>Extra</td>
+
+<td>Comment</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+**address_book_id**
+
+</td>
+
+<td>int(11)</td>
+
+<td></td>
+
+<td>NO</td>
+
+<td>PRI</td>
+
+<td></td>
+
+<td>auto_increment</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>
+
+[customers_id](#customers)</td>
 
 <td>int(11)</td>
 
@@ -325,7 +627,11 @@ weight: 10
 
 <tr>
 
-<td>**address_format_id**</td>
+<td>
+
+**address_format_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -415,7 +721,11 @@ weight: 10
 
 <tr>
 
-<td>**admin_id**</td>
+<td>
+
+**admin_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -585,7 +895,7 @@ weight: 10
 
 <td></td>
 
-<td>0001-01-01 00:00:00</td>
+<td>0000-00-00 00:00:00</td>
 
 <td></td>
 
@@ -625,7 +935,7 @@ weight: 10
 
 <td></td>
 
-<td>0001-01-01 00:00:00</td>
+<td>0000-00-00 00:00:00</td>
 
 <td></td>
 
@@ -645,7 +955,7 @@ weight: 10
 
 <td></td>
 
-<td>0001-01-01 00:00:00</td>
+<td>0000-00-00 00:00:00</td>
 
 <td></td>
 
@@ -725,7 +1035,7 @@ weight: 10
 
 <td></td>
 
-<td>0001-01-01 00:00:00</td>
+<td>0000-00-00 00:00:00</td>
 
 <td></td>
 
@@ -785,7 +1095,11 @@ weight: 10
 
 <tr>
 
-<td>**log_id**</td>
+<td>
+
+**log_id**
+
+</td>
 
 <td>bigint(15)</td>
 
@@ -825,7 +1139,9 @@ weight: 10
 
 <tr>
 
-<td>[admin_id](#admin)</td>
+<td>
+
+[admin_id](#admin)</td>
 
 <td>int(11)</td>
 
@@ -993,7 +1309,7 @@ weight: 10
 
 <td>NO</td>
 
-<td></td>
+<td>MUL</td>
 
 <td>info</td>
 
@@ -1035,7 +1351,11 @@ weight: 10
 
 <tr>
 
-<td>**menu_key**</td>
+<td>
+
+**menu_key**
+
+</td>
 
 <td>varchar(255)</td>
 
@@ -1125,7 +1445,11 @@ weight: 10
 
 <tr>
 
-<td>**page_key**</td>
+<td>
+
+**page_key**
+
+</td>
 
 <td>varchar(255)</td>
 
@@ -1295,7 +1619,11 @@ weight: 10
 
 <tr>
 
-<td>**profile_id**</td>
+<td>
+
+**profile_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -1315,7 +1643,11 @@ weight: 10
 
 <tr>
 
-<td>**page_key**</td>
+<td>
+
+**page_key**
+
+</td>
 
 <td>varchar(255)</td>
 
@@ -1365,7 +1697,11 @@ weight: 10
 
 <tr>
 
-<td>**profile_id**</td>
+<td>
+
+**profile_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -1435,7 +1771,11 @@ weight: 10
 
 <tr>
 
-<td>**id**</td>
+<td>
+
+**id**
+
+</td>
 
 <td>int(11) unsigned</td>
 
@@ -1455,7 +1795,9 @@ weight: 10
 
 <tr>
 
-<td>[customer_id](#customers)</td>
+<td>
+
+[customer_id](#customers)</td>
 
 <td>int(11)</td>
 
@@ -1475,7 +1817,9 @@ weight: 10
 
 <tr>
 
-<td>[order_id](#orders)</td>
+<td>
+
+[order_id](#orders)</td>
 
 <td>int(11)</td>
 
@@ -1557,9 +1901,9 @@ weight: 10
 
 <td>transaction_id</td>
 
-<td>varchar(32)</td>
+<td>bigint(20)</td>
 
-<td>utf8_general_ci</td>
+<td></td>
 
 <td>YES</td>
 
@@ -1685,7 +2029,11 @@ weight: 10
 
 <tr>
 
-<td>**banners_id**</td>
+<td>
+
+**banners_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -2015,7 +2363,11 @@ weight: 10
 
 <tr>
 
-<td>**banners_history_id**</td>
+<td>
+
+**banners_history_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -2035,7 +2387,9 @@ weight: 10
 
 <tr>
 
-<td>[banners_id](#banners)</td>
+<td>
+
+[banners_id](#banners)</td>
 
 <td>int(11)</td>
 
@@ -2145,7 +2499,11 @@ weight: 10
 
 <tr>
 
-<td>**categories_id**</td>
+<td>
+
+**categories_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -2315,7 +2673,11 @@ weight: 10
 
 <tr>
 
-<td>**categories_id**</td>
+<td>
+
+**categories_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -2335,7 +2697,9 @@ weight: 10
 
 <tr>
 
-<td>[language_id](#languages)</td>
+<td>
+
+[language_id](#languages)</td>
 
 <td>int(11)</td>
 
@@ -2425,7 +2789,11 @@ weight: 10
 
 <tr>
 
-<td>**configuration_id**</td>
+<td>
+
+**configuration_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -2675,7 +3043,11 @@ weight: 10
 
 <tr>
 
-<td>**configuration_group_id**</td>
+<td>
+
+**configuration_group_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -2875,13 +3247,17 @@ weight: 10
 
 <tr>
 
-<td>**startdate**</td>
+<td>
+
+**startdate**
+
+</td>
 
 <td>char(8)</td>
 
 <td>utf8_general_ci</td>
 
-<td>NO</td>
+<td>YES</td>
 
 <td>PRI</td>
 
@@ -2965,7 +3341,11 @@ weight: 10
 
 <tr>
 
-<td>**countries_id**</td>
+<td>
+
+**countries_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -3115,7 +3495,11 @@ weight: 10
 
 <tr>
 
-<td>**unique_id**</td>
+<td>
+
+**unique_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -3135,7 +3519,9 @@ weight: 10
 
 <tr>
 
-<td>[coupon_id](#coupons)</td>
+<td>
+
+[coupon_id](#coupons)</td>
 
 <td>int(11)</td>
 
@@ -3285,7 +3671,11 @@ weight: 10
 
 <tr>
 
-<td>**customer_id**</td>
+<td>
+
+**customer_id**
+
+</td>
 
 <td>int(5)</td>
 
@@ -3355,7 +3745,11 @@ weight: 10
 
 <tr>
 
-<td>**unique_id**</td>
+<td>
+
+**unique_id**
+
+</td>
 
 <td>int(5)</td>
 
@@ -3375,7 +3769,9 @@ weight: 10
 
 <tr>
 
-<td>[customer_id](#customers)</td>
+<td>
+
+[customer_id](#customers)</td>
 
 <td>int(5)</td>
 
@@ -3395,7 +3791,9 @@ weight: 10
 
 <tr>
 
-<td>[order_id](#orders)</td>
+<td>
+
+[order_id](#orders)</td>
 
 <td>int(5)</td>
 
@@ -3525,7 +3923,11 @@ weight: 10
 
 <tr>
 
-<td>**unique_id**</td>
+<td>
+
+**unique_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -3545,7 +3947,9 @@ weight: 10
 
 <tr>
 
-<td>[coupon_id](#coupons)</td>
+<td>
+
+[coupon_id](#coupons)</td>
 
 <td>int(11)</td>
 
@@ -3565,7 +3969,9 @@ weight: 10
 
 <tr>
 
-<td>[customer_id](#customers)</td>
+<td>
+
+[customer_id](#customers)</td>
 
 <td>int(11)</td>
 
@@ -3625,7 +4031,9 @@ weight: 10
 
 <tr>
 
-<td>[order_id](#orders)</td>
+<td>
+
+[order_id](#orders)</td>
 
 <td>int(11)</td>
 
@@ -3675,7 +4083,11 @@ weight: 10
 
 <tr>
 
-<td>**restrict_id**</td>
+<td>
+
+**restrict_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -3695,7 +4107,9 @@ weight: 10
 
 <tr>
 
-<td>[coupon_id](#coupons)</td>
+<td>
+
+[coupon_id](#coupons)</td>
 
 <td>int(11)</td>
 
@@ -3715,7 +4129,9 @@ weight: 10
 
 <tr>
 
-<td>[product_id](#products)</td>
+<td>
+
+[product_id](#products)</td>
 
 <td>int(11)</td>
 
@@ -3735,7 +4151,9 @@ weight: 10
 
 <tr>
 
-<td>[category_id](#categories)</td>
+<td>
+
+[category_id](#categories)</td>
 
 <td>int(11)</td>
 
@@ -3805,7 +4223,11 @@ weight: 10
 
 <tr>
 
-<td>**coupon_id**</td>
+<td>
+
+**coupon_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -4155,7 +4577,11 @@ weight: 10
 
 <tr>
 
-<td>**coupon_id**</td>
+<td>
+
+**coupon_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -4175,7 +4601,9 @@ weight: 10
 
 <tr>
 
-<td>[language_id](#languages)</td>
+<td>
+
+[language_id](#languages)</td>
 
 <td>int(11)</td>
 
@@ -4197,7 +4625,7 @@ weight: 10
 
 <td>coupon_name</td>
 
-<td>varchar(64)</td>
+<td>varchar(32)</td>
 
 <td>utf8_general_ci</td>
 
@@ -4265,7 +4693,11 @@ weight: 10
 
 <tr>
 
-<td>**currencies_id**</td>
+<td>
+
+**currencies_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -4327,7 +4759,7 @@ weight: 10
 
 <td>symbol_left</td>
 
-<td>varchar(32)</td>
+<td>varchar(24)</td>
 
 <td>utf8_general_ci</td>
 
@@ -4347,7 +4779,7 @@ weight: 10
 
 <td>symbol_right</td>
 
-<td>varchar(32)</td>
+<td>varchar(24)</td>
 
 <td>utf8_general_ci</td>
 
@@ -4495,7 +4927,11 @@ weight: 10
 
 <tr>
 
-<td>**customers_id**</td>
+<td>
+
+**customers_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -4635,7 +5071,9 @@ weight: 10
 
 <tr>
 
-<td>[customers_default_address_id](#address_book)</td>
+<td>
+
+[customers_default_address_id](#address_book)</td>
 
 <td>int(11)</td>
 
@@ -4735,7 +5173,9 @@ weight: 10
 
 <tr>
 
-<td>[customers_group_pricing](#group_pricing)</td>
+<td>
+
+[customers_group_pricing](#group_pricing)</td>
 
 <td>int(11)</td>
 
@@ -4885,7 +5325,11 @@ weight: 10
 
 <tr>
 
-<td>**customers_basket_id**</td>
+<td>
+
+**customers_basket_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -4905,7 +5349,9 @@ weight: 10
 
 <tr>
 
-<td>[customers_id](#customers)</td>
+<td>
+
+[customers_id](#customers)</td>
 
 <td>int(11)</td>
 
@@ -4925,7 +5371,9 @@ weight: 10
 
 <tr>
 
-<td>[products_id](#products)</td>
+<td>
+
+[products_id](#products)</td>
 
 <td>tinytext</td>
 
@@ -5035,7 +5483,11 @@ weight: 10
 
 <tr>
 
-<td>**customers_basket_attributes_id**</td>
+<td>
+
+**customers_basket_attributes_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -5055,7 +5507,9 @@ weight: 10
 
 <tr>
 
-<td>[customers_id](#customers)</td>
+<td>
+
+[customers_id](#customers)</td>
 
 <td>int(11)</td>
 
@@ -5075,7 +5529,9 @@ weight: 10
 
 <tr>
 
-<td>[products_id](#products)</td>
+<td>
+
+[products_id](#products)</td>
 
 <td>tinytext</td>
 
@@ -5095,7 +5551,9 @@ weight: 10
 
 <tr>
 
-<td>[products_options_id](#products_options)</td>
+<td>
+
+[products_options_id](#products_options)</td>
 
 <td>varchar(64)</td>
 
@@ -5115,7 +5573,9 @@ weight: 10
 
 <tr>
 
-<td>[products_options_value_id](#products_options_values)</td>
+<td>
+
+[products_options_value_id](#products_options_values)</td>
 
 <td>int(11)</td>
 
@@ -5205,7 +5665,11 @@ weight: 10
 
 <tr>
 
-<td>**customers_info_id**</td>
+<td>
+
+**customers_info_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -5355,7 +5819,11 @@ weight: 10
 
 <tr>
 
-<td>**cache_entry_name**</td>
+<td>
+
+**cache_entry_name**
+
+</td>
 
 <td>varchar(64)</td>
 
@@ -5445,7 +5913,11 @@ weight: 10
 
 <tr>
 
-<td>**archive_id**</td>
+<td>
+
+**archive_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -5675,7 +6147,11 @@ weight: 10
 
 <tr>
 
-<td>**pages_id**</td>
+<td>
+
+**pages_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -5695,7 +6171,9 @@ weight: 10
 
 <tr>
 
-<td>[languages_id](#languages)</td>
+<td>
+
+[languages_id](#languages)</td>
 
 <td>int(11)</td>
 
@@ -6045,7 +6523,11 @@ weight: 10
 
 <tr>
 
-<td>**featured_id**</td>
+<td>
+
+**featured_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -6065,7 +6547,9 @@ weight: 10
 
 <tr>
 
-<td>[products_id](#products)</td>
+<td>
+
+[products_id](#products)</td>
 
 <td>int(11)</td>
 
@@ -6235,7 +6719,11 @@ weight: 10
 
 <tr>
 
-<td>**files_uploaded_id**</td>
+<td>
+
+**files_uploaded_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -6275,7 +6763,9 @@ weight: 10
 
 <tr>
 
-<td>[customers_id](#customers)</td>
+<td>
+
+[customers_id](#customers)</td>
 
 <td>int(11)</td>
 
@@ -6345,7 +6835,11 @@ weight: 10
 
 <tr>
 
-<td>**geo_zone_id**</td>
+<td>
+
+**geo_zone_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -6475,7 +6969,11 @@ weight: 10
 
 <tr>
 
-<td>**get_term_name**</td>
+<td>
+
+**get_term_name**
+
+</td>
 
 <td>varchar(255)</td>
 
@@ -6565,7 +7063,11 @@ weight: 10
 
 <tr>
 
-<td>**group_id**</td>
+<td>
+
+**group_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -6695,7 +7197,11 @@ weight: 10
 
 <tr>
 
-<td>**languages_id**</td>
+<td>
+
+**languages_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -6845,7 +7351,11 @@ weight: 10
 
 <tr>
 
-<td>**layout_id**</td>
+<td>
+
+**layout_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -7035,7 +7545,11 @@ weight: 10
 
 <tr>
 
-<td>**manufacturers_id**</td>
+<td>
+
+**manufacturers_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -7165,7 +7679,11 @@ weight: 10
 
 <tr>
 
-<td>**manufacturers_id**</td>
+<td>
+
+**manufacturers_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -7185,7 +7703,9 @@ weight: 10
 
 <tr>
 
-<td>[languages_id](#languages)</td>
+<td>
+
+[languages_id](#languages)</td>
 
 <td>int(11)</td>
 
@@ -7295,7 +7815,11 @@ weight: 10
 
 <tr>
 
-<td>**clip_id**</td>
+<td>
+
+**clip_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -7445,7 +7969,11 @@ weight: 10
 
 <tr>
 
-<td>**media_id**</td>
+<td>
+
+**media_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -7575,7 +8103,9 @@ weight: 10
 
 <tr>
 
-<td>[product_id](#products)</td>
+<td>
+
+[product_id](#products)</td>
 
 <td>int(11)</td>
 
@@ -7625,7 +8155,11 @@ weight: 10
 
 <tr>
 
-<td>**type_id**</td>
+<td>
+
+**type_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -7715,7 +8249,11 @@ weight: 10
 
 <tr>
 
-<td>**categories_id**</td>
+<td>
+
+**categories_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -7735,7 +8273,9 @@ weight: 10
 
 <tr>
 
-<td>[language_id](#languages)</td>
+<td>
+
+[language_id](#languages)</td>
 
 <td>int(11)</td>
 
@@ -7845,7 +8385,11 @@ weight: 10
 
 <tr>
 
-<td>**products_id**</td>
+<td>
+
+**products_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -7865,7 +8409,9 @@ weight: 10
 
 <tr>
 
-<td>[language_id](#languages)</td>
+<td>
+
+[language_id](#languages)</td>
 
 <td>int(11)</td>
 
@@ -7975,7 +8521,11 @@ weight: 10
 
 <tr>
 
-<td>**music_genre_id**</td>
+<td>
+
+**music_genre_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -8085,7 +8635,11 @@ weight: 10
 
 <tr>
 
-<td>**newsletters_id**</td>
+<td>
+
+**newsletters_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -8295,7 +8849,11 @@ weight: 10
 
 <tr>
 
-<td>**orders_id**</td>
+<td>
+
+**orders_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -8315,7 +8873,9 @@ weight: 10
 
 <tr>
 
-<td>[customers_id](#customers)</td>
+<td>
+
+[customers_id](#customers)</td>
 
 <td>int(11)</td>
 
@@ -8957,7 +9517,7 @@ weight: 10
 
 <td>shipping_method</td>
 
-<td>varchar(255)</td>
+<td>varchar(128)</td>
 
 <td>utf8_general_ci</td>
 
@@ -9345,7 +9905,11 @@ weight: 10
 
 <tr>
 
-<td>**orders_products_id**</td>
+<td>
+
+**orders_products_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -9365,7 +9929,9 @@ weight: 10
 
 <tr>
 
-<td>[orders_id](#orders)</td>
+<td>
+
+[orders_id](#orders)</td>
 
 <td>int(11)</td>
 
@@ -9385,7 +9951,9 @@ weight: 10
 
 <tr>
 
-<td>[products_id](#products)</td>
+<td>
+
+[products_id](#products)</td>
 
 <td>int(11)</td>
 
@@ -9625,7 +10193,9 @@ weight: 10
 
 <tr>
 
-<td>[products_prid](#products)</td>
+<td>
+
+[products_prid](#products)</td>
 
 <td>tinytext</td>
 
@@ -9675,7 +10245,11 @@ weight: 10
 
 <tr>
 
-<td>**orders_products_attributes_id**</td>
+<td>
+
+**orders_products_attributes_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -9695,7 +10269,9 @@ weight: 10
 
 <tr>
 
-<td>[orders_id](#orders)</td>
+<td>
+
+[orders_id](#orders)</td>
 
 <td>int(11)</td>
 
@@ -9715,7 +10291,9 @@ weight: 10
 
 <tr>
 
-<td>[orders_products_id](#orders_products)</td>
+<td>
+
+[orders_products_id](#orders_products)</td>
 
 <td>int(11)</td>
 
@@ -10135,7 +10713,9 @@ weight: 10
 
 <tr>
 
-<td>[products_options_id](#products_options)</td>
+<td>
+
+[products_options_id](#products_options)</td>
 
 <td>int(11)</td>
 
@@ -10175,7 +10755,9 @@ weight: 10
 
 <tr>
 
-<td>[products_prid](#products)</td>
+<td>
+
+[products_prid](#products)</td>
 
 <td>tinytext</td>
 
@@ -10225,7 +10807,11 @@ weight: 10
 
 <tr>
 
-<td>**orders_products_download_id**</td>
+<td>
+
+**orders_products_download_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -10245,7 +10831,9 @@ weight: 10
 
 <tr>
 
-<td>[orders_id](#orders)</td>
+<td>
+
+[orders_id](#orders)</td>
 
 <td>int(11)</td>
 
@@ -10265,7 +10853,9 @@ weight: 10
 
 <tr>
 
-<td>[orders_products_id](#orders_products)</td>
+<td>
+
+[orders_products_id](#orders_products)</td>
 
 <td>int(11)</td>
 
@@ -10345,7 +10935,9 @@ weight: 10
 
 <tr>
 
-<td>[products_prid](#products)</td>
+<td>
+
+[products_prid](#products)</td>
 
 <td>tinytext</td>
 
@@ -10395,7 +10987,11 @@ weight: 10
 
 <tr>
 
-<td>**orders_status_id**</td>
+<td>
+
+**orders_status_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -10415,7 +11011,9 @@ weight: 10
 
 <tr>
 
-<td>[language_id](#languages)</td>
+<td>
+
+[language_id](#languages)</td>
 
 <td>int(11)</td>
 
@@ -10485,7 +11083,11 @@ weight: 10
 
 <tr>
 
-<td>**orders_status_history_id**</td>
+<td>
+
+**orders_status_history_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -10505,7 +11107,9 @@ weight: 10
 
 <tr>
 
-<td>[orders_id](#orders)</td>
+<td>
+
+[orders_id](#orders)</td>
 
 <td>int(11)</td>
 
@@ -10525,7 +11129,9 @@ weight: 10
 
 <tr>
 
-<td>[orders_status_id](#orders_status)</td>
+<td>
+
+[orders_status_id](#orders_status)</td>
 
 <td>int(5)</td>
 
@@ -10635,7 +11241,11 @@ weight: 10
 
 <tr>
 
-<td>**orders_total_id**</td>
+<td>
+
+**orders_total_id**
+
+</td>
 
 <td>int(10) unsigned</td>
 
@@ -10655,7 +11265,9 @@ weight: 10
 
 <tr>
 
-<td>[orders_id](#orders)</td>
+<td>
+
+[orders_id](#orders)</td>
 
 <td>int(11)</td>
 
@@ -10805,7 +11417,11 @@ weight: 10
 
 <tr>
 
-<td>**paypal_ipn_id**</td>
+<td>
+
+**paypal_ipn_id**
+
+</td>
 
 <td>int(11) unsigned</td>
 
@@ -10825,7 +11441,9 @@ weight: 10
 
 <tr>
 
-<td>[order_id](#orders)</td>
+<td>
+
+[order_id](#orders)</td>
 
 <td>int(11) unsigned</td>
 
@@ -11695,7 +12313,11 @@ weight: 10
 
 <tr>
 
-<td>**payment_status_id**</td>
+<td>
+
+**payment_status_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -11765,7 +12387,11 @@ weight: 10
 
 <tr>
 
-<td>**payment_status_history_id**</td>
+<td>
+
+**payment_status_history_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -11935,7 +12561,11 @@ weight: 10
 
 <tr>
 
-<td>**unique_id**</td>
+<td>
+
+**unique_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -12045,7 +12675,11 @@ weight: 10
 
 <tr>
 
-<td>**paypal_ipn_id**</td>
+<td>
+
+**paypal_ipn_id**
+
+</td>
 
 <td>int(11) unsigned</td>
 
@@ -12065,7 +12699,9 @@ weight: 10
 
 <tr>
 
-<td>[order_id](#orders)</td>
+<td>
+
+[order_id](#orders)</td>
 
 <td>int(11) unsigned</td>
 
@@ -12955,7 +13591,11 @@ weight: 10
 
 <tr>
 
-<td>**products_id**</td>
+<td>
+
+**products_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -12975,7 +13615,9 @@ weight: 10
 
 <tr>
 
-<td>[artists_id](#record_artists)</td>
+<td>
+
+[artists_id](#record_artists)</td>
 
 <td>int(11)</td>
 
@@ -13065,7 +13707,11 @@ weight: 10
 
 <tr>
 
-<td>**configuration_id**</td>
+<td>
+
+**configuration_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -13315,7 +13961,11 @@ weight: 10
 
 <tr>
 
-<td>**type_id**</td>
+<td>
+
+**type_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -13525,7 +14175,9 @@ weight: 10
 
 <tr>
 
-<td>[category_id](#categories)</td>
+<td>
+
+[category_id](#categories)</td>
 
 <td>int(11)</td>
 
@@ -13575,7 +14227,11 @@ weight: 10
 
 <tr>
 
-<td>**products_id**</td>
+<td>
+
+**products_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -14135,7 +14791,9 @@ weight: 10
 
 <tr>
 
-<td>[master_categories_id](#categories)</td>
+<td>
+
+[master_categories_id](#categories)</td>
 
 <td>int(11)</td>
 
@@ -14305,7 +14963,11 @@ weight: 10
 
 <tr>
 
-<td>**products_attributes_id**</td>
+<td>
+
+**products_attributes_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -14325,7 +14987,9 @@ weight: 10
 
 <tr>
 
-<td>[products_id](#products)</td>
+<td>
+
+[products_id](#products)</td>
 
 <td>int(11)</td>
 
@@ -14345,7 +15009,9 @@ weight: 10
 
 <tr>
 
-<td>[options_id](#products_options)</td>
+<td>
+
+[options_id](#products_options)</td>
 
 <td>int(11)</td>
 
@@ -14365,7 +15031,9 @@ weight: 10
 
 <tr>
 
-<td>[options_values_id](#products_options_values)</td>
+<td>
+
+[options_values_id](#products_options_values)</td>
 
 <td>int(11)</td>
 
@@ -14875,7 +15543,11 @@ weight: 10
 
 <tr>
 
-<td>**products_attributes_id**</td>
+<td>
+
+**products_attributes_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -14985,7 +15657,11 @@ weight: 10
 
 <tr>
 
-<td>**products_id**</td>
+<td>
+
+**products_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -14997,7 +15673,7 @@ weight: 10
 
 <td></td>
 
-<td></td>
+<td>auto_increment</td>
 
 <td></td>
 
@@ -15005,7 +15681,9 @@ weight: 10
 
 <tr>
 
-<td>[language_id](#languages)</td>
+<td>
+
+[language_id](#languages)</td>
 
 <td>int(11)</td>
 
@@ -15155,7 +15833,9 @@ weight: 10
 
 <tr>
 
-<td>[products_id](#products)</td>
+<td>
+
+[products_id](#products)</td>
 
 <td>int(11)</td>
 
@@ -15245,7 +15925,11 @@ weight: 10
 
 <tr>
 
-<td>**products_id**</td>
+<td>
+
+**products_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -15265,7 +15949,9 @@ weight: 10
 
 <tr>
 
-<td>[customers_id](#customers)</td>
+<td>
+
+[customers_id](#customers)</td>
 
 <td>int(11)</td>
 
@@ -15335,7 +16021,11 @@ weight: 10
 
 <tr>
 
-<td>**products_options_id**</td>
+<td>
+
+**products_options_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -15355,7 +16045,9 @@ weight: 10
 
 <tr>
 
-<td>[language_id](#languages)</td>
+<td>
+
+[language_id](#languages)</td>
 
 <td>int(11)</td>
 
@@ -15585,7 +16277,11 @@ weight: 10
 
 <tr>
 
-<td>**products_options_types_id**</td>
+<td>
+
+**products_options_types_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -15655,7 +16351,11 @@ weight: 10
 
 <tr>
 
-<td>**products_options_values_id**</td>
+<td>
+
+**products_options_values_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -15675,7 +16375,9 @@ weight: 10
 
 <tr>
 
-<td>[language_id](#languages)</td>
+<td>
+
+[language_id](#languages)</td>
 
 <td>int(11)</td>
 
@@ -15765,7 +16467,11 @@ weight: 10
 
 <tr>
 
-<td>**products_options_values_to_products_options_id**</td>
+<td>
+
+**products_options_values_to_products_options_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -15785,7 +16491,9 @@ weight: 10
 
 <tr>
 
-<td>[products_options_id](#products_options)</td>
+<td>
+
+[products_options_id](#products_options)</td>
 
 <td>int(11)</td>
 
@@ -15855,7 +16563,11 @@ weight: 10
 
 <tr>
 
-<td>**products_id**</td>
+<td>
+
+**products_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -15875,7 +16587,9 @@ weight: 10
 
 <tr>
 
-<td>[categories_id](#categories)</td>
+<td>
+
+[categories_id](#categories)</td>
 
 <td>int(11)</td>
 
@@ -15925,7 +16639,11 @@ weight: 10
 
 <tr>
 
-<td>**project_version_id**</td>
+<td>
+
+**project_version_id**
+
+</td>
 
 <td>tinyint(3)</td>
 
@@ -16155,7 +16873,11 @@ weight: 10
 
 <tr>
 
-<td>**project_version_id**</td>
+<td>
+
+**project_version_id**
+
+</td>
 
 <td>tinyint(3)</td>
 
@@ -16325,7 +17047,11 @@ weight: 10
 
 <tr>
 
-<td>**query_id**</td>
+<td>
+
+**query_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -16475,7 +17201,11 @@ weight: 10
 
 <tr>
 
-<td>**artists_id**</td>
+<td>
+
+**artists_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -16605,7 +17335,11 @@ weight: 10
 
 <tr>
 
-<td>**artists_id**</td>
+<td>
+
+**artists_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -16625,7 +17359,9 @@ weight: 10
 
 <tr>
 
-<td>[languages_id](#languages)</td>
+<td>
+
+[languages_id](#languages)</td>
 
 <td>int(11)</td>
 
@@ -16735,7 +17471,11 @@ weight: 10
 
 <tr>
 
-<td>**record_company_id**</td>
+<td>
+
+**record_company_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -16865,7 +17605,11 @@ weight: 10
 
 <tr>
 
-<td>**record_company_id**</td>
+<td>
+
+**record_company_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -16885,7 +17629,9 @@ weight: 10
 
 <tr>
 
-<td>[languages_id](#languages)</td>
+<td>
+
+[languages_id](#languages)</td>
 
 <td>int(11)</td>
 
@@ -16995,7 +17741,11 @@ weight: 10
 
 <tr>
 
-<td>**reviews_id**</td>
+<td>
+
+**reviews_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -17015,7 +17765,9 @@ weight: 10
 
 <tr>
 
-<td>[products_id](#products)</td>
+<td>
+
+[products_id](#products)</td>
 
 <td>int(11)</td>
 
@@ -17035,7 +17787,9 @@ weight: 10
 
 <tr>
 
-<td>[customers_id](#customers)</td>
+<td>
+
+[customers_id](#customers)</td>
 
 <td>int(11)</td>
 
@@ -17205,7 +17959,11 @@ weight: 10
 
 <tr>
 
-<td>**reviews_id**</td>
+<td>
+
+**reviews_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -17225,7 +17983,9 @@ weight: 10
 
 <tr>
 
-<td>[languages_id](#languages)</td>
+<td>
+
+[languages_id](#languages)</td>
 
 <td>int(11)</td>
 
@@ -17295,7 +18055,11 @@ weight: 10
 
 <tr>
 
-<td>**sale_id**</td>
+<td>
+
+**sale_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -17625,7 +18389,11 @@ weight: 10
 
 <tr>
 
-<td>**sesskey**</td>
+<td>
+
+**sesskey**
+
+</td>
 
 <td>varchar(255)</td>
 
@@ -17715,7 +18483,11 @@ weight: 10
 
 <tr>
 
-<td>**specials_id**</td>
+<td>
+
+**specials_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -17735,7 +18507,9 @@ weight: 10
 
 <tr>
 
-<td>[products_id](#products)</td>
+<td>
+
+[products_id](#products)</td>
 
 <td>int(11)</td>
 
@@ -17925,7 +18699,11 @@ weight: 10
 
 <tr>
 
-<td>**tax_class_id**</td>
+<td>
+
+**tax_class_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -18055,7 +18833,11 @@ weight: 10
 
 <tr>
 
-<td>**tax_rates_id**</td>
+<td>
+
+**tax_rates_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -18095,7 +18877,9 @@ weight: 10
 
 <tr>
 
-<td>[tax_class_id](#tax_class)</td>
+<td>
+
+[tax_class_id](#tax_class)</td>
 
 <td>int(11)</td>
 
@@ -18245,7 +19029,11 @@ weight: 10
 
 <tr>
 
-<td>**template_id**</td>
+<td>
+
+**template_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -18335,7 +19123,11 @@ weight: 10
 
 <tr>
 
-<td>**upgrade_exception_id**</td>
+<td>
+
+**upgrade_exception_id**
+
+</td>
 
 <td>smallint(5)</td>
 
@@ -18675,7 +19467,11 @@ weight: 10
 
 <tr>
 
-<td>**zone_id**</td>
+<td>
+
+**zone_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -18695,7 +19491,9 @@ weight: 10
 
 <tr>
 
-<td>[zone_country_id](#countries)</td>
+<td>
+
+[zone_country_id](#countries)</td>
 
 <td>int(11)</td>
 
@@ -18785,7 +19583,11 @@ weight: 10
 
 <tr>
 
-<td>**association_id**</td>
+<td>
+
+**association_id**
+
+</td>
 
 <td>int(11)</td>
 
@@ -18805,7 +19607,9 @@ weight: 10
 
 <tr>
 
-<td>[zone_country_id](#countries)</td>
+<td>
+
+[zone_country_id](#countries)</td>
 
 <td>int(11)</td>
 
@@ -18825,7 +19629,9 @@ weight: 10
 
 <tr>
 
-<td>[zone_id](#zones)</td>
+<td>
+
+[zone_id](#zones)</td>
 
 <td>int(11)</td>
 
@@ -18845,7 +19651,9 @@ weight: 10
 
 <tr>
 
-<td>[geo_zone_id](#geo_zones)</td>
+<td>
+
+[geo_zone_id](#geo_zones)</td>
 
 <td>int(11)</td>
 
