@@ -26,9 +26,17 @@ Suggest trying them in this order:
 ## Email FROM-ADDRESS Shows Up Funny
 If your "FROM" email addresses contain extra brackets ")", this is due to having an incorrectly-formed email address defined in your store `EMAIL_FROM` setting.
 
-Contact-Us emails aren't arriving
+## Contact-Us emails aren't arriving
+
 a. the Email From address may be malformed
 
 b. the Contact Us Pulldown contents may not be formatted properly. Note the required syntax next to the input field.
 
+## Advanced Email Troubleshooting
+
+* [PHPMailer Troubleshooting Guide](https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting)
+
+* [Advanced Email Troubleshooting I](/user/email/advanced_email_troubleshooting_1/)
+
+* [Advanced Email Troubleshooting II](/user/email/advanced_email_troubleshooting_2/)
 
