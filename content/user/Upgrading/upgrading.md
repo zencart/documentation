@@ -4,13 +4,13 @@ category: Upgrading
 weight: 10
 ---
 
-<font color="#ff0000" size="5">** READ THIS FIRST: [http://www.zen-cart.com/entry.php?3-...d-of-upgrading](http://www.zen-cart.com/entry.php?3-How-do-I-rebuild-my-site-on-the-new-version-instead-of-upgrading) **</font>
+**READ THIS FIRST: [How do I rebuild my site on the new version, instead of upgrading?](http://www.zen-cart.com/entry.php?3-How-do-I-rebuild-my-site-on-the-new-version-instead-of-upgrading)**
 
-Detailed upgrade instructions that help you retain your customizations while upgrading to new features, can be found in your ZIP file under the [/docs/2.readme_how_to_upgrade.html](https://www.zen-cart.com/docs/2.readme_how_to_upgrade.html) file and also in this [related FAQ article](/user/upgrading/detailed_upgrading/)
+Detailed upgrade instructions that help you retain your customizations while upgrading to new features, can be found in your ZIP file under the [/docs/2.readme_how_to_upgrade.html](https://www.zen-cart.com/docs/2.readme_how_to_upgrade.html) file and also in this [related article](/user/upgrading/detailed_upgrading/).
 
-<font color="#ff0000" size="5">**A. ALERT: If you want to preserve your CUSTOMIZATIONS, use these instructions INSTEAD: [upgrading and preserving customizations](/user/upgrading/detailed_upgrading/)**</font>
+### <font color="#ff0000"> **A. If you want to PRESERVE YOUR CUSTOMIZATIONS, use these instructions [upgrading and preserving customizations](/user/upgrading/detailed_upgrading/)** </font>
 
-## <font color="#333399">B. If you have NO CUSTOMIZATIONS to preserve, here's a high-level overview/**summary** of a slightly shorter process:</font>
+### <font color="#333399">B. If you have NO CUSTOMIZATIONS (or don't wish to preserve the ones you have), here's a high-level overview/**summary** of a slightly shorter process:</font>
 
 1.  Back up your site from the server as well as the copy on your computer.
 2.  Backup your database
@@ -29,7 +29,7 @@ Detailed upgrade instructions that help you retain your customizations while upg
 
 Reminder:  Read the [/docs/2.readme_how_to_upgrade.html](https://www.zen-cart.com/docs/2.readme_how_to_upgrade.html) document for step-by-step details and information on tools to help in the process.  
 
-## **QUESTION:** "Why is this process so long?"
+### QUESTION: "Why is this process so long?"
 
 **ANSWER:** Another way to look at it is this:  An "upgrade" is essentially a rebuilding of your site.  
 The steps outlined above are the recommended way to do it so that you rebuild your site in a <u>temporary location,</u> letting you resolve all potential problems *before* you ever touch your actual live site. **This gives you time to sort out whatever needs sorting** "just in case", and allows you to keep taking sales while you're preparing the upgrade. It also helps take some of the pressure off and makes it less urgent to do it all in one fell swoop.  
@@ -42,6 +42,6 @@ So, follow the guide, and while there may be some learning involved and remember
 
 * * *
 
-## QUESTION: "I have a very old version. Do I upgrade in stages, or all-at-once?"
+### QUESTION: "I have a very old version. Do I upgrade in stages, or all-at-once?"
 
 **ANSWER:** You can upgrade to the latest version directly. When you do the database-upgrade step in zc_install it will show you all the database-version-levels which need upgrading, and will pre-check the checkboxes for you and will take care of upgrading through all those steps automatically. Usually you can just leave those boxes checked and put in the admin password and proceed with the upgrade, which normally will take just a few seconds.  
