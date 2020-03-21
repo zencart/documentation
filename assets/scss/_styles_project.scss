@@ -14,3 +14,11 @@ pre > code {
   margin-left: 20px;
   margin-bottom: 20px; 
 }
+
+.td-cover-block--height-full {
+  min-height: auto; 
+}
+
+.td-main {
+  flex-grow: unset; 
+}

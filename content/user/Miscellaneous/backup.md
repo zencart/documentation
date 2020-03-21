@@ -1,7 +1,7 @@
 ---
 title: Backups - how do I do a site backup? 
 category: miscellaneous
-weight: 1
+weight: 10
 ---
 
 **NOTE: Doing a backup of your Zen Cart site requires TWO components: (1) A copy of all the files in your Zen Cart folder on your server ... via FTP, and (2) a copy of your database, described below:**
