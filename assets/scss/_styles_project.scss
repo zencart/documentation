@@ -6,6 +6,10 @@ pre {
  word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
+pre > code {
+ white-space: pre-wrap !important; 
+}
+
 .indent {
   margin-left: 20px;
   margin-bottom: 20px; 

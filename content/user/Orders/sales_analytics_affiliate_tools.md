@@ -33,34 +33,34 @@ An analytics or affiliate-tracking system can use these variables as part of the
 No need to edit any core Zen Cart files.  
 Simply create a new file: `/includes/modules/pages/checkout_success/jscript_idevaffiliate.php` and be sure to set the correct URL for your iDevAffiliate system, and appropriate profile number:
 
-<pre>
-&lt;?php
-  echo '&lt;script type="text/javascript" src="http://www.yourdomain.com/idevaffiliate/sale.php?profile=1&idev_saleamt=' . $order_summary['commissionable_order_formatted'] . 
+```
+<?php
+  echo '<script type="text/javascript" src="http://www.yourdomain.com/idevaffiliate/sale.php?profile=1&idev_saleamt=' . $order_summary['commissionable_order_formatted'] . 
        '&idev_ordernum=' . $order_summary['order_number'] . '&products_purchased=' . $order_summary['products_ordered_models'] . '&coupon_code=' . urlencode($order_summary['coupon_code']) .
-       '"&gt;&lt;/script&gt;';
-</pre>
+       '"></script>';
+```
 
 or use an image pixel instead, by adding it to your tpl_footer.php:
 
-<pre>
+```
 if ($current_page_base == 'checkout_success') {
-    echo '&lt;img border="0" src="http://www.yoursite.com/idevaffiliate/sale.php?profile=1&idev_saleamt=' . $order_summary['commissionable_order'] . '&idev_ordernum=' . $order_summary['order_number'] . '&coupon_code=' . $order_summary['coupon_code'] . '&products_purchased=' . $order_summary['products_ordered_ids'] . '" height="1" width="1"&gt;';
+    echo '<img border="0" src="http://www.yoursite.com/idevaffiliate/sale.php?profile=1&idev_saleamt=' . $order_summary['commissionable_order'] . '&idev_ordernum=' . $order_summary['order_number'] . '&coupon_code=' . $order_summary['coupon_code'] . '&products_purchased=' . $order_summary['products_ordered_ids'] . '" height="1" width="1">';
 } 
-</pre>
+```
 
 ### JROX JAM  
 
 No need to edit any core Zen Cart files.  
 Simply create a new file: `/includes/modules/pages/checkout_success/jscript_jam.php` and be sure to set the correct URL for your JAM system:
 
-<pre>
-   echo '&lt;script type="text/javascript"  src="http://www.yourdomain.com/affiliates/sale.php?amount=' . $order_summary['commissionable_order'] . '&trans_id=' . $order_summary['order_number'] . '"&gt;&lt;/script&gt;';
-</pre>
+```
+   echo '<script type="text/javascript"  src="http://www.yourdomain.com/affiliates/sale.php?amount=' . $order_summary['commissionable_order'] . '&trans_id=' . $order_summary['order_number'] . '"></script>';
+```
 
 **Adding product IDs or Model Numbers on older versions:**  
 Add the following extra code before the tracking pixel/script code above if you want to have product ID or Model data available:
 
-<pre>
+```
 if (!isset($order_summary['products_ordered_models'])) {
   $products_array = array();
   $products_query = "SELECT products_id, products_model
@@ -76,8 +76,7 @@ if (!isset($order_summary['products_ordered_models'])) {
   $order_summary['products_ordered_ids'] = implode('|', array_keys($products_array));
   $order_summary['products_ordered_models'] = implode('|', array_values($products_array));
 }
-</pre>
-
+```
 
 
 ## Advanced Use  

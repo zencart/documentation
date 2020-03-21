@@ -19,13 +19,13 @@ Go to Admin > Configuration > Define Page Settings and set their values to 2 or 
 
 For example, if you wished the terms and conditions link to appear first, you would move this entire block of php:
 
-<pre>
+```
   if (DEFINE_CONDITIONS_STATUS <= 1) {
     $information[] = '<a href="' . zen_href_link(FILENAME_CONDITIONS) . '">' . BOX_INFORMATION_CONDITIONS . '</a>';
   }
-</pre>
+```
 
  (taking care not to leave the curly bracket behind) to just below the line that says:
-<pre>
+```
   unset ($information);
-</pre>
+```

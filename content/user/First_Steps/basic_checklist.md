@@ -63,7 +63,7 @@ After installation, you'll want to address several things to get your basic shop
 15.  **[Admin - Catalog - Manufacturers](/wiki/index.php/Admin_-_Catalog_-_Manufacturers "Admin - Catalog - Manufacturers")**
     *   Enter the manufacturers that your products will be linked to.
 
-### <span class="mw-headline" id="Categories_.26_Products">Categories & Products</span>
+### Categories & Products
 
 Now that you've done basic setup, you can enter your categories and products.
 

@@ -7,14 +7,14 @@ weight: 40
 
 This page allows you to view, edit, add and delete option names.
 
-## <span class="mw-headline" id="Introduction">Introduction</span>
+## Introduction
 
 
 Before you can add attributes to your products in 
 [Admin - Catalog - Attributes Controller](/user/admin_pages/catalog/attributes_controller/) you need to create option names and where appropriate give the names option values.
 
 
-## <span class="mw-headline" id="Creating_an_Option_Name">Creating an Option Name</span>
+## Creating an Option Name
 
 In the first text box you see _en:_ - type in the name of your attribute option. This will appear in your shop so should be informative to your customer.
 
@@ -37,7 +37,7 @@ In the drop down box select which type of attribute you want.
 
 Click INSERT.
 
-## <span class="mw-headline" id="Option_Name_Settings">Option Name Settings</span>
+## Option Name Settings
 
 If you click edit next to the option name then you can add some settings.
 

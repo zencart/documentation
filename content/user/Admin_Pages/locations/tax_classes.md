@@ -23,7 +23,7 @@ If you need another tax class,
 3.  Enter a title and description
 4.  Click Insert
 
-### <span class="mw-headline" id="Setting_a_Default_Tax_Class_for_use_when_adding_new_products">Setting a Default Tax Class for use when adding new products</span>
+### Setting a Default Tax Class for use when adding new products
 
 When entering new products in the Admin area, it is necessary to select the appropriate tax class for that product. Otherwise taxes won't be calculated appropriately on it during checkout.
 

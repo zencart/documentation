@@ -10,19 +10,21 @@ Warning: Cannot modify header information - headers already sent by (output star
 
 *Common Cause:*
 This warning is often caused by a blank space or extra line at the beginning or end of a .php file.  
-Check the error for the filename that generated the error (ie: the "output started at...." filename), open that file in your text editor and remove the extra spaces or lines immediately <u>before the first</u> **&lt;?php** marks in the file, <u>or after the</u> closing **?>**  
+Check the error for the filename that generated the error (ie: the "output started at...." filename), open that file in your text editor and remove the extra spaces or lines immediately <u>before the first</u> **`<?php`** marks in the file, <u>or after the</u> closing **`?>`**  
 
 **<u>Other Causes: Syntax errors</u>**  
 In the example above, you'll see 
-<pre>
+
+```
 output started at includes/something/something/something.php:12</font>.
-</pre>
+```
 
 The filename in the message above is the file you need to be concerned about. 
 The number after the filename is the line that caused the problem.  For example, `12` means that the problem you need to fix is on line 12.  In that same example, 
-<pre>
+```
 includes/something_else.php on line 67
-</pre> 
+```
+
 <u>can be completely ignored</u>.</font> It is not the problem. It is the one that discovered that the problem had already occurred.  
 
 If the "headers already sent" error appears AFTER any other error, then you need to fix that other error FIRST. (The error message itself is what caused headers to be sent, so fixing that error will cause the second error to go away too.)  

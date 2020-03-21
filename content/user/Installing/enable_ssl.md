@@ -45,12 +45,12 @@ Once you've had your hosting company install your SSL certificate, **and you hav
 You will need to make changes in both the /includes/configure.php and /your_renamed_admin/includes/configure.php.  
 Change **includes/configure.php** and **admin/includes/configure.php** to:  
 
-<pre>
+```
 // Define the webserver and path parameters  
 define('HTTP_SERVER', 'http://www.YOUR_STORE.com');  
 define('HTTPS_SERVER', 'https://www.YOURSTOP.com](https://www.YOURSTORE.com)');  
 define('ENABLE_SSL', 'true');  
-</pre>
+```
 
 NOTE: (in your admin configure.php, the above define is called `ENABLE_SSL_CATALOG`)  
 
@@ -58,11 +58,11 @@ If you're using a shared SSL certificate, then on the HTTPS_SERVER line use the 
 
 If you want your ENTIRE site to be served over SSL, then use https on both defines:  
 
-<pre>
+```
 define('HTTP_SERVER', 'https://www.YOURSTORE.com');  
 define('HTTPS_SERVER', 'https://www.YOURSTORE.com](https://www.YOURSTORE.com)');  
 define('ENABLE_SSL', 'true');  
-</pre>
+```
 
 **ADMIN SECURITY NOTE:** In Zen Cart v1.x, if you want to secure all your ADMIN pages with SSL, set the HTTP_SERVER in your "/admin/includes/configure.php" to the same working URL as your HTTPS_SERVER setting. (You will then have both an HTTP_SERVER and HTTPS_SERVER defined to the same value.) (Also, if your DIR_WS_ADMIN looks something like '/adminfoldername/' and doesn't have references to $p1 or any other $ variables in it, then do the same with DIR_WS_ADMIN to make it match DIR_WS_HTTPS_ADMIN.) **THIS IS REQUIRED FOR PCI COMPLIANCE, and will happen automatically with new installations of v1.5.x and newer.**  
 

@@ -85,11 +85,11 @@ While **<font color="#ff0000">the built-in myDebug-xxxxxx.log method above is fa
 To attempt to show PHP debug errors on-screen, create and upload a new file, like this:  
 Filename: **/includes/<u>local</u>/configure.php**  
 
-<pre>
-&lt;?php
+```
+<?php
   define('STRICT_ERROR_REPORTING', true);
-?&gt; 
-</pre>
+?> 
+```
 
 Then try to access your site again. You may see many warning messages on the screen.  
 

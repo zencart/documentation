@@ -13,7 +13,7 @@ In Zen Cart, formats are stored in the `address_format` table.
 
 This table is structured as follows: 
 
-## <span class="mw-headline" id="Columns">Columns</span>
+## Columns
 
 ### address_format_id 
 
@@ -63,7 +63,7 @@ This table is structured as follows:
 > 
 > </table>
 
-### <span class="mw-headline" id="address_format">address_format</span>
+### address_format
 
 <dl>
 
@@ -124,7 +124,7 @@ This table is structured as follows:
 > 
 > </dl>
 > 
-### <span class="mw-headline" id="address_summary">address_summary</span>
+### address_summary
 
 <dl>
 
@@ -182,7 +182,7 @@ As of Zen Cart 1.5.6, they are:
 </table>
 
 The values are used as follows: 
-<pre>
+```
 1 - Default, most countries except those below. 
 2 - USA 
 3 - Spain 
@@ -190,5 +190,5 @@ The values are used as follows:
 5 - Germany 
 6 - UK/GB 
 7 - Australia
-</pre>
+```
 

@@ -35,9 +35,8 @@ The method below shows the GST and PST totaled together on the same line (see sa
 Having said that, the only problem is that the two taxes are summed together onto one line.  
 However, the GST number is displayed, and the percentages (rates) used are displayed, and nothing is hidden, so I believe that this will be acceptable according to Federal & Provincial Gov't requirements (but I AM NOT AN ACCOUNTANT!!!!).  
 
-**************************************************  
 Best part is: IT DOESN'T REQUIRE ANY CONTRIBUTIONS!!!!! Just a careful setup of the zones.  
-**************************************************  
+
 **===================  
 Step-by-Step SETUP:  
 ===================**  
@@ -99,8 +98,8 @@ Click INSERT to create new sub-zone:
 
 Do NOT create a separate Tax ZONE for Shipping. You will simply use the "Canada" tax zone for the GST Shipping tax CLASS (below).  
 
-*** Important: this means that SHIPPING GST will only be charged to destinations within Canada, but NOT charged on exports.  
-*** According to Canada Customs & Revenue Agency (1-800-959-5525), you do *NOT* charge GST on the shipping fee for EXPORTS.  
+Important: this means that SHIPPING GST will only be charged to destinations within Canada, but NOT charged on exports. 
+According to Canada Customs & Revenue Agency (1-800-959-5525), you do *NOT* charge GST on the shipping fee for EXPORTS.  
 
 STEP (3): Create the "Tax Classes"  
 
@@ -134,18 +133,18 @@ create SIX (6) Tax Rates:
 - Description: 6.0% GST  
 - Priority: 1  
 
-/*HINT: Insert your GST# as part of DESCRIPTION and it will show up on invoice !!!  
-/*HINT: Leave PRIORITY at "1" for a non-cumulative tax (i.e. Ontario)  
-- Tax Class Title: GST/PST/HST Class /* HINT: Yes, this is the same one you just used  
+HINT: Insert your GST# as part of DESCRIPTION and it will show up on invoice !!!  
+HINT: Leave PRIORITY at "1" for a non-cumulative tax (i.e. Ontario)  
+- Tax Class Title: GST/PST/HST Class // HINT: Yes, this is the same one you just used  
 - Zone: Ontario PST Zone  
 - Tax Rate (%): 8.0000  
 - Description: 8.0% PST (Ontario)  
 - Priority: 1  
 
-/*HINT: Leave PRIORITY at "1" for a non-cumulative tax (i.e. Ontario)  
+HINT: Leave PRIORITY at "1" for a non-cumulative tax (i.e. Ontario)  
 but change to "2" for cumulative tax (i.e. You are a Quebec store)  
 
-- Tax Class Title: GST/PST/HST Class /* HINT: Yes, this is the same one you just used  
+- Tax Class Title: GST/PST/HST Class // HINT: Yes, this is the same one you just used  
 - Zone: HST Zone  
 - Tax Rate (%): 14.0000  
 - Description: 14% HST  
@@ -171,15 +170,15 @@ That takes care of taxes on products. And now, the Shipping taxes:
 - Description: 14% shipping HST  
 - Priority: 1  
 
-/* HINT: The above will calculate PST on shipping. Although there might  
-/* be a tendenancy to think of shipping as a PST exempt service, in fact  
-/* the Ontario Ministry of Finance says that for calculating the PST,  
-/* "The total selling price includes delivery, mailing, transportation, or  
-/* handling charges, but does not include the GST". With the above set-up,  
-/* the PST for the shipping gets calculated (albeit separately).  
-/* If you wanted them calculated together, you could assign "GST/PST/HST Class"  
-/* as the Tax Class when setting up the shipping method.  
-/* Personally, I prefer to break it out separately.  
+ HINT: The above will calculate PST on shipping. Although there might  
+ be a tendenancy to think of shipping as a PST exempt service, in fact  
+ the Ontario Ministry of Finance says that for calculating the PST,  
+ "The total selling price includes delivery, mailing, transportation, or  
+ handling charges, but does not include the GST". With the above set-up,  
+ the PST for the shipping gets calculated (albeit separately).  
+ If you wanted them calculated together, you could assign "GST/PST/HST Class"  
+ as the Tax Class when setting up the shipping method.  
+ Personally, I prefer to break it out separately.  
 
 STEP (5): Specify the appropriate Tax Class for SHIPPING MODULES  
 
@@ -189,7 +188,7 @@ Edit whichever shipping module(s) you are using.
 
 Tax Class: GST Shipping Class  
 
-/* SEE PREVIOUS HINT  
+SEE PREVIOUS HINT  
 
 STEP (6): Specify the appropriate Tax for PRODUCTS  
 
@@ -204,13 +203,9 @@ TAX CLASS: "GST/PST/HST CLASS"
 ==============  
 The following SQL statement could be helpful:  
 
-<div class="bbcode_container">
 
-<div class="bbcode_description">Code:</div>
+`UPDATE products SET products_tax_class_id = 1 WHERE products_model NOT LIKE 'GIFT%';`
 
-<pre class="bbcode_code" style="height:36px;">UPDATE products SET products_tax_class_id = 1 WHERE products_model NOT LIKE 'GIFT%';</pre>
-
-</div>
 
 (you'd need to confirm that the desired products_tax_class_id = 1, first )  
 

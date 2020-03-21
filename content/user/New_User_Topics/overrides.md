@@ -30,7 +30,10 @@ Remember only files which have been modified should be copied to your /YOURTEMPL
 >     Copy <font color="#0000ff">english.php</font> to this new directory  
 >     You now have **/includes/languages/YOURTEMPLATE/english.php**  
 >     Open the file in a text editor find and modify the following line of code  
->     <span class="Code">define('BOX_HEADING_CATEGORIES', 'Categories');</span>  
+
+```
+define('BOX_HEADING_CATEGORIES', 'Categories');
+```
 >     Save the file and upload your new directory and its contents to your server.
 
 *   Page Specific information: **/includes/languages/ENGLISH/*.php** (all files within this directory)
@@ -40,7 +43,10 @@ Remember only files which have been modified should be copied to your /YOURTEMPL
 >     Copy <font color="#0000ff">account.php</font> to this new directory  
 >     You now have **/includes/languages/ENGLISH/YOURTEMPLATE/account.php**  
 >     Open the file in a text editor find and modify the following line of code  
->     <span class="Code">define('MY_ACCOUNT_TITLE', 'My Account');</span>  
+```
+define('MY_ACCOUNT_TITLE', 'My Account');
+```
+
 >     Save the file and upload your new directory and its contents to your server.
 
 **Module Files**  
@@ -84,12 +90,12 @@ Remember only files which have been modified should be copied to your /YOURTEMPL
 You've created a YOURTEMPLATE page (about_us) and need to reference the filename.  
 Create a new file (about_us_filenames.php) which would include the following:  
 
-<pre>
-&lt;?php  
+```
+<?php  
 // About Us Filename Define  
 define('FILENAME_ABOUT_US', 'about_us');  
-?&gt;
-</pre>
+?>
+```
 
 Save the file to **/includes/extra_datafiles/about_us_filenames.php** and upload it to your server.
 
@@ -99,12 +105,13 @@ Save the file to **/includes/extra_datafiles/about_us_filenames.php** and upload
 
 > You've created a new database field for your UPS tracking system, ups_track and need to define the table name for your code.  
 >     Create a new file (ups_track_database_tables.php) which would include the following:  
-<pre>
-&lt;?php  
+
+```
+<?php  
 // UPS Tracking Table  
 define ('TABLE_UPS_TRACK', 'ups_track');  
-?&gt;
-</pre>
+?>
+```
 
 > Save the file to /includes/extra_datafiles/usps_track_database_tables.php and upload it to your server.
 
@@ -114,11 +121,12 @@ Extra Javascript for an existing file
 
 > You need to load some javascript for your bizrate account, so that it loads from the existing page (checkout_success.php) after the order has completed.  
 >     Create a new file named jscript_bizrate.js which would include the following:  
-<pre>
-&lt;script language="javascript" type="text/javascript"&gt;
+
+```
+<script language="javascript" type="text/javascript">
  whatever the heck bizrate gave you  
-&lt;/script&gt;
-</pre>
+</script>
+```
 
  Save the file to /includes/modules/pages/checkout_success and upload it to your server.
 

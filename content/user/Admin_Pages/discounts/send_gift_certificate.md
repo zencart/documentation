@@ -38,7 +38,7 @@ Note: mailing gift certificates requires the gift certificate to be installed. P
 
 Your customer will receive an email that look something like this.
 
-<pre>
+```
 BODY TEXT THAT YOU ENTERED
 
 The Gift Certificate is worth $20.00
@@ -51,7 +51,7 @@ or visit http://www.YOURSITE.com/store/ and enter the code during the checkout p
 
 
 This email address was given to us by you or by one of our customers. If you feel that you have received this email in error, please send an email to YOURSITE@YOURMAIL.com
-</pre>
+```
 
 ## Release a gift certificate once issued
 If you are generating a gift certificate for one someone purchased, you will need to go to the Gift Certificates Queue menu to release the gift certificate that you have just issued.

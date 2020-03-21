@@ -12,7 +12,7 @@ There are a number of different date formats used around the world, and the appr
 
 ### 2\. find this section:
 
-<pre>
+```
 @setlocale(LC_TIME, 'en_US.ISO_8859-1');
 
 define('DATE_FORMAT_SHORT', '%m/%d/%Y'); // this is used for strftime()
@@ -22,11 +22,11 @@ define('DATE_FORMAT_LONG', '%A %d %B, %Y'); // this is used for strftime()
 define('DATE_FORMAT', 'm/d/Y'); // this is used for date()
 
 define('DATE_TIME_FORMAT', DATE_FORMAT_SHORT . ' %H:%M:%S');
-</pre>
+```
 
 and replace with:  
 
-<pre>
+```
 @setlocale(LC_TIME, 'en_GB.ISO_8859-1');
 
 define('DATE_FORMAT_SHORT', '%d/%m/%Y'); // this is used for strftime()
@@ -36,11 +36,11 @@ define('DATE_FORMAT_LONG', '%A %d %B, %Y'); // this is used for strftime()
 define('DATE_FORMAT', 'd/m/Y'); // this is used for date()
 
 define('DATE_TIME_FORMAT', DATE_FORMAT_SHORT . ' %H:%M:%S');
-</pre>
+```
 
 ### 3\. in the same file find this section:
 
-<pre>
+```
 // Return date in raw format
 
 // $date should be in format mm/dd/yyyy
@@ -64,11 +64,11 @@ if (!function_exists('zen_date_raw')) {
   }
 
 }
-</pre>
+```
 
 and replace with:  
 
-<pre>
+```
 // Return date in raw format
 
 // $date should be in format dd/mm/yyyy
@@ -92,26 +92,25 @@ if (!function_exists('zen_date_raw')) {
   }
 
 }  
-</pre>
+```
 
 
 ### 4\. In the same file find this section:
 
-<pre>
+```
 // text for date of birth example
 
 define('DOB_FORMAT_STRING', 'mm/dd/yyyy');
 
-</pre>
+```
 
 and replace with:  
 
-<pre>
+```
 // text for date of birth example
 
 define('DOB_FORMAT_STRING', 'dd/mm/yyyy');
-
-</pre>
+```
 
 ### 5\. In the same file find this section:
 
@@ -133,7 +132,7 @@ and replace with:
 
 ### 7\. Find this section:
 
-<pre>
+```
 setlocale(LC_TIME, 'en_US.ISO_8859-1');
 
 define('DATE_FORMAT_SHORT', '%m/%d/%Y'); // this is used for strftime()
@@ -147,11 +146,11 @@ define('PHP_DATE_TIME_FORMAT', 'm/d/Y H:i:s'); // this is used for date()
 define('DATE_TIME_FORMAT', DATE_FORMAT_SHORT . ' %H:%M:%S');
 
 define('DATE_FORMAT_SPIFFYCAL', 'MM/dd/yyyy'); //Use only 'dd', 'MM' and 'yyyy' here in any order
-</pre>
+```
 
 and replace with:  
 
-<pre>
+```
 setlocale(LC_TIME, 'en_GB.ISO_8859-1');
 
 define('DATE_FORMAT_SHORT', '%d/%m/%Y'); // this is used for strftime()
@@ -165,11 +164,11 @@ define('PHP_DATE_TIME_FORMAT', 'd/m/Y H:i:s'); // this is used for date()
 define('DATE_TIME_FORMAT', DATE_FORMAT_SHORT . ' %H:%M:%S');
 
 define('DATE_FORMAT_SPIFFYCAL', 'dd/MM/yyyy'); //Use only 'dd', 'MM' and 'yyyy' here in any order
-</pre>
+```
 
 ### 8\. In the same file find this section:
 
-<pre>
+```
 // Return date in raw format
 
 // $date should be in format mm/dd/yyyy
@@ -189,10 +188,11 @@ function zen_date_raw($date, $reverse = false) {
   }
 
 }
-</pre>
+```
+
 and replace with:
 
-<pre>
+```
 // Return date in raw format
 
 // $date should be in format dd/mm/yyyy
@@ -212,20 +212,23 @@ function zen_date_raw($date, $reverse = false) {
   }
 
 }
-</pre>
+```
+
 ### 9\. In the same file find this section:
 
-<pre>
+```
 // text for date of birth example
 
 define('DOB_FORMAT_STRING', 'mm/dd/yyyy');
+```
 
 and replace with:  
 
+```
 // text for date of birth example
 
 define('DOB_FORMAT_STRING', 'dd/mm/yyyy');
-</pre>
+```
 
 ### 10\. In the same file find this section:
 

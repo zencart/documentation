@@ -4,7 +4,7 @@ category: template
 weight: 1
 ---
 
-## <span class="mw-headline" id="Introduction">Introduction</span>
+## Introduction
 
 The template system exists mainly for 2 reasons:
 
@@ -42,7 +42,7 @@ Also see: [Developers' overrides ](/user/template/developers_overrides/).
 **Whenever you plan to make changes to a file, see if it can be overridden first.**  
 Files can be overridden if
 
-*   The directory where the file resides holds a sub-directory named "Classic".
+*   The directory where the file resides holds a sub-directory named "classic".
 *   The current path includes "template_default" or a template directory, such as "classic". Eg. /includes/templates/template_default/common/
 
 Unfortunately, not all files can be overridden at this time. Nothing under the admin directory can be overridden yet.
@@ -53,15 +53,18 @@ Unfortunately, not all files can be overridden at this time. Nothing under the a
     **Examples to demonstrate the basic patterns. Other override directories follow these patterns.**  
     _The directory where the file resides holds a sub-directory named "classic"._
 
-    <pre>Default path: includes/languages/</pre>
+```
+    Default path: includes/languages/
+    Override path: includes/languages/YOURTEMPLATE/
 
-Override path: includes/languages/YOURTEMPLATE/
+    Default path: includes/languages/english/ 
+    Override path: includes/languages/english/YOURTEMPLATE
 
-Default path: includes/languages/english/ Override path: includes/languages/english/YOURTEMPLATE
+```
 
-The current path includes "template_default" or a template directory, such as "Classic" or "Blue strip".
+The current path includes "template_default" or a template directory, such as "classic" or "blue_stripe".
 
-<pre>
+```
 Default path: includes/templates/template_default/common/
 Override path: includes/templates/YOURTEMPLATE/common/
 
@@ -69,7 +72,8 @@ Default path: includes/templates/template_default/templates/
 Override path: includes/templates/YOURTEMPLATE/templates/
 
 Default path: includes/templates/template_default/buttons/english/
-Override path: includes/templates/YOURTEMPLATE/buttons/english/</pre>
+Override path: includes/templates/YOURTEMPLATE/buttons/english/
+```
 
 1.  Copy the file you plan to edit, and **only** the file you plan to edit, into the new directory.
 2.  Edit the newly copied file.

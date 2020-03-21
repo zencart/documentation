@@ -10,33 +10,34 @@ There is enormous scope within this one module to create turn the left and right
 
 If you wish to turn off the left hand column for the "contact us" and "terms & conditions" pages, find the following block of code  
 
-<pre>
+```
 if (in_array($current_page_base,explode(",",'list_pages_to_skip_all_right_sideboxes _on_here,separated_by_commas,and_no_spaces')) ) {  
      $flag_disable_right = true;  
   }
-</pre>  
+```
 
 and edit it to read  
 
-<pre>
+```
 if (in_array($current_page_base,explode(",",**'contact_us,conditions'**)) ) {  
      $flag_disable_**left** = true;  
   }
-</pre>  
+```
 
 If you wished to disable both columns in category listings either add or edit the above block to read  
-<pre>
+```
 if (in_array($cPath,explode(",",'3,8')) ) {  
     $flag_disable_right = true;  
     $flag_disable_left = true;  
-  }</pre>  
+  }
+```
 
 To disable the right column for a series of EZ-Pages  
-<pre>
+```
 if (in_array($ezpage_id,explode(",",'2,5'))) {  
     $flag_disable_right = true;  
   }
-</pre>
+```
 
 Or, you can use the settings in Admin->Configuration->EZ-Pages Settings:  
 For example:  
@@ -48,12 +49,12 @@ Page ID numbers can be obtained from the EZ-Pages screen under Admin->Tools.
 ie: 21  
 or leave blank.  
 
-[Alternate article](/user/ezpages/sidebox_display_changes/).
+[Here's another way to do this](/user/ezpages/sidebox_display_changes/).
 
 To turn off the left column for the home page only, you would insert the following:  
 
-<pre>
+```
 if ($this_is_home_page) {  
      $flag_disable_left = true;  
   }
-</pre>
+```

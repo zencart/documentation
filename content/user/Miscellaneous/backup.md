@@ -4,7 +4,7 @@ category: miscellaneous
 weight: 1
 ---
 
-<div class="article cms_clear restore postcontainer" id="yui-gen3"><font color="#ff0000">**NOTE: Doing a backup of your Zen Cart site requires TWO components: (1) A copy of all the files in your Zen Cart folder on your server ... via FTP, and (2) a copy of your database, described below:**</font>  
+**NOTE: Doing a backup of your Zen Cart site requires TWO components: (1) A copy of all the files in your Zen Cart folder on your server ... via FTP, and (2) a copy of your database, described below:**
 
 ## 1\. Backup your PHP files (actually ALL files)
 

@@ -12,12 +12,12 @@ this filename and the logo's dimensions.
 For admin, this file is `admin/includes/languages/english/email_extras.php`. 
 You will want to update the block 
 
-<pre>
+```
   define ('EMAIL_LOGO_FILENAME', 'header.jpg');  //-File is present in /email folder
   define ('EMAIL_LOGO_WIDTH', '550');
   define ('EMAIL_LOGO_HEIGHT', '110');
   define ('EMAIL_LOGO_ALT_TITLE_TEXT', 'Zen Cart! The Art of E-commerce');
-</pre> 
+```
 
 For the storefront, copy the file `includes/languages/english/email_extras.php` to `includes/languages/english/YOURTEMPLATE/email_extras.php` and update the same block of `define` statements.
 

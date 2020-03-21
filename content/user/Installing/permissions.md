@@ -53,9 +53,9 @@ There are [detailed security recommendations on this topic](/user/security/secur
 
 <font color="#3E3E3E">If you have SSH access instead of cPanel, you could type the following commands:</font>  
 
-<pre>
+```
 chdir /home/myaccount/public_html/zencart
-</pre>
+```
 
 <font color="#3E3E3E">(substitute your actual working directory)</font>  
 
@@ -64,7 +64,7 @@ chdir /home/myaccount/public_html/zencart
 <font color="#3E3E3E">(If you're running suPHP, then 755 is appropriate, meaning you can probably skip the "777" lines since your folders are probably already 755:</font>
 
 
-<pre>
+```
 chmod -R 777 ./logs
 chmod -R 777 ./cache
 chmod -R 777 ./pub
@@ -72,21 +72,17 @@ chmod -R 777 ./images
 chmod -R 777 ./includes/languages/english/html_includes
 chmod -R 777 ./admin/backups
 chmod -R 777 ./admin/images/graphs
-</pre>
+```
 
 
-<font color="#0000ff">** OPTIONAL:**</font> <font color="#3E3E3E">And this line changes all the files (not folders) and files within subfolders (but not the folders themselves) to be ideal for typical webserver use:</font>  
-<font color="#3E3E3E">  
+** OPTIONAL: And this line changes all the files (not folders) and files within subfolders (but not the folders themselves) to be ideal for typical webserver use:</font>  
 
-<div class="bbcode_container">
+```
+find ./ -type f -exec chmod 644 {} \;
+```
 
-<div class="bbcode_description">Code:</div>
 
-<pre class="bbcode_code" style="height:36px;">find ./ -type f -exec chmod 644 {} \;</pre>
-
-</div>
-
-</font><font color="#3E3E3E">If these methods don't work, then you'll need to contact your hosting company for assistance in changing file permissions.</font>  
+If these methods don't work, then you'll need to contact your hosting company for assistance in changing file permissions.
 
 ### On a Windows Server:
 

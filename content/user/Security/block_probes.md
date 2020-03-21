@@ -7,10 +7,12 @@ weight: 1
 Some common attempts to probe your site for old vulnerabilities, or vulnerabilities from other systems, can be blocked by adding the following code to your site:  
 1\. Copy and paste the following code into a new text file in your favorite text-only editor.  
 2\. Save the file as `block_probing.php`, and upload it to your store into the following folders:  
+
 a) `/your_renamed_admin/includes/extra_configures/  `
+
 b) `/includes/extra_configures/  `
 
-<pre>
+```
 /**
  * @package security
  * @copyright Copyright 2003-2011 Zen Cart Development Team
@@ -80,4 +82,4 @@ if ($contaminated)
 unset($contaminated);
 unset($query2,  $query, $querydec2, $querydec, $querydecsws, $useragent, $lcuseragent,  $lcuseragentsws, $requesturi, $lcrequesturi, $lcrequesturisws, $lcpost,  $lcpostsws);
 /* *** END OF INNOCULATION *** */
-</pre>
+```

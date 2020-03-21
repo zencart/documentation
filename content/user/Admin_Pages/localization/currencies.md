@@ -8,15 +8,15 @@ weight: 10
 The predefined currencies in this module are U.S. Dollar and Euro. You may add a new currency, or edit an existing one.
 
 
-## <span class="mw-headline" id="Adding_Currencies">Adding Currencies</span>
+## Adding Currencies
 
 To add a new currency, click on the new currency button. You will then enter the information about this new currency in the input area. After you finish entering the new information, click on the Insert button to save this new currency entry.
 
-### <span class="mw-headline" id="Title">Title</span>
+### Title
 
 This is the name of the new currency, like _Canadian Dollar_ or _Mexican Peso_.
 
-### <span class="mw-headline" id="Code">Code</span>
+### Code
 
 This is the three-character ISO 4217 international name for the currency you just described, like _CAD_ for _Canadian Dollar_, _MXN_ for _Mexican Peso_, _USD_ for _US Dollar_, or _JPY_ for _Japanese Yen_, etc. Note that to use the automated currency conversion feature (see the explanation for the _update currencies_ button below), this code must be the correct one for that currency. If you don't know the international code for the currency you want to add, you can find it in several places:
 
@@ -24,27 +24,27 @@ This is the three-character ISO 4217 international name for the currency you jus
 *   On Wikipedia®, at the entry for [ISO 4217](http://en.wikipedia.org/wiki/ISO_4217)
 *   On XE.COM, which in addition to the [ISO 4217](http://www.xe.com/iso4217.htm) have the list of [symbols used for most currencies](http://www.xe.com/symbols.htm), ($ for Dollar, ₭ for Euro, £ for Pound, ¥ for Yen, etc.), as well as [currency conversion](http://www.xe.com/ucc/) between almost all world currencies (you'll need that for the **Value** field below if you want to manually process currency conversions as opposed to using the automated currency converter (see the explanation for the _update currencies_ button below), don't know what the usual currency conversion rate is between your currency and that one).
 
-### <span class="mw-headline" id="Symbol_Left">Symbol Left</span>
+### Symbol Left
 
 If, when this currency is displayed, some symbol usually appears before (to the left of) the amount when it is displayed, enter that here. If no symbol commonly appears before the amount (like CA$ for Canadian Dollar) leave this field blank. This is separate from, and in addition to _Symbol Right_ below.
 
-### <span class="mw-headline" id="Symbol_Right">Symbol Right</span>
+### Symbol Right
 
 If, when this currency is displayed, some symbol usually appears after (to the right of) the amount when it is displayed, enter that here. If no symbol commonly appears before the amount (like CAN for Canadian Dollar) leave this field blank. This is separate from, and in addition to _Symbol Left_ above.
 
-### <span class="mw-headline" id="Decimal_Point">Decimal Point</span>
+### Decimal Point
 
 This is where you indicate what symbol appears between whole and fractional amounts of this currency. For U.S. and Canadian dollars, this is a period; in some countries it is a comma.
 
-### <span class="mw-headline" id="Thousands_Point">Thousands Point</span>
+### Thousands Point
 
 This is where you indicate what symbol appears between thousands of whole amounts of this currency. For U.S. and Canadian dollars, this is a comma; in some countries it is a period.
 
-### <span class="mw-headline" id="Decimal_Places">Decimal Places</span>
+### Decimal Places
 
 This indicates the number of decimal places appear to the right for this currency. U.S. and Canadian dollars have two digits after the decimal point. Some currencies may have four or six.
 
-### <span class="mw-headline" id="Value">Value</span>
+### Value
 
 This is the value of the other currency relative to the default currency for your store. Your default currency should have a value of exactly 1\.
 
@@ -204,29 +204,29 @@ If you do not wish to use the automatic conversion feature, here are some exampl
 
 </table>
 
-### <span class="mw-headline" id="Set_as_Default">Set as Default</span>
+### Set as Default
 
 If this is the default currency for this store, you will want to check this box. Note it may require some manual changes, as is indicated in the box, thus you might want to set this before loading any pricing data.
 
 After you finish, click on the _Insert_ button to save this new currency entry. If you decide you do not want this entry, click on _cancel_ and the new entry will not be added.
 
-## <span class="mw-headline" id="Update_Currencies">Update Currencies</span>
+## Update Currencies
 
 If you have the correct ISO 4217 code in the _code_ column, you can click on the _update currencies_ button to have the site request current exchange rate values from various conversion sites on the Internet for all currencies that have a correct ISO 4217 code, and the website will obtain current values and automatically correct the exchange rates.
 
 Rates that are correctly converted will be listed in green at the top of the page. Rates that were not correctly converted will be listed in red. The website will probably try more than one converter if it has a failure in converting a particular currency. Pay attention to any red items in case you may have misspelled the ISO 4217 code for that currency, as it will not have been correctly updated. Any that were not correctly updated (either because of error or because the conversion site did not have the correct values for that currency) will have to be manually updated using the edit feature.
 
-## <span class="mw-headline" id="Editing_an_existing_currency">Editing an existing currency</span>
+## Editing an existing currency
 
 If you only need to correct the exchange rate, you can use the _update currency_ button to change all conversions on your website. If, however the automatic conversion does not work for one or more currencies or you need to change something else (for example, you entered Russian Rubles using code RUS instead of RUB), you would need to change that. Click on the line showing the currency you want to change. The right arrow will appear in the action column, then click on the _edit_ button.
 
 A series of entry fields, same as provided for the _add new currency_ button will appear, only the values of those fields will be loaded with the current values. Change any fields as appropriate, then once you are finished, click on the _update_ button to save these changes. If you decide you do not want these changes, click on _cancel_ to leave the original values intact.
 
-## <span class="mw-headline" id="Deleting_an_existing_currency">Deleting an existing currency</span>
+## Deleting an existing currency
 
 If you no longer want a particular currency, click on the line showing the currency you want to delete. The right arrow will appear in the action column, then click on the _delete_ button. You will be asked to confirm if you want to delete that currency. Click on the _delete_ button again to do so, or click the _cancel_ button if you do not wish to delete this particular currency.
 
-## <span class="mw-headline" id="Not_displaying_the_Currencies_box">Not displaying the Currencies box</span>
+## Not displaying the Currencies box
 
 If you only operate with one currency, Euro for example, you may wish to delete all others and set the exchange value to 1.
 

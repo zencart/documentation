@@ -82,6 +82,19 @@ rather than
 
 `Configuration ... EZ-Pages Settings`.
 
+- To wrap blocks of text, use three back quotes instead of &lt;pre&gt;. 
+When php and script tags are part of the code block, &lt;pre&gt; will cause the tag to be misinterpreted, and the code will wind up being hidden.  This problem is avoided with back quotes. 
+
+So use 
+```
+<?php
+```
+
+Rather than 
+<pre>
+&lt;?php 
+</pre>
+
 ## Cleanup of Legacy Content and Markup  
 
 - If you see a page that contains Wiki-style (or other legacy) markup like 

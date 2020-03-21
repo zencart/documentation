@@ -16,23 +16,26 @@ You can rearrange, add, or delete items in a plain text e-mail. To do so, you wi
 
 In our example, we open up `includes/classes/order.php` and scroll down to the bottom of the file, in the function `send_order_email()`. There you will see the lines that construct the plain text e-mail message:
 
-<pre>(line 827)        $email_order = EMAIL_TEXT_HEADER . EMAIL_TEXT_FROM . STORE_NAME . "\n\n" .
+```
+(line 827)        $email_order = EMAIL_TEXT_HEADER . EMAIL_TEXT_FROM . STORE_NAME . "\n\n" .
                        $this->customer['firstname'] . ' ' . $this->customer['lastname'] . "\n\n" .
                        EMAIL_THANKS_FOR_SHOPPING . "\n" . EMAIL_DETAILS_FOLLOW . "\n" .
                        EMAIL_SEPARATOR . "\n" .
                        EMAIL_TEXT_ORDER_NUMBER . ' ' . $zf_insert_id . "\n" .
                        EMAIL_TEXT_DATE_ORDERED . ' ' . strftime(DATE_FORMAT_LONG) . "\n" .
                        EMAIL_TEXT_INVOICE_URL . ' ' . zen_href_link(FILENAME_ACCOUNT_HISTORY_INFO, 'order_id=' . $zf_insert_id, 'SSL', false) . "\n\n";
-</pre>
+```
 
-<pre>(line 848)          $email_order .= zen_db_output($this->info['comments']) . "\n\n";
-</pre>
+```
+(line 848)          $email_order .= zen_db_output($this->info['comments']) . "\n\n";
+```
 
-<pre>(line 855)        $email_order .= EMAIL_TEXT_PRODUCTS . "\n" .
+```
+(line 855)        $email_order .= EMAIL_TEXT_PRODUCTS . "\n" .
                         EMAIL_SEPARATOR . "\n" .
                         $this->products_ordered .
                         EMAIL_SEPARATOR . "\n";
-</pre>
+```
 
 and so on. In this file, the variable that holds the plain text e-mail message is called `$email_order`; it generally has a different name in each file, such as `$email` or `$email_text`. Whatever its name, this is the place where you will make your changes. You can add, delete, and rearrange the order of the items to suit your wishes.
 
@@ -49,12 +52,16 @@ Once you have found the files that need to be edited, you will want to add a def
 
 You see that the HTML message is constructed with several statements like this:
 
-<pre>      $html_msg['EMAIL_CUSTOMERS_NAME'] = $check_status->fields['customers_name'];
-      $html_msg['EMAIL_TEXT_ORDER_NUMBER'] = EMAIL_TEXT_ORDER_NUMBER . ' ' . $oID;</pre>
+```
+      $html_msg['EMAIL_CUSTOMERS_NAME'] = $check_status->fields['customers_name'];
+      $html_msg['EMAIL_TEXT_ORDER_NUMBER'] = EMAIL_TEXT_ORDER_NUMBER . ' ' . $oID;
 
+```
 All you need to do is add a new statement under all these to define your new item:
 
-<pre>      $html_msg['EMAIL_HOURS_OF_OPERATION'] = 'We are open from 9 AM to 5 PM every day of the week.';</pre>
+```
+      $html_msg['EMAIL_HOURS_OF_OPERATION'] = 'We are open from 9 AM to 5 PM every day of the week.';
+```
 
 Of course, it's a better idea to use a constant instead of hardcoding your text like this, but we'll do it like this in our example for clarity's sake.
 
