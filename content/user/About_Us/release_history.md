@@ -4,6 +4,8 @@ category: about_us
 weight: 1
 ---
 
+[Release notices](https://www.zen-cart.com/forumdisplay.php?2-Zen-Cart-Release-Announcements) are provided on the Zen Cart forum. 
+
 This is the release history of the Zen Cart product.
 
 07/16/2019 - v1.5.6c
