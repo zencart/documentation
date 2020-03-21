@@ -97,7 +97,7 @@ On the server locate the file: `/catalog/includes/dist-configure.php`
 Rename this file to `configure.php` and change the permissions to 777 (read-write-execute for all)  
 
 Next, on the server locate the file: `/catalog/admin/includes/dist-configure.php`  
-Rename this file to <span class="filename">configure.php</span> and change the permissions to 777 (read-write-execute for all)  
+Rename this file to `configure.php` and change the permissions to 777 (read-write-execute for all)  
 
 **NOTE FOR IIS USERS:** If you are using IIS for Windows hosting, the "chmod 777" idea for permissions settings is likely foreign to you. In IIS, under Windows, you need to right-click on the file (or folders in the next section below), and choose Properties. Then under the Security tab, ensure that the"**Internet Guest Account**", identified usually as: `MACHINE_NAME\IUSR_MACHINE_NAME` has at least "read" and "write" privileges.  It is likely best to give "modify" as well. This should be done on each file/folder indicated. (If the `IUSR_MACHINE_NAME` account isn't listed, click "Add" and add that account from the list, and then set the required permissions.) (Note: `_MACHINE_NAME` above refers to the "machine name" or "computer name" configured by the server administrator to "name" the server.)  
 
@@ -110,26 +110,31 @@ Some folders and files need special "writable" permissions for use in Zen Cart. 
 
 As such, you need to change the permissions on the following directories to 777 (read/write/execute). If your program allows you to set these permissions "recursively", choose that option.  
 
-*   <span class="filename">/catalog/cache</span>
-*   <span class="filename">/catalog/images</span>
-*   <span class="filename">/catalog/includes/languages/english/html_includes</span>
-*   <span class="filename">/catalog/media</span>
-*   <span class="filename">/catalog/pub</span>
-*   <span class="filename">/catalog/admin/backups</span>
-*   <span class="filename">/catalog/admin/images/graphs</span>
+```
+*   /catalog/cache
+*   /catalog/images
+*   /catalog/includes/languages/english/html_includes
+*   /catalog/media
+*   /catalog/pub
+*   /catalog/admin/backups
+*   /catalog/admin/images/graphs
+```
 
 Note: open the catalog/images directory and change **all** of the subdirectories and their subdirectories to 777 as well. For example (this is a partial list):  
 
-*   <span class="filename">/catalog/images/attributes</span>
-*   <span class="filename">/catalog/images/banners</span>
-*   <span class="filename">/catalog/images/categories</span>
-*   <span class="filename">/catalog/images/large</span>
-*   <span class="filename">/catalog/images/large/dvd</span>
-*   <span class="filename">/catalog/images/manufacturers</span>
-*   <span class="filename">/catalog/images/medium</span>
-*   <span class="filename">/catalog/images/upload</span>
+```
+*   /catalog/images/attributes
+*   /catalog/images/banners
+*   /catalog/images/categories
+*   /catalog/images/large
+*   /catalog/images/large/dvd
+*   /catalog/images/manufacturers
+*   /catalog/images/medium
+*   /catalog/images/upload
+```
 
-NOTE: If you miss any of the images directories and subdirectories inside <span class="filename">/images</span> and try to use them later, you will get an error message that you cannot write to these directories.  
+NOTE: If you miss any of the images directories and subdirectories inside 
+`/images` and try to use them later, you will get an error message that you cannot write to these directories.  
 
 As for other files, they can be CHMOD 644, or 444, depending on your webserver configuration.  Folders don't usually get set below 755.  
 
@@ -155,15 +160,15 @@ You will need the following information for the installation:
     - or - `https://secure.sharedservername.net/~username`  
 
 *   **The Virtual HTTPS Path (the secure URL to your domain and directory for your shop)**  
-    Example: <span class="filename">https://www.mydomain.com/catalog</span>  
-    - or - <span class="filename">https://secure.sharedservername.net/~username/catalog</span>
+    Example: `https://www.mydomain.com/catalog`
+    - or - `https://secure.sharedservername.net/~username/catalog`
 
 
 # Starting the Installer
 
 In your browser, enter the URL to your new shop, and the Installer should automatically start.  
-Example: <span class="filename">http://www.mydomain.com/catalog</span>  
-- or - to start the installer directly, use: <span class="filename">http://www.mydomain.com/catalog/zc_install</span>  
+Example: `http://www.mydomain.com/catalog`
+- or - to start the installer directly, use: `http://www.mydomain.com/catalog/zc_install`
 
 If you now see a list of filenames and directories, you should speak to your Hosting Site about how to setup your server to auto-detect PHP filename extensions.  
 
@@ -243,7 +248,7 @@ a) [RENAME YOUR ADMIN FOLDER.  Instructions here.](/user/running/rename_admin/)
 b) When you enter the Catalog, you will receive security warnings about the configure.php files and the `/zc_install` directory.  
 
 **configure.php files**  
-You will now want to change the permissions on the configure.php files with <span class="filename">chmod 644</span> (or 444 depending on your server, and sometimes setting 444 cannot be done via FTP, in which case use your host's control panel or file manager to set the permissions level.)  
+You will now want to change the permissions on the configure.php files with `chmod 644` (or 444 depending on your server, and sometimes setting 444 cannot be done via FTP, in which case use your host's control panel or file manager to set the permissions level.)  
 
 These are located here (remember, "catalog" is what we used as an example here -- your site may or may not include "catalog" as a folder name):  
 
@@ -257,7 +262,7 @@ It would also be a good idea to download a copy of these files to your computer 
 If you have any errors or problems, most of these can be corrected by minor adjustments to these two files.  
 
 c) Remove the **zc_install directory**  
-Next, you will want to delete the <span class="filename">/catalog/zc_install</span> directory  
+Next, you will want to delete the `/catalog/zc_install` directory  
 
 (If you are only testing and plan to install again, you could rename the folder to something like: <span class="filename">/catalog/zc_install_complete until you take your site live. </span> NOTE: use a different name than <span class="filename">zc_install_complete</span> as some hacker may try using it, having read this help file.  Do NOT leave a zc_install folder on the server of a live site for security reasons.)  
 

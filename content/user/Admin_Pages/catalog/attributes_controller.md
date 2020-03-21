@@ -10,7 +10,7 @@ and give these option values in [Admin - Catalog - Option Value Manager](/user/a
 Its a good idea to pre plan which attributes you want on which products as you will then know which categories or products to copy attributes to.
 
 
-## <span class="mw-headline" id="Select_a_product_to_add_attributes_to">Select a product to add attributes to</span>
+## Select a product to add attributes to
 
 *   use the dropdown box to select the category your chosen product is in
 
@@ -20,7 +20,7 @@ Its a good idea to pre plan which attributes you want on which products as you w
 
     or select your chosen product from the large scroll box and click DISPLAY
 
-## <span class="mw-headline" id="Add_the_Attribute">Add the Attribute</span>
+## Add the Attribute
 
 *   go to the large grey box titled 'Adding New Attributes'
 
@@ -32,7 +32,7 @@ Its a good idea to pre plan which attributes you want on which products as you w
 
 *   click INSERT
 
-## <span class="mw-headline" id="Weights_and_Prices">Weights and Prices</span>
+## Weights and Prices
 
 *   **Price** can be entered with a prefix of + or - or blank
     *   `+` and blank will add the attribute price
@@ -58,7 +58,7 @@ For TEXT
 *   Price per word and free words
 *   Price per letter and free letters
 
-### <span class="mw-headline" id="Quantity_Discounts">Quantity Discounts</span>
+### Quantity Discounts
 
 **Quantity discounts** (_Attributes Qty Price Discount_) are useful when the entire group of products being ordered has a different price if a certain number of them are ordered. _Note_: The price amount specified for a given number of items will be applied to the entire group of items--The price does not get applied to items in steps.
 
@@ -120,7 +120,7 @@ As you can see, the number you enter is the maximum limit of the discount, and t
 
 Negative numbers work for in these entries as well, making them quantity discounts or quantity charges. This is useful if you define a base price and would like to allow the user to have the discount off the base price.
 
-## <span class="mw-headline" id="Attribute_Flags_.28the_coloured_boxes.29">Attribute Flags (the coloured boxes)</span>
+## Attribute Flags (the coloured boxes)
 
 These are used to help distinquish other features of the attribute such as:
 
@@ -136,7 +136,7 @@ These are used to help distinquish other features of the attribute such as:
 
 *   Attribute **Required** for TEXT - means the customer must fill in this field before adding it to the cart
 
-## <span class="mw-headline" id="Attribute_Images">Attribute Images</span>
+## Attribute Images
 
 To add an image to each attribute you can either type the filename into the 'Attributes Image Swatch' text box or click BROWSE and select the image from your computer.
 
@@ -144,7 +144,7 @@ If you type in the filename then you will need to upload it to your server yours
 
 click INSERT
 
-## <span class="mw-headline" id="Downloadable_Products_As_Attributes">Downloadable Products As Attributes</span>
+## Downloadable Products As Attributes
 
 type in the filename of the download
 
@@ -154,7 +154,7 @@ type in the maximum number of downloads that can be made
 
 click INSERT
 
-## <span class="mw-headline" id="Copying_Attributes_to_Other_Products_or_Categories">Copying Attributes to Other Products or Categories</span>
+## Copying Attributes to Other Products or Categories
 
 You can copy the attributes from one product to another product or to every product in a category. The attribute images and any other attribute options for price or weight also get copied and can be edited once copied.
 

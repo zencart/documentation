@@ -5,11 +5,14 @@ weight: 1
 ---
 To change the name of page_2, page_3 or page_4  
 
-1\. open the appropriate file: /includes/languages/ENGLISH/page_?.php  
+1\. open the appropriate file: `/includes/languages/ENGLISH/page_?.php`
 
 2\. make the changes to fit your needs  
-<span class="Code">define('NAVBAR_TITLE', '<font color="#ff0000">Page ?</font>');  
-define('HEADING_TITLE', '<font color="#ff0000">Page ?</font>');</span>  
+
+```
+define('NAVBAR_TITLE', 'Page ?');  
+define('HEADING_TITLE', 'Page ?');
+```
 
 3\. then save the file to:  
 `/includes/languages/ENGLISH/YOURTEMPLATE/page_?.php` and upload to your server.  

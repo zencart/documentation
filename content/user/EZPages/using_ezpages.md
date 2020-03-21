@@ -26,12 +26,12 @@ This doesn't have to be plain text. If you wish, it can be any string of HTML.
 
 Next we tell the EZ-Page sidebox to use the text. Open the copy that you made of `tpl_ezpages.php` and insert the line marked below
 
-<pre>
+```
  $content = "";  
  $content .= '<div id="' . str_replace('_', '-', $box_id . 'Content') . '" class="sideBoxContent">';  
  $content .= BOX_TEXT_EZPAGES;  <font color="#ff0000"><----- this is the line that you insert</font>  
  $content  .= "\n" . '<ul style="margin: 0; padding: 0; list-style-type: none;">' . "\n";
-</pre>
+```
 
 Finally, upload the new files to your server and check the results in your browser.
 
@@ -42,10 +42,11 @@ To program an EZ-Page link we can make use of the `zen_ez_pages_link()` function
 
 Armed with this information you can now construct a link based on the following code model.
 
-<pre>
-&lt;?php echo zen_ez_pages_link(page ID, chapter number, page is SSL [true/false], 
-  open new window [true/false], return full url [true/false]); ?&gt;
-</pre>
+```
+<?php echo zen_ez_pages_link(page ID, chapter number, page is SSL [true/false], 
+  open new window [true/false], return full url [true/false]); ?>
+```
+
 You must enter a valid page ID as the first parameter. The other parameters are optional and default to 0 for chapter and false for the others. (Hint: Usually you will set the last three parameters to false, false and true respectively.)
 
 ## How do I turn off the EZ-Pages Header Bar?

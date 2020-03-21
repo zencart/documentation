@@ -11,27 +11,28 @@ Firstly create your image and place it in the images directory of your template.
 Then find the following blocks in your CSS:
 
 For adding the image to the center boxes ...
-<pre>
+```
 .centerBoxWrapper {
     border: 1px solid #9a9a9a;
     height: 1%;
     margin: 1.1em 0;
     }
-</pre>
+```
 
 For adding to the left and/or right sideboxes:
-<pre>
+```
 .leftBoxContainer, .rightBoxContainer {
     margin: 0em;
     border: 1px solid #9a9a9a;
     border-bottom: 5px solid #336633;
     margin-top: 1.5em;
     }
-</pre>
+```
+
 The above CSS is taken from the default template and may vary depending upon which template you are using and what modifications have been made to it.
 
 Then add the following CSS to the appropriate block
-<pre>
+```
    /* create free space at the bottom of the box in which to display the image */
     padding-bottom: 20px;
     /* add the image to the boxes background */
@@ -42,7 +43,7 @@ Then add the following CSS to the appropriate block
     background-repeat: no-repeat;
     /* OR set it to repeat horizonatally */
     background-repeat: repeat-x;
-</pre>
+```
 
 You can use the same image for both center and sideboxes if you wish. Any excess width will fall outside the box and not be displayed.
 

@@ -66,31 +66,34 @@ For maximum security, you may want to consider that new folder name should inclu
 
 Change this section:
 
-<pre> define('DIR_WS_ADMIN', '/**<font color="#ff0000">admin</font>**/');  
+```
+ define('DIR_WS_ADMIN', '/**<font color="#ff0000">admin</font>**/');  
  define('DIR_WS_CATALOG', '/');  
  define('DIR_WS_HTTPS_ADMIN', '/<font color="#ff0000">**admin**</font>/');  
  define('DIR_WS_HTTPS_CATALOG', '/');  
-</pre>
-
+```
 And this section:
 
-<pre> define('DIR_FS_ADMIN', '/home/mystore.com/www/public/<font color="#ff0000">**admin**</font>/');  
+```
+ define('DIR_FS_ADMIN', '/home/mystore.com/www/public/<font color="#ff0000">**admin**</font>/');  
  define('DIR_FS_CATALOG', '/home/mystore.com/www/public/');  
-</pre>
+```
 
 You will end up with something that looks like this:
 
-<pre> define('DIR_WS_ADMIN', '/<font color="#ff0000">**mysecretadminarea**</font>/');  
+```
+ define('DIR_WS_ADMIN', '/<font color="#ff0000">**mysecretadminarea**</font>/');
  define('DIR_WS_CATALOG', '/');  
  define('DIR_WS_HTTPS_ADMIN', '/<font color="#ff0000">**mysecretadminarea**</font>/');  
  define('DIR_WS_HTTPS_CATALOG', '/');  
-</pre>
+```
 
 And:  
+```
 
-<pre> define('DIR_FS_ADMIN', '/home/mystore.com/www/public/<font color="#ff0000">**mysecretadminarea**</font>/');  
- define('DIR_FS_CATALOG', '/home/mystore.com/www/public/');  
-</pre>
+define('DIR_FS_ADMIN', '/home/mystore.com/www/public/<font color="#ff0000">**mysecretadminarea**</font>/');  
+define('DIR_FS_CATALOG', '/home/mystore.com/www/public/');  
+```
 
 Now, you must upload the changes back to the server, using your FTP program.  
 

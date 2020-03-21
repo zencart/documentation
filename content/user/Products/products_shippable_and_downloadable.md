@@ -12,14 +12,14 @@ Do you use Always Free Shipping or 0 weight to mean Free Shipping?
 
 If so, go to Configuration -> Shipping/Packaging and check the settings 
 
-<pre>
+```
 Order Free Shipping 0 Weight Status  
 If there is no weight to the order, does the order have Free Shipping?  
 0= no  
 1= yes  
 
 Note: When using Free Shipping, Enable the Free Shipping Module this will only show when shipping is free.
-</pre>
+```
 
 NOTE: the Free Shipping module that is referenced here is called the FREE SHIPPING! freeshipper shipping module 
 

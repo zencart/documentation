@@ -4,8 +4,6 @@ category: template
 weight: 1
 ---
 
-<div class="article cms_clear restore postcontainer">
-
 The Zen Cart® templating system uses a CSS based layout.
 
 In this article, **CAPITALIZED** words refer to a folder or language that you choose. We use **YOURTEMPLATE** for your template and **ENGLISH** for your language by default. Change these if needed.
@@ -22,10 +20,11 @@ Next, copy the `includes/templates/template_default/css` directory and place the
 
 You can also create the following empty folders inside your new template directory:
 
-<pre>/common  
+```
+/common  
 /sideboxes  
 /templates  
-</pre>
+```
 
 Then you copy the file called 
 `includes/templates/template_default/template_info.php`, and put it inside 
@@ -33,19 +32,20 @@ Then you copy the file called
 Next, open 
 `includes/templates/YOURTEMPLATE/template_info.php` in your text editor. Change the information below between each set of single quotes to suit your new template. Remember to keep the single quotes. Your template name does not need to be identical to your folder name, and you can use spaces to make it read well, but it is best to make them similar. Leave the space between the quotes for the template screenshot field empty for now, since you don’t have one yet.
 
-<pre>
-&lt;?php  
+```
+<?php  
 $template_name = 'YOURTEMPLATE';  
 $template_version = 'Version 1.0';  
 $template_author = '<enter your name here>';  
 $template_description = 'This is my own template, created for my site at www.example.com';  
 $template_screenshot = '';  
-?&gt;
-</pre>
+?>
+```
 
 When you've finished, your new file structure should look as follows:
 
-<pre>includes  
+```
+includes  
    /templates  
        /YOURTEMPLATE  
           /common  
@@ -56,7 +56,7 @@ When you've finished, your new file structure should look as follows:
           /sideboxes  
           /templates  
        template_info.php  
-</pre>
+```
 
 If you're basing your template on responsive_classic, it's recommended that you copy the complete jscript folder from responsive_classic into your custom template.
 

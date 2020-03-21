@@ -21,7 +21,7 @@ NOTE: Download files must be loaded (usually by FTP) to your store's  /download
     - MS Word Zip  
     - Note Pad Zip  
     - etc.
-3.  Go to **<span class="highlight">Attributes</span> Controller** and find the Product ...  
+3.  Go to **Attributes Controller** and find the Product ...  
     Add the Attribute as:
 
 1.  Option Name: Download  

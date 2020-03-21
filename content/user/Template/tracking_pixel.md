@@ -30,7 +30,7 @@ Save the file, but leave it open in your editor.
 
 <div class="cms_table">
 
-<table width="750" class="cms_table">
+<table class="cms_table">
 
 <tbody>
 

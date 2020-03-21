@@ -13,7 +13,7 @@ There are 3 parts to attributes:
 
 ### Defining Option Names:
 
-<pre>Admin -> Catalog -> Option Name Manager</pre>
+`Admin -> Catalog -> Option Name Manager`
 
 **Example:**  
 
@@ -30,7 +30,7 @@ b) Select an Option Type:
 *   FILE (This does not get an Option Value)
 *   READONLY (this is for **Display Purposes Only** and is not part of a calculation nor does it appear in the Shopping Cart or the Order. It is more or less an Informational Attribute that can be used with 1 to many products and then, later, changed in one place to change on all products.)
 
-On some Option Names, based on the Type ... there are more settings if you Edit the Option Name:  
+On some Option Names, based on the Type.  There are more settings if you Edit the Option Name:  
 
 For Option Type TEXT:  
 
@@ -44,7 +44,7 @@ For Option Type Radio buttons and checkboxes:
 
 ### Defining Option Values
 
-<pre>Catalog ... Option Value Manager</pre>
+`Catalog -> Option Value Manager`
 
 a) Pick the Option Name  
 b) Give a Name like Red  
@@ -54,7 +54,7 @@ The sort order is used if you want to globably sort your Option Values to match 
 
 ### Attributes Controller
 
-Now ... you should have made several Option Names like ...  
+Now you should have made several Option Names like 
 
 *   Color
 *   Size
@@ -133,14 +133,14 @@ So now to add them to the products.
 This is done via the Attributes Controller  
 
 **a) Select a Product to add Attributes to**  
-You can look up a product in a couple ways ...  
+You can look up a product in a couple ways:
 
 - Either pick a Category or a Product  
 - When you pick a category, the ones with a `*` have products in them and this will display the first product Previous/Next  
-- When you pick a product,  click display ... this sets the category to this product's master category id ... so you can now use the Previous/Next if you like.  
+- When you pick a product,  click display, this sets the category to this product's master category id, so you can now use the Previous/Next if you like.  
 
 **b) Add the Attribute Option Name+Value Pairs**  
-Once the Product is displayed that you want to add attributes to ... go to the Add Attributes box  
+Once the Product is displayed that you want to add attributes to, go to the Add Attributes box  
 - The Product Name should already be selected.  
 
 1\. Now select the Option Name  
@@ -175,7 +175,7 @@ There are other pricing options also available besides the standard prices.
 These are used to help distinguish other features of the attribute such as:  
 
 *   Use for display only (attribute cannot be selected and added to cart. Good for things like "Select from Below" to force the customer to make their own choice and not just hit Add to Cart and get a pink snail instead of a blue snail.
-*   Attribute is Free when product is Free (Some products you may set to Free ... but the some attributes are free and some attributes cost money.)
+*   Attribute is Free when product is Free (Some products you may set to Free, but the some attributes are free and some attributes cost money.)
 *   Default Attribute (Should be used especially on Radio buttons, or if you have an attribute you prefer the customer selects.)
 *   Apply Discounts used by Product Sale/Special (this will apply the same type of discount that the product is getting from the products_price vs the special or sale price.)
 *   Include in Base Price (when products are priced by attributes mark the attributes include in base price then the lowest price in each Option Name group are added together to make up the product price. NOTE: when not the product is not marked priced by attribute this setting has no effect on the price.)
@@ -186,7 +186,7 @@ These are used to help distinguish other features of the attribute such as:
 6\. **Be sure to click Add to add the newly-defined Attribute.**  
 You can always edit or delete them after adding.  
 
-When done ... you can update the sort orders for the product to the Option Value sort order by pressing the button at the top of the page.  
+When done, you can update the sort orders for the product to the Option Value sort order by pressing the button at the top of the page.  
 
 ### Downloadable Products
 

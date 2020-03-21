@@ -6,11 +6,10 @@ weight: 1
 
 ## SSL Security Protection Tips
 
-Without applying extra efforts to your connection on the internet you are wandering around an unsecured environment. Before you make administrative modifications to secure Zen Cart® and its database, you need to equip yourself with secure ways to make these modifications. Otherwise if someone is watching/listing to the information you transmit, it might not be long before your private business information becomes public. The bare minimum you should have is access to shared [SSL](http://en.wikipedia.org/wiki/Secure_Sockets_Layer "http://en.wikipedia.org/wiki/Secure_Sockets_Layer") services from your hosting company.
+Without applying extra efforts to your connection on the internet you are wandering around an unsecured environment. Before you make administrative modifications to secure Zen Cart and its database, you need to equip yourself with secure ways to make these modifications. Otherwise if someone is watching/listing to the information you transmit, it might not be long before your private business information becomes public. The bare minimum you should have is access to shared [SSL](http://en.wikipedia.org/wiki/Secure_Sockets_Layer "http://en.wikipedia.org/wiki/Secure_Sockets_Layer") services from your hosting company.
 
 The preferred would be to have a dedicated SSL certificate for your store, as it is more professional in appearance than the use of a shared certificate. There will be an expense incurred to obtain a dedicated SSL certificate and dedicated IP address in your hosting account.
 
-<a id="Accessing_Your_Site_Files_Securely" name="Accessing_Your_Site_Files_Securely"></a>
 
 ## Accessing Your Site Files Securely
 
@@ -18,9 +17,8 @@ Instead of using regular FTP to access your server's files, it would be wise (if
 
 If your hosting company does not offer SFTP or FTPS, then they are most likely not PCI Compliant either, and you should be choosing a different hosting company who takes security seriously.
 
-_**The following is a list of several steps you can take to secure your Zen Cart® site:**_
+_**The following is a list of several steps you can take to secure your Zen Cart site:**_
 
-<a id="1._Remove_extra_folders_from_your_server_after_install" name="1._Remove_extra_folders_from_your_server_after_install"></a>
 
 ## 1\. Remove extra folders from your server after install
 
@@ -28,24 +26,24 @@ It's important that after you've installed your site and are satisfied that it's
 
 REMOVE THE FOLLOWING FOLDERS (and all the files inside them), TO MINIMIZE SECURITY RISKS:
 
-<pre> - /docs  
+```
+ - /docs  
  - /extras  
  - /zc_install  
  - /install.txt (this file can be removed, too)  
-</pre>
+```
 
 It is safe to keep these files on your own computer, since they can be used as references/documentation, or used to aid in troubleshooting as diagnostic tools, or for upgrading/installing again in the future. But those folders/files should *not* be on a live webserver.
 
 Optional: Additionally, *IF* you have no intentions of supporting downloadable products or music-media products, you can *also* remove these folders:
 
-<pre> - /download  
+```
+ - /download  
  - /media  
  - /pub  
-</pre>
+```
 
 (And you'll need to go to your Admin->Configuration->Attribute Settings->Enable Downloads, and set it to False to turn off the warning message about the missing download folder) In the future, if you choose to add downloadable products to your site or music-products, you will want to re-upload these appropriate folders (and their contents) to your server again, and assign appropriate permissions.
-
-<a id="2._Rename_your_.2Fadmin_folder" name="2._Rename_your_.2Fadmin_folder"></a>
 
 ## 2\. Rename your _/admin_ folder
 
@@ -55,7 +53,6 @@ It is recommended for additional security that you rename your _admin_ directory
 
 If your server doesn't support use of .htaccess files, you'll need to work with your hosting company to come up with a way to provide the security protections offered by the supplied .htaccess files but using *your* server's available tools. If you cannot come up with alternate measures, you should reconsider whether your current hosting service is really adequate for the security appropriate to eCommerce.
 
-<a id="3._Use_SMTPAUTH_or_SMTP_as_your_Email_Transport_method.2C_instead_of_the_generic  _.22PHP.22_setting." name="3._Use_SMTPAUTH_or_SMTP_as_your_Email_Transport_method.2C_instead_of_the_generic  _.22PHP.22_setting."></a>
 
 ## 3\. Use SMTPAUTH or SMTP as your Email Transport method, instead of the generic "PHP" or "sendmail" settings.
 
@@ -63,7 +60,6 @@ Go to Admin->Configuration->Email Options, and change your Email Transport Proto
 
 This will not only help prevent outgoing emails from ending up in spam folders, but will also prevent the disclosure of your admin folder when sending emails from your admin screens.
 
-<a id="4._Set_configure.php_files_read-only" name="4._Set_configure.php_files_read-only"></a>
 
 ## 4\. Set configure.php files read-only
 
@@ -76,7 +72,6 @@ Quite often setting permissions on a file to read only via FTP will not work. Ev
 
 If you're using a Windows server, simply set the file as _Read-Only_ for _Everyone_ and especially the IUSR_xxxxx (Internet Guest Account) user if running IIS, or the _System_ account or _apache user_ if running Apache.
 
-<a id="5._Delete_any_unused_Admin_accounts" name="5._Delete_any_unused_Admin_accounts"></a>
 
 ## 5\. Delete any unused _Admin_ accounts
 
@@ -87,7 +82,6 @@ Admin > Admin Access > Admin Users
 
 In your admin Users screen, check for any unused Admin accounts, and delete them. Especially the Demo account, if it exists.
 
-<a id="6._Admin_Password_Security" name="6._Admin_Password_Security"></a>
 
 ## 6\. Admin Password Security
 
@@ -104,7 +98,6 @@ You can change your Admin password in Admin > Tools > Admin Settings, and click 
 v1.5.0 and newer:  
 Visit Admin > Admin Access > Admin Users to change passwords.
 
-<a id="7._Admin_Access_Protection" name="7._Admin_Access_Protection"></a>
 
 ## 7\. Admin Access Protection
 
@@ -116,7 +109,6 @@ It is wise to observe caution while working in your admin area:
 
 - **always log out of your admin** when not using it
 
-<a id="8._Protect_your_.22define_pages.22_content_in_.22html_includes.22" name="8._Protect_your_.22define_pages.22_content_in_.22html_includes.22"></a>
 
 ## 8\. Protect your "define pages" content in "html_includes"
 
@@ -124,13 +116,11 @@ After you have finished editing your define pages in [Admin > Tools > Define Pag
 
 A. Download a copy of them to your PC using your FTP software. They are located in the /includes/languages/english/html_includes folder and subfolders.
 
-B. Make them CHMOD 644 (ie: “read-only”). See notes above on CHMOD. _/includes/languages/english/html_includes_ – and all files/folders underneath
+B. Make them CHMOD 644 (ie: “read-only”). See notes above on CHMOD. `/includes/languages/english/html_includes` – and all files/folders underneath
 
 If you make them read-only, then a would-be hacker cannot edit them if they gain access to your system, unless they can get permissions to change the read-only status, which is more complicated.
 
 Note: Of course, once you set them read-only, then you'll need to go and set them back to read-write before making additional changes using the define-pages editor or uploading replacements via FTP, and then read-only again when done.
-
-<a id="9._Use_.htaccess_files_to_protect_against_unwanted_snooping" name="9._Use_.htaccess_files_to_protect_against_unwanted_snooping"></a>
 
 ## 9\. Use _.htaccess_ files to protect against unwanted snooping
 
@@ -142,7 +132,8 @@ There are also some blank _index.html_ files in several folders. These files are
 
 Suggested content for _.htaccess_ files in folders where there is an _index.html_ file but not yet an _.htaccess_ file would be something like the following (depends on your server configuration):
 
-<pre> <span class="Code">#.htaccess to prevent unauthorized file access files  
+```
+#.htaccess to prevent unauthorized file access files  
   OPTIONS -Indexes -ExecCGI  
   IndexIgnore */*  
   ### This part says to deny access to EVERYTHING. Afterwards, you'll allow access to JUST the permitted items. See next FilesMatch section.  
@@ -155,13 +146,12 @@ Suggested content for _.htaccess_ files in folders where there is an _index.html
    Order Deny,Allow  
    Allow from all  
   </FilesMatch></span>  
-</pre>
+```
 
 In order for the above suggestions to work, your host must include either 'All' or all of these: 'Limit Options Indexes' parameters to the AllowOverride configuration in the server's master apache httpd.conf file.
 
 If your webhost configuration doesn't allow you to create/use your own _.htaccess_ files, you'll need to work with your hosting company to come up with a way to provide the security protections offered by the supplied .htaccess files but using *your* server's available tools; sometimes they provide an interface in your hosting admin control panel where you can set the desired settings. You need to choose, and use, the appropriate method for your server. As mentioned above, it's best to work with your web hosting company to select and implement the best method for your specific server. We can't tell you what to use for your specific server, but we offer these guidelines as a starting point. If you cannot come up with alternate measures, you should reconsider whether your current hosting service is really adequate for the security appropriate to eCommerce.
 
-<a id="10._Disable_.22Allow_Guest_To_Tell_A_Friend.22_feature" name="10._Disable_.22Allow_Guest_To_Tell_A_Friend.22_feature"></a>
 
 ## 10\. Protect your "images" and other folders
 
@@ -173,12 +163,11 @@ Thus, once your site is built and your images have been created/loaded, you shou
 
 <u>**_(Note: This is already done since v1.3.9)_**</u> -- *IF* your server is running PHP as a CGI application and not as an Apache module, and you wish to prevent hackers from executing scripts in your images folder (which is only an issue *if* they are able to successfully hack to your images folder and insert rogue script files), you could further secure it by adding a custom .htaccess file which only allows images to be displayed, and won't allow the use of php files etc. Here's the code for said custom .htaccess file:
 
-<pre> <span class="Code"># Prevent directory viewing and the ability of any scripts to run.  
+```
+# Prevent directory viewing and the ability of any scripts to run.  
  # No script, be it PHP, PERL or whatever, can normally be executed if ExecCGI is disabled.  
  OPTIONS -Indexes -ExecCGI</span>  
-</pre>
-
-<a id="File.2FFolder_permissions_settings" name="File.2FFolder_permissions_settings"></a>
+``` 
 
 #### File/Folder permissions settings
 
@@ -188,8 +177,6 @@ On Linux/Unix hosts, generally, permission-setting recommendations for basic sec
 *   files: 644
 
 On Windows hosts, setting files read-only is usually sufficient. Should double-check that the _Internet Guest Account_ has limited (read-only) access.
-
-<a id="Folder_Purposes" name="Folder_Purposes"></a>
 
 #### Folder Purposes
 
@@ -214,7 +201,6 @@ The folders for which installation suggests read-write access for setup are thes
     This is used by the [Admin > Tools > Banner Manager](/user/admin_pages/tools/banner_manager) 
 for updating/displaying bar graphs related to banner usage. If not writable, this feature is ignored.
 
-<a id="12._Remove_the_print_URL_feature_from_your_browser" name="12._Remove_the_print_URL_feature_from_your_browser"></a>
 
 ## 11\. Remove the print URL feature from your browser
 
@@ -230,7 +216,6 @@ To stop the browser from printing the admin URL (which discloses your Admin fold
     *   On page setup window click on the tab "Margins & Header/Footer". In the "Header & Footer" section set all of the drop downs to --blank--. (Or at least remove all instances of "Title" and "URL" from the various boxes.)
 *   Other browsers offer similar menu choices to change these settings.
 
-<a id="13._Things_to_Check_Up_on_Regularly" name="13._Things_to_Check_Up_on_Regularly"></a>
 
 ## 12\. Things to Check Up on Regularly
 
@@ -244,10 +229,10 @@ To stop the browser from printing the admin URL (which discloses your Admin fold
     *   Look for links that have http after the _index.php_.
 4.  Check your website files regularly to be sure nothing's been added or altered.
 5.  Ask your web host what they have done to be sure the server you're on is safe and secure so that outsiders cannot do any harm, and so that other websites on your server cannot be used to get to your site and cause any harm (in case they have security holes in them).
-6.  If your business warrants, or you still want additional assurance (especially if running forum software on your site, or other scripts outside of Zen Cart®), hire a security consultant to check your site regularly and give you peace of mind in exchange for a few dollars.
+6.  If your business warrants, or you still want additional assurance (especially if running forum software on your site, or other scripts outside of Zen Cart), hire a security consultant to check your site regularly and give you peace of mind in exchange for a few dollars.
 7.  Check your Zen Cart /logs/ or /cache/ folder for myDebug-XXXXX.log files to see whether any errors are happening which need to be fixed. Delete the log files after you've addressed the errors.
 
-## 13._Server_Operating_System_Patches
+## 13. Server Operating System Patches
 
 There are some common server vulnerabilities that are worth checking into to ensure your server isn't vulnerable to easy hacker exploits. There are entire professions dedicated to this subject, so it's impossible to list everything here; but some of the more common things needing attention are:
 

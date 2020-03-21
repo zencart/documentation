@@ -86,6 +86,7 @@ rather than
 
 * Remember that when you embed markdown within an HTML block element, markdown formatting is disabled.  To turn it back on, use a blank line before and after the markdown OR embed the content in a `<span>`.
 
+
 ## Cleanup of Legacy Content and Markup  
 
 - If you see a page that contains Wiki-style (or other legacy) markup like 

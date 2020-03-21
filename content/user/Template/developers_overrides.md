@@ -15,7 +15,7 @@ There are currently four components of the override system:
 *   Module overrides
 *   Sidebox overrides
 
-## <span class="mw-headline" id="How`the`template`override`system`works">How the template override system works</span>
+## How the template override system works
 
 To make use of the override system, first name your custom template. In the examples below, we will call this `YOURTEMPLATE`. You create a folder with this name in every directory that contains files you wish to modify. Place a copy of each file you wish to modify in the custom template directory at the same level; then modify this custom template copy, leaving the original file untouched.
 
@@ -41,7 +41,7 @@ Create a copy of any file you wish to modify, and place it in the appropriate cu
 
 Repeat for every language your store uses.
 
-### <span class="mw-headline" id="Template`overrides">Template overrides</span>
+### Template overrides
 
 You can override any file in the path `includes/templates/template`default`. These are the files that determine the layout and HTML formatting of your web pages. Zen Cart® has two standard templates: `template`default` and `classic`. You can see these folders in the `includes/templates/` folder.
 
@@ -51,7 +51,7 @@ First, create the folder `includes/templates/YOURTEMPLATE`. As you customize you
 
 For example, if you want to modify the CSS for your store, you will copy the file `includes/templates/template`default/css/stylesheet.css` to `includes/templates/YOURTEMPLATE/css/stylesheet.css`, and modify this copy.
 
-### <span class="mw-headline" id="Module`overrides">Module overrides</span>
+### Module overrides
 
 You can override files in the folder `includes/modules/`.
 
@@ -63,7 +63,7 @@ First, create the folder `includes/modules/YOURTEMPLATE`. As you customize your 
 
 For example, if you want to modify the product listing for your store, you will copy the file `includes/modules/product_listing.php` to `includes/modules/YOURTEMPLATE/product_listing.php`, and modify this copy.
 
-### <span class="mw-headline" id="Sidebox`overrides">Sidebox overrides</span>
+### Sidebox overrides
 
 You can override files in the folder `includes/modules/sideboxes/`. These are the boxes that appear in the left and right columns of your store.
 
@@ -71,10 +71,10 @@ First, create the folder `includes/modules/sideboxes/YOURTEMPLATE`. As you custo
 
 For example, if you want to modify the "More Information" sidebox, you will copy the file `includes/modules/sideboxes/more_information.php` to `includes/modules/sideboxes/YOURTEMPLATE/more_information.php`, and modify this copy.
 
-## <span class="mw-headline" id="Selecting`YOURTEMPLATE`in`the`Admin">Selecting your template in the `Admin`</span>
+## Selecting YOURTEMPLATE in the Admin
 
 Login to your `Admin` panel and go to Tools > Template Selection.  You should see your new custom template(s) in the list. Select the template you wish to use.
 
-Note: In order for the template to be on the list, the custom directory must be created in `/includes/templates/` and the `template`info.php` sets the
+Note: In order for the template to be on the list, the custom directory must be created in `/includes/templates/` and the `template_info.php` sets the
 
-<pre>$template`name = 'Template Name'</pre>
+`$template_name = 'Template Name'`

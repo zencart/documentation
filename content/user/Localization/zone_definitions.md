@@ -20,13 +20,8 @@ Be careful to note the `geo_zone_id` in each of the INSERTs below. They are uniq
 
 ### To create a Zone for the US Continental 48 States & DC
 
-<pre class="alt2" dir="ltr" style="margin: 0px;
-padding: 5px;
-border: 1px inset;
-width: 600px;
-height: 150px;
-text-align: left;
-overflow: auto">INSERT INTO `geo_zones` (`geo_zone_id`, `geo_zone_name`, `geo_zone_description`, `last_modified`, `date_added`)   
+```
+INSERT INTO `geo_zones` (`geo_zone_id`, `geo_zone_name`, `geo_zone_description`, `last_modified`, `date_added`)   
 VALUES   
 (21, '48 Lower States', '48 States + DC', NULL, '2008-02-01 12:12:12');  
 
@@ -81,18 +76,12 @@ VALUES
 (223, 63, 21),  
 (223, 64, 21),  
 (223, 65, 21);  
-
-</pre>
+```
 
 ### To create a Zone for the US 50 States & DC
 
-<pre class="alt2" dir="ltr" style="margin: 0px;
-padding: 5px;
-border: 1px inset;
-width: 600px;
-height: 150px;
-text-align: left;
-overflow: auto">INSERT INTO `geo_zones` (`geo_zone_id`, `geo_zone_name`, `geo_zone_description`, `last_modified`, `date_added`) 
+```
+INSERT INTO `geo_zones` (`geo_zone_id`, `geo_zone_name`, `geo_zone_description`, `last_modified`, `date_added`) 
 VALUES 
 (37, '50 States', '50 States + DC', NULL, '2008-02-01 12:12:12');
 
@@ -150,17 +139,12 @@ VALUES
 (223, 64, 37),
 (223, 65, 37);  
 
-</pre>
+```
 
 ### To create a Zone Definition for the Rest of the World, excluding the United States, you can use:
 
-<pre class="alt2" dir="ltr" style="margin: 0px;
-padding: 5px;
-border: 1px inset;
-width: 600px;
-height: 150px;
-text-align: left;
-overflow: auto">INSERT INTO geo_zones (geo_zone_id, geo_zone_name, geo_zone_description, last_modified, date_added)   
+```
+INSERT INTO geo_zones (geo_zone_id, geo_zone_name, geo_zone_description, last_modified, date_added)   
 VALUES   
 (40, '<span class="highlight">Rest</span> of the <span class="highlight">World</span>', 'All Countries Except United States', NULL, CURDATE());  
 
@@ -168,18 +152,12 @@ INSERT INTO zones_to_geo_zones (zone_country_id, zone_id, geo_zone_id, date_adde
 SELECT countries_id , 0, 40, CURDATE()   
 FROM countries   
 WHERE countries_iso_code_3 NOT IN ('USA');  
-
-</pre>
+```
 
 ### To create a Zone Definition for the Rest of the World, excluding the United States and Canada, you can use:
 
-<pre style="margin: 0px;
-padding: 5px;
-border: 1px inset;
-width: 600px;
-height: 150px;
-text-align: left;
-overflow: auto" dir="ltr" class="alt2">INSERT INTO geo_zones (geo_zone_id, geo_zone_name, geo_zone_description, last_modified, date_added)   
+```
+INSERT INTO geo_zones (geo_zone_id, geo_zone_name, geo_zone_description, last_modified, date_added)   
 VALUES   
 (22, 'International', 'All Countries Except USA and Canada', NULL, CURDATE());  
 
@@ -187,18 +165,12 @@ INSERT INTO zones_to_geo_zones (zone_country_id, zone_id, geo_zone_id, date_adde
 SELECT countries_id , 0, 22, CURDATE()  
 FROM countries  
 WHERE countries_iso_code_3 NOT IN ('USA','CAN');  
-
-</pre>
+```
 
 ### To create a Zone Definition for the Rest of the World, excluding the United Kingdom, you can use:
 
-<pre class="alt2" dir="ltr" style="margin: 0px;
-padding: 5px;
-border: 1px inset;
-width: 600px;
-height: 150px;
-text-align: left;
-overflow: auto">INSERT INTO geo_zones (geo_zone_id, geo_zone_name, geo_zone_description, last_modified, date_added)   
+```
+INSERT INTO geo_zones (geo_zone_id, geo_zone_name, geo_zone_description, last_modified, date_added)   
 VALUES   
 (35, 'International', 'All Countries Except United Kingdom', NULL, CURDATE());  
 
@@ -206,6 +178,6 @@ INSERT INTO <span class="highlight">zones_to_geo_zones</span> (zone_country_id, 
 SELECT countries_id , 0, 35, CURDATE()   
 FROM countries   
 WHERE countries_iso_code_3 NOT IN ('GBR');  
+```
 
-</pre>
 

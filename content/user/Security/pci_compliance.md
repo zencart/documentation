@@ -4,8 +4,6 @@ category: security
 weight: 1
 ---
 
-<div class="article cms_clear restore postcontainer" id="yui-gen1">
-
 ## PCI DSS Compliance Questions Answered
 
 ### Common myths about PCI Compliance

@@ -3,8 +3,6 @@ title: What are the Server Requirements for running Zen Cart?
 category: Installing
 weight: 1
 ---
-<div class="article cms_clear restore postcontainer" id="yui-gen3">
-
 ## Zen Cart specifications - Server Requirements
 
 _(Last updated: Dec 1, 2019)_  

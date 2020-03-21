@@ -34,7 +34,8 @@ Before you start, you'll need to verify that you have some things.
 
 Here's the complete structure of the [Quantity Discounts](https://www.zen-cart.com/downloads.php?do=file&id=135) contribution, as an example. 
 
-<pre class="code">./includes
+```
+./includes
 ./includes/languages
 ./includes/languages/english
 ./includes/languages/english/modules
@@ -44,18 +45,18 @@ Here's the complete structure of the [Quantity Discounts](https://www.zen-cart.c
 ./includes/modules/order_total
 ./includes/modules/order_total/ot_quantity_discount.php
 ./README.txt
-</pre>
+```
 
 There are only two code files here and one README; the other things you see are parent directories for those files. An abbreviated listing of this is
 
-<pre class="code">
+```
 ./includes/languages/english/modules/order_total/ot_quantity_discount.php
 ./includes/modules/order_total/ot_quantity_discount.php
 ./README.txt
-</pre>
+```
 
 The hierarchy of these files is intended to exactly duplicate the structure of your cart. So if your cart is installed on your webserver under (say) 
-<pre>/public_html/zencart</pre>, then to install the file `./includes/modules/order_total/ot_quantity_discount.php` you would ftp to your site, change directory to `public_html/zencart`, and then transfer the "includes" folder from the mod over.
+`/public_html/zencart`, then to install the file `./includes/modules/order_total/ot_quantity_discount.php` you would ftp to your site, change directory to `public_html/zencart`, and then transfer the "includes" folder from the mod over.
 
 If your cart is under (say)  /httpdocs/public_html/, the instructions would be the same; ftp to your site; cd to <code>/httpdocs/public_html/</code>
 then transfer the <code>includes</code> folder over. 
@@ -74,23 +75,19 @@ A common convention is to assume the template name is "custom." So if you see a 
 
 Some examples: the [Better Together Promotional Page](https://www.zen-cart.com/downloads.php?do=file&id=969) contains a file called
 
-<pre class="code">./includes/templates/custom/templates/tpl_bettertogether_promo_default.php
-</pre>
+`./includes/templates/custom/templates/tpl_bettertogether_promo_default.php`
 
 If your template name is "scott", you would install this file in
 
-<pre class="code">./includes/templates/scott/templates/tpl_bettertogether_promo_default.php
-</pre>
+`./includes/templates/scott/templates/tpl_bettertogether_promo_default.php`
 
 [What's On Sale](https://www.zen-cart.com/downloads.php?do=file&id=1185) contains a file called
 
-<pre class="code">./includes/modules/custom/sales_index.php
-</pre>
+`./includes/modules/custom/sales_index.php`
 
 If your template name is "apple", you would install this file in
 
-<pre class="code">./includes/modules/apple/sales_index.php
-</pre>
+`./includes/modules/apple/sales_index.php`
 
 Not all files can be handled by the template system. For instance, files in `includes/modules/pages` cannot be overridden. A recommendation for files like this is that during the installation process, you make a backup of the original file, and name it <original-filename>.orig. For instance, the [Gift Wrap at Checkout](https://www.zen-cart.com/downloads.php?do=file&id=267) contribution modifies the file `./admin/invoice.php` Prior to installation, rename this file `./admin/invoice.php.orig`  
 This serves two purposes:
@@ -114,19 +111,21 @@ Some mods require database changes. For instance, Gift Wrap at Checkout includes
 
 These files are best run through the Zen Cart admin panel, which will take care of the prefix (if you have one). To do this, go to Admin->Tools->Install SQL patches.  
 
-Alternately, you can run them using phpMyAdmin, but you will need to edit the .sql script to account for the prefix. errors occur during execution. Ask your host if you're not sure how to run this tool.  
+Alternately, you can run them using phpMyAdmin, but you will need to edit the .sql script to account for the prefix. 
 
 For instance, if the file creates a table called "orders_giftwrap"
 
-<pre>CREATE TABLE orders_giftwrap(
+```
+CREATE TABLE orders_giftwrap(
 ...
-</pre>
+```
 
 you will need to change this to reflect your prefix, i.e.
 
-<pre>CREATE TABLE zen_orders_giftwrap(
+```
+CREATE TABLE zen_orders_giftwrap(
 ...
-</pre>
+```
 
 assuming your prefix is `zen_`.  
 
@@ -134,11 +133,12 @@ If you have used a prefix, it is stored in `includes/configure.php`; look for th
 
 If you do an install and get an error like
 
-<pre>1146 Table 'yourdb.zen_better_together_admin' doesn't exist
+```
+1146 Table 'yourdb.zen_better_together_admin' doesn't exist
 in:
 [SELECT * FROM zen_better_together_admin ORDER BY id DESC ]
 If you were entering information, press the BACK button in your browser and re-check the information you had entered to be sure you left no blank fields.
-</pre>
+```
 
 This means you used phpMyAdmin but forgot to edit the .sql file to include your prefix.  
 
@@ -148,20 +148,19 @@ Not all database modifications will be done through a .sql file; for instance, a
 
 Some mods use the "TYPE=MyISAM" syntax when doing a CREATE TABLE, which is not accepted by some newer versions of MySQL. If you get a message like this when running an SQL script:
 
-<pre class="code">ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that
+```
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that
 corresponds to your MySQL server version for the right syntax to use near 'TYPE=MyISAM'
 at line 1
-</pre>
+```
 
 To fix this, simply edit the .sql file and change all instances of
 
-<pre class="code">TYPE=MyISAM
-</pre>
+`TYPE=MyISAM`
 
 to
 
-<pre class="code">ENGINE=MyISAM
-</pre>
+`ENGINE=MyISAM`
 
 ## Uploading
 
@@ -170,21 +169,17 @@ The best way to upload is to upload the ENTIRE includes directory from the unzip
 *   If your admin folder is named ABCDEF, rename the admin folder in the unzipped mod to ABCDEF, and upload the entire folder.
 *   If the unzipped file contains template specific files, rename the containing directories to the name of your template. For instance, if your template is named "blue" and the mod has a directory named
 
-    <pre>includes/modules/YOURTEMPLATE/
-    </pre>
+    `includes/modules/YOURTEMPLATE/`
 
     rename this to
 
-    <pre>includes/modules/blue
-    </pre>
+    `includes/modules/blue`
 
     Similarly, if the mod contains a directory called
 
-    <pre>includes/templates/custom
-    </pre>
+    `includes/templates/custom`
 
     rename this to
 
-    <pre>includes/templates/blue
-    </pre>
+    `includes/templates/blue`
 

@@ -15,7 +15,7 @@ The additional Pages can be for:
 
 In Addition, there is the ability to create "related" links in the format of a Chapter (group) and its TOC (related pages/links).  
 
-<span style="font-weight: bold; color: rgb(255, 0, 0);">Link Naming</span>  
+### Link Naming
 
 Links are named by the Page Title. All Links need a Page Title in order to function.  
 
@@ -23,7 +23,7 @@ If you forget to add a Page Title, then you will not be able to add the Link.
 
 If you do not assign an Order for the Header, Sidebox or Footer, then the Link will not display even if you have a Page Title.  
 
-<span style="font-weight: bold;"><span style="color: rgb(255, 0, 0);">Link Placement</span>  
+### Link Placement
 
 </span>While you have the option of adding Additional Links to the Header, Footer and Sidebox with EZ-Pages, you are not limited to these three Link locations. Links can be in one or more locations simply by enabling the Order for the Location(s) where the Link should appear.
 
@@ -39,11 +39,10 @@ If you do not wish to have the link in any of the three locations, but still
 wish to have it available to visitors on your site, simply click the 
 Page is Visible <b>Yes</b> radio button. 
 
-<span style="font-weight: bold;"><span style="color: rgb(255, 0, 0);">Open in New Window and Secure Pages</span>  
-</span>  
+### Open in New Window and Secure Pages
 With EZ-Pages, each Link can take you to the same, main window for your shop; or, you can have the Link open a brand new New Window. In addition, there is an option for making the Link open as a Secure Page or a Non-Secure Page.  
 
-<span style="font-weight: bold; color: rgb(255, 0, 0);">Chapter and TOC</span>  
+### Chapter and TOC
 
 The Chapter and TOC, or Table of Contents, are a unique method of building Multiple Links that interact together.  
 
@@ -57,7 +56,7 @@ Then, set the TOC or Table of Contents setting. This is a secondary Sort Order f
 
 Again, you can display any of the Links within a Chapter, as well as making any of these Links the Main Link. Whether the Links all show, or just one or more of the Links show, the Chapter is the key to grouping these Links together in the TOC or Previous/Next.  
 
-<span style="font-weight: bold; font-style: italic;">NOTE: While all Links within a Chapter will display together, you can have the different Links display in the Header, Footer or Sidebox on their own. Or, you can have the additional Links only display when the Main Link or one of the Additional Links within the Chapter has been opened.</span>  
+NOTE: While all Links within a Chapter will display together, you can have the different Links display in the Header, Footer or Sidebox on their own. Or, you can have the additional Links only display when the Main Link or one of the Additional Links within the Chapter has been opened.
 
 The versitility of EZ-Pages will make adding new Links and Pages extreamly easy for the beginner as well as the advance user.  
 
@@ -69,7 +68,7 @@ There is no limit to the number of pages, or links, that can be grouped together
 
 The display of the Previous/Next and TOC listing is a setting that can be turned on or off.  
 
-<span style="font-weight: bold; color: rgb(255, 0, 0);">External Link URL</span>  
+### External Link URL
 
 External Link URLs are links to outside pages not within your shop. These can be to any valid URL such as:  
 
@@ -77,7 +76,7 @@ https://www.google.com
 
 You need to include the full URL path to any External Link URL. You may also mark these to open in a New Window or the Same Window.  
 
-<span style="font-weight: bold; color: rgb(255, 0, 0);">Internal Link URL</span>  
+### Internal Link URL
 
 Internal Link URLs are links to internal pages within your shop. These can be to any valid URL, but should be written as relative links such as:  
 
@@ -89,7 +88,7 @@ While these links can be the Full URL to an Internal Link, it is best to write a
 
 Internal Links can also open in a New Window or the Same Window or be for Secure or Non-Secure Pages.  
 
-<span style="font-weight: bold; color: rgb(255, 0, 0);">EZ-Pages Additional Pages vs Internal Links vs External Links</span>  
+### EZ-Pages Additional Pages vs Internal Links vs External Links
 
 The Type of Link that you create is based on an order of precidence, where HTML Content will superceed both the Internal Link and the External Link values.  
 
@@ -97,12 +96,12 @@ The External Link URL will superceed the Internal Link URL.
 
 If you try to set a combination of HTML Content, Internal Link and/or External Link, the Link will be flagged in the listing with a read icon to alert you to your mistake.  
 
-<span style="font-weight: bold; color: rgb(255, 0, 0);">WARNING ...</span>  
+<b>WARNING...</b>
 
 When using Editors such as HTMLarea, if you hit enter in the HTML Content area  
 will be added. These will be detected as "content" and will override any Internal Link URL or External Link URL.  
 
-<span style="font-weight: bold; color: rgb(255, 0, 0);">Admin Only Display</span>  
+### Admin Only Display
 
 Sometimes, when working on EZ-Pages, you will want to be able to work on a Live Site and see the results of your work, but not allow the Customers to see this until you are done.  
 
