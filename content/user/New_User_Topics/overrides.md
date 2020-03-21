@@ -77,9 +77,9 @@ define('MY_ACCOUNT_TITLE', 'My Account');
 **Create Your Own Definitions**  
 
 > As you YOURTEMPLATEize your cart, you may find that you need to include additional definitions.  
->     You can do this by using your text editor to create a definition file - **your_definition_file.php**.  
+>     You can do this by using your text editor to create a definition file - `yourdefinition_file.php`.
 >     All the definitions you need for your YOURTEMPLATEization would be included in this file.  
->     Save the file to **includes/languages/ENGLISH/extra_definitions/your_definition_file.php** and upload it to your server
+>     Save the file to `includes/languages/ENGLISH/extra_definitions/yourdefinition_file.php` and upload it to your server
 
 **Note:** files in this directory get loaded automatically, ensuring your YOURTEMPLATE definitions can be used throughout your cart.  
 

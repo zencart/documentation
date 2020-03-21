@@ -19,7 +19,7 @@ Detailed upgrade instructions that help you retain your customizations while upg
 5.  Next, change the two configure.php files to utilize the new directory and database  This way ... when you attempt to upgrade you are "practicing" to see where the problems, if any will happen  
 6.  Make sure all appears to be working on your temp site.
 7.  Now load the "new" version files to your new temp directory from latest downloaded ZIP
-8.  Run the http://www.your_domain_name.com/your_new_site/zc_install
+8.  Run the http://www.YOURSITE.com/zc_install
 9.  Choose the Upgrade Database option  
 10.  Process each suggested step one at a time ... leave the first checkbox that the upgrader picked checked and uncheck the others.  
     -Advantage is that you can see your problems step by step  

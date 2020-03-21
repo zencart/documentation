@@ -1,6 +1,6 @@
 ---
 title: Gift Certificates
-category: modules
+category: order_total
 weight: 10
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Authorize.net AIM Payment Module
-category: modules
-weight: 1
+category: payment
+weight: 10
 ---
 
 ## REQUIREMENTS

@@ -1,7 +1,7 @@
 ---
-title: Payment
-category: modules
-weight: 10
+title: Payment Modules
+category: payment
+weight: 1
 ---
 
 Zen Cart has a number of built-in payment modules which allow you to charge for your order in various ways: 

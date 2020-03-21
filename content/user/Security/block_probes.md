@@ -8,7 +8,7 @@ Some common attempts to probe your site for old vulnerabilities, or vulnerabilit
 1\. Copy and paste the following code into a new text file in your favorite text-only editor.  
 2\. Save the file as `block_probing.php`, and upload it to your store into the following folders:  
 
-a) `/your_renamed_admin/includes/extra_configures/  `
+a) `/YOURADMIN/includes/extra_configures/  `
 
 b) `/includes/extra_configures/  `
 

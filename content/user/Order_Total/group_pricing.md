@@ -1,7 +1,7 @@
 ---
 title: Group Pricing
-category: modules
-weight: 1
+category: order_total
+weight: 10
 ---
 If you want to offer a group discount, you need to first enable group pricing
 

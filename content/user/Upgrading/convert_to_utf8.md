@@ -19,7 +19,7 @@ If you are installing Zen Cart v1.5.0 or newer, for the first time, and not pres
 2.  Also edit your <font color="#ff0000">two configure.php files</font> to set DB_CHARSET to 'utf8':  
     <font color="#8b4513">define('DB_CHARSET', 'utf8');  
     </font>(Remember, the configure.php files are most likely set to read-only on your server, so you'll need to change their permissions on the server to be writable before you can save the changes you're making.)  
-    (Remember, you must do this for **both** your /your_admin_folder/includes/configure.php **and** /includes/configure.php )
+    (Remember, you must do this for **both** your /YOURADMIN/includes/configure.php **and** /includes/configure.php )
 
 ## TO STAY WITH LATIN1:
 

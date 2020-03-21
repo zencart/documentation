@@ -1,7 +1,7 @@
 ---
-title: Shipping 
-category: modules
-weight: 10
+title: Shipping Modules
+category: shipping
+weight: 1
 ---
 
 Zen Cart has a number of built-in shipping modules which allow you to charge for shipping based on various factors in the order: 

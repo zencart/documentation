@@ -47,6 +47,6 @@ An error occured with the USPS shipping calculations. If you prefer to use USPS 
 
 You need to call or email USPS and have them move your account to the production server.
 
-See [USPS Setup](/user/modules/usps_setup/).
+See [USPS](/user/modules/usps/).
 
 <hr />

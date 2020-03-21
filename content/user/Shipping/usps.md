@@ -1,7 +1,7 @@
 ---
 title: USPS Setup 
-category: modules
-weight: 1 
+category: shipping 
+weight: 10
 ---
 
 In order to use the USPS module, you need to have a USPS WebTools account, signed up to use their Rate Calculator API.
