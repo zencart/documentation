@@ -1,7 +1,7 @@
 ---
 title: How do I Install Zen Cart?
 category: Installing
-weight: 1
+weight: 10
 ---
 
 ## Preface
@@ -15,7 +15,7 @@ If you choose to use a packaged installer from someplace else, make sure you ask
 
 # Getting Started
 
-This is a basic guide to installing Zen Cart®. If you already have Zen Cart® installed and wish to upgrade from a previous version to this new release, please see the **[Upgrade Instructions](http://www.zen-cart.com/upgrade)** and the **What's New documentation**.  
+This is a basic guide to installing Zen Cart®. If you already have Zen Cart® installed and wish to upgrade from a previous version to this new release, please see the upgrading instructions [in the Release document](https://www.zen-cart.com/docs/). 
 
 ## The Basics
 
@@ -45,7 +45,10 @@ If No stop.  You will need a good Text Editing software such as [Notepad++](http
 <span class="error">**Note:** <u>do **not** use cPanel for editing files,</u> <u>or MS Word</u> or other software designed for fancy writing.  Instead, you want a nice clean Text Editor.</span>  
 You can use the Windows Notepad, but this is limited in capabilities and the size of files that it can open and often can cause more harm than good. (Notepad++ mentioned above is the most recommended choice.)  
 
-### 4\. Do you have access to your webhosting control panel to create a MySQL database and user?
+### 4\. Do you have access to your webhosting control panel?
+
+Your webhoster's control panel (often [CPanel](cpanel.net) but sometimes a hoster-built tool) is where you 
+will create a MySQL database and user.
 
 BEFORE YOU PROCEED, make sure you have access to a MySQL database, and username/password to that database. You may need to create the database using your webhosting account's control panel. Contact your webhosting company for assistance. Zen Cart® cannot create the database for you.
 
@@ -61,13 +64,11 @@ If you're reading this page via a file from your computer, you have likely alrea
 
 # Upload the Zen Cart® fileset to your webserver
 
-Upload, via FTP, the whole program into a directory on your server. Example:`/catalog`
+Upload, via FTP, the whole program into a directory on your server.  You can put it in your webroot or in a folder below that. 
   
-We will use `/catalog` as an example in this document. You can choose "no" foldername, or something else if you prefer, such as `/zencart`, or `/store` etc)  
+<div id="webroot"></div>
 
-_NOTE: As you upload your files, make sure that your FTP program and your webserver allow "<span class="error">long filenames</span>". Some old FTP software may shorten names longer than 11 letters, and that would cause a problem with uploading Zen Cart files._
-
-### What folder do I upload into?
+### What is my webroot? 
 
 Each web host has his/her own preference in naming folders for use in running a website.  
 You can have many files that don't even get shown to the public. The ones that are available for access via a browser are usually in a folder called something like:
@@ -85,13 +86,30 @@ Your Zen Cart files (or *any* files to run your website, for that matter) need t
 
 If it's unclear where the publicly-accessible files are to be uploaded, ask your hosting company for assistance in determining what your "webroot" folder should be.
 
-REMEMBER: this guide uses the "/catalog" folder AS AN EXAMPLE.   You don't "have to" use "/catalog".  You could use something else, or nothing at all if you prefer to install in the "root" (which is the "base" of your website).
+### What folder do I upload into?
+
+You can choose to upload to your webroot, or you can choose to upload to a subfolder.  Assuming your webroot is `/home/johndoe/public_html` and your domain is `johndoetools`, this is how things will work (assuming you have SSL): 
+
+- If you upload to your webroot, your Zen Cart will be accessed as [https://www.johndoetools.com]().
+
+- If you upload to the catalog subfolder of your webroot (i.e. `/home/johndoe/public_html/catalog/`, your Zen Cart will be accessed as [https://www.johndoetools.com/catalog]().
+
+This guide uses the `/catalog` subfolder AS AN EXAMPLE.   You don't have to use `/catalog`.  You could use something else (like `/shop`), or no subfolder at all (upload directly to webroot). 
+
+So in the language defined by [Basic Terms](/user/first_steps/basic_terms), we'll
+be using a `YOURSUBFOLDER` value of `/catalog/`.
+
+Choosing a subfolder versus loading the files into webroot is entirely your 
+choice.  The only time when you would really need to use a subfolder is if you
+already have a well established website are just adding on ecommerce using 
+Zen Cart.  In that case, you'd want to put your store below your existing site. 
+
 
 # **Creating the configure.php files**
 
 Two files need to be created on the server. These are the configure.php files that identify the settings of your particular server and the location of the files that you just loaded. After they have been created, you will then need to change the permissions on these files.  
 
-NOTE: Changing permissions can be done via your FTP program with the chmod feature. Usually clicking right on a directory or filename will open a menu with this option (perhaps under "Properties")  
+**NOTE:** Changing permissions can be done via your FTP program with the chmod feature. Usually clicking right on a directory or filename will open a menu with this option (perhaps under "Properties")  
 
 On the server locate the file: `/catalog/includes/dist-configure.php`  
 Rename this file to `configure.php` and change the permissions to 777 (read-write-execute for all)  
@@ -133,7 +151,7 @@ Note: open the catalog/images directory and change **all** of the subdirectories
 *   /catalog/images/upload
 ```
 
-NOTE: If you miss any of the images directories and subdirectories inside 
+**NOTE:** If you miss any of the images directories and subdirectories inside 
 `/images` and try to use them later, you will get an error message that you cannot write to these directories.  
 
 As for other files, they can be CHMOD 644, or 444, depending on your webserver configuration.  Folders don't usually get set below 755.  
@@ -184,7 +202,7 @@ Clicking on Continue takes you to the license screen where you are asked to read
 
 Next, it will examine your server for compliance with technical requirements for running Zen Cart®, presenting you with several items you may need or want to address with your host. Anything marked in red or with an "X" must be addressed before the installer can continue. Things marked with an orange or yellow "caution" symbol are simply warnings that may or may not apply to your setup now. The image folders and others as described earlier in this document are also noted. If you make changes to your server, you can click Re-Check or press F5 in your browser to refresh the display and reflect the changes you've made before proceeding.  
 
-If a previous version of Zen Cart® is found on your server, the installer will attempt to determine the database patch level and display that on the screen as well. In this case, an "upgrade" button will display at the bottom of the screen offering you the ability to upgrade if needed. See the **upgrade instructions**.  
+If a previous version of Zen Cart® is found on your server, the installer will attempt to determine the database patch level and display that on the screen as well. In this case, an "upgrade" button will display at the bottom of the screen offering you the ability to upgrade if needed. 
 
 Once you are satisfied that the "pre-flight-check" inspection is OK for your needs (ideally, all green check-marks), you may click the "Install" button at the bottom of the screen.  
 
@@ -192,7 +210,7 @@ Once you are satisfied that the "pre-flight-check" inspection is OK for your nee
 
 On the System Setup page you will need to complete the information we described in "Before Running the Installer" earlier in this document.  
 
-Indicate if you want to Enable SSL (the secure pages where required, in Login, Checkout, and optionally Admin areas) on your server. If you do not have an SSL certificate yet, **do not enable this feature now**.It can be changed at a later date. (See the related FAQ here for detailed instructions).  
+Indicate if you want to Enable SSL (the secure pages where required, in Login, Checkout, and optionally Admin areas) on your server. If you do not have an SSL certificate yet, **do not enable this feature now**.It can be changed at a later date. (See the [SSL FAQ](/user/installing/enable_ssl) for detailed instructions).  
 
 Note: If you receive any of the following error messages, go through the above steps to make sure you have not left anything out. All error messages have context-sensitive help via a popup window if you click on the <span class="pseudolink">more info...</span> links supplied:  
 
@@ -234,7 +252,7 @@ After you click Save Store Settings, there will be some hesitation as the databa
 
 Now, complete the Admin Information to set your Login name, Admin email address and password.  
 
-NOTE: both the login name and password are case sensitive.  
+**NOTE:** both the login name and password are case sensitive.  
 
 Save the Admin settings and your installation is now complete!  
 
@@ -264,13 +282,15 @@ If you have any errors or problems, most of these can be corrected by minor adju
 c) Remove the **zc_install directory**  
 Next, you will want to delete the `/catalog/zc_install` directory  
 
-(If you are only testing and plan to install again, you could rename the folder to something like: <span class="filename">/catalog/zc_install_complete until you take your site live. </span> NOTE: use a different name than <span class="filename">zc_install_complete</span> as some hacker may try using it, having read this help file.  Do NOT leave a zc_install folder on the server of a live site for security reasons.)  
+(If you are only testing and plan to install again, you could rename the folder to something like: `/catalog/zc_install_complete` until you take your site live.
+
+**NOTE:** use a different name than `zc_install_complete`, as some hacker may try using it, having read this help file.  Do NOT leave a zc_install folder on the server of a live site for security reasons.)  
 
 
 # Next Steps
 
 For information on first steps to setting up your online shop, see the article [basic checklist](/user/first_steps/basic_checklist/). 
 
-You should also familiarize yourself with the Zen Cart® Developers Toolkit, located in your store's Admin area, under "Tools". This will help you locate almost anything you want to customize in your shop!
+You should also familiarize yourself with the Zen Cart® [Developer's Toolkit](/user/admin/developers_toolkit), located in your store's Admin area, under `Tools`. This will help you locate almost anything you want to customize in your shop!
 
 Once you're set up and ready to start announcing your URL to the public, you should FIRST review Site Security Recommendations to be sure your site is safe and not vulnerable to hackers. The most up-to-date version of this file can be found in the article [Important Security Recommendations](https://www.zen-cart.com/docs/important_site_security_recommendations.html). 

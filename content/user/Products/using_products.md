@@ -21,7 +21,7 @@ a. add an attribute that is Display-Only (ie: a color swatch that says "Please S
 b. Make it default.
 This forces the customer to choose something "other than" the default (since the "default" is set to "display only").
 
-NOTE: This doesn't work for checkboxes.
+**NOTE:** This doesn't work for checkboxes.
 
 For more complex attribute questions, please post them to the 
 [main support forum](https://www.zen-cart.com/forum.php).
@@ -100,3 +100,19 @@ CAUTION: You need to be sure to ONLY select "product-music" products.  The menus
 There are a couple tutorials on this process: 
 - [Setting up downloads for products](/user/products/downloadable/)
 - [Adding attributes](/user/products/attributes/)
+
+<div id="mixed"></div>
+
+### What does MIXED ON mean? 
+On the [product editing page](/user/admin_pages/catalog/categories_products/), 
+when the setting `Product Qty Minimum` is greater than 1, the 
+setting `Product Qty Min/Unit Mix` is used in determining 
+whether the minimum has been met. 
+
+If you have the Minimum set to 36 with `Product Qty Min/Unit Mix` = `Yes`, the "MIXED: ON" status message shows.
+
+Mixed ON means that they can "mix" or match Attributes to build the 36 Minimum setting.  For example, 12 Red 14 Yellow 10 Green meets the minimum restriction of 36. 
+
+Mixed OFF means that they cannot "mix" the Attributes to build the 36 Minimum setting. For example, you must have 36 Red and/or 36 Yellow and/or 36 Green
+to meet the minimum restriction of 36
+

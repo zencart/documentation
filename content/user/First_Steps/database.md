@@ -1,7 +1,7 @@
 ---
 title: Databases 
 category: first_steps
-weight: 1
+weight: 10
 ---
 The database is a collection of tables. Tables are like spreadsheets, storing data in rows and columns, related to whatever the structure of that table is for. For customers, it means email addresses, passwords, etc. For address books, it means all the address info for each customer. For orders, all the order details. For products, the details of each aspect of each product. And so on. You could look at a database as a multi-sheet spreadsheet, but way more optimized and efficient in how it automatically handles indexing and storage/retrieval.  
 

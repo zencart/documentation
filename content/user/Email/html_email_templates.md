@@ -1,7 +1,7 @@
 ---
 title: HTML Email Templates
 category: email
-weight: 1
+weight: 10
 ---
 
 ### Email System Settings relating to rich text messages:

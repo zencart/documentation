@@ -16,7 +16,7 @@ In this example, you desire to remove:
 3\. Copy a few of those words "exactly" to the clipboard.  
 Example: <font color="#003366">your opinions on products</font>
 
-</font>4\. Open the Developers Toolkit (Admin->Tools->Developers Tool Kit )  
+</font>4\. Open the Developer's Toolkit under Admin->Tools->Developer's Tool Kit
 
 5\. Paste those words "exactly" as they appeared on the email into the first search box.  
 
@@ -30,7 +30,7 @@ Example: <font color="#003366">your opinions on products</font>
 
 10\. Upload the changes back to your server.  
 
-NOTE: It's recommended that you place your customized file in an Overrides folder, like this:  
+**NOTE:** It's recommended that you place your customized file in an Overrides folder, like this:  
 `includes/languages/english/YOURTEMPLATE/create_account.php`
 
 where YOURTEMPLATE is the name of the custom template you've been developing for your site.  

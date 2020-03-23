@@ -1,7 +1,7 @@
 ---
 title: Download folder - Relocating 
 category: security
-weight: 1
+weight: 10
 ---
 
 With Zen Cart® it is possible to relocate the "download" folder outside your webserver's "webroot" (the public_html or httpdocs or htdocs etc) folder so that thieves cannot directly link to real files on your server and download without paying or being authenticated.  

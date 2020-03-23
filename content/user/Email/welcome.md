@@ -2,7 +2,7 @@
 ---
 title: Changing the Welcome email my customers get
 category: email
-weight: 1
+weight: 10
 ---
 Say, for example, you wish to change the welcome email text because you do not plan to use the "Product Reviews" feature, and don't wish it to be advertised to your customers.
 
@@ -11,11 +11,12 @@ Say, for example, you wish to change the welcome email text because you do not p
 2. Find the text in that email that you wish to change.
 
 In this example, you desire to remove:
+
 Products Reviews - Share your opinions on products with our other customers.
 
-3. Copy a few of those words "exactly" to the clipboard. Example:Quote: your opinions on products
+3. Copy a few of those words "exactly" to the clipboard. Example: `your opinions on products`
 
-4. Open the Developers Toolkit (Admin->Tools->Developers Tool Kit )
+4. Open the [Developer's Toolkit](/user/admin/developers_toolkit) under Admin->Tools->Developers Tool Kit
 
 5. Paste those words exactly as they appeared on the email into the first search box.
 
@@ -29,7 +30,9 @@ Products Reviews - Share your opinions on products with our other customers.
 
 10. Upload the changes back to your server.
 
-NOTE: It's recommended that you place your customized file in an Overrides folder, like this:
+**NOTE:** It is recommended that you place your customized file in an Overrides folder, like this:
 `includes/languages/english/YOURTEMPLATE/create_account.php`.
 where `YOURTEMPLATE` is the name of the custom template you've been developing for your site.
+
+**HINT:** If you want to test your change once you have made it, rather than signing up for another free email account, you can just delete your account from your store in `Admin->Customers->Customers` and then create it in the usual way.
 

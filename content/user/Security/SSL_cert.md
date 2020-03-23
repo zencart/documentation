@@ -1,7 +1,7 @@
 ---
 title: What is an SSL certificate? 
 category: security 
-weight: 1
+weight: 10
 ---
 
 An SSL certificate contains the following information:  

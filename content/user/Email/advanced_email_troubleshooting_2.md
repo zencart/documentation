@@ -1,7 +1,7 @@
 ---
 title: TroubleShooting Email - Advanced Part II
 category: email
-weight: 1
+weight: 10
 ---
 
 Zen Cart's email infrastructure is largely dependent on the services available to the computer operating as your webserver. This includes internet connection issues, available ports, as well as PHP configuration options and the programs/services running on your server.
@@ -40,7 +40,7 @@ That's it.
 ## Diagnosing Problems
 
 1.  change transport methods (ask your host what's best ... they should know how they've configured your server).
-    *   NOTE: **SMTPAUTH** is least likely to end up getting treated as spam.
+    *   **NOTE:** `SMTPAUTH` is least likely to end up getting treated as spam.
 2.  change send-from email addresses (Admin->Configuration->Email Options). This should be an email associated with your server's domain. Preferably not a "free email account" such as gmail, since your server is *not* a gmail server and therefore your emails would be seen as spammy impersonation attempts, unless you're using SMTPAUTH properly configured for your account.
     *   MAKE SURE THE ADDRESS IS VALID.
     *   It is recommended to use an email account linked to the same domain name as your store. Attempting to masquerade with a different email address makes your emails prime candidates for being treated as junkmail, and thus not delivered.
@@ -102,7 +102,7 @@ AOL and Hotmail dump emails originating from server/client IP addresses that fai
 
 Some people prefer to use resources such as gmail or yahoo mail etc for sending their business emails. There are differing schools of thought about the merits of doing so. If you deem that this is the best practice for your business, the following information may be of help to you.
 
-NOTE: If you are self-hosting on a local PC server for development purposes, remember that your ISP (internet provider) usually blocks outgoing traffic on port 25, which is commonly used for email. Anything on port 25 destined for any server other than the ISP's own email server is generally blocked in order to control spam. You will need to choose another port (usually 587 or sometimes 465) and use SMTPAUTH and specify the correct SMTP server credentials.
+**NOTE:** If you are self-hosting on a local PC server for development purposes, remember that your ISP (internet provider) usually blocks outgoing traffic on port 25, which is commonly used for email. Anything on port 25 destined for any server other than the ISP's own email server is generally blocked in order to control spam. You will need to choose another port (usually 587 or sometimes 465) and use SMTPAUTH and specify the correct SMTP server credentials.
 
 See here: for[a list of common server SMTP addresses](http://www.arclab.com/products/amlc/list-of-smtp-and-pop3-servers-mailserver-list.html) if you're using a "free" email service. (Note: many customers prefer that you have a legitimate email address matching your domain name, not something like "billys-store@gmail.com" which is rather less authentic-looking. Build credibility with your customers by getting proper email addresses to match your domain name!!!!)
 

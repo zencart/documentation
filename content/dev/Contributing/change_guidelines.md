@@ -4,7 +4,7 @@ weight: 2
 ---
 
 ## How do you make a change? 
-Changes are made through pull requests. If you are unfamiliar with pull requests, please review the project's [Github Workflow](https://docs.zen-cart.com/dev/contributing/github_workflow/). 
+Changes are made through pull requests. If you are unfamiliar with pull requests, please review the project's [Github Workflow](/dev/contributing/github_workflow/). 
 
 ## What should go into a change? 
 For non-trivial changes, the best practice is to have a single PR for each issue you are addressing. The reasons for this are as follows: 
@@ -14,7 +14,7 @@ For non-trivial changes, the best practice is to have a single PR for each issue
 
 ## Bug Fixes and Formatting 
 When changing existing files, try not to make large formatting changes.  Keeping the existing format allows people to more easily compare versions.  See 
-[Coding Standards](https://docs.zen-cart.com/dev/contributing/coding_standards/) for more details. 
+[Coding Standards](/dev/contributing/coding_standards/) for more details. 
 
 ## How should I document a change?  
 Documentation starts with the title of the PR.  A good title describes succinctly the issue being solved. 

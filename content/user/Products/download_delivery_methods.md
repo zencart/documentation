@@ -1,7 +1,7 @@
 ---
 title: Download delivery methods 
 category: products
-weight: 1
+weight: 10
 ---
 For downloadable products, there are several ways of delivering downloadable content to your customers, depending on your hosting configuration.  
 

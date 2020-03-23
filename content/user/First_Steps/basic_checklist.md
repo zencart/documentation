@@ -1,7 +1,7 @@
 ---
 title: Basic Checklist
 category: first_steps 
-weight: 1
+weight: 10
 ---
 
 ## Introduction

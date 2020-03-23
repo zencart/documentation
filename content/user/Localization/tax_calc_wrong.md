@@ -1,7 +1,7 @@
 ---
 title: Tax calculations are wrong 
 category: localization 
-weight: 1
+weight: 10
 ---
 
 If you haven't configured taxes yet, please see the related articles on setting up taxes in the [localization folder](/user/localization).  If you have set up taxes according to the instructions, but they don't seem to be working as expected, use the following list as a guide. If you intend to request assistance on the forum, please include the answers to these questions with your support request/inquiry:

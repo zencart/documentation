@@ -114,9 +114,9 @@ weight: 30
 <div class='indent'>Number of products to display in the 'This Customer Also Purchased' box</div>
 
 
-<b>Recent Purchases Box- NOTE: box is disabled </b>
+<b>Recent Purchases Box</b>
 
-<div class='indent'>Number of products to display in the recent purchases box</div>
+<div class='indent'>Number of products to display in the order history box</div>
 
 
 <b>Customer Order History List Per Page</b>

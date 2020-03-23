@@ -1,7 +1,7 @@
 ---
 title: How do I change the Logo in my HTML emails ?
 category: email
-weight: 1
+weight: 10
 ---
 
 The email logo is contained in the file `email/header.jpg`. 

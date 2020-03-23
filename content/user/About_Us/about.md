@@ -1,7 +1,7 @@
 ---
 title: Bug Reports, Code Contributions, Security and Fees
 category: about_us
-weight: 1
+weight: 10
 ---
 
 ## **Bug Reports**
@@ -9,7 +9,8 @@ weight: 1
 Zen Cart takes bug reports seriously, and endeavors to find resolutions to them immediately. You'll observe that we tend to post solutions for bugfixes as soon as we have them. This does not always mean a new "release", unless there is something fairly major. Patches are issued sparingly in the interest of keeping code both manageable and still current.  
 
 We encourage all users to make bug reports.  
-To understand the importance of doing so, please see [this article](/user/about_us/bug_reporting/). 
+
+To learn how to make a bug report, please see [this article](/user/about_us/bug_reporting/). 
 
 ## **Security Reports**
 

@@ -1,7 +1,7 @@
 ---
 title: How do I enable SSL after I have installed Zen Cart?
 category: installing
-weight: 1
+weight: 10
 ---
 SSL (secure socket layer) is used to encrypt communications between the browser and the server, thus protecting sensitive data being transferred from your customers to your store. You will recognize SSL mode by seeing the familiar HTTPS:// in the URL in your browser's address bar. This should always also be accompanied by a secure padlock symbol in your browser, often in the status bar at the bottom of the browser window or in the address bar.  
 
@@ -15,7 +15,7 @@ You will need to arrange with your hosting company to have SSL capability added 
 - URL looks like: `https://www.YOURSITE.com`
 - requires purchase of an SSL certificate, at an annual fee ranging from $20 to $900 per year (you do NOT need the most expensive one for simple secure SSL use on your site. From a technical perspective, a low cost certificate is just as secure as the more expensive one). The certificate is usually installed by your hosting company. You can purchase one yourself or have your hosting company purchase it for you.  
 - usually requires a small monthly fee increase to your hosting account for a "dedicated IP address". Confirm with your hosting company.  
-- when you purchase the certificate, decide FIRST whether you want your SSL URL to include the "[www."](http://www.%22) prefix or not. Ideally ask the certificate company to allow you to use BOTH. They can do that, usually at no extra charge.  
+- when you purchase the certificate, decide FIRST whether you want your SSL URL to include the `www.` prefix or not. Ideally ask the certificate company to allow you to use BOTH. They can do that, usually at no extra charge.  
 - Dedicated SSL is a much better shopping experience for your customers, and also more likely to be easier to configure for your store to use than a Shared Certificate.  
 
 <u>**Shared SSL**</u>  
@@ -29,9 +29,9 @@ You will need to arrange with your hosting company to have SSL capability added 
 -- and various other formats  
 - There is usually no special setup required in your hosting account. You simply need to ask your hosting company for the correct URL to use.  
 
-**IMPORTANT NOTE ABOUT SSL AND ZEN CART:  
-**- It is important that your hosting company's servers be configured to serve both SSL and non-SSL content from the SAME folder on the SAME server. Attempting to use a hosting service whose SSL service is on a separate server or points to a separate folder will result in numerous operational problems, and possibly very complicated maintenance problems.  
-- The hosting company should allow the $_SERVER variable values to be set via traditional means (ie: 'SSL=on' or 'SERVER_PORT=443' or 'HTTPS=1', etc). If they can't do that, then Zen Cart may have challenges switching into SSL mode automatically. Most good reputable hosting companies already do this. Those who don't should generally be avoided.
+**IMPORTANT NOTE ABOUT SSL AND ZEN CART:**
+It is important that your hosting company's servers be configured to serve both SSL and non-SSL content from the SAME folder on the SAME server. Attempting to use a hosting service whose SSL service is on a separate server or points to a separate folder will result in numerous operational problems, and possibly very complicated maintenance problems.  
+- The hosting company should allow the `$_SERVER` variable values to be set via traditional means (ie: 'SSL=on' or 'SERVER_PORT=443' or 'HTTPS=1', etc). If they can't do that, then Zen Cart may have challenges switching into SSL mode automatically. Most good reputable hosting companies already do this. Those who don't should generally be avoided.
 
 # 2\. Make sure SSL is working on your hosting account first
 
@@ -48,28 +48,30 @@ Change `includes/configure.php` and `admin/includes/configure.php` to:
 
 ```
 // Define the webserver and path parameters  
-define('HTTP_SERVER', 'http://www.YOURSTORE.com');  
-define('HTTPS_SERVER', 'https://www.YOURSTORE.com'); 
+define('HTTP_SERVER', 'http://www.YOURSITE.com');  
+define('HTTPS_SERVER', 'https://www.YOURSITE.com](https://www.YOURSITE.com)');  
 define('ENABLE_SSL', 'true');  
 ```
 
-NOTE: (in your admin configure.php, the above define is called `ENABLE_SSL_CATALOG`)  
+**NOTE:** (in your admin configure.php, the above define is called `ENABLE_SSL_CATALOG`)  
 
 If you're using a shared SSL certificate, then on the `HTTPS_SERVER` line use the URL for that certificate, as provided by your hosting company.  
 
 If you want your ENTIRE site to be served over SSL (**recommended**), then use `https` on both defines:  
 
 ```
-define('HTTP_SERVER', 'https://www.YOURSTORE.com');  
-define('HTTPS_SERVER', 'https://www.YOURSTORE.com'); 
+define('HTTP_SERVER', 'https://www.YOURSITE.com');  
+define('HTTPS_SERVER', 'https://www.YOURSITE.com](https://www.YOURSITE.com)');  
 define('ENABLE_SSL', 'true');  
 ```
 
-**ADMIN SECURITY NOTE:** In Zen Cart v1.x, if you want to secure all your ADMIN pages with SSL, set the HTTP_SERVER in your "/admin/includes/configure.php" to the same working URL as your HTTPS_SERVER setting. (You will then have both an HTTP_SERVER and HTTPS_SERVER defined to the same value.) (Also, if your DIR_WS_ADMIN looks something like '/adminfoldername/' and doesn't have references to $p1 or any other $ variables in it, then do the same with DIR_WS_ADMIN to make it match DIR_WS_HTTPS_ADMIN.) **THIS IS REQUIRED FOR PCI COMPLIANCE, and will happen automatically with new installations of v1.5.x and newer.**  
+**ADMIN SECURITY:** In Zen Cart v1.x, if you want to secure all your ADMIN pages with SSL, set the `HTTP_SERVER` in your `/admin/includes/configure.php` to the same working URL as your `HTTPS_SERVER` setting. (You will then have both an `HTTP_SERVER` and `HTTPS_SERVER` defined to the same value.) (Also, if your `DIR_WS_ADMIN` looks something like '/adminfoldername/' and doesn't have references to $p1 or any other $ variables in it, then do the same with `DIR_WS_ADMIN` to make it match `DIR_WS_HTTPS_ADMIN`.) 
+
+**THIS IS REQUIRED FOR PCI COMPLIANCE, and will happen automatically with new installations of v1.5.x and newer.**  
 
 **IMPORTANT NOTE:** Remember, your configure.php files are probably marked read-only. You'll need to change them to read-write in order to upload your updates, and then put them back to read-only. [See the FAQ on setting file permissions.](/user/installing/permissions/)
 
-If you are intending to make ALL your pages be SSL, then set `HTTP_SERVER` to an https URL.  
+If you are intending to make ALL your pages be SSL, then set `HTTP_SERVER` to an `https` URL.  
 
 # 4\. <font color="#FF0000">Clear your browser's cache and cookies</font>
 

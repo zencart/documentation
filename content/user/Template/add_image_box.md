@@ -1,7 +1,7 @@
 ---
 title: Add image to sidebox or centerbox
 category: templates
-weight: 1
+weight: 10
 ---
 
 The exact method will depend upon whether you are creating a small image to be repeated, or a image that will either span the box or is intended to be centred within it. (There are of course other design possibilities but we'll concentrate on these for the moment).

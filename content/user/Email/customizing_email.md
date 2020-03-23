@@ -1,7 +1,7 @@
 ---
 title: Customizing Email
 category: email
-weight: 1
+weight: 10
 ---
 
 There are several places in the Zen Cart® code where e-mails to the customer are constructed. To create a consistent feel for all your communication with the customer, you will want to make sure you modify all these places whenever you modify one. 

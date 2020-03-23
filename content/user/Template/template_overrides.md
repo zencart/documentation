@@ -1,7 +1,7 @@
 ---
 title: Template Overrides System 
 category: template 
-weight: 1
+weight: 10
 ---
 
 ## Introduction
@@ -121,7 +121,9 @@ See [how to create a new template](/user/template/creating_template).
 See [how to customize your new template](/user/template/customizing_template).
 
 Now that you know how to use the template system and have created and activated your own template, how would you go ahead in order to find the correct file for the changes you want to do?  
--You need to introduce yourself to the [Developers Tool Kit](/user/admin/developers_toolkit)
-available from the administration area.
 
-Be sure that you get to know it well, because you will definitely need it.
+Learn to use the [Developers Tool Kit](/user/admin/developers_toolkit) available from the administration area.  It will help you track down the files that you need to change. 
+
+See also [this related FAQ](/user/template/what_files). 
+
+

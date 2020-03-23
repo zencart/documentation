@@ -1,14 +1,14 @@
 ---
-title: Detailed Upgrading Instructions
+title: Upgrading - Detailed Instructions
 category: Upgrading
-weight: 20
+weight: 10
 ---
 
 Preamble worth reading: [How-do-I-rebuild-my-site-on-the-new-version-instead-of-upgrading](https://www.zen-cart.com/entry.php?3-How-do-I-rebuild-my-site-on-the-new-version-instead-of-upgrading). 
 
 ## 3 EASY STEPS TO UPGRADE ZEN CART
 
-NOTE: For each new release, there are important documents in the [/docs](https://www.zen-cart.com/docs/) folder of the Zen Cart ZIP file.  Please check this folder for any special notes about the version you are upgrading from/to.  
+**NOTE:** For each new release, there are important documents in the [/docs](https://www.zen-cart.com/docs/) folder of the Zen Cart ZIP file.  Please check this folder for any special notes about the version you are upgrading from/to.  
 
 ## Getting Started 
 
@@ -47,9 +47,13 @@ Unzip a copy of the original Zen Cart® files for the version you _originally in
 Make a list of any add-ons you have installed, for later reference.  
 
 Run a tool like [WinMerge](http://winmerge.sf.net/) to compare the "Original" Zen Cart® files in `zen_orig` against your working backup files in `zen_backup`.
+
 Note all the files that are "different". In WinMerge, double-click on each file and note what the differences are.  
+
 If the differences are just language defines for display text, those will be simple to carry forward.  
+
 If the differences are actual programming/code differences, you will need to make detailed notes in order to carry over those changes to the new new new version.  
+
 Any mods/add-ons you've installed will likely contain many programming changes, and may not be fully compatible with the newer Zen Cart® release.  
 
 Your list of add-on's may help you narrow down the source of any differences you're finding between versions. You may have to download the add-on again to take a look at the readme or code contained in it. You may have to contact the author to ask for an updated version.  
@@ -65,8 +69,11 @@ As you make your list of changed files, etc, at this stage, you may want to move
 Download and unzip the latest Zen Cart® version to your PC. This will be in a 3rd directory (perhaps `zen_new`), separate from the other two folders compared above.  
 
 Using the list of files you made earlier, go through each "changed" file, and make your changes from the old version into the new version.  
+
 Simple language edits will be just a matter of copy-and-paste.  
+
 Programming changes to core components will be more difficult and require significant testing.  
+
 You may find WinMerge handy at this stage to apply edits as well. However, you will see many extra differences that may not be related to your own customizations, or that may conflict. Be careful making changes to program code.  
 
 Note that there will be several changes you will have to make to files that you have overridden using the template overrides system. Thus, you'll want to compare files from 
@@ -81,10 +88,12 @@ Note that there will be several changes you will have to make to files that you 
 Make a NEW database to install the new version of Zen Cart® into.  
 
 If the last backup you made of your data is older than the last order that might have been processed or customer registration, make a fresh database backup.  
+
 Restore your database from the backup in step #1 earlier into your NEW database just created.  
 
 If your `zen_new` folder doesn't have `includes/configure.php` and 
 `admin/includes/configure.php` files, copy them from your old store folder.  
+
 EDIT your `zen_new/includes/configure.php` file and ensure that the `DIR_FS_CATALOG` and `DIR_WS_CATALOG` and `DIR_FS_SQL_CACHE` (and other path settings too) correctly match your NEW directory structure on the server.  
 
 EDIT your `zen_new/includes/configure.php` file and ensure that your `DATABASE_NAME` matches your NEW database. Also verify database username and password in case that information has changed. Save this file, and be sure to upload it as part of the next step:  
@@ -96,12 +105,13 @@ Run `zc_install/index.php` and choose "_Upgrade_" when prompted. (Don't select "
 Test your customizations. Edit as needed. Compare with the test/demo install performed earlier, as needed.  
 
 When satisfied that all is OK, go live.  
+
 If significant time has passed since you did your last backup, you may want to repeat the steps in this "Testing" section again, using a fresh backup from your live shop. You don't need to re-upload files again ... simply do the database restore, and run the installer to do the database upgrade again.  
 
 To go live, put your shop into "Down for Maintenance" mode in the admin area. Be sure to add your IP address to the list of allowed addresses to get into the site for previewing.  
+
 This can be done easiest by renaming `store_new` to `store`. (You'll have to rename "store" to something else first.)  
+
 Test it to be sure that things are operating as desired. If you have small problems to repair, turn "Down for maintenance" on and off again as necessary.  
 
-## NOTES
-
-Remember that your "configure.php" files on your server are typically set to read-only, and thus in order to upload them will require that you mark those files read-write before uploading.  Be sure to put them back to read-only after uploading.</div>
+Remember that your "configure.php" files on your server are typically set to read-only, and thus in order to upload them will require that you mark those files read-write before uploading.  Be sure to put them back to read-only after uploading.

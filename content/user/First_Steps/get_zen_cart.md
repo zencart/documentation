@@ -1,7 +1,7 @@
 ---
 title: Where can I download the Zen Cart code?
 category: first_steps
-weight: 1
+weight: 10
 ---
 
 You can download any of the Zen Cart original files (current version and older versions) by clicking on the "Home" link at the top of this page, and then clicking on the "Download Zen Cart" link found there. 

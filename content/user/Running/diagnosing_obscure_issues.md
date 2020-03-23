@@ -1,7 +1,7 @@
 ---
 title: Diagnosing Obscure Issues
 category: running 
-weight: 1
+weight: 10
 ---
 
 ## General Troubleshooting to find odd problems

@@ -1,7 +1,7 @@
 ---
 title: How to install a plugin
 category: plugins
-weight: 1
+weight: 10
 ---
 
 If you installed your Zen Cart using Fantastico or perhaps had a friend or subcontractor install it for you, installing a mod might seem daunting. Don't worry - there's nothing to it as long as you follow some basic principles.  
@@ -70,7 +70,7 @@ I chose the example of Quantity Discounts because it's the simplest form of a mo
 Zen Cart has two facilities for dealing with situations like this, and you need to understand them prior to installing mods to save yourself grief the next time you upgrade your cart.  
 
 Since changing the "skin" or "theme" of the cart is the most common customization, the user interface is built to accommodate relatively easy customization. Zen Cart calls this mechanism "template overrides" and provides guidelines on how to 
-[create a custom template](https://docs.zen-cart.com/user/template/creating_template/).
+[create a custom template](/user/template/creating_template/).
 A common convention is to assume the template name is "custom." So if you see a file with the name "custom" as part of its name, you know it's a template component. If you've used a name other than "custom" then you will have to move the file accordingly. **Note:** If you are using Zen Cart 1.5.5 or higher, your template name will be "responsive_classic" if you have not changed it.  
 
 Some examples: the [Better Together Promotional Page](https://www.zen-cart.com/downloads.php?do=file&id=969) contains a file called
@@ -182,4 +182,8 @@ The best way to upload is to upload the ENTIRE includes directory from the unzip
     rename this to
 
     `includes/templates/blue`
+
+## Too Much? 
+If this sounds like too much for you, the best route is to go onto the 
+[Zen Cart Commercial Help Wanted forum](https://www.zen-cart.com/forumdisplay.php?138-Commercial-Help-Wanted) and hire a pro. 
 

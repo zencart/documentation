@@ -1,7 +1,7 @@
 ---
 title: Products - can they be both downloadable and shippable? 
 category: products
-weight: 1
+weight: 10
 ---
 
 You have Products, Downloads and some Combo Products ...  
@@ -21,7 +21,7 @@ If there is no weight to the order, does the order have Free Shipping?
 Note: When using Free Shipping, Enable the Free Shipping Module this will only show when shipping is free.
 ```
 
-NOTE: the Free Shipping module that is referenced here is called the FREE SHIPPING! freeshipper shipping module 
+**NOTE:** the Free Shipping module that is referenced here is called the FREE SHIPPING! freeshipper shipping module 
 
 Next, let's look at a Download Product, one that is ONLY a Download
 
@@ -82,7 +82,7 @@ A Product that is a Download OR a Physical Product, is setup like a Normal Produ
 
 I prefer that the Attribute hold the Weight or the Download so the Product does not look moofy with a Negative weight on the Attribute ...  
 
-NOTE: Attribute Weight can be turned off in the Catalog -> Product Type -> EDIT LAYOUT ...  
+**NOTE:** Attribute Weight can be turned off in the Catalog -> Product Type -> EDIT LAYOUT ...  
 
 Now, back to the Combo Product which is BOTH a Physical Product and a Download at the SAME time ...  
 

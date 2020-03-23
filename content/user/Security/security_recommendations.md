@@ -1,7 +1,7 @@
 ---
 title: Security Recommendations
 category: security
-weight: 1
+weight: 10
 ---
 
 ## SSL Security Protection Tips
@@ -65,8 +65,10 @@ This will not only help prevent outgoing emails from ending up in spam folders, 
 
 It's important that you CHMOD (set permissions) on the two configure.php files as <u>**read-only**</u>. Typically this means setting them to _644_, or in some cases _444_.  
 The configure.php files are located in:  
-/<YourStoreFolder>/includes/configure.php  
-/<YourStoreFolder>/renamed-admin/includes/configure.php  
+/&lt;YOURSITEFOLDER&gt;/includes/configure.php  
+/&lt;YOURSITEFOLDER&gt;/renamed-admin/includes/configure.php  
+
+If you're not clear on what YOURSITEFOLDER means, please [read this](/user/first_steps/basic_terms/). 
 
 Quite often setting permissions on a file to read only via FTP will not work. Even if the permission looks like it was set to read only, it really may not have been. You must verify the correct setting by entering the store and seeing if there is a warning message on the top of the screen. "Warning: I am able to write to the configuration file:..." In this case you will need to use the "File Manager" supplied with your webhosting account.
 
@@ -141,7 +143,7 @@ Suggested content for _.htaccess_ files in folders where there is an _index.html
    Order Deny,Allow  
    Deny from all  
   </FilesMatch>  
-  ### NOTE: Add only appropriate PERMITTED filetypes to this list, depending on which folder you're protecting:  
+  ### Add only appropriate PERMITTED filetypes to this list, depending on which folder you're protecting:  
   <FilesMatch .*\.(js|css|jpg|gif|png|swf)>  
    Order Deny,Allow  
    Allow from all  

@@ -1,5 +1,5 @@
 ---
-title: Option Namae Sorter 
+title: Option Name Sorter 
 category: admin_pages
 weight: 80
 ---

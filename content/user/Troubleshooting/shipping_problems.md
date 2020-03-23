@@ -1,7 +1,7 @@
 ---
 title: Shipping Problems 
 category: troubleshooting
-weight: 1
+weight: 10
 ---
 
 ### My shipping is figured wrong, it is 3 pounds too heavy

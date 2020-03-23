@@ -34,7 +34,7 @@ You need to generate your username and transaction key:
 5.  Enter your Login ID and Transaction Key as recorded earlier
 6.  Configure the rest of the settings as desired:
 
-1.  Transaction Mode Response -- Set this to Production for normal use, or simulate some tests using the Test option (See below for testing instructions). NOTE: This can be set to "Test" or "Production" regardless of whether your Authorize.net account is in Test mode.  
+1.  Transaction Mode Response -- Set this to Production for normal use, or simulate some tests using the Test option (See below for testing instructions). **NOTE:** This can be set to "Test" or "Production" regardless of whether your Authorize.net account is in Test mode.  
 
 2.  Authorization Type - In most cases you will want to do an "Authorize+Capture" to capture payment immediately. In some situations, you may prefer to simply "Authorize" transactions, and then manually use your Merchant Terminal to formally capture the payments (esp if payment amounts may fluctuate between placing the order and shipping it)
 3.  Enable Database Storage - If you enable this option, extended details of each transaction will be stored, enabling you to more effectively conduct audits of fraudulent activity or even track/match order information between Zen Cart and your Authorize.net records.

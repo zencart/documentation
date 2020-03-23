@@ -11,7 +11,9 @@ weight: 60
 
 <b>Postal Code</b>
 
-<div class='indent'>Enter the Postal Code (ZIP) of the Store to be used in shipping quotes. NOTE: For USA zip codes, only use your 5 digit zip code.</div>
+<div class='indent'>Enter the Postal Code (ZIP) of the Store to be used in shipping quotes. 
+
+**NOTE:** For USA zip codes, only use your 5 digit zip code.</div>
 
 
 <b>Enter the Maximum Package Weight you will ship</b>

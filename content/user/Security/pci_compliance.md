@@ -1,7 +1,7 @@
 ---
 title: PCI Compliance Statement and PABP Standards
 category: security
-weight: 1
+weight: 10
 ---
 
 ## PCI DSS Compliance Questions Answered

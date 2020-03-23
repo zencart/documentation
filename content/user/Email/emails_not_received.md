@@ -1,7 +1,7 @@
 ---
 title: Emails are not received or sending
 category: email
-weight: 1
+weight: 10
 ---
 ## Emails Are Not Arriving
 Sometimes your mail server configuration requires a particular format in order to send messages.

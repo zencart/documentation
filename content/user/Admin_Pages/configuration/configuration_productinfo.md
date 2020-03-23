@@ -86,7 +86,9 @@ weight: 170
 
 <b>Product Quantity Box Status - Adding New Products</b>
 
-<div class='indent'>What should the Default Quantity Box Status be set to when adding New Products?<br /><br />0= off<br />1= on<br />NOTE: This will show a Qty Box when ON and default the Add to Cart to 1</div>
+<div class='indent'>What should the Default Quantity Box Status be set to when adding New Products?<br /><br />0= off<br />1= on<br />
+
+**NOTE:** This will show a Qty Box when ON and default the Add to Cart to 1</div>
 
 
 <b>Product Reviews Require Approval</b>

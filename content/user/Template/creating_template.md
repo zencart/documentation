@@ -1,12 +1,10 @@
 ---
 title: Creating a Template 
 category: template 
-weight: 1
+weight: 10
 ---
 
 The Zen Cart® templating system uses a CSS based layout.
-
-In this article, **CAPITALIZED** words refer to a folder or language that you choose. We use **YOURTEMPLATE** for your template and **ENGLISH** for your language by default. Change these if needed.
 
 First, open 
 `includes/templates/`
@@ -81,4 +79,8 @@ It is advisable to clone the `/includes/languages/english/html_includes/responsi
 ### What about english.php?
 
 It's advisable to leave the main `/includes/languages/english.php` untouched, and to put your customizations into a new file: `/includes/languages/YOURTEMPLATE/english.php` (ie: if you want to customize the text for `FOOTER_TEXT_BODY`, put *just* the define for `FOOTER_TEXT_BODY` into your `YOURTEMPLATE/english.php` file (no need to copy the entire file; in fact, upgrades are easier if you only put the individual changes there).
+
+**NOTE:** See [Basic Terms](/user/first_steps/basic_terms/) for an 
+explanation of `YOURLANGUAGE` and `YOURTEMPLATE` if these terms are 
+unfamiliar. 
 

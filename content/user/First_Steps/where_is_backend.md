@@ -1,7 +1,7 @@
 ---
 title: Where is the Admin / Back-end interface? 
 category: first_steps 
-weight: 1
+weight: 10
 ---
 
 You can access the Zen Cart admin area via your browser by pointing it to:

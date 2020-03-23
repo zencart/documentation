@@ -1,5 +1,5 @@
 ---
-title: How do I upgrade my site? 
+title: Upgrading - Basic instructions 
 category: Upgrading 
 weight: 10
 ---

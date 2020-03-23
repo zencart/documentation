@@ -1,7 +1,7 @@
 ---
 title: ERROR 0071 There appears to be a problem with the database. Maintenance is required.
 category: troubleshooting 
-weight: 1
+weight: 10
 ---
 
 This error generally means that one or more system tables cannot be found in the database.

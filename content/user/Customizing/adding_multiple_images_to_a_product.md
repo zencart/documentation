@@ -1,20 +1,19 @@
 ---
-title: How Do I add Additional Images
-category: Products
-weight: 1
+title: Additional Images - adding 
+category: customizing 
+weight: 10
 ---
 
 ## A product owns 1 filename ...
 
-_Note: the **base image name** is the original image name loaded for the product._  
+**NOTE:** the **base image name** is the original image name loaded for the product.  
 
-**The concept of multiple images is best explained using an example:  
+The concept of multiple images is best explained using an example:  
 From the Admin, you edit a product and specify an image file called:  
-<font color="#ff0000">a_bugs_life.gif</font>  
-and put it in the<font color="#ff0000">  
-/images/dvd</font> directory via the drop down.  
+`a_bugs_life.gif` and put it in the `/images/dvd` directory via the drop down.  
 
-Now you use your FTP program to upload additional images to <font color="#ff0000">/images/dvd</font>  
+Now you use your FTP program to upload additional images to 
+`/images/dvd`
 
 *   a_bugs_life_01.gif
 *   a_bugs_life_02.gif
@@ -34,7 +33,7 @@ For the medium image (used as the main image on the product_info page) I upload 
 
 *   /images/medium/dvd/a_bugs_life_MED.gif
 
-NOTE: There is <font color="#ff0000">ONLY ONE ( 1 ) Medium Image</font> used per Product on the Product Info page: (pages named product_info, product_music_info etc.) The naming is related directly to the original image.  
+**NOTE:** There is <font color="#ff0000">ONLY ONE ( 1 ) Medium Image</font> used per Product on the Product Info page: (pages named `product_info`, `product_music_info`, etc.) The naming is related directly to the original image.  
 
 Now you do not need to use subdirectories for loading your images.  
 
@@ -50,21 +49,22 @@ You can also change the suffix for Large and Medium from _LRG and _MED to someth
 
 I use the suffixes so when looking at 2000 images I can tell what size I am really looking at just from the name. (Very handy for troubleshooting whether the right image is being loaded.)  
 
-_In a future release, this will be more automated with options for auto-generating the thumb and medium based on dpi, height, width and compression ratio  
-For now, it uses the same directories that the auto-generated would use, but you do the FTP manually for the different sizes and additional images._  
+For now, it uses the same directories that the auto-generated would use, but you do the FTP manually for the different sizes and additional images.  
 
 ## Additional information
 
-Note: the **base image name is the original image name loaded for the product.**  
+**Note:** the base image name is the original image name loaded for the product.  
 
-The suffix of _MED and _LRG is optionally defined but very handy for distinguishing image names from a visual standpoint.  
-The medium images are kept in the<font color="#800000">/images/medium</font> directory and the large in the <font color="#ff0000"><font color="#800000">/images/large</font></font> directory  
+The suffix of **MED** and **LRG** is optionally defined but very handy for distinguishing image names from a visual standpoint.  
+
+The medium images are kept in the `/images/medium` directory and the large in the `/images/large` directory.
 
 Additional images can be the base name of the original image plus anything after that. For example:  
 
 **Original Image:** fred.jpg  
 
-All of these are considered additional images because they contain the base image name **<font color="#ff0000">PROVIDED</font>** you are in the <font color="#ff0000">/images</font> directory:  
+All of these are considered additional images because they contain the base image name **<font color="#ff0000">PROVIDED</font>** you are in the 
+`/images` directory:  
 
 fredabc.jpg  
 fred_73b2.jpg  
@@ -73,11 +73,11 @@ fred_02.jpg
 freddy.jpg  
 fredrick.jpg  
 
-The advantage of the numbering on the additional images like: _01 _02 _03 is that they will sort in this order when displayed.  
+The advantage of the numbering on the additional images like: `_01`, `_02`, `_03` is that they will sort in this order when displayed.  
 
 These images are places in the same directory as the main image such as /images  
 
-The large image match would then go in /images/large or /images/large with the Admin defined suffix added to it of _LRG  
+The large image match would then go in /images/large or /images/large with the Admin defined suffix added to it of `_LRG `
 
 fredabc_LRG.jpg  
 fred_73b2_LRG.jpg  
@@ -86,37 +86,36 @@ fred_02_LRG.jpg
 freddy_LRG.jpg  
 fredrick_LRG.jpg  
 
-However ... if using <font color="#ff0000">SUBDIRECTORIES</font> such as <font color="#ff0000">/images/mystuff</font> then you need the underscore ( <font color="#ff0000">_</font> ):  
+### Using Subdirectories 
+If you are using subdirectories such as `/images/mystuff`
+then you need the underscore:
 
-Original Image: fred.jpg  
+Original Image: `/images/dvd/fred.jpg`
 
-All of these are considered additional images because they contain the base image name **<font color="#ff0000">PROVIDED</font>** you are in the <font color="#ff0000">/images/mystuff</font> subdirectory or<font color="#ff0000">/images/dvd</font> or any other subdirectory of /images:  
+All of these are considered additional images because they contain the base image name but are in subdirectories of `/images`.
 
-fred_abc.jpg  
-fred_73b2.jpg  
-fred_01.jpg  
-fred_02.jpg  
-fred_dy.jpg  
-fred_rick.jpg  
+/images/dvd/fred_abc.jpg  
+/images/dvd/fred_73b2.jpg  
 
-The advantage of the numbering on the additional images like: _01 _02 _03 is that they will sort in this order when displayed.  
+The advantage of the numbering on the additional images like: `_01`, `_02`, `_03` is that they will sort in this order when displayed.  
 
-These images are places in the same directory as the main image such as <font color="#ff0000">/images/mystuff <font color="#000000">or</font> /images/dvd</font>  
+These images are places in the same directory as the main image. 
 
-The large image match would then go in <font color="#ff0000">/images/large/mystuff</font> or <font color="#ff0000">/images/large/dvd</font> with the Admin defined suffix added to it of _LRG  
+The large image match would then go in 
+`/images/large/dvd` with the Admin defined suffix added to it of `_LRG`
 
-fred_abc_LRG.jpg  
-fred_73b2_LRG.jpg  
-fred_01_LRG.jpg  
-fred_02_LRG.jpg  
-fred_dy_LRG.jpg  
-fred_rick_LRG.jpg  
+/images/large/dvd/fred_abc_LRG.jpg  
+/images/large/dvd/fred_73b2_LRG.jpg  
+/images/large/dvd/fred_01_LRG.jpg  
+/images/large/dvd/fred_02_LRG.jpg  
+/images/large/dvd/fred_dy_LRG.jpg  
+/images/large/dvd/fred_rick_LRG.jpg  
 
 While both methods are available with or without the underscore, it is recommended to utilize the underscore to avoid confusion. This also provides more flexibility on the image names. However, if you prefer to do without, both methods are available.  
 
 The use of subdirectories help on speed or directory limits, especially on slower servers or servers with limitations.  
 
-NOTE: not all files show via your FTP program when you get into the 1000s of filenames within a directory.  
+**NOTE:** not all files show via your FTP program when you get into the 1000s of filenames within a directory.  
 
 ### ANOTHER WAY TO LOOK AT IT ...
 
@@ -152,3 +151,5 @@ Also, in case it's not self-evident, the files have to actually exist on your se
 
 If you wish to bypass the multiple image capability, you have two options, which are explained in the tutorial 
 [Turning off Additional Images](customizing/turning_off_additional_images).
+
+FIXME: this article needs work 

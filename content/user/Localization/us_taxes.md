@@ -1,7 +1,7 @@
 ---
 title: Tax configuration in the United States
 category: localization
-weight: 1
+weight: 10
 ---
 
 This advice should work for state with a single rate of sales tax.

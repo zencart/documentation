@@ -1,7 +1,7 @@
 ---
 title: Suppressing sidebox display on specific pages 
 category: sideboxes
-weight: 1
+weight: 10
 ---
 
 Example application: I want to display some of my sideboxes on my front page only, and suppress them from all other pages.

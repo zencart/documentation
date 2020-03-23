@@ -1,7 +1,7 @@
 ---
 title: Date format - changing it from the US format to dd/mm/yyyy
 category: localization
-weight: 1
+weight: 10
 ---
 
 There are a number of different date formats used around the world, and the approach for changing to any of them is broadly the same. In this tutorial we'll show how to change from the default US format to the dd/mm/yyyy format used in most other English-speaking countries and those speaking many other languages. As date formats are generally language-specific (or in the case of English, dialect-specific) we'll be editing two Zen Cart language files to make this change.  

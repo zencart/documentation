@@ -45,6 +45,8 @@ Its a good idea to pre plan which attributes you want on which products as you w
 
 There are other pricing options also available besides the standard prices.
 
+FIXME - these items need to be explained
+
 *   One Time Charge - Charge for first item (does not effect prices of subsequent items).
 *   Price Factor
 *   One Time Charge Price Factor

@@ -1,7 +1,7 @@
 ---
 title: Address formats - what are they? 
 category: localization
-weight: 1
+weight: 10
 ---
 You may have noticed the address format value ranges between 1 and 6.
 The Uk is 6 and most other countries are 1. 

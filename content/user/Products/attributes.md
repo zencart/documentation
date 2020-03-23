@@ -1,7 +1,7 @@
 ---
 title: Attributes - adding to products
 category: products
-weight: 1
+weight: 10
 ---
 
 There are 3 parts to attributes:  
@@ -160,7 +160,8 @@ Weight can be entered optionally if it effects the product weight with a prefix 
 + and blank will add the attribute weight  
 - will subtract the attribute weight  
 
-There are other pricing options also available besides the standard prices.  
+There are other pricing options also available besides the standard prices,
+which are controlled by attribute settings. 
 
 *   One Time Charge
 *   Price Factor
@@ -171,6 +172,8 @@ There are other pricing options also available besides the standard prices.
 *   Price per word and free words
 *   Price per letter and free letters
 
+See [Attributes Controller](/user/admin_pages/catalog/attributes_controller). 
+
 4\. Then there are the Attribute Flags in the colored boxes.  
 These are used to help distinguish other features of the attribute such as:  
 
@@ -178,7 +181,8 @@ These are used to help distinguish other features of the attribute such as:
 *   Attribute is Free when product is Free (Some products you may set to Free, but the some attributes are free and some attributes cost money.)
 *   Default Attribute (Should be used especially on Radio buttons, or if you have an attribute you prefer the customer selects.)
 *   Apply Discounts used by Product Sale/Special (this will apply the same type of discount that the product is getting from the products_price vs the special or sale price.)
-*   Include in Base Price (when products are priced by attributes mark the attributes include in base price then the lowest price in each Option Name group are added together to make up the product price. NOTE: when not the product is not marked priced by attribute this setting has no effect on the price.)
+*   Include in Base Price (when products are priced by attributes mark the attributes include in base price then the lowest price in each Option Name group are added together to make up the product price. 
+**NOTE:** when not the product is not marked priced by attribute this setting has no effect on the price.)
 *   Attribute Required for TEXT (Some text is required text and cannot be left blank by the customer.)
 
 5\. If this attribute is a downloadable file, enter the filename.  

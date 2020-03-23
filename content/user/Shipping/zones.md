@@ -16,7 +16,7 @@ By default, the module comes with support for 3 zones. This can be easily altere
 
 Next, you will want to activate the module by going to the Admin, point your cursor at Modules, then clicking on Shipping. A list of all shipping modules should appear. Click on Zone Shipping. Click on the install button.
 
-**<font color="#800000">PLEASE NOTE THAT YOU WILL LOSE YOUR CURRENT SHIPPING RATES AND OTHER SETTINGS IF YOU TURN OFF THIS SHIPPING METHOD.</font>** 
+**<font color="#800000">YOU WILL LOSE YOUR CURRENT SHIPPING RATES AND OTHER SETTINGS IF YOU TURN OFF THIS SHIPPING METHOD.</font>** 
 
 Make sure you keep a backup of your shipping settings somewhere at all times.
 
@@ -55,7 +55,7 @@ For instance: 999:1000
 
 If you want to be able to ship to any country in the world, you will need to enter every country code into the Country fields. For most shops, you will not want to enter every country. This is often because of too much fraud from certain places. If a country is not listed, then the module will add a $0.00 shipping charge and will indicate that shipping is not available to that destination.
 
-<font color="#800000">PLEASE NOTE THAT THE ORDER CAN STILL BE COMPLETED AND PROCESSED!</font>
+<font color="#800000">THE ORDER CAN STILL BE COMPLETED AND PROCESSED!</font>
 
 Lastly, there is a limit of 255 characters on each of the Zone Shipping Tables and Zone Countries. This can be changed in the database to suit your needs.
 

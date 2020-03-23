@@ -1,7 +1,7 @@
 ---
 title: Images - preparing for use
 category: products
-weight: 1
+weight: 10
 ---
 
 ### Image Theory 
@@ -32,7 +32,7 @@ On the other hand, if you’ve only uploaded large files at say 400pixels wide, 
 
 To avoid these issues, the solution is to create 3 sets of images – small, medium and large, compressed and saved at the dimensions you wish to display them and then uploaded to the **images**, **images/medium** and **images/large** directories. If you have hundreds of images, this may seem like a daunting prospect, but it shouldn’t be quite as bad as it sounds. Any decent image-editing application will have some system for batch-processing (carrying out the same actions on multiple files).  
 
-_NOTE: the basic "images" (thumbnails, normal-size images) should be uploaded via admin in the usual way via the product-edit screen, and then FTP should be used for uploading your _MED and _LRG images, as mentioned in the preceding paragraph._  
+**NOTE:** the basic "images" (thumbnails, normal-size images) should be uploaded via admin in the usual way via the product-edit screen, and then FTP should be used for uploading your `_MED` and `_LRG` images, as mentioned in the preceding paragraph.
 
 **Optimising images for ZC**  
 

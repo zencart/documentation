@@ -1,7 +1,7 @@
 ---
-title: How to Rename Your Admin Folder
+title: Renaming Your Admin Folder
 category: Running
-weight: 20
+weight: 10
 ---
 
 While access to your admin area is protected by the requirement of your admin password, it is recommended for additional security that you rename your _admin_ directory after installation. This way, it will be significantly harder for hackers to find your admin area or attempt any attack on breaking into it.
@@ -29,7 +29,7 @@ There is no need to alter the admin configure.php in v1.5.x when renaming your a
 
 Using your FTP software or your webhost's _File Manager_, find your Zen Cart _/admin/_ directory_._ Rename the directory to match the settings you just made in step A.
 
-NOTE: DO NOT advertise this new foldername, else you defeat the entire purpose of renaming it.  And DO NOT EVER put it in your robots.txt file!
+**NOTE:** DO NOT advertise this new foldername, else you defeat the entire purpose of renaming it.  And DO NOT EVER put it in your robots.txt file!
 
 ### C - Login to your admin using the new URL
 
@@ -104,7 +104,7 @@ Be sure to make it Read-Only again when finished.  Often you can right-click th
 
 Using your FTP software or your webhost's File Manager, find your Zen Cart admin/ directory. Rename the directory to match the settings you just made in step A.
 
-NOTE: DO NOT advertise this new foldername, else you defeat the entire purpose of renaming it.  And DO NOT EVER put it in your robots.txt file!
+**NOTE:** DO NOT advertise this new foldername, else you defeat the entire purpose of renaming it.  And DO NOT EVER put it in your robots.txt file!
 
 ## C - Login to your admin using the new URL
 

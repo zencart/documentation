@@ -1,7 +1,7 @@
 ---
 title: Long EZ-Pages are getting cut off
 category: ezpages
-weight: 1
+weight: 10
 ---
 EZ-Pages are stored in your database. The field that contains the HTML can store approximately 65,000 characters - anything after that will be lost.
 

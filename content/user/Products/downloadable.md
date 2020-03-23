@@ -1,15 +1,15 @@
 ---
 title: Downloadable products - how to create? 
 category: products
-weight: 1
+weight: 10
 ---
 
-**<font color="#003300">NOTE: CHECK OUT THE IMPORTANT FACTS ABOUT DOWNLOAD SETTINGS, near the bottom of this article ...</font>**  
+**NOTE:** CHECK OUT THE IMPORTANT FACTS ABOUT DOWNLOAD SETTINGS, near the bottom of this article. 
 
 Downloads are handled as product attributes.  
 So, **FIRST you should familiarize yourself with:** [setting up attributes](/user/products/attributes). 
 
-NOTE: Download files must be loaded (usually by FTP) to your store's  /download directory before trying to link those files to products/attributes .  
+**NOTE:** Download files must be loaded (usually by FTP) to your store's  `/download` directory before trying to link those files to products/attributes .  
 
 ## To add a Download Attribute to a product
 
@@ -27,12 +27,12 @@ NOTE: Download files must be loaded (usually by FTP) to your store's  /download
 1.  Option Name: Download  
     Option Value: MS Word Zip  
     Sort Order: 10  
-    Filename: (enter name of file you uploaded to the  /download folder)  
+    Filename: (enter name of file you uploaded to the  `/download` folder)  
 
 2.  Option Name: Download  
     Option Value: Note Pad Zip  
     Sort Order: 20  
-    Filename: (enter name of file you uploaded to the  /download folder)  
+    Filename: (enter name of file you uploaded to the  `/download` folder)  
 
 Now when shopping, the customer can choose the format.  Depending on your downloads you will want to adjust how you configure things.  
 
@@ -108,27 +108,27 @@ In Attributes Controller:
 
 Option Name: Download 1  
 Option Value: of 5 [Download 1]  
-Download filename of file already uploaded to the /download folder.  
+Download filename of file already uploaded to the `/download` folder.  
 Number of Days and Downloads  
 
 Option Name: Download 2  
 Option Value: of 5 [Download 2]  
-Download filename of file already uploaded to the /download folder.  
+Download filename of file already uploaded to the `/download` folder.  
 Number of Days and Downloads  
 
 Option Name: Download 3  
 Option Value: of 5 [Download 3]  
-Download filename of file already uploaded to the /download folder.  
+Download filename of file already uploaded to the `/download` folder.  
 Number of Days and Downloads  
 
 Option Name: Download 4  
 Option Value: of 5 [Download 4]  
-Download filename of file already uploaded to the /download folder.  
+Download filename of file already uploaded to the `/download` folder.  
 Number of Days and Downloads  
 
 Option Name: Download 5  
 Option Value: of 5 [Download 5]  
-Download filename of file already uploaded to the /download folder.  
+Download filename of file already uploaded to the `/download` folder.  
 Number of Days and Downloads  
 
 Don't worry on the Sort Order as you set the defaults when these were made ...  
@@ -163,7 +163,7 @@ Set Sort Order (if needed or after adding you can run the Update Sort Orders)
 
 Click Insert ...  
 
-If the file is already uploaded to the /download folder (and it needs to be), then you should see a green dot next to the filename ...  
+If the file is already uploaded to the `/download` folder (and it needs to be), then you should see a green dot next to the filename ...  
 
 Now just test and make sure from add to cart to checkout to download that all is working for you.  
 
@@ -191,7 +191,7 @@ If you are using download-by-redirect, then your "pub" folder needs to be read-w
 3.  Downloads in an order by itself will never see the checkout_shipping page ... if you do then your Product is setup wrong for Downloads  
 
 4.  If not on a Windows server, meaning Linux/Unix, /pub should be writable (usually 777 or 755 depending on the host server) and Redirect should be ON  
-    If you cannot use Redirect ON, ask your hosting site why they cannot follow the symbolic link between the /download and /pub directories  
+    If you cannot use Redirect ON, ask your hosting site why they cannot follow the symbolic link between the `/download` and `/pub` directories  
 
 5.  If on a Windows server, /pub does NOT need to be writable/777 since you do not use this directory because symlinks typically don't work on Windows servers, and Redirect is OFF since Redirect requires symlink support.  
 
@@ -199,9 +199,11 @@ If you are using download-by-redirect, then your "pub" folder needs to be read-w
 
 7.  Download files should be zipped for best results and best compatibility for most customers and most browsers.  
 
-8.  Download files should be loaded to the /download directory  
+8.  Download files should be loaded to the `/download` directory  
 
 9.  On the Admin->Catalog->Attributes Controller you should see a green dot next to the filename of the Download itself
 
-**ALSO:** See the Related Article about [Download Delivery Methods](/user/products/download_delivery_methods). 
+**ALSO:** 
+- See the related article about [Download Delivery Methods](/user/products/download_delivery_methods). 
+- See the related article about [Moving your Download Folder](security/relocate_download_folder). 
 

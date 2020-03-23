@@ -1,7 +1,7 @@
 ---
-title: Zen Cart Forum - why can't I post? 
-category: first_steps
-weight: 1
+title: Why can't I post? 
+category: zen_cart_forum
+weight: 10
 ---
 
 

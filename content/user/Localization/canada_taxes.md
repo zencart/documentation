@@ -1,7 +1,7 @@
 ---
 title: Tax configuration in Canada 
 category: localization
-weight: 1
+weight: 10
 ---
 
 Vendors operating in Canada need to accommodate numerous tax configurations to support proper tax collection on sales to customers in provinces where they are registered to sell. There's a Federal GST, HST, and provincial PST/RST.  
@@ -17,7 +17,7 @@ TAX CLASS = A setting assigned to PRODUCTS and to SHIPPING that's used to calcul
 TAX ZONE = A regional setting used to help determine tax rates by geography.  
 TAX RATE = A rate calculated by combining a product's tax class and shipping zone with the relevant tax percentage.  
 
-Zen Cart uses SHIPPING ADDRESS to determine appropriate taxes, i.e. which TAX ZONE you are shipping into. NOTE: this is the shipping address, and *NOT* the billing address.  
+Zen Cart uses SHIPPING ADDRESS to determine appropriate taxes, i.e. which TAX ZONE you are shipping into. **NOTE:** this is the shipping address, and *NOT* the billing address.  
 
 A TAX RATE is determined by comparing SHIPPING ADDRESS to the Tax ZONE set up for the TAX RATE; and also by Tax Class assigned to each product.  
 
@@ -121,7 +121,7 @@ STEP (4): TAX RATES
 Here is where it all comes together: Tax Rates.  
 Tax RATES associate Tax ZONES & Tax CLASSES to determine the correct Tax Rate.  
 
-HINT: The "DESCRIPTION" is what shows up on the invoice, so use it judiciously!!!!!!!!!!!!!  
+**HINT:** The "DESCRIPTION" is what shows up on the invoice, so use it judiciously!!!!!!!!!!!!!  
 
 Locations/Taxes --> Tax Rates  
 
@@ -133,18 +133,18 @@ create SIX (6) Tax Rates:
 - Description: 6.0% GST  
 - Priority: 1  
 
-HINT: Insert your GST# as part of DESCRIPTION and it will show up on invoice !!!  
-HINT: Leave PRIORITY at "1" for a non-cumulative tax (i.e. Ontario)  
-- Tax Class Title: GST/PST/HST Class // HINT: Yes, this is the same one you just used  
+**HINT:** Insert your GST# as part of DESCRIPTION and it will show up on invoice !!!  
+**HINT:** Leave PRIORITY at "1" for a non-cumulative tax (i.e. Ontario)  
+- Tax Class Title: GST/PST/HST Class // **HINT:** Yes, this is the same one you just used  
 - Zone: Ontario PST Zone  
 - Tax Rate (%): 8.0000  
 - Description: 8.0% PST (Ontario)  
 - Priority: 1  
 
-HINT: Leave PRIORITY at "1" for a non-cumulative tax (i.e. Ontario)  
+**HINT:** Leave PRIORITY at "1" for a non-cumulative tax (i.e. Ontario)  
 but change to "2" for cumulative tax (i.e. You are a Quebec store)  
 
-- Tax Class Title: GST/PST/HST Class // HINT: Yes, this is the same one you just used  
+- Tax Class Title: GST/PST/HST Class // **HINT:** Yes, this is the same one you just used  
 - Zone: HST Zone  
 - Tax Rate (%): 14.0000  
 - Description: 14% HST  
@@ -170,7 +170,7 @@ That takes care of taxes on products. And now, the Shipping taxes:
 - Description: 14% shipping HST  
 - Priority: 1  
 
- HINT: The above will calculate PST on shipping. Although there might  
+ **HINT:** The above will calculate PST on shipping. Although there might  
  be a tendenancy to think of shipping as a PST exempt service, in fact  
  the Ontario Ministry of Finance says that for calculating the PST,  
  "The total selling price includes delivery, mailing, transportation, or  
@@ -188,7 +188,7 @@ Edit whichever shipping module(s) you are using.
 
 Tax Class: GST Shipping Class  
 
-SEE PREVIOUS HINT  
+**SEE PREVIOUS HINT** 
 
 STEP (6): Specify the appropriate Tax for PRODUCTS  
 

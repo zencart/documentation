@@ -1,7 +1,7 @@
 ---
 title: Integrating Sales Analytics/Affiliate Tools
 category: orders
-weight: 1
+weight: 10
 ---
 
 On the "checkout_success" page, there are several pieces of data available:  

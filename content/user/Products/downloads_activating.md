@@ -1,7 +1,7 @@
 ---
 title: Downloads - why do they not activate after checkout? 
 category: products
-weight: 1
+weight: 10
 ---
 
 **Downloads are not activated until payment has been received.**
