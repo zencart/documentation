@@ -4,13 +4,13 @@ category: code
 weight: 10
 ---
 
-### <span class="mw-headline" id="Introduction_2">Introduction</span>
+### Introduction
 
 One of the many goals of the Zen Cart project has always been to make it easier for third party developers to add functionality to the core code in an easy and unobtrusive manner. To do this we have in the past relied on the override and auto inclusion systems. However these still do not give developers an easy method of hooking into many areas of core code, without 'hacking' core files themselves.
 
 The observer/notifier system was introduced to give developers unprecedented access to core code, without the need to touch any core files at all. Although ostensibly written for an object-oriented code base, we will see later how it can be used with general procedural code as well.
 
-### <span class="mw-headline" id="Extending_All_Classes">Extending All Classes</span>
+### Extending All Classes
 
 In order to implement the observer/notifier system, some structural changes have been made to Zen Cart. Firstly two new classes have been introduced: the base class (`class.base.php`) and the notifier class (`class.notifier.php`).
 
@@ -21,7 +21,7 @@ The base class contains the code that is used to implement the observer/notifier
 
 The notifier class will be discussed later, when we look at extending the observer/notifier system (ONS) into procedural code.
 
-### <span class="mw-headline" id="Notifiers:_Big_Brother_is_watching">Notifiers: Big Brother is watching</span>
+### Notifiers: Big Brother is watching
 
 So, what is all the fuss about?
 
@@ -45,11 +45,11 @@ There are many other events that have notifiers in Zen Cart v1.3 and newer; for 
 
 All of this notifying is all well and good, but how does this help developers?
 
-### <span class="mw-headline" id="Observe_and_Prosper">Observe and Prosper</span>
+### Observe and Prosper
 
 To take advantage of notifiers, developers need to write some code to watch for them. Observers need to be written as a class. There's even a nice directory, `includes/classes/observers`, where developers can put these classes.
 
-Lets take an example. Using the notifier mentioned above (NOTIFIER_CART_ADD_CART_END), how would I write a class that watched for that event?
+Lets take an example. Using the notifier mentioned above (`NOTIFIER_CART_ADD_CART_END`), how would I write a class that watched for that event?
 
 <pre> <?php
  class myObserver extends base {
@@ -100,7 +100,7 @@ To work around this, we added the 'stub' notifier class. So if you want to creat
    }
 </pre>
 
-### <span class="mw-headline" id="Including_observers_into_your_code">Including observers into your code</span>
+### Including observers into your code
 
 Please note that the `includes/classes/observers` directory is not an autoload directory, so you will need to arrange for `application_top.php` to autoload your observer class as was described above (add a new `config.xxxxx.php` file in the `auto_loaders` folder, etc). Let's assume you are using the freeProduct class (see the example below), and you have saved this in `includes/classes/observers/class.freeProduct.php`.
 
@@ -123,7 +123,7 @@ Note: 10 has been chosen to cause the observer class to be loaded before the ses
 
 To tie this all together, let's look at a real world example.
 
-### <span class="mw-headline" id="A_Real_World_Example">A Real World Example</span>
+### A Real World Example
 
 One of the most-often requested features is the ability for the store to automatically add a free gift to the Shopping Cart if the customer spends more than a certain amount.
 
@@ -226,7 +226,7 @@ It then tests to see if the cart total has dropped below the threshold and, if t
 
 Now that was cool, how about something a little more difficult.
 
-### <span class="mw-headline" id="Another_Real_World_Example">Another Real World Example</span>
+### Another Real World Example
 
 Again we return to the Shopping Cart and promotions. Another oft-requested feature is the BOGOF promotion, or Buy One Get One Free. This is a little more difficult to achieve than our previous example, as there is some manipulation needed of the cart totals. However as you will see it is still pretty much a breeze.
 

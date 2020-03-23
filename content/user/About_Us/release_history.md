@@ -14,7 +14,7 @@ This is the release history of the Zen Cart product.
 
 01/04/2019 - v1.5.6a
 
-12/10/2018 - v1.5.6
+12/10/2018 - v1.5.6 [Release Notes](https://www.zen-cart.com/docs/whatsnew_1.5.6.html)
 
 12/31/2017 - v1.5.5f
 
@@ -28,17 +28,17 @@ This is the release history of the Zen Cart product.
 
 05/05/2016 - v1.5.5a
 
-03/17/2016 - v1.5.5
+03/17/2016 - v1.5.5 [Release Notes](https://www.zen-cart.com/docs/whatsnew_1.5.5.html)
 
-12/31/2014 - v1.5.4
+12/31/2014 - v1.5.4 [Release Notes](https://www.zen-cart.com/docs/whatsnew_1.5.4.html)
 
-07/04/2014 - v1.5.3
+07/04/2014 - v1.5.3 [Release Notes](https://www.zen-cart.com/docs/whatsnew_1.5.3.html)
 
-11/26/2013 - v1.5.2-beta
+11/26/2013 - v1.5.2-beta [Release Notes](https://www.zen-cart.com/docs/whatsnew_1.5.2.html)
 
-09/18/2012 - v1.5.1
+09/18/2012 - v1.5.1 [Release Notes](https://www.zen-cart.com/docs/whatsnew_1.5.1.html)
 
-12/30/2011 - v1.5.0
+12/30/2011 - v1.5.0 [Release Notes](https://www.zen-cart.com/docs/whatsnew_1.5.0.html)
 
 10/27/2010 - v1.3.9h
 

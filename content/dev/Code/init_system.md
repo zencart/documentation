@@ -14,7 +14,7 @@ It is `application_top.php` that is responsible for initialising basic subsystem
 
 In the following sections we will work through exactly how the Zen Cart engine uses `application_top.php` to initialise core systems.
 
-### <span class="mw-headline" id="application_top.php`-`A`little`bit`of`history">application_top.php - A little bit of history</span>
+### application_top.php - A little bit of history
 
 In terms of its osCommerce roots, `application_top.php` was the file included on every page/script needed to invoke and handle basic core sub-systems. Any function/class that was needed globally by any page needed to be initialised here.
 
@@ -26,11 +26,11 @@ The problem with this system is that it only provides for a very few places with
 
 Since v1.3, Zen Cart achieves this by abstracting the code run by `application_top.php` into a control array. This array stores details of functions/classes/init scripts that need to be run, and the order in which they are run in a special PHP array. Given this it is now possible for third party developers to 'hook' into `application_top.php` and be confident that any future code upgrades will not normally overwrite their own code.
 
-### <span class="mw-headline" id="application_top.php`-`Breakpoints">application_top.php - Breakpoints</span>
+### application_top.php - Breakpoints
 
 In Zen Cart there is now almost no procedural code in `application_top.php`. The small amount that is there will be discussed later. The bulk of procedural code in `application_top.php` is now given over to handling breakpoints. Breakpoints can simply be described as points of importance. We currently have approximately 20 breakpoints in `application_top.php`. At each breakpoint something important happens - we may load a function or class, initialise a class, load a script fragment, and so on. The important point is to recognise that at each breakpoint, third party code can, by adding to the control array, also load functions, load classes, initialise classes, run a class method or load (require) a script fragment.
 
-### <span class="mw-headline" id="The`Control`Array">The Control Array</span>
+### The Control Array
 
 Control arrays are automatically loaded from the directory /includes/auto`loaders. Every `*.php` file within that directory is expected to have a certain structure. In v1.3 we use a file called `config.core.php` as the main file for governing `application_top.php`. Third party developers can add their own control array files. The structure of each file should look like this:
 
@@ -113,7 +113,7 @@ The final example, where autotype-'objectMethod' shows how to run a class method
 <pre>  $navigation->add`current`page();
 </pre>
 
-#### <span class="mw-headline" id="Notes`on`admin`autoloaders">Notes on admin autoloaders</span>
+#### Notes on admin autoloaders
 
 The goal of v1.3.x is to eventually remove and refactor all functions into classes. Further, these classes will be common between admin and catalog code.
 
@@ -134,7 +134,7 @@ if this is used in an admin autoloader it will load the class from the catalog c
                               'classPath'=>DIR`WS`CLASSES);
 </pre>
 
-### <span class="mw-headline" id="Overriding.2FExtending`the`system`autoloader">Overriding/Extending the system autoloader</span>
+### Overriding/Extending the system autoloader
 
 There are two ways of overriding/extending the inbuilt auto`loader and thus affecting what happens during the loading of `application_top.php`.
 
@@ -142,13 +142,13 @@ The usual method would be to simply add a new file to the `/includes/auto`loader
 
 Additionally, within the `/includes/auto`loader/` directory is another directory called `overrides`. This can be used to override any autoloader file in the `/includes/auto`loader/` directory. For example, the main autoloader file used in Zen Cart is `config.core.php`. If a file called `config.core.php` is placed in the overrides directory, this will be used instead of the original.
 
-### <span class="mw-headline" id="init`scripts`and`application_top.php">init`scripts and application_top.php</span>
+### init_scripts and application_top.php
 
-#### <span class="mw-headline" id="Introduction">Introduction</span>
+#### Introduction
 
 The initSystem allows you to automate the including/requiring of files and to automate the loading/instantiating of classes. However we still also need to be able to run some procedural code. We also want to allow 3rd parties to override that procedural code. init`scripts allow us to do this.
 
-#### <span class="mw-headline" id="init`scripts">init`scripts</span>
+#### init_scripts
 
 There are currently 18 init`scripts in the base 1.3.0 release. These init`scripts are in the `includes/init`includes` directory.
 
@@ -171,11 +171,11 @@ There are currently 18 init`scripts in the base 1.3.0 release. These init`script
 *   init`templates.php (Responsible for initialising the template System and activating template-specific language-content defines)
 *   init`tlds.php (Responsible for setting Top Level Domain Variables)
 
-#### <span class="mw-headline" id="Overriding`init`scripts">Overriding init`scripts</span>
+#### Overriding init_scripts
 
 It is very simple to override a core init script. The directory includes/init`incudes contains a directory called overrides. If I wanted to override the incudes/init`includes/init`sessions.php script then I would simply create a file called init`sessions.php in the includes/init`includes/overrides directory.
 
-### <span class="mw-headline" id="Procedural`code`in`application_top.php">Procedural code in application_top.php</span>
+### Procedural code in application_top.php
 
 Despite the use of the autoloader system, there is still a little procedural code left in application_top.php; although most of this procedural code is given over to processing autoloaders themselves.
 

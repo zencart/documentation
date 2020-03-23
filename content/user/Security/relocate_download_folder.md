@@ -22,7 +22,7 @@ To do this, you must:
 
 3.  Edit your two configure.php files to show the new path to your download folder:  
     - `/includes/configure.php  `
-    - `/your_admin_folder_name/includes/configure.php`
+    - `/YOURADMIN/includes/configure.php`
 
 You'll need to edit the line that says this:  
   

@@ -6,13 +6,13 @@ weight: 1
 
 Zen Cart's email infrastructure is largely dependent on the services available to the computer operating as your webserver. This includes internet connection issues, available ports, as well as PHP configuration options and the programs/services running on your server.
 
-## <span class="mw-headline" id="Zen_Cart.C2.AE_Email_Infrastructure_Explained">Zen Cart Email Infrastructure Explained</span>
+## Zen Cart Email Infrastructure Explained
 
 Here's how it works:
 
 1.  _Admin_ and _Store_ both use the same infrastructure.
 2.  Zen Cart uses PHPMailer for sending mail.
-3.  Wherever an email is sent, it is initiated via zen_mail() which is in the _/includes/functions/functions_email.php_. This builds the email object according to all your settings in Admin > Config > Email options.
+3.  Wherever an email is sent, it is initiated via `zen_mail()` which is in the `includes/functions/functions_email.php`. This builds the email object according to all your settings in Admin > Config > Email options.
     *   transport method: PHP, smtp, sendmail, sendmail-f, smtpauth, etc.
     *   text-only vs HTML formatted
     *   sent to, sendfrom
@@ -28,7 +28,7 @@ Done.
 
 That's it.
 
-## <span class="mw-headline" id="Prerequisites">Prerequisites</span>
+## Prerequisites
 
 1.  Your webserver must have a mail service enabled. For Linux/Unix hosts, this is typically done via sendmail or exim or qmail daemons. On Windows™ servers, this may be done via services offered with IIS.
 2.  Your webserver must allow email connections from PHP.
@@ -37,7 +37,7 @@ That's it.
     *   If you are running from a home-based server (ie: for testing), note that your ISP may automatically have port 25 blocked so that you have to send mail through their server. In this case, use SMTP for your transport method, and supply your ISP's mailserver as your SMTP host.
     *   If your webhost mailserver is reachable on another port, supply that port number in the SMTP settings.
 
-## <span class="mw-headline" id="Diagnosing_Problems">Diagnosing Problems</span>
+## Diagnosing Problems
 
 1.  change transport methods (ask your host what's best ... they should know how they've configured your server).
     *   NOTE: **SMTPAUTH** is least likely to end up getting treated as spam.
@@ -61,7 +61,7 @@ If the email doesn't get to its destination, then usually the problem is a misco
 
 **For IN DEPTH ASSISTANCE on email matters, see [Advanced Email Troubleshooting I](/user/email/advanced_email_troubleshooting_1/)**
 
-### <span class="mw-headline" id="Advanced_Email_Debugging">Advanced Email Debugging</span> 
+### Advanced Email Debugging
 
 If you are troubleshooting problems with SMTP or SMTPAUTH and want to see the exact responses from the SMTP server handshake, you can do the following to cause the email server conversation to be displayed on-screen during delivery. THIS IS ABSOLUTELY UNSUITABLE FOR USE ON A LIVE STORE because visitors to your site have no business seeing any of the information displayed, and some of the information could be misused by those with malicious intent. USE WITH CAUTION!!!
 
@@ -78,7 +78,7 @@ Then try sending another email. The SMTP handshake information will be dumped to
 
 Be sure to delete that email_debug.php file when you're done testing; otherwise your store won't work properly because of the bizarre information that gets output to the screen!
 
-### <span class="mw-headline" id="Troubleshooting_Questions_for_your_Hosting_Company">Troubleshooting Questions for your Hosting Company</span>
+### Troubleshooting Questions for your Hosting Company
 
 Have you asked your hosting company what the right configuration is for your server to send mail most appropriately?
 
@@ -98,7 +98,7 @@ Is your account's SPF record correct? DKIM?
 
 AOL and Hotmail dump emails originating from server/client IP addresses that fail DNS reverse lookup. You should talk to your webhost to ensure that your webserver and hosting account / domain are properly configured with a PTR or DNS reverse lookup.
 
-## <span class="mw-headline" id="Using_external_SMTP_mail_servers">Using external SMTP mail servers</span>
+## Using external SMTP mail servers
 
 Some people prefer to use resources such as gmail or yahoo mail etc for sending their business emails. There are differing schools of thought about the merits of doing so. If you deem that this is the best practice for your business, the following information may be of help to you.
 
@@ -106,11 +106,11 @@ NOTE: If you are self-hosting on a local PC server for development purposes, rem
 
 See here: for[a list of common server SMTP addresses](http://www.arclab.com/products/amlc/list-of-smtp-and-pop3-servers-mailserver-list.html) if you're using a "free" email service. (Note: many customers prefer that you have a legitimate email address matching your domain name, not something like "billys-store@gmail.com" which is rather less authentic-looking. Build credibility with your customers by getting proper email addresses to match your domain name!!!!)
 
-### <span class="mw-headline" id="SMTP_over_SSL">SMTP over SSL</span>
+### SMTP over SSL
 
 If your host requires that you send email over SSL, then be sure to set your SMTP Port to 465\.
 
-### <span class="mw-headline" id="SMTP_over_TLS">SMTP over TLS</span>
+### SMTP over TLS
 
 TLS is the modern preferred method for secure email transfer. But some hosts still haven't configured their servers for TLS properly, so you may have to use the old SSL approach above.
 
@@ -118,7 +118,7 @@ To use TLS, simply set your port to 587.
 
 In rare cases you may need to get really technical and also specify your TLS/SSL Certificate by adding a define for 'SMTPAUTH_EMAIL_CERTIFICATE_CONTEXT' in the extra_datafiles folder to supply your certificate-context, and in that same file also define SMTPAUTH_EMAIL_PROTOCOL to 'starttls'. This is arguably more complicated and should be considered a last resort. Definitely try to sort out your email issues with your host before attempting StartTLS configuration!!!!
 
-### <span class="mw-headline" id="Yahoo_Hosting">Yahoo Hosting</span>
+### Yahoo Hosting
 
 If you are using Yahoo as a webhost, doing a search in the Yahoo help pages for PHP/Perl set up may help. Also setting up a tmp file in your Yahoo account may shed a bunch of light on things and give you answers right away as to why the e-mail isn't sending.
 
@@ -129,11 +129,11 @@ If you are using Yahoo as a webhost, doing a search in the Yahoo help pages for 
 
 If you're hosting someplace other than Yahoo but trying to send email through your Yahoo email address, work with your hosting company to configure your DomainKeys and SPF settings to allow the emails to be accepted instead of being rejected as forged spam messages.
 
-### <span class="mw-headline" id="Google_Mail_.2F_Gmail">Google Mail / Gmail</span>
+### Google Mail / Gmail
 
 Gmail / Google Apps Mail requires that your email communications occur over a secure channel, which means you need to send on port 587 for TLS. The latest version of Zen Cart supports this by using the following settings in Admin->Configuration->Email Options:
 
-#### <span class="mw-headline" id="Gmail">Gmail</span>
+#### Gmail
 
 *   Email Transport: Gmail
 *   SMTP Username: your gmail username
@@ -141,7 +141,7 @@ Gmail / Google Apps Mail requires that your email communications occur over a se
 *   SMTP Host: smtp.gmail.com
 *   SMTP Port 587
 
-#### <span class="mw-headline" id="Google_Apps_Mail">Google Apps Mail</span>
+#### Google Apps Mail
 
 *   Email Transport: SMTPAUTH
 *   SMTP Username: your google-apps-mail username
@@ -155,7 +155,7 @@ You may have to have your host make some changes to your domain's MX records if 
 
 You may also have to open your webserver's firewall to allow access to Google's servers and whatever port you're using to communicate with them. Your hosting company's server administrator will know how to identify the correct address and how to fix their firewall accordingly.
 
-### <span class="mw-headline" id="GoDaddy_Hosting_Plans">GoDaddy Hosting Plans</span>
+### GoDaddy Hosting Plans
 
 1.  If using the default "PHP" setting for Email Transport method doesn't work, try the following:
     *   Use "SMTP" for your Email Transport setting instead.
@@ -167,7 +167,7 @@ You may also have to open your webserver's firewall to allow access to Google's 
 2.  Set your Max Email limit:
     *   If you have a GoDaddy hosting plan and plan to use it for sending emails from your Zen Cart site, you should check your email account list and set the "smtp relay transmissions per day" to the max of 250/day instead of the default of 0/day.
 
-## <span class="mw-headline" id="Preventing_My_Mail_From_Being_Treated_as_Spam">Preventing My Mail From Being Treated as Spam</span>
+## Preventing My Mail From Being Treated as Spam
 
 The most common cause of email being treated as spam stems from how your **webserver** is configured to send mail. By default, emails sent with the Transport set to PHP will appear as a user called "nobody@yourdomain.com" or something similar. Most spam filters will look at that and assume that those emails were generated by spam bots and thus the message is dumped without any further consideration.
 
@@ -177,7 +177,7 @@ Other causes include messages which have ALL UPPERCASE letters in their Subject 
 2.  the option 'Emails must send from known domain?' should be set to True. This will cause e-mail providers see that it is coming from someplace legitimate and not filter it as spam. And, more specifically, your own webserver will not ignore it because it will now appear as legitimately coming from itself (whom it "knows"), rather than from a 3rd-party.
 3.  AOL and Hotmail dump emails originating from server/client IP addresses that fail DNS reverse lookup. You should talk to your webhost to ensure that your webserver and hosting account / domain are properly configured with a PTR or DNS reverse lookup. If those words/terms don't mean anything to you, simply talk to your hosting company about them!
 
-## <span class="mw-headline" id="HTML-formatted_Email_in_non-English_Languages">HTML-formatted Email in non-English Languages</span>
+## HTML-formatted Email in non-English Languages
 
 The english HTML emails are built from the files in the /email folder. If you have other languages, you'll need to create your own HTML email template files and put them into subfolders named according to the 2-letter language code.
 
@@ -187,7 +187,7 @@ ie:
 *   /email/es/
 *   /email/fr/
 
-## <span class="mw-headline" id="Why_Do_Emails_Not_Show_in_HTML_format.3F">Why Do Emails Not Show in HTML format?</span>
+## Why Do Emails Not Show in HTML format?
 
 HTML-formatted emails are SENT *only* when ALL of the following conditions are met:
 

@@ -1,7 +1,7 @@
 ---
 title: The Developer's Toolkit
 category: admin
-weight: 1
+weight: 10
 ---
 
 Say, for example, you wish to change the welcome email text because you do not plan to use the "Product Reviews" feature, and don't wish it to be advertised to your customers.  
