@@ -1,5 +1,6 @@
 ---
 title: Send Email 
+description: Zen Cart Send Email Admin Page 
 category: admin_pages
 weight: 40
 ---

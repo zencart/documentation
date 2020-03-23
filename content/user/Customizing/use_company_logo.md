@@ -1,5 +1,6 @@
 ---
 title: Using your logo on packing slips and invoices 
+description: Using your logo on packing slips and invoices in Zen Cart 
 category: customizing
 weight: 10
 ---

@@ -1,5 +1,6 @@
 ---
 title: Download delivery methods 
+description: Zen Cart Download delivery methods 
 category: products
 weight: 10
 ---

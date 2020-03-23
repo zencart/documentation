@@ -1,5 +1,6 @@
 ---
 title: Configuration-Images
+description: Zen Cart Configuration-Images Admin Page
 category: admin_pages
 weight: 40
 ---

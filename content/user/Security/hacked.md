@@ -1,5 +1,6 @@
 ---
 title: Responding to a hack
+description: Responding to a hack in Zen Cart
 category: security
 weight: 10
 ---

@@ -1,5 +1,6 @@
 ---
 title: Display the search box in the header only 
+description: Zen Cart Display the search box in the header only 
 category: sideboxes
 weight: 10
 ---

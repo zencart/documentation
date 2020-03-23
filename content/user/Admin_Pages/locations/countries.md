@@ -1,5 +1,6 @@
 ---
 title: Countries
+description: Zen Cart Countries Admin Page 
 category: admin_pages
 weight: 10
 ---

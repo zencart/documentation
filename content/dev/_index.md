@@ -1,6 +1,7 @@
 
 ---
 title: Zen Cart Developer Docs
+description: Documentation for Zen Cart developers
 linkTitle: Developer Docs
 menu:
   main:

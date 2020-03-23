@@ -1,5 +1,6 @@
 ---
 title: Template Overrides System 
+description: Zen Cart Template Overrides System 
 category: template 
 weight: 10
 ---

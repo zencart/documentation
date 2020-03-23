@@ -1,5 +1,6 @@
 ---
 title: Salemaker vs Specials 
+description: Zen Cart Salemaker vs Specials 
 category: miscellaneous
 weight: 10
 ---

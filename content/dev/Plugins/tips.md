@@ -1,5 +1,6 @@
 ---
 title: Tips on creating a plugin 
+description: Zen Cart - Tips on creating a plugin 
 category: plugins
 weight: 1
 ---

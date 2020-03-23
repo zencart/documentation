@@ -1,5 +1,6 @@
 ---
 title: Zone Definitions 
+description: Zen Cart Zone Definitions 
 category: localization 
 weight: 10
 ---

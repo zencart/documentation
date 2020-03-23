@@ -1,5 +1,6 @@
 ---
 title: Banner Manager
+description: Zen Cart Banner Manager Admin Page 
 category: admin_pages
 weight: 30 
 ---

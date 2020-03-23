@@ -1,5 +1,6 @@
 ---
 title: Configuration-Customer Details
+description: Zen Cart Configuration-Customer Details Admin Page 
 category: admin_pages
 weight: 50
 ---

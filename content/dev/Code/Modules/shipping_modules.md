@@ -1,5 +1,6 @@
 ---
 title: Shipping Modules
+description: Zen Cart Shipping Modules
 ---
 <style>
 pre > code {

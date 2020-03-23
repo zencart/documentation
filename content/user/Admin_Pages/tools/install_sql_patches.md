@@ -1,5 +1,6 @@
 ---
 title: Install SQL Patches 
+description: Zen Cart Install SQL Patches Admin Page 
 category: admin_pages
 weight: 120
 ---

@@ -1,5 +1,6 @@
 ---
 title: Option Value Manager
+description: Zen Cart Option Value Manager Admin Page
 category: admin_pages
 weight: 50
 ---

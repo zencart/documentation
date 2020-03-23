@@ -1,5 +1,6 @@
 ---
 title: Tax configuration in Canada 
+description: Zen Cart Tax configuration in Canada 
 category: localization
 weight: 10
 ---

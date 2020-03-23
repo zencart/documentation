@@ -1,5 +1,6 @@
 ---
 title: Configuration-Regulations
+description: Zen Cart Configuration-Regulations Admin Page 
 category: admin_pages
 weight: 140
 ---

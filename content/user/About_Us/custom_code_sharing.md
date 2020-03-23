@@ -1,5 +1,6 @@
 ---
 title: Custom code - am I obligated to share it?
+description: Zen Cart Custom code - am I obligated to share it?
 category: about_us
 weight: 10
 ---

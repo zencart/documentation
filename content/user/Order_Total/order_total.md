@@ -1,5 +1,6 @@
 ---
 title: Order Total Modules
+description: Zen Cart Order Total Modules
 category: order_total
 weight: 1
 ---

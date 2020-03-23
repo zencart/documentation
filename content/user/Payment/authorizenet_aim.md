@@ -1,5 +1,6 @@
 ---
 title: Authorize.net AIM Payment Module
+description: Zen Cart Authorize.net AIM Payment Module
 category: payment
 weight: 10
 ---

@@ -1,5 +1,6 @@
 ---
 title: Send a Gift Certificate 
+description: Zen Cart Send a Gift Certificate  Admin Page 
 category: admin_pages
 weight: 30 
 ---

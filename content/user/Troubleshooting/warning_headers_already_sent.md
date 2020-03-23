@@ -1,5 +1,6 @@
 ---
 title: Warning Headers already sent...
+description: Zen Cart Warning Headers already sent...
 category: troubleshooting
 weight: 10
 ---

@@ -1,5 +1,6 @@
 ---
 title: Databases 
+description: Zen Cart - Databases 
 category: first_steps
 weight: 10
 ---

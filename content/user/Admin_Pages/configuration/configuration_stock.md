@@ -1,5 +1,6 @@
 ---
 title: Configuration-Stock
+description: Zen Cart Configuration-Stock  Admin Page 
 category: admin_pages
 weight: 80
 ---

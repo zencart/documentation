@@ -1,5 +1,6 @@
 ---
 title: What are EZ-Pages? 
+description: What are EZ-Pages in Zen Cart? 
 category: ezpages
 weight: 10
 ---

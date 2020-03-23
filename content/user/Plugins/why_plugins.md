@@ -1,5 +1,6 @@
 ---
 title: Why plugins? 
+description: Why does Zen Cart use plugins? 
 category: plugins
 weight: 10
 ---

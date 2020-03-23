@@ -1,5 +1,6 @@
 ---
 title: Shipping Problems 
+description: Zen Cart Shipping Problems 
 category: troubleshooting
 weight: 10
 ---

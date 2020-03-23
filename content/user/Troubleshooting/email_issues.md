@@ -1,5 +1,6 @@
 ---
 title: Email Troubleshooting 
+description: Zen Cart Email Troubleshooting 
 category: troubleshooting 
 weight: 10
 ---

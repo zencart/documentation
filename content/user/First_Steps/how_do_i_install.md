@@ -1,5 +1,6 @@
 ---
 title: How do I Install Zen Cart?
+description: How do I Install Zen Cart?
 category: Installing
 weight: 10
 ---

@@ -1,5 +1,6 @@
 ---
 title: Permissions on files and folders 
+description: Permissions on files and folders in Zen Cart
 category: installing 
 weight: 10
 ---

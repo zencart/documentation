@@ -1,5 +1,6 @@
 ---
 title: Products Viewed 
+description: Zen Cart Products Viewed Admin Page
 category: admin_pages
 weight: 50
 ---

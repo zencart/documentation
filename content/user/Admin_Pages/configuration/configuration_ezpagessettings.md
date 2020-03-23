@@ -1,5 +1,6 @@
 ---
 title: Configuration-EZ-Pages Settings
+description: Zen Cart Configuration-EZ-Pages Settings  Admin Page 
 category: admin_pages
 weight: 250
 ---

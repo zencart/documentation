@@ -1,5 +1,6 @@
 ---
 title: Configuration-All Listing
+description: Zen Cart Configuration-All Listing Admin Page
 category: admin_pages
 weight: 220
 ---

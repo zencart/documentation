@@ -1,5 +1,6 @@
 ---
 title: VAT setup instructions
+description: Zen Cart VAT setup instructions
 category: admin
 weight: 10
 ---

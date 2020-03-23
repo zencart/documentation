@@ -1,5 +1,6 @@
 ---
 title: The Developers Template Overrides System 
+description: Zen Cart Developers Template Overrides System 
 category: template 
 weight: 10
 ---

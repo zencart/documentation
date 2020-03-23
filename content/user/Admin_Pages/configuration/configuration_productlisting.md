@@ -1,5 +1,6 @@
 ---
 title: Configuration-Product Listing
+description: Zen Cart Configuration-Product Listing Admin Page 
 category: admin_pages
 weight: 70
 ---

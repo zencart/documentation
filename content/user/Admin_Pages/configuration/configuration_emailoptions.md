@@ -1,5 +1,6 @@
 ---
 title: Configuration-E-Mail Options
+description: Zen Cart Configuration-E-Mail Options Admin Page 
 category: admin_pages
 weight: 100
 ---

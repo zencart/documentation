@@ -1,5 +1,6 @@
 ---
 title: Reporting a bug
+description: Zen Cart Reporting a bug
 category: about_us
 weight: 10
 ---

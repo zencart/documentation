@@ -1,5 +1,6 @@
 ---
 title: PayPal - one account on multiple sites 
+description: PayPal in Zen Cart - one account on multiple sites 
 category: payment
 weight: 10
 ---

@@ -1,5 +1,6 @@
 ---
 title: Option Name Manager
+description: Zen Cart Option Name Manager Admin Page 
 category: admin_pages
 weight: 40
 ---

@@ -20,10 +20,13 @@ Please follow these rules when adding new documentation files to the `/content/u
 <pre>
 ---
 title: article title
+description: article description 
 category: article category
 weight: 10
 ---
 </pre>
+
+- The title will be shown on the page, but the description will only be used in the description meta tag, so say "Zen Cart" somewhere in the description.  
 
 - The value of `weight` denotes a sort-order. Within folders, please set as follows: 
 

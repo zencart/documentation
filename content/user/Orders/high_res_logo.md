@@ -1,5 +1,6 @@
 ---
 title: Can I print a high resolution logo on my invoices and packing slips?
+description: In Zen Cart, can I print a high resolution logo on my invoices and packing slips?
 category: orders
 weight: 10
 ---

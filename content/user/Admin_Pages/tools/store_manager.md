@@ -1,5 +1,6 @@
 ---
 title: Store Manager
+description: Zen Cart Store Manager
 category: admin_pages
 weight: 80
 ---

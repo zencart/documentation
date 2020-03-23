@@ -1,5 +1,6 @@
 ---
 title: Configuration-Maximum Values
+description: Zen Cart Configuration-Maximum Values Admin Page
 category: admin_pages
 weight: 30
 ---

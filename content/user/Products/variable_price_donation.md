@@ -1,5 +1,6 @@
 ---
 title: Variable Price Product or Donation
+description: Zen Cart Variable Price Product or Donation
 category: products
 weight: 10
 ---

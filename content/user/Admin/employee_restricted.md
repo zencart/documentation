@@ -1,5 +1,6 @@
 ---
 title: How can I restrict my employees' admin capabilities?
+description: How can I restrict my employees' admin capabilities in Zen Cart?
 category: admin
 weight: 10
 ---

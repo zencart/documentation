@@ -1,5 +1,6 @@
 ---
 title: Bug Reporting
+description: Zen Cart Bug Reporting
 weight: 5
 ---
 

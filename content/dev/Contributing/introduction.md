@@ -1,5 +1,6 @@
 ---
 title: Introduction
+description: Introduction to Contributing to Zen Cart 
 weight: 1
 ---
 

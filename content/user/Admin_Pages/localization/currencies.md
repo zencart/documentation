@@ -1,5 +1,6 @@
 ---
 title: Currencies 
+description: Zen Cart Currencies Admin Page 
 category: admin_pages
 weight: 10
 ---

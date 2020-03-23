@@ -1,5 +1,6 @@
 ---
 title: Attributes Controller 
+description: Zen Cart Attributes Controller  Admin Page 
 category: admin_pages
 weight: 60
 ---

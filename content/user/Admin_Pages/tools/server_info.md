@@ -1,5 +1,6 @@
 ---
 title: Server/Version Info 
+description: Zen Cart Server/Version Info  Admin Page 
 category: admin_pages
 weight: 60
 ---

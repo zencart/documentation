@@ -1,5 +1,6 @@
 ---
 title: Donate
+description: Donate to Zen Cart 
 category: about_us
 weight: 10
 ---

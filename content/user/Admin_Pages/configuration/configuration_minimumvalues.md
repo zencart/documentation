@@ -1,5 +1,6 @@
 ---
 title: Configuration-Minimum Values
+description: Zen Cart Configuration-Minimum Values Admin Page 
 category: admin_pages
 weight: 20
 ---

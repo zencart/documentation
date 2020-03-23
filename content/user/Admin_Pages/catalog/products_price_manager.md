@@ -1,5 +1,6 @@
 ---
 title: Products Price Manager
+description: Zen Cart Products Price Manager Admin Page 
 category: admin_pages
 weight: 30
 ---

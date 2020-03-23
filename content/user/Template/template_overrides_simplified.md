@@ -1,5 +1,6 @@
 ---
 title: Template Overrides Simplified 
+description: Zen Cart Template Overrides Simplified 
 category: template 
 weight: 10
 ---

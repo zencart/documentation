@@ -1,5 +1,6 @@
 ---
 title: What features does Zen Cart offer? 
+description: What features does Zen Cart offer? 
 category: about_us
 weight: 10
 ---

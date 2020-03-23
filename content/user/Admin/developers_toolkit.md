@@ -1,5 +1,6 @@
 ---
 title: The Developer's Toolkit
+description: The Zen Cart Developer's Toolkit
 category: admin
 weight: 10
 ---

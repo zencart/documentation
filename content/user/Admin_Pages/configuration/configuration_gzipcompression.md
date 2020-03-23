@@ -1,5 +1,6 @@
 ---
 title: Configuration-GZip Compression
+description: Zen Cart Configuration-GZip Compression Admin Page 
 category: admin_pages
 weight: 120
 ---

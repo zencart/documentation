@@ -1,5 +1,6 @@
 ---
 title: How do I change the Logo in my HTML emails ?
+description: How do I change the Logo in my Zen Cart HTML emails ?
 category: email
 weight: 10
 ---

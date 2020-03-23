@@ -1,5 +1,6 @@
 ---
 title: Record Companies
+description: Zen Cart Record Companies Admin Page 
 category: admin_pages
 weight: 10
 ---

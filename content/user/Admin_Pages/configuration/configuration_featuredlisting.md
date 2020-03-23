@@ -1,5 +1,6 @@
 ---
 title: Configuration-Featured Listing
+description: Zen Cart Configuration-Featured Listing Admin Page 
 category: admin_pages
 weight: 210
 ---

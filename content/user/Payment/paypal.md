@@ -1,5 +1,6 @@
 ---
 title: PayPal
+description: PayPal in Zen Cart
 category: payment
 weight: 10
 ---

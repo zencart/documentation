@@ -1,5 +1,6 @@
 ---
 title: Resources
+description: Resources for EU Digital VAT 
 weight: 8
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Configuration-Website Maintenance
+description: Zen Cart Configuration-Website Maintenance Admin Page 
 category: admin_pages
 weight: 190
 ---

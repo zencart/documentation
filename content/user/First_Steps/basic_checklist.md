@@ -1,5 +1,6 @@
 ---
 title: Basic Checklist
+description: Zen Cart Basic Checklist
 category: first_steps 
 weight: 10
 ---

@@ -1,5 +1,6 @@
 ---
 title: Emails are not received or sending
+description: Zen Cart Emails are not received or sending
 category: email
 weight: 10
 ---

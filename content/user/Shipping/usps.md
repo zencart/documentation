@@ -1,5 +1,6 @@
 ---
 title: USPS Setup 
+description: Zen Cart USPS Setup 
 category: shipping 
 weight: 10
 ---

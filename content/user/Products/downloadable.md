@@ -1,5 +1,6 @@
 ---
 title: Downloadable products - how to create? 
+description: How to create Zen Cart Downloadable products 
 category: products
 weight: 10
 ---

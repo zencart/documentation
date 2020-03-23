@@ -1,5 +1,6 @@
 ---
 title: Category product-type restrictions
+description: Zen Cart Category product-type restrictions
 category: categories
 weight: 10
 ---

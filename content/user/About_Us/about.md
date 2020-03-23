@@ -1,5 +1,6 @@
 ---
 title: Bug Reports, Code Contributions, Security and Fees
+description: Zen Cart Bug Reports, Code Contributions, Security and Fees
 category: about_us
 weight: 10
 ---

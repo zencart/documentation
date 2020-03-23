@@ -1,5 +1,6 @@
 ---
 title: Diagnosing Obscure Issues
+description: Diagnosing Obscure Issues in Zen Cart 
 category: running 
 weight: 10
 ---

@@ -1,5 +1,6 @@
 ---
 title: B2B or B2C
+description: Zen Cart B2B or B2C determination
 weight: 6
 ---
 

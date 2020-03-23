@@ -1,5 +1,6 @@
 ---
 title: Customizing a Template 
+description: Customizing a Template in Zen Cart 
 category: template 
 weight: 10
 ---

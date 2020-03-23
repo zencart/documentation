@@ -1,5 +1,6 @@
 ---
 title: Coupons
+description: Zen Cart Coupons
 category: order_total
 weight: 10
 ---

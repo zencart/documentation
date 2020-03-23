@@ -1,5 +1,6 @@
 ---
 title: Customizing Email
+description: Zen Cart Customizing Email
 category: email
 weight: 10
 ---

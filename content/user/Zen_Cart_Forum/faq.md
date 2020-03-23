@@ -1,5 +1,6 @@
 ---
 title: Forum FAQ 
+description: Zen Cart Forum FAQ 
 category: zen_cart_forum
 weight: 10
 ---

@@ -1,5 +1,6 @@
 ---
 title: Configuration-My Store
+description: Zen Cart Configuration-My Store Admin Page 
 category: admin_pages
 weight: 10
 ---

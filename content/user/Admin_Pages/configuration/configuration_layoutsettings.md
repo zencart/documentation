@@ -1,5 +1,6 @@
 ---
 title: Configuration-Layout Settings
+description: Zen Cart Configuration-Layout Settings Admin Page 
 category: admin_pages
 weight: 180
 ---

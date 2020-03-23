@@ -1,5 +1,6 @@
 ---
 title: Rules for Plugins
+description: Zen Cart Rules for Plugins
 category: plugins
 weight: 1
 ---

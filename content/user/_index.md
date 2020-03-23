@@ -1,5 +1,6 @@
 ---
 title: Zen Cart Storeowner Docs
+description: Documentation for Zen Cart Users 
 linkTitle: Storeowner Docs
 menu:
   main:

@@ -1,5 +1,6 @@
 ---
 title: Configuration-Logging
+description: Zen Cart Configuration-Logging Admin Page 
 category: admin_pages
 weight: 90
 ---

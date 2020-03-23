@@ -1,5 +1,6 @@
 ---
 title: Images - preparing for use
+description: Zen Cart Images - preparing for use
 category: products
 weight: 10
 ---

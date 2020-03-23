@@ -1,5 +1,6 @@
 ---
 title: Long EZ-Pages are getting cut off
+description: Zen Cart Long EZ-Pages are getting cut off
 category: ezpages
 weight: 10
 ---

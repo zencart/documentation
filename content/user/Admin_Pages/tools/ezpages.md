@@ -1,5 +1,6 @@
 ---
 title: EZ Pages
+description: Zen Cart EZ Pages
 category: admin_pages
 weight: 100
 ---

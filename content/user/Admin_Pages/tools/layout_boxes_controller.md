@@ -1,5 +1,6 @@
 ---
 title: Layout Boxes Controller
+description: Zen Cart Layout Boxes Controller Admin Page 
 category: admin_pages
 weight: 20
 ---

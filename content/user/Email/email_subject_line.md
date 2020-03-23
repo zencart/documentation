@@ -1,5 +1,6 @@
 ---
 title: Changing the Email Subject Line
+description: Changing the Zen Cart Email Subject Line
 category: email
 weight: 10
 ---

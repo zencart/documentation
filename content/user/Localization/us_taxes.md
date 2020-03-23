@@ -1,5 +1,6 @@
 ---
 title: Tax configuration in the United States
+description: Zen Cart Tax configuration in the United States
 category: localization
 weight: 10
 ---

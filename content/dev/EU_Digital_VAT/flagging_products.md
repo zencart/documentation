@@ -1,5 +1,6 @@
 ---
 title: Flagging Products
+description: Zen Cart Flagging Products for EU Digital VAT
 weight: 3
 ---
 

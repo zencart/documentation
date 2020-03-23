@@ -1,5 +1,6 @@
 ---
 title: I want to move the Add to Cart box (or other section) to another place on my product page 
+description: How to move the Add to Cart box in Zen Cart
 category: templates
 weight: 10
 ---

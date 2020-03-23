@@ -1,5 +1,6 @@
 ---
 title: Sidebox enabling/disabling on EZ-Pages 
+description: Zen Cart Sidebox enabling/disabling on EZ-Pages 
 category: ezpages
 weight: 10
 ---
