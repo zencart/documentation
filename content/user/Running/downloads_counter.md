@@ -1,7 +1,7 @@
 ---
 title: Resetting the Downloads Counter on completed orders
 category: Orders
-weight: 1
+weight: 10
 ---
 
 "I sell a digital product and a customer misplaced his download. Is there a way to update recent purchase and simply add two or three more downloads?"

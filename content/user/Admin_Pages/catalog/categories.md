@@ -17,6 +17,25 @@ Do you want the category to have a subcategory or do you want to add products to
 
 When you know what the category is to be used for, click the appropriate button to create a product or a category. 
 
+## Categories level 
+Generally at the top level of the store, you will have categories.
+Below this level, you may have sub-categories (possibly going several levels
+deep), eventually leading to a level of products only. 
 
-For more information see [these pages](/user/categories/). 
+At the level where you only have categories, the Action icons on the 
+right allow you to edit, delete, move or set meta tags for categories. 
+
+The categories edit screen allows you to:
+
+- set the category name and description
+- set the category image
+- set the category sort order 
+- restrict new product additions to the category to only specific product types if desired.  See [Category product-type restrictions](/user/categories/category_product_type_restrict/). 
+
+## Products Level 
+If you are at a level where the Categories screen only shows products, 
+you have a different set of capabilities. 
+See [Categories-products page](/user/categories/categories_products/)
+
+For more information on categories, see [these pages](/user/categories/). 
 

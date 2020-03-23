@@ -6,17 +6,23 @@ weight: 250
 
 <b>EZ-Pages Display Status - HeaderBar</b>
 
-<div class='indent'>Display of EZ-Pages content can be Globally enabled/disabled for the Header Bar<br />0 = Off<br />1 = On<br />2= On ADMIN IP ONLY located in Website Maintenance<br />NOTE: Warning only shows to the Admin and not to the public</div>
+<div class='indent'>Display of EZ-Pages content can be Globally enabled/disabled for the Header Bar<br />0 = Off<br />1 = On<br />2= On ADMIN IP ONLY located in Website Maintenance<br />
+
+**NOTE:** Warning only shows to the Admin and not to the public</div>
 
 
 <b>EZ-Pages Display Status - FooterBar</b>
 
-<div class='indent'>Display of EZ-Pages content can be Globally enabled/disabled for the Footer Bar<br />0 = Off<br />1 = On<br />2= On ADMIN IP ONLY located in Website Maintenance<br />NOTE: Warning only shows to the Admin and not to the public</div>
+<div class='indent'>Display of EZ-Pages content can be Globally enabled/disabled for the Footer Bar<br />0 = Off<br />1 = On<br />2= On ADMIN IP ONLY located in Website Maintenance<br />
+
+**NOTE:** Warning only shows to the Admin and not to the public</div>
 
 
 <b>EZ-Pages Display Status - Sidebox</b>
 
-<div class='indent'>Display of EZ-Pages content can be Globally enabled/disabled for the Sidebox<br />0 = Off<br />1 = On<br />2= On ADMIN IP ONLY located in Website Maintenance<br />NOTE: Warning only shows to the Admin and not to the public</div>
+<div class='indent'>Display of EZ-Pages content can be Globally enabled/disabled for the Sidebox<br />0 = Off<br />1 = On<br />2= On ADMIN IP ONLY located in Website Maintenance<br />
+
+**NOTE:** Warning only shows to the Admin and not to the public</div>
 
 
 <b>EZ-Pages Header Link Separator</b>

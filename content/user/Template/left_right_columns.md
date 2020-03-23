@@ -1,7 +1,7 @@
 ---
 title: Left and Right Columns - turning them off 
 category: templates
-weight: 1
+weight: 10
 ---
 
 Firstly, if you don't already have one, create an over-ride file for tpl_main_page.php in your `includes/templates/YOURTEMPLATE/common` directory.  

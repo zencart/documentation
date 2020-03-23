@@ -1,7 +1,7 @@
 ---
 title: Images - how to give a product multiple images
 category: products
-weight: 1
+weight: 10
 ---
 
 ## A product owns 1 filename ...
@@ -34,7 +34,7 @@ For the medium image (used as the main image on the product_info page) I upload 
 
 *   /images/medium/dvd/a_bugs_life_MED.gif
 
-NOTE: There is <font color="#ff0000">ONLY ONE ( 1 ) Medium Image</font> used per Product on the Product Info page: (pages named product_info, product_music_info etc.) The naming is related directly to the original image.  
+**NOTE:** There is <font color="#ff0000">ONLY ONE ( 1 ) Medium Image</font> used per Product on the Product Info page: (pages named product_info, product_music_info etc.) The naming is related directly to the original image.  
 
 Now you do not need to use subdirectories for loading your images.  
 
@@ -116,7 +116,7 @@ While both methods are available with or without the underscore, it is recommend
 
 The use of subdirectories help on speed or directory limits, especially on slower servers or servers with limitations.  
 
-NOTE: not all files show via your FTP program when you get into the 1000s of filenames within a directory.  
+**NOTE:** not all files show via your FTP program when you get into the 1000s of filenames within a directory.  
 
 ### ANOTHER WAY TO LOOK AT IT ...
 

@@ -1,7 +1,7 @@
 ---
 title: Blocking probing activity 
 category: security
-weight: 1
+weight: 10
 ---
 
 Some common attempts to probe your site for old vulnerabilities, or vulnerabilities from other systems, can be blocked by adding the following code to your site:  

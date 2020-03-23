@@ -1,10 +1,10 @@
 ---
 title: Permissions on files and folders 
 category: installing 
-weight: 1
+weight: 10
 ---
 
-NOTE: While the following instructions talk about making files/folders writable, it is wise to review your security settings after installation to be sure you're not leaving yourself open to hacking vulnerability by having too many "world-writable" files on your site.  
+**NOTE:** While the following instructions talk about making files/folders writable, it is wise to review your security settings after installation to be sure you're not leaving yourself open to hacking vulnerability by having too many "world-writable" files on your site.  
 There are [detailed security recommendations on this topic](/user/security/security_recommendations/).
 
 ### How To Set File/Folder Permissions

@@ -1,7 +1,7 @@
 ---
 title: Exporting customer email addresses
 category: email
-weight: 1
+weight: 10
 ---
 
 To export email addresses, grab the [Email Address Exporter](https://www.zen-cart.com/downloads.php?do=file&id=6) plugin from our downloads site.

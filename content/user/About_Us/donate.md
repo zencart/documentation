@@ -1,7 +1,7 @@
 ---
 title: Donate
 category: about_us
-weight: 1
+weight: 10
 ---
 
 Show your appreciation for the great support and fantastic shopping cart software by making a donation today!

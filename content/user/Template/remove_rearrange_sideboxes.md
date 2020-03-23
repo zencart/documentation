@@ -1,7 +1,7 @@
 ---
 title: How do I remove and/or re-arrange the sideboxes?
 category: template
-weight: 1
+weight: 10
 ---
 
 Open your Admin.

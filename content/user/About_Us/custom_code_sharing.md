@@ -1,7 +1,7 @@
 ---
 title: Custom code - am I obligated to share it?
 category: about_us
-weight: 1
+weight: 10
 ---
 
 Zen Cart is open-source. As such, the intent is that it is extensible. The core of Zen Cart is intended to support a very diverse range of users; however, it is not intended to suit "everyone's" needs directly. Instead, we endeavour to continually make the code more adaptable and able to be enhanced by way of community-contributed/supported plug-in's that can be added to Zen Cart with minimal difficulty. In this regard, we encourage community contributions.

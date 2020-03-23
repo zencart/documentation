@@ -204,7 +204,7 @@ You'll do this from your browser:
 6. Click the next green button to Create Pull Request
 7. Now you [wait for others to review your code](https://github.com/thoughtbot/guides/tree/master/code-review). The Zen Cart developers (and anyone else who has clicked "Watch" on the Zen Cart main repository) will get an alert about the pull request. Anyone wishing to reply with their opinions of what you've submitted can engage in dialog with you and one another while the code is reviewed. 
 8. If your code hasn't complied with the coding standards, or has bugs or is incomplete, you may be asked to submit more commits to rectify the problems. In that case, you will repeat the steps above for making code changes, making commits, and pushing those commits to github. As long as you push to the same branch on github, then all those commits will automatically be included in the pull request, so reviewers can see the updates you push.
-9. Once the core team decides what to do with it, they have basically three options: to accept it (merge the pull request) or defer it (until a later date) or reject it (not merge it and close the pull request). Github will automatically email you about all updates and comments made about your Pull Request.  (NOTE: Your PR won't be merged until you have signed the CLA.)
+9. Once the core team decides what to do with it, they have basically three options: to accept it (merge the pull request) or defer it (until a later date) or reject it (not merge it and close the pull request). Github will automatically email you about all updates and comments made about your Pull Request.  (**NOTE:** Your PR won't be merged until you have signed the CLA.)
 
 ### Keeping Your Local Branch Current
 

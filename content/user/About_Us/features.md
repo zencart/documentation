@@ -1,0 +1,67 @@
+---
+title: What features does Zen Cart offer? 
+category: about_us
+weight: 10
+---
+
+- Easily keep your product/catalog updated -- no HTML coding required to add, delete, or modify products.
+- Secure -- no one but your administrative personnel can access your customer/catalog data
+- Easy to install -- our helpful installation program guides you easily through the setup process
+- User frontend is validated to XHTML 1.0 Transitional
+- Advanced Template System using stylesheets and images
+- Any PHP coding changes can be protected during upgrades by using the built-in override protection system
+- Switching from one installed template to another is as simple as a couple of clicks in the Admin
+- Merchandise Pricing options -- Single and Multiple items can be put on Sale. Sale options include Percentage-off, Fixed Amount off, New Price, etc. Sales can include or exclude product attributes. You can add or exclude a discount from a Special. You can put a whole category or the entire store on sale.
+- Products can be marked as Free, or "Call for Price"
+- Products can be marked as "Featured" for specific highlighting/attention.
+- Products can be linked and/or copied to multiple categories
+- Minimum or Maximum Quantities and Units - You can sell 1 per customer, or require at least 4 and in multiples of 2. You can set requirements on a per-product basis.
+- Quantity Discounts can be configured per-product for varying pricing levels or quantity levels.
+- Product Attributes can be added, either as Radio buttons, Checkboxes, Drop-down lists, Text Boxes, File Uploads, File Downloads, and more. Attribute Options can upcharge the price of an item, and an item can have its price completely controlled by attributes. Attributes can be configured as "read only" so as to provide a Features List.
+- One-Time Fees can be added to products via attributes
+- Attributes also support Text Pricing, such as price-per-word or price-per-letter for personalizing
+- Attributes can show image/color swatches
+- Store layout can be controlled in great detail simply by switching settings in the Admin area. Choose your side column and box widths, Bread Crumb Separator, which Sideboxes you want to appear where on the page, enable/disable links in various places.
+- Entire categories of products (or individual products) can be enabled/disabled with just a few clicks
+- Sort order of products is easily controlled in the admin area
+- Integrate with phpBB so that your support forum login passwords match your Zen Cart shop.
+- If you need to take your site offline for a period of maintenance, you can do it easily by posting advance notices, as well as a friendly Down For Maintenance page that's also Search-Engine friendly. Webmaster and WebDesigner can specify IP addresses to override maintenance and still access the site for testing.
+- You can send administrative emails on most customer shopping activities to various administrators as desired. Email addresses are protected from abuse, as they are not displayed on-screen. The Contact Us page can be configured to support multiple destinations, such as Sales, Technical Support, Webmaster, and so on.
+- Nearly every piece of information about your products can be controlled in the Admin areas, giving you the ability to fine-tune how your products and services appear to your customers. Features and options can be enabled/disabled quickly and easily.
+- Multiple items can be added to the shopping cart by simply entering quantities and click Add
+- The Product Type feature allows you to customize information fields and display format for different products differently. Products for sale vs Documents for viewing, vs Music Downloads, and the list goes on.
+- You can add multiple images to your products, in small/medium/large format. Popups are available if desired for viewing of larger images.
+- A verification for Agreement to the Terms of Service has been added for compliance with new laws regarding privacy and disclosure.
+- CVV2 card verification number support is available for compliance with most Merchant Agreements. This feature is enabled/disabled in the Admin
+- Shipping Options -- multiple carriers are supported, including Hold for Pickup, Free Delivery in an area, and most major couriers and postal services
+- Customer Access Control -- You can set up your shop to only allow customers access to pricing or pricing but not buying until after being authorized by an administrator. You can restrict them from browsing at all too, if desired.
+- Showcase - You can set your store up to be simply a product showcase, without pricing at all.
+- Search options allow you to search for products based on name, description, metatags, price, and more&#33;
+- Meta Tags keywords and descriptions can be controlled at the per-product level, all from the administrative interface
+- Automatic detection of search engine spiders
+- Intelligent generation of metatags content for search engines
+- Easily upgrade from one version to the next. Upgrade Detection notifies administrators of new versions at login.
+- Built in WYSIWYG page editor for modifying non database pages. (version 2.0)
+- Tight security on password handling, login/logout, and more.
+- HTML-style email supported
+- Email can be sent via sendmail, smtp, or smtp-with-authorization
+- Email archiving supported for audit trail
+- Administrative activity logging enabled for audit trail -- especially beneficial with recent Merchant Agreement requirements concerning tracking of activity related to accessing customer information.
+- Advertising Banners -- show information about your business colleagues and track banner link activity. Banners open in new windows so that customers never really leave your site.
+- Shipping Estimator allows your customer to get an idea of their shipping costs prior to checkout
+- Coupons and Gift Certificates are easily handled both by customers and administrators
+- Customer "Group Pricing" allows groups of users to receive a set discount amount at checkout
+- Newsletter system and Product Notification system
+- Low-Order Fees can be configured
+- COD Fees can be added
+- Shipping Tare, Large-Package handling to give fine-grain control over shipping services
+- Tax rates, tax zones, etc easily configured in the admin area
+- PayPal IPN and many other popular Merchant Services supported
+- Customers can write product reviews (approvals can be required by an Administrator)
+- Low-Stock notifications to administrator when inventory is getting low (level can be configured)
+- Simple customization of templates via Stylesheets
+- Developers Toolkit helps quickly locate a setting or text string to be customized
+- Scalable from small shops to larger shops with hundreds of thousands of products
+- Track Who's Online interactively
+- Multiple Language Support
+- Multiple Currency Support

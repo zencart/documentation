@@ -1,7 +1,7 @@
 ---
 title: The Developers Template Overrides System 
 category: template 
-weight: 1
+weight: 10
 ---
 
 Zen Cart® features a template override system that allows you to customize the look and functionality of your store without having to modify core files. (Note: The override system is not yet available for `Admin` files, and is not yet available for some `Catalog` files.)
@@ -20,7 +20,7 @@ There are currently four components of the override system:
 To make use of the override system, first name your custom template. In the examples below, we will call this `YOURTEMPLATE`. You create a folder with this name in every directory that contains files you wish to modify. Place a copy of each file you wish to modify in the custom template directory at the same level; then modify this custom template copy, leaving the original file untouched.
 
 
-NOTE: The override system does not extend to every file in your store. You can tell that a particular directory uses the override system by checking for the folder "classic" in that directory. Any directory that contains a classic subdirectory can be overridden.
+**NOTE:** The override system does not extend to every file in your store. You can tell that a particular directory uses the override system by checking for the folder "classic" in that directory. Any directory that contains a classic subdirectory can be overridden.
 
 
 For example, suppose you wish to make changes to the file `includes/languages/english.php`. You first create an override directory for your template at the same level, that is, in `includes/languages/`. Now you have a directory called `includes/languages/YOURTEMPLATE/`. Copy the file `includes/languages/english.php` to your override directory; now you have a file called `includes/languages/YOURTEMPLATE/english.php`. Make your desired changes to this file, and they will be picked up and used by the override system.
@@ -55,8 +55,7 @@ For example, if you want to modify the CSS for your store, you will copy the fil
 
 You can override files in the folder `includes/modules/`.
 
-
-NOTE: The override system does not yet extend to files in the subfolders `order_total`, `pages`, `payment`, or `shipping`.
+**NOTE:** The override system does not yet extend to files in the subfolders `order_total`, `pages`, `payment`, or `shipping`.
 
 
 First, create the folder `includes/modules/YOURTEMPLATE`. As you customize your store, you will copy files from `includes/modules/` over to `includes/modules/YOURTEMPLATE/`.

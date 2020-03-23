@@ -1,23 +1,26 @@
 ---
 title: Overrides
 category: new_user_topics
-weight: 1
+weight: 10
 ---
 This article is based on material originally posted by Networkdad, DrByte and other contributors.  
 
-"Template Override" and "Override System" are terms used to describe the collection of files needed to build or YOURTEMPLATEize the look of your cart. Using Overrides allows you to make and save changes to your cart without the fear of losing them when upgrades and patches are released. Also See: [The Override System Simplified](/user/template/template_overrides_simplified/).
+"Template Override" and "Override System" are terms used to describe the collection of files needed to create your own template to customize the look of your cart. Using Overrides allows you to make and save changes to your cart without the fear of losing them when upgrades and patches are released. Also See: [The Override System Simplified](/user/template/template_overrides_simplified/).
 
 **The Override System includes:**  
 
 > Language Files: includes/languages  
 >     Module Files: includes/modules  
 >     Template Files: includes/templates/template_default  
->     Extra Definitions: includes/languages/ENGLISH/extra_definitions  
+>     Extra Definitions: includes/languages/YOURLANGUAGE/extra_definitions  
 >     Extra Data Files: includes/extra_datafiles
 
-CAPITALIZED words refer to a folder or language that you choose. This article uses /YOURTEMPLATE for your template and ENGLISH for your language. Use your own name wherever you see /YOURTEMPLATE.  
 
-**Note:** be sure to read [How do I create a new YOURTEMPLATE Template?](/user/template/creating_template/).
+**NOTE:** See [Basic Terms](/user/first_steps/basic_terms/) for an 
+explanation of `YOURLANGUAGE` and `YOURTEMPLATE` if these terms are 
+unfamiliar. 
+
+**Note:** be sure to read [How do I create a new template?](/user/template/creating_template/)
 
 Remember only files which have been modified should be copied to your /YOURTEMPLATE directory. If you do not make modifications, then by default, Zen Cart® will use the default file.  
 
@@ -36,12 +39,12 @@ define('BOX_HEADING_CATEGORIES', 'Categories');
 ```
 >     Save the file and upload your new directory and its contents to your server.
 
-*   Page Specific information: **/includes/languages/ENGLISH/*.php** (all files within this directory)
+*   Page Specific information: **/includes/languages/YOURLANGUAGE/*.php** (all files within this directory)
 
 > You need to modify some text in account.php - Let's say you want to change every instance of the word 'Account' to     'Profile'  
->     Create a new directory: **/includes/languages/ENGLISH/YOURTEMPLATE**  
+>     Create a new directory: **/includes/languages/YOURLANGUAGE/YOURTEMPLATE**  
 >     Copy <font color="#0000ff">account.php</font> to this new directory  
->     You now have **/includes/languages/ENGLISH/YOURTEMPLATE/account.php**  
+>     You now have **/includes/languages/YOURLANGUAGE/YOURTEMPLATE/account.php**  
 >     Open the file in a text editor find and modify the following line of code  
 ```
 define('MY_ACCOUNT_TITLE', 'My Account');
@@ -62,7 +65,7 @@ define('MY_ACCOUNT_TITLE', 'My Account');
 
 **Template Files**  
 
-*   Page templates: `**/includes/templates/template_default/templates/tpl_***.php **`
+*   Page templates: `includes/templates/template_default/templates/tpl_XXX_default.php`
 
 > You need to modify some part of  tpl_account_default.php  
 >     You should already have the following folder structure **/includes/templates/YOURTEMPLATE/templates**.  
@@ -76,10 +79,10 @@ define('MY_ACCOUNT_TITLE', 'My Account');
 
 **Create Your Own Definitions**  
 
-> As you YOURTEMPLATEize your cart, you may find that you need to include additional definitions.  
->     You can do this by using your text editor to create a definition file - `yourdefinition_file.php`.
->     All the definitions you need for your YOURTEMPLATEization would be included in this file.  
->     Save the file to `includes/languages/ENGLISH/extra_definitions/yourdefinition_file.php` and upload it to your server
+> As you build your template, you may find that you need to include additional definitions.  
+>     You can do this by using your text editor to create a definition file - `yourdefinition.php`.
+>     All the definitions you need for your template and customization would be included in this file.  
+>     Save the file to **includes/languages/YOURLANGUAGE/extra_definitions/yourdefinition.php** and upload it to your server
 
 **Note:** files in this directory get loaded automatically, ensuring your YOURTEMPLATE definitions can be used throughout your cart.  
 

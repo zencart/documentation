@@ -1,7 +1,7 @@
 ---
 title: Show I charge taxes?  How much? 
 category: localization 
-weight: 1
+weight: 10
 ---
 
 You should consult your local tax authority for tax advice as it relates to your business. For professional assistance or "creative" strategies, you may want to consult a Tax Accountant or Attorney.

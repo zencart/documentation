@@ -1,7 +1,7 @@
 ---
 title: TroubleShooting Email - Advanced Part I 
 category: email
-weight: 1
+weight: 10
 ---
 
 

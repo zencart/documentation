@@ -1,7 +1,7 @@
 ---
 title: Adding a tracking pixel 
 category: template
-weight: 1
+weight: 10
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: Product Notification
 category: products
-weight: 1
+weight: 10
 ---
 
 **To Enable/Disable the Product Notification System**

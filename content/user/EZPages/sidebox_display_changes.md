@@ -1,7 +1,7 @@
 ---
 title: Sidebox enabling/disabling on EZ-Pages 
 category: ezpages
-weight: 1
+weight: 10
 ---
 To do this you will need to edit the sidebox module for each of the sideboxes whose behavior you wish to change. The exact change will depend upon what exactly you wish to do and whether those sideboxes should appear on other pages. Let's assume that your objective is to selectively suppress the display of sideboxes on some EZ-Pages.  
 

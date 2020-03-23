@@ -38,7 +38,7 @@ An "uninstall" SQL script should be included as well so the end user can uninsta
  
  Any included .SQL files should be written without the use of database table-prefixes (such as `zen_`), since a default Zen Cart install doesn't use any such prefixes.
  
- NOTE: More advanced module writers may elect to have built-in SQL setup capability, as long as uninstall instructions/scripts are provided.
+**NOTE:** More advanced module writers may elect to have built-in SQL setup capability, as long as uninstall instructions/scripts are provided.
 
 * Updates: If you are submitting an update to a contribution, please be sure to include the full set of files comprising that contribution. There should not be a need to install a prior version before installing your update. Each submission should be complete.
 

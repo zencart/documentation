@@ -46,7 +46,9 @@ weight: 160
 
 <b>Credit Card Enable Status - Debit</b>
 
-<div class='indent'>Accept Debit Cards 0= off 1= on<br>NOTE: This is not deeply integrated at this time, and this setting may be redundant if your payment modules do not yet specifically have code to honour this switch.</div>
+<div class='indent'>Accept Debit Cards 0= off 1= on<br>
+
+**NOTE:** This is not deeply integrated at this time, and this setting may be redundant if your payment modules do not yet specifically have code to honour this switch.</div>
 
 
 <b>Credit Card Enable Status - Maestro</b>

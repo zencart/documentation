@@ -25,11 +25,17 @@ weight: 10
 ---
 </pre>
 
-The value of `weight` denotes a sort-order. Please choose a value that makes sense given where it fits with existing articles.  In most situations it makes sense to use a single value (say 10) and let alphabetic sorting be used.  If you have an article you want on top, just use a smaller sort order for that article ("About <topic> articles in `/user` do this.)
+- The value of `weight` denotes a sort-order. Within folders, please set as follows: 
+
+    - Use `weight: 10` as the default. This way alphabetic sorting will be used for most content, which is what is desired.
+
+    - Use `weight: -1` for the first article in a folder (generally a "Using &lt;subsystem&gt;" or "About &lt;subsystem&gt;" type article). 
+    
+    - There are a few exceptions to this rule, such as Release History (sorted in reverse chronological order) and Admin Pages (sorted in the order they appear in Zen Admin), but for the most part, this rule is followed.
 
 - Don't use a headline starting with #.  The `title` in the block above is sufficient.
 
-- Use backticks for denoting code and filenames.  For example `includes/classes/shopping_cart.php` should be coded as 
+- Use backticks for denoting code and filenames.  For example, the filename "includes/classes/shopping\_cart.php" should be coded as 
 `includes/classes/shopping_cart.php`
 
 - If you do need to escape an underscore outside of backticks, you can use a backslash, like this: `\_`.  
@@ -66,17 +72,31 @@ Check out the [Server Requirements for Running Zen Cart](/user/first_steps/serve
 
 - Even though the folder names are upper case, use lower case when building the link.  For example, rather than `/First_Steps/`, use `/first_steps/`, as seen in the examples above.
 
-- For consistency, use the standard variables `YOURTEMPLATE` and `YOURLANGUAGE` where they are required (i.e. do not use underscores or another convention for identifying these things. 
+- For consistency, use the standard variables `YOURSITE`, `YOURTEMPLATE`,  `YOURLANGUAGE`, `YOURSITEFOLDER` and `YOURSUBFOLDER` (if needed) where they are required.  For details see the article [Basic Terms](user/new_user_topics/basic_terms). 
 
-- Use arrow notation for describing click paths in the Admin, rather than ellipses.  For example, use
+<font color="red">
+       Please *DO NOT* use any other convention like `/YOUR_CUSTOM_TEMPLATE/`, `/YOUR_STORE/`, `/your_site/`, `/custom/` , etc. - use the standard terms above. 
+</font>
+
+
+- Use arrow notation for describing click paths in the Admin, rather than ellipses.  For example, use this: 
 
 `Configuration->EZ-Pages Settings` 
 
-rather than 
+NOT THIS:  
 
-`Configuration ... EZ-Pages Settings`.
+`Configuration ... EZ-Pages Settings`              ** NO!** 
 
-<br /><br />
+- Use relative paths so people can test their changes locally.  Use this: 
+
+`[Github Workflow](/dev/contributing/github_workflow/)`
+
+NOT THIS:
+
+`[Github Workflow](https://docs.zen-cart.com/dev/contributing/github_workflow/)`       ** NO!** 
+
+
+<br />
 
 ## Markdown
 
@@ -91,10 +111,11 @@ rather than
 
 - If you see a page that contains Wiki-style (or other legacy) markup like 
 
-`## <span class="mw-headline" id="Adding_Currencies">Adding Currencies</span>
-`
+`## <span class="mw-headline" id="Adding_Currencies">Adding Currencies</span>`
 
 please simplify it to just use Markdown markup (remove the span). 
+
+`## Adding Currencies`
 
 
 - If you see a page that contains `FIXME`, this means the page was simply copied straight from the legacy Wiki or Tutorials area, and it should be verified against the latest Zen Cart release for accuracy.  Please edit as needed and submit a PR.

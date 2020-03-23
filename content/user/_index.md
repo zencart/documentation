@@ -1,5 +1,5 @@
 ---
-title: Using Zen Cart
+title: Zen Cart Storeowner Docs
 linkTitle: Storeowner Docs
 menu:
   main:
@@ -7,7 +7,6 @@ menu:
 layout: docs
 ---
 
-# Tutorials
-
 This site is intended to (eventually) replace the old Tutorials/FAQ content on the zen-cart.com site. 
 
+Developers, please also see [developer docs](/dev/). 

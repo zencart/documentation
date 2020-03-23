@@ -63,7 +63,7 @@ Meanwhile, between steps 2 and 3 above, PayPal's™ server does this:
 2.  Your server sits waiting and listening for hits to `ipn_handler.php`.
 3.  When your server receives a request, it attempts to validate and be sure that the PayPal™ data provided matches the order details for which it is intended.
 4.  If validation passes, the customer's order is released, and it lets the PayPal™ server know that you received their confirmation. This handshaking happens via CURL on port 443, and requires that your server be configured for modern TLS communication to https URLs.
-5.  NOTE: PayPal's™ server will attempt the IPN notification (hourly) for up to four days if it's not successful on the first try. In this case your customer's order will not show up in the _Admin_ until the IPN notification is successful.
+5.  **NOTE:** PayPal's™ server will attempt the IPN notification (hourly) for up to four days if it's not successful on the first try. In this case your customer's order will not show up in your Admin until the IPN notification is successful.
 
 ## Testing PayPal™ Transactions
 

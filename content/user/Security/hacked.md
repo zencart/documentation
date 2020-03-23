@@ -1,7 +1,7 @@
 ---
 title: Responding to a hack
 category: security
-weight: 1
+weight: 10
 ---
 
 ## Apply Security Fixes applicable to your version

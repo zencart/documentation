@@ -1,7 +1,7 @@
 ---
-title: Converting from iso-8859-1 to utf8
+title: Technical - Converting from iso-8859-1 to utf8
 category: upgrading 
-weight: 1
+weight: 20
 ---
 
 ### Do I need to convert to UTF-8?

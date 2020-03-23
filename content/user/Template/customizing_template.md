@@ -1,7 +1,7 @@
 ---
 title: Customizing a Template 
 category: template 
-weight: 1
+weight: 10
 ---
 
 1. make a new folder, perhaps something like:

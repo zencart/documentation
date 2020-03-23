@@ -1,7 +1,7 @@
 ---
 title: Version Information for Zen Cart, PHP and MySQL
 category: first_steps 
-weight: 1
+weight: 10
 ---
 
 To find out what version of Zen Cart or PHP or MySQL you are currently using, you can simply go to Admin->Tools->Server Info (or click "Version" on the top right navigation menu).

@@ -1,7 +1,7 @@
 ---
 title: What are EZ-Pages? 
 category: ezpages
-weight: 1
+weight: 10
 ---
 EZ-Pages are a fast, easy way of creating links and additional pages.  
 
@@ -56,11 +56,11 @@ Then, set the TOC or Table of Contents setting. This is a secondary Sort Order f
 
 Again, you can display any of the Links within a Chapter, as well as making any of these Links the Main Link. Whether the Links all show, or just one or more of the Links show, the Chapter is the key to grouping these Links together in the TOC or Previous/Next.  
 
-NOTE: While all Links within a Chapter will display together, you can have the different Links display in the Header, Footer or Sidebox on their own. Or, you can have the additional Links only display when the Main Link or one of the Additional Links within the Chapter has been opened.
+**NOTE:** While all Links within a Chapter will display together, you can have the different Links display in the Header, Footer or Sidebox on their own. Or, you can have the additional Links only display when the Main Link or one of the Additional Links within the Chapter has been opened.
 
 The versitility of EZ-Pages will make adding new Links and Pages extreamly easy for the beginner as well as the advance user.  
 
-NOTE: HTML editors will often add the opening and closing tags for sections like <html>, <head> and <body> to the file you are working on. You may want to remove them, as these are already added to the pages via EZ-Pages.  
+**NOTE:** HTML editors will often add the opening and closing tags for sections like <html>, <head> and <body> to the file you are working on. You may want to remove them, as these are already added to the pages via EZ-Pages.  
 
 The numbering of the Chapters can be done in any manner. But, by number in increments such as 10, 20, 30, etc. you can later insert pages, or links, as needed within the existing pages.  
 

@@ -1,7 +1,7 @@
 ---
 title: Displaying sideboxes for logged in visitors only
 category: sideboxes
-weight: 1
+weight: 10
 ---
 
 This can be done with the following steps:

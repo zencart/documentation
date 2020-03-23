@@ -1,7 +1,7 @@
 ---
 title: Images - multiple images problems 
 category: products
-weight: 1
+weight: 10
 ---
 Why am I seeing images for other products on my product pages?
 

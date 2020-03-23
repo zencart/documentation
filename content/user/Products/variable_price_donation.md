@@ -1,7 +1,7 @@
 ---
 title: Variable Price Product or Donation
 category: products
-weight: 1
+weight: 10
 ---
 
 You can set up a product which can act as a variable-price amount, ideal for accepting donations, as follows:

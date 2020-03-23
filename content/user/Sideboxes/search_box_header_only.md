@@ -1,7 +1,7 @@
 ---
 title: Display the search box in the header only 
 category: sideboxes
-weight: 1
+weight: 10
 ---
 
 There are two sideboxes for search.  You can control both through the Admin > Tools > Layout Box Controller.

@@ -1,7 +1,7 @@
 ---
 title: Template Overrides Simplified 
 category: template 
-weight: 1
+weight: 10
 ---
 
 Wherever you see a folder named **"classic"** you can safely add your own **/YOURTEMPLATE** folder.  

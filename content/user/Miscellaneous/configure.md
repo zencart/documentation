@@ -17,7 +17,7 @@ Explained another way: Zen Cart builds its URLs by combining two values from you
 
 `HTTP_SERVER` plus `DIR_WS_CATALOG` plus the page portion of the URL  
 
-ie: "http://www.my_domain.com" plus "/store/" and then whatever the address is to the page requested, such as "index.php?main_page=shopping_cart"  
+ie: `http://www.MYSITE.com` plus `/store/` and then whatever the address is to the page requested, such as `index.php?main_page=shopping_cart`.
 
 So, if your settings for those values point to the wrong place, you'll instantly see that reflected in the URLs you click on when you first arrive at the site. Using that information you should be able to reverse-engineer the URL you see in your browser to break it down into the parts that go into both places.  
   
@@ -29,16 +29,17 @@ Of course SSL urls will only work properly if you actually have SSL available on
 SSL links/URLs are built similarly:  
 
 `HTTPS_SERVER` plus `DIR_WS_HTTPS_CATALOG` plus the page portion of the URL  
-ie: "https://www.my_domain.com" plus "/store/" plus "index.php?main_page=login"  
+ie: `http://www.MYSITE.com` plus `/store/` and then whatever the address is to the page requested, such as `index.php?main_page=login`.
 
 **PATHS:**  
 `DIR_FS_CATALOG` points to the physical file folder path on the server. If you're only changing the URL of your site and not actually changing the foldername where the site sits, then you don't need to touch this.  
 
 However, keep in mind that there IS a similarity between `DIR_WS_CATALOG` and `DIR_FS_CATALOG`:  
 
-`DIR_FS_CATALOG` might read: /home/myname/public_html/store/  
-and thus `DIR_WS_CATALOG` is: /store/  
-(`DIR_WS_CATALOG` points to whatever follows the "webroot" configuration of your hosting account, ie: which folder your account points to for your actual site ... in most cases this folder is named "public_html" or "htdocs" or "httpdocs")  
+`DIR_FS_CATALOG` might read: `/home/myname/public_html/store/` 
+and thus `DIR_WS_CATALOG` is: `/store/`
+
+(`DIR_WS_CATALOG` points to whatever follows the [webroot](/user/first_steps/how_do_i_install#webroot) configuration of your hosting account, ie: which folder your account points to for your actual site ... in most cases this folder is named "public_html" or "htdocs" or "httpdocs")  
 
 **Other Paths:**
 The following paths should NOT be changed. It is VERY rare to ever need to change any of these. Changing them will result in breaking normal operation of your site.  
@@ -152,7 +153,8 @@ define('**SQL_CACHE_METHOD**', 'none');
 It is recommended to set this to 'none' or 'database' for optimum performance.  
 Alternatively, setting it to 'file' might offer minor improvements if the webserver is very slow and poorly configured. In this case it's better to move to a more reliable server instead of using the 'file' method.  
 Additionally, if choosing to use the 'file' method, you MUST relocate the SQL CACHE folder outside your webroot as described below, else you open yourself up to security risks.  
-NOTE: As of v1.5.0, the "file" option is obsolete. Only 'none' or 'database' have any meaning.  
+
+**NOTE:** As of v1.5.0, the "file" option is obsolete. Only 'none' or 'database' have any meaning.  
 
 ```
 define('DIR_FS_SQL_CACHE', '/enter/your/path/to/public_html_or_htdocs/and/zencart/here/zen/cache');  

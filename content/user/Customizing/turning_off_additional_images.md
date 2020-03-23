@@ -1,7 +1,7 @@
 ---
-title: Turning off Additional Images
-category: Zen Cart
-weight: 2
+title: Additional Images - disabling 
+category: customizing
+weight: 10
 ---
 
 # Turning off Additional Images

@@ -1,7 +1,7 @@
 ---
 title: Customer Referral Processing
 category: orders 
-weight: 1
+weight: 10
 ---
 
 Zen Cart has referral-tracking functionality built-in, using coupon codes. This can be ideal for tracking commissions for specific salespeople, crowdsourcing, campaign tracking, fundraising, etc.
@@ -28,7 +28,7 @@ Customers Referral Code is created from
 
 2= Customer can add during create account or edit if blank
 
-NOTE: Once the Customers Referral Code has been set it can only be changed in the Admin->Customers screen.
+**NOTE:** Once the Customers Referral Code has been set it can only be changed in the Admin->Customers screen.
 
 Tracking the Results
 In the Admin->Reports menu there is a Customers Referral Tracking report which shows you the sales made to customers using those coupons.

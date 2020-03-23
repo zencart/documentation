@@ -1,7 +1,7 @@
 ---
 title: What are the Server Requirements for running Zen Cart?
 category: Installing
-weight: 1
+weight: 10
 ---
 ## Zen Cart specifications - Server Requirements
 

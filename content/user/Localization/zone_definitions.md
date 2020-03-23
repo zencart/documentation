@@ -1,7 +1,7 @@
 ---
 title: Zone Definitions 
 category: localization 
-weight: 1
+weight: 10
 ---
 
 Zone Definitions can be created by adding 1 by 1 each Zone or can be created quickly with some SQL commands that can be run in the Zen Cart Admin from the Tools ... Install SQL Patches ...  

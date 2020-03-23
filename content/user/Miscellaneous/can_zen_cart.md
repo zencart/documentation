@@ -1,7 +1,7 @@
 ---
 title: Can Zen Cart do this?  Miscellaneous FAQs
 category: miscellaneous
-weight: 5 
+weight: -1
 ---
 
 ### Can Zen Cart be integrated with Accounting Packages such as Quickbooks or Sage?
@@ -14,6 +14,10 @@ If you are looking for integration with a specific package, it's always worth se
 ### Can customers purchase from my Zen Cart shop without creating an account?
 
 At this time all customers must register with their full name, address and other information before going to the checkout. The ability to have more flexibility in the login/account creation/checkout process is on our roadmap for the future. The first steps towards buying without an account are scheduled for inclusion in Zen Cart in the future.
+
+<br />
+In the meantime, the [One Page Checkout](https://www.zen-cart.com/downloads.php?do=file&id=2095) mod has a guest checkout feature
+built into it which might meet your needs.
 
 <hr />
 
@@ -39,4 +43,7 @@ color, size, or any other product variant to your products with no limitations.
 <hr />
 
 
+### Can Zen Cart allow me to create restricted admin accounts? 
+Yes - you can limit admin users to a subset of the superuser capabilities using
+[Admin Profiles](/user/admin_pages/admins/admin_profiles). 
 

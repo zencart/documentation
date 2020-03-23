@@ -56,12 +56,16 @@ weight: 70
 
 <b>Display Product Listing Default Sort Order</b>
 
-<div class='indent'>Product Listing Default sort order?<br />NOTE: Leave Blank for Product Sort Order. Sort the Product Listing in the order you wish for the default display to start in to get the sort order setting. Example: 2a</div>
+<div class='indent'>Product Listing Default sort order?<br />
+
+**NOTE:** Leave Blank for Product Sort Order. Sort the Product Listing in the order you wish for the default display to start in to get the sort order setting. Example: 2a</div>
 
 
 <b>Display Product Add to Cart Button (0=off; 1=on; 2=on with Qty Box per Product)</b>
 
-<div class='indent'>Do you want to display the Add to Cart Button?<br /><br /><strong>NOTE:</strong> Turn OFF Display Multiple Products Qty Box Status to use Option 2 on with Qty Box per Product</div>
+<div class='indent'>Do you want to display the Add to Cart Button?<br /><br />
+
+**NOTE:** Turn OFF Display Multiple Products Qty Box Status to use Option 2 on with Qty Box per Product</div>
 
 
 <b>Display Multiple Products Qty Box Status and Set Button Location</b>

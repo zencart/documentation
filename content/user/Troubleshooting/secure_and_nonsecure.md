@@ -1,0 +1,44 @@
+---
+title: This page contains both secure and nonsecure items (or "Unauthenticated content" or "connection partially encrypted")
+category: troubleshooting
+weight: 10
+---
+
+### Problem:
+This happens on all my "secure" pages, such as Login, My Account and Checkout.
+When I click the Log In link as a customer i get prompted with the security prompts stating:
+
+"This page contains both secure and nonsecure items.
+Do you want to display the nonsecure items?"
+
+or
+"Page contains unauthenticated content"
+
+or
+"connection partially encrypted"
+
+
+
+### Solution:
+
+That indicates that somewhere in your templates or stylesheets you have hard-coded actual URL links to `http://xxxxxxxxx`  instead of using relative paths to objects.
+
+This can also happen if you have added banners with `http://` links and not told them to skip display on SSL pages.
+
+This can also happen if you have added click-tracking tools to your site via javascript, which link to `http://` pages somewhere.
+
+You can identify most culprits by searching your browser's View Source for:
+`src="http://`
+
+Then work through your template files and stylesheets and remove those hard-coded links. If they are caused by click-tracking scripts somewhere, try converting them to `https://` links or contact the vendor for assistance with alternate scripts.
+
+
+Basically, *never* hard-code a full `http://` URL into any page/template/stylesheet on your site unless you know for certain that doing so will not produce this sort of error.  This is especially true for 
+`<img src=...>` and `<script src=...>` tags.
+
+
+
+### ANOTHER TIP:
+Sometimes these same errors are caused by images mentioned in your stylesheet. Double-check to be sure that all those images actually exist. If they don't, then they'll produce "404 Not Found" errors, and sometimes that'll create a "loop" to attempt displaying a 404-error-page, which can in turn throw even more messages.
+
+And, if you have created a "custom" 404 page, then if *that* page has any missing images referenced on it, or on its stylesheets, you could end up in a loop that not only throws security/encryption errors, but also creates excessive traffic in your hosting account, which will make your hosting company unhappy.

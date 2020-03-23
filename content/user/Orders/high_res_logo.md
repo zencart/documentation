@@ -1,7 +1,7 @@
 ---
 title: Can I print a high resolution logo on my invoices and packing slips?
 category: orders
-weight: 1
+weight: 10
 ---
 
 You can. Firstly, if you don't already have it, create your high resolution logo at the size and resolution that you would like to print it. Then upload it to the `admin/images` folder.

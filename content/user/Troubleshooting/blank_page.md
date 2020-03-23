@@ -1,7 +1,7 @@
 ---
 title: Blank Page (or partial blank page) troubleshooting
 category: troubleshooting 
-weight: 1
+weight: 10
 ---
 Blank pages can be caused by a number of things, and often occur just after installing, upgrading, or customizing your store. Any time you touch a PHP file, you must be sure to not introduce syntax problems, and you need to be sure that it uploaded correctly.  
 
@@ -30,11 +30,13 @@ Contact your hosting company's help desk if you need assistance with that.)
 You'll want to read the contents of these files to see what the actual PHP errors are.  
 Then search this FAQ area for your error message and/or see the "Dealing with Error Messages" section, later in this article.  
 
-NOTE: When errors start occurring, the number of log files in this folder can grow very quickly. You can purge them by using the Debug Log File Purge option from your Admin->Tools->Store Manager screen.  
+**NOTE:** When errors start occurring, the number of log files in this folder can grow very quickly. You can purge them by using the Debug Log File Purge option from your Admin->Tools->Store Manager screen.  
+
 You will of course want to review the contents of those files first so you can address the problems they're recording.  
+
 If you don't purge them, it will eventually slow down your website's performance, and use up a large amount of disk space.  
 
-NOTE: If you're running Zen Cart v1.3.8 or older, you REALLY need to UPGRADE ASAP! In the meantime, to enable the debug logging on older versions, use the [Debug Error-Logging Tool](http://www.zen-cart.com/downloads.php?do=file&id=606) from our downloads area.  
+**NOTE:** If you're running Zen Cart v1.3.8 or older, you REALLY need to UPGRADE ASAP! In the meantime, to enable the debug logging on older versions, use the [Debug Error-Logging Tool](http://www.zen-cart.com/downloads.php?do=file&id=606) from our downloads area.  
 
 ### b) Dealing with the Error Messages
 

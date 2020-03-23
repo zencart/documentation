@@ -36,7 +36,7 @@ You need to generate your username and transaction key:
     _(These URLs are used to authorize your store to process transactions. Leaving them blank means there are no restrictions. Specifying a URL limits the URLs allowed to make transactions with your account. Contact your Authorize.net account representative or their tech support for further information or assistance with these settings.)_
 2.  **Relay Response**  
     - Set the Relay Response URL to  
-    **https://yourstore.com/index.php?main_page=checkout_process**  
+    **https://YOURSITE.com/index.php?main_page=checkout_process**  
     ... and then be mindful that you'll need to update this setting if you make any changes to your store URLs later.
 3.  **Silent POST URL**  
     - Leave this blank  
@@ -53,7 +53,7 @@ You need to generate your username and transaction key:
 
 7.  Configure the rest of the settings as desired:
 
-1.  Transaction Mode Response -- Set this to Production for normal use, or simulate some tests using the Test option (See below for testing instructions). NOTE: This can be set to "Test" or "Production" regardless of whether your Authorize.net account is in Test mode. NOTE: TEST TRANSACTIONS WILL NOT APPEAR IN YOUR MERCHANT ACCOUNT AREA.  
+1.  Transaction Mode Response -- Set this to Production for normal use, or simulate some tests using the Test option (See below for testing instructions). **NOTE:** This can be set to "Test" or "Production" regardless of whether your Authorize.net account is in Test mode. **NOTE:** TEST TRANSACTIONS WILL NOT APPEAR IN YOUR MERCHANT ACCOUNT AREA.  
 
 2.  Authorization Type - In most cases you will want to use "Capture" to capture payment immediately. In some situations, you may prefer to simply "Authorize" transactions, and then manually use your Merchant Terminal to formally capture the payments (esp if there will be delays in shipping or if payment amounts may fluctuate between placing the order and shipping it)
 3.  Request CVV Number - If enabled, this will cause the customer to be asked for their 3-or-4 digit number off the back of their card. This is important for card validation, and should usually be enabled.
@@ -61,7 +61,7 @@ You need to generate your username and transaction key:
 5.  Payment Zone - if you want only customers from a particular zone to be able to use this payment module, select that zone here.
 6.  Set Order Status - For Captured and Approved orders, what order-status should be set?  Default recommended is "Processing"
 7.  Sort Order of Display -- Any value greater than zero will cause this payment method to appear in the specified sort order on the checkout-payment page
-8.  Gateway Mode -- if you want to handle collecting card numbers ON your site, then set this to "onsite" and be sure your site has SSL protection on it. It's really better to use the AIM module if you wish to do "onsite" card handling.   If you wish to NOT collect credit card numbers on the pages of your site, then set this to "offsite" so customers will be taken to the Authorize.net website to supply their credit card numbers before being returned back to your site to see their order completion details. NOTE: Using "offsite" can create abandonments since customers are suddenly taken to some OTHER site to enter their payment details. You might want to configure the appearance of that payment page by editing the appropriate settings in your Merchant Account Settings on the Authorize.net website.
+8.  Gateway Mode -- if you want to handle collecting card numbers ON your site, then set this to "onsite" and be sure your site has SSL protection on it. It's really better to use the AIM module if you wish to do "onsite" card handling.   If you wish to NOT collect credit card numbers on the pages of your site, then set this to "offsite" so customers will be taken to the Authorize.net website to supply their credit card numbers before being returned back to your site to see their order completion details. **NOTE:** Using "offsite" can create abandonments since customers are suddenly taken to some OTHER site to enter their payment details. You might want to configure the appearance of that payment page by editing the appropriate settings in your Merchant Account Settings on the Authorize.net website.
 9.  Enable Database Storage - If you enable this option, extended details of each transaction will be stored, enabling you to more effectively conduct audits of fraudulent activity or even track/match order information between Zen Cart and your Authorize.net records.
 10.  Debug Mode - If you need to diagnose what details are sent to and received from the Authorize.net gateway, enable this option. Logs will be stored in the /cache folder and numbered in obscurity to prevent snooping. If not debugging specific problems, it's recommended to set it to "Alerts Only" so you'll be notified only if problems occur.  
 

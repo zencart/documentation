@@ -1,7 +1,7 @@
 ---
 title: Warning Headers already sent...
 category: troubleshooting
-weight: 1
+weight: 10
 ---
 
 **Symptom:**  

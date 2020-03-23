@@ -1,7 +1,7 @@
 ---
 title: Changing the Email Subject Line
 category: email
-weight: 1
+weight: 10
 ---
 
 Email subject lines typically consist of two parts, a piece of static text that says something like "Order Confirmation" or "Message from" and some dynamic content such as an order number or your store's name.

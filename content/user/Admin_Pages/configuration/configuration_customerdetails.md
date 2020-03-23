@@ -11,7 +11,9 @@ weight: 50
 
 <b>Date of Birth</b>
 
-<div class='indent'>Display date of birth field during account creation and with account information<br />NOTE: Set Minimum Value Date of Birth to blank for not required<br />Set Minimum Value Date of Birth > 0 to require</div>
+<div class='indent'>Display date of birth field during account creation and with account information<br />
+
+**NOTE:** Set Minimum Value Date of Birth to blank for not required<br />Set Minimum Value Date of Birth > 0 to require</div>
 
 
 <b>Company</b>
@@ -101,6 +103,8 @@ weight: 50
 
 <b>Customers Referral Status</b>
 
-<div class='indent'>Customers Referral Code is created from<br />0= Off<br />1= 1st Discount Coupon Code used<br />2= Customer can add during create account or edit if blank<br /><br />NOTE: Once the Customers Referral Code has been set it can only be changed in the Admin Customer</div>
+<div class='indent'>Customers Referral Code is created from<br />0= Off<br />1= 1st Discount Coupon Code used<br />2= Customer can add during create account or edit if blank<br /><br />
+
+**NOTE:** Once the Customers Referral Code has been set it can only be changed in the Admin Customer</div>
 
 

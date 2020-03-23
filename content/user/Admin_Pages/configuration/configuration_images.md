@@ -16,12 +16,16 @@ weight: 40
 
 <b>Heading Image Width - Admin</b>
 
-<div class='indent'>The pixel width of heading images in the Admin<br />NOTE: Presently, this adjusts the spacing on the pages in the Admin Pages or could be used to add images to the heading in the Admin</div>
+<div class='indent'>The pixel width of heading images in the Admin<br />
+
+**NOTE:** Presently, this adjusts the spacing on the pages in the Admin Pages or could be used to add images to the heading in the Admin</div>
 
 
 <b>Heading Image Height - Admin</b>
 
-<div class='indent'>The pixel height of heading images in the Admin<br />NOTE: Presently, this adjusts the spacing on the pages in the Admin Pages or could be used to add images to the heading in the Admin</div>
+<div class='indent'>The pixel height of heading images in the Admin<br />
+
+**NOTE:** Presently, this adjusts the spacing on the pages in the Admin Pages or could be used to add images to the heading in the Admin</div>
 
 
 <b>Subcategory Image Width</b>
@@ -166,6 +170,8 @@ weight: 40
 
 <b>Image - Use Proportional Images on Products and Categories</b>
 
-<div class='indent'>Use Proportional Images on Products and Categories?<br /><br />NOTE: Do not use 0 height or width settings for Proportion Images<br />0= off 1= on</div>
+<div class='indent'>Use Proportional Images on Products and Categories?<br /><br />
+
+**NOTE:** Do not use 0 height or width settings for Proportion Images<br />0= off 1= on</div>
 
 
