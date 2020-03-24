@@ -98,6 +98,9 @@ NOT THIS:
 
 `[Github Workflow](https://docs.zen-cart.com/dev/contributing/github_workflow/)`       ** NO!** 
 
+- Cross-link liberally!  Example: 
+
+`[FTP tools](/user/first_steps/useful_tools/#ftp-tools)`
 
 <br />
 
@@ -106,6 +109,22 @@ NOT THIS:
 * [Link to Markdown Syntax](https://www.markdownguide.org/basic-syntax/)
 
 * For simplicity, use Markdown rather than HTML on these pages where ever possible. But remember that **when you embed markdown within an HTML block element, markdown formatting is disabled**.  To turn it back on, use a blank line before and after the markdown OR embed the content in a `<span>`.
+
+<br />
+
+## CSS
+There are two CSS files you can modify: 
+
+- `assets/scss/_variables_project.scss` - loaded BEFORE the template CSS
+- `assets/scss/_styles_project.scss` - loaded AFTER the template CSS
+
+The former is appropriate for defining styles which are not part of 
+the template; the latter is appropriate for modifying styles which are 
+part of the template. 
+
+When you change these files, you must restart `hugo server`; they are not rebuilt the way content files are. 
+
+<br />
 
 
 ## Cleanup of Legacy Content and Markup  

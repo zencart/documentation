@@ -47,4 +47,6 @@ c) check what's normally happening on that line.
 --- Common syntax errors include the use of single-quotes inside statements that already have single-quotes. Check to be sure your quotes aren't mismatched. If you need to use single-quotes while inside other single-quotes, change yours to \' instead of just '.  
 d) the rest of the info simply shows other execution information, mainly the part of the code that discovered that it cannot proceed as expected due to the problem that happened in the 'started at' location.  
 
-To change the encoding on the file, look at your editor's "save as" menu, or the program's preferences settings. A good editor to use is [Notepad++](http://notepad-plus-plus.org). 
+To change the encoding on the file, look for the "Save As" menu item in your
+[text editor](/user/first_steps/useful_tools/#php-html-and-text-editors).
+

@@ -30,9 +30,10 @@ If No, stop, and see our [Certified Hosting](http://www.zen-cart.com/hosting) Si
 
 ### 2\. Do you have FTP software?
 
-If No, stop.  You need to obtain a decent FTP software package such as [FileZilla](http://filezilla.sourceforge.net/) to transfer files back and forth from your computer to your webserver (the computer on the internet where you have your domain hosted). 
+If No, stop.  You need to obtain a good [FTP tool](/user/first_steps/useful_tools/#ftp-tools) to transfer files back and forth from your computer to [your web host](/user/first_steps/hosting/#hosting-companies).
 
-<span class="error">**NOTE:** Many people have had timeout and other problems when using programs like SmartFTP and CuteFTP. We recommend that you do NOT use these problematic programs.  
+<span class="error">
+**NOTE:** Many people have had timeout and other problems when using programs like SmartFTP and CuteFTP. We recommend that you do NOT use these problematic programs.  See [FTP tools](/user/first_steps/useful_tools/#ftp-tools) for a list of alternatives. 
 
 **NOTE 2:** If your hosting company provides an FTP program that runs inside your browser, we recommend that you do NOT use that for uploading large amounts of files such as a fresh install of Zen Cart. Those are okay for single-file uploads, but unreliable for several files at once.</span>
 
@@ -41,11 +42,10 @@ If No, stop.  You need to obtain a decent FTP software package such as [FileZill
 
 ### 3\. Do you have a good Text Editor?
 
-If No stop.  You will need a good text editing tool such as [Notepad++](http://notepad-plus.sourceforge.net/) (free), [UltraEdit](http://ultraedit.com/), [CrimsonEditor](http://crimsoneditor.com/) (free), [BBedit/TextWrangler](http://www.barebones.com/)(Mac), Kedit (linux), or some other type of text editor for modifying the files in the Zen Cart® software.
+If No stop.  You will need a [text editor](/user/first_steps/useful_tools/#php-html-and-text-editors).
 
-<span class="error">**Note:** <u>do **not** use cPanel for editing files,</u> <u>or MS Word</u> or other software designed for fancy writing.  Instead, you want a nice clean Text Editor.</span>  
+<span class="error">**Note:** <u>do **not** use cPanel for editing files,</u> <u>or MS Word</u> or other software designed for fancy writing.  </span>
 
-You can use the Windows Notepad, but this is limited in capabilities and the size of files that it can open and often can cause more harm than good. (Notepad++ mentioned above is the most recommended choice.)  
 
 ### 4\. Do you have access to your webhosting control panel?
 

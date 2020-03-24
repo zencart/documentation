@@ -191,7 +191,7 @@ If you are using download-by-redirect, then your "pub" folder needs to be read-w
     _
 3.  Downloads in an order by itself will never see the checkout_shipping page ... if you do then your Product is setup wrong for Downloads  
 
-4.  If not on a Windows server, meaning Linux/Unix, /pub should be writable (usually 777 or 755 depending on the host server) and Redirect should be ON  
+4.  If on Linux/Unix, /pub should be writable (usually 777 or 755 depending on the host server) and Redirect should be ON  
     If you cannot use Redirect ON, ask your hosting site why they cannot follow the symbolic link between the `/download` and `/pub` directories  
 
 5.  If on a Windows server, /pub does NOT need to be writable/777 since you do not use this directory because symlinks typically don't work on Windows servers, and Redirect is OFF since Redirect requires symlink support.  

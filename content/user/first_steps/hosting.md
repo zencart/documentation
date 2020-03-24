@@ -69,7 +69,7 @@ some downtime.
 
 ### Hosting Companies
 
-Your hosting company (or *hoster*) is the company that provides server space 
+Your hosting company (or *hoster* or *website host*) is the company that provides server space 
 for you to run your website.  You will pay monthly or annually 
 for this service. 
 
