@@ -1,5 +1,3 @@
----
-title: Using Products and Attributes
 description: Using Products and Attributes in Zen Cart 
 category: products 
 weight: -1 
@@ -51,6 +49,8 @@ There are two setups required in order to allow customers to purchase in quantit
 Yes. If you haven't created it yet, set up the product that you want to be listed in two or more categories. Go to the category in which you put that product (Admin > Catalog > Categories/Products) where you will see a row of icons towards the right, one of which is a white "c" in a blue circle. Click on that and you can copy a product to another category.
 
 There are two types of copy: linked or duplicated. In the former case the product shows in both categories but there's only one instance, so any changes will affect both. In the latter case a new, identical product is created, which can then be changed independently of the original.
+
+<div id="foo"></div>
 
 ## Why do my product names show up twice? 
 Symptom: Instead of showing a product image thumbnail and the product's name, I'm seeing just the product name, but twice!

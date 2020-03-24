@@ -59,7 +59,7 @@ Any mods/add-ons you've installed will likely contain many programming changes, 
 
 Your list of add-on's may help you narrow down the source of any differences you're finding between versions. You may have to download the add-on again to take a look at the readme or code contained in it. You may have to contact the author to ask for an updated version.  
 
-As you make your list of changed files, etc, at this stage, you may want to move things into the Zen Cart® template-override structure, if you haven't already done so. See the [Template System Documentation](/wiki/index.php/Customisation_-_Templates#Introduction) for help on the template system.  
+As you make your list of changed files, etc, at this stage, you may want to move things into the Zen Cart® template-override structure, if you haven't already done so. See the [Template System Documentation](/user/template/) for help on the template system.  
 
 </div>
 

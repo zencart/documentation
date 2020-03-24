@@ -1,246 +1,245 @@
 ---
 title: Configuration-Layout Settings
-description: Zen Cart Configuration-Layout Settings Admin Page 
 category: admin_pages
-weight: 180
+weight: 180 
 ---
 
-<b>Column Width - Left Boxes</b>
+<h2 id="column_width__left_boxes">Column Width - Left Boxes</h2>
 
 <div class='indent'>Width of the Left Column Boxes<br />px may be included<br />Default = 150px</div>
 
 
-<b>Column Width - Right Boxes</b>
+<h2 id="column_width__right_boxes">Column Width - Right Boxes</h2>
 
 <div class='indent'>Width of the Right Column Boxes<br />px may be included<br />Default = 150px</div>
 
 
-<b>Bread Crumbs Navigation Separator</b>
+<h2 id="bread_crumbs_navigation_separator">Bread Crumbs Navigation Separator</h2>
 
 <div class='indent'>Enter the separator symbol to appear between the Navigation Bread Crumb trail<br />Note: Include spaces with the &amp;nbsp; symbol if you want them part of the separator.<br />Default = &amp;nbsp;::&amp;nbsp;</div>
 
 
-<b>Define Breadcrumb Status</b>
+<h2 id="define_breadcrumb_status">Define Breadcrumb Status</h2>
 
 <div class='indent'>Enable the Breadcrumb Trail Links?<br />0= OFF<br />1= ON<br />2= Off for Home Page Only</div>
 
 
-<b>Bestsellers - Number Padding</b>
+<h2 id="bestsellers__number_padding">Bestsellers - Number Padding</h2>
 
 <div class='indent'>What do you want to Pad the numbers with?<br />Default = &amp;nbsp;</div>
 
 
-<b>Bestsellers - Truncate Product Names</b>
+<h2 id="bestsellers__truncate_product_names">Bestsellers - Truncate Product Names</h2>
 
 <div class='indent'>What size do you want to truncate the Product Names?<br />Default = 35</div>
 
 
-<b>Bestsellers - Truncate Product Names followed by ...</b>
+<h2 id="bestsellers__truncate_product_names_followed_by_">Bestsellers - Truncate Product Names followed by ...</h2>
 
 <div class='indent'>When truncated Product Names follow with ...<br />Default = true</div>
 
 
-<b>Categories Box - Show Specials Link</b>
+<h2 id="categories_box__show_specials_link">Categories Box - Show Specials Link</h2>
 
 <div class='indent'>Show Specials Link in the Categories Box</div>
 
 
-<b>Categories Box - Show Products New Link</b>
+<h2 id="categories_box__show_products_new_link">Categories Box - Show Products New Link</h2>
 
 <div class='indent'>Show Products New Link in the Categories Box</div>
 
 
-<b>Shopping Cart Box Status</b>
+<h2 id="shopping_cart_box_status">Shopping Cart Box Status</h2>
 
 <div class='indent'>Shopping Cart Shows<br />0= Always<br />1= Only when full<br />2= Only when full but not when viewing the Shopping Cart</div>
 
 
-<b>Categories Box - Show Featured Products Link</b>
+<h2 id="categories_box__show_featured_products_link">Categories Box - Show Featured Products Link</h2>
 
 <div class='indent'>Show Featured Products Link in the Categories Box</div>
 
 
-<b>Categories Box - Show Products All Link</b>
+<h2 id="categories_box__show_products_all_link">Categories Box - Show Products All Link</h2>
 
 <div class='indent'>Show Products All Link in the Categories Box</div>
 
 
-<b>Column Left Status - Global</b>
+<h2 id="column_left_status__global">Column Left Status - Global</h2>
 
 <div class='indent'>Show Column Left, unless page override exists?<br />0= Column Left is always off<br />1= Column Left is on, unless page override</div>
 
 
-<b>Column Right Status - Global</b>
+<h2 id="column_right_status__global">Column Right Status - Global</h2>
 
 <div class='indent'>Show Column Right, unless page override exists?<br />0= Column Right is always off<br />1= Column Right is on, unless page override</div>
 
 
-<b>Column Width - Left</b>
+<h2 id="column_width__left">Column Width - Left</h2>
 
 <div class='indent'>Width of the Left Column<br />px may be included<br />Default = 150px</div>
 
 
-<b>Column Width - Right</b>
+<h2 id="column_width__right">Column Width - Right</h2>
 
 <div class='indent'>Width of the Right Column<br />px may be included<br />Default = 150px</div>
 
 
-<b>Categories Separator between links Status</b>
+<h2 id="categories_separator_between_links_status">Categories Separator between links Status</h2>
 
 <div class='indent'>Show Category Separator between Category Names and Links?<br />0= off<br />1= on</div>
 
 
-<b>Categories Separator between the Category Name and Count</b>
+<h2 id="categories_separator_between_the_category_name_and_count">Categories Separator between the Category Name and Count</h2>
 
 <div class='indent'>What separator do you want between the Category name and the count?<br />Default = -&amp;gt;</div>
 
 
-<b>Categories Separator between the Category Name and Sub Categories</b>
+<h2 id="categories_separator_between_the_category_name_and_sub_categories">Categories Separator between the Category Name and Sub Categories</h2>
 
 <div class='indent'>What separator do you want between the Category name and Sub Category Name?<br />Default = |_&amp;nbsp;</div>
 
 
-<b>Categories Count Prefix</b>
+<h2 id="categories_count_prefix">Categories Count Prefix</h2>
 
 <div class='indent'>What do you want to Prefix the count with?<br />Default= (</div>
 
 
-<b>Categories Count Suffix</b>
+<h2 id="categories_count_suffix">Categories Count Suffix</h2>
 
 <div class='indent'>What do you want as a Suffix to the count?<br />Default= )</div>
 
 
-<b>Categories SubCategories Indent</b>
+<h2 id="categories_subcategories_indent">Categories SubCategories Indent</h2>
 
 <div class='indent'>What do you want to use as the subcategories indent?<br />Default= &nbsp;&nbsp;</div>
 
 
-<b>Categories with 0 Products Status</b>
+<h2 id="categories_with_0_products_status">Categories with 0 Products Status</h2>
 
 <div class='indent'>Show Category Count for 0 Products?<br />0= off<br />1= on</div>
 
 
-<b>Split Categories Box</b>
+<h2 id="split_categories_box">Split Categories Box</h2>
 
 <div class='indent'>Split the categories box display by product type</div>
 
 
-<b>Shopping Cart - Show Totals</b>
+<h2 id="shopping_cart__show_totals">Shopping Cart - Show Totals</h2>
 
 <div class='indent'>Show Totals Above Shopping Cart?<br />0= off<br />1= on: Items Weight Amount<br />2= on: Items Weight Amount, but no weight when 0<br />3= on: Items Amount</div>
 
 
-<b>Customer Greeting - Show on Index Page</b>
+<h2 id="customer_greeting__show_on_index_page">Customer Greeting - Show on Index Page</h2>
 
 <div class='indent'>Always Show Customer Greeting on Index?<br />0= off<br />1= on</div>
 
 
-<b>Categories - Always Show on Main Page</b>
+<h2 id="categories__always_show_on_main_page">Categories - Always Show on Main Page</h2>
 
 <div class='indent'>Always Show Categories on Main Page<br />0= off<br />1= on<br />Default category can be set to Top Level or a Specific Top Level</div>
 
 
-<b>Main Page - Opens with Category</b>
+<h2 id="main_page__opens_with_category">Main Page - Opens with Category</h2>
 
 <div class='indent'>0= Top Level Categories<br />Or enter the Category ID#<br />Note: Sub Categories can also be used Example: 3_10</div>
 
 
-<b>Categories - Always Open to Show SubCategories</b>
+<h2 id="categories__always_open_to_show_subcategories">Categories - Always Open to Show SubCategories</h2>
 
 <div class='indent'>Always Show Categories and SubCategories<br />0= off, just show Top Categories<br />1= on, Always show Categories and SubCategories when selected</div>
 
 
-<b>Banner Display Groups - Header Position 1</b>
+<h2 id="banner_display_groups__header_position_1">Banner Display Groups - Header Position 1</h2>
 
 <div class='indent'>The Banner Display Groups can be from 1 Banner Group or Multiple Banner Groups<br /><br />For Multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Header Position 1?<br />Leave blank for none</div>
 
 
-<b>Banner Display Groups - Header Position 2</b>
+<h2 id="banner_display_groups__header_position_2">Banner Display Groups - Header Position 2</h2>
 
 <div class='indent'>The Banner Display Groups can be from 1 Banner Group or Multiple Banner Groups<br /><br />For Multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Header Position 2?<br />Leave blank for none</div>
 
 
-<b>Banner Display Groups - Header Position 3</b>
+<h2 id="banner_display_groups__header_position_3">Banner Display Groups - Header Position 3</h2>
 
 <div class='indent'>The Banner Display Groups can be from 1 Banner Group or Multiple Banner Groups<br /><br />For Multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Header Position 3?<br />Leave blank for none</div>
 
 
-<b>Banner Display Groups - Footer Position 1</b>
+<h2 id="banner_display_groups__footer_position_1">Banner Display Groups - Footer Position 1</h2>
 
 <div class='indent'>The Banner Display Groups can be from 1 Banner Group or Multiple Banner Groups<br /><br />For Multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Footer Position 1?<br />Leave blank for none</div>
 
 
-<b>Banner Display Groups - Footer Position 2</b>
+<h2 id="banner_display_groups__footer_position_2">Banner Display Groups - Footer Position 2</h2>
 
 <div class='indent'>The Banner Display Groups can be from 1 Banner Group or Multiple Banner Groups<br /><br />For Multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Footer Position 2?<br />Leave blank for none</div>
 
 
-<b>Banner Display Groups - Footer Position 3</b>
+<h2 id="banner_display_groups__footer_position_3">Banner Display Groups - Footer Position 3</h2>
 
 <div class='indent'>The Banner Display Groups can be from 1 Banner Group or Multiple Banner Groups<br /><br />For Multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />Default Group is Wide-Banners<br /><br />What Banner Group(s) do you want to use in the Footer Position 3?<br />Leave blank for none</div>
 
 
-<b>Banner Display Groups - Side Box banner_box</b>
+<h2 id="banner_display_groups__side_box_banner_box">Banner Display Groups - Side Box banner_box</h2>
 
 <div class='indent'>The Banner Display Groups can be from 1 Banner Group or Multiple Banner Groups<br /><br />For Multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br />Default Group is SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Side Box - banner_box?<br />Leave blank for none</div>
 
 
-<b>Banner Display Groups - Side Box banner_box2</b>
+<h2 id="banner_display_groups__side_box_banner_box2">Banner Display Groups - Side Box banner_box2</h2>
 
 <div class='indent'>The Banner Display Groups can be from 1 Banner Group or Multiple Banner Groups<br /><br />For Multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br />Default Group is SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Side Box - banner_box2?<br />Leave blank for none</div>
 
 
-<b>Banner Display Group - Side Box banner_box_all</b>
+<h2 id="banner_display_group__side_box_banner_box_all">Banner Display Group - Side Box banner_box_all</h2>
 
 <div class='indent'>The Banner Display Group may only be from one (1) Banner Group for the Banner All sidebox<br /><br />Default Group is BannersAll<br /><br />What Banner Group do you want to use in the Side Box - banner_box_all?<br />Leave blank for none</div>
 
 
-<b>Footer - Show IP Address status</b>
+<h2 id="footer__show_ip_address_status">Footer - Show IP Address status</h2>
 
 <div class='indent'>Show Customer IP Address in the Footer<br />0= off<br />1= on<br />Should the Customer IP Address show in the footer?</div>
 
 
-<b>Product Discount Quantities - Add how many blank discounts?</b>
+<h2 id="product_discount_quantities__add_how_many_blank_discounts">Product Discount Quantities - Add how many blank discounts?</h2>
 
 <div class='indent'>How many blank discount quantities should be added for Product Pricing?</div>
 
 
-<b>Product Discount Quantities - Display how many per row?</b>
+<h2 id="product_discount_quantities__display_how_many_per_row">Product Discount Quantities - Display how many per row?</h2>
 
 <div class='indent'>How many discount quantities should show per row on Product Info Pages?</div>
 
 
-<b>Categories/Products Display Sort Order</b>
+<h2 id="categoriesproducts_display_sort_order">Categories/Products Display Sort Order</h2>
 
 <div class='indent'>Categories/Products Display Sort Order<br />0= Categories/Products Sort Order/Name<br />1= Categories/Products Name<br />2= Products Model<br />3= Products Qty+, Products Name<br />4= Products Qty-, Products Name<br />5= Products Price+, Products Name<br />6= Products Price-, Products Name</div>
 
 
-<b>Option Names and Values Global Add, Copy and Delete Features Status</b>
+<h2 id="option_names_and_values_global_add_copy_and_delete_features_status">Option Names and Values Global Add, Copy and Delete Features Status</h2>
 
 <div class='indent'>Option Names and Values Global Add, Copy and Delete Features Status<br />0= Hide Features<br />1= Show Features<br />(Default=1)</div>
 
 
-<b>Categories-Tabs Menu ON/OFF</b>
+<h2 id="categoriestabs_menu_onoff">Categories-Tabs Menu ON/OFF</h2>
 
 <div class='indent'>Categories-Tabs<br />This enables the display of your store's categories as a menu across the top of your header. There are many potential creative uses for this.<br />0= Hide Categories Tabs<br />1= Show Categories Tabs</div>
 
 
-<b>Site Map - include My Account Links?</b>
+<h2 id="site_map__include_my_account_links">Site Map - include My Account Links?</h2>
 
 <div class='indent'>Should the links to My Account show up on the site-map?<br />Note: Spiders will try to index this page, and likely should not be sent to secure pages, since there is no benefit in indexing a login page.<br /><br />Default: false</div>
 
 
-<b>Skip 1-prod Categories</b>
+<h2 id="skip_1prod_categories">Skip 1-prod Categories</h2>
 
 <div class='indent'>Skip single-product categories<br />If this option is set to True, then if the customer clicks on a link to a category which only contains a single item, then Zen Cart will take them directly to that product-page, rather than present them with another link to click in order to see the product.<br />Default: True</div>
 
 
-<b>Use split-login page</b>
+<h2 id="use_splitlogin_page">Use split-login page</h2>
 
 <div class='indent'>The login page can be displayed in two modes: Split or Vertical.<br />In Split mode, the create-account options are accessed by clicking a button to get to the create-account page.  In Vertical mode, the create-account input fields are all displayed inline, below the login field, making one less click for the customer to create their account.<br />Default: False</div>
 
 
-<b>CSS Buttons</b>
+<h2 id="css_buttons">CSS Buttons</h2>
 
 <div class='indent'>CSS Buttons<br />Use CSS buttons instead of images (GIF/JPG)?<br />Button styles must be configured in the stylesheet if you enable this option.</div>
 

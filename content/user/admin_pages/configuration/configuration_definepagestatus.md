@@ -1,66 +1,65 @@
 ---
 title: Configuration-Define Page Status
-description: Zen Cart Configuration-Define Page Status Admin Page 
 category: admin_pages
 weight: 240 
 ---
 
-<b>Define Main Page Status</b>
+<h2 id="define_main_page_status">Define Main Page Status</h2>
 
 <div class='indent'>Enable the Defined Main Page Link/Text?<br />0= Link ON, Define Text OFF<br />1= Link ON, Define Text ON<br />2= Link OFF, Define Text ON<br />3= Link OFF, Define Text OFF</div>
 
 
-<b>Define Contact Us Status</b>
+<h2 id="define_contact_us_status">Define Contact Us Status</h2>
 
 <div class='indent'>Enable the Defined Contact Us Link/Text?<br />0= Link ON, Define Text OFF<br />1= Link ON, Define Text ON<br />2= Link OFF, Define Text ON<br />3= Link OFF, Define Text OFF</div>
 
 
-<b>Define Privacy Status</b>
+<h2 id="define_privacy_status">Define Privacy Status</h2>
 
 <div class='indent'>Enable the Defined Privacy Link/Text?<br />0= Link ON, Define Text OFF<br />1= Link ON, Define Text ON<br />2= Link OFF, Define Text ON<br />3= Link OFF, Define Text OFF</div>
 
 
-<b>Define Shipping & Returns</b>
+<h2 id="define_shipping__returns">Define Shipping & Returns</h2>
 
 <div class='indent'>Enable the Defined Shipping & Returns Link/Text?<br />0= Link ON, Define Text OFF<br />1= Link ON, Define Text ON<br />2= Link OFF, Define Text ON<br />3= Link OFF, Define Text OFF</div>
 
 
-<b>Define Conditions of Use</b>
+<h2 id="define_conditions_of_use">Define Conditions of Use</h2>
 
 <div class='indent'>Enable the Defined Conditions of Use Link/Text?<br />0= Link ON, Define Text OFF<br />1= Link ON, Define Text ON<br />2= Link OFF, Define Text ON<br />3= Link OFF, Define Text OFF</div>
 
 
-<b>Define Checkout Success</b>
+<h2 id="define_checkout_success">Define Checkout Success</h2>
 
 <div class='indent'>Enable the Defined Checkout Success Link/Text?<br />0= Link ON, Define Text OFF<br />1= Link ON, Define Text ON<br />2= Link OFF, Define Text ON<br />3= Link OFF, Define Text OFF</div>
 
 
-<b>Define Discount Coupon</b>
+<h2 id="define_discount_coupon">Define Discount Coupon</h2>
 
 <div class='indent'>Enable the Defined Discount Coupon Link/Text?<br />0= Link ON, Define Text OFF<br />1= Link ON, Define Text ON<br />2= Link OFF, Define Text ON<br />3= Link OFF, Define Text OFF</div>
 
 
-<b>Define Site Map Status</b>
+<h2 id="define_site_map_status">Define Site Map Status</h2>
 
 <div class='indent'>Enable the Defined Site Map Link/Text?<br />0= Link ON, Define Text OFF<br />1= Link ON, Define Text ON<br />2= Link OFF, Define Text ON<br />3= Link OFF, Define Text OFF</div>
 
 
-<b>Define Page-Not-Found Status</b>
+<h2 id="define_pagenotfound_status">Define Page-Not-Found Status</h2>
 
 <div class='indent'>Enable the Defined Page-Not-Found Text from define-pages?<br />0= Define Text OFF<br />1= Define Text ON</div>
 
 
-<b>Define Page 2</b>
+<h2 id="define_page_2">Define Page 2</h2>
 
 <div class='indent'>Enable the Defined Page 2 Link/Text?<br />0= Link ON, Define Text OFF<br />1= Link ON, Define Text ON<br />2= Link OFF, Define Text ON<br />3= Link OFF, Define Text OFF</div>
 
 
-<b>Define Page 3</b>
+<h2 id="define_page_3">Define Page 3</h2>
 
 <div class='indent'>Enable the Defined Page 3 Link/Text?<br />0= Link ON, Define Text OFF<br />1= Link ON, Define Text ON<br />2= Link OFF, Define Text ON<br />3= Link OFF, Define Text OFF</div>
 
 
-<b>Define Page 4</b>
+<h2 id="define_page_4">Define Page 4</h2>
 
 <div class='indent'>Enable the Defined Page 4 Link/Text?<br />0= Link ON, Define Text OFF<br />1= Link ON, Define Text ON<br />2= Link OFF, Define Text ON<br />3= Link OFF, Define Text OFF</div>
 
