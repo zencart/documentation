@@ -54,7 +54,8 @@ Edit /admin/includes/configure.php
 **<font color="#800080">IMPORTANT NOTE: <font size="4">If you're using Zen Cart v1.5.0 or newer, you can skip this step</font>, and proceed to step B to rename the folder using your FTP program.  With v1.5.0 there's no need to edit your configure.php file when renaming your admin folder.</font>**
 
 Using your FTP program, download a copy of your **/admin/includes/configure.php** file to your computer.  
-Using a simple text editor like notepad (or better yet, use [Notepad++](http://notepad-plus.sf.net) or [TextWrangler](http://www.barebones.com/products/TextWrangler/)), change all instances of **_admin_** to your chosen **new admin folder-name**.  
+
+Using a [plain text editor](/user/first_steps/useful_tools/#php-html-and-text-editors) change all instances of **_admin_** to your chosen **new admin folder-name**.  
 
 For maximum security, you may want to consider that new folder name should include numbers and a combination of upper and lower case letters. The longer you make this folder's name the more secure it will be.  
 

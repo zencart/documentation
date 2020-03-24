@@ -7,7 +7,7 @@ weight: 10
 
 In a Windows-hosting environment using IIS, when you create a virtual product using download attributes customers are able to download a product as much as they like by using the following as an example:   www.websitename.co.uk/download/product.zip  
 
-Download by redirect (which windows servers can't usually provide) is much more secure than without redirect.  
+Download by redirect (which Windows servers can't usually provide) is much more secure than without redirect.  
 
 However, it's true that if a user understands Zen Cart infrastructure, they could perhaps figure out how to download directly from the "downloads" folder.  
 

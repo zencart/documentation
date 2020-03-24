@@ -66,10 +66,13 @@ This will not only help prevent outgoing emails from ending up in spam folders, 
 
 It's important that you CHMOD (set permissions) on the two configure.php files as <u>**read-only**</u>. Typically this means setting them to _644_, or in some cases _444_.  
 The configure.php files are located in:  
-/&lt;YOURSITEFOLDER&gt;/includes/configure.php  
-/&lt;YOURSITEFOLDER&gt;/renamed-admin/includes/configure.php  
 
-If you're not clear on what YOURSITEFOLDER means, please [read this](/user/first_steps/basic_terms/). 
+```
+/includes/configure.php  
+/YOURADMIN/includes/configure.php  
+```
+
+If you're not clear on what `YOURADMIN` means, please [read this](/user/first_steps/basic_terms/). 
 
 Quite often setting permissions on a file to read only via FTP will not work. Even if the permission looks like it was set to read only, it really may not have been. You must verify the correct setting by entering the store and seeing if there is a warning message on the top of the screen. "Warning: I am able to write to the configuration file:..." In this case you will need to use the "File Manager" supplied with your webhosting account.
 
@@ -117,7 +120,7 @@ It is wise to observe caution while working in your admin area:
 
 After you have finished editing your define pages in [Admin > Tools > Define Pages Editor](/user/admin_pages/tools/define_pages/), you should protect them:
 
-A. Download a copy of them to your PC using your FTP software. They are located in the /includes/languages/english/html_includes folder and subfolders.
+A. Download a copy of them to your PC using your [FTP software](/user/first_steps/useful_tools/). They are located in the /includes/languages/english/html_includes folder and subfolders.
 
 B. Make them CHMOD 644 (ie: “read-only”). See notes above on CHMOD. `/includes/languages/english/html_includes` – and all files/folders underneath
 
@@ -225,7 +228,9 @@ To stop the browser from printing the admin URL (which discloses your Admin fold
 1.  Be sure you've done all the steps listed in this document.
 2.  Make recent backups of your website files and database.
     *   Backup the database over a secure connection (ie: if you're using phpMyAdmin to backup, then make sure you're using HTTPS addresses in your URLs).
-    *   Backup the website files over a secure connection (If you're copying files via FTP, be sure to use SECURE-FTP [FTP over SSL/TLS](http://en.wikipedia.org/wiki/FTPS "http://en.wikipedia.org/wiki/FTPS")). A good tool that supports Secure FTP (SFTP) is WinSCP, provided you configure your connection in it accordingly.)
+    *   Backup the website files over a secure connection If you're copying files via FTP, be sure to use a secure form of FTP, not plain FTP. 
+See [FTP tools](/user/first_steps/useful_tools/#ftp-tools) and [secure access](/user/first_steps/secure_access).  
+
     *   Store the backed up database and website files into an encrypted file. (You should NOT keep your backups on your server. But if you do, encrypt them securely. See your hosting company for advice.)
 3.  Check your server's error log regularly for odd or suspicious activity. (Your hosting control panel should give you access to the Apache error_log)
     *   Look for any links that went to a page that isn't in your site.

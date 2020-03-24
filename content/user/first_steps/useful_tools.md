@@ -1,5 +1,5 @@
 ---
-title: Useful Tools 
+title: Basic Tools 
 description: Useful Tools for working with Zen Cart 
 category: first_steps
 weight: 10
@@ -57,6 +57,7 @@ Descriptions of these tools can be found at the individual web sites
 
 ### Freeware
 
+*   [FileZilla](https://filezilla-project.org/) (Windows, Mac, Linux)
 *   [WinSCP](http://winscp.net/) A great Windows-based secure-FTP program. *RECOMMENDED*
 *   [FlashFXP](http://www.flashfxp.com) (Windows)
 *   [CyberDuck FTP](http://www.cyberduck.ch) (Mac)
