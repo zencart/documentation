@@ -11,7 +11,7 @@ Descriptions of these tools can be found at the individual web sites
 ### Freeware
 
 *   [Sublime Text](http://www.sublimetext.com) (Windows, Mac, Linux)
-*   VS Code
+*   [VS Code](https://code.visualstudio.com) (Windows, Mac, Linux)
 *   [Notepad++](http://notepad-plus-plus.org/) (Windows)
 
 ### Commercial
@@ -57,9 +57,8 @@ Descriptions of these tools can be found at the individual web sites
 
 ### Freeware
 
-*   [FileZilla](https://filezilla-project.org/) (Windows, Mac, Linux)
 *   [WinSCP](http://winscp.net/) A great Windows-based secure-FTP program. *RECOMMENDED*
-*   [FlashFXP](http://www.flashfxp.com) (Windows)
+*   [FileZilla](https://filezilla-project.org/) (Windows, Mac, Linux) (NOTE: be sure to download original software, not fakes; and don't store passwords in it)
 *   [CyberDuck FTP](http://www.cyberduck.ch) (Mac)
 
 ### Commercial
