@@ -1,5 +1,6 @@
 ---
 title: ERROR 0071 There appears to be a problem with the database. Maintenance is required.
+description: Error 0071 in Zen Cart
 category: troubleshooting 
 weight: 10
 ---

@@ -1,5 +1,6 @@
 ---
 title: Configuration-Credit Cards
+description: Zen Cart Configuration-Credit Cards Admin Page 
 category: admin_pages
 weight: 160 
 ---

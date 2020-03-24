@@ -1,5 +1,6 @@
 ---
 title: Using EZ-Pages 
+description: Using EZ-Pages in Zen Cart 
 category: ezpages
 weight: -1
 ---

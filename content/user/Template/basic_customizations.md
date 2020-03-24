@@ -1,5 +1,6 @@
 ---
 title: Basic Template Customizations 
+description: Basic Template Customizations in Zen Cart
 category: templates
 weight: 10
 ---

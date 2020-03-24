@@ -1,5 +1,6 @@
 ---
 title: Additional Images - disabling 
+description: Zen Cart Additional Images - disabling 
 category: customizing
 weight: 10
 ---

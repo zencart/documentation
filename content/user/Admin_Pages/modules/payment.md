@@ -1,5 +1,6 @@
 ---
 title: Payment
+description: Zen Cart Payment Admin Page 
 category: admin_pages
 weight: 10
 ---

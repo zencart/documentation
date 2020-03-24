@@ -1,5 +1,6 @@
 ---
-title: Show I charge taxes?  How much? 
+title: Should I charge taxes?  How much? 
+description: Should I charge taxes in Zen Cart?  How much? 
 category: localization 
 weight: 10
 ---

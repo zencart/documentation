@@ -1,5 +1,6 @@
 ---
 title: Admin Activity Logs 
+description: Zen Cart Admin Activity Logs Admin Page 
 category: admin_pages
 weight: 40 
 ---

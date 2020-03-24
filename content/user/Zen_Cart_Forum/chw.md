@@ -1,5 +1,6 @@
 ---
 title: Commercial Help Wanted 
+description: Zen Cart Commercial Help Wanted 
 category: zen_cart_forum
 weight: 10
 ---

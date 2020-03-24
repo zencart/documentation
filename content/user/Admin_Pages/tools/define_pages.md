@@ -1,5 +1,6 @@
 ---
 title: Define Pages Editor
+description: Zen Cart Define Pages Editor
 category: admin_pages
 weight: 110
 ---

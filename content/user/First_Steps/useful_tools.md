@@ -1,5 +1,6 @@
 ---
 title: Useful Tools 
+description: Useful Tools for working with Zen Cart 
 category: first_steps
 weight: 10
 ---

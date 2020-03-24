@@ -1,5 +1,6 @@
 ---
 title: Scoping
+description: Scoping of EU Digital VAT in Zen Cart 
 weight: 2
 ---
 

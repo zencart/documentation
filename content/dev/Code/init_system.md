@@ -1,5 +1,6 @@
 ---
 title: Init System
+description: Zen Cart Init System
 category: code
 weight: 10
 ---

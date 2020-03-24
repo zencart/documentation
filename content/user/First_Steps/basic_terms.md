@@ -1,5 +1,6 @@
 ---
 title: Basic Terms 
+description: Zen Cart Basic Terms 
 category: first_steps
 weight: 10
 ---

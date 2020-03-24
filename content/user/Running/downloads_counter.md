@@ -1,5 +1,6 @@
 ---
 title: Resetting the Downloads Counter on completed orders
+description: Resetting the Zen Cart Downloads Counter on completed orders
 category: Orders
 weight: 10
 ---

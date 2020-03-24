@@ -1,5 +1,6 @@
 ---
 title: Where can I download the Zen Cart code?
+description: Where can I download the Zen Cart code?
 category: first_steps
 weight: 10
 ---

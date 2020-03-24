@@ -1,5 +1,6 @@
 ---
 title: Backups - how do I do a site backup? 
+description: how do I do a site backup in Zen Cart? 
 category: miscellaneous
 weight: 10
 ---

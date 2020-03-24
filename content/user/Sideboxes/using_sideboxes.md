@@ -1,5 +1,6 @@
 ---
 title: Using Sideboxes 
+description: Zen Cart Using Sideboxes 
 category: sideboxes
 weight: -1
 ---

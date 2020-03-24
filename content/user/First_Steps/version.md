@@ -1,5 +1,6 @@
 ---
 title: Version Information for Zen Cart, PHP and MySQL
+description: Version Information for Zen Cart, PHP and MySQL
 category: first_steps 
 weight: 10
 ---

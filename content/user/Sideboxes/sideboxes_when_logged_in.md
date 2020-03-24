@@ -1,5 +1,6 @@
 ---
 title: Displaying sideboxes for logged in visitors only
+description: Zen Cart Displaying sideboxes for logged in visitors only
 category: sideboxes
 weight: 10
 ---

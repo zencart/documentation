@@ -1,5 +1,6 @@
 ---
 title: Introduction
+description: Introduction to EU Digital VAT
 weight: 1
 ---
 

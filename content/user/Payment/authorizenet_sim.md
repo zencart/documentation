@@ -1,5 +1,6 @@
 ---
 title: Authorize.net SIM Payment Module
+description: Zen Cart Authorize.net SIM Payment Module
 category: payment
 weight: 10
 ---

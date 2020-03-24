@@ -1,5 +1,6 @@
 ---
 title: Announcements 
+description: Zen Cart Announcements 
 category: about_us
 weight: 10
 ---

@@ -1,5 +1,6 @@
 ---
 title: Configuration-GV Coupons
+description: Zen Cart Configuration-GV Coupons Admin Page 
 category: admin_pages
 weight: 150
 ---

@@ -1,5 +1,6 @@
 ---
 title: Upgrading old plugins for 1.5 Compatibility
+description: Upgrading old Zen Cart plugins for 1.5 Compatibility
 category: plugins
 weight: 1
 ---

@@ -1,5 +1,6 @@
 ---
 title: Payment Modules - Miscellaneous Questions
+description: Zen Cart Payment Modules - Miscellaneous Questions
 category: payment
 weight: 5
 ---

@@ -1,5 +1,6 @@
 ---
 title: Blocking probing activity 
+description: Blocking probing activity in Zen Cart
 category: security
 weight: 10
 ---

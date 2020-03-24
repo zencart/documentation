@@ -1,5 +1,6 @@
 ---
 title: Template Selection
+description: Zen Cart Template Selection
 category: admin_pages
 weight: 10
 ---

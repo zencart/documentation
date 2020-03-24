@@ -1,5 +1,6 @@
 ---
 title: Products - can they be both downloadable and shippable? 
+description: Zen Cart Products - can they be both downloadable and shippable? 
 category: products
 weight: 10
 ---

@@ -1,5 +1,6 @@
 ---
 title: Configuration-Attribute Settings
+description: Zen Cart Configuration-Attribute Settings Admin Page 
 category: admin_pages
 weight: 110
 ---

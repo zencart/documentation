@@ -1,5 +1,6 @@
 ---
 title: Release History
+description: Zen Cart Release History
 category: about_us
 weight: 10
 ---

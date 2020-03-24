@@ -1,5 +1,6 @@
 ---
 title: How do I get paid? 
+description: How do I get paid with Zen Cart? 
 category: payment
 weight: 10
 ---

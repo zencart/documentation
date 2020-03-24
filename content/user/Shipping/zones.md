@@ -1,5 +1,6 @@
 ---
 title: Zones Setup 
+description: Zen Cart Zones Setup 
 category: shipping 
 weight: 10
 ---

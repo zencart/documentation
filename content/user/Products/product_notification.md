@@ -1,5 +1,6 @@
 ---
 title: Product Notification
+description: Zen Cart Product Notifications
 category: products
 weight: 10
 ---

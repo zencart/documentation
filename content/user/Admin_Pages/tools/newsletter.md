@@ -1,5 +1,6 @@
 ---
 title: Newsletter and Product Notifications Manager 
+description: Zen Cart Newsletter and Product Notifications Manager 
 category: admin_pages
 weight: 50
 ---

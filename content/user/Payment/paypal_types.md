@@ -1,5 +1,6 @@
 ---
 title: PayPal Standard, Express and Pro - what's the difference? 
+description: Zen Cart PayPal Standard, Express and Pro - what's the difference? 
 category: payment
 weight: 10
 ---

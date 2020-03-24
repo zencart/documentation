@@ -1,5 +1,6 @@
 ---
 title: Product Types
+description: Zen Cart Product Types Admin Page 
 category: admin_pages
 weight: 20
 ---

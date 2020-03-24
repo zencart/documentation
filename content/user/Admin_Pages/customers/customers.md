@@ -1,5 +1,6 @@
 ---
 title: Customers
+description: Zen Cart Customers Admin Page 
 category: admin_pages
 weight: 10
 ---

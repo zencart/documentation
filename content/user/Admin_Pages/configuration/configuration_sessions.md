@@ -1,5 +1,6 @@
 ---
 title: Configuration-Sessions
+description: Zen Cart Configuration-Sessions Admin Page 
 category: admin_pages
 weight: 130
 ---

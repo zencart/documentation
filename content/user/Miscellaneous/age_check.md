@@ -1,5 +1,6 @@
 ---
 title: How can I limit the age of my customers to people over 18?
+description: In Zen Cart, how can I limit the age of my customers to people over 18?
 category: miscellaneous
 weight: 10
 ---

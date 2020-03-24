@@ -1,5 +1,6 @@
 ---
 title: Images - multiple images problems 
+description: Zen Cart Images - multiple images problems 
 category: products
 weight: 10
 ---

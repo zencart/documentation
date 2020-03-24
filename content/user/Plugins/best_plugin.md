@@ -1,5 +1,6 @@
 ---
 title: What are the best plugins? 
+description: What are the best Zen Cart plugins? 
 category: plugins 
 weight: 10
 ---

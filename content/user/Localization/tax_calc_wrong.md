@@ -1,5 +1,6 @@
 ---
 title: Tax calculations are wrong 
+description: Zen Cart Tax calculations are wrong 
 category: localization 
 weight: 10
 ---

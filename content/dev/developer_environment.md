@@ -1,5 +1,6 @@
 ---
 title: Developer Environment
+description: Zen Cart Developer Environment
 description: Setting up your development environment
 weight: 1
 ---

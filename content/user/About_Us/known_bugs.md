@@ -1,5 +1,6 @@
 ---
 title: Known Bugs 
+description: Known Bugs in Zen Cart 
 category: about_us
 weight: 10
 ---

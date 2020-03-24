@@ -1,5 +1,6 @@
 ---
 title: Download folder - Securing 
+description: Zen Cart Download folder - Securing 
 category: security
 weight: 10
 ---

@@ -1,5 +1,6 @@
 ---
 title: Contributing to the Project
+description: Contributing to the Zen Cart Project
 category: about_us
 weight: 10
 ---

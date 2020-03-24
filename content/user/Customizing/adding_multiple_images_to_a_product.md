@@ -1,5 +1,6 @@
 ---
 title: Additional Images - adding 
+description: Zen Cart Additional Images - adding 
 category: customizing 
 weight: 10
 ---

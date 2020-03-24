@@ -1,5 +1,6 @@
 ---
 title: Group Pricing
+description: Zen Cart Group Pricing
 category: admin_pages
 weight: 30
 ---

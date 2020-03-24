@@ -1,5 +1,6 @@
 ---
 title: Integrating Sales Analytics/Affiliate Tools
+description: Zen Cart Integrating Sales Analytics/Affiliate Tools
 category: orders
 weight: 10
 ---

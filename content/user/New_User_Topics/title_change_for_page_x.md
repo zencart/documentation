@@ -1,5 +1,6 @@
 ---
 title: How do I change the title of main_page=page_X?
+description: Zen Cart How do I change the title of main_page=page_X?
 category: new_user_topics 
 weight: 10
 ---

@@ -1,5 +1,6 @@
 ---
 title: configure.php explained 
+description: Zen Cart configure.php explained 
 category: miscellaneous
 weight: 1 
 ---

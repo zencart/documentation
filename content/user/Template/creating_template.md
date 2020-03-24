@@ -1,5 +1,6 @@
 ---
 title: Creating a Template 
+description: Creating a Template in Zen Cart
 category: template 
 weight: 10
 ---

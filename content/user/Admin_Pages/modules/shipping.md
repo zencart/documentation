@@ -1,5 +1,6 @@
 ---
 title: Shipping
+description: Zen Cart Shipping Admin Page 
 category: admin_pages
 weight: 20
 ---

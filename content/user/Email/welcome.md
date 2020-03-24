@@ -1,6 +1,6 @@
-
 ---
 title: Changing the Welcome email my customers get
+description: Changing the Welcome email my customers get
 category: email
 weight: 10
 ---

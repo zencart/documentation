@@ -1,5 +1,6 @@
 ---
 title: Images - how to give a product multiple images
+description: Images in Zen Cart - how to give a product multiple images
 category: products
 weight: 10
 ---

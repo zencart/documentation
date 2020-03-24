@@ -1,5 +1,6 @@
 ---
 title: Can Zen Cart do this?  Miscellaneous FAQs
+description: Can Zen Cart do this?  Miscellaneous FAQs about Zen Cart
 category: miscellaneous
 weight: -1
 ---

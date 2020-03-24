@@ -1,5 +1,6 @@
 ---
 title: Configuration-Define Page Status
+description: Zen Cart Configuration-Define Page Status Admin Page 
 category: admin_pages
 weight: 240 
 ---

@@ -1,5 +1,6 @@
 ---
 title: Change Guidelines 
+description: Zen Cart Change Guidelines 
 weight: 2
 ---
 

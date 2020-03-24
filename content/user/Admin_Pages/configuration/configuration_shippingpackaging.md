@@ -1,5 +1,6 @@
 ---
 title: Configuration-Shipping/Packaging
+description: Zen Cart Configuration-Shipping/Packaging Admin Page 
 category: admin_pages
 weight: 60
 ---

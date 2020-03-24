@@ -1,5 +1,6 @@
 ---
 title: PayPal Express Checkout setup
+description: Zen Cart PayPal Express Checkout setup
 category: payment
 weight: 10
 ---

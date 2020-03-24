@@ -1,5 +1,6 @@
 ---
 title: Configuration-Index Listing
+description: Zen Cart Configuration-Index Listing  Admin Page 
 category: admin_pages
 weight: 230
 ---

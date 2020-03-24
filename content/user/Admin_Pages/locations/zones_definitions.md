@@ -1,5 +1,6 @@
 ---
 title: Zones Definitions
+description: Zen Cart Zones Definitions Admin Page 
 category: admin_pages
 weight: 30
 ---

@@ -1,5 +1,6 @@
 ---
 title: PCI Compliance Statement and PABP Standards
+description: Zen Cart PCI Compliance Statement and PABP Standards
 category: security
 weight: 10
 ---

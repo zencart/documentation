@@ -1,5 +1,6 @@
 ---
 title: Customer Referral 
+description: Zen Cart Customer Referral Admin Page 
 category: admin_pages
 weight: 20
 ---

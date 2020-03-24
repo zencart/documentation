@@ -1,5 +1,6 @@
 ---
 title: Tax Classes
+description: Zen Cart Tax Classes Admin Page 
 category: admin_pages
 weight: 40
 ---

@@ -1,5 +1,6 @@
 ---
 title: Some of my PHP files are missing the ?> at the end of the file
+description: In Zen Cart, some of my PHP files are missing the ?> at the end of the file
 category: miscellaneous
 weight: 10
 ---

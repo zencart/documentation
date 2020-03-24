@@ -1,5 +1,6 @@
 ---
 title: Manufacturers
+description: Zen Cart Manufacturers Admin Page 
 category: admin_pages
 weight: 100
 ---

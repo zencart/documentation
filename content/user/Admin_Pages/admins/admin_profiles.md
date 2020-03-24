@@ -1,5 +1,6 @@
 ---
 title: Admin Profiles 
+description: Zen Cart Admin Profiles Admin Page 
 category: admin_pages
 weight: 10
 ---

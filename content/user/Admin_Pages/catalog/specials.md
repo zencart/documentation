@@ -1,5 +1,6 @@
 ---
 title: Specials 
+description: Zen Cart Specials Admin Page
 category: admin_pages
 weight: 120
 ---

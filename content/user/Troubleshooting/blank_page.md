@@ -1,5 +1,6 @@
 ---
 title: Blank Page (or partial blank page) troubleshooting
+description: Blank Page in Zen Cart (or partial blank page) troubleshooting
 category: troubleshooting 
 weight: 10
 ---

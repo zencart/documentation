@@ -1,5 +1,6 @@
 ---
 title: Admin menu sections
+description: Zen Cart Admin menu sections
 category: admin_pages
 weight: 1
 ---

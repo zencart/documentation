@@ -1,5 +1,6 @@
 ---
 title: Developer's Tool Kit 
+description: Zen Cart Developer's Tool Kit 
 category: admin_pages
 weight: 90
 ---

@@ -1,5 +1,6 @@
 ---
 title: Record Artists 
+description: Zen Cart Record Artists Admin Page 
 category: admin_pages
 weight: 10
 ---
