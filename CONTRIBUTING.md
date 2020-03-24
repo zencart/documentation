@@ -105,9 +105,7 @@ NOT THIS:
 
 * [Link to Markdown Syntax](https://www.markdownguide.org/basic-syntax/)
 
-* For simplicity, use Markdown rather than HTML on these pages where ever possible. 
-
-* Remember that when you embed markdown within an HTML block element, markdown formatting is disabled.  To turn it back on, use a blank line before and after the markdown OR embed the content in a `<span>`.
+* For simplicity, use Markdown rather than HTML on these pages where ever possible. But remember that **when you embed markdown within an HTML block element, markdown formatting is disabled**.  To turn it back on, use a blank line before and after the markdown OR embed the content in a `<span>`.
 
 
 ## Cleanup of Legacy Content and Markup  

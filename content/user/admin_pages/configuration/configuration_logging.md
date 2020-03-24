@@ -1,27 +1,31 @@
 ---
 title: Configuration-Logging
-description: Zen Cart Configuration-Logging Admin Page 
 category: admin_pages
-weight: 90
+weight: 90 
 ---
 
-<b>Log Database Queries</b>
+<h2 id="log_page_parse_time">Log Page Parse Time</h2>
+
+<div class='indent'>Record (to a log file) the time it takes to parse a page</div>
+
+
+<h2 id="log_destination">Log Destination</h2>
+
+<div class='indent'>Directory and filename of the page parse time log</div>
+
+
+<h2 id="log_date_format">Log Date Format</h2>
+
+<div class='indent'>The date format</div>
+
+
+<h2 id="display_the_page_parse_time">Display The Page Parse Time</h2>
+
+<div class='indent'>Display the page parse time on the bottom of each page<br />(Note: This DISPLAYS them. You do NOT need to LOG them to merely display them on your site.)</div>
+
+
+<h2 id="log_database_queries">Log Database Queries</h2>
 
 <div class='indent'>Record the database queries to files in the system /logs/ folder. USE WITH CAUTION. This can seriously degrade your site performance and blow out your disk space storage quotas.<br><strong>Enabling this makes your site NON-COMPLIANT with PCI DSS rules, thus invalidating any certification.</strong></div>
-
-
-<b>Report All Errors (Admin)?</b>
-
-<div class='indent'>Do you want create debug-log files for <b>all</b> PHP errors, even warnings, that occur during your Zen Cart admin's processing?  If you want to log all PHP errors <b>except</b> duplicate-language definitions, choose <em>IgnoreDups</em>.</div>
-
-
-<b>Report All Errors (Store)?</b>
-
-<div class='indent'>Do you want create debug-log files for <b>all</b> PHP errors, even warnings, that occur during your Zen Cart store's processing?  If you want to log all PHP errors <b>except</b> duplicate-language definitions, choose <em>IgnoreDups</em>.<br /><br /><strong>Note:</strong> Choosing 'Yes' is not suggested for a <em>live</em> store, since it will reduce performance significantly!</div>
-
-
-<b>Report All Errors: Backtrace on Notice Errors?</b>
-
-<div class='indent'>Include backtrace information on &quot;Notice&quot; errors?  These are usually isolated to the identified file and the backtrace information just fills the logs. Default (<b>No</b>).</div>
 
 

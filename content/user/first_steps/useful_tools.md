@@ -165,5 +165,3 @@ BETTER CHOICES: Usually [WinSCP](http://winscp.net/) and [Transmit](http://www.p
 
 *   [Wink - a Tutorial and Presentation creation software for windows](http://www.debugmode.com/wink/)
 
-*   See: [CSS Resources](/wiki/index.php/CSS_Resources "CSS Resources")
-

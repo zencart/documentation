@@ -1,110 +1,105 @@
 ---
 title: Configuration-Product Listing
-description: Zen Cart Configuration-Product Listing Admin Page 
 category: admin_pages
-weight: 70
+weight: 70 
 ---
 
-<b>Display Product Image</b>
+<h2 id="display_product_image">Display Product Image</h2>
 
 <div class='indent'>Do you want to display the Product Image?</div>
 
 
-<b>Display Product Manufacturer Name</b>
+<h2 id="display_product_manufacturer_name">Display Product Manufacturer Name</h2>
 
 <div class='indent'>Do you want to display the Product Manufacturer Name?</div>
 
 
-<b>Display Product Model</b>
+<h2 id="display_product_model">Display Product Model</h2>
 
 <div class='indent'>Do you want to display the Product Model?</div>
 
 
-<b>Display Product Name</b>
+<h2 id="display_product_name">Display Product Name</h2>
 
 <div class='indent'>Do you want to display the Product Name?</div>
 
 
-<b>Display Product Price/Add to Cart</b>
+<h2 id="display_product_priceadd_to_cart">Display Product Price/Add to Cart</h2>
 
 <div class='indent'>Do you want to display the Product Price/Add to Cart</div>
 
 
-<b>Display Product Quantity</b>
+<h2 id="display_product_quantity">Display Product Quantity</h2>
 
 <div class='indent'>Do you want to display the Product Quantity?</div>
 
 
-<b>Display Product Weight</b>
+<h2 id="display_product_weight">Display Product Weight</h2>
 
 <div class='indent'>Do you want to display the Product Weight?</div>
 
 
-<b>Display Product Price/Add to Cart Column Width</b>
+<h2 id="display_product_priceadd_to_cart_column_width">Display Product Price/Add to Cart Column Width</h2>
 
 <div class='indent'>Define the width of the Price/Add to Cart column<br />Default= 125</div>
 
 
-<b>Display Category/Manufacturer Filter (0=off; 1=on)</b>
+<h2 id="display_categorymanufacturer_filter_0off_1on">Display Category/Manufacturer Filter (0=off; 1=on)</h2>
 
 <div class='indent'>Do you want to display the Category/Manufacturer Filter?</div>
 
 
-<b>Prev/Next Split Page Navigation (1-top, 2-bottom, 3-both)</b>
+<h2 id="prevnext_split_page_navigation_1top_2bottom_3both">Prev/Next Split Page Navigation (1-top, 2-bottom, 3-both)</h2>
 
 <div class='indent'>Sets the location of the Prev/Next Split Page Navigation</div>
 
 
-<b>Display Product Listing Default Sort Order</b>
+<h2 id="display_product_listing_default_sort_order">Display Product Listing Default Sort Order</h2>
 
-<div class='indent'>Product Listing Default sort order?<br />
-
-**NOTE:** Leave Blank for Product Sort Order. Sort the Product Listing in the order you wish for the default display to start in to get the sort order setting. Example: 2a</div>
+<div class='indent'>Product Listing Default sort order?<br />NOTE: Leave Blank for Product Sort Order. Sort the Product Listing in the order you wish for the default display to start in to get the sort order setting. Example: 2a</div>
 
 
-<b>Display Product Add to Cart Button (0=off; 1=on; 2=on with Qty Box per Product)</b>
+<h2 id="display_product_add_to_cart_button_0off_1on_2on_with_qty_box_per_product">Display Product Add to Cart Button (0=off; 1=on; 2=on with Qty Box per Product)</h2>
 
-<div class='indent'>Do you want to display the Add to Cart Button?<br /><br />
-
-**NOTE:** Turn OFF Display Multiple Products Qty Box Status to use Option 2 on with Qty Box per Product</div>
+<div class='indent'>Do you want to display the Add to Cart Button?<br /><br /><strong>NOTE:</strong> Turn OFF Display Multiple Products Qty Box Status to use Option 2 on with Qty Box per Product</div>
 
 
-<b>Display Multiple Products Qty Box Status and Set Button Location</b>
+<h2 id="display_multiple_products_qty_box_status_and_set_button_location">Display Multiple Products Qty Box Status and Set Button Location</h2>
 
 <div class='indent'>Do you want to display Add Multiple Products Qty Box and Set Button Location?<br />0= off<br />1= Top<br />2= Bottom<br />3= Both</div>
 
 
-<b>Display Product Description</b>
+<h2 id="display_product_description">Display Product Description</h2>
 
 <div class='indent'>Do you want to display the Product Description?<br /><br />0= OFF<br />150= Suggested Length, or enter the maximum number of characters to display</div>
 
 
-<b>Product Listing Ascending Sort Order</b>
+<h2 id="product_listing_ascending_sort_order">Product Listing Ascending Sort Order</h2>
 
 <div class='indent'>What do you want to use to indicate Sort Order Ascending?<br />Default = +</div>
 
 
-<b>Product Listing Descending Sort Order</b>
+<h2 id="product_listing_descending_sort_order">Product Listing Descending Sort Order</h2>
 
 <div class='indent'>What do you want to use to indicate Sort Order Descending?<br />Default = -</div>
 
 
-<b>Include Product Listing Alpha Sorter Dropdown</b>
+<h2 id="include_product_listing_alpha_sorter_dropdown">Include Product Listing Alpha Sorter Dropdown</h2>
 
 <div class='indent'>Do you want to include an Alpha Filter dropdown on the Product Listing?</div>
 
 
-<b>Include Product Listing Sub Categories Image</b>
+<h2 id="include_product_listing_sub_categories_image">Include Product Listing Sub Categories Image</h2>
 
 <div class='indent'>Do you want to include the Sub Categories Image on the Product Listing?</div>
 
 
-<b>Include Product Listing Top Categories Image</b>
+<h2 id="include_product_listing_top_categories_image">Include Product Listing Top Categories Image</h2>
 
 <div class='indent'>Do you want to include the Top Categories Image on the Product Listing?</div>
 
 
-<b>Show SubCategories on Main Page while navigating</b>
+<h2 id="show_subcategories_on_main_page_while_navigating">Show SubCategories on Main Page while navigating</h2>
 
 <div class='indent'>Show Sub-Categories on Main Page while navigating through Categories<br /><br />0= off<br />1= on</div>
 

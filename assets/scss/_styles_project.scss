@@ -22,3 +22,9 @@ pre > code {
 .td-main {
   flex-grow: unset; 
 }
+
+.td-content {
+  .lead {
+     display: none !important; 
+  }
+}

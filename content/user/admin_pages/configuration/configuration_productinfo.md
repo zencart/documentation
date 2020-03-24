@@ -1,118 +1,115 @@
 ---
 title: Configuration-Product Info
-description: Zen Cart Configuration-Product Info Admin Page
 category: admin_pages
-weight: 170
+weight: 170 
 ---
 
-<b>Previous Next - Button and Image Status</b>
+<h2 id="previous_next__button_and_image_status">Previous Next - Button and Image Status</h2>
 
 <div class='indent'>Button and Product Image status settings are:<br />0= Off<br />1= On</div>
 
 
-<b>Previous Next - Navigation Includes Category Position</b>
+<h2 id="previous_next__navigation_includes_category_position">Previous Next - Navigation Includes Category Position</h2>
 
 <div class='indent'>Product's Category Image and Name Alignment Above Previous/Next Navigation Bar<br />0= off<br />1= Align Left<br />2= Align Center<br />3= Align Right</div>
 
 
-<b>Previous Next - Navigation Includes Category Name and Image Status</b>
+<h2 id="previous_next__navigation_includes_category_name_and_image_status">Previous Next - Navigation Includes Category Name and Image Status</h2>
 
 <div class='indent'>Product's Category Image and Name Status<br />0= Category Name and Image always shows<br />1= Category Name only<br />2= Category Name and Image when not blank</div>
 
 
-<b>Previous Next - Navigation Bar Position</b>
+<h2 id="previous_next__navigation_bar_position">Previous Next - Navigation Bar Position</h2>
 
 <div class='indent'>Location of Previous/Next Navigation Bar<br />0= off<br />1= Top of Page<br />2= Bottom of Page<br />3= Both Top and Bottom of Page</div>
 
 
-<b>Previous Next - Button and Image Settings</b>
+<h2 id="previous_next__button_and_image_settings">Previous Next - Button and Image Settings</h2>
 
 <div class='indent'>Show Previous/Next Button and Product Image Settings<br />0= Button Only<br />1= Button and Product Image<br />2= Product Image Only</div>
 
 
-<b>Previous Next - Sort Order</b>
+<h2 id="previous_next__sort_order">Previous Next - Sort Order</h2>
 
 <div class='indent'>Products Display Order by<br />0= Product ID<br />1= Product Name<br />2= Model<br />3= Price, Product Name<br />4= Price, Model<br />5= Product Name, Model<br />6= Product Sort Order</div>
 
 
-<b>Previous Next - Image Width?</b>
+<h2 id="previous_next__image_width">Previous Next - Image Width?</h2>
 
 <div class='indent'>Previous/Next Image Width?</div>
 
 
-<b>Previous Next - Image Height?</b>
+<h2 id="previous_next__image_height">Previous Next - Image Height?</h2>
 
 <div class='indent'>Previous/Next Image Height?</div>
 
 
-<b>Products Info - Products Option Name Sort Order</b>
+<h2 id="products_info__products_option_name_sort_order">Products Info - Products Option Name Sort Order</h2>
 
 <div class='indent'>Sort order of Option Names for Products Info<br />0= Sort Order, Option Name<br />1= Option Name</div>
 
 
-<b>Products Info - Product Option Value of Attributes Sort Order</b>
+<h2 id="products_info__product_option_value_of_attributes_sort_order">Products Info - Product Option Value of Attributes Sort Order</h2>
 
 <div class='indent'>Sort order of Product Option Values of Attributes for Products Info<br />0= Sort Order, Price<br />1= Sort Order, Option Value Name</div>
 
 
-<b>Product Info - Show Option Values Name Below Attributes Image</b>
+<h2 id="product_info__show_option_values_name_below_attributes_image">Product Info - Show Option Values Name Below Attributes Image</h2>
 
 <div class='indent'>Product Info - Show the name of the Option Value beneath the Attribute Image?<br />0= off 1= on</div>
 
 
-<b>Product Info - Show Sales Discount Savings Status</b>
+<h2 id="product_info__show_sales_discount_savings_status">Product Info - Show Sales Discount Savings Status</h2>
 
 <div class='indent'>Product Info - Show the amount of discount savings?<br />0= off 1= on</div>
 
 
-<b>Product Info - Show Sales Discount Savings Dollars or Percentage</b>
+<h2 id="product_info__show_sales_discount_savings_dollars_or_percentage">Product Info - Show Sales Discount Savings Dollars or Percentage</h2>
 
 <div class='indent'>Product Info - Show the amount of discount savings display as:<br />1= % off 2= $amount off</div>
 
 
-<b>Product Info - Show Sales Discount Savings Percentage Decimals</b>
+<h2 id="product_info__show_sales_discount_savings_percentage_decimals">Product Info - Show Sales Discount Savings Percentage Decimals</h2>
 
 <div class='indent'>Product Info - Show discount savings display as a Percentage with how many decimals?:<br />Default= 0</div>
 
 
-<b>Product Info - Price is Free Image or Text Status</b>
+<h2 id="product_info__price_is_free_image_or_text_status">Product Info - Price is Free Image or Text Status</h2>
 
 <div class='indent'>Product Info - Show the Price is Free Image or Text on Displayed Price<br />0= Text<br />1= Image</div>
 
 
-<b>Product Info - Price is Call for Price Image or Text Status</b>
+<h2 id="product_info__price_is_call_for_price_image_or_text_status">Product Info - Price is Call for Price Image or Text Status</h2>
 
 <div class='indent'>Product Info - Show the Price is Call for Price Image or Text on Displayed Price<br />0= Text<br />1= Image</div>
 
 
-<b>Product Quantity Box Status - Adding New Products</b>
+<h2 id="product_quantity_box_status__adding_new_products">Product Quantity Box Status - Adding New Products</h2>
 
-<div class='indent'>What should the Default Quantity Box Status be set to when adding New Products?<br /><br />0= off<br />1= on<br />
-
-**NOTE:** This will show a Qty Box when ON and default the Add to Cart to 1</div>
+<div class='indent'>What should the Default Quantity Box Status be set to when adding New Products?<br /><br />0= off<br />1= on<br />NOTE: This will show a Qty Box when ON and default the Add to Cart to 1</div>
 
 
-<b>Product Reviews Require Approval</b>
+<h2 id="product_reviews_require_approval">Product Reviews Require Approval</h2>
 
 <div class='indent'>Do product reviews require approval?<br /><br />Note: When Review Status is off, it will also not show<br /><br />0= off 1= on</div>
 
 
-<b>Product page generated &lt;title&gt; tag - include Product Model?</b>
+<h2 id="meta_tags__include_product_model_in_title">Meta Tags - Include Product Model in Title</h2>
 
-<div class='indent'>When custom Keywords and Description meta tags are not set, include the Product Model in the generated page &lt;title&gt; tag?<br><br>0=no / 1=yes</div>
-
-
-<b>Product page generated &lt;title&gt; tag - include Product Price?</b>
-
-<div class='indent'>When custom Keywords and Description meta tags are not set, include the Product Price in the generated page &lt;title&gt; tag?<br><br>0=no / 1=yes</div>
+<div class='indent'>Do you want to include the Product Model in the Meta Tag Title?<br /><br />0= off 1= on</div>
 
 
-<b>Product page generated &lt;meta - description&gt; tag - Maximum Length</b>
+<h2 id="meta_tags__include_product_price_in_title">Meta Tags - Include Product Price in Title</h2>
 
-<div class='indent'>When custom Keywords and Description meta tags are not set, limit the generated &lt;meta - description&gt; tag to this number of words. Default 50.</div>
+<div class='indent'>Do you want to include the Product Price in the Meta Tag Title?<br /><br />0= off 1= on</div>
 
 
-<b>Also Purchased Products Columns per Row</b>
+<h2 id="meta_tags_generated_description_maximum_length">Meta Tags Generated Description Maximum Length?</h2>
+
+<div class='indent'>Set Generated Meta Tag Description Maximum Length to (words) Default 50:</div>
+
+
+<h2 id="also_purchased_products_columns_per_row">Also Purchased Products Columns per Row</h2>
 
 <div class='indent'>Also Purchased Products Columns per Row<br />0= off or set the sort order</div>
 
