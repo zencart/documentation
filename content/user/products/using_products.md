@@ -1,3 +1,5 @@
+---
+title: Using Products
 description: Using Products and Attributes in Zen Cart 
 category: products 
 weight: -1 
