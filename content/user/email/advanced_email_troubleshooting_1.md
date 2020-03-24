@@ -111,7 +111,7 @@ Any, all or none of the above (DNS, MX, SPF, etc) may be set up for you by your 
 
 All of the above can be checked by visiting [http://www.dnsstuff.com](http://www.dnsstuff.com) and doing a dnsReport on your domain. Check the mail section of the report, and fix any reported warning, error or problem that is within your power.
 
-Checking DNS entries is easy using nslookup in Windows, or dig on Unix/Linux machines. Understanding the command line options and the output is unfortunately not quite so simple. Here are some starting points:
+Checking DNS entries can be done using `nslookup` in Windows, or `dig` on Unix/Linux machines. Understanding the command line options and the output is unfortunately not quite so simple. Here are some starting points:
 
 <pre> nslookup -d mydomain.com
    or

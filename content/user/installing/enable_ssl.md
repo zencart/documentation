@@ -4,6 +4,9 @@ description: Enabling SSL after installing Zen Cart
 category: installing
 weight: 10
 ---
+
+See also [Basic Hosting and Domain concepts](/user/first_steps/hosting). 
+
 SSL (secure socket layer) is used to encrypt communications between the browser and the server, thus protecting sensitive data being transferred from your customers to your store. You will recognize SSL mode by seeing the familiar HTTPS:// in the URL in your browser's address bar. This should always also be accompanied by a secure padlock symbol in your browser, often in the status bar at the bottom of the browser window or in the address bar.  
 
 Considerations:  

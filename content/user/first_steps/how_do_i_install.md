@@ -41,9 +41,10 @@ If No, stop.  You need to obtain a decent FTP software package such as [FileZill
 
 ### 3\. Do you have a good Text Editor?
 
-If No stop.  You will need a good Text Editing software such as [Notepad++](http://notepad-plus.sourceforge.net/) (free), [UltraEdit](http://ultraedit.com/), [CrimsonEditor](http://crimsoneditor.com/) (free), [BBedit/TextWrangler](http://www.barebones.com/)(Mac), Kedit (linux), or some other type of Text Editor for modifying the files in the Zen Cart® software.
+If No stop.  You will need a good text editing tool such as [Notepad++](http://notepad-plus.sourceforge.net/) (free), [UltraEdit](http://ultraedit.com/), [CrimsonEditor](http://crimsoneditor.com/) (free), [BBedit/TextWrangler](http://www.barebones.com/)(Mac), Kedit (linux), or some other type of text editor for modifying the files in the Zen Cart® software.
 
 <span class="error">**Note:** <u>do **not** use cPanel for editing files,</u> <u>or MS Word</u> or other software designed for fancy writing.  Instead, you want a nice clean Text Editor.</span>  
+
 You can use the Windows Notepad, but this is limited in capabilities and the size of files that it can open and often can cause more harm than good. (Notepad++ mentioned above is the most recommended choice.)  
 
 ### 4\. Do you have access to your webhosting control panel?

@@ -5,7 +5,7 @@ category: security
 weight: 10
 ---
 
-In a Windows-hosting environment, when you create a virtual product using download attributes customers are able to download a product as much as they like by using the following as an example:   www.websitename.co.uk/download/product.zip  
+In a Windows-hosting environment using IIS, when you create a virtual product using download attributes customers are able to download a product as much as they like by using the following as an example:   www.websitename.co.uk/download/product.zip  
 
 Download by redirect (which windows servers can't usually provide) is much more secure than without redirect.  
 

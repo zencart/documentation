@@ -73,7 +73,7 @@ If you're not clear on what YOURSITEFOLDER means, please [read this](/user/first
 
 Quite often setting permissions on a file to read only via FTP will not work. Even if the permission looks like it was set to read only, it really may not have been. You must verify the correct setting by entering the store and seeing if there is a warning message on the top of the screen. "Warning: I am able to write to the configuration file:..." In this case you will need to use the "File Manager" supplied with your webhosting account.
 
-If you're using a Windows server, simply set the file as _Read-Only_ for _Everyone_ and especially the IUSR_xxxxx (Internet Guest Account) user if running IIS, or the _System_ account or _apache user_ if running Apache.
+If you're using a Windows server using IIS, simply set the file as _Read-Only_ for _Everyone_ and especially the IUSR_xxxxx (Internet Guest Account) user if running IIS, or the _System_ account or _apache user_ if running Apache.
 
 
 ## 5\. Delete any unused _Admin_ accounts
@@ -229,7 +229,7 @@ To stop the browser from printing the admin URL (which discloses your Admin fold
     *   Store the backed up database and website files into an encrypted file. (You should NOT keep your backups on your server. But if you do, encrypt them securely. See your hosting company for advice.)
 3.  Check your server's error log regularly for odd or suspicious activity. (Your hosting control panel should give you access to the Apache error_log)
     *   Look for any links that went to a page that isn't in your site.
-    *   Look for links that have http after the _index.php_.
+    *   Look for links that have `http` after the _index.php_.
 4.  Check your website files regularly to be sure nothing's been added or altered.
 5.  Ask your web host what they have done to be sure the server you're on is safe and secure so that outsiders cannot do any harm, and so that other websites on your server cannot be used to get to your site and cause any harm (in case they have security holes in them).
 6.  If your business warrants, or you still want additional assurance (especially if running forum software on your site, or other scripts outside of Zen Cart), hire a security consultant to check your site regularly and give you peace of mind in exchange for a few dollars.
