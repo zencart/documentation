@@ -10,6 +10,7 @@ Blank pages can be caused by a number of things, and often occur just after inst
 
 Sometimes FTP programs experience a timeout when uploading large quantities of files (such as when installing or upgrading your site), or fail to fully upload some files, or leave them as just 0-bytes in size.  
 Some programs like SmartFTP and CuteFTP are well-known to be problematic in this area.  
+
 For Windows PCs, you'll find [FileZilla](http://filezilla.sf.net) is a free, fast, and reliable FTP program (but don't save your passwords with it!).  
 On Mac, Transmit or Forklift or CyberDuck are commonly acclaimed FTP tools.  
 

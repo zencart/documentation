@@ -132,7 +132,7 @@ Extra Javascript for an existing file
 </script>
 ```
 
- Save the file to /includes/modules/pages/checkout_success and upload it to your server.
+ Save the file to `includes/modules/pages/checkout_success` and upload it to your server.
 
 **Zen Cart® Upgrades**  
 

@@ -10,7 +10,7 @@ weight: 10
 The most detailed procedure to follow to find out what's wrong when you've made some system changes or just completed an upgrade but something's not working well, or you're getting unexplained results, would be:
 
 1.  Download all your site's files by FTP to a new temporary folder on your PC.
-2.  Run [Beyond Compare](http://www.scootersoftware.com/download.php) or [WinMerge](http://winmerge.sf.net) or a similar Diff/comparison tool to compare all your site's files against a freshly unzipped copy of the same version of Zen Cart™. You can find [the original release ZIPs here.](http://sourceforge.net/projects/zencart/files/)
+2.  Run [Beyond Compare](http://www.scootersoftware.com/download.php) or [WinMerge](http://winmerge.sf.net) or a similar diff/comparison tool to compare all your site's files against a freshly unzipped copy of the same version of Zen Cart™. You can find [the original release ZIPs here.](http://sourceforge.net/projects/zencart/files/)
 3.  Identify all the differences, and check each one to see if it could cause the problem.
 
 **Things to look for are:**

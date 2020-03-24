@@ -6,7 +6,7 @@ weight: 10
 ---
 For downloadable products, there are several ways of delivering downloadable content to your customers, depending on your hosting configuration.  
 
-You can find these options in **Admin->Configuration->Attribute Settings**:  
+You can find these options in [Admin->Configuration->Attribute Settings](/user/admin_pages/configuration/configuration_attributesettings/):
 
 ## Download by Redirect
 
