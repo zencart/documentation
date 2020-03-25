@@ -17,11 +17,15 @@ Before you can add attributes to your products in
 
 ## Creating an Option Name
 
-In the first text box you see _en:_ - type in the name of your attribute option. This will appear in your shop so should be informative to your customer.
+- In the first text box you see 
 
-In the second box _Order:_ - type in the sort order you want the attribute to appear under the product.
+    en: - type in the name of your attribute option. This will appear in your shop so should be informative to your customer.
 
-In the drop down box select which type of attribute you want.
+- In the second box 
+
+    Order: - type in the sort order you want the attribute to appear under the product.
+
+- In the drop down box select which type of attribute you want.
 
 *   **dropdown box**
     *   requires option values you can set in [Admin - Catalog - Option Value Manager](/user/admin_pages/catalog/option_value_manager/)

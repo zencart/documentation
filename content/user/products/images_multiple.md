@@ -140,12 +140,15 @@ The use of subdirectories help on speed or directory limits, especially on slowe
 
 ### Related topics
 
-a. Attribute images can be added to individual attribute options via Admin -> Catalog -> Option Values  
-b. You can edit the _MED and _LRG defined suffixes in Admin->Configuration->Images  
+a. Attribute images can be added to individual attribute options via [Admin -> Catalog -> Attributes Controller](/user/admin_pages/catalog/attributes_controller/).
+
+b. You can edit the `_MED` and `_LRG` defined suffixes in [Admin->Configuration->Images](/user/admin_pages/configuration/configuration_images/).
 
 # TIPS
 
-It is wise to **NOT use the following symbols** in your image filenames: <font color="#ff0000">**+ [ ] $ ' " \ / ()  
-**</font></font>  
+**NOTE:** Do no use the following symbols in your image filenames: 
+<font color="#ff0000">**+ [ ] $ ' " \ / ()  **</font>
+
 Also, in case it's not self-evident, the files have to actually exist on your server. So, if you're selecting the "Use an image on the server" instead of uploading a file directly, and things aren't showing up, then that probably means the image file you specified doesn't actually exist on the server.  
+
 If you wish to bypass the multiple image capability, you have two options ... which are explained in [Turning off Additional Images](/user/products/images_other_products/).

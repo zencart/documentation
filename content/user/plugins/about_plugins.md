@@ -22,12 +22,15 @@ Zen Cart that enable your store to work differently than the
 default behavior. 
 
 
+### Plugin Interfaces 
 To enable developers to build plugins 
 in an organized manner, a number of facilities are provided: 
 
 * [Overrides](/user/new_user_topics/overrides/)
 * [Notifiers/Observers](/dev/code/notifiers/)
 * [Init System](/dev/code/init_system/)
+
+### More Information 
 
 If you're a developer who wishes to create a plugin, please see 
 the [Plugins Pages](/dev/plugins/) for more information. 

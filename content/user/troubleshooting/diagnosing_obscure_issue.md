@@ -1,7 +1,7 @@
 ---
 title: Diagnosing Obscure Issues
 description: Diagnosing Obscure Issues in Zen Cart 
-category: running 
+category: troubleshooting
 weight: 10
 ---
 
@@ -10,8 +10,7 @@ weight: 10
 The most detailed procedure to follow to find out what's wrong when you've made some system changes or just completed an upgrade but something's not working well, or you're getting unexplained results, would be:
 
 1.  Download all your site's files by FTP to a new temporary folder on your PC.
-2.  Run a [file compare utility](/user/first_steps/useful_tools/#file-comparison-utility) 
-to compare all your site's files against a freshly unzipped copy of the same version of Zen Cart™. You can find [the original release ZIPs here.](http://sourceforge.net/projects/zencart/files/)
+2.  Run a [file compare utility](/user/first_steps/useful_tools/#file-comparison-utility) to compare all your site's files against a freshly unzipped copy of the same version of Zen Cart™. You can find [the original release ZIPs here.](http://sourceforge.net/projects/zencart/files/)
 3.  Identify all the differences, and check each one to see if it could cause the problem.
 
 **Things to look for are:**
@@ -25,8 +24,8 @@ to compare all your site's files against a freshly unzipped copy of the same ver
 
 **Most Common Causes:**
 
-*   In most cases it's a result of define() statements being customized and missing the closing ' or ') or '); or maybe using ' marks inside strings but not using \' instead so the ' is treated properly.
-*   Second most popular is poorly-written mods.
+*   In many cases it's a result of `define()` statements being customized and missing the closing `'` or `')` or `');` or maybe using `'` marks inside strings but not using `\'` instead so the `'` is treated properly.
+*   Second most common root cause is poorly-written mods.
 *   Third most common is an incomplete upgrade of PHP files.
 
 **Handy Utility**

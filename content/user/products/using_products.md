@@ -31,7 +31,9 @@ Problem: When i set a attribute to an item like a color that must be specified a
 "Required" is only for "text" input fields. (Hence the description of "Text Required").
 
 To force selection of an attribute, you need to:
+
 a. add an attribute that is Display-Only (ie: a color swatch that says "Please Select a Color").
+
 b. Make it default.
 This forces the customer to choose something "other than" the default (since the "default" is set to "display only").
 
