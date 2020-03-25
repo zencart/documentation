@@ -7,7 +7,9 @@ weight: 10
 
 See also [Basic Hosting and Domain concepts](/user/first_steps/hosting). 
 
-SSL (secure socket layer) is used to encrypt communications between the browser and the server, thus protecting sensitive data being transferred from your customers to your store. You will recognize SSL mode by seeing the familiar HTTPS:// in the URL in your browser's address bar. This should always also be accompanied by a secure padlock symbol in your browser, often in the status bar at the bottom of the browser window or in the address bar.  
+- FIXME: I think the shared ssl content should be deprecated. 
+
+SSL (secure socket layer) is used to encrypt communications between the browser and the server, thus protecting sensitive data being transferred from your customers to your store. You will recognize SSL mode by seeing the familiar `https://` in the URL in your browser's address bar. This should always also be accompanied by a secure padlock symbol in your browser, often in the address bar with the URL or in the status bar at the bottom of the browser window. 
 
 Considerations:  
 
@@ -17,7 +19,7 @@ You will need to arrange with your hosting company to have SSL capability added 
 
 **<u>Dedicated SSL</u>**  
 - URL looks like: `https://www.YOURSITE.com`
-- requires purchase of an SSL certificate, at an annual fee ranging from $20 to $900 per year (you do NOT need the most expensive one for simple secure SSL use on your site. From a technical perspective, a low cost certificate is just as secure as the more expensive one). The certificate is usually installed by your hosting company. You can purchase one yourself or have your hosting company purchase it for you.  
+- requires purchase of an SSL certificate, at an annual fee ranging from $20 to $900 per year.  You do NOT need the most expensive one for simple secure SSL use on your site; from a technical perspective, a low cost certificate is just as secure as the more expensive one. The certificate is usually installed by your hosting company. You can purchase one yourself or have your hosting company purchase it for you.  
 - usually requires a small monthly fee increase to your hosting account for a "dedicated IP address". Confirm with your hosting company.  
 - when you purchase the certificate, decide FIRST whether you want your SSL URL to include the `www.` prefix or not. Ideally ask the certificate company to allow you to use BOTH. They can do that, usually at no extra charge.  
 - Dedicated SSL is a much better shopping experience for your customers, and also more likely to be easier to configure for your store to use than a Shared Certificate.  
@@ -27,11 +29,11 @@ You will need to arrange with your hosting company to have SSL capability added 
 - This is a certificate that's been purchased by your hosting company, and you merely share its use. Often the hosting company allows you to use it for free.  
 - Less friendly experience for your customers because the URL looks nothing like your store's URL. May also be problematic for some stores depending on server configuration and impact on session handling.  
 - URL could have many forms:  
--- `https://YOURHOST.com/~YOURUSERNAME/`
--- `https://YOURHOST.com/YOURUSERNAME/`
--- `https://YOURUSERNAME.YOURHOST.com/`
--- and various other formats  
-- There is usually no special setup required in your hosting account. You simply need to ask your hosting company for the correct URL to use.  
+    - `https://YOURHOST.com/~YOURUSERNAME/`
+    - `https://YOURHOST.com/YOURUSERNAME/`
+    - `https://YOURUSERNAME.YOURHOST.com/`
+    - and various other formats  
+    - There is usually no special setup required in your hosting account. You simply need to ask your hosting company for the correct URL to use.  
 
 **IMPORTANT NOTE ABOUT SSL AND ZEN CART:**
 It is important that your hosting company's servers be configured to serve both SSL and non-SSL content from the SAME folder on the SAME server. Attempting to use a hosting service whose SSL service is on a separate server or points to a separate folder will result in numerous operational problems, and possibly very complicated maintenance problems.  
@@ -53,7 +55,7 @@ Change `includes/configure.php` and `admin/includes/configure.php` to:
 ```
 // Define the webserver and path parameters  
 define('HTTP_SERVER', 'http://www.YOURSITE.com');  
-define('HTTPS_SERVER', 'https://www.YOURSITE.com](https://www.YOURSITE.com)');  
+define('HTTPS_SERVER', 'https://www.YOURSITE.com'); 
 define('ENABLE_SSL', 'true');  
 ```
 
@@ -65,7 +67,7 @@ If you want your ENTIRE site to be served over SSL (**recommended**), then use `
 
 ```
 define('HTTP_SERVER', 'https://www.YOURSITE.com');  
-define('HTTPS_SERVER', 'https://www.YOURSITE.com](https://www.YOURSITE.com)');  
+define('HTTPS_SERVER', 'https://www.YOURSITE.com');
 define('ENABLE_SSL', 'true');  
 ```
 
@@ -92,7 +94,9 @@ Admin:
 http: HTTP_SERVER + DIR_WS_ADMIN  
 https: HTTPS_SERVER + DIR_WS_HTTPS_ADMIN  
 
-So, it's usually a simple matter of setting HTTPS_SERVER to the https URL of your domain.  
-With shared SSL, it can be slightly more complicated because there are about 5 different ways that a shared SSL URL can be formed. In such cases, treat DIR_WS_HTTPS_ADMIN as the "/store-foldername/my-admin-foldername/" and the rest of the URL goes into the HTTPS_SERVER setting, such as: [https://shared-servername.com/~hostingaccountname](https://shared-servername.com/~hostingaccountname) or [https://shared-servername.com/websitename.com](https://shared-servername.com/websitename.com) etc. That way the DIR_WS_xxxx value is ONLY the value of the path from the public_html folder onward.  
+So, it's usually a simple matter of setting `HTTPS_SERVER` to the `https` 
+URL of your domain.  
+
+With shared SSL, it can be slightly more complicated because there are about 5 different ways that a shared SSL URL can be formed. In such cases, treat `DIR_WS_HTTPS_ADMIN` as the "/store-foldername/my-admin-foldername/" and the rest of the URL goes into the `HTTPS_SERVER` setting, such as: [https://shared-servername.com/~hostingaccountname](https://shared-servername.com/~hostingaccountname) or [https://shared-servername.com/websitename.com](https://shared-servername.com/websitename.com) etc. That way the `DIR_WS_xxxx` value is ONLY the value of the path from the `public_html` folder onward.  
 
 And yes, if you've got SSL active on your site, then in your admin you should make your `HTTP_SERVER` and `DIR_WS_ADMIN` be the same as your `HTTPS_SERVER` and `DIR_WS_HTTPS_ADMIN`.

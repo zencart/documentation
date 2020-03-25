@@ -100,7 +100,37 @@ NOT THIS:
 
 - Cross-link liberally!  Example: 
 
-`[FTP tools](/user/first_steps/useful_tools/#ftp-tools)`
+`See [FTP tools](/user/first_steps/useful_tools/#ftp-tools) for a list ...`
+
+but use the built in `id` tags which are created by headers of all levels.
+So do this: 
+
+```
+FILE 1:
+See [What does MIXED ON mean?](/user/products/using_products#what-does-mixed-on-mean)
+```
+
+```
+FILE 2:
+### What does MIXED ON mean? 
+```
+
+NOT THIS:
+
+```
+FILE 1:
+See [What does MIXED ON mean?](/user/products/using_products#mixed) **NO!** 
+```
+
+```
+FILE 2:
+<div id="mixed"></div>.  **NO!**
+
+**What does MIXED ON mean?**
+```
+
+
+
 
 <br />
 

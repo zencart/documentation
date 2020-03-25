@@ -12,13 +12,13 @@ There are several all-in-one "packaged" "bundles" of Zen Cart scattered around t
 
 If you choose to use a packaged installer from someplace else, make sure you ask *them* for all your technical support needs and ensure that they intend to keep things up-to-date and that they will provide you with free support for updating *your* site whenever they make updates to their bundled packages.  
 
-# NEW INSTALLATION
-
-# Getting Started
+---
 
 This is a basic guide to installing Zen Cart®. If you already have Zen Cart® installed and wish to upgrade from a previous version to this new release, please see the upgrading instructions [in the Release document](https://www.zen-cart.com/docs/). 
 
-## The Basics
+---
+
+## A. The Basics
 
 You have downloaded the Zen Cart® software for an online shopping cart.
 
@@ -32,19 +32,19 @@ If No, stop, and see our [Certified Hosting](http://www.zen-cart.com/hosting) Si
 
 If No, stop.  You need to obtain a good [FTP tool](/user/first_steps/useful_tools/#ftp-tools) to transfer files back and forth from your computer to [your web host](/user/first_steps/hosting/#hosting-companies).
 
-<span class="error">
 **NOTE:** Many people have had timeout and other problems when using programs like SmartFTP and CuteFTP. We recommend that you do NOT use these problematic programs.  See [FTP tools](/user/first_steps/useful_tools/#ftp-tools) for a list of alternatives. 
 
 **NOTE 2:** If your hosting company provides an FTP program that runs inside your browser, we recommend that you do NOT use that for uploading large amounts of files such as a fresh install of Zen Cart. Those are okay for single-file uploads, but unreliable for several files at once.</span>
 
-<span class="error">**NOTE 3:** While some programs like Dreamweaver have built-in FTP capability, we DO NOT recommend using these programs for uploading more than one file at a time, since they often fail to do mass uploads properly, and do a very poor job of informing you of any failures. Always better to use a program dedicated to FTP activity, and not something that's merely got rudimentary FTP capability bolted on.  
-</span>
+**NOTE 3:** While some programs like Dreamweaver have built-in FTP capability, we DO NOT recommend using these programs for uploading more than one file at a time, since they often fail to do mass uploads properly, and do a very poor job of informing you of any failures. Always better to use a program dedicated to FTP activity, and not something that's merely got rudimentary FTP capability bolted on.  
 
 ### 3\. Do you have a good Text Editor?
 
 If No stop.  You will need a [text editor](/user/first_steps/useful_tools/#php-html-and-text-editors).
 
-<span class="error">**Note:** <u>do **not** use cPanel for editing files,</u> <u>or MS Word</u> or other software designed for fancy writing.  </span>
+**NOTE:** Do not use cPanel for editing files.
+
+**NOTE:** Do not use MS Word for editing files. 
 
 
 ### 4\. Do you have access to your webhosting control panel?
@@ -64,29 +64,29 @@ If you have answered Yes to all 4 of these questions, then you are ready to go o
 
 If you're reading this page via a file from your computer, you have likely already unzipped the [Zen Cart® distribution file](http://www.zen-cart.com/getit) and its contents into a folder on your personal computer. If for some reason you haven't already done so, unzip the files to your PC now, retaining the file structure within the zip file.  
 
-# Upload the Zen Cart® fileset to your webserver
+---
+## B. Upload the Zen Cart® fileset to your webserver
 
 Upload, via FTP, the whole program into a directory on your server.  You can put it in your webroot or in a folder below that. 
   
-<div id="webroot"></div>
-
 ### What is my webroot? 
 
 Each web host has his/her own preference in naming folders for use in running a website.  
 You can have many files that don't even get shown to the public. The ones that are available for access via a browser are usually in a folder called something like:
 
-- /home/YOURNAME/public_html  
+- `/home/YOURNAME/public_html`
 or  
-- /var/www/YOURNAME/httpdocs  
+- `/var/www/YOURNAME/httpdocs`
 or  
-- /usr/accounts/a/b/YOURNAME/httpd  
-etc, etc, etc
+- `/usr/accounts/a/b/YOURNAME/httpd`
 
-Basically, in your FTP area look for a "www" or "public_html" or "htdocs" or "httpdocs" or "wwwroot" folder. These are the common folder names for what is referred to as the "webroot", which is where all website content is served from.  
+etc.
+
+Basically, in your FTP area look for a `www` or `public_html` or `htdocs` or `httpdocs` or `wwwroot` folder. These are the common folder names for what is referred to as the **webroot**, which is where all website content is served from.  
 
 Your Zen Cart files (or *any* files to run your website, for that matter) need to be under that folder. If they're not, then you're going to get "not found" errors - because the content is not found!
 
-If it's unclear where the publicly-accessible files are to be uploaded, ask your hosting company for assistance in determining what your "webroot" folder should be.
+If it's unclear where the publicly-accessible files are to be uploaded, ask your hosting company for assistance in determining what your **webroot** folder should be.
 
 ### What folder do I upload into?
 
@@ -107,7 +107,8 @@ already have a well established website are just adding on ecommerce using
 Zen Cart.  In that case, you'd want to put your store below your existing site. 
 
 
-# **Creating the configure.php files**
+---
+## C. Create the configure.php files
 
 Two files need to be created on the server. These are the configure.php files that identify the settings of your particular server and the location of the files that you just loaded. After they have been created, you will then need to change the permissions on these files.  
 
@@ -121,8 +122,10 @@ Rename this file to `configure.php` and change the permissions to 777 (read-writ
 
 **NOTE FOR IIS USERS:** If you are using IIS for Windows hosting, the "chmod 777" idea for permissions settings is likely foreign to you. In IIS, under Windows, you need to right-click on the file (or folders in the next section below), and choose Properties. Then under the Security tab, ensure that the"**Internet Guest Account**", identified usually as: `MACHINE_NAME\IUSR_MACHINE_NAME` has at least "read" and "write" privileges.  It is likely best to give "modify" as well. This should be done on each file/folder indicated. (If the `IUSR_MACHINE_NAME` account isn't listed, click "Add" and add that account from the list, and then set the required permissions.) (Note: `_MACHINE_NAME` above refers to the "machine name" or "computer name" configured by the server administrator to "name" the server.)  
 
+**NOTE FOR IIS USERS:** Stop. Get Linux hosting.  IIS is not recommended. 
 
-# Set Permissions on folders
+--- 
+## D. Set Permissions on folders
 
 When you upload files to your server, the server will automatically set certain default permissions on those files and folders. Typically folders are set to 755 and files are set to 644\. Most servers use these values. Yours may or may not.  
 
@@ -159,7 +162,8 @@ Note: open the catalog/images directory and change **all** of the subdirectories
 As for other files, they can be CHMOD 644, or 444, depending on your webserver configuration.  Folders don't usually get set below 755.  
 
 
-# Before Running the Installer
+--- 
+## E. Before Running the Installer
 
 The installer is fairly intelligent and should be able to automatically supply answers to the questions listed below.  
 
@@ -183,8 +187,8 @@ You will need the following information for the installation:
     Example: `https://www.mydomain.com/catalog`
     - or - `https://secure.sharedservername.net/~username/catalog`
 
-
-# Starting the Installer
+--- 
+## F. Starting the Installer
 
 In your browser, enter the URL to your new shop, and the Installer should automatically start.  
 Example: `http://www.mydomain.com/catalog`
@@ -260,8 +264,8 @@ Save the Admin settings and your installation is now complete!
 
 Providing there were no errors during installation, you should be able to now enter the Admin or the Catalog.  
 
-
-# After Installation
+---
+## G. After Installation
 
 a) [RENAME YOUR ADMIN FOLDER.  Instructions here.](/user/running/rename_admin/)
 
@@ -286,13 +290,16 @@ Next, you will want to delete the `/catalog/zc_install` directory
 
 (If you are only testing and plan to install again, you could rename the folder to something like: `/catalog/zc_install_complete` until you take your site live.
 
-**NOTE:** use a different name than `zc_install_complete`, as some hacker may try using it, having read this help file.  Do NOT leave a zc_install folder on the server of a live site for security reasons.)  
+**NOTE:** use a different name than `zc_install_complete`, as some hacker may try using it, having read this help file.  Do NOT leave a `zc_install` folder on the server of a live site for security reasons.)  
 
-
-# Next Steps
+---
+## H. Next Steps
 
 For information on first steps to setting up your online shop, see the article [basic checklist](/user/first_steps/basic_checklist/). 
 
 You should also familiarize yourself with the Zen Cart® [Developer's Toolkit](/user/admin/developers_toolkit), located in your store's Admin area, under `Tools`. This will help you locate almost anything you want to customize in your shop!
 
 Once you're set up and ready to start announcing your URL to the public, you should FIRST review Site Security Recommendations to be sure your site is safe and not vulnerable to hackers. The most up-to-date version of this file can be found in the article [Important Security Recommendations](https://www.zen-cart.com/docs/important_site_security_recommendations.html). 
+
+--- 
+

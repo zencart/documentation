@@ -10,7 +10,9 @@ FIXME add details about running entire site in SSL
 **Quick Summary:**
 `HTTP_SERVER` and `HTTPS_SERVER` are the domain name of your site. Visiting this URL will take customers to the "webroot" of your domain, whether or not your store is located in that spot.  
 
-`DIR_WS_CATALOG` and `DIR_WS_HTTPS_CATALOG` are the foldernames that must be added to the URL in order to take customers to your store. If your store is located in the webroot (public_html, for example), then simply entering '/' here will suffice. But if your store is located in a subdirectory like `www.YOURSITE.com/store/` then it would be necessary to see /store/ as the value here.  
+`DIR_WS_CATALOG` and `DIR_WS_HTTPS_CATALOG` are the foldernames that must be added to the URL in order to take customers to your store. If your store is located in the 
+ [webroot](/user/first_steps/how_do_i_install#what-is-my-webroot), 
+then simply entering '/' here will suffice. But if your store is located in a subdirectory like `www.YOURSITE.com/store/` then it would be necessary to see /store/ as the value here.  
 
 Explained another way: Zen Cart builds its URLs by combining two values from your configure.php files:  
 
@@ -40,7 +42,9 @@ However, keep in mind that there IS a similarity between `DIR_WS_CATALOG` and `D
 `DIR_FS_CATALOG` might read: `/home/myname/public_html/store/` 
 and thus `DIR_WS_CATALOG` is: `/store/`
 
-(`DIR_WS_CATALOG` points to whatever follows the [webroot](/user/first_steps/how_do_i_install#webroot) configuration of your hosting account, ie: which folder your account points to for your actual site ... in most cases this folder is named "public_html" or "htdocs" or "httpdocs")  
+(`DIR_WS_CATALOG` points to whatever follows the 
+[webroot](/user/first_steps/how_do_i_install#what-is-my-webroot), 
+configuration of your hosting account, ie: which folder your account points to for your actual site ... in most cases this folder is named "public_html" or "htdocs" or "httpdocs")  
 
 **Other Paths:**
 The following paths should NOT be changed. It is VERY rare to ever need to change any of these. Changing them will result in breaking normal operation of your site.  
@@ -161,7 +165,7 @@ Additionally, if choosing to use the 'file' method, you MUST relocate the SQL CA
 define('DIR_FS_SQL_CACHE', '/enter/your/path/to/public_html_or_htdocs/and/zencart/here/zen/cache');  
 ```
 
-This setting specifies the path where SQL cache files would be stored if 'file' mode is selected. In v1.3.9 and v1.5.0, this setting was ALSO used for storing various debug logs used for troubleshooting problems your PHP scripts might be having in your store. As of v1.5.1, these logs are now found in the DIR_FS_LOGS location (see below).  
+This setting specifies the path where SQL cache files would be stored if 'file' mode is selected. In v1.3.9 and v1.5.0, this setting was ALSO used for storing various debug logs used for troubleshooting problems your PHP scripts might be having in your store. As of v1.5.1, these logs are now found in the `DIR_FS_LOGS` location (see below).  
 
 It's possible to relocate this folder to another location perhaps outside your site's webroot, for increased security. Simply relocate the folder using your FTP program, and adjust this value to match the new location.  
 For more information on understanding "webroot" concepts, see your favorite search engine.  
@@ -172,4 +176,8 @@ define('DIR_FS_LOGS', '/enter/your/path/to/public_html_or_htdocs/and/zencart/her
 
 In Zen Cart v1.5.1 and newer, this setting specifies the path where the program can store various debug logs used for troubleshooting problems your PHP scripts might be having in your store.  
 It's possible to relocate this folder to another location perhaps outside your site's webroot, for increased security. Simply relocate the folder using your FTP program, and adjust this value to match the new location.  
-For more information on understanding "webroot" concepts, see your favorite search engine.
+
+For more information on understanding "webroot" concepts, see 
+[webroot](/user/first_steps/how_do_i_install#what-is-my-webroot) or 
+your favorite search engine.
+

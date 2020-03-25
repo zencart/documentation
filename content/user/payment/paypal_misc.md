@@ -34,8 +34,6 @@ The quick overview for properly configuring IPN is as follows:
 
 ### PayPal login screen vs Credit Card fields ... using PayPal Website Payments Standard
 
-<div class="article cms_clear restore postcontainer" id="yui-gen1">
-
 #### Question: 
 
 When I'm testing payments on my shop using PayPal Website Payments Standard, it takes me to a screen where I'm asked to login to my PayPal account. But, I don't want my customers to be asked to login. I want them to see clearly that they can pay via Credit Card instead of having to locate the tiny text link that says "continue to pay by credit card".  How can I change this?  
