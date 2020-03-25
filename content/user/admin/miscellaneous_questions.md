@@ -62,5 +62,4 @@ See [how do I add a new product?](/user/products/add_delete/#how-do-i-add-a-new-
 [how do I delete a product?](/user/products/add_delete/#how-do-i-delete-a-category)
 
 ### How do I use another currency instead of US Dollars?
-
-See [how do I use my currency?](/user/localization/my_currency) 
+See [how do I use another currency?](/user/localization/my_currency) 
