@@ -46,5 +46,7 @@ Click on insert
 
 Last, make sure you apply the new tax class that you created (Taxable Goods) to any and all products that you might be charging tax on.  
 
-To make this faster when adding new products, in the Admin area, you can select a default Tax Class to be applied to all new products you create, by selecting "Catalog -> Product Types -> (choose a product type) -> Edit Layout -> Default Tax Class
+To make this faster when adding new products, in the Admin area, you can select a default Tax Class to be applied to all new products you create.  
+Go to [Admin > Catalog > Product Types](/user/admin_pages/catalog/product_types/), then choose a product type (likely Product General), and click
+*Edit Layout*, then  *Default Tax Class*.
 

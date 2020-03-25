@@ -1,5 +1,5 @@
 ---
-title: Using Products
+title: Miscellaneous Product and Attribute Questions
 description: Using Products and Attributes in Zen Cart 
 category: products 
 weight: -1 
@@ -9,7 +9,8 @@ Miscellaneous questions about products and attributes.
 
 ### How do I disable the category/inventory counts (the numbers beside the category links)?
 
-Open your Admin. Put your cursor over the Configuration in the top menu, choose My Store. Locate the "Show Category Counts" option.  Turn it off.
+Go to [Admin -> Configuration -> My Store](/user/admin_pages/configuration/configuration_mystore/). 
+Locate the *Show Category Counts* option.  Turn it off.
 
 ### What does MIXED ON mean? 
 On the [product editing page](/user/admin_pages/catalog/categories_products/), 
@@ -85,15 +86,16 @@ Cause: When an image is called there is an ALT tag and that ALT tag is the Produ
 Solution: Give images to your products.
 
 ### How do I turn off weight from my product descriptions? 
-Firstly let's be clear about the difference between a product listing and product info. When you see a number of products listed together, that's a product listing. When you click on one of them, you will be taken to the product info page.
+Firstly let's be clear about the difference between a product listing and product info. When you see a number of products listed together, that's a product listing. For example, the New Products page or a Category Listing page are product listing pages.  When you click on one of the individual products, you will be taken to the product info page.
 
-To turn off weight on the product listings pages, login to your Admin area and then choose Configuration > Product Listing > Display Product Weight and set it to 0.
+To turn off weight on the product listings pages, login to your Admin area and then choose [Configuration > Product Listing](/user/admin_pages/configuration/configuration_productlisting/), then select *Display Product Weight* and set it to 0.
 
-Well, that was easy. You may have spotted the Product Info entry on the Configuration menu and already be there to do the same for product info. STOP.
+You may have spotted the Product Info entry on the Configuration menu and already be there to do the same for product info. STOP.
 
 Product info works differently from product listings. This is because of the flexibility that Zen Cart gives you to define different product types. You may wish, for example, to display a weight for a book, but not for a downloadable pdf. Zen Cart allows you to set them up as different product types and display different information about them.
 
-So where do you go to turn off display of a products weight? Still in your Admin area, you go to the Catalog/Products > Product Types menu. Click once on the relevant product type (usually Product General unless you have taken explicit steps to use another product type) and then click on the "edit layout" button to the right. Then set Show Weight to 0. If you wish to also do this for other product types, go back to the Product Types screen and repeat.
+So where do you go to turn off display of a products weight? Follow
+the instructions on [this page](/user/template/basic_customizations/#can-i-turn-off-fields-from-my-product-info-page). 
 
 ### How do I set up "Music" products for audio-previews?
 

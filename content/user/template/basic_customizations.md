@@ -10,9 +10,7 @@ Before you read this article, please be sure you are familiar with
 Zen Cart files. 
 
 ### Can I change the width of the side boxes?
-To change the width of the sidebox columns, open your Admin and point your cursor at Configuration on the menu bar.
-
-Choose Layout Settings from the dropdown menu.
+To change the width of the sidebox columns, open [Admin -> Configuration -> Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/). 
 
 Click the Box Width you wish to change and edit it, the width can be fixed (default is 150px), expressed as a percentage of the total page width or as a relative size (20em). You can also change the width of either column to suit your design.
 
@@ -21,21 +19,17 @@ For example: if you were using a fluid design and wanted the boxes to shrink and
 You can also turn off either column universally in the same section of the admin.
 
 ### How can I remove the search box in the header navigation bar?
-Open your Admin. Point your cursor at the Tools menu. Choose the Layout Boxes Controller. Find the search_header.php, turn both switches to off.
+Open [Admin -> Tools -> Layout Boxes Controller](/user/admin_pages/tools/layout_boxes_controller/). Find `search_header.php`, edit, and turn both switches to off.
 
 
 ### How do I show the Categories on the main page?
-Open your Admin.
+Open [Admin -> Configuration -> Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/). 
 
-Point your cursor at the Configuration menu, choose Layout Settings from the dropdown.
-
-Find Categories - Always Show on Main Page, click edit and enable the feature.
+Find `Categories - Always Show on Main Page`, click edit and enable the feature.
 
 
-### Can I remove the Copyright 200X Zen Cart. Powered by Zen Cart from the footer of my cart?
-Copyright © 200X Zen Cart covers the design and graphics in the templates. If you are using a stock template with the included graphics you must leave the copyright. If you make a custom template and use your own graphics you may change the copyright.
-
-Shops that wish to be listed in the Zen Showcase must leave Powered by Zen Cart in the footer for identification. Leaving the Powered by Zen Cart is advantageous to both you and Zen Cart because a relevant reciprocal link can help you with search engine rankings. In the event you do not wish to be listed in the Zen Showcase, Powered by Zen Cart may be removed, but it may not be changed.
+### Can I remove the "Powered by Zen Cart" from the footer of my cart?
+Shops that wish to be listed in the Zen Showcase must leave "Powered by Zen Cart" in the footer for identification. Leaving the "Powered by Zen Cart" is advantageous to both you and Zen Cart because a relevant reciprocal link can help you with search engine rankings. In the event you do not wish to be listed in the Zen Showcase, "Powered by Zen Cart" may be removed, but it may not be changed.
 
 ### How do I change the colors and fonts?
 Find the file `includes/templates/YOURTEMPLATE/css/stylesheet.css`. Start by opening the style sheet in your favorite text editor:
@@ -116,12 +110,9 @@ Choose the desired setting:
 3= Both Boxes and Weight
 ```
 
-### Can I turn off the weight, inventory count, manufacturer, etc. on my product info page?
-Open your Admin.
-
-Put the cursor over Catalog on the top menu.
-
-Choose Product Types from the dropdown.
+### Can I turn off fields from my product info page?
+To turn off the weight, inventory count, manufacturer, etc. on my product info page, do the following: 
+Go to [Admin > Catalog > Product Types](/user/admin_pages/catalog/product_types/).
 
 Choose Products General (or the product type you are customizing).
 
