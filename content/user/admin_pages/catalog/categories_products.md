@@ -36,7 +36,7 @@ FIXME add explanations
 - Product Qty Minimum:
 - Product Qty Maximum:
 - Product Qty Units:
-- Product Qty Min/Unit Mix: Can products with different attributes be combined to reach the Product Qty Minimum threshold.  See [What does MIXED ON mean?](/user/products/using_products#mixed)
+- Product Qty Min/Unit Mix: Can products with different attributes be combined to reach the Product Qty Minimum threshold.  See [What does MIXED ON mean?](/user/products/using_products#what-does-mixed-on-mean)
 - Products Description:
 - Products Quantity:
 - Products Model:

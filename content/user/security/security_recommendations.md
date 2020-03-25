@@ -189,7 +189,9 @@ On Windows hosts, setting files read-only is usually sufficient. Should double-c
 The folders for which installation suggests read-write access for setup are these. If your site supports .htaccess protection, then you should use it for these folders.
 
 *   /**cache**  
-    This is used to cache session and database information. The BEST security protection for this is to move it to a folder "above" the public_html/htdocs/www area, so that it's not accessible via a browser. (Requires changes to DIR_FS_SQL_CACHE setting in configure.php files as well as [Admin > Configuration > Sessions > Session Directory](/user/admin_pages/configuration/configuration_sessions).
+    This is used to cache session and database information. The BEST security protection for this is to move it to a folder "above" the 
+ [webroot](/user/first_steps/how_do_i_install#what-is-my-webroot) 
+so that it's not accessible via a browser. (Requires changes to `DIR_FS_SQL_CACHE` setting in configure.php files as well as [Admin > Configuration > Sessions > Session Directory](/user/admin_pages/configuration/configuration_sessions).
 *   /**images**  
     See other suggestions earlier.
 *   /**includes/languages/english/html_includes**  

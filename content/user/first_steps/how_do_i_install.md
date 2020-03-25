@@ -68,25 +68,24 @@ If you're reading this page via a file from your computer, you have likely alrea
 
 Upload, via FTP, the whole program into a directory on your server.  You can put it in your webroot or in a folder below that. 
   
-<div id="webroot"></div>
-
 ### What is my webroot? 
 
 Each web host has his/her own preference in naming folders for use in running a website.  
 You can have many files that don't even get shown to the public. The ones that are available for access via a browser are usually in a folder called something like:
 
-- /home/YOURNAME/public_html  
+- `/home/YOURNAME/public_html`
 or  
-- /var/www/YOURNAME/httpdocs  
+- `/var/www/YOURNAME/httpdocs`
 or  
-- /usr/accounts/a/b/YOURNAME/httpd  
-etc, etc, etc
+- `/usr/accounts/a/b/YOURNAME/httpd`
 
-Basically, in your FTP area look for a "www" or "public_html" or "htdocs" or "httpdocs" or "wwwroot" folder. These are the common folder names for what is referred to as the "webroot", which is where all website content is served from.  
+etc.
+
+Basically, in your FTP area look for a `www` or `public_html` or `htdocs` or `httpdocs` or `wwwroot` folder. These are the common folder names for what is referred to as the **webroot**, which is where all website content is served from.  
 
 Your Zen Cart files (or *any* files to run your website, for that matter) need to be under that folder. If they're not, then you're going to get "not found" errors - because the content is not found!
 
-If it's unclear where the publicly-accessible files are to be uploaded, ask your hosting company for assistance in determining what your "webroot" folder should be.
+If it's unclear where the publicly-accessible files are to be uploaded, ask your hosting company for assistance in determining what your **webroot** folder should be.
 
 ### What folder do I upload into?
 
