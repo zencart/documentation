@@ -8,6 +8,9 @@ Descriptions of these tools can be found at the individual web sites
 
 ## PHP, HTML and Text Editors
 
+You need a plain text editor to modify the Zen Cart files.  You cannot use MS Word or other document editors. 
+Here are some options. 
+
 ### Freeware
 
 *   [Sublime Text](http://www.sublimetext.com) (Windows, Mac, Linux)
@@ -28,6 +31,8 @@ Descriptions of these tools can be found at the individual web sites
 
 ## Text-Search Tools
 
+Text search tools are useful for finding the locations of strings you want to change.
+
 ### Freeware
 
 *   The Developers Toolkit in your Zen Cart Admin
@@ -42,6 +47,10 @@ Descriptions of these tools can be found at the individual web sites
 
 ## File Comparison Utility
 
+File comparison tools allow you to compare older versions of Zen Cart with
+newer versions, or compare a vanilla copy of a file with a copy from a 
+modification or plugin. 
+
 ### Freeware
 
 *   [WinMerge](http://winmerge.org/) (Windows)
@@ -54,6 +63,9 @@ Descriptions of these tools can be found at the individual web sites
 *   [Araxis Merge](http://www.araxis.com/merge-overview.html) (Windows, Mac) ** Offers 3-way comparisons **
 
 ## FTP Tools
+
+FTP stands for "File Transfer Protocol."  You use FTP to connect to your 
+hoster and upload files to your cart. 
 
 ### Freeware
 
@@ -70,6 +82,8 @@ Descriptions of these tools can be found at the individual web sites
 *   [Forklift](http://www.binarynights.com/) (Mac)
 
 ## File Archiver/Zip/Unzip Utility
+
+The Zen Cart code and plugins come in `.zip` format, so you need a way to handle files like this. 
 
 ### Freeware
 

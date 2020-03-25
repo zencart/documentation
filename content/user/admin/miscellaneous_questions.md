@@ -57,14 +57,10 @@ There isn't currently a Zen Cart page to do this, but each time an Admin page is
 See [how do I add a new category?](/user/categories/add_delete/#how-do-i-add-a-new-category) and 
 [how do I delete a category?](/user/categories/add_delete/#how-do-i-delete-a-category)
 
-### How do I use my currency instead of US Dollars?
+### How do I add or delete products? 
+See [how do I add a new product?](/user/products/add_delete/#how-do-i-add-a-new-category) and 
+[how do I delete a product?](/user/products/add_delete/#how-do-i-delete-a-category)
 
-There are two parts to configuring your currency settings. The first is whether you want to accept more than one currency and the second is adding the new currency.
+### How do I use another currency instead of US Dollars?
 
-Go to [Admin -> Configuration -> My Store](/user/admin_pages/configuration/configuration_mystore/).
-If you are running your shop in a language that is not English and are going to use your native currency, click on the line that says "Switch To Default Language Currency" and change the value to true. If you are going to run the cart in English, but not use US Dollars, make sure that the "Switch To Default Language Currency" is set to false.
-
-Then go to [Admin -> Localization -> Currencies](/user/admin_pages/localization/currencies/).  On the page that comes up click the *New Currency* button. Fill in the information appropriate for your currency and check the box if it is to be the default for your shop. Click the *Insert* button, then after the page refreshes, click the *Update Currencies* button.
-
-
- 
+See [how do I use my currency?](/user/localization/my_currency) 
