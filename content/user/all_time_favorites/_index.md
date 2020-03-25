@@ -25,14 +25,13 @@ layout: docs
 
 * [Installing Zen Cart](/user/first_steps/how_do_i_install/)
 
+* [Release history for Zen Cart](/user/about_us/release_history/) - with links to Release Notes
 
-* [Release history for Zen Cart](/user/about_us/release_history/)
-
-* [Server Requirements for running Zen Cart](/user/first_steps/server_requirements/)
+* [Server Requirements for running Zen Cart](/user/first_steps/server_requirements/) - Zen Cart version to PHP version matrix
 
 * [Taxes - how much do I charge?](/user/localization/taxes/)
 
 * [Upgrading Zen Cart](/user/upgrading/upgrading/)  
 
-* [Version Information for PHP, MySQL and Zen Cart](/user/first_steps/version/)
+* [Version Information for your cart](/user/first_steps/version/) - how to determine your PHP, MySQL and Zen Cart version number 
 

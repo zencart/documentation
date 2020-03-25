@@ -30,10 +30,10 @@ The built-in debug logging will create files
 in your website's /logs/ folder named 
 `myDEBUG-xxxxxx.log`
 (or `myDEBUG-adm-xxxxxx.log` if they are from the admin side).  
-(To access these files, use your FTP program to connect to your webserver. Your hosting company can help you with how to do that.)  
 
-(If there are no myDEBUG-xxxxxx.log files in your /logs/ folder, then you might need to [make your /logs/ folder writable](/user/installing/permissions).
-Contact your hosting company's help desk if you need assistance with that.)  
+To access these files, use your [FTP program](/user/first_steps/useful_tools/#ftp-tools) to connect to your [hoster](/user/first_steps/hosting/#hosting-companies).
+
+If there are no myDEBUG-xxxxxx.log files in your /logs/ folder, then you might need to [make your /logs/ folder writable](/user/installing/permissions).
 
 You'll want to read the contents of these files to see what the actual PHP errors are.  
 
@@ -71,8 +71,9 @@ The most common customization errors include:
 *   adding or deleting apostrophes or quotations (ie: ' or " marks) inside define() statements, resulting in mismatched quotes
 *   removing or adding punctuation to define() statements, thus breaking the correct syntax. A define() statement should look like this:
 
-
-`define('CONSTANT_NAME', 'value here');`
+```
+    define('CONSTANT_NAME', 'value here');
+```
 
 *   missing semi-colons and periods, unbalanced parentheses, braces, brackets
 *   uploading files to the wrong places. For more information about overrides, see the [Overrides Chart](http://www.zen-cart.com/index.php?main_page=product_contrib_info&cPath=40_54&products_id=298) and the [Overrides FAQs](http://tutorials.zen-cart.com/index.php?category=4)
