@@ -111,10 +111,10 @@ weight: 30
 
 <h2 id="also_purchased_products">Also Purchased Products</h2>
 
-<div class='indent'>Number of products to display in the 'This Customer Also Purchased' box</div>
+<div class='indent'>Number of products to display in the 'Also Purchased' box</div>
 
 
-<h2 id="recent_purchases_box_note_box_is_disabled_">Recent Purchases Box- NOTE: box is disabled </h2>
+<h2 id="recent_purchases_box">Recent Purchases Box</h2>
 
 <div class='indent'>Number of products to display in the recent purchases box</div>
 
