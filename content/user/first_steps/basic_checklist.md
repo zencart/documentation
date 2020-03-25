@@ -1,6 +1,6 @@
 ---
-title: Basic Checklist
-description: Zen Cart Basic Checklist
+title: Basic Store Setup Checklist
+description: Zen Cart Basic Store Setup Checklist
 category: first_steps 
 weight: 10
 ---

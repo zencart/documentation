@@ -58,7 +58,10 @@ Descriptions of these tools can be found at the individual web sites
 ### Freeware
 
 *   [WinSCP](http://winscp.net/) A great Windows-based secure-FTP program. *RECOMMENDED*
-*   [FileZilla](https://filezilla-project.org/) (Windows, Mac, Linux) (NOTE: be sure to download original software, not fakes; and don't store passwords in it)
+*   [FileZilla](https://filezilla-project.org/) (Windows, Mac, Linux) 
+<br />
+    **NOTE:** download from this official link only.<br />
+    **NOTE:**  do not store passwords in Filezilla; type them in each time
 *   [CyberDuck FTP](http://www.cyberduck.ch) (Mac)
 
 ### Commercial
