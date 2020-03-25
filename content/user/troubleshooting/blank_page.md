@@ -24,13 +24,21 @@ installation by using the [Changed Files mod](https://www.zen-cart.com/downloads
 A PHP syntax error will very often result in a blank screen, or a partially-blank screen.  
 When this happens, there is often also an entry in the server's errorlog, which you can often view via your hosting control panel area. But, sometimes you can't view that log without requesting your hosting company to access it for you, for privacy reasons. So, alternatively you can use the debug logging built-in to Zen Cart:  
 
-### a) Check for the actual error messages in the store's myDebug-xxxxxxx.log files:
+### a) Check for the actual error messages in the store's myDEBUG-xxxxxx.log files:
 
-The built-in debug logging will create files <font color="#0000FF">**in your website's /logs/ folder**</font>, named "<font color="#0000FF">**myDebug-xxxxxx.log**</font>" (or "myDebug-adm-xxxxxxx.log" if they are from the admin side).  
+The built-in debug logging will create files 
+in your website's /logs/ folder named 
+`myDEBUG-xxxxxx.log`
+(or `myDEBUG-adm-xxxxxx.log` if they are from the admin side).  
 (To access these files, use your FTP program to connect to your webserver. Your hosting company can help you with how to do that.)  
-(If there are no myDebug-xxxxxxxxxxx.log files in your /logs/ folder, then you might need to [make your /logs/ folder writable.](/user/installing/permissions).
+
+(If there are no myDEBUG-xxxxxx.log files in your /logs/ folder, then you might need to [make your /logs/ folder writable](/user/installing/permissions).
 Contact your hosting company's help desk if you need assistance with that.)  
+
 You'll want to read the contents of these files to see what the actual PHP errors are.  
+
+Once you have a log, see [reading a myDEBUG log](/user/troubleshooting/debug_logs/). 
+
 Then search this FAQ area for your error message and/or see the "Dealing with Error Messages" section, later in this article.  
 
 **NOTE:** When errors start occurring, the number of log files in this folder can grow very quickly. You can purge them by using the Debug Log File Purge option from your Admin->Tools->Store Manager screen.  
@@ -80,13 +88,14 @@ And for product-images, make sure you don't have spaces and hyphens in the produ
 * * *
 
 **Other Information**  
-If you are using Yahoo Hosting, you might want to enable their [script logs](http://help.yahoo.com/l/us/yahoo/smallbusiness/webhosting/php/php-05.html)  
+If you are using Yahoo Hosting, you might want to enable their [script logs](http://help.yahoo.com/l/us/yahoo/smallbusiness/webhosting/php/php-05.html).
 
 * * *
 
 ### Advanced Developer Option. (THIS APPROACH IS *NOT* NEEDED FOR MOST SITUATIONS!!!!)
 
-While **<font color="#ff0000">the built-in myDebug-xxxxxx.log method above is far more reliable and secure</font>** (since messages are never shown in your customers' browser), another way to help identify ***where*** an error is happening is to show the errors on your browser. The drawback to this is that your customers can also see the errors, and search engines might catch them too, which could be embarrassing, AND WILL CAUSE YOUR SITE TO FAIL PCI SECURITY SCANS.  
+While **<font color="#ff0000">the built-in myDEBUG-xxxxxx.log method above is far more reliable and secure</font>** (since messages are never shown in your customers' browser), another way to help identify ***where*** an error is happening is to show the errors on your browser. The drawback to this is that your customers can also see the errors, and search engines might catch them too, which could be embarrassing, AND WILL CAUSE YOUR SITE TO FAIL PCI SECURITY SCANS.  
+
 To attempt to show PHP debug errors on-screen, create and upload a new file, like this:  
 Filename: **/includes/<u>local</u>/configure.php**  
 

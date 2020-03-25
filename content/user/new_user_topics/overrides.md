@@ -138,6 +138,8 @@ Extra Javascript for an existing file
 
 Using the override system means you don't have to worry about over-writing your YOURTEMPLATE files when an upgrade comes along, because they are all in YOURTEMPLATE directories.  
 
-During an upgrade you may find that new code was added to some of the core files that you are overriding. Its very easy to  compare the files in your override directories to the upgraded files. Using a file compare utility such as Beyond Compare or [WinMerge](http://winmerge.sf.net) you can incorporate the changes into your override files.  
+During an upgrade you may find that new code was added to some of the core files that you are overriding. Its very easy to  compare the files in your override directories to the upgraded files. Using a 
+[file compare utility](/user/first_steps/useful_tools/#file-comparison-utility),
+you can incorporate the changes into your override files.  
 
 Save the changed files and upload them to your server.

@@ -23,7 +23,8 @@ Here's how it works:
     *   If the transport is "PHP", then the server's PHP configuration takes over entirely, using whatever PHP has been configured to use in the server's php.ini settings.
     *   If the transport is a sendmail function, then the server attempts to use the sendmail program on your webserver.
 5.  If email archiving is enabled and no error message is encountered (ie: the email is delivered without being rejected by the sending server), the email is stored to the archive table.
-6.  If an error occurs, then the error details are logged into the /logs/ folder as "MyDebug-xxxxxx.log" files.
+6.  If an error occurs, then the error details are logged into the /logs/ folder as "myDEBUG-xxxxxx.log" files.  
+See [reading a myDEBUG log](/user/troubleshooting/debug_logs/). 
 
 Done.
 
@@ -75,7 +76,7 @@ The content of the file should be just one line:
    define('EMAIL_SYSTEM_DEBUG','5');
 </pre>
 
-Then try sending another email. The SMTP handshake information will be dumped to the /logs/MyDebug-xxxxxxx.log folder/files if SMTP/SMTPAUTH is your transport method.
+Then try sending another email. The SMTP handshake information will be dumped to the /logs/myDEBUG-xxxxxx.log folder/files if SMTP/SMTPAUTH is your transport method.
 
 Be sure to delete that email_debug.php file when you're done testing; otherwise your store won't work properly because of the bizarre information that gets output to the screen!
 
