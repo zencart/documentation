@@ -7,11 +7,11 @@ weight: 10
 
 ## Apply Security Fixes applicable to your version
 
-1\. If any **[security fixes](/forum/forumdisplay.php?f=2)** have been posted for your version, be sure you have installed them.  
+1\. If any [security fixes](https://www.zen-cart.com/forumdisplay.php?2-Zen-Cart-Release-Announcements) have been posted for your version, be sure you have installed them.  
 
 ## Site Audit to look for damaged or added files
 
-2\. You will need to do a full site audit to be sure all files are as you expect them to be. **[These steps can be used as a guide.](/user/running/diagnosing_obscure_issues/)**
+2\. You will need to do a full site audit to be sure all files are as you expect them to be. [These steps can be used as a guide.](/user/troubleshooting/diagnosing_obscure_issue/) 
 
 ## Secure Your Site Using the Security Recommendations
 

@@ -28,7 +28,3 @@ The most detailed procedure to follow to find out what's wrong when you've made 
 *   Second most common root cause is poorly-written mods.
 *   Third most common is an incomplete upgrade of PHP files.
 
-**Handy Utility**
-
-This handy utility can be used to find the cause of blank pages appearing unexpectedly: [http://www.zen-cart.com/forum/showthread.php?t=84613](http://www.zen-cart.com/forum/showthread.php?t=84613)
-

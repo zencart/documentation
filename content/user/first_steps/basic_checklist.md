@@ -7,9 +7,10 @@ weight: 10
 
 ## Introduction
 
-After installation, you'll want to address several things to get your basic shop operational. One suggested order of operations is the following:
+After [installation](/user/first_steps/how_do_i_install), you'll want to address several things to get your basic shop operational. One suggested order of operations is the following:
 
-When English is not your preferred language download, install and setup
+### Language File setup 
+- When English is not your preferred language download, install and setup
 your preferred language from the [Zen Cart Downloads](https://www.zen-cart.com/downloads.php?do=cat&id=6). 
 
 ### Checklist
