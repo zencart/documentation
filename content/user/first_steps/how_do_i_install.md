@@ -267,9 +267,10 @@ Providing there were no errors during installation, you should be able to now en
 ---
 ## G. After Installation
 
-a) [RENAME YOUR ADMIN FOLDER.  Instructions here.](/user/running/rename_admin/)
+a) [RENAME YOUR ADMIN FOLDER](/user/running/rename_admin/).  Note that 
+current versions of Zen Cart do this for you. 
 
-b) When you enter the Catalog, you will receive security warnings about the configure.php files and the `/zc_install` directory.  
+b) When you enter the catalog, you will receive security warnings about the `configure.php` files and the `/zc_install` directory.  
 
 **configure.php files**  
 You will now want to change the permissions on the configure.php files with `chmod 644` (or 444 depending on your server, and sometimes setting 444 cannot be done via FTP, in which case use your host's control panel or file manager to set the permissions level.)  
@@ -288,12 +289,10 @@ If you have any errors or problems, most of these can be corrected by minor adju
 c) Remove the **zc_install directory**  
 Next, you will want to delete the `/catalog/zc_install` directory  
 
-(If you are only testing and plan to install again, you could rename the folder to something like: `/catalog/zc_install_complete` until you take your site live.
-
-**NOTE:** use a different name than `zc_install_complete`, as some hacker may try using it, having read this help file.  Do NOT leave a `zc_install` folder on the server of a live site for security reasons.)  
-
 ---
 ## H. Next Steps
+
+Now you'll want to [install your SSL certificate](/user/installing/enable_ssl/) and change your admin password.  [Yes, you need an SSL certificate](/user/first_steps/yes_you_need_ssl). 
 
 For information on first steps to setting up your online shop, see the article [basic checklist](/user/first_steps/basic_checklist/). 
 

@@ -16,6 +16,8 @@ critical values:
 - PHP Memory Limit: [The amount of memory a script is allowed to allocate](https://www.php.net/manual/en/ini.core.php#ini.memory-limit).
 - Database: (Since Zen Cart 1.5.6) the name of the database from your `admin/includes/configure.php` file. 
 
+Below this is the history of your database.
+
 Below this area is the output of [`phpinfo()`](https://www.php.net/manual/en/function.phpinfo.php). 
 
 
