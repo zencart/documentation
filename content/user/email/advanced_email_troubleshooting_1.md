@@ -199,5 +199,6 @@ It is inevitable and unfortunate that certain short emails, such as 'password fo
 *   Accept that the free web based services change the rules regularly and arbitrarily, and that customer email that went through fine last week can disappear or be flagged as Spam this week.
 *   Establish whether your hosts have any emails-per-hour or other limits, and keep them in mind when you send out that 10,000 email Newsletter and mailshot.
 
-When all else fails, post on the support forum, and we'll see if we can help. Or at least be sympathetic.
+When all else fails, 
+[post on the main support forum](https://www.zen-cart.com/forum.php).
 

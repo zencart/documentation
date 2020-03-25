@@ -24,25 +24,33 @@ Mixed ON means that they can "mix" or match Attributes to build the 36 Minimum s
 Mixed OFF means that they cannot "mix" the Attributes to build the 36 Minimum setting. For example, you must have 36 Red and/or 36 Yellow and/or 36 Green
 to meet the minimum restriction of 36
 
-### Required Attributes aren't being required! 
+### Required Attributes not working 
 
 Problem: When i set a attribute to an item like a color that must be specified and I enable the Required button on the attribute it is letting customers add items to the cart without giving a required attribute.
 
-"Required" is only for "text" input fields. (Hence the description of "Text Required").
+"Required" is only for "text" input fields. (Hence the description of "Text Required").  However, you can still set a default value for an attribute using one of the techniques described below. 
 
-To force selection of an attribute, you need to:
+To force selection of an attribute, there are two options: 
 
-a. add an attribute that is Display-Only (ie: a color swatch that says "Please Select a Color").
+1. Create a "Please Select" option (for dropdowns) 
 
-b. Make it default.
+    a. add an attribute that is Display-Only (ie: a color swatch that says "Please Select a Color").
+
+    b. make it the default.
 This forces the customer to choose something "other than" the default (since the "default" is set to "display only").
 
-**NOTE:** This doesn't work for checkboxes.
+    **NOTE:** This doesn't work for checkboxes.
 
-For more complex attribute questions, please post them to the 
-[main support forum](https://www.zen-cart.com/forum.php).
-Please include which version of Zen Cart, and a link to your site URL.
+2. Set a default value (for radio buttons) 
 
+    a. Go to the [Attributes Controller]() and select the product in question (you will need to select the category, then the product, then press *Display*).  The attributes will be shown below the product. 
+
+    b. Pick the attribute you want to be the default, and press the Edit button on the right side of that attribute.
+
+    c. Set the *Default Attribute to be Marked Selected:* radio button to *Yes*.
+
+    d. Press the *Update* button to save this change. 
+ 
 ### Pricing includes tax
 
 Problem: My products are being displayed with a different price then I set!? If I set someting at $2 it ends up listing at 2.22. I have set that prices should not show with tax, I haven't set any tax rates yet.
@@ -117,3 +125,9 @@ There are a couple tutorials on this process:
 - [Setting up downloads for products](/user/products/downloadable/)
 - [Adding attributes](/user/products/attributes/)
 
+
+<!-- please keep this at the end --> 
+### I have another product or attribute question! 
+For more complex product / attribute questions, please post to the 
+[main support forum](https://www.zen-cart.com/forum.php).
+Please include which version of Zen Cart, and a link to your site URL.
