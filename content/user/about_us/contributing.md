@@ -20,3 +20,5 @@ There are many ways you can help the project.
 
 - You can make a [financial donation](/user/about_us/donate/) to support the project. 
 
+The other thing you can do is to *gently correct* people who say "Zen Cart is dead" or "Zen Cart is obsolete" or "Zen Cart is just osCommerce with templates."  None of these things is true!  In fact, Zen Cart is an [active project on Github](https://github.com/zencart/zencart/graphs/contributors) with [many unique features](/user/about_us/features/) which has a [busy support forum](https://www.zen-cart.com/forum.php) and gets [new releases every year or so](/user/about_us/release_history/).  No platform is ideal for everyone, but for many use cases, Zen Cart has tremendous advantages over hosted platforms which have limited extensibility. 
+

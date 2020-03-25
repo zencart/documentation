@@ -8,11 +8,14 @@ Blank pages can be caused by a number of things, and often occur just after inst
 
 ## 1\. Did all your file-uploads work properly?
 
-Sometimes FTP programs experience a timeout when uploading large quantities of files (such as when installing or upgrading your site), or fail to fully upload some files, or leave them as just 0-bytes in size.  
+Sometimes FTP programs experience a timeout when uploading large quantities of files (such as when installing or upgrading your site), or fail to fully upload some files, or leave them as just 0 bytes in size.  
 
 Some programs like SmartFTP and CuteFTP are well-known to be problematic in this area.  See [FTP tools](/user/first_steps/useful_tools/#ftp-tools) for a list of alternatives. 
 
 Best to re-upload and ensure that there are no errors, and that no files are left with 0 bytes.  
+
+You can easily verify that you do not have any zero byte files in your 
+installation by using the [Changed Files mod](https://www.zen-cart.com/downloads.php?do=file&id=2193). 
 
 <font color="#a52a2a">**Failed uploads are the MOST COMMON CAUSE of all website problems.** </font>
 

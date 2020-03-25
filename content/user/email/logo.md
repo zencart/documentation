@@ -1,9 +1,11 @@
 ---
-title: How do I change the Logo in my HTML emails ?
-description: How do I change the Logo in my Zen Cart HTML emails ?
+title: How do I change the logo in my HTML emails ?
+description: How do I change the logo in my Zen Cart HTML emails ?
 category: email
 weight: 10
 ---
+
+Related: [Using your logo on packing slips and invoices](/user/customizing/use_company_logo).
 
 The email logo is contained in the file `email/header.jpg`. 
 
@@ -24,4 +26,4 @@ For the storefront, copy the file `includes/languages/english/email_extras.php` 
 
 Sometimes the change will not show up right away in emails that have already been sent and viewed, due to caching. Simply close your email program and re-open it to see the change take effect.  If your email is browser-based, clear your browser cache to see the change. 
 
-
+**NOTE: ** You must be sending HTML emails for this to work.**  See the Enable HTML Emails setting in [Admin -> Configuration -> Email Options ](/user/admin_pages/configuration/configuration_emailoptions/) setting.
