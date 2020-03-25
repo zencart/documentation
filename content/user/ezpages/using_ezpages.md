@@ -58,7 +58,7 @@ Even quicker would be to go to Admin > Configuration > EZ-Pages Settings and set
 
 
 <!-- please keep this at the end --> 
-### I have another EZ Page question! 
-For more complex product / attribute questions, please post to the 
+### I have another EZ-Page question! 
+For more complex EZ-Page questions, please post to the 
 [main support forum](https://www.zen-cart.com/forum.php).
 Please include which version of Zen Cart, and a link to your site URL.

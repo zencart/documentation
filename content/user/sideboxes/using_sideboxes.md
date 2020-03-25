@@ -33,6 +33,6 @@ For example, if you wished the terms and conditions link to appear first, you wo
 
 <!-- please keep this at the end --> 
 ### I have another sidebox question! 
-For more complex product / attribute questions, please post to the 
+For more complex sidebox questions, please post to the 
 [main support forum](https://www.zen-cart.com/forum.php).
 Please include which version of Zen Cart, and a link to your site URL.
