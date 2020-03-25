@@ -81,9 +81,9 @@ Hosting accounts are offered in two flavors:
 
 VPS is more expensive but more secure and provides greater flexibility. 
 
-Hosting accounts also offer different technology stacks.  The
+Hosting accounts also offer different OS versions.  The
 Zen Cart project recommends Linux with Apache (or Linux with Nginx),
-**not** Windows IIS. 
+**not** Windows with IIS. 
 
 Most users will want a hosting account that offers a Control Panel, such
 as CPanel.  The control panel gives you easy access to the underlying 
@@ -91,6 +91,24 @@ operating system functionality.
 
 The Zen Cart project recommends a number of hosting providers on 
 their [Recommended Services](https://www.zen-cart.com/content.php?3-services) page.
+
+### Webserver 
+
+The word *webserver* (or *web server*) can mean different things based on context. 
+Sometimes when people use this word, they mean the computer associated with your 
+hosting account that runs your website.  And sometimes, they mean the 
+piece of software that *runs* on the computer associated with your 
+hosting account, which *serves* up web pages.  
+
+Here, we are using the second meaning. 
+For programs like Zen Cart, running on commercial hosters, 
+there are three main options for webserver software: 
+
+- Apache (runs on Linux)
+- Nginx (runs on Linux)
+- IIS (runs on Windows)
+
+The Zen Cart team recommends Apache or Nginx, **not** IIS.
 
 ### SSL Certificates
 

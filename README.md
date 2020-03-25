@@ -6,26 +6,16 @@ Merged PRs to the Content area of this repo automatically deploy to https://docs
 
 ## Content
 
-Create and update files in the `content/dev` and `content/user` folders.  
+Create and update files in the `content/dev` and `content/user` folders, for developer and user documentation respectively.   
 
 **Please do not make edits to other folders.**
 
-The files are in Markdown format, but also include a brief YAML "header" using the following syntax:
-```yaml
----
-title: Page Title Goes Here
-weight: 1
----
-```
-
-The `weight` parameter indicates sort order of display amongst files at the same folder level.
-
-If you create a new folder (such as for a category/topic), be sure to create an `_index.md` file, following the example from an existing folder. 
+The files are in Markdown format. Details on file structure and contents are provided in [CONTRIBUTING](CONTRIBUTING.md).
 
 
 ## Local Dev Testing
 
-First ensure that Hugo (v0.53 or greater) is installed on your system. On a Mac, use homebrew:
+First ensure that Hugo (v0.53 or greater) is installed on your system. On a Mac, use Homebrew:
 
 ```
 brew install hugo && brew upgrade hugo
