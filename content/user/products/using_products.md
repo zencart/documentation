@@ -125,6 +125,32 @@ There are a couple tutorials on this process:
 - [Setting up downloads for products](/user/products/downloadable/)
 - [Adding attributes](/user/products/attributes/)
 
+### What is the meaning of the number in "minimum values" and "maximum values" during product-entry?
+
+On the [Admin -> Catalog -> Category/Products](/user/admin_pages/catalog/categories_products/) screen, you can setup a minimum quantity and a maximum quantity as well as the units that they must be ordered in. 
+
+```
+Minimum - the minimum number that you can buy for the product  (Default = 1)
+Maximum - the Maximum number that you can buy for the product  (Default = 0-Unlimited)
+Units - the increment qty that you must buy the product  (Default = 1)
+```
+
+If you make it so that the minimum quantity was 12 but had to be ordered in units of 3, then the allowed quantities would be:
+
+12, 15, 18, 21, etc.
+
+These have nothing to do with product quantity in stock.  Inventory On Hand is handled by the "Product Quantity" field elsewhere on the same screen.
+
+### How do I add quantity discounts to my products?
+
+[Admin -> Catalog -> Products Price Manager](/user/admin_pages/catalog/products_price_manager/)
+
+- Select the product
+- Edit
+- click the "add 5 blank discounts" button
+- fill in the details
+- Update
+
 
 <!-- please keep this at the end --> 
 ### I have another product or attribute question! 

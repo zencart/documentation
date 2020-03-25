@@ -91,7 +91,7 @@ weight: 20
 
 <h2 id="also_purchased_products">Also Purchased Products</h2>
 
-<div class='indent'>Minimum number of products to display in the 'This Customer Also Purchased' box</div>
+<div class='indent'>Minimum number of products to display in the 'Also Purchased' box</div>
 
 
 <h2 id="admin_usernames">Admin Usernames</h2>
