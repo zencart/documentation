@@ -2,7 +2,7 @@
 title: Admin->Account 
 description: Zen Cart Admin->Account section
 category: admin_pages
-weight: 5
+weight: 500 
 ---
 
 The `Admin -> Account` page allows you to edit or reset the password 

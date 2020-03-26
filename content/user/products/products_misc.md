@@ -7,11 +7,13 @@ weight: -1
 
 Miscellaneous questions about products and attributes.
 
+---
 ### How do I disable the category/inventory counts (the numbers beside the category links)?
 
 Go to [Admin -> Configuration -> My Store](/user/admin_pages/configuration/configuration_mystore/). 
 Locate the *Show Category Counts* option.  Turn it off.
 
+---
 ### What does MIXED ON mean? 
 On the [product editing page](/user/admin_pages/catalog/categories_products/), 
 when the setting `Product Qty Minimum` is greater than 1, the 
@@ -25,6 +27,7 @@ Mixed ON means that they can "mix" or match Attributes to build the 36 Minimum s
 Mixed OFF means that they cannot "mix" the Attributes to build the 36 Minimum setting. For example, you must have 36 Red and/or 36 Yellow and/or 36 Green
 to meet the minimum restriction of 36
 
+---
 ### Required Attributes not working 
 
 Problem: When i set a attribute to an item like a color that must be specified and I enable the Required button on the attribute it is letting customers add items to the cart without giving a required attribute.
@@ -52,6 +55,7 @@ This forces the customer to choose something "other than" the default (since the
 
     d. Press the *Update* button to save this change. 
  
+---
 ### Pricing includes tax
 
 Problem: My products are being displayed with a different price then I set!? If I set someting at $2 it ends up listing at 2.22. I have set that prices should not show with tax, I haven't set any tax rates yet.
@@ -64,6 +68,7 @@ If this does not work please re-ask your question on the
 and supply a URL where it can be seen in action.
 Please also list which version of Zen Cart you are using and which currencies you have installed, which one is the default,  and which languages you have installed.
 
+---
 ### Is it possible to order fractional quantities? 
 There are two setups required in order to allow customers to purchase in quantities less than 1:
 
@@ -71,11 +76,13 @@ There are two setups required in order to allow customers to purchase in quantit
 
 2. Then individually edit each applicable product's settings to allow minimum units of 0.01 or whatever you need.
 
+---
 ### Can a product be listed in more than one category?
 Yes. If you haven't created it yet, set up the product that you want to be listed in two or more categories. Go to the category in which you put that product (Admin > Catalog > Categories/Products) where you will see a row of icons towards the right, one of which is a white "c" in a blue circle. Click on that and you can copy a product to another category.
 
 There are two types of copy: linked or duplicated. In the former case the product shows in both categories but there's only one instance, so any changes will affect both. In the latter case a new, identical product is created, which can then be changed independently of the original.
 
+---
 ### Why do my product names show up twice? 
 Symptom: Instead of showing a product image thumbnail and the product's name, I'm seeing just the product name, but twice!
 
@@ -85,6 +92,7 @@ Cause: When an image is called there is an ALT tag and that ALT tag is the Produ
 
 Solution: Give images to your products.
 
+---
 ### How do I turn off weight from my product descriptions? 
 Firstly let's be clear about the difference between a product listing and product info. When you see a number of products listed together, that's a product listing. For example, the New Products page or a Category Listing page are product listing pages.  When you click on one of the individual products, you will be taken to the product info page.
 
@@ -97,6 +105,7 @@ Product info works differently from product listings. This is because of the fle
 So where do you go to turn off display of a products weight? Follow
 the instructions on [this page](/user/template/basic_customizations/#can-i-turn-off-fields-from-my-product-info-page). 
 
+---
 ### How do I set up "Music" products for audio-previews?
 
 1. Create your Music Genres
@@ -127,6 +136,7 @@ There are a couple tutorials on this process:
 - [Setting up downloads for products](/user/products/downloadable/)
 - [Adding attributes](/user/products/attributes/)
 
+---
 ### What is the meaning of the number in "minimum values" and "maximum values" during product-entry?
 
 On the [Admin -> Catalog -> Category/Products](/user/admin_pages/catalog/categories_products/) screen, you can setup a minimum quantity and a maximum quantity as well as the units that they must be ordered in. 
@@ -143,6 +153,7 @@ If you make it so that the minimum quantity was 12 but had to be ordered in unit
 
 These have nothing to do with product quantity in stock.  Inventory On Hand is handled by the "Product Quantity" field elsewhere on the same screen.
 
+---
 ### How do I add quantity discounts to my products?
 
 [Admin -> Catalog -> Products Price Manager](/user/admin_pages/catalog/products_price_manager/)
@@ -154,8 +165,6 @@ These have nothing to do with product quantity in stock.  Inventory On Hand is h
 - Update
 
 
+---
 <!-- please keep this at the end --> 
-### I have another product or attribute question! 
-For more complex product / attribute questions, please post to the 
-[main support forum](https://www.zen-cart.com/forum.php).
-Please include which version of Zen Cart, and a link to your site URL.
+{{< more_questions_goto_forum >}}

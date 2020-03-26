@@ -1,14 +1,18 @@
 ---
-title: Admin->Version section
-description: Zen Cart Admin->Version section
+title: Admin->Version link 
+description: Zen Cart Admin->Version link 
 category: admin_pages
-weight: 4
+weight: 500
 ---
+<br />
 
-The `Admin -> Version` link takes you to the 
+The `Version` link at the top right hand side or your admin page takes you to the 
 [Tools -> Server/Version Info](/user/admin_pages/tools/server_info/) page. 
 
 It shows information about your server configuration,
 including PHP and MySQL versions and settings, as well as database history. 
 
+<br /><br />
+<img src="/images/version_link.png" alt="Zen Cart Version information" />
+<br /><br />
 
