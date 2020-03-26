@@ -1,11 +1,18 @@
 ---
-title: Using Sideboxes 
+title: Miscellaneous Sidebox Questions 
 description: Zen Cart Using Sideboxes 
 category: sideboxes
 weight: -1
 ---
 
-Miscellaneous Questions about Sideboxes 
+### How do I enable/disable sideboxes on EZ-Pages? 
+See [this article](/user/ezpages/sidebox_display_changes/). 
+
+### How do I remove and/or re-arrange the sideboxes?
+See [this article](/user/template/remove_rearrange_sideboxes/).
+
+### How do I add images to a sidebox? 
+See [this article](/user/template/add_image_box/). 
 
 ### How do I remove "Page 1", "Page 2" and "Page 3" from my more information sidebox?
 Go to Admin > Configuration > Define Page Settings and set their values to 2 or 3.

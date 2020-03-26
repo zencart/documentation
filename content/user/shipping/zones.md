@@ -15,7 +15,9 @@ By default, the module comes with support for 3 zones. This can be easily altere
   $this->num_zones = 3;  
 ```
 
-Next, you will want to activate the module by going to the Admin, point your cursor at Modules, then clicking on Shipping. A list of all shipping modules should appear. Click on Zone Shipping. Click on the install button.
+Next, you will want to activate the module by going to 
+[Admin -> Modules -> Shipping](/user/admin_pages/modules/shipping/).  
+A list of all shipping modules should appear. Click on Zone Shipping. Click on the install button.
 
 **<font color="#800000">YOU WILL LOSE YOUR CURRENT SHIPPING RATES AND OTHER SETTINGS IF YOU TURN OFF THIS SHIPPING METHOD.</font>** 
 
