@@ -5,6 +5,7 @@ category: payment
 weight: 5
 ---
 
+---
 ### Credit card not entered correctly / We do not accept that kind of card
 
 Zen Cart evaluates the credit card numbers you enter to see if they match the settings you have enabled in the Admin->Config->Credit Cards settings.
@@ -21,6 +22,7 @@ Resolution:
 
 3. Then enable your payment module in Zen Cart.
 
+---
 
 #### MORE INFORMATION YOU MIGHT FIND USEFUL
 Zen Cart uses the MOD10 approach (google it) combined with the list of accepted cards you have configured in Admin->Configuration->Credit Cards. If the number fails validation or is a card-type that is not accepted based on your settings, it will be rejected with the error message you mentioned.
@@ -37,8 +39,7 @@ You might also note that Zen Cart uses these Credit Card Prefix Patterns (and mo
 
 There are many other articles, especially on Wikipedia, about the anatomy of credit card numbers.
 
-<hr />
-
+--- 
 ### My Payment Methods aren't showing up during checkout
 
 During checkout, if your payment methods aren't showing up, go into Admin> Modules> Payment and check:
@@ -52,8 +53,7 @@ During checkout, if your payment methods aren't showing up, go into Admin> Modul
 To properly configure zones with payment modules requires that you create zones to fully match the zones to your customers' addresses. Always be sure to have at least one payment method WITHOUT any zones added to it, or else there will be customers who cannot go through checkout ... and then you'll lose a sale!
 
 
-<hr />
-
+---
 ### How do I authorize a Credit Card but not actually charge it until I ship the goods?
 
 **Question:**
@@ -71,4 +71,7 @@ The process is this:
 4. Log in to your Merchant Gateway system. Find the transaction for that customer/order.  Update shipping costs if appropriate.  Now choose to "Capture" the funds.  This charges the card and puts the money in your bank account during the next processing cycle.
 5. Ship the goods
 
-<hr />
+
+---
+<!-- please keep this at the end --> 
+{{< more_questions_goto_forum >}}

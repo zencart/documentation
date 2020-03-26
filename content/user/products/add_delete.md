@@ -14,7 +14,7 @@ already contains categories may not contain products.
 
 Click the new product button.
 
-On the next page fill in the product name, price, and other fields, and click *Save*.
+On the next page fill in the product name, price, and other fields, and click *Preview*.  Then on the next page, click *Insert*. 
 
 After creating the product, if you need to [add attributes](/user/products/attributes) to it, 
 click the light blue *A* to the right of the product. 

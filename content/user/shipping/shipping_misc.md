@@ -5,6 +5,7 @@ category: shipping
 weight: 5
 ---
 
+--- 
 ### Can I skip the shipping selection page when shipping is free?
 Set all products as free shipping in by editing each one and setting the button in the middle of the product-info/edit screen.
 
@@ -12,18 +13,17 @@ Then enable the free shipping module..
 
 This will allow shipping to totally bypass the shipping page.
 
-<hr />
+--- 
 
 ### How do I enable free shipping for orders more than $XX?
 Go to [Admin -> Modules -> Order Total](/user/admin_pages/modules/order_total/).
 Then select *Shipping* from the list. If the module is not installed click the install. After it is installed click edit and configure to allow free shipping.
 
-<hr />
-
+---
 ### How do you clone a shipping module? 
 See [this FAQ](/dev/code/modules/clone_shipping/) in the development area.
 
-<hr />
+--- 
 
 ### How can I set up individual shipping charges per item? 
 The per-weight shipping module can be used for this.
@@ -41,4 +41,6 @@ The per-weight shipping module can be used for this.
 
     c) Admin->Configuration->index listing / all listing / new listing / featured listing ... turn off the weight on these
 
-<hr />
+---
+<!-- please keep this at the end --> 
+{{< more_questions_goto_forum >}}

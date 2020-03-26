@@ -1,8 +1,8 @@
 ---
-title: Admin View Activity Log 
-description: Zen Cart Admin View Activity Log 
+title: Admin View Activity Log button
+description: Zen Cart Admin View Activity Log button
 category: admin_pages
-weight: 6 
+weight: 500 
 ---
 
 The *View Activity Log* button is shown when your Admin Activity Log table has records over 2 months old. 

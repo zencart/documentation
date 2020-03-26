@@ -8,8 +8,7 @@ weight: 5
 ### How can I build an order total module? 
 See [this development page](/dev/code/modules/order_total_modules/). 
 
-<hr />
-
+--- 
 ### Why don't order total modules change the prices of products in the cart? 
 That's not how they work. They apply to the **total** order value, not to
 any individual product.  So they are line items which are added or subtracted after the Sub-Total is computed. 
@@ -18,5 +17,6 @@ There are ways to reduce individual product prices - you can use [Sales](/user/a
 
 There are ways to increase individual product prices through [attributes](/user/products/attributes/). 
 
-<hr />
-
+---
+<!-- please keep this at the end --> 
+{{< more_questions_goto_forum >}}

@@ -5,11 +5,12 @@ category: payment
 weight: 10
 ---
 
+---
 ### Where can I learn more about PayPal? 
 
 PayPal provides a series of [Help Guides](https://www.paypal.com/us/smarthelp/PAYPAL_HELP_GUIDE) with information about how to handle common situations. 
 
-<hr />
+---
 
 ### How do I set up PayPal Standard to return to my store automatically?
 
@@ -30,8 +31,7 @@ The quick overview for properly configuring IPN is as follows:
 
 **Note: The sessions work automatically. Do not change your sessions setting in the Zen Cart Admin.**
 
-<hr />
-
+---
 ### PayPal login screen vs Credit Card fields ... using PayPal Website Payments Standard
 
 #### Question: 
@@ -48,8 +48,7 @@ However, if you've never visited PayPal, or if you've cleared your browser's cac
 
 If you need more proof, try clearing your browser's cache and cookies. Or, try a different browser/computer where nobody's ever logged in to PayPal from it.  
 
-<hr />
-
+---
 ### How do customers use PayPal to pay with their Credit Card?
 
 When customers transfer from your site to the PayPal website, they are presented with a screen showing some of the details of their purchase.
@@ -61,11 +60,10 @@ One of PayPal's quirks is that they can only use an address and credit card from
 
 Additional information on limitations imposed by PayPal regarding payment without an account can be found below.
 
-<hr />
-
+---
 ### Why can't my customers pay without having a PayPal account?
 
-The Situation
+#### The Situation
 
 My store is set up to use **PayPal Payments Standard** to receive payments from customers.  
 I want to allow my customers to pay via Credit Card without having to create a PayPal account.  
@@ -82,8 +80,7 @@ However, some customers are not given this option, and are required to create a 
 
 *   The **PayPal Payments Pro** product (which you must pay a monthly fee to PayPal to use, and is only available to US, UK, and Canadian merchants) adds the ability to accept Credit Card payments directly on your website without the customer even knowing that they are being processed by PayPal.  [Contact your PayPal representative for information](http://www.zen-cart.com/partners/paypal) and to sign up for this service.
 
-
-<hr />
+--- 
 
 ### We cannot process your payment at this time. Please retry your purchase (PayPal)
 
@@ -98,8 +95,7 @@ Customer is attempting to complete a purchase and paying via PayPal. They login,
 
 You can access your Fraud Management Filters settings by logging in to your PayPal merchant Account, clicking on "Profile", and choosing "Fraud Management Filters" (or "Risk Controls" if your account is an older account).
 
-<hr />
-
+--- 
 ### The PayPal account in this store is presently misconfigured to use mixed sandbox and live settings. We are unable to complete your transaction. Please notify the store owner so they can correct this problem. (10002)
 
 
@@ -117,8 +113,7 @@ You can only use "sandbox" option if you get API details from the sandbox site's
 For more information see [this PayPal page](https://www.paypal.com/us/smarthelp/article/why-did-i-get-api-error-code-10002-ts1030). 
 
 
-<hr />
-
+--- 
 ### PayPal Error 10001: The transaction could not be loaded
 
 If you are doing transaction testing, this error may appear if you attempt to use the reserved CC number of 4111111111111111
@@ -129,8 +124,7 @@ For more information see [this PayPal page](https://www.paypal.com/us/smarthelp/
 
 The same error might appear if you've not yet accepted the WPP agreement in your account (or sandbox account). Login to your PayPal account (or sandbox account) and read the agreement and click to accept the terms.
 
-<hr />
-
+--- 
 ### PayPal Error - Geographic Region
 
 **Situation:**
@@ -147,5 +141,6 @@ When the customer returns from PayPal, their selected address is inserted into t
 
 The most common cause of such a problem is triggered by the storeowner setting a Zone in the payment module instead of leaving it set to --None--. By setting a zone, you are restricting that module to only work with addresses which match that zone definition.
 
-
-<hr />
+---
+<!-- please keep this at the end --> 
+{{< more_questions_goto_forum >}}
