@@ -73,13 +73,17 @@ not this:
 Check out the [Server Requirements for Running Zen Cart](/user/first_steps/server_requirements.md).  
 </pre> 
 
-- Even though the folder names are upper case, use lower case when building the link.  For example, rather than `/First_Steps/`, use `/first_steps/`, as seen in the examples above.
 
-- For consistency, use the standard variables `YOURSITE`, `YOURTEMPLATE`,  `YOURLANGUAGE`, `YOURSITEFOLDER` and `YOURSUBFOLDER` (if needed) where they are required.  For details see the article [Basic Terms](user/new_user_topics/basic_terms). 
+- For consistency, use these standard names:
+    - `YOURSITE` - your domain name 
+    - `YOURTEMPLATE` - your template name 
+    - `YOURLANGUAGE` - your language (/english/ by default)
+    - `YOURACCOUNTFOLDER` - your home folder provided by your hoster
+    - `YOURSUBFOLDER` - if your site is below webroot   
+    
+    For details see the article [Basic Terms](user/new_user_topics/basic_terms). 
 
-<font color="red">
-       Please *DO NOT* use any other convention like `/YOUR_CUSTOM_TEMPLATE/`, `/YOUR_STORE/`, `/your_site/`, `/custom/` , etc. - use the standard terms above. 
-</font>
+    **Please DO NOT use any other convention** like `/YOUR_CUSTOM_TEMPLATE/`, `/YOUR_STORE/`, `YOURSTORE`, `/your_site/`, `/custom/` , etc. - use the standard names above. 
 
 
 - Use arrow notation for describing click paths in the Admin, rather than ellipses.  For example, use this: 
@@ -89,6 +93,9 @@ Check out the [Server Requirements for Running Zen Cart](/user/first_steps/serve
 NOT THIS:  
 
 `Configuration ... EZ-Pages Settings`              ** NO!** 
+
+
+## Links 
 
 - Use relative paths so people can test their changes locally.  Use this: 
 
@@ -146,7 +153,7 @@ FILE 2:
 <img src="/images/version_link.png" alt="Zen Cart Version information" />
 ```
 
-* If you are using the same text in multiple places, please don't copy and paste; instead, use a shortcode or modify a template.  This is an advanced area; please ask first.
+* If you are using the same text in multiple places, please don't copy and paste; instead, use a shortcode or modify a template.  This is an advanced area; please ask first.  Alternately, you can simply link to the content in the main place it exists. See the section *Links* above. 
 
 <br />
 

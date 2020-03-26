@@ -5,6 +5,8 @@ category: payment
 weight: 10
 ---
 
+{{< misc >}} 
+
 ---
 ### Where can I learn more about PayPal? 
 

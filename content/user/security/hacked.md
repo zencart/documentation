@@ -11,7 +11,7 @@ weight: 10
 
 ## Site Audit to look for damaged or added files
 
-2\. You will need to do a full site audit to be sure all files are as you expect them to be. [These steps can be used as a guide.](/user/troubleshooting/diagnosing_obscure_issue/) 
+2\. You will need to do a full site audit to be sure all files are as you expect them to be. [These steps can be used as a guide.](/user/troubleshooting/diagnosing_obscure_issues/) 
 
 ## Secure Your Site Using the Security Recommendations
 

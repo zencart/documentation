@@ -218,3 +218,8 @@ email_template_gv_queue.html</td>
 
 Don't forget to modify files for any contributions (add-ons, modules) you've added to your store that send out e-mails.
 
+## Modifying the Order Confirmation email 
+Don't forget that this feature is built in as of Zen Cart 1.5.6 - 
+see [How can I add a message to my order confirmation emails? 
+](/user/email/email_misc/#how-can-i-add-a-message-to-my-order-confirmation-emails)
+

@@ -1,0 +1,43 @@
+---
+title: Miscellaneous Troubleshooting Questions
+description: Troubleshooting Zen Cart 
+category: troubleshooting 
+weight: -1 
+---
+
+{{< misc >}} 
+
+--- 
+
+### I can't login to the Admin after installing Zen Cart
+In most cases of difficulties logging in to the Admin area, the problem is one of:
+
+1.  Admin pages won't show at all, or show without styling.  
+    In this case, try temporarily renaming the `admin/.htaccess` file to `htaccess_bak` to see if things operate differently.  
+    If they do, then you need to work with your webhost to find the right way to use the supplied `.htaccess` security protections on your site.  
+
+2.  Something may be wrong with the way your site is configured to handle PHP sessions. This is more difficult to resolve.  
+
+    1.  Start by **clearing your browser cache and clearing all cookies**. ** THIS IS THE MOST COMMON PROBLEM **
+    2.  Make sure you're not using "Private Browsing" or "Incognito" mode.  
+
+    3.  Then check to be sure that you do NOT have any software **firewall applications** running on your PC, as they may have been set to "disable session cookies".  
+
+    4.  Also, make sure your browser IS **allowed to accept cookies**, esp from your own domain. Cookie-blocking will break your Admin area.  
+
+    5.  Check your **server's errorlog** to determine if any errors are occurring at the time of the failure to login.
+
+    6.  If you are using `www.` in your URL on one page and *not* using `www`  in the URL on another page, you may have problems. This related FAQ may help: [how can I force www?](/user/miscellaneous/force_www/) 
+
+    7.  Try the suggestions in this related FAQ article: [http://tutorials.zen-cart.com/index.php?article=281](http://tutorials.zen-cart.com/index.php?article=281)  
+
+3.  Apart from browser cache and cookies problems, the most common problem is not having the `https` correct in your `admin/includes/configure.php`  file.  
+    See: [How do I enable SSL?](/user/installing/enable_ssl/)
+
+4.  If your admin password has been forgotten, or if you've done an admin password reset but forgot what the new password was, you'll have to reset the password via the database. See the FAQ for [resetting the Admin password to default](/user/troubleshooting/reset_admin_password/). 
+5.  If you've installed your site into a folder whose name contains spaces, rename the folder so that it doesn't have spaces anymore. Update your `configure.php` files accordingly.
+
+
+---
+<!-- please keep this at the end --> 
+{{< faq_questions >}}
