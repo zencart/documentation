@@ -19,4 +19,5 @@ There are ways to increase individual product prices through [attributes](/user/
 
 ---
 <!-- please keep this at the end --> 
-{{< more_questions_goto_forum >}}
+{{< faq_questions >}}
+

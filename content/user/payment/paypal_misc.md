@@ -143,4 +143,4 @@ The most common cause of such a problem is triggered by the storeowner setting a
 
 ---
 <!-- please keep this at the end --> 
-{{< more_questions_goto_forum >}}
+{{< faq_questions >}}

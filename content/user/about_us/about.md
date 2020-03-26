@@ -19,9 +19,9 @@ Zen Cart takes security issues VERY seriously. Whenever a true security risk is 
 
 ## **Code Contributions**
 
-Zen Cart is open-source. As such, the intent is that it is extensible. The core of Zen Cart is intended to support a very diverse range of users; however, it is not intended to suit "everyone's" needs directly. Instead, we endeavor to continually make the code more adaptable and able to be enhanced by way of community-contributed/supported plugins that can be added to Zen Cart with minimal difficulty. In this regard, we encourage community contributions.  
+Zen Cart is open-source. As such, the intent is that it is extensible. The core of Zen Cart is intended to support a very diverse range of users; however, it is not intended to suit "everyone's" needs directly. Instead, we endeavor to continually make the code more adaptable and able to be enhanced by way of [community-contributed/supported plugins](/user/plugins/) that can be added to Zen Cart with minimal difficulty. In this regard, we encourage community contributions of custom-written code. 
 
-We recognize that contributions are typically created with the aim of solving one's own individual business challenges, and are not generally written to benefit "everyone". We are also aware that contributions are written with varying degrees of skillsets and comprehension of overall code. Thus, we continue to attempt to make it possible to "plug in" without having to alter core code if possible.
+We recognize that  of custom-written code is typically created with the aim of solving one's own individual business challenges, and are not generally written to benefit "everyone". We are also aware that contributions are written with varying degrees of skillsets and comprehension of overall code. Thus, we continue to attempt to make it possible to "plug in" without having to alter core code if possible.
 See [plugin interfaces](/user/plugins/about_plugins/#plugin-interfaces) for details. 
  Not every situation is perfect, but we keep growing in this area.  
 
@@ -30,5 +30,8 @@ It's also important to note that community-supplied contributions are written at
 If you can find community created and supported contributions in the [Plugins Area](https://www.zen-cart.com/downloads.php) of the Zen Cart Forum. 
 
 ## **Fees**
-There is no fee for using Zen Cart. You can download and use it, subject to the terms of the license, for free. However, if you find it useful, you are encouraged to [make a donation](/user/about_us/donate/) to help support the ongoing development and improvement of the product.
+There is no fee for using Zen Cart. You may download and use it, subject to the terms of the license, for free. However, if you find it useful, you are encouraged to [make a donation](/user/about_us/donate/) to help support the ongoing development and improvement of the product.  
+
+## **Community**
+You can [participate in the Zen Cart community](/user/about_us/contributing/) in many ways.  Join the fun! 
 

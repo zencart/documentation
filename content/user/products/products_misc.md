@@ -167,4 +167,4 @@ These have nothing to do with product quantity in stock.  Inventory On Hand is h
 
 ---
 <!-- please keep this at the end --> 
-{{< more_questions_goto_forum >}}
+{{< faq_questions >}}
