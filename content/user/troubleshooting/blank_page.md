@@ -76,7 +76,8 @@ The most common customization errors include:
 ```
 
 *   missing semi-colons and periods, unbalanced parentheses, braces, brackets
-*   uploading files to the wrong places. For more information about overrides, see the [Overrides Chart](http://www.zen-cart.com/index.php?main_page=product_contrib_info&cPath=40_54&products_id=298) and the [Overrides FAQs](http://tutorials.zen-cart.com/index.php?category=4)
+*   uploading files to the wrong places. For more information about overrides, see the [Overrides Chart](https://www.zen-cart.com/downloads.php?do=file&id=192)
+and the [Overrides FAQs](/user/template/template_overrides/). 
 *   When renaming files (for backup), be sure to NOT keep the extension ".php". For instance, rename header_php.php to header_php.old or header_php.php.20110701, BUT *NOT* header_php.old.php.
 
 ## 4\. Bad product data

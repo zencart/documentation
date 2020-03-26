@@ -1,5 +1,5 @@
 ---
-title: How do I use my currency instead of US Dollars? 
+title: How do I use another currency instead of US Dollars? 
 description: Alternate currencies in Zen Cart 
 category: localization
 weight: 10
@@ -13,4 +13,3 @@ If you are running your shop in a language that is not English and are going to 
 Then go to [Admin -> Localization -> Currencies](/user/admin_pages/localization/currencies/).  On the page that comes up click the *New Currency* button. Fill in the information appropriate for your currency and check the box if it is to be the default for your shop. Click the *Insert* button, then after the page refreshes, click the *Update Currencies* button.
 
 
- 
