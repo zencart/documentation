@@ -5,6 +5,8 @@ category: payment
 weight: 5
 ---
 
+{{< misc >}} 
+
 ---
 ### Credit card not entered correctly / We do not accept that kind of card
 

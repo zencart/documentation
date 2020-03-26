@@ -5,6 +5,9 @@ category: sideboxes
 weight: -1
 ---
 
+{{< misc >}} 
+
+--- 
 ### How do I show my documents in their own sidebox?
 
 You create a new category of products that describe your documents (for example, category **Recipes**), and then create products within that category (**individual recipes**). 

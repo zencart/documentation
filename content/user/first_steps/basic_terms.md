@@ -57,13 +57,13 @@ is just
 
 `/includes/languages/english/`
 
-### YOURSITEFOLDER 
-The variable `YOURSITEFOLDER` is used to refer to the folder in your hosting 
+### YOURACCOUNTFOLDER 
+The variable `YOURACCOUNTFOLDER` is used to refer to the folder in your hosting 
 account which holds your site's files.  A very common setup is the following,
 assuming your account name is `johndoe`: 
 
 * `/home/johndoe/public_html/` - the top level directory your webserver 
 can access. 
 
-Everything will be under `YOURSITEFOLDER` when you view files, either in FTP or in your CPanel's File Manager. 
+Everything will be under `YOURACCOUNTFOLDER` when you view files, either in FTP or in your CPanel's File Manager. 
 

@@ -5,10 +5,12 @@ category: products
 weight: -1 
 ---
 
-Miscellaneous questions about products and attributes.
+{{< misc >}} 
 
 ---
-### How do I disable the category/inventory counts (the numbers beside the category links)?
+### How do I disable the numbers beside the category links?
+
+These are the category/inventory counts. 
 
 Go to [Admin -> Configuration -> My Store](/user/admin_pages/configuration/configuration_mystore/). 
 Locate the *Show Category Counts* option.  Turn it off.
@@ -163,7 +165,6 @@ These have nothing to do with product quantity in stock.  Inventory On Hand is h
 - click the "add 5 blank discounts" button
 - fill in the details
 - Update
-
 
 ---
 <!-- please keep this at the end --> 

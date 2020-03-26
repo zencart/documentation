@@ -5,6 +5,8 @@ category: shipping
 weight: 5
 ---
 
+{{< misc >}} 
+
 --- 
 ### Can I skip the shipping selection page when shipping is free?
 Set all products as free shipping in by editing each one and setting the button in the middle of the product-info/edit screen.

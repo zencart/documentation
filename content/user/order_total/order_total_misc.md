@@ -5,6 +5,9 @@ category: order_total
 weight: 5
 ---
 
+{{< misc >}} 
+
+---
 ### How can I build an order total module? 
 See [this development page](/dev/code/modules/order_total_modules/). 
 

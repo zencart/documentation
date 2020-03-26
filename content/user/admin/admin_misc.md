@@ -5,6 +5,8 @@ category: admin
 weight: 5
 ---
 
+{{< misc >}} 
+
 ---
 ### What determines if a product is New?
 

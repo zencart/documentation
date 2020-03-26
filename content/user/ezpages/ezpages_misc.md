@@ -5,6 +5,8 @@ category: ezpages
 weight: -1
 ---
 
+{{< misc >}} 
+
 ---
 ### How do I add text to the EZ-Page Sidebox
 To insert the text, we firstly create some over-ride files. If it doesn't already exist, create the following directory  
