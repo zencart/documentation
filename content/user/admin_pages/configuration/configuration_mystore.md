@@ -101,7 +101,7 @@ weight: 10
 
 <h2 id="basis_of_shipping_tax">Basis of Shipping Tax</h2>
 
-<div class='indent'>On what basis is Shipping Tax calculated. Options are<br />Shipping - Based on customers Shipping Address<br />Billing Based on customers Billing address<br />Store - Based on Store address if Billing/Shipping Zone equals Store zone - Can be overriden by correctly written Shipping Module</div>
+<div class='indent'>On what basis is Shipping Tax calculated. Options are<br />Shipping - Based on customers Shipping Address<br />Billing Based on customers Billing address<br />Store - Based on Store address if Billing/Shipping Zone equals Store zone - Can be overridden by correctly written Shipping Module</div>
 
 
 <h2 id="sales_tax_display_status">Sales Tax Display Status</h2>

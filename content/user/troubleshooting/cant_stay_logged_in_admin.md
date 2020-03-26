@@ -17,7 +17,7 @@ weight: 10
 - Don't use spaces in your domain names, nor in the foldernames in which you've installed your store. If yours has a space in the path anywhere, you may have troubles. Rename the folder instead.  
 
 **NEXT, try to rule out a bad SSL configuration:**  
-- edit your `/admin/includes/configure.php` and change `ENABLE_SSL_ADMIN` to 'false'  
+- If your version is Zen Cart 1.3.9 or before, edit your `/admin/includes/configure.php` and change `ENABLE_SSL_ADMIN` to 'false'  
 - clear browser cache AND cookies and try again  
 then if it's still not working:  
 - edit your `/admin/includes/configure.php` and change `HTTP_SERVER` to a URL that does NOT start with `https`  
@@ -25,7 +25,7 @@ then if it's still not working:
 
 **IS IT A DOMAIN NAME PROBLEM?**
 - if your site is using just an IP address and not a named domain, then it's possible your sessions/cookies are getting confused.  Edit your 2 `configure.php` files and set your `HTTP_SERVER` to an actual domain name, NOT an IP address.  
-- if you're using a domain name with `www` in it, try removing the `www` from it temporarily, again, in the `HTTP_SERVER` setting.  (In older versions of Zen Cart, set `ENABLE_SSL_ADMIN` to false.)  
+- if you're using a domain name with `www` in it, try removing the `www` from it temporarily, again, in the `HTTP_SERVER` setting.  
 
 **IF IT STILL WON'T WORK, read on:**  
 - Admin login sessions (and customer login sessions) are managed via the PHP session-handling functionality.  

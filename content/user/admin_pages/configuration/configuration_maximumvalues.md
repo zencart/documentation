@@ -221,7 +221,7 @@ weight: 30
 
 <h2 id="maximum_paypal_ipn_display_on_admin_listing">Maximum PayPal IPN Display on Admin Listing</h2>
 
-<div class='indent'>Maximum number of PayPal IPN Lisings in Admin<br />Default is 20</div>
+<div class='indent'>Maximum number of PayPal IPN Listings in Admin<br />Default is 20</div>
 
 
 <h2 id="maximum_display_columns_products_to_multiple_categories_manager">Maximum Display Columns Products to Multiple Categories Manager</h2>
