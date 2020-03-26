@@ -74,4 +74,4 @@ The process is this:
 
 ---
 <!-- please keep this at the end --> 
-{{< more_questions_goto_forum >}}
+{{< faq_questions >}}

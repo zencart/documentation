@@ -43,4 +43,4 @@ The per-weight shipping module can be used for this.
 
 ---
 <!-- please keep this at the end --> 
-{{< more_questions_goto_forum >}}
+{{< faq_questions >}}

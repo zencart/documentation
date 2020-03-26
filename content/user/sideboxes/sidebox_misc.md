@@ -59,4 +59,4 @@ For example, if you wished the terms and conditions link to appear first, you wo
 
 ---
 <!-- please keep this at the end --> 
-{{< more_questions_goto_forum >}}
+{{< faq_questions >}}

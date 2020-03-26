@@ -70,3 +70,7 @@ See [how do I add a new product?](/user/products/add_delete/#how-do-i-add-a-new-
 --- 
 ### How do I use another currency instead of US Dollars?
 See [how do I use another currency?](/user/localization/my_currency) 
+
+---
+<!-- please keep this at the end --> 
+{{< faq_questions >}}

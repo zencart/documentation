@@ -146,13 +146,7 @@ FILE 2:
 <img src="/images/version_link.png" alt="Zen Cart Version information" />
 ```
 
-* If you are using the same text in multiple places, please don't copy and paste; instead, use a shortcode so you only have to maintain the content in one place.  As an example, consider the block at the end of the `*_misc.md` pages that links to the forum is done: create the file `/layouts/shortcodes/more_questions_goto_forum.html` with the content, then embed the shortcode in the pages where it is needed as follows:
-
-```
----
-<!-- please keep this at the end --> 
-{{< more_questions_goto_forum >}}
-```
+* If you are using the same text in multiple places, please don't copy and paste; instead, use a shortcode or modify a template.  This is an advanced area; please ask first.
 
 <br />
 
