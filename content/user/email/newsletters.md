@@ -6,30 +6,31 @@ weight: 10
 ---
 
 Sending large numbers of emails (newsletters or other marketing content)
-using [Send Email](/user/admin_pages/tools/send_email/) 
+using the [Send Email](/user/admin_pages/tools/send_email/) feature or the Newsletters screen
 (or any other facility on your own hosting account) 
-is no longer recommended. 
+is not recommended, because most likely your server and hosting account don't allow for
+mass quantities of broadcast emails, and doing so could treat all your emails as spam.
 
 Instead, we recommend that you use an *Email Service Provider* to handle your
 bulk emailing needs.  
 
 ### Exporting Email Addresses 
-To export email addresses, use the [Email Address Exporter](https://www.zen-cart.com/downloads.php?do=file&id=6) mod. 
+To export email addresses, use the [Email Address Exporter](https://www.zen-cart.com/downloads.php?do=file&id=6) plugin and use it to feed the emails into a 3rd-party provider.
 
 ### MailChimp
-There are several alternatives to an built-in newsletter service provider; the
-best known free one is MailChimp.com. MailChimp is a professional newsletter
-interface that allows emails to be sent free. As of this writing, you can have 2000 contacts, reports, automation and more. They offer a few pre-built templates
-and is sufficient for most small sites. 
-
-A [MailChimp Integration](https://www.zen-cart.com/downloads.php?do=file&id=425)
-mod is available for Zen Cart. 
-
+There are several alternatives for sending newsletters and mass marketing messages.
+The best known service that has a free pricing level is MailChimp. 
+With them you can send emails, generate reports, do automation and more. 
+They offer a few pre-built templates and their free service is sufficient for most small sites. 
 They also have paid features and now position themselves as a full marketing platform.
+
+A [MailChimp Integration](https://www.zen-cart.com/downloads.php?do=file&id=425) plugin is available for Zen Cart. 
+
 
 ### Other Alternatives 
 Other providers exist as well but have very limited free features or can be
-expensive. Constant Contact is the best known paid provider.  At time of writing, no integration with Zen Cart exists. 
+expensive, or may not have integrations for Zen Cart. 
+Constant Contact is a popular one.
 
 If you want to look for other options, do a web search for "newsletter provider service."
 
