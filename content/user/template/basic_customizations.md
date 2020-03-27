@@ -134,7 +134,9 @@ Save the changed file to `includes/languages/YOURTEMPLATE/english.php` and uploa
 
 ### My browser bar says "Zen Cart!, The Art of ...", where do I change that?
 
-To change the title text to say what you want, open the `includes/languages/english/meta_tags.php` file in your text editor. Find the following line of code:
+To change the title text to say what you want, do the following:
+
+Open the `includes/languages/english/meta_tags.php` file in your text editor. Find the following line of code:
 
 ```
 // page title
