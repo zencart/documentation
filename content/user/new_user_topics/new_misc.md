@@ -34,7 +34,49 @@ Edit the message starting from the word “Welcome” but be careful not to chan
 
 Save the edited file and upload it to your server.
 
+---
 
+### How do I change the "Congratulations! you have successfully installed..." Message?
+
+
+If you want to change `Congratulations! You have successfully installed your Zen Cart®; E-Commerce Solution` with your own text, do the following:
+
+Open the `includes/languages/english/index.php` file and find the following code:
+
+```
+  define('HEADING_TITLE', 'Congratulations! You have successfully installed your Zen Cart&reg; E-Commerce Solution.');
+```
+
+Replace the text starting “Congratulations” with your own text. Make sure that the single quote marks are not left out.
+
+This line occurs twice, so be sure to replace both lines. 
+
+Save the edited file to `includes/languages/english/YOURTEMPLATE/index.php` and upload it to your server.
+
+---
+
+### How do I change the "Sales Message Goes Here" or "Tagline Here" text?
+
+To change the `Sales Message Goes Here` or `Tagline Here` text to say what you want, do the following: 
+
+Open `includes/languages/english/header.php` in your text editor. Find the following line of code:
+
+```
+define('HEADER_SALES_TEXT', 'Tagline Here');
+```
+
+Replace `Tagline Here` with your own text, making sure that the single quote marks are not left out.
+
+Save the edited file to `includes/languages/english/YOURTEMPLATE/header.php` and upload it to your server.
+
+NB: By default, the text “Sales Message Goes Here” is also located in `includes/languages/english/header.php` 
+
+```
+define('HEADER_SALES_TEXT', 'Sales Message Goes Here');
+```
+
+Recomended additional reading:
+[How do I set up the template overrides?](/user/new_user_topics/overrides)
 
 
 ---

@@ -76,6 +76,26 @@ You should be asking your hosting company what's changed on the server, if anyth
 
 They will want to know what *you* have changed, as well.
 
+---
+### Parse error: unexpected T_STRING (or similar)
+
+If you are getting an error similar to:
+
+```
+"Parse error: parse error, unexpected T_STRING in /var/www/myaccount/public_html/includes/languages/english/SOMETHING.php on line 28"
+```
+
+This typically means you have forgotten to put a `\` (backslash) before a `'` mark (single quote, apostrophe) in one of your `define()` statements in the language file reported.
+
+Example:
+
+```
+define('TEXT_SOMETHING','This is something simple that\'s used as an example');
+```
+
+(notice the `\` in the word `that's`).
+
+
 
 ---
 <!-- please keep this at the end --> 

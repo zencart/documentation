@@ -13,6 +13,6 @@ It shows information about your server configuration,
 including PHP and MySQL versions and settings, as well as database history. 
 
 <br /><br />
-<img src="/images/version_link.png" alt="Zen Cart Version information" />
+<img src="/images/version_link.png" alt="Zen Cart Version information" style="height: 150px !important;" />
 <br /><br />
 
