@@ -78,6 +78,12 @@ define('HEADER_SALES_TEXT', 'Sales Message Goes Here');
 Recomended additional reading:
 [How do I set up the template overrides?](/user/new_user_topics/overrides)
 
+---
+
+### How do I turn off the listing of categories that goes across the top of my page?
+
+These are called the *Category Tabs*, and can be switched off by going to [Admin -> Configuration -> Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/) and setting *Categories-Tabs Menu ON/OFF* to zero.
+
 
 ---
 <!-- please keep this at the end --> 
