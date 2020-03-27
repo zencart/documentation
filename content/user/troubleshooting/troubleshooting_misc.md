@@ -9,7 +9,9 @@ weight: -1
 
 --- 
 ### How do I read my configure.php files? 
+
 See the article [configure.php files](/user/miscellaneous/configure/). 
+
 --- 
 
 ### I can't login to the Admin after installing Zen Cart
@@ -32,7 +34,7 @@ In most cases of difficulties logging in to the Admin area, the problem is one o
 
     6.  If you are using `www.` in your URL on one page and *not* using `www`  in the URL on another page, you may have problems. This related FAQ may help: [how can I force www?](/user/miscellaneous/force_www/) 
 
-    7.  Try the suggestions in this related FAQ article: [http://tutorials.zen-cart.com/index.php?article=281](http://tutorials.zen-cart.com/index.php?article=281)  
+    7.  Try the suggestions in this related FAQ article: [I can't stay logged in to my admin](/user/troubleshooting/cant_stay_logged_in_admin)
 
 3.  Apart from browser cache and cookies problems, the most common problem is not having the `https` correct in your `admin/includes/configure.php`  file.  
     See: [How do I enable SSL?](/user/installing/enable_ssl/)
@@ -136,6 +138,44 @@ Once you've found the actual error message details from those logs, search for t
 Alternatively, to see the actual MySQL error message details, you can TEMPORARILY enable `STRICT_ERROR_REPORTING` as described in [this article](/user/troubleshooting/strict_error_reporting/).
 
 **NOTE:** This should ONLY be a TEMPORARY measure. FOR SECURITY REASONS, YOU MUST PUT IT BACK TO NORMAL WHEN DONE, since its use may give malicious visitors information they ought not to have about your site.
+
+---
+
+### Sorry! There seems to be a problem connecting to our database
+
+If your database credentials have been altered incorrectly, you might receive an unexpected screen when visiting your store:
+
+```
+Sorry!
+There seems to be a problem connecting to our database. Please give us a few minutes to remedy the problem. Thank you.
+```
+
+Common causes:
+- You've changed your database name or database username on your webserver
+- You've deleted the tables from the database on your server
+- You've changed the `DB_PREFIX` setting in your [configure.php files](user/miscellaneous/configure) to a value that doesn't match the tables in your database
+- You've edited your `/includes/configure.php` file and incorrectly altered the defined values for the various `DB_XXXXXX` settings contained therein. You should first go and fix those. Then make sure you've also got the correct values in the /your-renamed-admin-folder/includes/configure.php as well.
+
+The error is specifically displayed when the `DB_XXXXXX` values (which mainly denote your database login credentials for MySQL) are used but return a security login error when trying to connect to the database.
+
+If you don't know the correct database-name, mysql username and mysql password, and database host name (servername),  then you need to talk to your hosting company's tech support staff for assistance.
+
+**NOTE:** THIS ERROR MEANS THERE IS A PROBLEM ON *YOUR* SERVER. THE PROBLEM IS NOT WITH zen-cart.com AND ONLY YOU CAN FIX THE ERROR!
+
+--- 
+
+### My images are distorted/fuzzy/squished, help?
+
+Your images are distorted because the images sizes are set to fixed dimensions, both height and width, and if your images are not the same ratio they will appear distorted.
+
+To remedy this situation, go to [Admin -> Configuration -> Images](/user/admin_pages/configuration/configuration_images/).
+On this page is a list of the various image sizes, choose the image size you wish to edit and set one of the dimensions to 0.
+
+Make sure you also set the following two options:
+- *Calculate Image Size* = true
+- *Use Proportional Images on Products and Categories* =1.
+
+This will allow your images to be resized according to their own proportions.
 
 ---
 <!-- please keep this at the end --> 
