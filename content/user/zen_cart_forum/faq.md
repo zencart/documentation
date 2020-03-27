@@ -15,7 +15,7 @@ weight: 10
 
 *   Make the headline for your post relevant to your problem.
 
-*   Tell us about your host and versions of php and mysql so that we can diagnose more easily.
+*   Tell us about your host and versions of PHP and MySQL so that we can diagnose more easily.
 
 *   Help others where you can. The best way to learn a subject is to teach someone else.
 
@@ -69,7 +69,7 @@ weight: 10
 
     *   What version of PHP is installed on the server?
 
-    *   What version of MYSQL is installed on the server?
+    *   What version of MySQL is installed on the server?
 
     *   What you were doing when your problem occurred?
 

@@ -28,7 +28,7 @@ These can all be configured from the Administration area.
 
 ## Override system
 
-The template system may some times be refered to as the 'override' system in the context of editing files.
+The template system may some times be referred to as the 'override' system in the context of editing files.
 
 Also see: [Developers' overrides ](/user/template/developers_overrides/). 
 

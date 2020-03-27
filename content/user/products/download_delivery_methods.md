@@ -10,7 +10,7 @@ You can find these options in [Admin->Configuration->Attribute Settings](/user/a
 
 ## Download by Redirect
 
-**Download by Redirect - when set to True** uses the Linux/unix "symlink" feature to create a temporary file "stub" in the /pub folder. Then your customer is directed to that file-stub for their download. This means the customer can only ever access it via that stub, which disappears after their download is over. It hides the "real" location of the file so they can't just share the download link with others and have them steal your downloads for free.  
+**Download by Redirect - when set to True** uses the Linux/UNIX "symlink" feature to create a temporary file "stub" in the /pub folder. Then your customer is directed to that file-stub for their download. This means the customer can only ever access it via that stub, which disappears after their download is over. It hides the "real" location of the file so they can't just share the download link with others and have them steal your downloads for free.  
 
 This option only works on Linux hosts.  On Windows hosts this option will not work because Windows doesn't support symlinks, at least not via PHP.  
 
@@ -18,7 +18,7 @@ This option requires that the "pub" folder be set to read-write permissions, typ
 
 This method is not affected by PHP `max_execution_time` limits.  
 
-This approach can be problematic if several people buy and download the same thing at the same time, because there's some garbage-collection that cleans up old symlinks, and if that happens during someone's download it could terminate at an unpredicted spot, and without any notification.
+This approach can be problematic if several people buy and download the same thing at the same time, because there's some garbage-collection that cleans up symlinks, and if that happens during someone's download, the cleanup could break the download.
 
 Your Apache/Nginx logs may give you more insights about download-by-redirect downloads. You won't find those in PHP logs.
 

@@ -38,7 +38,7 @@ Some discussion on enforcement. Given that VAT on E-Service Scheme (VoES) has be
 Discussion returned to the fact that HMRC will now (at least till June 2015) accept the payment providers 'knowledge' of the customers location as definitive (rather than requiring 2 separate agreeing definitive tests of location). Again, we came back to the fact that while that would ease compliance, it didn't help with initial display of prices to 'guests'
 Some clarification that the currency that prices are displayed would have no effect on other aspects of displaying prices with regard to EU Digital Vat
 
-Enlightened highlited this problem with showing prices, in that she would be deterred in buying (e.g. for Zen Cart Modules) if price changed between initial browsing, and checkout price.
+Enlightened highlighted this problem with showing prices, in that she would be deterred in buying (e.g. for Zen Cart Modules) if price changed between initial browsing, and checkout price.
 (We haven't so far had any feedback from stores that sell Zen Cart Modules)
 
  Enlightened then asked about checking VAT numbers, in terms of separating B2B/B2C customers. I mentioned that there are already some contributions that allow for collection of VAT numbers, either at registration or at checkout. However, verifying those vat numbers is problematic. i.e. While api's exist to verify a VAT number exists, we can't verify that the person supplying that VAT number actually 'owns' the VAT number.

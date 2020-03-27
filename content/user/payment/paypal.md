@@ -80,7 +80,7 @@ You can use a single PayPal™ account to collect payments from multiple Zen Car
 
 You REALLY should be using Express Checkout instead.
 
-But if your mind is really made up to use Payments Standard anyway, then if you use your PayPal™ account on non-Zen Cart™ sites or on eBay™ or perhaps on a Wordpress site, **be sure that you have all "taxes" and "shipping" options disabled in your PayPal™ profile**; otherwise these charges will be added to your Zen Cart™ orders and cause them to not match, and therefore they won't be released or added to your orders list.
+But if your mind is really made up to use Payments Standard anyway, then if you use your PayPal™ account on non-Zen Cart™ sites or on eBay™ or perhaps on a WordPress site, **be sure that you have all "taxes" and "shipping" options disabled in your PayPal™ profile**; otherwise these charges will be added to your Zen Cart™ orders and cause them to not match, and therefore they won't be released or added to your orders list.
 
 ### Things to check if it's not working (Website Payments Standard specifically)
 
@@ -134,7 +134,7 @@ These are the common configuration errors causing IPN processing to fail:
 
 Meanwhile, between steps 2 and 3 above, PayPal's™ server does this:
 
-1.  Paypal's™ server sends a request to your website...which is waiting and listening for connections from PayPal™ to the `ipn_main_handler.php` page.
+1.  PayPal's™ server sends a request to your website...which is waiting and listening for connections from PayPal™ to the `ipn_main_handler.php` page.
 2.  Your server sits waiting and listening for hits to ipn_handler.php.
 3.  When your server receives a request, it attempts to validate and be sure that the PayPal™ data provided matches the order details for which it is intended.
 4.  If validation passes, the customer's order is released, and it lets the PayPal™ server know that you received their confirmation. This handshaking happens via CURL on port 443, and requires that your server be configured for modern TLS communication to https URLs.

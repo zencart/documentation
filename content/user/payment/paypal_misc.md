@@ -105,7 +105,7 @@ Your PayPal Express Checkout and/or Website Payments Pro module settings require
 - API Username
 - API Password
 - API Signature
-- Paypal server: live vs sandbox
+- PayPal server: live vs sandbox
 
 Normally you would obtain your API details from your real PayPal account profile, and select the "live" server mode.  THIS IS THE BEST ROUTE.
 
@@ -130,7 +130,7 @@ The same error might appear if you've not yet accepted the WPP agreement in your
 ### PayPal Error - Geographic Region
 
 **Situation:**
-The following error occurs when trying to process a payment through Paypal express near the final stages.
+The following error occurs when trying to process a payment through PayPal Express near the final stages.
 
 We are sorry for the inconvenience; however, at the present time we are unable to use PayPal to process orders from the geographic region you selected as your PayPal address. Please continue using normal checkout and select from the available payment methods to complete your order.
 

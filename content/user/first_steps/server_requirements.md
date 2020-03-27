@@ -72,7 +72,7 @@ Plugin/Addon-compatibility may vary.
 ## Nginx  
 The default Zen Cart distribution contains numerous Apache .htaccess rules to aid in implementing security protections against malicious spoofing and other abuse.  
 
-It also provides nginx conf files at the end of installation which you could manually copy into your nginx master configuration, to provide those same protections.
+It also provides Nginx conf files at the end of installation which you could manually copy into your nginx master configuration, to provide those same protections.
 
 ## Windows IIS **NOT RECOMMENDED** 
 Zen Cart is not regularly tested on IIS.  We don't recommend IIS, and we don't provide any default-configuration scripts for IIS.  

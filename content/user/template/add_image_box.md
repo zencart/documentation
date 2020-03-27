@@ -5,7 +5,7 @@ category: templates
 weight: 10
 ---
 
-The exact method will depend upon whether you are creating a small image to be repeated, or a image that will either span the box or is intended to be centred within it. (There are of course other design possibilities but we'll concentrate on these for the moment).
+The exact method will depend upon whether you are creating a small image to be repeated, or a image that will either span the box or is intended to be centered within it. (There are of course other design possibilities but we'll concentrate on these for the moment).
 
 Firstly create your image and place it in the images directory of your template.
 
@@ -42,7 +42,7 @@ Then add the following CSS to the appropriate block
     background-position: bottom center;
     /* EITHER set the image to not repeat */
     background-repeat: no-repeat;
-    /* OR set it to repeat horizonatally */
+    /* OR set it to repeat horizontally */
     background-repeat: repeat-x;
 ```
 

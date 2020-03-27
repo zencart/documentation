@@ -60,7 +60,7 @@ This forces the customer to choose something "other than" the default (since the
 ---
 ### Pricing includes tax
 
-Problem: My products are being displayed with a different price then I set!? If I set someting at $2 it ends up listing at 2.22. I have set that prices should not show with tax, I haven't set any tax rates yet.
+Problem: My products are being displayed with a different price then I set!? If I set something at $2 it ends up listing at 2.22. I have set that prices should not show with tax, I haven't set any tax rates yet.
 
 Chances are that you have changed your currency settings, and your "default" currency is not set to a value of 1.0.
 Please visit Admin->Localization->Currencies and set your default currency to value of 1.0

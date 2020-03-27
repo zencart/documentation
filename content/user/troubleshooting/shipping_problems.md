@@ -42,10 +42,10 @@ Or maybe the order qualifies for Free Shipping, but you don't have the freeshipp
 
 ### The USPS module is returning an error when I try to checkout
 
-If you are recieving this error:
+If you are receiving this error:
 
 ```
-An error occured with the USPS shipping calculations. If you prefer to use USPS as your shipping method, please contact the store owner.
+An error occurred with the USPS shipping calculations. If you prefer to use USPS as your shipping method, please contact the store owner.
 ```
 
 You need to call or email USPS and have them move your account to the production server.

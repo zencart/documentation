@@ -55,7 +55,7 @@ To create a new coupon, press the insert button  and fill in these fields:
 
 <td>Coupon Minimum Calculated From (ZC 1.5.6+)</td>
 
-<td>Options which allow you allow/disallow products when calculating the order valule.</td>
+<td>Options which allow you allow/disallow products when calculating the order value.</td>
 
 </tr>
 

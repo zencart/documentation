@@ -22,7 +22,7 @@ Otherwise, keep reading.
 restore the backup.  If you don't - well, now you see the importance
 of [creating a backup](/user/miscellaneous/backup/).
 
-1. Remove any NEW files that you added in the process of installing the plugin.   A NEW file is a file that doesn't exist in the default distribution ofZen Cart.  These files can simply be deleted. 
+1. Remove any NEW files that you added in the process of installing the plugin.   A NEW file is a file that doesn't exist in the default distribution of Zen Cart.  These files can simply be deleted. 
 
 1. Remove any modifications to EXISTING files that you performed as part of installing the plugin.  A plugin might modify a core file (part of the default distribution of Zen Cart) or a template file (a file you have put in one of your template folders as an override).  These changes will need to be removed. 
 
