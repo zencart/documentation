@@ -9,7 +9,7 @@ Newer versions of MySQL enforce a greater number of rules relating to
 interacting with the database.  This can cause issues for code which 
 was created prior to these rules being enforced. 
 
-This won't happen to modern unaltered vanilla Zen Carts; this happens
+This issue *generally* won't happen to modern unaltered vanilla Zen Carts; this happens most often 
 when you modify the database schema but don't upgrade the code to go 
 with it. 
 
@@ -36,11 +36,13 @@ This can be considered the opposite of
 define('DB_MYSQL_MODE', 'STRICT');
 ```
 
-This will work in Zen Cart 1.5.5 and above.  Prior to that you need to do
-more extensive modification to make the software work with newer versions
-of the database.  You should really [upgrade Zen Cart](/user/upgrading) instead!
+The define `DB_MYSQL_MODE` will work in Zen Cart 1.5.5 and above.  
+In Zen Cart versions older than 1.5.5, you would need to do
+more extensive modification to interoperate with newer versions
+of MySQL.  Hopefully you are not doing this!  
+You should really [upgrade Zen Cart](/user/upgrading) instead!
 
-Also note that turning off STRICT mode should be a temporary work around.
+Also note that turning on STRICT mode should be a temporary work around.
 The correct solution for the longer term is to update your code.  In
 this case, there are two options: 
 

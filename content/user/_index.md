@@ -8,6 +8,5 @@ menu:
 layout: docs
 ---
 
-This site is intended to (eventually) replace the old Tutorials/FAQ content on the zen-cart.com site. 
+This site is intended to replace the old Tutorials/FAQ/Wiki content on the zen-cart.com site.  Links to this older content are still available [here](/). 
 
-Developers, please also see [developer docs](/dev/). 

@@ -1,9 +1,11 @@
 ---
-title: New PHP Debug Logs 
-description: Newer PHP Debug Logs in Zen Cart 
+title: Troubleshooting errors after upgrading PHP versions 
+description: Newer PHP causes new Debug Logs in Zen Cart 
 category: troubleshooting
 weight: 10
 ---
+
+**Note:** On a [shared hosting](/user/first_steps/hosting/#hosting-companies) account, your hoster can just update PHP at any time - just because you didn't change anything doesn't mean it didn't change!  Check the [Admin Version link](/user/admin_pages/admin_version) to verify your current version of PHP. 
 
 PHP is a dynamic language which is continually being updated.  And part of 
 the update process is sunsetting features, functions, syntax and other language elements: 
@@ -11,6 +13,8 @@ the update process is sunsetting features, functions, syntax and other language 
 - the language designers decide to change how something works
 - then the new way is introduced, and the old way is deprecated, 
 - then the old way is eliminated entirely. 
+
+The PHP.net website shows you the PHP lifecycle and [which PHP versions are current](https://www.php.net/supported-versions.php). 
 
 The symptom you will see when this is an issue for you is that things 
 that used to work (even yesterday) suddenly do not.  What might have 
@@ -33,10 +37,10 @@ Suppose you are using Zen Cart 1.5.4 with PHP 5.6, and it's working fine.  Then 
 At checkout time, you get a fatal error: 
 
 ```
-PHP Parse error: syntax error, unexpected '[', expecting ',' or ';' in .../includes/modules/payment/linkpoint_api.php on line 320.
+PHP Parse error: syntax error, unexpected '[', expecting ',' or ';' in .../includes/modules/payment/paypalwpp.php on line 1148.
 ```
 
-That's because in Zen Cart 1.5.4, this line of code (`linkpoint_api.php`, line 320), 
+That's because in Zen Cart 1.5.4, this line of code (`paypalwpp.php`, line 1148)
 
 ```
 global $$order_totals[$i]['code'];
