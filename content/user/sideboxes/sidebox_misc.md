@@ -59,6 +59,26 @@ For example, if you wished the terms and conditions link to appear first, you wo
 ```
   unset ($information);
 ```
+---
+### How do I change the a sidebox title?
+
+Look in `includes/languages/YOURTEMPLATE/english.php`. 
+Suppose you want the Categories sidebox to have a different title. Look for
+
+```
+define('BOX_HEADING_CATEGORIES', 'Categories');
+```
+
+Changes for other sideboxes will follow this pattern:
+
+```
+define('BOX_HEADING_XXXXXXXX', 'New Title');
+```
+
+Where `XXXXXXXX` is the name of the sidebox. 
+
+Make the needed changes. Be sure that the single quote marks are not left out.
+
 
 ---
 <!-- please keep this at the end --> 
