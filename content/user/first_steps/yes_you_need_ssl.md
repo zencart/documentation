@@ -1,5 +1,5 @@
 ---
-title: SSL certficate - yes you need one 
+title: SSL certificate - yes you need one 
 description: You need an SSL certificate to run Zen Cart
 category: first_steps 
 weight: 10

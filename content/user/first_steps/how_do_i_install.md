@@ -54,7 +54,7 @@ will create a MySQL database and user.
 
 BEFORE YOU PROCEED, make sure you have access to a MySQL database, and username/password to that database. You may need to create the database using your webhosting account's control panel. Contact your webhosting company for assistance. Zen Cart® cannot create the database for you.
 
-(You need the following permissions on your MySQL user: SELECT, INSERT, UPDATE, DELETE, CREATE, ALTER, INDEX, DROP.   On an hSphere host, this would be "dba" access, or at least read/write. )  
+(You need the following permissions on your MySQL user: SELECT, INSERT, UPDATE, DELETE, CREATE, ALTER, INDEX, DROP.   On an H-Sphere host, this would be "dba" access, or at least read/write. )  
 
 ### All set?
 

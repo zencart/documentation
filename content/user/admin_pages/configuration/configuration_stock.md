@@ -6,7 +6,7 @@ weight: 80
 
 <h2 id="check_stock_level">Check stock level</h2>
 
-<div class='indent'>Check to see if sufficent stock is available</div>
+<div class='indent'>Check to see if sufficient stock is available</div>
 
 
 <h2 id="subtract_stock">Subtract stock</h2>
