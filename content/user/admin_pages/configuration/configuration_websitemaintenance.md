@@ -46,7 +46,7 @@ weight: 190
 
 <h2 id="notice_public_before_going_down_for_maintenance_onoff">NOTICE PUBLIC Before going Down for Maintenance: ON/OFF</h2>
 
-<div class='indent'>Give a WARNING some time before you put your website Down for Maintenance<br />(true=on false=off)<br />If you set the 'Down For Maintenance: ON/OFF' to true this will automaticly be updated to false</div>
+<div class='indent'>Give a WARNING some time before you put your website Down for Maintenance<br />(true=on false=off)<br />If you set the 'Down For Maintenance: ON/OFF' to true this will automatically be updated to false</div>
 
 
 <h2 id="date_and_hours_for_notice_before_maintenance">Date and hours for notice before maintenance</h2>

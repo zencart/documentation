@@ -51,7 +51,7 @@ FIXME - these items need to be explained
 *   One Time Charge - Charge for first item (does not effect prices of subsequent items).
 *   Price Factor
 *   One Time Charge Price Factor
-*   Attirbute Qty Price
+*   Attribute Qty Price
 *   One Time Attribute Qty Price
 *   Price Per Word & Free Words
 *   Price Per Letter & Free Letters
@@ -123,15 +123,15 @@ As you can see, the number you enter is the maximum limit of the discount, and t
 
 Negative numbers work for in these entries as well, making them quantity discounts or quantity charges. This is useful if you define a base price and would like to allow the user to have the discount off the base price.
 
-## Attribute Flags (the coloured boxes)
+## Attribute Flags (the colored boxes)
 
-These are used to help distinquish other features of the attribute such as:
+These are used to help distinguish other features of the attribute such as:
 
 *   Use for **display only** - attribute cannot be selected and added to cart. Good for things like "Select from Below" to force the customer to make their own choice and not just hit Add to Cart and get a pink ball instead of a blue ball
 
 *   Attribute is **Free when product is Free** - the attribute will be free if the product is free otherwise prices you've set will apply
 
-*   **Default** Attribute - sets the attribut as default so it is already selected
+*   **Default** Attribute - sets the attribute as default so it is already selected
 
 *   **Apply Discounts** - used by Product Sale/Special -this will apply the same type of discount that the product is getting from the products price vs the special or sale price
 
