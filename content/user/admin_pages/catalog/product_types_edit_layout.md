@@ -5,7 +5,7 @@ category: admin_pages
 weight: 21
 ---
 
-This page has a series of flags that allow you to enable or disable the fields athat are shown on the Product Info page.  
+This page has a series of flags that allow you to enable or disable the fields that are shown on the Product Info page.  
 
 For example: 
 

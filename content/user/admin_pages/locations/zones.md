@@ -18,8 +18,7 @@ For example, you may have a zones definition European Union which contains all t
 You always have to define at least one zones definition, and every location (country or state) you plan to sell to should be included in one of your zones definitions. But unless you need to distinguish among provinces or counties (for tax or shipping, for example), you really don't need to define zones.
 
 
-If you are in one of the very few and fortunate states which have no sales tax (such as Delaware) then you could simply have a single zone for all of the United States. If you ship to customers who have a sales tax exmption on file or are exempt (such as diplomatic personnel), then you could have a zone called exempt and indicate sales tax there at zero.
-
+If you are in one of the very few and fortunate states which have no sales tax (such as Delaware) then you could simply have a single zone for all of the United States. If you ship to customers who have a sales tax exemption on file or are exempt (such as diplomatic personnel), then you could have a zone called exempt and indicate sales tax there at zero.
 
 The zones and zones definitions are used to couple 
 [Tax Rates](/user/admin_pages/locations/tax_rates) and 
