@@ -45,6 +45,11 @@ would be
 
 in your cart. 
 
+You will see lots of different variables used in place of `YOURTEMPLATE` - 
+we have just chosen this for consistency.  Some people will instead call 
+this `YOUR_TEMPLATE`, or `custom` or `YOUR_CUSTOM_TEMPLATE` - but it's all
+the same thing, just the name of your template. 
+
 ### YOURLANGUAGE 
 If an article has multilanguage dimensions, the variable `YOURLANGUAGE` 
 will be used to refer to language specific folders. 

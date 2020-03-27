@@ -177,6 +177,8 @@ define('DIR_FS_LOGS', '/enter/your/path/to/public_html_or_htdocs/and/zencart/her
 In Zen Cart v1.5.1 and newer, this setting specifies the path where the program can store various debug logs used for troubleshooting problems your PHP scripts might be having in your store.  
 It's possible to relocate this folder to another location perhaps outside your site's webroot, for increased security. Simply relocate the folder using your FTP program, and adjust this value to match the new location.  
 
+See also [What is STRICT mode for my database](/user/troubleshooting/db_strict_mode) for information on `DB_MYSQL_MODE`. 
+
 For more information on understanding "webroot" concepts, see 
 [webroot](/user/first_steps/how_do_i_install#what-is-my-webroot) or 
 your favorite search engine.

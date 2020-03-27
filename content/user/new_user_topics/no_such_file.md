@@ -1,6 +1,6 @@
 ---
-title: I don't have the file XXXXX
-description: Zen Cart File missing 
+title: I don't have the file XXXXX in my template
+description: Zen Cart Templated File missing 
 category: new_user_topics
 weight: 10
 ---
@@ -34,13 +34,24 @@ this file would be `includes/templates/responsive_classic/templates/tpl_product_
 But what if the file still doesn't exist, even if you now know the real 
 name of the file? 
 
-Template files (those people write about with `YOURTEMPLATE`) are all
+Template files (the ones with `YOURTEMPLATE` - or some other [template indicator](/user/first_steps/basic_terms/#yourtemplate) in their name) are all
 altered copies of the files in one directory above. 
 
-So `includes/modules/responsive_sheffield_blue/additional_images.php` is a templated file based on `includes/modules/additional_images.php`.
+So the file 
 
-Likewise, `includes/languages/responsive_classic/english.php` is a templated modification of `includes/languages/english.php`.
+    includes/modules/responsive_sheffield_blue/additional_images.php
 
-So if the templated file being referenced doesn't exist in your cart, you can 
+is a template modification file based on 
+
+    includes/modules/additional_images.php
+
+Likewise, the file 
+
+    includes/languages/responsive_classic/english.php
+is a template modification of 
+
+    includes/languages/english.php
+
+If the templated file being referenced doesn't exist in your cart, you can 
 just create it by copying the original from one directory up. 
 
