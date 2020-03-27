@@ -4,7 +4,7 @@ category: admin_pages
 weight: 190 
 ---
 
-<h2 id="strongdown_for_maintenance_onoffstrong">Down for Maintenance: ON/OFF</h2>
+<h2 id="down_for_maintenance_onoff">Down for Maintenance: ON/OFF</h2>
 
 <div class='indent'>Down for Maintenance <br />(true=on false=off)</div>
 

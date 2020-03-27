@@ -18,7 +18,7 @@ weight: 30
 - The Media Collection Name field allows you to change the name of the collection.
 - There is also an Add Media Clip field, and a Browse button, which will allow you the option to upload a clip file through your web browser. Type in a file name or click on the browse button to search for it on your computer.
 - If you have defined more than one directory to upload media into, and you want to use a different directory than the default, select it in the Upload to Media Directory picker.
-- In the Media Clip Type field, uae the drop-down picker to select the type of clip. Media types are added through the Admin - Extras - Media Types menu.
+- In the Media Clip Type field, use the drop-down picker to select the type of clip. Media types are added through the Admin - Extras - Media Types menu.
 - Click on the save button to save the changes, or click on the cancel button to discard them. The save button will not attach a media clip to the entry; use the add button to save changes if you are also uploading a media clip to attach to this collection.
 - Click on the add button to upload a media clip, if you have specified one. The clip will be attached to this collection. The add button will also save any change to the name of the collection.
 - If a media clip has been uploaded and attached to this collection, it may be removed by clicking on the delete button immediately to the left of the name. Multiple attached clips will have a separate delete button for each clip. The delete button does not save this data entry form, and it remains open for further action after the media clip has been deleted.
