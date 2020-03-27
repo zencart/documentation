@@ -8,6 +8,9 @@ weight: -1
 {{< misc >}} 
 
 --- 
+### How do I read my configure.php files? 
+See the article [configure.php files](/user/miscellaneous/configure/). 
+--- 
 
 ### I can't login to the Admin after installing Zen Cart
 In most cases of difficulties logging in to the Admin area, the problem is one of:
@@ -35,7 +38,7 @@ In most cases of difficulties logging in to the Admin area, the problem is one o
     See: [How do I enable SSL?](/user/installing/enable_ssl/)
 
 4.  If your admin password has been forgotten, or if you've done an admin password reset but forgot what the new password was, you'll have to reset the password via the database. See the FAQ for [resetting the Admin password to default](/user/troubleshooting/reset_admin_password/). 
-5.  If you've installed your site into a folder whose name contains spaces, rename the folder so that it doesn't have spaces anymore. Update your `configure.php` files accordingly.
+5.  If you've installed your site into a folder whose name contains spaces, rename the folder so that it doesn't have spaces anymore. Update your [configure.php files](/user/miscellaneous/configure/) accordingly.
 
 --- 
 ### 0 DB_ERROR_NOT_CONNECTED
@@ -95,7 +98,44 @@ define('TEXT_SOMETHING','This is something simple that\'s used as an example');
 
 (notice the `\` in the word `that's`).
 
+---
+### Warning: Your Admin login is not secure ...
 
+If you are getting this message in your Admin area:
+
+``
+Warning: Your Admin login is not secure ... either you still have default login settings for: Admin admin or have not removed or changed: demo demoonly The login(s) should be changed as soon as possible for the Security of your Shop. For additional Security for the Admin please see the /docs
+``
+
+Go to [Admin -> Admins -> Admin Users](/user/admin_pages/admins/admin_users/)  You can then add/remove administrative accounts. To secure your site, you should remove the "demo" account (if there is one), or at least change its password.
+
+You should also make sure your admin password is not "admin" (or some other easy to guess value).  To change a password, click on the *Reset Password* button.
+
+We suggest using something at least 8 characters long, and including numbers, and not dictionary words.
+
+---
+
+### WARNING: An Error occurred, please refresh the page and try again.
+
+This is a generic message which usually indicates your site is having problems accessing data in your MySQL database.
+
+It could be a problem with:
+- MySQL not running
+- incorrect DB_xxxxxxx settings in either of your configure.php files
+- syntax error in MySQL statements
+- an incompatible addon, on an incorrectly-installed addon (such as SQL installation steps not completed properly)
+- a hacker attempting to do something rogue or malicious with something on your site, and has been blocked because they've got syntax errors or are attempting to exploit a vulnerability that is NOT a problem on your site
+- something wrong with the MySQL engine on your webserver, which your hosting company will likely need to resolve for you
+
+To find out the actual REAL error message that's occurring, view your site's myDEBUG-xxxxxx.log files located in your site's `/logs` folder.  More information on accessing those logs is provided in [blank page troubleshooting](/user/troubleshooting/blank_page/). 
+
+(For versions prior to 1.5, logs were stored in `/cache`.)
+
+Once you've found the actual error message details from those logs, search for those messages using the search option on this page or in the main Zen Cart support forum for additional steps in resolving the problem.
+
+Alternatively, to see the actual MySQL error message details, you can TEMPORARILY enable `STRICT_ERROR_REPORTING` as described in [this article](/user/troubleshooting/strict_error_reporting/).
+
+**NOTE:** This should ONLY be a TEMPORARY measure. FOR SECURITY REASONS, YOU MUST PUT IT BACK TO NORMAL WHEN DONE, since its use may give malicious visitors information they ought not to have about your site.
 
 ---
 <!-- please keep this at the end --> 
