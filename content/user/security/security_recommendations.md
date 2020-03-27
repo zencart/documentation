@@ -197,7 +197,7 @@ so that it's not accessible via a browser. (Requires changes to `DIR_FS_SQL_CACH
 *   /**includes/languages/english/html_includes**  
     See other suggestions earlier.
 *   /**logs**  
-    This folder is used for storing debug or error logs needed for troubleshooting problems which may be ocurring on your site. You may wish to relocate this folder above your web/document-root for security reasons. Update the DIR_FS_LOG in both configure.php files to point to the new location.  
+    This folder is used for storing debug or error logs needed for troubleshooting problems which may be occurring on your site. You may wish to relocate this folder above your web/document-root for security reasons. Update the DIR_FS_LOG in both configure.php files to point to the new location.  
     (Not applicable to versions older than v1.5.0)
 *   /**media**  
     This is only suggested read-write for the sake of being able to upload music-product media files via the admin. Could be done by FTP as an alternative.

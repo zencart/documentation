@@ -25,7 +25,7 @@ Zen Cart attempted to mitigate this by providing certain override directories wh
 
 The problem with this system is that it only provides for a very few places within the running order of `application_top.php` where new code can be introduced. It also did not provide at all for the addition of new classes. What was required was an `application_top.php` that allowed for the placing of any new function/class/script that was completely under the developer's control. Futhermore, some method of loading and invoking classes was also required.
 
-Since v1.3, Zen Cart achieves this by abstracting the code run by `application_top.php` into a control array. This array stores details of functions/classes/init scripts that need to be run, and the order in which they are run in a special PHP array. Given this it is now possible for third party developers to 'hook' into `application_top.php` and be confident that any future code upgrades will not normally overwrite their own code.
+Since v1.3, Zen Cart achieves this by abstracting the code run by `application_top.php` into a control array. This array stores details of functions/classes/init_scripts that need to be run, and the order in which they are run in a special PHP array. Given this it is now possible for third party developers to 'hook' into `application_top.php` and be confident that any future code upgrades will not normally overwrite their own code.
 
 ### application_top.php - Breakpoints
 
@@ -56,9 +56,9 @@ Similarly if we want to 'include' a file:
 <pre> $autoLoadConfig[0][] = array('autoType'=>'include', 'loadFile'=> DIR`WS`INCLUDES . 'somefile.php'); 
 </pre>
 
-We then have a special type of 'require'. The initSystem introduces a special class of `.php` files called init` scripts. These are stored in the includes/init`includes directory. Each of these contains a small amount of procedural code that can be run as part of the initSystem process. The reason for separating them out into a special directory is to allow for those init`scripts to be overridden, more of which will be discussed later. For now, to load an init`script we use the following control array structure.
+We then have a special type of 'require'. The initSystem introduces a special class of `.php` files called init` scripts. These are stored in the includes/init_includes directory. Each of these contains a small amount of procedural code that can be run as part of the initSystem process. The reason for separating them out into a special directory is to allow for those init_scripts to be overridden, more of which will be discussed later. For now, to load an init_script we use the following control array structure.
 
-<pre> $autoLoadConfig[] = array(array('autoType'=>'init`script', 'loadFile'=> 'init`database.php'));
+<pre> $autoLoadConfig[] = array(array('autoType'=>'init_script', 'loadFile'=> 'init_database.php'));
 </pre>
 
 Where the auto`loader system comes into its own is in the handling of class files. With a class file we want to load the class file definition, then instantiate the class, and finally possibly run a class method (all running thus within the scope of `application_top.php`)
@@ -147,34 +147,36 @@ Additionally, within the `/includes/auto`loader/` directory is another directory
 
 #### Introduction
 
-The initSystem allows you to automate the including/requiring of files and to automate the loading/instantiating of classes. However we still also need to be able to run some procedural code. We also want to allow 3rd parties to override that procedural code. init`scripts allow us to do this.
+The initSystem allows you to automate the including/requiring of files and to automate the loading/instantiating of classes. However we still also need to be able to run some procedural code. We also want to allow 3rd parties to override that procedural code. The `init_scripts` allow us to do this.
 
 #### init_scripts
 
-There are currently 18 init`scripts in the base 1.3.0 release. These init`scripts are in the `includes/init`includes` directory.
+There are currently 18 init_scripts in the base 1.3.0 release. These init_scripts are in the `includes/init_includes` directory.
 
-*   init`add`crumbs.php (Responsible for initialising the Breadcrumb)
-*   init`cart`handler.php (Responsible for handling Cart actions)
-*   init`category`path.php (Reponsible for initialising Category Paths)
-*   init`currencies.php (Responsible for initialising the Currencies Sub-System)
-*   init`customer`auth.php (Responsible for checking customer status, either thru Down for Maintenance or the Approval level)
-*   init`database.php (Responsible for initialising the DB layer)
-*   init`db`config`read.php (Responsible for reading configuration data from database)
-*   init`file`db`names.php (Responsible for loading File and Database tablename Defines)
-*   init`general`funcs.php (Resposible for loading general functions from the includes/functions directory as well as the extra`functions folder)
-*   init`gzip.php (Responsible for loading Gzip output-buffering functions)
-*   init`header.php (Responsible for running page-header procedures)
-*   init`languages.php (Responsible for loading multiple-language support sub-system)
-*   init`sanitize.php (Responsible for loading input-sanitising code)
-*   init`sefu.php (Responsible for loading code to provide search-engine-friendly URLs)
-*   init`sessions.php (Responsible for loading Session code)
-*   init`special`funcs.php (Responsible for loading specialized but necessary functions)
-*   init`templates.php (Responsible for initialising the template System and activating template-specific language-content defines)
-*   init`tlds.php (Responsible for setting Top Level Domain Variables)
+```
+*   init_add_crumbs.php (Responsible for initialising the Breadcrumb)
+*   init_cart_handler.php (Responsible for handling Cart actions)
+*   init_category_path.php (Responsible for initialising Category Paths)
+*   init_currencies.php (Responsible for initialising the Currencies Sub-System)
+*   init_customer_auth.php (Responsible for checking customer status, either thru Down for Maintenance or the Approval level)
+*   init_database.php (Responsible for initialising the DB layer)
+*   init_db_config_read.php (Responsible for reading configuration data from database)
+*   init_file_db_names.php (Responsible for loading File and Database tablename Defines)
+*   init_general_funcs.php (Responsible for loading general functions from the includes/functions directory as well as the extra_functions folder)
+*   init_gzip.php (Responsible for loading Gzip output-buffering functions)
+*   init_header.php (Responsible for running page-header procedures)
+*   init_languages.php (Responsible for loading multiple-language support sub-system)
+*   init_sanitize.php (Responsible for loading input-sanitising code)
+*   init_sefu.php (Responsible for loading code to provide search-engine-friendly URLs)
+*   init_sessions.php (Responsible for loading Session code)
+*   init_special_funcs.php (Responsible for loading specialized but necessary functions)
+*   init_templates.php (Responsible for initialising the template System and activating template-specific language-content defines)
+*   init_tlds.php (Responsible for setting Top Level Domain Variables)
+```
 
 #### Overriding init_scripts
 
-It is very simple to override a core init script. The directory includes/init`incudes contains a directory called overrides. If I wanted to override the incudes/init`includes/init`sessions.php script then I would simply create a file called init`sessions.php in the includes/init`includes/overrides directory.
+It is very simple to override a core init_script. The directory includes/init_includes contains a directory called overrides. If I wanted to override the includes/init_includes/init_sessions.php script then I would simply create a file called init_sessions.php in the includes/init_includes/overrides directory.
 
 ### Procedural code in application_top.php
 

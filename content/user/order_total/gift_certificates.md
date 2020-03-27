@@ -19,7 +19,7 @@ To sell Gift Certificates in your store, you need to create them as specific pro
 *   Product Priced by Attributes: Yes No  
     This is up to you, if you choose to price by attributes you only need a single 'product'.
 *   Tax Class: choose appropriate
-*   Products Price (Net): Your price or zero if pricing by attibutes.
+*   Products Price (Net): Your price or zero if pricing by attributes.
 *   Products Price (Gross): figured automatically
 *   Virtual Products do not have a shipping charge and do not require a shipping address such a Services, Gift Certificates, etc. Always Free Shipping does not have a shipping charge, but do require a shipping address Downloads are assumed to be Virtual Products - Neither option needs to be marked
 *   Product is Virtual: Yes, Skip Shipping
@@ -40,7 +40,7 @@ To sell Gift Certificates in your store, you need to create them as specific pro
 *   Products Weight: leave blank
 
 3\. Click Preview and then Save it.  
-4\. Now go to Modules -> Order Total, select Gift Certificates, and click Install. This installs the Gift Certficate module. 
+4\. Now go to Modules -> Order Total, select Gift Certificates, and click Install. This installs the Gift Certificate module. 
 
 ### HOW DOES IT WORK THEN ?
 After the Administrator has approved the Gift Certificate (There's a "release" button in admin area if someone buys one), THEN the Gift Certificate funds are made available to the customer.  

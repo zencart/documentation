@@ -10,7 +10,7 @@ If you are uploading photographic type images, the format should be .jpg; if you
 
 • You cannot have a transparent background with a .jpg but you can with a .gif/.png.  
 • Never save a photograph as a .gif - not only do you lose a lot of quality, but due to the way data is stored as a .gif, the file size will be far larger than it ought to be!  
-• The file size of an image is entirely dependant on the physical dimensions, the type of format it is saved in and the amount of compression applied. You may have heard things about image resolution - that has nothing to do with the file size (but a heck of a lot to do with the quality of a printout! That's another topic altogether!).  
+• The file size of an image is entirely dependent on the physical dimensions, the type of format it is saved in and the amount of compression applied. You may have heard things about image resolution - that has nothing to do with the file size (but a heck of a lot to do with the quality of a printout! That's another topic altogether!).  
 • These file types use what is called “lossy” compression i.e. when the file is compressed, some information is discarded...this information cannot be recovered! Therefore, always start with a **COPY** of the best image you have and **NEVER** compress the original.  
 
 File size is still an important issue - even with the spread of broadband, the majority of people connecting to the web are still on dial-up connections, and unless you are aiming at a specifically broadband market, then you should endeavour to keep file sizes to a minimum commensurate with quality to enhance your viewers’ experience.  
@@ -53,7 +53,7 @@ For this explanation we want the large picture to be either 480 pixels wide or 4
 4. Run your image-editor’s batch processor (<font color="red">you’ll have to find out how to do this from your image-editor manual/help files</font>) on the files in the **landscape** folder to re-size them all to the same width (use 480px – and if you are using standard digital photos, this should give you a height of 360)  
 5. Repeat the above on the files in the **portrait** folder to re-size them all to the same height (i.e. 480px – should give you a width of 360)  
 6. Now run another batch process on the two folders to  
-• resize your canvas or paper (depends what your image-editor calls it) to 500 pixels x 500 pixels and set the canvas or paper colour you want with the image centred. (Using a canvas slightly larger than your picture ensures a margin from anything else that may be on the webpage.)  
+• resize your canvas or paper (depends what your image-editor calls it) to 500 pixels x 500 pixels and set the canvas or paper colour you want with the image centered. (Using a canvas slightly larger than your picture ensures a margin from anything else that may be on the webpage.)  
 • Optimize the images for the web  
 7. Unless you want to keep them separate you can now combine all the images into one folder called **large** as they are all 500pixels square.  
 8. Upload them all to **images/large**  

@@ -214,7 +214,7 @@ When you or others make pull requests that are accepted into the Zen Cart core r
 * command line:
  1. type: `git fetch upstream`
  2. type: `git checkout develop` (ie: if you're going to pull changes from the `develop` branch)
- 3. type: `git merge upstream/deveop` (merges your local copy with the upstream remote)
+ 3. type: `git merge upstream/develop` (merges your local copy with the upstream remote)
  4. type: `git push` (brings your forked repository up-to-date)
 
 * [SourceTree](http://www.sourcetreeapp.com/):

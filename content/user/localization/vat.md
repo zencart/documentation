@@ -5,7 +5,7 @@ category: localization
 weight: 10
 ---
 
-Heres how to do it, and I am assuming here that you want to have VAT added for goods shipping to any EEC country.
+Here's how to do it, and I am assuming here that you want to have VAT added for goods shipping to any EEC country.
 
 Admin->Locations/Taxes->Zone Definitions
 

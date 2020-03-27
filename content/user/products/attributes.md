@@ -51,7 +51,7 @@ a) Pick the Option Name
 b) Give a Name like Red  
 c) Give a default Sort Order  
 
-The sort order is used if you want to globably sort your Option Values to match otherwise you can set these manually per product or later update a product, category or whole store.  
+The sort order is used if you want to globally sort your Option Values to match otherwise you can set these manually per product or later update a product, category or whole store.  
 
 ### Attributes Controller
 

@@ -56,7 +56,7 @@ In the interest of protecting the end-user's privacy and identity, any sort of c
 1. Documentation should include clear steps outlining what to do once the contribution has been unzipped, including where to put the unzipped files and how to do any database updates/changes.
 1. Documentation should be written with the "newbie" in mind ... ie: Don't make assumptions that the person using the contribution has any more understanding than how to unzip the file. This helps address the lowest-common-denominator skill-set and helps minimize support questions which can cause frustration and time drain on the author to supply support.
 1. Documentation should include uninstall instructions in case someone wants to cleanly remove the addon from their store ... without breaking normal operation or leaving old fragments/data behind.  This should address any files to be removed, any folders to be removed, any permissions changes to be undone, and any SQL changes/deletions applicable to the addon.
-1. Obfuscating or encrypting (such as via IONCube, Zend Guard, etc.) is *not* acceptable.
+1. Obfuscating or encrypting (such as via ionCube, Zend Guard, etc.) is *not* acceptable.
 
 Submission
 Contributions submitted to the addons/"downloads" area will be reviewed for compliance and acceptability. Such reviews happen, on average, approximately once or twice weekly.  Contribution authors will be notified by email when their contribution has been activated.

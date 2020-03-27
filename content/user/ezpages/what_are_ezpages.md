@@ -59,7 +59,7 @@ Again, you can display any of the Links within a Chapter, as well as making any 
 
 **NOTE:** While all Links within a Chapter will display together, you can have the different Links display in the Header, Footer or Sidebox on their own. Or, you can have the additional Links only display when the Main Link or one of the Additional Links within the Chapter has been opened.
 
-The versitility of EZ-Pages will make adding new Links and Pages extreamly easy for the beginner as well as the advance user.  
+The versatility of EZ-Pages will make adding new Links and Pages extremely easy for the beginner as well as the advance user.  
 
 **NOTE:** HTML editors will often add the opening and closing tags for sections like <html>, <head> and <body> to the file you are working on. You may want to remove them, as these are already added to the pages via EZ-Pages.  
 
@@ -91,9 +91,9 @@ Internal Links can also open in a New Window or the Same Window or be for Secure
 
 ### EZ-Pages Additional Pages vs Internal Links vs External Links
 
-The Type of Link that you create is based on an order of precidence, where HTML Content will superceed both the Internal Link and the External Link values.  
+The Type of Link that you create is based on an order of precedence, where HTML Content will supercede both the Internal Link and the External Link values.  
 
-The External Link URL will superceed the Internal Link URL.  
+The External Link URL will supercede the Internal Link URL.  
 
 If you try to set a combination of HTML Content, Internal Link and/or External Link, the Link will be flagged in the listing with a read icon to alert you to your mistake.  
 

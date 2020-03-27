@@ -105,7 +105,7 @@ According to Canada Customs & Revenue Agency (1-800-959-5525), you do *NOT* char
 STEP (3): Create the "Tax Classes"  
 
 Note: You can only assign ONE Tax CLASS to a product.  
-But since we want shipping GST to show up separately, we will make a seperate Tax CLASS just for it.  
+But since we want shipping GST to show up separately, we will make a separate Tax CLASS just for it.  
 
 Locations/Taxes --> Tax Classes  
 
@@ -172,7 +172,7 @@ That takes care of taxes on products. And now, the Shipping taxes:
 - Priority: 1  
 
  **HINT:** The above will calculate PST on shipping. Although there might  
- be a tendenancy to think of shipping as a PST exempt service, in fact  
+ be a tendency to think of shipping as a PST exempt service, in fact  
  the Ontario Ministry of Finance says that for calculating the PST,  
  "The total selling price includes delivery, mailing, transportation, or  
  handling charges, but does not include the GST". With the above set-up,  
