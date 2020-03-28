@@ -10,7 +10,7 @@ weight: 10
 Downloads are handled as product attributes.  
 So, **FIRST you should familiarize yourself with:** [setting up attributes](/user/products/attributes). 
 
-**NOTE:** Download files must be loaded (usually by FTP) to your store's  `/download` directory before trying to link those files to products/attributes .  
+**NOTE:** Download files must be loaded by your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) to your store's  `/download` directory before trying to link those files to products/attributes.  
 
 ## To add a Download Attribute to a product
 
@@ -206,5 +206,5 @@ If you are using download-by-redirect, then your "pub" folder needs to be read-w
 
 **ALSO:** 
 - See the related article about [Download Delivery Methods](/user/products/download_delivery_methods). 
-- See the related article about [Moving your Download Folder](security/relocate_download_folder). 
+- See the related article about [Moving your Download Folder](/user/security/relocate_download_folder). 
 

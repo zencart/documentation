@@ -75,7 +75,7 @@ NB: By default, the text “Sales Message Goes Here” is also located in `inclu
 define('HEADER_SALES_TEXT', 'Sales Message Goes Here');
 ```
 
-Recomended additional reading:
+Recommended additional reading:
 [How do I set up the template overrides?](/user/new_user_topics/overrides)
 
 ---
@@ -83,6 +83,14 @@ Recomended additional reading:
 ### How do I turn off the listing of categories that goes across the top of my page?
 
 These are called the *Category Tabs*, and can be switched off by going to [Admin -> Configuration -> Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/) and setting *Categories-Tabs Menu ON/OFF* to zero.
+
+---
+
+### How do I remove the Home in the middle column next to the Categories box?
+
+These are called the *breadcrumbs* (think Hansel and Gretel).  They show where you are and how to get back to previous locations. You can either turn it off completely or you can turn it off only on the main page. Although this looks a little odd on your home page, they can very useful to your users as they go deeper into your site.  
+
+To turn them off, go to [Admin -> Configuration -> Layout settings](/user/admin_pages/configuration/configuration_layoutsettings/) and set *Define Breadcrumb Status* to 0. 
 
 
 ---

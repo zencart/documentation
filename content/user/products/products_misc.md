@@ -1,6 +1,6 @@
 ---
-title: Miscellaneous Product and Attribute Questions
-description: Using Products and Attributes in Zen Cart 
+title: Miscellaneous Category, Product and Attribute Questions
+description: Using Categories, Products and Attributes in Zen Cart 
 category: products 
 weight: -1 
 ---

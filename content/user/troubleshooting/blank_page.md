@@ -1,14 +1,18 @@
 ---
-title: Blank Page (or partial blank page) troubleshooting
-description: Blank Page in Zen Cart (or partial blank page) troubleshooting
+title: Blank Page troubleshooting
+description: Blank Page (or partial blank page) in Zen Cart - how to fix
 category: troubleshooting 
 weight: 10
 ---
+
+A blank page (or partial blank page) occurs when the PHP interpreter 
+has a fatal error creating your page. 
+
 Blank pages can be caused by a number of things, and often occur just after installing, upgrading, or customizing your store. Any time you touch a PHP file, you must be sure to not introduce syntax problems, and you need to be sure that it uploaded correctly.  
 
 ## 1\. Did all your file-uploads work properly?
 
-Sometimes FTP programs experience a timeout when uploading large quantities of files (such as when installing or upgrading your site), or fail to fully upload some files, or leave them as just 0 bytes in size.  
+Sometimes [FTP tools](/user/first_steps/useful_tools/#ftp-tools) experience a timeout when uploading large quantities of files (such as when installing or upgrading your site), or fail to fully upload some files, or leave them as just 0 bytes in size.  
 
 Some programs like SmartFTP and CuteFTP are well-known to be problematic in this area.  See [FTP tools](/user/first_steps/useful_tools/#ftp-tools) for a list of alternatives. 
 
@@ -47,7 +51,7 @@ You will of course want to review the contents of those files first so you can a
 
 If you don't purge them, it will eventually slow down your website's performance, and use up a large amount of disk space.  
 
-**NOTE:** If you're running Zen Cart v1.3.8 or older, you REALLY need to UPGRADE ASAP! In the meantime, to enable the debug logging on older versions, use the [Debug Error-Logging Tool](http://www.zen-cart.com/downloads.php?do=file&id=606) from our downloads area.  
+**NOTE:** If you're running Zen Cart v1.3.8 or older, you REALLY need to UPGRADE ASAP! In the meantime, to enable the debug logging on older versions, use the [Debug Error-Logging Tool](https://www.zen-cart.com/downloads.php?do=file&id=606) from our downloads area.  
 
 ### b) Dealing with the Error Messages
 

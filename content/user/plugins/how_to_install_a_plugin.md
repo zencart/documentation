@@ -57,9 +57,9 @@ There are only two code files here and one README; the other things you see are 
 ```
 
 The hierarchy of these files is intended to exactly duplicate the structure of your cart. So if your cart is installed on your webserver under (say) 
-`/public_html/zencart`, then to install the file `./includes/modules/order_total/ot_quantity_discount.php` you would ftp to your site, change directory to `public_html/zencart`, and then transfer the "includes" folder from the mod over.
+`/public_html/zencart`, then to install the file `./includes/modules/order_total/ot_quantity_discount.php` you would use your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) to go to your site, change directory to `public_html/zencart`, and then transfer the "includes" folder from the mod over.
 
-If your cart is under (say)  /httpdocs/public_html/, the instructions would be the same; ftp to your site; cd to <code>/httpdocs/public_html/</code>
+If your cart is under (say)  /httpdocs/public_html/, the instructions would be the same; FTP to your site; cd to <code>/httpdocs/public_html/</code>
 then transfer the <code>includes</code> folder over. 
 
 So in fact, to install this contribution, all you have to do is copy these two files into your cart, turn on the Quantity Discounts order total module (under Admin->Modules->Order Totals), and you're done.  

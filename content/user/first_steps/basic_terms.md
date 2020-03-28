@@ -1,5 +1,5 @@
 ---
-title: Basic Terms 
+title: Basics - Terms and Definitions
 description: Zen Cart Basic Terms 
 category: first_steps
 weight: 10
@@ -22,7 +22,7 @@ called "John Doe Tools" and your domain is "JohnDoeTools.com", then
 However, for the sake of simplicity, the explanations on this site assume you did not do this.  Don't get hung up on the fact that an article will say 
 `http://www.YOURSITE.com` rather than `http://www.YOURSITE.com/YOURSUBFOLDER/`  - 
 it was a decision made for simplicity and consistency.  If your site is 
-in a subfolder, just add on the `/YOURSUBFOLDER/` whereever it is needed as you are reading. 
+in a subfolder, just add on the `/YOURSUBFOLDER/` wherever it is needed as you are reading. 
 
 Common values for `YOURSUBFOLDER` are `site`, `shop`, `cart` or `store`. 
 Using a subfolder is especially appropriate if you have a large, built-out
@@ -45,6 +45,11 @@ would be
 
 in your cart. 
 
+You will see lots of different variables used in place of `YOURTEMPLATE` - 
+we have just chosen this for consistency.  Some people will instead call 
+this `YOUR_TEMPLATE`, or `custom` or `YOUR_CUSTOM_TEMPLATE` - but it's all
+the same thing, just the name of your template. 
+
 ### YOURLANGUAGE 
 If an article has multilanguage dimensions, the variable `YOURLANGUAGE` 
 will be used to refer to language specific folders. 
@@ -65,5 +70,5 @@ assuming your account name is `johndoe`:
 * `/home/johndoe/public_html/` - the top level directory your webserver 
 can access. 
 
-Everything will be under `YOURACCOUNTFOLDER` when you view files, either in FTP or in your CPanel's File Manager. 
+Everything will be under `YOURACCOUNTFOLDER` when you view files, either in an [FTP tool](/user/first_steps/useful_tools/#ftp-tools) or in your CPanel's File Manager. 
 

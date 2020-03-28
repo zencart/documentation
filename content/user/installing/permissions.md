@@ -10,6 +10,8 @@ There are [detailed security recommendations on this topic](/user/security/secur
 
 ### How To Set File/Folder Permissions
 
+You will be using your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) to do this.
+
 <font color="#3E3E3E">Most FTP programs will allow you to change file permissions.</font>  
 
 <font color="#3E3E3E">Connect to your site with your FTP program.</font>  

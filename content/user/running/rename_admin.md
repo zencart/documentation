@@ -28,7 +28,7 @@ There is no need to alter the admin configure.php in v1.5.x when renaming your a
 
 ### B - Rename the Admin folder
 
-Using your FTP software or your webhost's _File Manager_, find your Zen Cart _/admin/_ directory_._ Rename the directory to match the settings you just made in step A.
+Using your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) or your webhost's _File Manager_, find your Zen Cart _/admin/_ directory_._ Rename the directory to match the settings you just made in step A.
 
 **NOTE:** DO NOT advertise this new foldername, else you defeat the entire purpose of renaming it.  And DO NOT EVER put it in your robots.txt file!
 

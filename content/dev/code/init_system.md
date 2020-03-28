@@ -23,7 +23,7 @@ From a customisation perspective this was a bad thing. If third party code (cont
 
 Zen Cart attempted to mitigate this by providing certain override directories where extra data/functions files could be placed that would be automatically included when `application_top.php` was run.
 
-The problem with this system is that it only provides for a very few places within the running order of `application_top.php` where new code can be introduced. It also did not provide at all for the addition of new classes. What was required was an `application_top.php` that allowed for the placing of any new function/class/script that was completely under the developer's control. Futhermore, some method of loading and invoking classes was also required.
+The problem with this system is that it only provides for a very few places within the running order of `application_top.php` where new code can be introduced. It also did not provide at all for the addition of new classes. What was required was an `application_top.php` that allowed for the placing of any new function/class/script that was completely under the developer's control. Furthermore, some method of loading and invoking classes was also required.
 
 Since v1.3, Zen Cart achieves this by abstracting the code run by `application_top.php` into a control array. This array stores details of functions/classes/init_scripts that need to be run, and the order in which they are run in a special PHP array. Given this it is now possible for third party developers to 'hook' into `application_top.php` and be confident that any future code upgrades will not normally overwrite their own code.
 

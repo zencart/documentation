@@ -13,11 +13,16 @@ critical values:
 
 - PHP Version: Version of PHP you are using 
 - Database Engine: Version of MySQL you are using 
-- PHP Memory Limit: [The amount of memory a script is allowed to allocate](https://www.php.net/manual/en/ini.core.php#ini.memory-limit).
-- Database: (Since Zen Cart 1.5.6) the name of the database from your `admin/includes/configure.php` file. 
+- PHP Memory Limit: [The amount of memory a script is allowed to allocate](https://www.php.net/manual/en/ini.core.php#ini.memory-limit)
+- Database: (Since Zen Cart 1.5.6) the name of the database from your `admin/includes/configure.php` file 
 
 Below this is the history of your database.
 
 Below this area is the output of [`phpinfo()`](https://www.php.net/manual/en/function.phpinfo.php). 
+
+Be sure the version of PHP you are running is a 
+[supported version](https://www.php.net/supported-versions.php). 
+Running an older unsupported version leaves you vulnerable to attack 
+by bad guys.  Stay up to date! 
 
 

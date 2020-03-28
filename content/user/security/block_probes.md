@@ -17,7 +17,7 @@ b) `/includes/extra_configures/  `
 /**
  * @package security
  * @copyright Copyright 2003-2011 Zen Cart Development Team
- * @license [http://www.zen-cart.com/license/2_0.txt](http://www.zen-cart.com/license/2_0.txt) GNU Public License V2.0
+ * @license [https://www.zen-cart.com/license/2_0.txt](https://www.zen-cart.com/license/2_0.txt) GNU Public License V2.0
  * @copyright Portions Copyright 2008,2009,2010,2011 GNU/GPL V.2 BY MIKE H. [HTTP://WWW.SPAMBOTSECURITY.COM](HTTP://WWW.SPAMBOTSECURITY.COM)
  * @version $Id: vuln_trap.php 15882 2011-09-01 08:23:55Z drbyte $
  */

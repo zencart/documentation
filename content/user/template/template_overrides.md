@@ -5,126 +5,99 @@ category: template
 weight: 10
 ---
 
-## Introduction
+Before you read this, please review 
+[basic terms](/user/first_steps/basic_terms/),
+[template default and default files](/user/first_steps/overrides/) and 
+[overrides for new users](/user/new_user_topics/overrides). 
 
-The template system exists mainly for 2 reasons:
+## Introduction 
 
-*   To allow you to design multiple appearances of your store for perhaps seasonal themes, etc.
-*   To make upgrading easy
+Overrides were created to simplify upgrading and templating. 
 
-The template system consists of at least 3 parts:
+## What Can I Override? 
+Any file which exists in a folder which has a `classic` subfolder 
+can be overridden. 
 
-*   Database settings
-*   The override system
-*   Automatically included files
-
-See [how to create a new template](/user/template/creating_template).
-
-See [how to customize your new template](/user/template/customizing_template).
-
-## Database settings
-
-These can all be configured from the Administration area. 
-
-## Override system
-
-The template system may some times be referred to as the 'override' system in the context of editing files.
-
-Also see: [Developers' overrides ](/user/template/developers_overrides/). 
-
-<dl>
-
-<dt>Override system </dt>
-
-<dd>When Zen Cart™ is about to read a template file, it will first see if there exists an override of that file, but if there's no such override, it will include the default/core file.</dd>
-
-</dl>
-
-**Whenever you plan to make changes to a file, see if it can be overridden first.**  
-Files can be overridden if
-
-*   The directory where the file resides holds a sub-directory named "classic".
-*   The current path includes "template_default" or a template directory, such as "classic". Eg. /includes/templates/template_default/common/
-
-Unfortunately, not all files can be overridden at this time. Nothing under the admin directory can be overridden yet.
-
-**If the file you plan to edit can be overridden, follow these steps:**
-
-1.  Create a new directory so the new path is equal to the old one except it includes your template directory, and no other template directory, in the proper location.  
-    **Examples to demonstrate the basic patterns. Other override directories follow these patterns.**  
-    _The directory where the file resides holds a sub-directory named "classic"._
+As of Zen Cart 1.5.6, this list is: 
 
 ```
-    Default path: includes/languages/
-    Override path: includes/languages/YOURTEMPLATE/
-
-    Default path: includes/languages/english/ 
-    Override path: includes/languages/english/YOURTEMPLATE
-
+includes/languages/
+includes/languages/english/extra_definitions/
+includes/languages/english/
+includes/languages/english/html_includes/
+includes/languages/english/modules/payment/
+includes/languages/english/modules/shipping/
+includes/languages/english/modules/order_total/
+includes/modules/
+includes/modules/sideboxes/
 ```
 
-The current path includes "template_default" or a template directory, such as "classic" or "blue_stripe".
+You can also override any folder in your template folder.
+Again as of 1.5.6, this list is: 
 
 ```
-Default path: includes/templates/template_default/common/
-Override path: includes/templates/YOURTEMPLATE/common/
-
-Default path: includes/templates/template_default/templates/
-Override path: includes/templates/YOURTEMPLATE/templates/
-
-Default path: includes/templates/template_default/buttons/english/
-Override path: includes/templates/YOURTEMPLATE/buttons/english/
+YOUR_TEMPLATE/buttons/
+YOUR_TEMPLATE/common/
+YOUR_TEMPLATE/css/
+YOUR_TEMPLATE/images/
+YOUR_TEMPLATE/info_shopping_cart/
+YOUR_TEMPLATE/jscript/
+YOUR_TEMPLATE/popup_attributes_qty_prices/
+YOUR_TEMPLATE/popup_coupon_help/
+YOUR_TEMPLATE/popup_cvv_help/
+YOUR_TEMPLATE/popup_image/
+YOUR_TEMPLATE/popup_image_additional/
+YOUR_TEMPLATE/popup_search_help/
+YOUR_TEMPLATE/popup_shipping_estimator/
+YOUR_TEMPLATE/sideboxes/
+YOUR_TEMPLATE/template_info.php/
+YOUR_TEMPLATE/templates/
 ```
 
-1.  Copy the file you plan to edit, and **only** the file you plan to edit, into the new directory.
-2.  Edit the newly copied file.
+You can also place overrides in these folders: 
+```
+./includes/auto_loaders/overrides/
+./includes/init_includes/overrides/
+./admin/includes/auto_loaders/overrides/
+./admin/includes/init_includes/overrides/
+```
 
-Remember that the default core files will be used for all the files that are **not** being overridden, so you don't need to override files that you haven't made changes to.
+## Other Mechanisms 
+There are also other mechanisms to allow you modify the 
+behavior of the system without touching core files.
+These are more advanced topics, intended for developers. 
+- [Notifiers/Observers](/dev/code/notifiers/)
+- [Init System](/dev/code/init_system/)
+- [Extra folders](/dev/code/extra_folders/) 
 
-If you remember to always use the template/override system when editing files, you should have no major problems when upgrading.  
-If you don't do that, all your files will be overwritten when you upgrade.
+See also [plugin tips](/dev/plugins/tips) for more suggestions. 
 
-Other things you need to be aware of:
+## Using your Overrides 
 
-*   The directory 'includes/templates/template_default' contains many of the default/core template files, but "template_default" is not a normal template - it's only the location of those default template files.
-*   Remember that the Classic template will be overwritten whenever you upgrade to a new version. In other words; don't use the Classic template. You should create your own template and avoid this problem instead.
-*   The Classic template is the default template, but it exists only to be an example for your own custom template.
-*   Text is placed inside language files, located beneath the directory 'includes/languages'. If you're looking to replace some text, this is the place to look.
+Once you have created one or more of these override folders, you can 
+start using them by doing these two things: 
 
-## Automatically included files
+a. Create `includes/templates/YOURTEMPLATE/template_info.php`
 
-Files residing inside the following directories will automatically be included.
+In order for the system to "see" your template, the `template_info.php`
+file must exist inside the `includes/templates/YOURTEMPLATE` folder. 
 
-- `includes/extra_configures`
+Create it as follows: 
+```
+<?php 
+$template_name = 'Your Template Name'
+``` 
 
-- `includes/extra_datafiles`
+b. Login to your Admin panel and go to [Tools > Template Selection](/user/admin_pages/tools/template_selection/).  You should see your new custom template(s) in the dropdown list. Select your template.
 
-- `includes/functions/extra_functions`
 
-- `includes/languages/YOUR_LANGUAGE/extra_definitions` or the appropriate override directory if the file exists there.
+## Next Steps 
 
-- `includes/templates/YOURTEMPLATE/jscript/` - see the file `read_me_jscript.html` in that directory for instructions.
+- See [how to create a new template](/user/template/creating_template).
 
-- `includes/templates/YOURTEMPLATE/jscript/on_load/` - see the file `read_me_onload.html` in that directory for instructions.
+- See [how to customize your new template](/user/template/customizing_template).
 
-- `includes/templates/YOURTEMPLATE/css/` - all filenames that start with "style".
-
-- `includes/modules/pages/CURRENTPAGE/` - all filenames that start with `"jscript_"` and ends with ".php".
-
-See any already existing files in those directories for clues about what kind of data they're meant for.
-
-## Getting Started
-
-First, you want to make sure you're using your own template, as opposed to the default templates which will get overwritten by an upgrade, so go ahead and create a new template.  
-
-See [how to create a new template](/user/template/creating_template).
-
-See [how to customize your new template](/user/template/customizing_template).
-
-Now that you know how to use the template system and have created and activated your own template, how would you go ahead in order to find the correct file for the changes you want to do?  
-
-Learn to use the [Developers Tool Kit](/user/admin/developers_toolkit) available from the administration area.  It will help you track down the files that you need to change. 
-
-See also [this related FAQ](/user/template/what_files). 
+- Learn to use the [Developers Tool Kit](/user/admin/developers_toolkit).
+It will help you track down the files that you need to change to get the results you want. 
 
 

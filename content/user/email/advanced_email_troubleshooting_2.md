@@ -43,18 +43,18 @@ That's it.
 
 1.  change transport methods (ask your host what's best ... they should know how they've configured your server).
     *   **NOTE:** `SMTPAUTH` is least likely to end up getting treated as spam.
-2.  change send-from email addresses (Admin->Configuration->Email Options). This should be an email associated with your server's domain. Preferably not a "free email account" such as gmail, since your server is *not* a gmail server and therefore your emails would be seen as spammy impersonation attempts, unless you're using SMTPAUTH properly configured for your account.
+2.  change send-from email addresses (Admin->Configuration->Email Options). This should be an email associated with your server's domain. Preferably not a "free email account" such as Gmail, since your server is *not* a Gmail server and therefore your emails would be seen as spammy impersonation attempts, unless you're using SMTPAUTH properly configured for your account.
     *   MAKE SURE THE ADDRESS IS VALID.
     *   It is recommended to use an email account linked to the same domain name as your store. Attempting to masquerade with a different email address makes your emails prime candidates for being treated as junkmail, and thus not delivered.
 3.  change send-to email addresses ... DO NOT TEST USING FREE MAIL SERVICES ... your mail is often dropped to a junkmail black hole.
-4.  be sure there are no embedded carriage returns in your send-to email addresses (see [http://www.zen-cart.com/showthread.php?t=86423](http://www.zen-cart.com/showthread.php?t=86423) for details)
+4.  be sure there are no embedded carriage returns in your send-to email addresses (see [https://www.zen-cart.com/showthread.php?t=86423](https://www.zen-cart.com/showthread.php?t=86423) for details)
 5.  check your junkmail settings.
 6.  research whether your mailserver or hosting company is blacklisted (you can check [http://www.mxtoolbox.com/blacklists.aspx](http://www.mxtoolbox.com/blacklists.aspx) or google for _smtp blacklist_ for additional resources)
 7.  try setting the option for **Emails must send from known domain?** to true. This causes the email "sender" address to be more aligned to your own website, and thus less likely to be rejected while processing. This should always be set to true nowadays.
 8.  try testing with HTML emails OFF, since many spam filters block HTML-formatted messages before they even get out the gate.
 9.  check the mailserver logs ... is it complaining about something, either inbound or outbound?
 10.  for kicks, get the webserver/mailserver rebooted and dump all the logs ... just maybe something's runamuck in there ...
-11.  Try enabling Email Archiving (Admin->Configuration->Email Options->Email Archiving). Then install the [email archive manager](http://www.zen-cart.com/downloads.php?do=file&id=101) from the Zen Cart Downloads section (in admin tools), and confirm that the emails are actually being sent from Zen Cart. If it's in the archive, it was handed off to the mailserver. Once the email leaves Zen Cart, it's at the mercy of your mailserver.
+11.  Try enabling Email Archiving (Admin->Configuration->Email Options->Email Archiving). Then install the [email archive manager](https://www.zen-cart.com/downloads.php?do=file&id=101) from the Zen Cart Downloads section (in admin tools), and confirm that the emails are actually being sent from Zen Cart. If it's in the archive, it was handed off to the mailserver. Once the email leaves Zen Cart, it's at the mercy of your mailserver.
 12.  Look at your raw/full email headers. Does the "from" address appear to be a "nobody@xxxxxxx" address? Some hosts block these. The "email must send from known domain" setting is designed to counteract this. The SMTPAUTH setting also helps to work around this.
 13.  This is RARE: If using "sendmail" and your "sendmail" path on your webserver is not the default of /usr/sbin/sendmail then you can override the default by adding a definition for it in a new file on your server: /includes/extra_datafiles/email_sendmail_override.php ... create a define for EMAIL_SENDMAIL_PATH and point it to the actual sendmail path for your particular host. This should not be necessary, and usually using "PHP" as transport method will correct it without making this edit.
 14.  Also rare: Does your server require 7bit mail encoding instead of the default 8bit? If so, edit the /includes/extra_configures.email_use_8bit.php file and put // before the define statement there.
@@ -102,7 +102,7 @@ AOL and Hotmail dump emails originating from server/client IP addresses that fai
 
 ## Using external SMTP mail servers
 
-Some people prefer to use resources such as gmail or yahoo mail etc for sending their business emails. There are differing schools of thought about the merits of doing so. If you deem that this is the best practice for your business, the following information may be of help to you.
+Some people prefer to use resources such as Gmail or Yahoo! Mail for sending their business emails. There are differing schools of thought about the merits of doing so. If you deem that this is the best practice for your business, the following information may be of help to you.
 
 **NOTE:** If you are self-hosting on a local PC server for development purposes, remember that your ISP (internet provider) usually blocks outgoing traffic on port 25, which is commonly used for email. Anything on port 25 destined for any server other than the ISP's own email server is generally blocked in order to control spam. You will need to choose another port (usually 587 or sometimes 465) and use SMTPAUTH and specify the correct SMTP server credentials.
 

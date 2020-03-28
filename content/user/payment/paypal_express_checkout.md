@@ -9,7 +9,7 @@ weight: 10
 
 <div style="float:right;width: 155px;padding-left:15px;">
 
-[![PayPal [link]](/images/PayPal_Certified.gif "PayPal [link]")](http://www.zen-cart.com/partners/paypal)
+[![PayPal [link]](/images/PayPal_Certified.gif "PayPal [link]")](https://www.zen-cart.com/partners/paypal)
 
 </div>
 
@@ -23,12 +23,12 @@ weight: 10
 *   **Step 1: [Download and install the latest version of Zen Cart®](http://sourceforge.net/projects/zencart/files/)**
 *   **Step 2: Set Up a Verified PayPal Business Account**
     *   Customers who don't have an existing PayPal account:
-        1.  [**Go to** ![PayPal [link]](/images/paypal.gif "PayPal [link]")](http://www.zen-cart.com/partners/paypal-ec)
+        1.  [**Go to** ![PayPal [link]](/images/paypal.gif "PayPal [link]")](https://www.zen-cart.com/partners/paypal-ec)
         2.  Click Sign Up Today.
         3.  Set up an account for Business Owners.
         4.  Follow the instructions on the PayPal site.
     *   Customers who already have a Personal or Premier account:
-        1.  [**Go to** ![PayPal [link]](/images/paypal.gif "PayPal [link]")](http://www.zen-cart.com/partners/paypal-ec)
+        1.  [**Go to** ![PayPal [link]](/images/paypal.gif "PayPal [link]")](https://www.zen-cart.com/partners/paypal-ec)
         2.  Click the Upgrade your Account link.
         3.  Click the Upgrade Now button.
         4.  Choose to upgrade to a Business account and follow instructions to complete the upgrade.
@@ -51,7 +51,7 @@ weight: 10
 Get the features of an internet merchant account and payment gateway with Website Payments Pro. Control your checkout from start to finish by integrating PayPal Website Payments Pro with your Zen Cart™ shopping cart.
 
 *   **Apply for Website Payments Pro**
-    1.  [**Go to** ![PayPal [link]](/images/paypal.gif "PayPal [link]")](http://www.zen-cart.com//partners/paypal-pro)
+    1.  [**Go to** ![PayPal [link]](/images/paypal.gif "PayPal [link]")](https://www.zen-cart.com//partners/paypal-pro)
     2.  Login to your PayPal Business Account
     3.  Click the Merchant Services tab.
     4.  Click Website Payments Pro in left column.

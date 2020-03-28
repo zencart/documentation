@@ -35,7 +35,7 @@ In the format above, the first group of three characters represents the owner's 
 
 If you were able to set to 644 the owner (you) could modify the file while all others would be restricted. In that case you would not need to change permissions in order to modify it. Just leave it at 644.
 
-The permissions are set on the host server usually through the user's control panel. They can also be set using the chmod command in many ftp programs, or or through ssh access to the server, if available. 
+The permissions are set on the host server usually through the user's control panel. They can also be set using the chmod command in many [FTP tools](/user/first_steps/useful_tools/#ftp-tools), or or through SSH access to the server, if available. 
 
 [Read more about file permissions](/user/installing/permissions/)
 

@@ -9,9 +9,9 @@ weight: 10
 
 1\. On your **NEW host**, create a new MySQL **database**. Note the username, password, database name, and host name (usually localhost).
 
-2\. Go to your **NEW host** and upload (FTP) a **fresh NEW install** using the same version files that you built your other site on.... this will make sure that you get the proper settings in your configure.php files.
+2\. Using your [FTP tool](/user/first_steps/useful_tools/#ftp-tools), go to your **NEW host** and upload a **fresh NEW install** using the same version files that you built your other site on.... this will make sure that you get the proper settings in your [configure.php files](/user/miscellaneous/configure). 
 
-a. Install.  When asked about the database-table-prefix during Database-Setup, use the same prefix that your old store uses. You'll find that in the `DB_PREFIX` setting of your old store's [configure.php files](user/miscellaneous/configure). 
+a. Install.  When asked about the database-table-prefix during Database-Setup, use the same prefix that your old store uses. You'll find that in the `DB_PREFIX` setting of your old store's configure.php files.
 
 b. Test it.  
 
@@ -20,7 +20,7 @@ c. Make **backups** of the NEW server's `/includes/configure.php` and `/admin/in
 3\. On your **OLD host**, Make a **COMPLETE backup** of your DATABASE and STORE.  
 a. Use either the [Backup MySQL Database](https://www.zen-cart.com/downloads.php?do=file&id=7) contribution to do the backup of your database, or use phpMyAdmin to export your entire database.  Include the "DROP" tables command, and under Data, choose "Complete Inserts" and "Extended Inserts".  
 Save the SQL file to your PC for later.     Click here for 
-advice on [doing a backup](/user/miscellaneous/backup). 
+advice on [doing a backup](/user/running/backup). 
 
 b. Download all your old site's files via FTP (or if you have the option, zip them up on the server and download the zip)  
 
@@ -58,9 +58,9 @@ b) AFTER step 5 or 6, login to your NEW store's admin, and set Down For Maintena
 
 c) NEVER disable down-for-maintenance in the OLD site. Once you've copied the database from it, you don't want to take any more orders in the old site, else they'll be lost.  
 
-d) Once your nameserver updates have propogated (up to 48 hours), you should be able to delete the files and database from the old server.  
+d) Once your nameserver updates have propagated (up to 48 hours), you should be able to delete the files and database from the old server.  
 
-**NOTE:** This means your store will appear as down-for-maintenance until the DNS/Nameserver details are propogated to the region where your customers connect online. Once the propagation is done, they will see the new site on the new server, and be able to place orders.
+**NOTE:** This means your store will appear as down-for-maintenance until the DNS/Nameserver details are propagated to the region where your customers connect online. Once the propagation is done, they will see the new site on the new server, and be able to place orders.
 
 **ADVANCED TIP:**
 If you know 3 or 4 days or maybe a week ahead of time that you're going to do this sort of move, get your old hosting company to change the TTL (Time To Live) setting on your domain DNS settings to 240 (4 hours). This will help speed the effects of propagation.  

@@ -16,7 +16,7 @@ The language file is located in:
   
 To clone this module, for example, to `flatfree.php` you would copy the two `flat.php` files to `flatfree.php` 
   
-Next, you need to edit all occurences of `flat` to `flatfree` and `FLAT` to `FLATFREE` These identifiers are case sensitive. 
+Next, you need to edit all occurrences of `flat` to `flatfree` and `FLAT` to `FLATFREE` These identifiers are case sensitive. 
   
 These words are written separately or within the constants such as:  
   

@@ -9,29 +9,31 @@ layout: docs
 <!-- please keep in alphabetic order -->
 <!-- remember to start links with "/" -->
 
-* [Admin Password - Reset if forgotten or not working](/user/troubleshooting/reset_admin_password/) 
+* [Add a Page](/user/customizing/add_pages/) - how do I add a new page to my cart? 
 
-* [Blank Page](/user/troubleshooting/blank_page/)
+* [Admin Password Reset](/user/troubleshooting/reset_admin_password/) - how to reset your password if you have forgotten it.
 
-* [Can Zen Cart ...](/user/miscellaneous/can_zen_cart/)
+* [Blank Page](/user/troubleshooting/blank_page/) - what to do if part or all of a page is blank.
 
-* [Downloading Zen Cart](/user/first_steps/get_zen_cart/)
+* [Can Zen Cart ...](/user/miscellaneous/can_zen_cart/) - A capabilities overview .
 
-* [Emails are not being received](/user/email/emails_not_received)
+* [Customizing my site](/user/customizing/appearance) - changing the look and feel of your cart.
 
-* [Forum issues - Can't post to the Zen Cart forum](/user/zen_cart_forum/forum_issues/)
+* [Downloading Zen Cart](/user/first_steps/get_zen_cart/) - where do I download the Zen Cart software?
 
-* [Known Bugs in Zen Cart (by version)](/user/about_us/known_bugs/)
+* [Emails are not being received](/user/email/emails_not_received) - trouble with email. 
 
-* [Installing Zen Cart](/user/first_steps/how_do_i_install/)
+* [Forum issues](/user/zen_cart_forum/forum_issues/) - I can't post to the Zen Cart forum.
 
-* [Release history for Zen Cart](/user/about_us/release_history/) - with links to Release Notes
+* [Known Bugs in Zen Cart (by version)](/user/about_us/known_bugs/) - has my bug already been fixed?
 
-* [Server Requirements for running Zen Cart](/user/first_steps/server_requirements/) - Zen Cart version to PHP version matrix
+* [Installing Zen Cart](/user/first_steps/how_do_i_install/) - how do I install Zen Cart?
 
-* [Taxes - how much do I charge?](/user/localization/taxes/)
+* [Release history for Zen Cart](/user/about_us/release_history/) - with links to Release Notes.
 
-* [Upgrading Zen Cart](/user/upgrading/upgrading/)  
+* [Server Requirements for running Zen Cart](/user/first_steps/server_requirements/) - Zen Cart version to PHP version matrix.
 
-* [Version Information for your cart](/user/first_steps/version/) - how to determine your PHP, MySQL and Zen Cart version number 
+* [Upgrading Zen Cart](/user/upgrading/upgrading/) - how do I upgrade my old cart?
+
+* [Version Information](/user/first_steps/version/) - how to determine your PHP, MySQL and Zen Cart version number.
 

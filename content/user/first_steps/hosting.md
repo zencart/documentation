@@ -110,6 +110,11 @@ there are three main options for webserver software:
 
 The Zen Cart team recommends Apache or Nginx, **not** IIS.
 
+### FTP 
+You will need to use an [FTP Tool](/user/first_steps/useful_tools/#ftp-tools)
+to transfer files between your computer and your server.  
+An example of transferring a file is provided in [Installing a File](/user/new_user_topics/no_such_file/#installing-a-file). 
+
 ### SSL Certificates
 
 An SSL certificate allows your content to be securely accessed 

@@ -1,5 +1,5 @@
 ---
-title: Basic Tools 
+title: Basics - Useful Tools 
 description: Useful Tools for working with Zen Cart 
 category: first_steps
 weight: 10
@@ -38,7 +38,9 @@ Text search tools are useful for finding the locations of strings you want to ch
 *   The Developers Toolkit in your Zen Cart Admin
 *   [Sublime Text](http://www.sublimetext.com) (Windows, Mac, Linux)
 
-## Graphics Editors
+## Graphics Editors 
+
+These utilities are also called "Image Editors."
 
 ### Freeware
 
@@ -66,6 +68,10 @@ modification or plugin.
 
 FTP stands for "File Transfer Protocol."  You use FTP to connect to your 
 hoster and upload files to your cart. 
+An example of transferring a file is provided in [Installing a File](/user/new_user_topics/no_such_file/#installing-a-file). 
+
+Note that whatever tool you select must have the ability to do
+[secure file transfer](/user/first_steps/secure_access/#secure-file-transfer). 
 
 ### Freeware
 

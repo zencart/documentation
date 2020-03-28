@@ -5,13 +5,22 @@ category: template
 weight: 10
 ---
 
-The Zen Cart® templating system uses a CSS based layout.
+To get ideas about building your own template, take a look at the 
+other templates available for Zen Cart. 
 
+{{< templates >}}
+
+### Setting up your new template 
 First, open 
 `includes/templates/`
 and create a new folder. You can call it anything you like, though it is best not to make it too long and to use underscores instead of spaces. We will call it `/YOURTEMPLATE` here, so everywhere we write 
 `/YOURTEMPLATE` from now on, you should replace it with your own preferred folder name.
 
+Next, you need to create the `template_info.php` file
+and change your selected template.  [Follow these instructions](/user/template/template_overrides/#using-your-overrides).
+
+
+### Building out your template 
 Create an empty folder inside your new template directory and call it images so you should have `includes/templates/YOURTEMPLATE/images/`.
 
 Next, copy the `includes/templates/template_default/css` directory and place the folder and its files in your new 
@@ -28,6 +37,7 @@ You can also create the following empty folders inside your new template directo
 Then you copy the file called 
 `includes/templates/template_default/template_info.php`, and put it inside 
 `includes/templates/YOURTEMPLATE/`.
+
 Next, open 
 `includes/templates/YOURTEMPLATE/template_info.php` in your text editor. Change the information below between each set of single quotes to suit your new template. Remember to keep the single quotes. Your template name does not need to be identical to your folder name, and you can use spaces to make it read well, but it is best to make them similar. Leave the space between the quotes for the template screenshot field empty for now, since you don’t have one yet.
 

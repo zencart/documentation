@@ -38,8 +38,6 @@ allowing you to easily change templates but preserve your language customization
 > *   From english.php
 
 ```
-define('FOOTER_TEXT_BODY', 'Copyright &copy; 2003-2006 <a href="http://www.zen-cart.com" target="_blank">Zen Cart</a>. Powered by <a href="http://www.zen-cart.com" target="_blank">Zen Cart</a>');
-... 
 define('BOX_HEADING_CATEGORIES', 'Categories');
 ...
 define('ENTRY_FIRST_NAME', 'First Name:');

@@ -1,28 +1,30 @@
 ---
-title: This page contains both secure and nonsecure items (or "Unauthenticated content" or "connection partially encrypted")
+title: Secure and nonsecure items 
 description: Zen Cart error this page contains both secure and nonsecure items (or "Unauthenticated content" or "connection partially encrypted")
 category: troubleshooting
 weight: 10
 ---
 
 ### Problem:
-This happens on all my "secure" pages, such as Login, My Account and Checkout.
-When I click the Log In link as a customer i get prompted with the security prompts stating:
 
-"This page contains both secure and nonsecure items.
-Do you want to display the nonsecure items?"
+One or more of these things happen on some or all of my "secure" pages, such as Login, My Account and Checkout.
 
-or
-"Page contains unauthenticated content"
+- I am seeing a broken padlock
 
-or
-"connection partially encrypted"
+- When I click the Log In link as a customer i get prompted with the security prompts stating:
+
+    "This page contains both secure and nonsecure items.
+    Do you want to display the nonsecure items?"
+
+- "Page contains unauthenticated content"
+
+- "connection partially encrypted"
 
 
 
 ### Solution:
 
-That indicates that somewhere in your templates or stylesheets you have hard-coded actual URL links to `http://xxxxxxxxx`  instead of using relative paths to objects.
+That indicates that somewhere in your templates or stylesheets you have hard-coded actual URL links to `http://xxxxxxxxx`,  instead of using relative paths.
 
 This can also happen if you have added banners with `http://` links and not told them to skip display on SSL pages.
 

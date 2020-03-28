@@ -5,23 +5,15 @@ category: security
 weight: 10
 ---
 
-## SSL Security Protection Tips
+## Security basics
 
-Without applying extra efforts to your connection on the internet you are wandering around an unsecured environment. Before you make administrative modifications to secure Zen Cart and its database, you need to equip yourself with secure ways to make these modifications. Otherwise if someone is watching/listing to the information you transmit, it might not be long before your private business information becomes public. The bare minimum you should have is access to shared [SSL](http://en.wikipedia.org/wiki/Secure_Sockets_Layer "http://en.wikipedia.org/wiki/Secure_Sockets_Layer") services from your hosting company.
+- Learn about [secure access](/user/first_steps/secure_access/) to your site. 
 
-The preferred would be to have a dedicated SSL certificate for your store, as it is more professional in appearance than the use of a shared certificate. There will be an expense incurred to obtain a dedicated SSL certificate and dedicated IP address in your hosting account.
+- Get an [SSL certificate](/user/installing/enable_ssl). Yes, [you need SSL](/user/first_steps/yes_you_need_ssl). 
 
+## Steps to a More Secure Site
 
-## Accessing Your Site Files Securely
-
-Instead of using regular FTP to access your server's files, it would be wise (if your hosting company offers FTPS support) to use a program that offers [FTP over SSL/TLS](http://en.wikipedia.org/wiki/FTPS "http://en.wikipedia.org/wiki/FTPS"). This method will encrypt the information you transmit and receive. This is important especially when you are downloading database backups or configuration files which contain usernames and passwords, etc.
-
-If your hosting company does not offer SFTP or FTPS, then they are most likely not PCI Compliant either, and you should be choosing a different hosting company who takes security seriously.
-
-_**The following is a list of several steps you can take to secure your Zen Cart site:**_
-
-
-## 1\. Remove extra folders from your server after install
+### 1\. Remove extra folders from your server after install
 
 It's important that after you've installed your site and are satisfied that it's working properly, including actually doing live transactions to test ALL the payment and shipping modules you're using on your site, be sure to do some cleanup:
 
@@ -46,7 +38,7 @@ Optional: Additionally, *IF* you have no intentions of supporting downloadable p
 
 (And you'll need to go to your Admin->Configuration->Attribute Settings->Enable Downloads, and set it to False to turn off the warning message about the missing download folder) In the future, if you choose to add downloadable products to your site or music-products, you will want to re-upload these appropriate folders (and their contents) to your server again, and assign appropriate permissions.
 
-## 2\. Rename your _/admin_ folder
+### 2\. Rename your _/admin_ folder
 
 It is recommended for additional security that you rename your _admin_ directory after installation. This way, it will be significantly harder for hackers to find your admin area or attempt any attack on breaking into it.
 
@@ -55,14 +47,14 @@ It is recommended for additional security that you rename your _admin_ directory
 If your server doesn't support use of .htaccess files, you'll need to work with your hosting company to come up with a way to provide the security protections offered by the supplied .htaccess files but using *your* server's available tools. If you cannot come up with alternate measures, you should reconsider whether your current hosting service is really adequate for the security appropriate to eCommerce.
 
 
-## 3\. Use SMTPAUTH or SMTP as your Email Transport method, instead of the generic "PHP" or "sendmail" settings.
+### 3\. Use SMTPAUTH or SMTP as your Email Transport method, instead of the generic "PHP" or "sendmail" settings.
 
 Go to Admin->Configuration->Email Options, and change your Email Transport Protocol to SMTPAUTH, and then fill in all the SMTP credentials in the other settings lower on that same screen.
 
 This will not only help prevent outgoing emails from ending up in spam folders, but will also prevent the disclosure of your admin folder when sending emails from your admin screens.
 
 
-## 4\. Set configure.php files read-only
+### 4\. Set configure.php files read-only
 
 It's important that you CHMOD (set permissions) on the two configure.php files as <u>**read-only**</u>. Typically this means setting them to _644_, or in some cases _444_.  
 The configure.php files are located in:  
@@ -79,7 +71,7 @@ Quite often setting permissions on a file to read only via FTP will not work. Ev
 If you're using a Windows server using IIS, simply set the file as _Read-Only_ for _Everyone_ and especially the IUSR_xxxxx (Internet Guest Account) user if running IIS, or the _System_ account or _apache user_ if running Apache.
 
 
-## 5\. Delete any unused _Admin_ accounts
+### 5\. Delete any unused _Admin_ accounts
 
 v1.3.x or older:  
 Admin > Tools > Admin Settings  
@@ -89,7 +81,7 @@ Admin > Admin Access > Admin Users
 In your admin Users screen, check for any unused Admin accounts, and delete them. Especially the Demo account, if it exists.
 
 
-## 6\. Admin Password Security
+### 6\. Admin Password Security
 
 It is wise to use complicated passwords so that a would-be hacker can't easily guess them.
 
@@ -105,18 +97,18 @@ v1.5.0 and newer:
 Visit Admin > Admin Access > Admin Users to change passwords.
 
 
-## 7\. Admin Access Protection
+### 7\. Admin Access Protection
 
 It is wise to observe caution while working in your admin area:
 
 - **use only one browser tab** to access your admin area
 
-- **do NOT visit other sites (ESPECIALLY email sites like gmail/yahoo/hotmail/etc) when your browser has an active admin login session enabled -- even in another tab** (this is because if you're clicking links in emails you run the risk of opening yourself up to XSS problems if you're logged into your store admin at the same time. It's like handling raw chicken and licking your fingers ... do so at your own risk!)
+- **do NOT visit other sites (ESPECIALLY email sites like Gmail, Yahoo! Mail or Hotmail) when your browser has an active admin login session enabled -- even in another tab** (this is because if you're clicking links in emails you run the risk of opening yourself up to XSS problems if you're logged into your store admin at the same time. It's like handling raw chicken and licking your fingers ... do so at your own risk!)
 
 - **always log out of your admin** when not using it
 
 
-## 8\. Protect your "define pages" content in "html_includes"
+### 8\. Protect your "define pages" content in "html_includes"
 
 After you have finished editing your define pages in [Admin > Tools > Define Pages Editor](/user/admin_pages/tools/define_pages/), you should protect them:
 
@@ -128,7 +120,7 @@ If you make them read-only, then a would-be hacker cannot edit them if they gain
 
 Note: Of course, once you set them read-only, then you'll need to go and set them back to read-write before making additional changes using the define-pages editor or uploading replacements via FTP, and then read-only again when done.
 
-## 9\. Use _.htaccess_ files to protect against unwanted snooping
+### 9\. Use _.htaccess_ files to protect against unwanted snooping
 
 **NOTE: This step is already largely addressed in v1.3.9 and v1.5.0 and newer, with the included .htaccess files. If you are using older versions of Zen Cart then you will have to do these adjustments manually:**
 
@@ -159,7 +151,7 @@ In order for the above suggestions to work, your host must include either 'All' 
 If your webhost configuration doesn't allow you to create/use your own _.htaccess_ files, you'll need to work with your hosting company to come up with a way to provide the security protections offered by the supplied .htaccess files but using *your* server's available tools; sometimes they provide an interface in your hosting admin control panel where you can set the desired settings. You need to choose, and use, the appropriate method for your server. As mentioned above, it's best to work with your web hosting company to select and implement the best method for your specific server. We can't tell you what to use for your specific server, but we offer these guidelines as a starting point. If you cannot come up with alternate measures, you should reconsider whether your current hosting service is really adequate for the security appropriate to eCommerce.
 
 
-## 10\. Protect your "images" and other folders
+### 10\. Protect your "images" and other folders
 
 During initial installation, you are advised to set your images folder to read/write, so that you can use the _Admin_ interface to upload product/category images without having to use FTP for each one. Similar recommendations are made to other files for various reasons.
 
@@ -210,7 +202,7 @@ so that it's not accessible via a browser. (Requires changes to `DIR_FS_SQL_CACH
 for updating/displaying bar graphs related to banner usage. If not writable, this feature is ignored.
 
 
-## 11\. Remove the print URL feature from your browser
+### 11\. Remove the print URL feature from your browser
 
 To stop the browser from printing the admin URL (which discloses your Admin foldername) on the invoice follow these steps:.  
 
@@ -225,7 +217,7 @@ To stop the browser from printing the admin URL (which discloses your Admin fold
 *   Other browsers offer similar menu choices to change these settings.
 
 
-## 12\. Things to Check Up on Regularly
+### 12\. Things to Check Up on Regularly
 
 1.  Be sure you've done all the steps listed in this document.
 2.  Make recent backups of your website files and database.
@@ -242,7 +234,7 @@ See [FTP tools](/user/first_steps/useful_tools/#ftp-tools) and [secure access](/
 6.  If your business warrants, or you still want additional assurance (especially if running forum software on your site, or other scripts outside of Zen Cart), hire a security consultant to check your site regularly and give you peace of mind in exchange for a few dollars.
 7.  Check your Zen Cart /logs/ or /cache/ folder for myDEBUG-XXXXX.log files to see whether any errors are happening which need to be fixed. Delete the log files after you've addressed the errors.  If you are not sure how to read log files, see [reading a myDEBUG log](/user/troubleshooting/debug_logs/). 
 
-## 13. Server Operating System Patches
+### 13. Server Operating System Patches
 
 There are some common server vulnerabilities that are worth checking into to ensure your server isn't vulnerable to easy hacker exploits. There are entire professions dedicated to this subject, so it's impossible to list everything here; but some of the more common things needing attention are:
 

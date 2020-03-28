@@ -1,15 +1,15 @@
 ---
 title: Backups - how do I do a site backup? 
 description: how do I do a site backup in Zen Cart? 
-category: miscellaneous
+category: running
 weight: 10
 ---
 
-**NOTE: Doing a backup of your Zen Cart site requires TWO components: (1) A copy of all the files in your Zen Cart folder on your server ... via FTP, and (2) a copy of your database, described below:**
+**NOTE: Doing a backup of your Zen Cart site requires TWO components: (1) A copy of all the files in your Zen Cart folder on your server, and (2) a copy of your database, described below:**
 
 ## 1\. Backup your PHP files (actually ALL files)
 
-Use your FTP program (using a Secured FTP connection) to make a copy of all the files on your website, by copying them from your webserver to a folder on your business computer. Preferably the directory/folder on your computer should be named by today's date so that you can distinguish between backups.  
+Use your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) to make a copy of all the files on your website, by copying them from your webserver to a folder on your business computer. Preferably the directory/folder on your computer should be named by today's date so that you can distinguish between backups.  
 
 Having this gives you not only an up-to-date set of files on your server, but also a reference point for either making changes or for making comparisons in case something gets compromised or damaged on your webserver. You can either use this set of files to restore the program back to your website, or to diagnose a problem if one occurs.  
 

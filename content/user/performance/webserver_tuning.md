@@ -5,8 +5,6 @@ category: performance
 weight: 10
 ---
 
-<div class="article cms_clear restore postcontainer" id="yui-gen1">
-
 There are various steps one can follow to fine-tune server performance, depending on skill level and the kind of control one has over the webserver. The following are topics which may be of useful consideration especially if your server is performing poorly.
 
 ## Operating System
@@ -107,6 +105,4 @@ Be aware that this log can grow VERY large very quickly if there are many proble
 Use your favorite search engine and look for articles on mysql tweaking or optimization.
 
 You will find much on the subject and it is really a balancing act. Determine what works best for you.
-
-
 

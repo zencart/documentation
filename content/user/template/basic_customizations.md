@@ -27,7 +27,6 @@ Open [Admin -> Configuration -> Layout Settings](/user/admin_pages/configuration
 
 Find `Categories - Always Show on Main Page`, click edit and enable the feature.
 
-
 ### Can I remove the "Powered by Zen Cart" from the footer of my cart?
 Shops that wish to be listed in the Zen Showcase must leave "Powered by Zen Cart" in the footer for identification. Leaving the "Powered by Zen Cart" is advantageous to both you and Zen Cart because a relevant reciprocal link can help you with search engine rankings. In the event you do not wish to be listed in the Zen Showcase, "Powered by Zen Cart" may be removed, but it may not be changed.
 
@@ -67,7 +66,7 @@ cc7.gif = AustralianBankCard
 The list of buttons is in:
 `includes/language/english/button_names.php`
 
-Create your buttons using your favorite image editor. The buttons may to be saved as GIF, JPG or PNG. If you are not using the same format or name as the original buttons, edit `button_names.php` and save the edited file in your override directory `includes/language/english/YOURTEMPLATE/button_names.php`.
+Create your buttons using your favorite [image editor](/user/first_steps/useful_tools/#graphics-editors). The buttons may to be saved as GIF, JPG or PNG. If you are not using the same format or name as the original buttons, edit `button_names.php` and save the edited file in your override directory `includes/language/english/YOURTEMPLATE/button_names.php`.
 
 Upload your button images to:
 `includes/templates/YOURTEMPLATE/buttons/YOURLANGUAGE/`

@@ -1,24 +1,26 @@
 ---
-title: I don't have the file XXXXX
-description: Zen Cart File missing 
+title: I don't have the file YOURTEMPLATE/some-name
+description: Zen Cart Template File missing 
 category: new_user_topics
 weight: 10
 ---
 
 You're reading the instructions for a mod or a FAQ page or a forum post
-and it says, 
+and it tells you to update 
 
 ```
-Just update includes/templates/YOURTEMPLATE/templates/tpl_product_info_display.php ... 
+includes/templates/YOURTEMPLATE/templates/tpl_product_info_display.php
 ```
 
 and you say, "Wait a minute ... that file doesn't exist in my cart!" 
 
-First of all, let's review two things: 
+First of all, let's review a few things: 
 
 a) The FAQ [basic terms](/user/first_steps/basic_terms/) explains what YOURTEMPLATE means. 
 
-b) The FAQ [template overrides system](/user/template/template_overrides/) explains what template overrides are.
+b) The concept of a [default file](/user/first_steps/overrides) which can be overridden. 
+
+c) The FAQ [template overrides system](/user/template/template_overrides/) explains what template overrides are.
 
 
 So now you know `YOURTEMPLATE` is an alias for the name of your template,
@@ -34,13 +36,41 @@ this file would be `includes/templates/responsive_classic/templates/tpl_product_
 But what if the file still doesn't exist, even if you now know the real 
 name of the file? 
 
-Template files (those people write about with `YOURTEMPLATE`) are all
-altered copies of the files in one directory above. 
+Template files (the ones with `YOURTEMPLATE` - the [template name](/user/first_steps/basic_terms/#yourtemplate) in their path) are all
+altered copies of the default file.
 
-So `includes/modules/responsive_sheffield_blue/additional_images.php` is a templated file based on `includes/modules/additional_images.php`.
+### How do you find the default file? 
 
-Likewise, `includes/languages/responsive_classic/english.php` is a templated modification of `includes/languages/english.php`.
+a) For files under `/includes/templates`, the default file is `includes/templates/template_default/FOLDER/FILENAME`. 
 
-So if the templated file being referenced doesn't exist in your cart, you can 
-just create it by copying the original from one directory up. 
+b) For all other files, the default file is one level above the template folder. 
+
+If the templated file being referenced doesn't exist in your cart, you can 
+create it by copying the original from the default file. 
+
+[Learn more about default files](/user/first_steps/overrides/#default-files) 
+
+### Installing a file
+
+Unless you are creating these files directly on your server, 
+you need to copy these files to your server.  Use your 
+[FTP tool](/user/first_steps/useful_tools/#ftp-tools) to connect to your server, then go to your [webroot](/user/first_steps/how_do_i_install#what-is-my-webroot),
+then to the folder where the file is supposed to exist. 
+
+Example: 
+- Your webroot is `/home/johndoe/public_html`
+- Your template is `custom`
+- The file you are changing is `includes/languages/custom/english.php`
+
+Steps: 
+- Using FTP, connect to `YOURSITE.com`.  
+- Change directories so you get to the webroot.  
+- Change directories from there so that you get to the folder for the file you are changing.  At this point, you will be in `/home/johndoe/public_html/includes/languages/custom`
+- Transfer the file.
+
+Here's what it looks like for a live store.  Click the image to make it larger if needed.  As you can see, the template is `bootstrap` and the webroot is `/home/thatsoft/public_html`.
+
+<a href="/images/ftp_using_filezilla.png">
+<img src="/images/ftp_using_filezilla.png" alt="FTP Using Filezilla" />
+</a>
 
