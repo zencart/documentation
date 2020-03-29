@@ -5,13 +5,9 @@ category: troubleshooting
 weight: 10
 ---
 
-### Utilities
-The following tools are available to make log handling easier:
-
-- [Display Log Files](https://www.zen-cart.com/downloads.php?do=file&id=1583) - View the contents of the log-files via an admin tool.
-- [Log Manager](https://www.zen-cart.com/downloads.php?do=file&id=2123) - Automatically remove logs after a certain period of time.
-- [myDEBUG log Backtrace](https://www.zen-cart.com/downloads.php?do=file&id=1879) - shows stack trace when a log is created. Built in to Zen Cart after 1.5.5. 
-- [Report All Errors](https://www.zen-cart.com/downloads.php?do=file&id=1792) - shows more extensive error logging than is done by default in Zen Cart. 
+Debug logs are created by Zen Cart when the PHP interpreter has an
+error in creating a webpage.   These logs are a source of valuable information 
+that can help you resolve the underlying cause of the problem. 
 
 ### Reading a Log
 
@@ -73,4 +69,12 @@ Let's examine the back-trace provided by the first log-entry in the example give
 | /includes/modules/pages/index/header_php.php:44             | require      |
 | /includes/modules/require_languages.php:26                  | require_once |
 | /includes/languages/english/responsive_classic/index.php:35 | define       |
+
+### Utilities
+The following tools are available to make log handling easier:
+
+- [Display Log Files](https://www.zen-cart.com/downloads.php?do=file&id=1583) - View the contents of the log-files via an admin tool.
+- [Log Manager](https://www.zen-cart.com/downloads.php?do=file&id=2123) - Automatically remove logs after a certain period of time.
+- [myDEBUG log Backtrace](https://www.zen-cart.com/downloads.php?do=file&id=1879) - shows stack trace when a log is created. Built in to Zen Cart after 1.5.5. 
+- [Report All Errors](https://www.zen-cart.com/downloads.php?do=file&id=1792) - shows more extensive error logging than is done by default in Zen Cart. 
 

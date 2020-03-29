@@ -25,7 +25,7 @@ if (!isset($ezpage_id) || !in_array($ezpage_id,explode(",",'2,5'))) {
 }
 ```
 
-This condition means that the template to display the sidebox will be called whenever the page is not an EZ-Page or, if it is an EZ-Page, it does not have ID 2 or 5\. You can find the IDs of your EZ-Pages by going to Admin > Tools > EZ-Pages where the ID for each page is displayed in the first column.  
+This condition means that the template to display the sidebox will be called whenever the page is not an EZ-Page or, if it is an EZ-Page, it does not have ID 2 or 5. You can find the IDs of your EZ-Pages by going to [Admin > Tools > EZ-Pages](/user/admin_pages/tools/ezpages/) where the ID for each page is displayed in the first column.  
 
 Finally, and importantly, don't forget to save your result in [an over-ride file](/user/new_user_topics/overrides/).
 

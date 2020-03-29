@@ -5,7 +5,7 @@ category: Upgrading
 weight: 10
 ---
 
-**READ THIS FIRST: [How do I rebuild my site on the new version, instead of upgrading?](http://www.zen-cart.com/entry.php?3-How-do-I-rebuild-my-site-on-the-new-version-instead-of-upgrading)**
+**READ THIS FIRST: [How do I rebuild my site on the new version, instead of upgrading?](https://www.zen-cart.com/entry.php?3-How-do-I-rebuild-my-site-on-the-new-version-instead-of-upgrading)**
 
 Detailed upgrade instructions that help you retain your customizations while upgrading to new features, can be found in your ZIP file under the [/docs/2.readme_how_to_upgrade.html](https://www.zen-cart.com/docs/2.readme_how_to_upgrade.html) file and also in this [related article](/user/upgrading/detailed_upgrading/).
 

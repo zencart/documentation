@@ -31,12 +31,12 @@ The categories edit screen allows you to:
 - set the category name and description
 - set the category image
 - set the category sort order 
-- restrict new product additions to the category to only specific product types if desired.  See [Category product-type restrictions](/user/categories/category_product_type_restrict/). 
+- restrict new product additions to the category to only specific product types if desired.  See [Category product-type restrictions](/user/products/category_product_type_restrict/). 
 
 ## Products Level 
 If you are at a level where the Categories screen only shows products, 
 you have a different set of capabilities. 
-See [Categories-products page](/user/categories/categories_products/)
+See [Categories-products page](/user/admin_pages/catalog/categories_products/)
 
-For more information on categories, see [these pages](/user/categories/). 
+For more information on categories and products, see [these pages](/user/products/). 
 

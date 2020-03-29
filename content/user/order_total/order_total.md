@@ -18,7 +18,7 @@ This means the Sub-Total, Tax, Shipping, and Total are displayed via order total
 
 Zen Cart also offers a number of order total plugins: 
 * [Gift Wrapping](https://www.zen-cart.com/downloads.php?do=file&id=267)
-* [Better Together](http://www.zen-cart.com/downloads.php?do=file&id=201)
-* [Quantity Discounts](http://www.zen-cart.com/downloads.php?do=file&id=135)
+* [Better Together](https://www.zen-cart.com/downloads.php?do=file&id=201)
+* [Quantity Discounts](https://www.zen-cart.com/downloads.php?do=file&id=135)
 
 More order total plugins may be found [in the Other Modules plugins area](https://www.zen-cart.com/downloads.php?do=cat&id=7).

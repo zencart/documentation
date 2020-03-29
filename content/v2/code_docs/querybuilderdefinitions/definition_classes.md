@@ -133,4 +133,4 @@ Other entries can define derived items, filter methods etc.
 The outputLayout array must contain the 'formatter' option. Other options are dependant on the formatter used.
 
 More details on the fields listingQuery and outputLayout are provided in 
-[Admin LEAD pages](code_docs/admin_lead_pages/introduction).
+[Admin LEAD pages](/v2/code_docs/admin_lead_pages/introduction).

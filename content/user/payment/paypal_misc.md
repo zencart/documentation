@@ -80,7 +80,7 @@ However, some customers are not given this option, and are required to create a 
 
 *   Note that the **PayPal Express Checkout** product technically does not allow the option to make payment without having a PayPal account (although many Zen Cart sites do have success with this option due to special concessions granted by PayPal to the Zen Cart software). PayPal has always intended that Express Checkout be offered in addition to other payment choices such as a credit card gateway, and that adding Express is a way to allow PayPal members a very quick and easy way to pay using their PayPal account.  
 
-*   The **PayPal Payments Pro** product (which you must pay a monthly fee to PayPal to use, and is only available to US, UK, and Canadian merchants) adds the ability to accept Credit Card payments directly on your website without the customer even knowing that they are being processed by PayPal.  [Contact your PayPal representative for information](http://www.zen-cart.com/partners/paypal) and to sign up for this service.
+*   The **PayPal Payments Pro** product (which you must pay a monthly fee to PayPal to use, and is only available to US, UK, and Canadian merchants) adds the ability to accept Credit Card payments directly on your website without the customer even knowing that they are being processed by PayPal.  [Contact your PayPal representative for information](https://www.zen-cart.com/partners/paypal) and to sign up for this service.
 
 --- 
 

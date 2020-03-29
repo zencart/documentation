@@ -1,9 +1,11 @@
 ---
-title: I want to move the Add to Cart box (or other section) to another place on my product page 
-description: How to move the Add to Cart box in Zen Cart
+title: How to rearrange the product info page 
+description: How to rearrange the product info page in Zen Cart
 category: templates
 weight: 10
 ---
+
+Example: I want to move the Add to Cart box to another place on my product page 
 
 1. You have a page you want to change the structure of.
 2. Open the page in your browser.
@@ -47,5 +49,5 @@ Do similarly with other sections as desired.
 
 Then use any necessary CSS alterations to style things as needed.
 
-See also this related FAQ: [How do I determine which files to edit](/user/template/what_files/). 
+See also this related FAQ: [How do I determine which files to edit](/user/new_user_topics/what_files/). 
 

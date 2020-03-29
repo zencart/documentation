@@ -1,6 +1,6 @@
 ---
-title: EZ Pages
-description: Zen Cart EZ Pages
+title: EZ-Pages
+description: Zen Cart EZ-Pages
 category: admin_pages
 weight: 100
 ---
@@ -12,4 +12,4 @@ This page allows you to add and remove special EZ-Pages, pages which are easier 
 (ii) Give all pages in the same collection the same Chapter number.
 
 
-For more information about EZ Pages, see [these pages](/user/ezpages). 
+For more information about EZ-Pages, see [these pages](/user/ezpages). 

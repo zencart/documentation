@@ -26,7 +26,7 @@ Questions to ask yourself:
 
 ### 1\. Do you have a domain?
 
-If No, stop, and see our [Certified Hosting](http://www.zen-cart.com/hosting) Sites and find a fast, reliable hosting site that can help you register your own personal domain as well as provide for your hosting needs that meet the Zen Cart® software requirements.
+If No, stop, and see our [Certified Hosting](https://www.zen-cart.com/hosting) Sites and find a fast, reliable hosting site that can help you register your own personal domain as well as provide for your hosting needs that meet the Zen Cart® software requirements.
 
 ### 2\. Do you have FTP software?
 
@@ -62,7 +62,7 @@ If you have answered Yes to all 4 of these questions, then you are ready to go o
 
 ### ZIP file
 
-If you're reading this page via a file from your computer, you have likely already unzipped the [Zen Cart® distribution file](http://www.zen-cart.com/getit) and its contents into a folder on your personal computer. If for some reason you haven't already done so, unzip the files to your PC now, retaining the file structure within the zip file.  
+If you're reading this page via a file from your computer, you have likely already unzipped the [Zen Cart® distribution file](https://www.zen-cart.com/getit) and its contents into a folder on your personal computer. If for some reason you haven't already done so, unzip the files to your PC now, retaining the file structure within the zip file.  
 
 ---
 ## B. Upload the Zen Cart® fileset to your webserver

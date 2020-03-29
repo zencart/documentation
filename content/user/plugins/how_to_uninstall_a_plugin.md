@@ -20,7 +20,7 @@ Otherwise, keep reading.
 
 1. If you have a backup from before you did the installation, simply 
 restore the backup.  If you don't - well, now you see the importance
-of [creating a backup](/user/miscellaneous/backup/).
+of [creating a backup](/user/running/backup/).
 
 1. Remove any NEW files that you added in the process of installing the plugin.   A NEW file is a file that doesn't exist in the default distribution of Zen Cart.  These files can simply be deleted. 
 

@@ -26,9 +26,10 @@ default behavior.
 To enable developers to build plugins 
 in an organized manner, a number of facilities are provided: 
 
-* [Overrides](/user/new_user_topics/overrides/)
+* [Overrides](/user/template/template_overrides/)
 * [Notifiers/Observers](/dev/code/notifiers/)
 * [Init System](/dev/code/init_system/)
+* [Extra folders](/dev/code/extra_folders/) 
 
 ### More Information 
 

@@ -15,8 +15,8 @@ Options to try include:
 1. Try enabling the Email Archiving feature. (Note: this can chew up server database disk space quickly.) Then use the Email Archive Viewer contribution to check and see whether Zen Cart really processed the email for sending. If it did, then the problem is related to how PHP is processing your messages after they leave Zen Cart. 
 
 ## Email Transport methods explained
-Have you selected the appropriate "Email Transport" method for your webserver?  (Admin->Configuration->Email Options)
-Suggest trying them in this order:
+Have you selected the appropriate "Email Transport" method for your webserver?
+Go to [Admin->Configuration->Email Options](/user/admin_pages/configuration/configuration_emailoptions/) and try them in this order:
 
 1. "php" -- this uses whatever email method your webserver is configured to use for PHP mail commands, as set by your webhost.  This will work fine in most cases.
 1. "smtp" or "smtpauth" -- for reliable email, many hosts require that you use "smtp" or usually "smtpauth" and set all the SMTP settings shown lower on the page.

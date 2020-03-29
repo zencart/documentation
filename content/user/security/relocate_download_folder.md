@@ -15,7 +15,7 @@ To do this, you must:
     If you're using a Linux server, either option is suitable.  
     If you're using a Windows server running IIS, you may not be able use redirects (depending on PHP version and whether or not your server allows PHP symlinks). Instead, you will need to use _**Download by Streaming**_ in order to handle secured downloads.  
 
-2.  Use your FTP program to move your "download" folder outside your webroot. Perhaps drag-and-drop it to a level "above" your `public_html` folder.  The method you choose for moving or creating this folder will depend on your hosting account and the tools available to you for moving folders.  
+2.  Use your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) to move your "download" folder outside your webroot. Perhaps drag-and-drop it to a level "above" your `public_html` folder.  The method you choose for moving or creating this folder will depend on your hosting account and the tools available to you for moving folders.  
 
     Usually the "download" folder is located inside your store area, for example:  
     - `/home/my_user_name/public_html/mystore/download`

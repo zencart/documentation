@@ -181,5 +181,5 @@ the admin will notify you if this has been successful or not at the top of the s
 
 any questions you have about attributes may have been already answered in the following Zen Cart forum thread
 
-[http://www.zen-cart.com/forum/showthread.php?t=4810](http://www.zen-cart.com/forum/showthread.php?t=4810)
+[https://www.zen-cart.com/forum/showthread.php?t=4810](https://www.zen-cart.com/forum/showthread.php?t=4810)
 

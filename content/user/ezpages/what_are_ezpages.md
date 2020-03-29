@@ -91,9 +91,9 @@ Internal Links can also open in a New Window or the Same Window or be for Secure
 
 ### EZ-Pages Additional Pages vs Internal Links vs External Links
 
-The Type of Link that you create is based on an order of precedence, where HTML Content will supercede both the Internal Link and the External Link values.  
+The Type of Link that you create is based on an order of precedence, where HTML Content will supersede both the Internal Link and the External Link values.  
 
-The External Link URL will supercede the Internal Link URL.  
+The External Link URL will supersede the Internal Link URL.  
 
 If you try to set a combination of HTML Content, Internal Link and/or External Link, the Link will be flagged in the listing with a read icon to alert you to your mistake.  
 

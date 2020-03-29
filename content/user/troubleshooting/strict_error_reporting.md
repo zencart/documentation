@@ -12,7 +12,7 @@ Caveat: Outputting errors to the screen can cause some screens or features to no
 Caveat: Also, using this option poses a security risk because error messages will disclose path and database information to malicious visitors who attempt rogue behaviors on your store. THUS, THIS SETTING SHOULD ONLY BE USED IN AN OFFLINE DEVELOPMENT ENVIRONMENT. Using it on a live store poses risks, and should only be used for short-term troubleshooting of a problem which can't be solved any other way.
 
 ### Enabling STRICT_ERROR_REPORTING
-To enable `STRICT_ERROR_REPORTING`, simply use your FTP program to upload a simple file to your store's site like this:
+To enable `STRICT_ERROR_REPORTING`, simply use your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) to upload a simple file to your store's site like this:
 - For storefront problems, put it at: `/includes/local/configure.php`
 - For admin problems, put it at: `/admin/includes/local/configure.php`
 

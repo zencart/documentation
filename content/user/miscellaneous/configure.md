@@ -167,7 +167,7 @@ define('DIR_FS_SQL_CACHE', '/enter/your/path/to/public_html_or_htdocs/and/zencar
 
 This setting specifies the path where SQL cache files would be stored if 'file' mode is selected. In v1.3.9 and v1.5.0, this setting was ALSO used for storing various debug logs used for troubleshooting problems your PHP scripts might be having in your store. As of v1.5.1, these logs are now found in the `DIR_FS_LOGS` location (see below).  
 
-It's possible to relocate this folder to another location perhaps outside your site's webroot, for increased security. Simply relocate the folder using your FTP program, and adjust this value to match the new location.  
+It's possible to relocate this folder to another location perhaps outside your site's webroot, for increased security. Simply relocate the folder using your [FTP tool](/user/first_steps/useful_tools/#ftp-tools), and adjust this value to match the new location.  
 For more information on understanding "webroot" concepts, see your favorite search engine.  
 
 ```
@@ -176,6 +176,8 @@ define('DIR_FS_LOGS', '/enter/your/path/to/public_html_or_htdocs/and/zencart/her
 
 In Zen Cart v1.5.1 and newer, this setting specifies the path where the program can store various debug logs used for troubleshooting problems your PHP scripts might be having in your store.  
 It's possible to relocate this folder to another location perhaps outside your site's webroot, for increased security. Simply relocate the folder using your FTP program, and adjust this value to match the new location.  
+
+See also [What is STRICT mode for my database](/user/troubleshooting/db_strict_mode) for information on `DB_MYSQL_MODE`. 
 
 For more information on understanding "webroot" concepts, see 
 [webroot](/user/first_steps/how_do_i_install#what-is-my-webroot) or 

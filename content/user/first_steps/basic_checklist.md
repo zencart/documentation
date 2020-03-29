@@ -1,5 +1,5 @@
 ---
-title: Basic Store Setup Checklist
+title: Basics - Store Setup Checklist
 description: Zen Cart Basic Store Setup Checklist
 category: first_steps 
 weight: 10
@@ -79,7 +79,7 @@ Note:
 
 *   If you have multiple languages defined, you'll be able to enter product and category names and descriptions in various languages.
 
-*   To add images, click on the _Browse_ button beside the category/product image field, and select the file on your computer. Then choose the _upload to directory_ folder to store the image in on your server. If the folder you wish to use isn't there, you'll need to go and create it with your FTP program first.
+*   To add images, click on the _Browse_ button beside the category/product image field, and select the file on your computer. Then choose the _upload to directory_ folder to store the image in on your server. If the folder you wish to use isn't there, you'll need to go and create it with your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) first.
 
 *   The products URL is an optional external link where the customer can go to see more information about this product. If it's a link to an HTML page on your site, enter the full URL to that page. For example, perhaps you are a computer reseller and selling Microsoft™ products. You would provide good info in the main description, but could provide a URL where the customer could go directly to the Microsoft™ site to get even more detailed info if they desired. Note: Keep in mind that anytime you send a customer to someone else's site, you are potentially sending customers away from you, which is often not a good idea. Be careful not to send them to a place where they could actually buy the same product from someone else instead of you.
 

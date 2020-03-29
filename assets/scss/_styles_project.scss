@@ -23,8 +23,11 @@ pre > code {
   flex-grow: unset; 
 }
 
-.td-content {
-  .lead {
-     display: none !important; 
+/* Hide description on leaf pages */ 
+.td-page {
+  .td-content {
+    .lead {
+       display: none !important; 
+    }
   }
 }

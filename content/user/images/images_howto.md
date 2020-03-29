@@ -1,11 +1,9 @@
 ---
 title: Image Preparation - how to 
 description: Preparing and Optimizing Images for Zen Cart 
-category: products
+category: images
 weight: 10
 ---
-
-FIXME - link to admin_pages 
 
 If you are uploading photographic type images, the format should be .jpg; if you are using clip-art style pictures, the images should be in .gif or .png format.  
 
@@ -18,13 +16,13 @@ File size is still an important issue - even with the spread of broadband, the m
 
 **ZC and image handling**  
 
-ZC displays images in 3 sizes* - the small ones (thumbnails) shown in the various listings, a medium size used on the Product Info page and a large version accessed from the "larger image" link on the Product Info page.  
+ZC displays images in 3 sizes - the small ones (thumbnails) shown in the various listings, a medium size used on the Product Info page and a large version accessed from the "larger image" link on the Product Info page.  
 
-*You can set different sizes for the different types of listing, but I'd suggest for the sake of uniformity through your site that you set all those to the same dimensions as your "small" setting.  
+You can set different sizes for the different types of listing, but I'd suggest for the sake of uniformity through your site that you set all those to the same dimensions as your "small" setting.
 
-You can set the sizes for the small and medium by going to **admin>configuration>images**. If you want all your images to be the same width but the heights may vary, then set the Width to the figure you require and the height to 0 and make sure **Calculate Image Size** is turned on. Conversely, if you want all the images to be the same height, then set the Width to 0 and the height to the figure you require.  
+You can set the sizes for the small and medium by going to [Admin -> Configuration -> Images](/user/admin_pages/configuration/configuration_images/). If you want all your images to be the same width but the heights may vary, then set the Width to the figure you require and the height to 0 and make sure *Calculate Image Size* is turned on. Conversely, if you want all the images to be the same height, then set the Width to 0 and the height to the figure you require.  
 
-You can now simply upload all your pics via FTP to your images folder and let the coding do all the work - but this will generally end up with you having a far from perfect result. 
+You can now simply upload all your pics using your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) to your `/images` folder and let the coding do all the work - but this will generally end up with you having a far from perfect result. 
 
 Why are the results not (usually) perfect? The ideal we are seeking is a clear image that displays quickly, but by only loading one image to be used in a variety of sizes by ZC, there is usually going to be a compromise on one or the other - or both. 
 
