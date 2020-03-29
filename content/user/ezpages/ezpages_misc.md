@@ -62,5 +62,11 @@ There are two ways to turn off the EZ-Pages header bar. Firstly, it won't show i
 Even quicker would be to go to Admin > Configuration > EZ-Pages Settings and set the value of "EZ-Pages Display Status - HeaderBar" to zero.
 
 ---
+### How can I add Meta Tags to my EZ-Pages? 
+
+Use the [EZ-Pages Meta Tag Fields](https://www.zen-cart.com/downloads.php?do=file&id=746) mod. 
+
+
+---
 <!-- please keep this at the end --> 
 {{< faq_questions >}}

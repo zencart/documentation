@@ -15,6 +15,8 @@ When downloading files from the internet, it's very important to verify that the
 
 See [this page](/user/first_steps/useful_tools/#hash-validation-tools) for a list of checksum validation tools. 
 
+---
+
 ### What is CHMOD and what do the numbers mean?
 
 **Background:** The recommended permission for configure.php files is 444. 

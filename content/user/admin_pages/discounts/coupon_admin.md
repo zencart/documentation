@@ -126,5 +126,5 @@ To create a new coupon, press the insert button  and fill in these fields:
 
 </table>
 
-For more information about coupons, see [this page](/user/modules/coupons/). 
+For more information about coupons, see [this page](/user/order_total/coupons/). 
 

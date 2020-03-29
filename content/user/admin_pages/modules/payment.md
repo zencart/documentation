@@ -7,6 +7,14 @@ weight: 10
 
 Payment modules allow you to accept payment from your customers. 
 
-For more information see [these pages](/user/modules/). 
+As of Zen Cart 1.5.6, the built in payment modules are: 
 
-Developers please see [these pages](/dev/code/modules/). 
+- authorizenet
+- authorizenet_aim
+- cod
+- firstdata_hco
+- moneyorder
+- PayPal (Standar, Pro, Express Checkout)
+- Square 
+
+For more information on payment modules, see [these pages](/user/payment/). 
