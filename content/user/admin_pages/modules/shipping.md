@@ -7,6 +7,16 @@ weight: 20
 
 Shipping modules allow you to charge your customers for delivery. 
 
-For more information see [these pages](/user/modules/). 
+As of Zen Cart 1.5.6, the built in shipping modules are: 
 
-Developers please see [these pages](/dev/code/modules/). 
+- flat 
+- freeoptions 
+- freeshipper 
+- item
+- perweightunit
+- storepickup
+- table
+- zones  
+
+For more information on shipping modules, see [these pages](/user/shipping/). 
+
