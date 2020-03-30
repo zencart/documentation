@@ -7,7 +7,7 @@ weight: 4
 Determining Tax Rate
 ============
 
-In essence, this is really just a problem of defining correct  Zone/Geo Zone definitions for EU member states, and Design75's post at http://www.zen-cart.com/showthread.php?213763-Digital-Seller-New-2015-EU-Digital-VAT-Affects-You&p=1265814#post1265814 may be useful here.
+In essence, this is really just a problem of defining correct  Zone/Geo Zone definitions for EU member states, and Design75's post at https://www.zen-cart.com/showthread.php?213763-Digital-Seller-New-2015-EU-Digital-VAT-Affects-You&p=1265814#post1265814 may be useful here.
 
 However there are some gotchas to look out for.
 With standard goods in Zen Cart where the supplier is in the EU, prices are shown with tax included, and the tax rate is determined by the Store Country.
