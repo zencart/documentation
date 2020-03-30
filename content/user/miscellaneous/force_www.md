@@ -5,6 +5,7 @@ category: miscellaneous
 weight: 10
 ---
 **Scenario:**
+
 Customer types in `YOURSITE.com` when trying to enter your website.
 
 In most cases this will let them get to your site fine.

@@ -7,9 +7,10 @@ weight: 10
 
 ## A product owns 1 filename ...
 
-_Note: the_ **_base image name is the original image name loaded for the product._  
+Note: the base image name is the original image name loaded for the product.
 
-**The concept of multiple images is best explained using an example:  
+The concept of multiple images is best explained using an example:  
+
 From the Admin, you edit a product and specify an image file called:  
 `a_bugs_life.gif` and put it in the `/images/dvd`
 directory via the drop down.  

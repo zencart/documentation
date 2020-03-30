@@ -6,12 +6,15 @@ weight: 10
 ---
 
 **Situation:**
+
 I'm getting this error when trying to login from the customer screen "There was a security error when trying to login"
 
 **Cause:**
+
 Zen Cart has a security feature to prevent spoofed external logins. A "security token" field must exist on all login forms, actually on all forms submitting data via POST. This token must be current (not expired), and must be submitted with the rest of the form data; in the case of login, that would be the login username+password in order for logins to work properly.
 
 **Remedy:**
+
 First, if this is happening on a page that has been sitting at a login prompt for longer than about 20 minutes, it could be that the security token has expired in the background. Refreshing the page fixes that, and so does getting the login failure (ie: after the login failure the token is refreshed and the next login will work fine).
 
 If it is happening *all the time* and not just once in awhile, then it could be a coding issue with your template or customizations you've made to your site or with plugins you've installed (or maybe you upgraded from an older version that didn't have the security protections):

@@ -5,6 +5,8 @@ category: troubleshooting
 weight: 10
 ---
 
+---
+
 ### My shipping is figured wrong, it is 3 pounds too heavy
 Any shipping module that uses weight for the calculations also takes into account a built-in Tare weight.
 The Tare setting (configurable in your store Admin) adds extra weight to compensate for packaging materials.
@@ -26,7 +28,8 @@ Disabled completely = 0:0
 ```
 
 This way both the Tare for small to medium packages has a flexible option of percentage + weight and the Large Package increase has an option of a percentage + weight.
-<hr />
+
+---
 
 ### Sorry, we are not shipping to your region at this time.
 This message usually occurs when you have no available shipping modules for that customer's address.
@@ -38,7 +41,7 @@ or it's installed but has a Shipping Zone restriction set on it, and the custome
 
 Or maybe the order qualifies for Free Shipping, but you don't have the freeshipper module installed.
 
-<hr />
+--- 
 
 ### The USPS module is returning an error when I try to checkout
 
@@ -52,4 +55,3 @@ You need to call or email USPS and have them move your account to the production
 
 See [USPS](/user/shipping/usps/).
 
-<hr />

@@ -6,6 +6,7 @@ weight: 10
 ---
 
 **To Enable/Disable the Product Notification System**
+
 Go to Admin->Configuration->Customer Details  
 Change the setting for "Customer Product Notification Status" on or off according to the inline help text.  
 

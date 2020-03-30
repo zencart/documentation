@@ -20,6 +20,7 @@ You will need to arrange with your hosting company to have SSL capability added 
 - when you purchase the certificate, decide FIRST whether you want your SSL URL to include the `www.` prefix or not. Ideally ask the certificate company to allow you to use BOTH. They can do that, usually at no extra charge.  
 
 **IMPORTANT NOTE ABOUT SSL AND ZEN CART:**
+
 It is important that your hosting company's servers be configured to serve both SSL and non-SSL content from the SAME folder on the SAME server. Attempting to use a hosting service whose SSL service is on a separate server or points to a separate folder will result in numerous operational problems, and possibly very complicated maintenance problems.  
 - The hosting company should allow the `$_SERVER` variable values to be set via traditional means (ie: 'SSL=on' or 'SERVER_PORT=443' or 'HTTPS=1', etc). If they can't do that, then Zen Cart may have challenges switching into SSL mode automatically. Most good reputable hosting companies already do this. Those who don't should generally be avoided.
 

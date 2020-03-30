@@ -83,7 +83,7 @@ VPS is more expensive but more secure and provides greater flexibility.
 
 Hosting accounts also offer different OS versions.  The
 Zen Cart project recommends Linux with Apache (or Linux with Nginx),
-**not** Windows with IIS. 
+but **not** Windows with IIS. 
 
 Most users will want a hosting account that offers a Control Panel, such
 as CPanel.  The control panel gives you easy access to the underlying 

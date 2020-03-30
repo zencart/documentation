@@ -94,6 +94,7 @@ And for product-images, make sure you don't have spaces and hyphens in the produ
 * * *
 
 **Other Information**  
+
 If you are using Yahoo Hosting, you might want to enable their [script logs](http://help.yahoo.com/l/us/yahoo/smallbusiness/webhosting/php/php-05.html).
 
 * * *
