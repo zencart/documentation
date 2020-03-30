@@ -46,7 +46,8 @@ Then make sure you can visit your site using your SSL URL without getting server
 
 And then you can tell Zen Cart to use your new SSL URL. See the FAQ below for that part.  
 
-Further Related Reading:  
+### Further Related Reading:  
+
 - [How do I enable SSL?](/user/installing/enable_ssl/)
 
 - [What is an SSL certificate?](/user/security/ssl_cert/) 

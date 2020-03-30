@@ -127,5 +127,6 @@ SSL Certificates are an add-on to a hosting account, and are not directly tied t
 Certificates cannot be directly transferred to another host due to the public/private key generation systems. This is primarily to protect you against theft of identity or the certificate. To move an existing certificate to another server requires that the Issuer (whoever you bought the certificate from originally) re-issue the certificate tied to the new private/public key of your new hosting server, sometimes for a nominal re-issuance fee. Thus, it's simplest to issue certificates around the same time as switching hosting from one place to another.
 
 For more information on SSL, see these articles: 
+
 * [What is an SSL certificate?](/user/security/ssl_cert)
 * [How do I enable SSL?](/user/installing/enable_ssl)

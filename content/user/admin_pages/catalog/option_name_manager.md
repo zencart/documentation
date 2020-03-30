@@ -67,7 +67,7 @@ The following settings are for image layout purposes
     *   4 = Element (check box/radio button) Below Image and Option Name
     *   5 = Element (check box/radio button) Above Image and Option Name
 
-Click UPDATE.
+Click *UPDATE*.
 
 You now need to set option values in [Admin - Catalog - Option Value Manager](/user/admin_pages/catalog/option_value_manager/) before adding them to your products as attributes (unless you are only using TEXT and FILE).
 

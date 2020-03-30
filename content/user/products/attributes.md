@@ -142,6 +142,7 @@ You can look up a product in a couple ways:
 
 **b) Add the Attribute Option Name+Value Pairs**  
 Once the Product is displayed that you want to add attributes to, go to the Add Attributes box  
+
 - The Product Name should already be selected.  
 
 1\. Now select the Option Name  

@@ -31,6 +31,7 @@ includes/something_else.php on line 67
 If the "headers already sent" error appears AFTER any other error, then you need to fix that other error FIRST. (The error message itself is what caused headers to be sent, so fixing that error will cause the second error to go away too.)  
 
 If the "started at" refers to line 1, then the root cause is one of two things: 
+
 - a space (possibly a blank line) before the opening **&lt;?php** tag or 
 - **incorrect encoding** on the file.  
 
@@ -41,10 +42,11 @@ Remember, if your language is in UTF8, then you MUST encode the file as "UTF8-wi
 a) look for where it 'started at'  
 b) track the line number  
 c) check what's normally happening on that line.  
---- If it's the end of the file, then it's blank spaces.  
---- If it's the start of the file, it's likely spaces or incorrect encoding.  
---- Elsewhere it could be a syntax error or the result of an "echo()" statement which is displaying info or perhaps debug code.  
---- Common syntax errors include the use of single-quotes inside statements that already have single-quotes. Check to be sure your quotes aren't mismatched. If you need to use single-quotes while inside other single-quotes, change yours to \' instead of just '.  
+
+- If it's the end of the file, then it's blank spaces.  
+- If it's the start of the file, it's likely spaces or incorrect encoding.  
+- Elsewhere it could be a syntax error or the result of an "echo()" statement which is displaying info or perhaps debug code.  
+- Common syntax errors include the use of single-quotes inside statements that already have single-quotes. Check to be sure your quotes aren't mismatched. If you need to use single-quotes while inside other single-quotes, change yours to \' instead of just '.  
 d) the rest of the info simply shows other execution information, mainly the part of the code that discovered that it cannot proceed as expected due to the problem that happened in the 'started at' location.  
 
 To change the encoding on the file, look for the "Save As" menu item in your

@@ -13,6 +13,7 @@ Caveat: Also, using this option poses a security risk because error messages wil
 
 ### Enabling STRICT_ERROR_REPORTING
 To enable `STRICT_ERROR_REPORTING`, simply use your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) to upload a simple file to your store's site like this:
+
 - For storefront problems, put it at: `/includes/local/configure.php`
 - For admin problems, put it at: `/admin/includes/local/configure.php`
 

@@ -58,11 +58,13 @@ you need to copy these files to your server.  Use your
 then to the folder where the file is supposed to exist. 
 
 Example: 
+
 - Your webroot is `/home/johndoe/public_html`
 - Your template is `custom`
 - The file you are changing is `includes/languages/custom/english.php`
 
 Steps: 
+
 - Using FTP, connect to `YOURSITE.com`.  
 - Change directories so you get to the webroot.  
 - Change directories from there so that you get to the folder for the file you are changing.  At this point, you will be in `/home/johndoe/public_html/includes/languages/custom`

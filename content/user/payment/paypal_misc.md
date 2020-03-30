@@ -102,6 +102,7 @@ You can access your Fraud Management Filters settings by logging in to your PayP
 
 
 Your PayPal Express Checkout and/or Website Payments Pro module settings require 4 components to be set correctly in order to talk to PayPal successfully. If any one of them is incorrect, you'll not be able to authenticate and submit transactions:
+
 - API Username
 - API Password
 - API Signature

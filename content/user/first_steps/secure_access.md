@@ -14,6 +14,7 @@ FIXME need content
 Although this was a common way to do it back in 2003, it is no longer a good practice, since it is not secure. 
 
 Some secure options are:
+
 - FTPS
 - SFTP
 - Require explicit FTP over TLS

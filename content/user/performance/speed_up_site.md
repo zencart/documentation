@@ -20,11 +20,12 @@ Go to [Admin->Tools->Layout Boxes Controller](/user/admin_pages/tools/layout_box
 
 3\. Ensure your images are optimized for your site... specifically, use small images for thumbnails, slightly larger for product pages (`_MED` images), and large detailed images for "click to enlarge" (`_LRG`) images.  
 
-Related FAQ articles:  
+### Related FAQ articles:  
 - [Adding Multiple Images To Products](/user/images/images_multiple/) 
 - [Preparing and Optimizing Images](/user/images/images_howto) 
 
 4\. In [Admin->Configuration->Attribute Settings](/user/admin_pages/configuration/configuration_attributesettings/), there are a few switches which, if turned off, will reduce the number of queries used to calculate and display product information:  
+
 - Enable Downloads -- If you're not doing downloads on your site, turn this off.  
 - Enable Price Factor -- If you're not using price-by-attributes support, turn this off to stop those calculations and the related queries  
 - Enable Qty Price Discount -- If you're not doing quantity discounts, turn this off  

@@ -19,9 +19,11 @@ So, **FIRST you should familiarize yourself with:** [setting up attributes](/use
 2.  Go to **Option Values Manager** and add what you want to call it ...  
     example: **_Zip File_**  
     If you have multiple choices you could have these as the Option Names you create:  
+
     - MS Word Zip  
-    - Note Pad Zip  
+    - Plain Text Zip  
     - etc.
+
 3.  Go to **Attributes Controller** and find the Product ...  
     Add the Attribute as:
 
@@ -182,19 +184,17 @@ If you are using download-by-redirect, then your "pub" folder needs to be read-w
 ## Important Facts about Download Settings
 
 1.  Downloads are NOT Virtual Products so use:  
-    _Product is Virtual: No, Shipping Address Required  
+    *Product is Virtual: No, Shipping Address Required*
 
-    _
 2.  Downloads are NOT Always Free Shipping so use:  
-    _Always Free Shipping: No, Normal Shipping Rules  
+    *Always Free Shipping: No, Normal Shipping Rules*
 
-    _
-3.  Downloads in an order by itself will never see the checkout_shipping page ... if you do then your Product is setup wrong for Downloads  
+3.  Downloads in an order by itself will never see the checkout_shipping page.  If you do then your Product is not setup correctly for Downloads.
 
 4.  If on Linux/Unix, /pub should be writable (usually 777 or 755 depending on the host server) and Redirect should be ON  
     If you cannot use Redirect ON, ask your hosting site why they cannot follow the symbolic link between the `/download` and `/pub` directories  
 
-5.  If on a Windows server, /pub does NOT need to be writable/777 since you do not use this directory because symlinks typically don't work on Windows servers, and Redirect is OFF since Redirect requires symlink support.  
+5.  If on a Windows server, `/pub` does NOT need to be writable/777 since you do not use this directory because symlinks typically don't work on Windows servers, and Redirect is OFF since Redirect requires symlink support.  
 
 6.  Download filenames should not use special characters, spaces, etc  
 
@@ -202,7 +202,7 @@ If you are using download-by-redirect, then your "pub" folder needs to be read-w
 
 8.  Download files should be loaded to the `/download` directory  
 
-9.  On the Admin->Catalog->Attributes Controller you should see a green dot next to the filename of the Download itself
+9.  On the [Admin->Catalog->Attributes Controller](/user/admin_pages/catalog/attributes_controller/) page, you should see a green dot next to the filename of the Download itself.  Similarly, on [Admin->Catalog->Downloads Manager](/user/admin_pages/catalog/downloads_manager/), you should see a green dot next to the file. 
 
 **ALSO:** 
 - See the related article about [Download Delivery Methods](/user/products/download_delivery_methods). 

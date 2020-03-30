@@ -44,6 +44,7 @@ The permissions are set on the host server usually through the user's control pa
 ### Connection to Database failed ... Access denied for user: 'myname@localhost' (Using password: YES)
 
 This suggests you have something wrong with any of:
+
 - username
 - password
 - database name
@@ -53,6 +54,7 @@ This suggests you have something wrong with any of:
 When you created your database, did you grant the user access to the database?
 
 Proper database-configuration includes:
+
 - make a database
 - make a user, with password
 - grant the user permission to use the database

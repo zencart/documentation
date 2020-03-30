@@ -6,6 +6,7 @@ weight: 11
 ---
 
 Coupons can be restricted in the following ways:
+
 - not applying to specific products
 - only applying to specific products 
 

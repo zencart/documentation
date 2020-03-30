@@ -8,7 +8,7 @@ weight: 10
 
 _(Last updated: Dec 1, 2019)_  
 
-Minimum</u> server requirements:  
+*Minimum* server requirements:  
 
 *   Zen Cart operates on a standard "LAMP" stack: PHP, Apache, MySQL on most operating systems (Linux/macOS/Windows)
 *   See the detailed version-compatibility details in the sections below.
@@ -48,6 +48,7 @@ Zen Cart requires a few PHP modules enabled: cURL, MySQLi and Zlib.
 Optional modules: gd and mb_xxxxx. 
 
 <u>**PHP Memory Recommendations**</u>  
+
 - **memory_limit** suggested: **128M** 
 - **post_max_size** and **upload_max_filesize** should be set to whatever max file size you or your customers may upload. Usually **8M** is sufficient for most sites, but if you're accepting huge uploads, set both to the max size of accepted combined uploads.  
 
