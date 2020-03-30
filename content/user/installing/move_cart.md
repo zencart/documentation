@@ -8,6 +8,7 @@ weight: 10
 I have installed Zen Cart to a directory. How do I rename or move that directory?
 
 ***Scenario:*** 
+
 I have been building my cart behind the scenes at: 
 `http://www.mysite.com/shop/`
 I am nearly ready to go live with it at: `http://www.mysite.com/`

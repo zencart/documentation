@@ -25,6 +25,7 @@ Out-of-the-box, the admin foldername is `admin`, but the system requires you to 
 See the instructions for [renaming the admin folder for security reasons](/user/running/rename_admin). 
 
 **WHAT IF I DON'T KNOW MY ADMIN FOLDER NAME?**  
+
 You will require access to the files on your webserver to find out the actual admin foldername. This is typically done via a secure [FTP tool](/user/first_steps/useful_tools/#ftp-tools), or via your browser by logging in to your hosting company's control panel and using their provided "file manager" to browse your site's files.  
 
 The Zen Cart structure is like this:  

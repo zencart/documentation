@@ -8,6 +8,7 @@ weight: 1
 FIXME add details about running entire site in SSL
 
 **Quick Summary:**
+
 `HTTP_SERVER` and `HTTPS_SERVER` are the domain name of your site. Visiting this URL will take customers to the "webroot" of your domain, whether or not your store is located in that spot.  
 
 `DIR_WS_CATALOG` and `DIR_WS_HTTPS_CATALOG` are the foldernames that must be added to the URL in order to take customers to your store. If your store is located in the 
@@ -29,12 +30,14 @@ Tip: In your Admin configure.php, if you set your HTTP_SERVER to a URL starting 
 Of course SSL urls will only work properly if you actually have SSL available on your site, with a valid certificate.
 
 **SSL pages:**  
+
 SSL links/URLs are built similarly:  
 
 `HTTPS_SERVER` plus `DIR_WS_HTTPS_CATALOG` plus the page portion of the URL  
 ie: `http://www.MYSITE.com` plus `/store/` and then whatever the address is to the page requested, such as `index.php?main_page=login`.
 
 **PATHS:**  
+
 `DIR_FS_CATALOG` points to the physical file folder path on the server. If you're only changing the URL of your site and not actually changing the foldername where the site sits, then you don't need to touch this.  
 
 However, keep in mind that there IS a similarity between `DIR_WS_CATALOG` and `DIR_FS_CATALOG`:  
@@ -47,6 +50,7 @@ and thus `DIR_WS_CATALOG` is: `/store/`
 configuration of your hosting account, ie: which folder your account points to for your actual site ... in most cases this folder is named "public_html" or "htdocs" or "httpdocs")  
 
 **Other Paths:**
+
 The following paths should NOT be changed. It is VERY rare to ever need to change any of these. Changing them will result in breaking normal operation of your site.  
 ```
 define('DIR_WS_IMAGES', 'images/');  

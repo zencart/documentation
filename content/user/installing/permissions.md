@@ -78,7 +78,7 @@ chmod -R 777 ./admin/images/graphs
 ```
 
 
-** OPTIONAL: And this line changes all the files (not folders) and files within subfolders (but not the folders themselves) to be ideal for typical webserver use:</font>  
+**OPTIONAL:** And this line changes all the files (not folders) and files within subfolders (but not the folders themselves) to be ideal for typical webserver use:</font>  
 
 ```
 find ./ -type f -exec chmod 644 {} \;

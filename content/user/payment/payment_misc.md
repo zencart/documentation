@@ -59,9 +59,11 @@ To properly configure zones with payment modules requires that you create zones 
 ### How do I authorize a Credit Card but not actually charge it until I ship the goods?
 
 **Question:**
+
 After taking the order in Zen Cart I want the Credit Card to be authorised but not charged to the customer until the goods have been shipped.  I would anticipate the delay from order to shipping to be about a week. How do I go about this?
 
 **Answer:**
+
 This largely depends on your choice of payment gateway, as to whether this option is offered or not.  Most true Merchant Gateways offer this, including Authorize.net AIM.
 
 It is very common to need to prepare the order, then calculate true shipping costs, and update those costs before finally charging the card.  Or at least not charge until the goods are ready to ship.

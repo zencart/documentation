@@ -131,6 +131,7 @@ The same error might appear if you've not yet accepted the WPP agreement in your
 ### PayPal Error - Geographic Region
 
 **Situation:**
+
 The following error occurs when trying to process a payment through PayPal Express near the final stages.
 
 We are sorry for the inconvenience; however, at the present time we are unable to use PayPal to process orders from the geographic region you selected as your PayPal address. Please continue using normal checkout and select from the available payment methods to complete your order.
@@ -138,6 +139,7 @@ We are sorry for the inconvenience; however, at the present time we are unable t
 
 
 **Cause:**
+
 That message appears when the customer has supplied an address that your store doesn't recognize or which is outside the zone-restriction you've applied to that payment module.
 
 When the customer returns from PayPal, their selected address is inserted into their customer record in your store. But if it can't do that insertion because the country doesn't exist in your store, or the state/province/region doesn't match one defined in your store for that country, then the error will also be triggered, because if your store won't accept the address then it has to believe that you've told your store not to accept those addresses. (ie: some people delete several countries from the defaults because they don't want to ship to those, etc).

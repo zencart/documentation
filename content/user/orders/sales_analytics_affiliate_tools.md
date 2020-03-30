@@ -26,7 +26,13 @@ On the "checkout_success" page, there are several pieces of data available:
 *   **$order_summary['products_ordered_ids']** = a list of product ID numbers, delimited by '|'
 
 An analytics or affiliate-tracking system can use these variables as part of their tracking-pixel or other callback notification by simply referencing these variables in their callback/tracking code.  
-(Advanced tip: If passing product ID/model numbers needs a different delimiter in your system, simply do a replacement on it while doing your output, such as: str_replace('|', '@', $order_summary['products_ordered_models']) if you wanted to replace | with @, for example.)  
+
+Advanced tip: If passing product ID/model numbers needs a different delimiter in your system, simply do a replacement on it while doing your output, such as: 
+
+```
+str_replace('|', '@', $order_summary['products_ordered_models']);
+```
+if you wanted to replace `|` with `@`, for example.
 
 ## Examples:  
 
@@ -59,6 +65,7 @@ Simply create a new file: `/includes/modules/pages/checkout_success/jscript_jam.
 ```
 
 **Adding product IDs or Model Numbers on older versions:**  
+
 Add the following extra code before the tracking pixel/script code above if you want to have product ID or Model data available:
 
 ```

@@ -46,25 +46,30 @@ If using Radio buttons and have multiple selections, be sure to set one as a def
 For each download item, you need an **Option Name**  
 For each Option Name, you need one or many **Option Values** depending on the choices needed ...  
 
-<font size="4">**Let's use an example:**</font>  
+**Let's use an example:**
+
 If you have 5 downloads on one Product you need 5 Option Names and 1 Option Value per name:  
 
-<font size="4">**Option Names:**</font>  
+**Option Names:**
+
 Download 1 Option Type: Radiobutton,  Sort Order 10  
 Download 2 Option Type: Radiobutton,  Sort Order 20  
 Download 3 Option Type: Radiobutton,  Sort Order 30  
 Download 4 Option Type: Radiobutton,  Sort Order 40  
 Download 5 Option Type: Radiobutton,  Sort Order 50  
 
-<font size="4">**Option Values**</font>  
-Now ... for each Option Name you make an Option Value ...  
+**Option Values**
+
+Now, for each Option Name you make an Option Value.
 
 The most common reason for having multiple downloads on a product is that the download is big so it is broken into parts for easier access and safer downloading.  
-In such a case, you just need 1 Option Value per Option Name ... this means you just have 5 downloads to go to the Product  
+
+In such a case, you just need 1 Option Value per Option Name.  This means you just have 5 downloads to go to the Product  
 
 If you have many multiple downloads, say each Product has 5 downloads you can pattern this so the names make sense when read on the screen  
 
 **Example for 5 Downloads it would read:**  
+
 Download 1 of 5  
 Download 2 of 5  
 Download 3 of 5  
@@ -72,6 +77,7 @@ Download 4 of 5
 Download 5 of 5  
 
 **For 3 Downloads it would read:**  
+
 Download 1 of 3  
 Download 2 of 3  
 Download 3 of 3  
@@ -100,12 +106,15 @@ Option Value Sort Order: 50
 
 Then make a set for Download 2, 3, 4, 5  
 
-Note: when making these, only make patterns that match  
+Note: when making these, only make patterns that match.
+  
 Download 3 of 1 doesn't make sense so don't make an Option Name: of 1 for the Option Name: Download 3  
 
-<font size="4">**Adding to Products via Attributes Controller**</font>  
-Now you can make the Attribute read correctly based on how many downloads ...  
-Note: You may find a better pattern of text so you don't get lost in making the Attributes ...  
+**Adding to Products via Attributes Controller**
+
+Now you can make the Attribute read correctly based on how many download types it has.
+
+Note: You may find a better pattern of text so you don't get lost in making the Attributes. 
 
 In Attributes Controller:  
 
@@ -134,11 +143,10 @@ Option Value: of 5 [Download 5]
 Download filename of file already uploaded to the `/download` folder.  
 Number of Days and Downloads  
 
-Don't worry on the Sort Order as you set the defaults when these were made ...  
+Don't worry on the Sort Order as you set the defaults when these were made.
 
-When done adding the Downloads ... just click on the Update Sort order button and all will sort nicely ...  
+When done adding the Downloads, click on the Update Sort order button and all will sort nicely. 
 
-==========================  
 
 ### Another way of looking at it:
 
@@ -148,6 +156,7 @@ Add an Option Name: Downloads (could have called this anything)
 Option Type: Radiobutton or Dropdown  
 
 **2\. Option Values Manager ...**  
+
 Add an Option Value:  
 Option Name: Downloads (from dropdown)  
 Option Value: PDF  
@@ -204,7 +213,8 @@ If you are using download-by-redirect, then your "pub" folder needs to be read-w
 
 9.  On the [Admin->Catalog->Attributes Controller](/user/admin_pages/catalog/attributes_controller/) page, you should see a green dot next to the filename of the Download itself.  Similarly, on [Admin->Catalog->Downloads Manager](/user/admin_pages/catalog/downloads_manager/), you should see a green dot next to the file. 
 
-**ALSO:** 
+**ALSO:**
+
 - See the related article about [Download Delivery Methods](/user/products/download_delivery_methods). 
 - See the related article about [Moving your Download Folder](/user/security/relocate_download_folder). 
 

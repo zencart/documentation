@@ -9,11 +9,13 @@ weight: 10
 
 Warning: Cannot modify header information - headers already sent by (output started at /..../includes/something/something/something.php:12) in ..../includes/something_else.php on line 67  
 
-*Common Cause:*
+**Common Cause:**
+
 This warning is often caused by a blank space or extra line at the beginning or end of a .php file.  
 Check the error for the filename that generated the error (ie: the "output started at...." filename), open that file in your text editor and remove the extra spaces or lines immediately <u>before the first</u> **`<?php`** marks in the file, <u>or after the</u> closing **`?>`**  
 
 **<u>Other Causes: Syntax errors</u>**  
+
 In the example above, you'll see 
 
 ```

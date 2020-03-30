@@ -130,10 +130,12 @@ Default Attribute to be Marked Selected: YES
 Use for Display Purposes Only: YES  
 
 **Adding the Attributes to the Products**  
+
 So now to add them to the products.  
 This is done via the Attributes Controller  
 
 **a) Select a Product to add Attributes to**  
+
 You can look up a product in a couple ways:
 
 - Either pick a Category or a Product  
@@ -141,6 +143,7 @@ You can look up a product in a couple ways:
 - When you pick a product,  click display, this sets the category to this product's master category id, so you can now use the Previous/Next if you like.  
 
 **b) Add the Attribute Option Name+Value Pairs**  
+
 Once the Product is displayed that you want to add attributes to, go to the Add Attributes box  
 
 - The Product Name should already be selected.  
