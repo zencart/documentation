@@ -10,16 +10,20 @@ The ability to upload files to your Zen Cart site via a browser is affected by s
 ### PHP Limits on your Server
 Your hosting company has configured your server with certain capabilities and limitations. The default configuration for PHP uploads is often set at just 2 MB.  Some hosting companies increase this. Some do not.
 It is controlled by the following settings in `php.ini` (which you may or may not have control over):
+
 - post_max_size
 - max_file_uploads
+
 Both of these need to be bigger than the largest file size you want to upload.
 
 ### PHP Timeout Limit on your Server
 The speed of the internet connection between your (or your customer's) computer and your webserver will affect how long it takes to upload files. 
 So, in addition to the size limits, there's also the time required to actually *do* the upload.
 The following settings control the length of time PHP is allowed to wait for an action to complete, including uploading on a page:
+
 - max_execution_time
 - max_input_time
+
 Both of these need to be long enough (in seconds) for the time required for the slowest likely connection to upload the largest likely filesize.
 
 ### Changing these PHP Settings

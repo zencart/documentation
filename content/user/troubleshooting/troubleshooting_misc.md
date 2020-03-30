@@ -68,11 +68,13 @@ Your hosting company typically provides this via their control panel.
 - Other hosting systems may have the button elsewhere under admin tools
 - H-Sphere customers may have to enable errorlog support before it's available.
 - Some hosts don't offer it via the control panel; they may offer it via a `/logs` folder instead.  Note that this is not your Zen Cart `/logs` folder - it's a above your webroot at the top of your hosting account folder. 
+
 ---
 ### Error 2006 MySQL server has gone away or 2013 Lost connection to MySQL server during query
 "MySQL server has gone away" means that when you clicked on something to ask Zen Cart to do something, it started processing the request, but when it went to retrieve data from the database, it found that the database connection had disconnected, but not by Zen Cart's request.
 
 Possible causes: 
+
 - slow connection to external systems being accessed to produce part of page contents (e.g.: a USPS shipping quote when USPS servers are running slow)
 - your own webserver is running slow (perhaps due to bogged down processing while the server is handling a bunch of spam email, or if your server is overloaded because your hosting company has too many customers on the one server)
 - your hosting company may have configured the server to expire database connections on a very short time period. Most hosts allow connections to remain open for 30 seconds or more, depending on how they have other systems such as PHP configured.
@@ -122,6 +124,7 @@ We suggest using something at least 8 characters long, and including numbers, an
 This is a generic message which usually indicates your site is having problems accessing data in your MySQL database.
 
 It could be a problem with:
+
 - MySQL not running
 - incorrect DB_xxxxxxx settings in either of your configure.php files
 - syntax error in MySQL statements
@@ -151,6 +154,7 @@ There seems to be a problem connecting to our database. Please give us a few min
 ```
 
 Common causes:
+
 - You've changed your database name or database username on your webserver
 - You've deleted the tables from the database on your server
 - You've changed the `DB_PREFIX` setting in your [configure.php files](/user/miscellaneous/configure) to a value that doesn't match the tables in your database
@@ -172,6 +176,7 @@ To remedy this situation, go to [Admin -> Configuration -> Images](/user/admin_p
 On this page is a list of the various image sizes, choose the image size you wish to edit and set one of the dimensions to 0.
 
 Make sure you also set the following two options:
+
 - *Calculate Image Size* = true
 - *Use Proportional Images on Products and Categories* =1.
 

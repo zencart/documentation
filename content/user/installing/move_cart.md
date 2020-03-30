@@ -16,6 +16,7 @@ What steps do I need to follow to move my site to another folder
 on the same server? 
 
 **Answer:**
+
 - Determine the new foldername where your Zen Cart files will be running from
 - In the case above, move your files from `/shop/` to the root level.  
 If you are moving from `/shop/` to `/store/`, rename the folder. 

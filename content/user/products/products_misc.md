@@ -135,6 +135,7 @@ CAUTION: You need to be sure to ONLY select "product-music" products.  The menus
 
 9. You will need to set up your product Attributes to actually tie the "real" music clips to your products for "Purchase".
 There are a couple tutorials on this process: 
+
 - [Setting up downloads for products](/user/products/downloadable/)
 - [Adding attributes](/user/products/attributes/)
 

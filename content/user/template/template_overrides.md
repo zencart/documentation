@@ -66,6 +66,7 @@ You can also place overrides in these folders:
 There are also other mechanisms to allow you modify the 
 behavior of the system without touching core files.
 These are more advanced topics, intended for developers. 
+
 - [Notifiers/Observers](/dev/code/notifiers/)
 - [Init System](/dev/code/init_system/)
 - [Extra folders](/dev/code/extra_folders/) 

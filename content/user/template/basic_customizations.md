@@ -86,6 +86,7 @@ If you wish to change admin functionality, you will have to edit the core files 
 
 This is handled in many ways. 
 There are administrative "switches" under 
+
 - [Admin-> Configuration-> Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/) 
 - [Admin-> Configuration-> Product Info](/user/admin_pages/configuration/configuration_productinfo/) 
 - [Admin-> Configuration-> Product Listing](/user/admin_pages/configuration/configuration_productlisting/) 

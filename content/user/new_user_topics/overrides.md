@@ -71,10 +71,12 @@ Suppose you want to add a link to the Information Sidebox.
 - Default File: `includes/modules/sideboxes/information.php`
 
 Here are the steps: 
+
 - Create a new directory `/includes/modules/sideboxes/YOURTEMPLATE/` if it doesn't exist 
 - Copy `includes/modules/sideboxes/information.php` to this new directory  
 - You now have `includes/modules/sideboxes/YOURTEMPLATE/information.php`
 - Open the file in a text editor, and add a line to the information array.  We won't use language constants for clarity: 
+
 ```
 $information[] = '<a href="' . zen_href_link(FILENAME_EZPAGES, "id=27") . '">' . "My New EZ-Page". '</a>';
 ```
@@ -86,6 +88,7 @@ Suppose you want to add a link to the Shopping Cart Page
 - Default File: `includes/templates/template_default/templates/tpl_shopping_cart_default.php` 
 
 Here are the steps: 
+
 - Presumably the directory `/includes/templates/YOURTEMPLATE/templates` exists, but if it doesn't, create it. 
 - Copy `includes/templates/template_default/templates/tpl_shopping_cart_default.php` to this new directory  
 - You now have `includes/templates/YOURTEMPLATE/templates/tpl_shopping_cart_default.php`

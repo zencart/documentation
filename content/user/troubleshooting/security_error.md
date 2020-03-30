@@ -22,6 +22,7 @@ If it is happening *all the time* and not just once in awhile, then it could be 
 
 Other Considerations:
 If you're seeing this problem,  then one of the following may be the root cause:
+
 - old obsolete template files, as explained above
 - your browser is unable to set session cookies, or you're using Private Browsing mode or Incognito mode. 
 - you've set your site up on an IP address instead of a domain name, thus preventing session cookies from being set properly
