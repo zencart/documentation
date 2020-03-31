@@ -57,6 +57,7 @@ Zen Cart can add a fee line item on the basis of a variety of factors:
 - A Low Order Fee can be assessed on orders below a certain value. 
 - A Payment module fee/discount can be added to an order based on the 
 payment method chosen using the [Ceon Payment Surcharges/Discounts](https://www.zen-cart.com/downloads.php?do=file&id=1279) mod. 
+- You can also add fees when you assign attributes to products.  See [Admin->Catalog->Attributes Controller](/user/admin_pages/catalog/attributes_controller/). 
 
 See [Order Total Modules](/user/order_total/order_total/) for more details. 
 
@@ -77,4 +78,19 @@ Yes - you can limit admin users to a subset of the superuser capabilities using
 This capability is not built into Zen Cart at the current time, but an
 excellent mod exists called [Ceon URI Mapping](https://www.zen-cart.com/downloads.php?do=file&id=2250). 
 
+---
+
+### Can I login to a customer's account? 
+Yes you can.  See [Master Password capabilities](/user/admin/master_password). 
+
+---
+
+### Can I add a new page to my cart easily? 
+
+Yes, there are several ways you can [add a new page](/user/customizing/add_pages). 
+
+--- 
+<!-- please keep this at the end --> 
+### Is there a list of features that Zen Cart offers? 
+Yes - see [What features does Zen Cart offer?](/user/about_us/features)
 
