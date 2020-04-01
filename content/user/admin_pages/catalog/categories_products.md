@@ -1,20 +1,24 @@
 ---
-title: Categories->Products
-description: Zen Cart Categories->Products Admin Page 
+title: Categories/Products (Products Level)
+description: Zen Cart Products Admin Page 
 category: admin_pages
 weight: 12
 ---
 
 If you are at a level where the Categories screen only shows products, 
-the Action icons at the right allow you to edit, delete, move or copy 
-the product, to use the 
-[attributes controller](/user/admin_pages/catalog/attributes_controller/), 
-the [products price manager](/user/admin_pages/catalog/products_price_manager/), 
-or the [meta tags editor](/user/admin_pages/catalog/products_meta_tags_editor). 
+there are a set of action icons on the right.
 
-The product copy operation may be done in one of two ways: 
-- replicate the product, creating a duplicate product, or 
-- Link this product into another category, creating a [linked product](/user/products/linked_product/).
+<img src="/images/products_icons.png" alt="Product Listing Icons" style="height: 100px !important; float: right" /> 
+<br clear="all" />
+
+These icons allow you to:
+- edit product 
+- delete product 
+- move product (change categories)
+- copy product (duplicate or create [linked product](/user/products/linked_product))
+- use the [attributes controller](/user/admin_pages/catalog/attributes_controller/)
+- use the [products price manager](/user/admin_pages/catalog/products_price_manager/)
+- use the [meta tags editor](/user/admin_pages/catalog/products_meta_tags_editor). 
 
 The product edit screen allows you to set the following values for a product: 
 
