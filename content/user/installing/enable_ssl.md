@@ -42,7 +42,7 @@ Change `includes/configure.php` to:
 
 ```
 define('HTTP_SERVER', 'https://www.YOURSITE.com');  
-define('HTTPS_SERVER', 'https://www.YOURSITE.com'); 
+define('HTTPS_SERVER', 'https://www.YOURSITE.com');  // In older Zen Carts only 
 define('ENABLE_SSL', 'true');  
 ```
 
@@ -57,7 +57,9 @@ define('HTTPS_CATALOG_SERVER', 'https://www.YOURSITE.com');
 define('ENABLE_SSL_CATALOG', 'true');  
 ```
 
-Modern versions of Zen Cart do not have `HTTPS_SERVER` in the 
+Modern versions of Zen Cart 
+(1.5.5 and above) 
+do not have `HTTPS_SERVER` in the 
 `YOURADMIN/includes/configure.php` file. 
 
 **IMPORTANT NOTE:** Remember, your configure.php files are probably marked read-only. You'll need to change them to read-write in order to upload your updates, and then put them back to read-only. [See the FAQ on setting file permissions.](/user/installing/permissions/)

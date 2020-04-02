@@ -24,6 +24,6 @@ Zen Cart also offers a number of order total plugins:
 - [Better Together](https://www.zen-cart.com/downloads.php?do=file&id=201)
 - [Quantity Discounts](https://www.zen-cart.com/downloads.php?do=file&id=135)
 
-More order total plugins may be found [in the Other Modules plugins area](https://www.zen-cart.com/downloads.php?do=cat&id=7).
+More order total plugins may be found in the [Other Modules plugins area](https://www.zen-cart.com/downloads.php?do=cat&id=7).
 
 Developers wishing to create an order total module, see [these pages](/dev/code/modules/). 

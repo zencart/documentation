@@ -36,6 +36,10 @@ if you wanted to replace `|` with `@`, for example.
 
 ## Examples:  
 
+### Snap Affiliates
+No need to edit any core Zen Cart files.  
+Use the mod [Snap Affiliates](https://www.zen-cart.com/downloads.php?do=file&id=1635). 
+
 ### iDevAffiliate  
 No need to edit any core Zen Cart files.  
 Simply create a new file: `/includes/modules/pages/checkout_success/jscript_idevaffiliate.php` and be sure to set the correct URL for your iDevAffiliate system, and appropriate profile number:
@@ -95,4 +99,4 @@ Advanced programmers might choose programmatic hooks instead of javascript callb
 
 This could allow a bespoke tracking service to be invoked without needing to force extra activities down to the customer's browser.  
 
-Related article: [Adding a tracking pixel](/user/template/tracking_pixel)
+Related article: [Adding a tracking pixel](/user/template/tracking_pixel).

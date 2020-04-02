@@ -4,6 +4,7 @@ description: Known Bugs in Zen Cart
 category: about_us
 weight: 10
 ---
+<!-- RELEASETIME - update -->
 
 For every release, a known bugs thread is created on the Zen Cart forum
 to provide an easy way of tracking the issues that have been resolved.

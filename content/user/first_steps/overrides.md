@@ -1,13 +1,21 @@
 ---
-title: Basics - default files, template default and overrides 
+title: Basics - Default files, template default and overrides 
 description: Default Files, Override Files and Templates in Zen Cart Basic 
 category: first_steps 
 weight: 10
 ---
 
 Zen Cart has a templating capability that allows you to modify the 
-functionality and appearance of the cart.  When done properly, you 
-can "revert" to original behavior and appearance for troubleshooting. 
+functionality and appearance of the cart.  This capability sometimes called 
+"overrides," "template overrides," or "overriding a file."  
+
+Once you have built a new template (more on this later) and overrridden
+the files you want to change, you can switch back and forth between
+your new template and the default template from the admin using 
+[Tools > Template Selection](/user/admin_pages/tools/template_selection/).
+Thus, the advantage of using overrides versus modifying the original files directly
+is that with overrides, you can "revert" to original behavior and appearance 
+quickly and easily for troubleshooting. 
 
 When you first install Zen Cart, the template which is in use is called
 `responsive_classic`.  This is a new template, introduced in Zen Cart 1.5.5,
@@ -70,6 +78,11 @@ is a template modification of
 
 If a templated file doesn't exist in your cart, you can 
 create it by copying the original from the default file. 
+
+And remember: if you aren't changing a file, there is *no need* to copy it 
+from the default file - the default file will be used by Zen Cart
+automatically.  For this reason, you should expect your template to have
+many fewer files than the default template.  
 
 Ready to read more about overrides? [Go here](/user/new_user_topics/overrides).
 

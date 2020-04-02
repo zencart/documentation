@@ -20,7 +20,7 @@ If you offer to let your customers pay by Credit Card, there are a couple ways t
 a) An online banking service such as [PayPal](https://www.zen-cart.com/partners/paypal) where the customer makes their payment to the online service, and then that online service sends the money to you via your account with them. A service charge will be levied for each transaction.  
 
 b) Automated processing via a gateway service.  
-In this case, your customer enters their credit card information directly onto your website.  Your store then takes that information and talks to a credit-card-processing company's "gateway" to authorize the card/purchase ... while the customer waits. If successful, the order is placed, and money is collected from the cardholder's account, and forwarded to your business bank account according to a prescribed schedule. If it fails, the customer is notified to try again with correct information, thus preventing the use of invalid cards.  
+In this case, your customer enters their credit card information directly onto your website.  Your store then takes that information and talks to a credit-card-processing company's "gateway" to authorize the card/purchase while the customer waits. If successful, the order is placed, and money is collected from the cardholder's account, and forwarded to your business bank account according to a prescribed schedule. If it fails, the customer is notified to try again with correct information, thus preventing the use of invalid cards.  
 
 To use this option, you need a business bank account, a merchant account, and a gateway service provider account, all of which incur monthly fees. You can find [recommended payment gateway providers here.](https://www.zen-cart.com/content.php?14-Payment-Processing). 
 

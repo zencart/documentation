@@ -103,8 +103,6 @@ It is wise to observe caution while working in your admin area:
 
 - **use only one browser tab** to access your admin area
 
-- **do NOT visit other sites (ESPECIALLY email sites like Gmail, Yahoo! Mail or Hotmail) when your browser has an active admin login session enabled -- even in another tab** (this is because if you're clicking links in emails you run the risk of opening yourself up to XSS problems if you're logged into your store admin at the same time. It's like handling raw chicken and licking your fingers ... do so at your own risk!)
-
 - **always log out of your admin** when not using it
 
 

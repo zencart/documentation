@@ -33,6 +33,6 @@ weight: 10
 
 *   Hold independent contests or raffles.
 
-*   Use barcodes as avatars ... that is just sneaky advertising.
+*   Use barcodes as avatars.  
 
 

@@ -5,11 +5,15 @@ category: about_us
 weight: 10
 ---
 
+<!-- RELEASETIME - update --> 
+
 [Release Announcements](https://www.zen-cart.com/forumdisplay.php?2-Zen-Cart-Release-Announcements) are provided on the Zen Cart forum. 
 
 See also [Zen Cart Database Schema](/dev/schema/).
 
 See also [Zen Cart Known Bugs](/user/about_us/known_bugs/).
+
+---
 
 This is the release history of the Zen Cart product.
 

@@ -155,6 +155,15 @@ FILE 2:
 
 * If you are using the same text in multiple places, please don't copy and paste; instead, use a shortcode or modify a template.  This is an advanced area; please ask first.  Alternately, you can simply link to the content in the main place it exists. See the section *Links* above. 
 
+* Exercise caution when changing a header (a line preceded by one or more # signs).  The reason is that the text of this header is a link which is used to crosslink.  So if you have 
+
+```
+### Header One 
+```
+
+
+The link to this would be `[See Header One](/user/folder/file#header-one)`.  And if you change the "Header One" to something else, this link will no longer work! 
+
 <br />
 
 ## CSS
@@ -182,8 +191,22 @@ please simplify it to just use Markdown markup (remove the span).
 
 `## Adding Currencies`
 
+<br />
+## Notes for the Future
 
-- If you see a page that contains `FIXME`, this means the page was simply copied straight from the legacy Wiki or Tutorials area, and it should be verified against the latest Zen Cart release for accuracy.  Please edit as needed and submit a PR.
+- If there's a bug in the content that you just don't have time to fix, mark it with a visible `FIXME` so a future maintainer (maybe you!) will notice it and take care of it. 
+
+```
+FIXME - clarify the difference between foo and bar.
+```
+
+- If there's content that needs to be revisited at every release, mark it with a hidden `RELEASETIME` so people can quickly find content that needs refreshing. 
+
+```
+<!-- RELEASETIME - be sure this still applies --> 
+```
+
+
 
 
 

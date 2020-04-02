@@ -5,6 +5,7 @@ category: email
 weight: 10
 ---
 
+FIXME - please review content
 
 _Copyright (c) 2008 by Chuck Redman, for Zen Cart®, All Rights Reserved_
 
@@ -61,11 +62,11 @@ In order to make all of this work, each and every one of the domains and subdoma
  granniesphotos.mydomain.com IN A 10.10.10.10
 </pre>
 
-... which means 'You can find mydomain.com at IP address 10.10.10.10, and when I say &nbsp;www.mydomain.com I really mean mydomain.com, it's an alias, again in an infinite number of combinations.
+which means 'You can find mydomain.com at IP address 10.10.10.10, and when I say &nbsp;www.mydomain.com I really mean mydomain.com, it's an alias, again in an infinite number of combinations.
 
 Depending on your domain registrar or hosting company you may have direct access to updating your DNS settings, or you may have to request any changes you want made.
 
-You may be asking, What does this have to do with your website your shop and email? Good question. Read on ...
+You may be asking, What does this have to do with your website your shop and email? 
 
 ### MX RECORDS
 
@@ -173,7 +174,7 @@ SMTP also offers the ability to connect to an external mail server, as it is wha
 
 To add to the woes of the would-be website mailer - you - there is the small matter of the 'Apache user'. On websites running under 'native' PHP, all of the software code is executed or 'run' as a system user. This user is usually imaginatively named 'nobody' or 'www-data'. (Software developers don't get out much). If that were all, this would merely be an exciting conversation piece/stopper you could drop at dinner parties, but unfortunately it has the side effect that all mail originating from the site via PHP or sendmail, or qmail, is sent as coming from this shadowy figure 'nobody'. Or the exciting 'www-data'. It's probably not necessary to point out that Spam filters leap into action as soon as they see any mail from this prolific and widespread pair, with predictable results. What would you do if you opened your letterbox and found a letter from 'nobody'? It is sometimes possible to mitigate this with 'sendmail -f' since the -f parameter forces a 'from' address, or by using SMTP, but not always.
 
-Additionally, when websites send email as 'nobody', it's very common for the hosting company to have the server configured to show the .php script filename in the (normally hidden) raw email headers. This allows them to very quickly determine whether an email that someone claims was spam was sent from a legitimate script or not ... usually they'll simply shut down that script quickly, and tell the account holder that there's a problem, giving them a few days to come up with a fix.
+Additionally, when websites send email as 'nobody', it's very common for the hosting company to have the server configured to show the .php script filename in the (normally hidden) raw email headers. This allows them to very quickly determine whether an email was sent from a legitimate script or not.  Usually they'll simply shut down that script quickly, and tell the account holder that there's a problem, giving them a few days to come up with a fix.
 
 Other websites use Suexec or SuPHP, which run the website code as the website owner rather than 'nobody' and the effect is mitigated. Particularly if the website owner is something like web_admin and has an email mailbox. They come with their own brand of drawbacks, so there is no free lunch, but things are improving over time. Setting an 'Email From' address and 'must send from known domain' may help, and are recommended for any site.
 

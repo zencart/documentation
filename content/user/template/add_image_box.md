@@ -11,7 +11,7 @@ Firstly create your image and place it in the images directory of your template.
 
 Then find the following blocks in your CSS:
 
-For adding the image to the center boxes ...
+For adding the image to the center boxes:
 ```
 .centerBoxWrapper {
     border: 1px solid #9a9a9a;

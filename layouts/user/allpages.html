@@ -1,0 +1,20 @@
+{{ define "main" }}
+<main>
+<style> .td-main main { padding-top: 2rem; }</style>
+  <div>
+   <h1>{{ .Title }}</h1>
+   <b>Note: </b> &nbsp;
+   <a href="/user/admin_pages/menu_sections/">Admin Menu Sections</a> are not shown in this view. 
+<br /><br />
+   <ul>
+    {{ range .Site.RegularPages.ByTitle }}
+       {{ if (eq .Section "user") }} 
+          {{ if (ne .Params.Category "admin_pages") }}
+             <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+          {{ end }}
+       {{ end }}
+    {{ end }}
+   </ul>
+  </div>
+</main>
+{{ end }}

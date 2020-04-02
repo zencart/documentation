@@ -9,7 +9,7 @@ weight: 10
 
 1\. On your **NEW host**, create a new MySQL **database**. Note the username, password, database name, and host name (usually localhost).
 
-2\. Using your [FTP tool](/user/first_steps/useful_tools/#ftp-tools), go to your **NEW host** and upload a **fresh NEW install** using the same version files that you built your other site on.... this will make sure that you get the proper settings in your [configure.php files](/user/miscellaneous/configure). 
+2\. Using your [FTP tool](/user/first_steps/useful_tools/#ftp-tools), go to your **NEW host** and upload a **fresh NEW install** using the same version files that you built your other site on.  This will make sure that you get the proper settings in your [configure.php files](/user/miscellaneous/configure). 
 
 a. Install.  When asked about the database-table-prefix during Database-Setup, use the same prefix that your old store uses. You'll find that in the `DB_PREFIX` setting of your old store's configure.php files.
 

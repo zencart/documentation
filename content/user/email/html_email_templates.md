@@ -69,12 +69,12 @@ $BASE_HREF (store http root)
 $EXTRA_INFO (this is the "office-use-only" section at the bottom of messages cc'd to Admin)  
 ```
 
-These 3 are defined in "languages/..../email_extras.php":  
+These values are defined in `includes/languages/YOURLANGUAGE/email_extras.php`:  
+
 ```
 $EMAIL_DISCLAIMER (general disclaimer)  
 $EMAIL_SPAM_DISCLAIMER (disclaimer re: SPAM -- should be customized to your country's laws...and of course you should abide by them!)  
 $EMAIL_FOOTER_COPYRIGHT  
-
 $EMAIL_MESSAGE_HTML (this is any composed text (via editors) that you plan to send)  
 ```
 

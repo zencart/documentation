@@ -11,8 +11,6 @@ The additional Pages can be for:
 *   New Pages
 *   Internal Links
 *   External Links
-*   Secure or Non-Secure pages
-*   Same or New Window
 
 In Addition, there is the ability to create "related" links in the format of a Chapter (group) and its TOC (related pages/links).  
 
@@ -22,11 +20,19 @@ Links are named by the Page Title. All Links need a Page Title in order to funct
 
 If you forget to add a Page Title, then you will not be able to add the Link.  
 
-If you do not assign an Order for the Header, Sidebox or Footer, then the Link will not display even if you have a Page Title.  
+### Enabling/Disabling Links 
+There are several ways you may display an EZ-Page link on your site: 
+- In your header (by setting Header = Yes and an Order value > 0). 
+- In your footer (by setting Footer = Yes and an Order value > 0). 
+- In your EZ-Pages sidebox (by setting Sidebox = Yes and an Order value > 0). 
+
+
+If you don't want the page link in any of those places, you can still 
+make the page visible in the storefront by setting the `Page is Visible` radio button.  
 
 ### Link Placement
 
-</span>While you have the option of adding Additional Links to the Header, Footer and Sidebox with EZ-Pages, you are not limited to these three Link locations. Links can be in one or more locations simply by enabling the Order for the Location(s) where the Link should appear.
+While you have the option of adding Additional Links to the Header, Footer and Sidebox with EZ-Pages, you are not limited to these three Link locations. Links can be in one or more locations simply by enabling the Order for the Location(s) where the Link should appear.
 
 The Link Location Status for the Header, Footer and Sidebox is controlled simply by setting these to Yes or No for each setting. Then, set the Order in which the Link should appear for each location.  
 
@@ -61,7 +67,7 @@ Again, you can display any of the Links within a Chapter, as well as making any 
 
 The versatility of EZ-Pages will make adding new Links and Pages extremely easy for the beginner as well as the advance user.  
 
-**NOTE:** HTML editors will often add the opening and closing tags for sections like <html>, <head> and <body> to the file you are working on. You may want to remove them, as these are already added to the pages via EZ-Pages.  
+**NOTE:** HTML editors will often add the opening and closing tags for sections, like `<html>`, `<head>` and `<body>`, to the file you are working on. You may want to remove them, as these are already added to the pages via EZ-Pages.  
 
 The numbering of the Chapters can be done in any manner. But, by number in increments such as 10, 20, 30, etc. you can later insert pages, or links, as needed within the existing pages.  
 
@@ -73,7 +79,9 @@ The display of the Previous/Next and TOC listing is a setting that can be turned
 
 External Link URLs are links to outside pages not within your shop. These can be to any valid URL such as:  
 
+```
 https://www.google.com 
+```
 
 You need to include the full URL path to any External Link URL. You may also mark these to open in a New Window or the Same Window.  
 
@@ -81,7 +89,9 @@ You need to include the full URL path to any External Link URL. You may also mar
 
 Internal Link URLs are links to internal pages within your shop. These can be to any valid URL, but should be written as relative links such as:  
 
+```
 index.php?main_page=index&cPath=21  
+```
 
 The above Link would take you to the Category for categories_id 21  
 
@@ -97,22 +107,8 @@ The External Link URL will supersede the Internal Link URL.
 
 If you try to set a combination of HTML Content, Internal Link and/or External Link, the Link will be flagged in the listing with a read icon to alert you to your mistake.  
 
-<b>WARNING...</b>
+<b>WARNING</b>
 
-When using Editors such as HTMLarea, if you hit enter in the HTML Content area  
-will be added. These will be detected as "content" and will override any Internal Link URL or External Link URL.  
-
-### Admin Only Display
-
-Sometimes, when working on EZ-Pages, you will want to be able to work on a Live Site and see the results of your work, but not allow the Customers to see this until you are done.  
-
-There are 3 settings in the Configuration ... EZ-Pages Settings for the Header, Footer and Sidebox Status:  
-
-*   OFF
-*   ON
-*   Admin Only
-
-The Admin Only setting is controlled by the IP Address(es) set in the Website Maintenance.  
-
-This can be very handy when needing to work on a Live Site but not wanting customers to see the work in progress.
+When using Editors such as CKEditor, if you hit enter in the HTML Content area,
+whitespace will be added. These will be detected as "content" and will override any Internal Link URL or External Link URL.  
 

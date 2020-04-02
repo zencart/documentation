@@ -15,8 +15,8 @@ When you go to [Admin->Configuration->Index Listing](/user/admin_pages/configura
 - Show Featured Products on Main Page
 - Show Special Products on Main Page
 - Show Upcoming Products on Main Page
-    - Note: the values you set are the Sort Order of the Centerboxes ...
-    - Turn OFF by setting to 0 all of the ones you do NOT want to see displayed ...
+    - Note: the values you set are the Sort Order of the Centerboxes 
+    - Turn OFF by setting to 0 all of the ones you do NOT want to see displayed 
 
 The same is true on other similar configuration menus under Admin->Configuration:
 

@@ -12,7 +12,7 @@ weight: 1
 
 ## Code Formatting
 
-Zen Cart uses PSR-2 formatting standards for "new" code. Older code uses a "modified" PSR-2 which embraces "2 spaces" for indentation, and often left the "opening curly brace" on the prior line, instead of starting on a new line.
+Zen Cart uses [PSR-2 formatting](https://www.php-fig.org/psr/psr-2/) standards for "new" code. Older code uses a "modified" PSR-2 which embraces "2 spaces" for indentation, and often left the "opening curly brace" on the prior line, instead of starting on a new line.
 
 See [Coding Standards](/dev/contributing/coding_standards) for more details.
 

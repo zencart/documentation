@@ -10,7 +10,8 @@ If you are uploading photographic type images, the format should be .jpg; if you
 • You cannot have a transparent background with a .jpg but you can with a .gif/.png.  
 • Never save a photograph as a .gif - not only do you lose a lot of quality, but due to the way data is stored as a .gif, the file size will be far larger than it ought to be!  
 • The file size of an image is entirely dependant on the physical dimensions, the type of format it is saved in and the amount of compression applied. You may have heard things about image resolution - that has nothing to do with the file size (but a heck of a lot to do with the quality of a printout! That's another topic altogether!).  
-• These file types use what is called “lossy” compression i.e. when the file is compressed, some information is discarded...this information cannot be recovered! Therefore, always start with a **COPY** of the best image you have and **NEVER** compress the original.  
+• These file types use what is called “lossy” compression i.e. when the file is compressed, some information is discarded.  
+Once the file is saved in a lossy format, the lost information cannot be recovered! Therefore, always start with a copy of the best image you have and never compress the original.  
 
 File size is still an important issue - even with the spread of broadband, the majority of people connecting to the web are still on dial-up connections, and unless you are aiming at a specifically broadband market, then you should endeavour to keep file sizes to a minimum commensurate with quality to enhance your viewers’ experience.  
 

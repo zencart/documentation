@@ -6,10 +6,11 @@ weight: 1
 ---
 
 FIXME add details about running entire site in SSL
+REMOVE SSL vs non-SSL pages info 
 
 **Quick Summary:**
 
-`HTTP_SERVER` and `HTTPS_SERVER` are the domain name of your site. Visiting this URL will take customers to the "webroot" of your domain, whether or not your store is located in that spot.  
+`HTTP_SERVER` is the domain name of your site. Visiting this URL will take customers to the "webroot" of your domain, whether or not your store is located in that spot.  
 
 `DIR_WS_CATALOG` and `DIR_WS_HTTPS_CATALOG` are the foldernames that must be added to the URL in order to take customers to your store. If your store is located in the 
  [webroot](/user/first_steps/how_do_i_install#what-is-my-webroot), 
@@ -47,7 +48,7 @@ and thus `DIR_WS_CATALOG` is: `/store/`
 
 (`DIR_WS_CATALOG` points to whatever follows the 
 [webroot](/user/first_steps/how_do_i_install#what-is-my-webroot), 
-configuration of your hosting account, ie: which folder your account points to for your actual site ... in most cases this folder is named "public_html" or "htdocs" or "httpdocs")  
+configuration of your hosting account, ie: which folder your account points to for your actual site.  In most cases this folder is named `public_html` or `htdocs` or `httpdocs`)  
 
 **Other Paths:**
 

@@ -17,8 +17,8 @@ and create a new folder. You can call it anything you like, though it is best no
 `/YOURTEMPLATE` from now on, you should replace it with your own preferred folder name.
 
 Next, you need to create the `template_info.php` file
-and change your selected template.  [Follow these instructions](/user/template/template_overrides/#using-your-overrides).
-
+and change your selected template.  
+See [this FAQ](/user/template/template_info/). 
 
 ### Building out your template 
 Create an empty folder inside your new template directory and call it images so you should have `includes/templates/YOURTEMPLATE/images/`.
@@ -33,24 +33,6 @@ You can also create the following empty folders inside your new template directo
 /sideboxes  
 /templates  
 ```
-
-Then you copy the file called 
-`includes/templates/template_default/template_info.php`, and put it inside 
-`includes/templates/YOURTEMPLATE/`.
-
-Next, open 
-`includes/templates/YOURTEMPLATE/template_info.php` in your text editor. Change the information below between each set of single quotes to suit your new template. Remember to keep the single quotes. Your template name does not need to be identical to your folder name, and you can use spaces to make it read well, but it is best to make them similar. Leave the space between the quotes for the template screenshot field empty for now, since you don’t have one yet.
-
-```
-<?php  
-$template_name = 'YOURTEMPLATE';  
-$template_version = 'Version 1.0';  
-$template_author = '<enter your name here>';  
-$template_description = 'This is my own template, created for my site at www.example.com';  
-$template_screenshot = '';  
-?>
-```
-
 When you've finished, your new file structure should look as follows:
 
 ```
@@ -71,7 +53,7 @@ If you're basing your template on responsive_classic, it's recommended that you 
 
 And if you need a base of CSS components, copy the contents of the css folder from the template you're basing from as well.
 
-Upload your `/YOURTEMPLATE` folder (or whatever name you've actually called it) to your server.  
+Upload your `/YOURTEMPLATE` folder to your server.  
 
 Open your Admin panel and navigate to 
 `Tools -> Template Selection`.
@@ -79,9 +61,10 @@ Click the Edit button, then choose `YOURTEMPLATE` from the dropdown menu and cli
 `Tools -> Layout Boxes Controller`
 and at the bottom of the page click the Reset button.
 
-Your new template is now enabled and ready for you to customize. See the related articles below for more tips on customizing. There are many more articles available via the search and via the FAQ Home Page link.  
+Your new template is now enabled and ready for you to customize. 
+See [this FAQ](/user/template/customizing_template/). 
 
-## About Language Files
+### About Language Files
 
 In the `/includes/languages/` folder there is also support for customizations for your new template too.
 

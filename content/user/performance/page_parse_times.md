@@ -13,7 +13,7 @@ If you have enabled the display of parse times, you will see some statistical in
 
 Here's what they mean, in reverse order:  
 
-The SQL/**Query Time** is the time spent waiting for the database to return its requested information. That is, it's the time it took for all the SQL queries to run ... from the time of sending a query, until the results came back.... then the timer stops.... and when the next query is sent, the timer starts again from where it left off, etc. After the final query, the number is shown.  
+The SQL/**Query Time** is the time spent waiting for the database to return its requested information. In other words, it is the time it took for all the SQL queries to run, starting from the time of sending a query, until the results came back.  When the next query is sent, the timer starts again from where it left off, etc. After the final query, the number is shown.  
 
 The **Number Of Queries** is a counter: the number of hits on the database in order to retrieve data for display on the particular page you're looking at.  
 

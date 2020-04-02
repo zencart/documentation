@@ -52,7 +52,7 @@ These are the common configuration errors causing IPN processing to fail:
 
 ### How Does IPN work (for Website Payments Standard)?
 
-"IPN" = "Instant Payment Notification" ... part of PayPal's™ "Website Payments Standard" service.
+"IPN" means "Instant Payment Notification." It's part of PayPal's™ "Website Payments Standard" service.
 
 1.  Customer places an order on your site
 2.  For payment, they are taken to a link on PayPal's™ site, where they provide their information and pay for their order.
@@ -60,7 +60,7 @@ These are the common configuration errors causing IPN processing to fail:
 
 Meanwhile, between steps 2 and 3 above, PayPal's™ server does this:
 
-1.  PayPal's™ server sends a request to your website...which is waiting and listening for connections from PayPal™ to the `ipn_main_handler.php` page.
+1.  PayPal's™ server sends a request to your website, which is waiting and listening for connections from PayPal™ to the `ipn_main_handler.php` page.
 2.  Your server sits waiting and listening for hits to `ipn_handler.php`.
 3.  When your server receives a request, it attempts to validate and be sure that the PayPal™ data provided matches the order details for which it is intended.
 4.  If validation passes, the customer's order is released, and it lets the PayPal™ server know that you received their confirmation. This handshaking happens via CURL on port 443, and requires that your server be configured for modern TLS communication to https URLs.

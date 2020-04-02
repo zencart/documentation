@@ -3,9 +3,12 @@ title: Admin menu sections
 description: Zen Cart Admin menu sections
 category: admin_pages
 weight: 1
+index: false
 ---
 
 ### [Configuration](/user/admin_pages/configuration)
+
+**NOTE:** You can now see [all the configuration values on one page](/user/admin_pages/configuration/all/).
 
 *   [My Store](/user/admin_pages/configuration/configuration_mystore) — General information about your site.
 *   [Minimum Values](/user/admin_pages/configuration/configuration_minimumvalues) — Defines minimum values for various options in validation of user input.

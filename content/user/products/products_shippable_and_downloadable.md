@@ -5,9 +5,11 @@ category: products
 weight: 10
 ---
 
-You have Products, Downloads and some Combo Products ...  
+FIXME - needs editing for style
 
-First, let's make sure that you have Products setup correctly ...  
+You have Products, Downloads and some Combo Products.
+
+First, let's make sure that you have Products setup correctly. 
 
 Do you use Always Free Shipping or 0 weight to mean Free Shipping?  
 
@@ -26,7 +28,7 @@ Note: When using Free Shipping, Enable the Free Shipping Module this will only s
 
 Next, let's look at a Download Product, one that is ONLY a Download
 
-Downloads are NOT set to Virtual Product and NOT set to Always Free Shipping ... they are already "recognized" as Free shipping by virtue of the Download filename on the Attributes ...  
+Downloads are NOT set to Virtual Product and NOT set to Always Free Shipping.  They are already "recognized" as Free shipping by virtue of the Download filename on the Attributes. 
 
 Check the settings are:  
 
@@ -70,20 +72,20 @@ Check the settings are:
 
 </div>
 
-If a Download Product has either of those settings set any other way, then they count for 2 Products not to be shipped and can mess up shipping costs, especially for Shipping based on Price or Item Count ...  
+If a Download Product has either of those settings set any other way, then they count for 2 Products not to be shipped and can mess up shipping costs, especially for Shipping based on Price or Item Count.  
 
-Then, there is the Combo Product ... a Product that is BOTH a Download and a Physical Product ALWAYS ...  
+Then, there is the Combo Product: a Product that is BOTH a Download and a Physical Product ALWAYS.
 
 This is different than a Product that is a Download OR a Physical Product such as a Media Product that you sell as:  
 Download MP3  
 -- or --  
 Send me a CD  
 
-A Product that is a Download OR a Physical Product, is setup like a Normal Product and just the Attribute with the filename is used for the Download ... and the Weight can be put on the Attribute for the Physical Product OR ... the Weight is put on the Product itself with a negative weight on the Attribute with the Download ...  
+A Product that is a Download OR a Physical Product, is setup like a Normal Product and just the Attribute with the filename is used for the Download.  The Weight may be put on the Attribute for the Physical Product, or the Weight may put on the Product itself with a negative weight on the Attribute with the Download.
 
-I prefer that the Attribute hold the Weight or the Download so the Product does not look moofy with a Negative weight on the Attribute ...  
+I prefer that the Attribute hold the Weight. 
 
-**NOTE:** Attribute Weight can be turned off in the Catalog -> Product Type -> EDIT LAYOUT ...  
+**NOTE:** Attribute Weight can be turned off in the Catalog -> Product Type -> EDIT LAYOUT. 
 
 Now, back to the Combo Product which is BOTH a Physical Product and a Download at the SAME time ...  
 

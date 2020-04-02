@@ -18,7 +18,7 @@ a. Go to [Admin->Config->My Store](/user/admin_pages/configuration/configuration
 Go to [Admin->Tools->Layout Boxes Controller](/user/admin_pages/tools/layout_boxes_controller/)
     Find the sideboxes/manufacturers.php entry, and turn it "OFF"  
 
-3\. Ensure your images are optimized for your site... specifically, use small images for thumbnails, slightly larger for product pages (`_MED` images), and large detailed images for "click to enlarge" (`_LRG`) images.  
+3\. Ensure your images are optimized for your site.  Specifically, use small images for thumbnails, slightly larger for product pages (`_MED` images), and large detailed images for "click to enlarge" (`_LRG`) images.  
 
 ### Related FAQ articles:  
 - [Adding Multiple Images To Products](/user/images/images_multiple/) 

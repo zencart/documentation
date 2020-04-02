@@ -5,7 +5,7 @@ category: images
 weight: 10
 ---
 
-## A product owns 1 filename ...
+## A product owns 1 filename 
 
 Note: the base image name is the original image name loaded for the product.
 
@@ -124,7 +124,7 @@ The use of subdirectories help on speed or directory limits, especially on slowe
 
 **NOTE:** not all files show via your FTP program when you get into the 1000s of filenames within a directory.  
 
-### ANOTHER WAY TO LOOK AT IT ...
+### ANOTHER WAY TO LOOK AT IT 
 
 1) the thumbnail, which is the smaller image, in the /images/ folder.  
 2) the "medium" image, which is ONLY used on the Product Info page as the primary product image. And ONLY the first "medium" image is ever used.  
@@ -158,4 +158,4 @@ b. You can edit the `_MED` and `_LRG` defined suffixes in [Admin->Configuration-
 
 Also, in case it's not self-evident, the files have to actually exist on your server. So, if you're selecting the "Use an image on the server" instead of uploading a file directly, and things aren't showing up, then that probably means the image file you specified doesn't actually exist on the server.  
 
-If you wish to bypass the multiple image capability, you have two options ... which are explained in [Turning off Additional Images](/user/images/images_other_products/).
+If you wish to bypass the multiple image capability, you have two options, which are explained in [Turning off Additional Images](/user/images/images_other_products/).

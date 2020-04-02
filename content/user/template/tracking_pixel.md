@@ -5,11 +5,14 @@ category: template
 weight: 10
 ---
 
+FIXME please verify 
 
 ## Situation:
 
 You've just signed up with an affiliate system who's promised you the ultimate in statistics tracking, commission handling, referral monitoring, and more.  
-They've given you a snippet of code and instructed you to place it on your site, after replacing some parameters with actual values of orders in your store. But ... you don't know where to put it.  
+
+They've given you a snippet of code and instructed you to place it on your site, after replacing some parameters with actual values of orders in your store. 
+But you don't know where to put this new code.  
 
 ## Solution:
 
