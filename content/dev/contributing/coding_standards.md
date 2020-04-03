@@ -77,6 +77,18 @@ Examples:
 ```php
 <?php echo ' <div class=xxxxxx">' . sprintf(LANGUAGE_DEFINE, ...) . '</div>'; ?>
 ```
+
+Note that this rule is not required in cases where a block is opened by PHP (as in `zen_draw_form`).  In this case, closing the block in straight HTML will confuse IDEs.
+
+### Exception: 
+
+```
+        echo zen_draw_form('customers', FILENAME_CUSTOMERS, .... 
+        ...
+        <?php echo '</form>'; ?>
+```
+
+
 ## Separating content, markup and logic 
 Where possible, try to keep these things separate:
 - Files in `includes/languages` should contain strings (not HTML/CSS markup);

@@ -49,8 +49,7 @@ If No stop.  You will need a [text editor](/user/first_steps/useful_tools/#php-h
 
 ### 4\. Do you have access to your webhosting control panel?
 
-Your webhoster's control panel (often [CPanel](cpanel.net), but sometimes a hoster-built tool) is where you 
-will create a MySQL database and user.
+Your webhoster's control panel (often [cPanel](https://cPanel.net) but sometimes a hoster-built tool) is where you will create a MySQL database and user.
 
 BEFORE YOU PROCEED, make sure you have access to a MySQL database, and username/password to that database. You may need to create the database using your webhosting account's control panel. Contact your webhosting company for assistance. Zen Cart® cannot create the database for you.
 
