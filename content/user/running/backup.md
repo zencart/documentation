@@ -5,9 +5,12 @@ category: running
 weight: 10
 ---
 
-**NOTE: Doing a backup of your Zen Cart site requires TWO components: (1) A copy of all the files in your Zen Cart folder on your server, and (2) a copy of your database, described below:**
+**NOTE:** A full backup of your Zen Cart site has **TWO** parts: 
 
-## 1\. Backup your PHP files (actually ALL files)
+- A copy of all your Zen Cart files, and  
+- A copy of your database
+
+## A\. Backup your files 
 
 Use your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) to make a copy of all the files on your website, by copying them from your webserver to a folder on your business computer. Preferably the directory/folder on your computer should be named by today's date so that you can distinguish between backups.  
 
@@ -15,7 +18,9 @@ Having this gives you not only an up-to-date set of files on your server, but al
 
 **NOTE:** Keeping multiple separate versions on your computer is prudent, in case something is changed unexpectedly or accidentally. So, archiving these downloaded files is wise, to a USB key or cloud based backup. 
 
-## 2\. Using phpMyAdmin to make a Database Backup
+## B. Backup your Database  
+
+### Using phpMyAdmin to make a Database Backup
 1\. Open phpMyAdmin  
 
 2\. Select your database from the dropdown (usually on the left side), so that its tables are displayed (they usually display on the right side).  
@@ -25,24 +30,29 @@ Having this gives you not only an up-to-date set of files on your server, but al
 4\. Now make the appropriate setting selections based on your version of phpMyAdmin:  
 
 The ideal settings to do a backup via phpMyAdmin are shown below. Settings not mentioned can be left to their defaults.  
-You will be presented with a choice of "Quick Backup" or "Custom", CHOOSE "Custom", and then make the following selections:  
-- Output: - Leave all the other settings under Output as defaults, except maybe **Compression**, which you may wish to change to "zipped" (for Windows) or "gzipped" (for mac/linux)  
-- Object creation options: - **check the box next to DROP TABLE**  
+
+You will be presented with a choice of "Quick Backup" or "Custom." Choose "Custom", and then make the following selections:  
+
+- Output: Leave all the other settings under Output as defaults, except maybe **Compression**, which you may wish to change to "zipped" (for Windows) or "gzipped" (for Mac/Linux)  
+- Object creation options: **check the box next to DROP TABLE**  
 
 5\. Click **Go** to do the export. It will give you the option to save the file to your PC. BE SURE TO SAVE IT to an appropriate spot on your PC. 
-To have a redundant backup, upload it to a cloud account such as 
+To have a redundant backup, save a copy to a thumb drive or upload it to a cloud account such as 
 Google Drive.
 
-## 3. Using the Backup MySQL Plugin:
+### Using the Backup MySQL Plugin to make a Database Backup
 
 On hosts that permit the use of `exec()`, you can use the 
 [Backup MySQL Plugin](https://www.zen-cart.com/downloads.php?do=file&id=7)
 to create your database backup, and then download the resultant file
 from `YOURADMIN/backups` to your local computer.  Again, you will 
-want to upload your backup to a cloud account so that you have 
+want to save a copy to a thumb drive or upload your backup to a cloud account so that you have 
 redundancy. 
+<br /><br />
 
-## TO RESTORE THE DATABASE:
+--- 
+
+## TO RESTORE YOUR DATABASE:
 
 - Open phpMyAdmin  
 - From the dropdown menu, select the database you wish to restore INTO  

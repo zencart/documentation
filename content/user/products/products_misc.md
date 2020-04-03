@@ -49,7 +49,7 @@ This forces the customer to choose something "other than" the default (since the
 
 2. Set a default value (for radio buttons) 
 
-    a. Go to the [Attributes Controller]() and select the product in question (you will need to select the category, then the product, then press *Display*).  The attributes will be shown below the product. 
+    a. Go to the [Attributes Controller](/user/admin_pages/catalog/attributes_controller/) and select the product in question (you will need to select the category, then the product, then press *Display*).  The attributes will be shown below the product. 
 
     b. Pick the attribute you want to be the default, and press the Edit button on the right side of that attribute.
 

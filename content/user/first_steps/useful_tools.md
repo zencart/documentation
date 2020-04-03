@@ -111,7 +111,7 @@ The Zen Cart code and plugins come in `.zip` format, so you need a way to handle
 
 ### Freeware
 
-*   [phpMyAdmin](http://www.phpmyadmin.net)
+*   [phpMyAdmin](http://www.phpMyAdmin.net)
 *   [TablePlus](http://tableplus.com/) (Windows, Mac, Linux)
 *   [SQLyog CE](https://github.com/webyog/sqlyog-community/wiki/Downloads) (Windows)
 *   [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) Free tool for analyzing MySQL database queries

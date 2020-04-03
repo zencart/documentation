@@ -68,7 +68,7 @@ If you're not clear on what `YOURADMIN` means, please [read this](/user/first_st
 
 Quite often setting permissions on a file to read only via FTP will not work. Even if the permission looks like it was set to read only, it really may not have been. You must verify the correct setting by entering the store and seeing if there is a warning message on the top of the screen. "Warning: I am able to write to the configuration file:..." In this case you will need to use the "File Manager" supplied with your webhosting account.
 
-If you're using a Windows server using IIS, simply set the file as _Read-Only_ for _Everyone_ and especially the IUSR_xxxxx (Internet Guest Account) user if running IIS, or the _System_ account or _apache user_ if running Apache.
+If you're using a Windows server using IIS, simply set the file as _Read-Only_ for _Everyone_. 
 
 
 ### 5\. Delete any unused _Admin_ accounts
@@ -144,7 +144,7 @@ Suggested content for _.htaccess_ files in folders where there is an _index.html
   </FilesMatch></span>  
 ```
 
-In order for the above suggestions to work, your host must include either 'All' or all of these: 'Limit Options Indexes' parameters to the AllowOverride configuration in the server's master apache httpd.conf file.
+In order for the above suggestions to work, your host must include either 'All' or all of these: 'Limit Options Indexes' parameters to the AllowOverride configuration in the server's master Apache `httpd.conf` file.
 
 If your webhost configuration doesn't allow you to create/use your own _.htaccess_ files, you'll need to work with your hosting company to come up with a way to provide the security protections offered by the supplied .htaccess files but using *your* server's available tools; sometimes they provide an interface in your hosting admin control panel where you can set the desired settings. You need to choose, and use, the appropriate method for your server. As mentioned above, it's best to work with your web hosting company to select and implement the best method for your specific server. We can't tell you what to use for your specific server, but we offer these guidelines as a starting point. If you cannot come up with alternate measures, you should reconsider whether your current hosting service is really adequate for the security appropriate to eCommerce.
 

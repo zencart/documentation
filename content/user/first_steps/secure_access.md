@@ -25,7 +25,7 @@ of them should be available.
 If your hosting company does not offer some mechanism for secure file transfer, then they are most likely not PCI Compliant either, and you should be choosing a different hosting company who takes security seriously.
 
 
-## Secure CPanel Access 
+## Secure cPanel Access 
 
 ## Secure access to your Admin
 

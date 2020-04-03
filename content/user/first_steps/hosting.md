@@ -126,7 +126,9 @@ SSL Certificates are an add-on to a hosting account, and are not directly tied t
 
 Certificates cannot be directly transferred to another host due to the public/private key generation systems. This is primarily to protect you against theft of identity or the certificate. To move an existing certificate to another server requires that the Issuer (whoever you bought the certificate from originally) re-issue the certificate tied to the new private/public key of your new hosting server, sometimes for a nominal re-issuance fee. Thus, it's simplest to issue certificates around the same time as switching hosting from one place to another.
 
-Certificates can be issued for www., non-www., or wildcard. Wildcard is not recommended for e-commerce sites as it can make your site appear to have duplicates since the wildcard SSL allows secure connection in BOTH www. and non-www. It is important to know which way your certificate is issued. Settings in the configure.php files that address https:// need to match the form of your SSL to prevent possible log in problems. If your SSL is for www., then the setting(s) should show https://www.your_site.com.  If non-www., the setting(s) should show https://your_site.com.
+Certificates can be issued for `www.`, `non-www.`, or wildcard. Some hosters recommend not using wildcard.
+
+It is important to know which way your certificate is issued. Settings in the `configure.php` files that address `https://` need to match the form of your SSL to prevent possible log in problems. If your SSL is for `www.`, then the settings should show `https://www.YOURSITE.com`.  If `non-www.`, the settings should show `https://YOURSITE.com`.
 
 For more information on SSL, see these articles: 
 

@@ -32,7 +32,7 @@ a) Your site's `/logs/` folder, which stores PHP errors happening in your store.
 More info is provided in this [FAQ on Zen Cart Debug Logs](/user/troubleshooting/debug_logs) and 
 this [FAQ on blank page errors](/user/troubleshooting/blank_page). 
 
-b) Your server's webserver error logs ... ie: apache/nginx and maybe PHP itself. Your hosting company will have to give you access to this information if you don't already have an Error Logs menu option in your hosting company's control panel.  
+b) Your server's webserver error logs ... ie: Apache/Nginx and maybe PHP itself. Your hosting company will have to give you access to this information if you don't already have an Error Logs menu option in your hosting company's control panel.  
 
 ## A word about Windows/IIS hosting
 

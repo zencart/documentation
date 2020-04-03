@@ -6,7 +6,7 @@ index: false
 layout: docs
 ---
 
-<!-- unlike other _index.md files, this one SHOULD have direct links -->
+<!-- unlike other _index files, this one SHOULD have direct links -->
 <!-- please keep in alphabetic order -->
 <!-- remember to start links with "/" -->
 
