@@ -2,7 +2,7 @@
 title: Template Overrides System 
 description: Zen Cart Template Overrides System 
 category: template 
-weight: 10
+weight: 5
 ---
 
 Before you read this, please review 
@@ -32,6 +32,13 @@ includes/modules/
 includes/modules/sideboxes/
 ```
 
+In addition, you can override: 
+
+```
+includes/index_filters/ 
+```
+
+
 You can also override any folder in your template folder.
 Again as of 1.5.6, this list is: 
 
@@ -50,7 +57,6 @@ YOUR_TEMPLATE/popup_image_additional/
 YOUR_TEMPLATE/popup_search_help/
 YOUR_TEMPLATE/popup_shipping_estimator/
 YOUR_TEMPLATE/sideboxes/
-YOUR_TEMPLATE/template_info.php/
 YOUR_TEMPLATE/templates/
 ```
 
@@ -61,6 +67,15 @@ You can also place overrides in these folders:
 ./admin/includes/auto_loaders/overrides/
 ./admin/includes/init_includes/overrides/
 ```
+
+## What Can I NOT Override? 
+
+At the moment, these elements of your cart do not support overrides:
+
+- Admin
+- `includes/modules/pages`
+- The `shipping`, `payment` and `order total` folders under `includes/modules`
+
 
 ## Other Mechanisms 
 There are also other mechanisms to allow you modify the 
@@ -75,21 +90,10 @@ See also [plugin tips](/dev/plugins/tips) for more suggestions.
 
 ## Using your Overrides 
 
-Once you have created one or more of these override folders, you can 
-start using them by doing these two things: 
+You've created some overrides and now you want to use your new template!
 
-a. Create `includes/templates/YOURTEMPLATE/template_info.php`
-
-In order for the system to "see" your template, the `template_info.php`
-file must exist inside the `includes/templates/YOURTEMPLATE` folder. 
-
-Create it as follows: 
-```
-<?php 
-$template_name = 'Your Template Name'
-``` 
-
-b. Login to your Admin panel and go to [Tools > Template Selection](/user/admin_pages/tools/template_selection/).  You should see your new custom template(s) in the dropdown list. Select your template.
+Just create the `template_info.php` file and activate your template. 
+See [this FAQ](/user/template/template_info/). 
 
 
 ## Next Steps 

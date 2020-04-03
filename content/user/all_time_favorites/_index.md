@@ -2,6 +2,7 @@
 title: All Time Favorites
 description: Frequently asked questions about Zen Cart 
 weight: 10
+index: false
 layout: docs
 ---
 
@@ -15,7 +16,7 @@ layout: docs
 
 * [Blank Page](/user/troubleshooting/blank_page/) - what to do if part or all of a page is blank.
 
-* [Can Zen Cart ...](/user/miscellaneous/can_zen_cart/) - A capabilities overview .
+* [Can Zen Cart ...](/user/miscellaneous/can_zen_cart/) - Questions about features.
 
 * [Customizing my site](/user/customizing/appearance) - changing the look and feel of your cart.
 
@@ -32,6 +33,11 @@ layout: docs
 * [Release history for Zen Cart](/user/about_us/release_history/) - with links to Release Notes.
 
 * [Server Requirements for running Zen Cart](/user/first_steps/server_requirements/) - Zen Cart version to PHP version matrix.
+
+* Templates and Overrides - how do I use them?  Read 
+[this](https://docs.zen-cart.com/user/first_steps/overrides/), 
+[this](https://docs.zen-cart.com/user/new_user_topics/overrides/), 
+[then this](https://docs.zen-cart.com/user/template/template_overrides/). 
 
 * [Upgrading Zen Cart](/user/upgrading/upgrading/) - how do I upgrade my old cart?
 

@@ -5,50 +5,60 @@ category: about_us
 weight: 10
 ---
 
-- Easily keep your product/catalog updated -- no HTML coding required to add, delete, or modify products.
+- Easily keep your product/catalog updated -- no HTML coding required to add, delete, or modify products
+- No limits on the number of categories or products
 - Secure -- no one but your administrative personnel can access your customer/catalog data
 - Easy to install -- our helpful installation program guides you easily through the setup process
-- User frontend is validated to XHTML 1.0 Transitional
+- Mobile ready: can be viewed on tablets and phones as well as desktop devices
 - Advanced Template System using stylesheets and images
 - Any PHP coding changes can be protected during upgrades by using the built-in override protection system
 - Switching from one installed template to another is as simple as a couple of clicks in the Admin
-- Merchandise Pricing options -- Single and Multiple items can be put on Sale. Sale options include Percentage-off, Fixed Amount off, New Price, etc. Sales can include or exclude product attributes. You can add or exclude a discount from a Special. You can put a whole category or the entire store on sale.
-- Products can be marked as Free, or "Call for Price"
-- Products can be marked as "Featured" for specific highlighting/attention.
-- Products can be linked and/or copied to multiple categories
-- Minimum or Maximum Quantities and Units - You can sell 1 per customer, or require at least 4 and in multiples of 2. You can set requirements on a per-product basis.
-- Quantity Discounts can be configured per-product for varying pricing levels or quantity levels.
-- Product Attributes can be added, either as Radio buttons, Checkboxes, Drop-down lists, Text Boxes, File Uploads, File Downloads, and more. Attribute Options can upcharge the price of an item, and an item can have its price completely controlled by attributes. Attributes can be configured as "read only" so as to provide a Features List.
+- Product variants may be added using product attributes, appearing as radio buttons, checkboxes, drop-down lists, text boxes, file uploads, file downloads, and more
+- Attribute Options can upcharge the price of an item, and an item can have its price completely controlled by attributes 
+- Attributes can be configured as "read only" so as to provide a Features List
 - One-Time Fees can be added to products via attributes
 - Attributes also support Text Pricing, such as price-per-word or price-per-letter for personalizing
 - Attributes can show image/color swatches
-- Store layout can be controlled in great detail simply by switching settings in the Admin area. Choose your side column and box widths, Bread Crumb Separator, which Sideboxes you want to appear where on the page, enable/disable links in various places.
+- No fixed limits on the number of attributes or values per attribute
+- Merchandise Pricing options: items can be price reduced using percentage-off, fixed amount off, or new price
+- Price reductions can include or exclude product attributes 
+- Products may be included or excluded from a price reduction 
+- Price reductions can be put on one item, a whole category or the entire store
+- Products can be marked as Free, or "Call for Price"
+- Products can be marked as "Featured" for specific highlighting/attention
+- Products can be linked and/or copied to multiple categories
+- Per product minimum or maximum quantities and units - You can sell 1 per customer, or require at least 4 and in multiples of 2
+- Quantity Discounts can be configured per-product for varying pricing levels or quantity levels
+- Store layout can be controlled in great detail simply by switching settings in the Admin area
 - Entire categories of products (or individual products) can be enabled/disabled with just a few clicks
 - Sort order of products is easily controlled in the admin area
-- Integrate with phpBB so that your support forum login passwords match your Zen Cart shop.
-- If you need to take your site offline for a period of maintenance, you can do it easily by posting advance notices, as well as a friendly Down For Maintenance page that's also Search-Engine friendly. Webmaster and WebDesigner can specify IP addresses to override maintenance and still access the site for testing.
-- You can send administrative emails on most customer shopping activities to various administrators as desired. Email addresses are protected from abuse, as they are not displayed on-screen. The Contact Us page can be configured to support multiple destinations, such as Sales, Technical Support, Webmaster, and so on.
-- Nearly every piece of information about your products can be controlled in the Admin areas, giving you the ability to fine-tune how your products and services appear to your customers. Features and options can be enabled/disabled quickly and easily.
+- If you need to take your site offline for a period of maintenance, you can do it easily by posting advance notices, as well as a friendly Down For Maintenance page that's also Search-Engine friendly
+- During maintenance intervals, specified IP addresses may still access the site for testing
+- Nearly every piece of information about your products can be controlled in the Admin areas, giving you the ability to fine-tune how your products and services appear to your customers without needing to write code
 - Multiple items can be added to the shopping cart by simply entering quantities and click Add
-- The Product Type feature allows you to customize information fields and display format for different products differently. Products for sale vs Documents for viewing, vs Music Downloads, and the list goes on.
-- You can add multiple images to your products, in small/medium/large format. Popups are available if desired for viewing of larger images.
-- A verification for Agreement to the Terms of Service has been added for compliance with new laws regarding privacy and disclosure.
-- CVV2 card verification number support is available for compliance with most Merchant Agreements. This feature is enabled/disabled in the Admin
+- The Product Type feature allows you to customize information fields and display format for different products differently
+- You can add multiple images to your products, in small/medium/large format
+- A verification for Agreement to the Terms of Service has been added for compliance with new laws regarding privacy and disclosure
+- CVV2 card verification number support is available for compliance with most Merchant Agreements
 - Shipping Options -- multiple carriers are supported, including Hold for Pickup, Free Delivery in an area, and most major couriers and postal services
-- Customer Access Control -- You can set up your shop to only allow customers access to pricing or pricing but not buying until after being authorized by an administrator. You can restrict them from browsing at all too, if desired.
-- Showcase - You can set your store up to be simply a product showcase, without pricing at all.
-- Search options allow you to search for products based on name, description, metatags, price, and more&#33;
+- Payment Options - multiple payment processors are supported, including PayPal, Square and Authorize 
+- Customer Access Control -- Browsing, viewing prices and buying policies may be configured to require authorization 
+- Showcase - You can set your store up to be simply a product showcase, without pricing at all
+- Search options allow you to search for products based on name, description, metatags, price, and more
 - Meta Tags keywords and descriptions can be controlled at the per-product level, all from the administrative interface
 - Automatic detection of search engine spiders
 - Intelligent generation of metatags content for search engines
-- Easily upgrade from one version to the next. Upgrade Detection notifies administrators of new versions at login.
-- Built in WYSIWYG page editor for modifying non database pages. (version 2.0)
-- Tight security on password handling, login/logout, and more.
-- HTML-style email supported
+- Upgrade Detection notifies administrators of new versions at login
+- CKEditor integration available for WYSIWYG editing of site content
+- Tight security on password handling, login/logout, and more
+- Customizable email generated at all relevant points of ordering process: when a new account is created, at checkout time, as order is processed by storeowner, as stock is depleted, when product availability changes, when customer reviews are received, and more
+- Storeowner email addresses are protected from abuse, as they are not displayed on-screen 
+- Contact Us page can be configured to support multiple destinations, such as Sales, Technical Support, Webmaster, and so on
+- HTML email supported
 - Email can be sent via sendmail, smtp, or smtp-with-authorization
 - Email archiving supported for audit trail
-- Administrative activity logging enabled for audit trail -- especially beneficial with recent Merchant Agreement requirements concerning tracking of activity related to accessing customer information.
-- Advertising Banners -- show information about your business colleagues and track banner link activity. Banners open in new windows so that customers never really leave your site.
+- Administrative activity logging enabled for audit trail -- especially beneficial with recent Merchant Agreement requirements concerning tracking of activity related to accessing customer information
+- Advertising Banners -- show information about your business colleagues and track banner link activity
 - Shipping Estimator allows your customer to get an idea of their shipping costs prior to checkout
 - Coupons and Gift Certificates are easily handled both by customers and administrators
 - Customer "Group Pricing" allows groups of users to receive a set discount amount at checkout
@@ -66,3 +76,7 @@ weight: 10
 - Track Who's Online interactively
 - Multiple Language Support
 - Multiple Currency Support
+- Ability to add new pages 
+
+Do you have a question about whether Zen Cart offers a particular feature? It might be answered [on this page](/user/miscellaneous/can_zen_cart).
+

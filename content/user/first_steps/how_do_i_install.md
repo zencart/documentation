@@ -7,12 +7,10 @@ weight: 10
 
 ## Preface
 
-_Warning:_  
-There are several all-in-one "packaged" "bundles" of Zen Cart scattered around the internet, but none of those are endorsed by Zen-Cart.com, as we believe that the manual installation is the best choice to have your system secure and optimized and so you know *exactly* what *you* have put onto your site.  
+The hoster-provided or publicly available **"packaged bundles" of Zen Cart are not endorsed** by Zen-Cart.com.  
 
-If you choose to use a packaged installer from someplace else, make sure you ask *them* for all your technical support needs and ensure that they intend to keep things up-to-date and that they will provide you with free support for updating *your* site whenever they make updates to their bundled packages.  
+Instead, **we recommend manual installation**.  Manual installation of files from the [official download](https://sourceforge.net/projects/zencart/files/) enables you to build a system which is secure, optimized, and up to date. Manual installation ensures that you know *exactly* what *you* have put onto your site.  
 
----
 
 This is a basic guide to installing Zen Cart®. If you already have Zen Cart® installed and wish to upgrade from a previous version to this new release, please see the upgrading instructions [in the Release document](https://www.zen-cart.com/docs/). 
 
@@ -20,13 +18,15 @@ This is a basic guide to installing Zen Cart®. If you already have Zen Cart® i
 
 ## A. The Basics
 
-You have downloaded the Zen Cart® software for an online shopping cart.
+You have downloaded the [official Zen Cart® software](https://sourceforge.net/projects/zencart/files/), and want to build an online shopping cart.
 
 Questions to ask yourself:
 
-### 1\. Do you have a domain?
+### 1\. Do you have a domain and hosting account?
 
-If No, stop, and see our [Certified Hosting](https://www.zen-cart.com/hosting) Sites and find a fast, reliable hosting site that can help you register your own personal domain as well as provide for your hosting needs that meet the Zen Cart® software requirements.
+If No, stop, and see our [Certified Hosting](https://www.zen-cart.com/hosting) Sites and find a fast, reliable hosting site that can help you register your own personal domain, as well as provide for your hosting needs that meet the Zen Cart® software requirements.
+
+Not sure what a domain or hosting account is?  [See this article](/user/first_steps/hosting/).
 
 ### 2\. Do you have FTP software?
 
@@ -49,7 +49,7 @@ If No stop.  You will need a [text editor](/user/first_steps/useful_tools/#php-h
 
 ### 4\. Do you have access to your webhosting control panel?
 
-Your webhoster's control panel (often [CPanel](cpanel.net) but sometimes a hoster-built tool) is where you 
+Your webhoster's control panel (often [CPanel](cpanel.net), but sometimes a hoster-built tool) is where you 
 will create a MySQL database and user.
 
 BEFORE YOU PROCEED, make sure you have access to a MySQL database, and username/password to that database. You may need to create the database using your webhosting account's control panel. Contact your webhosting company for assistance. Zen Cart® cannot create the database for you.
@@ -163,7 +163,7 @@ As for other files, they can be CHMOD 644, or 444, depending on your webserver c
 
 
 --- 
-## E. Before Running the Installer
+## E. Prepare to Run the Installer
 
 The installer is fairly intelligent and should be able to automatically supply answers to the questions listed below.  
 
@@ -188,7 +188,7 @@ You will need the following information for the installation:
     - or - `https://secure.sharedservername.net/~username/catalog`
 
 --- 
-## F. Starting the Installer
+## F. Run the Installer
 
 In your browser, enter the URL to your new shop, and the Installer should automatically start.  
 Example: `http://www.mydomain.com/catalog`
@@ -273,6 +273,7 @@ current versions of Zen Cart do this for you.
 b) When you enter the catalog, you will receive security warnings about the `configure.php` files and the `/zc_install` directory.  
 
 **configure.php files**  
+
 You will now want to change the permissions on the configure.php files with `chmod 644` (or 444 depending on your server, and sometimes setting 444 cannot be done via FTP, in which case use your host's control panel or file manager to set the permissions level.)  
 
 These are located here (remember, "catalog" is what we used as an example here -- your site may or may not include "catalog" as a folder name):  
@@ -300,5 +301,4 @@ You should also familiarize yourself with the Zen Cart® [Developer's Toolkit](/
 
 Once you're set up and ready to start announcing your URL to the public, you should FIRST review Site Security Recommendations to be sure your site is safe and not vulnerable to hackers. The most up-to-date version of this file can be found in the article [Important Security Recommendations](https://www.zen-cart.com/docs/important_site_security_recommendations.html). 
 
---- 
 
