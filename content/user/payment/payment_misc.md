@@ -10,7 +10,7 @@ weight: 5
 ---
 ### Credit card not entered correctly / We do not accept that kind of card
 
-Zen Cart evaluates the credit card numbers you enter to see if they match the settings you have enabled in the Admin->Config->Credit Cards settings.
+Zen Cart evaluates the credit card numbers you enter to see if they match the settings you have enabled in the Admin > Config > Credit Cards settings.
 
 So, if you enter a MasterCard number, but have MasterCard turned off (in the Admin), then it will tell the customer "we don't accept that kind of card".
 
@@ -20,14 +20,14 @@ Resolution:
 
 1. Review your merchant account settings (ie: with your bank). Find out what credit card types you are allowed to process.
 
-2. Then turn those on in Zen Cart under Admin->Configuration->Credit Cards
+2. Then turn those on in Zen Cart under Admin > Configuration > Credit Cards
 
 3. Then enable your payment module in Zen Cart.
 
 ---
 
 #### MORE INFORMATION YOU MIGHT FIND USEFUL
-Zen Cart uses the MOD10 approach (google it) combined with the list of accepted cards you have configured in Admin->Configuration->Credit Cards. If the number fails validation or is a card-type that is not accepted based on your settings, it will be rejected with the error message you mentioned.
+Zen Cart uses the MOD10 approach (google it) combined with the list of accepted cards you have configured in Admin > Configuration > Credit Cards. If the number fails validation or is a card-type that is not accepted based on your settings, it will be rejected with the error message you mentioned.
 
 You might also note that Zen Cart uses these Credit Card Prefix Patterns (and more) to detect which kind of card your customer has entered.
 

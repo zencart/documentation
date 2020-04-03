@@ -147,9 +147,9 @@ The use of subdirectories help on speed or directory limits, especially on slowe
 
 ### Related topics
 
-a. Attribute images can be added to individual attribute options via [Admin -> Catalog -> Attributes Controller](/user/admin_pages/catalog/attributes_controller/).
+a. Attribute images can be added to individual attribute options via [Admin > Catalog > Attributes Controller](/user/admin_pages/catalog/attributes_controller/).
 
-b. You can edit the `_MED` and `_LRG` defined suffixes in [Admin->Configuration->Images](/user/admin_pages/configuration/configuration_images/).
+b. You can edit the `_MED` and `_LRG` defined suffixes in [Admin > Configuration > Images](/user/admin_pages/configuration/configuration_images/).
 
 # TIPS
 

@@ -44,13 +44,13 @@ Step-by-Step SETUP:
 
 STEP (1): Set the location for your store:  
 
-Configuration --> My Store  
+Configuration > My Store  
 
 - Country: Canada  
 - Zone: Ontario  
 
 STEP (2): Create the "Tax Zones". The are geographical regions where a particular set of tax laws applies  
-Locations/Taxes --> Zones Definitions  
+Locations/Taxes > Zones Definitions  
 
 Create the Zone for all of Canada  
 - Zone Name: Canada GST Zone  
@@ -107,7 +107,7 @@ STEP (3): Create the "Tax Classes"
 Note: You can only assign ONE Tax CLASS to a product.  
 But since we want shipping GST to show up separately, we will make a separate Tax CLASS just for it.  
 
-Locations/Taxes --> Tax Classes  
+Locations/Taxes > Tax Classes  
 
 create TWO (2) tax classes:  
 
@@ -124,7 +124,7 @@ Tax RATES associate Tax ZONES & Tax CLASSES to determine the correct Tax Rate.
 
 **HINT:** The "DESCRIPTION" is what shows up on the invoice, so use it judiciously!!!!!!!!!!!!!  
 
-Locations/Taxes --> Tax Rates  
+Locations/Taxes > Tax Rates  
 
 create SIX (6) Tax Rates:  
 
@@ -183,7 +183,7 @@ That takes care of taxes on products. And now, the Shipping taxes:
 
 STEP (5): Specify the appropriate Tax Class for SHIPPING MODULES  
 
-MODULES --> SHIPPING  
+MODULES > SHIPPING  
 
 Edit whichever shipping module(s) you are using.  
 
@@ -195,7 +195,7 @@ STEP (6): Specify the appropriate Tax for PRODUCTS
 
 This may take some time....  
 
-CATALOG --> Categories/Products  
+CATALOG > Categories/Products  
 
 Drill down to each product. Click EDIT  
 

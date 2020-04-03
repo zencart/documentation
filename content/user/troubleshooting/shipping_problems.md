@@ -12,7 +12,7 @@ Any shipping module that uses weight for the calculations also takes into accoun
 The Tare setting (configurable in your store Admin) adds extra weight to compensate for packaging materials.
 
 To change the Tare, go to 
-[Admin -> Configuration -> Shipping/Packaging](/user/admin_pages/configuration/configuration_shippingpackaging/)
+[Admin > Configuration > Shipping/Packaging](/user/admin_pages/configuration/configuration_shippingpackaging/)
 You will be able to change the Tare on this screen.
 
 You can set either and/or both a percentage or weight for Tare and Large Package.

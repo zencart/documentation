@@ -22,7 +22,7 @@ There's even a way to view [all configuration settings](/user/admin_pages/config
 ---
 ### What determines if a product is New?
 
-There are settings in [Admin->Configuration->Maximum Values](/user/admin_pages/configuration/configuration_maximumvalues/) to determine what "New Product" means: 
+There are settings in [Admin > Configuration > Maximum Values](/user/admin_pages/configuration/configuration_maximumvalues/) to determine what "New Product" means: 
 
 ```
 New Product Listing - Limited to ...
@@ -39,13 +39,13 @@ Limit the New Product Listing to
 
 
 ALTERNATIVE:
-If, however, you wish to hand-pick which items show up, then turn OFF the *New Products* box, and use *Featured Products* instead.  See [Admin->Catalog->Featured Products](/user/admin_pages/catalog/featured/) to pick the products. 
+If, however, you wish to hand-pick which items show up, then turn OFF the *New Products* box, and use *Featured Products* instead.  See [Admin > Catalog > Featured Products](/user/admin_pages/catalog/featured/) to pick the products. 
 
 
 ---
 ### How do I get my store home page to open to a certain category?
 
-Open the [Admin->Configuration->Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/). 
+Open the [Admin  >Configuration  >Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/). 
 
 Find "Main Page - Opens with Category"
 
@@ -62,14 +62,14 @@ Then press *Save*.
 
 1. You need to have purchases in your store first ... where customers bought "this" product along with "another" product.
 
-2. Set: [Admin->Configuration->Product Info->Also Purchased Products Columns per Row](/user/admin_pages/configuration/configuration_productinfo/#also_purchased_products_columns_per_row). 
+2. Set: [Admin > Configuration > Product Info > Also Purchased Products Columns per Row](/user/admin_pages/configuration/configuration_productinfo/#also_purchased_products_columns_per_row). 
 
-3. Set: [Admin->Configuration->Maximum Values->Also Purchased Products](/user/admin_pages/configuration/configuration_maximumvalues/#also_purchased_products).
+3. Set: [Admin > Configuration > Maximum Values >Also Purchased Products](/user/admin_pages/configuration/configuration_maximumvalues/#also_purchased_products).
 
 --- 
 ### Is there a way that I can check on what users with Admin access to my site are doing?
 
-There isn't currently a Zen Cart page to do this, but each time an Admin page is called, the access date, admin ID, page accessed, page parameters and IP address are logged in the `admin_activity_log` table. The contents of this table can be viewed via database management tools such as `phpMyAdmin`.  The table may also be exported using [Admin -> Admins -> Admin Activity Logs](/user/admin_pages/admins/admin_activity_logs/). 
+There isn't currently a Zen Cart page to do this, but each time an Admin page is called, the access date, admin ID, page accessed, page parameters and IP address are logged in the `admin_activity_log` table. The contents of this table can be viewed via database management tools such as `phpMyAdmin`.  The table may also be exported using [Admin > Admins > Admin Activity Logs](/user/admin_pages/admins/admin_activity_logs/). 
 
 --- 
 ### How do I add or delete categories? 
@@ -88,7 +88,7 @@ See [how do I use another currency?](/user/localization/my_currency)
 ---
 
 ### How do I generate a report on banner advertising? 
-Banner statistics are tracked on an ongoing basis. When you open [Admin -> Tools -> Banner Manager](/user/admin_pages/tools/banner_manager/), you can see the last 3 days' details on-screen.
+Banner statistics are tracked on an ongoing basis. When you open [Admin > Tools > Banner Manager](/user/admin_pages/tools/banner_manager/), you can see the last 3 days' details on-screen.
 
 For more information, under the "Action" column, you see a small white graph symbol. Click on that to view stats for day/month/year.
 

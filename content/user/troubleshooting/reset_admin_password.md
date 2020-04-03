@@ -5,7 +5,7 @@ category: troubleshooting
 weight: 10
 ---
 ## 1. Log in with another account. 
-If you can log in to your Zen Cart admin using another account,  please do so, and reset/modify the other admin password as needed via  Admin-&gt;Tools-&gt;Admin Settings<br>
+If you can log in to your Zen Cart admin using another account,  please do so, and reset/modify the other admin password as needed via  Admin > Tools > Admin Settings<br>
 <br>
 <br>
 

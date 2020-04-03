@@ -43,7 +43,7 @@ Zen Cart 1.5.1 or older.**
 
 7\. You're done. Open your store and admin areas to see it all ready to go!
 
-8\. You should review all your email settings in Admin->Configuration->Email Options -- especially any SMTP server/account settings, and of course all your email addresses.
+8\. You should review all your email settings in Admin > Configuration > Email Options -- especially any SMTP server/account settings, and of course all your email addresses.
 
 9\. Once your new site is up and running, you should DELETE the database and all the PHP files/folders, etc from the OLD server.  There's no point leaving that data behind for prying eyes or worse.
 
@@ -52,7 +52,7 @@ Zen Cart 1.5.1 or older.**
 On a store that's taking live orders, you need to prevent orders from being taken in the old site once you've made your backup to move to the new site.  
 So, make the following adjustments to the steps above:  
 
-a) BEFORE taking the backup in Step 3, first login to your old site's admin, and set Admin->Configuration->Website Maintenance->Down For Maintenance = TRUE.  
+a) BEFORE taking the backup in Step 3, first login to your old site's admin, and set Admin > Configuration > Website Maintenance > Down For Maintenance = TRUE.  
 
 b) AFTER step 5 or 6, login to your NEW store's admin, and set Down For Maintenance = FALSE.  
 

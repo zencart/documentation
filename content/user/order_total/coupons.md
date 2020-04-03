@@ -6,12 +6,12 @@ weight: 10
 ---
 If you want to offer a coupon, you need to first enable the coupon system:  
 
-Go to: Admin->Modules->Order Total->Discount Coupons (ot_coupon).   
+Go to: Admin > Modules > Order Total > Discount Coupons (ot_coupon).   
 If it's not already installed, click Install to enable it.  
 
 ## Creating Coupons
 
-Now, in your Admin area, you have a menu item entitled "Discounts".  Click on the Coupon Admin option.  
+Now, in your Admin area, click Discounts > Coupon Admin.  
 
 Next, you create a coupon by clicking Insert.  (Or Edit to edit an existing coupon.)  
 Fill in the details.  

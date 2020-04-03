@@ -9,7 +9,7 @@ The [default template](/user/template/template_default) and its derivatives use 
 
 <img src="/images/header_bg.jpg" alt="Zen Cart background Image" />
 
-You can see this by going to [Admin -> Tools -> Template Selection](/user/admin_pages/tools/template_selection/) and switching to *Classic Contemporary Green*.
+You can see this by going to [Admin > Tools > Template Selection](/user/admin_pages/tools/template_selection/) and switching to *Classic Contemporary Green*.
 
 By default Zen Cart uses `header_bg.jpg` for the name of this image, but you can use you own filename for the background image.
 

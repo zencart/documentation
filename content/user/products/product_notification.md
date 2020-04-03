@@ -7,7 +7,7 @@ weight: 10
 
 **To Enable/Disable the Product Notification System**
 
-Go to Admin->Configuration->Customer Details  
+Go to Admin > Configuration > Customer Details  
 Change the setting for "Customer Product Notification Status" on or off according to the inline help text.  
 
 **Signing Up for Notifications**  
@@ -19,7 +19,7 @@ They have to have an account on your site for this to work.  They manage which 
 **Sending Notifications**  
 The product-notification system is not automatic. You have to send notices to the people who have opted to be notified. It is NOT to any product-changes you might make in the admin area.  
 
-To send notifications to those who have signed up, go to **Admin->Tools->Newsletter/Notification Manager**.
+To send notifications to those who have signed up, go to **Admin > Tools > Newsletter/Notification Manager**.
 Then create a newsletter/notice, choose product-notification as the type.  
 When sending, it will ask you which products your notice applies to. Select, and send.
 

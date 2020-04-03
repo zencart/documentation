@@ -14,7 +14,7 @@ Whatever product type you use to create a product will be used to display that p
 
 ### Using
 To set a category product-type restriction, edit the category you wish to change
-by clicking the pencil icon at the right of the category name when you have navigated to the category using [Admin->Catalog->Categories](/user/admin_pages/catalog/categories/).
+by clicking the pencil icon at the right of the category name when you have navigated to the category using [Admin > Catalog > Categories](/user/admin_pages/catalog/categories/).
 
 Then, at the bottom of the screen, select the desired product type from the 
 `Restrict to Product Type` dropdown.  Press either `Add include SubCategories`

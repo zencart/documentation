@@ -13,7 +13,7 @@ First, let's make sure that you have Products setup correctly.
 
 Do you use Always Free Shipping or 0 weight to mean Free Shipping?  
 
-If so, go to Configuration -> Shipping/Packaging and check the settings 
+If so, go to Configuration > Shipping/Packaging and check the settings 
 
 ```
 Order Free Shipping 0 Weight Status  
@@ -85,7 +85,7 @@ A Product that is a Download OR a Physical Product, is setup like a Normal Produ
 
 I prefer that the Attribute hold the Weight. 
 
-**NOTE:** Attribute Weight can be turned off in the Catalog -> Product Type -> EDIT LAYOUT. 
+**NOTE:** Attribute Weight can be turned off in the Catalog > Product Type > EDIT LAYOUT. 
 
 Now, back to the Combo Product which is BOTH a Physical Product and a Download at the SAME time ...  
 

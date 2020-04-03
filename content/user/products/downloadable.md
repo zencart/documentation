@@ -214,7 +214,7 @@ If you are using download-by-redirect, then your "pub" folder needs to be read-w
 
 8.  Download files should be loaded to the `/download` directory  
 
-9.  On the [Admin->Catalog->Attributes Controller](/user/admin_pages/catalog/attributes_controller/) page, you should see a green dot next to the filename of the Download itself.  Similarly, on [Admin->Catalog->Downloads Manager](/user/admin_pages/catalog/downloads_manager/), you should see a green dot next to the file. 
+9.  On the [Admin > Catalog > Attributes Controller](/user/admin_pages/catalog/attributes_controller/) page, you should see a green dot next to the filename of the Download itself.  Similarly, on [Admin > Catalog > Downloads Manager](/user/admin_pages/catalog/downloads_manager/), you should see a green dot next to the file. 
 
 **See Also:**
 

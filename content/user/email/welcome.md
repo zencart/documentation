@@ -16,7 +16,7 @@ Products Reviews - Share your opinions on products with our other customers.
 
 3. Copy a few of those words "exactly" to the clipboard. Example: `your opinions on products`
 
-4. Open the [Developer's Toolkit](/user/admin/developers_toolkit) under Admin->Tools->Developers Tool Kit
+4. Open the [Developer's Toolkit](/user/admin/developers_toolkit) under Admin > Tools > Developers Tool Kit
 
 5. Paste those words exactly as they appeared on the email into the first search box.
 
@@ -34,5 +34,5 @@ Products Reviews - Share your opinions on products with our other customers.
 `includes/languages/english/YOURTEMPLATE/create_account.php`.
 where `YOURTEMPLATE` is the name of the custom template you've been developing for your site.
 
-**HINT:** If you want to test your change once you have made it, rather than signing up for another free email account, you can just delete your account from your store in `Admin->Customers->Customers` and then create it in the usual way.
+**HINT:** If you want to test your change once you have made it, rather than signing up for another free email account, you can just delete your account from your store in [Admin > Customers > Customers](/user/admin_pages/customers/customers/) and then create it in the usual way.
 

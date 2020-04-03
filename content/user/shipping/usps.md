@@ -15,9 +15,9 @@ Here is the [link for registering](https://www.usps.com/business/web-tools-apis/
 
 You will soon (24-48 government hours) receive e-mail from USPS with your user ID and some generic instructions.
 
-In your Zen Cart admin area, make sure you have a zip code entered at: Admin -> Configuration -> Shipping/Packaging -> Postal Code.
+In your Zen Cart admin area, make sure you have a zip code entered at: Admin > Configuration > Shipping/Packaging > Postal Code.
 
-In your Zen Cart admin area, go to Admin -> Modules -> Shipping, and click on the USPS shipping module, click Install, and fill out the various configuration information fields.
+In your Zen Cart admin area, go to Admin > Modules > Shipping, and click on the USPS shipping module, click Install, and fill out the various configuration information fields.
 
 Call USPS 1-800-344-7779 and ask them to take account out of Test (i.e.: Put it into production mode).
 

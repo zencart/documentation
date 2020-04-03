@@ -5,7 +5,7 @@ category: template
 weight: 10
 ---
 
-Open [Admin ->Tools -> Layout Boxes Controller](/user/admin_pages/tools/layout_boxes_controller/). 
+Open [Admin > Tools > Layout Boxes Controller](/user/admin_pages/tools/layout_boxes_controller/). 
 
 Click on the box that you would like to move or turn off, click edit and make your changes. The position of the boxes is based on their sort order. Example: a box with a sort of 10 would be above a box with a sort of 30.
 

@@ -40,14 +40,14 @@ if (in_array($ezpage_id,explode(",",'2,5'))) {
   }
 ```
 
-Or, you can use the settings in Admin->Configuration->EZ-Pages Settings:  
+Or, you can use the settings in Admin > Configuration > EZ-Pages Settings:  
 For example:  
 
 **EZ-Pages Pages to disable left-column**  
 
 EZ-Pages "pages" on which to NOT display the normal "left" column (of sideboxes) for your site.  
 Simply list page ID numbers separated by commas with no spaces.  
-Page ID numbers can be obtained from the EZ-Pages screen under Admin->Tools.  
+Page ID numbers can be obtained from the EZ-Pages screen under Admin > Tools.  
 ie: 21  
 or leave blank.  
 

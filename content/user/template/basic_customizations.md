@@ -17,7 +17,7 @@ Zen Cart files.
 --- 
 
 ### Can I change the width of the side boxes?
-To change the width of the sidebox columns, open [Admin -> Configuration -> Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/). 
+To change the width of the sidebox columns, open [Admin > Configuration > Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/). 
 
 Click the Box Width you wish to change and edit it, the width can be fixed (default is 150px), expressed as a percentage of the total page width or as a relative size (20em). You can also change the width of either column to suit your design.
 
@@ -28,12 +28,12 @@ You can also turn off either column universally in the same section of the admin
 ---
 
 ### How can I remove the search box in the header navigation bar?
-Open [Admin -> Tools -> Layout Boxes Controller](/user/admin_pages/tools/layout_boxes_controller/). Find `search_header.php`, edit, and turn both switches to off.
+Open [Admin > Tools > Layout Boxes Controller](/user/admin_pages/tools/layout_boxes_controller/). Find `search_header.php`, edit, and turn both switches to off.
 
 --- 
 
 ### How do I show the Categories on the main page?
-Open [Admin -> Configuration -> Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/). 
+Open [Admin > Configuration > Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/). 
 
 Find `Categories - Always Show on Main Page`, click edit and enable the feature.
 
@@ -92,7 +92,7 @@ Upload your button images to:
 **NOTE:** If you are using multiple languages you need a set of buttons for each language.
 
 Another approach is to use CSS buttons feature. Turn on 
-`CSS Buttons` in [Admin->Configuration->Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/).  If you do this, there is no need
+`CSS Buttons` in [Admin > Configuration > Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/).  If you do this, there is no need
 to maintain images for each button; the images are generated in CSS.
 
 ---
@@ -109,9 +109,9 @@ If you wish to change admin functionality, you will have to edit the core files 
 This is handled in many ways. 
 There are administrative "switches" under 
 
-- [Admin-> Configuration-> Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/) 
-- [Admin-> Configuration-> Product Info](/user/admin_pages/configuration/configuration_productinfo/) 
-- [Admin-> Configuration-> Product Listing](/user/admin_pages/configuration/configuration_productlisting/) 
+- [Admin > Configuration > Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/) 
+- [Admin > Configuration > Product Info](/user/admin_pages/configuration/configuration_productinfo/) 
+- [Admin > Configuration > Product Listing](/user/admin_pages/configuration/configuration_productlisting/) 
 
 There are language files controlling text content.
 There are template files controlling the display of the information.
@@ -122,7 +122,7 @@ For more specific questions, please go to the [support forum](https://www.zen-ca
 
 ### How do I to change shopping cart line that shows Weight, Item Count and Price? 
 
-Go to:   [Admin->Configuration->Shipping/Packaging](/user/admin_pages/configuration/configuration_shippingpackaging/).
+Go to:   [Admin > Configuration > Shipping/Packaging](/user/admin_pages/configuration/configuration_shippingpackaging/).
 Select  Display Number of Boxes and Weight Status
 
 Choose the desired setting:

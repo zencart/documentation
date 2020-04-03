@@ -30,7 +30,7 @@ Both of these need to be long enough (in seconds) for the time required for the 
 It's best if those settings can be configured in the server's master PHP settings, or at least in the hosting-account's settings (if not in a control panel, then at least in a custom `php.ini` activated for just that user).  Some of those settings (the times) can be set in code while the PHP scripts is executing. Check with your hosting company about the best way to change these settings for your unique needs.  Some hosts do NOT allow you to change these; if yours does not, you may wish to change hosters.
 
 ### Zen Cart Admin Limit
-In your Zen Cart [Admin->Configuration->Maximum Values](/user/admin_pages/configuration/configuration_maximumvalues/) screen, you'll find a *Maximum Upload Size* parameter. This is the number (in bytes) that Zen Cart checks to see if the file uploaded is small enough to suit maximum requirements. If the uploaded file is larger than this number, it will be rejected.
+In your Zen Cart [Admin > Configuration > Maximum Values](/user/admin_pages/configuration/configuration_maximumvalues/) screen, you'll find a *Maximum Upload Size* parameter. This is the number (in bytes) that Zen Cart checks to see if the file uploaded is small enough to suit maximum requirements. If the uploaded file is larger than this number, it will be rejected.
 
 **NOTE:** This number is ignored if the PHP limits discussed above are smaller, since PHP will reject the upload if the file is too large, long before Zen Cart will be able to check it using its own values.
 

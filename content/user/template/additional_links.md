@@ -42,17 +42,17 @@ You would add an external link as outlined above.
 
 OPTION 2:
 
-Make sure the EZ-Pages header or footer are activated in [Admin -> Configuration-> EZ-Pages](/user/admin_pages/configuration/configuration_ezpagessettings/). 
+Make sure the EZ-Pages header or footer are activated in [Admin > Configuration > EZ-Pages](/user/admin_pages/configuration/configuration_ezpagessettings/). 
 
-Go to [Admin -> Tools -> EZ-Pages](/user/admin_pages/tools/ezpages/) and click the `New Page` button.
+Go to [Admin > Tools > EZ-Pages](/user/admin_pages/tools/ezpages/) and click the `New Page` button.
 
 Fill in the Page Title Box (in our example, add Contact Us)
 
 Select Where you want the link to appear:
 
 ```
-Header -> select Yes and add a Sort Order
-Footer -> select Yes and add a Sort Order
+Header > select Yes and add a Sort Order
+Footer > select Yes and add a Sort Order
 ```
 
 Scroll down to the `Internal Link URL` box

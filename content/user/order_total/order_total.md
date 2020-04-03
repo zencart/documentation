@@ -7,7 +7,7 @@ weight: 1
 
 Order Total modules allow you to add a surcharge or a discount to the order.
 
-The list of available order total modules may be seen by going to [Admin->Modules->Order Total](/user/admin_pages/modules/order_total/).
+The list of available order total modules may be seen by going to [Admin > Modules > Order Total](/user/admin_pages/modules/order_total/).
 
 Zen Cart has a number of built-in order total modules which allow you to 
 increase or reduce the total owed based on various factors in the order: 

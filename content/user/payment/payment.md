@@ -7,7 +7,7 @@ weight: 1
 
 Payment modules allow you to collect or arrange payment for an order.
 
-The list of available payment modules may be seen by going to [Admin->Modules->Payment](/user/admin_pages/modules/payment/).
+The list of available payment modules may be seen by going to [Admin > Modules > Payment](/user/admin_pages/modules/payment/).
 
 Zen Cart has a number of built-in payment modules which allow you to charge for your order in various ways: 
 

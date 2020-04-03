@@ -7,7 +7,7 @@ weight: 10
 
 Here's how to do it, and I am assuming here that you want to have VAT added for goods shipping to any EEC country.
 
-Admin->Locations/Taxes->Zone Definitions
+Admin > Locations/Taxes > Zone Definitions
 
 Click on insert.
 
@@ -25,9 +25,9 @@ Click on Insert - Select France for the country - Click on insert
 ```
 repeat this for all countries in the EEC
 
-Now goto to Admin->Locations/Taxes->Tax Classes make sure that there is an entry called Taxable Goods. If not, create one.
+Now goto to Admin > Locations/Taxes > Tax Classes make sure that there is an entry called Taxable Goods. If not, create one.
 
-Now goto to Admin->Locations/Taxes->Tax Rates
+Now goto to Admin > Locations/Taxes > Tax Rates
 
 Click on new tax rate
 
@@ -43,5 +43,5 @@ Note the above assumes you have no zone definitions/tax rates already set up. If
 
 Now any goods that you wish to charge VAT on must have their tax class set to Taxable goods. You can do this on the product edit screen.
 
-Finally, just to be safe. In Admin->Configuration->My Store make sure that the basis of product tax = shipping
+Finally, just to be safe. In Admin > Configuration > My Store make sure that the basis of product tax = shipping
 

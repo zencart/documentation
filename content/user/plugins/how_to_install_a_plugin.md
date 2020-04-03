@@ -62,7 +62,7 @@ The hierarchy of these files is intended to exactly duplicate the structure of y
 If your cart is under (say)  /httpdocs/public_html/, the instructions would be the same; FTP to your site; cd to <code>/httpdocs/public_html/</code>
 then transfer the <code>includes</code> folder over. 
 
-So in fact, to install this contribution, all you have to do is copy these two files into your cart, turn on the Quantity Discounts order total module (under Admin->Modules->Order Totals), and you're done.  
+So in fact, to install this contribution, all you have to do is copy these two files into your cart, turn on the Quantity Discounts order total module (under Admin > Modules > Order Totals), and you're done.  
 
 ## Templates and Core Files
 
@@ -110,7 +110,7 @@ those changes to your template files.
 
 Some mods require database changes. For instance, Gift Wrap at Checkout includes a file called orders_wrap.sql, which modifies your database.  
 
-These files are best run through the Zen Cart admin panel, which will take care of the prefix (if you have one). To do this, go to Admin->Tools->Install SQL patches.  
+These files are best run through the Zen Cart admin panel, which will take care of the prefix (if you have one). To do this, go to Admin > Tools > Install SQL patches.  
 
 Alternately, you can run them using phpMyAdmin, but you will need to edit the .sql script to account for the prefix. 
 
@@ -145,7 +145,7 @@ This means you used phpMyAdmin but forgot to edit the .sql file to include your 
 
 The most important principle to remember when changing your database is that you must do a backup prior to making the change. You can do a backup using phpMyAdmin.  
 
-Not all database modifications will be done through a .sql file; for instance, any file which requires you to click an "Install" link from Admin->Modules is modifying your database. Be sure to make a backup!  
+Not all database modifications will be done through a .sql file; for instance, any file which requires you to click an "Install" link from Admin > Modules is modifying your database. Be sure to make a backup!  
 
 Some mods use the "TYPE=MyISAM" syntax when doing a CREATE TABLE, which is not accepted by some newer versions of MySQL. If you get a message like this when running an SQL script:
 

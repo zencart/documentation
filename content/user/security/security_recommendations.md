@@ -36,7 +36,7 @@ Optional: Additionally, *IF* you have no intentions of supporting downloadable p
  - /pub  
 ```
 
-(And you'll need to go to your Admin->Configuration->Attribute Settings->Enable Downloads, and set it to False to turn off the warning message about the missing download folder) In the future, if you choose to add downloadable products to your site or music-products, you will want to re-upload these appropriate folders (and their contents) to your server again, and assign appropriate permissions.
+(And you'll need to go to your Admin > Configuration > Attribute Settings > Enable Downloads, and set it to False to turn off the warning message about the missing download folder) In the future, if you choose to add downloadable products to your site or music-products, you will want to re-upload these appropriate folders (and their contents) to your server again, and assign appropriate permissions.
 
 ### 2\. Rename your _/admin_ folder
 
@@ -49,7 +49,7 @@ If your server doesn't support use of .htaccess files, you'll need to work with 
 
 ### 3\. Use SMTPAUTH or SMTP as your Email Transport method, instead of the generic "PHP" or "sendmail" settings.
 
-Go to Admin->Configuration->Email Options, and change your Email Transport Protocol to SMTPAUTH, and then fill in all the SMTP credentials in the other settings lower on that same screen.
+Go to Admin > Configuration > Email Options, and change your Email Transport Protocol to SMTPAUTH, and then fill in all the SMTP credentials in the other settings lower on that same screen.
 
 This will not only help prevent outgoing emails from ending up in spam folders, but will also prevent the disclosure of your admin folder when sending emails from your admin screens.
 

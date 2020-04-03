@@ -15,7 +15,7 @@ but for many situations, this is not required.
 
 b) Use the built-in extra pages, [page_2](/user/admin_pages/configuration/configuration_definepagestatus/#define_page_2), [page_3](/user/admin_pages/configuration/configuration_definepagestatus/#define_page_3) and [page_4](/user/admin_pages/configuration/configuration_definepagestatus/#define_page_4).
 
-Turn on these pages from [Admin->Configuration->Define Page Status](/user/admin_pages/configuration/configuration_definepagestatus/) as shown above, then modify the page content using the [Define Pages Editor](/user/admin_pages/tools/define_pages/). 
+Turn on these pages from [Admin > Configuration > Define Page Status](/user/admin_pages/configuration/configuration_definepagestatus/) as shown above, then modify the page content using the [Define Pages Editor](/user/admin_pages/tools/define_pages/). 
 
 c) Create a new page
 

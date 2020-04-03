@@ -21,7 +21,7 @@ ZC displays images in 3 sizes - the small ones (thumbnails) shown in the various
 
 You can set different sizes for the different types of listing, but I'd suggest for the sake of uniformity through your site that you set all those to the same dimensions as your "small" setting.
 
-You can set the sizes for the small and medium by going to [Admin -> Configuration -> Images](/user/admin_pages/configuration/configuration_images/). If you want all your images to be the same width but the heights may vary, then set the Width to the figure you require and the height to 0 and make sure *Calculate Image Size* is turned on. Conversely, if you want all the images to be the same height, then set the Width to 0 and the height to the figure you require.  
+You can set the sizes for the small and medium by going to [Admin > Configuration > Images](/user/admin_pages/configuration/configuration_images/). If you want all your images to be the same width but the heights may vary, then set the Width to the figure you require and the height to 0 and make sure *Calculate Image Size* is turned on. Conversely, if you want all the images to be the same height, then set the Width to 0 and the height to the figure you require.  
 
 You can now simply upload all your pics using your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) to your `/images` folder and let the coding do all the work - but this will generally end up with you having a far from perfect result. 
 

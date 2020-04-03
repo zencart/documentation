@@ -45,7 +45,7 @@ That's it.
 
 1.  change transport methods (ask your host what's best ... they should know how they've configured your server).
     *   **NOTE:** `SMTPAUTH` is least likely to end up getting treated as spam.
-2.  change send-from email addresses (Admin->Configuration->Email Options). This should be an email associated with your server's domain. Preferably not a "free email account" such as Gmail, since your server is *not* a Gmail server and therefore your emails would be seen as spammy impersonation attempts, unless you're using SMTPAUTH properly configured for your account.
+2.  change send-from email addresses (Admin > Configuration > Email Options). This should be an email associated with your server's domain. Preferably not a "free email account" such as Gmail, since your server is *not* a Gmail server and therefore your emails would be seen as spammy impersonation attempts, unless you're using SMTPAUTH properly configured for your account.
     *   MAKE SURE THE ADDRESS IS VALID.
     *   It is recommended to use an email account linked to the same domain name as your store. Attempting to masquerade with a different email address makes your emails prime candidates for being treated as junkmail, and thus not delivered.
 3.  change send-to email addresses ... DO NOT TEST USING FREE MAIL SERVICES ... your mail is often dropped to a junkmail black hole.
@@ -56,7 +56,7 @@ That's it.
 8.  try testing with HTML emails OFF, since many spam filters block HTML-formatted messages before they even get out the gate.
 9.  check the mailserver logs ... is it complaining about something, either inbound or outbound?
 10.  for kicks, get the webserver/mailserver rebooted and dump all the logs ... just maybe something's runamuck in there ...
-11.  Try enabling Email Archiving (Admin->Configuration->Email Options->Email Archiving). Then install the [email archive manager](https://www.zen-cart.com/downloads.php?do=file&id=101) from the Zen Cart Downloads section (in admin tools), and confirm that the emails are actually being sent from Zen Cart. If it's in the archive, it was handed off to the mailserver. Once the email leaves Zen Cart, it's at the mercy of your mailserver.
+11.  Try enabling Email Archiving (Admin > Configuration > Email Options > Email Archiving). Then install the [email archive manager](https://www.zen-cart.com/downloads.php?do=file&id=101) from the Zen Cart Downloads section (in admin tools), and confirm that the emails are actually being sent from Zen Cart. If it's in the archive, it was handed off to the mailserver. Once the email leaves Zen Cart, it's at the mercy of your mailserver.
 12.  Look at your raw/full email headers. Does the "from" address appear to be a "nobody@xxxxxxx" address? Some hosts block these. The "email must send from known domain" setting is designed to counteract this. The SMTPAUTH setting also helps to work around this.
 13.  This is RARE: If using "sendmail" and your "sendmail" path on your webserver is not the default of /usr/sbin/sendmail then you can override the default by adding a definition for it in a new file on your server: /includes/extra_datafiles/email_sendmail_override.php ... create a define for EMAIL_SENDMAIL_PATH and point it to the actual sendmail path for your particular host. This should not be necessary, and usually using "PHP" as transport method will correct it without making this edit.
 14.  Also rare: Does your server require 7bit mail encoding instead of the default 8bit? If so, edit the /includes/extra_configures.email_use_8bit.php file and put // before the define statement there.
@@ -135,7 +135,7 @@ If you're hosting someplace other than Yahoo but trying to send email through yo
 
 ### Google Mail / Gmail
 
-Gmail / Google Apps Mail requires that your email communications occur over a secure channel, which means you need to send on port 587 for TLS. The latest version of Zen Cart supports this by using the following settings in Admin->Configuration->Email Options:
+Gmail / Google Apps Mail requires that your email communications occur over a secure channel, which means you need to send on port 587 for TLS. The latest version of Zen Cart supports this by using the following settings in Admin > Configuration > Email Options:
 
 #### Gmail
 

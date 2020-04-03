@@ -5,7 +5,7 @@ category: localization
 weight: 10
 ---
 
-Zone Definitions can be created by adding 1 by 1 each Zone or can be created quickly with some SQL commands that can be run in the Zen Cart Admin from the `Tools -> Install SQL Patches` menu. 
+Zone Definitions can be created by adding 1 by 1 each Zone or can be created quickly with some SQL commands that can be run in the Zen Cart Admin from the `Tools > Install SQL Patches` menu. 
 
 Be careful when creating Zone Definitions such as Zone Definitions for the United States.  
 
@@ -23,7 +23,7 @@ Country: United States
 Zone: (specific Zone here)  
 ```
 
-Be careful to note the `geo_zone_id` in each of the INSERTs below. They are unique from one another so that they do not conflict with each other. You also need to ensure that they are unique on your site, meaning, that you have not already used the `geo_zone_id` for another Zone Definition. You can check this by going to your Zen Cart Admin and checking the Localization-&gt;Zone Definitions.  If you click on the Zone Definition, you will see in the URL the `zID=XX` which will indicate the `geo_zone_id` that is being used.  
+Be careful to note the `geo_zone_id` in each of the INSERTs below. They are unique from one another so that they do not conflict with each other. You also need to ensure that they are unique on your site, meaning, that you have not already used the `geo_zone_id` for another Zone Definition. You can check this by going to your Zen Cart Admin and checking the Localization > Zone Definitions.  If you click on the Zone Definition, you will see in the URL the `zID=XX` which will indicate the `geo_zone_id` that is being used.  
 
 ### To create a Zone for the US Continental 48 States & DC
 

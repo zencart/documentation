@@ -11,7 +11,7 @@ folder so that thieves cannot directly link to real files on your server and dow
 
 To do this, you must:  
 
-1.  Choose a download method of either "**Download by Streaming**" or "**Download by Redirect**" from **Admin->Configuration->Attribute Settings**.  
+1.  Choose a download method of either "**Download by Streaming**" or "**Download by Redirect**" from **Admin > Configuration > Attribute Settings**.  
     If you're using a Linux server, either option is suitable.  
     If you're using a Windows server running IIS, you may not be able use redirects (depending on PHP version and whether or not your server allows PHP symlinks). Instead, you will need to use _**Download by Streaming**_ in order to handle secured downloads.  
 

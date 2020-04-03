@@ -45,7 +45,7 @@ Once you have a log, see [reading a myDEBUG log](/user/troubleshooting/debug_log
 
 Then search this FAQ area for your error message and/or see the "Dealing with Error Messages" section, later in this article.  
 
-**NOTE:** When errors start occurring, the number of log files in this folder can grow very quickly. You can purge them by using the Debug Log File Purge option from your Admin->Tools->Store Manager screen.  
+**NOTE:** When errors start occurring, the number of log files in this folder can grow very quickly. You can purge them by using the Debug Log File Purge option from your Admin > Tools > Store Manager screen.  
 
 You will of course want to review the contents of those files first so you can address the problems they're recording.  
 

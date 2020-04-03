@@ -12,7 +12,7 @@ weight: -1
 
 You create a new category of products that describe your documents (for example, category **Recipes**), and then create products within that category (**individual recipes**). 
 
-- In [Admin -> Catalog -> Categories/Products](/user/admin_pages/catalog/categories/), make your category (say it's *Recipes*).
+- In [Admin > Catalog > Categories/Products](/user/admin_pages/catalog/categories/), make your category (say it's *Recipes*).
 
 - Edit the category, and set to product type: Document General
 
