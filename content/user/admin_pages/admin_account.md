@@ -1,5 +1,5 @@
 ---
-title: Admin->Account 
+title: Admin > Account 
 description: Zen Cart Admin->Account section
 category: admin_pages
 weight: 500 

@@ -1,5 +1,5 @@
 ---
-title: Admin->Version link 
+title: Admin > Version link 
 description: Zen Cart Admin->Version link 
 category: admin_pages
 weight: 500

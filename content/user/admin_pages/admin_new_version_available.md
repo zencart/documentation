@@ -1,5 +1,5 @@
 ---
-title: Admin-> New Version Available message 
+title: Admin > New Version Available message 
 description: Zen Cart Admin New Version Available message 
 category: admin_pages
 weight: 600

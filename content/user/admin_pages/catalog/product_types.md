@@ -16,7 +16,11 @@ When you go to the Admin > Catalog > Categories/Products you have a list of your
 Each product type collects certain kinds of information relevant to that product. Each product type has a different display of content in the store (ie: music shows a bit different than other products, and also allows the attaching of MP3 clips in the media manager, etc - all of which are displayed on the music product automagically, but not on a T-Shirt, for example).
 
 
-In the Admin > Catalog > Product Types menu, there is a listing of product types. For each product type, you can select the default settings for entry of new products of that type (such as default tax class, so you don't have to always select this when entering new products of that type), as well as some settings used in the template for that product type to affect how it is displayed (i.e. free-shipping logo always on, etc.).
+In the Admin > Catalog > Product Types menu, there is a listing of product types. For each product type, you can 
+- select the default settings for entry of new products of that type
+- choose how fields are displayed 
+
+This capability to set defaults and appearance on a per product type basis is provided through the [Layout Settings](/user/admin_pages/catalog/product_types_edit_layout) screen. 
 
 
 If you are a developer, see [technical information on product types](/dev/code/product_types). 
