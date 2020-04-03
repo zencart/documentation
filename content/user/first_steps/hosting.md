@@ -1,5 +1,5 @@
 ---
-title: Basic Hosting and Domain concepts
+title: Basics - Hosting and Domain concepts
 description: Basic Hosting and Domain concepts for Zen Cart
 category: Installing
 weight: 10

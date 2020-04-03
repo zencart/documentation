@@ -33,7 +33,7 @@ The per-weight shipping module can be used for this.
 1. Turn on the Per-Unit (perweightunit) shipping module in [Admin->Modules->Shipping](/user/admin_pages/modules/shipping/)
 
 2. Now manually edit *each* product and enter the shipping cost as the product "weight".
-    This module uses the product-weight as the shipping rate for this product ... ie: it is no longer the weight -- it is only the shipping cost.
+    This module uses the product-weight as the shipping rate for this product.  This means the `weight` field is no longer the weight -- it is only the shipping cost.
 
 3. Turn off weight display everywhere, since it is no longer meaningful.
 
@@ -41,7 +41,7 @@ The per-weight shipping module can be used for this.
 
     b) Admin->Configuration->Shipping/Packaging->Display Number of Boxes and Weight Status
 
-    c) Admin->Configuration->index listing / all listing / new listing / featured listing ... turn off the weight on these
+    c) Admin->Configuration->Index Listing / All Listing / New Listing / Featured Listing - all must be changed to not display the weight. 
 
 ---
 <!-- please keep this at the end --> 

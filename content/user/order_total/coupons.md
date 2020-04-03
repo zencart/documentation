@@ -43,7 +43,7 @@ These Restrictions can then be seen by the Customer via the **Discount Coupons**
 
 ## Redeeming Coupons
 
-When a customer adds something to their cart and proceeds to checkout, they will see a spot to enter a coupon code ... on the Payments page.  
+When a customer adds something to their cart and proceeds to checkout, they will see a spot to enter a coupon code on the Payments page.  
 Once they fill in the code and press Enter, it will be checked for validity, and if it is valid and not restricted against what's in their cart, a Success message will show on the screen, and their order Total will be adjusted appropriately.  
 
 If they wish to remove a coupon, they can enter a different coupon code, or they can type "REMOVE", and press Enter.

@@ -12,7 +12,7 @@ and it tells you to update
 includes/templates/YOURTEMPLATE/templates/tpl_product_info_display.php
 ```
 
-and you say, "Wait a minute ... that file doesn't exist in my cart!" 
+and you say, "Wait a minute - that file doesn't exist in my cart!" 
 
 First of all, let's review a few things: 
 

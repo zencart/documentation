@@ -56,7 +56,7 @@ Optional modules: gd and mb_xxxxx.
 
 *   Zen Cart v1.5.6 expects MySQL 5.1 to 5.7, or MariaDB 10.1 to 10.4
 *   Zen Cart v1.5.5 expects MySQL 5.1 to 5.7, or MariaDB 10.1 (10.2 may trigger "strict" errors)
-*   Zen Cart v1.5.0 to v1.5.4 expects MySQL 5.1 to 5.5 ... and <u>may</u> work with MariaDB 10.1
+*   Zen Cart v1.5.0 to v1.5.4 expects MySQL 5.1 to 5.5, and <u>may</u> work with MariaDB 10.1
 *   Zen Cart v1.3.9 is compatible with MySQL 4.1.3+ thru 5.1
 *   Zen Cart v1.2.x thru 1.3.8a were designed for MySQL 4, and will give errors on MySQL5
 

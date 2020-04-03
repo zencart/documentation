@@ -5,6 +5,8 @@ category: email
 weight: 10
 ---
 
+FIXME review content
+
 Zen Cart's email infrastructure is largely dependent on the services available to the computer operating as your webserver. This includes internet connection issues, available ports, as well as PHP configuration options and the programs/services running on your server.
 
 ## Zen Cart Email Infrastructure Explained

@@ -5,7 +5,7 @@ category: customizing
 weight: 10
 ---
 
-You have several options if you want to add a page to your site: 
+You have several options if you want to add a page to your site.  Here they are, in increasing order of complexity: 
 
 a) Use [EZ-Pages](/user/ezpages/what_are_ezpages)
 

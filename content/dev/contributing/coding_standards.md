@@ -8,7 +8,7 @@ weight: 2
 Legacy Zen Cart code has used a modified *phpBB* coding style, with notable characteristics such as "indent with 2 spaces, not tabs", and "The opening brace (ie: `{`) for `class` and `function` definitions, as well as `if/else` statements, was kept on the same line", etc.
 
 ## New Standard: PSR-2
-In the interest of progressively modernizing the code, going forward we are adopting [the PSR-2 coding standard](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide) (which also includes PSR-1 standards).
+In the interest of progressively modernizing the code, going forward we are adopting [the PSR-2 coding standard](https://www.php-fig.org/psr/psr-2/), which also includes PSR-1 standards.
 
 ### Difference from the "Old Standard"
 To be clear: PSR-2 uses "4 spaces instead of tabs", and puts the opening `{` braces on a new line when used with `class` and `function` declarations (but keeps them on the same line when used with controls structures such as `if`, `for`, `foreach`, `switch` or `while` loops.)
@@ -84,5 +84,5 @@ Where possible, try to keep these things separate:
 - Files in `includes/templates` should be where display markup resides (not extensive logic).
 
 ## Namespaced Autoloading
-The [PSR-4 autoloading standard](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader) is used for handling code in the \ZenCart namespace (ie: the files in `/includes/library`).
+In Zen Cart 1.6.0, the [PSR-4 autoloading standard](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader) is used for handling code in the \ZenCart namespace (ie: the files in `/includes/library`).
 

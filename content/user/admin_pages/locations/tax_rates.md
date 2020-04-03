@@ -11,7 +11,7 @@ This page allows you to create a specific tax rate for a zone.
 The following steps are an example of setting a tax rate definition for California:
 
 1. Go to Admin > Locations/Taxes > Tax Rates
-1. Click New Tax Rate ...
+1. Click New Tax Rate 
 1. Select a Tax Class Title:
     ````
     Taxable Goods
@@ -32,4 +32,4 @@ The following steps are an example of setting a tax rate definition for Californ
     ````
     1
     ````
-1. Click Insert ...
+1. Click Insert 

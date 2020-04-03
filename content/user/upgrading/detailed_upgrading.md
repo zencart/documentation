@@ -107,7 +107,7 @@ Test your customizations. Edit as needed. Compare with the test/demo install per
 
 When satisfied that all is OK, go live.  
 
-If significant time has passed since you did your last backup, you may want to repeat the steps in this "Testing" section again, using a fresh backup from your live shop. You don't need to re-upload files again ... simply do the database restore, and run the installer to do the database upgrade again.  
+If significant time has passed since you did your last backup, you may want to repeat the steps in this "Testing" section again, using a fresh backup from your live shop. You don't need to re-upload files again; simply do the database restore, and run the installer to do the database upgrade again.  
 
 To go live, put your shop into "Down for Maintenance" mode in the admin area. Be sure to add your IP address to the list of allowed addresses to get into the site for previewing.  
 

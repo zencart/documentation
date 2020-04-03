@@ -7,7 +7,7 @@ weight: 10
 
 Vendors operating in Canada need to accommodate numerous tax configurations to support proper tax collection on sales to customers in provinces where they are registered to sell. There's a Federal GST, HST, and provincial PST/RST.  
 
-Tax Zones / Rates configuration can be a little confusing at times, as the terms are easily and accidentally swapped ... by mistake... thus it's sometimes hard to follow the process through completely.  
+Tax Zones / Rates configuration can be a little confusing at times, as the terms are easily and accidentally swapped. 
 
 Hopefully this short article will help clarify.  
 

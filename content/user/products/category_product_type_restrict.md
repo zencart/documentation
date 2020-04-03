@@ -10,7 +10,7 @@ Category "restrictions" ONLY restrict which product-types you can use to CREATE 
 Categories can contain products of any product type. But the restrictions affect creation of NEW products.  Essentially, the restriction feature is simply a "control" to help prevent errors during data-entry using the admin interface.
 
 ### What about display?
-Whatever product type you use to create a product ... is what will be used to display that product to the customers in your store.  The display in the store has nothing to do with the restrictions in the admin related to a given category. It's based on the product-type of the product, not the category.
+Whatever product type you use to create a product will be used to display that product to the customers in your store.  The display in the store has nothing to do with the restrictions in the admin related to a given category. It's based on the product-type of the product, not the category.
 
 ### Using
 To set a category product-type restriction, edit the category you wish to change

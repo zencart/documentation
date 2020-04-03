@@ -5,18 +5,21 @@ category: products
 weight: 10
 ---
 
-**NOTE:** CHECK OUT THE IMPORTANT FACTS ABOUT DOWNLOAD SETTINGS, near the bottom of this article. 
+Background: 
 
-Downloads are handled as product attributes.  
-So, **FIRST you should familiarize yourself with:** [setting up attributes](/user/products/attributes). 
+- Downloads are handled as product attributes.  So, first, you should familiarize yourself with [setting up attributes](/user/products/attributes). 
 
-**NOTE:** Download files must be loaded by your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) to your store's  `/download` directory before trying to link those files to products/attributes.  
+- Download files must be loaded by your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) to your store's  `/download` directory before trying to link those files to products/attributes.  
+
+- Other important facts about downloads are linked at the bottom of this article. 
+
+---
 
 ## To add a Download Attribute to a product
 
-1.  Go to **Option Names** ... and create an Option Name that is either Radiobutton or Dropdown ...  
+1.  Go to **Option Names** and create an Option Name that is either Radiobutton or Dropdown 
     Call it something like:  **_Download_**
-2.  Go to **Option Values Manager** and add what you want to call it ...  
+2.  Go to **Option Values Manager** and add what you want to call it 
     example: **_Zip File_**  
     If you have multiple choices you could have these as the Option Names you create:  
 
@@ -24,7 +27,7 @@ So, **FIRST you should familiarize yourself with:** [setting up attributes](/use
     - Plain Text Zip  
     - etc.
 
-3.  Go to **Attributes Controller** and find the Product ...  
+3.  Go to **Attributes Controller** and find the Product 
     Add the Attribute as:
 
 1.  Option Name: Download  
@@ -44,7 +47,7 @@ If using Radio buttons and have multiple selections, be sure to set one as a def
 ## To make multiple downloads on the same product
 
 For each download item, you need an **Option Name**  
-For each Option Name, you need one or many **Option Values** depending on the choices needed ...  
+For each Option Name, you need one or many **Option Values** depending on the choices needed 
 
 **Let's use an example:**
 
@@ -213,8 +216,9 @@ If you are using download-by-redirect, then your "pub" folder needs to be read-w
 
 9.  On the [Admin->Catalog->Attributes Controller](/user/admin_pages/catalog/attributes_controller/) page, you should see a green dot next to the filename of the Download itself.  Similarly, on [Admin->Catalog->Downloads Manager](/user/admin_pages/catalog/downloads_manager/), you should see a green dot next to the file. 
 
-**ALSO:**
+**See Also:**
 
-- See the related article about [Download Delivery Methods](/user/products/download_delivery_methods). 
-- See the related article about [Moving your Download Folder](/user/security/relocate_download_folder). 
+- [Downloads - why do they not activate after checkout](/user/products/downloads_activating/)
+- [Download Delivery Methods](/user/products/download_delivery_methods)
+- [Moving your Download Folder](/user/security/relocate_download_folder) 
 

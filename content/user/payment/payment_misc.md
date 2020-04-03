@@ -14,7 +14,7 @@ Zen Cart evaluates the credit card numbers you enter to see if they match the se
 
 So, if you enter a MasterCard number, but have MasterCard turned off (in the Admin), then it will tell the customer "we don't accept that kind of card".
 
-It doesn't matter which credit card gateway you have installed ... the same processing will reject disabled card-types before even sending to the merchant gateway.
+It doesn't matter which credit card gateway you have installed.  The same processing will reject disabled card-types before even sending to the merchant gateway.
 
 Resolution:
 
@@ -52,7 +52,7 @@ During checkout, if your payment methods aren't showing up, go into Admin> Modul
 
 3. Do you have any Zones associated with this payment module? If so, then likely by removing the Zone configuration from the payment module will allow you to use it during checkout.
 
-To properly configure zones with payment modules requires that you create zones to fully match the zones to your customers' addresses. Always be sure to have at least one payment method WITHOUT any zones added to it, or else there will be customers who cannot go through checkout ... and then you'll lose a sale!
+To properly configure zones with payment modules requires that you create zones to fully match the zones to your customers' addresses. Always be sure to have at least one payment method WITHOUT any zones added to it, or else there will be customers who cannot go through checkout, and then you'll lose a sale!
 
 
 ---

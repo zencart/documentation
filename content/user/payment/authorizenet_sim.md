@@ -38,16 +38,16 @@ You need to generate your username and transaction key:
 2.  **Relay Response**  
     - Set the Relay Response URL to  
     **https://YOURSITE.com/index.php?main_page=checkout_process**  
-    ... and then be mindful that you'll need to update this setting if you make any changes to your store URLs later.
+    Just then be mindful that you'll need to update this setting if you make any changes to your store URLs later.
 3.  **Silent POST URL**  
     - Leave this blank  
     _(You are not sending details of purchases to other sites, so leaving this blank is the appropriate choice.)_
 
 ## CONFIGURING THE MODULE
 
-1.  Login to your Zen Cart Admin ...
-2.  Go to Modules ...
-3.  Go to Payment ...
+1.  Login to your Zen Cart Admin
+2.  Go to Modules 
+3.  Go to Payment 
 4.  Select **Authorize.net SIM** and click **Install**
 5.  Enter your **Login ID** and **Transaction Key** as recorded earlier
 6.  Enter your **Security Key**.  
@@ -68,7 +68,9 @@ You need to generate your username and transaction key:
 
 ## TESTING
 
-To test your shop, set your  Authorize.net Transaction Mode to "Test" (You DO NOT need to have your actual account in Testing mode ... this will simulate a test even against a Production account.).  
-Run a transaction in your shop.   
-Once satisfied, set the Transaction Mode to 'Production'  
+To test your shop, 
+
+- Set your  Authorize.net Transaction Mode to "Test". You DO NOT need to have your actual account in Testing mode; this will simulate a test even against a Production account.  
+- Run a transaction in your shop.   
+- Once satisfied, set the Transaction Mode to 'Production'  
 

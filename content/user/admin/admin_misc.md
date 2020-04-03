@@ -8,6 +8,18 @@ weight: 5
 {{< misc >}} 
 
 ---
+### Why are there so many flags in the admin? 
+
+It's a balance - every flag in the admin is one more change you can make 
+to your store without needing to modify code.  Zen Cart is designed to be
+storeowner-friendly in the sense that you can customize your cart without
+being a software developer.
+
+We have attempted to mitigate the complexity of the admin by providing 
+[documentation on the config settings](/user/admin_pages/configuration/). 
+There's even a way to view [all configuration settings](/user/admin_pages/configuration/all/). 
+
+---
 ### What determines if a product is New?
 
 There are settings in [Admin->Configuration->Maximum Values](/user/admin_pages/configuration/configuration_maximumvalues/) to determine what "New Product" means: 

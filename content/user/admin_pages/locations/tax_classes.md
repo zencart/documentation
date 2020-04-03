@@ -20,7 +20,7 @@ Typical tax classes might include:
 If you need another tax class,
 
 1.  Go to `Admin -> Locations/Taxes -> Tax Classes`
-2.  Click New Tax Class ...
+2.  Click New Tax Class 
 3.  Enter a title and description
 4.  Click Insert
 

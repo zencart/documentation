@@ -5,9 +5,9 @@ category: zen_cart_forum
 weight: 10
 ---
 
-## Before you post a question on the forum ...
+## Before you post a question on the forum
 
-### Before you post:
+### Do your homework:
 
 *   Check the the [Zen Cart documentation](/user/)
 

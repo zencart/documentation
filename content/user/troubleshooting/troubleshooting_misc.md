@@ -103,7 +103,7 @@ define('TEXT_SOMETHING','This is something simple that\'s used as an example');
 (notice the `\` in the word `that's`).
 
 ---
-### Warning: Your Admin login is not secure ...
+### Warning: Your Admin login is not secure 
 
 If you are getting this message in your Admin area:
 

@@ -13,7 +13,7 @@ Use your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) to make a copy of
 
 Having this gives you not only an up-to-date set of files on your server, but also a reference point for either making changes or for making comparisons in case something gets compromised or damaged on your webserver. You can either use this set of files to restore the program back to your website, or to diagnose a problem if one occurs.  
 
-**NOTE:** Keeping multiple separate versions on your computer is prudent, in case something is changed unexpectedly or accidentally. So, archiving these downloaded files is wise ... either to CD/DVD or USB key or backup hard-drive, etc. Preferably into separate subfolders named by date.
+**NOTE:** Keeping multiple separate versions on your computer is prudent, in case something is changed unexpectedly or accidentally. So, archiving these downloaded files is wise, to a USB key or cloud based backup. 
 
 ## 2\. Using phpMyAdmin to make a Database Backup
 1\. Open phpMyAdmin  

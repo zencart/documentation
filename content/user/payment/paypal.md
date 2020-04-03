@@ -44,20 +44,21 @@ If you're truly choosing to ignore the important advice to use Express Checkout 
 13.  Click on Website Payment Preferences.
 14.  Auto Return for Website Payments - set to on.
 
-Provide the Return URL (obtain correct URL from your Zen Cart admin ... it will take the form of something like the following examples): `https://www.YOURSTORE.com/index.php?main_page=checkout_process`
+Provide the Return URL (obtain correct URL from your Zen Cart admin.  It will take the form of something like the following examples): `https://www.YOURSTORE.com/index.php?main_page=checkout_process`
 
 15.  Other settings in this area can be set based on your preferences. Consult PayPal™ for their meanings.
 
-My selling tools -> Website Preferences -> Payment Data Transfer ... If you're using PDT, make sure you have the same token in Zen Cart as you have in PayPal.
+My selling tools -> Website Preferences -> Payment Data Transfer: If you're using PDT, make sure you have the same token in Zen Cart as you have in PayPal.
 
-Encrypted Website Payments ... set this to OFF. Zen Cart does not currently support this option.
+Encrypted Website Payments: Set this to OFF. Zen Cart does not currently support this option.
 
-PayPal™ Account Optional ... if you want to allow customers to pay by credit card and not have to create a PayPal™ account, set this to ON
+PayPal™ Account Optional: if you want to allow customers to pay by credit card and not have to create a PayPal™ account, set this to ON
 
 16.  Click _Save_.
 17.  If your website's language is not a Western/European language, go to Language Encoding and set your language.
 18.  **Turn off ALL tax and shipping settings in your PayPal™ account**. These will cause your transaction amounts to not match Zen Cart™ amounts, and thus your orders will not be released.
-19.  Oh ... and ... if you've never had your PayPal™ account "verified", you should follow their steps to do so.
+
+**Note:** if you've never had your PayPal™ account "verified", you should follow their steps to do so.
 
 **IN ZEN CART™**
 
@@ -126,7 +127,7 @@ These are the common configuration errors causing IPN processing to fail:
 
 ### How Does IPN work (for Website Payments Standard)?
 
-"IPN" = "Instant Payment Notification" ... part of PayPal's™ "Website Payments Standard" service.
+"IPN" means "Instant Payment Notification." It is part of PayPal's™ "Website Payments Standard" service.
 
 1.  Customer places an order on your site
 2.  For payment, they are taken to a link on PayPal's™ site, where they provide their information and pay for their order.
@@ -134,7 +135,7 @@ These are the common configuration errors causing IPN processing to fail:
 
 Meanwhile, between steps 2 and 3 above, PayPal's™ server does this:
 
-1.  PayPal's™ server sends a request to your website...which is waiting and listening for connections from PayPal™ to the `ipn_main_handler.php` page.
+1.  PayPal's™ server sends a request to your website, which is waiting and listening for connections from PayPal™ to the `ipn_main_handler.php` page.
 2.  Your server sits waiting and listening for hits to ipn_handler.php.
 3.  When your server receives a request, it attempts to validate and be sure that the PayPal™ data provided matches the order details for which it is intended.
 4.  If validation passes, the customer's order is released, and it lets the PayPal™ server know that you received their confirmation. This handshaking happens via CURL on port 443, and requires that your server be configured for modern TLS communication to https URLs.

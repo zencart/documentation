@@ -31,9 +31,12 @@ whether or not they are handling payment data.
 If you have SSL enabled in your hosting account (that's something you arrange with your hosting company directly), then you can tell Zen Cart to use your SSL URL, and then Zen Cart will automatically use that SSL URL when presenting pages dealing with sensitive information like login, account-creation, password changes, checkout, and even your admin pages.  
 
 The modern way to use SSL is to have your entire site run as SSL, so the 
-`HTTP_SERVER` and `HTTPS_SERVER` both use the `https` URL.  In the past,
-the `HTTP_SERVER` would serve pages over `http`, using the rationale that 
-these pages don't deal with sensitive information (such as a customer browsing your available products).  This is no longer considered a good practice.
+`HTTP_SERVER` uses the `https` URL.  In the past,
+there was a separate HTTPS_SERVER for SSL, and 
+the `HTTP_SERVER` would serve pages over `http`.
+The reasoning was activities like browsing the catalog did not 
+require SSL, since there was no sensitive information exchanged. 
+This is no longer considered a good practice.
 
 **BUT MY PAYMENTS HAPPEN OFFSITE.**  
 

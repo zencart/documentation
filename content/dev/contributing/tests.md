@@ -3,6 +3,13 @@ title: Testing
 description: Zen Cart Testing
 weight: 6
 ---
+
+---
+
+**NOTE:** The testing framework has not yet been backported from V2, so this page does not apply to Zen Cart 1.X.X. 
+
+---
+
 # Unit Testing
 Writing automated tests is important to ensure that the tested features function properly both before and after making future changes to the system.
 

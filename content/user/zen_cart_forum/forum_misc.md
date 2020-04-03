@@ -5,7 +5,7 @@ category: zen_cart_forum
 weight: 5 
 ---
 
-<hr />
+---
 
 ## How do I find what posts I've made?
 

@@ -72,3 +72,6 @@ can access.
 
 Everything will be under `YOURACCOUNTFOLDER` when you view files, either in an [FTP tool](/user/first_steps/useful_tools/#ftp-tools) or in your CPanel's File Manager. 
 
+Once you are familiar with these basic terms, you should learn about 
+[overrides](/user/first_steps/overrides/). 
+
