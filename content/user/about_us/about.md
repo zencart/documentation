@@ -1,6 +1,6 @@
 ---
-title: Bug Reports, Code Contributions, Security and Fees
-description: Zen Cart Bug Reports, Code Contributions, Security and Fees
+title: About this site and the Zen Cart Project
+description: About the Zen Cart Project 
 category: about_us
 weight: 10
 ---
@@ -34,4 +34,18 @@ There is no fee for using Zen Cart. You may download and use it, subject to the 
 
 ## **Community**
 You can [participate in the Zen Cart community](/user/about_us/contributing/) in many ways.  Join the fun! 
+
+
+## **This Site**
+This site was built with [Hugo](https://gohugo.io/) on the [Netlify](https://www.netlify.com/) platform. 
+
+If you'd like to help the Zen Cart project, we'd love to have you.  Please see 
+[contributing to the Zen Cart documentation](https://github.com/zencart/documentation/blob/master/CONTRIBUTING.md) and 
+[contributing to the Zen Cart code](https://github.com/zencart/zencart/blob/v157/CONTRIBUTING.md).
+
+The content of this site is released under the terms of the [GNU Public License](https://www.gnu.org/licenses/gpl-3.0.en.html). 
+
+Zen Cart&trade; is a registered trademark of Zen Ventures, LLC.
+
+All trademarks are the property of their respective owners. 
 
