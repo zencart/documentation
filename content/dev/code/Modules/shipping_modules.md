@@ -28,7 +28,7 @@ class myshipping extends base
   ...
 }
 ```
-**Note:** Since an order's shipping selection is stored as a string combining a shipping module's name plus an underscore (_) plus the shipping-method selected, a shipping module's `name` **cannot** include an underscore!
+**Note:** Since an order's shipping selection is stored as a string combining a shipping module's name plus an underscore `(_)` plus the shipping-method selected, a shipping module's `name` **cannot** include an underscore!
 
 
 ### Class Variables
@@ -38,8 +38,8 @@ Variable Name | Variable Type |Variable Usage
 ------------- | -------------- | -------------
 code | string | Contains the unique "code" identifying this shipping-module; normally set to the module's class name.
 enabled | boolean | Identifies whether (true) or not (false) the module is enabled for use during the current storefront checkout.
-title | string | Identifies the title displayed for the shipping-module during the admin's *Modules->Shipping* processing.  This variable is normally initialized during class construction to a language-file definition.
-description | string | Identifies the description displayed for the shipping-module during the admin's *Modules->Shipping* processing.  This variable is normally initialized during class construction to a language-file definition.
+title | string | Identifies the title displayed for the shipping-module during the admin's *Modules > Shipping* processing.  This variable is normally initialized during class construction to a language-file definition.
+description | string | Identifies the description displayed for the shipping-module during the admin's *Modules > Shipping* processing.  This variable is normally initialized during class construction to a language-file definition.
 tax_class | integer | Identifies the `tax_class_id` associated with the tax to be applied to this shipping module's costs.  If the value is 0, the shipping cost is untaxed.
 tax_basis | string | When the shipping cost is taxed, identifies the basis for the tax computation: either **Billing**, **Shipping** or **Store**.
 
@@ -122,7 +122,7 @@ This form of the function call is used by the *Shipping Estimator* and in the sh
 When the `quote` function is called with a non-blank value in the `$method` input, the function returns an array containing the quote for *that specific method*.  In this case, the quote can return an error indication if the specified shipping method is not available for the order.
  
 #### check
-This function, called from admin-level *Modules->Shipping* processing, returns a boolean value indicating whether (true) or not (false) the shipping-module is currently installed.
+This function, called from admin-level *Modules > Shipping* processing, returns a boolean value indicating whether (true) or not (false) the shipping-module is currently installed.
 ```php
 class myshipping extends base
 {
@@ -142,7 +142,7 @@ class myshipping extends base
 }
 ```
 #### install
-This function, called from admin-level *Modules->Shipping* processing when the shipping module is initially installed, sets the module's configuration into the Zen Cart database.  The example shows how to insert the common, required, configuration elements into the database for the `myshipping` shipping module.  If your shipping method requires additional settings, add them here.
+This function, called from admin-level *Modules > Shipping* processing when the shipping module is initially installed, sets the module's configuration into the Zen Cart database.  The example shows how to insert the common, required, configuration elements into the database for the `myshipping` shipping module.  If your shipping method requires additional settings, add them here.
 ```php
 class myshipping extends base
 {
@@ -169,7 +169,7 @@ class myshipping extends base
 ```
 
 #### keys
-This function, called during admin-level *Modules->Shipping* processing, returns the database configuration "keys" associated with this shipping module.  The configuration values are listed for the shipping module in the order specified by the returned array.
+This function, called during admin-level *Modules > Shipping* processing, returns the database configuration "keys" associated with this shipping module.  The configuration values are listed for the shipping module in the order specified by the returned array.
 ```php
 class myshipping extends base
 {
@@ -192,7 +192,7 @@ class myshipping extends base
 }
 ```
 #### remove
-This function, called during admin-level *Modules->Shipping* processing to remove this shipping module, removes all database configuration keys associated with the shipping method.
+This function, called during admin-level *Modules > Shipping* processing to remove this shipping module, removes all database configuration keys associated with the shipping method.
 ```php
 class myshipping extends base
 {
@@ -221,7 +221,7 @@ MODULE_SHIPPING_`MYSHIPPING`_TAX_BASIS | Choose the address-basis (usually one o
 MODULE_SHIPPING_`MYSHIPPING`_SORT_ORDER | Identifies the sort-order to be used when displaying the currently-enabled shipping modules.
 
 ### Tips & Tricks
-Procedurally, all configuration options for a shipping module names `myshipping` should be named MODULE_SHIPPING_`MYSHIPPING`_*, as should all language constants for the module, to ensure uniqueness of those constants.
+Procedurally, all configuration options for a shipping module names `myshipping` should be named `MODULE_SHIPPING_`MYSHIPPING`_*`, as should all language constants for the module, to ensure uniqueness of those constants.
 
 ### Troubleshooting
-Since the admin-level processing by *Modules->Shipping* loads all `.php` modules present in the `/includes/modules/shipping` folder, make sure that any backup files in that directory have the `.php` extension renamed to something like `.php~` or errors will result during the admin loading.
+Since the admin-level processing by *Modules > Shipping* loads all `.php` modules present in the `/includes/modules/shipping` folder, make sure that any backup files in that directory have the `.php` extension renamed to something like `.php~` or errors will result during the admin loading.

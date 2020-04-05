@@ -40,7 +40,7 @@ if (!defined('IS_ADMIN_FLAG')) {
 // Register the New Tools tool into the admin menu structure.
 //
 // NOTES:  
-// 1) Once this file has run once and you see the Tools->New Tool link in the admin
+// 1) Once this file has run once and you see the Tools > New Tool link in the admin
 // menu structure, it is safe to delete this file (unless you have other functions that
 // are initialized in the file).
 // 2) If you have multiple items to add to the admin-level menus, then you should 
@@ -79,7 +79,7 @@ DELETE FROM admin_pages WHERE page_key = 'toolsNewTool';
 
 **Notes:**
 
-- Instead of distributing the `init_new_tool.php` file, you could include instructions to install using the ***Admin Access  Management->Admin Page Registration*** tool.
+- Instead of distributing the `init_new_tool.php` file, you could include instructions to install using the ***Admin Access  Management > Admin Page Registration*** tool.
   1. Set *Page Key* to `toolsNewTool`
   2. Set *Page Name* to `BOX_TOOLS_NEW_TOOL`
   3. Set *Page File Name* to `FILENAME_NEW_TOOL`

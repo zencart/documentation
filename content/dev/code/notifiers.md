@@ -52,22 +52,24 @@ To take advantage of notifiers, developers need to write some code to watch for 
 
 Lets take an example. Using the notifier mentioned above (`NOTIFIER_CART_ADD_CART_END`), how would I write a class that watched for that event?
 
-<pre> <?php
+```
+<?php
  class myObserver extends base {
    function __construct() {
      $this->attach($this, array('NOTIFIER_CART_ADD_CART_END'));
    }
 ...
  }
-</pre>
+```
 
-As you can see we have defined a new class called myObserver and in the constructor function for that class (function myObserver) have attached this myObserver class to the event NOTIFIER_CART_ADD_CART_END.
+As you can see we have defined a new class called myObserver and in the constructor function for that class (function myObserver) have attached this myObserver class to the event `NOTIFIER_CART_ADD_CART_END`.
 
 "Fine," I hear you saying, "but how do I actually do anything useful?"
 
-Ok, good question. Whenever an event occurs, the base class looks to see if any other observer class is watching that event. If it is, the base class executes a method in that observer class. Remember the $this->notify('EVENT_NAME') from above? Well, when that event occurs, the base class calls the update method of all observers. Lets see some more code:
+Ok, good question. Whenever an event occurs, the base class looks to see if any other observer class is watching that event. If it is, the base class executes a method in that observer class. Remember the `$this->notify('EVENT_NAME')` from above? Well, when that event occurs, the base class calls the update method of all observers. Lets see some more code:
 
-<pre> class myObserver extends base {
+```
+class myObserver extends base {
    function __construct() {
      $this->attach($this, array('NOTIFIER_CART_ADD_CART_END'));
    }
@@ -75,9 +77,9 @@ Ok, good question. Whenever an event occurs, the base class looks to see if any 
      ... do some stuff
    }
  }
-</pre>
+```
 
-Now, whenever the NOTIFIER_CART_ADD_CART_END occurs, our myObserver::update method will be executed. Note that attach() may be called as a method of whatever class you want to listen to ($_SESSION['cart'], in this case) or by the internal class variable $this. Both are available since each are part of the class base, where the attach method resides.
+Now, whenever the `NOTIFIER_CART_ADD_CART_END` occurs, our `myObserver::update` method will be executed. Note that `attach()` may be called as a method of whatever class you want to listen to (`$_SESSION['cart']`, in this case) or by the internal class variable $this. Both are available since each are part of the class base, where the attach method resides.
 
 Some notes about the parameters...the attach method has two parameters:
 
@@ -94,12 +96,13 @@ NB! The observer/notifier system is written for an OOP-based application, as the
 
 To work around this, we added the 'stub' notifier class. So if you want to create an observer for a notifier that lies within procedural code (like in page headers) you should add the notifier into your myObserver class like this:
 
-<pre> class myObserver extends base {
+```
+class myObserver extends base {
    function __construct() {
      global $zco_notifier;
      $zco_notifier->attach($this, array('NOTIFY_HEADER_END_CHECKOUT_CONFIRMATION'));
    }
-</pre>
+```
 
 ### Including observers into your code
 
@@ -107,20 +110,17 @@ Please note that the `includes/classes/observers` directory is not an autoload d
 
 You now need to arrange for this class to be loaded and instantiated. To do this you need to use the `application_top.php` autoload system.
 
-In `includes/auto`loaders` create a file called `config.freeProduct.php` containing
+In `includes/auto_loaders` create a file called `config.freeProduct.php` containing
 
-<?php
-
-<pre>$autoLoadConfig[10][] = array('autoType'=>'class',
+```
+$autoLoadConfig[10][] = array('autoType'=>'class',
                               'loadFile'=>'observers/class.freeProduct.php');
 $autoLoadConfig[90][] = array('autoType'=>'classInstantiate',
                               'className'=>'freeProduct',
                               'objectName'=>'freeProduct');
-</pre>
+```
 
-?>
-
-Note: 10 has been chosen to cause the observer class to be loaded before the session is started. Note: 90 has been chosen as the offset since the observer needs to attach to the $SESSION['cart'] class (see the freeProduct example below), which is instantiated at offset 80.
+Note: 10 has been chosen to cause the observer class to be loaded before the session is started. Note: 90 has been chosen as the offset since the observer needs to attach to the `$_SESSION['cart']` class (see the freeProduct example below), which is instantiated at offset 80.
 
 To tie this all together, let's look at a real world example.
 
@@ -134,7 +134,8 @@ Traditionally, although the code for this is not particularly difficult, it woul
 
 Here's the code.
 
-<pre><?php
+```
+<?php
 /**
  * Observer class used to add a free product to the cart if the user spends more than $x
  *
@@ -174,18 +175,16 @@ class freeProduct extends base {
    * @param string $eventID
    */
   function update(&$class, $eventID, $paramsArray = array()) {
-</pre>
 
-<pre>  if ($eventID == 'NOTIFIER_CART_REMOVE_END' && (isset($_SESSION['freeProductInCart']) && $_SESSION['freeProductInCart'] == TRUE ))
+  if ($eventID == 'NOTIFIER_CART_REMOVE_END' && (isset($_SESSION['freeProductInCart']) && $_SESSION['freeProductInCart'] == TRUE ))
   {
     if (!$_SESSION['cart']->in_cart($this->freeProductID))
     {
       $_SESSION['userRemovedFreeProduct'] = TRUE;
     }
   }
-</pre>
 
-<pre>  if (!isset($_SESSION['userRemovedFreeProduct']) || $_SESSION['userRemovedFreeProduct'] != TRUE) 
+  if (!isset($_SESSION['userRemovedFreeProduct']) || $_SESSION['userRemovedFreeProduct'] != TRUE) 
   {
     if ($_SESSION['cart']->show_total() >= $this->freeAmount && !$_SESSION['cart']->in_cart($this->freeProductID) )   
     {
@@ -198,9 +197,8 @@ class freeProduct extends base {
   {
     $_SESSION['cart']->remove($this->freeProductID);
   }
-</pre>
 
-<pre>  if ($_SESSION['cart']->in_cart($this->freeProductID)) 
+  if ($_SESSION['cart']->in_cart($this->freeProductID)) 
   {
     $_SESSION['cart']->contents[$this->freeProductID]['qty'] = 1;
   }
@@ -208,7 +206,7 @@ class freeProduct extends base {
   }  
 }
 ?>
-</pre>
+```
 
 A couple notes:
 
@@ -216,10 +214,11 @@ First, I have set the options for the system in the class itself. This is obviou
 
 Second, notice that we are actually watching for two events in the one class.
 
-<pre>   $_SESSION['cart']->attach($this, array('NOTIFIER_CART_ADD_CART_END', 'NOTIFIER_CART_REMOVE_END'));
-</pre>
+```
+$_SESSION['cart']->attach($this, array('NOTIFIER_CART_ADD_CART_END', 'NOTIFIER_CART_REMOVE_END'));
+```
 
-so we are watching for the NOTIFIER_CART_ADD_CART_END and NOTIFIER_CART_REMOVE_END of the shopping_cart class.
+so we are watching for the `NOTIFIER_CART_ADD_CART_END` and `NOTIFIER_CART_REMOVE_END` of the shopping_cart class.
 
 The update class is extremely simple but in its simplicity manages to do all the work we require of it. It first tests to see if the total in the cart is over the threshold and, if it hasn't already, adds the free product to the cart.
 
@@ -231,8 +230,8 @@ Now that was cool, how about something a little more difficult.
 
 Again we return to the Shopping Cart and promotions. Another oft-requested feature is the BOGOF promotion, or Buy One Get One Free. This is a little more difficult to achieve than our previous example, as there is some manipulation needed of the cart totals. However as you will see it is still pretty much a breeze.
 
-<pre class="code">
-&lt;?php
+```
+<?php
 /**
  * Observer class used apply a Buy One Get One Free(bogof) algorithm to the cart
  *
@@ -301,7 +300,7 @@ class myBogof extends base {
   }
 }
 ?>
-</pre> 
+```
 
 NB: There are still some weaknesses here...
 
