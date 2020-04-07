@@ -37,7 +37,7 @@ You need to generate your username and transaction key:
     _(These URLs are used to authorize your store to process transactions. Leaving them blank means there are no restrictions. Specifying a URL limits the URLs allowed to make transactions with your account. Contact your Authorize.net account representative or their tech support for further information or assistance with these settings.)_
 2.  **Relay Response**  
     - Set the Relay Response URL to  
-    **https://YOURSITE.com/index.php?main_page=checkout_process**  
+    `https://YOURSITE.com/index.php?main_page=checkout_process`
     Just then be mindful that you'll need to update this setting if you make any changes to your store URLs later.
 3.  **Silent POST URL**  
     - Leave this blank  

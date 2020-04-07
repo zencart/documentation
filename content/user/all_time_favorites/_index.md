@@ -30,16 +30,18 @@ layout: docs
 
 * [Installing Zen Cart](/user/first_steps/how_do_i_install/) - how do I install Zen Cart?
 
-* [Release history for Zen Cart](/user/about_us/release_history/) - with links to Release Notes.
+* [Release history for Zen Cart](/user/about_us/release_history/) - with links to Release Notes.  And don't forget the [security patches](/user/about_us/security_releases), especially if you are not on the latest version. 
 
 * [Server Requirements for running Zen Cart](/user/first_steps/server_requirements/) - Zen Cart version to PHP version matrix.
 
 * Templates and Overrides - how do I use them?  Read 
-[this](https://docs.zen-cart.com/user/first_steps/overrides/), 
-[this](https://docs.zen-cart.com/user/new_user_topics/overrides/), 
-[then this](https://docs.zen-cart.com/user/template/template_overrides/). 
+[the introduction](https://docs.zen-cart.com/user/first_steps/overrides/), 
+[the details](https://docs.zen-cart.com/user/new_user_topics/overrides/), 
+[then summary](https://docs.zen-cart.com/user/template/template_overrides/). 
 
 * [Upgrading Zen Cart](/user/upgrading/upgrading/) - how do I upgrade my old cart?
 
-* [Version Information](/user/first_steps/version/) - how to determine your PHP, MySQL and Zen Cart version number.
+* [Version Information](/user/first_steps/version/) - how to determine your PHP, MySQL and Zen Cart version numbers.
+
+<style>.panel-line { display:none; }</style> 
 

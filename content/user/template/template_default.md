@@ -25,7 +25,7 @@ You *do* use the default template in every case where you don't [override](/user
 However, you likely don't want to run your store with 
 [Tools > Template Selection](/user/admin_pages/tools/template_selection/) 
 set to use `template_default`.  The reason for this is that 
-the CSS for the default temmplate is specifically designed to make it easy to find the components of a page, rather than for attractive appearance. 
+the CSS for the default template is specifically designed to make it easy to find the components of a page, rather than for attractive appearance. 
 (The question "why is the default template so ugly?" misses this point - 
 the CSS for the default template is designed as a pedagogic tool for helping
 people learn how to build a template and write CSS.) 

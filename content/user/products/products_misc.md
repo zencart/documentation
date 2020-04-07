@@ -20,7 +20,8 @@ Locate the *Show Category Counts* option.  Turn it off.
 On the [product editing page](/user/admin_pages/catalog/categories_products/), 
 when the setting `Product Qty Minimum` is greater than 1, the 
 setting `Product Qty Min/Unit Mix` is used in determining 
-whether the minimum has been met. 
+whether the minimum has been met, both for purchasing and for 
+[quantity discounts](/user/products/quantity_discounts). 
 
 If you have the Minimum set to 36 with `Product Qty Min/Unit Mix` = `Yes`, the "MIXED: ON" status message shows.
 
@@ -159,13 +160,10 @@ These have nothing to do with product quantity in stock.  Inventory On Hand is h
 ---
 ### How do I add quantity discounts to my products?
 
-[Admin > Catalog > Products Price Manager](/user/admin_pages/catalog/products_price_manager/)
+It is done in 
+[Admin > Catalog > Products Price Manager](/user/admin_pages/catalog/products_price_manager/).
 
-- Select the product
-- Edit
-- click the "add 5 blank discounts" button
-- fill in the details
-- Update
+See [this page](/user/products/quantity_discounts/). 
 
 ---
 <!-- please keep this at the end --> 

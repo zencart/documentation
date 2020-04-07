@@ -9,9 +9,11 @@ weight: 10
 Here are some suggestions, assuming you're running the latest-released version of Zen Cart:  
 
 1\. Turn off Category Counts, especially if you have a large number of categories.  
-a. Go to [Admin > Config > My Store](/user/admin_pages/configuration/configuration_mystore/) 
-    Show Category Counts=false  
-    how Category Counts-Admin = false  
+Go to [Admin->Config->My Store](/user/admin_pages/configuration/configuration_mystore/) 
+
+- Show Category Counts=false  
+- Show Category Counts-Admin = false  
+
 (this second one is for admin-area only when editing catalog)  
 
 2\. Disable the Manufacturers sidebox if you don't need it.  
@@ -21,7 +23,7 @@ Go to [Admin > Tools > Layout Boxes Controller](/user/admin_pages/tools/layout_b
 3\. Ensure your images are optimized for your site.  Specifically, use small images for thumbnails, slightly larger for product pages (`_MED` images), and large detailed images for "click to enlarge" (`_LRG`) images.  
 
 ### Related FAQ articles:  
-- [Adding Multiple Images To Products](/user/images/images_multiple/) 
+- [Adding Multiple Images To Products](/user/images/adding_multiple_images_to_a_product/) 
 - [Preparing and Optimizing Images](/user/images/images_howto) 
 
 4\. In [Admin > Configuration > Attribute Settings](/user/admin_pages/configuration/configuration_attributesettings/), there are a few switches which, if turned off, will reduce the number of queries used to calculate and display product information:  
@@ -37,6 +39,7 @@ Go to [Admin > Tools > Layout Boxes Controller](/user/admin_pages/tools/layout_b
 5\. If it's primarily your home page (ie: the storefront) that's slow, you might consider turning off content-boxes related to specials and featured products, as they generate a lot of extra queries to extract special pricing information.  
 
 6\. If your categories contain a LOT of products, consider dividing them into subcategories for improved efficiency not only in performance but also in helping the customer find what they're looking for.  
+
 If you really can't make your categories more lean, consider turning off the previous/next buttons on the [Admin > Configuration > Product Info](/user/admin_pages/configuration/configuration_productinfo/) page, or at least set the prev/next sort mode to NOT include the product name (ie: pick product Model or Price instead).  
 
 Further, when you have a LOT of products in large numbers of subcategories, you may find significant improvement by going to [Admin > Configuration > Index Listing](/user/admin_pages/configuration/configuration_indexlisting/) and turning off the first 8 settings there (setting them to 0). Adjust as necessary, depending on what content you wish to display.  
@@ -50,14 +53,18 @@ Go to [Admin > Config > GZip Compression](/user/admin_pages/configuration/config
 
 10\. Excess debug/log files.  
 If your site has generated a large number of debug log files, it can cause some degree of slowdown. (This is worsened if you're using v1.5.0 or older, where those log files are stored on the /cache/ folder. Having a lot of non-caching files in the /cache/ folder can lead to serious slowdowns on all versions.)  
+
 You will want to download a copy of those log files to your PC, using your [FTP tool](/user/first_steps/useful_tools/#ftp-tools). Then analyze them to see what errors might be occurring on your site on a regular basis.  
 Then you can purge those logs files by using the [Admin > Tools > Store Manager](/user/admin_pages/tools/store_manager/) Purge log files menu option.  
 
 11\. Assess [Page Parse Times](/user/performance/page_parse_times) to isolate where your bottleneck is occurring.  
 
 12\. Use the MySQL slow query log feature to identify poorly-performing database queries.  
+
 You may need to talk to your hosting company to enable this feature and to evaluate the logs generated. Set it with a low threshold so that you can see where the database is spending its time.  
+
 Do you have any mods enabled that add their own tables? Maybe they're poorly tuned tables.  
+
 Or have you written any custom code or use any addons which run queries that attempt to join tables on unindexed database columns?  
 
 13\. Consider these [Webserver Tuning Tips](/user/performance/webserver_tuning).

@@ -1,6 +1,6 @@
 ---
-title: Admin > Account 
-description: Zen Cart Admin > Account section
+title: Admin > Account link
+description: Zen Cart Admin > Account link
 category: admin_pages
 weight: 500 
 ---

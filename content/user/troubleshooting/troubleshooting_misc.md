@@ -191,6 +191,10 @@ So, after 90 days has elapsed, the next time you log in to your Admin it will as
 
 If you don't want to change it "now", you will not be allowed to complete login. But your current password will let you get back to the change-your-password screen again.
 
+---
+
+### How do I troubleshoot PHP Session Handling issues? 
+See [this FAQ](/user/troubleshooting/cant_stay_logged_in_admin). 
 
 ---
 <!-- please keep this at the end --> 

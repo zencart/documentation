@@ -81,3 +81,8 @@ weight: -1
 # Configuration > EZ-Pages Settings
 {{% include "/user/admin_pages/configuration/configuration_ezpagessettings.md" %}}
 
+<style>
+#endcontent {
+   display: none; 
+}
+</style>

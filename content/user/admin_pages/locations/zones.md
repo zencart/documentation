@@ -9,7 +9,7 @@ FIXME - page needs work
 
 Defines subdivisions of countries such as states/provinces or counties for tax or shipping purposes.
 
-There are two kinds of zones in Zen Cart: zones and zones definitions (sometimes referred to as geo_zones). Zones are local; that is, counties or provinces within a larger entity such as a state or country. Zones definitions are generally on the state or country level.
+There are two kinds of zones in Zen Cart: zones and zones definitions (sometimes referred to as `geo_zones`). Zones are local; that is, counties or provinces within a larger entity such as a state or country. Zones definitions are generally on the state or country level.
 
 
 For example, you may have a zones definition European Union which contains all the countries in the European Union. Then you might define zones for each of those countries, containing the provinces for that country.
