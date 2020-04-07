@@ -5,6 +5,8 @@ category: troubleshooting
 weight: 10
 ---
 
+This is likely a PHP Session Handling issue. 
+
 Before you begin, be sure you are familiar with the structure and contents of [configure.php files](/user/miscellaneous/configure/). 
 
 **THE FIRST THING TO TRY is this:**  

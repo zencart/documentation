@@ -21,7 +21,9 @@ When you first install Zen Cart, the template which is in use is called
 `responsive_classic`.  This is a new template, introduced in Zen Cart 1.5.5,
 which works on both desktop computers and mobile devices. 
 
-The files which determine how the page will be displayed are called 
+### Template Files 
+
+The files which determine how the page will appear are called 
 *template files*.  In the case of `responsive_classic`, they can be 
 found in the following folders: 
 

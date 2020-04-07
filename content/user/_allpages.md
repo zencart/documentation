@@ -1,7 +1,7 @@
 ---
 title: Zen Cart Storeowner Documentation - All FAQs 
 description: All  FAQs View for Zen Cart User Documentation
-linkTitle: Storeowner Docs Sitemap
+linkTitle: Storeowner Docs - All Pages
 layout: allpages
 index: false
 ---

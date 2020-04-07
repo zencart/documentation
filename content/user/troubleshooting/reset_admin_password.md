@@ -21,7 +21,7 @@ INSERT INTO admin (admin_name, admin_email, admin_pass, admin_profile)
 VALUES ('Admin', 'admin@localhost', '351683ea4e19efe34874b501fdbf9792:9b', 1);
 ```
 
-**NOTE**: If you are using a prefix for your database tables,you'll naturally need to add that prefix to the table name above. <br>
+**NOTE**: If you are using a prefix for your database tables, you'll naturally need to add that prefix to the table name above. <br>
 ie. 
 
 `DELETE FROM prefix_admin` and `INSERT INTO prefix_admin`, replacing `prefix_` with your actual tablename prefix.

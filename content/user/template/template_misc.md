@@ -71,6 +71,17 @@ See [this article](/user/template/template_default/).
 This can happen if you have forgotten to create the `template_info.php` file. 
 See [this FAQ](/user/template/template_info/). 
 
+---
+
+### Why does this mod not work with Template Monster Templates?
+Zen Cart mods often depend on built-in Zen Cart features, which are 
+removed as an expedient by Template Monster developers.  
+If you're using a Template Monster template and a change you are 
+trying isn't working, you'll need to figure out the difference 
+between the relevant default files and the files that your template 
+is using, and restore the missing features.
+
+<br /><br />
 
 
 ---

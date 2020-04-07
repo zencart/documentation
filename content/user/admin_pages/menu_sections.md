@@ -102,7 +102,7 @@ index: false
 *   [Store Manager](/user/admin_pages/tools/store_manager/) - reset various counts and settings.
 *   [Developers Tool Kit](/user/admin_pages/tools/developers_tool_kit/) - search for strings in your files.
 *   [EZ-Pages](/user/admin_pages/tools/ezpages/) — Add and remove special _EZ-Pages_ pages which are easier to create or edit than standard PHP or HTML.
-*   [Define Pages Editor](/user/admin_pages/tools/define_pages_editor/) — Edit certain definition pages.
+*   [Define Pages Editor](/user/admin_pages/tools/define_pages/) — Edit certain definition pages.
 *   [Install SQL Patches](/user/admin_pages/tools/install_sql_patches/) — Run SQL commands directly.
 
 ### [Discounts](/user/admin_pages/discounts/)

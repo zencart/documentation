@@ -14,7 +14,7 @@ As of Zen Cart 1.5.6, the built in payment modules are:
 - cod
 - firstdata_hco
 - moneyorder
-- PayPal (Standar, Pro, Express Checkout)
+- PayPal (Standard, Pro, Express Checkout)
 - Square 
 
 For more information on payment modules, see [these pages](/user/payment/). 

@@ -43,12 +43,13 @@ Zen Cart supports PayPal, Authorize, Square, and [many other payment processors]
 ### Can Zen Cart discount products?
 
 Zen Cart supports a number of discounting mechanisms: 
+
 - per product discounts called [Specials](/user/admin_pages/catalog/specials/)
 - per category discounts called [Sales](/user/admin_pages/catalog/salemaker/)
 - [Coupons](/user/order_total/coupons/)
 - [Group Discounts](/user/order_total/group_pricing/)
-
-and [other discounting methods](/user/order_total/). 
+- [per-product Quantity Discounts](/user/products/quantity_discounts/) 
+- and [other discounting methods](/user/order_total/). 
 
 ---
 ### Can Zen Cart add fees to an order? 
@@ -77,6 +78,11 @@ Yes - you can limit admin users to a subset of the superuser capabilities using
 ### Can Zen Cart create SEO friendly URLs? 
 This capability is not built into Zen Cart at the current time, but an
 excellent mod exists called [Ceon URI Mapping](https://www.zen-cart.com/downloads.php?do=file&id=2250). 
+
+--- 
+### Can Zen Cart allow me to edit an order after it was placed? 
+Editing orders may be performed using the mod 
+[Edit Orders](https://www.zen-cart.com/downloads.php?do=file&id=1513).
 
 ---
 

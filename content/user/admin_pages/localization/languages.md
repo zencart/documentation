@@ -24,7 +24,8 @@ This would be a small icon used to identify the language. This would most likely
 
 ### Directory
 
-This directory is where the translated php source files for this language are contained. For example, if example.com is running Zen Cart and its files are located in the Zen Cart directory, then the directory for English is located at http://www.example.com/zencart/includes/languages/english. The value for other languages would be changed to the appropriate value.
+This directory is where the translated php source files for this language are contained. For example, the directory for the English language is located at 
+`/includes/languages/english`. 
 
 ### Sort order
 

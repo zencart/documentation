@@ -80,7 +80,7 @@ Note that whatever tool you select must have the ability to do
 <br />
     **NOTE:** download from this official link only.<br />
     **NOTE:**  do not store passwords in Filezilla; type them in each time
-*   [CyberDuck FTP](http://www.cyberduck.ch) (Mac)
+*   [CyberDuck FTP](http://www.cyberduck.io) (Mac)
 
 ### Commercial
 

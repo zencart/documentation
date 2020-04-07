@@ -9,9 +9,10 @@ weight: 10
 
 [Release Announcements](https://www.zen-cart.com/forumdisplay.php?2-Zen-Cart-Release-Announcements) are provided on the Zen Cart forum. 
 
-See also [Zen Cart Database Schema](/dev/schema/).
-
-See also [Zen Cart Known Bugs](/user/about_us/known_bugs/).
+See also [Zen Cart Database Schema](/dev/schema/), 
+[Zen Cart Known Bugs](/user/about_us/known_bugs/).
+and 
+[Zen Cart Security Releases](/user/about_us/security_releases). 
 
 ---
 

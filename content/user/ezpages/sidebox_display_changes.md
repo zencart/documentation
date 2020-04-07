@@ -1,9 +1,12 @@
 ---
-title: Sidebox enabling/disabling on EZ-Pages 
-description: Zen Cart Sidebox enabling/disabling on EZ-Pages 
+title: Turning sidebox display off/on on an EZ-Page
+description: Zen Cart Sidebox display enabling/disabling on EZ-Pages 
 category: ezpages
 weight: 10
 ---
+
+You may wish to have sideboxes display on regular pages (such as the shopping cart page or the checkout shipping page) but not on an EZ-Page.  This can be done using the instructions below. 
+
 To do this you will need to edit the sidebox module for each of the sideboxes whose behavior you wish to change. The exact change will depend upon what exactly you wish to do and whether those sideboxes should appear on other pages. Let's assume that your objective is to selectively suppress the display of sideboxes on some EZ-Pages.  
 
 You can find your sidebox modules in the directory includes/modules/sideboxes/. Towards the bottom of each is a block of code similar to this one  

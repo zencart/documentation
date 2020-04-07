@@ -25,7 +25,7 @@ These are the common mistakes causing Website Payments Standard transactions to 
 
 These are the common configuration errors causing IPN processing to fail:
 
-1.  If it "was" working, but stopped, make sure PayPal's services are running properly. [PayPal Live Server Status](https://www.x.com/community/ppx/system_status)
+1.  If it "was" working, but stopped, make sure PayPal's services are running properly. [PayPal Live Server Status](https://www.paypal-status.com/product/production).
 2.  Make sure your site is *not* in down-for-maintenance mode.
 3.  Make sure your site does *not* have password-protection via .htaccess in order to get to the "store" area.
 4.  Check with your host that the server is able to do outbound TLS connections

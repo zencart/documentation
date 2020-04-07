@@ -15,7 +15,7 @@ individuals who are no longer with us.  May they rest in peace.
 - [Clyde Jones](https://www.zen-cart.com/showthread.php?184600) (clyde)
 
 <style>
-#questions {
+#feedback, #questions, #endcontent {
    display: none; 
 }
 </style>

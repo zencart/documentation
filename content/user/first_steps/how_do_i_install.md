@@ -126,39 +126,7 @@ Rename this file to `configure.php` and change the permissions to 777 (read-writ
 --- 
 ## D. Set Permissions on folders
 
-When you upload files to your server, the server will automatically set certain default permissions on those files and folders. Typically folders are set to 755 and files are set to 644\. Most servers use these values. Yours may or may not.  
-
-Some folders and files need special "writable" permissions for use in Zen Cart. "Writable" typically requires 777 permission. (Your hosting company may only allow 755 as writable, and using 777 may cause blank screens when accessing your site. In that case, use 755. Ask your hosting company for direction.)  
-
-As such, you need to change the permissions on the following directories to 777 (read/write/execute). If your program allows you to set these permissions "recursively", choose that option.  
-
-```
-*   /catalog/cache
-*   /catalog/images
-*   /catalog/includes/languages/english/html_includes
-*   /catalog/media
-*   /catalog/pub
-*   /catalog/admin/backups
-*   /catalog/admin/images/graphs
-```
-
-Note: open the catalog/images directory and change **all** of the subdirectories and their subdirectories to 777 as well. For example (this is a partial list):  
-
-```
-*   /catalog/images/attributes
-*   /catalog/images/banners
-*   /catalog/images/categories
-*   /catalog/images/large
-*   /catalog/images/large/dvd
-*   /catalog/images/manufacturers
-*   /catalog/images/medium
-*   /catalog/images/upload
-```
-
-**NOTE:** If you miss any of the images directories and subdirectories inside 
-`/images` and try to use them later, you will get an error message that you cannot write to these directories.  
-
-As for other files, they can be CHMOD 644, or 444, depending on your webserver configuration.  Folders don't usually get set below 755.  
+See [Permissions on files and folders](/user/installing/permissions/). 
 
 
 --- 
