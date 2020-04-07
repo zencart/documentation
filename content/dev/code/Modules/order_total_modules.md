@@ -29,7 +29,7 @@ class my_order_total extends base
   ...
 }
 ```
-**Note:** Unlike *shipping* modules, underscore characters (_) **are** allowed in *order-total* module names!
+**Note:** Unlike *shipping* modules, underscore characters `(_)` **are** allowed in *order-total* module names!
 
 
 ### Class Variables
@@ -38,9 +38,9 @@ An *order-total* module's class definition includes the following publicly-avail
 Variable Name | Variable Type | Basic | Credit Class | Description
 ------------- | -------------- | :----: | :------------: | -------------
 code | string | &check; | &check; | Contains the unique "code" identifying this order-total; normally set to the module's class name.
-title | string | &check; | &check; |Identifies the title displayed for the module during the admin's *Modules->Order Total* processing.  This variable is normally initialized during class construction to a language-file definition.
-description | string | &check; | &check; | Identifies the description displayed for the module during the admin's *Modules->Order Total* processing.  This variable is normally initialized during class construction to a language-file definition.
-sort_order | integer | &check; | &check; | Identifies the *relative* order in which this module is processed; the value configured must be unique within a store's *Modules->Order Total* settings.  This value is used by the main `order_total` class (`/includes/classes/order_total.php`), which loads all active modules in  ascending `sort_order` sequence.
+title | string | &check; | &check; |Identifies the title displayed for the module during the admin's *Modules > Order Total* processing.  This variable is normally initialized during class construction to a language-file definition.
+description | string | &check; | &check; | Identifies the description displayed for the module during the admin's *Modules > Order Total* processing.  This variable is normally initialized during class construction to a language-file definition.
+sort_order | integer | &check; | &check; | Identifies the *relative* order in which this module is processed; the value configured must be unique within a store's *Modules > Order Total* settings.  This value is used by the main `order_total` class (`/includes/classes/order_total.php`), which loads all active modules in  ascending `sort_order` sequence.
 output | array | &check; | &check; | Contains the order-total's "output", a PHP associative array containing the information to be displayed in an "orders-totals" section, e.g. on the `checkout_confirmation page`.  See below for details. 
 credit_class | boolean | &mdash; | &check; | Identifies, if present and set to boolean *true*, that the module **is** a credit-class object.  When a module indicates that it performs `credit_class` processing, that *order-total* module provides additional class methods.
 
@@ -104,7 +104,7 @@ class my_order_total extends base
 ```
 -------
 ##### check
-This method, called from admin-level *Modules->Order Total* processing, returns a boolean value indicating whether (true) or not (false) the module is currently installed.
+This method, called from admin-level *Modules > Order Total* processing, returns a boolean value indicating whether (true) or not (false) the module is currently installed.
 ```php
 class my_order_total extends base
 {
@@ -125,7 +125,7 @@ class my_order_total extends base
 ```
 -------
 ##### install
-This method, called from admin-level *Modules->Order Total* processing when the module is initially installed, sets the module's configuration into the Zen Cart database.  The example shows how to insert the common, required, configuration elements into the database for the `my_order_total` order-total module.  If your *order-total* module requires additional settings, add them here.
+This method, called from admin-level *Modules > Order Total* processing when the module is initially installed, sets the module's configuration into the Zen Cart database.  The example shows how to insert the common, required, configuration elements into the database for the `my_order_total` order-total module.  If your *order-total* module requires additional settings, add them here.
 ```php
 class my_order_total extends base
 {
@@ -148,7 +148,7 @@ class my_order_total extends base
 ```
 -------
 ##### keys
-This method, called during admin-level *Modules->Order Total* processing, returns the database configuration "keys" associated with this *order-total* module.  The configuration values are displayed for the module *in the order specified by the returned array*.
+This method, called during admin-level *Modules > Order Total* processing, returns the database configuration "keys" associated with this *order-total* module.  The configuration values are displayed for the module *in the order specified by the returned array*.
 ```php
 class my_order_total extends base
 {
@@ -168,7 +168,7 @@ class my_order_total extends base
 ```
 -------
 ##### remove
-This method, called during admin-level *Modules->Order Total* processing to remove this module, removes all database changes (*normally* just configuration keys) associated with the *order-total* module.
+This method, called during admin-level *Modules > Order Total* processing to remove this module, removes all database changes (*normally* just configuration keys) associated with the *order-total* module.
 ```php
 class my_order_total extends base
 {
@@ -340,4 +340,4 @@ MODULE_ORDER\_TOTAL_`MY_ORDER_TOTAL`_SORT_ORDER | Identifies the sort-order to b
 Procedurally, all configuration options for an *order-total* module named `my_order_total` should be named MODULE_ORDER\_TOTAL_`MY_ORDER_TOTAL`_*, as should all language constants for the module, to ensure uniqueness of those constants.
 
 ### Troubleshooting
-Since the admin-level processing by *Modules->Order Total* loads all `.php` modules present in the `/includes/modules/order_total` folder, make sure that any backup files in that directory have the `.php` extension renamed to something like `.php~` or errors will result during the admin loading.
+Since the admin-level processing by *Modules > Order Total* loads all `.php` modules present in the `/includes/modules/order_total` folder, make sure that any backup files in that directory have the `.php` extension renamed to something like `.php~` or errors will result during the admin loading.
