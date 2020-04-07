@@ -41,7 +41,7 @@ If you want to know where it is set,
 look at the [All Configuration Settings](/user/admin_pages/configuration/all/) page, 
 and search for it. 
 When you see it, look back up to the last header, you'll see it's in 
-`Configuration -> Layout Settings`, so now you know where it is set.
+`Configuration > Layout Settings`, so now you know where it is set.
 
 
 ---
@@ -66,7 +66,7 @@ See [this list](/user/template/template_overrides/#what-can-i-not-override).
 See [this article](/user/template/template_default/). 
 
 ---
-### I created a new template, but can't see it in Admin->Tools-Template Selection
+### I created a new template, but can't see it in Admin > Tools > Template Selection
 
 This can happen if you have forgotten to create the `template_info.php` file. 
 See [this FAQ](/user/template/template_info/). 

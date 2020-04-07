@@ -12,7 +12,7 @@ When you first log in to the Admin area, Zen Cart attempts to talk to the Zen Ca
 There are 2 approaches to addressing this:
 
 1. When you DO log into the admin area, turn off version checking here:
-[Admin -> Configuration -> My Store](/user/admin_pages/configuration/configuration_mystore/), and set `Show if version update available` to false. 
+[Admin > Configuration > My Store](/user/admin_pages/configuration/configuration_mystore/), and set `Show if version update available` to false. 
 
 
 

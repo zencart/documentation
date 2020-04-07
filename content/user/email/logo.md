@@ -26,4 +26,4 @@ For the storefront, copy the file `includes/languages/english/email_extras.php` 
 
 Sometimes the change will not show up right away in emails that have already been sent and viewed, due to caching. Simply close your email program and re-open it to see the change take effect.  If your email is browser-based, clear your browser cache to see the change. 
 
-**NOTE: ** You must be sending HTML emails for this to work.**  See the Enable HTML Emails setting in [Admin -> Configuration -> Email Options ](/user/admin_pages/configuration/configuration_emailoptions/) setting.
+**NOTE: ** You must be sending HTML emails for this to work.**  See the Enable HTML Emails setting in [Admin > Configuration > Email Options ](/user/admin_pages/configuration/configuration_emailoptions/) setting.

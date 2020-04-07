@@ -48,7 +48,7 @@ Provide the Return URL (obtain correct URL from your Zen Cart admin.  It will ta
 
 15.  Other settings in this area can be set based on your preferences. Consult PayPal™ for their meanings.
 
-My selling tools -> Website Preferences -> Payment Data Transfer: If you're using PDT, make sure you have the same token in Zen Cart as you have in PayPal.
+My selling tools > Website Preferences > Payment Data Transfer: If you're using PDT, make sure you have the same token in Zen Cart as you have in PayPal.
 
 Encrypted Website Payments: Set this to OFF. Zen Cart does not currently support this option.
 
@@ -62,7 +62,7 @@ PayPal™ Account Optional: if you want to allow customers to pay by credit card
 
 **IN ZEN CART™**
 
-1.  Go to Admin -> Modules -> Payment -> PayPal
+1.  Go to Admin > Modules > Payment > PayPal
 2.  If this is the first time configuring for PayPal™ on this site, then you need to click on _Install_.
 3.  Otherwise, click on _Edit_.
 4.  Enter the primary email address of your PayPal™ account.

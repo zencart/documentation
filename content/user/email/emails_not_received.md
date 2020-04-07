@@ -16,7 +16,7 @@ Options to try include:
 
 ## Email Transport methods explained
 Have you selected the appropriate "Email Transport" method for your webserver?
-Go to [Admin->Configuration->Email Options](/user/admin_pages/configuration/configuration_emailoptions/) and try them in this order:
+Go to [Admin > Configuration > Email Options](/user/admin_pages/configuration/configuration_emailoptions/) and try them in this order:
 
 1. "php" -- this uses whatever email method your webserver is configured to use for PHP mail commands, as set by your webhost.  This will work fine in most cases.
 1. "smtp" or "smtpauth" -- for reliable email, many hosts require that you use "smtp" or usually "smtpauth" and set all the SMTP settings shown lower on the page.

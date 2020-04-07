@@ -7,7 +7,7 @@ weight: 1
 
 Shipping modules allow you to charge your customers for delivery. 
 
-The list of available shipping modules may be seen by going to [Admin->Modules->Shipping](/user/admin_pages/modules/shipping/).
+The list of available shipping modules may be seen by going to [Admin > Modules > Shipping](/user/admin_pages/modules/shipping/).
 
 Zen Cart has a number of built-in shipping modules which allow you to charge for shipping based on various factors in the order: 
 

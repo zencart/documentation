@@ -39,7 +39,7 @@ In this case, you collect the CC details from the customer and then manually pro
 
 First, you must realize that Merchant Account, Gateway, and related services are NOT FREE.  You will pay for the service.  
 
-To get a merchant account relationship established, it is often best to talk with your bank to see what merchant account services they offer in conjunction with the business bank account you already hold with them.  Hopefully their services can utilize a gateway module already available within Zen Cart (see Admin->Modules->Payment).  
+To get a merchant account relationship established, it is often best to talk with your bank to see what merchant account services they offer in conjunction with the business bank account you already hold with them.  Hopefully their services can utilize a gateway module already available within Zen Cart (see Admin > Modules > Payment).  
 
 Alternatively, there is a list of [Payment-Provider Partners](https://www.zen-cart.com/content.php?14-Payment-Processing) which will give you competitive rates and also support the Zen Cart project at no additional cost to you.  
 

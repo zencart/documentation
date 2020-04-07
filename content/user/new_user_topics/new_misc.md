@@ -12,7 +12,7 @@ weight: -1
 ### How do I change the "Welcome Guest" message?
 
 If you want to eliminate “Welcome Guest! Would you like to log yourself in?” message completely, turn off the Customer Greeting in your 
-[Admin -> Configuration -> Layout settings](/user/admin_pages/configuration/configuration_layoutsettings/).  Go to *Customer Greeting - Show on Index Page* and set it to 0.
+[Admin > Configuration > Layout settings](/user/admin_pages/configuration/configuration_layoutsettings/).  Go to *Customer Greeting - Show on Index Page* and set it to 0.
 
 If you want to replace this message with one of your own, 
 edit the file 
@@ -20,10 +20,10 @@ edit the file
 and locate these lines of code:
 
 ```
-if (STORE_STATUS == '0') {>>
+if (STORE_STATUS == '0') {
    define('TEXT_GREETING_GUEST', 'Welcome <span class="greetUser">Guest!</span> Would you like to <a href="%s">log yourself in</a>?');
 } else {
-   define('TEXT_GREETING_GUEST', 'Welcome, please enjoy our online showcase.');>>
+   define('TEXT_GREETING_GUEST', 'Welcome, please enjoy our online showcase.');
 }
 define('TEXT_GREETING_PERSONAL', 'Hello <span class="greetUser">%s</span>!');
 ```
@@ -82,7 +82,7 @@ Recommended additional reading:
 
 ### How do I turn off the listing of categories that goes across the top of my page?
 
-These are called the *Category Tabs*, and can be switched off by going to [Admin -> Configuration -> Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/) and setting *Categories-Tabs Menu ON/OFF* to zero.
+These are called the *Category Tabs*, and can be switched off by going to [Admin > Configuration > Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/) and setting *Categories-Tabs Menu ON/OFF* to zero.
 
 ---
 
@@ -92,7 +92,7 @@ On some pages, to the right of the categories sidebox, the word "Home" (or perha
 
 These are called the *breadcrumbs* (think Hansel and Gretel).  They show where you are and how to get back to previous locations. You can either turn them off completely or you can turn themoff only on the main page. Although breadcrumbs may look a little odd on your home page, they can very useful to your users as they go deeper into your site.  
 
-To turn them off, go to [Admin -> Configuration -> Layout settings](/user/admin_pages/configuration/configuration_layoutsettings/) and set *Define Breadcrumb Status* to 0. 
+To turn them off, go to [Admin > Configuration > Layout settings](/user/admin_pages/configuration/configuration_layoutsettings/) and set *Define Breadcrumb Status* to 0. 
 
 
 ---

@@ -15,7 +15,7 @@ your preferred language from the [Zen Cart Downloads](https://www.zen-cart.com/d
 
 ### Checklist
 
-1.  **[Admin -> Configuration -> My Store](/user/admin_pages/configuration/configuration_mystore/)**
+1.  **[Admin > Configuration > My Store](/user/admin_pages/configuration/configuration_mystore/)**
     *   Basis of Product Tax - choose what level tax is calculated at.
     *   Basis of Shipping Tax - choose what level tax is calculated at for shipping.
     *   HTML Editor - select your editor for product descriptions and emails/newsletters.  

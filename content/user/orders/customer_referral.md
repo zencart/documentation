@@ -17,7 +17,7 @@ d) the coupon code is stored as the referral source and tied to that customer wh
 
 Repeat steps a-c for the rest of your friends, and step d takes care of the rest.
 
-Turn the whole thing on via Admin->Configuration->Customer Details->Customers Referral Status = 1:
+Turn the whole thing on via Admin > Configuration > Customer Details > Customers Referral Status = 1:
 
 Customers Referral Status
 
@@ -29,10 +29,10 @@ Customers Referral Code is created from
 
 2= Customer can add during create account or edit if blank
 
-**NOTE:** Once the Customers Referral Code has been set it can only be changed in the Admin->Customers screen.
+**NOTE:** Once the Customers Referral Code has been set it can only be changed in the Admin > Customers screen.
 
 Tracking the Results
-In the Admin->Reports menu there is a Customers Referral Tracking report which shows you the sales made to customers using those coupons.
+In the Admin > Reports menu there is a Customers Referral Tracking report which shows you the sales made to customers using those coupons.
 
 
 ### Related Topics:

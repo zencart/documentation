@@ -86,24 +86,31 @@ Check out the [Server Requirements for Running Zen Cart](/user/first_steps/serve
     **Please DO NOT use any other convention** like `/YOUR_CUSTOM_TEMPLATE/`, `/YOUR_STORE/`, `YOURSTORE`, `/your_site/`, `/custom/` , etc. - use the standard names above. 
 
 
-- Use arrow notation for describing click paths in the Admin, rather than ellipses.  For example, use this: 
+- Use a space padded greater than sign (` > `) for describing click paths in the Admin, rather than ellipses.  For example, use this: 
 
-`Configuration->EZ-Pages Settings` 
+`Configuration > EZ-Pages Settings` 
 
 NOT THIS:  
 
-`Configuration ... EZ-Pages Settings`              ** NO!** 
+`Configuration ... EZ-Pages Settings`              **NO!** 
+
+NOT THIS:  
+
+`Configuration->EZ-Pages Settings`              **NO!** 
 
 
 ## Links 
 
-- Use relative paths so people can test their changes locally.  Use this: 
+- Use relative paths, starting with the folder under `/content`,  so people can test their changes locally.  Use this: 
 
 `[Github Workflow](/dev/contributing/github_workflow/)`
 
 NOT THIS:
 
-`[Github Workflow](https://docs.zen-cart.com/dev/contributing/github_workflow/)`       ** NO!** 
+`[Github Workflow](https://docs.zen-cart.com/dev/contributing/github_workflow/)`       **NO!** 
+
+NOT THIS: 
+`[Github Workflow](github_workflow/)`       **NO!** 
 
 - Cross-link liberally!  Example: 
 

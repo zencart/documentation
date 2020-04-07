@@ -5,7 +5,7 @@ category: admin
 weight: 10
 ---
 
-You can control your banners in [Admin> Tools> Banner Manager](/user/admin_pages/tools/banner_manager/). 
+You can control your banners in [Admin > Tools > Banner Manager](/user/admin_pages/tools/banner_manager/). 
 You will see that you can add delete and edit the banners at will.
 
 To add a new banner, click the `New Banner` button.
@@ -24,7 +24,7 @@ You can give almost whatever group name you want to a banner. Banners in the sam
 
 
 #### POSITIONING BANNER GROUPS
-You control which group of banners is "displayed where" by editing the "Banner Display Groups" position group names under [Admin -> Configuration -> Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/).
+You control which group of banners is "displayed where" by editing the "Banner Display Groups" position group names under [Admin > Configuration > Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/).
 
 Displaying MORE THAN ONE Banner within a group at a time. The BannersAll group is designed for "1-to-many" static banners.
 You can only use 1 Banner Group on this particular sidebox, unlike the other banners where you can have multiple Banner Groups.

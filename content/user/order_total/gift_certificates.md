@@ -40,7 +40,7 @@ To sell Gift Certificates in your store, you need to create them as specific pro
 *   Products Weight: leave blank
 
 3\. Click Preview and then Save it.  
-4\. Now go to Modules -> Order Total, select Gift Certificates, and click Install. This installs the Gift Certificate module. 
+4\. Now go to Modules > Order Total, select Gift Certificates, and click Install. This installs the Gift Certificate module. 
 
 ### HOW DOES IT WORK THEN ?
 After the Administrator has approved the Gift Certificate (There's a "release" button in admin area if someone buys one), THEN the Gift Certificate funds are made available to the customer.  

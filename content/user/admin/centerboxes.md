@@ -9,7 +9,7 @@ There is a "New Products for [insert month]" section on several pages, including
 
 There are several "sets" of settings for the Centerboxes.
 
-When you go to [Admin->Configuration->Index Listing](/user/admin_pages/configuration/configuration_indexlisting/), you will see options like:
+When you go to [Admin > Configuration > Index Listing](/user/admin_pages/configuration/configuration_indexlisting/), you will see options like:
 
 - Show New Products on Main Page
 - Show Featured Products on Main Page
@@ -18,13 +18,13 @@ When you go to [Admin->Configuration->Index Listing](/user/admin_pages/configura
     - Note: the values you set are the Sort Order of the Centerboxes 
     - Turn OFF by setting to 0 all of the ones you do NOT want to see displayed 
 
-The same is true on other similar configuration menus under Admin->Configuration:
+The same is true on other similar configuration menus under Admin > Configuration:
 
 - [New Listing](/user/admin_pages/configuration/configuration_newlisting/)
 - [Featured Listing](/user/admin_pages/configuration/configuration_featuredlisting/)
 - [All Listing](/user/admin_pages/configuration/configuration_alllisting/) 
 
-For setting up the Centerboxes of the Empty Shopping Cart, use the settings on the Admin->Configuration->Stock, you will see the settings for:
+For setting up the Centerboxes of the Empty Shopping Cart, use the settings on the Admin > Configuration > Stock, you will see the settings for:
 
 - Show New Products on Main Page
 - Show Featured Products on Main Page

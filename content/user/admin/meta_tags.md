@@ -8,12 +8,12 @@ weight: 10
 Zen Cart is built with a feature to have separate meta tags for each Category and Products -- separate from the ones on general pages.
 
 ### Categories
-To define meta tags for a Category, go to the [Admin -> Catalog -> Categories/Products](/user/admin_pages/catalog/categories/).  Once you're there, click on the meta tag icon (the last one to the right for any given category) and set your content.
+To define meta tags for a Category, go to the [Admin > Catalog > Categories/Products](/user/admin_pages/catalog/categories/).  Once you're there, click on the meta tag icon (the last one to the right for any given category) and set your content.
 
 **Note:** A meta tag entry on this screen must contain something in the keywords and description fields or it is not considered complete, and will be ignored.
 
 ### Products
-If you want to define meta tags for individual Products, you will navigate to that product using [Admin -> Catalog -> Categories/Products](/user/admin_pages/catalog/categories_products/), and click on the meta tag icon (last one on the right) to define it.
+If you want to define meta tags for individual Products, you will navigate to that product using [Admin > Catalog > Categories/Products](/user/admin_pages/catalog/categories_products/), and click on the meta tag icon (last one on the right) to define it.
 
 **Note:** there are custom settings in Product Types so if you don't want, for example, products_price in the title,  you can globally set the defaults for 1 or all product types.
 

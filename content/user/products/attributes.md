@@ -14,7 +14,7 @@ There are 3 parts to attributes:
 
 ### Defining Option Names:
 
-`Admin -> Catalog -> Option Name Manager`
+`Admin > Catalog > Option Name Manager`
 
 **Example:**  
 
@@ -45,7 +45,7 @@ For Option Type Radio buttons and checkboxes:
 
 ### Defining Option Values
 
-`Catalog -> Option Value Manager`
+`Catalog > Option Value Manager`
 
 a) Pick the Option Name  
 b) Give a Name like Red  
@@ -199,6 +199,6 @@ When done, you can update the sort orders for the product to the Option Value so
 
 ### Downloadable Products
 
-Note: if you plan on using downloads, be sure you have configured your Attribute Settings for the files.  See **Admin -> Configuration -> Attribute Settings**.  
+Note: if you plan on using downloads, be sure you have configured your Attribute Settings for the files.  See **Admin > Configuration > Attribute Settings**.  
 
 For more information, see [configuring downloadable attributes](/user/products/downloadable/).

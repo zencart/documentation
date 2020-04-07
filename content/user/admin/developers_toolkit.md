@@ -12,18 +12,20 @@ Say, for example, you wish to change the welcome email text because you do not p
 2\. Find the text in that email that you wish to change.  
 In this example, you desire to remove:  
 
-<font color="#003366">Products Reviews - Share your opinions on products with our other customers.</font>
+```
+Products Reviews - Share your opinions on products with our other customers.
+```
 
-3\. Copy a few of those words "exactly" to the clipboard.  
-Example: <font color="#003366">your opinions on products</font>
+3\. Copy a few of those words exactly to the clipboard.  
+Example: `your opinions on products`
 
-</font>4\. Open the Developer's Toolkit under Admin->Tools->Developer's Tool Kit
+4\. Open the Developer's Toolkit under [Admin > Tools > Developer's Tool Kit](/user/admin_pages/tools/developers_tool_kit/).
 
 5\. Paste those words "exactly" as they appeared on the email into the first search box.  
 
 6\. From the first drop-down, choose "All Language Files"  
 
-7\. Click Search  
+7\. Click *Search*
 
 8\. You'll find that the `includes/languages/english/create_account.php` file is displayed with the exact line number where the text you desire to change is located.  
 
@@ -34,6 +36,6 @@ Example: <font color="#003366">your opinions on products</font>
 **NOTE:** It's recommended that you place your customized file in an Overrides folder, like this:  
 `includes/languages/english/YOURTEMPLATE/create_account.php`
 
-where YOURTEMPLATE is the name of the custom template you've been developing for your site.  
+where `YOURTEMPLATE` is the name of the custom template you've been developing for your site.  
 
 For more information on overrides see the [Template Overrides FAQ](/user/template/template_overrides/).

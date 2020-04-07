@@ -111,7 +111,7 @@ If you are getting this message in your Admin area:
 Warning: Your Admin login is not secure ... either you still have default login settings for: Admin admin or have not removed or changed: demo demoonly The login(s) should be changed as soon as possible for the Security of your Shop. For additional Security for the Admin please see the /docs
 ``
 
-Go to [Admin -> Admins -> Admin Users](/user/admin_pages/admins/admin_users/)  You can then add/remove administrative accounts. To secure your site, you should remove the "demo" account (if there is one), or at least change its password.
+Go to [Admin > Admins > Admin Users](/user/admin_pages/admins/admin_users/)  You can then add/remove administrative accounts. To secure your site, you should remove the "demo" account (if there is one), or at least change its password.
 
 You should also make sure your admin password is not "admin" (or some other easy to guess value).  To change a password, click on the *Reset Password* button.
 
@@ -172,7 +172,7 @@ If you don't know the correct database name, MySQL username and MySQL password, 
 
 Your images are distorted because the images sizes are set to fixed dimensions, both height and width, and if your images are not the same ratio they will appear distorted.
 
-To remedy this situation, go to [Admin -> Configuration -> Images](/user/admin_pages/configuration/configuration_images/).
+To remedy this situation, go to [Admin > Configuration > Images](/user/admin_pages/configuration/configuration_images/).
 On this page is a list of the various image sizes, choose the image size you wish to edit and set one of the dimensions to 0.
 
 Make sure you also set the following two options:

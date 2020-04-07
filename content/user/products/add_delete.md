@@ -7,7 +7,7 @@ weight: 10
 
 ### How do I add a new product?
 
-Go to [Admin -> Catalog -> Categories/Products](/user/admin_pages/catalog/categories_products/).  Drill down to the level where you want to add the product.  
+Go to [Admin > Catalog > Categories/Products](/user/admin_pages/catalog/categories_products/).  Drill down to the level where you want to add the product.  
 
 There must either be other products there or nothing - a category which 
 already contains categories may not contain products. 
@@ -22,7 +22,7 @@ click the light blue *A* to the right of the product.
 
 ### How do I delete a product? 
 
-Go to [Admin -> Catalog -> Categories/Products](/user/admin_pages/catalog/categories_products/).  Drill down to the level where you see the product.  
+Go to [Admin > Catalog > Categories/Products](/user/admin_pages/catalog/categories_products/).  Drill down to the level where you see the product.  
 
 Click the red trash can icon on the right side of the page.
 

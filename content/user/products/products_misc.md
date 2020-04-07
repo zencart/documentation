@@ -12,7 +12,7 @@ weight: -1
 
 These are the category/inventory counts. 
 
-Go to [Admin -> Configuration -> My Store](/user/admin_pages/configuration/configuration_mystore/). 
+Go to [Admin > Configuration > My Store](/user/admin_pages/configuration/configuration_mystore/). 
 Locate the *Show Category Counts* option.  Turn it off.
 
 ---
@@ -63,7 +63,7 @@ This forces the customer to choose something "other than" the default (since the
 Problem: My products are being displayed with a different price then I set!? If I set something at $2 it ends up listing at 2.22. I have set that prices should not show with tax, I haven't set any tax rates yet.
 
 Chances are that you have changed your currency settings, and your "default" currency is not set to a value of 1.0.
-Please visit Admin->Localization->Currencies and set your default currency to value of 1.0
+Please visit Admin > Localization > Currencies and set your default currency to value of 1.0
 
 If this does not work please re-ask your question on the 
 [main support forum](https://www.zen-cart.com/forum.php).
@@ -74,7 +74,7 @@ Please also list which version of Zen Cart you are using and which currencies yo
 ### Is it possible to order fractional quantities? 
 There are two setups required in order to allow customers to purchase in quantities less than 1:
 
-1. Change a setting in your admin:  Admin->Configuration->Stock->Product Quantity Decimals :  Set to 2 instead of 0
+1. Change a setting in your admin:  Admin > Configuration > Stock > Product Quantity Decimals :  Set to 2 instead of 0
 
 2. Then individually edit each applicable product's settings to allow minimum units of 0.01 or whatever you need.
 
@@ -142,7 +142,7 @@ There are a couple tutorials on this process:
 ---
 ### What is the meaning of the number in "minimum values" and "maximum values" during product-entry?
 
-On the [Admin -> Catalog -> Category/Products](/user/admin_pages/catalog/categories_products/) screen, you can setup a minimum quantity and a maximum quantity as well as the units that they must be ordered in. 
+On the [Admin > Catalog > Category/Products](/user/admin_pages/catalog/categories_products/) screen, you can setup a minimum quantity and a maximum quantity as well as the units that they must be ordered in. 
 
 ```
 Minimum - the minimum number that you can buy for the product  (Default = 1)
@@ -159,7 +159,7 @@ These have nothing to do with product quantity in stock.  Inventory On Hand is h
 ---
 ### How do I add quantity discounts to my products?
 
-[Admin -> Catalog -> Products Price Manager](/user/admin_pages/catalog/products_price_manager/)
+[Admin > Catalog > Products Price Manager](/user/admin_pages/catalog/products_price_manager/)
 
 - Select the product
 - Edit

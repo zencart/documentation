@@ -29,7 +29,7 @@ If both Query Time and Parse Time are almost the same, then the majority of the 
 
 ## How To Enable/Disable Parse Time Display
 
-If you wish to enable/disable the display of this information, you may change the setting by going to [Admin->Configuration->Logging](/user/admin_pages/configuration/configuration_logging/) and setting *Display The Page Parse Time*.
+If you wish to enable/disable the display of this information, you may change the setting by going to [Admin > Configuration > Logging](/user/admin_pages/configuration/configuration_logging/) and setting *Display The Page Parse Time*.
   
 If you have enabled this setting but the numbers are not displaying on your storefront (by default they would show in the page footer), then your custom template has been altered to prevent the display, in which case you will need to add the required PHP code to handle the display or remove the CSS code that prevents the information from being visible. The PHP code can be found in the default templates that come with Zen Cart.  
 

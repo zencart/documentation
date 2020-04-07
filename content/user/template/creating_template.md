@@ -56,9 +56,9 @@ And if you need a base of CSS components, copy the contents of the css folder fr
 Upload your `/YOURTEMPLATE` folder to your server.  
 
 Open your Admin panel and navigate to 
-`Tools -> Template Selection`.
+`Tools > Template Selection`.
 Click the Edit button, then choose `YOURTEMPLATE` from the dropdown menu and click the Update button. Now, navigate to 
-`Tools -> Layout Boxes Controller`
+`Tools > Layout Boxes Controller`
 and at the bottom of the page click the Reset button.
 
 Your new template is now enabled and ready for you to customize. 

@@ -18,5 +18,5 @@ You can set up a product which can act as a variable-price amount, ideal for acc
 5. Fill in all other applicable fields (be sure to set a large number for Products Quantity, since it will still be treated as an inventory item, reducing the quantity-on-hand with each donation made).
 Save the product. It is now available in your store.
 
-6. If you wish to allow "cents", then go to your store Admin-&gt;Configuration-&gt;Stock-&gt;Product Quantity Decimals and set it to 2 (instead of the default of 0).
+6. If you wish to allow "cents", then go to your store Admin > Configuration > Stock > Product Quantity Decimals and set it to 2 (instead of the default of 0).
 
