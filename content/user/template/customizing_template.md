@@ -48,5 +48,5 @@ You can copy your existing stylesheet into the `css` folder, making sure it's na
 This file builds your pages, starting with the header, then the left column of sideboxes, the middle "content" area of the site, then the right column of sideboxes, followed finally by the footer. Thus, by styling this page, you can control the appearance of the whole site. In many cases, you don't need to touch it though, as much of the control is in the stylesheet already.
 
 9. Finally, create the `template_info.php` file in your working template folder. Instructions on creating this file and activating your template can be found in
-[this FAQ](/user/template/template_info/). 
+[the template_info FAQ](/user/template/template_info/). 
 

@@ -11,7 +11,7 @@ Zen Cart takes bug reports seriously, and endeavors to find resolutions to them 
 
 We encourage all users to make bug reports.  
 
-To learn how to make a bug report, please see [this article](/user/about_us/bug_reporting/). 
+To learn more, please see [how to report a bug](/user/about_us/bug_reporting/). 
 
 ## **Security Reports**
 

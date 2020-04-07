@@ -25,8 +25,7 @@ Zen Cart, but wound up using some old files.
 Each version of Zen Cart (and each mod) 
 was developed for the version of PHP that was
 prevalent at the time, and may not be compatible with newer PHP versions.
-See [this article](/user/first_steps/server_requirements/#php-version) for the mapping of Zen Cart 
-version to PHP version. 
+See [mapping of Zen Cart versions to PHP versions](/user/first_steps/server_requirements/#php-version) more information.
 
 Let's look at a specific example of how this can happen.  These examples will
 appear dated in a few years,  but the principles remain the same - a 

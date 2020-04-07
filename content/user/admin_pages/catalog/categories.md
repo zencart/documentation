@@ -47,5 +47,5 @@ If you are at a level where the Categories screen only shows products,
 you have a different set of capabilities. 
 See [Categories/Products (Products Level) page](/user/admin_pages/catalog/categories_products/).
 
-For more information on categories and products, see [these pages](/user/products/). 
+For more information on categories and products, see the [categories and products](/user/products/) pages. 
 

@@ -23,7 +23,7 @@ Then select *Shipping* from the list. If the module is not installed click the i
 
 ---
 ### How do you clone a shipping module? 
-See [this FAQ](/dev/code/modules/clone_shipping/) in the development area.
+See [the clone shipping module FAQ](/dev/code/modules/clone_shipping/) in the development area.
 
 --- 
 

@@ -47,4 +47,4 @@ DIR_FS_ADMIN (in admin)
 
 **NOTE:** This FAQ handles moving a cart to a new folder on the 
 same server.  If you need to move your cart to a new server, 
-please see [this FAQ instead](/user/installing/change_hoster/). 
+please see the [FAQ on changing hosters](/user/installing/change_hoster/). 

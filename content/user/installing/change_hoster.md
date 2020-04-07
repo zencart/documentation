@@ -69,5 +69,5 @@ Then, a couple days after you've completed the move, and propagation is complete
 **NOTE:** This FAQ handles moving a cart to a new server.
 If you just want to move your cart to another folder on the 
 same server, 
-please see [this FAQ instead](/user/installing/move_cart/). 
+please see the [move cart FAQ](/user/installing/move_cart/). 
 

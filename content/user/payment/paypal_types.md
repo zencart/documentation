@@ -40,4 +40,5 @@ Another much-less-commonly-asked-about PayPal service is:
 **Payflow Pro**  is essentially *only* a merchant account.  Transactions conducted via Payflow Pro (for US Merchants) do not appear in your PayPal account ... instead, they are forwarded directly to your merchant bank account.  Basically, Payflow Pro is just like any other traditional payment gateway (akin to Authorize.net etc). In North America you can connect the Payflow Pro service to your own merchant bank account. In the UK, the Payflow Pro service is actually bundled as a hybrid service with Website Payments Pro, connecting all the transactions to your UK PayPal account, and all monies are deposited to your PayPal account, instead of directly to your bank account. There is a monthly fee for using this service.  
 
 Zen Cart does not have built-in support for the US Payflow Pro service. However, there is a [free addon](https://www.zen-cart.com/downloads.php?do=file&id=212) which can be used for this purpose if required.  
+
 Please see PayPal's website for more [Payflow and PayPal](https://www.zen-cart.com/partners/paypal) information.  

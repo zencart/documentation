@@ -138,7 +138,7 @@ To find out the actual REAL error message that's occurring, view your site's myD
 
 Once you've found the actual error message details from those logs, search for those messages using the search option on this page or in the main Zen Cart support forum for additional steps in resolving the problem.
 
-Alternatively, to see the actual MySQL error message details, you can TEMPORARILY enable `STRICT_ERROR_REPORTING` as described in [this article](/user/troubleshooting/strict_error_reporting/).
+Alternatively, to see the actual MySQL error message details, you can TEMPORARILY enable `STRICT_ERROR_REPORTING` as described in [the strict error reporting FAQ](/user/troubleshooting/strict_error_reporting/).
 
 **NOTE:** This should ONLY be a TEMPORARY measure. FOR SECURITY REASONS, YOU MUST PUT IT BACK TO NORMAL WHEN DONE, since its use may give malicious visitors information they ought not to have about your site.
 
@@ -194,7 +194,7 @@ If you don't want to change it "now", you will not be allowed to complete login.
 ---
 
 ### How do I troubleshoot PHP Session Handling issues? 
-See [this FAQ](/user/troubleshooting/cant_stay_logged_in_admin). 
+See [the PHP SESSION handling FAQ](/user/troubleshooting/cant_stay_logged_in_admin). 
 
 ---
 <!-- please keep this at the end --> 
