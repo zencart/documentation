@@ -24,15 +24,15 @@ You can add other restricted product types too, but Document General will make t
 ---
 
 ### How do I enable/disable sideboxes on EZ-Pages? 
-See [this article](/user/ezpages/sidebox_display_changes/). 
+See the [sidebox display changes](/user/ezpages/sidebox_display_changes/) FAQ. 
 
 ---
 ### How do I remove and/or re-arrange the sideboxes?
-See [this article](/user/template/remove_rearrange_sideboxes/).
+See [the rearranging sideboxes](/user/template/remove_rearrange_sideboxes/) FAQ.
 
 ---
 ### How do I add images to a sidebox? 
-See [this article](/user/template/add_image_box/). 
+See [the images in sideboxes](/user/template/add_image_box/) FAQ. 
 
 ---
 ### How do I remove "Page 1", "Page 2" and "Page 3" from my more information sidebox?

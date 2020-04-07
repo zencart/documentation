@@ -59,17 +59,17 @@ more overrides:
 
 ---
 ### What can I not override?
-See [this list](/user/template/template_overrides/#what-can-i-not-override).
+See [the list of non-overridable files](/user/template/template_overrides/#what-can-i-not-override).
 
 ---
 ### What is template default? 
-See [this article](/user/template/template_default/). 
+See [the template default FAQ](/user/template/template_default/). 
 
 ---
 ### I created a new template, but can't see it in Admin > Tools > Template Selection
 
 This can happen if you have forgotten to create the `template_info.php` file. 
-See [this FAQ](/user/template/template_info/). 
+See [the template_info FAQ](/user/template/template_info/). 
 
 ---
 

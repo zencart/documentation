@@ -93,7 +93,7 @@ See also [plugin tips](/dev/plugins/tips) for more suggestions.
 You've created some overrides and now you want to use your new template!
 
 Just create the `template_info.php` file and activate your template. 
-See [this FAQ](/user/template/template_info/). 
+See [the template_info FAQ](/user/template/template_info/). 
 
 
 ## Next Steps 

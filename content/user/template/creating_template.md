@@ -18,7 +18,7 @@ and create a new folder. You can call it anything you like, though it is best no
 
 Next, you need to create the `template_info.php` file
 and change your selected template.  
-See [this FAQ](/user/template/template_info/). 
+See [the template_info FAQ](/user/template/template_info/). 
 
 ### Building out your template 
 Create an empty folder inside your new template directory and call it images so you should have `includes/templates/YOURTEMPLATE/images/`.
@@ -62,7 +62,7 @@ Click the Edit button, then choose `YOURTEMPLATE` from the dropdown menu and cli
 and at the bottom of the page click the Reset button.
 
 Your new template is now enabled and ready for you to customize. 
-See [this FAQ](/user/template/customizing_template/). 
+See [the customizing your template FAQ](/user/template/customizing_template/). 
 
 ### About Language Files
 

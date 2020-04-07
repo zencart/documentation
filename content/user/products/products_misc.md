@@ -106,7 +106,7 @@ You may have spotted the Product Info entry on the Configuration menu and alread
 Product info works differently from product listings. This is because of the flexibility that Zen Cart gives you to define different product types. You may wish, for example, to display a weight for a book, but not for a downloadable pdf. Zen Cart allows you to set them up as different product types and display different information about them.
 
 So where do you go to turn off display of a products weight? Follow
-the instructions on [this page](/user/template/basic_customizations/#can-i-turn-off-fields-from-my-product-info-page). 
+the instructions on [turning off fields from the product page](/user/template/basic_customizations/#can-i-turn-off-fields-from-my-product-info-page). 
 
 ---
 ### How do I set up "Music" products for audio-previews?
@@ -163,7 +163,7 @@ These have nothing to do with product quantity in stock.  Inventory On Hand is h
 It is done in 
 [Admin > Catalog > Products Price Manager](/user/admin_pages/catalog/products_price_manager/).
 
-See [this page](/user/products/quantity_discounts/). 
+See [quantity discounts](/user/products/quantity_discounts/) for more details. 
 
 ---
 <!-- please keep this at the end --> 

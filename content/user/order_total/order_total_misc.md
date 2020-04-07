@@ -9,7 +9,7 @@ weight: 5
 
 ---
 ### How can I build an order total module? 
-See [this development page](/dev/code/modules/order_total_modules/). 
+See the development page on [building order total modules](/dev/code/modules/order_total_modules/). 
 
 --- 
 ### Why don't order total modules change the prices of products in the cart? 
