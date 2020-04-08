@@ -45,7 +45,7 @@ If you'd like to help the Zen Cart project, we'd love to have you.  Please see
 
 The content of this site is released under the terms of the [GNU Public License](https://www.gnu.org/licenses/gpl-3.0.en.html). 
 
-Zen Cart&trade; is a registered trademark of Zen Ventures, LLC.
+Zen Cart&trade; is a trademark of Zen Ventures, LLC.
 
 All trademarks are the property of their respective owners. 
 

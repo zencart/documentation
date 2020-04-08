@@ -5,7 +5,7 @@ category: payment
 weight: 10
 ---
 
-## Zen Cart® and PayPal together give you a complete e-commerce and all-in-one payment solution using PayPal's Express Checkout
+## Zen Cart and PayPal together give you a complete e-commerce and all-in-one payment solution using PayPal's Express Checkout
 
 <div style="float:right;width: 155px;padding-left:15px;">
 
@@ -14,13 +14,13 @@ weight: 10
 </div>
 
 *   Accept not only credit card payments but also allow PayPal members to pay from their PayPal account.
-*   No registration required on your Zen Cart® site when using PayPal Express Checkout.
+*   No registration required on your Zen Cart site when using PayPal Express Checkout.
 *   Get PayPal's industry-leading security fraud-prevention systems.
 *   Take advantage of comprehensive PayPal's online reports that help you measure sales and manage your business easily.
 
-## Here's how to put Zen Cart® and Express Checkout to work for your business.
+## Here's how to put Zen Cart and Express Checkout to work for your business.
 
-*   **Step 1: [Download and install the latest version of Zen Cart®](http://sourceforge.net/projects/zencart/files/)**
+*   **Step 1: [Download and install the latest version of Zen Cart](http://sourceforge.net/projects/zencart/files/)**
 *   **Step 2: Set Up a Verified PayPal Business Account**
     *   Customers who don't have an existing PayPal account:
         1.  [**Go to** ![PayPal [link]](/images/paypal.gif "PayPal [link]")](https://www.zen-cart.com/partners/paypal-ec)
@@ -44,11 +44,11 @@ weight: 10
     6.  Click the “Request API signature” radiobutton then click “Agree & Submit” button (after agreeing to the terms).
     7.  Write down the values listed next to API Username and Password
     8.  Select the value listed next to Signature Hash, copy it, and save it to a file or some other location. This is your API Signature.
-    9.  Use the values from #7 and #8 to configure the API SIGNATURE settings in the PayPal Express Checkout module in your Zen Cart® admin area.
+    9.  Use the values from #7 and #8 to configure the API SIGNATURE settings in the PayPal Express Checkout module in your Zen Cart admin area.
 
 ## Add your own merchant account and accept credit cards without sending your customers off-site
 
-Get the features of an internet merchant account and payment gateway with Website Payments Pro. Control your checkout from start to finish by integrating PayPal Website Payments Pro with your Zen Cart™ shopping cart.
+Get the features of an internet merchant account and payment gateway with Website Payments Pro. Control your checkout from start to finish by integrating PayPal Website Payments Pro with your Zen Cart shopping cart.
 
 *   **Apply for Website Payments Pro**
     1.  [**Go to** ![PayPal [link]](/images/paypal.gif "PayPal [link]")](https://www.zen-cart.com//partners/paypal-pro)
@@ -58,5 +58,5 @@ Get the features of an internet merchant account and payment gateway with Websit
     5.  Click Sign Up
     6.  Fill in your information, and submit your application. Approval takes between 24 and 48 hours.
     7.  Once approved, accept the Pro billing agreement. Check the Getting Started section on the upper left of your account overview page.
-    8.  In your Zen Cart® admin, enable the Website Payments Pro module and choose the appropriate settings for your account.
+    8.  In your Zen Cart admin, enable the Website Payments Pro module and choose the appropriate settings for your account.
 

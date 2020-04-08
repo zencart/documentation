@@ -22,7 +22,7 @@ Note: mailing gift certificates requires the gift certificate to be installed. P
 4. Make sure that the default from address is who you want the email to be from.
 
 
-5. Enter email subject like, 'You have a Gift Certificate from a web site running Zen Cart™.'
+5. Enter email subject like, 'You have a Gift Certificate from a web site running Zen Cart.'
 
 
 6. Enter the amount value of the gift certificate.

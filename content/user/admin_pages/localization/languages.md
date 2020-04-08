@@ -16,7 +16,7 @@ This is the name of the language, probably best as expressed _in itself_, e.g. F
 
 ### Code
 
-This is the two-letter ISO 639 two-letter language code, e.g. en for English, fr for Francais, es for Español, etc. If you don't know the code, you can find it on Wikipedia® [here](http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
+This is the two-letter ISO 639 two-letter language code, e.g. en for English, fr for Francais, es for Español, etc. If you don't know the code, you can find it on Wikipedia [here](http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
 
 ### Image
 

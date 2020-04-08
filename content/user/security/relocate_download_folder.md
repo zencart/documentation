@@ -5,7 +5,7 @@ category: security
 weight: 10
 ---
 
-With Zen Cart® it is possible to relocate the "download" folder outside your 
+With Zen Cart it is possible to relocate the "download" folder outside your 
 [webroot](/user/first_steps/how_do_i_install#what-is-my-webroot) 
 folder so that thieves cannot directly link to real files on your server and download without paying or being authenticated.  
 

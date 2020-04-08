@@ -39,7 +39,7 @@ Save the edited file and upload it to your server.
 ### How do I change the "Congratulations! you have successfully installed..." Message?
 
 
-If you want to change `Congratulations! You have successfully installed your Zen Cart®; E-Commerce Solution` with your own text, do the following:
+If you want to change `Congratulations! You have successfully installed your Zen Cart; E-Commerce Solution` with your own text, do the following:
 
 Open the `includes/languages/english/index.php` file and find the following code:
 

@@ -5,19 +5,19 @@ category: plugins
 weight: 1
 ---
 ## What is a Contribution/Addon/Plugin?
-The Open Source community has many great benefits. One such benefit is the ability for many people to collectively share their knowledge, creativity, and expertise by extending the capabilities of existing software products.  It's very common for someone to install a product such as Zen Cart® and want to make some customizations unique to their business, and then share those changes by contributing back to the Zen Cart® community for everyone's benefit.  Packaging up the new/changed files along with instructions on how to implement those onto another site is essentially what a contribution/addon comprises.
+The Open Source community has many great benefits. One such benefit is the ability for many people to collectively share their knowledge, creativity, and expertise by extending the capabilities of existing software products.  It's very common for someone to install a product such as Zen Cart and want to make some customizations unique to their business, and then share those changes by contributing back to the Zen Cart community for everyone's benefit.  Packaging up the new/changed files along with instructions on how to implement those onto another site is essentially what a contribution/addon comprises.
 
 ## Acceptable Contributions
-Addon/Contribution/Plugin authors who wish to discuss and support their addon via the Zen Cart® support site must post their contribution to the "Free Addons" ("downloads") area of the Zen Cart® support site.   Contributions which are not in the Free Addons area are not to be discussed on the Zen Cart® support forum.
+Addon/Contribution/Plugin authors who wish to discuss and support their addon via the Zen Cart support site must post their contribution to the "Free Addons" ("downloads") area of the Zen Cart support site.   Contributions which are not in the Free Addons area are not to be discussed on the Zen Cart support forum.
 
-The Zen Cart® Support Forum is the place to explore and create new ideas and features; it is not a venue for advertising and promotion. Paid/commercial addons will not be accepted for the Downloads section, and advertisements for such will not be allowed on the forum.
+The Zen Cart Support Forum is the place to explore and create new ideas and features; it is not a venue for advertising and promotion. Paid/commercial addons will not be accepted for the Downloads section, and advertisements for such will not be allowed on the forum.
 
 Contributions containing content which could be construed as objectionable or unsuited for general use are not acceptable and will thus be rejected.
 
 ## Addon/Contribution Requirements
-Contributed Addons which are hosted in the Zen Cart® "downloads" area must comply with the following standards:
+Contributed Addons which are hosted in the Zen Cart "downloads" area must comply with the following standards:
 
-* License: Must be GPL, since it's integrating into Zen Cart® core code, which is GPL. A complete copy of the license should be included in the contribution files, preferably as a separate file. If an addon is free-standing (ie: doesn't use *any* existing Zen Cart® files in order to operate) then it can be licensed under another license provided that license is fully compatible with GPL.
+* License: Must be GPL, since it's integrating into Zen Cart core code, which is GPL. A complete copy of the license should be included in the contribution files, preferably as a separate file. If an addon is free-standing (ie: doesn't use *any* existing Zen Cart files in order to operate) then it can be licensed under another license provided that license is fully compatible with GPL.
 
 You can find the GPL license details at:  http://www.gnu.org/licenses/licenses.html#GPL
 
@@ -27,7 +27,7 @@ You can find the GPL license details at:  http://www.gnu.org/licenses/licenses.h
 
 * Documentation: See "Documentation Requirements" below.
 
-* Support: A support thread in the appropriate Addons/Contributions area of the Zen Cart® support forum should be opened following activation of a submitted contribution, where free support for that addon will delivered by the author and the community at large. Support for the addon should take place on the Zen Cart® forum.
+* Support: A support thread in the appropriate Addons/Contributions area of the Zen Cart support forum should be opened following activation of a submitted contribution, where free support for that addon will delivered by the author and the community at large. Support for the addon should take place on the Zen Cart forum.
 
 * Contents: 
 
@@ -63,5 +63,5 @@ Contributions submitted to the addons/"downloads" area will be reviewed for comp
 
 Updates to existing contributions should be uploaded as <b>updates</b> to the existing contribution, and not as new contributions with merely a different version number.  Once again, credit to prior contributors is appropriate in all documentation.  Submitting an update for the purpose of rebranding with one's own credits is frowned upon. It is appropriate to acknowledge prior work done by other contributors including their copyright notices.
 
-The Zen Cart® team reserves the right at its own discretion to reject or deny any contribution and/or update, with or without notification, especially if it fails to comply with these published standards or if it risks being dangerous or confusing to those who might try to use it.
+The Zen Cart team reserves the right at its own discretion to reject or deny any contribution and/or update, with or without notification, especially if it fails to comply with these published standards or if it risks being dangerous or confusing to those who might try to use it.
 

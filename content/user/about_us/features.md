@@ -78,5 +78,5 @@ weight: 10
 - Multiple Currency Support
 - Ability to add new pages 
 
-Do you have a question about whether Zen Cart offers a particular feature? It might be answered [on this page](/user/miscellaneous/can_zen_cart).
+Do you have a question about whether Zen Cart offers a particular feature? It might be answered [on the miscellaneous FAQs page](/user/miscellaneous/can_zen_cart).
 

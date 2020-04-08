@@ -13,9 +13,9 @@ Preamble worth reading: [How-do-I-rebuild-my-site-on-the-new-version-instead-of-
 
 ## Getting Started 
 
-This is a basic guide to upgrading Zen Cart®. If you have not yet installed Zen Cart®, please see the [/docs/1.readme_installation.html](https://www.zen-cart.com/docs/1.readme_installation.html) file for installation instructions.  
+This is a basic guide to upgrading Zen Cart. If you have not yet installed Zen Cart, please see the [/docs/1.readme_installation.html](https://www.zen-cart.com/docs/1.readme_installation.html) file for installation instructions.  
 
-To upgrade Zen Cart®, you'll need the same basic tools you used to install and customize it in the first place: An [FTP tool](/user/first_steps/useful_tools/#ftp-tools), a [text editor](/user/first_steps/useful_tools/#php-html-and-text-editors) for HTML/PHP code, phpMyAdmin or equivalent access to your MySQL database, and your Control Panel for managing your webspace.  
+To upgrade Zen Cart, you'll need the same basic tools you used to install and customize it in the first place: An [FTP tool](/user/first_steps/useful_tools/#ftp-tools), a [text editor](/user/first_steps/useful_tools/#php-html-and-text-editors) for HTML/PHP code, phpMyAdmin or equivalent access to your MySQL database, and your Control Panel for managing your webspace.  
 
 Additionally, you will find a file-comparison tool.  See the list of [Useful Tools](/user/first_steps/useful_tools/) for suggestions.  Note that free tools offer 2-way comparison. The more advanced paid-for tools offer 3-way comparisons which can be very handy, but costly.
 
@@ -31,7 +31,7 @@ First, check whether your server is compatible with the version you're trying to
 
 ## 1\. Preparation
 
-Unzip a copy of the new version of Zen Cart®, upload it to your webserver into a `demo` folder, and install the new version into a separate database, and include the Demo products. This is just for a place for you to play with the new version and get used to its new features. These can be deleted after conversion is complete.  
+Unzip a copy of the new version of Zen Cart, upload it to your webserver into a `demo` folder, and install the new version into a separate database, and include the Demo products. This is just for a place for you to play with the new version and get used to its new features. These can be deleted after conversion is complete.  
 
 Study the new features, and the documented changes to the template structures, as well as the "changelog". Use the demo products in the demo shop as examples. See also the supporting documentation provided with the new release.  
 
@@ -40,14 +40,14 @@ Make a full backup of your database (dump to SQL file). Store this file on your 
 Make a full backup of your site files (ftp to your PC and zip it up for safe-keeping).  
 Keep the backup on your PC to use in next steps. Perhaps call this folder `zen_backup`.
 
-Now let's find out the differences/customizations details between your site and the original Zen Cart® files.  (You can find older versions here: [http://sourceforge.net/projects/zencart/files/](http://sourceforge.net/projects/zencart/files/) )  
+Now let's find out the differences/customizations details between your site and the original Zen Cart files.  (You can find older versions here: [http://sourceforge.net/projects/zencart/files/](http://sourceforge.net/projects/zencart/files/) )  
 
-Unzip a copy of the original Zen Cart® files for the version you _originally installed_ or last upgraded from (ie: perhaps v1.3.9 or even 1.5.1). This should be placed in a separate working folder on your PC (perhaps 
+Unzip a copy of the original Zen Cart files for the version you _originally installed_ or last upgraded from (ie: perhaps v1.3.9 or even 1.5.1). This should be placed in a separate working folder on your PC (perhaps 
 `zen_orig`.
 
 Make a list of any add-ons you have installed, for later reference.  
 
-Run a tool like [WinMerge](http://winmerge.sf.net/) to compare the "Original" Zen Cart® files in `zen_orig` against your working backup files in `zen_backup`.
+Run a tool like [WinMerge](http://winmerge.sf.net/) to compare the "Original" Zen Cart files in `zen_orig` against your working backup files in `zen_backup`.
 
 Note all the files that are "different". In WinMerge, double-click on each file and note what the differences are.  
 
@@ -55,11 +55,11 @@ If the differences are just language defines for display text, those will be sim
 
 If the differences are actual programming/code differences, you will need to make detailed notes in order to carry over those changes to the new new new version.  
 
-Any mods/add-ons you've installed will likely contain many programming changes, and may not be fully compatible with the newer Zen Cart® release.  
+Any mods/add-ons you've installed will likely contain many programming changes, and may not be fully compatible with the newer Zen Cart release.  
 
 Your list of add-on's may help you narrow down the source of any differences you're finding between versions. You may have to download the add-on again to take a look at the readme or code contained in it. You may have to contact the author to ask for an updated version.  
 
-As you make your list of changed files, etc, at this stage, you may want to move things into the Zen Cart® template-override structure, if you haven't already done so. See the [Template System Documentation](/user/template/) for help on the template system.  
+As you make your list of changed files, etc, at this stage, you may want to move things into the Zen Cart template-override structure, if you haven't already done so. See the [Template System Documentation](/user/template/) for help on the template system.  
 
 </div>
 
@@ -67,7 +67,7 @@ As you make your list of changed files, etc, at this stage, you may want to move
 
 ## 2\. Execution
 
-Download and unzip the latest Zen Cart® version to your PC. This will be in a 3rd directory (perhaps `zen_new`), separate from the other two folders compared above.  
+Download and unzip the latest Zen Cart version to your PC. This will be in a 3rd directory (perhaps `zen_new`), separate from the other two folders compared above.  
 
 Using the list of files you made earlier, go through each "changed" file, and make your changes from the old version into the new version.  
 
@@ -86,7 +86,7 @@ Note that there will be several changes you will have to make to files that you 
 
 ## 3\. Testing
 
-Make a NEW database to install the new version of Zen Cart® into.  
+Make a NEW database to install the new version of Zen Cart into.  
 
 If the last backup you made of your data is older than the last order that might have been processed or customer registration, make a fresh database backup.  
 
