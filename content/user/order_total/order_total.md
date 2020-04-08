@@ -26,4 +26,4 @@ Zen Cart also offers a number of order total plugins:
 
 More order total plugins may be found in the [Other Modules plugins area](https://www.zen-cart.com/downloads.php?do=cat&id=7).
 
-Developers wishing to create an order total module, see [these pages](/dev/code/modules/). 
+Developers wishing to create an order total module should see the [order total dev FAQs](/dev/code/modules/). 

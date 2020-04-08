@@ -8,4 +8,4 @@ weight: 20
 This page allows you to select which sideboxes are shown (and where) 
 on your storefront.  
 
-For more information on sideboxes, see [these pages](/user/sideboxes/). 
+For more information, see [the sidebox FAQs](/user/sideboxes/). 

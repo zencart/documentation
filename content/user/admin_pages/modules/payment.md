@@ -17,4 +17,4 @@ As of Zen Cart 1.5.6, the built in payment modules are:
 - PayPal (Standard, Pro, Express Checkout)
 - Square 
 
-For more information on payment modules, see [these pages](/user/payment/). 
+For more information, see the [payment FAQs](/user/payment/). 

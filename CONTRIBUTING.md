@@ -199,6 +199,7 @@ please simplify it to just use Markdown markup (remove the span).
 `## Adding Currencies`
 
 <br />
+
 ## Notes for the Future
 
 - If there's a bug in the content that you just don't have time to fix, mark it with a visible `FIXME` so a future maintainer (maybe you!) will notice it and take care of it. 

@@ -7,4 +7,4 @@ weight: 10
 
 The Customers page allows you to view your customers. 
 
-For more information on customer and order data, see [these pages](/user/orders/). 
+For more information, see the [customer and order data FAQs](/user/orders/). 

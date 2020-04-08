@@ -49,5 +49,5 @@ FIXME add explanations
 - Products Shipping Weight:
 - Sort Order:
 
-For more information on products, see [these pages](/user/products/). 
+For more information, see the [product FAQs](/user/products/). 
 

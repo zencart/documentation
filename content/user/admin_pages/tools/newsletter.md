@@ -7,4 +7,4 @@ weight: 50
 
 This page allows you to compose an HTML (with optional plaintext) email message to be sent to a customer or a group of customers.
 
-For more information on email, see [these pages](/user/email/).
+For more information, see the [email FAQs](/user/email/).
