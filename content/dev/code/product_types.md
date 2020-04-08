@@ -46,7 +46,7 @@ If you want to add a new product type you need to create a new row in the table.
 
 `_type_id_` is an auto\_incrementing field and is used to cross reference the type with other Database Tables used by the PTS.
 
-`_type_name_` is user defined, but you should try and stick with the naming conventions that the core team have decided on. For example in Zen Cart™ 1.2 we have Products - General for the standard product, and Product - Music for a product type designed for Music CD's. Then we have Document - General for a basic layout for an information only Document, and Document-Product for a Document that can be sold. These names are used in the drop down that appears in the admin product creation pages.
+`_type_name_` is user defined, but you should try and stick with the naming conventions that the core team have decided on. For example, we have Products - General for the standard product, and Product - Music for a product type designed for Music CD's. Then we have Document - General for a basic layout for an information only Document, and Document-Product for a Document that can be sold. These names are used in the drop down that appears in the admin product creation pages.
 
 `_type_handler_` again is user defined and is used to build the URL to the code that actually does the work for the product type. It is best to define this similarly to the type_name. For example if the type_name is Product-Music, the type_handler would be product_music. For compatibility across operating systems you should always stick to lower case for the type_handler. More explanation will be given later as to how the type_handler is used to access the unique code for a given product type.
 
@@ -60,7 +60,7 @@ If you want to add a new product type you need to create a new row in the table.
 
 ### PRODUCT_TYPE_LAYOUT 
 
-It has always been possible in Zen Cart™ using the admin interface to decide which elements of a product's information are displayed. Originally this information was saved in the CONFIGURATION table. However as different product types will have differing types of information, we now use a separate table for product types.
+It has always been possible in Zen Cart using the admin interface to decide which elements of a product's information are displayed. Originally this information was saved in the CONFIGURATION table. However as different product types will have differing types of information, we now use a separate table for product types.
 
 The layout of this table is similar to an entry in the configuration table. The fields are
 

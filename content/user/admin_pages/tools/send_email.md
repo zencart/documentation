@@ -12,4 +12,4 @@ If your store uses HTML email, you will have an additional text box in which to 
 **NOTE:** Sending large numbers of emails (newsletters or other marketing content) from your hosting account is no longer recommended. 
 See [Newsletters](/user/email/newsletters) for alternatives. 
 
-For more information on email, see [these pages](/user/email/).
+For more information, see the [email FAQs](/user/email/).

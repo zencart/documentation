@@ -18,5 +18,5 @@ As of Zen Cart 1.5.6, the built in shipping modules are:
 - table
 - zones  
 
-For more information on shipping modules, see [these pages](/user/shipping/). 
+For more information, see the [shipping FAQs](/user/shipping/). 
 

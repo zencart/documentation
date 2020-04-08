@@ -7,4 +7,4 @@ weight: 20
 
 The Orders page allows you to view your orders. 
 
-For more information on customer and order data, see [these pages](/user/orders/). 
+For more information, see the [customer and order FAQs](/user/orders/). 

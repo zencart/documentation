@@ -19,5 +19,5 @@ As of Zen Cart 1.5.6, the built in order total modules are:
 - tax
 - total 
 
-For more information on order total modules, see [these pages](/user/order_total/). 
+For more information, see [the order total FAQs](/user/order_total/). 
 
