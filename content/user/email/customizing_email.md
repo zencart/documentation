@@ -5,7 +5,7 @@ category: email
 weight: 10
 ---
 
-There are several places in the Zen Cart® code where e-mails to the customer are constructed. To create a consistent feel for all your communication with the customer, you will want to make sure you modify all these places whenever you modify one. 
+There are several places in the Zen Cart code where e-mails to the customer are constructed. To create a consistent feel for all your communication with the customer, you will want to make sure you modify all these places whenever you modify one. 
 Don't forget to use the [template overrides system](/user/template/template_overrides)
 wherever possible when making your changes.
 
@@ -13,7 +13,7 @@ The e-mail's structure is determined in one of two ways: if you are sending plai
 
 ## Plain text e-mails
 
-You can rearrange, add, or delete items in a plain text e-mail. To do so, you will need to edit the Zen Cart® files where the e-mail is created. For example, if you want to edit the order confirmation e-mail, you will need to edit the file `includes/classes/order.php`.
+You can rearrange, add, or delete items in a plain text e-mail. To do so, you will need to edit the Zen Cart files where the e-mail is created. For example, if you want to edit the order confirmation e-mail, you will need to edit the file `includes/classes/order.php`.
 
 In our example, we open up `includes/classes/order.php` and scroll down to the bottom of the file, in the function `send_order_email()`. There you will see the lines that construct the plain text e-mail message:
 
@@ -46,7 +46,7 @@ If you don't understand what's going on in the lines above, you may want to [Rea
 
 The HTML e-mail templates are located in the folder `email/` in your store's root directory. There are several different templates, each for a different purpose. You can rearrange the items, add new items, or delete items to achieve the structure you want for your e-mails.
 
-You need not edit any other Zen Cart® files if you just want to rearrange or delete the items listed in an HTML template. To add items, however, you will need to find all the Zen Cart® files that use that particular HTML template, and add in a definition for your new item. You can use the [Developer's Tool Kit](/user/admin/developers_toolkit).
+You need not edit any other Zen Cart files if you just want to rearrange or delete the items listed in an HTML template. To add items, however, you will need to find all the Zen Cart files that use that particular HTML template, and add in a definition for your new item. You can use the [Developer's Tool Kit](/user/admin/developers_toolkit).
 in the Admin to find all the files that use a given template; search for the last part of the template name. For example, if you want to add an item into the HTML template `email_template_order_status.html`, search for `order_status` using the [Developer's Tool Kit](/user/admin/developers_toolkit).
 
 Once you have found the files that need to be edited, you will want to add a definition for your new HTML item to each one. For example, suppose you have added an item called `$EMAIL_HOURS_OF_OPERATION` to the `email_template_order_status.html` template. One of the files that you will need to edit is `admin/orders.php`. Find the part of that file where the e-mail message is being constructed; in this case, it begins around line 100\.

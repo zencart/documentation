@@ -34,7 +34,7 @@ That's it.
 
 ## Prerequisites
 
-1.  Your webserver must have a mail service enabled. For Linux/Unix hosts, this is typically done via sendmail or exim or qmail daemons. On Windows™ servers, this may be done via services offered with IIS.
+1.  Your webserver must have a mail service enabled. For Linux/Unix hosts, this is typically done via sendmail or exim or qmail daemons. On Windows servers, this may be done via services offered with IIS.
 2.  Your webserver must allow email connections from PHP.
 3.  If you are using sendmail options, then the PHP configuration for sendmail functions must be configured properly on the server.
 4.  You must have an unrestricted connection to the mailserver you're sending through.

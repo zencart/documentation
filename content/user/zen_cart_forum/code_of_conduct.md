@@ -5,9 +5,9 @@ category: zen_cart_forum
 weight: 10
 ---
 
-## Zen Cart™ Forum Code of Conduct
+## Zen Cart Forum Code of Conduct
 
-When you log on to the Zen Cart® forum or visit as a guest, you have agreed to follow this Code of Conduct. It applies to all forum posts, private messages, emails and any other communication originating from this web site.
+When you log on to the Zen Cart forum or visit as a guest, you have agreed to follow this Code of Conduct. It applies to all forum posts, private messages, emails and any other communication originating from this web site.
 
 ### You agree that you will not:
 
@@ -33,5 +33,5 @@ Communicating on message boards, via PM and email is different from face-to-face
 
 You may, from time to time, find yourself in disagreement with someone else's opinion. At times like these, please keep in mind it's safer and more polite to take issue with the comments rather than the person.
 
-**Statements, postings, Private Messages or other communications from the Zen Cart website, that violate the above terms will be deleted from the forums upon discovery. While we may attempt to notify you if we move or delete a post, we are under no obligation to do so. Depending on the nature of the violation, the Zen Cart® Moderators, at their sole discretion may terminate a customer's account.**
+**Statements, postings, Private Messages or other communications from the Zen Cart website, that violate the above terms will be deleted from the forums upon discovery. While we may attempt to notify you if we move or delete a post, we are under no obligation to do so. Depending on the nature of the violation, the Zen Cart Moderators, at their sole discretion may terminate a customer's account.**
 

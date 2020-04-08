@@ -7,7 +7,7 @@ weight: 10
 
 FIXME - please review content
 
-_Copyright (c) 2008 by Chuck Redman, for Zen Cart®, All Rights Reserved_
+_Copyright (c) 2008 by Chuck Redman, for Zen Cart, All Rights Reserved_
 
 Distributed under Creative Commons License
 

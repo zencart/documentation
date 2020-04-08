@@ -12,19 +12,19 @@ The hoster-provided or publicly available **"packaged bundles" of Zen Cart are n
 Instead, **we recommend manual installation**.  Manual installation of files from the [official download](https://sourceforge.net/projects/zencart/files/) enables you to build a system which is secure, optimized, and up to date. Manual installation ensures that you know *exactly* what *you* have put onto your site.  
 
 
-This is a basic guide to installing Zen Cart®. If you already have Zen Cart® installed and wish to upgrade from a previous version to this new release, please see the upgrading instructions [in the Release document](https://www.zen-cart.com/docs/). 
+This is a basic guide to installing Zen Cart. If you already have Zen Cart installed and wish to upgrade from a previous version to this new release, please see the upgrading instructions [in the Release document](https://www.zen-cart.com/docs/). 
 
 ---
 
 ## A. The Basics
 
-You have downloaded the [official Zen Cart® software](https://sourceforge.net/projects/zencart/files/), and want to build an online shopping cart.
+You have downloaded the [official Zen Cart software](https://sourceforge.net/projects/zencart/files/), and want to build an online shopping cart.
 
 Questions to ask yourself:
 
 ### 1\. Do you have a domain and hosting account?
 
-If No, stop, and see our [Certified Hosting](https://www.zen-cart.com/hosting) Sites and find a fast, reliable hosting site that can help you register your own personal domain, as well as provide for your hosting needs that meet the Zen Cart® software requirements.
+If No, stop, and see our [Certified Hosting](https://www.zen-cart.com/hosting) Sites and find a fast, reliable hosting site that can help you register your own personal domain, as well as provide for your hosting needs that meet the Zen Cart software requirements.
 
 Not sure what a domain or hosting account is?  [See this article](/user/first_steps/hosting/).
 
@@ -51,7 +51,7 @@ If No stop.  You will need a [text editor](/user/first_steps/useful_tools/#php-h
 
 Your webhoster's control panel (often [cPanel](https://cPanel.net) but sometimes a hoster-built tool) is where you will create a MySQL database and user.
 
-BEFORE YOU PROCEED, make sure you have access to a MySQL database, and username/password to that database. You may need to create the database using your webhosting account's control panel. Contact your webhosting company for assistance. Zen Cart® cannot create the database for you.
+BEFORE YOU PROCEED, make sure you have access to a MySQL database, and username/password to that database. You may need to create the database using your webhosting account's control panel. Contact your webhosting company for assistance. Zen Cart cannot create the database for you.
 
 (You need the following permissions on your MySQL user: SELECT, INSERT, UPDATE, DELETE, CREATE, ALTER, INDEX, DROP.   On an H-Sphere host, this would be "dba" access, or at least read/write. )  
 
@@ -61,10 +61,10 @@ If you have answered Yes to all 4 of these questions, then you are ready to go o
 
 ### ZIP file
 
-If you're reading this page via a file from your computer, you have likely already unzipped the [Zen Cart® distribution file](https://www.zen-cart.com/getit) and its contents into a folder on your personal computer. If for some reason you haven't already done so, unzip the files to your PC now, retaining the file structure within the zip file.  
+If you're reading this page via a file from your computer, you have likely already unzipped the [Zen Cart distribution file](https://www.zen-cart.com/getit) and its contents into a folder on your personal computer. If for some reason you haven't already done so, unzip the files to your PC now, retaining the file structure within the zip file.  
 
 ---
-## B. Upload the Zen Cart® fileset to your webserver
+## B. Upload the Zen Cart fileset to your webserver
 
 Upload, via FTP, the whole program into a directory on your server.  You can put it in your webroot or in a folder below that. 
   
@@ -138,7 +138,7 @@ You will, however, need to confirm that the auto-detected answers are, in fact, 
 
 You will need the following information for the installation:  
 
-*   **The physical path to your new Zen Cart® directory**  
+*   **The physical path to your new Zen Cart directory**  
     Example: `/home/myusername/public_html/catalog`  
 
 *   **The Virtual HTTP Path (the URL to your domain and directory for your shop)**  
@@ -165,7 +165,7 @@ If you now see a list of filenames and directories, you should speak to your Hos
 
 ### Welcome
 
-You will be presented with a "Welcome to Zen Cart®" page, explaining the features of Zen Cart®.  
+You will be presented with a "Welcome to Zen Cart" page, explaining the features of Zen Cart.  
 
 ### License
 
@@ -173,9 +173,9 @@ Clicking on Continue takes you to the license screen where you are asked to read
 
 ### System Inspection
 
-Next, it will examine your server for compliance with technical requirements for running Zen Cart®, presenting you with several items you may need or want to address with your host. Anything marked in red or with an "X" must be addressed before the installer can continue. Things marked with an orange or yellow "caution" symbol are simply warnings that may or may not apply to your setup now. The image folders and others as described earlier in this document are also noted. If you make changes to your server, you can click Re-Check or press F5 in your browser to refresh the display and reflect the changes you've made before proceeding.  
+Next, it will examine your server for compliance with technical requirements for running Zen Cart, presenting you with several items you may need or want to address with your host. Anything marked in red or with an "X" must be addressed before the installer can continue. Things marked with an orange or yellow "caution" symbol are simply warnings that may or may not apply to your setup now. The image folders and others as described earlier in this document are also noted. If you make changes to your server, you can click Re-Check or press F5 in your browser to refresh the display and reflect the changes you've made before proceeding.  
 
-If a previous version of Zen Cart® is found on your server, the installer will attempt to determine the database patch level and display that on the screen as well. In this case, an "upgrade" button will display at the bottom of the screen offering you the ability to upgrade if needed. 
+If a previous version of Zen Cart is found on your server, the installer will attempt to determine the database patch level and display that on the screen as well. In this case, an "upgrade" button will display at the bottom of the screen offering you the ability to upgrade if needed. 
 
 Once you are satisfied that the "pre-flight-check" inspection is OK for your needs (ideally, all green check-marks), you may click the "Install" button at the bottom of the screen.  
 
@@ -197,7 +197,7 @@ Note: If you receive any of the following error messages, go through the above s
 
 On the next screen, you are asked for Database Information about your MySQL database, username and password. These can be obtained from your cPanel or equivalent control screen provided by your host. If you do not have a clean MySQL database setup with a username and password, you will need to create one.
 
-Contact your Hosting site if you need assistance in creating a MySQL database table and/or username and password. **Note that you need to have your database and userID created before the Zen Cart® installer can continue past this screen**.  
+Contact your Hosting site if you need assistance in creating a MySQL database table and/or username and password. **Note that you need to have your database and userID created before the Zen Cart installer can continue past this screen**.  
 
 Other information on this screen:
 
@@ -215,7 +215,7 @@ Note: except for "demo data", all of the information here can be (re)configured 
 ### Demo Data       
 If you would like to install the demo data, select yes.  
 
-We recommend that you install the demo data to familiarize yourself with many of the examples created that explain and demonstrate the vast number of features available in Zen Cart®.  
+We recommend that you install the demo data to familiarize yourself with many of the examples created that explain and demonstrate the vast number of features available in Zen Cart.  
 
 You may also decide later to set up a test site with the demo data AND a separate working site for your live data so that you have the ability to refer back to the demo data for help and to see examples of a feature.  This is an excellent way to learn how things work, and then try your hand at setting up your own site and testing to be sure you've done things right. Later on it can be used to help you test an upgrade or test new features you're working on before affecting your live site.  
 
@@ -264,7 +264,7 @@ Now you'll want to [install your SSL certificate](/user/installing/enable_ssl/) 
 
 For information on first steps to setting up your online shop, see the article [basic checklist](/user/first_steps/basic_checklist/). 
 
-You should also familiarize yourself with the Zen Cart® [Developer's Toolkit](/user/admin/developers_toolkit), located in your store's Admin area, under `Tools`. This will help you locate almost anything you want to customize in your shop!
+You should also familiarize yourself with the Zen Cart [Developer's Toolkit](/user/admin/developers_toolkit), located in your store's Admin area, under `Tools`. This will help you locate almost anything you want to customize in your shop!
 
 Once you're set up and ready to start announcing your URL to the public, you should FIRST review Site Security Recommendations to be sure your site is safe and not vulnerable to hackers. The most up-to-date version of this file can be found in the article [Important Security Recommendations](https://www.zen-cart.com/docs/important_site_security_recommendations.html). 
 

@@ -22,7 +22,7 @@ This is the name of the new currency, like _Canadian Dollar_ or _Mexican Peso_.
 This is the three-character ISO 4217 international name for the currency you just described, like _CAD_ for _Canadian Dollar_, _MXN_ for _Mexican Peso_, _USD_ for _US Dollar_, or _JPY_ for _Japanese Yen_, etc. Note that to use the automated currency conversion feature (see the explanation for the _update currencies_ button below), this code must be the correct one for that currency. If you don't know the international code for the currency you want to add, you can find it in several places:
 
 *   On the ISO's website at this address: [http://www.iso.org/iso/en/prods-services/popstds/currencycodeslist.html](http://www.iso.org/iso/en/prods-services/popstds/currencycodeslist.html)
-*   On Wikipedia®, at the entry for [ISO 4217](http://en.wikipedia.org/wiki/ISO_4217)
+*   On Wikipedia, at the entry for [ISO 4217](http://en.wikipedia.org/wiki/ISO_4217)
 *   On XE.COM, which in addition to the [ISO 4217](http://www.xe.com/iso4217.htm) have the list of [symbols used for most currencies](http://www.xe.com/symbols.htm), ($ for Dollar, ₭ for Euro, £ for Pound, ¥ for Yen, etc.), as well as [currency conversion](http://www.xe.com/ucc/) between almost all world currencies (you'll need that for the **Value** field below if you want to manually process currency conversions as opposed to using the automated currency converter (see the explanation for the _update currencies_ button below), don't know what the usual currency conversion rate is between your currency and that one).
 
 ### Symbol Left
