@@ -20,6 +20,9 @@ These icons allow you to:
 - use the [products price manager](/user/admin_pages/catalog/products_price_manager/)
 - use the [meta tags editor](/user/admin_pages/catalog/products_meta_tags_editor). 
 
+Using the green pencil will put you on the product editing page, which is 
+a key page for configuring your products. 
+
 The product edit screen allows you to set the following values for a product: 
 
 FIXME add explanations 

@@ -11,3 +11,6 @@ On that screen you will see a lot of detail about your server configuration. You
 
 You can also see your database upgrade history.
 
+Version information is particularly important if you are upgrading Zen Cart 
+or your hoster is upgrading PHP.  You want to be sure you have a 
+[compatible PHP for your Zen Cart version](/user/first_steps/server_requirements/). 
