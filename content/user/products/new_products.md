@@ -1,0 +1,22 @@
+---
+title: New Products
+description: Zen Cart New Products 
+category: categories
+weight: 10
+---
+
+Zen Cart has a number of ways for you to show off new products: 
+
+- the built in New Products Page, configured under [Configuration > New Listing](/user/admin_pages/configuration/configuration_newlisting/).  This page appears when you navigate to `YOURSITE.com/index.php?main_page=products_new`.
+- the optional [New Products Sidebox](/user/template/remove_rearrange_sideboxes/) 
+- the optional [New Products Centerbox](/user/admin/centerboxes)
+
+You may also configure new products to appear in the following places: 
+- on an empty shopping cart page with the setting on [Admin > Configuration > Stock](/user/admin_pages/configuration/configuration_stock/)
+- below a [product listing](/user/products/product_listing/) using the settings on [Admin > Configuration > Index Listing](/user/admin_pages/configuration/configuration_indexlisting/)
+
+
+
+Determination of what qualifies as "new" is also configurable, using 
+[Admin > Configuration > Maximum Values > New Product Listing - Limited to ... ](/user/admin_pages/configuration/configuration_maximumvalues/#new_product_listing__limited_to_).
+

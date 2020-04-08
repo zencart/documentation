@@ -5,7 +5,7 @@ category: products
 weight: 10
 ---
 
-There are 3 parts to attributes:  
+There are 3 parts to [attributes](/user/products/attributes_info/):  
 
 *   Option Name
 *   Option Value
@@ -14,7 +14,8 @@ There are 3 parts to attributes:
 
 ### Defining Option Names:
 
-`Admin > Catalog > Option Name Manager`
+This is done in [Admin > Catalog > Option Name Manager](/user/admin_pages/catalog/option_name_manager/).
+
 
 **Example:**  
 
@@ -45,7 +46,7 @@ For Option Type Radio buttons and checkboxes:
 
 ### Defining Option Values
 
-`Catalog > Option Value Manager`
+This is done in [Admin > Catalog > Option Value Manager](/user/admin_pages/catalog/option_value_manager/).
 
 a) Pick the Option Name  
 b) Give a Name like Red  
