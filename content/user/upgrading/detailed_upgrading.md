@@ -23,8 +23,6 @@ Upgrading follows 3 easy steps. We suggest you take your time going through each
 
 We highly recommend you pay special attention to getting familiar with the demo data in the new version, so that you can become comfortable with the many new features contained in the new release.  
 
-<div>
-
 ## Compatibility
 
 First, check whether your server is compatible with the version you're trying to install: [Server Requirements for Zen Cart versions](/user/first_steps/server_requirements/). 
@@ -61,10 +59,6 @@ Your list of add-on's may help you narrow down the source of any differences you
 
 As you make your list of changed files, etc, at this stage, you may want to move things into the Zen Cart template-override structure, if you haven't already done so. See the [Template System Documentation](/user/template/) for help on the template system.  
 
-</div>
-
-<div>
-
 ## 2\. Execution
 
 Download and unzip the latest Zen Cart version to your PC. This will be in a 3rd directory (perhaps `zen_new`), separate from the other two folders compared above.  
@@ -79,10 +73,6 @@ You may find WinMerge handy at this stage to apply edits as well. However, you w
 
 Note that there will be several changes you will have to make to files that you have overridden using the template overrides system. Thus, you'll want to compare files from 
 `/includes/templates/MYTEMPLATE/*` to `/includes/template/template_default/*`, and the same with language file overrides, sideboxes, etc.  
-
-</div>
-
-<div>
 
 ## 3\. Testing
 
