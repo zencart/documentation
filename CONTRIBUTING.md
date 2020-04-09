@@ -215,6 +215,8 @@ FIXME - clarify the difference between foo and bar.
 ```
 
 
+## Developer Docs 
+Some folders under content contain files called `developers_read_me.txt`.  These files contain instructions on how to manage program-generated content, such as the configuration page help files. 
 
 
 

@@ -15,3 +15,5 @@ https://docs.zen-cart.com/user/admin_pages/configuration/configuration_emailopti
 In the unlikely event that a new configuration menu is added, please update 
 content/user/admin_pages/configuration/all.md
 
+The code that created these `.md` files is the `build_doc.php` script, which is stored at https://github.com/scottcwilson/zencart_tools.
+
