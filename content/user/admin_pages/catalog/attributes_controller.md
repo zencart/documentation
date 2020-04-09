@@ -5,6 +5,9 @@ category: admin_pages
 weight: 60
 ---
 
+The Attributes Controller allows you to add [attributes](/user/products/attributes_info) to your product,
+creating a variant product.
+
 Before you can add attributes to your products you need to set option names in [Admin - Catalog - Option Name Manager](/user/admin_pages/catalog/option_name_manager/) 
 and give these option values in [Admin - Catalog - Option Value Manager](/user/admin_pages/catalog/option_value_manager/).
 
