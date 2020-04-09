@@ -32,10 +32,15 @@ If you do not want the link to appear in any of these places or you are not usin
 - use the `Page is Visible` radio button 
 - code into the content where you want the link to appear 
 
-```<?php echo '<a href="' . zen_href_link(FILENAME_EZPAGES,'page_id') . '">' PAGE_TITLE . '</a>'; ?>```
+```<?php echo '<a href="' . zen_href_link(FILENAME_EZPAGES,'page_id') . '">' NEW_PAGE_TITLE . '</a>'; ?>```
 
-where `page_id` is the numeric id of the page as shown on the left hand side of `Admin > Tools > EZ-Pages`, and `PAGE_TITLE` is a language defined constant for the name of your page. 
+where `page_id` is the numeric id of the page as shown on the left hand side of `Admin > Tools > EZ-Pages`, and `NEW_PAGE_TITLE` is a language defined constant for the name of your page.  You would define `NEW_PAGE_TITLE` in a file like, `includes/languages/english/extra_definitions/my_ezpages.php` as follows:
 
-Once you do this, your link will be displayed and your page content will be displayed when users visit that EZ-Page, by going to `YOURSITE.com/index.php?main_page=page&id=page_id`, even if the page is not displayed in the header, sidebox or footer.  This is a new change in Zen Cart 1.5.6. 
+```
+<?php 
+define('NEW_PAGE_TITLE','Name of My New Page');
+```
+
+Once you do this, your link will be displayed and your page content will be displayed when users visit that EZ-Page, by going to `YOURSITE.com/index.php?main_page=page&id=page_id`, even if the page is not displayed in the header, sidebox or footer.  The `visible` flag is a new change in Zen Cart 1.5.6; prior to that, the page had to be set to appear in the header, sidebox or footer. 
 
 
