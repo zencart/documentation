@@ -11,7 +11,9 @@ After [installation](/user/first_steps/how_do_i_install), you'll want to address
 
 ### Language File setup 
 - When English is not your preferred language download, install and setup
-your preferred language from the [Zen Cart Downloads](https://www.zen-cart.com/downloads.php?do=cat&id=6). 
+a language pack for 
+your preferred language from the [Zen Cart Downloads](https://www.zen-cart.com/downloads.php?do=cat&id=6). More details are in the help page for 
+[Admin > Localization > Languages](/user/admin_pages/localization/languages/). 
 
 ### Checklist
 
