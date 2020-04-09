@@ -4,6 +4,8 @@ category: admin_pages
 weight: 60 
 ---
 
+See also <a href="/user/shipping/">Shipping</a>.
+
 <h2 id="country_of_origin">Country of Origin</h2>
 
 <div class='indent'>Key: <b>SHIPPING_ORIGIN_COUNTRY</b><br />

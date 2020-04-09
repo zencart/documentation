@@ -45,3 +45,15 @@ If you need to change the information about an existing language, click on the n
 
 To remove a language, click on the named language so that the right arrow appears in the Action column, then click on the _Delete_ button. If this is not the default language, you will be asked to confirm. Click on the _delete_ button again to delete the language, or _cancel_ if you do not wish to delete this language. If this is the default language, only the _cancel_ button will appear, as you cannot delete the default language.
 
+## Installing a Language Pack
+
+Once you have added a new language, you will need to get the language pack files that 
+correspond to that language.  Language packs may be found in 
+the [Zen Cart Downloads](https://www.zen-cart.com/downloads.php?do=cat&id=6).
+
+Language packs are structured to correspond to your cart folders, so you can just 
+rename the admin folder if one exists and then upload all the files. 
+
+If you're not familiar how to upload a Zen Cart mod, follow the instructions on 
+[how to install a plugin](/user/plugins/how_to_install_a_plugin/). 
+
