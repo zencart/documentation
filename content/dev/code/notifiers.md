@@ -316,3 +316,6 @@ A number of mods are provided which can be helpful during development when using
 * [Zen Cart Notifier Report](https://www.zen-cart.com/downloads.php?do=file&id=2260)
 * [Zen Cart Notifier Trace](https://www.zen-cart.com/downloads.php?do=file&id=1114)
 
+### List of Notifiers 
+A [list of notifiers](/dev/code/notifiers_list) is provided for the current release. 
+
