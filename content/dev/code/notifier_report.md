@@ -2,23 +2,14 @@
 title: Notifier Report 
 description: Zen Cart Notifier Report
 category: code
+type: codepage
 weight: 10
 ---
 
-<!-- Override normal page styling for maximum code visibility -->
-<style>
-.td-toc {
-  display: none !important;
-}
-.td-content > pre {
-   -webkit-box-sizing: unset !important; 
-   max-width: 100% !important;
-}
-main {
-  flex: unset !important; 
-  max-width: 100% !important; 
-}
-</style>
+<!-- RELEASETIME - update -->
+
+
+<!-- content here --> 
 
 File: ipn_main_handler.php
 
