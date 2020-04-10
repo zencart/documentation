@@ -214,14 +214,14 @@ These common settings *should be* provided by all shipping modules:
 
 Configuration Name | Configuration Value
 ------------------ | ------------------------------------------------
-MODULE_SHIPPING_`MYSHIPPING`_STATUS | Set to either 'true' or 'false', identifies whether or not the module is currently enabled
-MODULE_SHIPPING_`MYSHIPPING`_ZONE | If a zone is selected via the dropdown, the shipping module is enabled only for that zone.
-MODULE_SHIPPING_`MYSHIPPING`_TAX_CLASS | If the shipping is to be taxed, identifies the Tax Class associated with that tax
-MODULE_SHIPPING_`MYSHIPPING`_TAX_BASIS | Choose the address-basis (usually one of `Shipping`, `Billing` or `Store`) from which the tax is calculated.
-MODULE_SHIPPING_`MYSHIPPING`_SORT_ORDER | Identifies the sort-order to be used when displaying the currently-enabled shipping modules.
+`MODULE_SHIPPING_MYSHIPPING_STATUS` | Set to either 'true' or 'false', identifies whether or not the module is currently enabled
+`MODULE_SHIPPING_MYSHIPPING_ZONE` | If a zone is selected via the dropdown, the shipping module is enabled only for that zone.
+`MODULE_SHIPPING_MYSHIPPING_TAX_CLASS` | If the shipping is to be taxed, identifies the Tax Class associated with that tax
+`MODULE_SHIPPING_MYSHIPPING_TAX_BASIS` | Choose the address-basis (usually one of `Shipping`, `Billing` or `Store`) from which the tax is calculated.
+`MODULE_SHIPPING_MYSHIPPING_SORT_ORDER` | Identifies the sort-order to be used when displaying the currently-enabled shipping modules.
 
 ### Tips & Tricks
 Procedurally, all configuration options for a shipping module names `myshipping` should be named `MODULE_SHIPPING_`MYSHIPPING`_*`, as should all language constants for the module, to ensure uniqueness of those constants.
 
 ### Troubleshooting
-Since the admin-level processing by *Modules > Shipping* loads all `.php` modules present in the `/includes/modules/shipping` folder, make sure that any backup files in that directory have the `.php` extension renamed to something like `.php~` or errors will result during the admin loading.
+Since the admin-level processing by *Modules > Shipping* loads all `.php` modules present in the `/includes/modules/shipping` folder, make sure that any backup files in that directory have the `.php` extension are renamed (use `.php.bak` or `.php~`), or errors will result during the admin loading.
