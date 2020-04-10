@@ -1,6 +1,6 @@
 ---
-title: Notifiers Report 
-description: Zen Cart Notifiers Report
+title: Notifier Report 
+description: Zen Cart Notifier Report
 category: code
 weight: 10
 ---
