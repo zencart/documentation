@@ -52,5 +52,7 @@ where `page_id` is the numeric id of the page as shown on the left hand side of 
 define('NEW_PAGE_TITLE','Name of My New Page');
 ```
 
-Once you do this, your link will be displayed and your page content will be displayed when users visit that EZ-Page, by going to `YOURSITE.com/index.php?main_page=page&id=page_id`, even if the page is not displayed in the header, sidebox or footer.  The `visible` flag is a new change in Zen Cart 1.5.6; prior to that, the page had to be set to appear in the header, sidebox or footer. 
+Once you do this, your link will be displayed and your page content will be displayed when users visit that EZ-Page, by going to `YOURSITE.com/index.php?main_page=page&id=page_id`, even if the page is not displayed in the header, sidebox or footer.  
+
+The *Page is Visible* flag is a new change in Zen Cart 1.5.6; prior to that, the page had to be set to appear in the header, sidebox or footer, or users visiting it would see the "Sorry, the page you were attempting to access cannot be found." message.
 
