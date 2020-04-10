@@ -333,11 +333,11 @@ These common settings *should be* provided by all *order-total* modules:
 
 Configuration Name | Configuration Value
 ------------------ | ------------------------------------------------
-MODULE_ORDER\_TOTAL_`MY_ORDER_TOTAL`_STATUS | Set to either 'true' or 'false', identifies whether or not the module is currently enabled.
-MODULE_ORDER\_TOTAL_`MY_ORDER_TOTAL`_SORT_ORDER | Identifies the sort-order to be used when displaying this module.
+`MODULE_ORDER_TOTAL_MY_ORDER_TOTAL_STATUS` | Set to either 'true' or 'false', identifies whether or not the module is currently enabled.
+`MODULE_ORDER_TOTAL_MY_ORDER_TOTAL_SORT_ORDER` | Identifies the sort-order to be used when displaying this module.
 
 ### Tips & Tricks
-Procedurally, all configuration options for an *order-total* module named `my_order_total` should be named MODULE_ORDER\_TOTAL_`MY_ORDER_TOTAL`_*, as should all language constants for the module, to ensure uniqueness of those constants.
+Procedurally, all configuration options for an *order-total* module named `my_order_total` should be named `MODULE_ORDER_TOTAL_MY_ORDER_TOTAL_*`, as should all language constants for the module, to ensure uniqueness of those constants.
 
 ### Troubleshooting
-Since the admin-level processing by *Modules > Order Total* loads all `.php` modules present in the `/includes/modules/order_total` folder, make sure that any backup files in that directory have the `.php` extension renamed to something like `.php~` or errors will result during the admin loading.
+Since the admin-level processing by *Modules > Order Total* loads all `.php` modules present in the `/includes/modules/order_total` folder, make sure that any backup files in that directory have the `.php` extension are renamed (use `.php.bak` or `.php~`), or errors will result during the admin loading.

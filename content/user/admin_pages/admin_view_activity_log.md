@@ -12,4 +12,4 @@ Pressing the button takes you to the page [Admins > Admin Activity Logs](/user/a
 <img src="/images/admin_activity_log.png" alt="Zen Cart Admin Activity Log button" style="height: 150px !important;" />
 
 On the Admin Activity Logs page, you can export your old logs and 
-purge log history.  
+purge log history.  [Here is the procedure to purge old logs](/user/admin_pages/admins/admin_activity_logs/#purging-logs). 

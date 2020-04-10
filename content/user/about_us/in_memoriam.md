@@ -3,6 +3,7 @@ title: In Memoriam
 description: Notable Zen Cart Contributors who have passed away
 category: about_us
 weight: 10
+hide_feedback: true
 ---
 
 The Zen Cart project has benefited greatly from the efforts of these 
@@ -15,7 +16,7 @@ individuals who are no longer with us.  May they rest in peace.
 - [Clyde Jones](https://www.zen-cart.com/showthread.php?184600) (clyde)
 
 <style>
-#feedback, #questions, #endcontent {
+#questions, #endcontent {
    display: none; 
 }
 </style>
