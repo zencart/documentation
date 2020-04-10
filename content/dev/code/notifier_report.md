@@ -5,9 +5,23 @@ category: code
 weight: 10
 ---
 
-<style>.td-content > pre {max-width: 100% !important;}</style>
+<!-- Override normal page styling for maximum code visibility -->
+<style>
+.td-toc {
+  display: none !important;
+}
+.td-content > pre {
+   -webkit-box-sizing: unset !important; 
+   max-width: 100% !important;
+}
+main {
+  flex: unset !important; 
+  max-width: 100% !important; 
+}
+</style>
 
 File: ipn_main_handler.php
+
 ```
 line#305: $zco_notifier->notify('NOTIFY_CHECKOUT_PROCESS_BEFORE_ORDER_TOTALS_PROCESS');
 line#307: $zco_notifier->notify('NOTIFY_CHECKOUT_PROCESS_AFTER_ORDER_TOTALS_PROCESS');
