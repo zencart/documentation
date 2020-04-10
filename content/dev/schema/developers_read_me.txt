@@ -1,5 +1,5 @@
 To build one of these files after a new release: 
-- Run View Schema, which is in the Zen Cart plugins folder 
+- Run View Schema, which is downloadable from the Zen Cart plugins area.
 
 https://www.zen-cart.com/downloads.php?do=file&id=2270 
 
