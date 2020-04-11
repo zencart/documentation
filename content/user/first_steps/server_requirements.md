@@ -70,9 +70,9 @@ Plugin/Addon-compatibility may vary.
 *   **Recommended Apache modules include:** expires, headers, env, alias, deflate, ssl, mime, phpX, rewrite (in addition to other standard/default modules).
 
 ## Nginx  
-The default Zen Cart distribution contains numerous Apache .htaccess rules to aid in implementing security protections against malicious spoofing and other abuse.  
+The default Zen Cart distribution contains numerous Apache .htaccess rules to aid in implementing security protections against malicious spoofing and other abuse. These will not give you any protections if you're running Nginx.
 
-It also provides Nginx conf files at the end of installation which you could manually copy into your nginx master configuration, to provide those same protections.
+At the end of initial installation some Nginx `conf` file content suggestions are provided which you could manually copy into your nginx master configuration, to provide those same protections.
 
 ## Windows IIS **NOT RECOMMENDED** 
 Zen Cart is not regularly tested on IIS.  We don't recommend IIS, and we don't provide any default-configuration scripts for IIS.  
