@@ -2,7 +2,7 @@
 title: Admin > Account link
 description: Zen Cart Admin > Account link
 category: admin_pages
-weight: 500 
+weight: 510
 ---
 
 The `Admin > Account` page allows you to edit or reset the password 

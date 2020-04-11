@@ -126,3 +126,11 @@ index: false
 *   [Music Genre](/user/admin_pages/extras/music_genre/) — View, add, edit and delete music genres.
 *   [Media Manager](/user/admin_pages/extras/media_manager/) — View, add, edit and delete collection names, which may be assigned to products.
 *   [Media Types](/user/admin_pages/extras/media_types/).
+
+### Other Admin Elements 
+
+* [Admin Dashboard](/user/admin_pages/admin_dashboard)
+* [Admin > Version link](/user/admin_pages/admin_version)
+* [Admin > Account link](/user/admin_pages/admin_account/)
+* [Admin View Activity Log button](/user/admin_pages/admin_view_activity_log)
+* [Admin > New Version Available message](/user/admin_pages/admin_new_version_available)
