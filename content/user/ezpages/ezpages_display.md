@@ -14,45 +14,39 @@ EZ-Page links can be shown without making a code change in three places:
 - Important Links sidebox
 - Footer 
 
-A set of configurations determines where these links are shown.  If you go to
-Admin > Tools > EZ-Pages, you will see a set of fields like the following: 
+A set of configurations determines where these links are shown.  There is a radio button and sort order for each of the header,
+sidebox and footer. 
+You can see these settings in [Tools > EZ-Pages](/user/admin_pages/tools/ezpages/). 
 
-<br />
-<img src="/images/ezpages.png" alt="EZ-Pages configuration" />
-<br />
+# Adding a link manually 
 
-- Setting Header = Yes with a sort order > 0 means a link to this page will be displayed by `includes/templates/responsive_classic/templates/tpl_ezpages_bar_header.php`. 
-
-- Setting Sidebox = Yes with a sort order > 0 means a link to this page will be displayed by `includes/modules/sideboxes/ezpages.php`. 
-
-- Setting Footer = Yes with a sort order > 0 means a link to this page will be displayed by `includes/templates/responsive_classic/templates/tpl_ezpages_bar_footer.php`. 
-
-If you do not want the link to appear in any of these places or you are not using these components in your template, you still have the ability to  show an EZ-Page link and have the EZ-Page display properly: 
-
-- use the `Page is Visible` radio button 
-- code into the content where you want the link to appear 
+In addition to the three places shown above, you can change your
+template to show an EZ-Page using the technique below. 
+Let's suppose the language constant for the 
+name of the page is `NEW_PAGE_TITLE` and the EZ-Page id, as shown on 
+the left hand side of 
+[Tools > EZ-Pages](/user/admin_pages/tools/ezpages/), is 19. 
 
 If you are already in a PHP block, you'd use: 
 
 ```
-  echo '<a href="' . zen_href_link(FILENAME_EZPAGES,'page_id') . '">' NEW_PAGE_TITLE . '</a>'; 
+  echo '<a href="' . zen_href_link(FILENAME_EZPAGES,'id=19') . '">' NEW_PAGE_TITLE . '</a>'; 
 ```
 
 If you're in HTML (say in a list), you would use 
 
 ```
-<li><a href="<?php echo zen_href_link(FILENAME_EZPAGES, 'page_id'); ?>"><?php echo NEW_PAGE_TITLE; ?></a></li>
-
+<li><a href="<?php echo zen_href_link(FILENAME_EZPAGES, 'id=19'); ?>"><?php echo NEW_PAGE_TITLE; ?></a></li>
 ```
 
-where `page_id` is the numeric id of the page as shown on the left hand side of `Admin > Tools > EZ-Pages`, and `NEW_PAGE_TITLE` is a language defined constant for the name of your page.  You would define `NEW_PAGE_TITLE` in a file like, `includes/languages/english/extra_definitions/my_ezpages.php` as follows:
+You would define `NEW_PAGE_TITLE` in a file like, `includes/languages/english/extra_definitions/my_ezpages.php` as follows:
 
 ```
 <?php 
 define('NEW_PAGE_TITLE','Name of My New Page');
 ```
 
-Once you do this, your link will be displayed and your page content will be displayed when users visit that EZ-Page, by going to `YOURSITE.com/index.php?main_page=page&id=page_id`, even if the page is not displayed in the header, sidebox or footer.  
+Once you do this, your link will be displayed and your page content will be displayed when users visit that EZ-Page, by going to `YOURSITE.com/index.php?main_page=page&id=19`, even if the page is not displayed in the header, sidebox or footer.  
 
 The *Page is Visible* flag is a new change in Zen Cart 1.5.6; prior to that, the page had to be set to appear in the header, sidebox or footer, or users visiting it would see the "Sorry, the page you were attempting to access cannot be found." message.
 
