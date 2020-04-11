@@ -37,9 +37,9 @@ _(Last updated: Dec 1, 2019)_
 
 PHP compatibility requirements of Plugins/Addons may vary. Consult each plugin's documentation and support discussion-thread for details.  
 
-**What about old PHP versions?** The life-cycle for PHP versions, according to the PHP developers, can be viewed at [http://php.net/supported-versions.php](http://php.net/supported-versions.php)  
+**What PHP version should I use?** It is best to **use the most recent PHP version that your Zen Cart version supports**. The PHP developers have published a list of supported versions at [https://www.php.net/supported-versions.php](https://www.php.net/supported-versions.php) Newer versions are also usually much faster than older versions, so there's good reason to upgrade!
 
-<font color="#ff0000">**NOTE:** PHP 5.6 and older are officially obsolete and no longer supported, even for security patches. You should be moving to PHP 7 as soon as possible!</font>  
+<font color="#ff0000">**NOTE:** PHP 5.6 is officially obsolete. So are some of the early PHP 7 versions. You should be moving to the latest version of PHP (and matching Zen Cart version) as soon as possible!</font>  
 
 ### PHP Modules used by Zen Cart
 
@@ -48,7 +48,7 @@ Optional modules: gd and mb_xxxxx.
 
 <u>**PHP Memory Recommendations**</u>  
 
-- **memory_limit** suggested: **128M** 
+- **memory_limit** suggested: **128M** or higher such as 256M or 512M if your server can handle it.
 - **post_max_size** and **upload_max_filesize** should be set to whatever max file size you or your customers may upload. Usually **8M** is sufficient for most sites, but if you're accepting huge uploads, set both to the max size of accepted combined uploads.  
 
 ## MySQL Version
