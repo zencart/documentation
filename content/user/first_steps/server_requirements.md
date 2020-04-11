@@ -37,7 +37,7 @@ _(Last updated: Dec 1, 2019)_
 
 PHP compatibility requirements of Plugins/Addons may vary. Consult each plugin's documentation and support discussion-thread for details.  
 
-**What PHP version should I use?** It is best to **use the most recent PHP version that your Zen Cart version supports**. The PHP developers have published a list of supported versions at [https://www.php.net/supported-versions.php](https://www.php.net/supported-versions.php) Newer versions are also usually much faster than older versions, so there's good reason to upgrade!
+**What PHP version should I use?** It is best to **use the most recent PHP version that your Zen Cart version supports**. The PHP developers have published a list of supported versions at [https://www.php.net/supported-versions.php](https://www.php.net/supported-versions.php) 
 
 <font color="#ff0000">**NOTE:** PHP 5.6 is officially obsolete. So are some of the early PHP 7 versions. You should be moving to the latest version of PHP (and matching Zen Cart version) as soon as possible!</font>  
 
