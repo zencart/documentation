@@ -43,8 +43,8 @@ PHP compatibility requirements of Plugins/Addons may vary. Consult each plugin's
 
 ### PHP Modules used by Zen Cart
 
-Zen Cart requires a few PHP modules enabled: cURL, MySQLi and Zlib.  
-Optional modules: gd and mb_xxxxx. 
+Zen Cart requires a few PHP modules enabled: `curl`, `mysqli`, `zlib`.  
+Optional modules: gd and mb_xxxxx.
 
 <u>**PHP Memory Recommendations**</u>  
 
