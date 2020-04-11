@@ -11,3 +11,9 @@ Products without [attributes](/user/products/attributes_info/) may be purchased 
 for products with attributes. 
 
 The product info page also allows you to show the products description and other fields that give more information about the product to your customers. 
+
+The information which appears on the product info page is goverened by the
+product type and the [product type layout settings](/user/admin_pages/catalog/product_types_edit_layout/) for that product type. 
+
+Almost everyone uses the product type "Product - General" only, but other
+product types are available, and you may develop new ones to meet your needs.  See [Product Types](/dev/code/product_types/) for more information.
