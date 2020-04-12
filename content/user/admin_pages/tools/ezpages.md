@@ -27,7 +27,7 @@ A set of configurations determines where links to EZ-Pages are shown. In  Admin 
 If you do not want the link to appear in the header, footer or sidebox, or you are not using these components in your template, you still have the ability to  show an EZ-Page link and have the EZ-Page display properly: 
 
 - use the `Page is Visible` radio button 
-- code into the content where you want the link to appear (see [building a link to an EZ-Page](/user/ezpages/ezpages_display/).  
+- Update the template where you want the link to appear. See [building a link to an EZ-Page](/user/ezpages/ezpages_display/).  
 
 # Using TOC
 
