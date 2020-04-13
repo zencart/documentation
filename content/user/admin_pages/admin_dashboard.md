@@ -11,7 +11,10 @@ It is structured to give you the maximum amount of information possible about
 your store one one page.  
 
 Each of the boxes on the admin page under the menu is called a widget. 
-Widgets presents facts about your store.  
+Here's the statistics widget, as an example. 
 
 <img src="/images/widget.png" alt="Widgets on home page" />
+
+If you have specific things you'd like to monitor on your site, you
+can build your own widget.  See [building an admin widget](/dev/code/widget) for details. 
 

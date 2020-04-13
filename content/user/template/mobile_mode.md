@@ -35,3 +35,9 @@ if ($detect->isMobile() || $detect->isTablet()) {
 You might also want to check ` $_SESSION['layoutType'] == 'mobile' )`  
 in case that variable is set. 
 
+Another approach is the one used by [Twitter Bootstrap](https://getbootstrap.com/).   Bootstrap uses Javascript to determine the appropriate presentation for the device in use.  Bootstrap proponents argue that bootstrap is faster 
+to load and more well maintained than Mobile Detect.
+
+<!-- FIXME - build out this explanation --> 
+
+
