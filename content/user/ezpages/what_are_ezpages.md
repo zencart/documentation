@@ -65,7 +65,7 @@ Again, you can display any of the Links within a Chapter, as well as making any 
 
 **NOTE:** While all Links within a Chapter will display together, you can have the different Links display in the Header, Footer or Sidebox on their own. Or, you can have the additional Links only display when the Main Link or one of the Additional Links within the Chapter has been opened.
 
-The versatility of EZ-Pages will make adding new Links and Pages extremely easy for the beginner as well as the advance user.  
+The versatility of EZ-Pages will make adding new Links and Pages extremely easy for the beginner as well as the advanced user.  
 
 **NOTE:** HTML editors will often add the opening and closing tags for sections, like `<html>`, `<head>` and `<body>`, to the file you are working on. You may want to remove them, as these are already added to the pages via EZ-Pages.  
 

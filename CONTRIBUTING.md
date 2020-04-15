@@ -216,7 +216,7 @@ FIXME - clarify the difference between foo and bar.
 
 
 ## Developer Docs 
-Some folders under content contain files called `developers_read_me.txt`.  These files contain instructions on how to manage program-generated content, such as the configuration page help files. 
+Some folders under `/content` contain a file called `developers_read_me.txt`.  These files contain instructions on how to manage program-generated content, such as the configuration page help files. 
 
 See also the Github repo https://github.com/scottcwilson/zencart_tools
 

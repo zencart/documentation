@@ -54,6 +54,42 @@ If a file needs reformatting, that reformatting should be a SEPARATE commit (and
 
 This is for the purpose of maintainability, and controlling understanding of the flow of code changes ... especially important if a bug is later found in the code.
 
+---
+
+# Additional Guidelines 
+
+## Require and Include statements 
+
+When doing a `require` or `include`, use single quotes and no brackets. 
+
+```
+require DIR_WS_INCLUDES . 'footer.php';
+```
+
+## Quotation marks 
+
+Remember that double quoted strings are checked for interpolation.  So prefer single quoted strings in cases where variables are not used.  If single and double quotes are used within a string, use single quotes on the outside.
+
+```
+echo 'Token set. You may now continue configuring the module.'; 
+```
+
+By convention, MySQL statements are enclosed in double quotes so that values may be entered in single quotes (without interpolation).  See below. 
+
+## MySQL Statements
+
+MySQL keywords should be entered in uppercase.
+
+Strings should be double quoted so that values may be single quoted. 
+
+```
+$db->Execute("INSERT INTO " . TABLE_TAX_CLASS . " 
+              (tax_class_title, tax_class_description, date_added)
+              VALUES ('" . zen_db_input($tax_class_title) . "',
+                      '" . zen_db_input($tax_class_description) . "',
+                      now())");
+```
+
 ## Comments in Code
 
 It is appropriate to use comments to explain what is happening in a given section of the code. This is so that other programmers coming after you (and you included!) can quickly understand intended the logic.
