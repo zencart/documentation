@@ -9,8 +9,14 @@ legacy Wiki and FAQs/Tutorials page on zen-cart.com.
 To get started, follow the guidelines in the project's README file 
 for cloning and setting up the repo and running `Hugo` locally. 
 
-Submit your changes as Pull Requests, following the documentation standards
+Submit your changes as Pull Requests, following the guidelines 
 provided below.  
+
+## Content Recommendations 
+
+Structure your writing to explain current operation and *then* (if necessary and relevant) past history. 
+
+In other words, don't say "we don't do it the old way anymore, and first let us explain the old way."
 
 ## Documentation Standards 
 
