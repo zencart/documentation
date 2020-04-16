@@ -30,16 +30,21 @@ We highly recommend you pay special attention to getting familiar with the demo 
 
 First, check whether your server is compatible with the version you're trying to install: [Server Requirements for Zen Cart versions](/user/first_steps/server_requirements/). 
 
-## 1\. Preparation
+## 0\. New code familiarization (optional) 
+
+This step is helpful if you have never done this before, to give you more confidence in creating databases and uploading files. 
 
 Unzip a copy of the new version of Zen Cart, upload it to your webserver into a `demo` folder.  Create a new demo database in cPanel, when you install the new version of Zen Cart, set it to use the new demo database.  Be sure to include the Demo products when you install. This is just for a place for you to play with the new version and get used to its new features. These can be deleted after conversion is complete.  
 
 Study the new features, and the documented changes to the template structures, as well as the "changelog". Use the demo products in the demo shop as examples. See also the supporting documentation provided with the new release.  
 
-Make a full backup of your live database (dump to SQL file). Store this file on your PC for later reference.  
+When you're done with your testing, remove `demo`.
+
+## 1\. Preparation
+Make a full backup of your live database (dump to SQL file). Store this file on your PC for later reference.
 
 Make a full backup of your live site files (ftp to your PC and zip it up for safe-keeping).  
-Keep the backup on your PC to use in next steps. Perhaps call this folder `zen_backup`.
+Keep the backup on your PC to use in next steps. Perhaps call this folder `store`. 
 
 Now let's find out the differences/customizations details between your site and the original Zen Cart files.  (You can find older versions here: [http://sourceforge.net/projects/zencart/files/](http://sourceforge.net/projects/zencart/files/) )  
 
@@ -48,7 +53,7 @@ Unzip a copy of the original Zen Cart files for the version you _originally inst
 
 Make a list of any add-ons you have installed, for later reference.  
 
-Run a tool like [WinMerge](http://winmerge.sf.net/) to compare the "Original" Zen Cart files in `zen_orig` against your working backup files in `zen_backup`.
+Run a tool like [WinMerge](http://winmerge.sf.net/) to compare the "Original" Zen Cart files in `zen_orig` against your current live store files in `store`.
 
 Note all the files that are "different". In WinMerge, double-click on each file and note what the differences are.  
 
@@ -64,7 +69,7 @@ As you make your list of changed files, etc, at this stage, you may want to move
 
 ## 2\. Execution
 
-Download and unzip the latest Zen Cart version to your PC. This will be in a 3rd directory (perhaps `zen_new`), separate from the other two folders compared above.  
+Download and unzip the latest Zen Cart version to your PC. This will be in a 3rd directory (perhaps `store_new`), separate from the other two folders compared above.  
 
 Using the list of files you made earlier, go through each "changed" file, and make your changes from the old version into the new version.  
 
@@ -86,7 +91,7 @@ Make a fresh backup of your live database.
 Create a NEW database in cPanel.  Load this database from the backup 
 of your live site that you just made.
 
-In your `zen_new` folder, copy 
+In your `store_new` folder, copy 
 
 - `includes/dist-configure.php` to `includes/configure.php`
 - `admin/includes/dist-configure.php` to `admin/includes/configure.php`
@@ -95,7 +100,7 @@ Edit these to files and set all the parameters.  Use your existing
 live store as a guide.  Remember to specify your NEW database when 
 filling in `DB_DATABASE`. 
 
-Upload the files from your modified `zen_new` (created in step 2) to your server, into an alternate folder, perhaps called `store_new`. 
+Upload the files from your modified `store_new` (created in step 2) to your server, into an alternate folder, perhaps called `store_new`. 
 
 Run `store_new/zc_install/index.php` and choose "_Upgrade_" when prompted. (Don't select "Install", or you will overwrite your database.) (If "Upgrade" is not offered, then the installer was unable to connect to your database to confirm what version its structure is at. Check your configure.php settings and be sure the `DB_*` fields correspond to your new database.)  
 
@@ -119,3 +124,34 @@ To go live, do the following:
 Test it to be sure that things are operating as desired. If you have small problems to repair, turn "Down for maintenance" on and off again as necessary.  
 
 Remember that your "configure.php" files on your server are typically set to read-only, and thus in order to upload them will require that you mark those files read-write before uploading.  Be sure to put them back to read-only after uploading.
+
+
+## Example: 
+
+Suppose you are currently running Zen Cart 1.5.1 and you want to upgrade to 
+Zen Cart 1.5.6c.  These are the steps to use (we will skip over the New code familiarization step).
+
+
+- Download your live store files, and put them in a folder called `store`.
+- Download a fresh copy of Zen Cart 1.5.1, and put it in a folder called `zen_orig`.
+- Compare the files in `store` to the files in `zen_orig`, noting your changes. 
+- Download a fresh copy of Zen Cart 1.5.6c, and put it in a folder called `store_new`.  Apply the changes you found in the prior step to `store_new`. 
+- In `store_new`, create the new configure files as follows: 
+    - copy `includes/dist-configure.php` to `includes/configure.php`
+    - copy `admin/includes/dist-configure.php` to `admin/includes/configure.php`
+    - modify these two files, setting the values in them from your original configure files in `store`.  
+    - In aech file, you want two changes: `DIR_FS_CATALOG` setting should refer to `store_new` and not `_store`, and `DB_DATABASE` should refer to a new database name, not the original one. 
+- Upload `store_new` to your server.  
+- Make a fresh backup of your live database. 
+- Create a NEW database in cPanel, using the name you used in the last step of updating your configuration files above.  Load this database from the backup 
+of your live site that you just made. 
+- point your browser to `store_new/zc_install`, which will take you through the database update process. 
+- test `store_new`, going through the shopping, buying and order fulfillment process.
+- When you're ready to go live, do the following: 
+  - take a final backup of your live store database for safekeeping
+  - In your live store, go to `Admin > Configuration > Website Maintenance`.  Put the store in maintenance mode, and add your IP to the list in the `Down For Maintenance (exclude this IP-Address)` field.
+  - rename your live store folder to `store_old`.
+  - rename `store_new` to `store`.  Edit the `includes/configure.php` and `admin/includes/configure.php` files to change the `DIR_FS_CATALOG` references from `store_new` to `store`, and change the `DB_DATABASE` references back to the original database name.
+  - run the `store/zc_install` process to upgrade your live database.
+  - test your upgrade 
+  - take your store out of maintenance mode.  
