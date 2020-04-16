@@ -155,3 +155,14 @@ of your live site that you just made.
   - run the `store/zc_install` process to upgrade your live database.
   - test your upgrade 
   - take your store out of maintenance mode.  
+
+## Plugins and Templates 
+
+In the description above, I am assuming that change changes you have made are things like language file changes or maybe small code tweaks you did.  If the changes are plugins, there may be a better way than just porting the old changes forward to the new version: you can check the [plugins area](https://www.zen-cart.com/downloads.php) for an updated version of the mod.  If you don't see one, you can ask on the mod's support thread.
+
+When it comes to templates, if you have gotten your template from the plugins area, the advice above applies.  If your template came from a commercial vendor, you should approach that vendor and ask about an upgrade. 
+
+If you are upgrading from 1.5.4 or below, you have another decision to make: Zen Cart 1.5.5 and above are designed to be used on mobile devices as well as desktop devices.  Your older template is likely not mobile friendly, so you may wish to get one that is.  The built in [responsive classic](/user/template/other_templates/#responsive-classic-template-product-page) template in 1.5.5+ is a good start. 
+
+
+
