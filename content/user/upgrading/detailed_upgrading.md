@@ -11,13 +11,16 @@ Preamble worth reading: [How-do-I-rebuild-my-site-on-the-new-version-instead-of-
 
 **NOTE:** For each new release, there are important documents in the [/docs](https://www.zen-cart.com/docs/) folder of the Zen Cart ZIP file.  Please check this folder for any special notes about the version you are upgrading from/to.  
 
+This guide assumes for simplicity that you have Zen Cart installed in a folder called `store`.  This configuration allows you to run your old store and your new store side by side for testing during golive.  If you didn't install your current store in a subfolder, you can still install your new store in a subfolder for testing, and then remove the subfolder and install at the top level when it's time to go live. 
+
+
 ## Getting Started 
 
 This is a basic guide to upgrading Zen Cart. If you have not yet installed Zen Cart, please see the [/docs/1.readme_installation.html](https://www.zen-cart.com/docs/1.readme_installation.html) file for installation instructions.  
 
 To upgrade Zen Cart, you'll need the same basic tools you used to install and customize it in the first place: An [FTP tool](/user/first_steps/useful_tools/#ftp-tools), a [text editor](/user/first_steps/useful_tools/#php-html-and-text-editors) for HTML/PHP code, phpMyAdmin or equivalent access to your MySQL database, and your Control Panel for managing your webspace.  
 
-Additionally, you will find a file-comparison tool.  See the list of [Useful Tools](/user/first_steps/useful_tools/) for suggestions.  Note that free tools offer 2-way comparison. The more advanced paid-for tools offer 3-way comparisons which can be very handy, but costly.
+Additionally, you will find a file-comparison tool.  See the list of [Useful Tools](/user/first_steps/useful_tools/) for suggestions.  Note that free tools offer 2-way comparison. The more advanced paid-for tools offer 3-way comparisons which can be very handy.
 
 Upgrading follows 3 easy steps. We suggest you take your time going through each stage carefully and methodically. Don't rush the process. And as always, be sure you keep good backups first.  
 
@@ -29,13 +32,13 @@ First, check whether your server is compatible with the version you're trying to
 
 ## 1\. Preparation
 
-Unzip a copy of the new version of Zen Cart, upload it to your webserver into a `demo` folder, and install the new version into a separate database, and include the Demo products. This is just for a place for you to play with the new version and get used to its new features. These can be deleted after conversion is complete.  
+Unzip a copy of the new version of Zen Cart, upload it to your webserver into a `demo` folder.  Create a new demo database in cPanel, when you install the new version of Zen Cart, set it to use the new demo database.  Be sure to include the Demo products when you install. This is just for a place for you to play with the new version and get used to its new features. These can be deleted after conversion is complete.  
 
 Study the new features, and the documented changes to the template structures, as well as the "changelog". Use the demo products in the demo shop as examples. See also the supporting documentation provided with the new release.  
 
-Make a full backup of your database (dump to SQL file). Store this file on your PC for later reference.  
+Make a full backup of your live database (dump to SQL file). Store this file on your PC for later reference.  
 
-Make a full backup of your site files (ftp to your PC and zip it up for safe-keeping).  
+Make a full backup of your live site files (ftp to your PC and zip it up for safe-keeping).  
 Keep the backup on your PC to use in next steps. Perhaps call this folder `zen_backup`.
 
 Now let's find out the differences/customizations details between your site and the original Zen Cart files.  (You can find older versions here: [http://sourceforge.net/projects/zencart/files/](http://sourceforge.net/projects/zencart/files/) )  
@@ -76,32 +79,42 @@ Note that there will be several changes you will have to make to files that you 
 
 ## 3\. Testing
 
-Make a NEW database to install the new version of Zen Cart into.  
+In your live store, go to `Admin > Configuration > Website Maintenance`.  Put the store in maintenance mode, and add your IP to the list in the `Down For Maintenance (exclude this IP-Address)` field.
 
-If the last backup you made of your data is older than the last order that might have been processed or customer registration, make a fresh database backup.  
+Make a fresh backup of your live database. 
 
-Restore your database from the backup in step #1 earlier into your NEW database just created.  
+Create a NEW database in cPanel.  Load this database from the backup 
+of your live site that you just made.
 
-If your `zen_new` folder doesn't have `includes/configure.php` and 
-`admin/includes/configure.php` files, copy them from your old store folder.  
+In your `zen_new` folder, copy 
 
-EDIT your `zen_new/includes/configure.php` file and ensure that the `DIR_FS_CATALOG` and `DIR_WS_CATALOG` and `DIR_FS_SQL_CACHE` (and other path settings too) correctly match your NEW directory structure on the server.  
+- `includes/dist-configure.php` to `includes/configure.php`
+- `admin/includes/dist-configure.php` to `admin/includes/configure.php`
 
-EDIT your `zen_new/includes/configure.php` file and ensure that your `DATABASE_NAME` matches your NEW database. Also verify database username and password in case that information has changed. Save this file, and be sure to upload it as part of the next step:  
+Edit these to files and set all the parameters.  Use your existing
+live store as a guide.  Remember to specify your NEW database when 
+filling in `DB_DATABASE`. 
 
-Upload the files from your modified "new version" (created in step 2) to your server, into an alternate folder, perhaps called `store_new`. 
+Upload the files from your modified `zen_new` (created in step 2) to your server, into an alternate folder, perhaps called `store_new`. 
 
-Run `zc_install/index.php` and choose "_Upgrade_" when prompted. (Don't select "Install", or you will overwrite your database.) (If "Upgrade" is not offered, then the installer was unable to connect to your database to confirm what version its structure is at. Check your configure.php settings.)  
+Run `store_new/zc_install/index.php` and choose "_Upgrade_" when prompted. (Don't select "Install", or you will overwrite your database.) (If "Upgrade" is not offered, then the installer was unable to connect to your database to confirm what version its structure is at. Check your configure.php settings and be sure the `DB_*` fields correspond to your new database.)  
 
 Test your customizations. Edit as needed. Compare with the test/demo install performed earlier, as needed.  
 
 When satisfied that all is OK, go live.  
 
-If significant time has passed since you did your last backup, you may want to repeat the steps in this "Testing" section again, using a fresh backup from your live shop. You don't need to re-upload files again; simply do the database restore, and run the installer to do the database upgrade again.  
+If significant time has passed since you created your new database, you may want to rebuild it to get any new customers or orders that have been added to the live site.
 
-To go live, put your shop into "Down for Maintenance" mode in the admin area. Be sure to add your IP address to the list of allowed addresses to get into the site for previewing.  
+- Export your live database
+- Create a new database in cPanel, and load it with the backup from your live database
+- Run the `zc_install` procedure again
 
-This can be done easiest by renaming `store_new` to `store`. (You'll have to rename "store" to something else first.)  
+You don't need to re-upload files again; simply update the database. 
+
+To go live, do the following: 
+
+- rename your live store folder to `store_old`.
+- rename `store_new` to `store`.  Edit the `includes/configure.php` and `admin/includes/configure.php` files to change the folder references from `store_new` to `store`.
 
 Test it to be sure that things are operating as desired. If you have small problems to repair, turn "Down for maintenance" on and off again as necessary.  
 
