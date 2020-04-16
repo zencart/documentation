@@ -124,6 +124,17 @@ Note that this rule is not required in cases where a block is opened by PHP (as 
         <?php echo '</form>'; ?>
 ```
 
+## Arrays 
+
+End an array with a comma and put the closing bracket on a new line.  In this way, modders can just insert a line after the last entry and have a smaller diff: 
+
+```
+   ... 
+   'class' => $totals->fields['class'],
+   'value' => $totals->fields['value'],
+);
+```
+
 
 ## Separating content, markup and logic 
 Where possible, try to keep these things separate:
