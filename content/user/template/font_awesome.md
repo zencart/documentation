@@ -3,47 +3,63 @@ title: Font Awesome
 description: Using Font Awesome from local and remotely.
 category: template
 weight: 10
+type: codepage
 ---
 
-Font Awesome 5 was a full rewrite and the Unicode charter set no longer work as they did with version 4. With version 4 using the Unicode like this `&#xf217; Add to Cart ` worked when creating input buttons. With version 5 you now have to do it like this `<i class=”fa”>&#xf217;</i> Add to Cart` or use it within a class as
+Font Awesome vector icons and social logos for your website using one of the most popular icon sets and toolkits.
 
-```go
-    .cartbutton {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 400;
-    content: "\f217";
-    }
-```
+Installation by hosting Font Awesome yourself or by external CDN linking.  I prefer hosting it myself and linking externally.  This provides a method for me to work with Font Awesome locally while building and testing my site.  Once my site is live, it serves as a backup if contact to the CDN fails.  Using external CDN linking allows your font to stay up-to-date on versions without downloading new icon sets yourself.
 
+Font Awesome is growing in design and possible uses.  Visit [Font Awesome ](https://fontawesome.com) site for more information and to stay up on new icons and social logos. 
 
-<img src="/images/Add-to-cart_button.png" alt="Zen Cart Version information" />
+I use Font Awesome in different places within my site, but I mainly use them within my CSS buttons. With HTML there are basically two types of buttons.  Buttons used for links and buttons used within form submits. 
 
+ As this one for the Add to Cart.   `<i class="fas fa-cart-plus"></i> Add to Cart`   <img src="/images/Add-to-cart_button.png" alt="Zen Cart Version information" />
+ 
+At one time Font Awesome was just one set of fonts making scripting buttons/links easy with only one file.  Keep in mind that we say FONT, but this is not the normal fonts in your desktop and with new vector icons added each day it had to grow.
 
-which does not work for input buttons. Also this `<i class="fas fa-cart-plus"></i> Add to Cart` works for links or button tags not input buttons.
+NOTE: there are different icon sets to use!
 
-What to do if you want to use version 5 and Unicode!
+| Style Availability      |Style Prefix    |            Example                  |
+|-------------------------|----------------|-------------------------------------|
+| Solid Free              |fas             |`<i class="fas fa-camera"></i>`      |
+| Regular Pro Required    |far             |`<i class="far fa-camera"></i>`      |
+| Light Pro Required      |fal             |`<i class="fal fa-camera"></i>`      |
+| Duotone Pro Required    |fad             |`<i class="fad fa-camera"></i>`      |
+| Brands Free             |fab             |`<i class="fab fa-font-awesome"></i>`|
 
- One difference to note: there are different icon sets to use!
+----------------
+Enough with the history of Font Awesome.  I would suggest going to there site to see all the new free icons you can use and even more if you buy a pro account.
 
-        Style Availability      Style Prefix    Example
-        Solid Free              fas             <i class="fas fa-camera"></i>
-        Regular Pro Required    far             <i class="far fa-camera"></i>
-        Light Pro Required      fal             <i class="fal fa-camera"></i>
-        Duotone Pro Required    fad             <i class="fad fa-camera"></i>
-        Brands Free             fab             <i class="fab fa-font-awesome"></i>
+## Some helpful instructions
 
-For some time now I have been loading Font Awesome from a free account with them and not the default CDN used in the responsive classic template… With the kit you could modify to only load what you want and not the whole 7+k of icons.. The kit also has the ability to mix version 4 and 5 so the Unicode charters still work as before and you still have the new icons! However, version 4 Unicode works, but the tags need to match version 5 standards. In Font Awesome documents is a list of changes, as a example version 4 was `<i class=”fa fa-arrow-circle-o-down”></i>` is now `<i class=”far fa-arrow-alt-circle-down”></i>` ..
+I've played around with the different methods suggested in the Font Awesome document site and found what works for my site the best.  I'm sure there may be other ways of doing this, but this is what I fond. 
+ 
+My site is based on;<br/>
+ Zen Cart 1.5.6c<br/>
+ PHP7.3.11<br/>
+ Modified Responsive Sheffield Blue 1.1 Template
 
-In my testing, using a sample html page following FA instructions for hosting the fonts worked. However, when trying the same instructions on my Zen Cart site they did not work for me. I had to setup both versions for the Unicode and new tags to work offline or if Font Awesome fails to load.
+I have not tested this with lesser versions of Zen Cart, PHP or other templates!
+
+I have been loading Font Awesome from a free account with them for some years now. With the kit you could modify to only load what you want and not the whole 7+k of icons. If you used Font Awesome version 4, there is some changes in the code you need to do.  In Font Awesome documents is a list of changes.  As a example <br/>version 4 was `<i class=”fa fa-arrow-circle-o-down”></i>`<br/>version 5 is `<i class=”far fa-arrow-alt-circle-down”></i>` 
+
+In testing, using a sample html page following Font Awesome instructions for hosting the fonts worked. However, when trying the same instructions on my Zen Cart site they did not work for me. I'll cover what did work and hopefully save you some time.  
+
+I started by removing Font Awesome 4 CSS and font folder.
 
 ```
     includes/templates/YOURTEMPLATE/css/font-awesome.css (version 4)
-    includes/templates/YOURTEMPLATE/css/all.css (version 5)
     includes/templates/YOURTEMPLATE/fonts (version 4 font)
+```
+Now Add Font Awesome 5 CSS and Folder
+``` 
+    includes/templates/YOURTEMPLATE/css/all.css (version 5)
     includes/templates/YOURTEMPLATE/webfonts (version 5 font)
 ```
+Once you do this, all locations where you used Font Awesome 4 well turn into missing fonts &#xf062;.  This helps to find and edit your code.  I printed/downloaded the new font lists from [Font Awesome Cheatsheet ](https://fontawesome.com/cheatsheet) to aid in making the code changes.
 
-With the follow added just below the call to load jQuery to `includes/templates/YOURTEMPLATE/common/html_header.php`
+I created a kit with Font Awesome. I then updated the follow just below the call to load jQuery `includes/templates/YOURTEMPLATE/common/html_header.php` If you not installed this before, then add it.  This calls to Font Awesome and loads the font icons.  The script then creates and tests for the font.  If the font is not been loaded remotely, then the script looks at your template CSS folder.
 
 ```html
     <script src="https://kit.fontawesome.com/YOUR_KIT_ID.js" crossorigin="anonymous"></script>
@@ -52,7 +68,6 @@ With the follow added just below the call to load jQuery to `includes/templates/
     var $span = $('<span class="fas" style="display:none"></span>').appendTo('body');
     if ($span.css('font-family') !== 'Font Awesome 5 Free' ) {
     // Fallback Link
-    $('head').append(<?php echo '\'<link rel="stylesheet" type="text/css" href="' . $template->get_template_dir('.css',DIR_WS_TEMPLATE, $current_page_base,'css') . '/' . 'font-awesome.css' . '" />\''; ?>);
     $('head').append(<?php echo '\'<link rel="stylesheet" type="text/css" href="' . $template->get_template_dir('.css',DIR_WS_TEMPLATE, $current_page_base,'css') . '/' . 'all.css' . '" />\''; ?>);
     }
     $span.remove();
@@ -60,16 +75,14 @@ With the follow added just below the call to load jQuery to `includes/templates/
     </script>
 ```
 
-Why upgrade! Why not… tons of new fonts, cool new things to work with such as stacked icons and svg’s. [Font Awesome ](https://fontawesome.com/start)
+### Coding Buttons
 
-By using the kit and loading both gives you time to work through your code while updating tags.  The kit also stays up-to-date with new icons. 
+I'll give you a couple examples of creating buttons with form input submit fields.  Input buttons use the **value** field for the button wording.  You can not use HTML coding in the value field as this `<input type="submit" value="<i class="fas fa-cart-plus"></i> Add to Cart">` well not work! 
 
 
-## Some helpful instructions
 
-After reading up on the future of Scaleable Vector Graphics SVG, icon stacking, and new elements, it's getting interesting.
-
- 1) Example; to get input fields to display font icons in a CSS button is to change the code in your template files with button tags like the following.
+#### Example 1 
+To get input fields to display font icons in a CSS button is to change the code in your template files with button tags like the following.
 
 Lets do the `includes/templates/YOURTEMPLATE/templates/tpl_product_info_display.php` The Add to Cart button code looks like this `zen_image_submit(BUTTON_IMAGE_IN_CART, BUTTON_IN_CART_ALT);` To add a Font Awesome add to cart icon we can changed it to `'<button class="cssButton submit_button" type="submit"><i class="fas fa-cart-plus"></i> ' . BUTTON_IN_CART_ALT . ' </button>' ; `
 
@@ -85,7 +98,8 @@ button.cssButtonHover {border:none;cursor: pointer;border:none;font-size: 1.2em;
 
 Of course your CSS and button may be different depending on your template styles. The button element needs the _type="submit"_ field for it to work as a form submit button. 
 
- 2) Example;  In Example One, we hard coded the font icons in the button code. The problem with this is you can not use image buttons again without changing the code back plus you would have to edit each file if you wanted to change icons. 
+#### Example 2 
+ In Example One, we hard coded the font icons in the button code. The problem with this is you can not use image buttons again without changing the code back plus you would have to edit each file if you wanted to change icons. 
  
 In Example Two I’ll change the `includes/functions/html_output.php` file such that you can turn CSS buttons off and display the hard buttons if you wish to. Plus you can use different icons based on language.
 
@@ -214,6 +228,4 @@ Editing `includes/languages/english/YOURTEMPLATE/button_names.php`  Showing some
 
 Editing `includes/templates/YOURTEMPLATE/css/stylesheet_css_buttons.css`  I use hover, click, RGB color and shape CSS rules on my buttons to make them stand out and not look so boxy.. In my opinion, CSS button far surpass what we could do with image buttons. Instead of locking you to a code block, Google for a CSS button generator to create your own button CSS code.
 
-Option 2 was the one I used on my site, now fully using Font Awesome 5 there is no need for version 4.
-
-
+Example 2 was the one I used on my site and may not be the only option you have! 
