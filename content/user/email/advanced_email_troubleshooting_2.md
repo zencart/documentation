@@ -1,5 +1,5 @@
 ---
-title: TroubleShooting Email - Advanced Part II
+title: Email Troubleshooting - Advanced Part II
 description: Zen Cart TroubleShooting Email - Advanced Part II
 category: email
 weight: 10

@@ -47,10 +47,11 @@ a) look for where it 'started at'
 b) track the line number  
 c) check what's normally happening on that line.  
 
-- If it's the end of the file, then it's blank spaces.  
-- If it's the start of the file, it's likely spaces or incorrect encoding.  
-- Elsewhere it could be a syntax error or the result of an `echo()` statement which is displaying info or perhaps debug code.  
+- If it's the end of the file, and there is a `?>` at the end of the file, remove the final `?>`. 
+- If it's the start of the file, the issue is likely spaces or incorrect encoding.  
+- If it's elsewhere, it could be a syntax error or the result of an `echo()` statement which is displaying info or perhaps debug code.  
 - Common syntax errors include the use of single-quotes inside statements that already have single-quotes. Check to be sure your quotes aren't mismatched. If you need to use single-quotes while inside other single-quotes, change yours to `\'` instead of just `'`.  
+
 d) the rest of the info simply shows other execution information, mainly the part of the code that discovered that it cannot proceed as expected due to the problem that happened in the 'started at' location.  
 
 To change the encoding on the file, look for the "Save As" menu item in your
