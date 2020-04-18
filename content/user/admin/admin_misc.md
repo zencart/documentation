@@ -8,9 +8,9 @@ weight: 5
 {{< misc >}} 
 
 ---
-### Why are there so many flags in the admin? 
+### Why are there so many configuration settings in the admin? 
 
-It's a balance - every flag in the admin is one more change you can make 
+It's a balance - every setting in the admin is one more change you can make 
 to your store without needing to modify code.  Zen Cart is designed to be
 storeowner-friendly in the sense that you can customize your cart without
 being a software developer.
