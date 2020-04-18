@@ -30,7 +30,7 @@ It's also important to note that community-supplied contributions are written at
 If you can find community created and supported contributions in the [Plugins Area](https://www.zen-cart.com/downloads.php) of the Zen Cart Forum. 
 
 ## **Fees**
-There is no fee for using Zen Cart. You may download and use it, subject to the terms of the license, for free. However, if you find it useful, you are encouraged to [make a donation](/user/about_us/donate/) to help support the ongoing development and improvement of the product.  
+There is no fee for using Zen Cart. You may [download Zen Cart](https://sourceforge.net/projects/zencart/files/) and use it, subject to the terms of the license, for free. However, if you find it useful, you are encouraged to [make a donation](/user/about_us/donate/) to help support the ongoing development and improvement of the product.  
 
 ## **Community**
 You can [participate in the Zen Cart community](/user/about_us/contributing/) in many ways.  Join the fun! 

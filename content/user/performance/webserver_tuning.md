@@ -14,7 +14,7 @@ Using Windows-based servers is more complicated especially due to security weakn
 
 ## Webserver Engine Software
 
-**For optimum security support</font>, Zen Cart recommends using Apache as the webserver engine**
+**For optimum security support, Zen Cart recommends using Apache as the webserver engine**
 
 ### Apache
 
