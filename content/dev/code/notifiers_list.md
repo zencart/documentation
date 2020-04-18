@@ -9,7 +9,9 @@ weight: 10
 <!-- see find_notifiers in https://github.com/scottcwilson/zencart_tools --> 
 
 For a list of notifiers with module name, line number and parameters, 
-please install [Notifier Report](https://github.com/lat9/notifier_report). 
+please install [the Notifier Report software](https://github.com/lat9/notifier_report), 
+or see [Notifier Report](/dev/code/notifier_report/) on this site. 
+
 
 ```
 NOTIFIER_ADMIN_ZEN_CUSTOMERS_DELETE_CONFIRM
