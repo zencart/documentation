@@ -43,5 +43,7 @@ layout: docs
 
 * [Version Information](/user/first_steps/version/) - how to determine your PHP, MySQL and Zen Cart version numbers.
 
+* [Warning Headers already sent](https://docs.zen-cart.com/user/troubleshooting/warning_headers_already_sent/) - common error message "Warning: Cannot modify header information - headers already sent" 
+
 <style>.panel-line { display:none; }</style> 
 

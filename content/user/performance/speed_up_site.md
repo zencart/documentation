@@ -73,4 +73,5 @@ Or have you written any custom code or use any addons which run queries that att
 
 Many plugins come with their own copy of jquery.js or jquery-min.js (or some numbered version of the same pattern), and you shouldn't be loading them all!!!  
 
-Rule of thumb: Only load one! And usually that should be the newest version.</font>
+Rule of thumb: Only load one! And usually that should be the newest version.
+

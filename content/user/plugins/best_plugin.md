@@ -24,13 +24,13 @@ to allow storeowners to create subsets of capabilities for their staff
 when full admin access was not desired.  This feature was pulled in to 
 Zen Cart core in the 1.5.0 release, and it's now under the [Admins menu](/user/admin_pages/admins/). 
 
-Similarly, 
+    Similarly, 
 
-- In Zen Cart 1.5.5, **myDEBUG log backtrace** was migrated from a plugin to a core feature.
+- Zen Cart 1.5.7 includes a 
+number of popular and powerful plugins from the user community, 
+including **Default Attribute**, **Report All Errors**, **Ask a Question**, **Sortable Orders Status**, and **zenNonCAPTCHA**. 
 - In Zen Cart 1.5.6, **Sales Reports with Graphs** was migrated from a plugin to a core feature. 
-- Zen Cart 1.5.7 is slated to embed a 
-number of popular and powerful plugins from the user community. 
-On the list so far are **Default Attribute**, **Report All Errors**, **Ask a Question**, **Sortable Orders Status**, and **zenNonCAPTCHA**. 
+- In Zen Cart 1.5.5, **myDEBUG log backtrace** was migrated from a plugin to a core feature.
 
 However, even though a plugin is popular, there's no guarantee 
 it will be pulled into the core  There are good reasons for [keeping some plugins separate from the Zen Cart core](/user/plugins/why_plugins/).
