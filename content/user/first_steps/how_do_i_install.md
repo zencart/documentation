@@ -167,8 +167,6 @@ Rename this file to `configure.php` and change the permissions to 777 (read-writ
 Next, on the server locate the file: `/catalog/admin/includes/dist-configure.php`  
 Rename this file to `configure.php` and change the permissions to 777 (read-write-execute for all)  
 
-**NOTE FOR IIS USERS:** If you are using IIS for Windows hosting, the "chmod 777" idea for permissions settings is likely foreign to you. In IIS, under Windows, you need to right-click on the file (or folders in the next section below), and choose Properties. Then under the Security tab, ensure that the "**Internet Guest Account**", identified usually as: `MACHINE_NAME\IUSR_MACHINE_NAME` has at least "read" and "write" privileges.  It is likely best to give "modify" as well. This should be done on each file/folder indicated. (If the `IUSR_MACHINE_NAME` account isn't listed, click "Add" and add that account from the list, and then set the required permissions.) (Note: `_MACHINE_NAME` above refers to the "machine name" or "computer name" configured by the server administrator to "name" the server.)  
-
 **NOTE FOR IIS USERS:** Stop. Get Linux hosting.  IIS is not recommended. 
 
 --- 
