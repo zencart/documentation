@@ -15,7 +15,6 @@ Instead, **we recommend manual installation**.  Manual installation of files fro
 This is a basic guide to installing Zen Cart. If you already have Zen Cart installed and wish to upgrade from a previous version to this new release, please see the upgrading instructions [in the Release document](https://www.zen-cart.com/docs/). 
 
 ---
-
 ## A. The Basics
 
 You have downloaded the [official Zen Cart software](https://sourceforge.net/projects/zencart/files/), and want to build an online shopping cart.
@@ -42,10 +41,9 @@ If No, stop.  You need to obtain a good [FTP tool](/user/first_steps/useful_tool
 
 If No stop.  You will need a [text editor](/user/first_steps/useful_tools/#php-html-and-text-editors).
 
-**NOTE:** Do not use cPanel for editing files.
+**NOTE:** Do not use cPanel File Manager for editing files.
 
 **NOTE:** Do not use MS Word for editing files. 
-
 
 ### 4\. Do you have access to your webhosting control panel?
 
@@ -59,12 +57,63 @@ BEFORE YOU PROCEED, make sure you have access to a MySQL database, and username/
 
 If you have answered Yes to all 4 of these questions, then you are ready to go on. 
 
+---
+## B. Installing the Zen Cart fileset using cPanel
+
+If your host provides cPanel as your hosting control panel, installation and upgrading can be a much simpler process.  You do not even need an FTP program to complete the task although you will need one for other site operations. This section covers the basic steps to install Zen Cart to your server.  The same steps are used to create a test folder for upgrade or mod installation.
+
+### Where will my files be in cPanel?
+
+Each web host has his/her own preference in naming folders for use in running a website.
+The `web root` (or informally often called `root` when talking to peers in the context of website files) is the base/top directory where your website files are located. 
+That folder holds the files that will be accessed when you enter `http://YOUR_SITE.com` in a browser.  
+
+The default web root in a cPanel environment is usually `/home/user/public_html` where `user` is the name given to your cPanel account. 
+
+In short, in cPanel you'll almost always see it as `public_html`.
+
+For initial installation or for staging upgrades; we'll be setting up a sub-folder with the Zen Cart files, below the `public_html` folder.  In the case of initial installation, you may want to move or redirect this folder once you have completed setup.  More on that later.
+
+
+
+### Getting the files on the server.
+
+**NOTE:** The "autoinstaller" found in the Softaculous section of the Software/Services Menu is NOT recommended for use by Zen Cart. Download the [latest copy in .zip format](https://www.zen-cart.com/latest).
+
+Open the cPanel provided by your host.  Normally, this is done by going to `https://YOUR_SITE.com/cpanel` OR `https://YOUR_SITE.com:2083`.  You will need your username and password assigned to you when you obtained your hosting in order to log in to the cPanel.
+
+The File Manager is located in the Files Section of cPanel.  Click on the File Manager icon and the File Manager will open.  Unless you are very familiar with the folder tree of cPanel, we recommend opening the Settings and selecting 'Web Root' as the default opening directory.  Refreshing the page will bring up the files currently in your `public_html` folder.
+
+Next, you will upload [the latest zip file](https://www.zen-cart.com/latest) to your server using the Upload menu icon. (You must download the zip file first, before continuing.) Click on Upload and the upload page will appear in the browser.  Drag the zip file to the "Drop files here to start uploading" area and the upload will automatically start.  When the progress bar shows 100% with complete underneath, click on the Go Back link to return to your `/public_html` folder.  If you don't see the zip file in the `public_html` folder, click on Reload in the menu to refresh the page.
+
+Find the zip file.  Normally Zen Cart uses the following naming format when distributing code: `zen-cart-CURRENT_VERSION-RELEASE_DATE.zip`.  Right-click on the file and select Extract.  You should see a home icon with `/public_html` pre-filled in the box.  Make sure your browser matches `/public_html` with no trailing `/` and click on the Extract File(s) button.  Click Close on the Extraction Results screen.
+
+You now have a new folder in `public_html` that should match the naming convention of the zip file.  `zen-cart-CURRENT_VERSION-RELEASE_DATE`.  All the Zen Cart installation files are in this directory.
+
+For clarity, rename the directory to something like `catalog` or `store` for this new installation.  If you were creating a directory for an upgrade or to test an addon on a separate store, you should use an appropriate name you can associate with the task.  For now, we'll give the files a break while we create the database.
+
+### Create the Database, Assign a User and Password, Set the Permissions for the User.
+
+Closing the File Manager tab in your browser should take you back to the cPanel Main page.  Scroll down to the Databases section and click on MySQL Databases.  The Create New Database form should be pre-filled with the username you used to log in to your cPanel.
+
+Enter a name for your database (the version is often used for easy recognition in multi-database environments) and click on Create Database.  Then, click the Go Back button to return to the Databases page.
+
+You will need to create a username and password for this database.  It is NOT recommended to use your cPanel credentials (ie: don't re-use your passwords!).  Scroll down to Add New User, fill in the information, then click on Create User.  Click the Go Back button to return to the Databases page.
+
+Finally, scroll down to the Add User To Database section, make sure the User and Database are filled in correctly, and click on Add.  Checking the ALL PRIVELEGES check box will give your user complete access to the database.  Be sure to scroll down and click on the Make Changes button.
+
+You now have the files in place and the database ready to go.  It's time to let Zen Cart take over.
+
+### Let the Zen Cart Installer finish the job.
+
+Proceed to step G. Run the Installer, below
+
+---
+## C. Upload the Zen Cart fileset to your webserver
+
 ### ZIP file
 
 If you're reading this page via a file from your computer, you have likely already unzipped the [Zen Cart distribution file](https://www.zen-cart.com/getit) and its contents into a folder on your personal computer. If for some reason you haven't already done so, unzip the files to your PC now, retaining the file structure within the zip file.  
-
----
-## B. Upload the Zen Cart fileset to your webserver
 
 Upload, via FTP, the whole program into a directory on your server.  You can put it in your webroot or in a folder below that. 
   
@@ -105,9 +154,8 @@ choice.  The only time when you would really need to use a subfolder is if you
 already have a well established website are just adding on ecommerce using 
 Zen Cart.  In that case, you'd want to put your store below your existing site. 
 
-
 ---
-## C. Create the configure.php files
+## D. Create the configure.php files
 
 Two files need to be created on the server. These are the configure.php files that identify the settings of your particular server and the location of the files that you just loaded. After they have been created, you will then need to change the permissions on these files.  
 
@@ -119,18 +167,18 @@ Rename this file to `configure.php` and change the permissions to 777 (read-writ
 Next, on the server locate the file: `/catalog/admin/includes/dist-configure.php`  
 Rename this file to `configure.php` and change the permissions to 777 (read-write-execute for all)  
 
-**NOTE FOR IIS USERS:** If you are using IIS for Windows hosting, the "chmod 777" idea for permissions settings is likely foreign to you. In IIS, under Windows, you need to right-click on the file (or folders in the next section below), and choose Properties. Then under the Security tab, ensure that the"**Internet Guest Account**", identified usually as: `MACHINE_NAME\IUSR_MACHINE_NAME` has at least "read" and "write" privileges.  It is likely best to give "modify" as well. This should be done on each file/folder indicated. (If the `IUSR_MACHINE_NAME` account isn't listed, click "Add" and add that account from the list, and then set the required permissions.) (Note: `_MACHINE_NAME` above refers to the "machine name" or "computer name" configured by the server administrator to "name" the server.)  
+**NOTE FOR IIS USERS:** If you are using IIS for Windows hosting, the "chmod 777" idea for permissions settings is likely foreign to you. In IIS, under Windows, you need to right-click on the file (or folders in the next section below), and choose Properties. Then under the Security tab, ensure that the "**Internet Guest Account**", identified usually as: `MACHINE_NAME\IUSR_MACHINE_NAME` has at least "read" and "write" privileges.  It is likely best to give "modify" as well. This should be done on each file/folder indicated. (If the `IUSR_MACHINE_NAME` account isn't listed, click "Add" and add that account from the list, and then set the required permissions.) (Note: `_MACHINE_NAME` above refers to the "machine name" or "computer name" configured by the server administrator to "name" the server.)  
 
 **NOTE FOR IIS USERS:** Stop. Get Linux hosting.  IIS is not recommended. 
 
 --- 
-## D. Set Permissions on folders
+## E. Set Permissions on folders
 
 See [Permissions on files and folders](/user/installing/permissions/). 
 
 
 --- 
-## E. Prepare to Run the Installer
+## F. Prepare to Run the Installer
 
 The installer is fairly intelligent and should be able to automatically supply answers to the questions listed below.  
 
@@ -155,7 +203,7 @@ You will need the following information for the installation:
     - or - `https://secure.sharedservername.net/~username/catalog`
 
 --- 
-## F. Run the Installer
+## G. Run the Installer
 
 In your browser, enter the URL to your new shop, and the Installer should automatically start.  
 Example: `http://www.mydomain.com/catalog`
@@ -232,7 +280,7 @@ Save the Admin settings and your installation is now complete!
 Providing there were no errors during installation, you should be able to now enter the Admin or the Catalog.  
 
 ---
-## G. After Installation
+## H. After Installation
 
 a) [RENAME YOUR ADMIN FOLDER](/user/running/rename_admin/).  Note that 
 current versions of Zen Cart do this for you. 
@@ -258,7 +306,7 @@ c) Remove the **zc_install directory**
 Next, you will want to delete the `/catalog/zc_install` directory  
 
 ---
-## H. Next Steps
+## I. Next Steps
 
 Now you'll want to [install your SSL certificate](/user/installing/enable_ssl/) and change your admin password.  [Yes, you need an SSL certificate](/user/first_steps/yes_you_need_ssl). 
 
@@ -266,6 +314,4 @@ For information on first steps to setting up your online shop, see the article [
 
 You should also familiarize yourself with the Zen Cart [Developer's Toolkit](/user/admin/developers_toolkit), located in your store's Admin area, under `Tools`. This will help you locate almost anything you want to customize in your shop!
 
-Once you're set up and ready to start announcing your URL to the public, you should FIRST review Site Security Recommendations to be sure your site is safe and not vulnerable to hackers. The most up-to-date version of this file can be found in the article [Important Security Recommendations](https://www.zen-cart.com/docs/important_site_security_recommendations.html). 
-
-
+Once you're set up and ready to start announcing your URL to the public, you should FIRST review Site Security Recommendations to be sure your site is safe and not vulnerable to hackers. The most up-to-date version of this file can be found in the article [Important Security Recommendations](https://docs.zen-cart.com/user/security/security_recommendations/).
