@@ -18,7 +18,7 @@ See a bug? Know of an improvement, even if it's tiny? Feel free to share about i
 
 I'm Scared! This is my first time!
 ----------------------------------
-That's completely understandable. We all started with a sense of excitement and fear all at once. Excitement to be a contributor, and fear that my contribution might be wrong or break something or be rejected. Those are normal feelings. Here's [an excellent article explaining those same feelings and showing how easy it is to get through them!](http://dev-human.com/entries/2015/09/25/my-first-pull-request/)
+That's completely understandable. We all started with a sense of excitement and fear all at once. Excitement to be a contributor, and fear that my contribution might be wrong or break something or be rejected. Those are normal feelings but not to worry, all suggestions  get vetted first. 
 
 
 Where do I start?
