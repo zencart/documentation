@@ -49,74 +49,26 @@ If No stop.  You will need a [text editor](/user/first_steps/useful_tools/#php-h
 
 Your webhoster's control panel (often [cPanel](https://cPanel.net) but sometimes a hoster-built tool) is where you will create a MySQL database and user.
 
-BEFORE YOU PROCEED, make sure you have access to a MySQL database, and username/password to that database. You may need to create the database using your webhosting account's control panel. Contact your webhosting company for assistance. Zen Cart cannot create the database for you.
+### 5\. Have you created a database? 
+
+If your hosting account has CPanel, 
+scroll down to the Databases section and click on MySQL Databases.  The Create New Database form should be pre-filled with the username you used to log in to your cPanel.
+
+Enter a name for your database (the version is often used for easy recognition in multi-database environments) and click on Create Database.  Then, click the Go Back button to return to the Databases page.
+
+You will need to create a username and password for this database.  It is NOT recommended to use your cPanel credentials (i.e.: don't re-use your passwords!).  Scroll down to Add New User, fill in the information, then click on Create User.  Click the Go Back button to return to the Databases page.
+
+Finally, scroll down to the Add User To Database section, make sure the User and Database are filled in correctly, and click on Add.  Checking the ALL PRIVELEGES check box will give your user complete access to the database.  Be sure to scroll down and click on the Make Changes button.
 
 (You need the following permissions on your MySQL user: SELECT, INSERT, UPDATE, DELETE, CREATE, ALTER, INDEX, DROP.   On an H-Sphere host, this would be "dba" access, or at least read/write. )  
 
 ### All set?
 
-If you have answered Yes to all 4 of these questions, then you are ready to go on. 
+If you have answered Yes to all of the above questions, then you are ready to go on. 
 
 ---
-## B. Installing the Zen Cart fileset using cPanel
+## Background 
 
-If your host provides cPanel as your hosting control panel, installation and upgrading can be a much simpler process.  You do not even need an FTP program to complete the task although you will need one for other site operations. This section covers the basic steps to install Zen Cart to your server.  The same steps are used to create a test folder for upgrade or mod installation.
-
-### Where will my files be in cPanel?
-
-Each web host has his/her own preference in naming folders for use in running a website.
-The `web root` (or informally often called `root` when talking to peers in the context of website files) is the base/top directory where your website files are located. 
-That folder holds the files that will be accessed when you enter `http://YOUR_SITE.com` in a browser.  
-
-The default web root in a cPanel environment is usually `/home/user/public_html` where `user` is the name given to your cPanel account. 
-
-In short, in cPanel you'll almost always see it as `public_html`.
-
-For initial installation or for staging upgrades; we'll be setting up a sub-folder with the Zen Cart files, below the `public_html` folder.  In the case of initial installation, you may want to move or redirect this folder once you have completed setup.  More on that later.
-
-
-
-### Getting the files on the server.
-
-**NOTE:** The "autoinstaller" found in the Softaculous section of the Software/Services Menu is NOT recommended for use by Zen Cart. Download the [latest copy in .zip format](https://www.zen-cart.com/latest).
-
-Open the cPanel provided by your host.  Normally, this is done by going to `https://YOUR_SITE.com/cpanel` OR `https://YOUR_SITE.com:2083`.  You will need your username and password assigned to you when you obtained your hosting in order to log in to the cPanel.
-
-The File Manager is located in the Files Section of cPanel.  Click on the File Manager icon and the File Manager will open.  Unless you are very familiar with the folder tree of cPanel, we recommend opening the Settings and selecting 'Web Root' as the default opening directory.  Refreshing the page will bring up the files currently in your `public_html` folder.
-
-Next, you will upload [the latest zip file](https://www.zen-cart.com/latest) to your server using the Upload menu icon. (You must download the zip file first, before continuing.) Click on Upload and the upload page will appear in the browser.  Drag the zip file to the "Drop files here to start uploading" area and the upload will automatically start.  When the progress bar shows 100% with complete underneath, click on the Go Back link to return to your `/public_html` folder.  If you don't see the zip file in the `public_html` folder, click on Reload in the menu to refresh the page.
-
-Find the zip file.  Normally Zen Cart uses the following naming format when distributing code: `zen-cart-CURRENT_VERSION-RELEASE_DATE.zip`.  Right-click on the file and select Extract.  You should see a home icon with `/public_html` pre-filled in the box.  Make sure your browser matches `/public_html` with no trailing `/` and click on the Extract File(s) button.  Click Close on the Extraction Results screen.
-
-You now have a new folder in `public_html` that should match the naming convention of the zip file.  `zen-cart-CURRENT_VERSION-RELEASE_DATE`.  All the Zen Cart installation files are in this directory.
-
-For clarity, rename the directory to something like `catalog` or `store` for this new installation.  If you were creating a directory for an upgrade or to test an addon on a separate store, you should use an appropriate name you can associate with the task.  For now, we'll give the files a break while we create the database.
-
-### Create the Database, Assign a User and Password, Set the Permissions for the User.
-
-Closing the File Manager tab in your browser should take you back to the cPanel Main page.  Scroll down to the Databases section and click on MySQL Databases.  The Create New Database form should be pre-filled with the username you used to log in to your cPanel.
-
-Enter a name for your database (the version is often used for easy recognition in multi-database environments) and click on Create Database.  Then, click the Go Back button to return to the Databases page.
-
-You will need to create a username and password for this database.  It is NOT recommended to use your cPanel credentials (ie: don't re-use your passwords!).  Scroll down to Add New User, fill in the information, then click on Create User.  Click the Go Back button to return to the Databases page.
-
-Finally, scroll down to the Add User To Database section, make sure the User and Database are filled in correctly, and click on Add.  Checking the ALL PRIVELEGES check box will give your user complete access to the database.  Be sure to scroll down and click on the Make Changes button.
-
-You now have the files in place and the database ready to go.  It's time to let Zen Cart take over.
-
-### Let the Zen Cart Installer finish the job.
-
-Proceed to step G. Run the Installer, below
-
----
-## C. Upload the Zen Cart fileset to your webserver
-
-### ZIP file
-
-If you're reading this page via a file from your computer, you have likely already unzipped the [Zen Cart distribution file](https://www.zen-cart.com/getit) and its contents into a folder on your personal computer. If for some reason you haven't already done so, unzip the files to your PC now, retaining the file structure within the zip file.  
-
-Upload, via FTP, the whole program into a directory on your server.  You can put it in your webroot or in a folder below that. 
-  
 ### What is my webroot? 
 
 Each web host has his/her own preference in naming folders for use in running a website.  
@@ -136,8 +88,60 @@ Your Zen Cart files (or *any* files to run your website, for that matter) need t
 
 If it's unclear where the publicly-accessible files are to be uploaded, ask your hosting company for assistance in determining what your **webroot** folder should be.
 
-### What folder do I upload into?
+### Where will my files be in cPanel?
 
+Your files will go into your webroot, as defined above. 
+
+The default webroot in a cPanel environment is usually something like `/home/user/public_html` where `user` is the name given to your cPanel account. 
+
+In short, in cPanel you'll almost always see it as `public_html`.
+
+For initial installation or for staging upgrades; we'll be setting up a sub-folder with the Zen Cart files, below the `public_html` folder.  In the case of initial installation, you may want to move or redirect this folder once you have completed setup.  More on that later.
+
+
+
+---
+## B1. Installing the Zen Cart fileset using cPanel
+
+This is the easiest and least error prone method of installing Zen Cart
+Installing by FTP is described in B2. 
+
+If your host provides cPanel as your hosting control panel, installation and upgrading can be a much simpler process.  You do not even need an FTP program to complete the task although you will need one for other site operations. This section covers the basic steps to install Zen Cart to your server.  The same steps are used to create a test folder for upgrade or mod installation.
+
+
+### Getting the files on the server.
+
+At this point, it is assumed you have a copy of 
+the [official download](https://sourceforge.net/projects/zencart/files/) 
+of Zen Cart.
+
+Open the cPanel provided by your host.  Normally, this is done by going to `https://YOURSITE.com/cpanel` OR `https://YOURSITE.com:2083`.  You will need your username and password assigned to you when you obtained your hosting in order to log in to the cPanel.
+
+The File Manager is located in the Files Section of cPanel.  Click on the File Manager icon and the File Manager will open.  Unless you are very familiar with the folder tree of cPanel, we recommend opening the Settings and selecting 'WebRoot' as the default opening directory.  Refreshing the page will bring up the files currently in your `public_html` folder.
+
+Next, you will upload [the latest zip file](https://www.zen-cart.com/latest) to your server using the Upload menu icon. (You must download the zip file first, before continuing.) Click on Upload and the upload page will appear in the browser.  Drag the zip file to the "Drop files here to start uploading" area and the upload will automatically start.  When the progress bar shows 100% with complete underneath, click on the Go Back link to return to your `/public_html` folder.  If you don't see the zip file in the `public_html` folder, click on Reload in the menu to refresh the page.
+
+Find the zip file.  Normally Zen Cart uses the following naming format when distributing code: `zen-cart-CURRENT_VERSION-RELEASE_DATE.zip`.  Right-click on the file and select Extract.  You should see a home icon with `/public_html` pre-filled in the box.  Make sure your browser matches `/public_html` with no trailing `/` and click on the Extract File(s) button.  Click Close on the Extraction Results screen.
+
+You now have a new folder in `public_html` that should match the naming convention of the zip file.  `zen-cart-CURRENT_VERSION-RELEASE_DATE`.  All the Zen Cart installation files are in this directory.
+
+For clarity, rename the directory to something like `catalog` or `store` for this new installation.  If you were creating a directory for an upgrade or to test an addon on a separate store, you should use an appropriate name you can associate with the task.  For now, we'll give the files a break while we create the database.
+
+
+Skip step B2 and go to the following step. 
+
+---
+## B2. Installing the Zen Cart fileset using FTP 
+
+This step is only required if you did not install your files using
+cPanel in the previous step. 
+
+At this point, it is assumed you have a copy of 
+the [official download](https://sourceforge.net/projects/zencart/files/) 
+of Zen Cart.
+
+Upload, via FTP, the whole Zen Cart distribution into a directory on your server.  You can put it in your webroot or in a folder below that. 
+  
 You can choose to upload to your webroot, or you can choose to upload to a subfolder.  Assuming your webroot is `/home/johndoe/public_html` and your domain is `johndoetools`, this is how things will work (assuming you have SSL): 
 
 - If you upload to your webroot, your Zen Cart will be accessed as [https://www.johndoetools.com]().
@@ -155,7 +159,7 @@ already have a well established website are just adding on ecommerce using
 Zen Cart.  In that case, you'd want to put your store below your existing site. 
 
 ---
-## D. Create the configure.php files
+## C. Create the configure.php files
 
 Two files need to be created on the server. These are the configure.php files that identify the settings of your particular server and the location of the files that you just loaded. After they have been created, you will then need to change the permissions on these files.  
 
@@ -172,13 +176,13 @@ Rename this file to `configure.php` and change the permissions to 777 (read-writ
 **NOTE FOR IIS USERS:** Stop. Get Linux hosting.  IIS is not recommended. 
 
 --- 
-## E. Set Permissions on folders
+## D. Set Permissions on folders
 
 See [Permissions on files and folders](/user/installing/permissions/). 
 
 
 --- 
-## F. Prepare to Run the Installer
+## E. Prepare to Run the Installer
 
 The installer is fairly intelligent and should be able to automatically supply answers to the questions listed below.  
 
@@ -203,7 +207,7 @@ You will need the following information for the installation:
     - or - `https://secure.sharedservername.net/~username/catalog`
 
 --- 
-## G. Run the Installer
+## F. Run the Installer
 
 In your browser, enter the URL to your new shop, and the Installer should automatically start.  
 Example: `http://www.mydomain.com/catalog`
@@ -280,7 +284,7 @@ Save the Admin settings and your installation is now complete!
 Providing there were no errors during installation, you should be able to now enter the Admin or the Catalog.  
 
 ---
-## H. After Installation
+## G. After Installation
 
 a) [RENAME YOUR ADMIN FOLDER](/user/running/rename_admin/).  Note that 
 current versions of Zen Cart do this for you. 
@@ -306,7 +310,7 @@ c) Remove the **zc_install directory**
 Next, you will want to delete the `/catalog/zc_install` directory  
 
 ---
-## I. Next Steps
+## H. Next Steps
 
 Now you'll want to [install your SSL certificate](/user/installing/enable_ssl/) and change your admin password.  [Yes, you need an SSL certificate](/user/first_steps/yes_you_need_ssl). 
 
