@@ -1,6 +1,6 @@
 ---
-title: How do I change the logo or the logo alt text?
-description: Changing the logo in Zen Cart 
+title: How do I change the logo or the logo alt text in the header?
+description: Changing the header logo in Zen Cart 
 category: new_user_topics
 weight: 10
 ---

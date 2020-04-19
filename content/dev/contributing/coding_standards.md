@@ -142,6 +142,9 @@ Where possible, try to keep these things separate:
 - Files in `includes/modules` and `includes/functions` should be where logic resides (not markup);  
 - Files in `includes/templates` should be where display markup resides (not extensive logic).
 
+## Static Data 
+Try to avoid db tables that are strictly static data, unless they're useful in query joins with other relational data.  Keep this information in code files instead. If it needs to be globally available, use `extra_configures`.
+
 ## Namespaced Autoloading
 In Zen Cart 1.6.0, the [PSR-4 autoloading standard](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader) is used for handling code in the \ZenCart namespace (ie: the files in `/includes/library`).
 
