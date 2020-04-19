@@ -41,7 +41,7 @@ If No, stop.  You need to obtain a good [FTP tool](/user/first_steps/useful_tool
 
 If No stop.  You will need a [text editor](/user/first_steps/useful_tools/#php-html-and-text-editors).
 
-**NOTE:** Do not use cPanel for editing files.
+**NOTE:** Do not use cPanel File Manager for editing files.
 
 **NOTE:** Do not use MS Word for editing files. 
 
@@ -65,39 +65,35 @@ If your host provides cPanel as your hosting control panel, installation and upg
 ### What is my webroot in cPanel?
 
 Each web host has his/her own preference in naming folders for use in running a website.
-The default root in a cPanel environment is usually ''/home/user/public_html' where user is the name given to your cPanel account. That folder holds the files that will be accessed when you enter 'http://YOUR_SITE.com in a browser'.  For initial installation, upgrade, or mod testing; we'll be setting up a sub-folder with the Zen Cart files.  In the case of initial installation, you may want to move or redirect this folder once you have completed setup.  More on that later.
+The default root in a cPanel environment is usually `/home/user/public_html` where `user` is the name given to your cPanel account. That folder holds the files that will be accessed when you enter `http://YOUR_SITE.com` in a browser.  For initial installation, upgrade, or mod testing; we'll be setting up a sub-folder with the Zen Cart files.  In the case of initial installation, you may want to move or redirect this folder once you have completed setup.  More on that later.
 
 ### Getting the files on the server.
 
-**NOTE:** The "autoinstaller" found in the Softaculous section of the Software/Services Menu is NOT recommended for use by Zen Cart. Download the [latest copy in .zip format](https://www.zen-cart.com/latest).</font>
+**NOTE:** The "autoinstaller" found in the Softaculous section of the Software/Services Menu is NOT recommended for use by Zen Cart. Download the [latest copy in .zip format](https://www.zen-cart.com/latest).
 
-Open the cPanel provided by your host.  Normally, this is done by going to 'https://YOUR_SITE.com/cpanel' OR 'https://YOUR_SITE.com:2083'.  You will need your username and password assigned to you when you obtained your hosting in order to log in to the cPanel.
+Open the cPanel provided by your host.  Normally, this is done by going to `https://YOUR_SITE.com/cpanel` OR `https://YOUR_SITE.com:2083`.  You will need your username and password assigned to you when you obtained your hosting in order to log in to the cPanel.
 
-The File Manager is located in the Files Section of cPanel.  Click on the File Manager icon and the File Manager will open.  Unless you are very familiar with the folder tree of cPanel, we recommend opening the Settings and selecting 'Web Root' as the default opening director.  Refreshing the page will bring up the files in your public_html folder.
+The File Manager is located in the Files Section of cPanel.  Click on the File Manager icon and the File Manager will open.  Unless you are very familiar with the folder tree of cPanel, we recommend opening the Settings and selecting 'Web Root' as the default opening directory.  Refreshing the page will bring up the files currently in your `public_html` folder.
 
-Next, you will upload [the latest zip file](https://www.zen-cart.com/latest) to your server using the Upload menu icon.  Click on Upload and the upload page will appear in the browser.  Drag the zip file to the Drop files here to start uploading area and the upload will automatically start.  When the progress bar shows 100% with complete underneath, click on the Go Back link to return to your ''/public_html' folder.  If you don't see the zip file in the public_html folder, click on Reload in the menu to refresh the page.
+Next, you will upload [the latest zip file](https://www.zen-cart.com/latest) to your server using the Upload menu icon. (You must download the zip file first, before continuing.) Click on Upload and the upload page will appear in the browser.  Drag the zip file to the "Drop files here to start uploading" area and the upload will automatically start.  When the progress bar shows 100% with complete underneath, click on the Go Back link to return to your `/public_html` folder.  If you don't see the zip file in the `public_html` folder, click on Reload in the menu to refresh the page.
 
-Find the zip file.  The standard file uses the following naming format.  'zen-cart-CURRENT_VERSION-RELEASE_DATE.zip'.  Right-click on the file and select Extract.  You should see a home icon with '/public_html' pre-filled in the box.  Make sure your browser matches /public_html with no trailing / and click on the Extract File(s) button.  Click Close on the Extraction Results screen.
+Find the zip file.  Normally Zen Cart uses the following naming format when distributing code: `zen-cart-CURRENT_VERSION-RELEASE_DATE.zip`.  Right-click on the file and select Extract.  You should see a home icon with `/public_html` pre-filled in the box.  Make sure your browser matches `/public_html` with no trailing `/` and click on the Extract File(s) button.  Click Close on the Extraction Results screen.
 
-You now have a new folder in your root that should match the naming convention of the zip file.  'zen-cart-CURRENT_VERSION-RELEASE_DATE'.  All the Zen Cart installation files are in this directory.
+You now have a new folder in `public_html` that should match the naming convention of the zip file.  `zen-cart-CURRENT_VERSION-RELEASE_DATE`.  All the Zen Cart installation files are in this directory.
 
-For clarity, rename the directory to something like 'catalog' for this new installation.  If you were creating a directory for an upgrade or mod test, you should use an appropriate name you can associate with the task.  For now, we'll give the files a break while we create the database.
+For clarity, rename the directory to something like `catalog` or `store` for this new installation.  If you were creating a directory for an upgrade or to test an addon on a separate store, you should use an appropriate name you can associate with the task.  For now, we'll give the files a break while we create the database.
 
-####Synopsis:  Upload the Zip File, Extract it to the Root, Rename the Folder.
+### Create the Database, Assign a User and Password, Set the Permissions for the User.
 
-### Time to create the database.
-
-Closing the File Manager tab in your browser should take you back to the cPanel Main page.  Scroll down to the Databases section and click on MySQL&reg; Databases.  The Create New Database form should be pre-filled with the username you used to log in to your cPanel.
+Closing the File Manager tab in your browser should take you back to the cPanel Main page.  Scroll down to the Databases section and click on MySQL Databases.  The Create New Database form should be pre-filled with the username you used to log in to your cPanel.
 
 Enter a name for your database (the version is often used for easy recognition in multi-database environments) and click on Create Database.  Then, click the Go Back button to return to the Databases page.
 
-You will need to create a username and password for this database.  It is NOT recommended to use your cPanel credentials.  Scroll down to Add New User, fill in the information, then click on Create User.  Click the Go Back button to return to the Databases page.
+You will need to create a username and password for this database.  It is NOT recommended to use your cPanel credentials (ie: don't re-use your passwords!).  Scroll down to Add New User, fill in the information, then click on Create User.  Click the Go Back button to return to the Databases page.
 
 Finally, scroll down to the Add User To Database section, make sure the User and Database are filled in correctly, and click on Add.  Checking the ALL PRIVELEGES check box will give your user complete access to the database.  Be sure to scroll down and click on the Make Changes button.
 
 You now have the files in place and the database ready to go.  It's time to let Zen Cart take over.
-
-#### Synopsis:  Create the Database, Assign a User and Password, Set the Permissions for the User.
 
 ### Let the Zen Cart Installer finish the job.
 
