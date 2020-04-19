@@ -62,10 +62,19 @@ If you have answered Yes to all 4 of these questions, then you are ready to go o
 
 If your host provides cPanel as your hosting control panel, installation and upgrading can be a much simpler process.  You do not even need an FTP program to complete the task although you will need one for other site operations. This section covers the basic steps to install Zen Cart to your server.  The same steps are used to create a test folder for upgrade or mod installation.
 
-### What is my webroot in cPanel?
+### Where will my files be in cPanel?
 
 Each web host has his/her own preference in naming folders for use in running a website.
-The default root in a cPanel environment is usually `/home/user/public_html` where `user` is the name given to your cPanel account. That folder holds the files that will be accessed when you enter `http://YOUR_SITE.com` in a browser.  For initial installation, upgrade, or mod testing; we'll be setting up a sub-folder with the Zen Cart files.  In the case of initial installation, you may want to move or redirect this folder once you have completed setup.  More on that later.
+The `web root` (or informally often called `root` when talking to peers in the context of website files) is the base/top directory where your website files are located. 
+That folder holds the files that will be accessed when you enter `http://YOUR_SITE.com` in a browser.  
+
+The default web root in a cPanel environment is usually `/home/user/public_html` where `user` is the name given to your cPanel account. 
+
+In short, in cPanel you'll almost always see it as `public_html`.
+
+For initial installation or for staging upgrades; we'll be setting up a sub-folder with the Zen Cart files, below the `public_html` folder.  In the case of initial installation, you may want to move or redirect this folder once you have completed setup.  More on that later.
+
+
 
 ### Getting the files on the server.
 
@@ -97,7 +106,7 @@ You now have the files in place and the database ready to go.  It's time to let 
 
 ### Let the Zen Cart Installer finish the job.
 
-####Proceed to G. Run the Installer
+Proceed to step G. Run the Installer, below
 
 ---
 ## C. Upload the Zen Cart fileset to your webserver
