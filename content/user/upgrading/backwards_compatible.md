@@ -13,7 +13,9 @@ This document lists changes to the database schema or contents which deserve spe
 
 ### Zen Cart 1.5.6 
 
-In 1.5.6, the variable `$downloads`, returned from `includes/modules/downloads`, changed from a query result to an array.  Accordingly, templates which use this file will need to be adjusted to process an array rather than a database query. 
+- The variable `$downloads`, returned from `includes/modules/downloads`, changed from a query result to an array.  Accordingly, templates which use this file will need to be adjusted to process an array rather than a database query.
+
+- The table containing the EZ-Pages data (`ezpages`) was split into two tables, `ezpages` and `ezpages_content`.  This was done in order to add multi-language capabilities. Accordingly, template files which reference the `ezpages` table will need adjustment to account for this division.
 
 ### Zen Cart 1.5.0 
 
