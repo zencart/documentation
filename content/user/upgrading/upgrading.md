@@ -7,7 +7,9 @@ weight: 10
 
 **READ THIS FIRST: [How do I rebuild my site on the new version, instead of upgrading?](https://www.zen-cart.com/entry.php?3-How-do-I-rebuild-my-site-on-the-new-version-instead-of-upgrading)**
 
-Detailed upgrade instructions that help you retain your customizations while upgrading to new features, can be found in your ZIP file under the [/docs/2.readme_how_to_upgrade.html](https://www.zen-cart.com/docs/2.readme_how_to_upgrade.html) file and also in this [related article](/user/upgrading/detailed_upgrading/).
+Detailed upgrade instructions that help you retain your customizations while upgrading to new features, can be found in this [related article](/user/upgrading/detailed_upgrading/).
+
+Before you begin, remember to make a [complete backup of your files and database](/user/running/backup/). 
 
 ### <font color="#ff0000"> **A. If you want to PRESERVE YOUR CUSTOMIZATIONS, use these instructions [upgrading and preserving customizations](/user/upgrading/detailed_upgrading/)** </font>
 
@@ -27,8 +29,6 @@ Detailed upgrade instructions that help you retain your customizations while upg
     -Each time it completes it will recheck the boxes left to go.  
     -Continue in this method until all boxes are unchecked.
 11.  If you find you have issues, you are not hurting anything and can always start over without damage to your existing shop and live database.  
-
-Reminder:  Read the [/docs/2.readme_how_to_upgrade.html](https://www.zen-cart.com/docs/2.readme_how_to_upgrade.html) document for step-by-step details and information on tools to help in the process.  
 
 ### QUESTION: "Why is this process so long?"
 

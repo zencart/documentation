@@ -101,10 +101,10 @@ For initial installation or for staging upgrades; we'll be setting up a sub-fold
 
 
 ---
-## B1. Installing the Zen Cart fileset using cPanel
+## B. Installing the Zen Cart fileset using cPanel
 
 This is the easiest and least error prone method of installing Zen Cart
-Installing by FTP is described in B2. 
+Installing by FTP is described in the following step.
 
 If your host provides cPanel as your hosting control panel, installation and upgrading can be a much simpler process.  You do not even need an FTP program to complete the task although you will need one for other site operations. This section covers the basic steps to install Zen Cart to your server.  The same steps are used to create a test folder for upgrade or mod installation.
 
@@ -128,10 +128,10 @@ You now have a new folder in `public_html` that should match the naming conventi
 For clarity, rename the directory to something like `catalog` or `store` for this new installation.  If you were creating a directory for an upgrade or to test an addon on a separate store, you should use an appropriate name you can associate with the task.  For now, we'll give the files a break while we create the database.
 
 
-Skip step B2 and go to the following step. 
+Skip step "Installing the Zen Cart fileset using FTP" and go to the following step. 
 
 ---
-## B2. Installing the Zen Cart fileset using FTP 
+## C. Installing the Zen Cart fileset using FTP 
 
 This step is only required if you did not install your files using
 cPanel in the previous step. 
@@ -159,21 +159,6 @@ already have a well established website are just adding on ecommerce using
 Zen Cart.  In that case, you'd want to put your store below your existing site. 
 
 ---
-## C. Create the configure.php files
-
-Two files need to be created on the server. These are the configure.php files that identify the settings of your particular server and the location of the files that you just loaded. After they have been created, you will then need to change the permissions on these files.  
-
-**NOTE:** Changing permissions can be done via your FTP program with the chmod feature. Usually clicking right on a directory or filename will open a menu with this option (perhaps under "Properties")  
-
-On the server locate the file: `/catalog/includes/dist-configure.php`  
-Rename this file to `configure.php` and change the permissions to 777 (read-write-execute for all)  
-
-Next, on the server locate the file: `/catalog/admin/includes/dist-configure.php`  
-Rename this file to `configure.php` and change the permissions to 777 (read-write-execute for all)  
-
-**NOTE FOR IIS USERS:** Stop. Get Linux hosting.  IIS is not recommended. 
-
---- 
 ## D. Set Permissions on folders
 
 See [Permissions on files and folders](/user/installing/permissions/). 
@@ -196,22 +181,17 @@ You will need the following information for the installation:
 
 *   **The Virtual HTTPS Server (the secure URL to your domain)**  
     Example: `https://www.mydomain.com`
-    Note: if you have a shared certificate on a virtual server this may look like:  
-    `https://mydomain.secureservername.net/`  
-    - or - `https://secure.sharedservername.net/~username`  
 
 *   **The Virtual HTTPS Path (the secure URL to your domain and directory for your shop)**  
     Example: `https://www.mydomain.com/catalog`
-    - or - `https://secure.sharedservername.net/~username/catalog`
 
 --- 
 ## F. Run the Installer
 
 In your browser, enter the URL to your new shop, and the Installer should automatically start.  
 Example: `http://www.mydomain.com/catalog`
-- or - to start the installer directly, use: `http://www.mydomain.com/catalog/zc_install`
 
-If you now see a list of filenames and directories, you should speak to your Hosting Site about how to setup your server to auto-detect PHP filename extensions.  
+Or, to start the installer directly, use: `http://www.mydomain.com/catalog/zc_install`
 
 ### Welcome
 
