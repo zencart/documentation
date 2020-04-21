@@ -7,6 +7,8 @@ weight: 10
 
 Preamble worth reading: [How-do-I-rebuild-my-site-on-the-new-version-instead-of-upgrading](https://www.zen-cart.com/entry.php?3-How-do-I-rebuild-my-site-on-the-new-version-instead-of-upgrading). 
 
+Before you begin, remember to make a [complete backup of your files and database](/user/running/backup/). 
+
 ## 3 EASY STEPS TO UPGRADE ZEN CART
 
 **NOTE:** For each new release, there are important documents in the [/docs](https://www.zen-cart.com/docs/) folder of the Zen Cart ZIP file.  Please check this folder for any special notes about the version you are upgrading from/to.  
@@ -66,6 +68,8 @@ Any mods/add-ons you've installed will likely contain many programming changes, 
 Your list of add-on's may help you narrow down the source of any differences you're finding between versions. You may have to download the add-on again to take a look at the readme or code contained in it. You may have to contact the author to ask for an updated version.  
 
 As you make your list of changed files, etc, at this stage, you may want to move things into the Zen Cart template-override structure, if you haven't already done so. See the [Template System Documentation](/user/template/) for help on the template system.  
+
+Be sure to review the list of [not backwards compatible changes](/user/upgrading/backwards_compatible).
 
 ## 2\. Execution
 

@@ -12,13 +12,15 @@ Using an [image editor](/user/first_steps/useful_tools/#graphics-editors), creat
 
 The name `yourname` will also include a file extension, such as `.png`, `.jpg`, etc. 
 
-After creating your logo you can adjust the alt text, width, height, and image name in `includes/languages/english/YOURTEMPLATE/header.php`
+After creating your logo you can adjust the alt text, width, height, and image name in `includes/languages/english/YOURTEMPLATE/header.php`  
+
+For the purpose of this example, let's assume `yourname` is `newlogo.png`, and that the logo is 200px wide and 80px tall.
 
 ```
-define('HEADER_ALT_TEXT', 'Powered by Zen Cart :: The Art of E-Commerce');
-define('HEADER_LOGO_WIDTH', '192px');
-define('HEADER_LOGO_HEIGHT', '64px');
-define('HEADER_LOGO_IMAGE', 'logo.gif');
+define('HEADER_ALT_TEXT', 'My new alt text');
+define('HEADER_LOGO_WIDTH', '200px');
+define('HEADER_LOGO_HEIGHT', '80px');
+define('HEADER_LOGO_IMAGE', 'newlogo.png');
 ```
 
 Save this file and upload it to your server. 
@@ -39,7 +41,8 @@ Since this is a collection of several “selectors” (#logo, .centerBoxContents
 #logo {float: left;}
 ```
 
-To center the logo use `text-align: center;`.
+To center the logo use `text-align: center;`
+
 To right align the logo use `float: right;`
 
 
