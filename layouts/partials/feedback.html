@@ -44,12 +44,12 @@
     };
     ga(args.command, args.hitType, args.category, args.action, args.label, args.value);
   };
-  yesButton.addEventListener('click', () => {
+  yesButton.addEventListener('click', function() {
     yesResponse.classList.add('feedback--response__visible');
     disableButtons();
     sendFeedback(1);
   });
-  noButton.addEventListener('click', () => {
+  noButton.addEventListener('click', function() {
     noResponse.classList.add('feedback--response__visible');
     disableButtons();
     sendFeedback(0);
