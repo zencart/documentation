@@ -17,7 +17,7 @@ This is a basic guide to installing Zen Cart. If you already have Zen Cart insta
 ---
 ## A. The Basics
 
-You have downloaded the [official Zen Cart software](https://sourceforge.net/projects/zencart/files/), and want to build an online shopping cart.
+You have [downloaded the Zen Cart software from an official source](https://sourceforge.net/projects/zencart/files/), and want to build an online shopping cart.
 
 Questions to ask yourself:
 
