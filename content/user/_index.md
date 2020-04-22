@@ -8,8 +8,7 @@ menu:
 layout: docs
 ---
 
-This site replaces the old Tutorials/FAQ/Wiki content on the zen-cart.com site. 
-<br />Quick Links: &nbsp;
+Quick Links: &nbsp;
 &nbsp; [All FAQs](/user/_allpages/) &nbsp; | 
 &nbsp; [Top FAQs](/user/all_time_favorites/) &nbsp; | 
 &nbsp; [All Admin Menus](/user/admin_pages/menu_sections/) &nbsp; | 
