@@ -21,4 +21,13 @@ See [Coding Standards](/dev/contributing/coding_standards) for more details.
 We encourage you to read the [section on Git](/dev/contributing/github_workflow/)
 to learn about the workflow that the project uses.
 
+## Preserving Directory Structure
+
+To preserve you .git repository without the override warnings, create a file called `admin/includes/extra_configures/dev-skip_admin_rename.php`.  add the following 2 overrides:
+```php
+    define('ADMIN_BLOCK_WARNING_OVERRIDE', 'true');
+    define('WARN_INSTALL_EXISTENCE', '0');
+```
+and your test/developer environment can now preserve the repository structure.
+
 
