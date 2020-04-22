@@ -3,11 +3,10 @@ title: Suppressing sidebox display on specific pages
 description: Zen Cart Suppressing sidebox display on specific pages 
 category: sideboxes
 weight: 10
+type: codepage
 ---
 
-Example application: I want to display some of my sideboxes on my front page only, and suppress them from all other pages.
-
-Let's use the featured product sidebox as an example.  
+**Example 1**: I want to display the featured sidebox on my front page only, and suppress it from all other pages.
 
 Create an over-ride for the sidebox's module file. For the featured products sidebox, this would involve copying includes/modules/sideboxes/featured_products.php to includes/modules/sideboxes/YOURTEMPLATE/featured_products.php.  
 
@@ -49,4 +48,16 @@ into
 If your sidebox module doesn't have a conditional such as 
 `if ($show_featured == true) { ... } ` wrapped around the code, then just add it (changing the variable name to something suitable and unique for your sidebox to avoid unintentionally turning off other sideboxes).
 
+**Example 2**: I do not want to display any sideboxes on the checkout pages. 
+
+Modify the file `includes/templates/YOURTEMPLATE/common/tpl_main_page.php`.
+
+Add this after the comment block at the top of the file: 
+
+```
+if (in_array($current_page_base,explode(",",'checkout_shipping,checkout_payment,checkout_confirmation,checkout_success')) ) {
+  $flag_disable_right = true;
+  $flag_disable_left = true;
+}
+```
 

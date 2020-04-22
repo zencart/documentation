@@ -1,5 +1,5 @@
 ---
-title: Timezone setting 
+title: Timezone (TZ) setting 
 description: Setting the time zone in Zen Cart 
 category: new_user_topics
 weight: 10
