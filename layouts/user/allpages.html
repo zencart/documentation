@@ -3,9 +3,9 @@
 <style> .td-main main { padding-top: 2rem; }</style>
   <div>
    <h1>{{ .Title }}</h1>
-   <b>Note: </b> &nbsp;
-   <a href="/user/admin_pages/menu_sections/">Admin Menu Sections</a> are not shown in this view. 
-<br /><br />
+     <b>Note: </b> &nbsp;
+     <a href="/user/admin_pages/menu_sections/">Admin Menu Sections</a> are not shown in this view. 
+   <br><br>
    <ul>
     {{ range .Site.RegularPages.ByTitle }}
        {{ if (eq .Section "user") }} 
