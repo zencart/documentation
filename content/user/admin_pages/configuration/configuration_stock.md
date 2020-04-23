@@ -4,6 +4,8 @@ category: admin_pages
 weight: 80 
 ---
 
+The stock configuration settings control stock management as well as various things on the shopping cart page.
+
 <h2 id="check_stock_level">Check stock level</h2>
 
 <div class='indent'>Key: <b>STOCK_CHECK</b><br />

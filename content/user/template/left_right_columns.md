@@ -5,6 +5,8 @@ category: templates
 weight: 10
 ---
 
+### Turning off a column on specific pages 
+
 Firstly, if you don't already have one, create an over-ride file for tpl_main_page.php in your `includes/templates/YOURTEMPLATE/common` directory.  
 
 There is enormous scope within this one module to create turn the left and right hand columns on and off according to which page or category is to be displayed. Open it up and you will see a large comment at the top explaining some of them. Here are a few examples to help illustrate that.
@@ -40,19 +42,6 @@ if (in_array($ezpage_id,explode(",",'2,5'))) {
   }
 ```
 
-Or, you can use the settings in Admin > Configuration > EZ-Pages Settings:  
-For example:  
-
-**EZ-Pages Pages to disable left-column**  
-
-EZ-Pages "pages" on which to NOT display the normal "left" column (of sideboxes) for your site.  
-Simply list page ID numbers separated by commas with no spaces.  
-Page ID numbers can be obtained from the EZ-Pages screen under Admin > Tools.  
-ie: 21  
-or leave blank.  
-
-[Here's another way to do this](/user/ezpages/sidebox_display_changes/).
-
 To turn off the left column for the home page only, you would insert the following:  
 
 ```
@@ -60,3 +49,26 @@ if ($this_is_home_page) {
      $flag_disable_left = true;  
   }
 ```
+
+
+
+### Turning off a column on EZ-Pages via Admin 
+If you wish to disable left or right columns on specific EZ-Pages, go to 
+Admin > Configuration > EZ-Pages Settings. 
+
+To disable the left column on specific EZ-Pages, update the setting 
+*EZ-Pages Pages to disable left-column*.
+
+Simply list page ID numbers separated by commas with no spaces.  
+
+Page ID numbers can be obtained from the EZ-Pages screen under Admin > Tools.  
+ie: 21  
+or leave blank.  
+
+Here's another way to [modify sidebox display on EZ-Pages](/user/ezpages/sidebox_display_changes/).
+
+### Other options: 
+- To Globally disable the right column, go to 
+[Admin > Configuration > Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/) and  set *Column Right Status - Global* to 0.
+- There are also other ways to [change sidebox display](/user/sideboxes/suppressing_sidebox_display).
+
