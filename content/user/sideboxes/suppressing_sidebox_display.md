@@ -61,3 +61,9 @@ if (in_array($current_page_base,explode(",",'checkout_shipping,checkout_payment,
 }
 ```
 
+**Example 3**: I want all the sideboxes on the right removed.
+
+Turning off each of the sideboxes set to display on the right in 
+[Admin > Tools > Layout Boxes Controllers](/user/admin_pages/tools/layout_boxes_controller/) is not enough.  You need to reclaim the space by going to 
+[Admin > Configuration > Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/) and  setting *Column Right Status - Global* to 0. 
+

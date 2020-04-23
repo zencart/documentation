@@ -31,5 +31,26 @@ To eliminate these warnings, create a file called `admin/includes/extra_configur
     define('WARN_INSTALL_EXISTENCE', '0');
 ```
 
+## Configuration Keys 
+It can be very helpful to see the `configuration_key` values for configuration entries while you are looking at your admin and thinking about writing code. 
+The keys are shown in the [All Configs](/user/admin_pages/configuration/all/) page, but you can show them in your own admin, where they will also show any local configs you have added, using this procedure: 
 
+- In your admin, go to the hidden page `configuration.php?gID=6`. 
+- Look for the value *Admin configuration_key shows*.  
+- Set this value to 1. 
+
+Now, whenever you look at values in Admin > Configuration, you'll see the 
+key value as well, which you will use in code. 
+
+<img src="/images/show_keys.png" alt="Show Configuration Keys in Zen Cart" width="50%" />
+<br><br>
+
+
+Example: I am writing some code, and I need to see if the configuration allows add to cart on out of stock products.  Go to `Admin > Configuration > Stock` and select *Show Sold Out Image in place of Add to Cart*.  You'll see the key value is `SHOW_PRODUCTS_SOLD_OUT_IMAGE`.  So your code would be, 
+
+```
+if (SHOW_PRODUCTS_SOLD_OUT_IMAGE == '0') { 
+  // Add to cart allowed 
+...
+```
 
