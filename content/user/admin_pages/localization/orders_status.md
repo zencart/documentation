@@ -5,7 +5,10 @@ category: admin_pages
 weight: 30
 ---
 
-This page allows you to add names of new order status entries, edit existing order status name entries, or delete an order status name entry.
+The [Order Status](/user/localization/orders_status) field encapsulates where 
+the order is in your order processing workflow. 
+
+The Admin > Localization > Order Status  page allows you to add names of new order status entries, edit existing order status name entries, or delete an order status name entry.
 
 ## Add a new Order Status
 To add a new order status, click on the insert button. A box allowing you to enter the name of the status will appear. If this is the default status, check the set as default box. Click on the insert button to save this new status, click on the cancel button to discard.

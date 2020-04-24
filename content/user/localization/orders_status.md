@@ -5,6 +5,19 @@ category: localization
 weight: 10
 ---
 
+### What is an Order Status? 
+
+The order status field is a value which encapsulates where the order is in 
+your workflow.  Zen Cart has the following default order statuses: 
+
+- Pending
+- Processing
+- Delivered 
+- Update 
+
+New order statuses can be created in 
+[Admin > Localization > Orders Status](/user/admin_pages/localization/orders_status/). 
+
 ### How can I set my orders to status Shipped? 
 
 You can add a new order status (Shipped) by going to

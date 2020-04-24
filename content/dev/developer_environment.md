@@ -31,6 +31,8 @@ To eliminate these warnings, create a file called `admin/includes/extra_configur
     define('WARN_INSTALL_EXISTENCE', '0');
 ```
 
+The filename prefix `dev-` is significant: the project `.gitignore` file is set to bypass files starting with that string.  So you can keep this new file in your fork of the Zen Cart project with no worries about accidentally checking it in.
+
 ## Configuration Keys 
 It can be very helpful to see the `configuration_key` values for configuration entries while you are looking at your admin and thinking about writing code. 
 The keys are shown in the [All Configs](/user/admin_pages/configuration/all/) page, but you can show them in your own admin, where they will also show any local configs you have added, using this procedure: 
