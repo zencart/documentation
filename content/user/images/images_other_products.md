@@ -2,7 +2,7 @@
 title: Images - multiple images problems 
 description: Zen Cart Images - multiple images problems 
 category: images 
-weight: 10
+weight: 20
 ---
 Why am I seeing images for other products on my product pages?
 
