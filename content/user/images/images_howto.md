@@ -5,59 +5,59 @@ category: images
 weight: 10
 ---
 
-If you are uploading photographic type images, the format should be .jpg; if you are using clip-art style pictures, the images should be in .gif or .png format.  
+If you are uploading photographic type images, the format should be `.jpg`; if you are using clip-art style pictures, the images should be in `.gif` or `.png` format.  
 
-- You cannot have a transparent background with a .jpg but you can with a .gif or .png.  
-- Never save a photograph as a .gif - not only do you lose a lot of quality, but due to the way data is stored as a .gif, the file size will be far larger than it ought to be! Use .jpg for photographs.
-- The file size of an image is entirely dependant on the physical dimensions, the type of format it is saved in and the amount of compression applied. You may have heard things about image resolution - that has nothing to do with the file size.  
+- You cannot have a transparent background with a `.jpg` but you can with a `.gif` or `.png`.  
+- Never save a photograph as a `.gif` - not only do you lose a lot of quality, but due to the way data is stored as a `.gif`, the file size will be far larger than it ought to be! Use `.jpg` for photographs.
+- The file size of an image is entirely dependant three factors: the physical dimensions, the format it is saved in, and the amount of compression applied. You may have heard things about image resolution - that has nothing to do with the file size.  
 - These file types use what is called “lossy” compression i.e. when the file is compressed, some information is discarded.  
-Once the file is saved in a lossy format, the lost information cannot be recovered! Therefore, always start with a copy of the best image you have and never compress the original.  
+Once the file is saved in a lossy format, the lost information cannot be recovered! Therefore, always start with a copy of the best image you have and never compress the original.
 
-File size is still an important issue - even with the spread of broadband, the majority of people connecting to the web are still on dial-up connections, and unless you are aiming at a specifically broadband market, then you should endeavour to keep file sizes to a minimum commensurate with quality to enhance your viewers’ experience. 
+File size is still an important issue: It's always best to use smaller sizes whenever possible, because mobile devices use slower download speeds unless they're on a fast wifi connection. Always plan your website assets for the slowest connection your customers will usually use.
 
 **Images for the Internet**
 
-While we all want the best graphics for our websites, we need to make sure we don't make it difficult for the Internet or browsers to process our files.  Not all of these suggestions are written in stone but, following these guidelines in the beginning of image preparation will help you immensely.  The most important is image naming.
+While we all want the best graphics for our websites, we need to make sure we don't make it difficult for our customers' browsers to process our files.  Not all of these suggestions are written in stone, but following these guidelines in the beginning of image preparation will help you immensely.  The most important is image naming.
 
-There are three things we recommend when naming an image are:
+Three suggestions when naming an image are:
 
-- Do not use spaces in a filename.  It's tempting to create 'image of main product.jpg' but, the spaces often create problems for browsers as they do not all process the space in the same manner.  Just the addition of the '%20' (often substituted for the space) can often be a problem.  Instead, if you are not going to use a more descriptive name, use something like 'mainProductImage.jpg'.  The filename is still able to be read and understood that this is the image for the main product.  Spaces can be used in alt text and image titles.
-- Don't use capitals to start an image filename or for the file's extension.  MainProductImage.jpg, MainProductImage.JPG, mainProductImage.jpg and mainProductImge.JPG are not the same on the web.  They would be considered as four different files.  Capitals "can" help make sense of an image name but, save the use of beginning capital letters for the alt text and image title.
-- Try to be as descriptive as possible in your image name.  The previous mainProductImage.jpg may make perfect sense to you but not to anyone else who doesn't know what your main product is.  If your main product is a children's dresser that's natural pine and has four drawers, it can be presented in several ways.  Consider how customers find your site when naming a file.  If they are looking for children's items, perhaps 'childrens-dresser-4drawer-pine.jpg' would work.  If folks come to your site looking for a particular wood, then 'pine-4drawer-childrens-dresser.jpg' might be better for your site.
+- Do not use spaces in a filename.  It's tempting to create `image of main product.jpg` but the spaces can often be misinterpreted. Use something like `mainProductImage.jpg`.  The filename is still able to be read and understood that this is the image for the main product.  Spaces can be used in alt text and image titles (which Zen Cart provides from the product/category name).
+- Don't use capitals to start an image filename or for the file extension.  `MainProductImage.jpg`, `MainProductImage.JPG`, `mainProductImage.jpg` and `mainProductImge.JPG` are not the same on the web.  They would be considered as four different files.  Capitals "can" help make sense of an image name but, save the use of beginning capital letters for the alt text and image title.
+- Try to be as descriptive as possible in your image name.  The previous `mainProductImage.jpg` mentioned above may make perfect sense to you but not to anyone else who doesn't know what your main product is.  If your main product is a children's dresser made from natural pine and has four drawers, it can be presented in several ways. Consider how customers find your site when naming a file: If they are looking for children's items, perhaps `childrens-dresser-4drawer-pine.jpg` would work.  If folks come to your site looking for a particular wood, then `pine-4drawer-childrens-dresser.jpg` might be better for your site.
 
 These are recommendations to help create a standard naming practice before adding images to your site.  We hope they make dealing with images much easier.
 
-**ZC and image handling**  
+**Zen Cart and image handling**  
 
-ZC displays images in 3 sizes - the small ones (thumbnails) shown in the various listings, a medium size used on the Product Info page and a large version accessed from the "larger image" link on the Product Info page.
-You can set different sizes for the different types of listing, but I'd suggest for the sake of uniformity through your site that you set all those to the same dimensions as your "small" setting.
+Zen Cart displays images in 3 sizes - the small ones (thumbnails) shown in the various listings, a medium size used just on the Product Info page and a large version accessed from the "larger image" link on the Product Info page.
 
-You can set the sizes for the small and medium by going to [Admin > Configuration > Images](/user/admin_pages/configuration/configuration_images/). If you want all your images to be the same width but the heights may vary, then set the Width to the figure you require and the height to 0 and make sure *Calculate Image Size* is turned on. Conversely, if you want all the images to be the same height, then set the Width to 0 and the height to the figure you require.  
+You can set the display-size for the small and medium images by going to [Admin > Configuration > Images](/user/admin_pages/configuration/configuration_images/). If you want all your images to be the same width but the heights may vary, then set the Width to the fixed maximum you require and the height to 0 and make sure *Calculate Image Size* is turned on. Conversely, if you want all the images to be the same height, then set the Width to 0 and the height to the maximum you require.  
 
-You can now simply upload all your pics using your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) to your `/images` folder and let the coding do all the work - but this will generally end up with you having a far from perfect result. 
+After this you could simply upload all your pictures using your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) to your `/images` folder and let the coding do all the work - but this will generally end up with you having a far from perfect result. 
 
 Why are the results not (usually) perfect? The ideal we are seeking is a clear image that displays quickly, but by only loading one image to be used in a variety of sizes by ZC, there is usually going to be a compromise on one or the other - or both. 
 
-For example, if you only load small images at 100 pixels wide and you have your medium image width set to 400 for the Product Info page, then the quality of your image is going to be degraded (remember the “lossy” compression?) when the code expands it to four times the size.  
+For example, if you only provide the images at the small 100 pixels width and you have your medium image width set to 400 for the Product Info page, then the quality of your medium-size image is going to be degraded (remember the “lossy” compression?) when the code expands it to four times the size.
 
-On the other hand, if you’ve only uploaded large files at say 400pixels wide, then although ZC will display them at your small image size of 100pixels wide, the file size of the image will not be reduced, so if your large image is 25KB, then so will your thumbnail be…and 10 thumbnails on a page makes 250KB which starts to slow your listings down to a crawl for dial-up users.  
+On the other hand, if you’ve uploaded image files at say 400 pixels wide, then although Zen Cart will display them correctly for both small 100px and medium 400px sizes in the right places, the those 400px images might be 25KB (larger than needed for displaying at 100px size) ... so if you have 10 100px thumbnails on a page at 25KB each that makes 250KB which starts to slow your listings down to a crawl for mobile visitors.
 
 To avoid these issues, the solution is to create 3 sets of images – small, medium and large, compressed and saved at the dimensions you wish to display them and then uploaded to the **images**, **images/medium** and **images/large** directories. If you have hundreds of images, this may seem like a daunting prospect, but it shouldn’t be quite as bad as it sounds. Any decent image-editing application will have some system for batch-processing (carrying out the same actions on multiple files).  
 
-**NOTE:** the basic "images" (thumbnails, normal-size images) should be uploaded via admin in the usual way via the product-edit screen, and then FTP should be used for uploading your `_MED` and `_LRG` images, as mentioned in the preceding paragraph.  
+**NOTE:** the basic "images" (thumbnails, normal-size images) should be uploaded via your admin in the usual way via the product-edit screen, and then FTP should be used for uploading your `_MED` and `_LRG` images, as mentioned in the following section.  
 
-**Optimising images for ZC**  
+**Optimising images for Zen Cart**  
 
 Start by deciding on the size you want the large image to display at.  
 
-As mentioned earlier, you can’t set the dimensions of the large image in ZC, but it will display at the dimensions you upload it, although you may have to tweak the javascript file for the pop-up window to open at the size you want. The file you need to edit is `/includes/modules/pages/product_info/jscript_main.php`. In the function popupWindow(url) change width= and height= to your sizes. (You can also decide whether or not you want scrollbars by setting scrollbars=no or scrollbars=yes.) Then save the file to `includes/modules/YOURTEMPLATE/pages/product_info/`. 
+You can’t set the dimensions of the large image (shown when the visitor clicks the Larger Image link) in Zen Cart, but it will display at the dimensions you upload it.
 
-You shouldn’t choose a size larger than that of the original (if you have to expand it, you’re liable to lose quality). For most purposes, making the large image 400 or perhaps 500 pixels wide should be sufficient although if you’re working from a digital camera, you may want to choose a size that is a direct proportion of the camera output such as 480 or 640.  
+You shouldn’t choose a size larger than that of the original (if you have to expand it, you will likely lose quality). For most purposes, making the large image 480 or perhaps 640 pixels wide should be sufficient.  
 
-In fact, let’s assume you are working with a collection of photographs taken with a digital camera, with a mix of landscape and portrait images. This in itself poses another “problem” in that the layout of your pages will vary slightly depending on whether your image is sideways or upright. For the sake of uniformity throughout your site, I would suggest that you decide on a square image with your photographs re-sized to fit horizontally or vertically as required and the remaining area is just “white space” 
-(unless you have a different colour as your background.)  
 
-For this explanation we want the large picture to be either 480 pixels wide or 480 pixels high depending on its orientation so that everything remains in proportion; we want the medium picture to be 240 and the small to be 120\. I’m also assuming that all your images will have unique names – naming is for another tutorial! Having said that, it’s recommended that the large images are called `imagename_LRG.jpg` and medium are called `imagename_MED.jpg` – [graphics editors](/user/first_steps/useful_tools/#graphics-editors) allow renaming of multiple files. They also allow some of the processing below. 
+Scenario:
+Let’s assume you are working with a collection of photographs taken with a digital camera, with a mix of landscape and portrait images. This in itself poses another “problem” in that the layout of your pages will vary slightly depending on whether your image is sideways or upright. For the sake of uniformity throughout your site, it would be good to decide on a square image size and re-size your photographs to fit horizontally or vertically as required and the remaining area is just “white space” (unless you have a different colour as your background, in which case you could choose that colour or transparent if you're saving as `.png`.)
+
+In this example scenario we want the large picture to be either 480 pixels wide or 480 pixels high depending on its orientation so that everything remains in proportion; we want the medium picture to be 240 and the small to be 120. Let's assume that all your images will have unique names (see the naming suggestions above). Having said that, Zen Cart requires that the image filenames follow a pattern, where the base/thumbnail images are called `imagename.jpg` and large images are called `imagename_LRG.jpg` and medium are called `imagename_MED.jpg` – [graphics editors](/user/first_steps/useful_tools/#graphics-editors) allow renaming of multiple files. They also allow some of the processing below. 
 
 1. Gather all the images in a folder on your hard drive.  
 2. Copy all the landscape orientated pics to a new folder (call it **landscape**)  
@@ -76,4 +76,4 @@ For this explanation we want the large picture to be either 480 pixels wide or 4
 13. Run a batch-process on the files in **small** to resize to 125 pixels square; you may as well optimize for web as well.  
 14. Upload them all to **images**.  
 
-You have now given ZC the best chance of giving your visitors the best visual display at the optimum download time.
+You have now given Zen Cart the best chance of giving your visitors the best visual display at the optimum download time.
