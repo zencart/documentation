@@ -8,9 +8,12 @@ weight: 30
 This page allows you to manage various "fortune cookie"-type text and image banners.
 This section manages the individual banners and their groups.
 
-Steps include: - Create banner and include it in the Banner Manager banner list - In this step, a banner is also placed in a Banner Group - Use Configuration : Layout Settings to assign each pre defined banner "location" in a banner group (or leave empty).
+Steps include: 
 
-Banners can be HTML, or image or Flash, or a combination. Its a flexible way to add dynamic content.
+- Create banner and include it in the Banner Manager banner list - In this step, a banner is also placed in a Banner Group 
+- Use Configuration : Layout Settings to assign each pre defined banner "location" in a banner group (or leave empty).
+
+Banners can be HTML, Image or Flash, or a combination. Its a flexible way to add dynamic content.
 
 Tips: If you are using different sizes for the banners, you can create a "Banner Group" for each size and include the banner size in the Banner Group name to keep track of which banner fits where.
 

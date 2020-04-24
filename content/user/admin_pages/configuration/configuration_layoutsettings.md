@@ -4,6 +4,8 @@ category: admin_pages
 weight: 180 
 ---
 
+See also <a href="/user/admin_pages/catalog/product_types_edit_layout/">Admin &gt; Catalog &gt; Product Types &gt; Layout Settings</a> for product type specific layout settings.
+
 <h2 id="column_width__left_boxes">Column Width - Left Boxes</h2>
 
 <div class='indent'>Key: <b>BOX_WIDTH_LEFT</b><br />

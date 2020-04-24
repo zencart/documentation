@@ -1,6 +1,6 @@
 ---
 title: Locations/Taxes
-description: Location information 
+description: Countries, Zones and Tax Classes and Rates
 weight: 50 
 layout: docs
 ---
