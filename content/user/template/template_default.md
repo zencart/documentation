@@ -11,8 +11,7 @@ Sometimes the word `default` is also used to refer to a
 [default code file](/user/new_user_topics/no_such_file/#how-do-you-find-the-default-file) - a file that can be 
 overridden using [template overrides](/user/new_user_topics/overrides/).
 
-Zen Cart also comes with two [other templates](/user/template/other_templates): 
-`responsive_classic` and `classic`. 
+Zen Cart also comes with another [template](/user/template/other_templates), called `responsive_classic`. 
 
 See the other FAQ on [template overrides](/user/template/template_overrides) for more information.
 
@@ -20,19 +19,19 @@ See the other FAQ on [template overrides](/user/template/template_overrides) for
 
 ### Can I use template_default? 
 
-You *do* use the default template in every case where you don't [override](/user/first_steps/overrides/) a file. 
+You *do* use the it in every case where you don't [override](/user/first_steps/overrides/) a file. 
 
-However, you likely don't want to run your store with 
-[Tools > Template Selection](/user/admin_pages/tools/template_selection/) 
-set to use `template_default`.  The reason for this is that 
-the CSS for the default template is specifically designed to make it easy to find the components of a page, rather than for attractive appearance. 
-(The question "why is the default template so ugly?" misses this point - 
-the CSS for the default template is designed as a pedagogic tool for helping
-people learn how to build a template and write CSS.) 
+However, by default, the 
+[selected template](/user/admin_pages/tools/template_selection/)
+for your store is `responsive_classic`.  
+
+This means that when Zen Cart looks for a template file, a language file, a stylesheet or any other [template file](/user/new_user_topics/template_files/), it looks in `responsive_classic` first.
+Then, if the file isn't found, it looks in `template_default`. 
 
 ### Is template_default a good base for my new template design? 
 
-The default template was created in an era prior to the widespread use of 
+Not really.  It was created in an era prior to the widespread use of 
 mobile devices.  For this reason, `responsive_classic` is a better choice 
 for a base for a new template. 
+
 
