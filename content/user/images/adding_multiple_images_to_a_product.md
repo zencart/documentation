@@ -2,7 +2,7 @@
 title: Additional Images - adding 
 description: Images in Zen Cart - how to give a product multiple images
 category: images
-weight: 10
+weight: 30
 ---
 
 ## A product owns 1 filename 
