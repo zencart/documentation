@@ -5,7 +5,7 @@ category: admin_pages
 weight: 21
 ---
 
-This page has a series of flags that allow you to enable or disable the fields that are shown on the Product Info page.  
+This page has a series of flags that allow you to enable or disable the fields that are shown on the Product Info page *for the currently selected product type*.   These augment the product-type-independent fields which are set on Admin > Configuration > Layout Settings. 
 
 For example: 
 
