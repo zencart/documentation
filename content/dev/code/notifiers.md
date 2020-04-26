@@ -381,8 +381,8 @@ class exampleObserverClass extends base
     $this->attach($this, ['NOTIFY_LISTENER_NUMBER_ONE', 'NOTIFY_LISTENER_NUMBER_TWO']);
   }
   
-  public function update(&$class, $event, $param1, &$param2, &$param3, &$param4, &$param5) {
-  
+  public function update(&$class, $event, $param1, &$param2, &$param3, &$param4, &$param5)
+  {
       switch $event {
         case 'NOTIFY_LISTENER_NUMBER_ONE':
             if ($param1 > 5000) {
