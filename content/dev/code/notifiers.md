@@ -21,25 +21,26 @@ In order to implement the observer/notifier system ("ONS") in a class, you will 
 
 ### Notifiers: Big Brother is watching
 
-So, what is all the fuss about?
-
-The point of the ONS is that developers can write code that wait for certain events to happen, and then when they do, have their own code executed.
+The point is that developers can write code that wait(listen) for certain events to happen, and then when they do, have their own code executed.
 
 So, how are events defined, where are they triggered?
 
-Events are triggered by code added to the core for v1.3 (with more to be added over time). In any class that wants to notify of an event happening we have added:
+Events are triggered by calling `$this->notify` in any class that `extends base`:
 
 <pre> $this->notify('EVENT_NAME');
 </pre>
 
-An example would probably help here:
-
-In the shopping cart class after an item has been added to the cart this event is triggered:
+Example: In the shopping cart class after an item has been added to the cart this event is triggered:
 
 <pre> $this->notify('NOTIFIER_CART_ADD_CART_END');
 </pre>
 
-There are many other events that have notifiers in Zen Cart v1.3 and newer; for a list [see here](/dev/code/notifiers_list).
+In procedural code (or not inside a class that `extends base`) use the global `$zco_notifier` object. For example, inside the `zen_mail` function this event is triggered, which allows a plugin to update the sent email format:
+
+<pre>  $zco_notifier->notify('NOTIFY_EMAIL_DETERMINING_EMAIL_FORMAT', $to_email_address, $customers_email_format, $module);
+</pre>
+
+Consult the [list of built-in notifiers](/dev/code/notifiers_list) for further reference.
 
 All of this notifying is all well and good, but how does this help developers?
 
@@ -87,7 +88,8 @@ The update method is passed three parameters. These are:
 
 *   &$callingClass - This is a reference to the class in which the event occurred, allowing you access to that class's variables
 *   $notifier - The name of the notifier that triggered the update (It is quite possible to observe more than one notifier)
-*   $paramsArray - Not Used Yet (for future)
+*   $param1 - immutable data. Could be an array or string or integer. 
+*   &$param2, &$param3, &$param4 ... up to &$param9 -- mutable variables that can be directly updated by the observer code
 
 NB! The observer/notifier system is written for an OOP-based application, as the observer expects to attach to a class that has notifiers within its methods. However a lot of the code within Zen Cart is still procedural in nature and not contained within a class.
 
@@ -302,6 +304,26 @@ class myBogof extends base {
   }
 }
 ```
+
+### Using Observers To Interact With And Update Passed Parameters Directly
+
+The real power of using Observer classes to respond to Notifier hooks is in directly updating passed parameters in real time based on the custom logic offered by the observer class.
+
+For this there are two requirements: pass the variable to the notifier hook, receive that variable by-reference in the observer function.
+
+
+
+
+```
+$zco_notifier->notify('NOTIFY_EMAIL_DETERMINING_EMAIL_FORMAT', $to_email_address, $customers_email_format, $module);
+
+```
+
+
+### Listening to Multiple Notifier Hooks In A Single Observer Class
+
+@TODO - in progress ...
+
 
 ### Plugins which support Notifier Use 
 Some plugins which can be helpful during development when using notifiers include:
