@@ -303,8 +303,8 @@ class myBogof extends base {
 }
 ```
 
-### Mods which support Notifier Use 
-A number of mods are provided which can be helpful during development when using notifiers: 
+### Plugins which support Notifier Use 
+Some plugins which can be helpful during development when using notifiers include:
 
 * [Zen Cart Notifier Report](https://www.zen-cart.com/downloads.php?do=file&id=2260)
 * [Zen Cart Notifier Trace](https://www.zen-cart.com/downloads.php?do=file&id=1114)
