@@ -17,6 +17,10 @@ This document lists changes to the database schema or contents which deserve spe
 
 - The table containing the EZ-Pages data (`ezpages`) was split into two tables, `ezpages` and `ezpages_content`.  This was done in order to add multi-language capabilities. Accordingly, template files which reference the `ezpages` table will need adjustment to account for this division.
 
+### Zen Cart 1.5.5
+
+The arguments for the notifier `NOTIFY_ORDER_AFTER_SEND_ORDER_EMAIL` were changed.  This necessitated a code change in the observers watching for it. 
+
 ### Zen Cart 1.5.0 
 
 - The admin menus are no longer built by files ending in `.dhtml`.  Instead, a new database table called `admin_pages` was introduced.  Mods which create their own menu entries must also follow this convention.  Guidelines for [upgrading plugins to 1.5](/dev/plugins/upgrading_to_1.5) include instructions on this step.
