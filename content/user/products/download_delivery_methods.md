@@ -22,6 +22,28 @@ This approach can be problematic if several people buy and download the same thi
 
 Your Apache/Nginx logs may give you more insights about download-by-redirect downloads. You won't find those in PHP logs.
 
+### Serving files via a URL such as sharing Dropbox links
+
+If using Dropbox links for your file URLs, change the `&dl=0` to `&dl=1` on the "sharing link" that Dropbox gives you. This will make the download happen immediately, instead of the customer seeing the file open on the Dropbox website.
+
+### Serving files via AWS
+
+If you have set up your AWS credentials, when you configure your product attributes to specify a filename, simply give `aws:bucketname/filename.ext` as the filename in attributes controller.
+
+To set you AWS credentials, create an `/includes/extra_datafiles/dev-aws_credentials.php` file containing the following:
+
+```php
+<?php
+if (!defined('IS_ADMIN_FLAG')) die('UNAUTHORIZED');
+
+// AWS website: https://console.aws.amazon.com
+// Use the AWS console's IAMS screen to create a user for downloading your S3 files.
+// Copy the Access Key and Secret and insert them as shown, below:
+define('AMAZON_S3_ACCESS_KEY', 'your aws access key id here');
+define('AMAZON_S3_ACCESS_SECRET', 'your aws secret here');
+
+```
+
 ## Download without Redirect
 
 If **Download by Redirect is set to False**, then the download link given to the customer is the direct link to the file in your /download folder, meaning they can download as often as they want and share the link with others, potentially letting people steal your downloads.   
