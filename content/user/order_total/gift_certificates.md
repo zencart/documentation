@@ -43,9 +43,12 @@ To sell Gift Certificates in your store, you need to create them as specific pro
 4\. Now go to Modules > Order Total, select Gift Certificates, and click Install. This installs the Gift Certificate module. 
 
 ### HOW DOES IT WORK THEN ?
-After the Administrator has approved the Gift Certificate (There's a "release" button in admin area if someone buys one), THEN the Gift Certificate funds are made available to the customer.  
 
-Upon release/approval, they are immediately added to the Customer's Gift Certificate balance.  
+Gift Certficates may be optionally queued for release by the administrator. 
+
+If the *Queue Purchases* setting in Admin > Modules > Order Total > Gift Certificates is used, then after purchase, the administrator must "release" the gift certificate. A button indicating queued gift certificates is shown in the admin panel.  Once the release is done, the Gift Certificate funds are made available to the customer, by adding them to the Customer's Gift Certificate balance.  
+
+If the *Queue Purchases* setting is not used, the funds are made available in the Customer's Gift Certificate balance immediately after purchase.  
 
 The customer can then USE those funds for themselves, OR they can email them to friend(s) via the links provided automatically in the store (esp shopping cart sidebox). They can email as much as they want, to various people, up to the amount they've purchased. Whoever they email it to will receive a new redemption code and can follow the redemption process, either redeeming via the email link, going to the Gift Certificate FAQ page or redeeming during checkout. The customer can email the funds again if they wish or use the GV Balance for themselves.  
 
@@ -59,4 +62,6 @@ The customer can then USE those funds for themselves, OR they can email them to 
 A customer can enter as many Gift Certificates as they want on the checkout_payment page or gift-certificate redemption page, and then apply what ever portion of their Gift Certificate Balance to the order.
 
 **NOTE:** Gift Certificates can also be claimed by using the link provided in the email and logging in to claim the Gift Certificate to add it to their available balance.   And then they are free to apply the amount to use against any future order during checkout on the checkout_payment.
+
+**NOTE:** Gift Certificates are sometimes also called "Gift Vouchers" by our friends in the United Kingdom.  You will hear these terms used interchangably. 
 
