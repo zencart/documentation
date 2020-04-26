@@ -8,7 +8,9 @@ weight: 30
 This page allows you to generate gift certificates and issue them by email.
 
 ## To generate/mail a gift certificate from your web site
-Note: mailing gift certificates requires the gift certificate to be installed. Please note that emails are recognized by redemption code, and not a name. This is no harder then using any web mail.
+Mailing gift certificates requires the Gift Certificates module to be installed (under Admin > Modules > Order Total). 
+
+**Note:** Gift Certificates are recognized by redemption code, and not a name. 
 
 1. Log in to the Zen Cart Admin section.
 
@@ -53,8 +55,8 @@ or visit http://www.YOURSITE.com/store/ and enter the code during the checkout p
 
 This email address was given to us by you or by one of our customers. If you feel that you have received this email in error, please send an email to YOURSITE@YOURMAIL.com
 ```
+## Releasing Gift Certificates Created by Admin 
+For stores that use the *Queue Purchases* setting in Admin > Modules > Order Total > Gift Certificates, purchased Gift Certificates must be released before they can be used. 
 
-## Release a gift certificate once issued
-If you are generating a gift certificate for one someone purchased, you will need to go to the Gift Certificates Queue menu to release the gift certificate that you have just issued.
-
+Gift Certificates created by the admin are not subject to this restriction; no release is required. 
 

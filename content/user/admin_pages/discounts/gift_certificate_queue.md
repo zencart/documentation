@@ -5,7 +5,7 @@ category: admin_pages
 weight: 20
 ---
 
-This page allows you to view and release gift certificates which have been purchased but not yet issued.
+This page allows you to view and release gift certificates which have been purchased but not yet issued.  This situation arises when the *Queue Purchases* setting in Admin > Modules > Order Total > Gift Certificates is used; otherwise, there is no queue. 
 
 # Release certificate
 - If you have issued a gift certificate, possibly via the Mail Gift Certificate menu function, you can release the certificate as having been issued.

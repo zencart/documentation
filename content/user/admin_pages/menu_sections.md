@@ -109,7 +109,7 @@ index: false
 
 *   [Coupon Admin](/user/admin_pages/discounts/coupon_admin/) — Manage discount coupons.
 *   [Gift Certificates Queue](/user/admin_pages/discounts/gift_certificate_queue/) — View and release gift certificates which have been issued.
-*   [Mail Gift Certificate](/user/admin_pages/discounts/send_gift_certificate/) — Generate gift certificates and issue them by e-mail.
+*   [Send a Gift Certificate](/user/admin_pages/discounts/send_gift_certificate/) — Generate gift certificates and issue them by e-mail.
 *   [Gift Certificates sent](/user/admin_pages/discounts/gift_certificates_sent/) — View gift vouchers which have been sent.
 
 ### [Admins](/user/admin_pages/admins/)
