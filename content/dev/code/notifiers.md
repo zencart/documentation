@@ -42,7 +42,7 @@ In the shopping cart class after an item has been added to the cart this event i
 <pre> $this->notify('NOTIFIER_CART_ADD_CART_END');
 </pre>
 
-There are many other events that have notifiers in Zen Cart v1.3 and newer; for a list [see here](/dev/code_notifier_list).
+There are many other events that have notifiers in Zen Cart v1.3 and newer; for a list [see here](/dev/code/notifiers_list).
 
 All of this notifying is all well and good, but how does this help developers?
 
