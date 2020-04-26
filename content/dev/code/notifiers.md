@@ -7,20 +7,17 @@ weight: 10
 
 ### Introduction
 
-One of the many goals of the Zen Cart project has always been to make it easier for third party developers to add functionality to the core code in an easy and unobtrusive manner. To do this we have in the past relied on the override and auto inclusion systems. However these still do not give developers an easy method of hooking into many areas of core code, without 'hacking' core files themselves.
+One of the many goals of the Zen Cart project has always been to make it simple for third party developers to add functionality to the core code in an easy and unobtrusive manner. To do this we use both the override and auto inclusion system (for cases where directly adding/editing core (or replacements of core) files may be needed), and the observer-notifier system.
 
-The observer/notifier system was introduced to give developers unprecedented access to core code, without the need to touch any core files at all. Although ostensibly written for an object-oriented code base, we will see later how it can be used with general procedural code as well.
+The observer/notifier system (an implementation of the "pub-sub" pattern) was introduced to give developers unprecedented access to core code, without the need to touch any core files at all. Although ostensibly written for an object-oriented code base, it can be used with general procedural code as well.
 
 ### Extending All Classes
 
-In order to implement the observer/notifier system, some structural changes have been made to Zen Cart. Firstly two new classes have been introduced: the base class (`class.base.php`) and the notifier class (`class.notifier.php`).
-
-The base class contains the code that is used to implement the observer/notifier system. However to make it effective all other Zen Cart classes now have to be declared as children of the base class. You will see this if you look at the source of any of the Zen Cart classes.
+In order to implement the observer/notifier system ("ONS") in a class, you will need to make that class extend the `base` class. eg:
 
 <pre>  class currencies extends base {
 </pre>
 
-The notifier class will be discussed later, when we look at extending the observer/notifier system (ONS) into procedural code.
 
 ### Notifiers: Big Brother is watching
 
