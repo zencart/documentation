@@ -9,7 +9,7 @@ weight: 10
 
 One of the many goals of the Zen Cart project has always been to make it simple for third party developers to add functionality to the core code in an easy and unobtrusive manner. To do this we use both the override and auto inclusion system (for cases where directly adding/editing core (or replacements of core) files may be needed), and the observer-notifier system.
 
-The observer/notifier system (an implementation of the "pub-sub" pattern) was introduced to give developers unprecedented access to core code, without the need to touch any core files at all. Although ostensibly written for an object-oriented code base, it can be used with general procedural code as well.
+The observer/notifier system (an implementation of the ["pub-sub" pattern](https://en.wikipedia.org/wiki/Publish–subscribe_pattern)) was introduced to give developers unprecedented access to core code, without the need to touch any core files at all. Although ostensibly written for an object-oriented code base, it can be used with general procedural code as well.
 
 ### Extending All Classes
 
