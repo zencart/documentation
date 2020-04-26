@@ -273,6 +273,11 @@ class myBogof extends base {
    * We loop thru the cart until we find the bogof item, get its final price, calculate the saving
    * and adjust the cart total accordingly.
    *
+   * ALERT: There are still some things missing in this example:
+   * - although the adjust total is correctly shown on the shopping cart page and sidebox, the line total is not adjusted.
+   * - this will probably produce a confusing output at checkout.
+   * - needs work on updating taxes as well
+   *
    * @param object $class
    * @param string $eventID
    */
@@ -299,16 +304,7 @@ class myBogof extends base {
     $_SESSION['cart']->total -= $cost_saving;
   }
 }
-?>
 ```
-
-NB: There are still some weaknesses here...
-
-First although the adjust total is correctly shown on the shopping cart page and sidebox, the line total is not adjusted.
-
-Secondly this will probably produce a confusing output at checkout.
-
-Third: Have not tested for tax compliance yet ( @TODO )
 
 ### Mods which support Notifier Use 
 A number of mods are provided which can be helpful during development when using notifiers: 
