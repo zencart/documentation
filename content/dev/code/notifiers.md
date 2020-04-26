@@ -7,9 +7,9 @@ weight: 10
 
 ### Introduction
 
-One of the many goals of the Zen Cart project has always been to make it simple for third party developers to add functionality to the core code in an easy and unobtrusive manner. To do this we use both the override and auto inclusion system (for cases where directly adding/editing core (or replacements of core) files may be needed), and the observer-notifier system.
+One of the many goals of the Zen Cart project has always been to make it simple for third party developers to add functionality to the core code in an easy and unobtrusive manner. To do this we use the [override system](/user/template/template_overrides/), the auto inclusion system, and the observer-notifier system.
 
-The observer/notifier system (an implementation of the ["pub-sub" pattern](https://en.wikipedia.org/wiki/Publish–subscribe_pattern)) was introduced to give developers unprecedented access to core code, without the need to touch any core files at all. Although ostensibly written for an object-oriented code base, it can be used with general procedural code as well.
+The observer/notifier system is an implementation of the ["pub-sub" pattern](https://en.wikipedia.org/wiki/Publish–subscribe_pattern).  It was introduced to give developers unprecedented access to core code, without the need to touch any core files at all. Although it was written for an object-oriented code base, it can be used with procedural code as well.
 
 ### Extending All Classes
 
@@ -21,9 +21,10 @@ In order to implement the observer/notifier system ("ONS") in a class, you will 
 
 ### Notifiers: Big Brother is watching
 
-The point is that developers can write code that wait(listen) for certain events to happen, and then when they do, have their own code executed.
+The point of the ONS is to permit developers to write code that listen for certain events to happen, and then when they do, have their own code executed.
 
-So, how are events defined, where are they triggered?
+Events are simply mnemonic strings.  You can see a 
+[list of notifiers](/dev/code/notifiers_list) for reference.
 
 Events are triggered by calling `$this->notify` in any class that `extends base`:
 
@@ -35,14 +36,10 @@ Example: In the shopping cart class after an item has been added to the cart thi
 <pre> $this->notify('NOTIFIER_CART_ADD_CART_END');
 </pre>
 
-In procedural code (or not inside a class that `extends base`) use the global `$zco_notifier` object. For example, inside the `zen_mail` function this event is triggered, which allows a plugin to update the sent email format:
+In procedural code (or outside of a class that `extends base`) use the global `$zco_notifier` object. For example, inside the `zen_mail` function this event is triggered, which allows a plugin to update the sent email format:
 
 <pre>  $zco_notifier->notify('NOTIFY_EMAIL_DETERMINING_EMAIL_FORMAT', $to_email_address, $customers_email_format, $module);
 </pre>
-
-Consult the [list of built-in notifiers](/dev/code/notifiers_list) for further reference.
-
-All of this notifying is all well and good, but how does this help developers?
 
 ### Observe and Prosper
 
@@ -349,6 +346,6 @@ Some plugins which can be helpful during development when using notifiers includ
 * [Zen Cart Notifier Report](https://www.zen-cart.com/downloads.php?do=file&id=2260)
 * [Zen Cart Notifier Trace](https://www.zen-cart.com/downloads.php?do=file&id=1114)
 
-### List of Notifiers 
-A [list of notifiers](/dev/code/notifiers_list) is provided for the current release. 
-
+### Information about Notifiers 
+* A [list of notifiers](/dev/code/notifiers_list) is provided for the current release. 
+* The [output of the notifier report](/dev/code/notifier_report/) is provided on the docs site for easy reference by developers. 

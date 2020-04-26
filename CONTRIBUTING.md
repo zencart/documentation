@@ -2,21 +2,18 @@
 
 Thanks for contributing to the Zen Cart documentation!  
 
-The intention is for documentation in this repository to replace the 
-legacy Wiki and FAQs/Tutorials page on zen-cart.com. 
+The intention is for documentation in this repository to replace the legacy Wiki and FAQs/Tutorials page on zen-cart.com. 
 
 ## Getting Started 
-To get started, follow the guidelines in the project's README file 
-for cloning and setting up the repo and running `Hugo` locally. 
+To get started, follow the guidelines in the project's README file for cloning and setting up the repo and running `Hugo` locally. 
 
-Submit your changes as Pull Requests, following the guidelines 
-provided below.  
+Submit your changes as Pull Requests, following the guidelines provided below.  
 
 ## Content Recommendations 
 
 Structure your writing to explain current operation and *then* (if necessary and relevant) past history. 
 
-In other words, don't say "we don't do it the old way anymore, and first let us explain the old way."
+In other words, don't say, "we don't do it the old way anymore, and first let us explain the old way."
 
 ## Documentation Standards 
 
@@ -40,7 +37,7 @@ weight: 10
 
     - Use `weight: -1` for the first article in a folder (generally a "Using &lt;subsystem&gt;" or "About &lt;subsystem&gt;" type article). 
     
-    - There are a few exceptions to this rule, such as Release History (sorted in reverse chronological order) and Admin Pages (sorted in the order they appear in Zen Admin), but for the most part, this rule is followed.
+    - There are a few exceptions to this rule, such as Release History (sorted in reverse chronological order), Images (sorted by increasing complexity) and Admin Pages (sorted in the order they appear in Zen Admin), but for the most part, this rule is followed.
 
 - Don't use a headline starting with #.  The `title` in the block above is sufficient.
 
