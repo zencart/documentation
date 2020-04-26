@@ -30,7 +30,7 @@ If using Dropbox links for your file URLs, change the `&dl=0` to `&dl=1` on the 
 
 If you have set up your AWS credentials, when you configure your product attributes to specify a filename, simply give `aws:bucketname/filename.ext` as the filename in attributes controller.
 
-To set you AWS credentials, create an `/includes/extra_datafiles/dev-aws_credentials.php` file containing the following:
+To set your AWS credentials, create an `/includes/extra_datafiles/dev-aws_credentials.php` file containing the following:
 
 ```php
 <?php
