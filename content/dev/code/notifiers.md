@@ -337,8 +337,69 @@ class emailSpamFilter extends base
 
 ### Listening to Multiple Notifier Hooks In A Single Observer Class
 
-@TODO - in progress ...
 
+An observer can listen to multiple notifier hooks. But this introduces a problem: how does the `update()` method know which event it's responding to?
+
+There are two ways to handle this situation: custom `updateXYZ()` functions, or using a `switch` statement to handle each event based on the event name. Each has its pros and cons.
+
+The recommended way is to use a custom `update()` method name, conforming to the pattern of: `updateListenerNameInCamelCase()`.
+
+Example:
+
+```
+class exampleObserverClass extends base
+{
+  public function __construct {
+    $this->attach($this, array('NOTIFY_LISTENER_NUMBER_ONE', 'NOTIFY_LISTENER_NUMBER_TWO'));
+  }
+  
+  public function updateNotifyListenerNumberOne(&$class, $event, $price, &$data, &$purchase_order, &$shipping_cost) {
+    if ($price > 5000) {
+      // set status because threshold was met
+      $purchase_order['threshold_approved'] = true;
+      // free shipping
+      $shipping_cost = 0;
+    }
+  }
+
+  public function updateNotifyListenerNumberOne(&$class, $event, $payment_details, &$customer_email, &$order_data) {
+    if ($payment_details['status'] == 'failed') {
+      $order_data['payment_status'] = 'failed';
+    }
+  }
+}
+```
+
+Or, you could loop through the list of attached notifiers, and respond via one great big `switch` statement, with generic variable names:
+
+```
+class exampleObserverClass extends base
+{
+  public function __construct {
+    $this->attach($this, array('NOTIFY_LISTENER_NUMBER_ONE', 'NOTIFY_LISTENER_NUMBER_TWO'));
+  }
+  
+  public function update(&$class, $event, $param1, &$param2, &$param3, &$param4, &$param5) {
+  
+      switch $event {
+        case 'NOTIFY_LISTENER_NUMBER_ONE':
+            if ($param1 > 5000) {
+                // set status because threshold was met
+                $param3['threshold_approved'] = true;
+                // free shipping
+                $param4 = 0;
+            }
+            break;
+
+        case 'NOTIFY_LISTENER_NUMBER_TWO':
+            if ($param1['status'] == 'failed') {
+                $param3['payment_status'] = 'failed';
+            }
+            break;
+      }
+  }
+}
+```
 
 ### Plugins which support Notifier Use 
 Some plugins which can be helpful during development when using notifiers include:
