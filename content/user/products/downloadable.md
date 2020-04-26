@@ -9,7 +9,8 @@ Background:
 
 - Downloads are handled as product attributes.  So, first, you should familiarize yourself with [setting up attributes](/user/products/attributes). 
 
-- Download files must be loaded by your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) to your store's  `/download` directory before trying to link those files to products/attributes.  
+- Download files must be loaded by your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) to your store's  `/download` directory before trying to link those files to products/attributes.   For greater security, you can [relocate the downloads folder](/user/security/relocate_download_folder/) outside your web space. 
+- You may serve your downloads from AWS by beginning your download filename with the string "aws:".  See [`includes/classes/observers/auto.downloads_via_aws.php`](https://github.com/zencart/zencart/blob/v157/includes/classes/observers/auto.downloads_via_aws.php) for details on setting your AWS credentials. 
 
 - Other important facts about downloads are linked at the bottom of this article. 
 
