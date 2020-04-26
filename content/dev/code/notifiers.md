@@ -9,11 +9,11 @@ weight: 10
 
 One of the many goals of the Zen Cart project has always been to make it simple for third party developers to add functionality to the core code in an easy and unobtrusive manner. To do this we use the [override system](/user/template/template_overrides/), the auto inclusion system, and the observer-notifier system.
 
-The observer/notifier system is an implementation of the ["pub-sub" pattern](https://en.wikipedia.org/wiki/Publish–subscribe_pattern).  It was introduced to give developers unprecedented access to core code, without the need to touch any core files at all. Although it was written for an object-oriented code base, it can be used with procedural code as well.
+The observer/notifier system is an implementation of the ["pub-sub" pattern](https://en.wikipedia.org/wiki/Publish–subscribe_pattern).  It was introduced to give developers deep access to core operation, without the need to touch any core files at all. Although it was written for an object-oriented code base, it can be used with procedural code as well.
 
 ### Extending All Classes
 
-In order to implement the observer/notifier system ("ONS") in a class, you will need to make that class extend the `base` class. eg:
+In order to use notifiers in a class, you will need to make that class extend the `base` class. eg:
 
 <pre>  class currencies extends base {
 </pre>
@@ -21,7 +21,7 @@ In order to implement the observer/notifier system ("ONS") in a class, you will 
 
 ### Notifiers: Big Brother is watching
 
-The point of the ONS is to permit developers to write code that listen for certain events to happen, and then when they do, have their own code executed.
+The point of the observer/notifier system is to permit developers to write code that listens for certain events to happen, and then when they do, have their own code executed.
 
 Events are simply mnemonic strings.  You can see a 
 [list of notifiers](/dev/code/notifiers_list) for reference.
