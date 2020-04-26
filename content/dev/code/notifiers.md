@@ -309,14 +309,32 @@ class myBogof extends base {
 
 The real power of using Observer classes to respond to Notifier hooks is in directly updating passed parameters in real time based on the custom logic offered by the observer class.
 
-For this there are two requirements: pass the variable to the notifier hook, receive that variable by-reference in the observer function.
+For this there are two requirements: pass the variable to the notifier hook, and receive that variable by-reference in the observer function.
 
-
-
+In this example we pass 3 variables: `$to_email_address`, `$customers_email_format`, and `$module`.
+The first parameter is always immutable, unchangeable. The 2nd-through-9th parameter can be changed directly by the observer when received-by-reference (see below).
 
 ```
 $zco_notifier->notify('NOTIFY_EMAIL_DETERMINING_EMAIL_FORMAT', $to_email_address, $customers_email_format, $module);
 
+```
+
+Then in the observer class we attach to this notifier in the constructor, and then receive those variables in the `update()` method (note the `&` which "receives the variable by reference" so it can be updated in real-time):
+
+```
+class emailSpamFilter extends base
+{
+  public function __construct {
+    $this->attach($this, array('NOTIFY_EMAIL_DETERMINING_EMAIL_FORMAT'));
+  }
+  
+  public function update(&$class, $event, $to_email_address, &$customers_email_format, &$module) {
+    // abort sending to any '.ru' addresses
+    if (substr($to_email_address, -3) == '.ru') {
+      $customers_email_format = 'NONE';
+    }
+  }
+}
 ```
 
 
