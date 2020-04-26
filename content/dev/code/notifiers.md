@@ -322,7 +322,7 @@ Then in the observer class we attach to this notifier in the constructor, and th
 class emailSpamFilter extends base
 {
   public function __construct {
-    $this->attach($this, array('NOTIFY_EMAIL_DETERMINING_EMAIL_FORMAT'));
+    $this->attach($this, ['NOTIFY_EMAIL_DETERMINING_EMAIL_FORMAT']);
   }
   
   public function update(&$class, $event, $to_email_address, &$customers_email_format, &$module) {
@@ -338,11 +338,13 @@ class emailSpamFilter extends base
 ### Listening to Multiple Notifier Hooks In A Single Observer Class
 
 
-An observer can listen to multiple notifier hooks. But this introduces a problem: how does the `update()` method know which event it's responding to?
+An observer can listen to multiple notifier hooks, by simply adding more listener names to the array in the constructor. 
+
+But this introduces a problem: how does the `update()` method know which event it's responding to?
 
 There are two ways to handle this situation: custom `updateXYZ()` functions, or using a `switch` statement to handle each event based on the event name. Each has its pros and cons.
 
-The recommended way is to use a custom `update()` method name, conforming to the pattern of: `updateListenerNameInCamelCase()`.
+The recommended way is to use a custom `update()` method name, conforming to the pattern of: `updateListenerNameInCamelCase()`. You'll notice that this way the variables passed in the notifier call can be intuitively named within the function signature, and when they are received-by-reference any updates to them will be immediately passed back to the calling code, without need for reaching to global variables.
 
 Example:
 
@@ -350,7 +352,7 @@ Example:
 class exampleObserverClass extends base
 {
   public function __construct {
-    $this->attach($this, array('NOTIFY_LISTENER_NUMBER_ONE', 'NOTIFY_LISTENER_NUMBER_TWO'));
+    $this->attach($this, ['NOTIFY_LISTENER_NUMBER_ONE', 'NOTIFY_LISTENER_NUMBER_TWO']);
   }
   
   public function updateNotifyListenerNumberOne(&$class, $event, $price, &$data, &$purchase_order, &$shipping_cost) {
@@ -376,7 +378,7 @@ Or, you could loop through the list of attached notifiers, and respond via one g
 class exampleObserverClass extends base
 {
   public function __construct {
-    $this->attach($this, array('NOTIFY_LISTENER_NUMBER_ONE', 'NOTIFY_LISTENER_NUMBER_TWO'));
+    $this->attach($this, ['NOTIFY_LISTENER_NUMBER_ONE', 'NOTIFY_LISTENER_NUMBER_TWO']);
   }
   
   public function update(&$class, $event, $param1, &$param2, &$param3, &$param4, &$param5) {
