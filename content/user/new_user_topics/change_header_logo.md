@@ -3,6 +3,8 @@ title: How do I change the logo or the logo alt text in the header?
 description: Changing the header logo in Zen Cart 
 category: new_user_topics
 weight: 10
+aliases: 
+    - /user/new_user_topics/change_powered_by/
 ---
 
 By default, Zen Cart uses `includes/templates/YOURTEMPLATE/images/logo.gif` 
