@@ -122,14 +122,16 @@ Here's the code.
 ```
 <?php
 /**
- * Observer class used to add a free product to the cart if the user spends more than $x
+ * Observer class used to add a free product to the cart
+ * if the user spends more than $x
  *
  */
 class freeProduct extends base {
   /**
    * The threshold amount the customer needs to spend.
    * 
-   * Note this is defined in the shops base currency, and so works with multi currency shops
+   * Note this is defined in the shops base currency, 
+   * and so works with multi currency shops
    *
    * @var decimal
    */
@@ -137,7 +139,8 @@ class freeProduct extends base {
   /**
    * The id of the free product.
    * 
-   * Note. This must be a true free product. e.g. price = 0 Also make sure that if you don't want the customer
+   * Note. This must be a true free product. e.g. price = 0 
+   * Also make sure that if you don't want the customer
    * to be charged shipping on this, that you have it set correctly.
    *
    * @var integer
@@ -146,7 +149,8 @@ class freeProduct extends base {
   /**
    * constructor method
    * 
-   * Attaches our class to the $_SESSION['cart'] class and watches for 2 notifier events.
+   * Attaches our class to the $_SESSION['cart'] class 
+   * and watches for 2 notifier events.
    */
   function __construct() {
     $_SESSION['cart']->attach($this, array('NOTIFIER_CART_ADD_CART_END', 'NOTIFIER_CART_REMOVE_END'));
@@ -161,41 +165,46 @@ class freeProduct extends base {
    */
   function update(&$class, $eventID, $paramsArray = array()) {
 
-  if ($eventID == 'NOTIFIER_CART_REMOVE_END' && (isset($_SESSION['freeProductInCart']) && $_SESSION['freeProductInCart'] == TRUE ))
-  {
-    if (!$_SESSION['cart']->in_cart($this->freeProductID))
+    if ($eventID == 'NOTIFIER_CART_REMOVE_END' 
+        && (isset($_SESSION['freeProductInCart']) && $_SESSION['freeProductInCart'] == TRUE )
+       )
     {
-      $_SESSION['userRemovedFreeProduct'] = TRUE;
+      if (!$_SESSION['cart']->in_cart($this->freeProductID))
+      {
+        $_SESSION['userRemovedFreeProduct'] = TRUE;
+      }
     }
-  }
 
-  if (!isset($_SESSION['userRemovedFreeProduct']) || $_SESSION['userRemovedFreeProduct'] != TRUE) 
-  {
-    if ($_SESSION['cart']->show_total() >= $this->freeAmount && !$_SESSION['cart']->in_cart($this->freeProductID) )   
+    if (!isset($_SESSION['userRemovedFreeProduct']) || $_SESSION['userRemovedFreeProduct'] != TRUE) 
     {
-      $_SESSION['cart']->add_cart($this->freeProductID);
-      $_SESSION['freeProductInCart'] = TRUE;  
+      if ($_SESSION['cart']->show_total() >= $this->freeAmount 
+          && !$_SESSION['cart']->in_cart($this->freeProductID)
+         )
+      {
+        $_SESSION['cart']->add_cart($this->freeProductID);
+        $_SESSION['freeProductInCart'] = TRUE;  
+      }
     }
-  }
 
-  if ($_SESSION['cart']->show_total() < $this->freeAmount && $_SESSION['cart']->in_cart($this->freeProductID) ) 
-  {
-    $_SESSION['cart']->remove($this->freeProductID);
-  }
+    if ($_SESSION['cart']->show_total() < $this->freeAmount 
+         && $_SESSION['cart']->in_cart($this->freeProductID)
+       )
+    {
+      $_SESSION['cart']->remove($this->freeProductID);
+    }
 
-  if ($_SESSION['cart']->in_cart($this->freeProductID)) 
-  {
-    $_SESSION['cart']->contents[$this->freeProductID]['qty'] = 1;
-  }
+    if ($_SESSION['cart']->in_cart($this->freeProductID)) 
+    {
+      $_SESSION['cart']->contents[$this->freeProductID]['qty'] = 1;
+    }
 
   }  
 }
-?>
 ```
 
 A couple notes:
 
-First, I have set the options for the system in the class itself. This is obviously a bad idea, and it would be much better to have an admin module to set these options.
+First, the hard-coding of options and thresholds in this example is probably undesireable, and moving the configuration to the admin might be preferable.
 
 Second, notice that we are actually watching for two events in the one class.
 
@@ -231,8 +240,10 @@ class myBogof extends base {
   /**
    * Integer number of bogofs allowed per product
    * 
-   * For example if I add 4 items of product 10, that would suggest that I pay for 2 and get the other 2 free.
-   * however you may want to restrict the customer to only getting 1 free regardless of the actual quantity
+   * For example if I add 4 items of product 10, that would suggest 
+   * that I pay for 2 and get the other 2 free.
+   * however you may want to restrict the customer to only getting 
+   * 1 free regardless of the actual quantity
    *
    * @var integer
    */
@@ -251,15 +262,20 @@ class myBogof extends base {
    * Called by observed class when any of our notifiable events occur
    * 
    * This is a bit of a hack, but it works. 
-   * First we loop through each product in the bogof Array and see if that product is in the cart.
-   * Then we calculate the number of free items. As it is buy one get one free, the number of free items
+   * First we loop through each product in the bogof Array 
+   * and see if that product is in the cart.
+   * Then we calculate the number of free items. As it is buy 
+   * one get one free, the number of free items
    * is equal to the total quantity of an item/2.
-   * Then we have to hack a bit (would be nice if there was a single cart method to return a product's in-cart price)
-   * We loop thru the cart until we find the bogof item, get its final price, calculate the saving
+   * Then we have to hack a bit (would be nice if there was 
+   * a single cart method to return a product's in-cart price)
+   * We loop thru the cart until we find the bogof item, 
+   * get its final price, calculate the saving
    * and adjust the cart total accordingly.
    *
    * ALERT: There are still some things missing in this example:
-   * - although the adjust total is correctly shown on the shopping cart page and sidebox, the line total is not adjusted.
+   * - although the adjust total is correctly shown on 
+   * the shopping cart page and sidebox, the line total is not adjusted.
    * - this will probably produce a confusing output at checkout.
    * - needs work on updating taxes as well
    *
@@ -271,7 +287,10 @@ class myBogof extends base {
     $products = $_SESSION['cart']->get_products();
     foreach ($this->bogofsArray as $bogofItem) {
       if ($_SESSION['cart']->in_cart($bogofItem)) {
-        if (isset($_SESSION['cart']->contents[$bogofItem]['qty']) && $_SESSION['cart']->contents[$bogofItem]['qty'] > 1) {
+        if (isset($_SESSION['cart']->contents[$bogofItem]['qty']) 
+             && $_SESSION['cart']->contents[$bogofItem]['qty'] > 1
+           ) 
+        {
           $numBogofs = floor($_SESSION['cart']->contents[$bogofItem]['qty'] / 2);
           if ($numBogofs > $this->bogofsAllowed) $numBogofs = $this->bogofsAllowed;
           if ($numBogofs > 0) {
