@@ -78,15 +78,15 @@ Now, whenever the `NOTIFIER_CART_ADD_CART_END` occurs, our `myObserver::update` 
 
 Some notes about the parameters...the attach method has two parameters:
 
-*   &$observer - Reference to the observer class, used to generated a unique ID for the new listener
-*   $eventIDArray - An array of notifiers that this observer is listening for
+*   `&$observer` - Reference to the observer class, used to generated a unique ID for the new listener
+*   `$eventIDArray` - An array of notifiers that this observer is listening for
 
 The update method is passed three parameters. These are:
 
-*   &$callingClass - This is a reference to the class in which the event occurred, allowing you access to that class's variables
-*   $notifier - The name of the notifier that triggered the update (It is quite possible to observe more than one notifier)
-*   $param1 - immutable data. Could be an array or string or integer. 
-*   &$param2, &$param3, &$param4 ... up to &$param9 -- mutable variables that can be directly updated by the observer code
+*   `&$callingClass` - This is a reference to the class in which the event occurred, allowing you access to that class's variables
+*   `$notifier` - The name of the notifier that triggered the update (It is quite possible to observe more than one notifier)
+*   `$param1` - immutable data. Could be an array or string or integer. 
+*   `&$param2`, `&$param3`, `&$param4` ... up to `&$param9` -- mutable variables that can be directly updated by the observer code
 
 
 ### Including observers into your code
