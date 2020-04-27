@@ -151,6 +151,10 @@ FILE 2:
 
 <br />
 
+## Renaming files
+
+If it is necessary to rename a file, be sure to use [Hugo aliasing](https://gohugo.io/content-management/urls/) so as not break any external links to the page.  You can see an example of where this was done in  [`change_header_logo.md`](https://github.com/zencart/documentation/blob/master/content/user/new_user_topics/change_header_logo.md), which used to be named `change_powered_by.md`.
+
 ## Markdown
 
 * [Link to Markdown Syntax](https://www.markdownguide.org/basic-syntax/)
