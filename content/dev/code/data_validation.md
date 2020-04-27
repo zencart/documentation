@@ -5,9 +5,9 @@ category: code
 weight: 10
 ---
 
-Fields in the configuration table have self-contained validation instructions in the `val_function` field, which was added in Zen Cart 1.5.7. 
+Fields in the configuration table have self-contained validation instructions in the `val_function` field.
 
-The `val_function` field is described in JSON format, with an error message in case validation fails, an id, and a set of options for validation.  This syntax is based on the calling conventions for [filter_var](https://www.php.net/manual/en/function.filter-var.php). 
+The `val_function` field is described in JSON format, with an error message in case validation fails, the id of the validation to be performed, and a set of options for validation.  This syntax is based on the calling conventions for [filter_var](https://www.php.net/manual/en/function.filter-var.php). 
 
 ```
 {
@@ -17,7 +17,7 @@ The `val_function` field is described in JSON format, with an error message in c
 }
 ```
 
-The possible validations for each id are shown in the PHP documentation on [filters](https://www.php.net/manual/en/filter.filters.validate.php). 
+The list of `id` values and possible options for each are shown in the PHP documentation on [filters](https://www.php.net/manual/en/filter.filters.validate.php). 
 
 ### Adding validation to a custom config
 
@@ -46,4 +46,6 @@ define('TEXT_MAX_PAYPAL','Max PayPal must be in the range 4000-9999');
 Now when an administrator attempts to set it outside this range, an error will be shown at the top of the admin screen like this: 
 
 <img src="/images/validation_error.png" alt="Zen Cart admin data validation error" width="50%" />
+<br><br>
 
+The `val_function` field was added in Zen Cart 1.5.6, but not widely used until Zen Cart 1.5.7. 
