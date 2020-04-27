@@ -88,17 +88,6 @@ The update method is passed three parameters. These are:
 *   $param1 - immutable data. Could be an array or string or integer. 
 *   &$param2, &$param3, &$param4 ... up to &$param9 -- mutable variables that can be directly updated by the observer code
 
-NB! The observer/notifier system is written for an OOP-based application, as the observer expects to attach to a class that has notifiers within its methods. However a lot of the code within Zen Cart is still procedural in nature and not contained within a class.
-
-To work around this, we added the 'stub' notifier class. So if you want to create an observer for a notifier that lies within procedural code (like in page headers) you should add the notifier into your myObserver class like this:
-
-```
-class myObserver extends base {
-   function __construct() {
-     global $zco_notifier;
-     $zco_notifier->attach($this, array('NOTIFY_HEADER_END_CHECKOUT_CONFIRMATION'));
-   }
-```
 
 ### Including observers into your code
 
