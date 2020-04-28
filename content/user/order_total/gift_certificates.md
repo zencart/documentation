@@ -44,7 +44,7 @@ To sell Gift Certificates in your store, you need to create them as specific pro
 
 ### HOW DOES IT WORK THEN ?
 
-Gift Certficates may be optionally queued for release by the administrator. 
+Gift Certificates may be optionally queued for release by the administrator. 
 
 If the *Queue Purchases* setting in Admin > Modules > Order Total > Gift Certificates is used, then after purchase, the administrator must "release" the gift certificate. A button indicating queued gift certificates is shown in the admin panel.  Once the release is done, the Gift Certificate funds are made available to the customer, by adding them to the Customer's Gift Certificate balance.  
 
@@ -63,5 +63,5 @@ A customer can enter as many Gift Certificates as they want on the checkout_paym
 
 **NOTE:** Gift Certificates can also be claimed by using the link provided in the email and logging in to claim the Gift Certificate to add it to their available balance.   And then they are free to apply the amount to use against any future order during checkout on the checkout_payment.
 
-**NOTE:** Gift Certificates are sometimes also called "Gift Vouchers" by our friends in the United Kingdom.  You will hear these terms used interchangably. 
+**NOTE:** Gift Certificates are sometimes also called "Gift Vouchers" by our friends in the United Kingdom.  You will hear these terms used interchangeably. 
 

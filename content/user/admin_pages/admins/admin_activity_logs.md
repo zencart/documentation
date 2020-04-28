@@ -23,7 +23,7 @@ this is what you should do:
 a) Go to Admins > Admin Activity Logs.  Where it says, "Review or Export Logs," check the box that says "Save to file on server" and press the *Go* button
 on the right.  This will save your logs to disk in case you need them for troubleshooting. 
 
-b) At teh bottom of the screen, press the *Reset* button.  This will
+b) At the bottom of the screen, press the *Reset* button.  This will
 take you to the Admin Activity Log Manager manager page.  On this page, 
 press *Reset* again to delete your logs.  
 
