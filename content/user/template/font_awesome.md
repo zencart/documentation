@@ -213,7 +213,7 @@ and
       }
 ```
 
-Button name file holds your buttons and alt defines if it’s not in your template folder, copy it there. This is where you can add the font icons to match your languages. Each language should have it’s own button name file.. besure to use the right style, they are fas, far, and fab..  
+The file `button_names.php` holds your buttons and alt defines.  If it’s not in your template folder, copy it there. This is where you can add the font icons to match your languages. Each language should have its own button name file. Be sure to use the right style, they are fas, far, and fab.
 
 {{% alert title="Warning" color="warning" %}}
 Font Awesome style tags must be placed on the left only with wording on the right.  If you fail to follow this one rule, the alt for image buttons would fail.

@@ -218,7 +218,7 @@ If you are using download-by-redirect, then your "pub" folder needs to be read-w
 9.  On the [Admin > Catalog > Attributes Controller](/user/admin_pages/catalog/attributes_controller/) page, you should see a green dot next to the filename of the Download itself.  Similarly, on [Admin > Catalog > Downloads Manager](/user/admin_pages/catalog/downloads_manager/), you should see a green dot next to the file. 
 
 ### Combo Products 
-A combo product is a product with a physical and downloadble component.  
+A combo product is a product with a physical and downloadable component.  
 Read more about 
 [downloadable combo products](/user/products/products_shippable_and_downloadable).
 
