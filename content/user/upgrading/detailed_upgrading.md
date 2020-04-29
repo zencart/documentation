@@ -69,7 +69,9 @@ Your list of add-on's may help you narrow down the source of any differences you
 
 As you make your list of changed files, etc, at this stage, you may want to move things into the Zen Cart template-override structure, if you haven't already done so. See the [Template System Documentation](/user/template/) for help on the template system.  
 
-Be sure to review the list of [not backwards compatible changes](/user/upgrading/backwards_compatible).
+### More considerations 
+
+Be sure to review the list of [release specific upgrade considerations](/user/upgrading/release_specific_upgrade_considerations).
 
 ## 2\. Execution
 
