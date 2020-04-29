@@ -24,7 +24,7 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 The arguments for the notifier `NOTIFY_ORDER_AFTER_SEND_ORDER_EMAIL` were changed.  This necessitated a code change in the observers watching for it. 
 
-The `responsive_classic` template was introduced in this release.  If you are coming from an older release with an older template, be sure to check it and verify that it performs properly on mobile devices.  If not, you can use Responsive Classic or select another responsive template.
+The `responsive_classic` template was introduced in this release.  If you are coming from an older release with an older template, be sure to check and verify that your template performs properly on mobile devices.  If not, you can use Responsive Classic or select another responsive template.
 
 ### Zen Cart 1.5.0 
 
