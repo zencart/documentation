@@ -21,7 +21,9 @@ First ensure that Hugo (v0.53 or greater) is installed on your system. On a Mac,
 brew install hugo && brew upgrade hugo
 ```
 
-Then clone this project and do a submodule update to get all its dependencies:
+Installing Hugo on Windows takes a few more steps; do a web search for the most current instructions. 
+
+Once you have installed Hugo, clone this project and do a submodule update to get all its dependencies:
 
 ```
 git clone git@github.com:zencart/documentation.git zendocs
