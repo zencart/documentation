@@ -1,6 +1,6 @@
 ---
 title: Introduction
-weight: 1
+weight: 10
 ---
 
 `zcgo` is a command line interface for Zen Cart that allows developer to run certain actions.
