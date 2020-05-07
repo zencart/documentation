@@ -1,6 +1,6 @@
 ---
 title: Commands
-weight: 2
+weight: 20
 ---
 
 ## make:defines
