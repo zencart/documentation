@@ -5,8 +5,21 @@ category: miscellaneous
 weight: 1 
 ---
 
-FIXME add details about running entire site in SSL
-REMOVE SSL vs non-SSL pages info 
+FIXME/TODO: Combine/Remove SSL vs non-SSL pages info 
+
+**Preamble: Important notes**
+You should be running your site entirely under SSL, ie: using `https` URLs.
+
+In the descriptions below we mention using HTTP and HTTPS separately, largely because older server configurations used to require the separation. Nowadays sites not using HTTPS for everything are often penalized in search-engine results, and browsers will flag security warnings to your customers.
+
+Thus, when configuring your site, you should use SSL everywhere. 
+More specifically:
+
+- define BOTH the `HTTP_SERVER` and `HTTPS_SERVER` with a URL starting with `https://`
+- for legacy reasons, you will ALSO need to set `ENABLE_SSL` to 'true' (and `ENABLE_CATALOG_SSL` on the admin side)
+
+When both HTTP_SERVER and HTTPS_SERVER contain an https URL, session cookies will receive the correct secure settings, keeping your site more secure. 
+
 
 **Quick Summary:**
 
