@@ -78,7 +78,7 @@ define('DB_TYPE', 'mysql');
 In Zen Cart, the only valid value for this is 'mysql'.  
 
 ```
-define('**DB_PREFIX**', ''); // prefix for database table names -- preferred to be left empty  
+define('DB_PREFIX', ''); // prefix for database table names -- preferred to be left empty  
 ```
 The prefix is used only when your hosting server's configuration allows you only a single database in your hosting account, and is an undesired workaround to allow multiple software applications to share the same database without clashing tablenames.  
 Ideally you will leave this blank, as shown here.  
@@ -158,13 +158,11 @@ These settings are selected by you when you create the database for your store. 
 **OTHER SETTINGS (Advanced)**  
 
 ```
-define('**SQL_CACHE_METHOD**', 'none');  
+define('SQL_CACHE_METHOD', 'none');  
 ```
-It is recommended to set this to 'none' or 'database' for optimum performance.  
-Alternatively, setting it to 'file' might offer minor improvements if the webserver is very slow and poorly configured. In this case it's better to move to a more reliable server instead of using the 'file' method.  
-Additionally, if choosing to use the 'file' method, you MUST relocate the SQL CACHE folder outside your webroot as described below, else you open yourself up to security risks.  
+Choices are 'none' or 'database'. Choosing `database` will cache database queries in a database table which is consulted before re-running the query for a full set of results. For larger complex queries this can speed performance.
 
-**NOTE:** As of v1.5.0, the "file" option is obsolete. Only 'none' or 'database' have any meaning.  
+**NOTE:** Prior to v1.5.1, a "file" option existed, but is now obsolete. Only 'none' or 'database' have any meaning.  
 
 ```
 define('DIR_FS_SQL_CACHE', '/enter/your/path/to/public_html_or_htdocs/and/zencart/here/zen/cache');  
@@ -179,7 +177,7 @@ For more information on understanding "webroot" concepts, see your favorite sear
 define('DIR_FS_LOGS', '/enter/your/path/to/public_html_or_htdocs/and/zencart/here/zen/logs');  
 ```
 
-In Zen Cart v1.5.1 and newer, this setting specifies the path where the program can store various debug logs used for troubleshooting problems your PHP scripts might be having in your store.  
+`DIR_FS_LOGS` specifies the path where to store various debug logs used for troubleshooting problems your PHP scripts might be having in your store.
 It's possible to relocate this folder to another location perhaps outside your site's webroot, for increased security. Simply relocate the folder using your FTP program, and adjust this value to match the new location.  
 
 See also [What is STRICT mode for my database](/user/troubleshooting/db_strict_mode) for information on `DB_MYSQL_MODE`. 
