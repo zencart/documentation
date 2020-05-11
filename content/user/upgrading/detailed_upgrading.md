@@ -69,7 +69,9 @@ Your list of add-on's may help you narrow down the source of any differences you
 
 As you make your list of changed files, etc, at this stage, you may want to move things into the Zen Cart template-override structure, if you haven't already done so. See the [Template System Documentation](/user/template/) for help on the template system.  
 
-Be sure to review the list of [not backwards compatible changes](/user/upgrading/backwards_compatible).
+### More considerations 
+
+Be sure to review the list of [release specific upgrade considerations](/user/upgrading/release_specific_upgrade_considerations).
 
 ## 2\. Execution
 
@@ -144,7 +146,7 @@ Zen Cart 1.5.6c.  These are the steps to use (we will skip over the New code fam
     - copy `includes/dist-configure.php` to `includes/configure.php`
     - copy `admin/includes/dist-configure.php` to `admin/includes/configure.php`
     - modify these two files, setting the values in them from your original configure files in `store`.  
-    - In aech file, you want two changes: `DIR_FS_CATALOG` setting should refer to `store_new` and not `_store`, and `DB_DATABASE` should refer to a new database name, not the original one. 
+    - In each file, you want two changes: `DIR_FS_CATALOG` setting should refer to `store_new` and not `_store`, and `DB_DATABASE` should refer to a new database name, not the original one. 
 - Upload `store_new` to your server.  
 - Make a fresh backup of your live database. 
 - Create a NEW database in cPanel, using the name you used in the last step of updating your configuration files above.  Load this database from the backup 

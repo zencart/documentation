@@ -127,7 +127,7 @@ class products_viewed_counter extends base {
 
   function __construct() {
     $this->attach($this, array('NOTIFY_PRODUCT_VIEWS_HIT_INCREMENTOR'));
-  }
+  }a
 
   function update(&$class, $eventID, $paramsArray = array())
   {
@@ -143,6 +143,7 @@ class products_viewed_counter extends base {
       }
     }
   }
+
 }
 ```
 
@@ -167,6 +168,7 @@ The file contains two auto-load statements:
 2. An `autoType` of `classInstantiate` to create an instance of your observer-class.
 
 The 'load-point', in this example `190` indicates the *relative* position within the auto-loading process at which the auto-load actions are to be performed.  Most observers can safely load at load-point `190` or later (after all the base Zen Cart auto-loaders have completed).  See [Choosing When to Load an Observer](choosing-when-to-load-an-observer) for some special cases.
+
 
 ```php
 if (!defined('IS_ADMIN_FLAG')) {

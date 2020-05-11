@@ -1,11 +1,14 @@
 ---
-title: Not Backwards Compatible Changes
-description: Not Backwards Compatible Changes to Zen Cart 
+title: Release Specific Upgrade Considerations 
+description: Release Specific Upgrade Considerations for Zen Cart 
 category: Upgrading
 weight: 10
 ---
 
-This document lists changes to the database schema or contents which deserve special notice, since they can break things in subtle ways.  They are listed in release order, descending.
+This document lists things you may wish to take into account as you upgrade.  This includes: 
+
+- changes to the database schema or contents which deserve special notice
+- changes to basic template operation 
 
 ### Zen Cart 1.5.7 
 
@@ -20,6 +23,8 @@ This document lists changes to the database schema or contents which deserve spe
 ### Zen Cart 1.5.5
 
 The arguments for the notifier `NOTIFY_ORDER_AFTER_SEND_ORDER_EMAIL` were changed.  This necessitated a code change in the observers watching for it. 
+
+The `responsive_classic` template was introduced in this release.  If you are coming from an older release with an older template, be sure to check and verify that your template performs properly on mobile devices.  If not, you can use Responsive Classic or select another responsive template.
 
 ### Zen Cart 1.5.0 
 

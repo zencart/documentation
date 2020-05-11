@@ -2,12 +2,13 @@
 title: Configuration Data Validation - About
 description: About Zen Cart Configuration Data Validation 
 category: code
+type: codepage
 weight: 10
 ---
 
-Fields in the configuration table have self-contained validation instructions in the `val_function` field, which was added in Zen Cart 1.5.7. 
+Fields in the configuration table have self-contained validation instructions in the `val_function` field.
 
-The `val_function` field is described in JSON format, with an error message in case validation fails, an id, and a set of options for validation.  This syntax is based on the calling conventions for [filter_var](https://www.php.net/manual/en/function.filter-var.php). 
+The `val_function` field is described in JSON format, with an error message in case validation fails, the id of the validation to be performed, and a set of options for validation.  This syntax is based on the calling conventions for [filter_var](https://www.php.net/manual/en/function.filter-var.php). 
 
 ```
 {
@@ -17,7 +18,7 @@ The `val_function` field is described in JSON format, with an error message in c
 }
 ```
 
-The possible validations for each id are shown in the PHP documentation on [filters](https://www.php.net/manual/en/filter.filters.validate.php). 
+The list of `id` values and possible options for each are shown in the PHP documentation on [filters](https://www.php.net/manual/en/filter.filters.validate.php). 
 
 ### Adding validation to a custom config
 
@@ -46,4 +47,24 @@ define('TEXT_MAX_PAYPAL','Max PayPal must be in the range 4000-9999');
 Now when an administrator attempts to set it outside this range, an error will be shown at the top of the admin screen like this: 
 
 <img src="/images/validation_error.png" alt="Zen Cart admin data validation error" width="50%" />
+<br><br>
 
+### Validating Module Data
+As of Zen Cart 1.5.7, you can also perform validation on fields in your shipping, payment and order total modules.  
+
+Use the same `val_function` format.  The error defines need to be global (not just local to your module).  For convenience, the following strings are provided for common validations (integer >= 0 and floating point value >= 0): 
+
+```
+define('TEXT_POSITIVE_INT','%s must be an integer greater than or equal to 0');
+define('TEXT_POSITIVE_FLOAT','%s must be a decimal greater than or equal to 0'); 
+```
+
+Note that they take a parameter, which is passed in by the core; it's the name of the setting being validated.  This is important for modules because unlike configuration values, multiple settings are done at once. 
+
+If you prefer, define an error string of your own and place it in a file in `admin/includes/languages/english/extra_definitions`.
+
+See the `flat` shipping module for an example. 
+
+<br><br>
+
+The `val_function` field was added in Zen Cart 1.5.6, but not widely used until Zen Cart 1.5.7. 
