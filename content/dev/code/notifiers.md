@@ -3,420 +3,243 @@ title: Notifiers and Observers - About
 description: About Zen Cart Notifiers and Observers 
 category: code
 weight: 10
+type: codepage
 ---
 
-### Introduction
+# Introduction
 
-One of the many goals of the Zen Cart project has always been to make it simple for third party developers to add functionality to the core code in an easy and unobtrusive manner. To do this we use the [override system](/user/template/template_overrides/), the auto inclusion system, and the observer-notifier system.
+One of the many goals of the Zen Cart project has always been to make it simple for third party developers to add functionality to the core code in an easy and unobtrusive manner. To do this we use the [override system](/user/template/template_overrides/), the auto inclusion system and the observer-notifier system.
 
-The observer/notifier system is an implementation of the ["pub-sub" pattern](https://en.wikipedia.org/wiki/Publish–subscribe_pattern).  It was introduced to give developers deep access to core operation, without the need to touch any core files at all. Although it was written for an object-oriented code base, it can be used with procedural code as well.
+The observer/notifier system is an implementation of the ["pub-sub" pattern](https://en.wikipedia.org/wiki/Publish–subscribe_pattern)  that was introduced to give developers deep access to core operation without the need to touch any core files at all. Although the implementation was written for an object-oriented code base, it can alse be used with procedural code.
 
-### Extending All Classes
+At a high level, a developer identifies an _event_ that is "interesting", e.g. a customer has just successfully logged in, and registers to be notified when that event occurs.  If/when that event occurs, the `base` class receives control and looks to see if any registrations exist for the event.  If so, all registered observer-classes are called to provide their custom actions.
 
-In order to use notifiers in a class, you will need to make that class extend the `base` class. eg:
+Here are some 'quick links' to various sections of this documentation:
 
-<pre>  class currencies extends base {
-</pre>
+1. [Issuing Event Notifications](issuing-event-notifications).  Identifies the mechanism used by _event issuers_ to issue a notification.
+
+2. [Observing Notifications](observing-notifications). Identifies the mechanisms used by _event observers_ to perform their customizations.
+
+3. [Loading Your Observer Class](loading-your-observer-class).  Identifies how to load your observer-class so that it can begin its observations.
+
+4. [Advanced Topics](advanced-topics). This section identifies additional methods that can be used to auto-load an observer-class and create event-specific event-handlers.
+
+    a. [Choosing When to Load an Observer](choosing-when-to-load-an-observer).
+    b. [Auto-loaded Observers](auto-loaded-observers).
+    c. [Event-Specific Update Methods](event-specific-update-methods).
+
+5. [Additional Information](additional-information).  This section has references to additional documentation on the observer/notifier system.
 
 
-### Notifiers: Big Brother is watching
+## Issuing Event Notifications
 
-The point of the observer/notifier system is to permit developers to write code that listens for certain events to happen, and then when they do, have their own code executed.
+The point of the observer/notifier system is to enable developers to write code that listens for certain events to happen and then perform a customized action for an event.
 
-Events are simply mnemonic strings.  You can see a 
-[list of notifiers](/dev/code/notifiers_list) for reference.
+Events are identified by a string-names and are triggered via call to a `notify` method by an _event issuer_.  You can see a [list of notifiers](/dev/code/notifiers_list) provided by the Zen Cart core for reference. 
 
-Events are triggered by calling `$this->notify` in any class that `extends base`:
+**Note**: Plugins (Zen Cart extensions) can also be _event issuers_.
 
-<pre> $this->notify('EVENT_NAME');
-</pre>
+The `notify` method takes the following inputs:
 
-Example: In the shopping cart class after an item has been added to the cart this event is triggered:
+|    Input Name     | Required? | Description                                                  |
+| :---------------: | :-------: | ------------------------------------------------------------ |
+|     $eventId      |    Yes    | The string 'name' of the event, e.g. `NOTIFIER_CART_ADD_CART_END`. |
+|      $param1      |    No     | A read-only variable, the format of which varies by the `$eventId`.  Defaults to an empty array. |
+| $param2 - $param9 |    No     | A collection of read-write variables, passed as a reference.  The notification issuer is, essentially, giving permission for an observer to update these variable.  Each variable's format (and presence) varies by the `$eventId` and defaults to `null`. |
 
-<pre> $this->notify('NOTIFIER_CART_ADD_CART_END');
-</pre>
+#### Class-Based Event Notifications
 
-In procedural code (or outside of a class that `extends base`) use the global `$zco_notifier` object. For example, inside the `zen_mail` function this event is triggered, which allows a plugin to update the sent email format:
+Within a class that extends the Zen Cart `base` class, e.g.:
 
-<pre>  $zco_notifier->notify('NOTIFY_EMAIL_DETERMINING_EMAIL_FORMAT', $to_email_address, $customers_email_format, $module);
-</pre>
-
-### Observe and Prosper
-
-To take advantage of notifiers, developers need to write some code to watch for them. Observers need to be written as a class. There's even a nice directory, `includes/classes/observers`, where developers can put these classes.
-
-Lets take an example. Using the notifier mentioned above (`NOTIFIER_CART_ADD_CART_END`), how would I write a class that watched for that event?
-
-```
-<?php
- class myObserver extends base {
-   function __construct() {
-     $this->attach($this, array('NOTIFIER_CART_ADD_CART_END'));
-   }
-...
- }
+```php
+class shopping_cart extends base
 ```
 
-As you can see we have defined a new class called myObserver and in the constructor function for that class (function myObserver) have attached this myObserver class to the event `NOTIFIER_CART_ADD_CART_END`.
+&hellip; events can be issued via the `$this` keyword:
 
-"Fine," I hear you saying, "but how do I actually do anything useful?"
-
-Ok, good question. Whenever an event occurs, the base class looks to see if any other observer class is watching that event. If it is, the base class executes a method in that observer class. Remember the `$this->notify('EVENT_NAME')` from above? Well, when that event occurs, the base class calls the update method of all observers. Lets see some more code:
-
-```
-class myObserver extends base {
-   function __construct() {
-     $this->attach($this, array('NOTIFIER_CART_ADD_CART_END'));
-   }
-   function update(&$callingClass, $notifier, $paramsArray) {
-     ... do some stuff
-   }
- }
+```php
+$this->notify('EVENT_NAME');
 ```
 
-Now, whenever the `NOTIFIER_CART_ADD_CART_END` occurs, our `myObserver::update` method will be executed. Note that `attach()` may be called as a method of whatever class you want to listen to (`$_SESSION['cart']`, in this case) or by the internal class variable $this. Both are available since each are part of the class base, where the attach method resides.
-
-Some notes about the parameters...the attach method has two parameters:
-
-*   `&$observer` - Reference to the observer class, used to generated a unique ID for the new listener
-*   `$eventIDArray` - An array of notifiers that this observer is listening for
-
-The update method is passed three parameters. These are:
-
-*   `&$callingClass` - This is a reference to the class in which the event occurred, allowing you access to that class's variables
-*   `$notifier` - The name of the notifier that triggered the update (It is quite possible to observe more than one notifier)
-*   `$param1` - immutable data. Could be an array or string or integer. 
-*   `&$param2`, `&$param3`, `&$param4` ... up to `&$param9` -- mutable variables that can be directly updated by the observer code
-
-
-### Including observers into your code
-
-Please note that the `includes/classes/observers` directory is not an autoload directory, so you will need to arrange for `application_top.php` to autoload your observer class as was described above (add a new `config.xxxxx.php` file in the `auto_loaders` folder, etc). Let's assume you are using the freeProduct class (see the example below), and you have saved this in `includes/classes/observers/class.freeProduct.php`.
-
-You now need to arrange for this class to be loaded and instantiated. To do this you need to use the `application_top.php` autoload system.
-
-In `includes/auto_loaders` create a file called `config.freeProduct.php` containing
-
-```
-$autoLoadConfig[10][] = array('autoType'=>'class',
-                              'loadFile'=>'observers/class.freeProduct.php');
-$autoLoadConfig[90][] = array('autoType'=>'classInstantiate',
-                              'className'=>'freeProduct',
-                              'objectName'=>'freeProduct');
+For example, the shopping cart class issues this event after an item has been added to the cart:
+```php
+$this->notify('NOTIFIER_CART_ADD_CART_END');
 ```
 
-Note: 10 has been chosen to cause the observer class to be loaded before the session is started. Note: 90 has been chosen as the offset since the observer needs to attach to the `$_SESSION['cart']` class (see the freeProduct example below), which is instantiated at offset 80.
+When a class issues a notification using the `$this` keyword, _all_ **public** class-variables are available for use by a watching observer.  If a class desires to issue a notification without that access, the global `$zco_notifier` can be used to issue that notification.
 
-To tie this all together, let's look at a real world example.
+#### Procedural Event Notifications
 
-### A Real World Example
+In procedural code, functions and classes that don't `extend base`, use the global `$zco_notifier` object to issue events. For example, the `zen_mail` function triggers the following event, which allows a plugin to update the to-be-sent email format:
 
-One of the most-often requested features is the ability for the store to automatically add a free gift to the Shopping Cart if the customer spends more than a certain amount.
-
-The code has to be intelligent: it has to not only add the free gift when the shopper spends over a certain amount, but also remove the gift if the user changes the contents of the shopping cart, such that the total falls below the threshold.
-
-Traditionally, although the code for this is not particularly difficult, it would have meant 'hacking' the core shoppingCart class in a number of places. With the ONS, this can be achieved with one very small custom class and absolutely no hacking whatsoever.
-
-Here's the code.
-
-```
-<?php
-/**
- * Observer class used to add a free product to the cart
- * if the user spends more than $x
- *
- */
-class freeProduct extends base {
-  /**
-   * The threshold amount the customer needs to spend.
-   * 
-   * Note this is defined in the shops base currency, 
-   * and so works with multi currency shops
-   *
-   * @var decimal
-   */
-  var $freeAmount = 50;
-  /**
-   * The id of the free product.
-   * 
-   * Note. This must be a true free product. e.g. price = 0 
-   * Also make sure that if you don't want the customer
-   * to be charged shipping on this, that you have it set correctly.
-   *
-   * @var integer
-   */
-  var $freeProductID = 57;
-  /**
-   * constructor method
-   * 
-   * Attaches our class to the $_SESSION['cart'] class 
-   * and watches for 2 notifier events.
-   */
-  function __construct() {
-    $_SESSION['cart']->attach($this, array('NOTIFIER_CART_ADD_CART_END', 'NOTIFIER_CART_REMOVE_END'));
-  }
-  /**
-   * Update Method
-   * 
-   * Called by observed class when any of our notifiable events occur
-   *
-   * @param object $class
-   * @param string $eventID
-   */
-  function update(&$class, $eventID, $paramsArray = array()) {
-
-    if ($eventID == 'NOTIFIER_CART_REMOVE_END' 
-        && (isset($_SESSION['freeProductInCart']) && $_SESSION['freeProductInCart'] == TRUE )
-       )
-    {
-      if (!$_SESSION['cart']->in_cart($this->freeProductID))
-      {
-        $_SESSION['userRemovedFreeProduct'] = TRUE;
-      }
-    }
-
-    if (!isset($_SESSION['userRemovedFreeProduct']) || $_SESSION['userRemovedFreeProduct'] != TRUE) 
-    {
-      if ($_SESSION['cart']->show_total() >= $this->freeAmount 
-          && !$_SESSION['cart']->in_cart($this->freeProductID)
-         )
-      {
-        $_SESSION['cart']->add_cart($this->freeProductID);
-        $_SESSION['freeProductInCart'] = TRUE;  
-      }
-    }
-
-    if ($_SESSION['cart']->show_total() < $this->freeAmount 
-         && $_SESSION['cart']->in_cart($this->freeProductID)
-       )
-    {
-      $_SESSION['cart']->remove($this->freeProductID);
-    }
-
-    if ($_SESSION['cart']->in_cart($this->freeProductID)) 
-    {
-      $_SESSION['cart']->contents[$this->freeProductID]['qty'] = 1;
-    }
-
-  }  
-}
-```
-
-A couple notes:
-
-First, the hard-coding of options and thresholds in this example is probably undesireable, and moving the configuration to the admin might be preferable.
-
-Second, notice that we are actually watching for two events in the one class.
-
-```
-$_SESSION['cart']->attach($this, array('NOTIFIER_CART_ADD_CART_END', 'NOTIFIER_CART_REMOVE_END'));
-```
-
-so we are watching for the `NOTIFIER_CART_ADD_CART_END` and `NOTIFIER_CART_REMOVE_END` of the shopping_cart class.
-
-The update class is extremely simple but in its simplicity manages to do all the work we require of it. It first tests to see if the total in the cart is over the threshold and, if it hasn't already, adds the free product to the cart.
-
-It then tests to see if the cart total has dropped below the threshold and, if the free product is in the cart, removes it.
-
-Now that was cool, how about something a little more difficult.
-
-### Another Real World Example
-
-Again we return to the Shopping Cart and promotions. Another oft-requested feature is the BOGOF promotion, or Buy One Get One Free. This is a little more difficult to achieve than our previous example, as there is some manipulation needed of the cart totals. However as you will see it is still pretty much a breeze.
-
-```
-<?php
-/**
- * Observer class used apply a Buy One Get One Free(bogof) algorithm to the cart
- *
- */
-class myBogof extends base {
-  /**
-   * an array of ids of products that can be BOGOF.
-   *
-   * @var array
-   */
-  var $bogofsArray = array(10,4); //Under Siege2-Dark Territory & The replacement Killers
-  /**
-   * Integer number of bogofs allowed per product
-   * 
-   * For example if I add 4 items of product 10, that would suggest 
-   * that I pay for 2 and get the other 2 free.
-   * however you may want to restrict the customer to only getting 
-   * 1 free regardless of the actual quantity
-   *
-   * @var integer
-   */
-  var $bogofsAllowed = 1;
-  /**
-   * constructor method
-   * 
-   * Watches for 1 notifier event, triggered from the shopping cart class.
-   */
-  function __construct() {
-    $this->attach($this, array('NOTIFIER_CART_SHOW_TOTAL_END'));
-  }
-  /**
-   * Update Method
-   * 
-   * Called by observed class when any of our notifiable events occur
-   * 
-   * This is a bit of a hack, but it works. 
-   * First we loop through each product in the bogof Array 
-   * and see if that product is in the cart.
-   * Then we calculate the number of free items. As it is buy 
-   * one get one free, the number of free items
-   * is equal to the total quantity of an item/2.
-   * Then we have to hack a bit (would be nice if there was 
-   * a single cart method to return a product's in-cart price)
-   * We loop thru the cart until we find the bogof item, 
-   * get its final price, calculate the saving
-   * and adjust the cart total accordingly.
-   *
-   * ALERT: There are still some things missing in this example:
-   * - although the adjust total is correctly shown on 
-   * the shopping cart page and sidebox, the line total is not adjusted.
-   * - this will probably produce a confusing output at checkout.
-   * - needs work on updating taxes as well
-   *
-   * @param object $class
-   * @param string $eventID
-   */
-  function update(&$class, $eventID) {
-    $cost_saving = 0;
-    $products = $_SESSION['cart']->get_products();
-    foreach ($this->bogofsArray as $bogofItem) {
-      if ($_SESSION['cart']->in_cart($bogofItem)) {
-        if (isset($_SESSION['cart']->contents[$bogofItem]['qty']) 
-             && $_SESSION['cart']->contents[$bogofItem]['qty'] > 1
-           ) 
-        {
-          $numBogofs = floor($_SESSION['cart']->contents[$bogofItem]['qty'] / 2);
-          if ($numBogofs > $this->bogofsAllowed) $numBogofs = $this->bogofsAllowed;
-          if ($numBogofs > 0) {
-            for ($i=0, $n=sizeof($products); $i<$n; $i++) {
-              if ($products[$i]['id'] == $bogofItem) {
-                $final_price = $products[$i]['final_price'];
-                break;
-              }
-            }
-            $cost_saving .= $final_price * $numBogofs;
-          }
-        }
-      }
-    }
-    $_SESSION['cart']->total -= $cost_saving;
-  }
-}
-```
-
-### Using Observers To Interact With And Update Passed Parameters Directly
-
-The real power of using Observer classes to respond to Notifier hooks is in directly updating passed parameters in real time based on the custom logic offered by the observer class.
-
-For this there are two requirements: pass the variable to the notifier hook, and receive that variable by-reference in the observer function.
-
-In this example we pass 3 variables: `$to_email_address`, `$customers_email_format`, and `$module`.
-The first parameter is always immutable, unchangeable. The 2nd-through-9th parameter can be changed directly by the observer when received-by-reference (see below).
-
-```
+```php
 $zco_notifier->notify('NOTIFY_EMAIL_DETERMINING_EMAIL_FORMAT', $to_email_address, $customers_email_format, $module);
-
 ```
 
-Then in the observer class we attach to this notifier in the constructor, and then receive those variables in the `update()` method (note the `&` which "receives the variable by reference" so it can be updated in real-time):
+## Observing Notifications
 
-```
-class emailSpamFilter extends base
-{
-  public function __construct {
-    $this->attach($this, ['NOTIFY_EMAIL_DETERMINING_EMAIL_FORMAT']);
+To take advantage of notifiers, developers need to write classes to watch for them, i.e. _observe_.  There's even a nice directory, `includes/classes/observers` and `admin/includes/classes/observers`, where developers can put these classes.
+
+There are three *base-class* methods that observers use to provide their custom actions:
+
+| Method Name        | Description                                                  |
+| ------------------ | ------------------------------------------------------------ |
+| [`attach`](attach) | This method identifies a list of event(s) that the observer-class *is* interested in monitoring. |
+| [`update`](update) | This method is the call-back when an event 'fires'.          |
+| [`detach`](detach) | This method identifies a list of event(s) that the observer-class *is no longer* interested in monitoring. |
+
+#### attach
+
+The `attach`  method is used by an _event observer_ to 'register' to receive control when a specified event (or list of events) occurs.  This method takes two parameters:
+
+1. `$observer`.  Identifies 'who' is requesting to receive control, i.e. `$this` which identifies the current class.  This value is used by the `base` class to create a unique ID associated with the observation request.
+2. `$eventIDArray`.  A simple array of event names that the observer-class is 'interested in'.
+
+For example, `/includes/classes/observers/class.products_viewed_counter.php` requests to be notified whenever the event `NOTIFY_PRODUCT_VIEWS_HIT_INCREMENTOR` is issued.  That event is issued by the various product types' `main_template_vars.php` modules.
+
+``` php
+class products_viewed_counter extends base {
+
+  function __construct() {
+    $this->attach($this, array('NOTIFY_PRODUCT_VIEWS_HIT_INCREMENTOR'));
   }
-  
-  public function update(&$class, $event, $to_email_address, &$customers_email_format, &$module) {
-    // abort sending to any '.ru' addresses
-    if (substr($to_email_address, -3) == '.ru') {
-      $customers_email_format = 'NONE';
-    }
-  }
+  ...
 }
 ```
 
+#### update
 
-### Listening to Multiple Notifier Hooks In A Single Observer Class
+The `update` method is used by an _event observer_ to perform event-specific actions when an event is issued. This method is passed _up to_ 11 parameters:
 
+1. `&$callingClass`. This is a reference to the class in which the event occurred.  If the event is issued by a class other than the `base` (e.g. the `order` or `shopping_cart` class), then this variable can be used to manipulate any ***public*** variables within the class.
+2. `$eventID`. The name of the event triggered.
+3. `$param1`.  _Read-only_ data.  The value is dependent on the `$eventID`.
+4. `&$param2` through `&$param9`.  _Updateable_ variables provided by the _event issuer_.  These values, too, are dependent on the `$eventID`.
 
-An observer can listen to multiple notifier hooks, by simply adding more listener names to the array in the constructor. 
+***Note***: You can also choose to use [event-specific update-methods](event-specific-update-methods) to handle event-related processing.
 
-But this introduces a problem: how does the `update()` method know which event it's responding to?
+Here's the full implementation for `/includes/classes/observers/class.products_viewed_counter.php`:
 
-There are two ways to handle this situation: custom `updateXYZ()` functions, or using a `switch` statement to handle each event based on the event name. Each has its pros and cons.
+```php
+class products_viewed_counter extends base {
 
-The recommended way is to use a custom `update()` method name, conforming to the pattern of: `updateListenerNameInCamelCase()`. You'll notice that this way the variables passed in the notifier call can be intuitively named within the function signature, and when they are received-by-reference any updates to them will be immediately passed back to the calling code, without need for reaching to global variables.
+  function __construct() {
+    $this->attach($this, array('NOTIFY_PRODUCT_VIEWS_HIT_INCREMENTOR'));
+  }a
 
-Example:
-
-```
-class exampleObserverClass extends base
-{
-  public function __construct {
-    $this->attach($this, ['NOTIFY_LISTENER_NUMBER_ONE', 'NOTIFY_LISTENER_NUMBER_TWO']);
-  }
-  
-  public function updateNotifyListenerNumberOne(&$class, $event, $price, &$data, &$purchase_order, &$shipping_cost) {
-    if ($price > 5000) {
-      // set status because threshold was met
-      $purchase_order['threshold_approved'] = true;
-      // free shipping
-      $shipping_cost = 0;
-    }
-  }
-
-  public function updateNotifyListenerNumberOne(&$class, $event, $payment_details, &$customer_email, &$order_data) {
-    if ($payment_details['status'] == 'failed') {
-      $order_data['payment_status'] = 'failed';
-    }
-  }
-}
-```
-
-Or, you could loop through the list of attached notifiers, and respond via one great big `switch` statement, with generic variable names:
-
-```
-class exampleObserverClass extends base
-{
-  public function __construct {
-    $this->attach($this, ['NOTIFY_LISTENER_NUMBER_ONE', 'NOTIFY_LISTENER_NUMBER_TWO']);
-  }
-  
-  public function update(&$class, $event, $param1, &$param2, &$param3, &$param4, &$param5)
+  function update(&$class, $eventID, $paramsArray = array())
   {
-      switch $event {
-        case 'NOTIFY_LISTENER_NUMBER_ONE':
-            if ($param1 > 5000) {
-                // set status because threshold was met
-                $param3['threshold_approved'] = true;
-                // free shipping
-                $param4 = 0;
-            }
-            break;
-
-        case 'NOTIFY_LISTENER_NUMBER_TWO':
-            if ($param1['status'] == 'failed') {
-                $param3['payment_status'] = 'failed';
-            }
-            break;
+    if ($eventID == 'NOTIFY_PRODUCT_VIEWS_HIT_INCREMENTOR')     {
+      if (defined('LEGACY_PRODUCTS_VIEWED_COUNTER') && LEGACY_PRODUCTS_VIEWED_COUNTER == 'on')
+      {
+        global $db;
+        $sql = "update " . TABLE_PRODUCTS_DESCRIPTION . "
+                set        products_viewed = products_viewed+1
+                where      products_id = '" . (int)$paramsArray . "'
+                and        language_id = '" . (int)$_SESSION['languages_id'] . "'";
+        $res = $db->Execute($sql);
       }
+    }
   }
+
 }
 ```
+
+When the `NOTIFY_PRODUCT_VIEWS_HIT_INCREMENTOR` event is issued and that constant is defined, the first parameter is _expected to be_ an integer value that identifies the specific product to be updated.  The observer's `update` method, thus, casts the first parameter to an integer value and performs the `products_viewed` update.
+
+#### detach
+
+The `detach` method is used by an _event observer_ to 'un-register' from receiving specified event (or list of events) notifications.  This method takes two parameters:
+
+1. `$observer`.  Identifies 'who' is requesting to receive control, i.e. `$this` which identifies the current class.  This value should be the same as that used to `attach` to the no-longer-wanted event.
+2. `$eventIDArray`.  A simple array of event names that the observer-class is no longer 'interested in'.
+
+If, for instance, an observer was interested in the *first* issuance of a given notification, the observer's `update` method, upon receiving that notification, would issue the associated `detach`.
+
+## Loading Your Observer-Class
+
+Next step, loading and creating an 'instance' of your observer-class.  You'll create a file in the Zen Cart `/includes/auto_loaders` (or `/admin/includes/auto_loaders`) sub-directory to perform those tasks.  For the example used above, that file's named `/includes/auto_loaders/config.products_viewed_counter.php`.
+
+The file contains two auto-load statements:
+
+1. An `autoType` of `class` to load your observer's class-file.
+2. An `autoType` of `classInstantiate` to create an instance of your observer-class.
+
+The 'load-point', in this example `190` indicates the *relative* position within the auto-loading process at which the auto-load actions are to be performed.  Most observers can safely load at load-point `190` or later (after all the base Zen Cart auto-loaders have completed).  See [Choosing When to Load an Observer](choosing-when-to-load-an-observer) for some special cases.
+
+
+```php
+if (!defined('IS_ADMIN_FLAG')) {
+ die('Illegal Access');
+}
+$autoLoadConfig[190][] = array('autoType'=>'class',
+                              'loadFile'=>'observers/class.products_viewed_counter.php');
+$autoLoadConfig[190][] = array('autoType'=>'classInstantiate',
+                              'className'=>'products_viewed_counter',
+                              'objectName'=>'products_viewed_counter');
+```
+
+## Advanced Topics
+
+### Choosing When to Load an Observer
+
+If your observer-class performs actions *prior to* the page-specific loading, e.g. monitoring for cart-related actions, you'll need to make sure that your observer is loaded and instantiated ***before*** any watched-for notification is issued.  In these cases, review the base Zen Cart auto-loader (`[/admin]/includes/auto_loaders/config.core.php`) to identify the load-point required.
+
+### Auto-loaded Observers
+
+If you're developing a plugin that uses an observer-class, you normally have to provide ***two*** files in your plugin's distribution to get that class loaded and instantiated:
+
+1. /includes/auto_loaders/config.your_plugin.php
+2. /includes/classes/observers/class.your_plugin.php
+
+Starting with Zen Cart v1.5.3, built-in functionality will do the  "heavy lifting" to get your class-file loaded and instantiated &mdash; so  long as your class doesn't have any special requirements on its load  point (auto-loaded classes are loaded at point `175`, after all other  system dependencies are loaded).   Here are the requirements (as pulled  from the file `/includes/init_includes/init_observers.php`):
+
+1. The file is in the `/includes/classes/observers` sub-directory and named **auto.**your_plugin.php.  All files in this directory that start with **auto.** will be included (i.e. loaded).
+2. The file defines a class named **zcObserver** + the [CamelCased](http://en.wikipedia.org/wiki/CamelCase) filename, e.g. a file named `auto.your_plugin.php` will contain a class named  `zcObserverYourPlugin`.  A myDEBUG*.log file will be generated if a  properly-named file is loaded, but the class name doesn't conform to  these rules.
+
+For example, the *Products Viewed Counter* described [above](update) could provide the same functionality and not need its auto-loader component if the observer-class file was renamed to `/includes/classes/observers/auto.products_viewed_counter.php` and its class name was updated to be `zcObserverProductsViewedCounter.php`.
+
+### Event-Specific Update Methods
+
+Your observer-class' `update` method(s) can be customized based on the notification received, since the parameters for a notification depend on the notification received.  This is done using another [CamelCased](http://en.wikipedia.org/wiki/CamelCase) convention.
+
+Each customized `update` method's name consists of the word `update` followed by the *CamelCased* version of the watched-for notification.  For instance, the Products Viewed Counter described [above](update) could be recoded as an auto-loading, customized-method observer:
+
+```php
+class zcObserverProductsViewedCounter extends base 
+{
+    function __construct() 
+    {
+        $this->attach($this, array('NOTIFY_PRODUCT_VIEWS_HIT_INCREMENTOR'));
+    }
+
+    function updateNotifyProductViewsHitIncrementor(&$class, $eventID, $products_id)
+    {
+        if (defined('LEGACY_PRODUCTS_VIEWED_COUNTER') && LEGACY_PRODUCTS_VIEWED_COUNTER == 'on') {
+            global $db;
+            $sql = 
+                "UPDATE " . TABLE_PRODUCTS_DESCRIPTION . "
+                    SET products_viewed = products_viewed+1
+                  WHERE products_id = " . (int)$products_id . "
+                    AND language_id = " . (int)$_SESSION['languages_id'] . "
+                  LIMIT 1";
+             $db->Execute($sql);
+         }
+    }
+}
+```
+
+
+## Additional Information
 
 ### Plugins which support Notifier Use 
+
 Some plugins which can be helpful during development when using notifiers include:
 
+* [Watching Observers](https://www.zen-cart.com/downloads.php?do=file&id=2273)
 * [Zen Cart Notifier Report](https://www.zen-cart.com/downloads.php?do=file&id=2260)
 * [Zen Cart Notifier Trace](https://www.zen-cart.com/downloads.php?do=file&id=1114)
 
 ### Information about Notifiers 
-* A [list of notifiers](/dev/code/notifiers_list) is provided for the current release. 
-* The [output of the notifier report](/dev/code/notifier_report/) is provided on the docs site for easy reference by developers. 
+* A [list of notifiers](/dev/code/notifiers_list) is provided for the current Zen Cart release. 
+* The output of the [Zen Cart Notifier Report](/dev/code/notifier_report/) is provided on the docs site for easy reference by developers. 
