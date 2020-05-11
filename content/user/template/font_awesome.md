@@ -18,7 +18,7 @@ I use Font Awesome in different places within my site, but I mainly use them wit
  
 At one time Font Awesome was just one set of fonts making scripting buttons/links easy with only one file.  Keep in mind that we say FONT, but this is not the normal fonts in your desktop and with new vector icons added each day it had to grow.
 
-NOTE: there are different icon sets to use!
+**NOTE:** there are different icon sets to use!
 
 | Style Availability      |Style Prefix    |            Example                  |
 |-------------------------|----------------|-------------------------------------|
