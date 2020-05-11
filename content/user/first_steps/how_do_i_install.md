@@ -51,7 +51,7 @@ Your webhoster's control panel (often [cPanel](https://cPanel.net) but sometimes
 
 ### 5\. Have you created a database? 
 
-If your hosting account has CPanel, 
+If your hosting account has cPanel, 
 scroll down to the Databases section and click on MySQL Databases.  The Create New Database form should be pre-filled with the username you used to log in to your cPanel.
 
 Enter a name for your database (the version is often used for easy recognition in multi-database environments) and click on Create Database.  Then, click the Go Back button to return to the Databases page.
@@ -60,7 +60,7 @@ You will need to create a username and password for this database.  It is NOT re
 
 Finally, scroll down to the Add User To Database section, make sure the User and Database are filled in correctly, and click on Add.  Checking the ALL PRIVELEGES check box will give your user complete access to the database.  Be sure to scroll down and click on the Make Changes button.
 
-(You need the following permissions on your MySQL user: SELECT, INSERT, UPDATE, DELETE, CREATE, ALTER, INDEX, DROP.   On an H-Sphere host, this would be "dba" access, or at least read/write. )  
+(You need the following permissions on your MySQL user: SELECT, INSERT, UPDATE, DELETE, CREATE, ALTER, INDEX, DROP.   On an H-Sphere host, this would be "dba" access, or at least read/write.)  
 
 ### All set?
 
@@ -296,4 +296,4 @@ For information on first steps to setting up your online shop, see the article [
 
 You should also familiarize yourself with the Zen Cart [Developer's Toolkit](/user/admin/developers_toolkit), located in your store's Admin area, under `Tools`. This will help you locate almost anything you want to customize in your shop!
 
-Once you're set up and ready to start announcing your URL to the public, you should FIRST review Site Security Recommendations to be sure your site is safe and not vulnerable to hackers. The most up-to-date version of this file can be found in the article [Important Security Recommendations](https://docs.zen-cart.com/user/security/security_recommendations/).
+Once you're set up and ready to start announcing your URL to the public, you should FIRST review Site Security Recommendations to be sure your site is safe and not vulnerable to hackers. The most up-to-date version of this file can be found in the article [Important Security Recommendations](/user/security/security_recommendations/).

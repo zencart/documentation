@@ -25,7 +25,9 @@ Here are some 'quick links' to various sections of this documentation:
 4. [Advanced Topics](advanced-topics). This section identifies additional methods that can be used to auto-load an observer-class and create event-specific event-handlers.
 
     a. [Choosing When to Load an Observer](choosing-when-to-load-an-observer).
+
     b. [Auto-loaded Observers](auto-loaded-observers).
+
     c. [Event-Specific Update Methods](event-specific-update-methods).
 
 5. [Additional Information](additional-information).  This section has references to additional documentation on the observer/notifier system.
@@ -238,7 +240,6 @@ Some plugins which can be helpful during development when using notifiers includ
 
 * [Watching Observers](https://www.zen-cart.com/downloads.php?do=file&id=2273)
 * [Zen Cart Notifier Report](https://www.zen-cart.com/downloads.php?do=file&id=2260)
-* [Zen Cart Notifier Trace](https://www.zen-cart.com/downloads.php?do=file&id=1114)
 
 ### Information about Notifiers 
 * A [list of notifiers](/dev/code/notifiers_list) is provided for the current Zen Cart release. 

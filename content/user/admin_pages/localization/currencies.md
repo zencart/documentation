@@ -220,7 +220,7 @@ Rates that are correctly converted will be listed in green at the top of the pag
 Once you have verified that clicking the Update Currencies button operates correctly and without errors, you can optionally create a "cron job" in your hosting company's control panel to run the update automatically on a scheduled basis. The command to give it is as follows. Work with your hosting company's tech support team if you need help with determining the correct path and the correct php binary to call.
 
 ```code
-php /full/server/path/to/your_admin/currency_cron.php
+php /full/server/path/to/admin/currency_cron.php
 ```
 
 ## Editing an existing currency
