@@ -24,11 +24,9 @@ Here are some 'quick links' to various sections of this documentation:
 
 4. [Advanced Topics](advanced-topics). This section identifies additional methods that can be used to auto-load an observer-class and create event-specific event-handlers.
 
-   a. [Choosing When to Load an Observer](choosing-when-to-load-an-observer).
-
-   b. [Auto-loaded Observers](auto-loaded-observers).
-
-   c. [Event-Specific Update Methods](event-specific-update-methods).
+    a. [Choosing When to Load an Observer](choosing-when-to-load-an-observer).
+    b. [Auto-loaded Observers](auto-loaded-observers).
+    c. [Event-Specific Update Methods](event-specific-update-methods).
 
 5. [Additional Information](additional-information).  This section has references to additional documentation on the observer/notifier system.
 
