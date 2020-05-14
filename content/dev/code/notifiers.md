@@ -10,7 +10,7 @@ type: codepage
 
 One of the many goals of the Zen Cart project has always been to make it simple for third party developers to add functionality to the core code in an easy and unobtrusive manner. To do this we use the [override system](/user/template/template_overrides/), the auto inclusion system and the observer-notifier system.
 
-The observer/notifier system is an implementation of the ["pub-sub" pattern](https://en.wikipedia.org/wiki/Publish–subscribe_pattern)  that was introduced to give developers deep access to core operation without the need to touch any core files at all. Although the implementation was written for an object-oriented code base, it can alse be used with procedural code.
+The observer/notifier system is an implementation of the ["pub-sub" pattern](https://en.wikipedia.org/wiki/Publish–subscribe_pattern)  that was introduced to give developers deep access to core operation without the need to touch any core files at all. Although the implementation was written for an object-oriented code base, it can also be used with procedural code.
 
 At a high level, a developer identifies an _event_ that is "interesting", e.g. a customer has just successfully logged in, and registers to be notified when that event occurs.  If/when that event occurs, the `base` class receives control and looks to see if any registrations exist for the event.  If so, all registered observer-classes are called to provide their custom actions.
 
@@ -37,7 +37,7 @@ Here are some 'quick links' to various sections of this documentation:
 
 The point of the observer/notifier system is to enable developers to write code that listens for certain events to happen and then perform a customized action for an event.
 
-Events are identified by a string-names and are triggered via call to a `notify` method by an _event issuer_.  You can see a [list of notifiers](/dev/code/notifiers_list) provided by the Zen Cart core for reference. 
+Events are identified by string-names and are triggered via call to a `notify` method by an _event issuer_.  You can see a [list of notifiers](/dev/code/notifiers_list) provided by the Zen Cart core for reference. 
 
 **Note**: Plugins (Zen Cart extensions) can also be _event issuers_.
 
@@ -47,7 +47,7 @@ The `notify` method takes the following inputs:
 | :---------------: | :-------: | ------------------------------------------------------------ |
 |     $eventId      |    Yes    | The string 'name' of the event, e.g. `NOTIFIER_CART_ADD_CART_END`. |
 |      $param1      |    No     | A read-only variable, the format of which varies by the `$eventId`.  Defaults to an empty array. |
-| $param2 - $param9 |    No     | A collection of read-write variables, passed as a reference.  The notification issuer is, essentially, giving permission for an observer to update these variable.  Each variable's format (and presence) varies by the `$eventId` and defaults to `null`. |
+| $param2 - $param9 |    No     | A collection of read-write variables, passed as a reference.  The notification issuer is, essentially, giving permission for an observer to update these variables.  Each variable's format (and presence) varies by the `$eventId` and defaults to `null`. |
 
 #### Class-Based Event Notifications
 
