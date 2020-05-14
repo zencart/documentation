@@ -14,6 +14,13 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 - The configuration constant `UPLOAD_FILENAME_EXTENSIONS` was removed from the database and replaced with an entry in `includes/classes/upload.php`.   If you have modified this constant from its original setting of `jpg,jpeg,gif,png,eps,cdr,ai,pdf,tif,tiff,bmp,zip` you will want to make the same change in the aforementioned file. 
 
+- Internal changes necessitated removing the following inclusions from `admin/includes/auto_loaders/currency_cron.core.php`: 
+    - `class.base.php`
+    - `init_file_db_names.php`
+    - `init_database.php`
+
+    If you have created additional cron jobs and used this file as a base, please apply the 1.5.7 changes to your custom files.
+
 ### Zen Cart 1.5.6 
 
 - The variable `$downloads`, returned from `includes/modules/downloads`, changed from a query result to an array.  Accordingly, templates which use this file will need to be adjusted to process an array rather than a database query.
