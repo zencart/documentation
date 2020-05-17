@@ -23,15 +23,19 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 ### Zen Cart 1.5.6 
 
-- The variable `$downloads`, returned from `includes/modules/downloads`, changed from a query result to an array.  Accordingly, templates which use this file will need to be adjusted to process an array rather than a database query.
+- The variable `$downloads`, returned from `includes/modules/downloads`, changed from a query result to an array.  Accordingly, templates which use this file will need to be adjusted to process an array rather than a database query.  This includes:
+    - `tpl_modules_downloads.php`
+    - `tpl_account_history_info_default.php`
 
-- The table containing the EZ-Pages data (`ezpages`) was split into two tables, `ezpages` and `ezpages_content`.  This was done in order to add multi-language capabilities. Accordingly, template files which reference the `ezpages` table will need adjustment to account for this division.
+- The table containing the EZ-Pages data (`ezpages`) was split into two tables, `ezpages` and `ezpages_content`.  This was done in order to add multi-language capabilities. Accordingly, template files (template overrides or custom files) which reference the `ezpages` table will need adjustment to account for this division.
 
 ### Zen Cart 1.5.5
 
-The arguments for the notifier `NOTIFY_ORDER_AFTER_SEND_ORDER_EMAIL` were changed.  This necessitated a code change in the observers watching for it. 
+- The arguments for the notifier `NOTIFY_ORDER_AFTER_SEND_ORDER_EMAIL` were changed.  This necessitated a code change in the observers watching for it. 
 
-The `responsive_classic` template was introduced in this release.  If you are coming from an older release with an older template, be sure to check and verify that your template performs properly on mobile devices.  If not, you can use Responsive Classic or select another responsive template.
+- The `responsive_classic` template was introduced in this release.  If you are coming from an older release with an older template, be sure to check and verify that your template performs properly on mobile devices.  If not, you can use Responsive Classic or select another responsive template.
+
+- Starting in this version, the email css was pulled out of the individual templates into a shared file called `email/email_common.css`.  If you are creating or updating email templates, you should follow this new practice. 
 
 ### Zen Cart 1.5.0 
 
