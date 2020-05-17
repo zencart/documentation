@@ -234,8 +234,24 @@ See [FTP tools](/user/first_steps/useful_tools/#ftp-tools) and [secure access](/
 
 ### 13. Server Operating System Patches
 
-There are some common server vulnerabilities that are worth checking into to ensure your server isn't vulnerable to easy hacker exploits. There are entire professions dedicated to this subject, so it's impossible to list everything here; but some of the more common things needing attention are:
+There are some common server vulnerabilities that are worth checking into to ensure your server isn't vulnerable to easy hacker exploits. There are entire professions dedicated to this subject, so it's impossible to list everything here. Work with your hosting company to ensure your server is patched with the latest requirements for your operating system.
 
-1.  SSL Patch: [http://heartbleed.com/](http://heartbleed.com/)
-2.  PHP CGI Patch: [http://arstechnica.com/security/2014/03/php-bug-allowing-site-hijacking-still-menaces-internet-22-months-on/](http://arstechnica.com/security/2014/03/php-bug-allowing-site-hijacking-still-menaces-internet-22-months-on/)
+### 14. HTTP Headers for PCI Compliance
 
+PCI Compliance aims to provide a secure experience for both you and your customers.
+It is common for PCI scanners to flag concerns about same-origin, CSP, XSS, and more. 
+To implement these headers in Apache the following `.htaccess` directives could be added to a `.htaccess` file in your site's `document root` (ie: public_html). Work with your hosting company for specifics, and consult them on how best to customize these to your unique needs. It is important that your `https` configuration is already solid before you implement these; again, work with your hosting company.
+
+```
+# Security Headers
+<IfModule mod_headers.c>
+	Header set X-XSS-Protection "1; mode=block"
+	Header set X-Frame-Options "SAMEORIGIN"
+	Header set X-Content-Type-Options "nosniff"
+	Header always set Strict-Transport-Security "max-age=3000; includeSubDomains"
+	# Header set Content-Security-Policy ... # site-owner needs to decide what suits here
+	Header set Referrer-Policy "same-origin"
+	Header set Feature-Policy "geolocation 'self'; vibrate 'none'"
+	Header set X-Permitted-Cross-Domain-Policies: none
+</IfModule>
+```
