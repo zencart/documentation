@@ -21,6 +21,8 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
     If you have created additional cron jobs and used this file as a base, please apply the 1.5.7 changes to your custom files.
 
+- The field `products_description.products_viewed` has been deprecated. It will be deleted in a future release.  Product view tracking is now done using the table `count_product_views`. 
+
 ### Zen Cart 1.5.6 
 
 - The variable `$downloads`, returned from `includes/modules/downloads`, changed from a query result to an array.  Accordingly, templates which use this file will need to be adjusted to process an array rather than a database query.  This includes:
