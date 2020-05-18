@@ -11,6 +11,11 @@ Detailed upgrade instructions that help you retain your customizations while upg
 
 Before you begin, remember to make a [complete backup of your files and database](/user/running/backup/). 
 
+Be sure to familiarize yourself with the content of the release (and any prior releases you are upgrading through to get to the new release).  You should review 
+
+- Relevant **What's New** files in the [release directory](https://www.zen-cart.com/docs/). 
+- The [Release Specific Considerations](/user/upgrading/release_specific_upgrade_considerations/) document. 
+
 ### <font color="#ff0000"> **A. If you want to PRESERVE YOUR CUSTOMIZATIONS, use these instructions [upgrading and preserving customizations](/user/upgrading/detailed_upgrading/)** </font>
 
 ### <font color="#333399">B. If you have NO CUSTOMIZATIONS (or don't wish to preserve the ones you have), here's a high-level overview/**summary** of a slightly shorter process:</font>
