@@ -10,6 +10,7 @@ weight: 10
 - Secure -- no one but your administrative personnel can access your customer/catalog data
 - Easy to install -- our helpful installation program guides you easily through the setup process
 - Mobile ready: can be viewed on tablets and phones as well as desktop devices
+- The responsive_classic template meets accessibility standards for both desktop and mobile. 
 - Advanced Template System using stylesheets and images
 - Any PHP coding changes can be protected during upgrades by using the built-in override protection system
 - Switching from one installed template to another is as simple as a couple of clicks in the Admin
