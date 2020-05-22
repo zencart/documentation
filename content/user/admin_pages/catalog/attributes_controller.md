@@ -144,7 +144,17 @@ These are used to help distinguish other features of the attribute such as:
 
 ## Attribute Images
 
-To add an image to each attribute, you can use the file selection tool below the label 'Attributes Image Swatch'. Click *Choose File* and select the image from your computer.
+To add an image to a product's Option Value, use the file selection tool below the label 'Attributes Image Swatch'.  Click *Choose File* and select the image from your computer.  Be sure the *Remove Image?* is set to *No*.
+
+Click *Update*.
+
+To update an image, click *Choose File*, select the updated image from your computer, then click *Update*.  If you want to remove the previous image from the server, set the *Overwrite Existing Image on Server* to *No*.
+
+click *Update*.
+
+To delete an existing image, select *Yes* for *Remove Image? Note: Removes image from ...*
+
+click *Update*.
 
 ## Downloadable Products As Attributes
 
