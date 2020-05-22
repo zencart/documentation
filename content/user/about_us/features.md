@@ -35,23 +35,25 @@ weight: 10
 - If you need to take your site offline for a period of maintenance, you can do it easily by posting advance notices, as well as a friendly Down For Maintenance page that's also Search-Engine friendly
 - During maintenance intervals, specified IP addresses may still access the site for testing
 - Nearly every piece of information about your products can be controlled in the Admin areas, giving you the ability to fine-tune how your products and services appear to your customers without needing to write code
-- Multiple items can be added to the shopping cart by simply entering quantities and click Add
+- Multiple items can be added to the shopping cart from a listing page by simply entering quantities and clicking Add
 - The Product Type feature allows you to customize information fields and display format for different products differently
 - You can add multiple images to your products, in small/medium/large format
 - A verification for Agreement to the Terms of Service has been added for compliance with new laws regarding privacy and disclosure
 - CVV2 card verification number support is available for compliance with most Merchant Agreements
-- Shipping Options -- multiple carriers are supported, including Hold for Pickup, Free Delivery in an area, and most major couriers and postal services
-- Payment Options - multiple payment processors are supported, including PayPal, Square and Authorize 
-- Customer Access Control -- Browsing, viewing prices and buying policies may be configured to require authorization 
+- Shipping - quotes from most major couriers and postal services are available 
+- Shipping - non-quoted options possible, such as Hold for Pickup, Free Delivery in an area, etc. 
+- Payment - multiple payment processors are supported, including PayPal, Square and Authorize 
+- Payment - offline options available such as Check/Money Order and Invoice
+- Customer Access Control -- Browsing, viewing prices and buying may be configured to require authorization 
 - Showcase - You can set your store up to be simply a product showcase, without pricing at all
 - Search options allow you to search for products based on name, description, metatags, price, and more
-- Meta Tags keywords and descriptions can be controlled at the per-product level, all from the administrative interface
+- Meta Tags keywords and descriptions can be controlled at the per-product level, all from the admin interface
 - Automatic detection of search engine spiders
 - Intelligent generation of metatags content for search engines
 - Upgrade Detection notifies administrators of new versions at login
 - CKEditor integration available for WYSIWYG editing of site content
 - Tight security on password handling, login/logout, and more
-- Customizable email generated at all relevant points of ordering process: when a new account is created, at checkout time, as order is processed by storeowner, as stock is depleted, when product availability changes, when customer reviews are received, and more
+- Customizable email generated at all relevant points of ordering process: when a new account is created, when stock is depleted, after a customer order, as order is processed by storeowner, when product availability changes, when customer reviews are received, and more
 - Storeowner email addresses are protected from abuse, as they are not displayed on-screen 
 - Contact Us page can be configured to support multiple destinations, such as Sales, Technical Support, Webmaster, and so on
 - HTML email supported

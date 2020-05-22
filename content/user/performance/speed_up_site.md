@@ -27,6 +27,8 @@ busy sites.
 
 Disable this feature by editing ` includes/extra_datafiles/products_viewed_counter.php` and setting `LEGACY_PRODUCTS_VIEWED_COUNTER` to `off`.
 
+**NOTE:** This is done for you in Zen Cart 1.5.7 and above; this change is only relevant on 1.5.6c and below. 
+
 ### Ensure your images are optimized for your site.  
 
 Specifically, use small images for thumbnails, slightly larger for product pages (`_MED` images), and large detailed images for "click to enlarge" (`_LRG`) images.  
