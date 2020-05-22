@@ -6,3 +6,7 @@ weight: 70
 ---
 
 This page allows you to view and edit certain information about downloadable items. 
+
+<img src="/images/downloads_manager.png" alt="Downloads Manager" />
+
+

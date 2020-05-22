@@ -20,9 +20,9 @@ Its a good idea to pre plan which attributes you want on which products as you w
 
 *   you then have a choice of how to select your product
 
-    either click PREVIOUS / NEXT beside the category dropdown box
+    - click *Previous Product* or *Next Product* beside the category dropdown box, or 
 
-    or select your chosen product from the large scroll box and click DISPLAY
+    - select your chosen product from the large scroll box and click *Display*.
 
 ## Add the Attribute
 
@@ -34,7 +34,7 @@ Its a good idea to pre plan which attributes you want on which products as you w
 
     e.g select option name **Size** [dropdown] from the 1st box and Small [**SIZE:**] from the 2nd box.
 
-*   click INSERT
+*   click *Insert*. 
 
 ## Weights and Prices
 
@@ -144,17 +144,17 @@ These are used to help distinguish other features of the attribute such as:
 
 ## Attribute Images
 
-To add an image to a product's **Option Value**, click **Choose File** and select the image from your computer.  Be sure the **Remove Image?** is set to **No**.
+To add an image to a product's Option Value, use the file selection tool below the label 'Attributes Image Swatch'.  Click *Choose File* and select the image from your computer.  Be sure the *Remove Image?* is set to *No*.
 
-Click **Update**.
+Click *Update*.
 
-To update an image, click **Choose File**, select the updated image from your computer, then click **Update**.  If you want to remove the previous image from the server, set the **Overwrite Existing Image on Server** to **No**.
+To update an image, click *Choose File*, select the updated image from your computer, then click *Update*.  If you want to remove the previous image from the server, set the *Overwrite Existing Image on Server* to *No*.
 
-click **Update**.
+click *Update*.
 
-To delete an existing image, select **Yes** for **Remove Image? Note: Removes image from ...**
+To delete an existing image, select *Yes* for *Remove Image? Note: Removes image from ...*
 
-click **Update**.
+click *Update*.
 
 ## Downloadable Products As Attributes
 
@@ -163,8 +163,6 @@ type in the filename of the download
 type in how many days the download will expire
 
 type in the maximum number of downloads that can be made
-
-click INSERT
 
 ## Copying Attributes to Other Products or Categories
 
