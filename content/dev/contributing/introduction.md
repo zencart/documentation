@@ -29,7 +29,7 @@ It's really as easy as 1-2-3 ...
 
   If you're simply "looking for ways to get started", take a look at the existing [Zen Cart Issues on Github](https://github.com/zencart/zencart/issues) for issues that are tagged with "up-for-grabs" or "first-timers-only".
 
-2. If you're going to contribute code, read through the [Github Workflow](/dev/contributing/github_workflow) document to learn more about setting up git and github, cloning the repository, creating a branch in which to make your code changes, and how to submit a [Pull Request](/dev/contributing/pull_requests)
+2. If you're going to contribute code, read through the [Github Workflow](/dev/contributing/github_workflow) document to learn more about setting up git and github, cloning the repository, creating a branch in which to make your code changes, and how to submit a Pull Request. 
 
 3. As you start working on your code changes and pull request, review the [Coding Standards](/dev/contributing/coding_standards) guide to ensure that your code matches both the formatting and testing requirements. If you're submitting a new feature and know how to write PHP code tests, please be sure to submit tests with your code.
 
