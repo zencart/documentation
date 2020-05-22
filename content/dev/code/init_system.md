@@ -19,7 +19,7 @@ In the following sections we will work through exactly how the Zen Cart engine u
 
 In terms of its osCommerce roots, `application_top.php` was the file included on every page/script needed to invoke and handle basic core sub-systems. Any function/class that was needed globally by any page needed to be initialised here.
 
-From a customisation perspective this was a bad thing. If third party code (contributions) needed to access a new global function/class then `application_top.php` would need to be 'hacked'. This would obviously cause problems on upgrades, when `application_top.php` would be overwritten, and any customisations would be lost.
+From a customization perspective this was a bad thing. If third party code (contributions) needed to access a new global function/class then `application_top.php` would need to be 'hacked'. This would obviously cause problems on upgrades, when `application_top.php` would be overwritten, and any customizations would be lost.
 
 Zen Cart attempted to mitigate this by providing certain override directories where extra data/functions files could be placed that would be automatically included when `application_top.php` was run.
 

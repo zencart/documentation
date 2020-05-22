@@ -8,7 +8,7 @@ weight: 10
 If you can log in to your Zen Cart admin using another account,  please do so, and reset/modify the other admin password as needed using the [Admins > Admin Users](/user/admin_pages/admins/admin_users/) page.
 
 ## 2. Resend Password 
-If you can't login from another account, try using the *Resend Paswword* button on the admin login page. 
+If you can't login from another account, try using the *Resend Password* button on the admin login page. 
 Enter the admin email address, and wait for your new password to arrive by email. 
 
 ## 3. Use phpMyAdmin 

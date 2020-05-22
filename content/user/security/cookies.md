@@ -5,7 +5,7 @@ category: security
 weight: 10
 ---
 
-A fresh clean _uncustomised_ installation of Zen Cart does VERY LITTLE with cookies or anything related to "tracking" of visitors.  
+A fresh clean _uncustomized_ installation of Zen Cart does VERY LITTLE with cookies or anything related to "tracking" of visitors.  
 
 ### COOKIES  
 Zen Cart requires that the visitor's computer accept a session cookie. This session cookie contains simply the session ID number which identifies the visitor to the store, as separate from other visitors. The session cookie contains no personal identity information, and in itself is thus anonymous as a 3rd-party cannot use anything in the cookie to identify the visitor in any way.  

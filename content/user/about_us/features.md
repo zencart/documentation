@@ -12,7 +12,7 @@ weight: 10
 - Mobile ready: can be viewed on tablets and phones as well as desktop devices
 - The responsive_classic template meets accessibility standards for both desktop and mobile. 
 - Advanced Template System using stylesheets and images
-- Any PHP coding changes can be protected during upgrades by using the built-in override protection system
+- PHP customizations can be protected during upgrades by using overrides and notifiers
 - Switching from one installed template to another is as simple as a couple of clicks in the Admin
 - Product variants may be added using product attributes, appearing as radio buttons, checkboxes, drop-down lists, text boxes, file uploads, file downloads, and more
 - Attribute Options can upcharge the price of an item, and an item can have its price completely controlled by attributes 
