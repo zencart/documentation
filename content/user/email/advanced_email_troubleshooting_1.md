@@ -106,7 +106,9 @@ Blacklisting is complex, insofar as there is no single definitive 'blacklist'. T
 
 ### SPF RECORDS
 
-An SPF record is yet another DNS record, this time a TXT record that allows you to specify which machines are ALLOWED to send mail for your domain. The set-up has many possibilities, and it is easiest to visit [http://www.openspf.org/](http://www.openspf.org/) where they have a wizard to assist. It is easy to succumb to the temptation to make the SPF definition broader than it should be. Resist. Another point that is easy to overlook with SPF records is that the mail server that sends out the email for your site should be included in your SPF record. I'll repeat that. The mail server that sends out the email for your site MUST be included in your SPF record. If it is not, why are you doing this?
+An SPF record is yet another DNS record, this time a TXT record that allows you to specify which machines are ALLOWED to send mail for your domain. The set-up has many possibilities; do a web search to learn more about it.
+
+It is easy to succumb to the temptation to make the SPF definition broader than it should be. Resist. Another point that is easy to overlook with SPF records is that the mail server that sends out the email for your site should be included in your SPF record. I'll repeat that. The mail server that sends out the email for your site MUST be included in your SPF record. If it is not, why are you doing this?
 
 Any, all or none of the above (DNS, MX, SPF, etc) may be set up for you by your domain registrar or hosting service. What is much more important is that you check, and fix anything that is not correct.
 

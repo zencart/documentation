@@ -17,7 +17,7 @@ You will need to arrange with your hosting company to have SSL capability added 
 
 - URL looks like: `https://www.YOURSITE.com`
 - requires purchase of an SSL certificate, at an annual fee ranging from $20 to $900 per year.  You do NOT need the most expensive one for simple secure SSL use on your site; from a technical perspective, a low cost certificate is just as secure as the more expensive one. The certificate is usually installed by your hosting company. You can purchase one yourself or have your hosting company purchase it for you.  
-- when you purchase the certificate, decide FIRST whether you want your SSL URL to include the `www.` prefix or not. Ideally ask the certificate company to allow you to use BOTH. They can do that, usually at no extra charge.  
+- when you purchase the certificate, decide FIRST whether you want your SSL URL to include the `www` prefix or not. Ideally ask the certificate company to allow you to use BOTH. They can do that, usually at no extra charge.  
 
 **IMPORTANT NOTE ABOUT SSL AND ZEN CART:**
 
@@ -26,7 +26,7 @@ It is important that your hosting company's servers be configured to serve both 
 
 # 2\. Make sure SSL is working 
 
-FIRST, make sure you've got SSL enabled on your hosting account. Work with your hosting company to get a certificate installed and to purchase one if necessary. As mentioned above, IT IS RECOMMENDED THAT YOU REGISTER IT TO YOUR "[www."](http://www.%22) address, such as `www.YOURSITE.com` (and not just "YOURSITE.com"), or alias it to both URL forms.  
+FIRST, make sure you've got SSL enabled on your hosting account. Work with your hosting company to get a certificate installed and to purchase one if necessary. As mentioned above, IT IS RECOMMENDED THAT YOU REGISTER IT TO YOUR `www` address, such as `www.YOURSITE.com` (and not just "YOURSITE.com"), or alias it to both URL forms.  
 
 - Can you get to `https://www.YOURSITE.com` ? 
 - If not, ask your hosting company how to do it.  
