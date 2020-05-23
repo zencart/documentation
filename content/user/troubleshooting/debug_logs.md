@@ -29,8 +29,6 @@ A debug-log's contents can be a little cryptic, here's part of one created for *
 --> PHP Notice: Constant TABLE_HEADING_QUANTITY already defined in C:\xampp\htdocs\zc156c\includes\languages\english\responsive_classic\index.php on line 37.
 ```
 
-Note that I changed the `/includes/extra_configures/enable_error_logging.php` to enable ***all*** errors to be logged, that's why there are `PHP Notice` logs!
-
 Each log-entry contains three (3) significant sections (not in this order):
 
 1. A header
@@ -71,10 +69,12 @@ Let's examine the back-trace provided by the first log-entry in the example give
 | /includes/languages/english/responsive_classic/index.php:35 | define       |
 
 ### Utilities
-The following tools are available to make log handling easier:
+The following tools are available for working with debug log files:
 
-- [Display Log Files](https://www.zen-cart.com/downloads.php?do=file&id=1583) - View the contents of the log-files via an admin tool.
 - [Log Manager](https://www.zen-cart.com/downloads.php?do=file&id=2123) - Automatically remove logs after a certain period of time.
+
+These are for older versions of Zen Cart:
+- [Display Log Files](https://www.zen-cart.com/downloads.php?do=file&id=1583) - View the contents of the log-files via an admin tool. Built in to Zen Cart since 1.5.7.
 - [myDEBUG log Backtrace](https://www.zen-cart.com/downloads.php?do=file&id=1879) - shows stack trace when a log is created. Built in to Zen Cart after 1.5.5. 
-- [Report All Errors](https://www.zen-cart.com/downloads.php?do=file&id=1792) - shows more extensive error logging than is done by default in Zen Cart. 
+- [Report All Errors](https://www.zen-cart.com/downloads.php?do=file&id=1792) - shows more extensive error logging than is done by default in Zen Cart. Built in to Zen Cart since 1.5.7.
 
