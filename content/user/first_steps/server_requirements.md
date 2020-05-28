@@ -6,7 +6,7 @@ weight: 10
 ---
 ## Zen Cart specifications - Server Requirements
 
-_(Last updated: May 20, 2020)_  
+_(Last updated: May 28, 2020)_  
 
 *Minimum* server requirements:  
 
@@ -54,7 +54,7 @@ Optional modules: gd and mb_xxxxx.
 
 ## MySQL Version
 
-*   Zen Cart v1.5.7 expects MySQL 5.1 to 8.0, or MariaDB 10.1 to 10.4 (future versions will require MySQL 5.6+)
+*   Zen Cart v1.5.7 expects MySQL 5.1 to 8.0, or MariaDB 10.1 to 10.4 (future versions will require MySQL 5.7.8+ or MariaDB 10.2.7+)
 *   Zen Cart v1.5.6 expects MySQL 5.1 to 5.7, or MariaDB 10.1 to 10.4
 *   Zen Cart v1.5.5 expects MySQL 5.1 to 5.7, or MariaDB 10.1 (10.2 may trigger "strict" errors)
 *   Zen Cart v1.5.0 to v1.5.4 expects MySQL 5.1 to 5.5, and <u>may</u> work with MariaDB 10.1
