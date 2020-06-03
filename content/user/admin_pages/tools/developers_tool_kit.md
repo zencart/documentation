@@ -5,7 +5,7 @@ category: admin_pages
 weight: 90
 ---
 
-The Developers Tool Kit is an essential tool for anyone involved in customising Zen Cart.
+The Developers Tool Kit is an essential tool for anyone involved in customizing Zen Cart.
 
 
 The Developers Tool Kit will search through all the files and directories under the directory where you installed Zen Cart for an exact result of the entered text.

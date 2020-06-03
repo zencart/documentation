@@ -27,6 +27,8 @@ busy sites.
 
 Disable this feature by editing ` includes/extra_datafiles/products_viewed_counter.php` and setting `LEGACY_PRODUCTS_VIEWED_COUNTER` to `off`.
 
+**NOTE:** This is done for you in Zen Cart 1.5.7 and above; this change is only relevant on 1.5.6c and below. 
+
 ### Ensure your images are optimized for your site.  
 
 Specifically, use small images for thumbnails, slightly larger for product pages (`_MED` images), and large detailed images for "click to enlarge" (`_LRG`) images.  
@@ -47,7 +49,7 @@ In [Admin > Configuration > Attribute Settings](/user/admin_pages/configuration/
 
    (b). In the [Attributes Controller](/user/admin_pages/catalog/attributes_controller/), when you are adding an attribute to a product, set "Apply Discounts Used by Product Special/Sale: No" (assuming that the options don't have cost associated with them); this will heavily reduce your parse times.  
 
-### Home Page perrformance 
+### Home Page performance 
 If it's primarily your home page (ie: the storefront) that's slow, you might consider turning off content-boxes related to specials and featured products, as they generate a lot of extra queries to extract special pricing information.  
 
 ### Don't overload categories 

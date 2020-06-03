@@ -16,21 +16,21 @@ At a high level, a developer identifies an _event_ that is "interesting", e.g. a
 
 Here are some 'quick links' to various sections of this documentation:
 
-1. [Issuing Event Notifications](issuing-event-notifications).  Identifies the mechanism used by _event issuers_ to issue a notification.
+1. [Issuing Event Notifications](/dev/code/notifiers/#issuing-event-notifications).  Identifies the mechanism used by _event issuers_ to issue a notification.
 
-2. [Observing Notifications](observing-notifications). Identifies the mechanisms used by _event observers_ to perform their customizations.
+2. [Observing Notifications](/dev/code/notifiers/#observing-notifications). Identifies the mechanisms used by _event observers_ to perform their customizations.
 
-3. [Loading Your Observer Class](loading-your-observer-class).  Identifies how to load your observer-class so that it can begin its observations.
+3. [Loading Your Observer Class](/dev/code/notifiers/#loading-your-observer-class).  Identifies how to load your observer-class so that it can begin its observations.
 
-4. [Advanced Topics](advanced-topics). This section identifies additional methods that can be used to auto-load an observer-class and create event-specific event-handlers.
+4. [Advanced Topics](/dev/code/notifiers/#advanced-topics). This section identifies additional methods that can be used to auto-load an observer-class and create event-specific event-handlers.
 
-    a. [Choosing When to Load an Observer](choosing-when-to-load-an-observer).
+    a. [Choosing When to Load an Observer](/dev/code/notifiers/#choosing-when-to-load-an-observer).
 
-    b. [Auto-loaded Observers](auto-loaded-observers).
+    b. [Auto-loaded Observers](/dev/code/notifiers/#auto-loaded-observers).
 
-    c. [Event-Specific Update Methods](event-specific-update-methods).
+    c. [Event-Specific Update Methods](/dev/code/notifiers/#event-specific-update-methods).
 
-5. [Additional Information](additional-information).  This section has references to additional documentation on the observer/notifier system.
+5. [Additional Information](/dev/code/notifiers/#additional-information).  This section has references to additional documentation on the observer/notifier system.
 
 
 ## Issuing Event Notifications

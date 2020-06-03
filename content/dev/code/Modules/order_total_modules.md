@@ -204,7 +204,7 @@ id | string | Normally set to the current module's "code", e.g. `ot_my_order_tot
 module | string | Normally set to the current order-total's descriptive name.  This value is displayed to the customer.
 redeem_instructions | string | Normally set to a language-constant, describes to the customer what the module does and how its processed.
 checkbox | string | Normally set to a text string containing HTML tags required for some special processing by the module.
-fields | array | A basic array containing one array-element for each customer-enterable input field used in this module's processing.
+fields | array | A basic array containing one array-element for each customer-configurable input field used in this module's processing.
 
 Each `fields` array element is also an associative array, using the following structure:
 

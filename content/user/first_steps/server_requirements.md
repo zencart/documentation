@@ -6,7 +6,7 @@ weight: 10
 ---
 ## Zen Cart specifications - Server Requirements
 
-_(Last updated: Dec 1, 2019)_  
+_(Last updated: May 28, 2020)_  
 
 *Minimum* server requirements:  
 
@@ -24,6 +24,7 @@ _(Last updated: Dec 1, 2019)_
 
 **Using the latest version of Zen Cart is always recommended for maximum compatibility.**  
 
+*   <font color="#ff0000">**Zen Cart v1.5.7** is designed for PHP 5.6 through PHP 7.4</font> (future versions will require PHP 7+)
 *   <font color="#ff0000">**Zen Cart v1.5.6** is designed for PHP 5.5 through PHP 7.3</font>
 *   <font color="#ff0000">**Zen Cart v1.5.5** is designed for PHP 5.5 up to PHP 7.1</font> 
 *   <font color="#ff0000">**Zen Cart v1.5.4** is designed for PHP 5.5 and PHP 5.6</font> 
@@ -53,6 +54,7 @@ Optional modules: gd and mb_xxxxx.
 
 ## MySQL Version
 
+*   Zen Cart v1.5.7 expects MySQL 5.1 to 8.0, or MariaDB 10.1 to 10.4 (future versions will require MySQL 5.7.8+ or MariaDB 10.2.7+)
 *   Zen Cart v1.5.6 expects MySQL 5.1 to 5.7, or MariaDB 10.1 to 10.4
 *   Zen Cart v1.5.5 expects MySQL 5.1 to 5.7, or MariaDB 10.1 (10.2 may trigger "strict" errors)
 *   Zen Cart v1.5.0 to v1.5.4 expects MySQL 5.1 to 5.5, and <u>may</u> work with MariaDB 10.1
@@ -70,11 +72,11 @@ Plugin/Addon-compatibility may vary.
 *   **Recommended Apache modules include:** expires, headers, env, alias, deflate, ssl, mime, phpX, rewrite (in addition to other standard/default modules).
 
 ## Nginx  
-The default Zen Cart distribution contains numerous Apache .htaccess rules to aid in implementing security protections against malicious spoofing and other abuse. These will not give you any protections if you're running Nginx.
+The default Zen Cart distribution contains numerous Apache .htaccess rules to aid in implementing security protections against malicious spoofing and other abuse. These will not give you any protections if you're running Nginx, so you will need to do those yourself.
 
 At the end of initial installation some Nginx `conf` file content suggestions are provided which you could manually copy into your nginx master configuration, to provide those same protections.
 
-## Windows IIS **NOT RECOMMENDED** 
+## Windows IIS **NOT SUPPORT** 
 Zen Cart is not regularly tested on IIS.  We don't recommend IIS, and we don't provide any default-configuration scripts for IIS.  
 
 ## Perl, Python, CGI and other languages?  

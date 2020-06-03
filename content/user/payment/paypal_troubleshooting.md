@@ -34,8 +34,7 @@ These are the common configuration errors causing IPN processing to fail:
 7.  There are [two communication testing tools available in the support forum](https://www.zen-cart.com/forum/showthread.php?t=65680). If you are asking for troubleshooting help, please supply the URL to each of these tools after you have installed them on your site, so we can assess the responses they reveal.
 8.  Turn on [debug logging](https://www.zen-cart.com/forum/showthread.php?t=61199) in your PayPal module, and post a link to the zipped log files so they can be analyzed. You'll need to check to be sure that your _/logs_ folder is marked read/write (chmod 777). Then use your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) to access/view those logs and zip-and-upload them for analysis.
 9.  Check there is no IP block or firewall to prevent PayPal's servers from talking to your server (your host should check this, and you should check any blocking you may have done via your control panel. Also check .htaccess for any _deny from_ statements and be sure none of them are addresses related to PayPal.
-    *   [PayPal IP Address List](https://ppmts.custhelp.com/cgi-bin/ppdts.cfg/php/enduser/std_adp.php?p_faqid=92) (these should be in your host's firewall whitelist)
-    *   AND the IP addresses on PayPal's [Go Live Checklist](https://cms.paypal.com/us/cgi-bin/?cmd=_render-content&content_ID=developer/howto_api_golivechecklist) page
+    *   PayPal IP Address List and the IP addresses on PayPal's Go Live Checklist should be in your host's firewall whitelist.  See their website for details. 
     *   For sandbox testing, also open: ipn.sandbox.paypal.com
 10.  You may find it helps to Uninstall ("remove") and Re-Install the payment module in Zen Cart admin.
 11.  When you use two PayPal accounts to make a simulation, make sure you're using the right account.
