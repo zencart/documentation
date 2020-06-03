@@ -21,10 +21,13 @@ The  manifest file should look like
 
     <?php
     return [
-
+        'pluginType' => 'free',
         'pluginAuthor' => 'plugin author',
-        'pluginVersion' => 'v1.0.0',
+        'pluginName' => 'Reward Points',
+        'pluginDescription' => 'Reward Points Description',
+        'managed' => true,
         'zcVersions' => ['v157'],
+        'pluginGroups' => []
     ];
 
 ### pluginType
