@@ -1,6 +1,6 @@
 ---
 title: Why am I getting 500 or 406 or 404 or 403 errors during product updates?
-description: Zen Cart Warning - Product Update gives 500 or 406 or 404 or 403 errors 
+description: Zen Cart Warning - Product Update returns HTTP status 500, 406, 404 or 403
 category: troubleshooting 
 weight: 10
 ---

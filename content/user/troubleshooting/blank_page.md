@@ -26,47 +26,8 @@ installation by using the [Changed Files mod](https://www.zen-cart.com/downloads
 ## 2\. Have you created any syntax errors in your customizations and/or file edits?
 
 A PHP syntax error will very often result in a blank screen, or a partially-blank screen.  
-When this happens, there is often also an entry in the server's errorlog, which you can often view via your hosting control panel area. But, sometimes you can't view that log without requesting your hosting company to access it for you, for privacy reasons. So, alternatively you can use the debug logging built-in to Zen Cart:  
+When this happens, there is often also an entry in the server's errorlog, which you can often view via your hosting control panel area. But, sometimes you can't view that log without requesting your hosting company to access it for you, for privacy reasons. So, alternatively you can use the debug logging built-in to Zen Cart, which is described below. 
 
-### a) Check for the actual error messages in the store's myDEBUG-xxxxxx.log files:
-
-The built-in debug logging will create files 
-in your website's /logs/ folder named 
-`myDEBUG-xxxxxx.log`
-(or `myDEBUG-adm-xxxxxx.log` if they are from the admin side).  
-
-To access these files, use your [FTP program](/user/first_steps/useful_tools/#ftp-tools) to connect to your [hoster](/user/first_steps/hosting/#hosting-companies).
-
-If there are no myDEBUG-xxxxxx.log files in your /logs/ folder, then you might need to [make your /logs/ folder writable](/user/installing/permissions).
-
-You'll want to read the contents of these files to see what the actual PHP errors are.  
-
-Once you have a log, see [reading a myDEBUG log](/user/troubleshooting/debug_logs/). 
-
-Then search this FAQ area for your error message and/or see the "Dealing with Error Messages" section, later in this article.  
-
-**NOTE:** When errors start occurring, the number of log files in this folder can grow very quickly. You can purge them by using the Debug Log File Purge option from your Admin > Tools > Store Manager screen.  
-
-You will of course want to review the contents of those files first so you can address the problems they're recording.  
-
-If you don't purge them, it will eventually slow down your website's performance, and use up a large amount of disk space.  
-
-**NOTE:** If you're running Zen Cart v1.3.8 or older, you REALLY need to UPGRADE ASAP! In the meantime, to enable the debug logging on older versions, use the [Debug Error-Logging Tool](https://www.zen-cart.com/downloads.php?do=file&id=606) from our downloads area.  
-
-### b) Dealing with the Error Messages
-
-Kinds of errors:  
-
-*   The "fatal" messages are the more important ones to deal with.
-*   "Notice" messages can be ignored in most cases.
-*   "Warnings" should draw some attention, but are not fatal.
-
-How to read the errors:  
-
-*   Note that many error/warning messages will be a result of previous error/warning messages.  
-    <font color="#FF0000">**Deal with them in the order they appear**,</font> and don't blame the later errors until the earlier ones are dealt with first.
-*   One of the MOST COMMON errors you'll see is addressed here: [Warning: Headers Already Sent ...](/user/troubleshooting/warning_headers_already_sent).
-*   Use the search option on this page to find answers to any other errors you find.
 
 ## 3\. Common customization errors
 
@@ -91,11 +52,52 @@ Sometimes when entering product data, if you copy+paste from another application
 
 And for product-images, make sure you don't have spaces and hyphens in the product-image-filenames.  
 
-* * *
+## Working with Debug Logs
 
-**Other Information**  
+### a) Looking at log files 
 
-If you are using Yahoo Hosting, you might want to enable their [script logs](http://help.yahoo.com/l/us/yahoo/smallbusiness/webhosting/php/php-05.html).
+The built-in debug logging will create files 
+in your website's /logs/ folder named 
+`myDEBUG-xxxxxx.log`
+(or `myDEBUG-adm-xxxxxx.log` if they are from the admin side).  
+
+To access these files, use your [FTP program](/user/first_steps/useful_tools/#ftp-tools) to connect to your [hoster](/user/first_steps/hosting/#hosting-companies).
+
+If there are no myDEBUG-xxxxxx.log files in your /logs/ folder, then you might need to [make your /logs/ folder writable](/user/installing/permissions).
+
+You'll want to read the contents of these files to see what the actual PHP errors are.  
+
+Once you have a log, see [reading a myDEBUG log](/user/troubleshooting/debug_logs/). 
+
+Then search this FAQ area for your error message and/or see the "Dealing with Error Messages" section, later in this article.  
+
+**NOTE:** When errors start occurring, the number of log files in this folder can grow very quickly. You can purge them by using the Debug Log File Purge option from your Admin > Tools > Store Manager screen.  
+
+You will of course want to review the contents of those files first so you can address the problems they're recording.  
+
+If you don't purge them, it will eventually slow down your website's performance, and use up a large amount of disk space.  
+
+**NOTE:** If you're running Zen Cart v1.3.8 or older, you REALLY need to UPGRADE ASAP! In the meantime, to enable the debug logging on older versions, use the [Debug Error-Logging Tool](https://www.zen-cart.com/downloads.php?do=file&id=606) from our downloads area.  
+
+### b) Using Error Messages
+
+Kinds of errors:  
+
+*   The "fatal" messages are the more important ones to deal with.
+*   "Notice" messages can be ignored in most cases.
+*   "Warnings" should draw some attention, but are not fatal.
+
+How to read the errors:  
+
+*   Note that many error/warning messages will be a result of previous error/warning messages.  
+    <font color="#FF0000">**Deal with them in the order they appear**,</font> and don't blame the later errors until the earlier ones are dealt with first.
+*   One of the MOST COMMON errors you'll see is addressed here: [Warning: Headers Already Sent ...](/user/troubleshooting/warning_headers_already_sent).
+*   Use the search option on this page to find answers to any other errors you find.
+
+### c) Missing Log Files 
+
+If you're seeing a blank screen but have no log files in your /logs/ folder,
+it could be that your configuration has changed the default logging behavior.  See [Missing Log files](/user/troubleshooting/missing_log_files). 
 
 * * *
 

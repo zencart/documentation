@@ -29,6 +29,8 @@ This document lists things you may wish to take into account as you upgrade.  Th
     - `tpl_modules_downloads.php`
     - `tpl_account_history_info_default.php`
 
+<br> 
+
 - The table containing the EZ-Pages data (`ezpages`) was split into two tables, `ezpages` and `ezpages_content`.  This was done in order to add multi-language capabilities. Accordingly, template files (template overrides or custom files) which reference the `ezpages` table will need adjustment to account for this division.
 
 ### Zen Cart 1.5.5
