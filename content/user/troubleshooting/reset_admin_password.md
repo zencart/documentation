@@ -4,6 +4,7 @@ description: Zen Cart Admin Password - Resetting or Changing
 category: troubleshooting
 weight: 10
 ---
+
 ## 1. Log in with another account. 
 If you can log in to your Zen Cart admin using another account,  please do so, and reset/modify the other admin password as needed using the [Admins > Admin Users](/user/admin_pages/admins/admin_users/) page.
 
