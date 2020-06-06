@@ -7,7 +7,7 @@ layout: docs
 
 ## Manifest Files
 
-Each plugin must have a manifest.php file in the root of it's version directory.
+Each plugin must have a manifest.php file in the root of its version directory.
 
 e.g. 
 
