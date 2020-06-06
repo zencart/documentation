@@ -9,7 +9,7 @@ In some hosting environments (notably PHP-FPM shared), error logs are not writte
 
 For example, some hosts configure logging to go to a single central file.  
 
-So instead creating individual log files in 
+So instead of creating individual log files in 
 `/home/YOURACCOUNT/public_html/logs/` 
 
 They append to a single log file, which is stored in 
