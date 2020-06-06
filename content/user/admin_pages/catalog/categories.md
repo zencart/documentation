@@ -31,6 +31,7 @@ At the level where you only have categories, there are a series of action icons 
 <br clear="all" />
 
 These icons allow you to: 
+
 - edit the category 
 - move the category 
 - set category meta tags. 

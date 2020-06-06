@@ -53,6 +53,7 @@ STEP (2): Create the "Tax Zones". The are geographical regions where a particula
 Locations/Taxes > Zones Definitions  
 
 Create the Zone for all of Canada  
+
 - Zone Name: Canada GST Zone  
 - Description: GST (except Eastern Canada: NS, NB, NL)  
 

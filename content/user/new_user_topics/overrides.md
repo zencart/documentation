@@ -51,6 +51,7 @@ Let's assume you want to change the heading on this page from "My Account Inform
 - Default File: `/includes/languages/english/account.php`
 
 Here are the steps: 
+
 - Create a new directory `/includes/languages/english/YOURTEMPLATE/` if it doesn't exist 
 - Copy `includes/languages/english/account.php` to this new directory  
 - You now have `includes/languages/english/YOURTEMPLATE/account.php`

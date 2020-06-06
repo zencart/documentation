@@ -22,6 +22,7 @@ If you forget to add a Page Title, then you will not be able to add the Link.
 
 ### Enabling/Disabling Links 
 There are several ways you may display an EZ-Page link on your site: 
+
 - In your header (by setting Header = Yes and an Order value > 0). 
 - In your footer (by setting Footer = Yes and an Order value > 0). 
 - In your EZ-Pages sidebox (by setting Sidebox = Yes and an Order value > 0). 

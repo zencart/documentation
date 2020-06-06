@@ -55,6 +55,7 @@ Zen Cart supports a number of discounting mechanisms:
 ### Can Zen Cart add fees to an order? 
 
 Zen Cart can add a fee line item on the basis of a variety of factors:
+
 - A Low Order Fee can be assessed on orders below a certain value. 
 - A Payment module fee/discount can be added to an order based on the 
 payment method chosen using the [Ceon Payment Surcharges/Discounts](https://www.zen-cart.com/downloads.php?do=file&id=1279) mod. 
