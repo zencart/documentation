@@ -17,6 +17,7 @@ Each product type collects certain kinds of information relevant to that product
 
 
 In the Admin > Catalog > Product Types menu, there is a listing of product types. For each product type, you can 
+
 - select the default settings for entry of new products of that type
 - choose how fields are displayed 
 

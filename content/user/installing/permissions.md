@@ -49,6 +49,7 @@ Open File Manager, and browse to the folder where you have put your Zen Cart fil
 Example: /includes/languages/english/html_includes  
 
 Browse down through  
+
 - includes  
 - languages  
 - english  

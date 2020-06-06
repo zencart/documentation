@@ -8,6 +8,7 @@ weight: 10
 Zen Cart uses the term "product listing page" to refer to a page that shows a number of products (versus the [product info](/user/products/product_info/) page, which shows only a single product).
 
 Examples of listing pages are: 
+
 - All Products
 - Featured Products
 - Upcoming Products

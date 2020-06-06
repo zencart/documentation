@@ -12,6 +12,7 @@ there are a set of action icons on the right.
 <br clear="all" />
 
 These icons allow you to:
+
 - edit product 
 - delete product 
 - move product (change categories)
