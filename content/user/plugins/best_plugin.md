@@ -13,9 +13,7 @@ Look through the [Plugin Directory](https://www.zen-cart.com/downloads.php). If 
 - On the plugin's own page, click the orange 
 <img src="/images/support_thread.png" alt="Forum Support Thread" style="height: 30px !important;" /> Forum Support Thread button, and browse the support thread for the plugin.  Is the thread active?  Is the plugin still supported? 
 
-- Download the plugin and take a look at the README file.  Many plugins are easy 
-to install - see [how to install a plugin](/user/plugins/how_to_install_a_plugin/).  If it looks too complicated 
-or there are too many steps, place an ad on the [Commercial Help Wanted forum](/user/zen_cart_forum/chw/) to hire a pro to do it for you. 
+- Download the plugin and take a look at the README file.  Many plugins are easy to install.  See [how to install a plugin](/user/plugins/how_to_install_a_plugin/).  If it looks too complicated or there are too many steps, place an ad on the [Commercial Help Wanted forum](/user/zen_cart_forum/chw/) to hire a pro to do it for you. 
 
 ### Plugins and the Zen Cart Core
 
@@ -26,9 +24,7 @@ Zen Cart core in the 1.5.0 release, and it's now under the [Admins menu](/user/a
 
     Similarly, 
 
-- Zen Cart 1.5.7 includes a 
-number of popular and powerful plugins from the user community, 
-including **Default Attribute**, **Report All Errors**, **Ask a Question**, **Sortable Orders Status**, and **zenNonCAPTCHA**. 
+- Zen Cart 1.5.7 includes a number of popular and powerful plugins from the user community, including **Default Attribute**, **Report All Errors**, **Ask a Question**, **Sortable Orders Status**, and **zenNonCAPTCHA**. 
 - In Zen Cart 1.5.6, **Sales Reports with Graphs** was migrated from a plugin to a core feature. 
 - In Zen Cart 1.5.5, **myDEBUG log backtrace** was migrated from a plugin to a core feature.
 

@@ -53,8 +53,7 @@ even if just to create `includes/templates/YOURTEMPLATE` and
 folders below that.   But generally, a new template also uses 
 more overrides: 
 
-- language file overrides like `includes/languages/YOURTEMPLATE` and 
-`includes/languages/english/YOURTEMPLATE` 
+- language file overrides like `includes/languages/YOURTEMPLATE` and `includes/languages/english/YOURTEMPLATE` 
 - code overrides like `/includes/modules/YOURTEMPLATE`
 
 ---
@@ -76,6 +75,7 @@ See [the template_info FAQ](/user/template/template_info/).
 ### Why does this mod not work with Template Monster Templates?
 Zen Cart mods often depend on built-in Zen Cart features, which are 
 removed as an expedient by Template Monster developers.  
+
 If you're using a Template Monster template and a change you are 
 trying isn't working, you'll need to figure out the difference 
 between the relevant default files and the files that your template 

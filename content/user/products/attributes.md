@@ -158,13 +158,13 @@ Once the Product is displayed that you want to add attributes to, go to the Add 
 
 Price can be entered with a prefix of + or - or blank.  
 
-+ and blank will add the attribute price  
-- will subtract the attribute price  
+ \+ and blank will add the attribute price  
+ \- will subtract the attribute price  
 
 Weight can be entered optionally if it effects the product weight with a prefix of + or - or blank.  
 
-+ and blank will add the attribute weight  
-- will subtract the attribute weight  
+ \+ and blank will add the attribute weight  
+ \- will subtract the attribute weight  
 
 There are other pricing options also available besides the standard prices,
 which are controlled by attribute settings. 
