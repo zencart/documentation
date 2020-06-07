@@ -87,6 +87,7 @@ DELETE FROM admin_pages WHERE page_key = 'toolsNewTool';
   5. Select "Tools" from the *Menu* dropdown
   6. Check the *Show on Menu* box
   7. (optional) Set the *Sort Order* value to position your new tool on the displayed menu dropdown.
+
 - If you don't see your newly added item, it's likely somewhere in the middle of the menu's dropdown list.
 - Use 999 (or any other large number) for the sort order value if you want to ensure that your item is at the bottom of the menu's list.
 - To reposition an item within one of the admin menus, use your cPanel's phpMyAdmin tool and  browse the `admin_pages` table to find the added menu item and adjust its sort_order value as desired.

@@ -24,8 +24,7 @@ Before you begin, be sure you are familiar with the structure and contents of [c
 **NEXT, try to rule out a bad SSL configuration:**  
 
 - If your version is Zen Cart 1.3.9 or before, edit your `/admin/includes/configure.php` and change `ENABLE_SSL_ADMIN` to 'false'  
-- clear browser cache AND cookies and try again  
-then if it's still not working:  
+- clear browser cache AND cookies and try again. If it's still not working:  
 - edit your `/admin/includes/configure.php` and change `HTTP_SERVER` to a URL that does NOT start with `https`  
 - clear browser cache AND cookies and try again  
 

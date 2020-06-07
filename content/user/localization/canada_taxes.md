@@ -137,6 +137,7 @@ create SIX (6) Tax Rates:
 
 **HINT:** Insert your GST# as part of DESCRIPTION and it will show up on invoice !!!  
 **HINT:** Leave PRIORITY at "1" for a non-cumulative tax (i.e. Ontario)  
+
 - Tax Class Title: GST/PST/HST Class // **HINT:** Yes, this is the same one you just used  
 - Zone: Ontario PST Zone  
 - Tax Rate (%): 8.0000  

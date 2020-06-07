@@ -75,9 +75,7 @@ Each web host has his/her own preference in naming folders for use in running a 
 You can have many files that don't even get shown to the public. The ones that are available for access via a browser are usually in a folder called something like:
 
 - `/home/YOURNAME/public_html`
-or  
 - `/var/www/YOURNAME/httpdocs`
-or  
 - `/usr/accounts/a/b/YOURNAME/httpd`
 
 etc.

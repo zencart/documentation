@@ -47,7 +47,7 @@ from one registrar to another.
     *   authorize the transfer by confirming the email sent to your domain's Administrative Contact
     *   pay the one-year-renewal fee (which buys you one more year after your current expiry date) to complete the transfer, based on the fee set by the registrar you're transferring to.
 <br />   <br />
- 
+
 - **DNS** is a system of computers that maintain a directory of 
 domain name to IP Address mappings. 
 

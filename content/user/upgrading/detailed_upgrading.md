@@ -154,8 +154,7 @@ Zen Cart 1.5.6c.  These are the steps to use (we will skip over the New code fam
     - In each file, you want two changes: `DIR_FS_CATALOG` setting should refer to `store_new` and not `_store`, and `DB_DATABASE` should refer to a new database name, not the original one. 
 - Upload `store_new` to your server.  
 - Make a fresh backup of your live database. 
-- Create a NEW database in cPanel, using the name you used in the last step of updating your configuration files above.  Load this database from the backup 
-of your live site that you just made. 
+- Create a NEW database in cPanel, using the name you used in the last step of updating your configuration files above.  Load this database from the backup of your live site that you just made. 
 - point your browser to `store_new/zc_install`, which will take you through the database update process. 
 - test `store_new`, going through the shopping, buying and order fulfillment process.
 - When you're ready to go live, do the following: 
