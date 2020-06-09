@@ -27,6 +27,8 @@ VALUES ('Admin', 'admin@localhost', '351683ea4e19efe34874b501fdbf9792:9b', 1);
 
 `DELETE FROM zc_admin` and `INSERT INTO zc_admin` in the commands above. 
 
+> **NOTE**: If you are using a very old version of Zen Cart then the field names above may be different than your database has. See https://www.zen-cart.com/content.php?44-how-do-i-change-or-reset-my-admin-password for additional information.
+
 <b>You should now be able to login using the following details: <br>
 </b><b>Username: Admin<br>
  Password: admin </b><br><br />
