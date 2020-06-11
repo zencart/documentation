@@ -4,7 +4,17 @@ description: Zen Cart - Tips on creating a plugin
 category: plugins
 weight: 1
 ---
-## Override Secrets 
+
+## Security
+
+It is wise to ensure that ALL your PHP plugin files include a line near the top which checks whether `IS_ADMIN_FLAG` is defined. This way if you have a file that's accessed via unauthorized methods then it will just abort. For example:
+
+`if (!defined('IS_ADMIN_FLAG')) die();`
+
+Other variations for specific use in either admin or catalog might check whether it is set to boolean `true`/`false`.
+
+
+## Optimizing The Use Of Overrides 
 
 There are built-in override capabilities in Zen Cart to prevent needing to edit some core files which would otherwise need updating.
 
@@ -24,7 +34,7 @@ Combine your extra details for these two files into one file, and then add it to
 
 (This will auto-load)
 
-<hr />
+<hr>
 
-### Forum Resources 
+## Forum Resources 
 If you run into trouble working on your plugin, you can always post your question on the [Contribution-Writing Subforum](https://www.zen-cart.com/forumdisplay.php?43-Contribution-Writing-Guidelines). 

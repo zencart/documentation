@@ -6,7 +6,7 @@ weight: 10
 ---
 ## Zen Cart specifications - Server Requirements
 
-_(Last updated: May 28, 2020)_  
+_(Last updated: June 9, 2020)_  
 
 *Minimum* server requirements:  
 
@@ -24,7 +24,7 @@ _(Last updated: May 28, 2020)_
 
 **Using the latest version of Zen Cart is always recommended for maximum compatibility.**  
 
-*   <font color="#ff0000">**Zen Cart v1.5.7** is designed for PHP 5.6 through PHP 7.4</font> (future versions will require PHP 7+)
+*   <font color="#ff0000">**Zen Cart v1.5.7** is designed for PHP 5.6 through PHP 7.4</font> (future versions will require PHP 7.1.3+)
 *   <font color="#ff0000">**Zen Cart v1.5.6** is designed for PHP 5.5 through PHP 7.3</font>
 *   <font color="#ff0000">**Zen Cart v1.5.5** is designed for PHP 5.5 up to PHP 7.1</font> 
 *   <font color="#ff0000">**Zen Cart v1.5.4** is designed for PHP 5.5 and PHP 5.6</font> 
@@ -44,8 +44,9 @@ PHP compatibility requirements of Plugins/Addons may vary. Consult each plugin's
 
 ### PHP Modules used by Zen Cart
 
-Zen Cart requires a few PHP modules enabled: `curl`, `mysqli`, `zlib`.  
-Optional modules: gd and mb_xxxxx.
+Zen Cart requires a few PHP modules enabled: `curl`, `mysqli`, `zlib`. (v1.5.8 will require `pdo`)
+
+Optional modules: `gd` and `mb_xxxxx`.
 
 <u>**PHP Memory Recommendations**</u>  
 

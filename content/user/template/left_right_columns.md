@@ -68,7 +68,6 @@ or leave blank.
 Here's another way to [modify sidebox display on EZ-Pages](/user/ezpages/sidebox_display_changes/).
 
 ### Other options: 
-- To Globally disable the right column, go to 
-[Admin > Configuration > Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/) and  set *Column Right Status - Global* to 0.
+- To Globally disable the right column, go to [Admin > Configuration > Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/) and  set *Column Right Status - Global* to 0.
 - There are also other ways to [change sidebox display](/user/sideboxes/suppressing_sidebox_display).
 

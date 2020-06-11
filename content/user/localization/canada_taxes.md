@@ -53,6 +53,7 @@ STEP (2): Create the "Tax Zones". The are geographical regions where a particula
 Locations/Taxes > Zones Definitions  
 
 Create the Zone for all of Canada  
+
 - Zone Name: Canada GST Zone  
 - Description: GST (except Eastern Canada: NS, NB, NL)  
 
@@ -136,6 +137,7 @@ create SIX (6) Tax Rates:
 
 **HINT:** Insert your GST# as part of DESCRIPTION and it will show up on invoice !!!  
 **HINT:** Leave PRIORITY at "1" for a non-cumulative tax (i.e. Ontario)  
+
 - Tax Class Title: GST/PST/HST Class // **HINT:** Yes, this is the same one you just used  
 - Zone: Ontario PST Zone  
 - Tax Rate (%): 8.0000  

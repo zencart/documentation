@@ -20,7 +20,9 @@ on the same server?
 
 - Determine the new foldername where your Zen Cart files will be running from
 - In the case above, move your files from `/shop/` to the root level.  
+
 If you are moving from `/shop/` to `/store/`, rename the folder. 
+
 - Modify your `/includes/configure.php` and `/admin/includes/configure.php` files to point to the right folders.  Update 
 
 ```

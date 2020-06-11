@@ -31,10 +31,10 @@ You will require access to the files on your webserver to find out the actual ad
 The Zen Cart structure is like this:  
 
 ```
-admin-folder  (which contains the following 3 folders and a bunch of .php files):
---- backups
---- images
---- includes  (looks a LOT like the other non-admin "includes" folder)
+admin (which contains the following 3 folders and a bunch of .php files):
+    - backups
+    - images
+    - includes  (looks a LOT like the other non-admin "includes" folder)
 - cache
 - download
 - editors
