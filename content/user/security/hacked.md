@@ -16,3 +16,8 @@ weight: 10
 ## Secure Your Site Using the Security Recommendations
 
 3\. Ensure that you have secured your site following the recommendations [provided with the code](https://www.zen-cart.com/docs/important_site_security_recommendations.html).
+
+## Other Resources
+
+4\. You may find these tips helpful:
+https://www.google.com/webmasters/hacked/
