@@ -27,18 +27,20 @@ Having this gives you not only an up-to-date set of files on your server, but al
 
 3\. Click on the Export tab. (**NOTE:** Be sure you've already selected your database from the pulldown BEFORE clicking on the Export tab)  
 
-4\. Now make the appropriate setting selections based on your version of phpMyAdmin:  
+4\. Many of the default settings are fine; however, choosing the "Custom" export type will allow you to optimize your backup by selecting the following ("tick" here means "tick the checkbox" or "select the option"):
 
-The ideal settings to do a backup via phpMyAdmin are shown below. Settings not mentioned can be left to their defaults.  
-
-You will be presented with a choice of "Quick Backup" or "Custom." Choose "Custom", and then make the following selections:  
-
-- Output: Leave all the other settings under Output as defaults, except maybe **Compression**, which you may wish to change to "zipped" (for Windows) or "gzipped" (for Mac/Linux)  
-- Object creation options: **check the box next to DROP TABLE**  
+- Tick DROP TABLE
+- Tick AUTO_INCREMENT
+- Tick Enclose table and fieldnames with backquotes
+- UNTICK the "CREATE DATABASE / USE statement" checkbox (you do NOT want it adding this)
+- Tick either use gzipped or zipped output so the exported data is compressed into a smaller file
+- Tick "Complete Inserts" (helpful during upgrades if you have many custom fields added by modifications made to your site)
+- Tick "Extended Inserts" to help keep the file smaller, especially if you are just making backups for safekeeping and not for troubleshooting something.
 
 5\. Click **Go** to do the export. It will give you the option to save the file to your PC. BE SURE TO SAVE IT to an appropriate spot on your PC. 
 To have a redundant backup, save a copy to a thumb drive or upload it to a cloud account such as 
 Google Drive.
+
 
 ### Using the Backup MySQL Plugin to make a Database Backup
 
@@ -48,7 +50,7 @@ to create your database backup, and then download the resultant file
 from `YOURADMIN/backups` to your local computer.  Again, you will 
 want to save a copy to a thumb drive or upload your backup to a cloud account so that you have 
 redundancy. 
-<br /><br />
+<br><br>
 
 --- 
 
