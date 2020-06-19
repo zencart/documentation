@@ -40,6 +40,8 @@ You will be presented with a choice of "Quick Backup" or "Custom." Choose "Custo
 To have a redundant backup, save a copy to a thumb drive or upload it to a cloud account such as 
 Google Drive.
 
+6\. If you have an older version of MySQL installed or wish to see what defaults may be best to support export, then see: [How Can I do a Site Backup or Use phpMyAdmin for Database Backup](https://www.zen-cart.com/content.php?144-how-can-i-do-a-site-backup-or-use-phpmyadmin-for-database-backup)
+
 ### Using the Backup MySQL Plugin to make a Database Backup
 
 On hosts that permit the use of `exec()`, you can use the 
