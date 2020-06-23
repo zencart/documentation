@@ -41,7 +41,7 @@ This site was built with [Hugo](https://gohugo.io/) on the [Netlify](https://www
 
 If you'd like to help the Zen Cart project, we'd love to have you.  Please see 
 [contributing to the Zen Cart documentation](https://github.com/zencart/documentation/blob/master/CONTRIBUTING.md) and 
-[contributing to the Zen Cart code](https://github.com/zencart/zencart/blob/v157/CONTRIBUTING.md).
+[contributing to the Zen Cart code](https://github.com/zencart/zencart/blob/v158/CONTRIBUTING.md).
 
 The content of this site is released under the terms of the [GNU Public License](https://www.gnu.org/licenses/gpl-3.0.en.html). 
 
