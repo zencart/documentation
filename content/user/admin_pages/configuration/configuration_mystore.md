@@ -88,6 +88,13 @@ Path: <b>Configuration > My Store</b><br />
 Description: Default search operators</div>
 
 
+<h2 id="include_metatags_in_product_search">Include meta-tags in product search?</h2>
+
+<div class='indent'>Key: <b>ADVANCED_SEARCH_INCLUDE_METATAGS</b><br />
+Path: <b>Configuration > My Store</b><br />
+Description: Should a product's meta-tag keywords and meta-tag descriptions be considered in any <code>advanced_search_results</code> displayed?</div>
+
+
 <h2 id="show_category_counts">Show Category Counts</h2>
 
 <div class='indent'>Key: <b>SHOW_COUNTS</b><br />
@@ -247,5 +254,33 @@ Description: Where to request external currency updates from (Secondary source)<
 <div class='indent'>Key: <b>HTML_EDITOR_PREFERENCE</b><br />
 Path: <b>Configuration > My Store</b><br />
 Description: Please select the HTML/Rich-Text editor you wish to use for composing Admin-related emails, newsletters, and product descriptions</div>
+
+
+<h2 id="default_for_notify_customer_on_order_status_update">Default for Notify Customer on Order Status Update?</h2>
+
+<div class='indent'>Key: <b>NOTIFY_CUSTOMER_DEFAULT</b><br />
+Path: <b>Configuration > My Store</b><br />
+Description: Set the default email behavior on status update to Send Email, Do Not Send Email, or Hide Update.</div>
+
+
+<h2 id="customer_emplace_orderem_single_admin_id">Customer <em>Place Order</em>: Single Admin ID</h2>
+
+<div class='indent'>Key: <b>EMP_LOGIN_ADMIN_ID</b><br />
+Path: <b>Configuration > My Store</b><br />
+Description: Identify the ID number of an admin that is permitted to use the <em>Place Order</em> feature on the customers list, regardless of their assigned admin-profile. Set the value to 0 to disable the <em>Single Admin ID</em> feature.</div>
+
+
+<h2 id="customer_emplace_orderem_admin_profiles">Customer <em>Place Order</em>: Admin Profiles</h2>
+
+<div class='indent'>Key: <b>EMP_LOGIN_ADMIN_PROFILE_ID</b><br />
+Path: <b>Configuration > My Store</b><br />
+Description: Identify the admin <em>User Profile IDs</em> that are permitted to use the <em>Place Order</em> feature on the customers list &mdash; all admins that are in these profiles are permitted. Enter the value as a comma-separated list (intervening blanks are OK) of Admin Profile IDs, e.g. <b>1, 2, 3</b>. Set the value to 0 to disable the <em>Admin Profiles</em> feature.<br><br><b>Default: 0 </b></div>
+
+
+<h2 id="customer_emplace_orderem_passwordless_login">Customer <em>Place Order</em>: Passwordless Login</h2>
+
+<div class='indent'>Key: <b>EMP_LOGIN_AUTOMATIC</b><br />
+Path: <b>Configuration > My Store</b><br />
+Description: Login directly to store without entering credentials</div>
 
 

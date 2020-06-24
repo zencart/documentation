@@ -291,13 +291,6 @@ Path: <b>Configuration > Maximum Values</b><br />
 Description: What is the Maximum file size for uploads?<br />Default= 2048000</div>
 
 
-<h2 id="allowed_filename_extensions_for_uploading">Allowed Filename Extensions for uploading</h2>
-
-<div class='indent'>Key: <b>UPLOAD_FILENAME_EXTENSIONS</b><br />
-Path: <b>Configuration > Maximum Values</b><br />
-Description: List the permissible filetypes (filename extensions) to be allowed when files are uploaded to your site by customers. Separate multiple values with commas(,). Do not include the dot(.).<br /><br />Suggested setting: "jpg,jpeg,gif,png,eps,cdr,ai,pdf,tif,tiff,bmp,zip"</div>
-
-
 <h2 id="maximum_orders_detail_display_on_admin_orders_listing">Maximum Orders Detail Display on Admin Orders Listing</h2>
 
 <div class='indent'>Key: <b>MAX_DISPLAY_RESULTS_ORDERS_DETAILS_LISTING</b><br />
@@ -324,5 +317,12 @@ Description: Maximum Display Columns Products to Multiple Categories Manager<br 
 <div class='indent'>Key: <b>MAX_DISPLAY_SEARCH_RESULTS_EZPAGE</b><br />
 Path: <b>Configuration > Maximum Values</b><br />
 Description: Maximum Display EZ-Pages<br />20 = Default</div>
+
+
+<h2 id="maximum_preview">Maximum Preview</h2>
+
+<div class='indent'>Key: <b>MAX_PREVIEW</b><br />
+Path: <b>Configuration > Maximum Values</b><br />
+Description: Maximum Preview length<br />100 = Default</div>
 
 
