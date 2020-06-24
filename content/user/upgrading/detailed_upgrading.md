@@ -7,7 +7,7 @@ weight: 10
 
 Preamble worth reading: [How-do-I-rebuild-my-site-on-the-new-version-instead-of-upgrading](https://www.zen-cart.com/entry.php?3-How-do-I-rebuild-my-site-on-the-new-version-instead-of-upgrading). 
 
-Before you begin, remember to make a [complete backup of your files and database](/user/running/backup/). 
+Before you begin, remember to make a [complete backup of your files and database](https://docs.zen-cart.com/user/running/backup/). 
 
 ## 3 EASY STEPS TO UPGRADE ZEN CART
 
@@ -127,7 +127,7 @@ Put your site back into normal mode (turn off Down For Maintenance).
 
 ### Create a temporary new store on your server, for testing
 
-Create a NEW database in cPanel. Use the backup that you just made from your live site to fill the database with data. (See [restoring the database](https://docs.zen-cart.com/user/running/backup/).)
+Create a NEW database in cPanel. Use the backup that you just made from your live site to fill the database with data. (See [restoring the database](https://docs.zen-cart.com/user/running/backup/#to-restore-your-database).)
 
 ### Prepare the configure.php files
 
