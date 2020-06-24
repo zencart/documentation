@@ -123,45 +123,72 @@ In your live store, go to `Admin > Configuration > Website Maintenance`.  Put th
 
 Make a fresh backup of your live database. 
 
-Create a NEW database in cPanel.  Load this database from the backup 
-of your live site that you just made.
+Put your site back into normal mode (turn off Down For Maintenance).
 
-In your `store_new` folder, copy 
+### Create a temporary new store on your server, for testing
+
+Create a NEW database in cPanel. Use the backup that you just made from your live site to fill the database with data. (See [restoring the database](https://docs.zen-cart.com/user/running/backup/).)
+
+### Prepare the configure.php files
+
+On your PC, in your `store_new` folder, copy 
 
 - `includes/dist-configure.php` to `includes/configure.php`
 - `admin/includes/dist-configure.php` to `admin/includes/configure.php`
 
-Edit these to files and set all the parameters.  Use your existing
-live store as a guide.  Remember to specify your NEW database when 
-filling in `DB_DATABASE`. 
+Edit these two files and set all the parameters, using your existing live store as a guide.
+Remember to specify your NEW database when filling in `DB_DATABASE`. 
 
-Upload the files from your modified `store_new` (created in step 2) to your server, into an alternate folder, perhaps called `store_new`. 
+### Upload the files to a temporary directory on your server
+Upload the files from your modified `store_new` (created in step 2) into a temporary directory on your server, perhaps called `store_new`.
 
-Run `store_new/zc_install/index.php` and choose "_Upgrade_" when prompted. (Don't select "Install", or you will overwrite your database.) (If "Upgrade" is not offered, then the installer was unable to connect to your database to confirm what version its structure is at. Check your configure.php settings and be sure the `DB_*` fields correspond to your new database.)  
 
-Test your customizations. Edit as needed. Compare with the test/demo install performed earlier, as needed.  
+### Run zc_install to upgrade the temporary database
+In your browser, run `store_new/zc_install/index.php` and choose "_Upgrade_" when prompted. (Don't select "Clean Install", or you will overwrite your database.) (If "Upgrade" is not offered, then the installer was unable to connect to your database to confirm what version its structure is at. Check your configure.php settings and be sure the `DB_*` fields correspond to your new database, including that the DB_PREFIX matches the DB_PREFIX in your old site.)
+
+Run any install/upgrade steps for any plugins you've installed/upgraded. And removals for any plugins you're removing.
+
+### Test the temporary new store
+Test your customizations. Edit as needed. Compare with the test/demo install performed earlier, as needed.
 
 When satisfied that all is OK, go live.  
 
-If significant time has passed since you created your new database, you may want to rebuild it to get any new customers or orders that have been added to the live site.
 
-- Export your live database
-- Create a new database in cPanel, and load it with the backup from your live database
-- Run the `zc_install` procedure again
+### Going Live
 
-You don't need to re-upload files again; simply update the database. 
+#### Put your store down-for-maintenance again
+Use the same step from earlier.
 
+#### Take a fresh database backup
+Same step from earlier. This is for safekeeping, and in case anything goes badly wrong.
+
+#### Go live
 To go live, do the following: 
 
-- rename your live store folder to `store_old`.
-- rename `store_new` to `store`.  Edit the `includes/configure.php` and `admin/includes/configure.php` files to change the folder references from `store_new` to `store`.
+- look at the live `store` folder's `/includes/configure.php` file and note the DB_DATABASE name.
+- rename your live `store` folder to `store_old`.
+- rename `store_new` to `store`. 
+- Edit the `includes/configure.php` and `admin/includes/configure.php` files to:
+  - change the folder references from `store_new` to `store`
+  - change the DB_DATABASE name to match the OLD database
 
-Test it to be sure that things are operating as desired. If you have small problems to repair, turn "Down for maintenance" on and off again as necessary.  
+  > You're using the "old" DB_DATABASE name here, because you're actually going to keep using the REAL database, so you don't lose any data.
 
-Remember that your "configure.php" files on your server are typically set to read-only, and thus in order to upload them will require that you mark those files read-write before uploading.  Be sure to put them back to read-only after uploading.
+> Remember that your "configure.php" files on your server are typically set to read-only, and thus in order to upload them will require that you mark those files read-write before uploading.  Be sure to put them back to read-only after uploading.
+
+- Run zc_install again to upgrade the database (because now you're using the real database)
+- Re-run any plugin installation/removal scripts just like you did for the temporary testing
+
+#### Verify
+
+Test the store to be sure that things are operating as desired. 
+
+If you have small problems to repair, turn "Down for maintenance" on and off again as necessary.  
 
 
-## Example: 
+--
+
+# Example Scenario:
 
 Suppose you are currently running Zen Cart 1.5.1 and you want to upgrade to 
 Zen Cart 1.5.6c.  These are the steps to use (we will skip over the New code familiarization step).
@@ -170,31 +197,40 @@ Zen Cart 1.5.6c.  These are the steps to use (we will skip over the New code fam
 - Download your live store files, and put them in a folder called `store`.
 - Download a fresh copy of Zen Cart 1.5.1, and put it in a folder called `zen_orig`.
 - Compare the files in `store` to the files in `zen_orig`, noting your changes. 
-- Download a fresh copy of Zen Cart 1.5.6c, and put it in a folder called `store_new`.  Apply the changes you found in the prior step to `store_new`. 
-- In `store_new`, create the new configure files as follows: 
+- Download a fresh copy of Zen Cart 1.5.6c, and put it in a folder called `store_new`. Apply the changes you found in the prior step to `store_new`.
+
+> If using a 3-way compare tool, the two bullet-points above can be combined into one, so the 3-way-compare tool can visually empower you to do the copying of changes necessary.
+
+- In `store_new`, create the new configure files: 
     - copy `includes/dist-configure.php` to `includes/configure.php`
     - copy `admin/includes/dist-configure.php` to `admin/includes/configure.php`
     - modify these two files, setting the values in them from your original configure files in `store`.  
-    - In each file, you want two changes: `DIR_FS_CATALOG` setting should refer to `store_new` and not `_store`, and `DB_DATABASE` should refer to a new database name, not the original one. 
+    - In each file, you want two changes: `DIR_FS_CATALOG` setting should refer to `store_new` and not `_store`, and `DB_DATABASE` should refer to a new database name, not the original one (since we're only testing at this point).
 - Upload `store_new` to your server.  
 - Make a fresh backup of your live database. 
-- Create a NEW database in cPanel, using the name you used in the last step of updating your configuration files above.  Load this database from the backup of your live site that you just made. 
-- point your browser to `store_new/zc_install`, which will take you through the database update process. 
+- Create a NEW database in cPanel, using the new DB_DATABASE name you used in the last step of updating your configuration files. Fill this database from the backup that you just made.
+- point your browser to `store_new/zc_install`, which will take you through the database update process.
+- do any install/remove steps relevant to any addons you're adding/removing
 - test `store_new`, going through the shopping, buying and order fulfillment process.
 - When you're ready to go live, do the following: 
   - take a final backup of your live store database for safekeeping
-  - In your live store, go to `Admin > Configuration > Website Maintenance`.  Put the store in maintenance mode, and add your IP to the list in the `Down For Maintenance (exclude this IP-Address)` field.
+  - In your live store, go to `Admin > Configuration > Website Maintenance`. Put the store in maintenance mode, and add your IP to the list in the `Down For Maintenance (exclude this IP-Address)` field.
   - rename your live store folder to `store_old`.
   - rename `store_new` to `store`.  Edit the `includes/configure.php` and `admin/includes/configure.php` files to change the `DIR_FS_CATALOG` references from `store_new` to `store`, and change the `DB_DATABASE` references back to the original database name.
   - run the `store/zc_install` process to upgrade your live database.
+  - do any install/remove steps relevant to any addons you're adding/removing
+  - You're now LIVE!
   - test your upgrade 
-  - take your store out of maintenance mode.  
+  - take your store out of maintenance mode so customers can use it again
 
-## Plugins and Templates 
+## Plugin Considerations
 
-In the description above, I am assuming that change changes you have made are things like language file changes or maybe small code tweaks you did.  If the changes are plugins, there may be a better way than just porting the old changes forward to the new version: you can check the [plugins area](https://www.zen-cart.com/downloads.php) for an updated version of the mod.  If you don't see one, you can ask on the mod's support thread.
+In the description above, we assume the changes you have made are things like language file changes or maybe small code tweaks you did.  If the changes are plugins, there may be a better way than just porting the old changes forward to the new version: you can check the [plugins area](https://www.zen-cart.com/downloads.php) for an updated version of the plugin.  If you don't see one, you can ask on the plugin's support thread.
 
-When it comes to templates, if you have gotten your template from the plugins area, the advice above applies.  If your template came from a commercial vendor, you should approach that vendor and ask about an upgrade. 
+
+## Templates
+
+When it comes to templates, if you have gotten your template from the plugins area, the advice above applies. If your template came from a commercial vendor, you should approach that vendor and ask about an upgrade.
 
 If you are upgrading from 1.5.4 or below, you have another decision to make: Zen Cart 1.5.5 and above are designed to be used on mobile devices as well as desktop devices.  Your older template is likely not mobile friendly, so you may wish to get one that is.  The built in [responsive classic](/user/template/other_templates/#responsive-classic-template-product-page) template in 1.5.5+ is a good start. 
 
