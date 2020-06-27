@@ -67,3 +67,7 @@ e.g.
 
           - templates
           - etc
+
+NOTE: While these examples mention the `catalog` subdirectory, Zen Cart v1.5.7 only supports admin-side plugins at this time.
+
+ALSO: None of this works before Zen Cart v1.5.7: Plugins for prior versions must be installed directly into the main Zen Cart directory structure.
