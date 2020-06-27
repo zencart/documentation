@@ -7,10 +7,12 @@ layout: docs
 
 ## Directory Structure
 
-Plugins written for the new architecture will reside in the zc_plugins directory.
-Within their directory, the plugins can add directories that mimic the main Zen Cart directories.
-note how each plugin also has a versioned directory. This allows for automated upgrades and the possibility
-of downgrading as well.
+Plugins written for the new architecture will reside in the `zc_plugins` directory.
+
+Within their directory plugin authors can add subdirectories that mimic the main Zen Cart directories.
+
+Note how each plugin starts with a versioned directory. 
+This allows for automated upgrades and the possibility of downgrading as well.
 
 e.g.
 
