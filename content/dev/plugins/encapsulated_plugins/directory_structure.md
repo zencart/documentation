@@ -21,7 +21,7 @@ e.g.
   - rewardPoints
 
     - v1.0.0
-    - manifest.php
+      - manifest.php
 
       - admin
 
@@ -45,7 +45,7 @@ e.g.
           - etc
 
     - v1.0.1
-    - manifest.php
+      - manifest.php
 
       - admin
 
