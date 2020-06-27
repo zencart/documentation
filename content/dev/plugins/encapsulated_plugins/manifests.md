@@ -46,6 +46,8 @@ A human readable string for the name of the plugin.
 
 A human readable string describing the plugin.
 
+Flagrant advertising is not permitted.
+
 ### pluginAuthor
 
 A human readable string for the plugin author.
