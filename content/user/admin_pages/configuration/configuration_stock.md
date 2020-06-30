@@ -55,6 +55,13 @@ Path: <b>Configuration > Stock</b><br />
 Description: Show Sold Out Image instead of Add to Cart Button<br /><br />0= off<br />1= on</div>
 
 
+<h2 id="enable_disabled_product_by_available_date">Enable disabled product by available date</h2>
+
+<div class='indent'>Key: <b>ENABLE_DISABLED_UPCOMING_PRODUCT</b><br />
+Path: <b>Configuration > Stock</b><br />
+Description: How should hidden (disabled) product with a future available date be made visible (active) to customers when the date is reached?<br /></div>
+
+
 <h2 id="product_quantity_decimals">Product Quantity Decimals</h2>
 
 <div class='indent'>Key: <b>QUANTITY_DECIMALS</b><br />

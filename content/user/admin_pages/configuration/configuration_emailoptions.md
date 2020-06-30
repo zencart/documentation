@@ -4,6 +4,8 @@ category: admin_pages
 weight: 100 
 ---
 
+See also <a href="/user/email/">Email</a>.
+
 <h2 id="email_transport_method">E-Mail Transport Method</h2>
 
 <div class='indent'>Key: <b>EMAIL_TRANSPORT</b><br />

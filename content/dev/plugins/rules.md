@@ -33,8 +33,8 @@ You can find the GPL license details at:  http://www.gnu.org/licenses/licenses.h
 
  * Documentation files (see "Documentation Requirements" below).
  * PHP files: The zipped distribution should contain a complete directory structure of files which should be added/edited/merged to effect implementation of the contribution.  The built-in override system should be used where possible.
- * jQuery: The default Zen Cart template includes automatic loading of jQuery from the jQuery CDN. Your plugin should NOT include the jQuery package. If it needs jQuery, it should expect that the store's template already loads jQuery.
- * SQL files: If there are database changes required, an SQL file should be supplied containing any SQL commands which need to be run by the person installing the contribution. 
+ * jQuery: The default Zen Cart template includes automatic loading of jQuery from the jQuery CDN. Your plugin should NOT include the jQuery package. If it needs jQuery, it should expect that the store's template already loads jQuery. That said, you should ensure your plugin works with the latest version of jQuery available at the time of posting/updating your plugin. It would be beneficial to also note what versions of jQuery your plugin "requires" and "is compatible with", so storeowners have an idea what changes they may need to make or whether your plugin is compatible with the tech tools already on their site.
+ * SQL files: If there are database changes required, an SQL file should be supplied containing any SQL commands which need to be run by the person installing the contribution.
 An "uninstall" SQL script should be included as well so the end user can uninstall the SQL changes if they choose to remove the contribution.
  
  Any included .SQL files should be written without the use of database table-prefixes (such as `zen_`), since a default Zen Cart install doesn't use any such prefixes.
@@ -50,7 +50,7 @@ Connectors to commercial services, such as embedded affiliate links or referral 
 In the interest of protecting the end-user's privacy and identity, any sort of call-home capability is forbidden, whether disclosed or not.
 
 ## Documentation Requirements
-1. Complete documentation for the contribution must be contained in the contribution's distribution zip file, preferably in a file named "README-addonnamehere.TXT". Using a URL shortcut/link to point to another website for readme and/or install/uninstall documentation is not acceptable.
+1. Complete documentation for the contribution must be contained in the contribution's distribution zip file, preferably in a file named `README-addonnamehere.TXT` (or `README.md`). Using a URL shortcut/link to point to another website for readme and/or install/uninstall documentation is not acceptable.
 1. The author should be acknowledged - and a single link to their site is acceptable, as is a tasteful request for donations (whereas a single statement about where to send donations is acceptable).
 1. Prior authors/contributors should be acknowledged.
 1. Documentation should include clear steps outlining what to do once the contribution has been unzipped, including where to put the unzipped files and how to do any database updates/changes.
@@ -65,3 +65,4 @@ Updates to existing contributions should be uploaded as <b>updates</b> to the ex
 
 The Zen Cart team reserves the right at its own discretion to reject or deny any contribution and/or update, with or without notification, especially if it fails to comply with these published standards or if it risks being dangerous or confusing to those who might try to use it.
 
+Submitting a contribution means you agree with the GPL and consent for your contribution to be used under the terms of the GPL.

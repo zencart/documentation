@@ -130,25 +130,25 @@ Path: <b>Configuration > Product Info</b><br />
 Description: Do product reviews require approval?<br /><br />Note: When Review Status is off, it will also not show<br /><br />0= off 1= on</div>
 
 
-<h2 id="meta_tags__include_product_model_in_title">Meta Tags - Include Product Model in Title</h2>
+<h2 id="product_page_generated_lttitlegt_tag__include_product_model">Product page generated &lt;title&gt; tag - include Product Model?</h2>
 
 <div class='indent'>Key: <b>META_TAG_INCLUDE_MODEL</b><br />
 Path: <b>Configuration > Product Info</b><br />
-Description: Do you want to include the Product Model in the Meta Tag Title?<br /><br />0= off 1= on</div>
+Description: When custom Keywords and Description meta tags are not set, include the Product Model in the generated page &lt;title&gt; tag?<br><br>0=no / 1=yes</div>
 
 
-<h2 id="meta_tags__include_product_price_in_title">Meta Tags - Include Product Price in Title</h2>
+<h2 id="product_page_generated_lttitlegt_tag__include_product_price">Product page generated &lt;title&gt; tag - include Product Price?</h2>
 
 <div class='indent'>Key: <b>META_TAG_INCLUDE_PRICE</b><br />
 Path: <b>Configuration > Product Info</b><br />
-Description: Do you want to include the Product Price in the Meta Tag Title?<br /><br />0= off 1= on</div>
+Description: When custom Keywords and Description meta tags are not set, include the Product Price in the generated page &lt;title&gt; tag?<br><br>0=no / 1=yes</div>
 
 
-<h2 id="meta_tags_generated_description_maximum_length">Meta Tags Generated Description Maximum Length?</h2>
+<h2 id="product_page_generated_ltmeta__descriptiongt_tag__maximum_length">Product page generated &lt;meta - description&gt; tag - Maximum Length</h2>
 
 <div class='indent'>Key: <b>MAX_META_TAG_DESCRIPTION_LENGTH</b><br />
 Path: <b>Configuration > Product Info</b><br />
-Description: Set Generated Meta Tag Description Maximum Length to (words) Default 50:</div>
+Description: When custom Keywords and Description meta tags are not set, limit the generated &lt;meta - description&gt; tag to this number of words. Default 50.</div>
 
 
 <h2 id="also_purchased_products_columns_per_row">Also Purchased Products Columns per Row</h2>

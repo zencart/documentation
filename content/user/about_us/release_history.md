@@ -18,6 +18,8 @@ and
 
 This is the release history of the Zen Cart product.
 
+06/23/2020 - v1.5.7 [Release Notes](https://www.zen-cart.com/docs/whatsnew_1.5.7.html)
+
 07/16/2019 - v1.5.6c
 
 05/26/2019 - v1.5.6b

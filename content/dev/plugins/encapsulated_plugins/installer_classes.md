@@ -15,7 +15,7 @@ For example a plugin may need to check some pre-requisites before allowing insta
 
 This may be the availability of a php extension or maybe the plugin relies on another plugin being installed.
 
-In these cases the plugin can define it's own installer class that extends the base installer.
+In these cases the plugin can define its own installer class that extends the base installer.
 
 The class must be named `PluginInstaller.php` and be placed in the `Installer` directory.
 

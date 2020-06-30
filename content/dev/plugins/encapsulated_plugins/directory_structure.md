@@ -7,10 +7,12 @@ layout: docs
 
 ## Directory Structure
 
-Plugins written for the new achitecture will reside in the zc_plugins directory.
-Within their directory, the plugins can add directories that mimic the main Zen Cart directories.
-note how each plugin also has a versioned directory. This allows for automated upgrades and the possibility
-of downgrading as well.
+Plugins written for the new architecture will reside in the `zc_plugins` directory.
+
+Within their directory plugin authors can add subdirectories that mimic the main Zen Cart directories.
+
+Note how each plugin starts with a versioned directory. 
+This allows for automated upgrades and the possibility of downgrading as well.
 
 e.g.
 
@@ -19,7 +21,7 @@ e.g.
   - rewardPoints
 
     - v1.0.0
-    - manifest.php
+      - manifest.php
 
       - admin
 
@@ -43,7 +45,7 @@ e.g.
           - etc
 
     - v1.0.1
-    - manifest.php
+      - manifest.php
 
       - admin
 
@@ -65,3 +67,7 @@ e.g.
 
           - templates
           - etc
+
+NOTE: While these examples mention the `catalog` subdirectory, Zen Cart v1.5.7 only supports admin-side plugins at this time.
+
+ALSO: None of this works before Zen Cart v1.5.7: Plugins for prior versions must be installed directly into the main Zen Cart directory structure.

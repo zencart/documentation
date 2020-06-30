@@ -7,12 +7,16 @@ weight: 1
 
 ## Writing PHP code for Zen Cart requires no particularly special environment.
 
-1. A PHP-aware IDE is useful. We use PhpStorm.
+1. A PHP-aware IDE is useful. We use PhpStorm. It's helpful if your editor honors the `.editorconfig` standard which sets out formatting standards for code files.
 2. A LAMP stack is useful for running a local dev store. Common options for this include XAMPP, WAMP/MAMP, and even Laravel Valet.
 
 ## Code Formatting
 
-Zen Cart uses [PSR-2 formatting](https://www.php-fig.org/psr/psr-2/) standards for "new" code. Older code uses a "modified" PSR-2 which embraces "2 spaces" for indentation, and often left the "opening curly brace" on the prior line, instead of starting on a new line.
+Line-endings in the github repo are (or are expected to be) `LF`.
+
+Zen Cart uses [PSR-2 formatting](https://www.php-fig.org/psr/psr-2/) standards for "new" code.
+
+OLDER code uses a "modified" PSR-2 which embraces "2 spaces" for indentation, and often leaves the "opening curly brace" of classes and functions on the prior line, instead of starting on a new line.
 
 See [Coding Standards](/dev/contributing/coding_standards) for more details.
 
