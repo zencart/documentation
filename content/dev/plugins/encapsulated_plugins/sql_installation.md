@@ -5,9 +5,9 @@ weight: 40
 layout: docs
 ---
 
-Plugins may need to create/alter dtabase tables and/or insert/amend data in database tables.
+Plugins may need to create/alter database tables and/or insert/amend data in database tables.
 
-The plugin installer allows two methods for doing this. Using .sql files containing just sql statements or
+The plugin installer allows two methods for doing this. Using `.sql` files containing just sql statements or
 using a class based migration system.
 
 ## Plain SQL Files
@@ -43,7 +43,7 @@ The sql file should reside in
           - install.sql
 
 
-**Warning** As Zen Cart currently uses mainly MyIsam tables, there is no way to safely roll back
+**Warning** As Zen Cart currently uses mainly `MyIsam` tables, there is no way to safely roll back any
   installer sql if an error occurs. Some support for rollback may be added later (using generated migrations).
 
 
@@ -51,7 +51,6 @@ The sql file should reside in
 
 If you have more complex needs when creating schemas or seeding the database, instead of 
 using a plain SQL intall file as above, you can use a class based method.
-
 
 
 
