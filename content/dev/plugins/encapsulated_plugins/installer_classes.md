@@ -42,3 +42,4 @@ There are a number of methods that the custom installer class can override.
 
 - prerequisitesCheck
 
+FIXME

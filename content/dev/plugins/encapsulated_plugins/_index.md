@@ -15,4 +15,6 @@ but rather exist in directories below a `zc_plugins` directory.
 
 A new plugin manager page allows for the plugin to be installed/un-installed and enabled/disabled.
 
-FIXME
+`NOTE:` At the moment plugins only work for admin side code. Plugins for catalog will be introduced
+in Zen Cart v1.5.8
+
