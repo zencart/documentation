@@ -50,7 +50,7 @@ The sql file should reside in
 ## SQL Installer Classes
 
 If you have more complex needs when creating schemas or seeding the database, instead of 
-using a plain SQL intall file as above, you can use a class based method.
+using a plain SQL install file as above, you can use a class based method.
 
 
 

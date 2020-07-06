@@ -5,19 +5,19 @@ category: plugins
 weight: 10
 ---
 
-If you installed your Zen Cart using Fantastico or perhaps had a friend or subcontractor install it for you, installing a mod might seem daunting. Don't worry - there's nothing to it as long as you follow some basic principles.  
+If you installed your Zen Cart using Fantastico or perhaps had a friend or subcontractor install it for you, installing a plugin might seem daunting. Don't worry - there's nothing to it as long as you follow some basic principles.  
 
 ## Reading the instructions
 
 This page shows you how to copy files into your cart. This is just one part of installation; there may be many associated tasks that need to be done. 
 Most contributions come with a README file; please take the time to review it to get the whole picture of how installation is to be done.  
 
-Reading the instructions **before** starting installation is a great way to reduce grief.  This cannot be overstated.  Even a straightforward mod like 
+Reading the instructions **before** starting installation is a great way to reduce grief.  This cannot be overstated.  Even a straightforward plugin like 
 [Simple Google Analytics](https://www.zen-cart.com/downloads.php?do=file&id=272) 
-has steps in the README which must be done manually for the mod to work; 
+has steps in the README which must be done manually for the plugin to work; 
 simply uploading the files under `includes` is not sufficient. 
 
-Why do mod authors do this?  Most often, it is done because the files that 
+Why do plugin authors do this?  Most often, it is done because the files that 
 need to be updated manually are generally very customized on a per cart 
 and per template 
 basis (in the example of Google Analytics above, it's `includes/templates/YOURTEMPLATE/common/tpl_main_page.php` that needs to be modified, and including 
@@ -27,7 +27,7 @@ this file as a whole would make no sense because it is always customized.
 
 Before you start, you'll need to verify that you have some things.
 
-*   Mods are provided in zip format, so you'll need a tool to unzip the file.
+*   Plugins are provided in zip format, so you'll need a tool to unzip the file.
 *   You'll need a tool to transfer the files from your local PC to your webserver.
 *   You'll need a simple text editor to do customizations to files
 
@@ -57,7 +57,7 @@ There are only two code files here and one README; the other things you see are 
 ```
 
 The hierarchy of these files is intended to exactly duplicate the structure of your cart. So if your cart is installed on your webserver under (say) 
-`/public_html/zencart`, then to install the file `./includes/modules/order_total/ot_quantity_discount.php` you would use your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) to go to your site, change directory to `public_html/zencart`, and then transfer the "includes" folder from the mod over.
+`/public_html/zencart`, then to install the file `./includes/modules/order_total/ot_quantity_discount.php` you would use your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) to go to your site, change directory to `public_html/zencart`, and then transfer the "includes" folder from the plugin over.
 
 If your cart is under (say)  /httpdocs/public_html/, the instructions would be the same; FTP to your site; cd to <code>/httpdocs/public_html/</code>
 then transfer the <code>includes</code> folder over. 
@@ -66,9 +66,9 @@ So in fact, to install this contribution, all you have to do is copy these two f
 
 ## Templates and Core Files
 
-I chose the example of Quantity Discounts because it's the simplest form of a mod - it contains only new, original files. What about something more complex which modifies existing files in the cart?  
+I chose the example of Quantity Discounts because it's the simplest form of a plugin - it contains only new, original files. What about something more complex which modifies existing files in the cart?  
 
-Zen Cart has two facilities for dealing with situations like this, and you need to understand them prior to installing mods to save yourself grief the next time you upgrade your cart.  
+Zen Cart has two facilities for dealing with situations like this, and you need to understand them prior to installing plugins to save yourself grief the next time you upgrade your cart.  
 
 Since changing the "skin" or "theme" of the cart is the most common customization, the user interface is built to accommodate relatively easy customization. Zen Cart calls this mechanism "template overrides" and provides guidelines on how to 
 [create a custom template](/user/template/creating_template/).
@@ -108,7 +108,7 @@ those changes to your template files.
 
 ## Database Changes
 
-Some mods require database changes. For instance, Gift Wrap at Checkout includes a file called orders_wrap.sql, which modifies your database.  
+Some plugins require database changes. For instance, Gift Wrap at Checkout includes a file called orders_wrap.sql, which modifies your database.  
 
 These files are best run through the Zen Cart admin panel, which will take care of the prefix (if you have one). To do this, go to Admin > Tools > Install SQL patches.  
 
@@ -147,7 +147,7 @@ The most important principle to remember when changing your database is that you
 
 Not all database modifications will be done through a .sql file; for instance, any file which requires you to click an "Install" link from Admin > Modules is modifying your database. Be sure to make a backup!  
 
-Some mods use the "TYPE=MyISAM" syntax when doing a CREATE TABLE, which is not accepted by some newer versions of MySQL. If you get a message like this when running an SQL script:
+Some plugins use the "TYPE=MyISAM" syntax when doing a CREATE TABLE, which is not accepted by some newer versions of MySQL. If you get a message like this when running an SQL script:
 
 ```
 ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that
@@ -167,8 +167,8 @@ to
 
 The best way to upload is to upload the ENTIRE includes directory from the unzipped file onto your includes directory, and the ENTIRE admin directory (if one exists) from the unzipped file onto your admin directory (after the appropriate renames):
 
-*   If your admin folder is named ABCDEF, rename the admin folder in the unzipped mod to ABCDEF, and upload the entire folder.
-*   If the unzipped file contains template specific files, rename the containing directories to the name of your template. For instance, if your template is named "blue" and the mod has a directory named
+*   If your admin folder is named ABCDEF, rename the admin folder in the unzipped plugin to ABCDEF, and upload the entire folder.
+*   If the unzipped file contains template specific files, rename the containing directories to the name of your template. For instance, if your template is named "blue" and the plugin has a directory named
 
     `includes/modules/YOURTEMPLATE/`
 
@@ -176,7 +176,7 @@ The best way to upload is to upload the ENTIRE includes directory from the unzip
 
     `includes/modules/blue`
 
-    Similarly, if the mod contains a directory called
+    Similarly, if the plugin contains a directory called
 
     `includes/templates/custom`
 

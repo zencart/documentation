@@ -18,13 +18,13 @@ The most detailed procedure to follow to find out what's wrong when you've made 
 *   Unexpected blank lines or spaces at top or bottom of files.
 *   Customized code that's missing closing brackets ) or braces } or semicolons ; or quote marks ' and ".
 *   Incomplete files that may have not been uploaded properly.
-*   Mods that have been installed, and whether they've been done right or not.
+*   Plugins that have been installed, and whether they've been done right or not.
 *   Files that have been upgraded incompletely.
 *   Files that have been corrupted during upload by becoming double-spaced due to improper handling of end-of-line characters.
 
 **Most Common Causes:**
 
 *   In many cases it's a result of `define()` statements being customized and missing the closing `'` or `')` or `');` or maybe using `'` marks inside strings but not using `\'` instead so the `'` is treated properly.
-*   Second most common root cause is poorly-written mods.
+*   Second most common root cause is poorly-written plugins.
 *   Third most common is an incomplete upgrade of PHP files.
 

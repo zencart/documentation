@@ -83,7 +83,7 @@ Use the MySQL slow query log feature to identify poorly-performing database quer
 
 You may need to talk to your hosting company to enable this feature and to evaluate the logs generated. Set it with a low threshold so that you can see where the database is spending its time.  
 
-Do you have any mods enabled that add their own tables? Maybe they're poorly tuned tables.  
+Do you have any plugins enabled that add their own tables? Maybe they're poorly tuned tables.  
 
 Or have you written any custom code or use any addons which run queries that attempt to join tables on unindexed database columns?  
 

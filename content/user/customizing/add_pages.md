@@ -19,7 +19,7 @@ Turn on these pages from [Admin > Configuration > Define Page Status](/user/admi
 
 c) Create a new page
 
-The best way to create a new page is to use one of these mods as a starting point: 
+The best way to create a new page is to use one of these plugins as a starting point: 
 
 - [About Us](https://www.zen-cart.com/downloads.php?do=file&id=86) 
 

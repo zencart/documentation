@@ -19,7 +19,7 @@ If you are looking for integration with a specific package, it's always worth se
 At this time all customers must register with their full name, address and other information before going to the checkout. The ability to have more flexibility in the login/account creation/checkout process is on our roadmap for the future. The first steps towards buying without an account are scheduled for inclusion in Zen Cart in the future.
 
 <br />
-In the meantime, the [One Page Checkout](https://www.zen-cart.com/downloads.php?do=file&id=2095) mod has a guest checkout feature
+In the meantime, the [One Page Checkout](https://www.zen-cart.com/downloads.php?do=file&id=2095) plugin has a guest checkout feature
 built into it which might meet your needs.
 
 ---
@@ -57,7 +57,7 @@ Zen Cart supports a number of discounting mechanisms:
 Zen Cart can add a fee line item on the basis of a variety of factors:
 
 - A Low Order Fee can be assessed on orders below a certain value. 
-- A Payment module fee/discount can be added to an order based on the payment method chosen using the [Ceon Payment Surcharges/Discounts](https://www.zen-cart.com/downloads.php?do=file&id=1279) mod. 
+- A Payment module fee/discount can be added to an order based on the payment method chosen using the [Ceon Payment Surcharges/Discounts](https://www.zen-cart.com/downloads.php?do=file&id=1279) plugin. 
 - You can also add fees when you assign attributes to products.  See [Admin > Catalog > Attributes Controller](/user/admin_pages/catalog/attributes_controller/). 
 
 See [Order Total Modules](/user/order_total/order_total/) for more details. 
@@ -77,11 +77,11 @@ Yes - you can limit admin users to a subset of the superuser capabilities using
 
 ### Can Zen Cart create SEO friendly URLs? 
 This capability is not built into Zen Cart at the current time, but an
-excellent mod exists called [Ceon URI Mapping](https://www.zen-cart.com/downloads.php?do=file&id=2250). 
+excellent plugin exists called [Ceon URI Mapping](https://www.zen-cart.com/downloads.php?do=file&id=2250). 
 
 --- 
 ### Can Zen Cart allow me to edit an order after it was placed? 
-Editing orders may be performed using the mod 
+Editing orders may be performed using the plugin 
 [Edit Orders](https://www.zen-cart.com/downloads.php?do=file&id=1513).
 
 ---

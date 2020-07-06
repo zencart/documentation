@@ -50,10 +50,10 @@ Once logged into the customer’s account, the admin can place orders, view and 
 
 ### Prior to Zen Cart 1.5.7
 
-In older Zen Cart versions a plugin/mod is required in order to login as a customer.  The following options are available:
+In older Zen Cart versions a plugin is required in order to login as a customer.  The following options are available:
 
 - Master Password
 - Admin Login as Customer
 - Encrypted Master Password
 
-These mods are all available in the [plugins area](https://www.zen-cart.com/downloads.php). 
+These plugins are all available in the [plugins area](https://www.zen-cart.com/downloads.php). 

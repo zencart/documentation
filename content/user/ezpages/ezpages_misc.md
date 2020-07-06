@@ -64,7 +64,7 @@ Even quicker would be to go to Admin > Configuration > EZ-Pages Settings and set
 ---
 ### How can I add Meta Tags to my EZ-Pages? 
 
-Use the [EZ-Pages Meta Tag Fields](https://www.zen-cart.com/downloads.php?do=file&id=746) mod. 
+Use the [EZ-Pages Meta Tag Fields](https://www.zen-cart.com/downloads.php?do=file&id=746) plugin. 
 
 ---
 ### Sorry, the page you were attempting to access cannot be found

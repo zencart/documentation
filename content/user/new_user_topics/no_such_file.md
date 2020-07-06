@@ -5,7 +5,7 @@ category: new_user_topics
 weight: 10
 ---
 
-You're reading the instructions for a mod or a FAQ page or a forum post
+You're reading the instructions for a plugin or a FAQ page or a forum post
 and it tells you to update 
 
 ```

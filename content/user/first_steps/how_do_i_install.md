@@ -104,7 +104,7 @@ For initial installation or for staging upgrades; we'll be setting up a sub-fold
 This is the easiest and least error prone method of installing Zen Cart
 Installing by FTP is described in the following step.
 
-If your host provides cPanel as your hosting control panel, installation and upgrading can be a much simpler process.  You do not even need an FTP program to complete the task although you will need one for other site operations. This section covers the basic steps to install Zen Cart to your server.  The same steps are used to create a test folder for upgrade or mod installation.
+If your host provides cPanel as your hosting control panel, installation and upgrading can be a much simpler process.  You do not even need an FTP program to complete the task although you will need one for other site operations. This section covers the basic steps to install Zen Cart to your server.  The same steps are used to create a test folder for upgrade or plugin installation.
 
 
 ### Getting the files on the server.

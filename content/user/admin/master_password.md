@@ -15,7 +15,8 @@ The [Login as Customer](/user/running/login_as_customer/) feature allows you to
 select a customer's account in Admin > Customers and login as them using your admin credentials
 by clicking the "Place Order" button on the side box showing their account. 
 
-Prior to Zen Cart version 1.5.7, logging in as a customer was possible using one of these addons:
+Prior to this version, logging in as a customer was still possible using 
+one of these plugins: 
 
 - [Admin Login as Customer](https://www.zen-cart.com/downloads.php?do=file&id=583)
 - [Master Password](https://www.zen-cart.com/downloads.php?do=file&id=67)

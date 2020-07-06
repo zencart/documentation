@@ -18,7 +18,7 @@ be rejected for inclusion into the core for that reason.
 A plugin like [Backup MySQL](https://www.zen-cart.com/downloads.php?do=file&id=7) requires extensive logic to check various OS-specific settings. 
 This is difficult to maintain and subject to change outside the 
 release schedule for Zen Cart, so it's not a candidate for inclusion
-into the core.  A similar logic applies to URL rewriting mods, which 
+into the core.  A similar logic applies to URL rewriting plugins, which 
 are often tied to a particular web server such as Apache. 
 
 ## The plugin uses a third party API 
@@ -32,7 +32,7 @@ For this reason, USPS and UPS functionality is now provided by plugins.
 ## Desire to keep the core small 
 The smaller Zen Cart is, the easier it is to maintain, for both 
 the developers on the core team and for individual store owners.  For 
-this reason, even very powerful and popular mods are often rejected 
+this reason, even very powerful and popular plugins are often rejected 
 for inclusion into the core. 
 
 

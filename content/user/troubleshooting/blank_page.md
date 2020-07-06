@@ -19,7 +19,7 @@ Some programs like SmartFTP and CuteFTP are well-known to be problematic in this
 Best to re-upload and ensure that there are no errors, and that no files are left with 0 bytes.  
 
 You can easily verify that you do not have any zero byte files in your 
-installation by using the [Changed Files mod](https://www.zen-cart.com/downloads.php?do=file&id=2193). 
+installation by using the [Changed Files plugin](https://www.zen-cart.com/downloads.php?do=file&id=2193). 
 
 <font color="#a52a2a">**Failed uploads are the MOST COMMON CAUSE of all website problems.** </font>
 
