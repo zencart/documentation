@@ -22,7 +22,7 @@ happened in this case is that your hoster just changed your PHP version
 without warning.  Alternatively, perhaps you upgraded your version of 
 Zen Cart, but wound up using some old files.  
 
-Each version of Zen Cart (and each mod) 
+Each version of Zen Cart (and each plugin) 
 was developed for the version of PHP that was
 prevalent at the time, and may not be compatible with newer PHP versions.
 See [mapping of Zen Cart versions to PHP versions](/user/first_steps/server_requirements/#php-version) more information.

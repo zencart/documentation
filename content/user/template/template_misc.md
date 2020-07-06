@@ -72,8 +72,8 @@ See [the template_info FAQ](/user/template/template_info/).
 
 ---
 
-### Why does this mod not work with Template Monster Templates?
-Zen Cart mods often depend on built-in Zen Cart features, which are 
+### Why does this plugin not work with Template Monster Templates?
+Zen Cart plugins often depend on built-in Zen Cart features, which are 
 removed as an expedient by Template Monster developers.  
 
 If you're using a Template Monster template and a change you are 

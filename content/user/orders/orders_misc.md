@@ -9,7 +9,7 @@ weight: -1
 
 --- 
 ### How can I handle returns? 
-There is an [RMA mod](https://www.zen-cart.com/downloads.php?do=file&id=1692) in the downloads area which may help.
+There is an [RMA plugin](https://www.zen-cart.com/downloads.php?do=file&id=1692) in the downloads area which may help.
 
 ---
 <!-- please keep this at the end --> 

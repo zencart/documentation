@@ -10,13 +10,13 @@ weight: -1
 ---
 ### How can I add a message to my order confirmation emails? 
 
-In Zen Cart 1.5.6, a mod called [Order Message](https://www.zen-cart.com/downloads.php?do=file&id=2200) was pulled into the Zen Cart core.  To use it, 
+In Zen Cart 1.5.6, a plugin called [Order Message](https://www.zen-cart.com/downloads.php?do=file&id=2200) was pulled into the Zen Cart core.  To use it, 
 edit the file 
 `includes/languages/english/YOURTEMPLATE/email_extras.php`
 and set the defined constant 
 `EMAIL_ORDER_MESSAGE` with your message.  
 
-If your Zen Cart version is prior to 1.5.6, you may still use the Order Message mod. 
+If your Zen Cart version is prior to 1.5.6, you may still use the Order Message plugin. 
 
 --- 
 ### How can I email all my customers about a sale or promotion? 

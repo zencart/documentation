@@ -18,5 +18,5 @@ If they have a different shipping address, and you need to edit it, the best way
 
 If the `Admin > Customers > Customers` screen has a *Place Order* button on the right hand side in the sidebox, press it.  Login as the customer and go to the My Account Page, and click the link titled `View or change entries in my address book`. 
 
-If you do not have a *Place Order* button, you will need to install and use one of the [Master Password](/user/admin/master_password/) mods.  Login using the customer's email address and the master password, and edit their address book.  
+If you do not have a *Place Order* button, you will need to install and use one of the [Master Password](/user/admin/master_password/) plugins.  Login using the customer's email address and the master password, and edit their address book.  
 

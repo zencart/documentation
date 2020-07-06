@@ -126,7 +126,7 @@ Note that this rule is not required in cases where a block is opened by PHP (as 
 
 ## Arrays 
 
-End an array with a comma and put the closing bracket on a new line.  In this way, modders can just insert a line after the last entry and have a smaller diff: 
+End an array with a comma and put the closing bracket on a new line.  In this way, plugin authors can just insert a line after the last entry and have a smaller diff: 
 
 ```
    ... 

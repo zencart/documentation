@@ -38,7 +38,7 @@ if you wanted to replace `|` with `@`, for example.
 
 ### Snap Affiliates
 No need to edit any core Zen Cart files.  
-Use the mod [Snap Affiliates](https://www.zen-cart.com/downloads.php?do=file&id=1635). 
+Use the plugin [Snap Affiliates](https://www.zen-cart.com/downloads.php?do=file&id=1635). 
 
 ### iDevAffiliate  
 No need to edit any core Zen Cart files.  

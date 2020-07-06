@@ -15,7 +15,7 @@ In Zen Cart 1.5.7, a feature called "Admin Login As Customer" has been added, th
 as them using your admin credentials by clicking the "Place Order" button on the side box showing their account. See [Login as Customer](/user/running/login_as_customer/) for more information. 
 
 Prior to this version, logging in as a customer was still possible using 
-one of these mods: 
+one of these plugins: 
 
 - [Admin Login as Customer](https://www.zen-cart.com/downloads.php?do=file&id=583)
 - [Master Password](https://www.zen-cart.com/downloads.php?do=file&id=67)
