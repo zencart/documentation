@@ -12,6 +12,7 @@ using a class based migration system.
 
 ## Plain SQL Files
 
+Create a plain .sql file called `install.sql` with the SQL statements you need for installation. 
 
     CREATE TABLE IF NOT EXISTS reward_master (
                                rewards_products_id INT( 11 ) NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -38,13 +39,13 @@ The sql file should reside in
 
       - Installer
 
-        - sqlInstall
-
-          - install.sql
+        - install.sql
 
 
 **Warning** As Zen Cart currently uses mainly `MyIsam` tables, there is no way to safely roll back any
   installer sql if an error occurs. Some support for rollback may be added later (using generated migrations).
+
+Note that an uninstall script (called `uninstall.sql`) may be placed in the same folder. 
 
 
 ## SQL Installer Classes

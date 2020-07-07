@@ -5,7 +5,7 @@ category: plugins
 weight: 10
 ---
 
-In Zen Cart v1.5.7 a Plugin Manager was added to begin allowing support for Admin-Only plugins using the new architecture.
+In Zen Cart v1.5.7,  a Plugin Manager was added to begin allowing support for Admin-Only plugins using the new architecture.
 
 The plugin architecture allows plugins to be encapsulated into a hierarchical directory structure
 that mimics the Zen Cart directory structure. 

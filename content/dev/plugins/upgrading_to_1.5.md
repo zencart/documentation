@@ -1,5 +1,5 @@
 ---
-title: Upgrading old plugins for 1.5 Compatibility
+title: Upgrading 1.3.X era plugins 
 description: Upgrading old Zen Cart plugins for 1.5 Compatibility
 category: plugins
 weight: 1
@@ -21,6 +21,10 @@ Plugin authors can use function calls to `zen_register_admin_page()` and `zen_de
 In the interest of mitigating against CSRF issues, it is necessary to use GET parameters *only* when indicating selection criteria, and NEVER when performing destructive actions or database write operations.
 There is a forum thread which outlines some guidance in the process of rewriting addons in this way: https://www.zen-cart.com/showthread.php?t=184616
 
-Forms in v1.5.0 and newer must use security tokens such as those set by properly using zen_draw_form instead of hard-coded
+Forms in v1.5.0 and newer must use security tokens such as those set by properly using `zen_draw_form` instead of hard-coded
 tags and must use POSTs for all CRUD actions, leaving GETs for only filter-related activities.
+
+## Moving to the Encapsulated Plugin manager 
+
+As an recommended next step, follow the guide [Converting an older plugin](/dev/plugins/encapsulated_plugins/converting/) to use the new encapsulated plugin manager.  
 
