@@ -36,8 +36,9 @@ $template_version = 'Version 1.0';
 $template_author = '<enter your name>';  
 $template_description = 'describe your template'; 
 $template_screenshot = 'screenshot.jpg';  
-?>
 ```
+
+Notice there is no closing PHP tag.  
 
 Create a screenshot of your template, and save it as `includes/templates/YOURTEMPLATE/images/screenshot.jpg`.  This way people will be able to "preview" your template.  
 
