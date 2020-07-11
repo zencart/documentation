@@ -56,7 +56,8 @@ A human readable string for the plugin author.
 
 The `id` number assigned by the Zen Cart forum site when submitting the plugin for review.
 e.g. https://www.zen-cart.com/downloads.php?do=file&id=1583
-This is used to do `call home` checking for new versions.
+This is used by the store's Plugin Manager to check for whether new versions have been submitted.
+The Plugin Manager only alerts about new versions of this plugin if the store's Zen Cart version matches one of the versions specified in a given update on the Zen Cart plugins archive.
 
 ### changelog
 
@@ -68,7 +69,7 @@ A link to the plugin's github repo, if one exists.
 
 ### zcVersions
 
-An array of the Zen Cart versions the plugin supports. (eg: `['v157']`, or `['v157','v158']`)
+An array of the Zen Cart versions the plugin supports. (eg: `['v157']`, or `['v157','v158']`).
 
 ### pluginGroups
 
