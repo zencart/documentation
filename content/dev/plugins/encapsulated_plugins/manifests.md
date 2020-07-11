@@ -57,7 +57,10 @@ A human readable string for the plugin author.
 The `id` number assigned by the Zen Cart forum site when submitting the plugin for review.
 e.g. https://www.zen-cart.com/downloads.php?do=file&id=1583
 This is used by the store's Plugin Manager to check for whether new versions have been submitted.
+
 The Plugin Manager only alerts about new versions of this plugin if the store's Zen Cart version matches one of the versions specified in a given update on the Zen Cart plugins archive.
+
+Set it to `0` if you're writing a plugin that you're not submitting to the online Plugins list. (eg: a commercial plugin)
 
 ### changelog
 
