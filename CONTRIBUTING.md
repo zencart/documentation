@@ -176,14 +176,10 @@ You can also point to a folder rather than a single file, as is done in the `tem
 
 * If you are using the same text in multiple places, please don't copy and paste; instead, use a shortcode or modify a template.  This is an advanced area; please ask first.  Alternately, you can simply link to the content in the main place it exists. See the section *Links* above. 
 
-* Exercise caution when changing a header (a line preceded by one or more # signs).  The reason is that the text of this header is a link which is used to crosslink.  So if you have 
-
-```
-### Header One 
-```
+* Exercise caution when changing a header (a line preceded by one or more # signs).  The reason is that the text of this header is a link which is used to crosslink.  So if you have `### Header One`, then the link to this would be `[See Header One](/user/folder/file#header-one)`.  And if you change the "Header One" to something else, this link will no longer work! 
 
 
-The link to this would be `[See Header One](/user/folder/file#header-one)`.  And if you change the "Header One" to something else, this link will no longer work! 
+* Indenting in this system with bullet points requires four spaces. If you skimp and use 2, it may appear to work in your local markdown editor/viewer but it won't work when the site is deployed live!
 
 <br />
 
