@@ -23,13 +23,13 @@ e.g.
 
 - zc_plugins
 
-  - rewardPoints
+    - rewardPoints
 
-    - v1.0.0
+        - v1.0.0
 
-      - Installer
+            - Installer
 
-        - `PluginInstaller.php`
+                - `PluginInstaller.php`
 
 The skeleton of this class should look like :-
 
