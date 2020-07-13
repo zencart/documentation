@@ -14,7 +14,7 @@ Within their directory plugin authors can add subdirectories that mimic the main
 Note how each plugin starts with a versioned directory. 
 This allows for automated upgrades and the possibility of downgrading as well.
 
-Note that the `admin` folder is *not* renamed. 
+Note that the `admin` folder *must* be called `admin` here (not renamed). 
 
 e.g.
 
