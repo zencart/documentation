@@ -19,27 +19,28 @@ plugin's top level folder under a new folder with the name
 For example, the Mod List files, prior to conversion, were: 
 
 ```
-./admin/includes/languages/english/extra_definitions/mod_list.php
-./admin/includes/languages/english/mod_list.php
-./admin/includes/extra_configures/mod_list.php
-./admin/mod_list.php
+./YOURADMIN/includes/languages/english/extra_definitions/mod_list.php
+./YOURADMIN/includes/languages/english/mod_list.php
+./YOURADMIN/includes/extra_configures/mod_list.php
+./YOURADMIN/mod_list.php
 ```
 
 These become: 
 
 ```
-./ModList/1.4.0/admin/includes/languages/english/extra_definitions/mod_list.php
-./ModList/1.4.0/admin/includes/languages/english/mod_list.php
-./ModList/1.4.0/admin/includes/extra_configures/mod_list.php
-./ModList/1.4.0/admin/mod_list.php
+./zc_plugins/ModList/1.4.0/admin/includes/languages/english/extra_definitions/mod_list.php
+./zc_plugins/ModList/1.4.0/admin/includes/languages/english/mod_list.php
+./zc_plugins/ModList/1.4.0/admin/includes/extra_configures/mod_list.php
+./zc_plugins/ModList/1.4.0/admin/mod_list.php
 ```
+**Note** It is not necessary to rename admin in the plugin directory hierarchy 
 
 ### 2. Add the Manifest 
 
 Create a [manifest file](/dev/plugins/encapsulated_plugins/manifests/). In our example, this will be placed in 
 
 ```
-./ModList/1.4.0/manifest.php
+./zc_plugins/ModList/1.4.0/manifest.php
 ```
 
 
@@ -50,7 +51,7 @@ Create an [installer script](/dev/plugins/encapsulated_plugins/installer_classes
 In our example, this will be placed in 
 
 ```
-./ModList/1.4.0/Installer/PluginInstaller.php
+./zc_plugins/ModList/1.4.0/Installer/PluginInstaller.php
 ```
 
 ### 4. (optional) Create install and uninstall files 
@@ -61,7 +62,7 @@ required by the plugin, you can use [plain SQL files](/dev/plugins/encapsulated_
 In our example, these will be placed in 
 
 ```
-./ModList/1.4.0/Installer/uninstall.sql
-./ModList/1.4.0/Installer/install.sql
+./zc_plugins/ModList/1.4.0/Installer/uninstall.sql
+./zc_plugins/ModList/1.4.0/Installer/install.sql
 ```
 
