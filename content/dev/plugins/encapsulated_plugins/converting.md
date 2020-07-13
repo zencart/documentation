@@ -1,5 +1,5 @@
 ---
-title: Converting an older plugin 
+title: Converting a plugin to use encapsulation
 description:  
 weight: 80
 layout: docs
@@ -66,4 +66,29 @@ In our example, these will be placed in
 ./zc_plugins/ModList/1.4.0/Installer/uninstall.sql
 ./zc_plugins/ModList/1.4.0/Installer/install.sql
 ```
+
+### 5. Things to watch for in the conversion 
+
+a) Scope of variables in `extra_configures` and `extra_datafiles`
+
+In the encapsulated plugin architecture, 
+the files in `extra_configures` and `extra_datafiles` are run in the 
+context of  the `FileSystem` class, 
+and therefore any variables created will be scoped into that class and not the global scope.
+
+This means if you have a file that was in `admin/includes/extra_configures/my_plugin.php` which created a variable (say, `$my_list`), this variable will not be available to the plugin anymore.  
+
+Some options for overcoming this are: 
+
+- Move the logic to a page specific init file. 
+
+- Make the variables into defined constants (which by definition have global scope). 
+
+### 6. Remove old files and update documentation 
+
+Once you have put your the `admin`, `includes`, etc. folders under `zc_plugins`, do not duplicate them at the top level for older versions of Zen Cart. 
+Instead, update the README file for your plugin with guidance like: 
+
+If you are running a  Zen Cart installation older than 1.5.7, do not copy in the `zc_plugins` folder.  Instead, 
+go to the `zc_plugins/YOURPLUGIN/VERSION/` folder and copy the `admin` and `includes` folders to your shopping cart (after renaming the `admin` folder.)
 
