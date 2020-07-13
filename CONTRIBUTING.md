@@ -155,10 +155,12 @@ FILE 2:
 
 If it is necessary to rename a file, be sure to use [Hugo aliasing](https://gohugo.io/content-management/urls/) so as not break any external links to the page.  You can see an example of where this was done in  [`change_header_logo.md`](https://github.com/zencart/documentation/blob/master/content/user/new_user_topics/change_header_logo.md), which used to be named `change_powered_by.md`.
 
-## Creating Links in `_index.md`
+## Creating Crosslink-only Pages
 
 If you just want a link to show up in the `_index.md` file without having 
-to replicate content, you can put a `url` entry in the front matter of a file with only the front matter details you need.  Use the example provided by  [`admin_password.md under admin`](https://github.com/zencart/documentation/blob/master/content/user/admin/admin_password.md), which points to the file of the same name under `troubleshooting`.  You can also point to a folder rather than a file, as is done in the `template` and `customizing` cross link files in the two folders of the same name. 
+to replicate content, you can put a `url` entry in the front matter of a file with only the front matter details you need.  Use the example provided by  [`/user/admin/admin_password.md`](https://github.com/zencart/documentation/blob/master/content/user/admin/admin_password.md), which points to the file [`/user/troubleshooting/reset_admin_password`](https://github.com/zencart/documentation/blob/master/content/user/troubleshooting/reset_admin_password.md).  
+
+You can also point to a folder rather than a single file, as is done in the `template.md` cross link file in the `customizing` folder.
 
 ## Markdown
 
