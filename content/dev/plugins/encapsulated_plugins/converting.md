@@ -19,11 +19,12 @@ plugin's top level folder under a new folder with the name
 For example, the Mod List files, prior to conversion, were: 
 
 ```
-./YOURADMIN/includes/languages/english/extra_definitions/mod_list.php
-./YOURADMIN/includes/languages/english/mod_list.php
-./YOURADMIN/includes/extra_configures/mod_list.php
-./YOURADMIN/mod_list.php
+./admin/includes/languages/english/extra_definitions/mod_list.php
+./admin/includes/languages/english/mod_list.php
+./admin/includes/extra_configures/mod_list.php
+./admin/mod_list.php
 ```
+**Note** On the live system the admin folder will have been renamed.
 
 These become: 
 
