@@ -22,17 +22,17 @@ e.g.
 
 - zc_plugins
 
-  - rewardPoints
+    - rewardPoints
 
-    - v1.0.0
+        - v1.0.0
 
-      - Installer
+            - Installer
 
-        - languages
+            - languages
 
-          - english
+                - english
 
-            - `main.php`
+                    - `main.php`
 
 
 If the plugin needs more customisation and wants to split off other language defines into separate files it may
