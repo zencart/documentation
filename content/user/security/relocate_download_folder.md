@@ -57,4 +57,4 @@ As an example, if your `DIR_FS_CATALOG` value is set as follows:
 
 then you would want 
 
-`define('DIR_FS_CATALOG', '/home/jimmy/download/');`
+`define('DIR_FS_DOWNLOAD', '/home/jimmy/download/');`
