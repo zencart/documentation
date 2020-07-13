@@ -33,13 +33,13 @@ The sql file should reside in
 
 - zc_plugins
 
-  - rewardPoints
+    - rewardPoints
 
-    - v1.0.0
+        - v1.0.0
 
-      - Installer
+            - Installer
 
-        - install.sql
+                - install.sql
 
 
 **Warning** As Zen Cart currently uses mainly `MyIsam` tables, there is no way to safely roll back any
