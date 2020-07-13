@@ -20,7 +20,7 @@ If they are mainly concerned with finding a TV that's 70 inch, the **_Screen Siz
 
 Other categories and sub-categories can be utilized as well.  Anything that helps the customer get to the desired product is good practice.
 ## How to Make It Work
-Le's take an item from a **_fictitious_** TV manufactured by **_Sonsung_** as an example.  We would create a category of **_Sonsung_**, **_Screen Size_**, and **_Resolution_**.  **_Screen Size_** would have a sub-category of **_70 inch_**.  **_Resolution_** would have a sub-category of **_1080p_**.
+Let's take an item from a **_fictitious_** TV manufactured by **_Sonsung_** as an example.  We would create a category of **_Sonsung_**, **_Screen Size_**, and **_Resolution_**.  **_Screen Size_** would have a sub-category of **_70 inch_**.  **_Resolution_** would have a sub-category of **_1080p_**.
 
 The product itself is entered in only one place.  Since **_Sonsung_** is nearest to the top of the category tree, you would enter the product **_Sonsung MX701080_** as the first product in the category.  Be sure to include all information about the item, *_especially_* the information that identifies the other features for which you made categories.  If this model has Optical Audio Out, you will want to state that in the description so it can be added to the **_Audio Out > Optical_** category as well.
 
