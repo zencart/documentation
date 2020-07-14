@@ -7,7 +7,7 @@ weight: 10
 
 Preamble worth reading: [How-do-I-rebuild-my-site-on-the-new-version-instead-of-upgrading](https://www.zen-cart.com/entry.php?3-How-do-I-rebuild-my-site-on-the-new-version-instead-of-upgrading). 
 
-Before you begin, remember to make a [complete backup of your files and database](https://docs.zen-cart.com/user/running/backup/). 
+Before you begin, remember to make a [complete backup of your files and database](/user/running/backup/). 
 
 ## 3 EASY STEPS TO UPGRADE ZEN CART
 
@@ -54,14 +54,14 @@ When you're done with your testing, remove `demo` and the database you created f
 ## 1\. Preparation
 
 ### Make backups
-Make a [full backup of your live database (dump to SQL file)](https://docs.zen-cart.com/user/running/backup/#b-backup-your-database). Store this file on your PC for later reference.
+Make a [full backup of your live database (dump to SQL file)](/user/running/backup/#b-backup-your-database). Store this file on your PC for later reference.
 
-Make a [full backup of your live site files (ftp to your PC and zip it up for safe-keeping)](https://docs.zen-cart.com/user/running/backup/#a-backup-your-files). 
+Make a [full backup of your live site files (ftp to your PC and zip it up for safe-keeping)](/user/running/backup/#a-backup-your-files). 
 
 Keep an unzipped copy of your backup on your PC to use in the next steps. Perhaps call this folder `store`. 
 
 ### Identify (make a list of) all your existing customizations
-NOTE: This is a time-consuming step.
+**NOTE:** This is a time-consuming step.
 
 Now let's find out the differences/customizations between your site and the original Zen Cart files.  (You can find older versions here: [http://sourceforge.net/projects/zencart/files/](http://sourceforge.net/projects/zencart/files/))
 
@@ -80,6 +80,7 @@ In WinMerge you can double-click on each file and note what the differences are.
 
 #### Types of Differences
 There will be many differences:
+
 - language defines for display text - those will be simple to carry forward.
 - actual programming/code differences -- for these you will need to make detailed notes in order to carry over those changes to the new version.
 - add-ons/plugins you've installed -- these often contain numerous programming changes, and may not be fully compatible with the newer Zen Cart release.
@@ -127,7 +128,7 @@ Put your site back into normal mode (turn off Down For Maintenance).
 
 ### Create a temporary new store on your server, for testing
 
-Create a NEW database in cPanel. Use the backup that you just made from your live site to fill the database with data. (See [restoring the database](https://docs.zen-cart.com/user/running/backup/#to-restore-your-database).)
+Create a NEW database in cPanel. Use the backup that you just made from your live site to fill the database with data. (See [restoring the database](/user/running/backup/#to-restore-your-database).)
 
 ### Prepare the configure.php files
 
@@ -185,9 +186,6 @@ Test the store to be sure that things are operating as desired.
 
 If you have small problems to repair, turn "Down for maintenance" on and off again as necessary.  
 
-
---
-
 # Example Scenario:
 
 Suppose you are currently running Zen Cart 1.5.1 and you want to upgrade to 
@@ -206,6 +204,7 @@ Zen Cart 1.5.6c.  These are the steps to use (we will skip over the New code fam
     - copy `admin/includes/dist-configure.php` to `admin/includes/configure.php`
     - modify these two files, setting the values in them from your original configure files in `store`.  
     - In each file, you want two changes: `DIR_FS_CATALOG` setting should refer to `store_new` and not `_store`, and `DB_DATABASE` should refer to a new database name, not the original one (since we're only testing at this point).
+
 - Upload `store_new` to your server.  
 - Make a fresh backup of your live database. 
 - Create a NEW database in cPanel, using the new DB_DATABASE name you used in the last step of updating your configuration files. Fill this database from the backup that you just made.

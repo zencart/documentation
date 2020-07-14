@@ -53,5 +53,8 @@ Note that an uninstall script (called `uninstall.sql`) may be placed in the same
 If you have more complex needs when creating schemas or seeding the database, instead of 
 using a plain SQL install file as above, you can use a class based method.
 
+An example of this is provided in the `DisplayLogs` plugin, in `zc_plugins/DisplayLogs`.  The class `ScriptedInstallBase` may be extended to permit the execution of complex logic during the install and uninstall process. 
+
+The two key methods that must be implemented in a class which extends `ScriptedInstallBase` are `executeInstall` and `executeUninstall`, which run the installation and de-installation logic.  
 
 
