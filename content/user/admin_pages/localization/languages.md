@@ -16,7 +16,7 @@ This is the name of the language, probably best as expressed _in itself_, e.g. F
 
 ### Code
 
-This is the two-letter ISO 639 two-letter language code, e.g. en for English, fr for Francais, es for Español, etc. If you don't know the code, you can find it on Wikipedia [here](http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
+This is the two-letter ISO 639 language code, e.g. en for English, fr for Francais, es for Español, etc. If you don't know the code, you can find it on Wikipedia [here](http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
 
 ### Image
 
@@ -62,21 +62,26 @@ If you're not familiar how to upload a Zen Cart plugin, follow the instructions 
 [how to install a plugin](/user/plugins/how_to_install_a_plugin/). 
 
 ## Trouble Shooting a Language Pack
+Here are some symptoms you might see, and ideas on how to resolve them.
 
-- Blank white screen (on storefront) after language pack installed.
+### Blank white screen (on storefront) after language pack installed.
 
-    There are likely to be missing language files. Check the logs directory for `myDEBUG-YYYYMMDD-HHMMSS-nnnnnn.log` files and look for `failed to open stream: No such file or directory`. Before it you should see a file path of the missing file. 
+There are likely to be missing language files. Check the logs directory for `myDEBUG-YYYYMMDD-HHMMSS-nnnnnn.log` files and look for `failed to open stream: No such file or directory`. Before it you should see a file path of the missing file. 
     
-    ```
-    --> PHP Warning: require_once(**YOURSITE/includes/languages/YOURLANGUAGE/MISSINGFILE.php**): failed to open stream: No such file or directory in YOURSITE/includes/languages/YOURLANGUAGE.php on line 607
-    ``` 
+```
+    PHP Warning: require_once(**YOURSITE/includes/languages/YOURLANGUAGE/MISSINGFILE.php**): failed to open stream: No such file or directory in YOURSITE/includes/languages/YOURLANGUAGE.php on line 607
+``` 
     
-    Find the file in the english language folder `YOURSITE/includes/languages/english/MISSINGFILE.php` and copy to your language folder.
+Find the file in the english language folder `YOURSITE/includes/languages/english/MISSINGFILE.php` and copy to your language folder.
     
-**NOTE** - You may have to repeat this task multiple times for older version language packs.
+**NOTE:** You may have to repeat this task multiple times for older version language packs.
 
-- Capitalised titles displayed in english
-    If you get sections named displayed as capitalised title with underscore between e.g.`HEADING_TITLE` again it will be because language files have not been included in the original language pack. Finding these can be more tricky as the same title may be used in multiple places. Start by loging into your admin page. Then select `Tools > Developers Tool Kit` in the tool kit enter the name of the missing variable and search `All Language Files for ENGLISH - Catalog/Admin` this should produce a list of places where the variable is defined. 
-    
-    - If it is only one place then transfer that file from the english location to YOURLANGUAGE equivalent location
-    - If there a multiple listing then go back to the storefront and add `&language=en` to then end of the URL or if `&language=YOURLANGUAGECODE` is already present change YOURLANGUAGECODE to `en` refresh the page and look at the correct wording. Use this wording to find the correct file and copy the file from the english location to YOURLANGUAGE equivalent location
+### Capitalised titles displayed in English
+
+If you get sections named displayed as capitalised title with underscore between, e.g.`HEADING_TITLE`, again it will be because language files have not been included in the original language pack. Finding these can be more tricky as the same title may be used in multiple places. 
+
+Start by logging into your admin page. Then select `Tools > Developers Tool Kit` in the tool kit, and enter the name of the missing variable.  Search `All Language Files for ENGLISH - Catalog/Admin`. This should produce a list of places where the variable is defined.
+ 
+- If it is only one place, then transfer that file from the english location to YOURLANGUAGE equivalent location.
+- If there are multiple listings, then go back to the storefront and add `&language=en` to then end of the URL or if `&language=YOURLANGUAGECODE` is already present, change YOURLANGUAGECODE to `en`.  Then refresh the page and look at the correct wording. Use this wording to find the correct file and copy the file from the english location to YOURLANGUAGE equivalent location.
+
