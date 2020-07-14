@@ -10,6 +10,10 @@ This document lists things you may wish to take into account as you upgrade.  Th
 - changes to the database schema or contents which deserve special notice
 - changes to basic template operation 
 
+### Zen Cart 1.5.8
+
+- The function `zen_cfg_read_only` has been added to the core.  This means any plugin authors who use this function should remove it from the plugin (for 1.5.7+) or wrap it in `if (!function_exists('zen_cfg_read_only'))` (for older versions of Zen Cart). 
+
 ### Zen Cart 1.5.7 
 
 - The configuration constant `UPLOAD_FILENAME_EXTENSIONS` was removed from the database and replaced with an entry in `includes/classes/upload.php`.   If you have modified this constant from its original setting of `jpg,jpeg,gif,png,eps,cdr,ai,pdf,tif,tiff,bmp,zip` you will want to make the same change in the aforementioned file. 
