@@ -111,8 +111,9 @@ Filename: **/includes/<u>local</u>/configure.php**
 ```
 <?php
   define('STRICT_ERROR_REPORTING', true);
-?> 
 ```
+
+(The missing `?>` is intentional.)
 
 Then try to access your site again. You may see many warning messages on the screen.  
 
