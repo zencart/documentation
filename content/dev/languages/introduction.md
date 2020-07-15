@@ -8,9 +8,3 @@ Translations are done on a volunteer basis, so the quality and even installation
 
 You are always welcome to help improve a translation, by either making your suggestions known to the author of the translation or by making your wanted changes yourself.
 
-## International support sites 
-- [Chinese support site](http://www.zen-cart.cn/)
-- [Dutch support site](http://www.zen-cart.nl/)
-- [Italian support site](http://www.zen-cart.it/)
-- [Japanese support site](http://www.zen-cart.jp/)
-- [Portuguese support site](http://br.groups.yahoo.com/group/zen-cart-pt/)
