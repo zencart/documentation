@@ -21,7 +21,7 @@ To make your store multi-lingual, add the language in your admin using
 
 Once you have added a new language, you will need to get the language pack files that 
 correspond to that language.  Language packs may be found in 
-the [Plugins Directory](https://www.zen-cart.com/downloads.php?do=cat&id=6).
+the [Plugins Library](https://www.zen-cart.com/downloads.php?do=cat&id=6).
 
 Language packs are structured to correspond to your cart folders, so you can just 
 rename the admin folder, if one exists, and then upload all the files. 

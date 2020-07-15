@@ -52,7 +52,7 @@ To remove a language, click on the named language so that the right arrow appear
 ## Creating a multi-language store 
 
 Language packs may be found in 
-the [Plugins Directory](https://www.zen-cart.com/downloads.php?do=cat&id=6).
+the [Plugins Library](https://www.zen-cart.com/downloads.php?do=cat&id=6).
 
 Language packs are structured to correspond to your cart folders, so you can just 
 rename the admin folder, if one exists, and then upload all the files. 

@@ -8,7 +8,7 @@ weight: -1
 --- 
 
 ### Can Zen Cart be integrated with Accounting Packages such as QuickBooks or Sage?
-Although Zen Cart does not come with built-in accounting package integration, community members have contributed add-ons for specific packages. These may be found in the [Admin Tools](https://www.zen-cart.com/downloads.php?do=cat&id=1) section of this site's [Plugins Directory](https://www.zen-cart.com/downloads.php).
+Although Zen Cart does not come with built-in accounting package integration, community members have contributed add-ons for specific packages. These may be found in the [Admin Tools](https://www.zen-cart.com/downloads.php?do=cat&id=1) section of this site's [Plugins Library](https://www.zen-cart.com/downloads.php).
 
 If you are looking for integration with a specific package, it's always worth searching the main forum as you may find references to packages under development, not in the downloads area, or only available commercially that may meet your needs.
 

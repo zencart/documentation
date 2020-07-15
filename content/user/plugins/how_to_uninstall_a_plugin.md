@@ -32,7 +32,7 @@ you make a backup first.
 
 1. If you need help during this process, post to the support thread
 for the plugin.  This can be found on the plugin's page in the 
-[Plugins Directory](https://www.zen-cart.com/downloads.php). 
+[Plugins Library](https://www.zen-cart.com/downloads.php). 
 
 ## Too Much? 
 If this sounds like too much for you, the best route is to go onto the 

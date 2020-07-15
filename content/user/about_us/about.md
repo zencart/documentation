@@ -27,7 +27,7 @@ See [plugin interfaces](/user/plugins/about_plugins/#plugin-interfaces) for deta
 
 It's also important to note that community-supplied contributions are written at a certain point in time and are not always compatible with future or earlier versions of Zen Cart. This is a challenge with any community-supported project. Our new contributions section attempts to help minimize the confusion in this by separating contributions based on the version of Zen Cart for which they were initially written.
 
-If you can find community created and supported contributions in the [Plugins Directory](https://www.zen-cart.com/downloads.php) of the Zen Cart Forum. 
+If you can find community created and supported contributions in the [Plugins Library](https://www.zen-cart.com/downloads.php) of the Zen Cart Forum. 
 
 ## **Fees**
 There is no fee for using Zen Cart. You may [download Zen Cart](https://sourceforge.net/projects/zencart/files/) and use it, subject to the terms of the license, for free. However, if you find it useful, you are encouraged to [make a donation](/user/about_us/donate/) to help support the ongoing development and improvement of the product.  

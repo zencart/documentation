@@ -36,7 +36,7 @@ return [
 
 ### pluginVersion
 
-The version of this plugin. It should match the version number entered when submitting the plugin to the Plugins library on the Zen Cart forum.
+The version of this plugin. It should match the version number entered when submitting the plugin to the Plugins Library on the Zen Cart forum.
 
 ### pluginName
 
@@ -58,9 +58,9 @@ The `id` number assigned by the Zen Cart forum site when submitting the plugin f
 e.g. https://www.zen-cart.com/downloads.php?do=file&id=1583
 This is used by the store's Plugin Manager to check for whether new versions have been submitted.
 
-The Plugin Manager only alerts about new versions of this plugin if the store's Zen Cart version matches one of the versions specified in a given update on the Zen Cart plugins archive.
+The Plugin Manager only alerts about new versions of this plugin if the store's Zen Cart version matches one of the versions specified in a given update on the Zen Cart Plugins Library. 
 
-Set it to `0` if you're writing a plugin that you're not submitting to the online Plugins list. (eg: a commercial plugin)
+Set it to `0` if you're writing a plugin that you're not submitting to the Plugins Library. (eg: a commercial plugin)
 
 ### changelog
 

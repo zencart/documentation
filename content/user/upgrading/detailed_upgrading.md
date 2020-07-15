@@ -224,12 +224,12 @@ Zen Cart 1.5.6c.  These are the steps to use (we will skip over the New code fam
 
 ## Plugin Considerations
 
-In the description above, we assume the changes you have made are things like language file changes or maybe small code tweaks you did.  If the changes are plugins, there may be a better way than just porting the old changes forward to the new version: you can check the [Plugins Directory](https://www.zen-cart.com/downloads.php) for an updated version of the plugin.  If you don't see one, you can ask on the plugin's support thread.
+In the description above, we assume the changes you have made are things like language file changes or maybe small code tweaks you did.  If the changes are plugins, there may be a better way than just porting the old changes forward to the new version: you can check the [Plugins Library](https://www.zen-cart.com/downloads.php) for an updated version of the plugin.  If you don't see one, you can ask on the plugin's support thread.
 
 
 ## Templates
 
-When it comes to templates, if you have gotten your template from the Plugins Directory, the advice above applies. If your template came from a commercial vendor, you should approach that vendor and ask about an upgrade.
+When it comes to templates, if you have gotten your template from the Plugins Library, the advice above applies. If your template came from a commercial vendor, you should approach that vendor and ask about an upgrade.
 
 If you are upgrading from 1.5.4 or below, you have another decision to make: Zen Cart 1.5.5 and above are designed to be used on mobile devices as well as desktop devices.  Your older template is likely not mobile friendly, so you may wish to get one that is.  The built in [responsive classic](/user/template/other_templates/#responsive-classic-template-product-page) template in 1.5.5+ is a good start. 
 
