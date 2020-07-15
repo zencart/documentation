@@ -8,7 +8,7 @@ weight: 10
 "Beauty is in the eye of the beholder," as the saying goes.  Ten users will
 have ten different opinions about what's important.  
 
-Look through the [Plugins Directory](https://www.zen-cart.com/downloads.php). If you find something that appeals to you, here are some next steps:
+Look through the [Plugins Library](https://www.zen-cart.com/downloads.php). If you find something that appeals to you, here are some next steps:
 
 - On the plugin's own page, click the orange 
 <img src="/images/support_thread.png" alt="Forum Support Thread" style="height: 30px !important;" /> Forum Support Thread button, and browse the support thread for the plugin.  Is the thread active?  Is the plugin still supported? 
