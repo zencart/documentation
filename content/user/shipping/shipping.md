@@ -24,6 +24,6 @@ Zen Cart also integrates with a number of shipping vendors using plugins:
 - [Canada Post](https://www.zen-cart.com/downloads.php?do=file&id=4)
 - [Royal Mail](https://www.zen-cart.com/downloads.php?do=file&id=190)
 
-More shipping plugins may be found in the [Shipping module plugins area](https://www.zen-cart.com/downloads.php?do=cat&id=11).
+More shipping plugins may be found in the [Shipping module section of the Plugins Directory](https://www.zen-cart.com/downloads.php?do=cat&id=11).
 
 Developers wishing to create a shipping module should see the [shipping dev FAQs](/dev/code/modules/). 

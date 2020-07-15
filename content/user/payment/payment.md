@@ -20,6 +20,6 @@ Zen Cart also integrates with a number of payment vendors using plugins:
 - [2CheckOut](https://www.zen-cart.com/downloads.php?do=file&id=84)
 - [Payflow for PayPal](https://www.zen-cart.com/downloads.php?do=file&id=212)
 
-More payment plugins may be found in the [Payment module plugins area](https://www.zen-cart.com/downloads.php?do=cat&id=8).
+More payment plugins may be found in the [Payment module section of the Plugins Directory](https://www.zen-cart.com/downloads.php?do=cat&id=8).
 
 Developers wishing to create a payment module should see the [dev FAQs on modules](/dev/code/modules/). 
