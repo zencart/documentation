@@ -15,7 +15,7 @@ by  the community.
 
 Plugins are sometimes also called <i>Add-Ons</i>, <i>Mods</i>, 
 or <i>Downloads</i>.
-The free plugins in the [Plugins Directory](https://www.zen-cart.com/downloads.php) are sometimes called <i>Contributions</i>, whereas 
+The free plugins in the [Plugins Library](https://www.zen-cart.com/downloads.php) are sometimes called <i>Contributions</i>, whereas 
 commercial plugins that must be paid for are sometimes called 
 <i>Extensions</i>.  All these words refer to code modifications for 
 Zen Cart that enable your store to work differently than the 
@@ -36,4 +36,4 @@ in an organized manner, a number of facilities are provided:
 If you're a developer who wishes to create a plugin, please see 
 the [Plugins Pages](/dev/plugins/) for more information. 
 
-If you're a storeowner who wishes to see what plugins are available, please see [the Plugins Directory](https://www.zen-cart.com/downloads.php). 
+If you're a storeowner who wishes to see what plugins are available, please see [the Plugins Library](https://www.zen-cart.com/downloads.php). 
