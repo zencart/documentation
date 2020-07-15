@@ -82,7 +82,7 @@ Zen Cart will return these values:
 - number of boxes = 2 _(*)_
 - total weight: 83.5 lbs 
 
-(*) Note that the number of boxes might not be accurate: if you use 2 boxes, one will be heavier than the other since each of 5 items is 15 lbs.
+_(*) Note that the number of boxes might not be accurate: if you use 2 boxes, one will be heavier than the other since each of 5 items is 15 lbs._
 
 Calculation of total weight: 75 pounds of product, grossed up by 10% = 82.5 pounds, plus 1 pound = 83.5 pounds. 
 
@@ -108,10 +108,10 @@ Calculation of total weight: 10 pounds of product, grossed up by 10% = 11 pounds
 
 Zen Cart will return these values: 
  
-- number of boxes = 2 (*) 
+- number of boxes = 2 _(*)_
 - total weight: 34 lbs  
 
-(*) Note that the number of boxes is misleading because a product cannot be split in half; you will really need 3 boxes. 
+_(*) Note that the number of boxes is misleading because a product cannot be split in half; you will really need 3 boxes._
 
 Calculation of total weight: 30 pounds of product, grossed up by 10% = 33 pounds, plus 1 pound = 34 pounds. 
 
@@ -124,10 +124,10 @@ Calculation of total weight: 30 pounds of product, grossed up by 10% = 33 pounds
 
 Zen Cart will return these values: 
  
-- number of boxes = 2 (*) 
+- number of boxes = 2 _(*)_
 - total weight: 38 lbs  
 
-(*) See note in example 2 
+_(*) See note in examples above_
 
 Calculation of total weight: 30 pounds of product, grossed up by 10% = 33 pounds, plus 5 pounds = 38 pounds. 
 
