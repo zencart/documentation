@@ -14,9 +14,16 @@ It is wise to ensure that ALL your PHP plugin files include a line near the top 
 Other variations for specific use in either admin or catalog might check whether it is set to boolean `true`/`false`.
 
 
-## Optimizing The Use Of Overrides 
+## Optimizing the use of Overrides 
 
 There are built-in override capabilities in Zen Cart to prevent needing to edit some core files which would otherwise need updating.
+
+(As a reminder, the override basics are covered in the storefront help; 
+you may read 
+[the introduction](https://docs.zen-cart.com/user/first_steps/overrides/), 
+[the details](https://docs.zen-cart.com/user/new_user_topics/overrides/), 
+and then 
+[the summary](https://docs.zen-cart.com/user/template/template_overrides/).)
 
 Some of the commonly-overlooked override capabilities are listed here:
 

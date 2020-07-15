@@ -37,7 +37,8 @@ layout: docs
 * Templates and Overrides - how do I use them?  Read 
 [the introduction](https://docs.zen-cart.com/user/first_steps/overrides/), 
 [the details](https://docs.zen-cart.com/user/new_user_topics/overrides/), 
-[then summary](https://docs.zen-cart.com/user/template/template_overrides/). 
+and then 
+[the summary](https://docs.zen-cart.com/user/template/template_overrides/). 
 
 * [Upgrading Zen Cart](/user/upgrading/upgrading/) - how do I upgrade my old cart?
 

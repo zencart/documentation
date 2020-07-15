@@ -1,6 +1,6 @@
 ---
-title: How to UNinstall a plugin
-description: How to UNinstall a plugin in Zen Cart
+title: How to uninstall a plugin
+description: Backing out a plugin
 category: plugins
 weight: 10
 ---

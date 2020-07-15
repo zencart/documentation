@@ -58,11 +58,17 @@ In the interest of protecting the end-user's privacy and identity, any sort of c
 1. Documentation should include uninstall instructions in case someone wants to cleanly remove the addon from their store ... without breaking normal operation or leaving old fragments/data behind.  This should address any files to be removed, any folders to be removed, any permissions changes to be undone, and any SQL changes/deletions applicable to the addon.
 1. Obfuscating or encrypting (such as via ionCube, Zend Guard, etc.) is *not* acceptable.
 
-Submission
-Contributions submitted to the addons/"downloads" area will be reviewed for compliance and acceptability. Such reviews happen, on average, approximately once or twice weekly.  Contribution authors will be notified by email when their contribution has been activated.
+## Submission
 
-Updates to existing contributions should be uploaded as <b>updates</b> to the existing contribution, and not as new contributions with merely a different version number.  Once again, credit to prior contributors is appropriate in all documentation.  Submitting an update for the purpose of rebranding with one's own credits is frowned upon. It is appropriate to acknowledge prior work done by other contributors including their copyright notices.
+New plugins should be submitted using the [Submit New Plugin form](https://www.zen-cart.com/downloads.php?do=add). 
+
+Submissions will be reviewed for compliance and acceptability. Such reviews happen approximately once or twice weekly.  Contribution authors will be notified by email when their contribution has been activated.
+
+Updates to existing contributions should be uploaded as <b>updates</b> to the existing contribution, and not as new contributions with merely a different version number.  To do this, find the plugin in the Plugins Library, and click the _Submit an Updated Version_ link below the orange Download button.  
+
+When doing an update, it is appropriate to acknowledge prior work done by other contributors, including their copyright notices. Submitting an update for the purpose of rebranding with one's own credits is frowned upon. 
 
 The Zen Cart team reserves the right at its own discretion to reject or deny any contribution and/or update, with or without notification, especially if it fails to comply with these published standards or if it risks being dangerous or confusing to those who might try to use it.
 
 Submitting a contribution means you agree with the GPL and consent for your contribution to be used under the terms of the GPL.
+

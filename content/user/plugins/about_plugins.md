@@ -13,7 +13,7 @@ all the details of what's involved in writing software.  Plugins each
 have their own support thread on the Zen Cart forum, and are supported 
 by  the community. 
 
-Plugins are sometimes also called <i>Add-Ons</i>, <i>Mods</i>, 
+Plugins are sometimes also called <i>Add-Ons</i> (or <i>Addons</i>), <i>Mods</i>, 
 or <i>Downloads</i>.
 The free plugins in the [Plugins Library](https://www.zen-cart.com/downloads.php) are sometimes called <i>Contributions</i>, whereas 
 commercial plugins that must be paid for are sometimes called 
