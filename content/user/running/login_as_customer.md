@@ -13,9 +13,9 @@ This can be particularly helpful in cases where:
 - you are taking an order for a customer over the phone and need to login as them
 - they are having some sort of technical issues inside their account and you need to "see" it yourself
 
-NOTE: Only authorized Administrators may use this feature.
+**NOTE:** Only authorized Administrators may use this feature.
 
-> NOTE: Prior to Zen Cart version 1.5.7 this feature required a separate plugin installation. See below for options with older versions.
+**NOTE:** Prior to Zen Cart version 1.5.7 this feature required a separate plugin installation. See below for options with older versions.
 
 #### Setup / Configuration
 

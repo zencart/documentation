@@ -5,4 +5,10 @@ category: troubleshooting
 weight: 10
 ---
 
-Please see [this page](/user/troubleshooting/reset_admin_password/).
+Please see [the related page in the troubleshooting section](/user/troubleshooting/reset_admin_password/).
+
+This page is a crosslink only. 
+
+<br>
+<br>
+<br>

@@ -1,5 +1,5 @@
 ---
-title: Converting an older plugin 
+title: Converting a plugin to use encapsulation
 description:  
 weight: 80
 layout: docs
@@ -24,22 +24,24 @@ For example, the Mod List files, prior to conversion, were:
 ./admin/includes/extra_configures/mod_list.php
 ./admin/mod_list.php
 ```
+**Note** On the live system the admin folder will have been renamed.
 
 These become: 
 
 ```
-./ModList/1.4.0/admin/includes/languages/english/extra_definitions/mod_list.php
-./ModList/1.4.0/admin/includes/languages/english/mod_list.php
-./ModList/1.4.0/admin/includes/extra_configures/mod_list.php
-./ModList/1.4.0/admin/mod_list.php
+./zc_plugins/ModList/1.4.0/admin/includes/languages/english/extra_definitions/mod_list.php
+./zc_plugins/ModList/1.4.0/admin/includes/languages/english/mod_list.php
+./zc_plugins/ModList/1.4.0/admin/includes/extra_configures/mod_list.php
+./zc_plugins/ModList/1.4.0/admin/mod_list.php
 ```
+**Note** It is not necessary to rename admin in the plugin directory hierarchy 
 
 ### 2. Add the Manifest 
 
 Create a [manifest file](/dev/plugins/encapsulated_plugins/manifests/). In our example, this will be placed in 
 
 ```
-./ModList/1.4.0/manifest.php
+./zc_plugins/ModList/1.4.0/manifest.php
 ```
 
 
@@ -50,7 +52,7 @@ Create an [installer script](/dev/plugins/encapsulated_plugins/installer_classes
 In our example, this will be placed in 
 
 ```
-./ModList/1.4.0/Installer/PluginInstaller.php
+./zc_plugins/ModList/1.4.0/Installer/PluginInstaller.php
 ```
 
 ### 4. (optional) Create install and uninstall files 
@@ -61,7 +63,32 @@ required by the plugin, you can use [plain SQL files](/dev/plugins/encapsulated_
 In our example, these will be placed in 
 
 ```
-./ModList/1.4.0/Installer/uninstall.sql
-./ModList/1.4.0/Installer/install.sql
+./zc_plugins/ModList/1.4.0/Installer/uninstall.sql
+./zc_plugins/ModList/1.4.0/Installer/install.sql
 ```
+
+### 5. Things to watch for in the conversion 
+
+a) Scope of variables in `extra_configures` and `extra_datafiles`
+
+In the encapsulated plugin architecture, 
+the files in `extra_configures` and `extra_datafiles` are run in the 
+context of  the `FileSystem` class, 
+and therefore any variables created will be scoped into that class and not the global scope.
+
+This means if you have a file that was in `admin/includes/extra_configures/my_plugin.php` which created a variable (say, `$my_list`), this variable will not be available to the plugin anymore.  
+
+Some options for overcoming this are: 
+
+- Move the logic to a page specific init file. 
+
+- Make the variables into defined constants (which by definition have global scope). 
+
+### 6. Remove old files and update documentation 
+
+Once you have put your the `admin`, `includes`, etc. folders under `zc_plugins`, do not duplicate them at the top level for older versions of Zen Cart. 
+Instead, update the README file for your plugin with guidance like: 
+
+If you are running a  Zen Cart installation older than 1.5.7, do not copy in the `zc_plugins` folder.  Instead, 
+go to the `zc_plugins/YOURPLUGIN/VERSION/` folder and copy the `admin` and `includes` folders to your shopping cart (after renaming the `admin` folder.)
 

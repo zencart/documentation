@@ -1,6 +1,6 @@
 ---
 title: Download folder - Relocating 
-description: Zen Cart Download folder - Relocating 
+description: Moving your Zen Cart Download folder 
 category: security
 weight: 10
 ---
@@ -27,6 +27,19 @@ To do this, you must:
     - `/includes/configure.php`
     - `/YOURADMIN/includes/configure.php`
 
+In Zen Cart 1.5.5 and higher: 
+
+<div class="indent">
+
+There is no line setting `DIR_FS_DOWNLOAD` in these versions of Zen Cart.  You must *add* a line to the bottom of your configure.php files that says something like 
+
+`define('DIR_FS_DOWNLOAD', '/home/my_user_name/download/');`
+</div>
+
+In Zen Cart 1.5.4 and lower: 
+
+<div class="indent">
+
 You'll need to edit the line that says this:  
   
 `define('DIR_FS_DOWNLOAD', DIR_FS_CATALOG . 'download/');`
@@ -34,6 +47,14 @@ You'll need to edit the line that says this:
 to look something like this:  
   
 `define('DIR_FS_DOWNLOAD', '/home/my_user_name/download/');`
+</div>
   
 Specifically, you need to indicate the exact complete path for the webserver's filesystem that points to your download folder.  You could use your `DIR_FS_CATALOG` entry in your configure.php file as a reference, and make appropriate adjustments.  Your FTP program and/or your webserver's hosting control panel should be able to help you understand the complete path.
 
+As an example, if your `DIR_FS_CATALOG` value is set as follows: 
+
+`define('DIR_FS_CATALOG', '/home/jimmy/public_html/store/');`
+
+then you would want 
+
+`define('DIR_FS_DOWNLOAD', '/home/jimmy/download/');`
