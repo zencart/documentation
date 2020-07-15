@@ -29,7 +29,7 @@ rename the admin folder, if one exists, and then upload all the files.
 If you're not familiar with installing a Zen Cart plugin, follow the instructions on 
 [how to install a plugin](/user/plugins/how_to_install_a_plugin/). 
 
-## Trouble Shooting a Language Pack
+## Troubleshooting a Language Pack
 Here are some symptoms you might see, and ideas on how to resolve them.
 
 ### Blank white screen (on storefront) after language pack installed.
@@ -52,4 +52,12 @@ Start by logging into your admin page. Then select `Tools > Developers Tool Kit`
  
 - If it is only one place, then transfer that file from the english location to YOURLANGUAGE equivalent location.
 - If there are multiple listings, then go back to the storefront and add `&language=en` to then end of the URL or if `&language=YOURLANGUAGECODE` is already present, change YOURLANGUAGECODE to `en`.  Then refresh the page and look at the correct wording. Use this wording to find the correct file and copy the file from the english location to YOURLANGUAGE equivalent location.
+
+### Admin field descriptions still in english
+
+- The language pack did not contain a full translation of the admin descriptions held in the database.  Contact the language pack creator to ask if translation is available.
+
+OR
+
+- You have not run the sql patch for the admin files.  See your installation instruction and run the sql patch.
 
