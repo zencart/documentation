@@ -4,7 +4,7 @@ category: admin_pages
 weight: 100 
 ---
 
-See also <a href="/user/email/">Email</a>.
+See also <a href="/user/email/">Email</a> for more information on customizing your store's email.
 
 <h2 id="email_transport_method">E-Mail Transport Method</h2>
 
