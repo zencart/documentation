@@ -62,19 +62,21 @@ If you're not familiar how to upload a Zen Cart plugin, follow the instructions 
 [how to install a plugin](/user/plugins/how_to_install_a_plugin/). 
 
 ## Trouble Shooting a Language Pack
-Here are some symptoms you might see, and ideas on how to resolve them.
+Here are some symptoms you might see, and ideas on how to resolve them. You can find more troubleshooting tips as [Storeowner Docs > Trouble shooting](/user/troubleshooting/).
 
 ### Blank white screen (on storefront) after language pack installed.
 
-There are likely to be missing language files. Check the logs directory for `myDEBUG-YYYYMMDD-HHMMSS-nnnnnn.log` files and look for `failed to open stream: No such file or directory`. Before it you should see a file path of the missing file. 
+There are likely to be missing language files. [Working with debug logs](/user/troubleshooting/blank_page/#working-with-debug-logs) explains where to find your log files. In the log files look for `failed to open stream: No such file or directory`. Before it you should see a file path of the missing file. 
     
 ```
     PHP Warning: require_once(**YOURSITE/includes/languages/YOURLANGUAGE/MISSINGFILE.php**): failed to open stream: No such file or directory in YOURSITE/includes/languages/YOURLANGUAGE.php on line 607
-``` 
+```
     
 Find the file in the english language folder `YOURSITE/includes/languages/english/MISSINGFILE.php` and copy to your language folder.
     
 **NOTE:** You may have to repeat this task multiple times for older version language packs.
+
+You can find more information on  blank pages at [Storeowner Docs > Trouble shooting > Blank Page troubleshooting](/user/troubleshooting/blank_page/)
 
 ### Capitalised titles displayed in English
 
@@ -84,4 +86,14 @@ Start by logging into your admin page. Then select `Tools > Developers Tool Kit`
  
 - If it is only one place, then transfer that file from the english location to YOURLANGUAGE equivalent location.
 - If there are multiple listings, then go back to the storefront and add `&language=en` to then end of the URL or if `&language=YOURLANGUAGECODE` is already present, change YOURLANGUAGECODE to `en`.  Then refresh the page and look at the correct wording. Use this wording to find the correct file and copy the file from the english location to YOURLANGUAGE equivalent location.
+
+### Admin field descriptions still in english
+
+- The language pack did not contain a full translation of the admin descriptions held in the database.
+Contact the patch creator to ask if translation is available.
+
+OR
+
+- You have not run the sql patch for the admin files.  
+See your installation instruction and run the sql patch.
 
