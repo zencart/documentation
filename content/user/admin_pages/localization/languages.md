@@ -49,39 +49,16 @@ If you need to change the information about an existing language, click on the n
 
 To remove a language, click on the named language so that the right arrow appears in the Action column, then click on the _Delete_ button. If this is not the default language, you will be asked to confirm. Click on the _delete_ button again to delete the language, or _cancel_ if you do not wish to delete this language. If this is the default language, only the _cancel_ button will appear, as you cannot delete the default language.
 
-## Installing a Language Pack
+## Creating a multi-language store 
 
-Once you have added a new language, you will need to get the language pack files that 
-correspond to that language.  Language packs may be found in 
-the [Zen Cart Downloads](https://www.zen-cart.com/downloads.php?do=cat&id=6).
+Language packs may be found in 
+the [Plugins Directory](https://www.zen-cart.com/downloads.php?do=cat&id=6).
 
 Language packs are structured to correspond to your cart folders, so you can just 
-rename the admin folder if one exists and then upload all the files. 
+rename the admin folder, if one exists, and then upload all the files. 
 
-If you're not familiar how to upload a Zen Cart plugin, follow the instructions on 
+If you're not familiar with installing a Zen Cart plugin, follow the instructions on 
 [how to install a plugin](/user/plugins/how_to_install_a_plugin/). 
 
-## Trouble Shooting a Language Pack
-Here are some symptoms you might see, and ideas on how to resolve them.
-
-### Blank white screen (on storefront) after language pack installed.
-
-There are likely to be missing language files. Check the logs directory for `myDEBUG-YYYYMMDD-HHMMSS-nnnnnn.log` files and look for `failed to open stream: No such file or directory`. Before it you should see a file path of the missing file. 
-    
-```
-    PHP Warning: require_once(**YOURSITE/includes/languages/YOURLANGUAGE/MISSINGFILE.php**): failed to open stream: No such file or directory in YOURSITE/includes/languages/YOURLANGUAGE.php on line 607
-``` 
-    
-Find the file in the english language folder `YOURSITE/includes/languages/english/MISSINGFILE.php` and copy to your language folder.
-    
-**NOTE:** You may have to repeat this task multiple times for older version language packs.
-
-### Capitalised titles displayed in English
-
-If you get sections named displayed as capitalised title with underscore between, e.g.`HEADING_TITLE`, again it will be because language files have not been included in the original language pack. Finding these can be more tricky as the same title may be used in multiple places. 
-
-Start by logging into your admin page. Then select `Tools > Developers Tool Kit` in the tool kit, and enter the name of the missing variable.  Search `All Language Files for ENGLISH - Catalog/Admin`. This should produce a list of places where the variable is defined.
- 
-- If it is only one place, then transfer that file from the english location to YOURLANGUAGE equivalent location.
-- If there are multiple listings, then go back to the storefront and add `&language=en` to then end of the URL or if `&language=YOURLANGUAGECODE` is already present, change YOURLANGUAGECODE to `en`.  Then refresh the page and look at the correct wording. Use this wording to find the correct file and copy the file from the english location to YOURLANGUAGE equivalent location.
+For information more informtation about language packs, see [language support](/user/localization/languages/). 
 
