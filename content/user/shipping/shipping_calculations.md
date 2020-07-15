@@ -58,7 +58,36 @@ In these examples the following short forms will be used for configuration value
 - "Small Tare" - "Package Tare Small to Medium - added percentage:weight"
 - "Large Tare" - "Larger packages - added packaging percentage:weight" 
 
-### Example 1 
+
+### Example 1 (Max weight 60 lbs, all products come to less than 60 lbs)
+
+- Settings: Maximum Weight = 60 pounds, both tare settings 10:1. 
+- Order: 3 products each weighing 15 pounds 
+
+Zen Cart will return these values: 
+
+- number of boxes = 1
+- total weight: 50.5 lbs 
+
+Calculation of total weight: 45 pounds of product, grossed up by 10% = 49.5 pounds, plus 1 pound = 50.5 pounds. 
+
+
+### Example 2 (Max weight 60 lbs, products amount to more than 60 lbs)
+
+- Settings: Maximum Weight = 60 pounds, both tare settings 10:1. 
+- Order: 5 products each weighing 15 pounds 
+
+Zen Cart will return these values: 
+
+- number of boxes = 2 _(*)_
+- total weight: 83.5 lbs 
+
+(*) Note that the number of boxes might not be accurate: if you use 2 boxes, one will be heavier than the other since each of 5 items is 15 lbs.
+
+Calculation of total weight: 75 pounds of product, grossed up by 10% = 82.5 pounds, plus 1 pound = 83.5 pounds. 
+
+
+### Example 3 (Max weight 15 lbs, products come to less than 15 lbs)
 
 - Settings: Maximum Weight = 15 pounds, both tare settings 10:1. 
 - Order: 2 products each weighing 5 pounds 
@@ -71,7 +100,7 @@ Zen Cart will return these values:
 Calculation of total weight: 10 pounds of product, grossed up by 10% = 11 pounds, plus 1 pound = 12 pounds. 
 
 
-### Example 2  
+### Example 4 (Max weight: 15 lbs, products amount to more than 15 lbs)
 
 - Settings: Maximum Weight = 15 pounds, both tare settings 10:1 
 
@@ -87,7 +116,7 @@ Zen Cart will return these values:
 Calculation of total weight: 30 pounds of product, grossed up by 10% = 33 pounds, plus 1 pound = 34 pounds. 
 
 
-### Example 3 
+### Example 5 (Max weight: 15 lbs, products amount to more than 15 lbs, apply large-tare setting)
 
 - Settings: Maximum Weight = 15 pounds, small tare setting 10:1, large tare setting 10:5 
 
