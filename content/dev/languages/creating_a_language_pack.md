@@ -30,11 +30,11 @@ Prior to version 1.5.7  the `emails` folder contained some English language sect
 
 - `emails` modify the email template files contents from English to your language (these files will overwrite the original distribution files).
 
-### Adimn Extras
+### Admin Extras
 
 The Admin pages on zen cart hold a lot of information in the configuration table on the database. To do a complete conversion it will be necessary to convert the description fields to your chosen language. This will require a SQL patch.
 
-### Locations of language file
+### Locations of language files
 
 These are the locations where you will find language files that may need translating.
 
@@ -44,7 +44,7 @@ These are the locations where you will find language files that may need transla
 
     - email_template_checkout.htm
 
-    - more htm files
+    - more html files
 
 - admin
 
