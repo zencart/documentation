@@ -8,39 +8,48 @@ weight: 1
 To view the settings related to shipping, go to 
 [Admin > Configuration > Shipping/Packaging](/user/admin_pages/configuration/configuration_shippingpackaging/). 
 
-There is no support for dimensional calculations in the Zen Cart shipping calculations; it is done entirely by weight.  The "small to medium box" corresponds 
-to "an order whose weight does not exceed the maximum package weight." 
+There is no support for dimensional calculations in the Zen Cart shipping calculations; it is done entirely by weight.
 
-* If the weight of all the products in the order is less than or equal to the setting in 
-_Enter the Maximum Package Weight you will ship_, then the order
-is assumed to fit in a small/medium box.  The weight of the package
-will be grossed up by _Package Tare Small to Medium  - added percentage:weight_, and this weight will be passed to the shipping modules for your cart. 
-* If the weight of all the products in the order is greater than the setting in _Enter the Maximum Package Weight you will ship_, the 
-weight of the package will be grossed up by _Larger packages - added packaging percentage:weight_, and that weight will be passed to the shipping mdules for your cart. 
-* The _number of boxes_ calculated by the shipping module does not take into account that products generally cannot be split into parts to meet weight restrictions.  For this reason, most shopowners will choose not to display this value (i.e. they will set _Display Number of Boxes and Weight Status_ to either 0 or 2). 
+(There are some Plugins that handle dimensions if you need that capability.)
+
+The "small to medium box" corresponds to "an order whose weight does not exceed the maximum package weight." 
+
+* If the weight of all the products in the order is less than or equal to the setting in _Enter the Maximum Package Weight you will ship_, 
+then the order is assumed to fit in a small/medium box.  
+The weight of the package will be grossed up by _Package Tare Small to Medium  - added percentage:weight_, 
+and this weight will be passed to the shipping modules for your cart, to prepare quotes.
+* If the weight of all the products in the order is greater than the setting in _Enter the Maximum Package Weight you will ship_, 
+the weight of the package will be grossed up by _Larger packages - added packaging percentage:weight_, 
+and that weight will be passed to the shipping mdules for your cart, to prepare quotes. 
+* The _number of boxes_ calculated by the shipping module does *not* take into account that products generally cannot be split into "equal parts" to meet weight restrictions.
+For this reason most shopowners will choose not to display this value (i.e. they will set _Display Number of Boxes and Weight Status_ to either 0 or 2). 
 
 
 ### Tare
-Tare weight is the additional weight of the box, any protective materials such as foam or wrap, and all the other things that add to the weight of your final shipment,
+Tare weight is the additional weight of the box, including any protective materials such as foam or wrap, 
+and all the other things that add to the weight of your final shipment,
 over and above the weight of the product(s). 
 
 On [Admin > Configuration > Shipping/Packaging](/user/admin_pages/configuration/configuration_shippingpackaging/), you can set the tare for small to medium sized packages and for large packages. 
 
-The tare is entered as a percentage increase, followed  by a colon, followed by a flat increase.   So 10:1 means a 10% increase over the weight of the product plus 1 pound.
+The tare is entered as a percentage increase, followed  by a colon, followed by a flat increase.
+So `10:1` means a `10% increase over the weight of the product plus 1 pound`.
 
-Consider a 5 lb product which fits in a small box with a tare setting of 10:1. 
+Consider a 5 lb product which fits in a small box with a tare setting of `10:1`. 
 This means the final weight of the package, which will be passed to shipping modules, 
-is 5 lbs + 10% of 5 pounds + 1 pound, or 6.5 pounds.
+is `5 lbs + 10% of 5 pounds + 1 pound`, or `6.5 pounds`.
 
 ## Package Size 
 The first tare value, which is called *Package Tare Small to Medium*, is used
-for shipments whose product weight is less or equal to than the value you entered for 
+for shipments whose product weight is less or equal to the value you entered for 
 *Enter the Maximum Package Weight you will ship*.  
 
 So if your maximum weight is 60 pounds, an order whose product weight is 
 60 pounds or less will be increased by the tare settings in *Package Tare Small to Medium*. 
 
-If your maximum weight is 60 pounds and the product weight of an order is over 60 pounds, the weight will be increased by the value of *Larger packages - added packaging percentage:weight*, and shipped in multiple boxes (each of which will weigh 60 pounds or less). 
+If your maximum weight is 60 pounds and the product weight of an order is over 60 pounds, 
+the weight will be increased by the value of *Larger packages - added packaging percentage:weight*, 
+and quotes prepared as though the order is being shipped in multiple boxes (each of which will weigh 60 pounds or less). 
 
 ## Examples 
 In these examples the following short forms will be used for configuration values: 
@@ -77,6 +86,7 @@ Zen Cart will return these values:
 
 Calculation of total weight: 30 pounds of product, grossed up by 10% = 33 pounds, plus 1 pound = 34 pounds. 
 
+
 ### Example 3 
 
 - Settings: Maximum Weight = 15 pounds, small tare setting 10:1, large tare setting 10:5 
@@ -91,6 +101,4 @@ Zen Cart will return these values:
 (*) See note in example 2 
 
 Calculation of total weight: 30 pounds of product, grossed up by 10% = 33 pounds, plus 5 pounds = 38 pounds. 
-
-
 
