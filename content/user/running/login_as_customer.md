@@ -56,4 +56,4 @@ In older Zen Cart versions a plugin is required in order to login as a customer.
 - Admin Login as Customer
 - Encrypted Master Password
 
-These plugins are all available in the [plugins area](https://www.zen-cart.com/downloads.php). 
+These plugins are all available in the [Plugins Directory](https://www.zen-cart.com/downloads.php). 
