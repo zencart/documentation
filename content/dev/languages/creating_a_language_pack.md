@@ -32,7 +32,8 @@ Prior to version 1.5.7  the `emails` folder contained some English language sect
 
 ### Admin Extras
 
-The Admin pages on zen cart hold a lot of information in the configuration table on the database. To do a complete conversion it will be necessary to convert the description fields to your chosen language. This will require a SQL patch.
+The Admin pages store a lot of information in the configuration table on the database. 
+To do a complete conversion it will be necessary to convert the description fields to your chosen language. This will require a SQL patch.
 
 ### Locations of language files
 
@@ -216,17 +217,17 @@ e.g. for a Welsh language translation modifying english.php
 
 Eg. For Welsh `english.php` becomes `cymraeg.php`
 
-## Creating Overide File for Admin
+## Creating Language Overides for Admin Configuration Menu Headings
 
 - Get a full list of the descriptions used in admin.
 
-  You can extract a full set of the admin descriptions from the configuration table. Using any database management tool.
+  You can extract a full set of the admin descriptions from the configuration table using any database management tool (eg phpMyAdmin) and saving to a CSV or text file. A query you could run is:
 
   `SELECT configuration_key, configuration_title, configuration_description FROM configuration;`
 
   You will get a file containing:
   
-```
+```csv
 STORE_COUNTRY, Country, The country my store is located in <br /><br /><strong>Note: Please remember to update the store zone.</strong>
 STORE_NAME, Store Name, The name of my store
 STORE_OWNER, Store Owner, The name of my store owner
@@ -237,9 +238,9 @@ STORE_ZONE, Zone, The zone my store is located in
 
 - Create an override language defines file to override the descriptions on the database.
 
-   - In `admin/includes/languages/YOURLANGUAGE/` create a file `configuration.php`
+   - Edit `admin/includes/languages/YOURLANGUAGE/configuration.php`. This is where you will add the following `defines`...
 
-   - For each entry extracted from the database you need to create 2 define statements
+   - For each entry extracted from the database you need to create 2 `define` statements
 
        - One for the title, preceding the configuration key with `CFGTITLE_`:  
        `define('CFGTITLE_STORE_NAME', 'Store Name');`
@@ -250,6 +251,8 @@ STORE_ZONE, Zone, The zone my store is located in
   E.g. To change the descriptions above from English to the Welsh your file could contain:  
 ```
 <?php
+///... pre-existing defines here
+///... your new entries will come after them, like this:
 /*
  * Admin configuration title and description overrides
  */
@@ -266,25 +269,25 @@ define('CFGDESC_STORE_ZONE', 'Mae\'r parth y mae fy siop wedi\'i leoli ynddo');
 
 ```
 
-It will be necessary to do this for every key you want to change.
+It will be necessary to do this for every key you want to change in the Configuration menus.
 
 ## Add Your Language Icon
 
-- Place an small image file into `includes\languages\images` to represent your language. This is often the flag of YOURLANGUAGE country.
+- Place an small image file into `includes\languages\images` to represent your language. This is often the flag of YOURLANGUAGE country. Ideally the image `height` will be approx `14px` in order to match the fonts and line-heights where the image is usually displayed.
 
-## Making it User Friendly
+## Making The Translation Package User Friendly
 
-- Include a file named _README.txt_ where you say something about what has been translated and what has not, along with any other information you feel is appropriate.
+- Include a file named _README.txt_ where you say something about what has been translated and what has not, along with any other information you feel is appropriate and helpful to the person using it (including your future self!).
 
 - Create installation instructions (_Install.txt_ or _Install.html_)
 
-- Add the locale to your language files. We can guess it for them by editing the call to _setlocale()_ in the following files:
+- Update the `locale` cues in your language files. This lets Zen Cart match up the locale using the call to _setlocale()_ in the following files:
 
   `includes/languages/YOURLANGUAGE.php`
 
   `admin/includes/languages/YOURLANGUAGE.php`
 
-
+  Specifically, set the correct lookups in the `$locales = ....` line below, as well as the relevant date formats.
 ```
 // look in your $PATH_LOCALE/locale directory for available locales..
   $locales = ['en_US', 'en_US.utf8', 'en', 'English_United States.1252'];
@@ -298,20 +301,20 @@ It will be necessary to do this for every key you want to change.
 Having completed your language pack please upload it to the [Language Packs](https://www.zen-cart.com/downloads.php?do=cat&id=6) section of the Plugins Library.
 
 ## Updating an Older Translation 
-If a language pack is out of date, you can easily make it up to date by comparing the English language files from the Zen Cart version the language pack was made for against the English language files of the current Zen Cart version. 
+If a language pack is out of date, you can easily bring it up to date by comparing the English language files from the Zen Cart version the language pack was made for (or last updated for) against the English language files of the current Zen Cart version. 
 
 
 Here's how to do that:
 - [Download the Zen Cart version](https://sourceforge.net/projects/zencart/files/) that matches the original language pack and the Zen Cart version you wish to update the language pack for.
 - Unpack the two packages into two separate directories.
-- Open a comparison program like [Beyond Compare ](https://www.scootersoftware.com/download.php) or  [WinMerge](https://winmerge.org/downloads/) (for Windows only)
+- Open a comparison program like [Beyond Compare](https://www.scootersoftware.com/download.php) or [WinMerge](https://winmerge.org/downloads/)
 - Compare the two versions of the directories `includes/languages and admin/includes/languages`, and be sure to include subfolders.
-- If a file exists only in the older release, delete it from your language pack.
+- If a file exists only in the older release, delete it from your language pack. (TIP: You might do the deletes last in case some of the things in these files have been relocated to other files ... in which case you might want to move those already-translated defines to the new location to save yourself some translating work)
 - If a file exists only in the newer release, copy that English language file into your language pack and translate it.
-- If a file has changed between the two versions, compare those English files to see what exact changes has been made, and update your language pack accordingly.
-- if the store has turned **OFF** the CSS buttons feature
+- If a file has changed between the two versions, compare those English files to see what exact changes has been made, and update your language pack accordingly. This includes adding new defines and translating them, as well as identifying what got changed in existing English text that requires updating the prior translation of that define.
+- to support older stores which have turned **OFF** the CSS buttons feature (or are so old that they don't have the choice), you could update the button images:
     - Compare the two versions of the directory `includes/templates/template_default/buttons/english/` and see if there are any new files. You may also consider updating the images if any have changed, but that's probably not strictly necessary.
     - Compare the two versions of the directory `includes/templates/responsive_classic/buttons/english/` and see if there are any new files. You may also consider updating the images if any have changed, but that's probably not strictly necessary.
 
 
-**Please [share](https://www.zen-cart.com/downloads.php?do=cat&id=6) your updated translation with the community. Thank you!**
+**Please [share your updated translation with the community](https://www.zen-cart.com/downloads.php?do=cat&id=6). Thank you!**
