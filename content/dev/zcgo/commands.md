@@ -24,7 +24,6 @@ and will convert that file to
 
 `admin/includes/languages/english/lang.index.php`
 
-`
 ### -d --dir
 
 This option accepts the path to a directory.

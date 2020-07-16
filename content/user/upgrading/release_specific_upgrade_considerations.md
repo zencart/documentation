@@ -29,11 +29,12 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 ### Zen Cart 1.5.6 
 
-- The variable `$downloads`, returned from `includes/modules/downloads`, changed from a query result to an array.  Accordingly, templates which use this file will need to be adjusted to process an array rather than a database query.  This includes:
+- The variable `$downloads`, returned from `includes/modules/downloads`, changed from a query result to an array.  The following template files had to be updated to accomodate this change: 
+
     - `tpl_modules_downloads.php`
     - `tpl_account_history_info_default.php`
 
-<br> 
+    You will want to adjust any copies of these files in your template to process an array rather than a database query.  
 
 - The table containing the EZ-Pages data (`ezpages`) was split into two tables, `ezpages` and `ezpages_content`.  This was done in order to add multi-language capabilities. Accordingly, template files (template overrides or custom files) which reference the `ezpages` table will need adjustment to account for this division.
 
