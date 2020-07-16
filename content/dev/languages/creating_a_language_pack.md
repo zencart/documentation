@@ -112,7 +112,7 @@ These are the locations where you will find language files that may need transla
 
                    - product_free_shipping.php
 
-           - html_incldues
+           - html_includes
 
                - define_ask_a_question.php
 
@@ -132,9 +132,7 @@ These are the locations where you will find language files that may need transla
 
            - images
 
-               - en_CA.gif
-
-               - more gif files
+               - icon.gif
 
            - modules
 
@@ -172,7 +170,7 @@ These are the locations where you will find language files that may need transla
 
                - icon_names.php
 
-    - templates
+    - templates (**NOTE** The folders below are only needed if the store has turned OFF the CSS buttons feature.)
 
         - responsive_classic
 
@@ -194,7 +192,7 @@ These are the locations where you will find language files that may need transla
 
 
 
-**Note** You should have this complete directory structure with `english` replaced by `YOURLANGUAGE`
+**Note** You should have this complete directory structure with `english` replaced by `YOURLANGUAGE` so for welsh `YOURLANGUAGE` becomes `cymraeg`
 
 ## Modifying the Language Files
 
@@ -214,37 +212,65 @@ e.g. for a Welsh language translation modifying english.php
   define('MALE', 'Br.');
   define('FEMALE', 'Bns.');
 ```
+**NOTE** Any files named `english.php` must be renamed to `YOURLANGUAGE.php`
 
-## Creating SQL patch for Admin
+Eg. For Welsh `english.php` becomes `cymraeg.php`
 
-You can extract a full set of the admin descriptions from the configuration table. Using any database management tool.
+## Creating Overide File for Admin
 
-`SELECT configuration_key, configuration_description FROM configuration;`
+- Get a full list of the descriptions used in admin.
 
-You will get a file containing:
+  You can extract a full set of the admin descriptions from the configuration table. Using any database management tool.
+
+  `SELECT configuration_key, configuration_title, configuration_description FROM configuration;`
+
+  You will get a file containing:
+  
 ```
-STORE_COUNTRY	The country my store is located in <br /><br /><strong>Note: Please remember to update the store zone.</strong>
-STORE_NAME	The name of my store
-STORE_OWNER	The name of my store owner
-STORE_ZONE	The zone my store is located in
+STORE_COUNTRY, Country, The country my store is located in <br /><br /><strong>Note: Please remember to update the store zone.</strong>
+STORE_NAME, Store Name, The name of my store
+STORE_OWNER, Store Owner, The name of my store owner
+STORE_ZONE, Zone, The zone my store is located in
 ...
 
 ```
 
-You then need to create a update file to modify the descriptions on the database.
+- Create an override language defines file to override the descriptions on the database.
 
-E.g. To change the descriptions above from English to the Welsh you could use:
+   - In `admin/includes/languages/YOURLANGUAGE/` create a file `configuration.php`
 
+   - For each entry extracted from the database you need to create 2 define statements
+
+       - One for the title, preceding the configuration key with `CFGTITLE_`:  
+       `define('CFGTITLE_STORE_NAME', 'Store Name');`
+       
+       - One for the description, preceding the configuration key with `CFGDESC_`:  
+       `define('CFGDESC_STORE_NAME', 'The name of my store');`
+       
+  E.g. To change the descriptions above from English to the Welsh your file could contain:  
 ```
-UPDATE configuration SET configuration_description = 'Y wlad y mae fy siop wedi'i lleoli yn <br /> <br /> <strong> Nodyn: Cofiwch ddiweddaru'r parth storfa. </strong>' WHERE configuration_key = 'STORE_COUNTRY';
-UPDATE configuration SET configuration_description = 'Enw fy siop' WHERE configuration_key = 'STORE_NAME';
-UPDATE configuration SET configuration_description = 'Enw perchennog fy siop' WHERE configuration_key = 'STORE_OWNER';
-UPDATE configuration SET configuration_description = 'Mae\'r parth y mae fy siop wedi\'i leoli ynddo' WHERE configuration_key = 'STORE_ZONE';
+<?php
+/*
+ * Admin configuration title and description overrides
+ */
+define('CFGTITLE_STORE_COUNTRY', 'Gwlad');
+define('CFGDESC_STORE_COUNTRY', 'Y wlad y mae fy siop wedi\'i lleoli yn <br /> <br /> <strong> Nodyn: Cofiwch ddiweddaru\'r parth storfa. </strong>');
+define('CFGTITLE_STORE_NAME', 'Enw\'r Storfa');
+define('CFGDESC_STORE_NAME', 'Enw fy siop');
+define('CFGTITLE_STORE_OWNER', 'Perchennog y Siop');
+define('CFGDESC_STORE_OWNER', 'Enw perchennog fy siop');
+define('CFGTITLE_STORE_ZONE', 'Parth');
+define('CFGDESC_STORE_ZONE', 'Mae\'r parth y mae fy siop wedi\'i leoli ynddo');
+
 ...
 
 ```
 
-it will be necessary to do this for every key you want to change.
+It will be necessary to do this for every key you want to change.
+
+## Add Your Language Icon
+
+- Place an small image file into `includes\languages\images` to represent your language. This is often the flag of YOURLANGUAGE country.
 
 ## Making it User Friendly
 
@@ -252,11 +278,11 @@ it will be necessary to do this for every key you want to change.
 
 - Create installation instructions (_Install.txt_ or _Install.html_)
 
-- Add the locale to your language files. We can guess it for them by editing the call to _setlocale()_ in the following files
+- Add the locale to your language files. We can guess it for them by editing the call to _setlocale()_ in the following files:
 
-includes/languages/<your language>.php
+  `includes/languages/YOURLANGUAGE.php`
 
-admin/includes/languages/<your language>.php
+  `admin/includes/languages/YOURLANGUAGE.php`
 
 
 ```
@@ -265,9 +291,7 @@ admin/includes/languages/<your language>.php
   @setlocale(LC_TIME, $locales);
   define('DATE_FORMAT_LONG', '%A %d %B, %Y'); // this is used for strftime()
   define('DATE_FORMAT', 'm/d/Y'); // this is used for date()
-
 ```
-- Create an uninstall sql file to restore the English descriptions used by the admin pages.
 
 ## Making Language Pack Available to Others
 
@@ -285,7 +309,9 @@ Here's how to do that:
 - If a file exists only in the older release, delete it from your language pack.
 - If a file exists only in the newer release, copy that English language file into your language pack and translate it.
 - If a file has changed between the two versions, compare those English files to see what exact changes has been made, and update your language pack accordingly.
-- Compare the two versions of the directory `includes/templates/template_default/buttons/english/` and see if there are any new files. You may also consider updating the images if any have changed, but that's probably not strictly necessary.
+- if the store has turned **OFF** the CSS buttons feature
+    - Compare the two versions of the directory `includes/templates/template_default/buttons/english/` and see if there are any new files. You may also consider updating the images if any have changed, but that's probably not strictly necessary.
+    - Compare the two versions of the directory `includes/templates/responsive_classic/buttons/english/` and see if there are any new files. You may also consider updating the images if any have changed, but that's probably not strictly necessary.
 
 
-**Please [share]((https://www.zen-cart.com/downloads.php?do=cat&id=6)) your updated translation with the community. Thank you!**
+**Please [share](https://www.zen-cart.com/downloads.php?do=cat&id=6) your updated translation with the community. Thank you!**
