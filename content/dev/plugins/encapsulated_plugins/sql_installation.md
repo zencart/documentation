@@ -12,7 +12,7 @@ using a class based migration system.
 
 ## Plain SQL Files
 
-Create a plain .sql file called `install.sql` with the SQL statements you need for installation. 
+Create a plain .sql file called `install.sql` with the SQL statements you need for installation. Be sure to make your installation robust in the face of prior partial or failed installs (e.g. use `IF NOT EXISTS`, `INSERT IGNORE` and so forth). 
 
     CREATE TABLE IF NOT EXISTS reward_master (
                                rewards_products_id INT( 11 ) NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -24,7 +24,7 @@ Create a plain .sql file called `install.sql` with the SQL statements you need f
                                redeem_points DOUBLE( 15, 4 ) NULL,
                                UNIQUE unique_id ( scope , scope_id ));
 
-    INSERT INTO reward_master
+    INSERT IGNORE INTO reward_master
     (rewards_products_id ,scope ,scope_id ,point_ratio ,bonus_points, redeem_ratio, redeem_points)
     VALUES (NULL , '0', '0', '1.0000', NULL, 0.01, NULL);
 
