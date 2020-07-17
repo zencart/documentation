@@ -113,7 +113,7 @@ class products_viewed_counter extends base {
 
 The `update` method is used by an _event observer_ to perform event-specific actions when an event is issued. This method is passed _up to_ 11 parameters:
 
-1. `&$callingClass`. This is a reference to the class in which the event occurred.  If the event is issued by a class other than the `base` (e.g. the `order` or `shopping_cart` class), then this variable can be used to manipulate any ***public*** variables within the class.
+1. `&$callingClass`. This is a reference to the class in which the event occurred.  If the event is issued by a class other than the `base` (e.g. the `order` or `shopping_cart` class), then this variable can be used to manipulate any ***public*** properties within the calling class. (eg: if the event is called from the `order` class, then inside the observer you would refer to the `order` class's `$this->info` property using `$class->info`)
 2. `$eventID`. The name of the event triggered.
 3. `$param1`.  _Read-only_ data.  The value is dependent on the `$eventID`.
 4. `&$param2` through `&$param9`.  _Updateable_ variables provided by the _event issuer_.  These values, too, are dependent on the `$eventID`.
@@ -203,9 +203,20 @@ For example, the *Products Viewed Counter* described [above](#update) could prov
 
 ### Event-Specific Update Methods
 
-Your observer-class' `update` method(s) can be customized based on the notification received, since the parameters for a notification depend on the notification received.  This is done using another [CamelCased](http://en.wikipedia.org/wiki/CamelCase) convention.
+Your observer-class' `update` method(s) can be customized based on the notification received, since the parameters for a notification depend on the notification received.  
 
-Each customized `update` method's name consists of the word `update` followed by the *CamelCased* version of the watched-for notification.  For instance, the Products Viewed Counter described [above](#update) could be recoded as an auto-loading, customized-method observer:
+There are two syntaxes supported for this: 
+
+#### snake_cased event name
+This is supported since v1.5.7.
+
+For a notifier named `NOTIFY_PRODUCT_VIEWS_HIT_INCREMENTOR` you could have a function in your observer class named `notify_product_views_hit_incrementor()` instead of `update()` (and still specify all the same parameters as you would for an `update()` function.
+
+or for older versions, use the camelCased convention described below:
+
+#### camelCased event name
+
+With this alternative syntax, the `update` method's name consists of the word `update` followed by the [CamelCased](http://en.wikipedia.org/wiki/CamelCase) version of the watched-for notification.  For instance, the Products Viewed Counter described [above](#update) could be recoded as an auto-loading, customized-method observer:
 
 ```php
 class zcObserverProductsViewedCounter extends base 

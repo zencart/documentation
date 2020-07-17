@@ -1,6 +1,6 @@
 ---
 title: How to install a plugin
-description: How to install a plugin in Zen Cart 
+description: Adding a plugin to your store
 category: plugins
 weight: 10
 ---
