@@ -36,7 +36,9 @@ Optional: Additionally, *IF* you have no intentions of supporting downloadable p
  - /pub  
 ```
 
-(And you'll need to go to your Admin > Configuration > Attribute Settings > Enable Downloads, and set it to False to turn off the warning message about the missing download folder) In the future, if you choose to add downloadable products to your site or music-products, you will want to re-upload these appropriate folders (and their contents) to your server again, and assign appropriate permissions.
+Then you'll need to go to your Admin > Configuration > Attribute Settings > Enable Downloads, and set it to _False_ to turn off the warning message about the missing download folder). 
+
+In the future, if you choose to add downloadable products to your site or music-products, you will want to re-upload these appropriate folders (and their contents) to your server again, and assign appropriate permissions.
 
 ### 2\. Rename your _/admin_ folder
 
