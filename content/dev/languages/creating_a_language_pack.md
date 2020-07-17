@@ -4,7 +4,7 @@ description: Creating a New Language Pack for Zen Cart
 weight: 100 
 layout: docs
 ---
-## Create folders and copy files
+## Create Folders and Copy Files
 
 ### Essential Files
 
@@ -35,7 +35,7 @@ Prior to version 1.5.7  the `emails` folder contained some English language sect
 The Admin pages store a lot of information in the configuration table on the database. 
 To do a complete conversion it will be necessary to convert the description fields to your chosen language. This will require a SQL patch.
 
-### Locations of language files
+### Locations of Language Files
 
 These are the locations where you will find language files that may need translating.
 
@@ -301,20 +301,4 @@ It will be necessary to do this for every key you want to change in the Configur
 Having completed your language pack please upload it to the [Language Packs](https://www.zen-cart.com/downloads.php?do=cat&id=6) section of the Plugins Library.
 
 ## Updating an Older Translation 
-If a language pack is out of date, you can easily bring it up to date by comparing the English language files from the Zen Cart version the language pack was made for (or last updated for) against the English language files of the current Zen Cart version. 
-
-
-Here's how to do that:
-- [Download the Zen Cart version](https://sourceforge.net/projects/zencart/files/) that matches the original language pack and the Zen Cart version you wish to update the language pack for.
-- Unpack the two packages into two separate directories.
-- Open a comparison program like [Beyond Compare](https://www.scootersoftware.com/download.php) or [WinMerge](https://winmerge.org/downloads/)
-- Compare the two versions of the directories `includes/languages and admin/includes/languages`, and be sure to include subfolders.
-- If a file exists only in the older release, delete it from your language pack. (TIP: You might do the deletes last in case some of the things in these files have been relocated to other files ... in which case you might want to move those already-translated defines to the new location to save yourself some translating work)
-- If a file exists only in the newer release, copy that English language file into your language pack and translate it.
-- If a file has changed between the two versions, compare those English files to see what exact changes has been made, and update your language pack accordingly. This includes adding new defines and translating them, as well as identifying what got changed in existing English text that requires updating the prior translation of that define.
-- to support older stores which have turned **OFF** the CSS buttons feature (or are so old that they don't have the choice), you could update the button images:
-    - Compare the two versions of the directory `includes/templates/template_default/buttons/english/` and see if there are any new files. You may also consider updating the images if any have changed, but that's probably not strictly necessary.
-    - Compare the two versions of the directory `includes/templates/responsive_classic/buttons/english/` and see if there are any new files. You may also consider updating the images if any have changed, but that's probably not strictly necessary.
-
-
-**Please [share your updated translation with the community](https://www.zen-cart.com/downloads.php?do=cat&id=6). Thank you!**
+[Moved to Own document](/dev/languages/updating_older_translation)
