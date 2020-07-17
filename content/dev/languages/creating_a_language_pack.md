@@ -4,7 +4,7 @@ description: Creating a New Language Pack for Zen Cart
 weight: 100 
 layout: docs
 ---
-## Create folders and copy files
+## Create Folders and Copy Files
 
 ### Essential Files
 
@@ -301,4 +301,4 @@ It will be necessary to do this for every key you want to change in the Configur
 Having completed your language pack please upload it to the [Language Packs](https://www.zen-cart.com/downloads.php?do=cat&id=6) section of the Plugins Library.
 
 ## Updating an Older Translation 
-[Moved to Own document](/updating_older_translation)
+[Moved to Own document](/dev/languages/updating_older_translation)
