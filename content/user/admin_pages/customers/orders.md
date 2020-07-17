@@ -26,6 +26,8 @@ To the left of the order id, a red dot indicates that the order's shipping addre
 
 Clicking an order selects it and opens a preview on the right hand side of the page.  From there, the order may be opened or deleted.  The invoice or packingslip for an order may also be opened from the preview. 
 
+In Zen Cart 1.5.7, the preview window also allows you to change the status of the order (and optionally send an email to the customer).  The *Send Email* checkbox is prefilled according to the setting in [Admin > Configuration > My Store > Default for Notify Customer on Order Status Update?](/user/admin_pages/configuration/configuration_mystore/#default_for_notify_customer_on_order_status_update).
+
 Opening an order displays the order details screen, which shows the customer information, order contents, and order history.  The order status may be updated from this screen.  Updating the order status permits you to optionally send an email to the customer with the updated status and a brief note.
 
 <img src="/images/order_update.png" alt="Zen Cart Orders Updating " />
