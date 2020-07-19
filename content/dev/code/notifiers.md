@@ -1,4 +1,4 @@
----
+ ---
 title: Notifiers and Observers - About
 description: About Zen Cart Notifiers and Observers 
 category: code
@@ -8,11 +8,16 @@ type: codepage
 
 # Introduction
 
-One of the many goals of the Zen Cart project has always been to make it simple for third party developers to add functionality to the core code in an easy and unobtrusive manner. To do this we use the [override system](/user/template/template_overrides/), the auto inclusion system and the observer-notifier system.
+One of the many goals of the Zen Cart project has always been to make it simple for third party developers to add functionality to the core code in an easy and unobtrusive manner. To do this we use the [override system](/user/template/template_overrides/), the [auto inclusion system](/dev/code/inclusion/) and the observer-notifier system.
 
 The observer/notifier system is an implementation of the ["pub-sub" pattern](https://en.wikipedia.org/wiki/Publish–subscribe_pattern)  that was introduced to give developers deep access to core operation without the need to touch any core files at all. Although the implementation was written for an object-oriented code base, it can also be used with procedural code.
 
-At a high level, a developer identifies an _event_ that is "interesting", e.g. a customer has just successfully logged in, and registers to be notified when that event occurs.  If/when that event occurs, the `base` class receives control and looks to see if any registrations exist for the event.  If so, all registered observer-classes are called to provide their custom actions.
+At a high level, a developer will do the following: 
+
+- identify an _event_ that they want to monitor, such as when a customer has just successfully logged in.  
+- register an observer to be notified when that event occurs.  
+
+If/when that event occurs, the `base` class receives control and looks to see if any registrations exist for the event.  If so, all registered observer-classes are called, and they perform their custom actions.
 
 Here are some 'quick links' to various sections of this documentation:
 
@@ -189,21 +194,27 @@ If your observer-class performs actions *prior to* the page-specific loading, e.
 
 ### Auto-loaded Observers
 
-If you're developing a plugin that uses an observer-class, you normally have to provide ***two*** files in your plugin's distribution to get that class loaded and instantiated:
+If you're developing a plugin that uses an observer-class, in earlier versions of Zen Cart, you would have had to provide ***two*** files in your plugin's distribution to get that class loaded and instantiated:
 
 1. /includes/auto_loaders/config.your_plugin.php
 2. /includes/classes/observers/class.your_plugin.php
 
-Starting with Zen Cart v1.5.3, built-in functionality will do the  "heavy lifting" to get your class-file loaded and instantiated &mdash; so  long as your class doesn't have any special requirements on its load  point (auto-loaded classes are loaded at point `175`, after all other  system dependencies are loaded).   Here are the requirements (as pulled  from the file `/includes/init_includes/init_observers.php`):
+Starting with Zen Cart v1.5.3, built-in functionality will do the  "heavy lifting" to get your class-file loaded and instantiated, saving you some effort.
+
+Here are the requirements: 
 
 1. The file is in the `/includes/classes/observers` sub-directory and named **auto.**your_plugin.php.  All files in this directory that start with **auto.** will be included (i.e. loaded).
 2. The file defines a class named **zcObserver** + the [CamelCased](http://en.wikipedia.org/wiki/CamelCase) filename, e.g. a file named `auto.your_plugin.php` will contain a class named  `zcObserverYourPlugin`.  A myDEBUG\*.log file will be generated if a  properly-named file is loaded, but the class name doesn't conform to  these rules.
+
+Note that this technique will work so  long as your class doesn't have any special requirements on its load  point (auto-loaded classes are loaded at point `175`, after all other  system dependencies are loaded).   
 
 For example, the *Products Viewed Counter* described [above](#update) could provide the same functionality and not need its auto-loader component if the observer-class file was renamed to `/includes/classes/observers/auto.products_viewed_counter.php` and its class name was updated to be `zcObserverProductsViewedCounter.php`.
 
 ### Event-Specific Update Methods
 
-Your observer-class' `update` method(s) can be customized based on the notification received, since the parameters for a notification depend on the notification received.  
+Problem: If you register for a number of related events, a single `update` function will be getting different parameters depending on which event fires.
+
+Solution: Your observer-class' `update` method(s) can be customized based on the notification received, since the parameters for a notification depend on the notification received.  So rather than use one `update` method, create separate methods to receive each type of event. 
 
 There are two syntaxes supported for this: 
 
