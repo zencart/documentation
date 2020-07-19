@@ -3,7 +3,10 @@ title: Converting a plugin to use encapsulation
 description:  
 weight: 80
 layout: docs
+type: codepage
 ---
+
+**Note:** In Zen Cart 1.5.7, only *admin* side plugins may be encapsulated.  The intention is to support catalog side plugin encapsulation in Zen Cart 1.5.8. 
 
 **Note** For simplicity, files like `license.txt`, `README.txt` and `docs` are omitted; no changes are made to those files, which are not deployed. 
 
@@ -16,7 +19,7 @@ As a general rule, this just means moving the files you currently have in the
 plugin's top level folder under a new folder with the name 
 <i>Plugin Name/Version</i>. 
 
-For example, the Mod List files, prior to conversion, were: 
+For example, the [Mod List](https://www.zen-cart.com/downloads.php?do=file&id=2039) files, prior to conversion, were: 
 
 ```
 ./admin/includes/languages/english/extra_definitions/mod_list.php
@@ -24,7 +27,7 @@ For example, the Mod List files, prior to conversion, were:
 ./admin/includes/extra_configures/mod_list.php
 ./admin/mod_list.php
 ```
-**Note** On the live system the admin folder will have been renamed.
+**Note** On a live system the admin folder will have been renamed.
 
 These become: 
 
@@ -67,7 +70,32 @@ In our example, these will be placed in
 ./zc_plugins/ModList/1.4.0/Installer/install.sql
 ```
 
-### 5. Things to watch for in the conversion 
+### 5. Remove old files and update documentation 
+
+Once you have put your the `admin`, `includes`, etc. folders under `zc_plugins`, do not duplicate them at the top level for older versions of Zen Cart. 
+Instead, update the README file for your plugin with guidance like: 
+
+If you are running a  Zen Cart installation older than 1.5.7, do not copy in the `zc_plugins` folder.  Instead, 
+go to the `zc_plugins/YOURPLUGIN/VERSION/` folder and copy the `admin` and `includes` folders to your shopping cart (after renaming the `admin` folder.)
+
+### 6. Final Result 
+
+Now the file hierarchy looks  like this: 
+
+```
+./zc_plugins/ModList/1.4.1/admin/includes/languages/english/extra_definitions/mod_list.php
+./zc_plugins/ModList/1.4.1/admin/includes/languages/english/mod_list.php
+./zc_plugins/ModList/1.4.1/admin/includes/extra_configures/mod_list.php
+./zc_plugins/ModList/1.4.1/admin/mod_list.php
+./zc_plugins/ModList/1.4.1/manifest.php
+./zc_plugins/ModList/1.4.1/Installer/uninstall.sql
+./zc_plugins/ModList/1.4.1/Installer/PluginInstaller.php
+./zc_plugins/ModList/1.4.1/Installer/install.sql
+```
+
+<hr>
+
+### Things to watch for in the conversion 
 
 a) Scope of variables in `extra_configures` and `extra_datafiles`
 
@@ -84,11 +112,6 @@ Some options for overcoming this are:
 
 - Make the variables into defined constants (which by definition have global scope). 
 
-### 6. Remove old files and update documentation 
+b) Explict `include` or `require` of storefront files 
 
-Once you have put your the `admin`, `includes`, etc. folders under `zc_plugins`, do not duplicate them at the top level for older versions of Zen Cart. 
-Instead, update the README file for your plugin with guidance like: 
-
-If you are running a  Zen Cart installation older than 1.5.7, do not copy in the `zc_plugins` folder.  Instead, 
-go to the `zc_plugins/YOURPLUGIN/VERSION/` folder and copy the `admin` and `includes` folders to your shopping cart (after renaming the `admin` folder.)
-
+TBD 
