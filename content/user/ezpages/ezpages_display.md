@@ -27,7 +27,7 @@ template to show an EZ-Page (say on the product info page) using the technique b
 The page still needs to be visible, either by 
 
 - enabling one of the three pairs of settings above (header, sidebox or footer), or, 
-- In Zen Cart 1.5.6 or above, using the *Page is Visible* flag. 
+- Since Zen Cart 1.5.6, using the *Page is Visible* flag. 
 
 Let's suppose the language constant for the 
 name of the page is `NEW_PAGE_TITLE` and the EZ-Page id, as shown on 
@@ -55,5 +55,5 @@ define('NEW_PAGE_TITLE','Name of My New Page');
 
 Once you do this, your link will be displayed and your page content will be displayed when users visit that EZ-Page, by going to `YOURSITE.com/index.php?main_page=page&id=19`, even if the page is not displayed in the header, sidebox or footer.  
 
-The *Page is Visible* flag is a new change in Zen Cart 1.5.6; prior to that, the page had to be set to appear in the header, sidebox or footer.  If it were not, users visiting the page would see the message, "Sorry, the page you were attempting to access cannot be found."
+The *Page is Visible* flag has been available since Zen Cart 1.5.6; prior to that, the page had to be set to appear in the header, sidebox or footer.  If it were not, users visiting the page would see the message, "Sorry, the page you were attempting to access cannot be found."
 

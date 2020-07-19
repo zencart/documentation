@@ -15,6 +15,8 @@ Structure your writing to explain current operation and *then* (if necessary and
 
 In other words, don't say, "we don't do it the old way anymore, and first let us explain the old way."
 
+A phrasing that is encouraged is, "Since Zen Cart version X, ..." (rather than "In Zen Cart version X and higher," for example). 
+
 ## Documentation Standards 
 
 Please follow these rules when adding new documentation files to the `/content/user` and `/content/dev` folders: 
