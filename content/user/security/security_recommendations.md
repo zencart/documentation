@@ -40,13 +40,15 @@ Then you'll need to go to your Admin > Configuration > Attribute Settings > Enab
 
 In the future, if you choose to add downloadable products to your site or music-products, you will want to re-upload these appropriate folders (and their contents) to your server again, and assign appropriate permissions.
 
-### 2\. Rename your _/admin_ folder
+### 2\. _/admin_ folder name
 
-It is recommended for additional security that you rename your _admin_ directory after installation. This way, it will be significantly harder for hackers to find your admin area or attempt any attack on breaking into it.
+It is recommended for additional security that you not use `admin` as the name of your Admin area. This way, it will be significantly harder for hackers to find your admin area or attempt any attack on breaking into it.
+
+By default the Zen Cart installer will rename it for you. 
+
+Some 3rd-party auto-install scripts provided by hosting companies also use a directory not called "admin" ... but they always use the same directory name on all sites they install, so you really ought to rename it yourself!!!
 
 [Instructions for renaming your admin folder can be found in this article](/user/running/rename_admin).
-
-If your server doesn't support use of .htaccess files, you'll need to work with your hosting company to come up with a way to provide the security protections offered by the supplied .htaccess files but using *your* server's available tools. If you cannot come up with alternate measures, you should reconsider whether your current hosting service is really adequate for the security appropriate to eCommerce.
 
 
 ### 3\. Use SMTPAUTH or SMTP as your Email Transport method, instead of the generic "PHP" or "sendmail" settings.
@@ -58,7 +60,8 @@ This will not only help prevent outgoing emails from ending up in spam folders, 
 
 ### 4\. Set configure.php files read-only
 
-It's important that you CHMOD (set permissions) on the two configure.php files as <u>**read-only**</u>. Typically this means setting them to _644_, or in some cases _444_.  
+It's advisable to CHMOD (set permissions) on the two configure.php files as <u>**read-only**</u>. Typically this means setting them to _644_, or in some cases _444_.  
+
 The configure.php files are located in:  
 
 ```
@@ -66,21 +69,20 @@ The configure.php files are located in:
 /YOURADMIN/includes/configure.php  
 ```
 
-If you're not clear on what `YOURADMIN` means, please [read this](/user/first_steps/basic_terms/). 
+(`YOURADMIN` is the name of your Admin directory.  [Read this](/user/first_steps/basic_terms/) for important clarification). 
 
-Quite often setting permissions on a file to read only via FTP will not work. Even if the permission looks like it was set to read only, it really may not have been. You must verify the correct setting by entering the store and seeing if there is a warning message on the top of the screen. "Warning: I am able to write to the configuration file:..." In this case you will need to use the "File Manager" supplied with your webhosting account.
+Quite often setting permissions on a file to read only via FTP will not work, and even if the permission looks like it was set to read only after first changing it via FTP, it really may not have been. 
+
+Verify the correct setting by entering the store and seeing if there is a warning message on the top of the screen. "Warning: I am able to write to the configuration file:..." In this case you will need to use the "File Manager" supplied with your webhosting account to make the permissions change. Contact your hosting company for assistance.
 
 If you're using a Windows server using IIS, simply set the file as _Read-Only_ for _Everyone_. 
 
 
 ### 5\. Delete any unused _Admin_ accounts
 
-v1.3.x or older:  
-Admin > Tools > Admin Settings  
-v1.5.0 or newer:  
-Admin > Admin Access > Admin Users  
+Go to: Admin > Admin Access > Admin Users  
 
-In your admin Users screen, check for any unused Admin accounts, and delete them. Especially the Demo account, if it exists.
+In your admin Users screen, check for any unused/unrecognized Admin accounts, and delete them. Especially the Demo account, if it exists.
 
 
 ### 6\. Admin Password Security
@@ -93,10 +95,9 @@ If you are going to use normal words it is a good idea to join together two norm
 
 Admin passwords should be changed at least every 3 months.
 
-v1.3.9 and older:  
-You can change your Admin password in Admin > Tools > Admin Settings, and click on the Reset Password button, or click on the icon that looks like a recycle symbol.  
-v1.5.0 and newer:  
 Visit Admin > Admin Access > Admin Users to change passwords.
+
+(or for v1.3.9 and older, you can change your Admin password in Admin > Tools > Admin Settings, and click on the Reset Password button, or click on the icon that looks like a recycle symbol.)
 
 
 ### 7\. Admin Access Protection
@@ -107,14 +108,18 @@ It is wise to observe caution while working in your admin area:
 
 - **always log out of your admin** when not using it
 
+Be careful clicking on links in emails whose content/purpose you don't recognize/expect. 
+
 
 ### 8\. Protect your "define pages" content in "html_includes"
 
 After you have finished editing your define pages in [Admin > Tools > Define Pages Editor](/user/admin_pages/tools/define_pages/), you should protect them:
 
-A. Download a copy of them to your PC using your [FTP software](/user/first_steps/useful_tools/). They are located in the /includes/languages/english/html_includes folder and subfolders.
+A. Download a copy of them to your PC using your [FTP software](/user/first_steps/useful_tools/). They are located in the `/includes/languages/english/html_includes` folder and subfolders.
 
-B. Make them CHMOD 644 (ie: “read-only”). See notes above on CHMOD. `/includes/languages/english/html_includes` – and all files/folders underneath
+B. Make them read-only. See notes above on CHMOD. 
+
+`/includes/languages/english/html_includes` – and all files/folders underneath
 
 If you make them read-only, then a would-be hacker cannot edit them if they gain access to your system, unless they can get permissions to change the read-only status, which is more complicated.
 
@@ -122,33 +127,9 @@ Note: Of course, once you set them read-only, then you'll need to go and set the
 
 ### 9\. Use _.htaccess_ files to protect against unwanted snooping
 
-**NOTE: This step is already largely addressed in v1.3.9 and v1.5.0 and newer, with the included .htaccess files. If you are using older versions of Zen Cart then you will have to do these adjustments manually:**
+If your server doesn't support use of .htaccess files, you'll need to work with your hosting company to come up with a way to provide the security protections offered by the supplied `.htaccess` files but using *your* server's available tools. If you cannot come up with alternate measures, you should reconsider whether your current hosting service is really adequate for the security appropriate to eCommerce.
 
-In several folders, there are _.htaccess_ files to prevent malicious visitors from being able to browse through the files on your site unless they know exact filenames. Some also prevent access to any .PHP scripts, since it's expected that all PHP files in those folders will be accessed by other PHP files, and not by a browser directly. This is good for security. If you delete these files, you run the risk of leaving yourself open to people snooping around.
-
-There are also some blank _index.html_ files in several folders. These files are there to protect you in case your FTP software won't upload _.htaccess_ files, or your server won't accept them. These only prevent directory browsing, and do not stop execution of .PHP files. It's a good alternative, although using _.htaccess_ files in all of these folders is the better choice, for servers that accept them.
-
-Suggested content for _.htaccess_ files in folders where there is an _index.html_ file but not yet an _.htaccess_ file would be something like the following (depends on your server configuration):
-
-```
-#.htaccess to prevent unauthorized file access files  
-  OPTIONS -Indexes -ExecCGI  
-  IndexIgnore */*  
-  ### This part says to deny access to EVERYTHING. Afterwards, you'll allow access to JUST the permitted items. See next FilesMatch section.  
-  <FilesMatch .*>  
-   Order Deny,Allow  
-   Deny from all  
-  </FilesMatch>  
-  ### Add only appropriate PERMITTED filetypes to this list, depending on which folder you're protecting:  
-  <FilesMatch .*\.(js|css|jpg|gif|png|swf)>  
-   Order Deny,Allow  
-   Allow from all  
-  </FilesMatch></span>  
-```
-
-In order for the above suggestions to work, your host must include either 'All' or all of these: 'Limit Options Indexes' parameters to the AllowOverride configuration in the server's master Apache `httpd.conf` file.
-
-If your webhost configuration doesn't allow you to create/use your own _.htaccess_ files, you'll need to work with your hosting company to come up with a way to provide the security protections offered by the supplied .htaccess files but using *your* server's available tools; sometimes they provide an interface in your hosting admin control panel where you can set the desired settings. You need to choose, and use, the appropriate method for your server. As mentioned above, it's best to work with your web hosting company to select and implement the best method for your specific server. We can't tell you what to use for your specific server, but we offer these guidelines as a starting point. If you cannot come up with alternate measures, you should reconsider whether your current hosting service is really adequate for the security appropriate to eCommerce.
+In order for the `.htaccess` protections to work effectively, your host must include either `All` or all of these: `Limit Options Indexes` parameters to the `AllowOverride` configuration in the server's master Apache `httpd.conf` file.
 
 
 ### 10\. Protect your "images" and other folders
