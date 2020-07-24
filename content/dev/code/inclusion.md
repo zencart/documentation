@@ -15,13 +15,11 @@ Any `*.php` files placed in `includes/functions/extra_functions` are loaded auto
 - A storefront side page will automatically load its own language file.  So the page `includes/modules/pages/contact_us/` will load `includes/languages/english/contact_us.php`
 - All files in `includes/languages/english/extra_definitions` are automatically loaded.
 
-### Extra Datafiles and Extra Configures 
+### Extra Datafiles, Extra Configures, Extra Cart Actions 
 
 Any `*.php` files in this folder are loaded automatically. 
 
-### Extra Cart Actions 
-
-Any `*.php` files in this folder are loaded automatically. 
+See [Extra folders](/dev/code/extra_folders/) for a complete list. 
 
 ### Auto Loaded Observers 
 

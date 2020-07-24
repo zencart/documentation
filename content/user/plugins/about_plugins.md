@@ -30,6 +30,7 @@ in an organized manner, a number of facilities are provided:
 * [Notifiers/Observers](/dev/code/notifiers/)
 * [Init System](/dev/code/init_system/)
 * [Extra folders](/dev/code/extra_folders/) 
+* [Auto Inclusion](/dev/code/inclusion/) 
 
 ### More Information 
 
