@@ -6,7 +6,7 @@ weight: 10
 ---
 ## Zen Cart specifications - Server Requirements
 
-_(Last updated: June 16, 2020)_  
+_(Last updated: July 23, 2020)_  
 
 *Minimum* server requirements:  
 
@@ -21,7 +21,7 @@ _(Last updated: June 16, 2020)_
 
 
 ## PHP Version
-(future versions including v1.5.8 will require PHP 7.1.3+)
+(future versions including v1.5.8 will require PHP 7.3+)
 
 **Using the latest version of Zen Cart is always recommended for maximum compatibility.**  
 
@@ -41,7 +41,7 @@ PHP compatibility requirements of Plugins/Addons may vary. Consult each plugin's
 
 **What PHP version should I use?** It is best to **use the most recent PHP version that your Zen Cart version supports**. The PHP developers have published a list of supported versions at [https://www.php.net/supported-versions.php](https://www.php.net/supported-versions.php) 
 
-<font color="#ff0000">**NOTE:** PHP 5.6 is officially obsolete. So are some of the early PHP 7 versions. You should be moving to the latest version of PHP (and matching Zen Cart version) as soon as possible!</font>  
+<font color="#ff0000">**NOTE:** PHP 5.x is officially obsolete. So are many of the early PHP 7 versions. You should be moving to the latest version of PHP (and matching Zen Cart version) as soon as possible!</font>  
 
 ### PHP Modules used by Zen Cart
 
