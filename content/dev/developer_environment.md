@@ -2,7 +2,7 @@
 title: Developer Environment
 description: Zen Cart Developer Environment
 description: Setting up your development environment
-weight: 1
+weight: 10
 ---
 
 ## Writing PHP code for Zen Cart requires no particularly special environment.
