@@ -72,11 +72,14 @@ In our example, these will be placed in
 
 ### 5. Remove old files and update documentation 
 
-Once you have put your the `admin`, `includes`, etc. folders under `zc_plugins`, do not duplicate them at the top level for older versions of Zen Cart. 
+Once you have put your the `admin`, `includes`, etc. folders under `zc_plugins`, *do not* duplicate them at the top level for older versions of Zen Cart. 
 Instead, update the README file for your plugin with guidance like: 
 
+```
 If you are running a  Zen Cart installation older than 1.5.7, do not copy in the `zc_plugins` folder.  Instead, 
 go to the `zc_plugins/YOURPLUGIN/VERSION/` folder and copy the `admin` and `includes` folders to your shopping cart (after renaming the `admin` folder.)
+```
+Alternately, you may mark your plugin as "1.5.7 (and above) only."
 
 ### 6. Final Result 
 

@@ -35,6 +35,8 @@ Here are some 'quick links' to various sections of this documentation:
 
     c. [Event-Specific Update Methods](#event-specific-update-methods).
 
+    d. [Generic Formal Parameter Interpretation](#generic-formal-parameter-interpretation).
+
 5. [Additional Information](#additional-information).  This section has references to additional documentation on the observer/notifier system.
 
 
@@ -253,6 +255,61 @@ class zcObserverProductsViewedCounter extends base
 }
 ```
 
+### Generic Formal Parameter Interpretation
+
+One more method for interpretation of parameters is possible when using a 
+single method to monitor multiple events.  
+
+The update method may simply "interpret" the parameters in a switch statement, aaccording to the specific eventID being passed. Here's an example from the Edit Orders plugin.  Each of the monitored events uses different parameters, so the formal parameters used in the `update` function declaration are generic.
+
+```
+    public function update(&$class, $eventID, $p1, &$p2, &$p3, &$p4, &$p5) 
+    {
+        switch ($eventID) {
+            // -----
+            // Issued during the orders-listing sidebar generation, after the upper button-list has been created.
+            //
+            // $p1 ... Contains the current $oInfo object, which contains the orders-id.
+            // $p2 ... A reference to the current $contents array; the NEXT-TO-LAST element has been updated
+            //         with the built-in button list.
+            //
+            case 'NOTIFY_ADMIN_ORDERS_MENU_BUTTONS': 
+                if (is_object($p1)) {
+                    $index_to_update = count($p2) - 2;
+                    $p2[$index_to_update]['text'] = $this->addEditOrderButton($p1->orders_id, $p2[$index_to_update]['text']);
+                }
+                break;
+      
+            // -----
+            // Issued during the orders-listing sidebar generation, after the lower-button-list has been created.
+            //
+            // $p1 ... Contains the current $oInfo object (could be empty), containing the orders-id.
+            // $p2 ... A reference to the current $contents array; the LAST element has been updated
+            //         with the built-in button list.
+            //
+            case 'NOTIFY_ADMIN_ORDERS_MENU_BUTTONS_END':
+                if (is_object($p1) && count($p2) > 0) {
+                    $index_to_update = count($p2) - 1;
+                    $p2[$index_to_update]['text'] = $this->addEditOrderButton($p1->orders_id, $p2[$index_to_update]['text']);
+                }
+                break;
+                
+            // -----
+            // Issued during the orders-listing generation for each order, gives us a chance to add the icon to
+            // quickly edit the associated order.
+            //
+            // $p1 ... An empty array
+            // $p2 ... A reference to the current order's database fields array.
+            // $p3 ... A reference to the $show_difference variable, unused by this processing.
+            // $p4 ... A reference to the $extra_action_icons variable, which will be augmented with an icon
+            //         linking to this order's EO processing.
+            //
+            case 'NOTIFY_ADMIN_ORDERS_SHOW_ORDER_DIFFERENCE':
+                $p4 .= $this->createEditOrdersLink($p2['orders_id'], zen_image(DIR_WS_IMAGES . EO_BUTTON_ICON_DETAILS, EO_ICON_DETAILS), EO_ZC156_FA_ICON, false);
+                break; 
+```
+
+Some developers believe this method should not be used since it is less self-documenting than prior methods.  Others prefer it for its compactness of expression when compared to the more long-winded camelCase.
 
 ## Additional Information
 
