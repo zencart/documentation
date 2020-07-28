@@ -3,7 +3,6 @@ title: Attributes Controller
 description: Zen Cart Attributes Controller  Admin Page 
 category: admin_pages
 weight: 60
-type: codepage
 ---
 
 The Attributes Controller allows you to add [attributes](/user/products/attributes_info) to your product,
@@ -49,6 +48,7 @@ Its a good idea to pre plan which attributes you want on which products as you w
     *  `-` will subtract the attribute weight
 
 ![Prices and Weights](/images/attributes_controller_prices.png) 
+[Larger Image](/images/attributes_controller_prices.png)
 
 There are other pricing options also available besides the standard prices.
 See [Attribute Pricing](/user/products/attribute_pricing/) for an explanation of these options. 
@@ -74,9 +74,7 @@ Syntax: configured using [colon-separated pairs](/user/running/colon-separated-p
 
 1:11,3:10.00,6:9.00,9:8.00,12:7.00,15:6.00, 45:5.00
 
-<table border="1"><caption>Color Red</caption>
-
-<tbody>
+<table border="1">
 
 <tr>
 
@@ -118,8 +116,6 @@ Syntax: configured using [colon-separated pairs](/user/running/colon-separated-p
 
 </tr>
 
-</tbody>
-
 </table>
 
 As you can see, the number you enter is the maximum limit of the discount, and the price applied to anything below the number associated with it.
@@ -128,7 +124,10 @@ As you can see, the number you enter is the maximum limit of the discount, and t
 
 Negative numbers work for in these entries as well, making them quantity discounts or quantity charges. This is useful if you define a base price and would like to allow the user to have the discount off the base price.
 
-## Attribute Flags (the colored boxes)
+## Attribute Flags 
+
+![Prices and Weights](/images/attribute_flags.png) 
+[Larger Image](/images/attribute_flags.png)
 
 These are used to help distinguish other features of the attribute such as:
 
@@ -146,6 +145,9 @@ These are used to help distinguish other features of the attribute such as:
 
 ## Attribute Images
 
+![Prices and Weights](/images/attribute_images.png) 
+[Larger Image](/images/attribute_images.png)
+
 To add an image to a product's Option Value, use the file selection tool below the label 'Attributes Image Swatch'.  Click *Choose File* and select the image from your computer.  Be sure the *Remove Image?* is set to *No*.
 
 Click *Update*.
@@ -154,17 +156,20 @@ To update an image, click *Choose File*, select the updated image from your comp
 
 click *Update*.
 
-To delete an existing image, select *Yes* for *Remove Image? Note: Removes image from ...*
+To delete an existing image, select *Yes* for *Remove Image? ...*
 
 click *Update*.
 
 ## Downloadable Products As Attributes
 
-type in the filename of the download
+![Prices and Weights](/images/downloadable_products.png) 
+[Larger Image](/images/downloadable_products.png)
 
-type in how many days the download will expire
+- Enter the filename of the download
 
-type in the maximum number of downloads that can be made
+- Enter how many days the download will expire
+
+- Enter the maximum number of downloads that can be made
 
 ## Copying Attributes to Other Products or Categories
 

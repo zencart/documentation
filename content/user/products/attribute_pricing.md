@@ -3,7 +3,6 @@ title: Attribute Pricing
 description: How to use Zen Cart Attributes to set product pricing
 category: products
 weight: 10
-type: codepage
 ---
 
 ### Product Priced by Attributes vs Attributes with Prices 
