@@ -20,10 +20,10 @@ There are built-in override capabilities in Zen Cart to prevent needing to edit 
 
 (As a reminder, the override basics are covered in the storefront help; 
 you may read 
-[the introduction](https://docs.zen-cart.com/user/first_steps/overrides/), 
-[the details](https://docs.zen-cart.com/user/new_user_topics/overrides/), 
+[the introduction](/user/first_steps/overrides/), 
+[the details](/user/new_user_topics/overrides/), 
 and then 
-[the summary](https://docs.zen-cart.com/user/template/template_overrides/).)
+[the summary](/user/template/template_overrides/).)
 
 Some of the commonly-overlooked override capabilities are listed here:
 
