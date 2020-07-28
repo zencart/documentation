@@ -7,8 +7,10 @@ weight: 10
 
 ## Writing PHP code for Zen Cart requires no particularly special environment.
 
-1. A PHP-aware IDE is useful. We use PhpStorm. It's helpful if your editor honors the `.editorconfig` standard which sets out formatting standards for code files.
-2. A LAMP stack is useful for running a local dev store. Common options for this include XAMPP, WAMP/MAMP, and even Laravel Valet.
+1. A PHP-aware IDE is useful. We use PhpStorm. 
+   It's helpful if your editor honors the `.editorconfig` standard which sets out formatting standards for code files.
+2. A LAMP stack is useful for running a local dev store. 
+   Common options for this include XAMPP, WAMP/MAMP, and even Laravel Valet.
 
 ## Code Formatting
 
@@ -25,11 +27,11 @@ See [Coding Standards](/dev/contributing/coding_standards) for more details.
 We encourage you to read the [section on Git](/dev/contributing/github_workflow/)
 to learn about the workflow that the project uses.
 
-## Preserving Directory Structure
+## Retaining Default Directory Structure
 
 By default you will get warnings if you don't rename the `admin` folder and delete the `zc_install` folder. 
 
-To eliminate these warnings, create a file called `admin/includes/extra_configures/dev-skip_admin_rename.php`.  Add the following 2 entries:
+To eliminate these warnings, create a file called `admin/includes/extra_configures/dev-skip_admin_rename.php` in which you add the following 2 entries:
 ```php
     define('ADMIN_BLOCK_WARNING_OVERRIDE', 'true');
     define('WARN_INSTALL_EXISTENCE', '0');
@@ -60,3 +62,12 @@ if (SHOW_PRODUCTS_SOLD_OUT_IMAGE == '0') {
 ...
 ```
 
+## Overriding zc_install defaults
+
+Since v1.5.6 the `zc_install` process allows you to specify a `DEVELOPER_MODE` environment variable, which if detected, will override two operations that occur at the end of `zc_install`: renaming the admin directory, and selecting an Admin password.
+
+If `DEVELOPER_MODE` is enabled, then the `admin` directory will not be renamed, and the `Admin` user password will be set to `developer1` by default. NOTE: This only occurs in the development environment, and only on new-installs, thus is not related to live/production databases.
+
+Since v1.5.7, the `zc_install/includes/localConfig.php` file allows you to specify default database credentials which are pre-filled when going through a fresh install process. 
+
+NOTE: These defines only work if the `DEVELOPER_MODE` setting is enabled/detected.
