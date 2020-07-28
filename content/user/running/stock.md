@@ -1,6 +1,6 @@
 ---
 title: Tracking Inventory 
-description: Inventory Tracking in Zen Cart 
+description: Stock Management in Zen Cart 
 category: Running
 weight: 10
 ---

@@ -40,9 +40,14 @@ When you enter these country lists, enter them into the Zone X Countries fields,
 3: AT,BE,GB,FR,DE,GL,IS,IE,IT,NO,NL,DK,PL,ES,SE,CH,FI,PT,IL,GR 4: JP,AU,NZ,SG  
 5: TW,CN,HK  
 
-Now you need to set up the shipping rate tables for each zone. Again, some time and effort will go into setting the appropriate rates. You will define a set of weight ranges and the shipping price for each range. For instance, you might want an order than weighs more than 0 and less than or equal to 3 to cost 5.50 to ship to a certain zone.
+Now you need to set up the shipping rate tables for each zone. Again, some time and effort will go into setting the appropriate rates. You will define a set of weight ranges and the shipping price for each range. 
+
+These values are entered as [colon-separated pairs](/user/running/colon-separated-pairs/). 
+
+For instance, you might want an order than weighs more than 0 and less than or equal to 3 to cost 5.50 to ship to a certain zone.
 
 This would be defined by this: 3:5.5
+
 
 You should combine a bunch of these rates together in a comma delimited list and enter them into the "Zone X Shipping Table" fields where "X" is the zone number. For example, this might be used for Zone 1:
 

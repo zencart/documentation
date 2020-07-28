@@ -33,5 +33,6 @@ To learn more, read:
 
 - [Option Name Manager](/user/admin_pages/catalog/option_name_manager/)
 - [Option Value Manager](/user/admin_pages/catalog/option_value_manager/)
-- [adding attributes to products](/user/products/attributes/). 
-
+- [Adding attributes to products](/user/products/attributes/). 
+- [Creating Downloadable products](/user/products/downloadable/)
+- [Attributes and Pricing](/user/products/attribute_pricing)
