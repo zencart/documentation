@@ -6,7 +6,7 @@ weight: 10
 ---
 
 ### Product Priced by Attributes vs Attributes with Prices 
-The Zen Cart product editing page has a field called [Product Priced by Attributes](user/admin_pages/catalog/categories_products/).  This field controls how product prices are displayed on the product info page.  When *Product Priced by Attributes*  is set to Yes, the product prices include the attribute price.  When it is set to no, the prices are shown as increments on top of the product price.
+The Zen Cart product editing page has a field called [Product Priced by Attributes](/user/admin_pages/catalog/categories_products/).  This field controls how product prices are displayed on the product info page.  When *Product Priced by Attributes*  is set to Yes, the product prices include the attribute price.  When it is set to no, the prices are shown as increments on top of the product price.
 
 Consider a shirt which is $20 for sizes S-L, but an extra $10 for XL and an extra $20 for XXL. 
 
@@ -34,6 +34,7 @@ XXL ($40)
 Using the [Attributes Controller](/user/admin_pages/catalog/attributes_controller/) you can adjust attribute prices in a number of ways. 
 
 ![Prices and Weights](/images/attributes_controller_prices.png) 
+[Larger image](/images/attributes_controller_prices.png) 
 
 - Entering a value in the *Price* field will increase the price by the specified value.  A decrease ("-") option is also available to lower the price. 
 

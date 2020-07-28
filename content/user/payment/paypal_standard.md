@@ -6,6 +6,7 @@ weight: 10
 ---
 
 Symptom: 
+
 - Duplicate transactions 
 - Missing transactions 
 
