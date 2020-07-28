@@ -197,3 +197,4 @@ any questions you have about attributes may have been already answered in the fo
 
 [https://www.zen-cart.com/forum/showthread.php?t=4810](https://www.zen-cart.com/forum/showthread.php?t=4810)
 
+FIXME pull the information from that thread into the Documentation. 

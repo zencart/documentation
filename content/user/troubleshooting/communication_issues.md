@@ -11,6 +11,10 @@ The following scripts can be run from the `/extras` folder:
 
 - `ipncheck.php` - Determines if your server is able to connect TO PayPal in order to respond to an incoming IPN notification. (Note: To check whether PayPal can POST and IPN to your store, run a live transaction.) 
 
+    Common symptoms of bad IPN communications:
+    - orders not showing up in Zen Cart but PayPal receipt issued when using PayPal IPN module
+    - echeck updates not completing when using Express Checkout module
+
 - `curltester.php` - Tests cURL communication to some common third party services.   Useful parameters for `curltester.php` are: 
     *   `d=1` or `details=1` -- show CURL connection details -- useful for determining cause of communications problems
     *   `r=1` -- show Response obtained from destination server -- this may contain an error message, but usually means communication was okay
