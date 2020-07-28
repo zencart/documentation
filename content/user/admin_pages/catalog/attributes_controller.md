@@ -3,6 +3,7 @@ title: Attributes Controller
 description: Zen Cart Attributes Controller  Admin Page 
 category: admin_pages
 weight: 60
+type: codepage
 ---
 
 The Attributes Controller allows you to add [attributes](/user/products/attributes_info) to your product,
@@ -47,9 +48,10 @@ Its a good idea to pre plan which attributes you want on which products as you w
     *   `+` and blank will add the attribute weight
     *  `-` will subtract the attribute weight
 
-There are other pricing options also available besides the standard prices.
+![Prices and Weights](/images/attributes_controller_prices.png) 
 
-FIXME - these items need to be explained
+There are other pricing options also available besides the standard prices.
+See [Attribute Pricing](/user/products/attribute_pricing/) for an explanation of these options. 
 
 *   One Time Charge - Charge for first item (does not effect prices of subsequent items).
 *   Price Factor
@@ -66,9 +68,9 @@ For TEXT
 
 ### Quantity Discounts
 
-**Quantity discounts** (_Attributes Qty Price Discount_) are useful when the entire group of products being ordered has a different price if a certain number of them are ordered. _Note_: The price amount specified for a given number of items will be applied to the entire group of items--The price does not get applied to items in steps.
+**Quantity discounts** (_Attributes Qty Price Discount_) are useful when the entire group of products being ordered has a different price if a certain number of them are ordered. _Note_: The price amount specified for a given number of items will be applied to the entire group of items; the price does not get applied to items in steps.
 
-Syntax:
+Syntax: configured using [colon-separated pairs](/user/running/colon-separated-pairs/). 
 
 1:11,3:10.00,6:9.00,9:8.00,12:7.00,15:6.00, 45:5.00
 
