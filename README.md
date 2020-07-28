@@ -23,10 +23,10 @@ brew install hugo && brew upgrade hugo
 
 Installing Hugo on Windows takes a few more steps; do a web search for the most current instructions. 
 
-Once you have installed Hugo, clone this project and do a submodule update to get all its dependencies:
+Once you have installed Hugo, fork this repository into your own github account, and then clone this project locally and do a submodule update to get all its dependencies:
 
 ```
-git clone git@github.com:zencart/documentation.git zendocs
+git clone git@github.com:YOUR-GITHUB-USERNAME/documentation.git zendocs
 cd zendocs
 git submodule update --init --recursive
 ```
