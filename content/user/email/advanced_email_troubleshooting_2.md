@@ -49,7 +49,7 @@ That's it.
     *   MAKE SURE THE ADDRESS IS VALID.
     *   It is recommended to use an email account linked to the same domain name as your store. Attempting to masquerade with a different email address makes your emails prime candidates for being treated as junkmail, and thus not delivered.
 3.  change send-to email addresses ... DO NOT TEST USING FREE MAIL SERVICES ... your mail is often dropped to a junkmail black hole.
-4.  be sure there are no embedded carriage returns in your send-to email addresses (see [https://www.zen-cart.com/showthread.php?t=86423](https://www.zen-cart.com/showthread.php?t=86423) for details)
+4.  be sure there are no embedded carriage returns in your send-to email addresses.
 5.  check your junkmail settings.
 6.  research whether your mailserver or hosting company is blacklisted (you can check [http://www.mxtoolbox.com/blacklists.aspx](http://www.mxtoolbox.com/blacklists.aspx) or google for _smtp blacklist_ for additional resources)
 7.  try setting the option for **Emails must send from known domain?** to true. This causes the email "sender" address to be more aligned to your own website, and thus less likely to be rejected while processing. This should always be set to true nowadays.
