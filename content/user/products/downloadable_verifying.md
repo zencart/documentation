@@ -8,7 +8,7 @@ weight: 10
 Once you have created downloadable products, or after you have updated them, you'll want to check on them to be sure they will work for your customers.  There are a couple of ways to do this. It is also particularly important to do this if you [move the download folder](/user/security/relocate_download_folder/) for security reasons. 
 
 ### Downloads Manager 
-Going to [Admin > Catalog > Downloads Manager](/user/admin_pages/catalog/downloads_manager/) shows a screen with the first download (test.zip) missing. 
+Going to [Admin > Catalog > Downloads Manager](/user/admin_pages/catalog/downloads_manager/) shows a screen with two downloadable products.  Note that the first download (named test.zip) is missing, which is shown by the red dot next to the filename. 
 
 <br>
 <img src="/images/downloads_manager.png" alt="Downloads Manager" />
