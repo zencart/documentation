@@ -5,11 +5,11 @@ category: admin
 weight: 10
 ---
 
-There is a "New Products for [insert month]" section on several pages, including Home Page, New-Products page, All-Products Page, (empty)Shopping Cart page, etc.  These sections are called "centerboxes".
+There is a "New Products for [insert month]" section on several pages, including Home Page, New-Products page, All-Products Page, (empty) Shopping Cart page, etc.  These sections are called "centerboxes".
 
 There are several "sets" of settings for the Centerboxes.
 
-When you go to [Admin > Configuration > Index Listing](/user/admin_pages/configuration/configuration_indexlisting/), you will see options like:
+When you go to [Index Listing](/user/admin_pages/configuration/configuration_indexlisting/) under Admin > Configuration, you will see options like:
 
 - Show New Products on Main Page
 - Show Featured Products on Main Page

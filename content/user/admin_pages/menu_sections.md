@@ -60,6 +60,7 @@ index: false
 *   [Payment](/user/admin_pages/modules/payment/) — Install, edit or disable payment processing systems.
 *   [Shipping](/user/admin_pages/modules/shipping/) — Install, edit or disable shipping methods.
 *   [Order Total](/user/admin_pages/modules/order_total/) — Install, edit or disable checkout surcharges or discounts.
+*   [Plugin Manager](/user/admin_pages/modules/plugin_manager/) - Install, activate and deactivate plugins. 
 
 ### [Customers](/user/admin_pages/customers)
 

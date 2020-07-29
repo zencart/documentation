@@ -24,7 +24,14 @@ These icons allow you to:
 Using the green pencil will put you on the product editing page, which is 
 a key page for configuring your products. 
 
-The product edit screen allows you to set the following values for a product: 
+The product edit screen shows you the master category id value for a product, which tells you the category the product is in. 
+
+![Master Category for a product](/images/master_category.png)
+
+If the product is a [linked product](/user/products/linked_product) it will have other category associations, which can be managed in the [Products to Categories](/user/admin_pages/catalog/products_to_categories) page.
+
+
+The product edit screen also allows you to set the following values for a product: 
 
 FIXME add explanations 
 
