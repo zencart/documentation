@@ -29,7 +29,7 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 ### Zen Cart 1.5.6 
 
-- The variable `$downloads`, returned from `includes/modules/downloads`, changed from a query result to an array.  The following template files had to be updated to accomodate this change: 
+- The variable `$downloads`, returned from `includes/modules/downloads`, changed from a query result to an array.  The following template files had to be updated to accommodate this change: 
 
     - `tpl_modules_downloads.php`
     - `tpl_account_history_info_default.php`

@@ -115,6 +115,6 @@ Some options for overcoming this are:
 
 - Make the variables into defined constants (which by definition have global scope). 
 
-b) Explict `include` or `require` of storefront files 
+b) Explicit `include` or `require` of storefront files 
 
 TBD 

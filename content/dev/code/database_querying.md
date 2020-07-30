@@ -25,7 +25,7 @@ Note the inline inclusion of the TABLE_PRODUCTS and TABLE_PRODUCTS_DESCRIPTION c
 
 Also note the use of tablename aliases `p` and `pd`. These are placed after the tablename to avoid having to use the full tablename constants repeatedly every time a table needs to be mentioned.
 
-The `:lang_id` placedholder is used for sanitization, as described next:
+The `:lang_id` placeholder is used for sanitization, as described next:
 
 ## Sanitizing Inputs
 
@@ -57,7 +57,7 @@ rule | meaning
 `integer` | casts to integer (ignores all fractions, and treats it as 0 if the value is not numeric)
 `float`   | casts to a float, or an empty/zero/falsey value is cast to `0`
 `string`  | returns a quote-wrapped string after sanitizing by MySQL's escaping rules (note: string `NULL` is treated as a literal `null` response).
-`stringIgnoreNull` | quote-wrapped string which ignores if the string is `NULL`, santized using MySQL escaping rules
+`stringIgnoreNull` | quote-wrapped string which ignores if the string is `NULL`, sanitized using MySQL escaping rules
 `noquotestring`    | no quote-wrapping version of `stringIgnoreNull`
 `currency` | alias of `stringIgnoreNull`
 `date`     | same as `string` but treats both upper-and-lowercase `NULL` and `null` as `null`

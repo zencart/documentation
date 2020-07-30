@@ -126,7 +126,7 @@ index: false
 *   [Record Companies](/user/admin_pages/extras/record_companies/) — View, add, edit and delete record companies.
 *   [Music Genre](/user/admin_pages/extras/music_genre/) — View, add, edit and delete music genres.
 *   [Media Manager](/user/admin_pages/extras/media_manager/) — View, add, edit and delete collection names, which may be assigned to products.
-*   [Media Types](/user/admin_pages/extras/media_types/).
+*   [Media Types](/user/admin_pages/extras/media_types/) - View, add, edit and delete media types.
 
 ### Other Admin Elements 
 

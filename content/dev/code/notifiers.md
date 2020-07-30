@@ -260,7 +260,7 @@ class zcObserverProductsViewedCounter extends base
 One more method for interpretation of parameters is possible when using a 
 single method to monitor multiple events.  
 
-The update method may simply "interpret" the parameters in a switch statement, aaccording to the specific eventID being passed. Here's an example from the Edit Orders plugin.  Each of the monitored events uses different parameters, so the formal parameters used in the `update` function declaration are generic.
+The update method may simply "interpret" the parameters in a switch statement, according to the specific eventID being passed. Here's an example from the Edit Orders plugin.  Each of the monitored events uses different parameters, so the formal parameters used in the `update` function declaration are generic.
 
 ```
     public function update(&$class, $eventID, $p1, &$p2, &$p3, &$p4, &$p5) 

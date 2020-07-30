@@ -20,7 +20,7 @@ The weight of the package will be grossed up by _Package Tare Small to Medium  -
 and this weight will be passed to the shipping modules for your cart, to prepare quotes.
 * If the weight of all the products in the order is greater than the setting in _Enter the Maximum Package Weight you will ship_, 
 the weight of the package will be grossed up by _Larger packages - added packaging percentage:weight_, 
-and that weight will be passed to the shipping mdules for your cart, to prepare quotes. 
+and that weight will be passed to the shipping modules for your cart, to prepare quotes. 
 * The _number of boxes_ calculated by the shipping module does *not* take into account that products generally cannot be split into "equal parts" to meet weight restrictions.
 For this reason most shopowners will choose not to display this value (i.e. they will set _Display Number of Boxes and Weight Status_ to either 0 or 2). 
 

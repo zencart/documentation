@@ -8,7 +8,7 @@ type: codepage
 
 This page allows you to manage the links between products and categories. 
 
-All products have a master category id, which links a product to its parent category.  The master category value is shown in the [Product Editing screen](https://docs.zen-cart.com/user/admin_pages/catalog/categories_products/) at the top. 
+All products have a master category id, which links a product to its parent category.  The master category value is shown in the [Product Editing screen](/user/admin_pages/catalog/categories_products/) at the top. 
 
 ![Master Category for a product](/images/master_category.png)
 
