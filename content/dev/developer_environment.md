@@ -66,8 +66,11 @@ if (SHOW_PRODUCTS_SOLD_OUT_IMAGE == '0') {
 
 Since v1.5.6 the `zc_install` process allows you to specify a `DEVELOPER_MODE` environment variable, which if detected, will override two operations that occur at the end of `zc_install`: renaming the admin directory, and selecting an Admin password.
 
-If `DEVELOPER_MODE` is enabled, then the `admin` directory will not be renamed, and the `Admin` user password will be set to `developer1` by default. NOTE: This only occurs in the development environment, and only on new-installs, thus is not related to live/production databases.
+If `DEVELOPER_MODE` is enabled, then the `admin` directory will not be renamed, and the `Admin` user password will be set to `developer1` by default. 
+
+**NOTE:** This only occurs in the development environment, and only on new-installs, thus is not related to live/production databases.
 
 Since v1.5.7, the `zc_install/includes/localConfig.php` file allows you to specify default database credentials which are pre-filled when going through a fresh install process. 
 
-NOTE: These defines only work if the `DEVELOPER_MODE` setting is enabled/detected.
+**NOTE:** These defines only work if the `DEVELOPER_MODE` setting is enabled/detected.
+

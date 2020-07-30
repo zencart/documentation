@@ -217,7 +217,7 @@ e.g. for a Welsh language translation modifying english.php
 
 Eg. For Welsh `english.php` becomes `cymraeg.php`
 
-## Creating Language Overides for Admin Configuration Menu Headings
+## Creating Language Overrides for Admin Configuration Menu Headings
 
 - Get a full list of the descriptions used in admin.
 
@@ -301,4 +301,4 @@ It will be necessary to do this for every key you want to change in the Configur
 Having completed your language pack please upload it to the [Language Packs](https://www.zen-cart.com/downloads.php?do=cat&id=6) section of the Plugins Library.
 
 ## Updating an Older Language Pack
-See [updating an older translation](/dev/languages/updating_older_translation)
+See [updating an older translation](/dev/languages/updating_older_translation).

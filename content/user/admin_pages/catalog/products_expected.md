@@ -7,7 +7,7 @@ weight: 140
 
 This page allows you to view, add, edit or delete expected products. 
 
-An expected product is one where the products_date_available field, which is set on the [Product Editing screen](https://docs.zen-cart.com/user/admin_pages/catalog/categories_products/), is a future date.
+An expected product is one where the products_date_available field, which is set on the [Product Editing screen](/user/admin_pages/catalog/categories_products/), is a future date.
 
 ## Related 
 

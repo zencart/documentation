@@ -1,6 +1,6 @@
 ---
 title: Data Sources
-description: Querying models to provide tabluar data
+description: Querying models to provide tabular data
 weight: 100 
 layout: docs
 ---
