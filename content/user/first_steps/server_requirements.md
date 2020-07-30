@@ -45,14 +45,32 @@ PHP compatibility requirements of Plugins/Addons may vary. Consult each plugin's
 
 ### PHP Modules used by Zen Cart
 
-Zen Cart requires a few PHP modules enabled: `curl`, `mysqli`, `zlib`. (v1.5.8 will require `pdo`)
+Zen Cart requires a few PHP modules/extensions installed: 
 
-Optional modules: `gd` and `mb_xxxxx`.
+ - `curl`
+ - `mysqli`, `pdo`
+ - `zlib` - particularly beneficial to enable `zlib.output_compression`
+ - `json`
+ - `fileinfo`
+ - `getimagesize()`
+ - `gd`
+ - `zip`
 
-<u>**PHP Memory Recommendations**</u>  
+It is suggested to also enable the following PHP extensions:
+
+ - `intl`, `mbstring`, `process`
+
+<u>**PHP Memory Recommendations**</u>
 
 - **memory_limit** suggested: **128M** or higher such as 256M or 512M if your server can handle it.
 - **post_max_size** and **upload_max_filesize** should be set to whatever max file size you or your customers may upload. Usually **8M** is sufficient for most sites, but if you're accepting huge uploads, set both to the max size of accepted combined uploads.  
+
+<u>**PHP Settings**</u>
+
+- ENABLE: `allow_url_fopen` is needed for checking things that don't/can't use `curl` (many shipping quote modules use this)
+- DISABLE: `allow_url_include` should be OFF. Zen Cart never needs this.
+- DISABLE FUNCTIONS: `passthru`, `system`, `shell_exec` are not used by Zen Cart (but might be used by some plugins) 
+
 
 ## MySQL Version
 (future versions including v1.5.8 will require MySQL 5.7.8+ or MariaDB 10.2.7+)
@@ -72,15 +90,15 @@ Plugin/Addon-compatibility may vary.
 ## Apache
 
 *   Zen Cart works primarily with Apache 2.4 or 2.2
-*   **Recommended Apache modules include:** expires, headers, env, alias, deflate, ssl, mime, phpX, rewrite (in addition to other standard/default modules).
+*   **Recommended Apache modules include:** `expires`, `headers`, `env`, `alias`, `deflate`, `ssl`, `http2`, `mime`, `phpX`, `rewrite` (in addition to other standard/default modules).
 
 ## Nginx  
 The default Zen Cart distribution contains numerous Apache .htaccess rules to aid in implementing security protections against malicious spoofing and other abuse. These will not give you any protections if you're running Nginx, so you will need to do those yourself.
 
 At the end of initial installation some Nginx `conf` file content suggestions are provided which you could manually copy into your nginx master configuration, to provide those same protections.
 
-## Windows IIS **NOT SUPPORT** 
-Zen Cart is not regularly tested on IIS.  We don't recommend IIS, and we don't provide any default-configuration scripts for IIS.  
+## Windows IIS **NOT SUPPORTED** 
+Zen Cart is not regularly tested or supported on Windows Servers or IIS.  We don't recommend IIS, and we don't provide any default-configuration scripts for IIS.
 
 ## Perl, Python, CGI and other languages?  
 Zen Cart does not use Perl or Python or CGI.
