@@ -6,17 +6,10 @@ layout: docs
 
 ---
 
-Some work had already been carried out in the v2 development branch
-to integrated some aspects of the Laravel framework in Zen Cart.
+Starting with v1.5.8, Zen Cart leverages several aspects of the features that the Laravel Framework offers.
 
-This focused initially on the `Eloquent` database ORM to allow for 
-a fluent interface for building sql queries based on models of Zen Cart's
-database tables.
+Initially this includes the `Eloquent` database ORM which provides a fluent interface for building SQL queries
+based on models of Zen Cart's database tables.
 
-For v158 it was decided that there were many other aspects of Laravel
-that we could leverage in Zen Cart core code.
-
-So rather than adding these piecemeal, it seemed easier to just pull in
-the whole framework, and take advantage of the bootstrapping code Laravel 
-already contained.
+We also take advantage of the bootstrapping code Laravel contains.
 
