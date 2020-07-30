@@ -142,9 +142,9 @@ Note that hosting companies and registrars may set up all or none of the above f
 
 ### FREE EMAIL ADDRESSES
 
-Similarly, much has been said about using 'free' email addresses on websites. I believe there is a simple test. Ask yourself whether you would buy from a website whose contact address was dodgyventures@freewebmail.com, hosted who knows where? (Apologies to freewebmail.com if they exist. I'm sure they are a highly reputable organisation. The comment is illustrative, not factual). Be wary.
+Similarly, much has been said about using 'free' email addresses on websites. I believe there is a simple test. Ask yourself whether you would buy from a website whose contact address was `dodgyventures@yahoo.com`? 
 
-There is also the issue of their Terms and Conditions in which you agree to allow content scanning of your mail to target ads at you. I'm not sure how well that squares with the various customer privacy enacted in various parts of the world, when it comes to your customers personal and payment details, order details, purchase history etc. even if it is just automated scanning.
+There is also the issue of their Terms and Conditions in which you agree to allow content scanning of your mail to target ads at you. I'm not sure how well that squares with the various customer privacy enacted in various parts of the world, when it comes to your customers' personal and payment details, order details, purchase history etc. even if it is just automated scanning.
 
 You should, however, use such services for testing when you have everything else set up and working, as it is not wise to tell potential and actual customers which email addresses they may and may not use. Be aware however that these large entities make it as difficult as possible to actually send any email to their addresses. If any of the settings/setup mentioned above (part 1 of this article, ie: DNS, MX, SPF, valid accounts, etc) are not in place, you will find your site mail disappearing (dumped in a black hole and never delivered because it fails various rules/tests) or ending up in the Spam bin. They are all fairly ruthless about that, and curing it can be prolonged and more educational than you might choose.
 
