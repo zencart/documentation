@@ -39,7 +39,9 @@ _(Last updated: July 23, 2020)_
 
 PHP compatibility requirements of Plugins/Addons may vary. Consult each plugin's documentation and support discussion-thread for details.  
 
-**What PHP version should I use?** It is best to **use the most recent PHP version that your Zen Cart version supports**. The PHP developers have published a list of supported versions at [https://www.php.net/supported-versions.php](https://www.php.net/supported-versions.php) 
+**What PHP version should I use?** 
+
+It is best to **use the most recent PHP version that your Zen Cart version supports**. The PHP developers have published a list of supported versions at [https://www.php.net/supported-versions.php](https://www.php.net/supported-versions.php) 
 
 <font color="#ff0000">**NOTE:** PHP 5.x is officially obsolete. So are many of the early PHP 7 versions. You should be moving to the latest version of PHP (and matching Zen Cart version) as soon as possible!</font>  
 
@@ -65,7 +67,7 @@ It is suggested to also enable the following PHP extensions:
 - **memory_limit** suggested: **128M** or higher such as 256M or 512M if your server can handle it.
 - **post_max_size** and **upload_max_filesize** should be set to whatever max file size you or your customers may upload. Usually **8M** is sufficient for most sites, but if you're accepting huge uploads, set both to the max size of accepted combined uploads.  
 
-<u>**PHP Settings**</u>
+<u>**PHP Settings**</u> for optimum security:
 
 - ENABLE: `allow_url_fopen` is needed for checking things that don't/can't use `curl` (many shipping quote modules use this)
 - DISABLE: `allow_url_include` should be OFF. Zen Cart never needs this.
