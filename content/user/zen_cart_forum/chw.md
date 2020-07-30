@@ -10,7 +10,7 @@ within the Zen Cart forum.  It's free to post jobs, but to see the posts,
 developers have to pay a subscription fee, so it helps the project.
 
 ### HOW IT WORKS: 
-People who have paid to subscribe in order to see all the posts in this area (so they can respond to your requests) will see your post when they next look at their unread forum posts. Then if they think you've given them enough information and they think that their skills are enough to provide what you're asking for, they will send you a PM ("Private Message") with an offer to help.
+People who have paid to subscribe in order to see all the posts in this area (so they can respond to your requests) will see your post when they next look at their unread forum posts. Then if they think you've given them enough information and they think that their skills are enough to provide what you're asking for, they will send you a [private message](/user/zen_cart_forum/pm/) - also called a PM - with an offer to help.
 
 ### IF YOU GET NO RESPONSE: 
 It could be for many reasons, including possibly: not enough information to understand what you're needing, they don't think they know how to do it, they don't feel you would be willing to pay them appropriately, or maybe they just haven't logged in yet and haven't seen what you've posted.
