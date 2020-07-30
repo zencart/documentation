@@ -27,7 +27,7 @@ When you log on to the Zen Cart forum or visit as a guest, you have agreed to fo
 
 *   Send, post or distribute unauthorized copyrighted material.
 
-Communicating on message boards, via PM and email is different from face-to-face communication. Only the words are seen, not your facial expressions or tone of voice. Please pay careful attention to how you use your words.
+Communicating on message boards, via email or using [private message](/user/zen_cart_forum/pm/) (or PM), is different from face-to-face communication. Only the words are seen, not your facial expressions or tone of voice. Please pay careful attention to how you use your words.
 
 **Remember that the words you enter in a burst of passion or indignant anger will be there for you and everyone else to see (even in search engines), sometimes long after those intense feelings have passed. That's not meant to discourage spontaneity, but just a friendly reminder of the long-term existence and effects of what you post.**
 
