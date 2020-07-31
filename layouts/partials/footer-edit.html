@@ -1,0 +1,12 @@
+{{ $gh_repo := ($.Param "github_repo") }}
+{{ $gh_subdir := ($.Param "github_subdir") }}
+{{ $gh_project_repo := ($.Param "github_project_repo") }}
+{{ $footerEditURL := printf "%s/edit/master/content/%s" $gh_repo .Path }}
+{{ if and ($gh_subdir) (.Site.Language.Lang) }}
+{{ $footerEditURL = printf "%s/edit/master/%s/content/%s/%s" $gh_repo $gh_subdir ($.Site.Language.Lang) $.Path }}
+{{ else if ne .Site.Language.Lang "en" }}
+{{ $footerEditURL = printf "%s/edit/master/content/%s/%s" $gh_repo ($.Site.Language.Lang) .Path }}
+{{ else if $gh_subdir }}
+{{ $footerEditURL = printf "%s/edit/master/%s/content/%s" $gh_repo $gh_subdir $.Path }}
+{{ end }}
+You can even <a href="{{ $footerEditURL }}" target="_blank">PR right here</a>.
