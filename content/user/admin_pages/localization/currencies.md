@@ -6,8 +6,11 @@ weight: 10
 ---
 
 
-The default currencies in Zen Cart are U.S. Dollar and Euro. You may add a new currency, or edit an existing one.
+Zen Cart comes preconfigured with several currencies, including the US dollar, the Euro, the Pound, the Canadian Dollar, and the Australian Dollar.  
 
+You may add a new currency, or edit the existing ones.
+
+![Currencies in Zen Cart](/images/currencies.png) 
 
 ## Adding Currencies
 

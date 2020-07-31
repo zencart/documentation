@@ -29,8 +29,8 @@ Clicking a customers record selects that customer and opens a preview on the rig
 - view the customer's orders
 - email the customer
 - reset the customer's password 
-- place an order on behalf of the customer 
+- place an order on behalf of the customer (see [login as customer](/user/running/login_as_customer/))
 
-Editing the customer record the customer details screen, which shows the customer's default address, telephone number and email address, as well as other settings specific to that customer. 
+Editing the customer record takes you to the customer details screen, which shows the customer's default address, telephone number and email address, as well as other settings specific to that customer. 
 
 For more information, see the [customer and order data FAQs](/user/orders/). 
