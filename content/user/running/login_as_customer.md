@@ -1,6 +1,6 @@
 ---
 title: Login as Customer 
-description: Logging in as a Customer in Zen Cart 
+description: Placing an order on behalf of a Customer in Zen Cart 
 category: Running
 weight: 10
 ---
