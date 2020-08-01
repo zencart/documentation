@@ -25,6 +25,8 @@ e.g.
         - v1.0.0
             - manifest.php
       
+            - Installer
+
             - admin
       
                 - includes
@@ -48,6 +50,8 @@ e.g.
         - v1.0.1
             - manifest.php
       
+            - Installer
+
             - admin
       
                 - includes
@@ -71,3 +75,6 @@ e.g.
 **NOTE:** While these examples mention the `catalog` subdirectory, Zen Cart v1.5.7 only supports admin-side plugins at this time.
 
 ALSO: None of this works before Zen Cart v1.5.7: Plugins for prior versions must be installed directly into the main Zen Cart directory structure.
+
+**NOTE:** The `Installer` folder is optional; you can embed the installation logic in your plugin if you prefer.  See [Installer Classes](/dev/plugins/encapsulated_plugins/installer_classes/) and [Plugin SQL Installation](/dev/plugins/encapsulated_plugins/sql_installation/) for details on using the `Installer` folder. 
+
