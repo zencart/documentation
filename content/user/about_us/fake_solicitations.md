@@ -7,7 +7,7 @@ weight: 10
 
 ## Emails claiming to be from Zen Cart 
 
-Bad guys will sometimes send email to store owners claimining to be from Zen Cart with some "emergency" upgrade you have to do.  *This is fake!*  
+Bad guys will sometimes send email to store owners with some "emergency" upgrade you have to do.  *This is fake!*  
 
 This forum post shows an example of a [fake Zen Cart crypto module scam](https://www.zen-cart.com/showthread.php?224738-Warning-Fake-solicitation-about-upgrades-for-pci-compliance-and-crypto). 
 
