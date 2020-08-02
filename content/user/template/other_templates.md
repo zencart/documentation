@@ -1,6 +1,6 @@
 ---
 title: Other templates for Zen Cart
-description: Zen Cart Other Templates 
+description: Changing the appearance of your cart 
 category: template
 weight: 10
 ---

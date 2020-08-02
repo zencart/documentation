@@ -1,6 +1,6 @@
 ---
-title: Stylesheets 
-description: CSS Customization in Zen Cart 
+title: CSS 
+description: Stylesheet customization in Zen Cart 
 category: templates
 weight: 10
 ---
