@@ -1,6 +1,6 @@
 ---
 title: Security Releases
-description: Zen Cart Security Releases 
+description: Patches issued to address vulnerabilities
 category: about_us
 weight: 10
 ---
@@ -16,4 +16,7 @@ The list of Zen Cart security patches for 1.5.x+ is here: 
 *   [High-Tech Bridge patches (Nov 2015)](https://www.zen-cart.com/showthread.php?218914-Security-Patches-for-v1-5-4-November-2015)
 *   [Curesec patch (Sept 2015)](https://www.zen-cart.com/showthread.php?218239-curesec-com-security-report-Patch-Included)
 *   [POODLE patches (Oct 2014)](https://www.zen-cart.com/showthread.php?214916-Important-announcement-about-POODLE-and-payment-security)
+
+### New Security Issues 
+If you believe you have found a security issue, please do not release your finding publicly.  Instead, send reports (including proof of concept) to security [AT] zen-cart [DOT] com.  The core team will review your finding and respond appropriately. See [Security Reports](/user/about_us/about/#security-reports) for more information. 
 

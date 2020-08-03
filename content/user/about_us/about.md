@@ -1,6 +1,6 @@
 ---
 title: About this site and the Zen Cart Project
-description: About the Zen Cart Project 
+description: Bug reports, security issues, contributing and community.
 category: about_us
 weight: 10
 ---
@@ -15,7 +15,11 @@ To learn more, please see [how to report a bug](/user/about_us/bug_reporting/).
 
 ## **Security Reports**
 
-Zen Cart takes security issues VERY seriously. Whenever a true security risk is discovered, a fix is posted immediately, using whatever means is most appropriate. We appreciate hearing (privately) from the community about any security exploit risks found in Zen Cart code. We would rather hear about the situation privately so we can respond publicly with a fix for everyone.This helps keep existing shops safe without advertising the risk to would-be hackers etc. Send reports including proof of concept to security [AT] zen-cart [DOT] com.  
+Zen Cart takes security issues VERY seriously. Whenever a true security risk is discovered, a fix is posted immediately, using whatever means is most appropriate. 
+
+We appreciate hearing (privately) from the community about any security exploit risks found in Zen Cart code. We would rather hear about the situation privately so we can respond publicly with a fix for everyone.This helps keep existing shops safe without advertising the risk to would-be hackers etc. 
+
+Send reports, including proof of concept, to security [AT] zen-cart [DOT] com.  
 
 ## **Code Contributions**
 
@@ -27,7 +31,7 @@ See [plugin interfaces](/user/plugins/about_plugins/#plugin-interfaces) for deta
 
 It's also important to note that community-supplied contributions are written at a certain point in time and are not always compatible with future or earlier versions of Zen Cart. This is a challenge with any community-supported project. Our new contributions section attempts to help minimize the confusion in this by separating contributions based on the version of Zen Cart for which they were initially written.
 
-If you can find community created and supported contributions in the [Plugins Library](https://www.zen-cart.com/downloads.php) of the Zen Cart Forum. 
+You can find community created and supported contributions in the [Plugins Library](https://www.zen-cart.com/downloads.php) of the Zen Cart Forum. 
 
 ## **Fees**
 There is no fee for using Zen Cart. You may [download Zen Cart](https://sourceforge.net/projects/zencart/files/) and use it, subject to the terms of the license, for free. However, if you find it useful, you are encouraged to [make a donation](/user/about_us/donate/) to help support the ongoing development and improvement of the product.  
