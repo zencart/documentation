@@ -33,6 +33,10 @@ Be sure to familiarize yourself with the content of the release (and any prior r
 
     **Note**: Do not select *Clean Install* or you will overwrite your database.
 
+
+    If the “Upgrade” button does not appear, then the installer was unable to connect to your database to confirm what version its structure is at. Check your configure.php settings and be sure the DB_* fields correspond to your new database, including that the DB_PREFIX matches the DB_PREFIX in your old site.
+
+
 10.  Process each suggested step one at a time ... leave the first checkbox that the upgrader picked checked and uncheck the others.  
     -Advantage is that you can see your problems step by step  
     -Each time it completes it will recheck the boxes left to go.  
