@@ -1,6 +1,6 @@
 ---
 title: Announcements 
-description: Zen Cart Announcements 
+description: Hear about new releases and security updates 
 category: about_us
 weight: 10
 ---

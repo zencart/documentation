@@ -1,6 +1,6 @@
 ---
 title: Contributing to the Project
-description: Contributing to the Zen Cart Project
+description: Ways you can get involved in Zen Cart 
 category: about_us
 weight: 10
 ---

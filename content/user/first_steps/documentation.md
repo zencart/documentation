@@ -42,7 +42,7 @@ Go to the list of [All Configuration Values](/user/admin_pages/configuration/all
 
 Explore these pages and investigate a topic that is of interest to you: 
 
-- [All Configuration Settings](http://localhost:1313/user/admin_pages/configuration/all/)
+- [All Configuration Settings](/user/admin_pages/configuration/all/)
 - [All Admin Menus](/user/admin_pages/menu_sections/)
 - [Top FAQs](/user/all_time_favorites/) 
 
