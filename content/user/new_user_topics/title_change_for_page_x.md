@@ -24,6 +24,12 @@ unfamiliar.
 
 This technique applies to these pages:
 
+Define | URL
+-------|----------
+PAGE_2 | index.php?main_page=page_2
+PAGE_3 | index.php?main_page=page_3
+PAGE_4 | index.php?main_page=page_4
+
 <table>
 <tr><td>Define</td><td>URL</td></tr>
 <tr><td>PAGE_2</td><td>index.php?main_page=page_2</td></tr>
