@@ -1,13 +1,17 @@
 ---
 title: How do I Install Zen Cart?
-description: How do I Install Zen Cart?
+description: Should I use Softaculous or Installatron? 
 category: Installing
 weight: 10
 ---
 
 ## Preface
 
-The hoster-provided or publicly available **"packaged bundles" of Zen Cart are not endorsed** by Zen-Cart.com.  
+The hoster-provided or publicly available **"packaged bundles" of Zen Cart are not endorsed** by Zen-Cart.com.   To specifically enumerate some well-known options: 
+
+- Do not use Softaculous to install Zen Cart.
+- Do not use "Web Application Installer" to install Zen Cart. 
+- Do not use Installatron to install Zen Cart. 
 
 Instead, **we recommend manual installation**.  Manual installation of files from the [official download](https://sourceforge.net/projects/zencart/files/) enables you to build a system which is secure, optimized, and up to date. Manual installation ensures that you know *exactly* what *you* have put onto your site.  
 

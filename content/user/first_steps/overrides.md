@@ -86,5 +86,5 @@ from the default file - the default file will be used by Zen Cart
 automatically.  For this reason, you should expect your template to have
 many fewer files than the default template.  
 
-Ready to read more about overrides? [Go here](/user/new_user_topics/overrides).
+When you're ready, you can [read more about overrides](/user/new_user_topics/overrides).
 

@@ -148,7 +148,7 @@ Upload the files from your modified `store_new` (created in step 2) into a tempo
 In your browser, run `store_new/zc_install/index.php` and choose "_Upgrade_" when prompted. (Don't select "Clean Install", or you will overwrite your database.) 
 ![Use the upgrade button!](/images/upgrade_button.png)
 
-If the "Upgrade" button does not appear, then the installer was unable to connect to your database to confirm what version its structure is at. Check your configure.php settings and be sure the `DB_*` fields correspond to your new database, including that the DB_PREFIX matches the DB_PREFIX in your old site.
+If the "Upgrade" button does not appear, then the installer was unable to connect to your database to determine its version. Check your configure.php settings and be sure the `DB_*` fields correspond to your new database, including that the DB_PREFIX matches the DB_PREFIX in your old site.
 
 Run any install/upgrade steps for any plugins you've installed/upgraded. And removals for any plugins you're removing.
 

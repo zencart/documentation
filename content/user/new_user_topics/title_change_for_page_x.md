@@ -1,6 +1,6 @@
 ---
 title: How do I change the title of main_page=page_X?
-description: Zen Cart How do I change the title of main_page=page_X?
+description: Changing the name of PAGE_2, PAGE_3 or PAGE_4
 category: new_user_topics 
 weight: 10
 ---
@@ -22,3 +22,11 @@ define('HEADING_TITLE', 'Page ?');
 explanation of `YOURLANGUAGE` and `YOURTEMPLATE` if these terms are 
 unfamiliar. 
 
+This technique applies to these pages:
+
+<table>
+<tr><td>Define</td><td>URL</td></tr>
+<tr><td>PAGE_2</td><td>index.php?main_page=page_2</td></tr>
+<tr><td>PAGE_3</td><td>index.php?main_page=page_3</td></tr>
+<tr><td>PAGE_4</td><td>index.php?main_page=page_4</td></tr>
+</table>
