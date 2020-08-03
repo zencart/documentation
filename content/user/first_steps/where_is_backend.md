@@ -1,6 +1,6 @@
 ---
 title: Where is the Admin / Back-end interface? 
-description: Zen Cart Where is the Admin / Back-end interface? 
+description: I don't have an "/admin" folder!
 category: first_steps 
 weight: 10
 ---
