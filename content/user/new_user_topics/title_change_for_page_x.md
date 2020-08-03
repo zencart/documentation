@@ -4,7 +4,8 @@ description: Changing the name of PAGE_2, PAGE_3 or PAGE_4
 category: new_user_topics 
 weight: 10
 ---
-To change the name of page_2, page_3 or page_4  
+
+To change the name of `page_2`, `page_3` or `page_4`  
 
 1\. open the appropriate file: `/includes/languages/YOURLANGUAGE/page_?.php`
 
@@ -29,10 +30,3 @@ Define | URL
 PAGE_2 | index.php?main_page=page_2
 PAGE_3 | index.php?main_page=page_3
 PAGE_4 | index.php?main_page=page_4
-
-<table>
-<tr><td>Define</td><td>URL</td></tr>
-<tr><td>PAGE_2</td><td>index.php?main_page=page_2</td></tr>
-<tr><td>PAGE_3</td><td>index.php?main_page=page_3</td></tr>
-<tr><td>PAGE_4</td><td>index.php?main_page=page_4</td></tr>
-</table>
