@@ -28,7 +28,11 @@ Be sure to familiarize yourself with the content of the release (and any prior r
 6.  Make sure all appears to be working on your temp site.
 7.  Now load the "new" version files to your new temp directory from latest downloaded ZIP
 8.  Run the installer at `http://www.YOURSITE.com/zc_install`
-9.  Choose the Upgrade Database option  
+9.  Choose the *Upgrade* option  
+![Use the upgrade button!](/images/upgrade_button.png)
+
+    **Note**: Do not select *Clean Install* or you will overwrite your database.
+
 10.  Process each suggested step one at a time ... leave the first checkbox that the upgrader picked checked and uncheck the others.  
     -Advantage is that you can see your problems step by step  
     -Each time it completes it will recheck the boxes left to go.  
