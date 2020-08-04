@@ -50,7 +50,7 @@ It is best to **use the most recent PHP version that your Zen Cart version suppo
 Zen Cart requires a few PHP modules/extensions installed: 
 
  - `curl`
- - `mysqli`, `pdo`
+ - `mysqli`, `pdo_mysql`
  - `zlib` - particularly beneficial to enable `zlib.output_compression`
  - `json`
  - `fileinfo`
@@ -60,7 +60,7 @@ Zen Cart requires a few PHP modules/extensions installed:
 
 It is suggested to also enable the following PHP extensions:
 
- - `intl`, `mbstring`, `process`
+ - `intl`, `mbstring`, `process`, `pdo_sqlite`
 
 <u>**PHP Memory Recommendations**</u>
 
