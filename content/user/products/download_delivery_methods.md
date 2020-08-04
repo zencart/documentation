@@ -10,21 +10,25 @@ You can find these options in [Admin > Configuration > Attribute Settings](/user
 
 ## Download by Redirect
 
-**Download by Redirect - when set to True** uses the Linux/UNIX "symlink" feature to create a temporary file "stub" in the /pub folder. Then your customer is directed to that file-stub for their download. This means the customer can only ever access it via that stub, which disappears after their download is over. It hides the "real" location of the file so they can't just share the download link with others and have them steal your downloads for free.  
+**Download by Redirect - when set to True** uses the Linux/UNIX "symlink" feature to create a temporary file "stub" in the /pub folder. Then your customer is directed to that file-stub for their download. This means the customer can only ever access it via that stub, which also disappears after their download is over. 
 
-This option only works on Linux hosts.  On Windows hosts this option will not work because Windows doesn't support symlinks, at least not via PHP.  
+This approach hides the "real" location of the file so customers can't just share the download link with others and have them steal your downloads for free.
 
-This option requires that the "pub" folder be set to read-write permissions, typically 777 (or 755 on suexec hosts).
+This option works well on Linux hosts. Many older Windows hosts using older PHP versions don't support symlinks.
+
+This option requires that the "pub" folder be set to read-write permissions, typically 755.
 
 This method is not affected by PHP `max_execution_time` limits.  
 
 This approach can be problematic if several people buy and download the same thing at the same time, because there's some garbage-collection that cleans up symlinks, and if that happens during someone's download, the cleanup could break the download.
 
-Your Apache/Nginx logs may give you more insights about download-by-redirect downloads. You won't find those in PHP logs.
+For statistics or analytics, your Apache/Nginx logs may give you more insights about download-by-redirect downloads. You won't find those in PHP logs.
 
 ### Serving files via a URL such as sharing Dropbox links
 
 If using Dropbox links for your file URLs, change the `&dl=0` to `&dl=1` on the "sharing link" that Dropbox gives you. This will make the download happen immediately, instead of the customer seeing the file open on the Dropbox website.
+
+You may want to do similarly for sharing URLs from other cloud-storage services. Be sure to test the links in a "private browsing mode" or "incognito mode" browser session to be sure the link works and that you're not giving "too much permission" (such as accidentally sharing a google-docs "edit" mode page).
 
 ### Serving files via AWS
 
@@ -46,17 +50,21 @@ define('AMAZON_S3_ACCESS_SECRET', 'your aws secret here');
 
 ## Download without Redirect
 
-If **Download by Redirect is set to False**, then the download link given to the customer is the direct link to the file in your /download folder, meaning they can download as often as they want and share the link with others, potentially letting people steal your downloads.   
+If the earlier setting above **Download by Redirect is set to False**, then the download link given to the customer is the direct link to the file in your `/download` folder, meaning they can download as often as they want and share the link with others, potentially letting people steal your downloads.   
 
 _This option has its security limitations, but works on both Windows and Linux hosts._  
 
-This method is not affected by PHP max_execution_time limits.  
+This method is not affected by PHP `max_execution_time` limits, and activity will not be in PHP logs (but will be in Apache/Nginx logs).
 
 ## Download by Streaming
 
-**Download by streaming** only works _when Download by Redirect is off._ Instead of giving the customer a URL to the file, Zen Cart uses on a PHP process to read the file in small increments (4K chunks) and serve those out as a stream of data until done. It's intended to bypass memory limits imposed by your server config especially when dealing with very large files. It also increases the max duration time of the download to 25 minutes (if your server's PHP hasn't been configured to disallow that).
+**Download by streaming** only works _when Download by Redirect is off._ Instead of giving the customer a URL to the file, a PHP process will read the file in small increments (4K chunks) and serve those out as a stream of data until done. It's intended to bypass memory limits imposed by your server especially when dealing with very large files. 
 
-This method helps with server RAM load as well as completely preventing any download link from ever being shared with your customers.  
+This option also increases the max duration time of the download to 25 minutes (if your server's PHP hasn't been configured to disallow that) to allow enough time to download.
+
+This method helps with your server's overall RAM load
+
+From a security perspective this completely prevents any download link from ever being shared with non-customers, because it requires customers to download only from a logged-in account session via their order-history page.
 
 This option works on both Windows and Linux hosts.  
 
