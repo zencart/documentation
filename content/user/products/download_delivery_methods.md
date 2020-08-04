@@ -24,15 +24,23 @@ This approach can be problematic if several people buy and download the same thi
 
 For statistics or analytics, your Apache/Nginx logs may give you more insights about download-by-redirect downloads. You won't find those in PHP logs.
 
+
 ### Serving files via a URL such as sharing Dropbox links
+
+You can specify a URL instead of a filename. It must start with `https://` in order to work.
+
+Remember that URLs like this offer NO protection against theft: once the link is given to a customer they can give the link to anyone else and download again.
 
 If using Dropbox links for your file URLs, change the `&dl=0` to `&dl=1` on the "sharing link" that Dropbox gives you. This will make the download happen immediately, instead of the customer seeing the file open on the Dropbox website.
 
-You may want to do similarly for sharing URLs from other cloud-storage services. Be sure to test the links in a "private browsing mode" or "incognito mode" browser session to be sure the link works and that you're not giving "too much permission" (such as accidentally sharing a google-docs "edit" mode page).
+Similarly, when sharing URLs from other cloud-storage services, ensure that the "sharing link" you're using is secure.
+
+Be sure to test the links in a "private browsing mode" or "incognito mode" browser session to verify both that the link works and that you're not giving "too much permission" (such as accidentally sharing a google-docs page in "edit" mode).
+
 
 ### Serving files via AWS
 
-If you have set up your AWS credentials, when you configure your product attributes to specify a filename, simply give `aws:bucketname/filename.ext` as the filename in attributes controller.
+If you have set up your AWS credentials, when you configure your product attributes to specify a filename, simply give `aws:bucketname/filename.ext:number_of_bytes` as the filename in attributes controller.
 
 To set your AWS credentials, create an `/includes/extra_datafiles/dev-aws_credentials.php` file containing the following:
 
