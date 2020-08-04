@@ -36,43 +36,42 @@ This method is not affected by PHP `max_execution_time` limits, and activity wil
 
 ### Download by Streaming
 
-**Download by streaming** only works _when Download by Redirect is off._ Instead of giving the customer a URL to the file, a PHP process will read the file in small increments (4K chunks) and serve those out as a stream of data until done. It's intended to bypass memory limits imposed by your server especially when dealing with very large files. 
-
-This option also increases the max duration time of the download to 25 minutes (if your server's PHP hasn't been configured to disallow that) to allow enough time to download.
-
-This method helps with your server's overall RAM load
+**Download by streaming** only works _when Download by Redirect is off._ Instead of giving the customer a URL to the file, a PHP process will read the file in small increments (4K chunks) and serve those out as a stream of data until done. 
 
 From a security perspective this completely prevents any download link from ever being shared with non-customers, because it requires customers to download only from a logged-in account session via their order-history page.
 
 This option works on both Windows and Linux hosts.  
 
-There is one limitation with this method: your server's PHP configuration for `max_execution_time` needs to be set to a value large enough for your largest file to complete its download, or at least configured in such a way that Zen Cart is allowed to override it. 
-
-Zen Cart attempts to set it to unlimited when the download starts, but if your server won't allow that, it'll default to the server's master setting, which is often 30 seconds.
+There is one limitation with this method: the PHP `max_execution_time` setting needs to be set to a value high enough to allow for your largest file to complete its download. Zen Cart attempts to set the time to 25 minutes, but some servers have a master setting that prevents Zen Cart from overriding this. (PHP's default is often 30 or 60 seconds.)
 
 
-## Serving files from "the cloud" (not from your own server)
 
-Since v1.5.6 you can optionally serve downloadable products/files via external services such as AWS, Dropbox, Google Drive, etc.
+## Serving files from "the cloud" (remote URLs)
+
+Since v1.5.6 you can optionally serve downloadable products/files via external services such as AWS, Dropbox, Google Drive, etc, instead of hosting them on your own store's webserver.
 
 ### Serving files via a URL such as sharing Dropbox links
 
-You can specify a URL instead of a filename. It must start with `https://` in order to work.
+In the Attributes Controller or Downloads Manager you can specify a URL instead of a filename. If the "filename" starts with `https://` then it will be treated as a remote URL.
 
-You may optionally also specify a file size which will be displayed next to the download link, like this: `https://example.com/filename.ext:number_of_bytes`. This size helps browsers display some indication of download progress.
+You may optionally specify a file size like this: `https://example.com/filename.ext:number_of_bytes`. This size helps browsers display some indication of download progress, and is also displayed next to the download button.
 
 Remember that URLs like this offer NO protection against theft: once the link is given to a customer they can give the link to anyone else and download again.
 
-If using Dropbox links for your file URLs, change the `&dl=0` to `&dl=1` on the "sharing link" that Dropbox gives you. This will make the download happen immediately, instead of the customer seeing the file open on the Dropbox website.
+TIP: If using Dropbox links for your file URLs, change the `&dl=0` to `&dl=1` on the "sharing link" that Dropbox gives you. This will make the download happen immediately, instead of the customer seeing the file open on the Dropbox website.
 
 Similarly, when sharing URLs from other cloud-storage services, ensure that the "sharing link" you're using is secure.
 
-Be sure to test the links in a "private browsing mode" or "incognito mode" browser session to verify both that the link works and that you're not giving "too much permission" (such as accidentally sharing a google-docs page in "edit" mode).
+Be sure to **test the link** in a "private browsing mode" or "incognito mode" browser session to verify both that the link works and that you're not giving "too much permission" (such as accidentally sharing a google-docs page in "edit" mode).
 
 
 ### Serving files via AWS
 
-If you have set up your AWS credentials, when you configure your product attributes to specify a filename, simply give `aws:bucketname/filename.ext:number_of_bytes` as the filename in attributes controller. The optional `:number_of_bytes` part is the file size which will be displayed to the customer and allows for download-progress to be detected by the browser.
+You may wish to use Amazon S3 to host your downloads.
+
+After setting up your AWS credentials (described below), simply give `aws:bucketname/filename.ext:number_of_bytes` as the filename in attributes controller. 
+
+The optional `:number_of_bytes` part is the file size which will be displayed to the customer and allows for download-progress to be detected by the browser.
 
 To set your AWS credentials, create an `/includes/extra_datafiles/dev-aws_credentials.php` file containing the following:
 
