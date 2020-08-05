@@ -48,7 +48,7 @@ Before you begin, be sure you are familiar with the structure and contents of [c
 - you have your site configured to store session data in files but your filesystem doesn't have permissions set in such a way as to allow storage of the data  
 - you have your site set to store session data in the database but the database table ("sessions") is corrupt or database-storage is full and new records cannot be added.  
 
-Is your "cache" folder set to read/write (ie: chmod 777 (or some other suitable value if 777 is not permitted by your server's configuration) ?  
+Is your "cache" folder set to writeable (ie: chmod 755 or some other suitable value according to your server's configuration) ?  
 
 **Other possibilities:**  
 
