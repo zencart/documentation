@@ -17,7 +17,7 @@ Description: Enable the products download functions.</div>
 
 <div class='indent'>Key: <b>DOWNLOAD_BY_REDIRECT</b><br />
 Path: <b>Configuration > Attribute Settings</b><br />
-Description: Use browser redirection for download. Disable on non-Unix systems.<br /><br />Note: Set /pub to 777 when redirect is true</div>
+Description: Use browser redirection for download. Disable on non-Unix systems.<br /><br />Note: Set /pub to 755 when redirect is true</div>
 
 
 <h2 id="download_by_streaming">Download by streaming</h2>
