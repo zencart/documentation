@@ -10,3 +10,9 @@ pages/views that display tabular data.
 
 Initially they are meant to aid in the building of admin pages,
 however some aspects will also be able to be used catalog side as well.
+
+The structure of view builder classes and the data formats they use allow 
+for much easier integration with plugins that need to add extra columns
+or actions in admin pages.
+
+ 
