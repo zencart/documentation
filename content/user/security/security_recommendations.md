@@ -138,15 +138,8 @@ During initial installation, you are advised to set your images folder to read/w
 
 However, leaving the images (or any other) folder in read/write mode means that hackers might be able to put malicious files in this (or other) folder(s) and thus create access points from which to attempt nasty exploits.
 
-Thus, once your site is built and your images have been created/loaded, you should drop the security down from read/write to read. ie: change from CHMOD 777 down to 644 for files and 755 for folders.
+Thus, once your site is built and your images have been created/loaded, you could drop the security for the images directories down from read/write to read-only. ie: chmod down to 644 for files and 755 for folders.
 
-<u>**_(Note: This is already done since v1.3.9)_**</u> -- *IF* your server is running PHP as a CGI application and not as an Apache module, and you wish to prevent hackers from executing scripts in your images folder (which is only an issue *if* they are able to successfully hack to your images folder and insert rogue script files), you could further secure it by adding a custom .htaccess file which only allows images to be displayed, and won't allow the use of php files etc. Here's the code for said custom .htaccess file:
-
-```
-# Prevent directory viewing and the ability of any scripts to run.  
- # No script, be it PHP, PERL or whatever, can normally be executed if ExecCGI is disabled.  
- OPTIONS -Indexes -ExecCGI</span>  
-``` 
 
 #### File/Folder permissions settings
 
