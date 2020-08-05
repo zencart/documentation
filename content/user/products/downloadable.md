@@ -191,8 +191,10 @@ Thus, Downloads **should NOT** be marked as Always Free Shipping, and **should N
 ## File Permissions for Downloads
 
 Files for download (ie: all the files in the "download" folder) should be marked as read-only. Setting to 644 should be sufficient.  
-The "download" folder itself is typically set to 755, which is the normal default permissions setting for folders.  
-If you are using download-by-redirect, then your "pub" folder needs to be read-write, typically 777 (or 755 on some hosts).  
+
+The `download/` "folder" itself is typically set to 755, which is the normal default permissions setting for folders.
+
+If you are using download-by-redirect, then your `pub/` folder needs to be read-write, typically 755, depending on the server.
 
 ## Important Facts about Download Settings
 
