@@ -6,6 +6,7 @@ menu:
   main:
     weight: 10
 layout: docs
+type: codepage
 ---
 
 Quick Links: &nbsp;
