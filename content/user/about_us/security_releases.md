@@ -17,6 +17,8 @@ The list of Zen Cart security patches for 1.5.x+ is here: 
 *   [Curesec patch (Sept 2015)](https://www.zen-cart.com/showthread.php?218239-curesec-com-security-report-Patch-Included)
 *   [POODLE patches (Oct 2014)](https://www.zen-cart.com/showthread.php?214916-Important-announcement-about-POODLE-and-payment-security)
 
+All of these patches are included in the current release, so if you are running an older version, you should [upgrade](/user/upgrading/upgrading/) as soon as possible. 
+
 ### New Security Issues 
 If you believe you have found a security issue, please do not release your finding publicly.  Instead, send reports (including proof of concept) to security [AT] zen-cart [DOT] com.  The core team will review your finding and respond appropriately. See [Security Reports](/user/about_us/about/#security-reports) for more information. 
 
