@@ -74,13 +74,12 @@ chdir /home/myaccount/public_html/zencart
 Type the following commands in the case shown: 
 
 ```
-chmod -R 777 ./logs
-chmod -R 777 ./cache
-chmod -R 777 ./pub
-chmod -R 777 ./images
-chmod -R 777 ./includes/languages/english/html_includes
-chmod -R 777 ./admin/backups
-chmod -R 777 ./admin/images/graphs
+chmod -R 755 ./logs
+chmod -R 755 ./cache
+chmod -R 755 ./pub
+chmod -R 755 ./images
+chmod -R 755 ./includes/languages/english/html_includes
+chmod -R 755 ./admin/backups
 ```
 
 
@@ -98,7 +97,7 @@ Using which ever method you used above, you also need to make the following
 permission changes: 
 
 ### Images 
-Open the `/images` directory and change **all** of the subdirectories and their subdirectories to 777 as well. For example (this is a partial list):  
+Open the `/images` directory and change **all** of the subdirectories and their subdirectories to 755 as well. For example (this is a partial list):  
 
 ```
 *   /images/attributes
