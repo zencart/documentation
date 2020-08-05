@@ -9,8 +9,8 @@ Background:
 
 - Downloads are handled as product attributes.  So, first, you should familiarize yourself with [setting up attributes](/user/products/attributes). 
 
-- Download files must be loaded by your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) to your store's  `/download` directory before trying to link those files to products/attributes.   For greater security, you can [relocate the downloads folder](/user/security/relocate_download_folder/) outside your web space. 
-- You may serve your downloads from AWS by beginning your download filename with the string "aws:".  See [`includes/classes/observers/auto.downloads_via_aws.php`](https://github.com/zencart/zencart/blob/v157/includes/classes/observers/auto.downloads_via_aws.php) for details on setting your AWS credentials. 
+- Download files must be loaded by [FTP](/user/first_steps/useful_tools/#ftp-tools) to your store's  `/download` directory before trying to link those files to products/attributes.   For greater security, you can [relocate the downloads folder](/user/security/relocate_download_folder/) outside your web space. 
+- You may serve your downloads from AWS by beginning your download filename with the string "aws:".  See [download_delivery_methods/#serving-files-via-aws](/user/products/download_delivery_methods/#serving-files-via-aws) for details on setting your AWS credentials. 
 
 - Other important facts about downloads are linked at the bottom of this article. 
 
@@ -204,12 +204,12 @@ If you are using download-by-redirect, then your "pub" folder needs to be read-w
 
 3.  Downloads in an order by itself will never see the checkout_shipping page.  If you do then your Product is not setup correctly for Downloads.
 
-4.  If on Linux/Unix, /pub should be writable (usually 777 or 755 depending on the host server) and Redirect should be ON  
+4.  If on Linux/Unix, /pub should be writable (usually 755 depending on the host server) and Redirect should be ON  
     If you cannot use Redirect ON, ask your hosting site why they cannot follow the symbolic link between the `/download` and `/pub` directories  
 
-5.  If on a Windows server, `/pub` does NOT need to be writable/777 since you do not use this directory because symlinks typically don't work on Windows servers, and Redirect is OFF since Redirect requires symlink support.  
+5.  If on a Windows server, `/pub` does NOT need to be writable/755 since you do not use this directory because symlinks typically don't work on Windows servers, and Redirect is OFF since Redirect requires symlink support.  
 
-6.  Download filenames should not use special characters, spaces, etc  
+6.  Download filenames should not use special characters, spaces, etc. Stick to letters and numbers.
 
 7.  Download files should be zipped for best results and best compatibility for most customers and most browsers.  
 
@@ -219,8 +219,7 @@ If you are using download-by-redirect, then your "pub" folder needs to be read-w
 
 ### Combo Products 
 A combo product is a product with a physical and downloadable component.  
-Read more about 
-[downloadable combo products](/user/products/products_shippable_and_downloadable).
+Read more about [downloadable combo products](/user/products/products_shippable_and_downloadable).
 
 
 **See Also:**
