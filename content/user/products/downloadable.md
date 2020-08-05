@@ -10,7 +10,7 @@ Background:
 - Downloads are handled as product attributes.  So, first, you should familiarize yourself with [setting up attributes](/user/products/attributes). 
 
 - Download files must be loaded by [FTP](/user/first_steps/useful_tools/#ftp-tools) to your store's  `/download` directory before trying to link those files to products/attributes.   For greater security, you can [relocate the downloads folder](/user/security/relocate_download_folder/) outside your web space. 
-- You may serve your downloads from AWS by beginning your download filename with the string "aws:".  See [download_delivery_methods/#serving-files-via-aws](/user/products/download_delivery_methods/#serving-files-via-aws) for details on setting your AWS credentials. 
+- You may serve your downloads from a remote URL by providing that URL as the filename. You may also serve them from AWS S3 with special syntax.  See [download_delivery_methods/#serving-files-via-aws](/user/products/download_delivery_methods/#serving-files-via-aws) for details on syntax and on setting your AWS credentials. 
 
 - Other important facts about downloads are linked at the bottom of this article. 
 
