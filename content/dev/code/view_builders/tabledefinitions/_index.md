@@ -67,6 +67,23 @@ The basic definition consists of a number of entries.
  Button actions are for displaying buttons that carry out some global action.
  e.g. creating a new entry for a table.
  
+ The array format for an entry in the `buttonActions` array is 
+ 
+  - action: the name of the action to be carried out
+  - whitelist: a list of actions that allow the button to be displayed
+  - blacklist: a list of actions that prevent the button being displayed
+  - linkParams: info on how to build extra parameters for the button link
+  - title: The text to be displayed as the button title
+  - buttonClass: a boostrap class applied to the button
+  
+  The `linkParam` entry contains
+  
+  - source: for now only `request` is allowed
+  - field: the name of the request param to use
+  - param: the name of the GET param added to the link
+  
+example:   
+
 ## rowActions
   
   row actions are buttons that appear along side every row in a table, 
@@ -144,23 +161,34 @@ e.g.
 
 There are various class methods to allow for manipulation of the TableView definion
 
-## getDefinition
+## public function getDefinition()
 
-## setParameter
+## public function setParameter(string $name, $value)
 
-## addParameter
+## public function addParameter(string $field, $definition)
 
-## getParameter
+## public function getParameter(string $field)
 
-## addButtonAction
+## public function addButtonAction($definition)
 
-## addRowAction
+## public function addRowAction($definition)
 
-## addColumn
+## public function addColumn(string $field, $definition)
 
-## addColumnBefore
+## public function addColumnBefore($index, $newKey, $data)
 
-## addColumnAfter
+## public function addColumnAfter($index, $newKey, $data)
 
+## public function getHeaders()
+
+## public function isPaginated()
+
+## public function colKeyName()
+
+## public function hasRowActions()
+
+## public function getRowActions()
+
+## public function getButtonActions()
 
 
