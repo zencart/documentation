@@ -1,6 +1,6 @@
 ---
 title: Font Awesome 
-description: Using Font Awesome from local and remotely.
+description: The use of the fontawesome.io in your template 
 category: template
 weight: 10
 type: codepage

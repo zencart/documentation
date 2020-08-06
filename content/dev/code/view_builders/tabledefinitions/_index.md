@@ -76,7 +76,7 @@ The basic definition consists of a number of entries.
   - title: The text to be displayed as the button title
   - buttonClass: a boostrap class applied to the button
   
-  The `linkParam` entry contains
+  The `linkParams` entry contains
   
   - source: for now only `request` is allowed
   - field: the name of the request param to use
@@ -92,7 +92,7 @@ example:
   The array format for an entry in the `rowActions` array is 
   
   - action: the name of the action to be carried out. 
-  - icon: the name of a fontawesome icon to display
+  - icon: the name of a [Fontawesome](/user/template/font_awesome/) icon to display
   - linkParams: info on how to build extra parameters for the 
                 buttons link.
                 
