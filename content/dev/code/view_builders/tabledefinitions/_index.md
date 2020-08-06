@@ -8,7 +8,7 @@ layout: docs
 **fixme: This page is still under construction, and will change during the 
 v158 branch changes.**
 
-When displaying tablular data we need to define the columns we want to
+When displaying tabular data we need to define the columns we want to
 display along with some metadata as to how the table will appear.
 
 The table definition DTO holds that data in an object that can be passed
