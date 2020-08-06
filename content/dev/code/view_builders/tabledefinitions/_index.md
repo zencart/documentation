@@ -74,7 +74,7 @@ The basic definition consists of a number of entries.
   - blacklist: a list of actions that prevent the button being displayed
   - linkParams: info on how to build extra parameters for the button link
   - title: The text to be displayed as the button title
-  - buttonClass: a boostrap class applied to the button
+  - buttonClass: a bootstrap class applied to the button
   
   The `linkParams` entry contains
   
@@ -159,7 +159,7 @@ e.g.
 
 # Class Methods
 
-There are various class methods to allow for manipulation of the TableView definion
+There are various class methods to allow for manipulation of the TableView definition
 
 ## public function getDefinition()
 

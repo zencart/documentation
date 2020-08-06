@@ -42,7 +42,7 @@ The sql file should reside in
                 - install.sql
 
 
-**Warning** As Zen Cart currently uses mainly `MyIsam` tables, there is no way to safely roll back any
+**Warning** As Zen Cart currently uses mainly `MyISAM` tables, there is no way to safely roll back any
   installer sql if an error occurs. Some support for rollback may be added later (using generated migrations).
 
 Note that an uninstall script (called `uninstall.sql`) may be placed in the same folder. 
