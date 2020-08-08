@@ -28,7 +28,7 @@ For Zen Cart, we have added the following command(s).
 
 The make:defines command is used to convert legacy language files into the new php array format.
 
-The command accepts the follwing options 
+The command accepts the following options 
 
     --file 
     --dir
