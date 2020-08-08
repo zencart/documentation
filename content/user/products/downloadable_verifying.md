@@ -21,3 +21,13 @@ In the image below, you can see again that the file test.zip is missing.
 <br>
 <img src="/images/attributes_controller_attributes.png" alt="Attributes Controller" />
 
+### Product Edit page 
+
+Editing a product shows you the shipping settings, which are required to be as follows for a downloadable product: 
+
+- Product is Virtual: No, Shipping Address Required
+- Always Free Shipping: No, Normal Shipping Rules
+
+See [shipping costs](https://docs.zen-cart.com/user/products/downloadable/#additional-notes-about-downloads-and-shipping-costs) for more details. 
+
+

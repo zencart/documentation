@@ -12,7 +12,7 @@ weight: 10
 1. Find out the tax class ID number in [Admin > Locations/Taxes > Tax Classes](/user/admin_pages/locations/tax_classes/).  (It's the number on the left hand side.) 
 
 2. Go to [Admin > Catalog > Product Types > Layout Settings](/user/admin_pages/catalog/product_types_edit_layout/)
-for the product type you're using (probably **Product - General**). 
+for the product type you're using (probably `Product - General`)
 
 Choose 
 *Product Price Tax Class Default - When adding new products?*

@@ -5,13 +5,14 @@ category: admin_pages
 weight: 20
 ---
 
-This page allows you to view and edit product types.
+![Product Types page](/images/product_types.png)
+
+This page allows you to view and edit product types.  The most common 
+product type is `Product - General`.
 
 What are the product-type options for in the Admin area?
 
-
 When you go to the Admin > Catalog > Categories/Products you have a list of your categories. Beside the New Product button is a pulldown menu. Whatever product type you select from this menu before clicking New Product is the type of product you will create.
-
 
 Each product type collects certain kinds of information relevant to that product. Each product type has a different display of content in the store (ie: music shows a bit different than other products, and also allows the attaching of MP3 clips in the media manager, etc - all of which are displayed on the music product automagically, but not on a T-Shirt, for example).
 
@@ -23,5 +24,6 @@ In the Admin > Catalog > Product Types menu, there is a listing of product types
 
 This capability to set defaults and appearance on a per product type basis is provided through the [Layout Settings](/user/admin_pages/catalog/product_types_edit_layout) screen. 
 
+<img src="/images/product_general_sidebar.png" alt="Product Type Sidebar" width="50%" />
 
 If you are a developer, see [technical information on product types](/dev/code/product_types). 

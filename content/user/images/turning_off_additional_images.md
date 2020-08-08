@@ -24,7 +24,7 @@ a) rename your images so they don't share a common filename.  Right now since yo
 This is explained further in the [Additional Images Tutorial](/user/images/adding_multiple_images_to_a_product).
 
 b) or turn off all extra-image functionality by going to [Admin > Catalog > Product Types](/user/admin_pages/catalog/product_types/), 
-then selecting Product General (or whatever your product type is),
+then selecting `Product - General` (or whatever your product type is),
 then clicking *Edit Layout* and setting `Show Additional Images` to 0. 
 
 
