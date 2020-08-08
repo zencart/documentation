@@ -14,7 +14,7 @@ See the [Laravel documentation](https://laravel.com/docs/7.x/artisan) for furthe
 Most of the in-built commands currently have little relevance for use 
 in a Zen Cart application, although that may change over time.
 
-you can run the artisan command by changing into the `laravel` directory 
+You can run the artisan command by changing into the `laravel` directory 
 and running the `./artisan` command
 
 This will list all of the commands available.
@@ -40,7 +40,7 @@ The `--force` command is optional.
 
 ### --file
 
-This option accepts the path to  single file. 
+This option accepts the path to a single file. 
 
 e.g `admin/includes/languages/english/index.php`
 
@@ -52,13 +52,11 @@ and will convert that file to
 
 This option accepts the path to a directory.
 
-It will attempt to convert al files within the directory renaming files with a `lang.`
-prefix.
+It will attempt to convert all files within the directory renaming files with a `lang.` prefix.
 
 ### --config
 
-This option accepts the path to a file that contains an array definition used to decide 
-which files to convert.
+This option accepts the path to a file containing an array definition used to decide which files to convert.
 
 The config file is an array return file, so should look like 
 
@@ -81,7 +79,7 @@ e.g.
 
 ### --force
 
-THe parser used to convert files will produce incorrect output in various scenarios.
+The parser used to convert files will produce incorrect output in various scenarios.
 e.g. This define 
 
 ```
@@ -93,6 +91,6 @@ will not be parsed correctly, and in general any define that contains php functi
 The `make:defines` command will report that the file to be converted contains tokens that can not be converted,
 and conversion of that file will be suppressed.
 
-The `--force` command will override the suppresion, and the new `lang.` file will be created, albeit in a form that 
+The `--force` command will override the suppression, and the new `lang.` file will be created, albeit in a form that 
 will probably generate errors.
 The generated file in question should then be manually edited to fix any problems.
