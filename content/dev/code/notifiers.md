@@ -1,6 +1,6 @@
  ---
-title: Notifiers and Observers - About
-description: About Zen Cart Notifiers and Observers 
+title: Observer/Notifier System 
+description: About notifiers and observers
 category: code
 weight: 10
 type: codepage
@@ -8,7 +8,7 @@ type: codepage
 
 # Introduction
 
-One of the many goals of the Zen Cart project has always been to make it simple for third party developers to add functionality to the core code in an easy and unobtrusive manner. To do this we use the [override system](/user/template/template_overrides/), the [auto inclusion system](/dev/code/inclusion/) and the observer-notifier system.
+One of the many goals of the Zen Cart project has always been to make it simple for third party developers to add functionality to the core code in an easy and unobtrusive manner. To do this we use the [override system](/user/template/template_overrides/), the [auto inclusion system](/dev/code/inclusion/) and the observer/notifier system.
 
 The observer/notifier system is an implementation of the ["pub-sub" pattern](https://en.wikipedia.org/wiki/Publish–subscribe_pattern)  that was introduced to give developers deep access to core operation without the need to touch any core files at all. Although the implementation was written for an object-oriented code base, it can also be used with procedural code.
 

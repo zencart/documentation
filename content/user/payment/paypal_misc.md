@@ -1,6 +1,5 @@
 ---
 title: PayPal - Miscellaneous Questions
-description: PayPal in Zen Cart - Miscellaneous Questions
 category: payment 
 weight: 10
 ---

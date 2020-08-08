@@ -1,6 +1,6 @@
 ---
 title: How do I get paid? 
-description: How do I get paid with Zen Cart? 
+description: Collecting payment on your orders 
 category: payment
 weight: 10
 ---

@@ -1,6 +1,6 @@
 ---
 title: PayPal - one account on multiple sites 
-description: PayPal in Zen Cart - one account on multiple sites 
+description: Consolidating PayPal accounts 
 category: payment
 weight: 10
 ---

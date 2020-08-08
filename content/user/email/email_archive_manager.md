@@ -1,6 +1,6 @@
 ---
 title: Email Archive Manager 
-description: Zen Cart Email Archive Manager 
+description: Keeping a record of email sent by Zen Cart 
 category: email
 weight: 10
 ---
