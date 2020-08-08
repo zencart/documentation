@@ -1,6 +1,6 @@
 ---
 title: Product Management in Admin 
-description: Adding, Editing, Copying, Moving and Deleting Products
+description: Adding, Editing, Deleting, Moving and Copying Products
 category: products
 weight: 10
 ---
@@ -14,7 +14,7 @@ product type is `Product - General`.  This is the most common (and default) prod
 ### Adding a Product
 
 Adding a product allows you to set all the product fields available to 
-that product type.  Adding is done on the product editing screen.  
+that product type.  Adding is done on the product add/edit screen.  
 
 ![product editing screen](/images/product_edit.png)
 
