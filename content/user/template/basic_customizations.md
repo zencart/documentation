@@ -140,7 +140,7 @@ Choose the desired setting:
 To turn off the weight, inventory count, manufacturer, etc. on my product info page, do the following: 
 Go to [Admin > Catalog > Product Types](/user/admin_pages/catalog/product_types/).
 
-Choose Products General (or the product type you are customizing).
+Choose `Product - General` (or the product type you are customizing).
 
 Click [Layout Settings](/user/admin_pages/catalog/product_types_edit_layout/) and turn off any settings you do not want to display on the store pages.
 

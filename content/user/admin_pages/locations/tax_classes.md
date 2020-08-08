@@ -35,7 +35,7 @@ When entering new products in the Admin area, it is necessary to select the appr
     *   You'll see something that looks like: `&tID=3`
         *   In this case, the ID number is 3
 2.  Now set the default for product-entry by going to:
-    *   [Admin > Catalog > Product Types](/user/admin_pages/catalog/product_types/) (select the desired product type if other than Product General)
+    *   [Admin > Catalog > Product Types](/user/admin_pages/catalog/product_types/) (select the desired product type if other than `Product - General`)
     *   Edit Layout
     *   Click on Product Price Tax Class Default - When adding new products
     *   Enter the number of the tax class ID determined above.
