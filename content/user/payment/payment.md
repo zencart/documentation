@@ -1,6 +1,5 @@
 ---
 title: Payment Modules
-description: Zen Cart Payment Modules
 category: payment
 weight: 1
 ---

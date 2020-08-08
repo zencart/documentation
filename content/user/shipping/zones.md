@@ -1,12 +1,12 @@
 ---
 title: Zones Setup 
-description: Zen Cart Zones Setup 
+description: How to price shipping by destination zone 
 category: shipping 
 weight: 10
 ---
 
 
-By default, the module comes with support for 3 zones. This can be easily altered with a coding change by editing the Zones Shipping Module file (If you make this change and your Zones module is already installed/active, you'll need to record your settings, then click Remove, then click Install, and re-enter all your settings. Otherwise your change will have peculiar visual side-effects).  
+By default, the module comes with support for 3 zones. This can be easily altered with a coding change by editing the Zones Shipping Module file (If you make this change and your Zones module is already installed/active, you'll need to record your settings, click Remove, click Install, and re-enter all your settings. Otherwise your change will have peculiar visual side-effects).  
 
 `includes/modules/shipping/zones.php`
 

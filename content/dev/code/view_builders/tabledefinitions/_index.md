@@ -52,8 +52,8 @@ The basic definition consists of a number of entries.
  Whether the table data should be paginated or not.
  
  **Note:** as an implementation detail, and because we force final query results
- to be an instance of `illuminate\Pagination\LengthAwarePaginator` then 
- if paginated is set to false we do still paginate the results, but with a 
+ to be an instance of `illuminate\Pagination\LengthAwarePaginator`, then 
+ if paginated is set to false, we do still paginate the results, but with a 
  `maxRowCount` of 100000.
  
 ## pagerVariable

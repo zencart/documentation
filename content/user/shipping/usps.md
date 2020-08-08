@@ -1,6 +1,6 @@
 ---
 title: USPS Setup 
-description: Zen Cart USPS Setup 
+description: Shipping via United States Postal Service 
 category: shipping 
 weight: 10
 ---
@@ -22,4 +22,8 @@ In your Zen Cart admin area, go to Admin > Modules > Shipping, and click on the 
 Call USPS 1-800-344-7779 and ask them to take account out of Test (i.e.: Put it into production mode).
 
 If your module doesn't generate quotes properly after this, call USPS back and make sure they have enabled the RateCalculator on your account profile.
+
+## Troubleshooting Rate Calculations 
+
+The USPS module has a setting called "Debug Mode" which you can configure when you go to Admin > Modules > Shipping > USPS > Edit.  Turning debug on (i.e. to `Email`, `Logs` or `Screen`) will show you the raw responses from the USPS server. 
 

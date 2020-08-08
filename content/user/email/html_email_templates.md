@@ -1,6 +1,6 @@
 ---
 title: HTML Email Templates
-description: Zen Cart HTML Email Templates
+description: How HTML mail is formatted in Zen Cart 
 category: email
 weight: 10
 ---

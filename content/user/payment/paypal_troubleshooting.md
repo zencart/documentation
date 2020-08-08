@@ -1,6 +1,6 @@
 ---
 title: PayPal Troubleshooting
-description: PayPal Troubleshooting with Zen Cart 
+description: Resolving problems with PayPal 
 category: payment
 weight: 10
 ---

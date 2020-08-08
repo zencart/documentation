@@ -1,8 +1,8 @@
 ---
 title: Shipping Calculations 
-description: Zen Cart Shipping Calculations 
+description: How are shipping rates determined? 
 category: shipping
-weight: 1
+weight: 10
 ---
 
 To view the settings related to shipping, go to 

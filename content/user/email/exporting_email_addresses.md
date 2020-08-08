@@ -1,6 +1,6 @@
 ---
 title: Exporting customer email addresses
-description: Zen Cart - Exporting customer email addresses
+description: Creating a CSV of customer email addresses
 category: email
 weight: 10
 ---

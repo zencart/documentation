@@ -1,6 +1,6 @@
 ---
-title: Changing the Welcome email my customers get
-description: Changing the Welcome email my customers get
+title: Welcome email 
+description: The email sent when a new account is created 
 category: email
 weight: 10
 ---

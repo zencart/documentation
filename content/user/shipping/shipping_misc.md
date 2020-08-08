@@ -1,6 +1,5 @@
 ---
 title: Shipping Modules - Miscellaneous Questions
-description: Zen Cart Shipping Modules - Miscellaneous Questions
 category: shipping
 weight: 5
 ---
