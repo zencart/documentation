@@ -32,16 +32,10 @@ At the level where you only have categories, there are a series of action icons 
 
 These icons allow you to: 
 
-- edit the category 
-- move the category 
-- set category meta tags. 
-
-The categories edit screen allows you to:
-
-- set the category name and description
-- set the category image
-- set the category sort order 
-- restrict new product additions to the category to only specific product types if desired.  See [Product Type Restrictions](/user/products/category_product_type_restrict/). 
+- [edit a category](/user/products/category_management_admin/#editing-a-category) - update all the fields for a category 
+- [delete a category](/user/products/category_management_admin/#deleting-a-category) - remove a category 
+- [move a category](/user/products/category_management_admin/#moving-a-category) - change the category's place in the hierarchy
+- use the [category meta tags editor](/user/admin_pages/catalog/categories_meta_tags_editor) 
 
 ## Products Level 
 If you are at a level where the Categories screen only shows products, 
