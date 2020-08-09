@@ -21,22 +21,20 @@ This will list all of the commands available.
 
 For Zen Cart, we have added the following command(s).
 
-`make:defines`
+`zencart:convertdefines`
 
-## `make:defines` command
+## `zencart:convertdefines` command
 
 
-The make:defines command is used to convert legacy language files into the new php array format.
+The zencart:convertdefines command is used to convert legacy language files into the new php array format.
 
 The command accepts the following options 
 
     --file 
     --dir
     --config
-    --force 
     
 At least one of `--file`, `--dir`, `--config` must be set. 
-The `--force` command is optional.
 
 ### --file
 
@@ -75,22 +73,3 @@ e.g.
         'files' => ['file1.php', 'file2.php],
         'directories' => ['dir1', 'dir2']
     ];
-
-
-### --force
-
-The parser used to convert files will produce incorrect output in various scenarios.
-e.g. This define 
-
-```
-define('TEXT_TEST', 'All Language Files for ' . strtoupper($_SESSION['language']) . ' - Catalog/Admin');
-```
-
-will not be parsed correctly, and in general any define that contains php functions etc. will not be.
-
-The `make:defines` command will report that the file to be converted contains tokens that can not be converted,
-and conversion of that file will be suppressed.
-
-The `--force` command will override the suppression, and the new `lang.` file will be created, albeit in a form that 
-will probably generate errors.
-The generated file in question should then be manually edited to fix any problems.
