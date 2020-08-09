@@ -5,6 +5,8 @@ category: admin_pages
 weight: 12
 ---
 
+**Note:** If you are looking for the Categories screen showing categories, please [see this page](/user/admin_pages/catalog/categories/). 
+
 If you are at a level where the Categories screen only shows products, 
 there are a set of action icons on the right.
 
