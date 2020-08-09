@@ -5,6 +5,8 @@ category: admin_pages
 weight: 10
 ---
 
+**Note:** If you are looking for the Categories screen showing products, please [see this page](/user/admin_pages/catalog/categories_products/). 
+
 The Categories/Products screen is a listing screen that allows you to view the products hierarchy for your store. 
 
 In order to add products to your site, you will first need at least one category.
