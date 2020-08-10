@@ -38,3 +38,5 @@ Moving a category is done from the [Categories/Products](/user/admin_pages/catal
 
 <img src="/images/move_category_sidebar.png" alt="Moving a category" width="50%" />
 
+### Category Meta Tags 
+See [Category Meta Tags Editor](/user/admin_pages/catalog/categories_meta_tags_editor/).

@@ -81,3 +81,5 @@ Copying a product is done from the [Categories/Products](/user/admin_pages/catal
 
 <img src="/images/copy_sidebar.png" alt="Copying a product" width="50%" />
 
+### Product Meta Tags 
+See [Products Meta Tags Editor](/user/admin_pages/catalog/products_meta_tags_editor/).

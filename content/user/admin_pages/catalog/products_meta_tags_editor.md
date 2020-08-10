@@ -1,5 +1,5 @@
 ---
-title: Categories/Products > Meta Tags Editor (Products Level)
+title: Products Meta Tags Editor 
 description: Zen Cart Products Meta Tags Editor Admin Page 
 category: admin_pages
 weight: 12
