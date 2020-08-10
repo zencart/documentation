@@ -9,7 +9,7 @@ Upcoming Products are those whose Date Available setting on the
 [product editing page](/user/admin_pages/catalog/categories_products/) is set to a date in the future. 
 
 If you have created upcoming products, Zen Cart allows you to show them 
-on the main page in the optional [Upcoming Products Centerbox](/user/admin/centerboxes).
+on the main page in the optional Upcoming Products [Centerbox](/user/template/centerboxes).
 
 You may also configure upcoming products to appear in the following places: 
 

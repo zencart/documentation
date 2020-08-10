@@ -1,11 +1,11 @@
 ---
-title: I want to enable/disable New/Featured/Special/Upcoming Products sections
+title: New/Featured/Special/Upcoming Products sections
 description: Zen Cart Centerbox enable / disable
 category: admin
 weight: 10
 ---
 
-There is a "New Products for [insert month]" section on several pages, including Home Page, New-Products page, All-Products Page, (empty) Shopping Cart page, etc.  These sections are called "centerboxes".
+There is a "New Products for [insert month]" section on several pages, including Home Page, New-Products page, All-Products Page, (empty) Shopping Cart page, etc.  These sections are called [centerboxes](/user/template/centerboxes/).
 
 There are several "sets" of settings for the Centerboxes.
 
