@@ -28,6 +28,6 @@ Editing a product shows you the shipping settings, which are required to be as f
 - Product is Virtual: No, Shipping Address Required
 - Always Free Shipping: No, Normal Shipping Rules
 
-See [shipping costs](https://docs.zen-cart.com/user/products/downloadable/#additional-notes-about-downloads-and-shipping-costs) for more details. 
+See [shipping costs](/user/products/downloadable/#additional-notes-about-downloads-and-shipping-costs) for more details. 
 
 

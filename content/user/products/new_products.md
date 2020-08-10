@@ -8,8 +8,8 @@ weight: 10
 Zen Cart has a number of ways for you to show off new products: 
 
 - the built in New Products Page, configured under [Configuration > New Listing](/user/admin_pages/configuration/configuration_newlisting/).  This page appears when you navigate to `YOURSITE.com/index.php?main_page=products_new`.
-- the optional [New Products Sidebox](/user/template/remove_rearrange_sideboxes/) 
-- the optional [New Products Centerbox](/user/admin/centerboxes)
+- the optional New Products [Sidebox](/user/template/sideboxes/) 
+- the optional New Products [Centerbox](/user/template/centerboxes/)
 
 You may also configure new products to appear in the following places: 
 

@@ -2,7 +2,7 @@
 title: Miscellaneous Sidebox Questions 
 description: Zen Cart Using Sideboxes 
 category: sideboxes
-weight: -1
+weight: 2 
 ---
 
 {{< misc >}} 
