@@ -21,30 +21,35 @@ SSL encrypts communications between your customer's browser and your webserver. 
 
 **DO I NEED SSL?**  
 
-If your site is collecting credit card info directly in a page inside your store (ie: not redirecting to a bank or payment gateway site to collect card info for payment) then YES you absolutely MUST use SSL to protect your customers' payment information.  
+Yes, you need SSL. 
 
-However, the best practice now is for all sites to run SSL all the time, 
-whether or not they are handling payment data. 
+Years ago, there was a line of thinking that if your site did payment collection offsite (e.g. PayPal Standard), you didn't really need SSL.  
+
+Even back then, this was bad advice.  
+
+Here's why: without an SSL certificate, traffic to and from your website transits the Internet in clear plain text.  So anyone who's watching can see what's being sent. 
+
+- Without an SSL certificate, your admin credentials are transmitted in plain text, meaning anyone can see them and get access to your admin panel. 
+- Without an SSL certificate, your customer's personal information and purchase data are transmitted in plain text, meaning anyone who's watching can record these details. 
+
+Finally, SSL is considered a ranking factor by Google, and many browsers
+now warn customers not to purchase from sites that don't have SSL. 
+
+See that ugly warning? 
+
+**Don't let this be you!**
+
+<img src="/images/insecure_cart.png" alt="Insecure cart" width="50%" />
 
 **HOW DOES ZEN CART IMPLEMENT MY SSL?**  
 
-If you have SSL enabled in your hosting account (that's something you arrange with your hosting company directly), then you can tell Zen Cart to use your SSL URL, and then Zen Cart will automatically use that SSL URL when presenting pages dealing with sensitive information like login, account-creation, password changes, checkout, and even your admin pages.  
+Arrange an SSL certificate with your hosting company, and then update your `configure.php` files to use your SSL address (the one starting with `https` rather than `http`). 
 
-The modern way to use SSL is to have your entire site run as SSL, so the 
-`HTTP_SERVER` uses the `https` URL.  In the past,
-there was a separate HTTPS_SERVER for SSL, and 
-the `HTTP_SERVER` would serve pages over `http`.
-The reasoning was activities like browsing the catalog did not 
-require SSL, since there was no sensitive information exchanged. 
-This is no longer considered a good practice.
+`includes/configure.php`: update your `HTTP_SERVER` and `HTTPS_SERVER` defines. 
 
-**BUT MY PAYMENTS HAPPEN OFFSITE.**  
+`admin/includes/configure.php`:  update your `HTTP_SERVER`, `HTTP_CATALOG_SERVER` and `HTTPS_CATALOG_SERVER` defines.  If it exists, update your `HTTPS_SERVER` define.
 
-If your payment-collection is ALWAYS handled offsite via another gateway that uses SSL on its site, then *your* site does not "technically" require SSL insomuch as it's not handling credit card details. 
-
-But if you don't have SSL enabled on your site then some spy could still steal your customers' passwords and names and addresses and email addresses when they fill in various fields on your store's site. They could then use that information to login to their accounts and impersonate them. While they couldn't make purchases using their private banking/creditcard data (since ZC doesn't store any banking/card data), they could request a cancellation of an order, or initiate communications with you under the customer's name while not actually being the customer, etc.  
-
-Adding SSL to your site prevents the ability for such identity theft.  
+You want your *whole site* to be running SSL.  
 
 **HOW DO I INSTALL A CERTIFICATE?**
 
