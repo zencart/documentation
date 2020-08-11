@@ -15,11 +15,13 @@ Quite often there's a configuration switch that allows you to make this change w
 
 There is an [All Configs](/user/admin_pages/configuration/all/) link shown at the top of the [storeowner documentation page](/user/).  It shows all the configuration values which can be set under `Admin > Configuration`.  Click this link, and then search on the page it opens for "New Products" and you'll find a setting that looks like this:
 
-<h2 id="show_new_products_on_main_page">Show New Products on Main Page</h2>
+<div style="margin-left: 20px;"> 
+<div style="font-size: 2rem; font-weight:500; line-height:1.2; margin-bottom:10px;">Show New Products on Main Page</div>
 
 <div class='indent'>Key: <b>SHOW_PRODUCT_INFO_MAIN_NEW_PRODUCTS</b><br />
 Path: <b>Configuration > Index Listing</b><br />
 Description: Show New Products on Main Page<br />0= off or set the sort order</div>
+</div>
 
 So this means that in order to turn the display of new products on the main page off, you must go to the `Configuration > Index Listing`.  In your admin, go to that page.  Find "Show New Products on Main Page", and edit this value, setting it to 0.  
 
@@ -45,11 +47,5 @@ Explore these pages and investigate a topic that is of interest to you:
 - [All Configuration Settings](/user/admin_pages/configuration/all/)
 - [All Admin Menus](/user/admin_pages/menu_sections/)
 - [Top FAQs](/user/all_time_favorites/) 
-
-### Learning Trails 
-- Learn about Overrides: 
-    - [Basic terms](/user/first_steps/basic_terms/)
-    - [Template default and default files](/user/first_steps/overrides/) 
-    - [Overrides for new users](/user/new_user_topics/overrides)
-    - [Template Overrides System](/user/template/template_overrides/)
+- [Learning Trails](/user/first_steps/learning_trails) 
 
