@@ -9,4 +9,4 @@ weight: 10
 
 Sideboxes display is controlled by [Admin > Tools > Layout Boxes Controller](/user/admin_pages/tools/layout_boxes_controller/). 
 
-You can also turn sideboxes off on a per page basis by modifying the file `includes/templates/YOURTEMPLATE/common/tpl_main_page.php`.
+You can also turn sideboxes off on a per page basis by modifying your template.  See [suppressing sidebox display](/user/sideboxes/suppressing_sidebox_display/) for details. 

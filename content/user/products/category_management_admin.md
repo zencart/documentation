@@ -33,7 +33,7 @@ It is best to remove or move any sub-categories or products under a category you
 <img src="/images/delete_category_sidebar.png" alt="Deleting a category" width="50%" />
 
 ### Moving a Category 
-Moving a category changes its place in the hiearchy.  
+Moving a category changes its place in the hierarchy.  
 Moving a category is done from the [Categories/Products](/user/admin_pages/catalog/categories_products/) screen using the purple M icon. 
 
 <img src="/images/move_category_sidebar.png" alt="Moving a category" width="50%" />
