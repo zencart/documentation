@@ -26,6 +26,8 @@ layout: docs
 
 * [Forum issues](/user/zen_cart_forum/forum_issues/) - I can't post to the Zen Cart forum.
 
+* [Getting Started](/user/first_steps/learning_trails/) - How do I get started with Zen Cart? 
+
 * [Known Bugs in Zen Cart (by version)](/user/about_us/known_bugs/) - has my bug already been fixed?
 
 * [Installing Zen Cart](/user/first_steps/how_do_i_install/) - how do I install Zen Cart?

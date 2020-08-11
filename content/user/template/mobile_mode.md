@@ -7,11 +7,7 @@ weight: 10
 
 Responsiveness - the ability to display properly on not just a desktop computer, but also mobile devices like phones and tablets - is a critical feature of modern templates. 
 
-You frequently want to do different things depending on whether your
-site is being viewed in mobile or on the desktop.  
-
-How you determine your environment will depend on the template you 
-are running, and what tools are available with that template. 
+Determining the kind of device being used can be done in different ways.  How you do it will depend on the template you are running, and what tools are available with that template. 
 
 The `responsive_classic` template, as well as many other templates,
 builds in the [Mobile_Detect](http://mobiledetect.net/) library.  

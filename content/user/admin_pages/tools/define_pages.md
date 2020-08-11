@@ -5,7 +5,7 @@ category: admin_pages
 weight: 110
 ---
 
-Define pages are HTML content which can be edited by storeowners using 
+[Define pages](/user/template/define_pages) are HTML content which can be edited by storeowners using 
 the admin interface provided by this page. 
 
 Define Pages Editor gives you an option to change the content of the following pages:
@@ -31,6 +31,8 @@ Define Pages Editor gives you an option to change the content of the following p
 - Privacy Notice - define_privacy.php
 
 - Shipping & Returns - define_shippinginfo.php
+
+- Shopping Cart - define_shopping_cart.php  (since 1.5.7)
 
 - Site Map - define_site_map.php
 

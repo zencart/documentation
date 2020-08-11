@@ -4,15 +4,14 @@ description: Zen Cart - Databases
 category: first_steps
 weight: 10
 ---
-The database is a collection of tables. Tables are like spreadsheets, storing data in rows and columns, related to whatever the structure of that table is for. For customers, it means email addresses, passwords, etc. For address books, it means all the address info for each customer. For orders, all the order details. For products, the details of each aspect of each product. And so on. You could look at a database as a multi-sheet spreadsheet, but way more optimized and efficient in how it automatically handles indexing and storage/retrieval.  
+
+If you are completely new to databases, please review the [basics of Zen Cart](/user/first_steps/components/). 
 
 ## Where do I find the database files?
 
 A database is not stored in any files that are directly accessible to you as a storeowner. Instead, you access it via phpMyAdmin or similar tools, and query (request) data from the database according to what you wish to read from it.  In the case of taking a 
 [backup](/user/running/backup/). 
 you're exporting the entire database content into one great big file that can be used for offline storage, or restoring if needed. That's the only way *you* will ever see the database as "a file".  
-
-(Aside: Technically speaking, it *does* store everything in "files", but they're machine-code files, and meaningless to you unless you're a SQL and Server guru with super-advanced abilities to understand 0s and 1s with your eyes closed.)  
 
 ## How are databases connected to Zen Cart?
 
@@ -21,7 +20,8 @@ When installing Zen Cart, you tell Zen Cart which database to store its data in.
 ## How many databases does Zen Cart use?
 
 Generally speaking, a Zen Cart store only uses **one** database at a time.**  
-SO THAT MEANS YOU SHOULD NEVER RESTORE or IMPORT a different database into your live store's database unless you're absolutely certain that you wish to WIPE OUT the existing data!!!**  
+
+**THIS MEANS YOU SHOULD NEVER RESTORE or IMPORT a different database into your live store's database unless you're absolutely certain that you wish to WIPE OUT the existing data!!!**  
 
 **Exceptions:** 
 
@@ -30,3 +30,14 @@ Some (ie: most "good") hosting accounts allow multiple databases without additio
 So, you could have `store1_` as a prefix to all the table-names for that store, and `zen_` as a prefix to the tables for another store, and so on. That's why the table-prefixes exist.  
 
 Some hosting companies have auto-installers that quickly dump a ZC site onto someone's account. Instead of setting up multiple databases, those usually engage the `DB_PREFIX` as `zen_` by default so they can keep the tables for the store separate from the tables they auto-install for a blog or a forum or a gallery or whatever.  While this makes managing the database more difficult for the storeowner, it makes the hosting company's auto-installer easier for them because it means they get to cheap-out on the resources you use.
+
+## How many tables are in the Zen Cart database? 
+
+As of Zen Cart 1.5.7, there are 94 tables in the Zen Cart database. 
+You can see a list of them by looking at the file `includes/database_tables.php`. 
+
+## What is the schema for Zen Cart? 
+
+Recent releases have a schema file stored in the documentation.  Go to the [Zen Cart Schema page](/dev/schema/) to find the version which corresponds to your Zen Cart version.   If you're not sure what version you are running, take a look at the FAQ [how to find your Zen Cart version](/user/first_steps/version/). 
+
+
