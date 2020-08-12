@@ -25,6 +25,6 @@ b) Listing pages, such as specials, which show multiple products.
 
 c) [Define pages](/user/template/define_pages/), such as the Shipping Information page, which display content created by the storeowner.  A fixed set of define pages is provided. 
 
-d) [EZ-Pages](/user/ezpages/what_are_ezpages/), which display content according to the needs of the storeowner; an unliminted number of EZ-Pages may be created.  
+d) [EZ-Pages](/user/ezpages/what_are_ezpages/), which display content according to the needs of the storeowner; an unlimited number of EZ-Pages may be created.  
 
 In addition, you may add pages to your store by [creating a new page](/user/customizing/add_pages#create-a-new-page).

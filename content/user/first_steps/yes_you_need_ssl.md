@@ -43,13 +43,25 @@ See that ugly warning?
 
 **HOW DOES ZEN CART IMPLEMENT MY SSL?**  
 
-Arrange an SSL certificate with your hosting company, and then update your `configure.php` files to use your SSL address (the one starting with `https` rather than `http`). 
+Arrange an SSL certificate with your hosting company, and then update your `configure.php` files to use your SSL URL address (the one starting with `https` rather than `http`) for the value (second parameter) of each of these defines. 
 
 `includes/configure.php`: update your `HTTP_SERVER` and `HTTPS_SERVER` defines. 
 
 `admin/includes/configure.php`:  update your `HTTP_SERVER`, `HTTP_CATALOG_SERVER` and `HTTPS_CATALOG_SERVER` defines.  If it exists, update your `HTTPS_SERVER` define.
 
-You want your *whole site* to be running SSL.  
+For example, if you have 
+
+```
+define('HTTP_SERVER','http://mysite.com'); 
+```
+
+change this to 
+
+```
+define('HTTP_SERVER','https://mysite.com'); 
+```
+
+Change all these defines, even the ones that start with `HTTP_`.  Why?  Because you want your *whole site* to be running SSL.  
 
 **HOW DO I INSTALL A CERTIFICATE?**
 
