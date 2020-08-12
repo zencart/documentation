@@ -33,7 +33,7 @@ The sideboxes that come with the default Zen Cart include:
 
 ![Categories Sidebox](/images/sidebox_categories.png)
    
-![Document Categories Sidebox](/images/sidebox_documents_categories.png Document)
+![Document Categories Sidebox](/images/sidebox_documents_categories.png)
 
 * **Currencies**
 
