@@ -1,10 +1,9 @@
-***
+---
 title: What sideboxes are available? 
 description: Zen Cart Sidebox possibilities
 category: sideboxes
 weight: 10
-
-***
+---
 
 You can see all the possible sideboxes by navigating to [Admin > Tools > Layout Boxes Controller](/user/admin_pages/tools/layout_boxes_controller/). 
 
@@ -14,62 +13,89 @@ Sideboxes may be configured for display on the left or right hand side of your s
 
 The sideboxes that come with the default Zen Cart include:
 
-* **[Banners](user/admin/banner_ads/)**
+* **Banners**
 
-    Banner Box<br>![Banner Box Sidebox](/images/sidebox_banner_box.png Banner Box Sidebox)
 
-    Banner Box 2<br>![Banner Box 2 Sidebox](/images/sidebox_banner_box2.png Banner Box 2)
+    
+    ![Banner Box Sidebox](/images/sidebox_banner_box.png)
 
-    Banners Box All<br>![Banner Box All Sidebox](/images/sidebox_banner_box_all.png Banner Box All Sidebox)
+    
+    ![Banner Box 2 Sidebox](/images/sidebox_banner_box2.png)
 
-* **Best Sellers**<br>![Bestsellers Sidebox](/images/sidebox_bestsellers.png Bestsellers Sidebox)
+    
+    ![Banner Box All Sidebox](/images/sidebox_banner_box_all.png)
 
-* **Categories**<br>![Categories Sidebox](/images/sidebox_categories.png Categories Sidebox)
+* **Best Sellers**
 
-   [Document Categories](user/sideboxes/sidebox_misc/#how-do-i-show-my-documents-in-their-own-sidebox)<br>![Document Categories Sidebox](/images/sidebox_documents_categories.png Document Categories Sidebox)
+![Bestsellers Sidebox](/images/sidebox_bestsellers.png)
 
-* **Currencies**<br>![Currencies Sidebox](/images/sidebox_currencies.png Currencies Sidebox)
+* **Categories**
 
-* **EZPages** <br>![EZpages Sidebox](/images/sidebox_ezpages.png Ezpage Sidebox)
+![Categories Sidebox](/images/sidebox_categories.png)
+   
+![Document Categories Sidebox](/images/sidebox_documents_categories.png Document)
 
-* **Information** <br>![Information Sidebox](/images/sidebox_information.png Information Sidebox)
+* **Currencies**
 
-    More Information<br>![More Information Sidebox](/images/sidebox_more_information.png More Information Sideboxf)
+![Currencies Sidebox](/images/sidebox_currencies.png)
 
-* **Languages**<br>![Languages Sidebox](/images/sidebox_languages.png Languages Sidebox)
+* **EZPages** 
 
-* **Manufacturers**<br>![Manufacturers Sidebox](/images/sidebox_manufacturers.png Manufacturers Sidebox)
+![EZpages Sidebox](/images/sidebox_ezpages.png)
 
-    Manufacturers Info<br>![Manufacturers Sidebox](/images/sidebox_manufacturers_info.png Manufacturers Info Sidebox)
+* **Information** 
 
-* **Order History**<br>![Order History Sidebox](/images/sidebox_order_history.png Order History Sidebox)
+![Information Sidebox](/images/sidebox_information.png)
+
+![More Information Sidebox](/images/sidebox_more_information.png)
+
+* **Languages**
+
+![Languages Sidebox](/images/sidebox_languages.png)
+
+* **Manufacturers**
+
+![Manufacturers Sidebox](/images/sidebox_manufacturers.png)
+
+![Manufacturers Sidebox](/images/sidebox_manufacturers_info.png)
+
+* **Order History**
+
+![Order History Sidebox](/images/sidebox_order_history.png)
 
 * **Products**
 
-    Featured Products <br>![Featured Products Sidebox](/images/sidebox_featured.png Featured Products Sidebox)
+![Featured Products Sidebox](/images/sidebox_featured.png)
 
-    Specials<br>![Specials Sidebox](/images/sidebox_specials.png Specials Sidebox)
+![Specials Sidebox](/images/sidebox_specials.png)
 
-    New Products<br>![New Products Sidebox](/images/sidebox_new_products.png New Products Sidebox)
+![New Products Sidebox](/images/sidebox_new_products.png)
 
-    Product Notifications<br>![Product Notifications Sidebox](/images/sidebox_product_notifications.png Product Notifications Sidebox)
+![Product Notifications Sidebox](/images/sidebox_product_notifications.png)
 
-* **Reviews**<br>![Reviews Sidebox](/images/sidebox_reviews.png Reviews Sidebox)
+* **Reviews**
 
-    Write Review<br>![Write Review Sidebox](/images/sidebox_write_review.png Write Review Sidebox)
+![Reviews Sidebox](/images/sidebox_reviews.png)
 
-* **Search**<br>![Search Sidebox](/images/sidebox_search.png Search Sidebox)
+![Write Review Sidebox](/images/sidebox_write_review.png)
+
+* **Search**<br>
+
+![Search Sidebox](/images/sidebox_search.png)
 	
-    Search Header <br>
-  ![Search in the Header](/images/sidebox_search_header.png Search in the Header)
+![Search in the Header](/images/sidebox_search_header.png)
 	
-* **Shopping Cart**<br>![Shopping Cart Sidebox](/images/sidebox_shopping_cart.png Shopping Cart Sidebox)
+* **Shopping Cart**
+
+![Shopping Cart Sidebox](/images/sidebox_shopping_cart.png)
 	
-* **Who's Online**<br>![Who's Online Sidebox](/images/sidebox_whos_online.png Who's Online Sidebox)
+* **Who's Online**
+
+![Who's Online Sidebox](/images/sidebox_whos_online.png)
 	
 * **Music**
 
-    Music Genres <br>![Music Genres Sidebox](/images/sidebox_music_genres.png Music Genres Sidebox)
+![Music Genres Sidebox](/images/sidebox_music_genres.png)
 
-    Record Companies<br>![Record Companies Sidebox](/images/sidebox_record_companies.png Record Companies Sidebox)
+![Record Companies Sidebox](/images/sidebox_record_companies.png)
 
