@@ -14,13 +14,18 @@ Take a look at [exploring the documentation](/user/first_steps/documentation/) t
 - [Components of Zen Cart](/user/first_steps/components)
 - [What is an SSL certificate?](/user/security/ssl_cert/)
 
+## Learn about installing Zen Cart 
+
+- [You need an SSL certificate](/user/first_steps/yes_you_need_ssl/)
+- [How do I install Zen Cart?](/user/first_steps/how_do_i_install/)
+- [Store setup checklist](/user/first_steps/basic_checklist/)
+
 ## Learn about Zen Cart Templates
 - [What is a Template?](/user/template/what_is_a_template/)
 - [Basic Template Customizations](/user/template/basic_customizations/)
 - [Responsiveness](/user/template/mobile_mode/) 
 - [Sideboxes](/user/template/sideboxes/) 
 - [CSS](/user/template/stylesheet/)
-
 
 ## Learn about Zen Cart Overrides
 - [Basic terms](/user/first_steps/basic_terms/)
@@ -30,6 +35,7 @@ Take a look at [exploring the documentation](/user/first_steps/documentation/) t
 
 ## Learn the Zen Cart Admin
 - [What's the purpose of the admin?](/user/admin/why_admin/)
+- [Where is the backend?](/user/first_steps/where_is_backend/)
 - [How do I rename my admin folder?](/user/running/rename_admin/) 
 - [Browse the Admin menu sections](/user/admin_pages/menu_sections/)
 

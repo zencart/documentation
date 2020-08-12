@@ -7,6 +7,10 @@ weight: 10
 
 If you understand that you need an SSL certificate, you can skip this article.
 
+If you're not sure what an SSL certificate is, please review [what is an SSL certificate](/user/security/ssl_cert/) first.
+
+<hr>
+
 Many storeowners are uncertain whether they should add SSL to their site, citing various reasons, including cost and complexity of setup.  
 
 **MODERN ANSWER: Yes, you should use SSL on your site. Not only does it lend to protecting sensitive information, but it is also becoming more and more important for good search engine ranking nowadays.**  
