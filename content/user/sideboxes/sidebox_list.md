@@ -5,13 +5,11 @@ category: sideboxes
 weight: 10
 ---
 
+FIXME - work in progress
+
 You can see all the possible sideboxes by navigating to [Admin > Tools > Layout Boxes Controller](/user/admin_pages/tools/layout_boxes_controller/). 
 
-*Examples:* the Information sidebox shows built-in pages like shipping, privacy, contact us, whereas the More Information sidebox shows define pages 2, 3 and 4.
-
-Sideboxes may be configured for display on the left or right hand side of your site; one is the search box for the header. They may only appear after certain actions or on certain pages.
-
-The sideboxes that come with the default Zen Cart include:
+The sideboxes that come with built-in to Zen Cart include:
 
 * **Banners**
 
@@ -43,11 +41,21 @@ The sideboxes that come with the default Zen Cart include:
 
 ![EZpages Sidebox](/images/sidebox_ezpages.png)
 
-* **Information** 
+## Information
 
-![Information Sidebox](/images/sidebox_information.png)
+<br>
+<div style="display:block;">
+   <div style="float: left; width:25%">
+      <img alt="Information Sidebox" src="/images/sidebox_more_information.png" />
+   </div>
+   <div style="float: left; margin-left: 20px; width: 70%">
+      The More information sidebox presents links to extra pages page_2, page_3 and page_4.  Additional links may optionally be added by editing the sideboxes code in <code>includes/modules/sideboxes/YOURTEMPLATE/more_information.php</code>. 
+   </div>
+</div>
+<br clear="all">
+<br>
 
-![More Information Sidebox](/images/sidebox_more_information.png)
+<!-- Information sidebox image missing --> 
 
 * **Languages**
 
