@@ -12,10 +12,9 @@ This screenshot below shows the top of a page in a Zen Cart storefront on a desk
 
 Legend:
 
-- a: page header
-- b: left sidebox  
-- c: centerbox 
-- d: right sidebox 
+- a: page header - see [header](/user/template/header/) for more detail
+- b,d: left and right sidebox - see [sideboxes](/user/sideboxes/) for more detail 
+- c: centerbox  - see [centerboxes](/user/template/centerboxes/) for more detail 
 
 This screenshot below shows the bottom of a page in a Zen Cart storefront. 
 The entire width of the page is taken up by the footer.
