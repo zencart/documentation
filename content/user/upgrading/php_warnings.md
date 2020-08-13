@@ -1,5 +1,6 @@
 ---
-title: Fixing PHP Warnings and Deprecated messages 
+title: PHP Warnings and Deprecated messages after upgrading
+description: How to fix the most common PHP7 messages
 category: upgrading 
 weight: 10
 ---
@@ -43,4 +44,34 @@ to
 ```
 function __construct() 
 ```
+
+### Each deprecated
+
+```
+PHP Deprecated: The each() function is deprecated. This message will be suppressed on further calls in /Users/sp/Developer/zc157/includes/functions/extra_functions/sfl_functions.php on line 160.
+```
+
+Change 
+
+```
+while (list($products_id, ) = each($contents)) {
+```
+
+to 
+```
+foreach(array_keys($contents) as $products_id) {
+```
+
+If the code looks more like 
+
+```
+while(list($key, $value) = each($array))
+```
+
+change to 
+
+```
+foreach($array as $key => $value)
+```
+
 
