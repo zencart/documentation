@@ -315,7 +315,9 @@ Some developers believe this method should not be used since it is less self-doc
 
 ### Event Aliasing 
 
-Sometimes notifier names are changed (because of a typo, for example, or to make them more self-documenting).  When this happens, rather than just remove the old notifier, the recommended practice since Zen Cart 1.5.8 has been to alias the old name.  See the `$observerAliases` variable in `includes/./classes/traits/NotifierManager.php`.  This means older code which uses the old notifier name will still work. 
+Sometimes notifier names are changed (because of a typo, for example, or to make them more self-documenting).  When this happens, rather than just remove the old notifier, the recommended practice since Zen Cart 1.5.7 has been to alias the old name.  
+
+See the `$observerAliases` variable in `includes/./classes/traits/NotifierManager.php`.  This means older code which uses the old notifier name will still work. 
 
 ### Plugins which support Notifier Use 
 
