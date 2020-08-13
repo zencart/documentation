@@ -4,6 +4,8 @@ category: admin_pages
 weight: 240 
 ---
 
+See <a href="/user/template/define_pages/">Define Pages</a> for instructions on use.
+
 <h2 id="define_main_page_status">Define Main Page Status</h2>
 
 <div class='indent'>Key: <b>DEFINE_MAIN_PAGE_STATUS</b><br />
