@@ -42,5 +42,5 @@ Just because you run an SSL on your site doesn't mean your cPanel access is secu
 
 **Don't let this be you!**
 
-<img src="/images/insecure_cpanel.png" alt="Insecure cPanel" width="40%" />
+<img src="/images/cpanel_insecure.png" alt="Insecure cPanel" width="40%" />
 

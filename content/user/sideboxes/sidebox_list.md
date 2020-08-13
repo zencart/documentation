@@ -49,7 +49,7 @@ The sideboxes that come with built-in to Zen Cart include:
       <img alt="Information Sidebox" src="/images/sidebox_more_information.png" />
    </div>
    <div style="float: left; margin-left: 20px; width: 70%">
-      The More information sidebox presents links to extra pages page_2, page_3 and page_4.  Additional links may optionally be added by editing the sideboxes code in <code>includes/modules/sideboxes/YOURTEMPLATE/more_information.php</code>. 
+      The More Information sidebox presents links to extra pages page_2, page_3 and page_4.  Additional links may optionally be added by editing the sideboxes code in <code>includes/modules/sideboxes/YOURTEMPLATE/more_information.php</code>. 
    </div>
 </div>
 <br clear="all">
