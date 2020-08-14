@@ -14,13 +14,17 @@ So what are some alternative options?
 
 ### Create content using EZ-Pages 
 
-The Zen Cart [EZ-Pages](/user/ezpages/) system allows you to create content using a secure, controlled facility.  This content can then be displayed on your site. 
+The Zen Cart [EZ-Pages](/user/ezpages/) system allows you to create content using a secure, controlled facility.  This content can then be displayed on your site.   You can even organize your pages into chapters and have a table of contents. 
 
 ### Create and send a newsletter regularly
 
 Tools like MailChimp have inexpensive offerings for small businesses that allow you to stay in touch with your customers.  You can even preserve your content in a [campaign archive](https://mailchimp.com/help/about-email-campaign-archives-and-pages/) so customers who come along after you sent it can still see it. 
 
+### Use a static site generator 
+
+Static Site Generators (SSGs) like [Hugo](https://gohugo.io/) and [Jekyll](https://jekyllrb.com/) allow you to build a sophisticated website using a tool, and output raw HTML which can run without a database or code interpretation.  This is much less risky than a dynamic application like WordPress. 
+
 ### Create a blog offsite
 
-Really committed to a blog, are you?  Instead of self-hosting a WordPress blog, use wordpress.com and let them host it.  
+Really committed to a blog, are you?  Instead of self-hosting a WordPress blog, use [wordpress.com](https://wordpress.com/) and let them host it.  There are, of course, other hosted blogging services like [Blogger](https://www.blogger.com/) or [Tumblr](https://www.tumblr.com/). 
 
