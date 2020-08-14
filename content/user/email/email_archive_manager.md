@@ -12,4 +12,4 @@ weight: 10
 - You want the historical record of emails that went out
 
 To use the Email Archive Manager, you must enable email archiving in 
-[Admin > Configuration > Email Options](/user/admin_pages/configuration/configuration_emailoptions#email_archiving_active)
+[Admin > Configuration > Email Options](/user/admin_pages/configuration/configuration_emailoptions#email_archiving_active).

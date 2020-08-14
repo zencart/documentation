@@ -8,7 +8,7 @@ weight: 10
 
 ## I need to make a post to the forum but cannot.
 
-1.  The forum can be found at: [https://www.zen-cart.com/forum.php](https://www.zen-cart.com/forum.php)
+1.  The forum can be found at: [https://www.zen-cart.com/forum.php](https://www.zen-cart.com/forum.php).
 2.  New forum members must complete their registration by confirming their email address. When you register, the forum will send an email to the email address you entered. That email will contain a link you need to click in order to confirm your address. Alternate methods are discussed in the email itself in case the link cannot be "clicked" in your email program.
 3.  Once you have confirmed your email address via the instructions in the email you receive, you will have access to the forum.
 

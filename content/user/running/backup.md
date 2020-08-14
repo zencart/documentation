@@ -25,7 +25,7 @@ Having this gives you not only an up-to-date set of files on your server, but al
 
 2\. Select your database from the dropdown (usually on the left side), so that its tables are displayed (they usually display on the right side).  
 
-3\. Click on the Export tab. (**NOTE:** Be sure you've already selected your database from the pulldown BEFORE clicking on the Export tab)  
+3\. Click on the Export tab. **NOTE:** Be sure you've already selected your database from the pulldown BEFORE clicking on the Export tab
 
 4\. Many of the default settings are fine; however, choosing the "Custom" export type will allow you to optimize your backup by selecting the following ("tick" here means "tick the checkbox" or "select the option"):
 
