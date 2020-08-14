@@ -26,7 +26,7 @@ Unit tests can be run using
 
 `composer tests`
 
-in the root directory of your ZenCart install.
+in the root directory of your Zen Cart install.
 
 Currently, there are no local configuration requirements needed to run unit tests. 
 
@@ -36,7 +36,7 @@ Automated browser tests can be run using
 
 `composer dusk`
 
-in the root directory of your ZenCart install.
+in the root directory of your Zen Cart install.
 
 There are configuration requirements needed to run browser tests on your local machine.
 
