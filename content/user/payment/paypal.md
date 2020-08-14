@@ -113,7 +113,7 @@ These are the common configuration errors causing IPN processing to fail:
     *   For sandbox testing, also open: ipn.sandbox.paypal.com
 10.  You may find it helps to Uninstall ("remove") and Re-Install the payment module in Zen Cart admin.
 11.  When you use two PayPal accounts to make a simulation, make sure you're using the right account.
-12.  Check your PayPal profile settings on [paypal.com](http://paypal.com/)
+12.  Check your PayPal profile settings on [paypal.com](http://paypal.com/):
 
 *   You need your **Instant Payment Notification preferences** ON
 

@@ -88,7 +88,7 @@ However, some customers are not given this option, and are required to create a 
 **Situation:**  
 Customer is attempting to complete a purchase and paying via PayPal. They login, provide payment details, and click the Pay Now or Continue button, and they are greeted with the following message and taken back to the PayPal login page, and no details are recorded in your store:  
 
-![](/images/ppfmferror.jpg)  
+![Paypal Error - fraud](/images/ppfmferror.jpg)  
 
 **The Reason:** You have your PayPal account configured to use Fraud Management Filters, and the customer's transaction has triggered one of your rules which you've configured for a "Deny" response.  
 

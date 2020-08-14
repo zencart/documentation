@@ -35,3 +35,6 @@ Define Pages Editor gives you an option to change the content of the following p
 
 - Site Map - define_site_map.php
 
+![Define Pages Editor](/images/define_pages_editor.png)
+
+Define pages content and links to define pages may be enabled or disabled in [Admin > Configuration > Define Page Status ](/user/admin_pages/configuration/configuration_definepagestatus/). 

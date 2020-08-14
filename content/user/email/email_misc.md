@@ -8,6 +8,11 @@ weight: -1
 {{< misc >}}
 
 ---
+### How do I make Zen Cart send email through GMail? 
+
+This topic is covered in [Advanced Email Troubleshooting - GMail](/user/email/advanced_email_troubleshooting_2/#google-mail--gmail). 
+
+---
 ### How can I add a message to my order confirmation emails? 
 
 In Zen Cart 1.5.6, a plugin called [Order Message](https://www.zen-cart.com/downloads.php?do=file&id=2200) was pulled into the Zen Cart core.  To use it, 

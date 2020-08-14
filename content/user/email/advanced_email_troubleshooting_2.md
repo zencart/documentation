@@ -7,11 +7,11 @@ weight: 10
 
 FIXME review content
 
-Zen Cart's email infrastructure is largely dependent on the services available to the computer operating as your webserver. This includes internet connection issues, available ports, as well as PHP configuration options and the programs/services running on your server.
+Zen Cart's email infrastructure is largely dependent on the services available to your webserver. This includes internet connection issues, available ports, as well as PHP configuration options and the programs/services running on your server.
 
 ## Zen Cart Email Infrastructure Explained
 
-Here's how it works:
+Here's how Zen Cart's email interface works:
 
 1.  _Admin_ and _Store_ both use the same infrastructure.
 2.  Zen Cart uses PHPMailer for sending mail.
@@ -24,13 +24,8 @@ Here's how it works:
     *   If the transport is SMTP/SMPTAUTH, then direct communication with the specified mailserver is initiated. **SMTPAUTH IS THE RECOMMENDED TRANSPORT.**
     *   If the transport is "PHP", then the server's PHP configuration takes over entirely, using whatever PHP has been configured to use in the server's php.ini settings.
     *   If the transport is a sendmail function, then the server attempts to use the sendmail program on your webserver.
-5.  If email archiving is enabled and no error message is encountered (ie: the email is delivered without being rejected by the sending server), the email is stored to the archive table.
-6.  If an error occurs, then the error details are logged into the /logs/ folder as "myDEBUG-xxxxxx.log" files.  
-See [reading a myDEBUG log](/user/troubleshooting/debug_logs/). 
-
-Done.
-
-That's it.
+5.  If email archiving is enabled and no error message is encountered (ie: the email is delivered without being rejected by the sending server), the email is stored to the `email_archive` database table. Note that if you wish to use email archiving, you probably also want to use the [Email Archive Manager](/user/email/email_archive_manager/). 
+6.  If an error occurs, then the error details are logged into the /logs/ folder as "myDEBUG-xxxxxx.log" files.  See [reading a myDEBUG log](/user/troubleshooting/debug_logs/). 
 
 ## Prerequisites
 
@@ -67,7 +62,7 @@ If the email doesn't get to its destination, then usually the problem is a misco
 
 ### Advanced Email Debugging
 
-If you are troubleshooting problems with SMTP or SMTPAUTH and want to see the exact responses from the SMTP server handshake, you can do the following to cause the email server conversation to be displayed on-screen during delivery. THIS IS ABSOLUTELY UNSUITABLE FOR USE ON A LIVE STORE because visitors to your site have no business seeing any of the information displayed, and some of the information could be misused by those with malicious intent. USE WITH CAUTION!!!
+If you are troubleshooting problems with SMTP or SMTPAUTH and want to see the exact responses from the SMTP server handshake, you can do the following to cause the email server conversation to be displayed on-screen during delivery. THIS IS ABSOLUTELY UNSUITABLE FOR USE ON A LIVE STORE because visitors to your site have no business seeing any of the information displayed, and some of the information could be misused by those with malicious intent. USE WITH CAUTION!
 
 To enable email-debug-output, create a PHP file at either of these locations, depending on whether you're testing email on the storefront side or on the admin side, respectively: `includes/extra_datafiles/email_debug.php` or `YOURADMIN/includes/extra_datafiles/email_debug.php`. 
 
@@ -108,11 +103,11 @@ Some people prefer to use resources such as Gmail or Yahoo! Mail for sending the
 
 **NOTE:** If you are self-hosting on a local PC server for development purposes, remember that your ISP (internet provider) usually blocks outgoing traffic on port 25, which is commonly used for email. Anything on port 25 destined for any server other than the ISP's own email server is generally blocked in order to control spam. You will need to choose another port (usually 587 or sometimes 465) and use SMTPAUTH and specify the correct SMTP server credentials.
 
-See here: for[a list of common server SMTP addresses](http://www.arclab.com/products/amlc/list-of-smtp-and-pop3-servers-mailserver-list.html) if you're using a "free" email service. (Note: many customers prefer that you have a legitimate email address matching your domain name, not something like "billys-store@gmail.com" which is rather less authentic-looking. Build credibility with your customers by getting proper email addresses to match your domain name!!!!)
+See here: for a [list of common server SMTP addresses](http://www.arclab.com/products/amlc/list-of-smtp-and-pop3-servers-mailserver-list.html) if you're using a "free" email service. (Note: many customers prefer that you have a legitimate email address matching your domain name, not something like "billys-store@gmail.com" which is rather less authentic-looking. Build credibility with your customers by getting proper email addresses to match your domain name!)
 
 ### SMTP over SSL
 
-If your host requires that you send email over SSL, then be sure to set your SMTP Port to 465\.
+If your host requires that you send email over SSL, then be sure to set your SMTP Port to 465.
 
 ### SMTP over TLS
 
@@ -120,7 +115,7 @@ TLS is the modern preferred method for secure email transfer. But some hosts sti
 
 To use TLS, simply set your port to 587.
 
-In rare cases you may need to get really technical and also specify your TLS/SSL Certificate by adding a define for 'SMTPAUTH_EMAIL_CERTIFICATE_CONTEXT' in the extra_datafiles folder to supply your certificate-context, and in that same file also define SMTPAUTH_EMAIL_PROTOCOL to 'starttls'. This is arguably more complicated and should be considered a last resort. Definitely try to sort out your email issues with your host before attempting StartTLS configuration!!!!
+In rare cases you may need to get really technical and also specify your TLS/SSL Certificate by adding a define for 'SMTPAUTH_EMAIL_CERTIFICATE_CONTEXT' in the extra_datafiles folder to supply your certificate-context, and in that same file also define SMTPAUTH_EMAIL_PROTOCOL to 'starttls'. This is arguably more complicated and should be considered a last resort. Definitely try to sort out your email issues with your host before attempting StartTLS configuration!
 
 ### Yahoo Hosting
 
@@ -153,7 +148,11 @@ Gmail / Google Apps Mail requires that your email communications occur over a se
 *   SMTP Host: smtp.gmail.com
 *   SMTP Port 587
 
-More technical information is available in [Google's Help Center](http://mail.google.com/support/bin/answer.py?answer=13287)
+**Note:** To use email (eg SMTPAUTH) with a Google mail account you need to enable "allow less secure authentication" inside your google account settings. (This name sounds much worse than it is; it's still secure.) 
+
+Instructions on allowing less secure apps to use your account are provided [here](https://support.google.com/accounts/answer/6010255?hl=en). 
+
+More technical information is available in [Google's Help Center](http://mail.google.com/support/bin/answer.py?answer=13287).
 
 You may have to have your host make some changes to your domain's MX records if you are using Google hosted mail. Details for that are on Google's help site.
 

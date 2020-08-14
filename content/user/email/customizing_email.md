@@ -6,8 +6,8 @@ weight: 10
 ---
 
 There are several places in the Zen Cart code where e-mails to the customer are constructed. To create a consistent feel for all your communication with the customer, you will want to make sure you modify all these places whenever you modify one. 
-Don't forget to use the [template overrides system](/user/template/template_overrides)
-wherever possible when making your changes.
+
+Don't forget to use the [template overrides system](/user/template/template_overrides) wherever possible when making your changes.
 
 The e-mail's structure is determined in one of two ways: if you are sending plain text e-mails, it is determined by the way you put together the various items (customer greeting, order number, link to detailed invoice, etc) in a string variable that is then passed to the `zen_mail()` function. If you are sending HTML e-mails, the structure is determined by the template you use.
 
