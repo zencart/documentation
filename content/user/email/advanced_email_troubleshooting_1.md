@@ -5,7 +5,7 @@ category: email
 weight: 10
 ---
 
-FIXME - please review content
+FIXME - please review content and consolidate these 2 files - name should likely not include troubleshooting 
 
 _Copyright (c) 2008 by Chuck Redman, for Zen Cart, All Rights Reserved_
 
