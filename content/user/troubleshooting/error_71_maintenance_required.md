@@ -1,6 +1,6 @@
 ---
-title: ERROR 0071 
-description: Error 0071 in Zen Cart - There appears to be a problem with the database. Maintenance is required.
+title: ERROR 0071 - There appears to be a problem with the database
+description: What do to when it says "Maintenance is required."
 category: troubleshooting 
 weight: 10
 ---

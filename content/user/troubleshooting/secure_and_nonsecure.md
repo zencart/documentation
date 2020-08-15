@@ -1,6 +1,6 @@
 ---
 title: Secure and nonsecure items 
-description: Zen Cart error this page contains both secure and nonsecure items (or "Unauthenticated content" or "connection partially encrypted")
+description: Error messages "Unauthenticated content" or "connection partially encrypted" 
 category: troubleshooting
 weight: 10
 ---
