@@ -10,13 +10,21 @@ weight: 10
 In Admin >Configuration > E-Mail Options
 
 a. Make sure your "**E-Mail Transport Method**" is set appropriately for the webserver you're using. Using SMTPAUTH is strongly advised. Do not use "PHP" unless nothing else works.  
-b. **Use MIME HTML When Sending Emails** = "true"  
+
+b. **Enable HTML Emails?** = "true" [^1]
+
 c. **Send E-Mails** = true  
-d. **Email Archiving Active?** = If you are testing or debugging, we recommend setting this to "true" -- note, this will increase your database size regularly.  
+
+d. **Email Archiving Active?** = If you are testing or debugging, we recommend setting this to "true" -- note, this will increase your database size regularly.  [^2] 
+
+[^1]: Prior to Zen Cart 1.5.5, this option was called **Use MIME HTML When Sending Emails**. 
+
+[^2]: To access the email archive, see [Email Archive Manager](/user/email/email_archive_manager/). 
 
 ### What if I have my own HTML code to paste into an email? (rather than using an editor in my browser)
 
 You can optionally toggle the HTML editor's "source" option on (check the box, or click the symbol), and just paste raw HTML into the editor directly, if you wish.  
+
 Further, if you leave the editor disabled, but enable sending HTML messages, you can simply paste the raw HTML in the rich text field directly.  
 
 ### What about text-only messages/customers?

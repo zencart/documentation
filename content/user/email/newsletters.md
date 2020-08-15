@@ -6,10 +6,10 @@ weight: 10
 ---
 
 Sending large numbers of emails (newsletters or other marketing content)
-using the [Send Email](/user/admin_pages/tools/send_email/) feature or the Newsletters screen
-(or any other facility on your own hosting account) 
-is not recommended, because most likely your server and hosting account don't allow for
-mass quantities of broadcast emails, and doing so could treat all your emails as spam.
+using [Send Email](/user/admin_pages/tools/send_email/) or 
+[Newsletter Manager](/user/admin_pages/tools/newsletter/)
+is not recommended.  Your server and hosting account probably don't allow for
+mass quantities of broadcast emails, and doing so could cause you to be treated like a spammer. 
 
 Instead, we recommend that you use an *Email Service Provider* to handle your
 bulk emailing needs.  

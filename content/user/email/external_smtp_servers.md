@@ -80,3 +80,11 @@ You may also have to open your webserver's firewall to allow access to Google's 
 2.  Set your Max Email limit:
     *   If you have a GoDaddy hosting plan and plan to use it for sending emails from your Zen Cart site, you should check your email account list and set the "smtp relay transmissions per day" to the max of 250/day instead of the default of 0/day.
 
+### Other Choices 
+
+Other choices that Zen Cart users have had success with are: 
+
+- Mandrill (by MailChimp)
+- SMTP2Go
+- Mailgun 
+

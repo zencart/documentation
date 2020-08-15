@@ -62,6 +62,14 @@ to
 foreach(array_keys($contents) as $products_id) {
 ```
 
+It would also be valid to use 
+```
+foreach($contents as $products_id => $data) {
+```
+
+although some IDEs would complain about `$data` being an unused variable. 
+
+
 If the code looks more like 
 
 ```
