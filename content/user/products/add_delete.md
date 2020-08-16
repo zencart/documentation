@@ -28,6 +28,6 @@ Click the red trash can icon on the right side of the page.
 
 From the next page, choose *Delete*. 
 
-### EZPopulate 
+### EasyPopulate 
 
-Rather than create products through the admin panel, some storeowners prefer to import CSV files containing product information using a tool like [EZPopulate](/user/products/ezpopulate). 
+Rather than create products through the admin panel, some storeowners prefer to import CSV files containing product information using a tool like [EasyPopulate](/user/products/easypopulate). 

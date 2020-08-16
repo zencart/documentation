@@ -9,4 +9,4 @@ Before you begin populating your store there is one restriction in Zen Cart whic
 
 - [How to add or delete categories](/user/products/add_delete_categories/)
 - [How to add or delete products](/user/products/add_delete/)
-- [EZPopulate](/user/products/ezpopulate/) 
+- [EasyPopulate](/user/products/easypopulate/) 
