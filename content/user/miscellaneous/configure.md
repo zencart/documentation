@@ -1,6 +1,6 @@
 ---
 title: configure.php explained 
-description: Zen Cart configure.php explained 
+description: Understanding the main Zen Cart configuration file
 category: miscellaneous
 weight: 1 
 ---
