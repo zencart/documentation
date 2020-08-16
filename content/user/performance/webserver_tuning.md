@@ -35,7 +35,7 @@ You may use Nginx but the Zen Cart project does not come with a full Nginx confi
 
 - `memory_limit` should be set to 32M or higher. 
 - `max_execution_time` is commonly set to 60 seconds, which should be fine  
-- `max_input_time` is commonly set to 60 seconds, which is normally fine, except if you're doing large uploads such as huge photos or large input files with addons like ezpopulate  
+- `max_input_time` is commonly set to 60 seconds, which is normally fine, except if you're doing large uploads such as huge photos or large input files with plugins like [EZPopulate](/user/products/ezpopulate/)
 - `file_uploads` must be set to "On" if you expect to be able to upload files either via your admin interface or receive files from your customers  
 - `post_max_size` should be set to 32M or larger if you're uploading large images or large attachments/imports  
 - `upload_max_filesize` should be set to the same as post_max_size  

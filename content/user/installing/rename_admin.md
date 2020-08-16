@@ -1,7 +1,7 @@
 ---
 title: Renaming Your Admin Folder
 description: Renaming Your Zen Cart Admin Folder
-category: Running
+category: Installing
 weight: 10
 ---
 
