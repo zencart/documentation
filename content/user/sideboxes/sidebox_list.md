@@ -14,26 +14,26 @@ The sideboxes that come built-in with Zen Cart include:
 
 ## [Banners](user/admin/banner_ads/)
 
-    ![Banner Box Sidebox](/images/sidebox_banner_box.png) 
+![Banner Box Sidebox](/images/sidebox_banner_box.png) 
     
-    ![Banner Box 2 Sidebox](/images/sidebox_banner_box_2.png) 
+![Banner Box 2 Sidebox](/images/sidebox_banner_box_2.png) 
     
-    ![Banner Box All Sidebox](/images/sidebox_banner_box_all.png)
+![Banner Box All Sidebox](/images/sidebox_banner_box_all.png)
 
 ## Best Sellers
 
-	<img align="left" src="/images/sidebox_bestsellers.png">
+<img align="left" src="/images/sidebox_bestsellers.png">
 
 ## Categories
 
-    ![Categories Sidebox](/images/sidebox_categories.png) 
+![Categories Sidebox](/images/sidebox_categories.png) 
 	
 ### [Document Categories](user/sideboxes/sidebox_misc/#how-do-i-show-my-documents-in-their-own-sidebox)			
 <img align="left" src="images/sidebox_documents_categories.png">
 
 ![EZpages Sidebox](/images/sidebox_ezpages.png)
 
-## Information
+## More Information
 
 <br>
 <div style="display:block;">
