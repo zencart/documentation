@@ -1,6 +1,6 @@
 ---
 title: Suppressing sidebox display on specific pages 
-description: Zen Cart Suppressing sidebox display on specific pages 
+description: Customizing sidebox display based on page 
 category: sideboxes
 weight: 10
 type: codepage
