@@ -51,35 +51,21 @@ function __construct()
 PHP Deprecated: The each() function is deprecated. This message will be suppressed on further calls in /Users/sp/Developer/zc157/includes/functions/extra_functions/sfl_functions.php on line 160.
 ```
 
-Change 
+The direction for PHP 7.2+ is to refactor `each` to `foreach` as follows: 
 
-```
-while (list($products_id, ) = each($contents)) {
-```
+1. `foreach()` doesn't need a `reset()` to be called before it runs, so those can be removed.
 
-to 
-```
-foreach(array_keys($contents) as $products_id) {
-```
+2. There are 3 syntax formats, depending on how the parameters are presented in the `list()` call:
 
-It would also be valid to use 
-```
-foreach($contents as $products_id => $data) {
-```
+    a) `while(list($key, $value) = each($foo))`
+    This becomes `foreach($foo as $key => $value)`
 
-although some IDEs would complain about `$data` being an unused variable. 
+    b) `while(list(, $value) = each($foo))`
+    This becomes `foreach($foo as $value)`
+
+    c) `while(list($key, ) = each($foo))`
+    This becomes `foreach($foo as $key => $value)`
 
 
-If the code looks more like 
-
-```
-while(list($key, $value) = each($array))
-```
-
-change to 
-
-```
-foreach($array as $key => $value)
-```
-
-There are several levels of PHP problems, with the least serious being _notices_ and _warnings_. More serious are PHP _errors_, which can cause a blank screen or partially blank screen.  Several common PHP errors are discussed in [this article](/user/troubleshooting/php_debug_logs).
+There are several levels of PHP problems, with the least serious being _notices_ and _warnings_. 
+More serious are PHP _errors_, which can cause a blank screen or partially blank screen.  Several common PHP errors are discussed in [this article](/user/troubleshooting/php_debug_logs).
