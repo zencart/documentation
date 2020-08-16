@@ -1,19 +1,16 @@
 ---
-title: Email Troubleshooting - Advanced Part I 
-description: Zen Cart TroubleShooting Email - Advanced Part I 
+title: Email Troubleshooting - Advanced
+description: Zen Cart TroubleShooting Email - Advanced
 category: email
 weight: 10
+aliases: 
+    - /user/email/advanced_email_troubleshooting_1/
+    - /user/email/advanced_email_troubleshooting_2/
 ---
 
-FIXME - please review content
+If you're having difficulties with email and your online store, this article will hopefully assist in resolving those problems.  Be sure you have reviewed the guidance in [introduction to email](/user/email/email_introduction) before reading this.
 
-_Copyright (c) 2008 by Chuck Redman, for Zen Cart, All Rights Reserved_
-
-Distributed under Creative Commons License
-
-If you're having difficulties with email and your online store, this article will hopefully assist in resolving those problems.
-
-## TL;DR Summary
+## Basic Troubleshooting
 
 1.  Make sure your domain is properly configured. We will cover the various settings and entities you need to have configured for your site domain to be able to send email.
 2.  Make sure your email addresses are properly configured. We'll discuss the required and recommended email addresses for your store, and some do-s and don'ts.
@@ -188,12 +185,30 @@ The character set used is similar, but if you are not in North America, it could
 
 It is inevitable and unfortunate that certain short emails, such as 'password forgotten', especially when sent as HTML emails, appear to mail-server Spam filters as just an image (the logo) and a small amount of text, which they regard as a flag for potential Spam mail.
 
-## 4\. What to do when it doesn't work?
+## 4\. SMTP Handshake Debugging
+
+If you are troubleshooting problems with SMTP or SMTPAUTH and want to see the exact responses from the SMTP server handshake, you can do the following to cause the email server conversation to be displayed on-screen during delivery. THIS IS ABSOLUTELY UNSUITABLE FOR USE ON A LIVE STORE because visitors to your site have no business seeing any of the information displayed, and some of the information could be misused by those with malicious intent. USE WITH CAUTION!
+
+To enable email-debug-output, create a PHP file at either of these locations, depending on whether you're testing email on the storefront side or on the admin side, respectively: `includes/extra_datafiles/email_debug.php` or `YOURADMIN/includes/extra_datafiles/email_debug.php`. 
+
+The content of the file should be just one line:
+
+<pre>
+&lt;?php 
+   define('EMAIL_SYSTEM_DEBUG','5');
+</pre>
+
+Then try sending another email. The SMTP handshake information will be dumped to the /logs/myDEBUG-xxxxxx.log folder/files if SMTP/SMTPAUTH is your transport method.
+
+Be sure to delete that email_debug.php file when you're done testing; otherwise your store won't work properly because of the bizarre information that gets output to the screen!
+
+
+## 5\. What to do when it doesn't work?
 
 *   Write down any error messages or error numbers, and if you have access to your website logs, check them for any errors relevant to the problem. See the /logs/ folder for error details.
-*   Get extra debug details by using the debug trick mentioned in [TroubleShooting Email - Advanced Part I](/user/email/advanced_email_troubleshooting_2/).
+*   Get extra debug details by using the debug trick mentioned in [TroubleShooting Email - Advanced Part I](/user/email/advanced_email_troubleshooting/#4-smtp-handshake-debugging).
 *   Switch on email archiving and send some mail. The archiving only takes place after an allegedly successful 'send' so if the email is archived, the website system thinks that it was successfully sent, and the problem lies elsewhere.
-*   Give your hosting company details of the time the mail was supposedly sent and ask them to check their mailserver logs.
+*   Give your hosting company details of the time the mail was supposedly sent and ask them to check their mailserver logs.  Here are [some settings your hosting company may need to help you with email](/user/email/email_introduction/#troubleshooting-questions-for-your-hosting-company). 
 *   Check whether your domain or your hosts have been blacklisted by visiting [http://www.dnsstuff.com](http://www.dnsstuff.com) and doing a DnsReport on your domain, and check [http://www.robtex.com/rbls.html](http://www.robtex.com/rbls.html) to see if your domain is flagged. Check the mail section of the report, and fix any reported warnings, errors or problems that are in your power to resolve. Engage your hosting company if needed. Refer to Section 1 of this article for more specific details/explanation on Blacklisting and other issues your dnsreport shows you.
 *   Ask the intended recipient to check Spam and similar folders. It is also worth checking whether the recipient's email system has a 'good guys' list/setting to 'Whitelist' your site. This tells the mail filters that your domain is expected to send mail to their address, and that it's not Spam.
 *   If you're getting 'Spam flagged' emails (you're getting the emails, but they're arriving in your spam folder), check them for the entries in their mail headers, particularly the values for Return-Path, Reply To, and From for strange settings. Note also if they are NOT defined in the headers. Also note any MIME header information and content boundary information for strange settings - a multipart/alternative header with only 1 part in the mail body, or a "text/plain" content header with HTML body.
@@ -202,6 +217,9 @@ It is inevitable and unfortunate that certain short emails, such as 'password fo
 *   Accept that the free web based services change the rules regularly and arbitrarily, and that customer email that went through fine last week can disappear or be flagged as Spam this week.
 *   Establish whether your hosts have any emails-per-hour or other limits, and keep them in mind when you send out that 10,000 email Newsletter and mailshot.
 
+
+
 When all else fails, 
 [post on the main support forum](https://www.zen-cart.com/forum.php).
 
+Some portions Copyright (c) 2008 by Chuck Redman, for Zen Cart, All Rights Reserved.  Distributed under Creative Commons License.

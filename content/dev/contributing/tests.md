@@ -4,16 +4,6 @@ description: Zen Cart Testing
 weight: 6
 ---
 
----
-
-**NOTE:** The testing framework has not yet been backported from V2, so this page does not apply to Zen Cart 1.X.X. 
-
----
-
-# Unit Testing
-Writing automated tests is important to ensure that the tested features function properly both before and after making future changes to the system.
-
-
 # Preparation / Initial Setup
 To prepare to run the Unit Test test suite:
 
@@ -26,74 +16,70 @@ To prepare to run the Unit Test test suite:
 
 3. Add `vendor/bin` to your path.
 
+The test framework exists in the `not_for_release/testFramework` directory.
 
-## Running Tests
+# Running Tests
 
-Run all tests, using:
+## Unit Tests 
 
-`phpunit -c testFramework/unittests/phpunit.xml`
+Unit tests can be run using 
 
+`composer tests`
 
-### Running Individual Tests
+in the root directory of your Zen Cart install.
 
-While you are debugging a specific test (such as one you're adding, see below), you may want to just call it in isolation rather than running the entire test suite.
-The syntax for doing this is:
+Currently, there are no local configuration requirements needed to run unit tests. 
 
-`phpunit --filter <test class name> <path to test class file>`
+## Browser Tests
 
-For example,
+Automated browser tests can be run using 
 
-`phpunit --filter testPaginationCase testFramework/unittests/testsPaginator/paginatorTest.php`
+`composer dusk`
 
+in the root directory of your Zen Cart install.
 
-## Adding Tests
-To add a new test, create your test in an appropriate subdir under `testFramework/unittests`.
+There are configuration requirements needed to run browser tests on your local machine.
 
-### Test Tips
-* Note that if you have defined constants in your file, you may have to use the trick of setting the class global variables as is done in `testFramework/unittests/testsSundry/AdminLoggingTest.php`:
+### Browser Test Configuration
 
-```
-    protected $preserveGlobalState = FALSE;
-    protected $runTestInSeparateProcess = TRUE;
-```
+If you want to run browser tests on your local machine, you will need to create 3 configuration files.
 
-* If you want to put your tests in a new folder at the level of `testFramework/unittests`, remember to add the new foldername to `phpunit.xml`.
+In `not_for_release/testFramework/Browser/duskConfigures` you will need to create a file called
 
+`$user.configure.dusk/php` where `$user` is replaced by the user that your php scripts run as.
 
+You can find this by echoing $_SERVER['USER] in some php script.
 
---------------------------------------
+An example file `dusk.configure.php` can be used as a template.
 
+Note: The database user `TESTING_DB_SERVER_USERNAME` must have sufficient rights to create a database.
 
-# Web Tests
-Some features can only be properly tested by running them through a browser. We do this using Selenium and Firefox.
+The other configuration files needs to be created in 
+`not_for_release/testFramework/Browser/zencartConfigures`and be named 
 
-## Preparation and Setup for Web Tests
-1. Follow the Prep/Setup above for Unit Testing, as these are dependencies for the Web Tests
-2. [Install a Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) if one isn't already on your computer
-3. Download [Selenium Server Standalone](http://docs.seleniumhq.org/download/) Java Agent. This will give you a `selenium-server-standalone-<version>.jar` file.
-4. Install [Firefox](http://getfirefox.com) if not already present. 
+`admin.$user.configure.php` and `catalog.$user.configure.php` again with `$user` replaced with the user the php 
+scripts run as.
 
->Be aware that sometimes the "latest" Firefox may not work with Selenium ... so occasionally may need to use an older Firefox version, or upgrade Selenium to a newer version.
+These configure files should be copies of the normal `configure.php` files that you would have in 
+`admin/includes/configure.php` and `includes/configure.php`
 
+### Admin Alert Page
 
-## Preparing custom configurations
-WebTests need to run from a local webserver, so you need a MySQL+Apache/Nginx (or equivalent) setup already present on your computer, and need to be able to access it from your installed Firefox browser. The Zen Cart Habitat server is ideal for this.
+Normally, if the zc_install directory exists Zen Cart will display an alert page on any attempt to access
+admin URI's. FIXME
 
-Since the webtests will run zc_install, be prepared for your database to be wiped out and your configure.php files to be updated.
+### Database Regeneration
 
-In the `testFramework/config/` folder there is a `localconfig_EXAMPLE.php` file. Make a copy of that file and configure it to suit your local environment:
+When Browser tests are run, and in order to create some isolation between various tests the framework will 
+dump whatever database you have set in the configuration files mentioned earlier.
 
- 1. filename: `localconfig_YOURUSERNAME.php` ... ie: if I login to my PC as `bill` then the filename would be: `localconfig_bill.php`
+It will then load the default database schema from `zc_install/sql/install/mysql_zencart.sql` and the demo 
+data from `zc_install/sql/demo/mysql_demo.sql` 
+
+This means that if your testing database contains any changes from the default install, they will be lost.
+
+If your need to keep your local changes then you must ensure that they have been added to 
+`zc_install/sql/install/mysql_zencart.sql` and `zc_install/sql/demo/mysql_demo.sql` before running 
+the browser tests.
  
- 2. Inside the file, edit the `define` statements to reflect your local webserver's domain name, database credentials, etc for your Zen Cart dev site.  If you're running in a Zen Cart Habitat environment, the `WEBTEST_ADMIN_PASSWORD_INSTALL` should be set to `developer1`.
-
-
-## Running Web Tests
-a) Start Selenium engine from command line:
-
-    java -jar <path_to>/selenium-server-standalone-<version>.jar -trustAllSSLCertificates
-
-b) Start the webtests in another terminal window:
-
-	phpunit -c testFramework/webtests/phpunit.xml
-
+FIXME

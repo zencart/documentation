@@ -35,7 +35,7 @@ See [the rearranging sideboxes](/user/template/remove_rearrange_sideboxes/) FAQ.
 See [the images in sideboxes](/user/template/add_image_box/) FAQ. 
 
 ---
-### How do I remove "Page 1", "Page 2" and "Page 3" from my more information sidebox?
+### How do I remove "Page 1", "Page 2" and "Page 3" from my More Information sidebox?
 Go to Admin > Configuration > Define Page Settings and set their values to 2 or 3.
 
 ---

@@ -48,7 +48,7 @@ By default the Zen Cart installer will rename it for you.
 
 Some 3rd-party auto-install scripts provided by hosting companies also use a directory not called "admin" ... but they always use the same directory name on all sites they install, so you really ought to rename it yourself!!!
 
-[Instructions for renaming your admin folder can be found in this article](/user/running/rename_admin).
+[Instructions for renaming your admin folder can be found in this article](/user/installing/rename_admin).
 
 
 ### 3\. Use SMTPAUTH or SMTP as your Email Transport method, instead of the generic "PHP" or "sendmail" settings.

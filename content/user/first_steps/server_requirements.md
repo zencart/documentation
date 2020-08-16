@@ -12,18 +12,19 @@ _(Last updated: July 23, 2020)_
 
 *   Zen Cart operates on a standard "LAMP" stack: PHP, Apache, MySQL on most operating systems (Linux/macOS/Windows)
 *   See the detailed version-compatibility details in the sections below.
-*   Keep in mind that for security compliance, you should always use a PCI Compliant version of each of these required software components. (That means using a ZC version that's compatible with those software component versions, too!)
+*   Keep in mind that for security compliance, you should always use a PCI Compliant version of each of these required software components. That means using a ZC version that's compatible with those software component versions, too!
 
 ## SSL, OpenSSL, cURL
 
 *   Zen Cart requires cURL to be installed/compiled into PHP with OpenSSL. If this capability is not available, a message to that effect will be displayed during the initial installation's system-inspection, however it will still allow installation anyway. It is up to you to ensure cURL is enabled. Consult your hosting company for assistance.
-*   You should always use HTTPS (SSL) on your store. Be sure to regularly test your site's SSL (https) using [www.ssllabs.com/ssltest/](https://www.ssllabs.com/ssltest/index.html) and have your hosting company resolve all reported issues. If your hosting company doesn't know how to resolve the issues to at least a "B" rating, find another hosting company.
+*   You should always use HTTPS (SSL) on your store. Yes, [you really do need an SSL certificate](/user/first_steps/yes_you_need_ssl). Be sure to regularly test your site's SSL (https) using [www.ssllabs.com/ssltest/](https://www.ssllabs.com/ssltest/index.html) and have your hosting company resolve all reported issues. If your hosting company doesn't know how to resolve the issues to at least a "B" rating, find another hosting company.
 
 
 ## PHP Version
-(future versions including v1.5.8 will require PHP 7.3+)
 
-**Using the latest version of Zen Cart is always recommended for maximum compatibility.**  
+The following table shows the PHP versions compatible with each version of Zen Cart. 
+
+**Note:** future versions of Zen Cart including v1.5.8 will require PHP 7.3+.
 
 *   <font color="#ff0000">**Zen Cart v1.5.7** is designed for PHP 5.6 through PHP 7.4</font>
 *   <font color="#ff0000">**Zen Cart v1.5.6** is designed for PHP 5.5 through PHP 7.3</font>
@@ -37,11 +38,13 @@ _(Last updated: July 23, 2020)_
 *   **Zen Cart v1.3.7-v1.3.8a** are compatible with PHP 4.3.2 thru PHP 5.2.x, but *not* PHP 5.3.
 *   **Zen Cart v1.2.x through v1.3.6** are compatible with PHP 4.3.2 - 4.4.x. They are NOT compatible with PHP 5.
 
-PHP compatibility requirements of Plugins/Addons may vary. Consult each plugin's documentation and support discussion-thread for details.  
+PHP compatibility requirements of Plugins may vary. Consult each plugin's documentation and support discussion-thread for details.  
 
-**What PHP version should I use?** 
+<font color="#ff0000"> ** Using the latest version of Zen Cart is always recommended for maximum compatibility. ** </font>
 
-It is best to **use the most recent PHP version that your Zen Cart version supports**. The PHP developers have published a list of supported versions at [https://www.php.net/supported-versions.php](https://www.php.net/supported-versions.php) 
+### Which PHP version should I use?
+
+It is best to **use the most recent PHP version that your Zen Cart version supports**. The PHP developers have published a list of supported versions at [https://www.php.net/supported-versions.php](https://www.php.net/supported-versions.php).
 
 <font color="#ff0000">**NOTE:** PHP 5.x is officially obsolete. So are many of the early PHP 7 versions. You should be moving to the latest version of PHP (and matching Zen Cart version) as soon as possible!</font>  
 
@@ -69,13 +72,16 @@ It is suggested to also enable the following PHP extensions:
 
 <u>**PHP Settings**</u> for optimum security:
 
-- ENABLE: `allow_url_fopen` is needed for checking things that don't/can't use `curl` (many shipping quote modules use this)
+- ENABLE: `allow_url_fopen` is needed for checking things that don't/can't use `curl` (many shipping quote modules use this).
 - DISABLE: `allow_url_include` should be OFF. Zen Cart never needs this.
-- DISABLE FUNCTIONS: `passthru`, `system`, `shell_exec` are not used by Zen Cart (but might be used by some plugins) 
+- DISABLE FUNCTIONS: `passthru`, `system`, `shell_exec` are not used by Zen Cart (but might be used by some plugins).
 
 
 ## MySQL Version
-(future versions including v1.5.8 will require MySQL 5.7.8+ or MariaDB 10.2.7+)
+
+The following table shows the MySQL versions compatible with each version of Zen Cart. 
+
+**Note:** Future versions of Zen Cart including v1.5.8 will require MySQL 5.7.8+ or MariaDB 10.2.7+.
 
 *   Zen Cart v1.5.7 expects MySQL 5.1 to 8.0, or MariaDB 10.1 to 10.4
 *   Zen Cart v1.5.6 expects MySQL 5.1 to 5.7, or MariaDB 10.1 to 10.4 ("strict" errors may occur with 5.7 or 10.2)
@@ -84,7 +90,7 @@ It is suggested to also enable the following PHP extensions:
 *   Zen Cart v1.3.9 is compatible with MySQL 4.1.3+ thru 5.1
 *   Zen Cart v1.2.x thru 1.3.8a were designed for MySQL 4, and will give errors on MySQL5
 
-Plugin/Addon-compatibility may vary.  
+Plugin compatibility may vary.  
 
 <font color="#ff0000"> ** Using the latest version of Zen Cart is always recommended for maximum compatibility. ** </font>
 

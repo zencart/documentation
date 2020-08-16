@@ -39,7 +39,7 @@ If you were able to set to 644 the owner (you) could modify the file while all o
 
 The permissions are set on the host server usually through the user's control panel. They can also be set using the chmod command in many [FTP tools](/user/first_steps/useful_tools/#ftp-tools), or or through SSH access to the server, if available. 
 
-[Read more about file permissions](/user/installing/permissions/)
+This article on [file permissions](/user/installing/permissions/) goes into more detail.
 
 ---
 

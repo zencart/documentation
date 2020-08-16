@@ -37,7 +37,5 @@ b. the Contact Us Pulldown contents may not be formatted properly. Note the requ
 
 * [PHPMailer Troubleshooting Guide](https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting)
 
-* [Advanced Email Troubleshooting I](/user/email/advanced_email_troubleshooting_1/)
-
-* [Advanced Email Troubleshooting II](/user/email/advanced_email_troubleshooting_2/)
+* [Advanced Email Troubleshooting](/user/email/advanced_email_troubleshooting/)
 

@@ -7,7 +7,7 @@ weight: 10
 
 Sideboxes are narrow pieces of content that are displayed on the left and right side of the screen in the Zen Cart storefront in a desktop view.  (The smaller width of a mobile screen means they are put in the middle of the screen on such devices.)
 
-Zen Cart has a number of built in sideboxes; other sideboxes are available in the [sideboxes section of the Zen Cart plugins library](https://www.zen-cart.com/downloads.php?do=cat&id=12).  For example, the [Blank Sidebox](https://www.zen-cart.com/downloads.php?do=file&id=80) allows you to create your own sidebox with whatever content you wish. 
+Zen Cart has a number of [built in sideboxes](/user/sideboxes/sidebox_list); other sideboxes are available in the [sideboxes section of the Zen Cart plugins library](https://www.zen-cart.com/downloads.php?do=cat&id=12).  For example, the [Blank Sidebox](https://www.zen-cart.com/downloads.php?do=file&id=80) allows you to create your own sidebox with whatever content you wish. 
 
 You can learn about [controlling sideboxes in the admin](/user/admin/sideboxes/) so that you only display the sideboxes that are most important to your store. 
 

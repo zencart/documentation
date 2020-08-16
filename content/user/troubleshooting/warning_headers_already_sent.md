@@ -1,6 +1,6 @@
 ---
 title: Warning Headers already sent...
-description: Zen Cart Warning Headers already sent...
+description: Fixing this PHP warning message 
 category: troubleshooting
 weight: 10
 ---

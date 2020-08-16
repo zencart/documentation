@@ -10,9 +10,9 @@ weight: 10
 [Release Announcements](https://www.zen-cart.com/forumdisplay.php?2-Zen-Cart-Release-Announcements) are provided on the Zen Cart forum. 
 
 See also [Zen Cart Database Schema](/dev/schema/), 
-[Zen Cart Known Bugs](/user/about_us/known_bugs/).
-and 
-[Zen Cart Security Releases](/user/about_us/security_releases). 
+[Zen Cart Known Bugs](/user/about_us/known_bugs/), 
+[Zen Cart Security Releases](/user/about_us/security_releases), and 
+[PHP version compatibility with Zen Cart](/user/first_steps/server_requirements/#php-version). 
 
 ---
 
@@ -51,6 +51,14 @@ This is the release history of the Zen Cart product.
 09/18/2012 - v1.5.1 [Release Notes](https://www.zen-cart.com/docs/whatsnew_1.5.1.html)
 
 12/30/2011 - v1.5.0 [Release Notes](https://www.zen-cart.com/docs/whatsnew_1.5.0.html)
+
+<p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#collapseVersions" role="button" aria-expanded="false" aria-controls="collapseVersions">
+    See older versions 
+  </a>
+</p>
+<div class="collapse" id="collapseVersions">
+  <div class="card card-body">
 
 10/27/2010 - v1.3.9h
 
@@ -145,3 +153,7 @@ This is the release history of the Zen Cart product.
 12/18/2003 - v1.0.4
 
 12/12/2003 - v1.0.3d
+
+</div>
+</div>
+

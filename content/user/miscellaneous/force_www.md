@@ -1,6 +1,6 @@
 ---
-title: How can I force my site to add "www." before the URL if visitors don't enter it?
-description: URL rewrite to add www subdomain Zen Cart
+title: How can I force my site to add "www." to the URL? 
+description: URL rewrite to add www subdomain for Zen Cart
 category: miscellaneous
 weight: 10
 ---
