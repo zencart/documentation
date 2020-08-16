@@ -15,7 +15,7 @@ To add VERY BASIC Google Analytics to your site, Google gives you a javascript c
 
 The simplest way to install this basic code snippet is:
 
-- create a new file on your server: `/includes/templates/YOUR_TEMPLATE_NAME/jscript/jscript_google_analytics.js`
+- create a new file on your server: `/includes/templates/YOURTEMPLATE/jscript/jscript_google_analytics.js`
 - paste the snippet from Google in that file
 - done!
 
@@ -36,7 +36,7 @@ Simply use one or the other, not both.
 If you are using Google snippets for things beyond just Analytics, you can install the Google Tag Manager snippet
 in the following way. Remember: this REPLACES the basic snippet file mentioned for basic analytics above.
 
-`/includes/templates/YOUR_TEMPLATE_NAME/jscript/jscript_google_tag_manager.js`
+`/includes/templates/YOURTEMPLATE/jscript/jscript_google_tag_manager.js`
 
 
 

@@ -54,7 +54,7 @@ Other causes include messages which have ALL UPPERCASE letters in their Subject 
 ---
 
 
-### How do I buid HTML-formatted Email in other languages?
+### How do I build HTML-formatted Email in other languages?
 
 The english HTML emails are built from the files in the /email folder. If you have other languages, you'll need to create your own HTML email template files and put them into subfolders named according to the 2-letter language code.
 
