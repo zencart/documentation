@@ -266,7 +266,7 @@ Providing there were no errors during installation, you should be able to now en
 ---
 ## G. After Installation
 
-a) [RENAME YOUR ADMIN FOLDER](/user/running/rename_admin/).  Note that 
+a) [RENAME YOUR ADMIN FOLDER](/user/installing/rename_admin/).  Note that 
 current versions of Zen Cart do this for you. 
 
 b) When you enter the catalog, you will receive security warnings about the `configure.php` files and the `/zc_install` directory.  

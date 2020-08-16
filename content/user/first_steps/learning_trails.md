@@ -36,7 +36,7 @@ Take a look at [exploring the documentation](/user/first_steps/documentation/) t
 ## Learn the Zen Cart Admin
 - [What's the purpose of the admin?](/user/admin/why_admin/)
 - [Where is the backend?](/user/first_steps/where_is_backend/)
-- [How do I rename my admin folder?](/user/running/rename_admin/) 
+- [How do I rename my admin folder?](/user/installing/rename_admin/) 
 - [Browse the Admin menu sections](/user/admin_pages/menu_sections/)
 
 
