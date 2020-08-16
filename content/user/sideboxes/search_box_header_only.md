@@ -1,6 +1,6 @@
 ---
 title: Display the search box in the header only 
-description: Zen Cart Display the search box in the header only 
+description: How to put the search box at the top of the page 
 category: sideboxes
 weight: 10
 ---

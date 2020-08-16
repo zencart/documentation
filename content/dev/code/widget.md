@@ -26,3 +26,6 @@ Creating a widget of your own is just a matter of modifying `admin/index_dashboa
         ?>
     </div>
 ```
+
+A plugin called [Orders in Status Dashboard Widget](https://www.zen-cart.com/downloads.php?do=file&id=2284) can be used to build something similar for your site. 
+
