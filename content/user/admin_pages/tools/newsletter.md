@@ -23,6 +23,11 @@ Then you get a final confirmation page with a preview of the emails and the opti
 
 ![Newsletter Manager](/images/newsletter_3.png)
 
+If you prefer to stop after drafting the newsletter, you can always come back to it later.  A sidebar is available for each entry in your list of newsletters/product notifications that looks like this: 
+
+<img alt="Newsletter Sidebar" src="/images/newsletter_sidebar.png" width="40%">
+<br><br>
+
 Related Pages: 
 
 - [Newsletters](/user/email/newsletters/)

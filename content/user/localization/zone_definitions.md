@@ -1,11 +1,13 @@
 ---
-title: Zone Definitions 
-description: Zen Cart Zone Definitions 
+title: Creating Zone Definitions 
+description: Recipes for common Zone Definitions 
 category: localization 
 weight: 10
 ---
 
-Zone Definitions can be created by adding 1 by 1 each Zone or can be created quickly with some SQL commands that can be run in the Zen Cart Admin from the `Tools > Install SQL Patches` menu. 
+If you are unclear on how zones are used in Zen Cart, please see the help pages for [Zones](/user/admin_pages/locations/zones/) and [Zone definitions](/user/admin_pages/locations/zones_definitions/). 
+
+Zone Definitions can be created by adding each entry one at a time in the admin, or can be created quickly with some SQL commands that can be run in the Zen Cart Admin from the `Tools > Install SQL Patches` menu. 
 
 Be careful when creating Zone Definitions such as Zone Definitions for the United States.  
 
