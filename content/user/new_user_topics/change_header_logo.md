@@ -14,7 +14,8 @@ Using an [image editor](/user/first_steps/useful_tools/#graphics-editors), creat
 
 The name `yourname` will also include a file extension, such as `.png`, `.jpg`, etc. 
 
-After creating your logo you can adjust the alt text, width, height, and image name in `includes/languages/english/YOURTEMPLATE/header.php`  
+After creating your logo you can adjust the alt text, width, height, and image name in `includes/languages/english/YOURTEMPLATE/header.php`
+(If you don't have that file, then copy `includes/languages/english/header.php` to `includes/languages/english/YOURTEMPLATE/header.php` before editing.)
 
 For the purpose of this example, let's assume `yourname` is `newlogo.png`, and that the logo is 200px wide and 80px tall.
 
