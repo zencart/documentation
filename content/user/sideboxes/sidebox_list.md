@@ -8,7 +8,7 @@ customCss: "/css/sidebox_list.css"
 
 You can see all the sideboxes that are available to your store by navigating to [Admin > Tools > Layout Boxes Controller](/user/admin_pages/tools/layout_boxes_controller/). 
 
-The sideboxes that come built-in with Zen Cart include:
+The following content shows the sideboxes that come built-in with Zen Cart. 
 
 ## Banners 
 
@@ -18,10 +18,10 @@ The sideboxes that come built-in with Zen Cart include:
       <img alt="Banners Sidebox" src="/images/sidebox_banner_box.png" />
    </div>
    <div class="notes_col">
-      The Banners sidebox shows what's in the sidebox banner group. 
+      The banners sidebox shows what's in the sidebox banner group. 
 This can be found in the setting <i>Banner Display Groups - Side Box banner_box</i> which is set in Admin > Configuration > Layout Settings. 
       <br><br>
-      There are two more Banners sideboxes, <a href="/images/sidebox_banner_box2.png">banner_box2</a> and <a href="/images/sidebox_banner_boxall.png">banner_boxall</a>, which are configured similarly.
+      There are two more similar sideboxes, <a href="/images/sidebox_banner_box2.png">banner_box2</a> and <a href="/images/sidebox_banner_boxall.png">banner_boxall</a>, which are configured similarly.
    </div>
 <br clear="all">
 <br>
@@ -34,7 +34,7 @@ This can be found in the setting <i>Banner Display Groups - Side Box banner_box<
       <img alt="Best Sellers Sidebox" src="/images/sidebox_bestsellers.png" />
    </div>
    <div class="notes_col">
-      The Best Sellers Sidebox shows links to the best selling items in your store. 
+      The bestsellers sidebox shows links to the best selling items in your store. 
    </div>
 <br clear="all">
 <br>
@@ -47,11 +47,11 @@ This can be found in the setting <i>Banner Display Groups - Side Box banner_box<
       <img alt="Categories Sidebox" src="/images/sidebox_categories.png" />
    </div>
    <div class="notes_col">
-      The Categories Sidebox shows a list of your top level categories.
+      The categories sidebox shows a list of your top level categories.
       <br><br>
       The parenthetical numbers after the category names are the number of items in that category.  This may be turned off in Admin > Configuration > My Store with the setting <i>Show Category Counts</i>. 
       <br><br>
-       There is another Categories sidebox called <a href="/images/sidebox_documents_categories.png">Document Categories</a> for stores with Document products. 
+       There is another categories sidebox called <a href="/images/sidebox_documents_categories.png">document_categories</a>, for stores with Document type products. The product type Document may be seen on the screen Admin > Catalog > Product Types. 
    </div>
 <br clear="all">
 <br>
@@ -64,7 +64,20 @@ This can be found in the setting <i>Banner Display Groups - Side Box banner_box<
       <img alt="Currencies Sidebox" src="/images/sidebox_currencies.png" />
    </div>
    <div class="notes_col">
-      The Currencies sidebox shows all the currencies supported by the store. 
+      The currencies sidebox creates a dropdown selector list showing all the currencies supported by the store.  Selecting a new item from the list changes the pricing to use that currency. 
+   </div>
+<br clear="all">
+<br>
+
+## EZ-Pages 
+
+<br>
+<div>
+   <div class="img_col"> 
+      <img alt="EZ-Pages Sidebox" src="/images/sidebox_ezpages.png" />
+   </div>
+   <div class="notes_col">
+      The ezpages sidebox creates a list of the <a href="/user/ezpages/what_are_ezpages">EZ-Pages</a> in your store, with the title Important Links.
    </div>
 <br clear="all">
 <br>
@@ -77,7 +90,7 @@ This can be found in the setting <i>Banner Display Groups - Side Box banner_box<
       <img alt="Information Sidebox" src="/images/sidebox_information.png" />
    </div>
    <div class="notes_col">
-      The Information sidebox presents links to the pages shipping information, privacy, conditions, contact us, gift certificate, coupon, and newsletter unsubscribe. 
+      The information sidebox presents links to the <a href="/user/template/define_pages">define pages</a> other than the three extra pages.  Included are shipping information, privacy, conditions, contact us, gift certificate, coupon, and newsletter unsubscribe. 
    </div>
 <br clear="all">
 <br>
@@ -103,11 +116,6 @@ This can be found in the setting <i>Banner Display Groups - Side Box banner_box<
 # NOT DONE YET!!! 
 
 <hr> 
-
-# EZPages
-
-![EZpages Sidebox](/images/sidebox_ezpages.png)
-
 
 # Languages
 
