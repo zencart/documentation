@@ -7,7 +7,14 @@ weight: 10
 
 There is a "New Products for [insert month]" section on several pages, including Home Page, New-Products page, All-Products Page, (empty) Shopping Cart page, etc.  These sections are called [centerboxes](/user/template/centerboxes/).
 
-There are several "sets" of settings for the Centerboxes.
+As the title of this article suggests, there are four built-in Centerboxes: 
+
+- New Products 
+- Featured Products
+- Special Products
+- Upcoming Products
+
+The pages where the centerboxes are displayed each have a group of centerbox settings. 
 
 When you go to [Index Listing](/user/admin_pages/configuration/configuration_indexlisting/) under Admin > Configuration, you will see options like:
 
@@ -15,8 +22,11 @@ When you go to [Index Listing](/user/admin_pages/configuration/configuration_ind
 - Show Featured Products on Main Page
 - Show Special Products on Main Page
 - Show Upcoming Products on Main Page
-    - Note: the values you set are the Sort Order of the Centerboxes 
-    - Turn OFF by setting to 0 all of the ones you do NOT want to see displayed 
+
+For each of these values: 
+
+- The values you set are the Sort Order of the Centerboxes 
+- Turn OFF by setting to 0 all of the ones you do NOT want to see displayed 
 
 The same is true on other similar configuration menus under Admin > Configuration:
 
@@ -26,8 +36,8 @@ The same is true on other similar configuration menus under Admin > Configuratio
 
 For setting up the Centerboxes of the Empty Shopping Cart, use the settings on the Admin > Configuration > Stock, you will see the settings for:
 
-- Show New Products on Main Page
-- Show Featured Products on Main Page
-- Show Special Products on Main Page
-- Show Upcoming Products on Main Page
+- Show New Products on empty Shopping Cart Page
+- Show Featured Products on empty Shopping Cart Page
+- Show Special Products on empty Shopping Cart Page
+- Show Upcoming Products on empty Shopping Cart Page
 

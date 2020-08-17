@@ -13,11 +13,11 @@ The Define pages also come with a set of controls in admin, which are shown on [
 
 - The setting _Define Text ON_ means the text created in the [Define Pages Editor](/user/admin_pages/tools/define_pages/) will be displayed on the page in question.  For example, setting _Define Text ON_ for Define Main Page Status means the text created in `define_main_page.php` in the Define Pages Editor will be displayed on the home page. Conversely, _Define Text OFF_ for this page means the text will not be displayed.
 
-As noted above, _Define Text ON_ always behaves the same way - it simply enables or disables the display of the block of text associated with it.  _Link ON_ is different - the interpretation of _Link ON_ is done as follows: 
+As noted above, _Define Text ON_ always behaves the same way - it simply enables or disables the display of the block of text associated with it.  _Link ON_ is different: it controls the creation of links to the associated page.  The interpretation of _Link ON_ is done as follows: 
 
 <br>
 
-Status Flag Name | Action 
+Status Flag Name | Behavior if Link ON 
 -----------------|-------
 Define Main Page Status | None
 Define Contact Us Status | Link to Contact Us page created in Site Map, Information Sidebox and Responsive Classic Mobile Menu
