@@ -16,14 +16,13 @@ The sideboxes that come built-in with Zen Cart include:
 
 Image | Notes
 ----------|-------
-![More Info](/images/sidebox_information.png)  |The **Information** sidebox presents links to the pages: shippinginfo, privacy, conditions, contact_us, gift certificate, coupon, and newsletter unsubscribe pages. 
+![More Info](/images/sidebox_information.png)  |The **Information sidebox** presents links to the pages shippinginfo, privacy, conditions, contact_us, gift certificate, coupon, and newsletter unsubscribe pages. <br><br>If desired, additional links may be added by editing `includes/modules/sideboxes/YOURTEMPLATE/information.php`. 
 
 ## More Information 
 
 Image | Notes
 ----------|-------
-![More Info](/images/sidebox_more_information.png)  |The **More Information** sidebox presents links to extra pages page_2, page_3 and page_4.
-
+![More Info](/images/sidebox_more_information.png)  |The **More Information sidebox** presents links to extra pages page_2, page_3 and page_4. <br><br>If desired, additional links may be added by editing `includes/modules/sideboxes/YOURTEMPLATE/more_information.php`.
 
 
 ## Banners
