@@ -7,3 +7,17 @@ table > tbody > tr > td > img {
 table tr {
    background-color: #FFF !important;
 }
+
+.img_row {
+   display: block; 
+}
+
+.img_col {
+   float: left; 
+   margin-right: 20px; 
+}
+
+.notes_col {
+   float: left; 
+   width: 70%;
+}

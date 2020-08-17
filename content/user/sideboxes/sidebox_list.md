@@ -12,17 +12,36 @@ You can see all the sideboxes that are available to your store by navigating to 
 
 The sideboxes that come built-in with Zen Cart include:
 
-## Information 
+## Information
 
-Image | Notes
-----------|-------
-![More Info](/images/sidebox_information.png)  |The **Information sidebox** presents links to the pages shippinginfo, privacy, conditions, contact_us, gift certificate, coupon, and newsletter unsubscribe pages. <br><br>If desired, additional links may be added by editing `includes/modules/sideboxes/YOURTEMPLATE/information.php`. 
+<br>
+<div>
+   <div class="img_col"> 
+      <img alt="Information Sidebox" src="/images/sidebox_information.png" />
+   </div>
+   <div class="notes_col">
+      The Information sidebox presents links to the pages shippinginfo, privacy, conditions, contact_us, gift certificate, coupon, and newsletter unsubscribe pages. 
+<br><br>
+If desired, additional links may be added by editing <code>includes/modules/sideboxes/YOURTEMPLATE/information.php</code>. 
+   </div>
+</div>
+<br clear="all">
+<br>
 
-## More Information 
 
-Image | Notes
-----------|-------
-![More Info](/images/sidebox_more_information.png)  |The **More Information sidebox** presents links to extra pages page_2, page_3 and page_4. <br><br>If desired, additional links may be added by editing `includes/modules/sideboxes/YOURTEMPLATE/more_information.php`.
+## More Information
+
+<br>
+<div>
+   <div class="img_col">
+      <img alt="More Information Sidebox" src="/images/sidebox_more_information.png" />
+   </div>
+   <div class="notes_col"> 
+      The More Information sidebox presents links to extra pages page_2, page_3 and page_4.  Additional links may optionally be added by editing the sideboxes code in <code>includes/modules/sideboxes/YOURTEMPLATE/more_information.php</code>. 
+   </div>
+</div>
+<br clear="all">
+<br>
 
 
 ## Banners
