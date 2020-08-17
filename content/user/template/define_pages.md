@@ -15,30 +15,35 @@ The Define pages also come with a set of controls in admin, which are shown on [
 
 As noted above, _Define Text ON_ always behaves the same way - it simply enables or disables the display of the block of text associated with it.  _Link ON_ is different - the interpretation of _Link ON_ is done as follows: 
 
-<table>
-<tr><th>Status Flag Name</th><th>Action</th></tr>
-<tr><td>Define Main Page Status</td><td>None<td></td></tr>
-<tr><td>Define Contact Us Status</td><td>Link to Contact Us page created in Site Map, Information Sidebox and Responsive Classic Mobile Menu<td></td></tr>
-<tr><td>Define Privacy Status</td><td>Link to Privacy page created in Site Map and Responsive Classic Mobile Menu</td></tr>
-<tr><td>Define Shipping & Returns</td><td>Link to Shipping Information page created in Site Map, Information Sidebox and Responsive Classic Mobile Menu</td></tr>
-<tr><td>Define Conditions of Use</td><td>Link to Conditions of Use page created in Site Map, Information Sidebox and Responsive Classic Mobile Menu</td></tr>
-<tr><td>Define Checkout Success</td><td>None</td></tr>
-<tr><td>Define Discount Coupon</td><td>Link to Discount Coupon page created in Information Sidebox and Responsive Classic Mobile Menu</td></tr>
-<tr><td>Define Site Map Status</td><td>Link to Site Map created in Site Map, Information Sidebox and Responsive Classic Mobile Menu</td></tr>
-<tr><td>Define Page-Not-Found Status</td><td>None</td></tr>
-<tr><td>Define Page 2</td><td>Link to Page 2 created in Site Map, More Information Sidebox and Responsive Classic Mobile Menu</td></tr>
-<tr><td>Define Page 3</td><td>Link to Page 3 created in Site Map, More Information Sidebox and Responsive Classic Mobile Menu</td></tr>
-<tr><td>Define Page 4</td><td>Link to Page 4 created in Site Map, More Information Sidebox and Responsive Classic Mobile Menu</td></tr>
-</table>
+<br>
+
+Status Flag Name | Action 
+-----------------|-------
+Define Main Page Status | None
+Define Contact Us Status | Link to Contact Us page created in Site Map, Information Sidebox and Responsive Classic Mobile Menu
+Define Privacy Status | Link to Privacy page created in Site Map and Responsive Classic Mobile Menu
+Define Shipping & Returns | Link to Shipping Information page created in Site Map, Information Sidebox and Responsive Classic Mobile Menu
+Define Conditions of Use | Link to Conditions of Use page created in Site Map, Information Sidebox and Responsive Classic Mobile Menu
+Define Checkout Success | None
+Define Discount Coupon | Link to Discount Coupon page created in Information Sidebox and Responsive Classic Mobile Menu
+Define Site Map Status | Link to Site Map created in Site Map, Information Sidebox and Responsive Classic Mobile Menu
+Define Page-Not-Found Status | None
+Define Page 2 | Link to Page 2 created in Site Map, More Information Sidebox and Responsive Classic Mobile Menu
+Define Page 3 | Link to Page 3 created in Site Map, More Information Sidebox and Responsive Classic Mobile Menu
+Define Page 4 | Link to Page 4 created in Site Map, More Information Sidebox and Responsive Classic Mobile Menu
+
+<br>
 
 _Link ON_ is also interpreted by some popular plugins such as Flexible Footer. 
 
-<br><br>
+<br>
 
 The phrase "Define Pages" can also be used to refer to the stand-alone pages which contain only define page content: 
 
+<br>
+
 Page Name | File| URL 
-----------|--------------------|-----
+----------|-----|-----
 Ask a Question | define_ask_a_question.php | `index.php?main_page=ask_a_question` 
 Contact Us | define_contact_us.php | `index.php?main_page=contact_us` 
 Privacy | `define_privacy.php` | `index.php?main_page=privacy`  
