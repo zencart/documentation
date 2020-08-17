@@ -11,8 +11,21 @@ You can see all the possible sideboxes by navigating to [Admin > Tools > Layout 
 
 The sideboxes that come with built-in to Zen Cart include:
 
-* **Banners**
+## Information 
 
+Image | Notes
+----------|-------
+![More Info](/images/sidebox_information.png)  |The **Information** sidebox presents links to the pages shippinginfo, privacy, conditions, contact_us, gift certificate, coupon, and newsletter unsubscribe pages. 
+
+## More Information 
+
+Image | Notes
+----------|-------
+![More Info](/images/sidebox_more_information.png)  |The **More Information** sidebox presents links to extra pages page_2, page_3 and page_4.
+
+
+
+## Banners
 
     
     ![Banner Box Sidebox](/images/sidebox_banner_box.png)

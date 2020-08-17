@@ -24,11 +24,15 @@ Add styles or override variables from the theme here.
 }
 
 .row > main { 
-   max-width: 75% !important;
+   max-width: 100% !important;
 }
 
 .td-content > p {
    max-width: 100% !important;
+}
+
+table > tbody > tr > td > img {
+   max-width: inherit !important; 
 }
 
 img {
