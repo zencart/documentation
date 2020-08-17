@@ -3,19 +3,20 @@ title: What sideboxes are available?
 description: Zen Cart Sidebox possibilities
 category: sideboxes
 weight: 10
+customCss: "/css/sidebox_list.css"
 ---
 
 FIXME - work in progress
 
-You can see all the possible sideboxes by navigating to [Admin > Tools > Layout Boxes Controller](/user/admin_pages/tools/layout_boxes_controller/). 
+You can see all the sideboxes that are available to your store by navigating to [Admin > Tools > Layout Boxes Controller](/user/admin_pages/tools/layout_boxes_controller/). 
 
-The sideboxes that come with built-in to Zen Cart include:
+The sideboxes that come built-in with Zen Cart include:
 
 ## Information 
 
 Image | Notes
 ----------|-------
-![More Info](/images/sidebox_information.png)  |The **Information** sidebox presents links to the pages shippinginfo, privacy, conditions, contact_us, gift certificate, coupon, and newsletter unsubscribe pages. 
+![More Info](/images/sidebox_information.png)  |The **Information** sidebox presents links to the pages: shippinginfo, privacy, conditions, contact_us, gift certificate, coupon, and newsletter unsubscribe pages. 
 
 ## More Information 
 

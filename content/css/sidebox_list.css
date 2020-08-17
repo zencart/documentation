@@ -1,0 +1,9 @@
+/*
+table > tbody > tr > td > img {
+   max-width: inherit !important;
+}
+*/
+
+table tr {
+   background-color: #FFF !important;
+}
