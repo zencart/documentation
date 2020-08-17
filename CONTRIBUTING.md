@@ -183,6 +183,16 @@ You can also point to a folder rather than a single file, as is done in the `tem
 
 <br />
 
+## Advanced Effects 
+
+More layout options are available than you might think - here are some examples: 
+
+- Accordion: [Release History](/user/about_us/release_history/) 
+
+- Footnotes: [HTML Email Templates](/user/email/html_email_templates/) 
+
+- Tables: [How do I change the title of main\_page=page_X?](/user/new_user_topics/title_change_for_page_x/)
+
 ## Shared Content
 
 Try not to copy and paste, since this means content will need to be maintained in multiple places. 

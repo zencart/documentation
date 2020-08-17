@@ -48,9 +48,29 @@ b) For all other files, the default file is one level above the template folder.
 If the templated file being referenced doesn't exist in your cart, you can 
 create it by copying the original from the default file. 
 
-[Learn more about default files](/user/first_steps/overrides/#default-files) 
+[Learn more about default files](/user/first_steps/overrides/#default-files).
 
-### Installing a file
+### What about language files? 
+
+Language files are very similar.  If your language is French, and the instructions say, 
+
+```
+Update includes/languages/english/YOURTEMPLATE/checkout_shipping.php
+```
+
+then you would want to update 
+
+```
+includes/languages/french/YOURTEMPLATE/checkout_shipping.php
+```
+
+and if that file doesn't exist, you would create it from 
+
+```
+includes/languages/french/checkout_shipping.php
+```
+
+# Installing a file
 
 Unless you are creating these files directly on your server, 
 you need to copy these files to your server.  Use your 
