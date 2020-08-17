@@ -33,4 +33,33 @@ As noted above, _Define Text ON_ always behaves the same way - it simply enables
 
 _Link ON_ is also interpreted by some popular plugins such as Flexible Footer. 
 
+<br><br>
+
+The phrase "Define Pages" can also be used to refer to the stand-alone pages which contain only define page content: 
+
+Page Name | File| URL 
+----------|--------------------|-----
+Ask a Question | define_ask_a_question.php | `index.php?main_page=ask_a_question` 
+Contact Us | define_contact_us.php | `index.php?main_page=contact_us` 
+Privacy | `define_privacy.php` | `index.php?main_page=privacy`  
+Shipping Info | `define_shippinginfo.php` | `index.php?main_page=shippinginfo` 
+Conditions of Use | `define_conditions.php` | `index.php?main_page=conditions` 
+Discount Coupon | `define_discount_coupon.php` | `index.php?main_page=coupons` 
+Site Map  | `define_site_map.php` | `index.php?main_page=site_map`  
+Page 2 |  `define_page_2.php` | `index.php?main_page=page_2`
+Page 3 |  `define_page_3.php` | `index.php?main_page=page_3` 
+Page 4 | `define_page_4.php` | `index.php?main_page=page_4`  
+
+<br>
+
+These pages have other content, and define page content is embedded along side that: 
+
+Page Name |  File | URL 
+----------|-------------------|-----|-----
+Shopping Cart |`define_shopping_cart.php` |  `index.php?main_page=shopping_cart`
+Checkout Success |`define_checkout_success.php` |  `index.php?main_page=checkout_success`
+Home Page |`define_main_page.php` |  `index.php`
+
+<br>
+
 If your needs go beyond what is provided by the define pages, take a look at the FAQ on [adding pages](/user/customizing/add_pages), which describes the use of [EZ-Pages](/user/ezpages/) as well as using plugins to build custom pages for your Zen Cart installation. 
