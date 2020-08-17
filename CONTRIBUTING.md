@@ -185,13 +185,15 @@ You can also point to a folder rather than a single file, as is done in the `tem
 
 ## Advanced Effects 
 
-More layout options are available than you might think - here are some examples: 
+More layout options are available than you might think - here are some examples:
 
 - Accordion: [Release History](/user/about_us/release_history/) 
 
 - Footnotes: [HTML Email Templates](/user/email/html_email_templates/) 
 
 - Tables: [How do I change the title of main\_page=page_X?](/user/new_user_topics/title_change_for_page_x/)
+
+- Per page CSS: [What sideboxes are available?](/user/sideboxes/sidebox_list/)
 
 ## Shared Content
 
