@@ -12,3 +12,12 @@ You can learn about [controlling centerboxes in the admin](/user/admin/centerbox
 This is the Featured Products centerbox. 
 
 ![Featured Products Centerbox](/images/featured_products_centerbox.png)
+
+There are four centerboxes that are built in to Zen Cart: 
+
+- New Products
+- Featured Products
+- Special Products
+- Upcoming Products
+
+
