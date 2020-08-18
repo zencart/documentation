@@ -24,6 +24,6 @@ You will want to update the block
 
 For the storefront, copy the file `includes/languages/english/email_extras.php` to `includes/languages/english/YOURTEMPLATE/email_extras.php` and update the same block of `define` statements.
 
-Sometimes the change will not show up right away in emails that have already been sent and viewed, due to caching. Simply close your email program and re-open it to see the change take effect.  If your email is browser-based, clear your browser cache to see the change. 
+Sometimes the change will not show up right away in emails that have already been sent and viewed, due to caching. Simply close your email program and re-open it to see the change take effect.  If your email is browser-based, clear your browser cache to see the change.  See [Image Caching](/user/new_user_topics/change_header_logo/#image-caching) for more details. 
 
 **NOTE: ** You must be sending HTML emails for this to work.**  See the Enable HTML Emails setting in [Admin > Configuration > Email Options ](/user/admin_pages/configuration/configuration_emailoptions/) setting.
