@@ -44,7 +44,7 @@ This can be found in the setting <i>Banner Display Groups - Side Box banner_box<
   <div class="modal-dialog">
     <div class="modal-content">
         <div class="modal-body">
-            <img src="/images/sidebox_banner_boxall.png" class="img-responsive">
+            <img src="/images/sidebox_banner_box_all.png" class="img-responsive">
         </div>
     </div>
   </div>
