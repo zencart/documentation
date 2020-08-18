@@ -96,7 +96,7 @@ index.php?main_page=index&cPath=21
 
 The above Link would take you to the Category for categories_id 21  
 
-While these links can be the Full URL to an Internal Link, it is best to write as a Relative Link so that if you change domains, are work on a temporary domain or an IP Address, the Link will remain valid if moved to another domain, IP Address, etc.  
+While these links can be the Full URL to an Internal Link, it is best to use as a Relative Link, so that if you change domains, or work on a temporary domain or an IP Address, the Link will remain valid.  See [relative URLs](/user/first_steps/relative_urls/) for more information.
 
 Internal Links can also open in a New Window or the Same Window or be for Secure or Non-Secure Pages.  
 

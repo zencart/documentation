@@ -24,7 +24,7 @@ One or more of these things happen on some or all of my "secure" pages, such as 
 
 ### Solution:
 
-That indicates that somewhere in your templates or stylesheets you have hard-coded actual URL links to `http://xxxxxxxxx`,  instead of using relative paths.
+That indicates that somewhere in your templates or stylesheets you have hard-coded actual URL links to `http://xxxxxxxxx`,  instead of using relative paths.  See [relative URLs](/user/first_steps/relative_urls/) for more information.
 
 This can also happen if you have added banners with `http://` links and not told them to skip display on SSL pages.
 
