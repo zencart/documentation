@@ -31,11 +31,11 @@ We recommend working with one of the following first two options.
 
 * [SourceTree](http://www.sourcetreeapp.com/) for Windows and Mac - this is another good free desktop application which does a good job of giving you access to all the power of git/github/bitbucket/mercurial in an easy visual interface. We highly recommend using SourceTree due to its simplicity.
 
-  When you first set up SourceTree, it will ask you to log in to your Atlassian account. The account is free, and no side-effects, and no personal information needs to be provided  besides name+email.
+    When you first set up SourceTree, it will ask you to log in to your Atlassian account. The account is free, and no side-effects, and no personal information needs to be provided  besides name+email.
 
 * There's another option, Github's own application: Github Desktop for [Windows](https://windows.github.com/) or [Mac](https://mac.github.com/).
 
-  We're intentionally not documenting how to use Github Desktop, because [the Github Desktop documentation](https://docs.github.com/en/desktop) covers it well.
+    We're intentionally not documenting how to use Github Desktop, because [the Github Desktop documentation](https://docs.github.com/en/desktop) covers it well.
 
 * While you won't find us documenting how to use them, there are several [other git GUI client apps](http://git-scm.com/downloads/guis)
 
@@ -242,7 +242,7 @@ From time to time you and others will add or remove branches from the github rep
 
 There are many more great resources explaining how all of this works. Some which you might wish to review include:
 
-* [git protocol by thoughtbot](https://github.com/thoughtbot/guides/tree/master/protocol/git)
+* [git protocol by thoughtbot](https://github.com/thoughtbot/guides/tree/master/git)
 * [code review process](https://github.com/thoughtbot/guides/tree/master/code-review)
 
 
