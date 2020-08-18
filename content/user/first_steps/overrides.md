@@ -40,7 +40,9 @@ The files under these folders are called `overrides`.  In other words, Zen Cart'
 Some files *could* be overridden but are currently not - for example, 
 the site map template file (`tpl_site_map_default.php`) is not part of 
 the `responsive_classic` template.  When this happens, Zen Cart uses 
-the *default file* (or *base file*) instead. 
+the *default file* instead. 
+
+**Note:** Sometimes the default file is called the *base file* or the *core file* instead. These terms are all interchangable. 
 
 ### Default Files 
 
@@ -79,7 +81,7 @@ is a template modification of
     includes/languages/english.php
 
 If a templated file doesn't exist in your cart, you can 
-create it by copying the original from the default file. 
+create it by simply copying the default file.  See the [I don't have the file ...](/user/new_user_topics/no_such_file/) FAQ for more detail. 
 
 And remember: if you aren't changing a file, there is *no need* to copy it 
 from the default file - the default file will be used by Zen Cart

@@ -15,3 +15,12 @@ Sideboxes display is controlled by [Admin > Tools > Layout Boxes Controller](/us
 You can turn sideboxes off on a per page basis by modifying your template.  See [suppressing sidebox display](/user/sideboxes/suppressing_sidebox_display/) for details. 
 
 You can also [turn off the left and right columns](/user/template/left_right_columns) where sideboxes display.  
+
+The number of entries shown in each sidebox is sometimes controlled using settings from [Admin > Configuration > Maximum Values](/user/admin_pages/configuration/configuration_maximumvalues/).  
+
+For example: 
+
+- The number of Special Products displayed is controlled by MAX_RANDOM_SELECT_SPECIALS. 
+- The number of Featured Products displayed is controlled by MAX_RANDOM_SELECT_FEATURED_PRODUCTS. 
+- The number of Reviews displayed is controlled by MAX_RANDOM_SELECT_REVIEWS. 
+
