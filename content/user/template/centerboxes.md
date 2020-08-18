@@ -20,4 +20,16 @@ There are four centerboxes that are built in to Zen Cart:
 - Special Products
 - Upcoming Products
 
+### Centerboxes and Mobile
+
+Centerboxes will appear on a mobile device in the expected place.  
+
+<img alt="Centerbox on tablet" src="/images/centerboxes_mobile.png" />
+
+This behavior is different from that of [sideboxes](/user/template/sideboxes), which are commonly hidden on mobile. 
+
+
+###  Creating your own centerbox 
+
+In addition to the four built in centerboxes described above, other centerboxes are available in the [Zen Cart plugins library](https://www.zen-cart.com/downloads.php).  Try searching for both "centerbox" and "centerboxes" in the Advanced Search with "Search Titles Only" set. 
 

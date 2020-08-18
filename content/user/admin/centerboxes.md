@@ -5,7 +5,9 @@ category: admin
 weight: 10
 ---
 
-There is a "New Products for [insert month]" section on several pages, including Home Page, New-Products page, All-Products Page, (empty) Shopping Cart page, etc.  These sections are called [centerboxes](/user/template/centerboxes/).
+This article is about controlling centerboxes from the admin. 
+
+There is a "New Products" section on several pages, including Home Page, New-Products page, All-Products Page, (empty) Shopping Cart page, etc.  These sections are called [centerboxes](/user/template/centerboxes/).
 
 As the title of this article suggests, there are four built-in Centerboxes: 
 
@@ -40,4 +42,14 @@ For setting up the Centerboxes of the Empty Shopping Cart, use the settings on t
 - Show Featured Products on empty Shopping Cart Page
 - Show Special Products on empty Shopping Cart Page
 - Show Upcoming Products on empty Shopping Cart Page
+
+The number of products shown in each centerbox is controlled using settings from [Admin > Configuration > Maximum Values](/user/admin_pages/configuration/configuration_maximumvalues/).  
+
+For example: 
+
+- The number of New Products displayed is controlled by MAX_DISPLAY_NEW_PRODUCTS. 
+- The number of Featured Products displayed is controlled by MAX_DISPLAY_PRODUCTS_FEATURED_PRODUCTS.
+- The number of Special Products displayed  is controlled by MAX_DISPLAY_SPECIAL_PRODUCTS. 
+- The number of Upcoming Products displayed is controlled by MAX_DISPLAY_UPCOMING_PRODUCTS.
+
 
