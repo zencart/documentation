@@ -31,9 +31,11 @@ We recommend working with one of the following first two options.
 
 * [SourceTree](http://www.sourcetreeapp.com/) for Windows and Mac - this is another good free desktop application which does a good job of giving you access to all the power of git/github/bitbucket/mercurial in an easy visual interface. We highly recommend using SourceTree due to its simplicity.
 
- When you first set up SourceTree, it will ask you to log in to your Atlassian account. The account is free, and no side-effects, and no personal information needs to be provided  besides name/email.
+ When you first set up SourceTree, it will ask you to log in to your Atlassian account. The account is free, and no side-effects, and no personal information needs to be provided  besides name+email.
 
-* There's another option, which we're NOT recommending here, as its UI is very complicated. Also (at the time of this writing) it has an important limitation when working with forked repositories: It doesn't support multiple remotes, which means you'll need to use the command line to keep your checkouts up to date with our central repository's branches else you'll have problems when issuing pull requests. That other option is github's own application: Github Desktop for [Windows](https://windows.github.com/) or [Mac](https://mac.github.com/) - these are free desktop applications written by Github, and make visual interaction **easy when working only with your own repositories but not when regularly contributing to someone else's projects**.
+* There's another option, Github's own application: Github Desktop for [Windows](https://windows.github.com/) or [Mac](https://mac.github.com/).
+
+We're intentionally not documenting how to use Github Desktop, because [the Github Desktop documentation](https://docs.github.com/en/desktop) covers it well.
 
 * While you won't find us documenting how to use them, there are several [other git GUI client apps](http://git-scm.com/downloads/guis)
 
@@ -55,14 +57,14 @@ If you have not signed the CLA using the email address or username you use for g
  1. github account
   * Create a github account at [www.github.com](http://www.github.com)
  2. Fork the Repository
-  * On the github site, [fork the project's repository](https://help.github.com/articles/fork-a-repo) (at the time of this writing, the main ZC repository is at [https://github.com/zencart/zencart](https://github.com/zencart/zencart)).  This makes a copy of that repository into your own github account, which is where you will upload your changes since you only have "write" permissions in your own repository.
+  * On the github site, [fork the project's repository](https://help.github.com/articles/fork-a-repo) (the main Zen Cart repository is at [https://github.com/zencart/zencart](https://github.com/zencart/zencart)).  Forking makes a copy of that repository into your own github account, which is where you will upload your changes since you only have "write" permissions in your own repository.
  3. Clone the repository to your own computer. (see below)
 
 ### Cloning a repository
 * Get the URL for the repository you're cloning
  1. Go to **your** github account page
  2. Go to **your** fork of the Zen Cart repository: `https://github.com/YOURNAMEHERE/zencart`
- 3. Halfway down the right side of the page you'll see a URL in a textbox, with a clipboard icon next to it. It probably says "HTTPS clone URL" above it. You'll want to click the clipboard to copy that URL to your computer's clipboard.
+ 3. There's a green "Code" button, which if you click it, will show you the URL for cloning your repository. Click the clipboard icon to copy that URL to your computer's clipboard.
 
 Now switch to your desktop application of choice and use that URL to clone the repository locally:
 
@@ -78,7 +80,7 @@ Now switch to your desktop application of choice and use that URL to clone the r
  4. For the bookmark name, call it whatever friendly name you want to remember this repo by. It will show up in [SourceTree](http://www.sourcetreeapp.com/)'s bookmarks list of repositories you've got.
  5. Click Clone or OK to have it start the clone. It will take a few seconds for it to download the repository contents to your computer.
 	
-### Add an upstream remote
+### Add an upstream remote for keeping things up-to-date
 
 To keep your own fork up-to-date, you'll need to periodically merge updates from the main Zen Cart repository. This involves telling your own local (on your PC) git repository about the main Zen Cart repository location. To do this you must add what's called an "upstream remote". (See the glossary link above for what a "remote" is.)
 
@@ -97,7 +99,7 @@ To keep your own fork up-to-date, you'll need to periodically merge updates from
  7. Click OK
  8. Click Fetch
  
-### Making a working-branch
+### Making a working-branch for each new Pull Request or feature you're working on
 Any time you're going to contribute code changes, you'll want to first make a working branch. (For more on branches, see the glossary and other git references at the top of this page.) Branches are how git keeps different versions of changes separate from each other until such time as someone approves merging them together into the main branch.
 
 ##### Pick a branch name
@@ -247,6 +249,6 @@ There are many more great resources explaining how all of this works. Some which
 
 ---
 
-&copy; 2014-2018 Zen Cart&reg; Creative Commons 3.0
+&copy; 2014-2020 Zen Cart&reg; Creative Commons 3.0
 
 *The SourceTree name is copyright Atlassian. Zen Cart receives no compensation or consideration for recommending SourceTree; we simply find it to be an extremely capable and useful app for beginners and experienced developers alike.* 
