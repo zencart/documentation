@@ -51,17 +51,4 @@ To right align the logo use `float: right;`
 
 ## Image Caching 
 
-The reason the instructions above recommend using the new name `newlogo.png` is to ensure that the old logo isn't cached. 
-
-If you simply replace `includes/templates/YOURTEMPLATE/images/logo.gif` with your own logo using the same name, your browser will likely not pick up the change.  The reason for this is that the default configuration of browsers is to assume that you are a _user_, not a _developer_, so it tries to make your browsing experience faster by caching images.  Caching an image means retrieving it one time from the webserver to your local computer, and then using the local copy next time the image is needed, thereby saving the time required to retrieve it.
-
-Since you are acting as a developer while you work on your site, you want to turn this behavior off.  The way this is done is specific to every browser and environment, so you'll have to do a web search to figure out how to do it with the tools you are working with.  
-
-_The easiest way_ to get this working the first time is to use Google Chrome on a desktop computer, and follow these steps: 
-
-- Right click and select Inspect. 
-- Click the Network Tab
-- Check the box that says Disable Cache
-- With the Inspect window open, refresh the page being tested.
-
-Once you have mastered this technique, you can figure out how to do it in other browsers and environments.  _It is particularly tedious to do this on a mobile device_, so I recommend using a desktop computer until you have more experience doing this sort of thing. 
+What if after you upload a new logo, you don't see any change on the website? This is due to [image caching](/user/new_user_topics/image_caching).
