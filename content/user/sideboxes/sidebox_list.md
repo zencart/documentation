@@ -23,6 +23,7 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
       <br><br>
       There are two more banner sideboxes, <strong>banner_box2</strong> and <strong>banner_box_all</strong>, which are configured similarly. <strong>Banner_box2</strong> is just a duplicate of the first, but <strong>banner_box_all</strong> is different in that it can display multiple banners randomly. 
    </div>
+	</div>
 <br clear="all">
 
 <ul>
@@ -143,7 +144,6 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
 <br clear="all">
 <br>
 
-
 ## More Information
 
 <br>
@@ -157,7 +157,6 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
 </div>
 <br clear="all">
 <br>
-
 
 # Languages
 
@@ -213,7 +212,8 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
 	   The <strong>order_history</strong> shows a list of previously purchased user products. 
    </div>
 <br clear="all">
-
+<br> 
+	
 # Products
 
 <br>
@@ -267,7 +267,6 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
 </div>
 </li>
 </ul>
-
    </div>
 <br clear="all">
 <br>
@@ -297,7 +296,6 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
 </div>
 </li>
 </ul>
-
    </div>
 <br clear="all">
 <br>
@@ -327,11 +325,9 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
 </div>
 </li>
 </ul>
-
    </div>
 <br clear="all">
 <br>
-
 
 # Shopping Cart
 
@@ -346,7 +342,6 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
 
 # Who's Online
 
-	
 <div>
    <div class="img_col"> 
       <img alt="Who's Online Sidebox" src="/images/sidebox_whos_online.png" />
