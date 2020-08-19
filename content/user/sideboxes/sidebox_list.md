@@ -21,13 +21,16 @@ The following content shows the sideboxes that come built-in with Zen Cart.
       The <strong>banners</strong> sidebox shows what's in the sidebox banner group. 
 This can be found in the setting <em>Admin > Configuration > Layout Settings</em> - Banner Display Groups - Side Box. 
       <br><br>
-      There are two more banner sideboxes, <strong>banner_box2</strong> and <strong>banner_box_all</strong>, which are configured similarly. <strong>Banner_box2</strong> is just a duplicate of the first, but <strong>banner_box_all</strong> is different in that it can display multiple banners randomly. 
+      There are two more banner sideboxes, <strong>banner_box2</strong> and <strong>banner_box_all</strong>, which are configured similarly. 
+<ul>
+   <li><strong>banner_box2</strong> is just a duplicate of <b>banners</b>, which displays a single banner.</li>
+   <li><strong>banner_box_all</strong> can display a random selection from the list of banners.</li>
+</ul>
+<button type="button" class="btn btn-link" data-toggle="modal" data-target="#banner_box2">- View banner_box2</button><br>
+<button type="button" class="btn btn-link" data-toggle="modal" data-target="#banner_boxall">- View banner_boxall</button>
    </div>
-	</div>
-<br clear="all">
+</div>
 
-<div>
-<button type="button" class="btn btn-link" data-toggle="modal" data-target="#banner_box2">banner_box2</button>
 <div id="banner_box2" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -37,10 +40,7 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
     </div>
   </div>
  </div>
-</div>	
 
-<div>	
-<button type="button" class="btn btn-link" data-toggle="modal" data-target="#banner_boxall">banner_boxall</button>
 <div id="banner_boxall" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -49,7 +49,6 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
         </div>
     </div>
   </div>
- </div>
 </div>
 
 <br clear="all">
@@ -82,12 +81,11 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
       The parenthetical numbers after the category names are the number of items in that category.  This may be turned off in <em>Admin > Configuration > My Store > Show Category Counts</em>. The featured, special, new, and all product links can be removed in <em>Admin > Configuration > Layout Settings</em>
       <br><br>
        There is another categories sidebox called <strong>document_categories</strong>, for stores with Document type products. The product type Document may be seen on the screen <em>Admin > Catalog > Product Types</em>. 
+<button type="button" class="btn btn-link" data-toggle="modal" data-target="#documents_categories"> - View documents_categories</button>
 	      </div>
 	</div>
 <br clear="all">
 
-<div>
-<button type="button" class="btn btn-link" data-toggle="modal" data-target="#documents_categories">documents_categories</button>
 <div id="documents_categories" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -96,7 +94,6 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
         </div>
     </div>
   </div>
-</div>
 </div>
 
 <br clear="all">
@@ -112,7 +109,7 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
    <div class="notes_col">
       The <strong>currencies</strong> sidebox creates a dropdown selector list showing all the currencies supported by the store.  Selecting a new item from the list changes the pricing to use that currency. 
    </div>
-	</div>
+</div>
 <br clear="all">
 <br>
 
@@ -130,6 +127,45 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
 <br clear="all">
 <br>
 
+## Featured Products
+
+<br>
+<div>
+   <div class="img_col"> 
+      <img alt="Featured Products Sidebox" src="/images/sidebox_featured.png" />
+   </div>
+   <div class="notes_col">
+      The <strong>featured_products</strong> sidebox is a random display of featured products. <br>
+The <strong>specials</strong> and <strong>new_products</strong> sideboxes work similarly. <br>
+<button type="button" class="btn btn-link" data-toggle="modal" data-target="#specials">- View specials</button><br>
+<button type="button" class="btn btn-link" data-toggle="modal" data-target="#new_products">- View new_products</button>
+   </div>
+</div>
+<br clear="all">
+
+<div id="specials" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-body">
+            <img src="/images/sidebox_specials.png" class="img-responsive">
+        </div>
+    </div>
+  </div>
+</div>
+
+<div id="new_products" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-body">
+            <img src="/images/sidebox_new_products.png" class="img-responsive">
+        </div>
+    </div>
+  </div>
+</div>
+
+<br clear="all">
+<br>
+
 ## Information
 
 <br>
@@ -141,6 +177,51 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
       The <strong>information</strong> sidebox presents links to the <a href="/user/template/define_pages">define pages</a>. Included are shipping information, privacy, conditions, contact us, gift certificate, coupon, and newsletter unsubscribe. 
    </div>
 	</div>
+<br clear="all">
+<br>
+
+## Languages
+
+<br>
+<div>
+   <div class="img_col"> 
+      <img alt="Language Sidebox" src="/images/sidebox_languages.png" />
+   </div>
+   <div class="notes_col">
+      The <strong>languages</strong> sidebox shows icons for the languages in use in the store. 
+   </div>
+</div>
+
+<br clear="all">
+<br>
+
+
+## Manufacturers
+
+<br>
+<div>
+   <div class="img_col"> 
+      <img alt="Manufacterers Sidebox" src="/images/sidebox_manufacturers.png" />
+   </div>
+   <div class="notes_col">
+      The <strong>manufacturers</strong> sidebox is a dropdown list of the manufacturers. Selecting an entry from this list will show all that manufacturer's products.  <br>A related sidebox, <strong>manufacturers_info</strong> appears only on the product pages with information about the product's specific manufacturer.<br>
+<button type="button" class="btn btn-link" data-toggle="modal" data-target="#manufacturers_info">- View manufacturers_info</button>
+
+   </div>
+</div>
+
+<br clear="all">
+
+<div id="manufacturers_info" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-body">
+            <img src="/images/sidebox_manufacturers_info.png" class="img-responsive">
+        </div>
+    </div>
+  </div>
+</div>
+   
 <br clear="all">
 <br>
 
@@ -158,121 +239,36 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
 <br clear="all">
 <br>
 
-# Languages
 
-<br>
-<div>
-   <div class="img_col"> 
-      <img alt="Language Sidebox" src="/images/sidebox_languages.png" />
-   </div>
-   <div class="notes_col">
-      The <strong>languages</strong> sidebox shows icons for the languages in use in the store. 
-   </div>
-</div>
-
-<br clear="all">
-<br>
-
-# Manufacturers
-
-<br>
-<div>
-   <div class="img_col"> 
-      <img alt="Manufacterers Sidebox" src="/images/sidebox_manufacturers.png" />
-   </div>
-   <div class="notes_col">
-      The <strong>manufacturers</strong> is a dropdown of the manufacturers. A second sidebox, <strong>manufacturers_info</strong> appears only on the product pages with information about the product's specific manufacturer.
-   </div>
-</div>
-
-<br clear="all">
-
-<div>
-<button type="button" class="btn btn-link" data-toggle="modal" data-target="#manufacturers_info">manufacturers_info</button>
-<div id="manufacturers_info" class="modal fade" tabindex="-1" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-        <div class="modal-body">
-            <img src="/images/sidebox_manufacturers_info.png" class="img-responsive">
-        </div>
-    </div>
-  </div>
- </div>
-</div>
-   
-<br clear="all">
-<br>
-
-# Order History
+## Order History
 
 <br>
 <div>
    <div class="img_col"> 
       <img alt="Order History Sidebox" src="/images/sidebox_order_history.png" />
    </div>
-   <div class="notes_col">
+   <div>
 	   The <strong>order_history</strong> shows a list of previously purchased user products. 
    </div>
 </div>
 <br clear="all">
 <br> 
 	
-# Products
+
+## Product Notifications
 
 <br>
 <div>
    <div class="img_col"> 
-      <img alt="Featured Products Sidebox" src="/images/sidebox_featured.png" />
+      <img alt="Product Notifications Sidebox" src="/images/sidebox_product_notifications.png" />
    </div>
    <div class="notes_col">
-      The <strong>featured_products</strong> is a random display of featured products. <strong>Specials</strong> and <strong>new_products</strong> work similarly. <strong>Product_notifications</strong> only shows on the product info page.
+      The <strong>product_notifications</strong> sidebox allows a customer to subscribe to product notifications that you post using the Newsletter and Product Notifications Manager. <br>
    </div>
 </div>
 <br clear="all">
 
-<div>
-<button type="button" class="btn btn-link" data-toggle="modal" data-target="#specials">specials</button>
-<div id="specials" class="modal fade" tabindex="-1" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-        <div class="modal-body">
-            <img src="/images/sidebox_specials.png" class="img-responsive">
-        </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<div>
-<button type="button" class="btn btn-link" data-toggle="modal" data-target="#new_products">new_products</button>
-<div id="new_products" class="modal fade" tabindex="-1" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-        <div class="modal-body">
-            <img src="/images/sidebox_new_products.png" class="img-responsive">
-        </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<div>
-<button type="button" class="btn btn-link" data-toggle="modal" data-target="#product_notifications">product_notifications</button>
-<div id="product_notifications" class="modal fade" tabindex="-1" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-        <div class="modal-body">
-            <img src="/images/sidebox_product_notifications.png" class="img-responsive">
-        </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<br clear="all">
-<br>
-
-# Reviews
+## Reviews
 
 <br>
 <div>
@@ -280,13 +276,12 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
       <img alt="Reviews Sidebox" src="/images/sidebox_reviews.png" />
    </div>
    <div class="notes_col">
-      The <strong>reviews</strong> sidebox features a random display of reviews. It changes to the Write Reviews appearance on the product info page. 
+      The <strong>reviews</strong> sidebox features a random display of reviews. <br>On the product info page, the sidebox changes to a review request called the <b>write_reviews</b> sidebox. <br>
+<button type="button" class="btn btn-link" data-toggle="modal" data-target="#write_reviews">- View write_reviews</button>
    </div>
-	</div>
+</div>
 <br clear="all">
 	
-<div>
-<button type="button" class="btn btn-link" data-toggle="modal" data-target="#write_reviews">write_reviews</button>
 <div id="write_reviews" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -296,12 +291,11 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
     </div>
   </div>
 </div>
-</div>
 
 <br clear="all">
 <br>
 
-# Search
+## Search
 
 <br>
 <div>
@@ -309,13 +303,13 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
       <img alt="Search Sidebox" src="/images/sidebox_search.png" />
    </div>
    <div class="notes_col">
-      The <strong>search</strong> sidebox is accompanied by another, <strong>search_header</strong>, for the header.  
+      The <strong>search</strong> sidebox provides an interface to search products in the cart.<br>
+A second search sidebox, the <strong>search_header</strong> sidebox, is designed for positioning in the page header. <br>
+<button type="button" class="btn btn-link" data-toggle="modal" data-target="#search_header">- View search_header</button>
    </div>
 	</div>
 <br clear="all">
 
-<div>
-<button type="button" class="btn btn-link" data-toggle="modal" data-target="#search_header">search_header</button>
 <div id="search_header" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -325,11 +319,10 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
     </div>
   </div>
 </div>
-   </div>
 <br clear="all">
 <br>
 
-# Shopping Cart
+## Shopping Cart
 
 <br>
 <div>
@@ -337,13 +330,13 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
       <img alt="Shopping Cart Sidebox" src="/images/sidebox_shopping_cart.png" />
    </div>
    <div class="notes_col">
-      The <strong>shopping_cart</strong> lists the items that have been added into the cart while the user is logged in.
+      The <strong>shopping_cart</strong> sidebox lists the items that have been added into the customer's cart.
    </div>
 	</div>
 <br clear="all">
 <br>
 
-# Who's Online
+## Who's Online
 
 <br>
 <div>
@@ -353,33 +346,7 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
    <div class="notes_col">
       The <strong>whos_online</strong> sidebox shows the number of visitors presently on the site.
 	</div>
-	</div>
+</div>
 <br clear="all">
 <br>
-	
-## Music
 
-<br>
-<div>
-   <div class="img_col"> 
-      <img alt="Music Genres Sidebox" src="/images/sidebox_music_genres.png" />
-   </div>
-   <div class="notes_col">
-      The <strong>music_genres</strong> sidebox with its companion <strong>record_companies</strong> display dropdown lists. 
-   </div>
-</div>
-
-<br clear="all">
-	
-<div>
-<button type="button" class="btn btn-link" data-toggle="modal" data-target="#record_companies">record_companies</button>
-<div id="record_companies" class="modal fade" tabindex="-1" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-        <div class="modal-body">
-            <img src="/images/sidebox_record_companies.png" class="img-responsive">
-        </div>
-    </div>
-  </div>
-</div>
-</div>
