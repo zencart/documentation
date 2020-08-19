@@ -1,7 +1,9 @@
 ---
 title: Should I charge taxes?  How much? 
 description: Should I charge taxes in Zen Cart?  How much? 
-category: localization 
+category: locations 
+aliases: 
+    - /user/localization/taxes
 weight: 10
 ---
 

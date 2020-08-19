@@ -1,7 +1,9 @@
 ---
 title: Creating Zone Definitions 
 description: Recipes for common Zone Definitions 
-category: localization 
+category: locations 
+aliases: 
+    - /user/localization/zone_definitions
 weight: 10
 ---
 

@@ -1,7 +1,9 @@
 ---
 title: How do I set up a default tax class for new products? 
 description: Zen Cart default tax class 
-category: localization
+category: locations 
+aliases: 
+    - /user/localization/default_tax_class
 weight: 10
 ---
 
