@@ -26,9 +26,7 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
 	</div>
 <br clear="all">
 
-<ul>
-
-<li>
+<div>
 <button type="button" class="btn btn-link" data-toggle="modal" data-target="#banner_box2">banner_box2</button>
 <div id="banner_box2" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog">
@@ -38,10 +36,10 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
         </div>
     </div>
   </div>
-</div>
-</li>
+ </div>
+</div>	
 
-<li>
+<div>	
 <button type="button" class="btn btn-link" data-toggle="modal" data-target="#banner_boxall">banner_boxall</button>
 <div id="banner_boxall" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog">
@@ -51,10 +49,9 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
         </div>
     </div>
   </div>
+ </div>
 </div>
-</li>
-</ul>
-   </div>
+
 <br clear="all">
 <br>
 
@@ -68,6 +65,7 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
    <div class="notes_col">
       The <strong>bestsellers</strong> sidebox shows links to the best selling items in your store. 
    </div>
+</div>
 <br clear="all">
 <br>
 
@@ -85,10 +83,10 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
       <br><br>
        There is another categories sidebox called <strong>document_categories</strong>, for stores with Document type products. The product type Document may be seen on the screen <em>Admin > Catalog > Product Types</em>. 
 	      </div>
+	</div>
 <br clear="all">
 
-<ul>
-<li>
+<div>
 <button type="button" class="btn btn-link" data-toggle="modal" data-target="#documents_categories">documents_categories</button>
 <div id="documents_categories" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog">
@@ -99,9 +97,8 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
     </div>
   </div>
 </div>
-</li>
-</ul>
-   </div>
+</div>
+
 <br clear="all">
 <br>
 
@@ -115,6 +112,7 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
    <div class="notes_col">
       The <strong>currencies</strong> sidebox creates a dropdown selector list showing all the currencies supported by the store.  Selecting a new item from the list changes the pricing to use that currency. 
    </div>
+	</div>
 <br clear="all">
 <br>
 
@@ -128,6 +126,7 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
    <div class="notes_col">
       The <strong>ezpages</strong> sidebox creates a list of the <a href="/user/ezpages/what_are_ezpages">EZ-Pages</a> in your store, with the title Important Links.
    </div>
+	</div>
 <br clear="all">
 <br>
 
@@ -141,6 +140,7 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
    <div class="notes_col">
       The <strong>information</strong> sidebox presents links to the <a href="/user/template/define_pages">define pages</a>. Included are shipping information, privacy, conditions, contact us, gift certificate, coupon, and newsletter unsubscribe. 
    </div>
+	</div>
 <br clear="all">
 <br>
 
@@ -168,6 +168,8 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
    <div class="notes_col">
       The <strong>languages</strong> sidebox shows icons for the languages in use in the store. 
    </div>
+</div>
+
 <br clear="all">
 <br>
 
@@ -181,10 +183,11 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
    <div class="notes_col">
       The <strong>manufacturers</strong> is a dropdown of the manufacturers. A second sidebox, <strong>manufacturers_info</strong> appears only on the product pages with information about the product's specific manufacturer.
    </div>
+</div>
+
 <br clear="all">
 
-<ul>
-<li>
+<div>
 <button type="button" class="btn btn-link" data-toggle="modal" data-target="#manufacturers_info">manufacturers_info</button>
 <div id="manufacturers_info" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog">
@@ -194,10 +197,9 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
         </div>
     </div>
   </div>
+ </div>
 </div>
-</li>
-</ul>
-   </div>
+   
 <br clear="all">
 <br>
 
@@ -211,6 +213,7 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
    <div class="notes_col">
 	   The <strong>order_history</strong> shows a list of previously purchased user products. 
    </div>
+</div>
 <br clear="all">
 <br> 
 	
@@ -224,11 +227,10 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
    <div class="notes_col">
       The <strong>featured_products</strong> is a random display of featured products. <strong>Specials</strong> and <strong>new_products</strong> work similarly. <strong>Product_notifications</strong> only shows on the product info page.
    </div>
+</div>
 <br clear="all">
 
-<ul>
-
-<li>
+<div>
 <button type="button" class="btn btn-link" data-toggle="modal" data-target="#specials">specials</button>
 <div id="specials" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog">
@@ -239,9 +241,9 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
     </div>
   </div>
 </div>
-</li>
+</div>
 
-<li>
+<div>
 <button type="button" class="btn btn-link" data-toggle="modal" data-target="#new_products">new_products</button>
 <div id="new_products" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog">
@@ -252,9 +254,9 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
     </div>
   </div>
 </div>
-</li>
+</div>
 
-<li>
+<div>
 <button type="button" class="btn btn-link" data-toggle="modal" data-target="#product_notifications">product_notifications</button>
 <div id="product_notifications" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog">
@@ -265,14 +267,14 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
     </div>
   </div>
 </div>
-</li>
-</ul>
-   </div>
+</div>
+
 <br clear="all">
 <br>
 
 # Reviews
 
+<br>
 <div>
    <div class="img_col"> 
       <img alt="Reviews Sidebox" src="/images/sidebox_reviews.png" />
@@ -280,10 +282,10 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
    <div class="notes_col">
       The <strong>reviews</strong> sidebox features a random display of reviews. It changes to the Write Reviews appearance on the product info page. 
    </div>
+	</div>
 <br clear="all">
 	
-<ul>
-	<li>
+<div>
 <button type="button" class="btn btn-link" data-toggle="modal" data-target="#write_reviews">write_reviews</button>
 <div id="write_reviews" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog">
@@ -294,14 +296,14 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
     </div>
   </div>
 </div>
-</li>
-</ul>
-   </div>
+</div>
+
 <br clear="all">
 <br>
 
 # Search
 
+<br>
 <div>
    <div class="img_col"> 
       <img alt="Search Sidebox" src="/images/sidebox_search.png" />
@@ -309,10 +311,10 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
    <div class="notes_col">
       The <strong>search</strong> sidebox is accompanied by another, <strong>search_header</strong>, for the header.  
    </div>
+	</div>
 <br clear="all">
 
-<ul>
-	<li>
+<div>
 <button type="button" class="btn btn-link" data-toggle="modal" data-target="#search_header">search_header</button>
 <div id="search_header" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog">
@@ -323,14 +325,13 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
     </div>
   </div>
 </div>
-</li>
-</ul>
    </div>
 <br clear="all">
 <br>
 
 # Shopping Cart
 
+<br>
 <div>
    <div class="img_col"> 
       <img alt="Shopping Cart Sidebox" src="/images/sidebox_shopping_cart.png" />
@@ -338,21 +339,27 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
    <div class="notes_col">
       The <strong>shopping_cart</strong> lists the items that have been added into the cart while the user is logged in.
    </div>
+	</div>
 <br clear="all">
+<br>
 
 # Who's Online
 
+<br>
 <div>
    <div class="img_col"> 
       <img alt="Who's Online Sidebox" src="/images/sidebox_whos_online.png" />
    </div>
    <div class="notes_col">
       The <strong>whos_online</strong> sidebox shows the number of visitors presently on the site.
-   </div>
+	</div>
+	</div>
 <br clear="all">
+<br>
 	
 ## Music
 
+<br>
 <div>
    <div class="img_col"> 
       <img alt="Music Genres Sidebox" src="/images/sidebox_music_genres.png" />
@@ -360,9 +367,11 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
    <div class="notes_col">
       The <strong>music_genres</strong> sidebox with its companion <strong>record_companies</strong> display dropdown lists. 
    </div>
+</div>
+
 <br clear="all">
-	<ul>
-	<li>
+	
+<div>
 <button type="button" class="btn btn-link" data-toggle="modal" data-target="#record_companies">record_companies</button>
 <div id="record_companies" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog">
@@ -373,9 +382,4 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
     </div>
   </div>
 </div>
-</li>
-</ul>
-
-   </div>
-<br clear="all">
-<br>
+</div>
