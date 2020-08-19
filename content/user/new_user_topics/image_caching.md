@@ -7,6 +7,8 @@ weight: 10
 
 If you upload a new image with the same filename as an existing image, in many cases you won't see the new image right away in your browser.  Why is this? 
 
+(The same thing can happen with stylesheet CSS files and Javascript files.)
+
 It's because of a browser behavior called _caching_.  
 
 The reason for this is that the default configuration of browsers (and Zen Cart) is to assume that you are a _user_, not a _developer_, so it tries to make your browsing experience faster by caching images.  Caching an image means retrieving it one time from the webserver to your local computer, and then using the local copy next time the image is needed, thereby saving the time required to retrieve it.
