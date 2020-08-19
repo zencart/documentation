@@ -1,13 +1,17 @@
 ---
-title:  Image Caching 
+title:  Caching 
 description: Why doesn't my new image show?
 category: new_user_topics
 weight: 10
 ---
 
-If you upload a new image with the same filename as an existing image, in many cases you won't see the new image right away in your browser.  Why is this? 
+"Why don't I see my new image?"
 
-(The same thing can happen with stylesheet CSS files and Javascript files.)
+"Why don't I see my new CSS style?" 
+
+"Where's my javascript function update?" 
+
+If you upload a new file with the same name as an existing file, in many cases you won't see the change right away in your browser.  This could be for an image, a CSS file or a javascript file.  Why is this? 
 
 It's because of a browser behavior called _caching_.  
 
