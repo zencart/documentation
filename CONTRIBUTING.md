@@ -155,7 +155,12 @@ FILE 2:
 
 ## Renaming files
 
-If it is necessary to rename a file, be sure to use [Hugo aliasing](https://gohugo.io/content-management/urls/) so as not break any external links to the page.  You can see an example of where this was done in  [`change_header_logo.md`](https://github.com/zencart/documentation/blob/master/content/user/new_user_topics/change_header_logo.md), which used to be named `change_powered_by.md`.
+If it is necessary to rename a file, be sure to use [Hugo aliasing](https://gohugo.io/content-management/urls/) so as not break any external links to the page.  You can see an example of where this was done in `change_header_logo.md`, which used to be named `change_powered_by.md`: 
+
+```
+aliases:
+    - /user/new_user_topics/change_powered_by/
+```
 
 ## Creating Crosslink-only Pages
 

@@ -7,7 +7,7 @@ weight: 20
 
 ![Zones](/images/zones.png)
 
-There are two kinds of zones in Zen Cart: [zones](/user/admin_pages/locations/zones) and [zones definitions](/user/admin_pages/locations/zones_definitions) (sometimes referred to as _geo_zones_). 
+There are two kinds of zones in Zen Cart: [zones](/user/admin_pages/locations/zones) and [zones definitions](/user/admin_pages/locations/zones_definitions) (sometimes referred to as _geo\_zones_). 
 
 - Zones are the regions within a country defined by that country's national government.  For example, Canada is broken into Provinces. 
 - Zone Definitions are groupings of zones that storeowners create to for shipping, payment and tax purposes.  

@@ -1,7 +1,9 @@
 ---
 title: VAT setup instructions
 description: Zen Cart VAT setup instructions
-category: localization
+category: locations 
+aliases: 
+    - /user/localization/vat 
 weight: 10
 ---
 
