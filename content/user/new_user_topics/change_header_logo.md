@@ -51,4 +51,6 @@ To right align the logo use `float: right;`
 
 ## Image Caching 
 
-What if after you upload a new logo, you don't see any change on the website? This is due to [image caching](/user/new_user_topics/image_caching).
+The reason the instructions above recommend using the new name `newlogo.png` is to ensure that the old logo isn't cached. 
+
+If you simply replace `includes/templates/YOURTEMPLATE/images/logo.gif` with your own logo using the same name, your browser will likely not pick up the change because of [image caching](/user/new_user_topics/image_caching).
