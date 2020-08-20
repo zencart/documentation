@@ -7,13 +7,11 @@ weight: 10
 
 #### Express Checkout
 
-Follow this link for [Setup instructions for Express Checkout](/user/payment/paypal_express_checkout). 
+Follow this link for [Setup instructions for PayPal Express Checkout](/user/payment/paypal_express_checkout). 
 
 #### Website Payments Standard
 
-You REALLY SHOULD USE EXPRESS CHECKOUT!!!
-
-In case it wasn't said already: You should NOT be using Payments Standard; you should be using Express Checkout which is far more reliable.
+[PayPal Standard is no longer recommended](/user/payment/paypal_standard).  You should NOT be using Payments Standard; you should be using Express Checkout which is far more reliable.
 
 But, if you insist on using the older technology of Website Payments Standard, follow these instructions:
 

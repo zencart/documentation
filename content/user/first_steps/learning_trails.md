@@ -11,11 +11,11 @@ Take a look at [exploring the documentation](/user/first_steps/documentation/) t
 
 - [Hosting and Domain Concepts](/user/first_steps/hosting/) 
 - [Databases](/user/first_steps/database/) 
-- [Components of Zen Cart](/user/first_steps/components)
 - [What is an SSL certificate?](/user/security/ssl_cert/)
 
 ## Learn about installing Zen Cart 
 
+- [Components of Zen Cart](/user/first_steps/components)
 - [You need an SSL certificate](/user/first_steps/yes_you_need_ssl/)
 - [How do I install Zen Cart?](/user/first_steps/how_do_i_install/)
 - [Store setup checklist](/user/first_steps/basic_checklist/)
@@ -38,5 +38,11 @@ Take a look at [exploring the documentation](/user/first_steps/documentation/) t
 - [Where is the backend?](/user/first_steps/where_is_backend/)
 - [How do I rename my admin folder?](/user/installing/rename_admin/) 
 - [Browse the Admin menu sections](/user/admin_pages/menu_sections/)
+
+## Learn Zen Cart Development 
+- [Querying the Database](/dev/code/database_querying)
+- [Observer/Notifier System](/dev/code/notifiers/)
+- [Auto Inclusion](/dev/code/inclusion/)
+- [Github Workflow for Zen Cart](/dev/contributing/github_workflow)
 
 
