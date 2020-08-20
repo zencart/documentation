@@ -44,11 +44,13 @@ PHP compatibility requirements of Plugins may vary. Consult each plugin's docume
 
 ### Which PHP version should I use?
 
-It is best to **use the most recent PHP version that your Zen Cart version supports**. The PHP developers have published a list of supported versions at [https://www.php.net/supported-versions.php](https://www.php.net/supported-versions.php).
+It is best to **use the most recent PHP version that your Zen Cart version supports**. 
+
+FYI: Consult [PHP's Version Support Policy](https://www.php.net/supported-versions.php) to understand whether your PHP version is still supported. Remember: old versions are not PCI compliant, and are not deemed "secure" if they are out of the maintenance period.
 
 <font color="#ff0000">**NOTE:** PHP 5.x is officially obsolete. So are many of the early PHP 7 versions. You should be moving to the latest version of PHP (and matching Zen Cart version) as soon as possible!</font>  
 
-### PHP Modules used by Zen Cart
+<u>**PHP Extensions/Modules**</u> used by Zen Cart
 
 Zen Cart requires a few PHP modules/extensions installed: 
 
@@ -93,6 +95,8 @@ The following table shows the MySQL versions compatible with each version of Zen
 Plugin compatibility may vary.  
 
 <font color="#ff0000"> ** Using the latest version of Zen Cart is always recommended for maximum compatibility. ** </font>
+
+FYI: [MySQL's Version Support Policy](https://en.wikipedia.org/wiki/MySQL#Release_history)
 
 
 ## Apache
