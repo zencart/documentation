@@ -19,10 +19,18 @@ Here's a screenshot of phpMyAdmin viewing the records in the specials table, whi
 
 ![Specials table](/images/phpmyadmin_specials.png)
 
+You can view the [database schema for Zen Cart](/dev/schema/) to learn more about how the data is structured .
+
 ### What about all the files in Zen Cart? 
 
 The files contain computer code that allows you to access the database, and code that displays the data that's in the database.   So for example, `admin/customers.php` is a file, which allows the administrator to access the `customers` table in the database. 
 
+### How is the website broken up? 
+
+The website created by Zen Cart has two parts: 
+
+- Storefront - Visible to everyone.  The part of the website that allows products to be viewed and purchased.  Also called _the catalog_.  
+- Admin - Only visible to the store administrator.  Provides the back-office functions of order processing and inventory management. 
  
 ### Is there a file that corresponds to each page in the storefront? 
 

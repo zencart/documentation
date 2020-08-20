@@ -5,7 +5,7 @@ category: template
 weight: 10
 ---
 
-Sideboxes are narrow pieces of content that are displayed on the left and right side of the screen in the Zen Cart storefront in a desktop view.  (The smaller width of a mobile screen means they are put in the middle of the screen on such devices.)
+Sideboxes are narrow pieces of content that are displayed on the left and right side of the screen in the Zen Cart storefront in a desktop view.  (The smaller width of a mobile screen means they are either hidden or put in the middle of the screen on such devices.)
 
 You can learn about [controlling sideboxes in the admin](/user/admin/sideboxes/) so that you only display the sideboxes that are most important to your store. 
 
@@ -17,12 +17,12 @@ The Specials Sidebox, on the other hand, shows product images and information.
 
 <br>
 <div style="float: left;">
-<div style="float: left; margin-right: 10px;">
-<img alt="Information Sidebox" src="/images/information_sidebox.png" />
-</div>
-<div style="float: left;">
-<img alt="Specials Sidebox" src="/images/specials_sidebox.png" />
-</div>
+  <div style="float: left; margin-right: 10px;">
+    <img alt="Information Sidebox" src="/images/information_sidebox.png" />
+  </div>
+  <div style="float: left;">
+    <img alt="Specials Sidebox" src="/images/specials_sidebox.png" />
+  </div>
 </div>
 <br clear="all">
 <br>

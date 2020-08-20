@@ -5,7 +5,7 @@ category: sideboxes
 weight: 10
 ---
 
-This can be done with the following steps:
+Displaying a specific sidebox only for logged in customers can be done with the following steps:
 
 1. Locate the module for the sidebox (or boxes) that you want to treat like this. You'll find them in `includes/modules/sideboxes`.
 
