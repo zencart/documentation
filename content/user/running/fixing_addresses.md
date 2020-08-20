@@ -10,7 +10,7 @@ Sometimes customers enter the wrong shipping address.  Often this is caused by a
 Go to `Admin > Customers > Customers`, and search for the customer's record.
 If you see a link next to the customer's id, it means they have multiple address book records.  In other words, the billing and shipping addresses might be different. 
 
-<img src="/images/customer_search.png" alt="Customer Addresses" width="50%" />
+![Customer Addresses](/images/customer_search.png)
 
 If you need to edit their billing address, just edit the customer record.
 

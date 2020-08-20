@@ -15,7 +15,7 @@ product type is `Product - General`.  This is the most common (and default) prod
 
 Adding a product allows you to set all the product fields available to 
 that product type.  Adding is done on the product add/edit screen.  
-
+	
 ![product editing screen](/images/product_edit.png)
 
 Some fields in the `Product - General` product type that can be set 
@@ -66,20 +66,20 @@ See [adding a product](/user/products/product_management_admin/#adding-a-product
 Deleting a product removes it from  the catalog entirely. 
 Deleting a product is done from the [Categories/Products](/user/admin_pages/catalog/categories_products/) screen using the trash can icon. 
 
-<img src="/images/delete_sidebar.png" alt="Deleting a product" width="50%" />
+![Deleting a Product](/images/delete_sidebar.png)
 
 ### Moving a Product 
 Moving a product changes its master category so it appears in another place.
 Moving a product is done from the [Categories/Products](/user/admin_pages/catalog/categories_products/) screen using the purple M icon. 
 
-<img src="/images/move_sidebar.png" alt="Moving a product" width="50%" />
+![Moving a Product](/images/move_sidebar.png)
 
 ### Copying a Product 
 
 Copying a product can be used to create a duplicate of the original product or create a [linked product](/user/products/linked_product). 
 Copying a product is done from the [Categories/Products](/user/admin_pages/catalog/categories_products/) screen using the blue C icon. 
 
-<img src="/images/copy_sidebar.png" alt="Copying a product" width="50%" />
+![Copying a Product](/images/copy_sidebar.png)
 
 ### Product Meta Tags 
 See [Products Meta Tags Editor](/user/admin_pages/catalog/products_meta_tags_editor/).
