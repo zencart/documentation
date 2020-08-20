@@ -20,6 +20,7 @@ Background:
 
 1.  Go to **Option Names** and create an Option Name that is either Radiobutton or Dropdown 
     Call it something like:  **_Download_**
+
 2.  Go to **Option Values Manager** and add what you want to call it 
     example: **_Zip File_**  
     If you have multiple choices you could have these as the Option Names you create:  
@@ -28,18 +29,23 @@ Background:
     - Plain Text Zip  
     - etc.
 
-3.  Go to **Attributes Controller** and find the Product 
-    Add the Attribute as:
+3.  Go to **Attributes Controller** and find the Product.  Add the Attribute as:
 
-1.  Option Name: Download  
+    Option Name: Download  
     Option Value: MS Word Zip  
     Sort Order: 10  
     Filename: (enter name of file you uploaded to the  `/download` folder)  
 
-2.  Option Name: Download  
+    Option Name: Download  
     Option Value: Note Pad Zip  
     Sort Order: 20  
     Filename: (enter name of file you uploaded to the  `/download` folder)  
+
+Then at the bottom of the screen, set the fields: 
+
+- `Filename:` - name of the zip file 
+- `Expiry days` - how many days the download should be available for 
+- `Maximum download count:` - the number of downloads that are permitted 
 
 Now when shopping, the customer can choose the format.  Depending on your downloads you will want to adjust how you configure things.  
 
