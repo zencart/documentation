@@ -1,27 +1,50 @@
 ---
-title: Product Management in Admin 
-description: Adding, Editing, Deleting, Moving and Copying Products
+title: Product Editing Screen
+description: The screen for adding and editing products 
 category: products
 weight: 10
 ---
 
-### Product Types and Product Fields 
-The fields that are shown on the product adding/editing page in admin
- depend on the [product type](/user/admin_pages/catalog/product_types/).  In these examples, we'll assume the 
-product type is `Product - General`.  This is the most common (and default) product type. 
+The product editing screen is reached by going to [Admin > Catalog > Categories/Products](/user/admin_pages/catalog/categories/), and then navigating down to [the product level](/user/admin_pages/catalog/categories_products/). 
 
+The product adding/editing screen allows you to set all the product fields available to 
+that product type.  
 
-### Adding a Product
+![product editing screen](/images/product_edit.png)
 
-Adding a product allows you to set all the product fields available to 
-that product type.  Adding is done on the 
-[product add/edit screen](/user/products/product_edit). 
+Some fields in the `Product - General` product type that can be set 
+when adding the product are: 
+
+- Products Status:Enabled Disabled
+- Date Available:
+- Products Manufacturer:
+- Products Name:
+- Product is Free:Yes No
+- Product is Call for Price:Yes No
+- Product Priced by Attributes:Yes No
+- Tax Class:
+- Products Price (Net):
+- Products Price (Gross):
+- Product is Virtual:Yes, Skip Shipping Address No, Shipping Address Required
+- Always Free Shipping:Yes, Always Free Shipping No, Normal Shipping Rules Special, Product/Download Combo Requires a Shipping Address
+- Products Quantity Box Shows:Yes, Show Quantity Box No, Do not show Quantity Box
+- Product Qty Minimum:
+- Product Qty Maximum:
+- Product Qty Units:
+- Product Qty Min/Unit Mix: Can products with different attributes be combined to reach the Product Qty Minimum threshold.  See [What does MIXED ON mean?](/user/products/products_misc#what-does-mixed-on-mean)
+- Products Description:
+- Products Quantity:
+- Products Model:
+- Products Image:
+- Products URL:
+- Products Shipping Weight:
+- Sort Order:
 
 For more information, see the [product FAQs](/user/products/). 
 
 ### Editing a Product 
 
-[Editing a product](/user/products/product_edit) is done on the same screen as adding a product. 
+[Adding a product](/user/products/product_management_admin/#adding-a-product) and editing that product are performed on the same screen. 
 
 The product edit screen shows you the master category id value for a product, which tells you the category the product is in. 
 

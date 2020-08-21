@@ -19,5 +19,5 @@ The relevant settings for all listing pages are in [Admin > Configuration > Prod
 - The Featured Products page is configured by [Admin > Configuration > Featured Listing](/user/admin_pages/configuration/configuration_featuredlisting/).
 - The All Products page is configured by [Admin > Configuration > All Listing](/user/admin_pages/configuration/configuration_alllisting/).
 
-Listing pages also have the property of [pagination](/user/template/pagination/), where the results are shown in blocks, with naviation between blocks of results. 
+[Listing pages are paginated](/user/template/pagination/) so that only a subset of the total number of results are shown.  Navigation is provided between blocks of results. 
 
