@@ -301,4 +301,4 @@ It will be necessary to do this for every key you want to change in the Configur
 Having completed your language pack please upload it to the [Language Packs](https://www.zen-cart.com/downloads.php?do=cat&id=6) section of the Plugins Library.
 
 ## Updating an Older Language Pack
-See [updating an older translation](/dev/languages/updating_older_translation).
+See [updating an older translation](/dev/languages/updating_older_translation/).

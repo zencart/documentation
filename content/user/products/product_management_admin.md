@@ -15,7 +15,7 @@ product type is `Product - General`.  This is the most common (and default) prod
 
 Adding a product allows you to set all the product fields available to 
 that product type.  Adding is done on the 
-[product add/edit screen](/user/products/product_edit). 
+[product add/edit screen](/user/products/product_edit/). 
 
 For more information, see the [product FAQs](/user/products/). 
 

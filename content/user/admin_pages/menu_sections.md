@@ -42,7 +42,7 @@ index: false
 *   [Product Types](/user/admin_pages/catalog/product_types/) — View and edit product types.
 *   [Products Price Manager](/user/admin_pages/catalog/products_price_manager/) — Edit product pricing by category.
 *   [Option Name Manager](/user/admin_pages/catalog/option_name_manager/) — View, edit, add and delete option names.
-*   [Option Value Manager](/user/admin_pages/catalog//option_value_manager/) — View, edit, add and delete option values.
+*   [Option Value Manager](/user/admin_pages/catalog/option_value_manager/) — View, edit, add and delete option values.
 *   [Attributes Controller](/user/admin_pages/catalog/attributes_controller/) — View and edit product attributes.
 *   [Downloads Manager](/user/admin_pages/catalog/downloads_manager/) — View and edit certain information about downloadable items.
 *   [Option Name Sorter](/user/admin_pages/catalog/option_name_sorter/) — View and edit sort order for option names.

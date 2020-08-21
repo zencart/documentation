@@ -292,7 +292,7 @@ Next, you will want to delete the `/catalog/zc_install` directory
 ---
 ## H. Next Steps
 
-Now you'll want to [install your SSL certificate](/user/installing/enable_ssl/) and change your admin password.  [Yes, you need an SSL certificate](/user/first_steps/yes_you_need_ssl). 
+Now you'll want to [install your SSL certificate](/user/installing/enable_ssl/) and change your admin password.  [Yes, you need an SSL certificate](/user/first_steps/yes_you_need_ssl/). 
 
 For information on first steps to setting up your online shop, see the article [basic checklist](/user/first_steps/basic_checklist/). 
 

@@ -54,5 +54,5 @@ the field `gift_requested` to the list of fields being updated so that it will h
 --- 
 
 **NOTE:** Setting `DB_MYSQL_MODE` to `STRICT` is not the same as 
-[strict error reporting](/user/troubleshooting/strict_error_reporting). 
+[strict error reporting](/user/troubleshooting/strict_error_reporting/). 
 

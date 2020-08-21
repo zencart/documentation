@@ -194,7 +194,7 @@ If you don't want to change it "now", you will not be allowed to complete login.
 ---
 
 ### How do I troubleshoot PHP Session Handling issues? 
-See [the PHP SESSION handling FAQ](/user/troubleshooting/cant_stay_logged_in_admin). 
+See [the PHP SESSION handling FAQ](/user/troubleshooting/cant_stay_logged_in_admin/). 
 
 ---
 <!-- please keep this at the end --> 

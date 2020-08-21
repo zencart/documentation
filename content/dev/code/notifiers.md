@@ -44,7 +44,7 @@ Here are some 'quick links' to various sections of this documentation:
 
 The point of the observer/notifier system is to enable developers to write code that listens for certain events to happen and then perform a customized action for an event.
 
-Events are identified by string-names and are triggered via call to a `notify` method by an _event issuer_.  You can see a [list of notifiers](/dev/code/notifiers_list) provided by the Zen Cart core for reference. 
+Events are identified by string-names and are triggered via call to a `notify` method by an _event issuer_.  You can see a [list of notifiers](/dev/code/notifiers_list/) provided by the Zen Cart core for reference. 
 
 **Note**: Plugins (Zen Cart extensions) can also be _event issuers_.
 
