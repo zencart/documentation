@@ -40,7 +40,7 @@ When you click on the hamburger icon at the top left, then menu opens
 
 From there you can navigate to the desired page. 
 
-This behavior is different from that of [centerboxes](/user/template/centerboxes), which appear as normal on mobile. 
+This behavior is different from that of [centerboxes](/user/template/centerboxes/), which appear as normal on mobile. 
 
 
 ### Sidebox Controls 

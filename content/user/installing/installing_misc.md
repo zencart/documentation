@@ -61,7 +61,7 @@ Proper database-configuration includes:
 - make a user, with password
 - grant the user permission to use the database
 
-See also [How do I create a MySQL database for Zen Cart?](/user/installing/create_mysql_database) 
+See also [How do I create a MySQL database for Zen Cart?](/user/installing/create_mysql_database/) 
 
 Specific steps for creating and securing a database on your server can be obtained from your hosting company tech support.
 

@@ -121,7 +121,7 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
       <img alt="EZ-Pages Sidebox" src="/images/sidebox_ezpages.png" />
    </div>
    <div class="notes_col">
-      The <strong>ezpages</strong> sidebox creates a list of the <a href="/user/ezpages/what_are_ezpages">EZ-Pages</a> in your store, with the title Important Links.
+      The <strong>ezpages</strong> sidebox creates a list of the <a href="/user/ezpages/what_are_ezpages/">EZ-Pages</a> in your store, with the title Important Links.
    </div>
 	</div>
 <br clear="all">
