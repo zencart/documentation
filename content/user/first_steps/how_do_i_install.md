@@ -13,7 +13,7 @@ The hoster-provided or publicly available **"packaged bundles" of Zen Cart are n
 - Do not use "Web Application Installer" to install Zen Cart. 
 - Do not use Installatron to install Zen Cart. 
 
-Instead, **we recommend manual installation**.  Manual installation of files from the [official download](https://sourceforge.net/projects/zencart/files/) enables you to build a system which is secure, optimized, and up to date. Manual installation ensures that you know *exactly* what *you* have put onto your site.  
+Instead, **we recommend manual installation**.  Manual installation of files from the [official download](https://www.zen-cart.com/latest) enables you to build a system which is secure, optimized, and up to date. Manual installation ensures that you know *exactly* what *you* have put onto your site.  
 
 
 This is a basic guide to installing Zen Cart. If you already have Zen Cart installed and wish to upgrade from a previous version to this new release, please see the upgrading instructions [in the Release document](https://www.zen-cart.com/docs/). 
@@ -21,7 +21,7 @@ This is a basic guide to installing Zen Cart. If you already have Zen Cart insta
 ---
 ## A. The Basics
 
-You have [downloaded the Zen Cart software from an official source](https://sourceforge.net/projects/zencart/files/), and want to build an online shopping cart.
+You have [downloaded the Zen Cart software from an official source](https://www.zen-cart.com/latest), and want to build an online shopping cart.
 
 Questions to ask yourself:
 
@@ -114,8 +114,7 @@ If your host provides cPanel as your hosting control panel, installation and upg
 ### Getting the files on the server.
 
 At this point, it is assumed you have a copy of 
-the [official download](https://sourceforge.net/projects/zencart/files/) 
-of Zen Cart.
+the [official download](https://www.zen-cart.com/latest) of Zen Cart.
 
 Open the cPanel provided by your host.  Normally, this is done by going to `https://YOURSITE.com/cpanel` OR `https://YOURSITE.com:2083`.  You will need your username and password assigned to you when you obtained your hosting in order to log in to the cPanel.
 
@@ -139,7 +138,7 @@ This step is only required if you did not install your files using
 cPanel in the previous step. 
 
 At this point, it is assumed you have a copy of 
-the [official download](https://sourceforge.net/projects/zencart/files/) 
+the [official download](https://www.zen-cart.com/latest) 
 of Zen Cart.
 
 Upload, via FTP, the whole Zen Cart distribution into a directory on your server.  You can put it in your webroot or in a folder below that. 
