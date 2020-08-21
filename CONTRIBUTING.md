@@ -117,7 +117,7 @@ NOT THIS:
 NOT THIS: 
 `[Github Workflow](github_workflow/)`       **NO!** 
 
-- Be sure to end an internal link with `/` unless it references an HTML anchor (has a "#" character).  Doing this consistenly means checking for broken links is easier. 
+- Be sure to end an internal link with `/` unless it references an HTML anchor (has a "#" character).  Doing this consistently means checking for broken links is easier. 
 
 `[Github Workflow](/dev/contributing/github_workflow/)`
 

@@ -178,7 +178,7 @@ which are controlled by attribute settings.
 *   Price per word and free words
 *   Price per letter and free letters
 
-See [Attributes Controller](/user/admin_pages/catalog/attributes_controller). 
+See [Attributes Controller](/user/admin_pages/catalog/attributes_controller/). 
 
 4\. Then there are the Attribute Flags in the colored boxes.  
 These are used to help distinguish other features of the attribute such as:  
