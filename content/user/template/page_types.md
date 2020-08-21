@@ -19,12 +19,12 @@ The parts and layout of pages is shown in the [page format](/user/template/page_
 
 The following types of pages are provided by Zen Cart: 
 
-a) Regular pages, such as product_info. 
+- Standard Pages such as product_info. These pages each have their own layout, according to the content they are displaying. 
 
-b) Listing pages, such as specials, which show multiple products.
+- [Listing Pages](/user/template/listing_page_layout/), such as specials, which show multiple products.  Many listing pages have common layout elements. 
 
-c) [Define pages](/user/template/define_pages/), such as the Shipping Information page, which display content created by the storeowner.  A fixed set of define pages is provided. 
+- [Define Pages](/user/template/define_pages/), such as the Shipping Information page, which display content created by the storeowner.  A fixed set of define pages is provided. 
 
-d) [EZ-Pages](/user/ezpages/what_are_ezpages/), which display content according to the needs of the storeowner; an unlimited number of EZ-Pages may be created.  
+- [EZ-Pages](/user/ezpages/what_are_ezpages/), which display content according to the needs of the storeowner; an unlimited number of EZ-Pages may be created.  
 
 In addition, you may add pages to your store by [creating a new page](/user/customizing/add_pages#create-a-new-page).

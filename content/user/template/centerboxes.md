@@ -28,6 +28,18 @@ Centerboxes will appear on a mobile device in the expected place.
 
 This behavior is different from that of [sideboxes](/user/template/sideboxes), which are commonly hidden on mobile. 
 
+### Centerbox Controls
+
+The number of products shown in a centerbox is controlled using an Admin setting on the page [Admin > Configuration > Maximum Values](/user/admin_pages/configuration/configuration_maximumvalues/): 
+
+Centerbox Name | Control 
+----------|------- 
+Specials  | Maximum Display of Specials Products - Main Page 
+New Products | New Products Module 
+Featured Products | Maximum Display of Featured Products - Main Page
+Upcoming Products | Upcoming Products 
+
+<br><br>
 
 ###  Creating your own centerbox 
 

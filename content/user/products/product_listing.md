@@ -11,10 +11,10 @@ Examples of listing pages are:
 
 - All Products
 - Featured Products
-- Upcoming Products
 - New Products
 - Special Products
 - Category Listings 
 
 These pages are built in to Zen Cart; no extra work is required to create them.
 
+The layout for product listing pages is described in [listing page layout](/user/templates/listing_page_layout). 

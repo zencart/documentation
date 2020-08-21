@@ -37,7 +37,7 @@ meta_tags_products_description | metatags_description [^2]
 
 
 [^1]: if the `Search in Product Descriptions` checkbox is checked, or if the search is done from one of the search sideboxes. 
-[^2]: if [ADVANCED_SEARCH_INCLUDE_METATAGS](/user/admin_pages/configuration/configuration_mystore/#include_metatags_in_product_search) is set to `true`.  
+[^2]: if [Include meta-tags in product search?](/user/admin_pages/configuration/configuration_mystore/#include_metatags_in_product_search) is set to `true`.  
 
 You can see [the database schema](/dev/schema/) if you wish to learn more about how the database is structured. 
 
