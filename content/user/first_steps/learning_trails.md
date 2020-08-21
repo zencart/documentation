@@ -15,7 +15,7 @@ Take a look at [exploring the documentation](/user/first_steps/documentation/) t
 
 ## Learn about installing Zen Cart 
 
-- [Components of Zen Cart](/user/first_steps/components)
+- [Components of Zen Cart](/user/first_steps/components/)
 - [You need an SSL certificate](/user/first_steps/yes_you_need_ssl/)
 - [How do I install Zen Cart?](/user/first_steps/how_do_i_install/)
 - [Store setup checklist](/user/first_steps/basic_checklist/)
@@ -30,7 +30,7 @@ Take a look at [exploring the documentation](/user/first_steps/documentation/) t
 ## Learn about Zen Cart Overrides
 - [Basic terms](/user/first_steps/basic_terms/)
 - [Template default and default files](/user/first_steps/overrides/) 
-- [Overrides for new users](/user/new_user_topics/overrides)
+- [Overrides for new users](/user/new_user_topics/overrides/)
 - [Template Overrides System](/user/template/template_overrides/)
 
 ## Learn the Zen Cart Admin
@@ -40,9 +40,9 @@ Take a look at [exploring the documentation](/user/first_steps/documentation/) t
 - [Browse the Admin menu sections](/user/admin_pages/menu_sections/)
 
 ## Learn Zen Cart Development 
-- [Querying the Database](/dev/code/database_querying)
+- [Querying the Database](/dev/code/database_querying/)
 - [Observer/Notifier System](/dev/code/notifiers/)
 - [Auto Inclusion](/dev/code/inclusion/)
-- [Github Workflow for Zen Cart](/dev/contributing/github_workflow)
+- [Github Workflow for Zen Cart](/dev/contributing/github_workflow/)
 
 

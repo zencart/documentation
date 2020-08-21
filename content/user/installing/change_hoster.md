@@ -9,7 +9,7 @@ weight: 10
 
 1\. On your **NEW host**, create a new MySQL **database**. Note the username, password, database name, and host name (usually localhost).
 
-2\. Using your [FTP tool](/user/first_steps/useful_tools/#ftp-tools), go to your **NEW host** and upload a **fresh NEW install** using the same version files that you built your other site on.  This will make sure that you get the proper settings in your [configure.php files](/user/miscellaneous/configure). 
+2\. Using your [FTP tool](/user/first_steps/useful_tools/#ftp-tools), go to your **NEW host** and upload a **fresh NEW install** using the same version files that you built your other site on.  This will make sure that you get the proper settings in your [configure.php files](/user/miscellaneous/configure/). 
 
 a. Install.  When asked about the database-table-prefix during Database-Setup, use the same prefix that your old store uses. You'll find that in the `DB_PREFIX` setting of your old store's configure.php files.
 
@@ -20,7 +20,7 @@ c. Make **backups** of the NEW server's `/includes/configure.php` and `/admin/in
 3\. On your **OLD host**, Make a **COMPLETE backup** of your DATABASE and STORE.  
 a. Use either the [Backup MySQL Database](https://www.zen-cart.com/downloads.php?do=file&id=7) contribution to do the backup of your database, or use phpMyAdmin to export your entire database.  Include the "DROP" tables command, and under Data, choose "Complete Inserts" and "Extended Inserts".  
 Save the SQL file to your PC for later.     Click here for 
-advice on [doing a backup](/user/running/backup). 
+advice on [doing a backup](/user/running/backup/). 
 
 b. Download all your old site's files via FTP (or if you have the option, zip them up on the server and download the zip)  
 

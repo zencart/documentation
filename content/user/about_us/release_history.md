@@ -11,7 +11,7 @@ weight: 10
 
 See also [Zen Cart Database Schema](/dev/schema/), 
 [Zen Cart Known Bugs](/user/about_us/known_bugs/), 
-[Zen Cart Security Releases](/user/about_us/security_releases), and 
+[Zen Cart Security Releases](/user/about_us/security_releases/), and 
 [PHP version compatibility with Zen Cart](/user/first_steps/server_requirements/#php-version). 
 
 ---

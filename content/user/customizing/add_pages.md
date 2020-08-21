@@ -9,7 +9,7 @@ You have several options if you want to add a page to your site.  Here they are,
 
 ### Use EZ-Pages
 
-[EZ-Pages](/user/ezpages/what_are_ezpages) are a great way to add new text content to your site. 
+[EZ-Pages](/user/ezpages/what_are_ezpages/) are a great way to add new text content to your site. 
 The one restriction they have is that you can't execute any PHP code on them,
 but for many situations, this is not required.
 

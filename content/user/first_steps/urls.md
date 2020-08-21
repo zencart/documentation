@@ -22,7 +22,21 @@ Shipping | index.php?main_page=shippinginfo
 Specials | index.php?main_page=specials
 
 <br><br>
+
+Some pages cannot be accessed unless a visitor is logged in: 
+
+<br><br>
+
+Page | URL
+-----|----
+Checkout Shipping | index.php?main_page=checkout_shipping 
+Checkout Payment | index.php?main_page=checkout_payment
+Checkout Confirmation| index.php?main_page=checkout_confirmation 
+Checkout Success | index.php?main_page=checkout_success 
+My Account | index.php?main_page=account
+Account History | index.php?main_page=account_history 
  
+<br><br>
 Product and Category URLs have additional parameters.  The URL for product 27, which is in category 5 under category 1 would be 
 
 ```

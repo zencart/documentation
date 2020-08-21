@@ -111,6 +111,6 @@ Save the changed files and upload them to your server.
 
 --- 
 ### Next Steps
-Ready to read more about overrides? [Go here](/user/template/template_overrides).
+Ready to read more about overrides? [Go here](/user/template/template_overrides/).
 
 Or get started [creating your new template](/user/template/creating_template/).

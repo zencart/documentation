@@ -115,7 +115,7 @@ To login to your admin system you will now have to visit a new URL that matches 
 For example instead of visiting `www.example.com/admin/` visit `www.example.com/NeW-NamE4u/`.
 
 Use of [SSL](http://en.wikipedia.org/wiki/SSL "http://en.wikipedia.org/wiki/SSL") is highly recommended to protect your and your customers information. 
-[Learn how to enable SSL on your site](/user/installing/enable_ssl).
+[Learn how to enable SSL on your site](/user/installing/enable_ssl/).
 
 ## <font color="#000000">D - What if it doesn't work?</font>
 

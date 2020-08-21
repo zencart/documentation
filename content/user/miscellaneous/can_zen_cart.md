@@ -71,7 +71,7 @@ color, size, or any other product variant to your products with no limitations.
 
 ### Can Zen Cart allow me to create restricted admin accounts? 
 Yes - you can limit admin users to a subset of the superuser capabilities using
-[Admin Profiles](/user/admin_pages/admins/admin_profiles). 
+[Admin Profiles](/user/admin_pages/admins/admin_profiles/). 
 
 ---
 
@@ -87,16 +87,16 @@ Editing orders may be performed using the plugin
 ---
 
 ### Can I login to a customer's account? 
-Yes you can.  See [Master Password capabilities](/user/admin/master_password). 
+Yes you can.  See [Master Password capabilities](/user/admin/master_password/). 
 
 ---
 
 ### Can I add a new page to my cart easily? 
 
-Yes, there are several ways you can [add a new page](/user/customizing/add_pages). 
+Yes, there are several ways you can [add a new page](/user/customizing/add_pages/). 
 
 --- 
 <!-- please keep this at the end --> 
 ### Is there a list of features that Zen Cart offers? 
-Yes - see [What features does Zen Cart offer?](/user/about_us/features)
+Yes - see [What features does Zen Cart offer?](/user/about_us/features/)
 

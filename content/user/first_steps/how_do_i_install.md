@@ -51,7 +51,7 @@ If No stop.  You will need a [text editor](/user/first_steps/useful_tools/#php-h
 
 ### 4\. Do you have access to your webhosting control panel?
 
-Your webhoster's control panel (often [cPanel](https://cPanel.net) but sometimes a hoster-built tool) is where you will create a MySQL database and user.
+Your webhoster's control panel - often [cPanel](https://cPanel.net) but sometimes a hoster-built tool -  is where you will create a MySQL database and user.
 
 ### 5\. Have you created a database? 
 
@@ -152,7 +152,7 @@ You can choose to upload to your webroot, or you can choose to upload to a subfo
 
 This guide uses the `/catalog` subfolder AS AN EXAMPLE.   You don't have to use `/catalog`.  You could use something else (like `/shop`), or no subfolder at all (upload directly to webroot). 
 
-So in the language defined by [Basic Terms](/user/first_steps/basic_terms), we'll
+So in the language defined by [Basic Terms](/user/first_steps/basic_terms/), we'll
 be using a `YOURSUBFOLDER` value of `/catalog/`.
 
 Choosing a subfolder versus loading the files into webroot is entirely your 
@@ -215,7 +215,7 @@ Once you are satisfied that the "pre-flight-check" inspection is OK for your nee
 
 On the System Setup page you will need to complete the information we described in "Before Running the Installer" earlier in this document.  
 
-Indicate if you want to Enable SSL (the secure pages where required, in Login, Checkout, and optionally Admin areas) on your server. If you do not have an SSL certificate yet, **do not enable this feature now**.It can be changed at a later date. (See the [SSL FAQ](/user/installing/enable_ssl) for detailed instructions).  
+Indicate if you want to Enable SSL (the secure pages where required, in Login, Checkout, and optionally Admin areas) on your server. If you do not have an SSL certificate yet, **do not enable this feature now**.It can be changed at a later date. (See the [SSL FAQ](/user/installing/enable_ssl/) for detailed instructions).  
 
 Note: If you receive any of the following error messages, go through the above steps to make sure you have not left anything out. All error messages have context-sensitive help via a popup window if you click on the <span class="pseudolink">more info...</span> links supplied:  
 
@@ -296,6 +296,6 @@ Now you'll want to [install your SSL certificate](/user/installing/enable_ssl/) 
 
 For information on first steps to setting up your online shop, see the article [basic checklist](/user/first_steps/basic_checklist/). 
 
-You should also familiarize yourself with the Zen Cart [Developer's Toolkit](/user/admin/developers_toolkit), located in your store's Admin area, under `Tools`. This will help you locate almost anything you want to customize in your shop!
+You should also familiarize yourself with the Zen Cart [Developer's Toolkit](/user/admin/developers_toolkit/), located in your store's Admin area, under `Tools`. This will help you locate almost anything you want to customize in your shop!
 
 Once you're set up and ready to start announcing your URL to the public, you should FIRST review Site Security Recommendations to be sure your site is safe and not vulnerable to hackers. The most up-to-date version of this file can be found in the article [Important Security Recommendations](/user/security/security_recommendations/).

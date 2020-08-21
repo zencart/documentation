@@ -11,7 +11,7 @@ If it's not already installed, click Install to enable it.
 
 ## Group Discounts
 
-Go to [Admin > Customers > Group Pricing](/user/admin_pages/customers/group_pricing). 
+Go to [Admin > Customers > Group Pricing](/user/admin_pages/customers/group_pricing/). 
 
 Next, you create a pricing group by clicking *Insert*.  (Or *Edit* to edit an existing pricing group.)  
 Fill in the details.  

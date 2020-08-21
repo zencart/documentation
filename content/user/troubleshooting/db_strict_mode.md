@@ -23,7 +23,7 @@ requested at checkout.  The field is `NOT NULL` but with no default.
 ERROR 1364 (HY000): Field 'gift_requested' doesn't have a default value
 ``` 
 Happily, there's a workaround for this issue.  In your 
-[configure.php files](/user/miscellaneous/configure), you can turn off the enforcement of strict rules. 
+[configure.php files](/user/miscellaneous/configure/), you can turn off the enforcement of strict rules. 
 
 Use the define 
 ```
@@ -40,7 +40,7 @@ The define `DB_MYSQL_MODE` will work in Zen Cart 1.5.5 and above.
 In Zen Cart versions older than 1.5.5, you would need to do
 more extensive modification to interoperate with newer versions
 of MySQL.  Hopefully you are not doing this!  
-You should really [upgrade Zen Cart](/user/upgrading) instead!
+You should really [upgrade Zen Cart](/user/upgrading/) instead!
 
 Also note that turning on STRICT mode should be a temporary work around.
 The correct solution for the longer term is to update your code.  In

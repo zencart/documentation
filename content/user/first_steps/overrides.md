@@ -60,7 +60,7 @@ is a template modification file based on
 
     includes/templates/template_default/templates/tpl_product_info_display.php
 
-This is the [default template](/user/template/template_default). 
+This is the [default template](/user/template/template_default/). 
 
 
 b) For all other files, the default file is one level above the template folder. 
@@ -88,5 +88,5 @@ from the default file - the default file will be used by Zen Cart
 automatically.  For this reason, you should expect your template to have
 many fewer files than the default template.  
 
-When you're ready, you can [read more about overrides](/user/new_user_topics/overrides).
+When you're ready, you can [read more about overrides](/user/new_user_topics/overrides/).
 

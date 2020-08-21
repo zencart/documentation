@@ -14,7 +14,7 @@ Actions available in Store Manager are as follows:
 
 - Update All Products' Attribute Sort Orders: if you decide you want (for example) the Color option to appear before the Size option on the product info screen, you would set the attribute sort order in [Admin > Catalog > Option Name Manager](/user/admin_pages/catalog/option_name_manager/), then use this button. 
 
-- Update ALL Products Price Sorter: The Price Sorter exists so that your listing pages can allow customers to sort by price.  You should use this action after importing price data using a tool like [EasyPopulate](/user/products/easypopulate). 
+- Update ALL Products Price Sorter: The Price Sorter exists so that your listing pages can allow customers to sort by price.  You should use this action after importing price data using a tool like [EasyPopulate](/user/products/easypopulate/). 
 Note that after running "Reset ALL Products Master Categories ID" (below) you should also use the "Update ALL Products Price Sorter." 
 
 - Update Hit Counter:

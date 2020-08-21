@@ -18,7 +18,7 @@ First of all, let's review a few things:
 
 a) The FAQ [basic terms](/user/first_steps/basic_terms/) explains what YOURTEMPLATE means. 
 
-b) The concept of a [default file](/user/first_steps/overrides) which can be overridden. 
+b) The concept of a [default file](/user/first_steps/overrides/) which can be overridden. 
 
 c) The FAQ [template overrides system](/user/template/template_overrides/) explains what template overrides are.
 

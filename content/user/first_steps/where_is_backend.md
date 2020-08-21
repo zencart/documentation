@@ -22,7 +22,7 @@ http://WWW.YOURSITE.COM/subfolder/admin-foldername/index.php
 
 Out-of-the-box, the admin foldername is `admin`, but the system requires you to change that on first install, because any hacker can guess "admin", or read this very article you're reading to discover the word "admin".  
 
-See the instructions for [renaming the admin folder for security reasons](/user/installing/rename_admin). 
+See the instructions for [renaming the admin folder for security reasons](/user/installing/rename_admin/). 
 
 **WHAT IF I DON'T KNOW MY ADMIN FOLDER NAME?**  
 

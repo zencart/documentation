@@ -15,7 +15,7 @@ Going to [Admin > Catalog > Downloads Manager](/user/admin_pages/catalog/downloa
 
 ### Attributes Controller 
 
-Going to [Admin > Catalog > Attributes Controller](/user/admin_pages/catalog/attributes_controller) and viewing a single product which has downloads allows you to see if the downloadable files are present where they should be. 
+Going to [Admin > Catalog > Attributes Controller](/user/admin_pages/catalog/attributes_controller/) and viewing a single product which has downloads allows you to see if the downloadable files are present where they should be. 
 In the image below, you can see again that the file test.zip is missing.
 
 <br>

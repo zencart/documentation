@@ -32,4 +32,4 @@ This condition means that the template to display the sidebox will be called whe
 
 Finally, and importantly, don't forget to save your result in [an over-ride file](/user/new_user_topics/overrides/).
 
-[Alternate article](/user/template/left_right_columns).
+[Alternate article](/user/template/left_right_columns/).

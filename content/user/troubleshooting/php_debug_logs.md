@@ -5,7 +5,7 @@ category: troubleshooting
 weight: 10
 ---
 
-**Note:** On a [shared hosting](/user/first_steps/hosting/#hosting-companies) account, your hoster can just update PHP at any time - just because you didn't change anything doesn't mean it didn't change!  Check the [Admin Version link](/user/admin_pages/admin_version) to verify your current version of PHP. 
+**Note:** On a [shared hosting](/user/first_steps/hosting/#hosting-companies) account, your hoster can just update PHP at any time - just because you didn't change anything doesn't mean it didn't change!  Check the [Admin Version link](/user/admin_pages/admin_version/) to verify your current version of PHP. 
 
 PHP is a dynamic language which is continually being updated.  And part of 
 the update process is sunsetting features, functions, syntax and other language elements: 
@@ -74,6 +74,6 @@ $list_box_contents = array();
 
 
 To understand the log files that are created when issues like this
-occur, see [debug logs](/user/troubleshooting/debug_logs).
+occur, see [debug logs](/user/troubleshooting/debug_logs/).
 
 

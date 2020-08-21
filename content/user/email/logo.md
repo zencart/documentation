@@ -5,7 +5,7 @@ category: email
 weight: 10
 ---
 
-Related: [Using your logo on packing slips and invoices](/user/customizing/use_company_logo).
+Related: [Using your logo on packing slips and invoices](/user/customizing/use_company_logo/).
 
 The email logo is contained in the file `email/header.jpg`. 
 

@@ -7,11 +7,11 @@ weight: 10
 
 #### Express Checkout
 
-Follow this link for [Setup instructions for PayPal Express Checkout](/user/payment/paypal_express_checkout). 
+Follow this link for [Setup instructions for PayPal Express Checkout](/user/payment/paypal_express_checkout/). 
 
 #### Website Payments Standard
 
-[PayPal Standard is no longer recommended](/user/payment/paypal_standard).  You should NOT be using Payments Standard; you should be using Express Checkout which is far more reliable.
+[PayPal Standard is no longer recommended](/user/payment/paypal_standard/).  You should NOT be using Payments Standard; you should be using Express Checkout which is far more reliable.
 
 But, if you insist on using the older technology of Website Payments Standard, follow these instructions:
 
@@ -69,7 +69,7 @@ PayPal Account Optional: if you want to allow customers to pay by credit card an
 
 ### Using PayPal on Multiple Sites
 
-See this FAQ Article: [Using PayPal on Multiple Sites](/user/payment/paypal_multiple_sites). 
+See this FAQ Article: [Using PayPal on Multiple Sites](/user/payment/paypal_multiple_sites/). 
 
 #### Express Checkout
 
@@ -87,7 +87,7 @@ These are the common mistakes causing Website Payments Standard transactions to 
 
 1.  Check that the email address you enter for PayPal in Zen Cart admin matches case-sensitive exactly with your PRIMARY email address setting in your PayPal account profile on PayPal's site.
 2.  Is your PayPal account "verified" yet?
-3.  Is your PayPal account a "Business" account? (Business is preferred. Premier can be used in some cases (Ask your PayPal rep if unsure). Personal cannot.)
+3.  Is your PayPal account a "Business" account? (Business is preferred. Premier can be used in some cases; Personal cannot.) 
 4.  Check your PayPal profile settings on [paypal.com](http://paypal.com/)
     *   In **Website Payment Preferences**, your Return URL should be set to your site's checkout_process page. (ie: `http://www.YOURSITE.com/directory/index.php?main_page=checkout_process`).
     *   It is advisable to have Auto Return set to On.

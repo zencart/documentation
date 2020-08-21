@@ -16,7 +16,7 @@ Click the new product button.
 
 On the next page fill in the product name, price, and other fields, and click *Preview*.  Then on the next page, click *Insert*. 
 
-After creating the product, if you need to [add attributes](/user/products/attributes) to it, 
+After creating the product, if you need to [add attributes](/user/products/attributes/) to it, 
 click the light blue *A* to the right of the product. 
 
 
@@ -30,4 +30,4 @@ From the next page, choose *Delete*.
 
 ### EasyPopulate 
 
-Rather than create products through the admin panel, some storeowners prefer to import CSV files containing product information using a tool like [EasyPopulate](/user/products/easypopulate). 
+Rather than create products through the admin panel, some storeowners prefer to import CSV files containing product information using a tool like [EasyPopulate](/user/products/easypopulate/). 

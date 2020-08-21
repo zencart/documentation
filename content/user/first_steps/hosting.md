@@ -132,5 +132,5 @@ It is important to know which way your certificate is issued. Settings in the `c
 
 For more information on SSL, see these articles: 
 
-* [What is an SSL certificate?](/user/security/ssl_cert)
-* [How do I enable SSL?](/user/installing/enable_ssl)
+* [What is an SSL certificate?](/user/security/ssl_cert/)
+* [How do I enable SSL?](/user/installing/enable_ssl/)

@@ -36,7 +36,7 @@ Specifically, use small images for thumbnails, slightly larger for product pages
 See also these articles: 
 
 - [Adding Multiple Images To Products](/user/images/adding_multiple_images_to_a_product/) 
-- [Preparing and Optimizing Images](/user/images/images_howto) 
+- [Preparing and Optimizing Images](/user/images/images_howto/) 
 
 ### Disable unused attribute settings 
 In [Admin > Configuration > Attribute Settings](/user/admin_pages/configuration/configuration_attributesettings/), there are a few switches which, if turned off, will reduce the number of queries used to calculate and display product information:  
@@ -76,7 +76,7 @@ You will want to download a copy of those log files to your PC, using your [FTP 
 Then you can purge those logs files by using the [Admin > Tools > Store Manager](/user/admin_pages/tools/store_manager/) Purge log files menu option.  
 
 ### Check Parse Times 
-Assess [Page Parse Times](/user/performance/page_parse_times) to isolate where your bottleneck is occurring.  
+Assess [Page Parse Times](/user/performance/page_parse_times/) to isolate where your bottleneck is occurring.  
 
 ### Use MySQL slow query log 
 Use the MySQL slow query log feature to identify poorly-performing database queries.  
@@ -88,7 +88,7 @@ Do you have any plugins enabled that add their own tables? Maybe they're poorly 
 Or have you written any custom code or use any addons which run queries that attempt to join tables on unindexed database columns?  
 
 ### Consider additional server tuning
-Consider these [Webserver Tuning Tips](/user/performance/webserver_tuning).
+Consider these [Webserver Tuning Tips](/user/performance/webserver_tuning/).
 
 ### Check for duplicate jQuery libraries 
 In case you haven't already considered this, make sure you're not loading more than one copy of jQuery on your site.  

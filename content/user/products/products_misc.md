@@ -21,7 +21,7 @@ On the [product editing page](/user/admin_pages/catalog/categories_products/),
 when the setting `Product Qty Minimum` is greater than 1, the 
 setting `Product Qty Min/Unit Mix` is used in determining 
 whether the minimum has been met, both for purchasing and for 
-[quantity discounts](/user/products/quantity_discounts). 
+[quantity discounts](/user/products/quantity_discounts/). 
 
 If you have the Minimum set to 36 with `Product Qty Min/Unit Mix` = `Yes`, the "MIXED: ON" status message shows.
 
@@ -81,7 +81,7 @@ There are two setups required in order to allow customers to purchase in quantit
 
 ---
 ### Can a product be listed in more than one category?
-Yes. If you haven't created it yet, set up the product that you want to be listed in two or more categories. Go to the category in which you put that product (Admin > Catalog > Categories/Products) where you will see a row of icons towards the right, one of which is a white "c" in a blue circle. Click on that and you can copy a product to another category.
+Yes. If you haven't created it yet, set up the product that you want to be listed in two or more categories. Go to the category in which you put that product, using Admin > Catalog > Categories/Products.  There you will see a row of icons towards the right, one of which is a white "c" in a blue circle. Click on that and you can copy a product to another category.
 
 There are two types of copy: linked or duplicated. In the former case the product shows in both categories but there's only one instance, so any changes will affect both. In the latter case a new, identical product is created, which can then be changed independently of the original.
 

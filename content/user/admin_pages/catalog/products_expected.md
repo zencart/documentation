@@ -7,9 +7,9 @@ weight: 140
 
 This admin page allows you to see all  the products which have a 
 *Date Available* set to a future date. From this page, you may 
-edit an expected product. 
+edit any product in the list of expected products. 
 
-The *Dave Available* field is set on the [Product Editing screen](/user/products/product_edit/). 
+The *Date Available* field is set on the [Product Editing screen](/user/products/product_edit/). 
 
 Expected Products are sometimes also called **Upcoming Products**. 
 

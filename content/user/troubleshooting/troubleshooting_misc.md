@@ -34,7 +34,7 @@ In most cases of difficulties logging in to the Admin area, the problem is one o
 
     6.  If you are using `www.` in your URL on one page and *not* using `www`  in the URL on another page, you may have problems. This related FAQ may help: [how can I force www?](/user/miscellaneous/force_www/) 
 
-    7.  Try the suggestions in this related FAQ article: [I can't stay logged in to my admin](/user/troubleshooting/cant_stay_logged_in_admin)
+    7.  Try the suggestions in this related FAQ article: [I can't stay logged in to my admin](/user/troubleshooting/cant_stay_logged_in_admin/)
 
 3.  Apart from browser cache and cookies problems, the most common problem is not having the `https` correct in your `admin/includes/configure.php`  file.  
     See: [How do I enable SSL?](/user/installing/enable_ssl/)
@@ -157,7 +157,7 @@ Common causes:
 
 - You've changed your database name or database username on your webserver
 - You've deleted the tables from the database on your server
-- You've changed the `DB_PREFIX` setting in your [configure.php files](/user/miscellaneous/configure) to a value that doesn't match the tables in your database
+- You've changed the `DB_PREFIX` setting in your [configure.php files](/user/miscellaneous/configure/) to a value that doesn't match the tables in your database
 - You've edited your `/includes/configure.php` file and incorrectly altered the defined values for the various `DB_XXXXXX` settings contained therein. You should first go and fix those. Then make sure you've also got the correct values in the /your-renamed-admin-folder/includes/configure.php as well.
 
 The error is specifically displayed when the `DB_XXXXXX` values (which mainly denote your database login credentials for MySQL) are used but return a security login error when trying to connect to the database.

@@ -28,7 +28,7 @@ If your Zen Cart version is prior to 1.5.6, you may still use the Order Message 
 
 Sending large numbers of emails from your own hosting account 
 is no longer recommended.  
-See [Newsletters](/user/email/newsletters) for alternatives. 
+See [Newsletters](/user/email/newsletters/) for alternatives. 
 
 ---
 ### Where are the emails sent by Zen Cart stored? 

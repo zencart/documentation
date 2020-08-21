@@ -16,5 +16,5 @@ Here's the statistics widget, as an example.
 <img src="/images/widget.png" alt="Widgets on home page" />
 
 If you have specific things you'd like to monitor on your site, you
-can build your own widget.  See [building an admin widget](/dev/code/widget) for details. 
+can build your own widget.  See [building an admin widget](/dev/code/widget/) for details. 
 

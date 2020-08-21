@@ -79,7 +79,7 @@ define('HEADER_SALES_TEXT', 'Sales Message Goes Here');
 ```
 
 Recommended additional reading:
-[How do I set up the template overrides?](/user/new_user_topics/overrides)
+[How do I set up the template overrides?](/user/new_user_topics/overrides/)
 
 ---
 

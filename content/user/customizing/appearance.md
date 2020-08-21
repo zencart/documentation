@@ -18,7 +18,7 @@ page, using the [template system](/user/template/).
 
 ### Stylesheets 
 Stylesheets control visual aspects of your site, such  as font choices,
-colors and text sizes.  You can [customize stylesheets](/user/template/stylesheet) as part 
+colors and text sizes.  You can [customize stylesheets](/user/template/stylesheet/) as part 
 of your template. 
 
 ### Adding Pages

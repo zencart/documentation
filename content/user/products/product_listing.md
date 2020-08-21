@@ -17,4 +17,4 @@ Examples of listing pages are:
 
 These pages are built in to Zen Cart; no extra work is required to create them.
 
-The layout for product listing pages is described in [listing page layout](/user/template/listing_page_layout). 
+The layout for product listing pages is described in [listing page layout](/user/template/listing_page_layout/). 

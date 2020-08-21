@@ -5,7 +5,7 @@ category: new_user_topics
 weight: 10
 ---
 
-The template files used in Zen Cart provide the structure and layout of the various pages of your cart. They make use of the definitions from your [language files](/user/new_user_topics/language_files). 
+The template files used in Zen Cart provide the structure and layout of the various pages of your cart. They make use of the definitions from your [language files](/user/new_user_topics/language_files/). 
 
 These files are located in `includes/templates/template_default`.
 Template files are of three types; common, specific pages and sideboxes. 

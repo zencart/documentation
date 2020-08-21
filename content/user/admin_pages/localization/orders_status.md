@@ -5,7 +5,7 @@ category: admin_pages
 weight: 30
 ---
 
-The [Order Status](/user/localization/orders_status) field encapsulates where 
+The [Order Status](/user/localization/orders_status/) field encapsulates where 
 the order is in your order processing workflow. 
 
 The Admin > Localization > Order Status  page allows you to add names of new order status entries, edit existing order status name entries, or delete an order status name entry.
