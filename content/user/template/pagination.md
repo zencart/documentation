@@ -5,13 +5,13 @@ category: templates
 weight: 10 
 ---
 
-When a [listing page](/user/templates/listing_page_layout/) is created, the results are shown in blocks, with naviation between blocks of results. For example, here's the Specials page on a mobile device.
+When a [listing page](/user/template/listing_page_layout/) is created, the results are shown in paginated blocks, with navigation between blocks of results. For example, here's the Specials page on a mobile device.
 
 ![Specials pagination](/images/specials_pagination.png)
 
 <br><br>
 
-There are 27 specials, which are displayed in groups of 9.  The pagination controls are shown at the top of the page in mobile in this template.  (It is also present at the bottom.)
+In this screenshot, there are 27 specials, which are displayed in groups of 9.  The navigation controls (**Next** and **Previous** links) may be shown at the top, bottom or both places. 
 
 The desktop display is similar, but because a desktop screen is wider, more products per row can be shown. 
 

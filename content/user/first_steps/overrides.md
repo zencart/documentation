@@ -42,7 +42,7 @@ the site map template file (`tpl_site_map_default.php`) is not part of
 the `responsive_classic` template.  When this happens, Zen Cart uses 
 the *default file* instead. 
 
-**Note:** Sometimes the default file is called the *base file* or the *core file* instead. These terms are all interchangable. 
+**Note:** Sometimes the default file is called the *base file* or the *core file* instead. These terms are all interchangeable. 
 
 ### Default Files 
 

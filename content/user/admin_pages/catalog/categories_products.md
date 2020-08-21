@@ -15,7 +15,7 @@ there are a set of action icons on the right.
 
 These icons allow you to:
 
-- [edit a product](/user/products/product_management_admin/#editing-a-product) - update all the fields for a product 
+- [edit a product](/user/products/product_edit/) - update all the fields for a product 
 - [delete a product](/user/products/product_management_admin/#deleting-a-product) - remove a product from the catalog 
 - [move a product](/user/products/product_management_admin/#moving-a-product) - change the product's parent category
 - [copy a product](/user/products/product_management_admin/#copying-a-product) - duplicate the product or create a [linked product](/user/products/linked_product))
