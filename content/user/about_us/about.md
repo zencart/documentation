@@ -34,18 +34,17 @@ It's also important to note that community-supplied contributions are written at
 You can find community created and supported contributions in the [Plugins Library](https://www.zen-cart.com/downloads.php) of the Zen Cart Forum. 
 
 ## **Fees**
-There is no fee for using Zen Cart. You may [download Zen Cart](https://sourceforge.net/projects/zencart/files/) and use it, subject to the terms of the license, for free. However, if you find it useful, you are encouraged to [make a donation](/user/about_us/donate/) to help support the ongoing development and improvement of the product.  
+There is no fee for using Zen Cart. You may [download Zen Cart](https://www.zen-cart.com/latest) and use it, subject to the terms of the license, for free. If you find it useful, you are encouraged to [make a donation](/user/about_us/donate/) to help support the ongoing development and improvement of the product.  
 
 ## **Community**
 You can [participate in the Zen Cart community](/user/about_us/contributing/) in many ways.  Join the fun! 
 
+- [contributing to the Zen Cart documentation](https://github.com/zencart/documentation/blob/master/CONTRIBUTING.md) 
+- [contributing to the Zen Cart code](https://github.com/zencart/zencart/blob/v158/CONTRIBUTING.md)
+
 
 ## **This Site**
 This site was built with [Hugo](https://gohugo.io/) on the [Netlify](https://www.netlify.com/) platform. 
-
-If you'd like to help the Zen Cart project, we'd love to have you.  Please see 
-[contributing to the Zen Cart documentation](https://github.com/zencart/documentation/blob/master/CONTRIBUTING.md) and 
-[contributing to the Zen Cart code](https://github.com/zencart/zencart/blob/v158/CONTRIBUTING.md).
 
 The content of this site is released under the terms of the [GNU Public License](https://www.gnu.org/licenses/gpl-3.0.en.html). 
 

@@ -20,7 +20,7 @@ weight: 10
 
 ## Here's how to put Zen Cart and Express Checkout to work for your business.
 
-*   **Step 1: [Download and install the latest version of Zen Cart](http://sourceforge.net/projects/zencart/files/)**
+*   **Step 1: [Download and install the latest version of Zen Cart](https://www.zen-cart.com/latest)**
 *   **Step 2: Set Up a Verified PayPal Business Account**
     *   Customers who don't have an existing PayPal account:
         1.  [**Go to** ![PayPal [link]](/images/paypal.gif "PayPal [link]")](https://www.zen-cart.com/partners/paypal-ec)
@@ -34,17 +34,11 @@ weight: 10
         4.  Choose to upgrade to a Business account and follow instructions to complete the upgrade.
         5.  If you haven't already, add a bank account to become a Verified member. Follow the instructions on the PayPal site. (This process may take 2-3 business days.)
 *   **Step 3: Setup API Access**  
-    [For a quick shortcut to your API credentials, click here](https://www.paypal.com/us/cgi-bin/webscr?cmd=_get-api-signature&generic-flow=true)  
-    Or use the longer process described below:
-    1.  Log in to your PayPal Business account.
-    2.  Click the Profile subtab located in the top navigation area
-    3.  If you have a "My Selling Tools" tab on the left navigation area, click it and go to the next step. Otherwise you'll see two or three columns of choices. You'll want to click on the "API Access" option in the first column, and skip the next step.
-    4.  Beside the "API Access" option, click the "Update" link/button
-    5.  Under the Setting up PayPal API Credentials and Permissions heading, under OPTION 2 click the "Request API Credentials" link (If it already says "View API Signature", click that and skip the next step)
-    6.  Click the “Request API signature” radiobutton then click “Agree & Submit” button (after agreeing to the terms).
-    7.  Write down the values listed next to API Username and Password
-    8.  Select the value listed next to Signature Hash, copy it, and save it to a file or some other location. This is your API Signature.
-    9.  Use the values from #7 and #8 to configure the API SIGNATURE settings in the PayPal Express Checkout module in your Zen Cart admin area.
+    1. Get your API credentials - [click here](https://www.paypal.com/us/cgi-bin/webscr?cmd=_get-api-signature&generic-flow=true).
+    2. Click the "Show" link under API Username, API Password and Signature and note all three values.
+    3. At the top right hand side of the page, click your account name, then click Account Settings.  Navigate to **Business Information** and note your **Merchant ID.  It will look like *FDEFDEFDEFDE11*. 
+    4. Use the values from the prior step in Admin > Configuration > Payment to configure the PayPal Express fields **API Signature**, **API Signature -- Password**, and **API Signature** and **Merchant ID**. 
+
 
 ## Add your own merchant account and accept credit cards without sending your customers off-site
 

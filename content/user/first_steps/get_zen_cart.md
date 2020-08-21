@@ -5,8 +5,9 @@ category: first_steps
 weight: 10
 ---
 
-You can [download the Zen Cart software](https://sourceforge.net/projects/zencart/files/) files (both current and older versions) [from SourceForge](https://sourceforge.net/projects/zencart/files/)
+### Current Version 
+[Click here to download the latest Zen Cart software](https://www.zen-cart.com/latest).
 
-You can also find the download link on the Zen Cart website home page, at https://www.zen-cart.com
+### Older Versions 
+SourceForge retains an archive of [older versions of Zen Cart](https://sourceforge.net/projects/zencart/files/).  Note that depending on the age of the desired version, you may have to navigate to the older files using the menus provided.
 
-On the SourceForge site you can access every released version of Zen Cart. For versions older than the current release you may have to navigate to the older files using the menus provided.
