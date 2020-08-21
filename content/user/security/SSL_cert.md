@@ -5,7 +5,7 @@ category: security
 weight: 10
 ---
 
-See also [Basic Hosting and Domain concepts](/user/first_steps/hosting). 
+See also [Basic Hosting and Domain concepts](/user/first_steps/hosting/). 
 
 An SSL certificate contains the following information:  
 

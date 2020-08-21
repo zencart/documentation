@@ -9,7 +9,7 @@ weight: 10
 
 - Learn about [secure access](/user/first_steps/secure_access/) to your site. 
 
-- Get an [SSL certificate](/user/installing/enable_ssl). Yes, [you need SSL](/user/first_steps/yes_you_need_ssl). 
+- Get an [SSL certificate](/user/installing/enable_ssl/). Yes, [you need SSL](/user/first_steps/yes_you_need_ssl/). 
 
 ## Steps to a More Secure Site
 
@@ -36,7 +36,7 @@ Optional: Additionally, *IF* you have no intentions of supporting downloadable p
  - /pub  
 ```
 
-Then you'll need to go to your Admin > Configuration > Attribute Settings > Enable Downloads, and set it to _False_ to turn off the warning message about the missing download folder). 
+Then you'll need to go to your Admin > Configuration > Attribute Settings > Enable Downloads, and set it to _False_ to turn off the warning message about the missing download folder. 
 
 In the future, if you choose to add downloadable products to your site or music-products, you will want to re-upload these appropriate folders (and their contents) to your server again, and assign appropriate permissions.
 
@@ -48,7 +48,7 @@ By default the Zen Cart installer will rename it for you.
 
 Some 3rd-party auto-install scripts provided by hosting companies also use a directory not called "admin" ... but they always use the same directory name on all sites they install, so you really ought to rename it yourself!!!
 
-[Instructions for renaming your admin folder can be found in this article](/user/installing/rename_admin).
+[Instructions for renaming your admin folder can be found in this article](/user/installing/rename_admin/).
 
 
 ### 3\. Use SMTPAUTH or SMTP as your Email Transport method, instead of the generic "PHP" or "sendmail" settings.
@@ -69,7 +69,7 @@ The configure.php files are located in:
 /YOURADMIN/includes/configure.php  
 ```
 
-(`YOURADMIN` is the name of your Admin directory.  [Read this](/user/first_steps/basic_terms/) for important clarification). 
+`YOURADMIN` is the name of your Admin directory.  [Read this](/user/first_steps/basic_terms/) for important clarification. 
 
 Quite often setting permissions on a file to read only via FTP will not work, and even if the permission looks like it was set to read only after first changing it via FTP, it really may not have been. 
 
@@ -157,7 +157,7 @@ The folders for which installation suggests read-write access for setup are thes
 *   /**cache**  
     This is used to cache session and database information. The BEST security protection for this is to move it to a folder "above" the 
  [webroot](/user/first_steps/how_do_i_install#what-is-my-webroot) 
-so that it's not accessible via a browser. (Requires changes to `DIR_FS_SQL_CACHE` setting in configure.php files as well as [Admin > Configuration > Sessions > Session Directory](/user/admin_pages/configuration/configuration_sessions).
+so that it's not accessible via a browser. (Requires changes to `DIR_FS_SQL_CACHE` setting in configure.php files as well as [Admin > Configuration > Sessions > Session Directory](/user/admin_pages/configuration/configuration_sessions/).
 *   /**images**  
     See other suggestions earlier.
 *   /**includes/languages/english/html_includes**  
@@ -172,7 +172,7 @@ so that it's not accessible via a browser. (Requires changes to `DIR_FS_SQL_CACH
 *   /**admin/backups**  
     This is used by automated backup routines to store database backups. Optional.
 *   /**admin/images/graphs**  
-    This is used by the [Admin > Tools > Banner Manager](/user/admin_pages/tools/banner_manager) 
+    This is used by the [Admin > Tools > Banner Manager](/user/admin_pages/tools/banner_manager/) 
 for updating/displaying bar graphs related to banner usage. If not writable, this feature is ignored.
 
 
@@ -197,14 +197,16 @@ To stop the browser from printing the admin URL (which discloses your Admin fold
 2.  Make recent backups of your website files and database.
     *   Backup the database over a secure connection (ie: if you're using phpMyAdmin to backup, then make sure you're using HTTPS addresses in your URLs).
     *   Backup the website files over a secure connection If you're copying files via FTP, be sure to use a secure form of FTP, not plain FTP. 
-See [FTP tools](/user/first_steps/useful_tools/#ftp-tools) and [secure access](/user/first_steps/secure_access).  
+See [FTP tools](/user/first_steps/useful_tools/#ftp-tools) and [secure access](/user/first_steps/secure_access/).  
 
-    *   Store the backed up database and website files into an encrypted file. (You should NOT keep your backups on your server. But if you do, encrypt them securely. See your hosting company for advice.)
-3.  Check your server's error log regularly for odd or suspicious activity. (Your hosting control panel should give you access to the Apache error_log)
+    *   Store the backed up database and website files into an encrypted file. Note: You should NOT keep your backups on your server. But if you do, encrypt them securely. See your hosting company for advice.
+3.  Check your server's error log regularly for odd or suspicious activity. Your hosting control panel should give you access to the Apache `error_log`.
     *   Look for any links that went to a page that isn't in your site.
     *   Look for links that have `http` after the _index.php_.
 4.  Check your website files regularly to be sure nothing's been added or altered.
-5.  Ask your web host what they have done to be sure the server you're on is safe and secure so that outsiders cannot do any harm, and so that other websites on your server cannot be used to get to your site and cause any harm (in case they have security holes in them).
+5.  Ask your web host what they have done to be sure the server you're on is safe and secure.  You need to guard against two things: 
+    * Ensure that outsiders cannot cause harm, and 
+    * Ensure that other websites on your server with security issues cannot be used to get to your site and cause harm.
 6.  If your business warrants, or you still want additional assurance (especially if running forum software on your site, or other scripts outside of Zen Cart), hire a security consultant to check your site regularly and give you peace of mind in exchange for a few dollars.
 7.  Check your Zen Cart /logs/ or /cache/ folder for myDEBUG-XXXXX.log files to see whether any errors are happening which need to be fixed. Delete the log files after you've addressed the errors.  If you are not sure how to read log files, see [reading a myDEBUG log](/user/troubleshooting/debug_logs/). 
 
@@ -216,7 +218,7 @@ There are some common server vulnerabilities that are worth checking into to ens
 
 PCI Compliance aims to provide a secure experience for both you and your customers.
 It is common for PCI scanners to flag concerns about same-origin, CSP, XSS, and more. 
-To implement these headers in Apache the following `.htaccess` directives could be added to a `.htaccess` file in your site's `document root` (ie: public_html). Work with your hosting company for specifics, and consult them on how best to customize these to your unique needs. It is important that your `https` configuration is already solid before you implement these; again, work with your hosting company.
+To implement these headers in Apache the following `.htaccess` directives could be added to a `.htaccess` file in your site's `document root` (generally `public_html`). Work with your hosting company for specifics, and consult them on how best to customize these to your unique needs. It is important that your `https` configuration is already solid before you implement these; again, work with your hosting company.
 
 ```
 # Security Headers

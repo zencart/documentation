@@ -50,7 +50,7 @@ The product edit screen shows you the master category id value for a product, wh
 
 ![Master Category for a product](/images/master_category.png)
 
-If the product is a [linked product](/user/products/linked_product) it will have other category associations, which can be managed in the [Products to Categories](/user/admin_pages/catalog/products_to_categories) page.
+If the product is a [linked product](/user/products/linked_product/) it will have other category associations, which can be managed in the [Products to Categories](/user/admin_pages/catalog/products_to_categories/) page.
 
 The product edit screen also allows you to set the product's fields.
 See [adding a product](/user/products/product_management_admin/#adding-a-product) for more details. 
@@ -70,7 +70,7 @@ Moving a product is done from the [Categories/Products](/user/admin_pages/catalo
 
 ### Copying a Product 
 
-Copying a product can be used to create a duplicate of the original product or create a [linked product](/user/products/linked_product). 
+Copying a product can be used to create a duplicate of the original product or create a [linked product](/user/products/linked_product/). 
 Copying a product is done from the [Categories/Products](/user/admin_pages/catalog/categories_products/) screen using the blue C icon. 
 
 <img src="/images/copy_sidebar.png" alt="Copying a product" width="50%" />

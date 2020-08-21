@@ -47,5 +47,5 @@ Explore these pages and investigate a topic that is of interest to you:
 - [All Configuration Settings](/user/admin_pages/configuration/all/)
 - [All Admin Menus](/user/admin_pages/menu_sections/)
 - [Top FAQs](/user/all_time_favorites/) 
-- [Learning Trails](/user/first_steps/learning_trails) 
+- [Learning Trails](/user/first_steps/learning_trails/) 
 

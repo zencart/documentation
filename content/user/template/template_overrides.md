@@ -8,7 +8,7 @@ weight: 5
 Before you read this, please review 
 [basic terms](/user/first_steps/basic_terms/),
 [template default and default files](/user/first_steps/overrides/) and 
-[overrides for new users](/user/new_user_topics/overrides). 
+[overrides for new users](/user/new_user_topics/overrides/). 
 
 ## Introduction 
 
@@ -86,7 +86,7 @@ These are more advanced topics, intended for developers.
 - [Init System](/dev/code/init_system/)
 - [Extra folders](/dev/code/extra_folders/) 
 
-See also [plugin tips](/dev/plugins/tips) for more suggestions. 
+See also [plugin tips](/dev/plugins/tips/) for more suggestions. 
 
 ## Using your Overrides 
 
@@ -98,11 +98,11 @@ See [the template_info FAQ](/user/template/template_info/).
 
 ## Next Steps 
 
-- See [how to create a new template](/user/template/creating_template).
+- See [how to create a new template](/user/template/creating_template/).
 
-- See [how to customize your new template](/user/template/customizing_template).
+- See [how to customize your new template](/user/template/customizing_template/).
 
-- Learn to use the [Developers Tool Kit](/user/admin/developers_toolkit).
+- Learn to use the [Developers Tool Kit](/user/admin/developers_toolkit/).
 It will help you track down the files that you need to change to get the results you want. 
 
 

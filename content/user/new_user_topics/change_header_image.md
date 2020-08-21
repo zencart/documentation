@@ -5,7 +5,7 @@ category: new_user_topics
 weight: 10
 ---
 
-The [default template](/user/template/template_default) and its derivatives use a background image in the header.
+The [default template](/user/template/template_default/) and its derivatives use a background image in the header.
 
 <img src="/images/header_bg.jpg" alt="Zen Cart background Image" />
 

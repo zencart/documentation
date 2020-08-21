@@ -15,7 +15,7 @@ PayPal provides a series of [Help Guides](https://www.paypal.com/us/smarthelp/PA
 
 ### How do I set up PayPal Standard to return to my store automatically?
 
-Detailed setup instructions for **PayPal Standard** can be found [in this article](/user/payment/paypal).
+Detailed setup instructions for **PayPal Standard** can be found [in this article](/user/payment/paypal/).
 
 The quick overview for properly configuring IPN is as follows:  
 1\. You must have a "Premier" or "Business" PayPal account in order to use the PayPal module for receiving payments.  

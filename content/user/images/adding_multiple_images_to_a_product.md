@@ -11,7 +11,7 @@ Note: the base image name is the original image name loaded for the product.
 
 The concept of multiple images is best explained using an example:  
 
-From the Admin, you [edit a product](/user/products/product_edit) and specify an image file called:  
+From the Admin, you [edit a product](/user/products/product_edit/) and specify an image file called:  
 `a_bugs_life.gif` and put it in the `/images/dvd`
 directory via the drop down.  
 

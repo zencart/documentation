@@ -16,7 +16,7 @@ Products Reviews - Share your opinions on products with our other customers.
 
 3. Copy a few of those words "exactly" to the clipboard. Example: `your opinions on products`
 
-4. Open the [Developer's Toolkit](/user/admin/developers_toolkit) under Admin > Tools > Developers Tool Kit
+4. Open the [Developer's Toolkit](/user/admin/developers_toolkit/) under Admin > Tools > Developers Tool Kit
 
 5. Paste those words exactly as they appeared on the email into the first search box.
 

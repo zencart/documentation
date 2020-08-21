@@ -37,7 +37,7 @@ These icons allow you to:
 - [edit a category](/user/products/category_management_admin/#editing-a-category) - update all the fields for a category 
 - [delete a category](/user/products/category_management_admin/#deleting-a-category) - remove a category 
 - [move a category](/user/products/category_management_admin/#moving-a-category) - change the category's place in the hierarchy
-- use the [category meta tags editor](/user/admin_pages/catalog/categories_meta_tags_editor) 
+- use the [category meta tags editor](/user/admin_pages/catalog/categories_meta_tags_editor/) 
 
 ## Products Level 
 If you are at a level where the Categories screen only shows products, 

@@ -178,5 +178,5 @@ define('DIR_FS_LOGS', '/enter/your/path/to/public_html_or_htdocs/and/zencart/her
 It's possible to relocate this folder to another location perhaps outside your site's [webroot](/user/first_steps/how_do_i_install#what-is-my-webroot), for increased security. 
 Simply relocate the folder using your FTP program, and adjust this value to match the new location.  
 
-See also [What is STRICT mode for my database](/user/troubleshooting/db_strict_mode) for information on `DB_MYSQL_MODE`. 
+See also [What is STRICT mode for my database](/user/troubleshooting/db_strict_mode/) for information on `DB_MYSQL_MODE`. 
 

@@ -26,7 +26,7 @@ Centerboxes will appear on a mobile device in the expected place.
 
 <img alt="Centerbox on tablet" src="/images/centerboxes_mobile.png" />
 
-This behavior is different from that of [sideboxes](/user/template/sideboxes), which are commonly hidden on mobile. 
+This behavior is different from that of [sideboxes](/user/template/sideboxes/), which are commonly hidden on mobile. 
 
 ### Centerbox Controls
 

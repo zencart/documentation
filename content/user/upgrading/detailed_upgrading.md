@@ -60,7 +60,7 @@ Make a [full backup of your live site files (ftp to your PC and zip it up for sa
 
 Keep an unzipped copy of your backup on your PC to use in the next steps. Perhaps call this folder `store`. 
 
-### Identify (make a list of) all your existing customizations
+### Make a list of all your existing customizations
 **NOTE:** This is a time-consuming step.
 
 Now let's find out the differences/customizations between your site and the original Zen Cart files.  (You can find older versions here: [http://sourceforge.net/projects/zencart/files/](http://sourceforge.net/projects/zencart/files/))

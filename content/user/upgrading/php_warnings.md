@@ -68,4 +68,4 @@ The direction for PHP 7.2+ is to refactor `each` to `foreach` as follows:
 
 
 There are several levels of PHP problems, with the least serious being _notices_ and _warnings_. 
-More serious are PHP _errors_, which can cause a blank screen or partially blank screen.  Several common PHP errors are discussed in [this article](/user/troubleshooting/php_debug_logs).
+More serious are PHP _errors_, which can cause a blank screen or partially blank screen.  Several common PHP errors are discussed in [this article](/user/troubleshooting/php_debug_logs/).

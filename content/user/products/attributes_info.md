@@ -36,7 +36,7 @@ To learn more about attributes, read:
 - [Option Name Manager](/user/admin_pages/catalog/option_name_manager/)
 - [Option Value Manager](/user/admin_pages/catalog/option_value_manager/)
 - [Adding attributes to products](/user/products/attributes/). 
-- [Attribute Pricing](/user/products/attribute_pricing)
+- [Attribute Pricing](/user/products/attribute_pricing/)
 - [Attributes Controller](/user/admin_pages/catalog/attributes_controller/)
 
 Downloadable products are also created using attributes.  To learn 

@@ -7,7 +7,7 @@ weight: 10
 
 There are several places in the Zen Cart code where e-mails to the customer are constructed. To create a consistent feel for all your communication with the customer, you will want to make sure you modify all these places whenever you modify one. 
 
-Don't forget to use the [template overrides system](/user/template/template_overrides) wherever possible when making your changes.
+Don't forget to use the [template overrides system](/user/template/template_overrides/) wherever possible when making your changes.
 
 The e-mail's structure is determined in one of two ways: if you are sending plain text e-mails, it is determined by the way you put together the various items (customer greeting, order number, link to detailed invoice, etc) in a string variable that is then passed to the `zen_mail()` function. If you are sending HTML e-mails, the structure is determined by the template you use.
 
@@ -46,8 +46,8 @@ If you don't understand what's going on in the lines above, you may want to [Rea
 
 The HTML e-mail templates are located in the folder `email/` in your store's root directory. There are several different templates, each for a different purpose. You can rearrange the items, add new items, or delete items to achieve the structure you want for your e-mails.
 
-You need not edit any other Zen Cart files if you just want to rearrange or delete the items listed in an HTML template. To add items, however, you will need to find all the Zen Cart files that use that particular HTML template, and add in a definition for your new item. You can use the [Developer's Tool Kit](/user/admin/developers_toolkit).
-in the Admin to find all the files that use a given template; search for the last part of the template name. For example, if you want to add an item into the HTML template `email_template_order_status.html`, search for `order_status` using the [Developer's Tool Kit](/user/admin/developers_toolkit).
+You need not edit any other Zen Cart files if you just want to rearrange or delete the items listed in an HTML template. To add items, however, you will need to find all the Zen Cart files that use that particular HTML template, and add in a definition for your new item. You can use the [Developer's Tool Kit](/user/admin/developers_toolkit/).
+in the Admin to find all the files that use a given template; search for the last part of the template name. For example, if you want to add an item into the HTML template `email_template_order_status.html`, search for `order_status` using the [Developer's Tool Kit](/user/admin/developers_toolkit/).
 
 Once you have found the files that need to be edited, you will want to add a definition for your new HTML item to each one. For example, suppose you have added an item called `$EMAIL_HOURS_OF_OPERATION` to the `email_template_order_status.html` template. One of the files that you will need to edit is `admin/orders.php`. Find the part of that file where the e-mail message is being constructed; in this case, it begins around line 100\.
 

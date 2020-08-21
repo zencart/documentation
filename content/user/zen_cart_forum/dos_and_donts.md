@@ -29,7 +29,7 @@ weight: 10
 
 *   Cross Post. Cross Posting is posting the same message in multiple threads or posting links to threads on other boards. It's seen as spam.
 
-*   Use banners or other images in your signature line. You will be asked to remove them.  See [signature guidelines](/user/zen_cart_forum/signature).
+*   Use banners or other images in your signature line. You will be asked to remove them.  See [signature guidelines](/user/zen_cart_forum/signature/).
 
 *   Hold independent contests or raffles.
 

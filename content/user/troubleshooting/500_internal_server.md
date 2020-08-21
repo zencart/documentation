@@ -30,7 +30,7 @@ There are 2 kinds of logs in this case:
 a) Your site's `/logs/` folder, which stores PHP errors happening in your store. Sometimes a Fatal PHP error will cause your website to trigger a generic 500 Internal Server error. You can find the details of the PHP error in the myDEBUG-xxxxxx.log files in your `/logs/` folder.  
 
 More info is provided in this [FAQ on Zen Cart Debug Logs](/user/troubleshooting/debug_logs) and 
-this [FAQ on blank page errors](/user/troubleshooting/blank_page). 
+this [FAQ on blank page errors](/user/troubleshooting/blank_page/). 
 
 b) Your server's webserver error logs ... ie: Apache/Nginx and maybe PHP itself. Your hosting company will have to give you access to this information if you don't already have an Error Logs menu option in your hosting company's control panel.  
 
@@ -57,7 +57,7 @@ So, switching from Windows/IIS to Linux/Apache is definitely worthy of considera
 
 The mod_security rule will be listed in the error logs *and* in the mod_security logs.  
 
-See also [errors during product_updates](/user/troubleshooting/product_update_errors). 
+See also [errors during product_updates](/user/troubleshooting/product_update_errors/). 
 </td>
 
 </tr>
@@ -98,7 +98,7 @@ Further details on .htaccess and server requirements for Zen Cart can be found *
 
 Sometimes when a PHP script encounters an error, either due to a timeout or a syntax problem, or something worse like a logic problem, it *might* trigger a 500 Internal Server Error. It may not always do so, but it may.  
 
-In such cases, if you use the [Zen Cart debug logs](/user/troubleshooting/blank_page) to review PHP errors, you might discover the cause of the problem there.
+In such cases, if you use the [Zen Cart debug logs](/user/troubleshooting/blank_page/) to review PHP errors, you might discover the cause of the problem there.
 </td>
 
 </tr>
@@ -109,7 +109,7 @@ In such cases, if you use the [Zen Cart debug logs](/user/troubleshooting/blank_
 
 <td>
 
-If the URLs or paths, or anything else for that matter, in your [configure.php files](/user/miscellaneous/configure) refers to information for a different server, or is not correct for *your* server, then many odd problems may occur, including possibly a 500 error. However, usually it will be very different symptoms. Just be sure that you DO NOT copy your configure.php files from one server to another, even localhost.
+If the URLs or paths, or anything else for that matter, in your [configure.php files](/user/miscellaneous/configure/) refers to information for a different server, or is not correct for *your* server, then many odd problems may occur, including possibly a 500 error. However, usually it will be very different symptoms. Just be sure that you DO NOT copy your configure.php files from one server to another, even localhost.
 
 </td>
 

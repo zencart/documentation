@@ -63,7 +63,7 @@ in your website's /logs/ folder named
 
 To access these files, use your [FTP program](/user/first_steps/useful_tools/#ftp-tools) to connect to your [hoster](/user/first_steps/hosting/#hosting-companies).
 
-If there are no myDEBUG-xxxxxx.log files in your /logs/ folder, then you might need to [make your /logs/ folder writable](/user/installing/permissions).
+If there are no myDEBUG-xxxxxx.log files in your /logs/ folder, then you might need to [make your /logs/ folder writable](/user/installing/permissions/).
 
 You'll want to read the contents of these files to see what the actual PHP errors are.  
 
@@ -91,13 +91,13 @@ How to read the errors:
 
 *   Note that many error/warning messages will be a result of previous error/warning messages.  
     <font color="#FF0000">**Deal with them in the order they appear**,</font> and don't blame the later errors until the earlier ones are dealt with first.
-*   One of the MOST COMMON errors you'll see is addressed here: [Warning: Headers Already Sent ...](/user/troubleshooting/warning_headers_already_sent).
+*   One of the MOST COMMON errors you'll see is addressed here: [Warning: Headers Already Sent ...](/user/troubleshooting/warning_headers_already_sent/).
 *   Use the search option on this page to find answers to any other errors you find.
 
 ### c) Missing Log Files 
 
 If you're seeing a blank screen but have no log files in your /logs/ folder,
-it could be that your configuration has changed the default logging behavior.  See [Missing Log files](/user/troubleshooting/missing_log_files). 
+it could be that your configuration has changed the default logging behavior.  See [Missing Log files](/user/troubleshooting/missing_log_files/). 
 
 * * *
 

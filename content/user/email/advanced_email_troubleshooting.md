@@ -8,7 +8,7 @@ aliases:
     - /user/email/advanced_email_troubleshooting_2/
 ---
 
-If you're having difficulties with email and your online store, this article will hopefully assist in resolving those problems.  Be sure you have reviewed the guidance in [introduction to email](/user/email/email_introduction) before reading this.
+If you're having difficulties with email and your online store, this article will hopefully assist in resolving those problems.  Be sure you have reviewed the guidance in [introduction to email](/user/email/email_introduction/) before reading this.
 
 ## Basic Troubleshooting
 

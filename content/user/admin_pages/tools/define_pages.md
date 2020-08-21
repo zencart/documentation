@@ -5,7 +5,7 @@ category: admin_pages
 weight: 110
 ---
 
-[Define pages](/user/template/define_pages) are pieces of HTML content which display above normal page content for the pages listed below.  Define pages may be edited in the admin using the interface provided by this page. 
+[Define pages](/user/template/define_pages/) are pieces of HTML content which display above normal page content for the pages listed below.  Define pages may be edited in the admin using the interface provided by this page. 
 
 Define Pages Editor gives you an option to change the content of the following pages:
 

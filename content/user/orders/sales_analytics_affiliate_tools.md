@@ -100,4 +100,4 @@ Advanced programmers might choose programmatic hooks instead of javascript callb
 
 This could allow a bespoke tracking service to be invoked without needing to force extra activities down to the customer's browser.  
 
-Related article: [Adding a tracking pixel](/user/template/tracking_pixel).
+Related article: [Adding a tracking pixel](/user/template/tracking_pixel/).

@@ -11,7 +11,7 @@ The list of available order total modules may be seen by going to [Admin > Modul
 
 Zen Cart has a number of built-in order total modules which allow you to 
 increase or reduce the total owed based on various factors in the order.
-*Increasing* the total is done using [fees](/user/order_total/default_fees). 
+*Increasing* the total is done using [fees](/user/order_total/default_fees/). 
 *Reducing* the total is done using discounts like these: 
 
 * Coupons - Create discount coupons for price reductions and free shipping 

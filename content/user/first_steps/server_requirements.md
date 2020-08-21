@@ -17,7 +17,7 @@ _(Last updated: July 23, 2020)_
 ## SSL, OpenSSL, cURL
 
 *   Zen Cart requires cURL to be installed/compiled into PHP with OpenSSL. If this capability is not available, a message to that effect will be displayed during the initial installation's system-inspection, however it will still allow installation anyway. It is up to you to ensure cURL is enabled. Consult your hosting company for assistance.
-*   You should always use HTTPS (SSL) on your store. Yes, [you really do need an SSL certificate](/user/first_steps/yes_you_need_ssl). Be sure to regularly test your site's SSL (https) using [www.ssllabs.com/ssltest/](https://www.ssllabs.com/ssltest/index.html) and have your hosting company resolve all reported issues. If your hosting company doesn't know how to resolve the issues to at least a "B" rating, find another hosting company.
+*   You should always use HTTPS (SSL) on your store. Yes, [you really do need an SSL certificate](/user/first_steps/yes_you_need_ssl/). Be sure to regularly test your site's SSL (https) using [www.ssllabs.com/ssltest/](https://www.ssllabs.com/ssltest/index.html) and have your hosting company resolve all reported issues. If your hosting company doesn't know how to resolve the issues to at least a "B" rating, find another hosting company.
 
 
 ## PHP Version

@@ -19,4 +19,4 @@ For example:
 
 This can occur when template authors choose not to respect the flags that Zen Cart uses.  To fix this, edit `includes/templates/YOURTEMPLATE/templates/tpl_product_info_display.php` and modify the code that handles the display of the field you wish to turn off. 
 
-If you are a developer, see [technical information on product types](/dev/code/product_types). 
+If you are a developer, see [technical information on product types](/dev/code/product_types/). 

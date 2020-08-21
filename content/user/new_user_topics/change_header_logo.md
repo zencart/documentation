@@ -53,5 +53,5 @@ To right align the logo use `float: right;`
 
 The reason the instructions above recommend using the new name `newlogo.png` is to ensure that the cache isn't used.
 
-If you simply replace `includes/templates/YOURTEMPLATE/images/logo.gif` with your own logo using the same filename, your browser will likely not pick up the change immediately because of [caching](/user/new_user_topics/caching).
+If you simply replace `includes/templates/YOURTEMPLATE/images/logo.gif` with your own logo using the same filename, your browser will likely not pick up the change immediately because of [caching](/user/new_user_topics/caching/).
 

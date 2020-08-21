@@ -7,7 +7,7 @@ weight: 10
 
 Background: 
 
-- Downloads are handled as product attributes.  So, first, you should familiarize yourself with [setting up attributes](/user/products/attributes). 
+- Downloads are handled as product attributes.  So, first, you should familiarize yourself with [setting up attributes](/user/products/attributes/). 
 
 - Download files must be loaded by [FTP](/user/first_steps/useful_tools/#ftp-tools) to your store's  `/download` directory before trying to link those files to products/attributes.   For greater security, you can [relocate the downloads folder](/user/security/relocate_download_folder/) outside your web space. 
 - You may serve your downloads from a remote URL by providing that URL as the filename. You may also serve them from AWS S3 with special syntax.  See [download_delivery_methods/#serving-files-via-aws](/user/products/download_delivery_methods/#serving-files-via-aws) for details on syntax and on setting your AWS credentials. 
@@ -227,12 +227,12 @@ If you are using download-by-redirect, then your `pub/` folder needs to be read-
 
 ### Combo Products 
 A combo product is a product with a physical and downloadable component.  
-Read more about [downloadable combo products](/user/products/products_shippable_and_downloadable).
+Read more about [downloadable combo products](/user/products/products_shippable_and_downloadable/).
 
 
 **See Also:**
 
 - [Downloads - why do they not activate after checkout](/user/products/downloads_activating/)
-- [Download Delivery Methods](/user/products/download_delivery_methods)
-- [Moving your Download Folder](/user/security/relocate_download_folder) 
+- [Download Delivery Methods](/user/products/download_delivery_methods/)
+- [Moving your Download Folder](/user/security/relocate_download_folder/) 
 

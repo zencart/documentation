@@ -18,11 +18,11 @@ layout: docs
 
 * [Can Zen Cart ...](/user/miscellaneous/can_zen_cart/) - Questions about features.
 
-* [Customizing my site](/user/customizing/appearance) - changing the look and feel of your cart.
+* [Customizing my site](/user/customizing/appearance/) - changing the look and feel of your cart.
 
 * [Downloading Zen Cart](/user/first_steps/get_zen_cart/) - where do I download the Zen Cart software?
 
-* [Emails are not being received](/user/email/emails_not_received) - trouble with email. 
+* [Emails are not being received](/user/email/emails_not_received/) - trouble with email. 
 
 * [Forum issues](/user/zen_cart_forum/forum_issues/) - I can't post to the Zen Cart forum.
 
@@ -32,7 +32,7 @@ layout: docs
 
 * [Installing Zen Cart](/user/first_steps/how_do_i_install/) - how do I install Zen Cart?
 
-* [Release history for Zen Cart](/user/about_us/release_history/) - with links to Release Notes.  And don't forget the [security patches](/user/about_us/security_releases), especially if you are not on the latest version. 
+* [Release history for Zen Cart](/user/about_us/release_history/) - with links to Release Notes.  And don't forget the [security patches](/user/about_us/security_releases/), especially if you are not on the latest version. 
 
 * [Server Requirements for running Zen Cart](/user/first_steps/server_requirements/) - Zen Cart version to PHP version matrix.
 

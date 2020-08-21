@@ -40,6 +40,6 @@ Zen Cart pages are dynamically created, so there's no single file like (say) `sp
 https://YOURSITE.com/index.php?main_page=specials 
 ```
 
-is created on the fly by executing a number of PHP files.  One part of your [template](/user/template/what_is_a_template) is the [template page](/user/template/template_pages/) for specials.  It controls how the specials are displayed, and you can modify it as you see fit.  
+is created on the fly by executing a number of PHP files.  One part of your [template](/user/template/what_is_a_template/) is the [template page](/user/template/template_pages/) for specials.  It controls how the specials are displayed, and you can modify it as you see fit.  
 
  

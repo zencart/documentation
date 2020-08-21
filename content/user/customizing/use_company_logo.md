@@ -5,7 +5,7 @@ category: customizing
 weight: 10
 ---
 
-Related: [How do I change the logo in my HTML emails?](/user/email/logo) 
+Related: [How do I change the logo in my HTML emails?](/user/email/logo/) 
 
 The logo used on Admin pages and on output from admin is `admin/images/logo.gif`.
 

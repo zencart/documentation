@@ -39,4 +39,4 @@ related pages which are connected by a table of contents.
 (ii) Give all pages in the same collection the same Chapter number.
 
 
-For more information, see the [EZ-Page FAQs](/user/ezpages). 
+For more information, see the [EZ-Page FAQs](/user/ezpages/). 

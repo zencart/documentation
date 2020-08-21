@@ -12,7 +12,7 @@ Once you have created some featured products, Zen Cart has a number of ways for 
 
 - the built in Featured Products page, which appears when you navigate to `YOURSITE.com/index.php?main_page=featured_products`.
 - the optional Featured Products [Sidebox](/user/template/sideboxes/) 
-- the optional Featured Products [Centerbox](/user/template/centerboxes)
+- the optional Featured Products [Centerbox](/user/template/centerboxes/)
 
 You may also configure featured products to appear in the following places: 
 
