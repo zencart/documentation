@@ -14,10 +14,10 @@ including PHP and MySQL versions and settings, as well as
 your Zen Cart version and database history. 
 <br /><br />
 
-**Clicking this link is the fastest way to get your version information**,
-which people will need in order to help you  on the forum.
+**Clicking this link is the fastest way to get your version information**.
+In order to get help on the forum, you will need to provide this information.
 
-<br /><br />
-<img src="/images/version_link.png" alt="Zen Cart Version information" style="height: 150px !important;" />
-<br /><br />
+
+![Zen Cart Version information](/images/version_link.png) 
+
 

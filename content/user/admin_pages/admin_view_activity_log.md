@@ -9,7 +9,7 @@ The *View Activity Log* button is shown when your Admin Activity Log table has r
 
 Pressing the button takes you to the page [Admins > Admin Activity Logs](/user/admin_pages/admins/admin_activity_logs/). 
 
-<img src="/images/admin_activity_log.png" alt="Zen Cart Admin Activity Log button" style="height: 150px !important;" />
+![Zen Cart Admin Activity Log button](/images/admin_activity_log.png)
 
 On the Admin Activity Logs page, you can export your old logs and 
 purge log history.  [Here is the procedure to purge old logs](/user/admin_pages/admins/admin_activity_logs/#purging-logs). 
