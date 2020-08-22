@@ -57,7 +57,7 @@ Now Add Font Awesome 5 CSS and Folder
     includes/templates/YOURTEMPLATE/css/all.css (version 5)
     includes/templates/YOURTEMPLATE/webfonts (version 5 font)
 ```
-Once you do this, all locations where you used Font Awesome 4 well turn into missing fonts &#xf062;.  This helps to find and edit your code.  I printed/downloaded the new font lists from [Font Awesome Cheatsheet ](https://fontawesome.com/cheatsheet) to aid in making the code changes.
+Once you do this, all locations where you used Font Awesome 4 will turn into missing fonts &#xf062;.  This helps to find and edit your code.  I printed/downloaded the new font lists from [Font Awesome Cheatsheet ](https://fontawesome.com/cheatsheet) to aid in making the code changes.
 
 I created a kit with Font Awesome. I then updated the follow just below the call to load jQuery `includes/templates/YOURTEMPLATE/common/html_header.php` If you not installed this before, then add it.  This calls to Font Awesome and loads the font icons.  The script then creates and tests for the font.  If the font is not been loaded remotely, then the script looks at your template CSS folder.
 
@@ -77,7 +77,7 @@ I created a kit with Font Awesome. I then updated the follow just below the call
 
 ### Coding Buttons
 
-I'll give you a couple examples of creating buttons with form input submit fields.  Input buttons use the **value** field for the button wording.  You can not use HTML coding in the value field as this `<input type="submit" value="<i class="fas fa-cart-plus"></i> Add to Cart">` well not work! 
+I'll give you a couple examples of creating buttons with form input submit fields.  Input buttons use the **value** field for the button wording.  You can not use HTML coding in the value field as this `<input type="submit" value="<i class="fas fa-cart-plus"></i> Add to Cart">` will not work! 
 
 
 
@@ -113,7 +113,7 @@ Editing `html_output.php` Lines in Functions noted with **//modified for FA5**
 ```go 
       function zen_image_submit($image, $alt = '', $parameters = '', $sec_class = '') {
         global $template, $current_page_base, $zco_notifier;
-        if (strtolower(IMAGE_USE_CSS_BUTTONS) == 'yes' return zenCssButton($image, $alt, 'submit', $sec_class, $parameters); //modified for FA5 && strlen($alt)<70) 
+        if (strtolower(IMAGE_USE_CSS_BUTTONS) == 'yes' && strlen($alt)<70) return zenCssButton($image, $alt, 'submit', $sec_class, $parameters); //modified for FA5  
         $zco_notifier->notify('PAGE_OUTPUT_IMAGE_SUBMIT');
         $alt = trim(explode('</i>', $alt)[1]);  //modified for FA5
          $image_submit = '<input type="image" src="' .  zen_output_string($template->get_template_dir($image,  DIR_WS_TEMPLATE, $current_page_base, 'buttons/' . $_SESSION['language'] .  '/') . $image) . '" alt="' . zen_output_string($alt) . '"';
