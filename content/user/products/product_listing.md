@@ -2,6 +2,7 @@
 title: Listing pages 
 description: Zen Cart Listing pages 
 category: products
+noindex: yes
 weight: 10
 ---
 

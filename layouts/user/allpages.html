@@ -10,7 +10,9 @@
     {{ range .Site.RegularPages.ByTitle }}
        {{ if (eq .Section "user") }} 
           {{ if (ne .Params.Category "admin_pages") }}
-             <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+             {{ if not .Params.noindex }}
+                <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+             {{ end }}
           {{ end }}
        {{ end }}
     {{ end }}

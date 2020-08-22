@@ -1,6 +1,6 @@
 ---
 title: Accessibility Compliance Questions 
-description: Information about Accessibility Compliance in Zen Cart
+description: WCAG and Section 508
 category: templates
 weight: 10
 ---

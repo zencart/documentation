@@ -1,6 +1,7 @@
 ---
 title: Installing
 description: How to install Zen Cart 
+noindex: yes
 weight: 100
 layout: docs
 ---

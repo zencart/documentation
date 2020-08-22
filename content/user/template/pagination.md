@@ -1,6 +1,6 @@
 ---
 title: Pagination in Zen Cart 
-description: How do display a large number of results? 
+description: How do you display a large number of results? 
 category: templates
 weight: 10 
 ---
@@ -33,5 +33,10 @@ All Products | Maximum Display of Products All Page
 
 <br><br>
 
-The behavior and appearance of the **Next** and **Previous** links is controlled using settings on the [Admin > Configuration > Product Info](/user/admin_pages/configuration/configuration_productinfo/) page. 
+The behavior and appearance of the **Next** and **Previous** navigation links is controlled using settings on the [Admin > Configuration > Product Info](/user/admin_pages/configuration/configuration_productinfo/) page. 
+
+And since these are template elements, they can be styled.  For example, here's another template's interpretation of the navigation: 
+
+![Navigation](/images/next_prev_2.png)
+
 

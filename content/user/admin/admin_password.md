@@ -2,6 +2,7 @@
 title: Admin Password - Resetting or Changing
 description: Zen Cart Admin Password - Resetting or Changing
 category: troubleshooting
+noindex: yes
 weight: 10
 ---
 
