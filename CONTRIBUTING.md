@@ -155,7 +155,11 @@ FILE 2:
 **What does MIXED ON mean?**
 ```
 
+- For links to the Zen Cart download, please use the URL 
 
+```
+https://www.zen-cart.com/latest
+```
 
 
 <br />
