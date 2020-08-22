@@ -1,6 +1,6 @@
 ---
 title: Security
-description: Security Matters
+description: Keeping your store secure
 weight: 100 
 layout: docs
 ---

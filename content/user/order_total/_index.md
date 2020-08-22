@@ -1,6 +1,6 @@
 ---
 title: Order Total 
-description: Order Total Modules 
+description: Discounts, fees and other invoice line items 
 weight: 100 
 layout: docs
 ---

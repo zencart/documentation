@@ -1,6 +1,6 @@
 ---
 title: Payment
-description: Payment Modules 
+description: PayPal, Square, Authorize.net and other payment processors
 weight: 100 
 layout: docs
 ---

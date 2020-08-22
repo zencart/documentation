@@ -1,6 +1,6 @@
 ---
 title: Running
-description: Running your store
+description: Operating your store
 weight: 100
 layout: docs
 ---

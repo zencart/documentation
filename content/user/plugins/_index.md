@@ -1,6 +1,6 @@
 ---
 title: Plugins
-description: Plugins for Zen Cart 
+description: Adding features to your store using plugins 
 weight: 100 
 layout: docs
 ---

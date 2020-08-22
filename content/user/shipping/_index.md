@@ -1,6 +1,6 @@
 ---
 title: Shipping
-description: Shipping Modules 
+description: UPS, USPS, FedEx, other other shippers
 weight: 100 
 layout: docs
 ---

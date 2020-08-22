@@ -1,6 +1,6 @@
 ---
 title: Admin Dashboard 
-description: Zen Cart Admin Dashboard 
+description: The Admin Home Page 
 category: admin_pages
 weight: 480 
 ---

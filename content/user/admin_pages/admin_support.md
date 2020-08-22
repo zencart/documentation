@@ -1,6 +1,6 @@
 ---
 title: Admin > Support link
-description: Zen Cart Admin > Support link
+description: Getting help from the admin 
 category: admin_pages
 weight: 490 
 ---
