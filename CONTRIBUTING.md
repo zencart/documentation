@@ -180,6 +180,14 @@ to replicate content, you can put a `url` entry in the front matter of a file wi
 
 You can also point to a folder rather than a single file, as is done in the `template.md` cross link file in the `customizing` folder.
 
+## Excluding pages from the All Pages index 
+
+To exclude a crosslink only page from the [All Pages](/user/_allpages) index, add the following line to the page frontmatter:
+
+```
+noindex: yes
+```
+
 ## Markdown
 
 * [Link to Markdown Syntax](https://www.markdownguide.org/basic-syntax/)

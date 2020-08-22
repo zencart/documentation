@@ -56,5 +56,9 @@ Here's an example of what a product listing page might look like on a desktop co
 
 ![Product Listing Page](/images/product_listing.png) 
 
+And here's the Featured Products listing page showing a different layout: 
+
+![Featured Products Listing Page](/images/product_listing_featured.png) 
+
 The layout and configuration for listing pages is described in [listing page layout](/user/template/listing_page_layout/). 
 

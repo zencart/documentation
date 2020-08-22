@@ -2,6 +2,7 @@
 title: Download folder - Moving 
 description: Moving your Zen Cart Download folder 
 category: products
+noindex: yes
 weight: 10
 ---
 

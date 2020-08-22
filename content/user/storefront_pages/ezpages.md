@@ -2,6 +2,7 @@
 title: EZ-Pages 
 description: EZ-Pages in the storefront 
 category: storefront_pages
+noindex: yes
 weight: 10
 ---
 
