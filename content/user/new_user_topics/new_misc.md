@@ -1,6 +1,5 @@
 ---
 title: Miscellaneous Questions from New Zen Cart Users 
-description: Things New Zen Cart Users Need to Know 
 category: new_user_topics 
 weight: -1 
 ---

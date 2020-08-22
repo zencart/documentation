@@ -1,6 +1,5 @@
 ---
 title: Miscellaneous Questions about Running your Store
-description: Running your Zen Cart Store
 category: running 
 weight: -1 
 ---

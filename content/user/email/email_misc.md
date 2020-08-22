@@ -1,6 +1,5 @@
 ---
 title: Miscellaneous Email Questions
-description: About email in Zen Cart 
 category: email 
 weight: -1 
 ---

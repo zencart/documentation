@@ -29,7 +29,7 @@ deep), eventually leading to a level of products only.
 
 At the level where you only have categories, there are a series of action icons on the right.
 
-<img src="/images/categories_icons.png" alt="Category Listing Icons" style="float: right" /> 
+<img src="/images/categories_icons.png" alt="Admin Category Listing Icons" style="float: right" /> 
 <br clear="all" />
 
 These icons allow you to: 

@@ -1,6 +1,5 @@
 ---
 title: Miscellaneous Installing Questions
-description: Miscellaneous Questions about Installing Zen Cart 
 category: products 
 weight: -1 
 ---

@@ -1,6 +1,5 @@
 ---
 title: Miscellaneous Search Questions 
-description: Searching in Zen Cart 
 category: search 
 weight: 2 
 ---

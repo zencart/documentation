@@ -1,6 +1,5 @@
 ---
 title: Miscellaneous Troubleshooting Questions
-description: Troubleshooting Zen Cart 
 category: troubleshooting 
 weight: -1 
 ---

@@ -1,6 +1,5 @@
 ---
 title: Miscellaneous Questions about the Zen Cart Forum 
-description: Zen Cart Forum FAQ 
 category: zen_cart_forum
 weight: 5 
 ---

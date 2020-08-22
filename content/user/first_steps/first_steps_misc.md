@@ -1,6 +1,5 @@
 ---
 title: Miscellaneous Beginner Questions 
-description: Questions people ask when starting with Zen Cart 
 category: running 
 weight: -1 
 ---

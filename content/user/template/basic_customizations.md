@@ -104,7 +104,7 @@ If you wish to change admin functionality, you will have to edit the core files 
 
 ---
 
-### What files are used to edit both the way a product displays in the category listing and the product description page?
+### What files are used to edit both the way a product displays in the product listing and the product description page?
 
 This is handled in many ways. 
 There are administrative "switches" under 

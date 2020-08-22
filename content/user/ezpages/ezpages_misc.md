@@ -1,6 +1,5 @@
 ---
 title: Miscellaneous EZ-Pages Questions
-description: Using EZ-Pages in Zen Cart 
 category: ezpages
 weight: -1
 ---

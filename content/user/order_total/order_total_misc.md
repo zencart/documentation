@@ -1,6 +1,5 @@
 ---
 title: Order Total Modules - Miscellaneous Questions
-description: Zen Cart Order Total Modules - Miscellaneous Questions
 category: order_total 
 weight: 5
 ---
