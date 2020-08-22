@@ -29,10 +29,10 @@ index: false
 *   [Product Info](/user/admin_pages/configuration/configuration_productinfo/) — Basic options controlling elements to include on _Product Info_ page.
 *   [Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/) — Controls certain layout options.
 *   [Website Maintenance](/user/admin_pages/configuration/configuration_websitemaintenance/) — Controls how your store appears to customers when it is down for maintenance.
-*   [New Listing](/user/admin_pages/configuration/configuration_newlisting/) — How and where certain product listing information for new listings are displayed.
-*   [Featured Listing](/user/admin_pages/configuration/configuration_featuredlisting/) — How and where certain product listing information for featured listings are displayed.
-*   [All Listing](/user/admin_pages/configuration/configuration_alllisting/) — How and where certain product listing information for all listings are displayed.
-*   [Index Listing](/user/admin_pages/configuration/configuration_indexlisting/) — Whether certain items show on main page.
+*   [New Listing](/user/admin_pages/configuration/configuration_newlisting/) — How the New Products listing page should be laid out. 
+*   [Featured Listing](/user/admin_pages/configuration/configuration_featuredlisting/) — How the Featured Products listing page should be laid out.
+*   [All Listing](/user/admin_pages/configuration/configuration_alllisting/) — How the All Products listing page should be laid out.
+*   [Index Listing](/user/admin_pages/configuration/configuration_indexlisting/) — Whether certain items show on main page and other category and product listing pages.
 *   [Define Page Status](/user/admin_pages/configuration/configuration_definepagestatus/) — Controls whether define pages editor text is used and whether a link to a certain page is displayed.
 *   [EZ-Pages Settings](/user/admin_pages/configuration/configuration_ezpagessettings/) — Various options to configure the EZ-Pages; an easy way to add new pages of content.
 

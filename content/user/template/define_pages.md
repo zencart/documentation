@@ -59,11 +59,13 @@ Page 4 | `define_page_4.php` | `index.php?main_page=page_4`
 
 These pages have other content, and define page content is embedded along side that: 
 
+
 Page Name |  File | URL 
-----------|-------------------|-----|-----
+----------|-------|-----
 Shopping Cart |`define_shopping_cart.php` |  `index.php?main_page=shopping_cart`
 Checkout Success |`define_checkout_success.php` |  `index.php?main_page=checkout_success`
 Home Page |`define_main_page.php` |  `index.php`
+
 
 <br>
 
