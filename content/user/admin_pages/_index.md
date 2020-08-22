@@ -1,6 +1,6 @@
 ---
 title: Admin Pages
-description: Pages in the Admin 
+description: The pages in the back end explained
 weight: 100 
 layout: docs
 ---

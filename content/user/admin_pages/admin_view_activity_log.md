@@ -1,6 +1,6 @@
 ---
 title: Admin View Activity Log button
-description: Zen Cart Admin View Activity Log button
+description: Managing the Admin Activity Log 
 category: admin_pages
 weight: 520 
 ---

@@ -7,17 +7,20 @@ weight: 10
 
 Listing Pages are used to show groups of results.  Examples of listing pages are: 
 
-- Specials 
+- New Products 
 - Featured Products
-- Categories 
-- Search Results 
+- All Products
 
-The relevant settings for all listing pages are in [Admin > Configuration > Product Listing](/user/admin_pages/configuration/configuration_productlisting/).  There are also specific configurations for these pages: 
+There are specific configurations for these pages: 
 
-- Product Category listing pages are configured by [Admin > Configuration > Index Listing](/user/admin_pages/configuration/configuration_indexlisting/).
 - The New Products page is configured by [Admin > Configuration > New Listing](/user/admin_pages/configuration/configuration_newlisting/).
 - The Featured Products page is configured by [Admin > Configuration > Featured Listing](/user/admin_pages/configuration/configuration_featuredlisting/).
 - The All Products page is configured by [Admin > Configuration > All Listing](/user/admin_pages/configuration/configuration_alllisting/).
+- Pages the products in a category are configured by [Admin > Configuration > Product Listing](/user/admin_pages/configuration/configuration_productlisting/).
+
+These four pages are share the same layout: stacked rows with one product per row.  This is different from a grid-style page like Specials.  Grid pages are laid out like the home page, with one main [centerbox](/user/template/centerboxes/). 
 
 [Listing pages are paginated](/user/template/pagination/) so that only a subset of the total number of results are shown.  Navigation is provided between blocks of results. 
+
+The [Admin > Configuration > Index Listing](/user/admin_pages/configuration/configuration_indexlisting/) page works differently.  It is explained in the [Index Listing Configuration](/user/template/index_listing) FAQ. 
 

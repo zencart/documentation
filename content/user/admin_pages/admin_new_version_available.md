@@ -1,6 +1,6 @@
 ---
 title: Admin > New Version Available message 
-description: Zen Cart Admin New Version Available message 
+description: Release announcements right in your admin
 category: admin_pages
 weight: 530
 ---
@@ -9,7 +9,8 @@ weight: 530
 If you are running an older version of Zen Cart, a message will appear at 
 the top right hand side of your Admin page, reminding you to upgrade. 
 
-<img src="/images/new_version.png" alt="New Zen Cart Version available" style="height: 150px !important;" />
+![New Zen Cart Version available](/images/new_version.png) 
 
 This message can be disabled by setting `Show if version update available` to `false` in [Admin > Configuration > My Store](/user/admin_pages/configuration/configuration_mystore/). 
 
+In addition to this message, [subscribing to release announcements](/user/about_us/announcements) is a great way to stay informed about new releases and security updates. 
