@@ -1,6 +1,6 @@
 ---
 title: Upgrading - Detailed Instructions
-description: Zen Cart Upgrading - Detailed Instructions
+description: Upgrading and preserving customizations
 category: Upgrading
 weight: 10
 ---

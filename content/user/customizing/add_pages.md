@@ -1,6 +1,6 @@
 ---
 title: Adding Pages to my site 
-description: Adding pages to a Zen Cart 
+description: Creating custom pages for your store's content
 category: customizing 
 weight: 10
 ---
