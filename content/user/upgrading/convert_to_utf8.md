@@ -1,6 +1,6 @@
 ---
 title: Technical - Converting from iso-8859-1 to utf8
-description: Zen Cart Converting from iso-8859-1 to utf8
+description: Latin1 has got to go
 category: upgrading 
 weight: 20
 ---

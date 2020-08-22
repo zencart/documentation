@@ -1,6 +1,6 @@
 ---
 title: Release Specific Upgrade Considerations 
-description: Release Specific Upgrade Considerations for Zen Cart 
+description: Watch for these changes if you are upgrading and preserving customizations
 category: Upgrading
 weight: 10
 ---

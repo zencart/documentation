@@ -1,8 +1,10 @@
 ---
 title: Can I print a high resolution logo on my invoices and packing slips?
-description: In Zen Cart, can I print a high resolution logo on my invoices and packing slips?
+description: Branding your invoices and packing slips
 category: orders
 weight: 10
+aliases: 
+    - /user/customizing/use_company_logo/
 ---
 
 You can. Firstly, if you don't already have it, create your high resolution logo at the size and resolution that you would like to print it. Then upload it to the `admin/images` folder.
@@ -40,3 +42,6 @@ and replace it with
 ```
 zen_image(DIR_WS_IMAGES . HEADER_LOGO_IMAGE, HEADER_ALT_TEXT, HEADER_LOGO_WIDTH, HEADER_LOGO_HEIGHT);
 ```
+
+Related: [How do I change the logo in my HTML emails?](/user/email/logo/) 
+
