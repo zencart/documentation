@@ -19,7 +19,7 @@ See [Orders Status](/user/admin_pages/localization/orders_status/).
 
 If you are receiving the message, "The Admin Activity Logs table has records over 2 months old and should be archived to conserve space" 
 
-<img src="/images/admin_activity_log.png" alt="Zen Cart Admin Activity Log button" style="height: 150px !important;" />
+![Zen Cart Admin Activity Log button](/images/admin_activity_log.png)
 
 Follow the [procedure to purge old logs](/user/admin_pages/admins/admin_activity_logs/#purging-logs). 
 
