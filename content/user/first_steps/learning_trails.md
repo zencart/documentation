@@ -44,5 +44,5 @@ Take a look at [exploring the documentation](/user/first_steps/documentation/) t
 - [Observer/Notifier System](/dev/code/notifiers/)
 - [Auto Inclusion](/dev/code/inclusion/)
 - [Github Workflow for Zen Cart](/dev/contributing/github_workflow/)
-
+- [Plugins for Developers](/dev/plugins/)
 

@@ -15,7 +15,7 @@ on the main page called Upcoming Products.  This can be configured with the sett
 You may also configure upcoming products to appear in the following places: 
 
 - in a centerbox on an empty shopping cart page with the setting *Show Upcoming Products on Main Page* on [Admin > Configuration > Stock](/user/admin_pages/configuration/configuration_stock/)
-- in a centerbox below a [product listing page](/user/products/product_listing/) using the settings on [Admin > Configuration > Index Listing](/user/admin_pages/configuration/configuration_indexlisting/)
+- in a centerbox below a [product listing page](/user/storefront_pages/listing_pages/) using the settings on [Admin > Configuration > Index Listing](/user/admin_pages/configuration/configuration_indexlisting/)
 
 ## Related 
 

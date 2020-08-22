@@ -17,9 +17,10 @@ Plugins are sometimes also called *Add-Ons* (or *Addons*), *Mods*, or *Downloads
 
 The free plugins in the [Plugins Library](https://www.zen-cart.com/downloads.php) are sometimes called *Contributions*, whereas 
 commercial plugins that must be paid for are sometimes called 
-*Extensions*.  All these words refer to code modifications for 
-Zen Cart that enable your store to work differently than the 
-default behavior. 
+*Extensions*.  
+
+All these terms really mean the same thing: 
+code modifications for Zen Cart that modify or extend the default behavior. 
 
 
 ### Plugin Interfaces 

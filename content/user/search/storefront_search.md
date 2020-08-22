@@ -22,6 +22,8 @@ There are two sideboxes which permit your visitors to search your store - the `s
 
 The link in the `search.php` sidebox to the Advanced Search page goes to a screen that looks like this: 
 
+## Advanced Search Page
+
 ![Advanced Search](/images/advanced_search.png)
 
 The advanced search page allows visitors to narrow their search to only specific categories, manufacturers, price ranges, and product creation dates. This can be useful for stores with a large number of SKUs. 
@@ -37,7 +39,7 @@ meta_tags_products_description | metatags_description [^2]
 
 
 [^1]: if the `Search in Product Descriptions` checkbox is checked, or if the search is done from one of the search sideboxes. 
-[^2]: if [Include meta-tags in product search?](/user/admin_pages/configuration/configuration_mystore/#include_metatags_in_product_search) is set to `true`.  
+[^2]: if the configuration setting [Include meta-tags in product search?](/user/admin_pages/configuration/configuration_mystore/#include_metatags_in_product_search) is set to `true`.  
 
 You can see [the database schema](/dev/schema/) if you wish to learn more about how the database is structured. 
 
