@@ -9,7 +9,7 @@ weight: 10
 
 Firstly, if you don't already have one, create an over-ride file for tpl_main_page.php in your `includes/templates/YOURTEMPLATE/common` directory.  
 
-There is enormous scope within this one module to create turn the left and right hand columns on and off according to which page or category is to be displayed. Open it up and you will see a large comment at the top explaining some of them. Here are a few examples to help illustrate that.
+There is enormous scope within this one module to create turn the left and right hand columns on and off according to which page is to be displayed. Open it up and you will see a large comment at the top explaining some of them. Here are a few examples to help illustrate that.
 
 If you wish to turn off the left hand column for the "contact us" and "terms & conditions" pages, find the following block of code  
 
@@ -22,22 +22,23 @@ if (in_array($current_page_base,explode(",",'list_pages_to_skip_all_right_sidebo
 and edit it to read  
 
 ```
-if (in_array($current_page_base,explode(",",**'contact_us,conditions'**)) ) {  
-     $flag_disable_**left** = true;  
+if (in_array($current_page_base,explode(',','contact_us,conditions')) ) {  
+     $flag_disable_left = true;  
   }
 ```
 
-If you wished to disable both columns in category listings either add or edit the above block to read  
+If you wished to disable both columns during checkout, add or edit the above block to read  
 ```
-if (in_array($cPath,explode(",",'3,8')) ) {  
+if (in_array($current_page_base,explode(',','checkout_shipping,checkout_payment,checkout_confirmation')) ) {  
     $flag_disable_right = true;  
     $flag_disable_left = true;  
   }
 ```
 
-To disable the right column for a series of EZ-Pages  
+To disable the right column for EZ-Pages 2 and 5, 
+
 ```
-if (in_array($ezpage_id,explode(",",'2,5'))) {  
+if (isset($ezpage_id) && in_array($ezpage_id,explode(",",'2,5'))) {  
     $flag_disable_right = true;  
   }
 ```

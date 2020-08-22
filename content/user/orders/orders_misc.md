@@ -1,6 +1,5 @@
 ---
 title: Miscellaneous Order Questions
-description: Order Handling in in Zen Cart 
 category: orders 
 weight: -1 
 ---

@@ -1,6 +1,6 @@
 ---
 title: Index Listing Configuration 
-description: Configuring category listing pages 
+description: Configuring product listing pages 
 category: templates
 weight: 10
 ---

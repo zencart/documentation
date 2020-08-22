@@ -1,6 +1,5 @@
 ---
 title: Miscellaneous Template Questions 
-description: Miscellaneous Questions about Templates in Zen Cart
 category: templates
 weight: -2
 ---

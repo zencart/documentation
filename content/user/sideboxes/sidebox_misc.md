@@ -1,6 +1,5 @@
 ---
 title: Miscellaneous Sidebox Questions 
-description: Zen Cart Using Sideboxes 
 category: sideboxes
 weight: 2 
 ---

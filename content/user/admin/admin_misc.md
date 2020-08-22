@@ -1,6 +1,5 @@
 ---
-title: Miscellaneous questions about the Admin
-description: Miscellaneous questions about Zen Cart Admin
+title: Miscellaneous Questions about the Admin
 category: admin
 weight: 5
 ---

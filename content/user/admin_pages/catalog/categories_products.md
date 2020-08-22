@@ -10,7 +10,7 @@ weight: 12
 If you are at a level where the Categories screen only shows products, 
 there are a set of action icons on the right.
 
-<img src="/images/products_icons.png" alt="Product Listing Icons" style="float: right" /> 
+<img src="/images/products_icons.png" alt="Admin Product Listing Icons" style="float: right" /> 
 <br clear="all" />
 
 These icons allow you to:

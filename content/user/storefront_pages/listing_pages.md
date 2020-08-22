@@ -16,7 +16,7 @@ Examples of listing pages are:
 
 The _Product Listing pages_ are the pages that are created when viewing a category which contains products (rather than other categories). 
 
-_Category Listing pages_ are pages showing only categories.  This term is less used, and category listing pages have fewer configuration options.  Also, the category listing page is displayed as a grid of images, so it's different from the other listing pages discussed here. 
+_Category pages_ are pages showing only categories.  This term is less used, and category pages have fewer configuration options.  Also, the category page is displayed as a grid of images, so it's different from the other listing pages discussed here. 
 
 Consider the following product hierarchy 
 
@@ -41,7 +41,7 @@ The page showing category 3 (Men's Clothing)
 index.php?main_page=index&cPath=3
 ```
 
-would be a category listing page, showing categories 5 and 6. 
+would be a category page, showing categories 5 and 6. 
 
 The page showing category 5 (Shirts) 
 
