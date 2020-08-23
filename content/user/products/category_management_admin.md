@@ -30,13 +30,13 @@ Deleting a category is done from the [Categories/Products](/user/admin_pages/cat
 
 It is best to remove or move any sub-categories or products under a category you are about to delete. 
 
-![Deleting a category](/images/delete_category_sidebar.png)
+<img src="/images/delete_category_sidebar.png" alt="Deleting a category" width="50%" />
 
 ### Moving a Category 
 Moving a category changes its place in the hierarchy.  
 Moving a category is done from the [Categories/Products](/user/admin_pages/catalog/categories_products/) screen using the purple M icon. 
 
-![Moving a category](/images/move_category_sidebar.png)
+<img src="/images/move_category_sidebar.png" alt="Moving a category" width="50%" />
 
 ### Category Meta Tags 
 See [Category Meta Tags Editor](/user/admin_pages/catalog/categories_meta_tags_editor/).
