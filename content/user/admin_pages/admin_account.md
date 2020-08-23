@@ -1,13 +1,12 @@
 ---
 title: Admin > Account link
-description: Changing your admin account's email and password 
+description: Changing your admin login email and password 
 category: admin_pages
 weight: 510
 ---
 
-The `Admin > Account` page allows you to change the email or reset the password 
-for the logged in account.
+The `Admin > Account` page allows the currently-logged-in Admin user to change their email address or reset their password.
 
-This page offers the same functions as [Admins > Admin Users](/user/admin_pages/admins/admin_users/), but only for the current logged in admin account. 
-It is required since the logged in account might not have access to the Admin Users page if they have a restricted [Admin Profile](/user/admin_pages/admins/admin_profiles/). 
+Administrators with an un-restricted [Admin Profile](/user/admin_pages/admins/admin_profiles/) can perform these same changes 
+for other admin users using the [Admins > Admin Users](/user/admin_pages/admins/admin_users/) page. 
 
