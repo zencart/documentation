@@ -1,6 +1,6 @@
 ---
 title: Payment
-description: PayPal, Square and other payment providers
+description: Taking Payments For Orders
 weight: 100 
 layout: docs
 ---
