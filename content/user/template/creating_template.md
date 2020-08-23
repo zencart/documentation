@@ -3,6 +3,8 @@ title: Creating a Custom Template
 description: Creating a Custom Template in Zen Cart
 category: template 
 weight: 10
+aliases: 
+   - /user/template/customizing
 ---
 
 To get ideas about building your own template, take a look at the 
@@ -10,71 +12,44 @@ other templates available for Zen Cart.
 
 {{< templates >}}
 
-### Setting up your new template 
-First, open 
-`includes/templates/`
-and create a new folder. You can call it anything you like, though it is best not to make it too long and to use underscores instead of spaces. We will call it `/YOURTEMPLATE` here, so everywhere we write 
-`/YOURTEMPLATE` from now on, you should replace it with your own preferred folder name.
+## Creating a new template 
 
-Next, you need to create the `template_info.php` file
-and change your selected template.  
-See [the template_info FAQ](/user/template/template_info/). 
+1. make a new folder, perhaps something like:
 
-### Building out your template 
-Create an empty folder inside your new template directory and call it images so you should have `includes/templates/YOURTEMPLATE/images/`.
+`includes/templates/mary`
 
-Next, copy the `includes/templates/template_default/css` directory and place the folder and its files in your new 
-`includes/templates/YOURTEMPLATE/` folder.
+This is the working area for your own custom template
 
-You can also create the following empty folders inside your new template directory:
+2. make 4 subfolders in there:
 
 ```
-/common  
-/sideboxes  
-/templates  
-```
-When you've finished, your new file structure should look as follows:
-
-```
-includes  
-   /templates  
-       /YOURTEMPLATE  
-          /common  
-          /css  
-             stylesheet.css  
-          /images  
-          /jscript  
-          /sideboxes  
-          /templates  
-       template_info.php  
+common/
+css/
+images/
+templates/
 ```
 
-If you're basing your template on responsive_classic, it's recommended that you copy the complete jscript folder from responsive_classic into your custom template.
+3. copy the existing files from the `responsive_classic/css` and `responsive_classic/images` into the appropriate folders in your new working area
 
-And if you need a base of CSS components, copy the contents of the css folder from the template you're basing from as well.
+4. copy `tpl_header.php` from the `responsive_classic/common` folder
 
-Upload your `/YOURTEMPLATE` folder to your server.  
+You'll want to edit this file to incorporate your custom page-header. 
+This file governs the appearance of the top of all of your pages.
 
-Open your Admin panel and navigate to 
-`Tools > Template Selection`.
-Click the Edit button, then choose `YOURTEMPLATE` from the dropdown menu and click the Update button. Now, navigate to 
-`Tools > Layout Boxes Controller`
-and at the bottom of the page click the Reset button.
+5. copy `tpl_footer.php` from the `responsive_classic/common` folder
 
-Your new template is now enabled and ready for you to customize. 
-See [the customizing your template FAQ](/user/template/customizing_template/). 
+You can edit the footer area to appear as you like.
 
-### About Language Files
+6. While working on #4 and #5 above, you can also modify the `css/stylesheet.css` file in your working area, to set the styles for your template.
 
-In the `/includes/languages/` folder there is also support for customizations for your new template too.
+You can copy your existing stylesheet into the `css` folder, making sure it's named `stylesXXXXXXX.css` (ie: `styles_mine.css`). All files in this folder are loaded by your zen cart site in alphabetical order, and cascading rules will determine the combination of effects in that order.
 
-It is advisable to clone the `/includes/languages/english/html_includes/responsive_classic/` into a new folder named according to your custom template, such as `/includes/languages/english/html_includes/YOURTEMPLATE/`
+7. The colors for the main area of your site and the sideboxes, etc can be controlled in the stylesheet.
 
-### What about english.php?
+8. If you need a very different page-layout from the default, you can copy `tpl_main_page.php` from the `responsive_classic/common` folder to your `common` folder, and alter it.
 
-It's advisable to leave the main `/includes/languages/english.php` untouched, and to put your customizations into a new file: `/includes/languages/YOURTEMPLATE/english.php` (ie: if you want to customize the text for `FOOTER_TEXT_BODY`, put *just* the define for `FOOTER_TEXT_BODY` into your `YOURTEMPLATE/english.php` file (no need to copy the entire file; in fact, upgrades are easier if you only put the individual changes there).
+This file builds your pages, starting with the header, then the left column of sideboxes, the middle "content" area of the site, then the right column of sideboxes, followed finally by the footer. Thus, by styling this page, you can control the appearance of the whole site. In many cases, you don't need to touch it though, as much of the control is in the stylesheet already.
 
-**NOTE:** See [Basic Terms](/user/first_steps/basic_terms/) for an 
-explanation of `YOURLANGUAGE` and `YOURTEMPLATE` if these terms are 
-unfamiliar. 
+9. Finally, create the `template_info.php` file in your working template folder. Instructions on creating this file and activating your template can be found in
+[the template_info FAQ](/user/template/template_info/). 
 
