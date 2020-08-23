@@ -77,7 +77,7 @@ You can use a single PayPal account to collect payments from multiple Zen Cart s
 
 #### Website Payments Standard
 
-You REALLY should be using Express Checkout instead.
+You REALLY should be using Express Checkout instead;  [PayPal Standard is no longer recommended](/user/payment/paypal_standard/).  
 
 But if your mind is really made up to use Payments Standard anyway, then if you use your PayPal account on non-Zen Cart sites or on eBay or perhaps on a WordPress site, **be sure that you have all "taxes" and "shipping" options disabled in your PayPal profile**; otherwise these charges will be added to your Zen Cart orders and cause them to not match, and therefore they won't be released or added to your orders list.
 
@@ -99,7 +99,7 @@ These are the common mistakes causing Website Payments Standard transactions to 
 These are the common configuration errors causing IPN processing to fail:
 
 1.  If it "was" working, but stopped, make sure PayPal's services are running properly. Check [PayPal Live Server Status](https://www.paypal-status.com/product/production). 
-2.  Make sure your site is *not* in down-for-maintenance mode.
+2.  Make sure your site is *not* in [down-for-maintenance](/user/running/down_for_maintenance) mode.
 3.  Make sure your site does *not* have password-protection via .htaccess in order to get to the "store" area.
 4.  Check with your host that the server is able to do outbound TLS connections
 5.  Use your browser and go to the Login page of your store. If the page is SSL, do you get any certificate errors in your browser? Test from a couple different computers that you don't normally use. An invalid SSL certificate or one that has errors of any sort, could prevent PayPal from successfully posting the notices to your site.

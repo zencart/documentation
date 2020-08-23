@@ -10,8 +10,8 @@ Some commonly referenced pages and their URLs are shown in this table:
 Page | URL
 -----|----
 About Us | index.php?main_page=about_us
-Advanced Search | main_page=advanced_search 
-All Products | main_page=products_all 
+Advanced Search | index.php?main_page=advanced_search 
+All Products | index.php?main_page=products_all 
 Conditions of Use | index.php?main_page=conditions
 Contact Us | index.php?main_page=contact_us
 Featured Products| index.php?main_page=featured 
@@ -19,11 +19,13 @@ New Products | index.php?main_page=products_new
 Privacy | index.php?main_page=privacy
 Reviews | index.php?main_page=reviews
 Shipping | index.php?main_page=shippinginfo
+Shopping Cart | index.php?main_page=shopping_cart 
 Specials | index.php?main_page=specials
 
 <br><br>
 
-Some pages cannot be accessed unless a visitor is logged in: 
+Some pages cannot be accessed unless a visitor is logged in.
+These are the pages in the checkout flow. 
 
 <br><br>
 
@@ -33,7 +35,14 @@ Checkout Shipping | index.php?main_page=checkout_shipping
 Checkout Payment | index.php?main_page=checkout_payment
 Checkout Confirmation| index.php?main_page=checkout_confirmation 
 Checkout Success | index.php?main_page=checkout_success 
-My Account | index.php?main_page=account
+
+Other pages which cannot be accessed unless a customer is logged in pertain to 
+account management: 
+
+Page | URL
+-----|----
+Account | index.php?main_page=account
+Account Edit | index.php?main_page=account_edit
 Account History | index.php?main_page=account_history 
  
 <br><br>
@@ -57,3 +66,4 @@ index.php?main_page=index&cPath=1_5
 
 **Note:** If the setting [Skip 1-prod Categories]() is True, and there was only one product in category 5, this page would be skipped and the product info page would be shown directly.
 
+For a more complete list of pages, see [storefront pages - complete list](/user/storefront_pages/complete_list/).

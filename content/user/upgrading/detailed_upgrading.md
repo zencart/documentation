@@ -120,7 +120,7 @@ Using the list of files you made earlier, go through each "changed" file, and re
 ### Take a fresh backup
 First, take a fresh database backup from your live store.
 
-In your live store, go to `Admin > Configuration > Website Maintenance`.  Put the store in maintenance mode, and add your IP to the list in the `Down For Maintenance (exclude this IP-Address)` field.
+In your live store, go to `Admin > Configuration > Website Maintenance`.  Put the store in [maintenance mode](/user/running/down_for_maintenance), and add your IP to the list in the `Down For Maintenance (exclude this IP-Address)` field.
 
 Make a fresh backup of your live database. 
 
