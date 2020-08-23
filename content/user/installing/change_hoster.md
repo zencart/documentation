@@ -52,7 +52,8 @@ Zen Cart 1.5.1 or older.**
 On a store that's taking live orders, you need to prevent orders from being taken in the old site once you've made your backup to move to the new site.  
 So, make the following adjustments to the steps above:  
 
-a) BEFORE taking the backup in Step 3, first login to your old site's admin, and set Admin > Configuration > Website Maintenance > Down For Maintenance = TRUE.  
+a) BEFORE taking the backup in Step 3, first login to your old site's admin, and set Admin > Configuration > Website Maintenance > Down For Maintenance = TRUE.
+This is called [taking your store down for maintenance](/user/running/down_for_maintenance/). 
 
 b) AFTER step 5 or 6, login to your NEW store's admin, and set Down For Maintenance = FALSE.  
 

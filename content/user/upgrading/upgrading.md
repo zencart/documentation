@@ -50,7 +50,7 @@ The steps outlined above are the recommended way to do it so that you rebuild yo
 
 The process of comparing your site against the original code for the old version is, in one sense, to simply help you quickly identify what customizations you need to make to put those same capabilities into your new site. It simply speeds the process and creates a sort of checklist of things for you to re-do on your new site.  
 
-Then, after you've got it all built in the temporary location, you put your live store down for maintenance, quickly redo the upgrade there, and then bring it online ... meaning your actual live store's downtime could be as short as 5-10 minutes depending on complexities etc.  
+Then, after you've got it all built in the temporary location, you put your live store [down for maintenance](/user/running/down_for_maintenance), quickly redo the upgrade there, and then bring it online ... meaning your actual live store's downtime could be as short as 5-10 minutes depending on complexities etc.  
 
 So, follow the guide, and while there may be some learning involved and remembering of things you did awhile back, it's all time well spent.  
 

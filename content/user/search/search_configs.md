@@ -1,6 +1,6 @@
 ---
-title: Search related configuration values 
-description: Configuration table entries that affect search
+title: Search related configuration settings
+description: Configuration values that affect search
 category: search 
 weight: 10
 ---

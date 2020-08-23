@@ -34,3 +34,4 @@ Further, if the IPN feature isn't turned on in the account, or if IPNs aren't ac
 
 All of this makes PayPal Standard unreliable, and is exactly the reason why it is not recommended.  The only reason it is still part of Zen Cart is that some less-developed countries can't offer Express Checkout.  Unless this is an issue for you, you should be using PayPal Express.
 
+[Read about installing PayPal Express](/user/payment/paypal_express_checkout/). 

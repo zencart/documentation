@@ -18,6 +18,8 @@ Subtract stock = false
 Allow Checkout  = true 
 ```
 
+This configuration is well suited for stores that sell virtual products, which can't be depleted. 
+
 ### Track stock, but permit backorders 
 ```
 Check stock level = true 
@@ -25,10 +27,14 @@ Subtract stock = true
 Allow Checkout  = true 
 ```
 
+This configuration is ideal for stores that sell products where manufacturers can fill re-orders easily and out-of-stock or discontinuation situations are unlikely. 
+
 ### Track stock, do not permit backorders 
 ```
 Check stock level = true 
 Subtract stock = true 
 Allow Checkout  = false
 ```
+
+This configuration would be a good match for stores that sell unique or limited quantity products, such as artisan produced goods. 
 
