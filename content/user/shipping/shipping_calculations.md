@@ -8,9 +8,7 @@ weight: 10
 To view the settings related to shipping, go to 
 [Admin > Configuration > Shipping/Packaging](/user/admin_pages/configuration/configuration_shippingpackaging/). 
 
-There is no support for dimensional calculations in the Zen Cart shipping calculations; it is done entirely by weight.
-
-(There are some Plugins that handle dimensions if you need that capability.)
+There is no support for dimensional calculations in the Zen Cart shipping calculations; it is done entirely by weight. (There are some Plugins that handle dimensions if you need that capability.)
 
 The "small to medium box" corresponds to "an order whose weight does not exceed the maximum package weight." 
 
@@ -25,7 +23,7 @@ and that weight will be passed to the shipping modules for your cart, to prepare
 For this reason most shopowners will choose not to display this value (i.e. they will set _Display Number of Boxes and Weight Status_ to either 0 or 2). 
 
 
-### Tare
+## Tare
 Tare weight is the additional weight of the box, including any protective materials such as foam or wrap, 
 and all the other things that add to the weight of your final shipment,
 over and above the weight of the product(s). 
