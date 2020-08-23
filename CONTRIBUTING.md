@@ -15,7 +15,7 @@ Submit your changes as Pull Requests (PRs), following the guidelines provided be
 
 - When your PR is submitted, you will get a preview build so you can see what it looks like. 
 
-![PR Preview](/images/pr_preview.png)
+<img alt="PR Preview" src="https://github.com/zencart/documentation/blob/master/content/images/pr_preview.png" />
 
 Click that link and find the page(s) that show your preview, then include them in a PR comment.  For example, if you have changed 
 
