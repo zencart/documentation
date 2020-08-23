@@ -1,12 +1,12 @@
 ---
-title: Zones Setup 
+title: Zones Module Setup 
 description: How to price shipping by destination zone 
 category: shipping 
 weight: 10
 ---
 
 
-By default, the module comes with support for 3 zones. This can be easily altered with a coding change by editing the Zones Shipping Module file (If you make this change and your Zones module is already installed/active, you'll need to record your settings, click Remove, click Install, and re-enter all your settings. Otherwise your change will have peculiar visual side-effects).  
+By default, the Zones shipping module comes with support for 3 zones. This can be easily altered with a coding change by editing the Zones Shipping Module file (If you make this change and your Zones module is already installed/active, you'll need to record your settings, click Remove, click Install, and re-enter all your settings. Otherwise your change will have peculiar visual side-effects).  
 
 `includes/modules/shipping/zones.php`
 
@@ -19,7 +19,7 @@ Next, you will want to activate the module by going to
 [Admin > Modules > Shipping](/user/admin_pages/modules/shipping/).  
 A list of all shipping modules should appear. Click on Zone Shipping. Click on the install button.
 
-**<font color="#800000">YOU WILL LOSE YOUR CURRENT SHIPPING RATES AND OTHER SETTINGS IF YOU TURN OFF THIS SHIPPING METHOD.</font>** 
+**<font color="#800000">YOU WILL LOSE YOUR CURRENT SHIPPING RATES AND OTHER SETTINGS IF YOU "REMOVE" THIS SHIPPING METHOD.</font>** 
 
 Make sure you keep a backup of your shipping settings somewhere at all times.
 
