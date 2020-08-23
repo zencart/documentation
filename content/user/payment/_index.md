@@ -1,5 +1,6 @@
 ---
 title: Payment
+description: PayPal, Square and other payment providers
 weight: 100 
 layout: docs
 ---
