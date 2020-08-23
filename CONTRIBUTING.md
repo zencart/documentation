@@ -7,7 +7,33 @@ The intention is for documentation in this repository to replace the legacy Wiki
 ## Getting Started 
 To get started, follow the guidelines in the project's README file for cloning and setting up the repo and running `Hugo` locally. 
 
-Submit your changes as Pull Requests, following the guidelines provided below.  
+Submit your changes as Pull Requests (PRs), following the guidelines provided below.  
+
+## PR content 
+
+- Keep PRs to a single theme; don't submit a basket of unrelated changes.  This allows for easier merges.
+
+- When your PR is submitted, you will get a preview build so you can see what it looks like. 
+
+![PR Preview](/images/pr_preview.png)
+
+Click that link and find the page(s) that show your preview, then include them in a PR comment.  For example, if you have changed 
+
+```
+https://docs.zen-cart.com/user/first_steps/server_requirements/
+```
+
+then your preview URL will look like this: 
+
+```
+https://deploy-preview-NNN--zencartdocs.netlify.app/user/first_steps/server_requirements/
+```
+
+where `NNN` is your PR number.
+
+
+This makes it much faster for the core committers to review your work and get it merged. 
+
 
 ## Content Recommendations 
 
@@ -179,6 +205,10 @@ If you just want a link to show up in the `_index.md` file without having
 to replicate content, you can put a `url` entry in the front matter of a file with only the front matter details you need.  Use the example provided by  [`/user/admin/admin_password.md`](https://github.com/zencart/documentation/blob/master/content/user/admin/admin_password.md), which points to the file [`/user/troubleshooting/reset_admin_password`](https://github.com/zencart/documentation/blob/master/content/user/troubleshooting/reset_admin_password.md).  
 
 You can also point to a folder rather than a single file, as is done in the `template.md` cross link file in the `customizing` folder.
+
+## Creating Redirect Pages
+
+A redirect page will just show a link in a folder, but when that link is clicked it will redirect to another page in another folder.  An example of a redirect page is `/user/template/customizing.md`.  Note that redirect pages do not required `noindex` in the front matter; since they have a `url` element, that is sufficient. 
 
 ## Excluding pages from the All Pages index 
 
