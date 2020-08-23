@@ -1,15 +1,16 @@
 ---
 title: Technical - Converting from iso-8859-1 to utf8
-description: Latin1 has got to go
+description: Modern sites should use UTF8 or UTF8MB4
 category: upgrading 
 weight: 20
 ---
 
 ### Do I need to convert to UTF-8?
 
-If you are installing Zen Cart v1.5.0 or newer, for the first time, and not preserving data from a prior version, then your site is already using utf8\. But, your database might still be in latin1 mode due to the server's master configuration. To change the database to utf8, use the instructions here:  
+Since Zen Cart v1.5.0 all **new** sites install database tables with the UTF8 character-set.
+If your site is from an older version, your database might still be in latin1 mode due to the server's master configuration. To change the database to utf8, use the instructions below.
 
-## TO CONVERT TO UTF8:
+## Converting to UTF8:
 
 1\. Use this [conversion utility to convert your data to UTF8](https://www.zen-cart.com/downloads.php?do=file&id=1318) (AFTER MAKING AND TESTING A DATABASE BACKUP): [https://www.zen-cart.com/downloads.php?do=file&id=1318](https://www.zen-cart.com/downloads.php?do=file&id=1318)  
 2\. (If you installed your site NEW since v1.5.0 or newer, then the following are ALREADY done for you. But, if you UPGRADED from a version prior to 1.5.0, then you will need to double-check each of the following:)  
@@ -22,7 +23,9 @@ If you are installing Zen Cart v1.5.0 or newer, for the first time, and not pres
     </font>(Remember, the configure.php files are most likely set to read-only on your server, so you'll need to change their permissions on the server to be writable before you can save the changes you're making.)  
     (Remember, you must do this for **both** your /YOURADMIN/includes/configure.php **and** /includes/configure.php )
 
-## TO STAY WITH LATIN1:
+## Ignoring UTF8 and using a different character set:
+
+If you wish to stick with Latin1 (aka iso-8859-1) use the following steps. Note that there is no `latin1` support in Zen Cart since v1.5.5.
 
 If your site IS RUNNING or you have UPGRADED FROM an older version of Zen Cart where your language files are/were set to iso-8859-1, and **if you don't have any specific need for extended-character multibyte support** (for example your store is only in english and only english-speaking customers visit your store), then you may find it best to keep your site in iso-8859-1 (aka "latin1") mode instead of converting to UTF8.  
 
