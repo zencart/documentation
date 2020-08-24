@@ -28,8 +28,7 @@ This is a cropped view of the product info page for one of the same products.
 The product has a dropdown
 attribute called *Media Type*, and three checkbox attributes. 
 
-<img src="/images/attributes.png" alt="Attributes in Zen Cart" style="width: 50%" />
-<br clear="all" />
+![Attributes in Zen Cart](/images/attributes.png)
 
 To learn more about attributes, read: 
 
@@ -44,4 +43,3 @@ more about downloadable products, read:
 
 - [Creating Downloadable products](/user/products/downloadable/)
 - [Downloadable products - verifying correctness](/user/products/downloadable_verifying/) 
-

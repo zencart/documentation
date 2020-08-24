@@ -27,11 +27,10 @@ Because of the reduced screensize on a mobile device, pages look different.
 
 Here's the same page on a mobile phone: 
 
-<img alt="Page on a phone" src="/images/page_phone.png" width="40%" />
+![Page on a phone](/images/page_phone.png)
 
 And here's the same page on a tablet: 
 
-<img alt="Page on a tablet" src="/images/page_tablet.png" width="80%" />
+![Page on a tablet](/images/page_tablet.png)
 
 On those devices, the hamburger menu on the top left allows you to view additional page content. 
-

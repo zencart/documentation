@@ -16,5 +16,4 @@ The base template is Zen Cart is called [template_default](/user/template/templa
 See the other FAQs on [the template system and overrides](/user/template/) for more information.
 
 ### Responsive Classic Template - Product Page 
-<img src="/images/responsive_classic_full.png" alt="Responsive Classic Template for Zen Cart" width="40%" />
-
+![Responsive Classic Template for](/images/responsive_classic_full.png)
