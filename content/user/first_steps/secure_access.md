@@ -11,7 +11,7 @@ Yes, you do need an SSL certificate; it's part of running an online store. It do
 
 **Don't let this be you!**
 
-<img src="/images/insecure_cart.png" alt="Insecure cart" width="50%" />
+![Insecure Cart](/images/insecure_cart.png)
 
 ## Secure File Transfer 
 
@@ -42,5 +42,5 @@ Just because you run an SSL on your site doesn't mean your cPanel access is secu
 
 **Don't let this be you!**
 
-<img src="/images/cpanel_insecure.png" alt="Insecure cPanel" width="40%" />
+![Insecure cPanel](/images/cpanel_insecure.png)
 
