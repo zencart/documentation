@@ -3,7 +3,7 @@ command = "cd themes/docsy && git submodule update -f --init && cd ../.. && hugo
 publish = "public"
 
 [context.production.environment]
-HUGO_VERSION = "0.55.5"
+HUGO_VERSION = "0.74.3"
 HUGO_ENV = "production"
 
 [[redirects]]
