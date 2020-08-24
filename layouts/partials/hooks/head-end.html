@@ -1,5 +1,7 @@
 {{ with .Site.Params.algolia_docsearch }}
+{{ if not .Params.nosearch }}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+{{ end }}
 {{ end }}
 {{ with .Params.customCss }}<link rel="stylesheet" href="{{ . }}" />{{ end }}
 
