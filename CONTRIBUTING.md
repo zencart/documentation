@@ -47,7 +47,7 @@ A phrasing that is encouraged is, "Since Zen Cart version X, ..." (rather than "
 
 Please follow these rules when adding new documentation files to the `/content/user` and `/content/dev` folders: 
 
-- Begin each file with a block that looks like:
+- Begin each file with front matter.  It's block that looks like:
 <pre>
 ---
 title: article title
@@ -57,7 +57,7 @@ weight: 10
 ---
 </pre>
 
-- The title will be shown on the page, but the description will only be used in the description meta tag, so say "Zen Cart" somewhere in the description.  
+- The title will be shown on the page, but the description will only be used in the description meta tag and the subtitle for the page when on the folder is being browsed. 
 
 - The value of `weight` denotes a sort-order. Within folders, please set as follows: 
 
@@ -67,7 +67,7 @@ weight: 10
     
     - There are a few exceptions to this rule, such as Release History (sorted in reverse chronological order), Images (sorted by increasing complexity) and Admin Pages (sorted in the order they appear in Zen Admin), but for the most part, this rule is followed.
 
-- Don't use a headline starting with #.  The `title` in the block above is sufficient.
+- Don't use a headline starting with `#`.  The `title` in the block above is sufficient.
 
 - Use backticks for denoting code and filenames.  For example, the filename "includes/classes/shopping\_cart.php" should be coded as 
 `includes/classes/shopping_cart.php`
@@ -105,7 +105,7 @@ Check out the [Server Requirements for Running Zen Cart](/user/first_steps/serve
 </pre> 
 
 
-- For consistency, use these standard names:
+- For consistency, use these standard names with no underscores:
     - `YOURSITE` - your domain name 
     - `YOURTEMPLATE` - your template name 
     - `YOURLANGUAGE` - your language (/english/ by default)
@@ -192,27 +192,25 @@ https://www.zen-cart.com/latest
 
 ## Renaming files
 
-If it is necessary to rename a file, be sure to use [Hugo aliasing](https://gohugo.io/content-management/urls/) so as not break any external links to the page.  You can see an example of where this was done in `change_header_logo.md`, which used to be named `change_powered_by.md`: 
+If it is necessary to rename a file, be sure to use [Hugo aliasing](https://gohugo.io/content-management/urls/) so as not break any external links to the page.  You can see an example of where this was done in `change_header_logo.md`, which used to be named `change_powered_by.md`.  The front matter of the file has an alias to the old name: 
 
 ```
 aliases:
     - /user/new_user_topics/change_powered_by/
 ```
 
-## Creating Crosslink-only Pages
+## Redirecting to another file or folder 
 
 If you just want a link to show up in the `_index.md` file without having 
-to replicate content, you can put a `url` entry in the front matter of a file with only the front matter details you need.  Use the example provided by  [`/user/admin/admin_password.md`](https://github.com/zencart/documentation/blob/master/content/user/admin/admin_password.md), which points to the file [`/user/troubleshooting/reset_admin_password`](https://github.com/zencart/documentation/blob/master/content/user/troubleshooting/reset_admin_password.md).  
+to replicate content, you can create a file with just front matter content, and put a `url` entry in the front matter.  Use the example provided by  [`/user/admin/admin_password.md`](https://github.com/zencart/documentation/blob/master/content/user/admin/admin_password.md), which points to the file [`/user/troubleshooting/reset_admin_password`](https://github.com/zencart/documentation/blob/master/content/user/troubleshooting/reset_admin_password.md).  
 
-You can also point to a folder rather than a single file, as is done in the `template.md` cross link file in the `customizing` folder.
+You can also point to a folder rather than a single file, as is done in `/user/customizing/template_system.md`, which redirects to `/user/template`.
 
-## Creating Redirect Pages
+Note that redirect pages do not required `noindex` in the front matter (see below); since they have a `url` element, that is sufficient. 
 
-A redirect page will just show a link in a folder, but when that link is clicked it will redirect to another page in another folder.  An example of a redirect page is `/user/template/customizing.md`.  Note that redirect pages do not required `noindex` in the front matter; since they have a `url` element, that is sufficient. 
+## Excluding pages from the All FAQs index 
 
-## Excluding pages from the All Pages index 
-
-To exclude a crosslink only page from the [All Pages](/user/_allpages) index, add the following line to the page frontmatter:
+To avoid duplicate entries in the [All FAQs](https://docs.zen-cart.com/user/_allpages/) index, add the following line to the page frontmatter for redirect/crosslink-only pages: 
 
 ```
 noindex: yes
