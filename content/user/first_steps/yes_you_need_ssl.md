@@ -43,7 +43,7 @@ See that ugly warning?
 
 **Don't let this be you!**
 
-<img src="/images/insecure_cart.png" alt="Insecure cart" width="50%" />
+![Insecure Cart](/images/insecure_cart.png)
 
 **HOW DOES ZEN CART IMPLEMENT MY SSL?**  
 

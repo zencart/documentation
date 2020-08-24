@@ -8,7 +8,7 @@ weight: 80
 This page allows you to reset various counts and settings in your database.
 It also allows you to remove debug logs from your cart.
 
-<img alt="Store Manager" src="/images/store_manager.png" width="70%" />
+![Store Manager](/images/store_manager.png)
 
 Actions available in Store Manager are as follows: 
 
