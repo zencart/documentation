@@ -12,8 +12,8 @@ If you have [HTML enabled](/user/admin_pages/configuration/configuration_emailop
 both rich and plain text; otherwise, you will only be allowed to use plain text.
 
 <br>
-<img alt="Newsletter Manager" src="/images/newsletter.png" width="80%">
-<br><br>
+
+![Newsletter Manager](/images/newsletter.png)
 
 From there, you must select a distribution list from several options: 
 
@@ -25,7 +25,7 @@ Then you get a final confirmation page with a preview of the emails and the opti
 
 If you prefer to stop after drafting the newsletter, you can always come back to it later.  A sidebar is available for each entry in your list of newsletters/product notifications that looks like this: 
 
-<img alt="Newsletter Sidebar" src="/images/newsletter_sidebar.png" width="40%">
+![Newsletter Sidebar](/images/newsletter_sidebar.png)
 <br><br>
 
 Related Pages: 
