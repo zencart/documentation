@@ -1,6 +1,6 @@
 ---
 title: Storefront Pages
-description: The pages in the front end explained 
+description: Sitemap of the front end 
 weight: 100 
 layout: docs
 ---
