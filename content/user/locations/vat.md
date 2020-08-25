@@ -43,7 +43,7 @@ priority can be left blank - Click on insert
 
 Note the above assumes you have no zone definitions/tax rates already set up. If you do just delete them.
 
-Now any goods that you wish to charge VAT on must have their _Tax Class_ set to _Taxable Goods_. You can do this on the [product edit screen](/user/products/product_management_admin/).
+Now any goods that you wish to charge VAT on must have their _Tax Class_ set to _Taxable Goods_. You can do this on the [product edit screen](/user/products/product_edit/).
 
 Finally, in Admin > Configuration > My Store make sure that _Basis of Product Tax_ is set to *Shipping*.
 

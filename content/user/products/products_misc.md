@@ -16,7 +16,7 @@ Locate the *Show Category Counts* option.  Turn it off.
 
 ---
 ### What does MIXED ON mean? 
-On the [product editing page](/user/admin_pages/catalog/categories_products/), 
+On the [product editing page](/user/products/product_edit/), 
 when the setting `Product Qty Minimum` is greater than 1, the 
 setting `Product Qty Min/Unit Mix` is used in determining 
 whether the minimum has been met, both for purchasing and for 
