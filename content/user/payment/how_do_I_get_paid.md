@@ -13,12 +13,12 @@ If you offer check/money-order, then it's up to them to send the check to you. 
 
 Naturally, you will typically wait for the check to arrive and clear your bank before shipping the goods.  
 
-Same with Bank Transfer or e-Transfer or Bank Deposit approaches. These may require a Plugin to enable, but the principle is the same: you wait for payment before fulfilling the order.
+This precaution also holds true for Bank Transfer, e-Transfer or Bank Deposit: you wait for payment before fulfilling the order.
 
 
 ## Credit Card
 
-_**Before you can accept credit cards directly you must have a merchant account with a Credit Card processing company such as Square.**_
+_**Before you can accept credit cards directly you must have a merchant account with a Credit Card processing company such as Square, Stripe or Authorize.net.**_
 
 If you offer to let your customers pay by Credit Card, there are several ways to do this:  
 
@@ -30,16 +30,20 @@ Your store then transmits that information securely to a credit-card-processing 
 If successful, the order is placed, and money is collected from the cardholder's account, and forwarded to your business bank account according to a prescribed schedule.
 If it fails, the customer is notified to try again with correct information, thus preventing the use of invalid cards.  
 
-To use this option, you need a business bank account, a merchant account, and a gateway service provider account, all of which incur monthly fees. You can find [recommended payment gateway providers here.](https://www.zen-cart.com/content.php?14-Payment-Processing). 
+To use this option, you need a business bank account, a merchant account, and a gateway service provider account, all of which incur monthly fees. You can find [recommended payment gateway providers here](https://www.zen-cart.com/content.php?14-Payment-Processing). 
 
 c) Manual processing via a retail/POS terminal or an online virtual terminal.  
-In this case, you collect the CC details from the customer and then manually process the card through the terminal provided to you by your merchant bank (usually online). You will require a business bank account and a merchant account; both have monthly and per-transaction fees. **Warning**: this is not a secure method for making transactions with an online store, and as such is frowned upon by credit card companies. You really should be using a gateway service as described above. 
+In this case, you collect the CC details from the customer and then manually process the card through the terminal provided to you by your merchant bank (usually online). You will require a business bank account and a merchant account; both have monthly and per-transaction fees. 
+
+**Warning**: [online manual card collection is no longer a good option](/user/payment/why_not_manual/).  It is not a secure method for making transactions with an online store, and as such is frowned upon by credit card companies. You really should be using a gateway service as described above. 
 
 ### Definitions
 
 **_merchant account_** -- this is a credit/debit-card "processing" account that you arrange with a clearing house, typically your bank.  Its sole purpose is to take the funds collected from credit/debit cards and forward them to the bank account you've arranged for that purpose.  
 
 **_gateway_** -- this is a computer-driven processing system that talks to the credit-card clearing house computers in the national banking system and determines whether a card is valid or not, and allows collection of funds via your merchant account configuration  
+
+**_ISO_** -- this acronym stands for **Independent Sales Organization** (also called a _Member Service Provider_ or _MSP_).  An ISO is a third-party company that is contracted by a credit card member bank to procure new merchant relationships.  Some Zen Cart users get their merchant accounts through an ISO.
 
 ### How do I get started?
 
@@ -56,4 +60,4 @@ The biggest confusion about payment collection for new storeowners is typically 
 
 ## PayPal or other Online Banks
 
-If you offer your customers the option to pay with a service that provides online funds services such as [PayPal](https://www.zen-cart.com/partners/paypal), then your customers will be directed to a page where they can login to that service, select their funding source (online funds or bank account or credit card, etc), and the complete their order.  Your money will be transferred from their online account to yours immediately. You can then arrange to have your money sent to your bank account if you have one linked to your online account.
+If you offer your customers the option to pay with a service that provides online funds services such as [PayPal](https://www.zen-cart.com/partners/paypal), then your customers will be directed to a page where they can login to that service, select their funding source (online funds or bank account or credit card, etc), and the complete their order.  Your money will be transferred from their online account to yours immediately. You can then arrange to have your money sent to your bank account. 
