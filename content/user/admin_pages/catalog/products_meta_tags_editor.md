@@ -17,3 +17,6 @@ You may also set:
 - meta_description
 
 
+![products meta tags editor](/images/products_meta_tags.png)
+
+The Products Meta Tags Editor is reached from the [Admin > Catalog > Categories/Products](/user/admin_pages/catalog/categories_products/) page at the products level. 

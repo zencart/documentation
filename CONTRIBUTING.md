@@ -57,7 +57,7 @@ weight: 10
 ---
 </pre>
 
-- The title will be shown on the page, but the description will only be used in the description meta tag and the subtitle for the page when on the folder is being browsed. 
+- The title will be shown on the page, but the description will not; it is only shown as the subtitle for the page when the parent folder is being browsed. 
 
 - The value of `weight` denotes a sort-order. Within folders, please set as follows: 
 
