@@ -2,15 +2,10 @@
 title: Download folder - Moving 
 description: Moving your Zen Cart Download folder 
 category: products
-noindex: yes
+url: /user/security/relocate_download_folder/
 weight: 10
 ---
 
-Please see [the related page in the security section](/user/security/relocate_download_folder/).
 
-This page is a crosslink only.
-
-<br>
-<br>
-<br>
+This page is a redirect only.
 

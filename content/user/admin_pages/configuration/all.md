@@ -2,6 +2,7 @@
 title: All Configuration Settings 
 category: admin_pages
 weight: -1
+nosearch: true
 ---
 <br /><br />
 

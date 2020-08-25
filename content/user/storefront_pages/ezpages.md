@@ -2,9 +2,9 @@
 title: EZ-Pages 
 description: EZ-Pages in the storefront 
 category: storefront_pages
-noindex: yes
 weight: 10
+url: /user/ezpages/
 ---
 
-Please see [EZ-Pages](/user/ezpages/).
+This page is a redirect only. 
 

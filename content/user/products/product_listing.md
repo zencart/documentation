@@ -12,4 +12,3 @@ More information on listing pages is described in [listing pages](/user/storefro
 
 The layout and configuration for listing pages is described in [listing page layout](/user/template/listing_page_layout/). 
 
-
