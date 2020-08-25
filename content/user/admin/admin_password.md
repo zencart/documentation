@@ -1,10 +1,9 @@
 ---
 title: Admin Password - Resetting or Changing
-description: Zen Cart Admin Password - Resetting or Changing
+description: What to do if your admin password doesn't work 
 category: troubleshooting
 weight: 10
 url: /user/troubleshooting/reset_admin_password/
-nosearch: yes
 ---
 
 Just a redirect page 
