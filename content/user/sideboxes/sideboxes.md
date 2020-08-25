@@ -2,10 +2,9 @@
 title: Sideboxes 
 description: What are Zen Cart sideboxes? 
 category: template
-noindex: yes
 weight: 1
+url: /user/template/sideboxes/
 ---
-Please see [the related page in the template section](/user/template/sideboxes/).
 
-This page is a crosslink only.
+This page is a redirect only.
 
