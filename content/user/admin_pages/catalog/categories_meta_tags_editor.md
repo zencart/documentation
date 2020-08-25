@@ -11,4 +11,6 @@ This page allows you to add meta tags to categories. You may set:
 - meta_keywords
 - meta_description
 
+![categories meta tags editor](/images/categories_meta_tags.png)
 
+The Categories Meta Tags Editor is reached from the [Admin > Catalog > Categories/Products](/user/admin_pages/catalog/categories/) page. 
