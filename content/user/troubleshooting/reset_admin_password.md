@@ -3,6 +3,8 @@ title: Admin Password - Resetting or Changing
 description: Zen Cart Admin Password - Resetting or Changing
 category: troubleshooting
 weight: 10
+aliases:
+    - /user/admin/admin_password/
 ---
 
 ## 1. Log in with another account. 
