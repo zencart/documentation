@@ -21,17 +21,13 @@ For more information, see the [product FAQs](/user/products/).
 
 ### Editing a Product 
 
-[Editing a product](/user/products/product_edit/) is done on the same screen as adding a product. 
+Editing a product is also done from the [product add/edit screen](/user/products/product_edit/). 
 
-The product edit screen shows you the master category id value for a product, which tells you the category the product is in. 
+This screen shows you the master category id value for a product, which tells you the category the product is in. 
 
 ![Master Category for a product](/images/master_category.png)
 
 If the product is a [linked product](/user/products/linked_product/) it will have other category associations, which can be managed in the [Products to Categories](/user/admin_pages/catalog/products_to_categories/) page.
-
-The product edit screen also allows you to set the product's fields.
-See [adding a product](/user/products/product_management_admin/#adding-a-product) for more details. 
-
 
 ### Deleting a Product 
 Deleting a product removes it from  the catalog entirely. 

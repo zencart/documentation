@@ -19,5 +19,5 @@ The screen you see will look like this:
 <img src="/images/products_price_manager.png" alt="products_price_manager.png" />
 
 The radio button *Discount Qty Applies to Mixed Attributes*  is referring
-to the [MIXED ON](/user/products/products_misc/#what-does-mixed-on-mean) setting from the product editing page.
+to the [MIXED ON](/user/products/products_misc/#what-does-mixed-on-mean) setting from the [product editing page](/user/products/product_edit/).
 

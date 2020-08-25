@@ -5,8 +5,8 @@ category: categories
 weight: 10
 ---
 
-Upcoming Products are those whose Date Available setting on the 
-[product editing page](/user/admin_pages/catalog/categories_products/) is set to a date in the future. 
+Upcoming Products are those whose _Date Available_ setting on the 
+[product editing page](/user/products/product_edit/) is set to a date in the future. 
 
 If you have created upcoming products, Zen Cart allows you to show them 
 in a [Centerbox](/user/template/centerboxes/)

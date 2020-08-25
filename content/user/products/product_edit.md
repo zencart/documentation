@@ -15,67 +15,31 @@ that product type.
 Some fields in the `Product - General` product type that can be set 
 when adding the product are: 
 
-- Products Status:Enabled Disabled
-- Date Available:
-- Products Manufacturer:
-- Products Name:
-- Product is Free:Yes No
-- Product is Call for Price:Yes No
-- Product Priced by Attributes:Yes No
-- Tax Class:
-- Products Price (Net):
-- Products Price (Gross):
-- Product is Virtual:Yes, Skip Shipping Address No, Shipping Address Required
-- Always Free Shipping:Yes, Always Free Shipping No, Normal Shipping Rules Special, Product/Download Combo Requires a Shipping Address
-- Products Quantity Box Shows:Yes, Show Quantity Box No, Do not show Quantity Box
-- Product Qty Minimum:
-- Product Qty Maximum:
-- Product Qty Units:
-- Product Qty Min/Unit Mix: Can products with different attributes be combined to reach the Product Qty Minimum threshold.  See [What does MIXED ON mean?](/user/products/products_misc#what-does-mixed-on-mean)
-- Products Description:
-- Products Quantity:
-- Products Model:
-- Products Image:
-- Products URL:
-- Products Shipping Weight:
-- Sort Order:
+
+- Products Status - set to Disabled to not display in the storefront; Enabled otherwise
+- [Date Available](/user/products/upcoming_products/) - use if the product will not be available until the future
+- Products Manufacturer - select a [manufacturer](/user/admin_pages/catalog/manufacturers/) if you organize products by manufacturer
+- Products Name - title for the product 
+- Product is Free - Yes if so. 
+- Product is Call for Price - when used, the product will not be directly purchaseable
+- [Product Priced by Attributes](/user/products/attribute_pricing/) - is the product's price determined by its attribute settings?  
+- Tax Class - if taxes are applicable, which ones? 
+- Products Price (Net) - base price of product before taxes 
+- Products Price (Gross) - computed using net price plus applicable taxes 
+- Product is Virtual - is the product a competely digital item 
+- Always Free Shipping - does the product ship for free? 
+- Products Quantity Box Shows - whether to show the quantity box on pages which allow the product to be purchased, such as [product info](/user/products/product_info) page
+- [Product Qty Minimum](/user/products/product_units/) - lowest number of this product which may be purchased 
+- [Product Qty Maximum](/user/products/product_units/) - highest number of this product which may be purchased 
+- [Product Qty Units](/user/products/product_units/) - if > 1, this product must be purchased in bundles of this many 
+- [Product Qty Min/Unit Mix](/user/products/products_misc#what-does-mixed-on-mean) - can products with different attributes be combined to reach the Product Qty Minimum threshold? 
+- Products Description - details about the product 
+- Products Quantity - quantity in inventory 
+- [Products Model](/user/products/product_model/) - model number or SKU 
+- Products Image - main photo for product 
+- Products URL - if there is another web page that provides more information, add the URL here 
+- Products Shipping Weight - weight before adding packing materials 
+- Sort Order - the order the product will be displayed in on a [listing page](/user/products/product_listing/). 
 
 For more information, see the [product FAQs](/user/products/). 
 
-### Editing a Product 
-
-[Adding a product](/user/products/product_management_admin/#adding-a-product) and editing that product are performed on the same screen. 
-
-The product edit screen shows you the master category id value for a product, which tells you the category the product is in. 
-
-![Master Category for a product](/images/master_category.png)
-
-If the product is a [linked product](/user/products/linked_product/) it will have other category associations, which can be managed in the [Products to Categories](/user/admin_pages/catalog/products_to_categories/) page.
-
-The product edit screen also allows you to set the product's fields.
-See [adding a product](/user/products/product_management_admin/#adding-a-product) for more details. 
-
-
-### Deleting a Product 
-Deleting a product removes it from  the catalog entirely. 
-Deleting a product is done from the [Categories/Products](/user/admin_pages/catalog/categories_products/) screen using the trash can icon. 
-
-![Deleting a product](/images/delete_sidebar.png)
-
-### Moving a Product 
-Moving a product changes its master category so it appears in another place.
-Moving a product is done from the [Categories/Products](/user/admin_pages/catalog/categories_products/) screen using the purple M icon. 
-
-![Moving a product](/images/move_sidebar.png)
-
-
-### Copying a Product 
-
-Copying a product can be used to create a duplicate of the original product or create a [linked product](/user/products/linked_product/). 
-Copying a product is done from the [Categories/Products](/user/admin_pages/catalog/categories_products/) screen using the blue C icon. 
-
-![Copying a product](/images/copy_sidebar.png)
-
-
-### Product Meta Tags 
-See [Products Meta Tags Editor](/user/admin_pages/catalog/products_meta_tags_editor/).
