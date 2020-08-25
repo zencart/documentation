@@ -132,3 +132,15 @@ no = 'Sorry to hear that. Please <a href="https://github.com/zencart/documentati
     url = "https://github.com/zencart/zencart"
     icon = "fab fa-github"
         desc = "Development takes place here!"
+
+[outputFormats]
+  [outputFormats.sitemap]
+    baseName = "sitemap"
+    isPlainText = false
+    mediaType = "application/xml"
+    protocol = "xml://"
+    path = "/"
+
+[outputs]
+  home = ["HTML", "sitemap", "RSS"]
+
