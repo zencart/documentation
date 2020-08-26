@@ -1,11 +1,11 @@
 ---
-title: Display Product Listing Settings
-description: Display settings for featured, new and all listings
+title: New/Featured/All Listing configuration settings
+description: New Listing, Featured Listing, All Listing settings 
 category: template 
 weight: 10
 ---
 
-In admin there are a number of product display settings that are similar: the featured products, new and all products listings. As the configuration fields are identical, we can address all of these at once.
+In admin there are a number of product display settings that are similar: the featured listing, new listing and all listing configuration pages. As the configuration fields are identical, we can address all of these at once.
 
 For example, Admin > Configuration > Featured Listing, the top settings are:
 
