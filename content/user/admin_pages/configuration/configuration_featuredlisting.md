@@ -4,6 +4,8 @@ category: admin_pages
 weight: 210 
 ---
 
+See <a href="/user/template/new_featured_all_listing_page_configuration/">Featured Listing Configuration</a> for instructions on use.
+
 <h2 id="display_product_image">Display Product Image</h2>
 
 <div class='indent'>Key: <b>PRODUCT_FEATURED_LIST_IMAGE</b><br />

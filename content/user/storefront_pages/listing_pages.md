@@ -9,10 +9,14 @@ Zen Cart uses the term _listing page_ to refer to a page that shows a number of 
 
 Examples of listing pages are: 
 
-- All Products
-- Featured Products
-- New Products
-- Product Listing pages 
+Page | URL 
+-----|-----
+All Products | index.php?main_page=products_all
+Featured Products| index.php?main_page=featured
+New Products | index.php?main_page=products_new 
+Product Listing | index.php?main_page=index&cPath=NNN
+
+Where _NNN_ is a category path of a category containing products. 
 
 The _Product Listing pages_ are the pages that are created when viewing a category which contains products (rather than other categories). 
 
@@ -41,14 +45,16 @@ The page showing category 3 (Men's Clothing)
 index.php?main_page=index&cPath=3
 ```
 
-would be a category page, showing categories 5 and 6. 
+would be a category page, showing categories 5 and 6.  The category path for this page would be _3_. 
 
 The page showing category 5 (Shirts) 
 
 ```
 index.php?main_page=index&cPath=3_5
 ```
-would be a product listing page, showing products 4, 5 and 6. 
+would be a product listing page, showing products 4, 5 and 6.  The category path for this page would be _3_5_. 
+
+In the cases above, the category pat hfor the 
 
 The listing pages described above are built in to Zen Cart; no extra work is required to create them.
 
