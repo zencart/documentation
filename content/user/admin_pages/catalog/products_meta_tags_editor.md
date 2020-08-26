@@ -10,12 +10,9 @@ This page allows you to add meta tags to products.
 You may modify the contents of the product's `<title>` tag 
 so that individual product fields (such as model, price and name) are shown.
 
-You may also set: 
+![products meta tags editor title](/images/products_meta_tags_title.png)
 
-- meta_title
-- meta_keywords
-- meta_description
-
+You may also add to the title field, and set meta_keywords and meta_description.
 
 ![products meta tags editor](/images/products_meta_tags.png)
 
