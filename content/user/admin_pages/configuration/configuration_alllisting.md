@@ -4,6 +4,8 @@ category: admin_pages
 weight: 220 
 ---
 
+See <a href="/user/template/new_featured_all_listing_page_configuration/">All Listing Configuration</a> for instructions on use.
+
 <h2 id="display_product_image">Display Product Image</h2>
 
 <div class='indent'>Key: <b>PRODUCT_ALL_LIST_IMAGE</b><br />

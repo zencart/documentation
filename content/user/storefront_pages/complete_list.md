@@ -25,6 +25,7 @@ Page 2 | index.php?main_page=page_2 |
 Page 3 | index.php?main_page=page_3 | 
 Page 4 | index.php?main_page=page_4 | 
 Privacy | index.php?main_page=privacy | Privacy Policy
+Product Listing |  index.php?main_page=index&cPath=NNN | 
 Reviews | index.php?main_page=reviews | Read all reviews 
 Reviews Info | index.php?main_page=product_reviews_info | Read a specific review 
 Shipping | index.php?main_page=shippinginfo | Shipping Policy
