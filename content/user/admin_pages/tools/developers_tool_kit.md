@@ -8,10 +8,10 @@ weight: 90
 The Developers Tool Kit is an essential tool for anyone involved in customizing Zen Cart.
 
 
-The Developers Tool Kit will search through all the files and directories under the directory where you installed Zen Cart for an exact result of the entered text.
+The Developers Tool Kit will search through all the files and directories under the directory where you installed Zen Cart for an exact match with the entered text.
 
 
-You probably already have a tool that searches through files installed on your operating system, but the Developers Tool Kit has some features specifically related to Zen Cart.
+Your operating system probably already has a tool that searches through files, but the Developers Tool Kit has some features specifically related to Zen Cart.
 
 
 With the Developers Tool Kit, you can search through
@@ -22,7 +22,7 @@ With the Developers Tool Kit, you can search through
 - Template files
 - All files
 
-Most of the time, searching through all files will give the best and most reliable result. For example, when only searching for template files, not all template files will actually be included.
+Most of the time, searching through **All Files** will give the best and most reliable result. 
 
 
 ### Searching for text
@@ -31,5 +31,5 @@ Most text is stored in the language files, but there are a few exceptions where 
 If you get too many results, try to narrow it down by specifying more text to search for if possible. If you get too few results, try to increase the results by specifying less text to search for. Keep in mind that text may actually be sequenced into multiple parts as code, and html tags may also be included somewhere in the text. This means that searching for just a small part of the text, as in a few words rather than the full sentence, is sometimes necessary because the search term must be an exact match.
 
 
-Eg. searching for "sales message here" does not match "sales message goes here", so search for "sales message" instead.
+E.g. searching for "sales message here" does not match "sales message goes here", so search for "sales message" instead.
 

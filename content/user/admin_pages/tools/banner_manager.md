@@ -13,7 +13,7 @@ Steps include:
 - Create banner and include it in the Banner Manager banner list - In this step, a banner is also placed in a Banner Group 
 - Use Configuration : Layout Settings to assign each pre defined banner "location" in a banner group (or leave empty).
 
-Banners can be HTML, Image or Flash, or a combination. Its a flexible way to add dynamic content.
+Banners can be HTML, Image or Flash, or a combination. It's a flexible way to add dynamic content.
 
 Tips: If you are using different sizes for the banners, you can create a "Banner Group" for each size and include the banner size in the Banner Group name to keep track of which banner fits where.
 
