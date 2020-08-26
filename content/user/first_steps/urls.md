@@ -64,6 +64,6 @@ The URL for category 5 would be
 index.php?main_page=index&cPath=1_5
 ```
 
-**Note:** If the setting [Skip 1-prod Categories]() is True, and there was only one product in category 5, this page would be skipped and the product info page would be shown directly.
+**Note:** If the setting [Skip 1-prod Categories](/user/admin_pages/configuration/configuration_layoutsettings/#skip_1prod_categories) is True, and there was only one product in category 5, this page would be skipped and the product info page would be shown directly.
 
 For a more complete list of pages, see [storefront pages - complete list](/user/storefront_pages/complete_list/).
