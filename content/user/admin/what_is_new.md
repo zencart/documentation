@@ -1,6 +1,6 @@
 ---
-title: What determines if a product is new? 
-description: New products age 
+title: New Products - what is the age cutoff? 
+description: What determines if a product is new? 
 category: admin
 weight: 10
 ---

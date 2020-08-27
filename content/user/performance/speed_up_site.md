@@ -60,7 +60,7 @@ If you really can't make your categories more lean, consider turning off the pre
 Further, when you have a LOT of products in large numbers of subcategories, you may find significant improvement by going to [Admin > Configuration > Index Listing](/user/admin_pages/configuration/configuration_indexlisting/) and turning off the first 8 settings there (setting them to 0). Adjust as necessary, depending on what content you wish to display.  
 
 ### Reduce New Products window 
-The "new products" selection window is by default set to "Forever". [Setting this to a smaller window](/user/admin/admin_misc/#what-determines-if-a-product-is-new) will make the display of "new products" (in sideboxes and center content-boxes) run much faster, and thus improve speed.  
+The "new products" selection window is by default set to "Forever". Setting [the new product timeframe to a smaller window](/user/admin/what_is_new/) will make the display of "new products" (in sideboxes and center content-boxes) run much faster, and thus improve speed.  
 
 ### Consider GZip Compression
 In some cases, enabling gzip compression can be helpful for people experiencing slowness loading a site over slow internet connections:  
