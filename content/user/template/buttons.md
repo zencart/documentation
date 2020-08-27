@@ -1,7 +1,7 @@
 ---
 title: Buttons 
 description: How to customize buttons 
-category: templates
+category: template
 weight: 10
 ---
 

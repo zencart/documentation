@@ -1,7 +1,7 @@
 ---
 title: Customizing your Site 
 description: Customizing the appearance of your store
-category: templates
+category: template
 weight: 10
 url: /user/customizing/
 ---

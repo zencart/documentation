@@ -1,7 +1,7 @@
 ---
 title: Page format in the storefront 
 description: What are the parts of a page?
-category: templates
+category: template
 weight: 10 
 type: codepage 
 ---

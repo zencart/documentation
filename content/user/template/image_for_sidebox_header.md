@@ -1,7 +1,7 @@
 ---
 title: Can I use an image for a sidebox header 
-description: Image as sidebox header in Zen Cart
-category: templates
+description: Sidebox headers don't have to be text
+category: template
 weight: 10
 ---
 

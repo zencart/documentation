@@ -1,6 +1,6 @@
 ---
 title: Adding a tracking pixel 
-description: Adding a tracking pixel in Zen Cart 
+description: Integrating with systems that use tracking pixels 
 category: template
 weight: 10
 ---

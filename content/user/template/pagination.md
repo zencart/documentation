@@ -1,7 +1,7 @@
 ---
 title: Pagination in Zen Cart 
 description: How do you display a large number of results? 
-category: templates
+category: template
 weight: 10 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Define Pages 
 description: Customizing your store with define pages 
-category: templates
+category: template
 weight: 10
 ---
 

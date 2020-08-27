@@ -1,6 +1,6 @@
 ---
-title: Product Info Page
-description: The add to cart page 
+title: Shopping Cart Page
+description: The customer's basket 
 category: storefront_pages
 weight: 10
 ---
