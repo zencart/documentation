@@ -1,7 +1,7 @@
 ---
 title: What is a Template? 
 description: Basic information about about Templates in Zen Cart
-category: templates
+category: template
 weight: -5
 ---
 

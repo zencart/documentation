@@ -1,6 +1,6 @@
 ---
 title: Template Overrides System 
-description: Zen Cart Template Overrides System 
+description: What's the best way to change a template? 
 category: template 
 weight: 5
 ---

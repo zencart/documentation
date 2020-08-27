@@ -1,7 +1,7 @@
 ---
 title: Add image to sidebox or centerbox
-description: Zen Cart - Add image to sidebox or centerbox
-category: templates
+description: Using a sidebox or centerbox to show product images 
+category: template
 weight: 10
 ---
 

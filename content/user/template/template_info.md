@@ -1,6 +1,6 @@
 ---
 title: Creating the template_info.php file
-description: Zen Cart template_info.php file 
+description: Why doesn't my template show up in Tools > Template Selection? 
 category: template
 weight: 10
 ---

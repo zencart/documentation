@@ -1,7 +1,7 @@
 ---
 title: How to rearrange the product info page 
-description: How to rearrange the product info page in Zen Cart
-category: templates
+description: Changing the product info page layout
+category: template
 weight: 10
 ---
 

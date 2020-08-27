@@ -1,7 +1,7 @@
 ---
 title: How do I add links to the Header and Footer? 
-description: Zen Cart - Add links to header and footer 
-category: templates
+description: Putting important links on every page 
+category: template
 weight: 10
 ---
 

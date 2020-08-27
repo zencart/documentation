@@ -1,7 +1,7 @@
 ---
 title: Javascript Customization 
-description: How to customize Javascript in Zen Cart
-category: templates
+description: Adding or changing Javascript 
+category: template
 weight: 10
 type: codepage
 ---

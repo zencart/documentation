@@ -1,7 +1,7 @@
 ---
 title: Listing Page Layout
 description: How Zen Cart shows multiple results on one page 
-category: templates
+category: template
 weight: 10
 ---
 

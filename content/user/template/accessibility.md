@@ -1,7 +1,7 @@
 ---
 title: Accessibility Compliance Questions 
 description: WCAG and Section 508
-category: templates
+category: template
 weight: 10
 ---
 

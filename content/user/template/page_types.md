@@ -1,7 +1,7 @@
 ---
 title: Page types in the storefront 
-description: What is a page type? 
-category: templates
+description: What kinds of pages are available? 
+category: template
 weight: 10 
 type: codepage 
 ---

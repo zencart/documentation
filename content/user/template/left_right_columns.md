@@ -1,7 +1,7 @@
 ---
 title: Left and Right Columns - turning them off 
-description: Left and Right Columns in Zen Cart - turning them off 
-category: templates
+description: Three columns, two, or one - your choice 
+category: template
 weight: 10
 ---
 

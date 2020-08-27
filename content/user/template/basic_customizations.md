@@ -1,7 +1,7 @@
 ---
 title: Basic Template Customizations 
-description: Basic Template Customizations in Zen Cart
-category: templates
+description: What are the most common template changes people do first? 
+category: template
 weight: -1 
 ---
 

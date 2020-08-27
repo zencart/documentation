@@ -1,6 +1,6 @@
 ---
 title: Miscellaneous Template Questions 
-category: templates
+category: template
 weight: -2
 ---
 

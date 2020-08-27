@@ -1,6 +1,6 @@
 ---
 title: How do I remove and/or re-arrange the sideboxes?
-description: How do I remove and/or re-arrange the sideboxes in Zen Cart?
+description: Sidebox display and sort order 
 category: template
 weight: 10
 ---
