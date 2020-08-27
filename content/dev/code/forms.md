@@ -17,3 +17,10 @@ A good model for all of this is the Ask a Question feature, which has been part 
 - `includes/modules/pages/ask_a_question/header_php.php`
 - `includes/templates/template_default/templates/tpl_ask_a_question_default.php`
 
+### Alternative Approach - Use a Form Builder 
+
+Another option which is highly recommended for storeowners who don't have a developer is to use a form building tool like [Wufoo](https://www.wufoo.com/). 
+
+A Wufoo form can easily be embedded on a extra define page (page_2, page_3, page_4) or an existing page like Contact Us.  In the case of Contact Us, you would just edit the template file (`includes/templates/YOURTEMPLATE/templates/tpl_contact_us_default.php`) and replace the built-in form with the script from Wufoo.  Similarly, using a define page would just mean editing the template file and inserting the script below the `content` div. 
+
+ 
