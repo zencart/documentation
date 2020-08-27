@@ -1,6 +1,6 @@
 ---
-title: How do I set up banner ads? 
-description: Zen Cart banner ads
+title: How do I set up and report on banner ads? 
+description: Banner management in admin 
 category: admin
 weight: 10
 ---
@@ -59,4 +59,10 @@ Banner Display Groups - Side Box banner_box = SHOW_BANNERS_GROUP_SET7
 Banner Display Groups - Side Box banner_box2 = SHOW_BANNERS_GROUP_SET8
 Banner Display Groups - Side Box banner_box_all = SHOW_BANNERS_GROUP_SET_ALL
 ```
+
+### How do I generate a report on banner advertising? 
+
+Banner statistics are tracked on an ongoing basis. When you open [Admin > Tools > Banner Manager](/user/admin_pages/tools/banner_manager/), you can see the last 3 days' details on-screen.
+
+For more information, under the "Action" column, you see a small white graph symbol. Click on that to view stats for day/month/year.
 

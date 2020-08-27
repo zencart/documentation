@@ -13,13 +13,15 @@ there are a set of action icons on the right.
 <img src="/images/products_icons.png" alt="Admin Product Listing Icons" style="float: right" /> 
 <br clear="all" />
 
-These icons allow you to:
+These icons allow you to perform the following actions:
 
-- [edit a product](/user/products/product_edit/) - update all the fields for a product 
-- [delete a product](/user/products/product_management_admin/#deleting-a-product) - remove a product from the catalog 
-- [move a product](/user/products/product_management_admin/#moving-a-product) - change the product's parent category
-- [copy a product](/user/products/product_management_admin/#copying-a-product) - duplicate the product or create a [linked product](/user/products/linked_product/))
-- use the [attributes controller](/user/admin_pages/catalog/attributes_controller/)
-- use the [products price manager](/user/admin_pages/catalog/products_price_manager/)
-- use the [meta tags editor](/user/admin_pages/catalog/products_meta_tags_editor/). 
+Button | Action 
+-------|-------
+Pencil | [edit a product](/user/products/product_edit/) - update all the fields for a product 
+Trash Can | [delete a product](/user/products/product_management_admin/#deleting-a-product) - remove a product from the catalog 
+M | [move a product](/user/products/product_management_admin/#moving-a-product) - change the product's parent category
+C | [copy a product](/user/products/product_management_admin/#copying-a-product) - duplicate the product or create a [linked product](/user/products/linked_product/))
+A | use the [attributes controller](/user/admin_pages/catalog/attributes_controller/)
+Dollar Sign | use the [products price manager](/user/admin_pages/catalog/products_price_manager/)
+Asterisk | use the [meta tags editor](/user/admin_pages/catalog/products_meta_tags_editor/). 
 

@@ -1,7 +1,7 @@
 ---
 title: Admin Password - Resetting or Changing
 description: What to do if your admin password doesn't work 
-category: troubleshooting
+category: admin 
 weight: 10
 url: /user/troubleshooting/reset_admin_password/
 ---
