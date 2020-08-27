@@ -13,6 +13,8 @@ To enable also purchased products display on the product info page, do the follo
 
 2. Set: [Admin > Configuration > Minimum Values > Also Purchased Products](/user/admin_pages/configuration/configuration_minimumvalues/#also_purchased_products) to a value greater than 0.  If you always want to display also purchased products, use the value "1".  
 
+A value larger than 1 (say "3") means "Display also purchased products only if there are three or more."  So if you set this value to 3, but there is only one also purchased product, no products will be shown.  
+
 3. Set: [Admin > Configuration > Maximum Values > Also Purchased Products](/user/admin_pages/configuration/configuration_maximumvalues/#also_purchased_products) to a value greater than 1.
 
 ![Also Purchased Products](/images/also_purchased.png)
