@@ -12,13 +12,14 @@ The Categories/Products screen is a listing screen that allows you to view the p
 In order to add products to your site, you will first need at least one category.
 
 Create a category by clicking the "new category" button.
-**Note:** Products must be placed inside categories.
 
-You must have at least one category, and all your products must be placed inside categories. 
+**Note:** Products must be placed inside categories; products and categories cannot coexist at the same level. 
+
+Because of this rule, it is recommended that you have at least one category. 
 
 Now click on the newly created category and decide what you want to do.
 
-Do you want the category to have a subcategory or do you want to add products to the category? There can not be both products and categories in a category, it must contain one or the other. There's no restriction to how many products or categories you can have in a category though, and there's also no restriction to how many levels of subcategories you want. The only limitation is your server and how much it can handle.
+Do you want the category to have a subcategory or do you want to add products to the category? Since you cannot have both products and categories in a category, it must contain one or the other. There is no restriction to how many products or categories you can have in a category, and there's also no restriction to how many levels of subcategories you may have. 
 
 When you know what the category is to be used for, click the appropriate button to create a new product or a new category. 
 
@@ -32,12 +33,14 @@ At the level where you only have categories, there are a series of action icons 
 <img src="/images/categories_icons.png" alt="Admin Category Listing Icons" style="float: right" /> 
 <br clear="all" />
 
-These icons allow you to: 
+These icons allow you to take the following actions: 
 
-- [edit a category](/user/products/category_management_admin/#editing-a-category) - update all the fields for a category 
-- [delete a category](/user/products/category_management_admin/#deleting-a-category) - remove a category 
-- [move a category](/user/products/category_management_admin/#moving-a-category) - change the category's place in the hierarchy
-- use the [category meta tags editor](/user/admin_pages/catalog/categories_meta_tags_editor/) 
+Button | Action 
+-------|-------
+Pencil | [edit a category](/user/products/category_management_admin/#editing-a-category) - update all the fields for a category 
+Trash Can | [delete a category](/user/products/category_management_admin/#deleting-a-category) - remove a category 
+M | [move a category](/user/products/category_management_admin/#moving-a-category) - change the category's place in the hierarchy
+Asterisk | use the [category meta tags editor](/user/admin_pages/catalog/categories_meta_tags_editor/) 
 
 ## Products Level 
 If you are at a level where the Categories screen only shows products, 
