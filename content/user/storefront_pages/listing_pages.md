@@ -54,7 +54,7 @@ index.php?main_page=index&cPath=3_5
 ```
 would be a product listing page, showing products 4, 5 and 6.  The category path for this page would be _3_5_. 
 
-In the cases above, the category pat hfor the 
+In the cases above, the category path for the 
 
 The listing pages described above are built in to Zen Cart; no extra work is required to create them.
 
@@ -66,5 +66,7 @@ And here's the Featured Products listing page showing a different layout:
 
 ![Featured Products Listing Page](/images/product_listing_featured.png) 
 
-The layout and configuration for listing pages is described in [listing page layout](/user/template/listing_page_layout/). 
+The layout for listing pages is described in more detail in [listing page layout](/user/template/listing_page_layout/). 
+
+The configuration settings for the New Products, Featured Products and All Products listing pages is explained in [new/featured/all products listing page configuration](/user/template/new_featured_all_listing_page_configuration/). 
 

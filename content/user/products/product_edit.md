@@ -21,12 +21,12 @@ when adding the product are:
 - Products Manufacturer - select a [manufacturer](/user/admin_pages/catalog/manufacturers/) if you organize products by manufacturer
 - Products Name - title for the product 
 - Product is Free - Yes if so. 
-- Product is Call for Price - when used, the product will not be directly purchaseable
+- Product is Call for Price - when used, the product will not be directly purchasable
 - [Product Priced by Attributes](/user/products/attribute_pricing/) - is the product's price determined by its attribute settings?  
 - Tax Class - if taxes are applicable, which ones? 
 - Products Price (Net) - base price of product before taxes 
 - Products Price (Gross) - computed using net price plus applicable taxes 
-- Product is Virtual - is the product a competely digital item 
+- Product is Virtual - is the product a completely digital item 
 - Always Free Shipping - does the product ship for free? 
 - Products Quantity Box Shows - whether to show the quantity box on pages which allow the product to be purchased, such as [product info](/user/products/product_info) page
 - [Product Qty Minimum](/user/products/product_units/) - lowest number of this product which may be purchased 
