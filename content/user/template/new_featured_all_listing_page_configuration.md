@@ -29,7 +29,7 @@ The second and third digit taken together determines the sort order of the items
 
 ![Featured Change Model Number](/images/featured_product_settings3.png) 
 
-The fourth number determins the spacing between fields. If we just change the manufacturer number above from 2302 to 2301, the space between the manufacturer and model number disappears. Peeking under the hood, this setting controls how many line breaks are present, i.e, one, two or however many you may want. 
+The fourth number determines the spacing between fields. If we just change the manufacturer number above from 2302 to 2301, the space between the manufacturer and model number disappears. Peeking under the hood, this setting controls how many line breaks are present, i.e, one, two or however many you may want. 
 
 ![Featured Change Manufacturer Spacing](/images/featured_product_settings4.png) 
 
