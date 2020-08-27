@@ -100,7 +100,7 @@ See [the template_info FAQ](/user/template/template_info/).
 
 - See [how to create a new template](/user/template/creating_template/).
 
-- See [how to customize your new template](/user/template/customizing_template/).
+- See [how to customize your new template](/user/template/basic_customizations/).
 
 - Learn to use the [Developers Tool Kit](/user/admin/developers_toolkit/).
 It will help you track down the files that you need to change to get the results you want. 
