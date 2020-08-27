@@ -20,3 +20,5 @@ You may also configure featured products to appear in the following places:
 - below a [product listing page](/user/storefront_pages/listing_pages/) using the settings on [Admin > Configuration > Index Listing](/user/admin_pages/configuration/configuration_indexlisting/)
 
 Adding a product to the featured products list is done on the [Admin > Catalog > Featured Products](/user/admin_pages/catalog/featured/) page. 
+
+Another FAQ describes [configuring the layout of the Featured Products Page](/user/template/new_featured_all_listing_page_configuration/). 

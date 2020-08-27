@@ -17,7 +17,7 @@ You may also configure new products to appear in the following places:
 - below a [product listing page](/user/storefront_pages/listing_pages/) using the settings on [Admin > Configuration > Index Listing](/user/admin_pages/configuration/configuration_indexlisting/)
 
 
-
 Determination of what qualifies as "new" is also configurable, using 
 [Admin > Configuration > Maximum Values > New Product Listing - Limited to ... ](/user/admin_pages/configuration/configuration_maximumvalues/#new_product_listing__limited_to_).
 
+Another FAQ describes [configuring the layout of the New Products Page](/user/template/new_featured_all_listing_page_configuration/). 
