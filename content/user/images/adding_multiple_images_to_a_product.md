@@ -1,6 +1,6 @@
 ---
-title: Additional Images - adding 
-description: Images in Zen Cart - how to give a product multiple images
+title: Image Filename conventions 
+description: how to give a product multiple images
 category: images
 weight: 30
 ---

@@ -1,5 +1,5 @@
 ---
-title: Default Fees 
+title: Fees 
 description: Fees you can add to customer orders
 category: order_total
 weight: 10
