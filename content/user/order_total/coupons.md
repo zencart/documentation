@@ -1,6 +1,6 @@
 ---
 title: Coupons
-description: Zen Cart Coupons
+description: Price reductions and free shipping for customers with a code 
 category: order_total
 weight: 10
 ---
@@ -9,7 +9,7 @@ Coupons allow you to offer discounts on products and/or shipping.
 If you want to offer a coupon, you need to first enable the coupon system:  
 
 Go to: Admin > Modules > Order Total > Discount Coupons (ot_coupon).   
-If it's not already installed, click Install to enable it.  
+If it's not already installed, click _Install Module_ to enable it.  
 
 ![Install Coupons](/images/install_coupon.png)
 
@@ -18,10 +18,15 @@ If it's not already installed, click Install to enable it.
 To create coupons, click [Admin > Discounts > Coupon Admin](/user/admin_pages/discounts/coupon_admin/).  
 
 Next, you create a coupon by clicking Insert.  (Or Edit to edit an existing coupon.)  
+
 Fill in the details.  
+
 If the coupon is for a percentage discount, enter the percent sign after the number.  
+
 If the coupon is ONLY for free shipping, check the free shipping box. (This ignores all the % or amount discounts, and makes the coupon ONLY apply to shipping.)  
+
 You can enter a coupon code, or if you leave it blank, the system will generate a random code for you.  
+
 Save the coupon.  
 
 Now you can either take the coupon code and manually give it to your customers in advertisements (in print or on your website) or you can click the Email button and send it to a list of customers.  

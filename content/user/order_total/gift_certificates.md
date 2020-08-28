@@ -1,6 +1,6 @@
 ---
 title: Gift Certificates
-description: Zen Cart Gift Certificates
+description: Store vouchers 
 category: order_total
 weight: 10
 ---

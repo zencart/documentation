@@ -1,6 +1,6 @@
 ---
 title: Group Pricing
-description: Zen Cart Group Pricing
+description: Discounts for select customers
 category: order_total
 weight: 10
 ---
