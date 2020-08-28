@@ -256,7 +256,9 @@ More layout options are available than you might think - here are some examples:
 
 - Accordion: [Release History](/user/about_us/release_history/) 
 
-- Footnotes: [HTML Email Templates](/user/email/html_email_templates/) 
+- Footnotes (Markdown): [HTML Email Templates](/user/email/html_email_templates/) 
+
+- Footnotes (HTML): [Coupon Admin](/admin_pages/discounts/coupon_admin/) 
 
 - Per page CSS: [What sideboxes are available?](/user/sideboxes/sidebox_list/)
 

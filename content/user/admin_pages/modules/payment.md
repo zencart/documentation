@@ -7,7 +7,9 @@ weight: 10
 
 Payment modules allow you to accept payment from your customers. 
 
-As of Zen Cart 1.5.6, the built in payment modules are: 
+They appear on the screen shown when you click Admin > Modules > Payment.
+
+As of Zen Cart 1.5.7, the built in payment modules are: 
 
 - authorizenet
 - authorizenet_aim
@@ -18,3 +20,5 @@ As of Zen Cart 1.5.6, the built in payment modules are:
 - Square 
 
 For more information, see the [payment FAQs](/user/payment/). 
+
+![Payment](/images/payment_modules.png)
