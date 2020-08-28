@@ -4,14 +4,18 @@ description: Zen Cart Coupons
 category: order_total
 weight: 10
 ---
+Coupons allow you to offer discounts on products and/or shipping. 
+
 If you want to offer a coupon, you need to first enable the coupon system:  
 
 Go to: Admin > Modules > Order Total > Discount Coupons (ot_coupon).   
 If it's not already installed, click Install to enable it.  
 
+![Install Coupons](/images/install_coupon.png)
+
 ## Creating Coupons
 
-Now, in your Admin area, click Discounts > Coupon Admin.  
+To create coupons, click [Admin > Discounts > Coupon Admin](/user/admin_pages/discounts/coupon_admin/).  
 
 Next, you create a coupon by clicking Insert.  (Or Edit to edit an existing coupon.)  
 Fill in the details.  
@@ -26,6 +30,8 @@ If you want to set up restrictions so the coupon applies to only to certain prod
 
 ## Coupon Restrictions
 
+To set coupon restrictions, click [Admin > Discounts > Coupon Restrictions](/user/admin_pages/discounts/coupon_restrictions/).  
+
 Coupon Restrictions are designed to limit Discount Coupons to Categories or Products.  
 
 When using Coupon Restrictions, it is best to start with the setting for the Categories of:  
@@ -39,7 +45,17 @@ Then, you would add the Product or Products allowed, specifically, if not alread
 
 These Restrictions will then **ALLOW** or **DENY** the use of the Discount Coupon.  
 
-These Restrictions can then be seen by the Customer via the **Discount Coupons** link in the **Information sidebox** where the customer can enter the Discount Coupon redemption code to see any limits placed on the Discount Coupon.  
+These Restrictions can then be seen by the Customer via the **Discount Coupons** link in the **Information sidebox**, which opens the Discount Coupon page.  On this page, the customer can enter the Discount Coupon redemption code to see any limits placed on the Discount Coupon.  
+
+## Discount Coupon Page 
+
+This page allows customers to look up any coupon codes they have and see the restrictions (if any) on their coupon.
+
+![Discount Coupon Page](/images/discount_coupon.png)
+
+Looking up a specific coupon code will show the restrictions for that coupon.
+
+![Discount Coupon Restrictions](/images/discount_coupon_lookup.png)
 
 ## Redeeming Coupons
 
@@ -47,3 +63,5 @@ When a customer adds something to their cart and proceeds to checkout, they will
 Once they fill in the code and press Enter, it will be checked for validity, and if it is valid and not restricted against what's in their cart, a Success message will show on the screen, and their order Total will be adjusted appropriately.  
 
 If they wish to remove a coupon, they can enter a different coupon code, or they can type "REMOVE", and press Enter.
+
+![Discount Coupon Entry](/images/discount_coupon_entry.png)

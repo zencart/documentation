@@ -18,6 +18,7 @@ Conditions of Use | index.php?main_page=conditions |
 Contact Us | index.php?main_page=contact_us | 
 Create Account | index.php?main_page=create_account | 
 Create Account Success | index.php?main_page=create_account_success | 
+Discount Coupon | index.php?main_page=discount_coupon | 
 Featured Products| index.php?main_page=featured  | 
 New Products | index.php?main_page=products_new | 
 Page | index.php?main_page=page | Displays an EZ-Page 

@@ -29,7 +29,7 @@ To create a new coupon, press the insert button  and fill in these fields:
 
 <tr>
 
-<td>Coupon Description (Customer can see)    </td>
+<td>Coupon Description </td>
 
 <td>A description of the coupon for the customer.</td>
 
@@ -53,7 +53,7 @@ To create a new coupon, press the insert button  and fill in these fields:
 
 <tr>
 
-<td>Coupon Minimum Calculated From (ZC 1.5.6+)</td>
+<td>Coupon Minimum Calculated From <sup>1</sup> </td>
 
 <td>Options which allow you allow/disallow products when calculating the order value.</td>
 
@@ -109,14 +109,14 @@ To create a new coupon, press the insert button  and fill in these fields:
 
 <tr>
 
-<td>Coupon Zone Restrictions (ZC 1.5.6+)</td>
+<td>Coupon Zone Restrictions <sup>1</sup></td>
 
 <td>Only allow the coupon to be used in the specified zone.</td>
 
 </tr>
 <tr>
 
-<td>Customer previous orders less than (ZC 1.5.6+)</td>
+<td>Customer previous orders less than <sup>1</sup></td>
 
 <td>Only allow this coupon for customers who have placed fewer than the specified number of orders.</td>
 
@@ -125,6 +125,8 @@ To create a new coupon, press the insert button  and fill in these fields:
 </tbody>
 
 </table>
+
+<sup>1</sup> : These options have been available since Zen Cart 1.5.6. 
 
 For more information, see the [coupons FAQ](/user/order_total/coupons/). 
 
