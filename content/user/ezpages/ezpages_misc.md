@@ -8,7 +8,7 @@ weight: -1
 
 ---
 ### How do I add text to the EZ-Page Sidebox
-To insert the text, we firstly create some over-ride files. If it doesn't already exist, create the following directory  
+To insert the text, we firstly create some override files. If it doesn't already exist, create the following directory  
 
 `includes/templates/YOURTEMPLATE/sideboxes  `
 

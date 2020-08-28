@@ -8,7 +8,7 @@ type: codepage
 
 **Example 1**: I want to display the featured sidebox on my front page only, and suppress it from all other pages.
 
-Create an over-ride for the sidebox's module file. For the featured products sidebox, this would involve copying includes/modules/sideboxes/featured_products.php to includes/modules/sideboxes/YOURTEMPLATE/featured_products.php.  
+Create an override for the sidebox's module file. For the featured products sidebox, this would involve copying `includes/modules/sideboxes/featured_products.php` to `includes/modules/sideboxes/YOURTEMPLATE/featured_products.php`.  
 
 Open up your new sidebox module file and take a look at the code. 
 Generally it will look something like this  

@@ -15,6 +15,10 @@ For example:
 
 - To turn off the display of Model number, click `Show Model Number`, click the dropdown and select `False`, and then press `Update`.
 
+There are also settings that control the meta data which is shown on the product info page.  For example: 
+
+- To turn off the inclusion of product price in the `<title>` tag, click `Product page <title> tag - default: use Product Price`, click the dropdown and select `False`, and then press `Update`.
+
 ### Issue: I am turning off the display of fields in Layout Settings, but they are still displayed on my product info page. 
 
 This can occur when template authors choose not to respect the flags that Zen Cart uses.  To fix this, edit `includes/templates/YOURTEMPLATE/templates/tpl_product_info_display.php` and modify the code that handles the display of the field you wish to turn off. 
