@@ -9,10 +9,10 @@ Displaying a specific sidebox only for logged in customers can be done with the 
 
 1. Locate the module for the sidebox (or boxes) that you want to treat like this. You'll find them in `includes/modules/sideboxes`.
 
-2. Create over-ride files for them by copying them to `
+2. Create override files for them by copying them to `
 includes/modules/sideboxes/YOURTEMPLATE`.
 
-3. Open the over-ride file and find a couple of lines that look similar to
+3. Open the override file and find a couple of lines that look similar to
 
 ```
 // test if box should display

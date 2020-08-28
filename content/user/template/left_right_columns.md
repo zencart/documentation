@@ -7,7 +7,7 @@ weight: 10
 
 ### Turning off a column on specific pages 
 
-Firstly, if you don't already have one, create an over-ride file for tpl_main_page.php in your `includes/templates/YOURTEMPLATE/common` directory.  
+Firstly, if you don't already have one, create an override file for tpl_main_page.php in your `includes/templates/YOURTEMPLATE/common` directory.  
 
 There is enormous scope within this one module to create turn the left and right hand columns on and off according to which page is to be displayed. Open it up and you will see a large comment at the top explaining some of them. Here are a few examples to help illustrate that.
 

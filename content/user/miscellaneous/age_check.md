@@ -7,7 +7,7 @@ weight: 10
 
 There is no certain way to check on a visitor's age, but you can check that the date of birth that they have given you would make them at least 18 (or any other age you choose).
 
-To do this create an over-ride file in your template for <code>includes/modules/create_account.php</code>.
+To do this create an override file in your template for <code>includes/modules/create_account.php</code>.
 
 Find the section of code that reads
 <pre>
@@ -43,7 +43,7 @@ and expand it to (setting the minimum age to whatever you wish)
 </pre>
 
 
-Then create an over-ride file for your <code>includes/languages/english/create_account.php</code> file and place the following line in there, changing the text to suit your style of feeding errors back to visitors
+Then create an override file for your <code>includes/languages/english/create_account.php</code> file and place the following line in there, changing the text to suit your style of feeding errors back to visitors
 
 <pre>
 define('ENTRY_DATE_OF_BIRTH_UNDERAGE','Sorry, but you must be at least 18 to register to use this site');
