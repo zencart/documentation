@@ -105,13 +105,16 @@ Zen Cart works primarily with Apache 2.4 or 2.2
 
 ### Apache modules
 
-Recommended Apache modules include:** `expires`, `headers`, `env`, `alias`, `deflate`, `ssl`, `http2`, `mime`, `phpX`, `rewrite` (in addition to other standard/default modules).
+The Apache configuration must have `AllowOverride` set to `All` or at least `Limit Indexes Options`. (Without this the `.htaccess` rules will fail and trigger `500 Server Error` errors.)
+
+Recommended Apache modules include: `expires`, `headers`, `env`, `alias`, `deflate`, `ssl`, `http2`, `mime`, `phpX`, `rewrite` (in addition to other standard/default modules).
+
 
 ## Nginx  
 Zen Cart runs well on Nginx. But you must handle directory-security manually, as described here:
 
-### Security
-The default Zen Cart distribution contains numerous Apache .htaccess rules to aid in implementing security protections against malicious spoofing and other abuse. These will not give you any protections if you're running Nginx, so you will need to do those yourself.
+### Nginx Directory Security
+The default Zen Cart distribution contains numerous Apache `.htaccess` rules to aid in implementing security protections against malicious spoofing and other abuse. These will not give you any protections if you're running Nginx, so you will need to do those yourself.
 
 At the end of initial installation some Nginx `conf` file content suggestions are provided which you could manually copy into your nginx master configuration, to provide those same protections.
 
