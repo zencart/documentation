@@ -1,14 +1,10 @@
 ---
-title: Shipping Modules - Miscellaneous Questions
+title: Individual Per Item shipping charges 
+description: How can I set up individual shipping charges per item? 
 category: shipping
-weight: 5
+weight: 10
 ---
 
-{{< misc >}} 
-
---- 
-
-### How can I set up individual shipping charges per item? 
 The per-weight shipping module can be used for this.
 
 1. Turn on the Per-Unit (perweightunit) shipping module in [Admin > Modules > Shipping](/user/admin_pages/modules/shipping/)
@@ -24,10 +20,3 @@ The per-weight shipping module can be used for this.
 
     c) Admin > Configuration > Index Listing / All Listing / New Listing / Featured Listing - all must be changed to not display the weight. 
 
----
-### How do I clone a shipping module? 
-See [the clone shipping module FAQ](/dev/code/modules/clone_shipping/) in the development area.
-
----
-<!-- please keep this at the end --> 
-{{< faq_questions >}}

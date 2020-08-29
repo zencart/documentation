@@ -11,5 +11,7 @@ The Coupon Admin screen is the jumping off point for coupon operations.
 
 ![Coupon Admin](/images/coupon_admin.png)
 
-For more information, see the [coupons FAQ](/user/order_total/coupons/). 
+For more information, see 
+the other coupon related entries in [Sitemap - Admin Pages](/user/admin_pages/discounts/) or 
+the [coupons FAQ](/user/order_total/coupons/). 
 
