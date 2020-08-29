@@ -1,41 +1,15 @@
 ---
 title: Webserver Tuning Tips 
-description: Zen Cart Webserver Tuning Tips 
+description: Tuning Tips for MySQL database performance
 category: performance
 weight: 10
 ---
 
-There are various steps one can follow to fine-tune server performance, depending on skill level and the kind of control one has over the webserver. If your server is performing poorly you may want to consider the following, especially in terms of MySQL database performance.
+If your server is performing poorly you may want to consider the following PHP and MySQL tuning suggestions.
 
-## Operating System
+First, review the [Zen Cart Server Requirements](https://docs.zen-cart.com/user/first_steps/server_requirements/) document for the essentials.
 
-The general rule is that Linux-based webservers are easiest to tweak for optimal performance for running websites. For some there may be a slight learning curve, but this is easily overcome.
-
-Using Windows-based servers is more complicated especially due to security weaknesses, more complicated requirements for setting file permissions, and harder-to-configure services. Naturally a MS fan may feel differently, but most web professionals will agree that Linux is the better hosting platform, unless a rare situation occurs where the website is dependent on very specific services only offered on a Windows platform.
-
-## Webserver Engine Software
-
-**For optimum security support, Zen Cart recommends using Apache as the webserver engine**
-This is especially important in order to take advantage of the per-directory access-control provided by .htaccess rules in various subdirectories.
-
-### Apache
-
-Apache must have **AllowOverride** set to '**All**" or "**Limit Indexes Options**". 
-
-"Internal Server Error" messages will appear if AllowOverride doesn't support these, and your server logs will fill with errors.
-
-These directives are used in the per-directory .htaccess security protections which prevent abuse of your server by hackers and which prevent phishing scams from being set up inside your site.
-
-### Nginx
-
-You may use Nginx but you will need to replicate the .htaccess protections manually with custom location blocks and rules. At the end of the `zc_install` script execution if nginx is detected it will provide you with a fairly comprehensive set of Nginx configs which you can use as a starting point. See the Installation docs, or just run through a complete new zc_install, for more details. 
-
-### IIS
-
-Zen Cart does not run on IIS or Windows servers. Just don't.
-
-
-## PHP parameters
+# PHP Tuning
 
 - `memory_limit` should be set to 32M or higher. Nowadays it's very common to see it set somewhere between 128M-512M. Set it to as much as you need, but not higher, otherwise you're wasting RAM resources on your server.
 - `max_execution_time` is commonly set to 60 seconds, which should be fine  
@@ -43,8 +17,8 @@ Zen Cart does not run on IIS or Windows servers. Just don't.
 - `file_uploads` must be set to "On" if you expect to be able to upload files either via your admin interface or receive files from your customers  
 - `post_max_size` should be set to at least 8M, or even 32M or larger if you're uploading large images or large attachments/imports  
 - `upload_max_filesize` should be set to the same as post_max_size  
-- cURL must be compiled into PHP with OpenSSL support selected
-- gzip compression should be enabled: zlib extension should be loaded and zlib.output_compression should be set to a non-zero value
+- `cURL` must be compiled into PHP with OpenSSL support selected
+- `gzip` compression should be enabled: `zlib` extension should be loaded and `zlib.output_compression` should be set to a non-zero value
 
 See https://docs.zen-cart.com/user/first_steps/server_requirements/#php-extensionsmodules-used-by-zen-cart for additional details.
 
