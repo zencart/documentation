@@ -25,3 +25,5 @@ For more information, see [the order total FAQs](/user/order_total/).
 
 ![Order Total Modules](/images/order_total_modules.png)
 
+See the Managing Modules FAQ for information on [Installing, editing and removing order total modules](/user/admin_pages/modules/management/).
+

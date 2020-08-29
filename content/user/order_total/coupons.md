@@ -6,24 +6,21 @@ weight: 10
 ---
 Coupons allow you to offer discounts on products and/or shipping. 
 
-If you want to offer a coupon, you need to first enable the coupon system:  
-
-Go to: Admin > Modules > Order Total > Discount Coupons (ot_coupon).   
-If it's not already installed, click _Install Module_ to enable it.  
+If you want to offer a coupon, you need to first enable the coupon system:  Go to: Admin > Modules > Order Total > Discount Coupons (ot_coupon).   If it's not already installed, click _Install Module_ to enable it.  
 
 ![Install Coupons](/images/install_coupon.png)
 
 ## Creating Coupons
 
-To create coupons, click [Admin > Discounts > Coupon Admin](/user/admin_pages/discounts/coupon_admin/).  
+To create coupons, click [Admin > Discounts > Coupon Admin](/user/admin_pages/discounts/coupon_admin/), then _insert_.  
 
-Next, you create a coupon by clicking Insert.  (Or Edit to edit an existing coupon.)  
+(To edit an existing coupon, use the same steps but press _edit_ at the end instead of _insert_.)  
 
 Fill in the details.  
 
-If the coupon is for a percentage discount, enter the percent sign after the number.  
+If the coupon is for a percentage discount, enter the percent sign after the number.  If it is for a fixed amount, just enter the amount. 
 
-If the coupon is ONLY for free shipping, check the free shipping box. (This ignores all the % or amount discounts, and makes the coupon ONLY apply to shipping.)  
+If the coupon is for free shipping, check the free shipping box. 
 
 You can enter a coupon code, or if you leave it blank, the system will generate a random code for you.  
 
