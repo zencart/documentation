@@ -7,7 +7,7 @@ weight: 10
 
 If your server is performing poorly you may want to consider the following PHP and MySQL tuning suggestions.
 
-First, review the [Zen Cart Server Requirements](https://docs.zen-cart.com/user/first_steps/server_requirements/) document for the essentials.
+First, review the [Zen Cart Server Requirements](/user/first_steps/server_requirements/) document for the essentials.
 
 # PHP Tuning
 
@@ -15,12 +15,10 @@ First, review the [Zen Cart Server Requirements](https://docs.zen-cart.com/user/
 - `max_execution_time` is commonly set to 60 seconds, which should be fine  
 - `max_input_time` is commonly set to 60 seconds, which is normally fine, except if you're doing large uploads such as huge photos or large input files with plugins like [EasyPopulate](/user/products/easypopulate/)
 - `file_uploads` must be set to "On" if you expect to be able to upload files either via your admin interface or receive files from your customers  
-- `post_max_size` should be set to at least 8M, or even 32M or larger if you're uploading large images or large attachments/imports  
-- `upload_max_filesize` should be set to the same as post_max_size  
-- `cURL` must be compiled into PHP with OpenSSL support selected
+- `post_max_size` should be set to something that matches the size of files you will allow to be uploaded, whether by customers or by yourself as an administrator. Start with at least 8M, or even 32M or larger if you're uploading large images or large attachments or doing large data-imports.
+- `upload_max_filesize` should be set to the same as `post_max_size`
 - `gzip` compression should be enabled: `zlib` extension should be loaded and `zlib.output_compression` should be set to a non-zero value
 
-See https://docs.zen-cart.com/user/first_steps/server_requirements/#php-extensionsmodules-used-by-zen-cart for additional details.
 
 ## MySQL Tuning
 
