@@ -1,11 +1,11 @@
 ---
-title: Order Total Modules
+title: About Order Total Modules
 description: Fees and Discounts you can add to an order 
 category: order_total
 weight: 1
 ---
 
-Order Total modules allow you to add a surcharge or a discount to the order.
+Order Total modules allow you to add a surcharge or a discount to the order.  They also display computed values, such as the order subtotal and order total. 
 
 The list of available order total modules may be seen by going to [Admin > Modules > Order Total](/user/admin_pages/modules/order_total/).
 
