@@ -11,7 +11,7 @@ It's called a "broken padlock" because browsers used to show an image of a broke
 ![Firefox Insecure Cart](/images/ff_broken_padlock.png) 
 
 
-Some browers will simply display a message saying "Not Secure" like this: 
+Some browsers will simply display a message saying "Not Secure" like this: 
 
 ![Insecure Cart](/images/insecure_cart.png) 
 

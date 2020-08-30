@@ -28,8 +28,14 @@ installation by using the [Changed Files plugin](https://www.zen-cart.com/downlo
 A PHP syntax error will very often result in a blank screen, or a partially-blank screen.  
 When this happens, there is often also an entry in the server's errorlog, which you can often view via your hosting control panel area. But, sometimes you can't view that log without requesting your hosting company to access it for you, for privacy reasons. So, alternatively you can use the debug logging built-in to Zen Cart, which is described below. 
 
+## 3\. Are you running an older cart on a newer PHP? 
 
-## 3\. Common customization errors
+**Note:** Your hoster may have updated your PHP underneath you; be sure to 
+[check your PHP version](/user/admin_pages/admin_version/) to be sure!
+
+If your hoster updated your PHP version, be aware that if you're running an old version of Zen Cart, you could have problems - refer to the [PHP Version - Zen Cart version compatibility matrix](/user/first_steps/server_requirements/#php-version). 
+
+## 4\. Have you recently made a code change? 
 
 The most common customization errors include:  
 
@@ -45,7 +51,7 @@ The most common customization errors include:
 and the [Overrides FAQs](/user/template/template_overrides/). 
 *   When renaming files (for backup), be sure to NOT keep the extension ".php". For instance, rename header_php.php to header_php.old or header_php.php.20110701, BUT *NOT* header_php.old.php.
 
-## 4\. Bad product data
+## 5\. Do you have bad product data?
 
 (This refers to product pages mainly, not "all pages".)  
 Sometimes when entering product data, if you copy+paste from another application (especially MS Word), weird "special" characters might get inserted, which can cause trouble in unexpected places. Make sure your product names and descriptions are clean.  

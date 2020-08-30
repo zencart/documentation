@@ -6,3 +6,6 @@ weight: 10
 ---
 
 FIXME needs content 
+
+Explain older image buttons vs CSS buttons. 
+
