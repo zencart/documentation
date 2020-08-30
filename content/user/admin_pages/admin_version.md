@@ -18,4 +18,5 @@ Providing this information when asking for support will help improve the usefuln
 
 ![Zen Cart Version information](/images/version_link.png) 
 
+If your hoster updated your PHP version, be aware that if you're running an old version of Zen Cart, you could have problems - refer to the [PHP Version - Zen Cart version compatibility matrix](/user/first_steps/server_requirements/#php-version). 
 

@@ -31,3 +31,4 @@ If your Database Engine value shows *MariaDB*,
 then, if needed, you can see the 
 [MySQL to MariaDB compatibility matrix here](https://mariadb.com/kb/en/mariadb-vs-mysql-compatibility/).
 
+If you are coming to this page because of a new problem with your cart, be sure your Zen Cart version is compatible with your PHP version.  Refer to the [PHP Version - Zen Cart version compatibility matrix](/user/first_steps/server_requirements/#php-version). 
