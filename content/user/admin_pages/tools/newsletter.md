@@ -1,8 +1,8 @@
 ---
 title: Newsletter and Product Notifications Manager 
-description: Zen Cart Newsletter and Product Notifications Manager 
+description: Sending information to your customers
 category: admin_pages
-weight: 50
+weight: 10
 ---
 
 This page allows you to compose a newsletter or product notification 

@@ -1,8 +1,8 @@
 ---
 title: Send Email 
-description: Zen Cart Send Email Admin Page 
+description: Sending email to customers and groups
 category: admin_pages
-weight: 40
+weight: 10
 ---
 
 This page allows you to send email to your customers. Individual customers may be selected, or pre-defined groupings may be used.

@@ -1,8 +1,8 @@
 ---
 title: Store Manager
-description: Zen Cart Store Manager
+description: Common database management tasks 
 category: admin_pages
-weight: 80
+weight: 10
 ---
 
 This page allows you to reset various counts and settings in your database.
@@ -17,15 +17,15 @@ Actions available in Store Manager are as follows:
 - Update ALL Products Price Sorter: The Price Sorter exists so that your listing pages can allow customers to sort by price.  You should use this action after importing price data using a tool like [EasyPopulate](/user/products/easypopulate/). 
 Note that after running "Reset ALL Products Master Categories ID" (below) you should also use the "Update ALL Products Price Sorter." 
 
-- Update Hit Counter:
+- Update Hit Counter: The hit counter is shown in the dashboard of your admin in the Statistics widget, and shows you the number of visitors.
 
-- Reset ALL Products Ordered:
+- Reset ALL Products Ordered: The products ordered counter is a field in the products table which counts the number of times a product has been sold.  It is used to build the Bestsellers list in the storefront.  Note that this field is **not used** in the [Products Purchased Report](/user/admin_pages/reports/products_purchased/); that report uses a more accurate (but slower) way of counting product sales. 
 
-- Reset ALL Products Master Categories ID:
+- Reset ALL Products Master Categories ID: If your store uses [linked products](/user/products/linked_product/) and you add and delete categories frequently, the master_categories_id field for a product can wind up pointing to a deleted category.  This fixes that problem. 
 
-- Set next order number:
+- Set next order number: If you want to start your order numbers at a higher initial value than 1, or need to bump them for another reason, this is the place to do it. 
 
-- Optimize Database: 
+- Optimize Database: Databases where adds and deletes are being done frequently become fragmented; running the optimizer will solve this problem.
 
-- Cleanup Debug Log Files: This button will remove all debug logs in your /logs folder. 
+- Cleanup Debug Log Files: This button will remove all debug logs in your `/logs` folder. 
 

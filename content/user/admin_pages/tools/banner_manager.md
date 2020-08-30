@@ -1,8 +1,8 @@
 ---
 title: Banner Manager
-description: Zen Cart Banner Manager Admin Page 
+description: Turn banners off and on 
 category: admin_pages
-weight: 30 
+weight: 10 
 ---
 
 This page allows you to manage various "fortune cookie"-type text and image banners.

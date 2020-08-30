@@ -1,8 +1,8 @@
 ---
 title: Install SQL Patches 
-description: Zen Cart Install SQL Patches Admin Page 
+description: Running SQL scripts 
 category: admin_pages
-weight: 120
+weight: 10
 ---
 
 The Install SQL Patches page allows you to run SQL commands directly.
