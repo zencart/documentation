@@ -69,3 +69,15 @@ do not have `HTTPS_SERVER` in the
 
 After making these changes, if you don't clear your browser's cache and cookies, it's possible that your logins will not work because the browser is remembering information from the old URL. A simple clearing of the cache and cookies, and sometimes a restart of the browser application, is all it takes.  
 
+# 5\. Your site is now secure! 
+
+Once your done, your browser's address bar will show a non-broken padlock like this: 
+
+![Good Padlock](/images/good_padlock.png)
+
+and if you click on your SSL certificate, you'll see it's valid, like this: 
+
+![Good Certificate Details](/images/good_cert_details.png)
+
+You will want to keep checking your SSL certificate as part of your [regular website maintenance](/user/running/regular_maintenance/) so that you don't get a [broken padlock](/user/running/broken_padlock/). 
+
