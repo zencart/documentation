@@ -15,8 +15,17 @@ The language file is located in:
 `/includes/languages/english/modules/shipping/flat.php`
   
 To clone this module, for example, to `flatfree.php` you would copy the two `flat.php` files to `flatfree.php` 
+
+**Note:** Be sure the filename you choose does not have an underscore (`_`) in it.
   
-Next, you need to edit all occurrences of `flat` to `flatfree` and `FLAT` to `FLATFREE` These identifiers are case sensitive. 
+Next, you need to change all occurrences of the strings `flat` and `FLAT` as follows: 
+
+OLD | NEW
+----|----
+`flat` | `flatfree` 
+`FLAT` | `FLATFREE` 
+
+These identifiers are case sensitive. 
   
 These words are written separately or within the constants such as:  
   
