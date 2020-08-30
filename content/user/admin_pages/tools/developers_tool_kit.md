@@ -1,8 +1,8 @@
 ---
 title: Developer's Tool Kit 
-description: Zen Cart Developer's Tool Kit 
+description: Searching files for strings 
 category: admin_pages
-weight: 90
+weight: 10
 ---
 
 The Developers Tool Kit is an essential tool for anyone involved in customizing Zen Cart.

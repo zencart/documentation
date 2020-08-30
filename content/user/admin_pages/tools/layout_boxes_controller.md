@@ -1,8 +1,8 @@
 ---
 title: Layout Boxes Controller
-description: Zen Cart Layout Boxes Controller Admin Page 
+description: Placing sideboxes on your site 
 category: admin_pages
-weight: 20
+weight: 10
 ---
 
 This page allows you to select which sideboxes are shown 

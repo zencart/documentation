@@ -1,8 +1,8 @@
 ---
 title: EZ-Pages
-description: Zen Cart EZ-Pages
+description: Add pages to your site 
 category: admin_pages
-weight: 100
+weight: 10
 ---
 This page allows you to add and remove special EZ-Pages, pages which are easier to create or edit than standard PHP or HTML.
 
