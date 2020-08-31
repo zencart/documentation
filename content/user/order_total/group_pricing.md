@@ -4,6 +4,9 @@ description: Discounts for select customers
 category: order_total
 weight: 10
 ---
+
+Group Pricing allows you to offer a percent-off discount to specific customers.  Customers are organized into groups according to their discount. 
+
 If you want to offer a group discount, you need to first enable group pricing
 
 Go to: [Admin > Modules > Order Total](/user/admin_pages/modules/order_total/) and select Group Pricing (ot_group_pricing).   
