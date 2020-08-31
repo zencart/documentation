@@ -5,22 +5,38 @@ category: running
 weight: 10
 ---
 
-**NOTE:** A full backup of your Zen Cart site has **TWO** parts: 
+**NOTE:** A full backup of your Zen Cart site has **TWO** steps: 
 
 - A copy of all your Zen Cart files, and  
 - A copy of your database
 
-## A\. Backup your files 
+# Step 1: Backup your files 
 
-Use your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) to make a copy of all the files on your website, by copying them from your webserver to a folder on your business computer. Preferably the directory/folder on your computer should be named by today's date so that you can distinguish between backups.  
+### A) If your site has cPanel: 
+
+- open cPanel, and open File Manager. Drill down to your site.  If your site is at the top level of your hosting account, this will likely be right under `public_html`.  Select all files and right click, and choose "Compress."  This will create a Zip file when the operation completes.  Select that file, right click and choose "Download."  Once the Download completes, remove the zip file from your server; you don't want it lying around there. 
+
+![File Manager Backup](/images/file_manager_backup.png)
+
+### B) If your site does *not* have cPanel: 
+
+- Use your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) to make a copy of all the files on your website, by copying them from your webserver to a folder on your business computer. 
+
+![Filezilla Backup](/images/filezilla_backup.png)
+
+When you save files to your computer, the directory/folder on your computer should be named by today's date so that you can distinguish between backups.  
 
 Having this gives you not only an up-to-date set of files on your server, but also a reference point for either making changes or for making comparisons in case something gets compromised or damaged on your webserver. You can either use this set of files to restore the program back to your website, or to diagnose a problem if one occurs.  
 
 **NOTE:** Keeping multiple separate versions on your computer is prudent, in case something is changed unexpectedly or accidentally. So, archiving these downloaded files is wise, to a USB key or cloud based backup. 
 
-## B. Backup your Database  
+<br><br>
 
-### Using phpMyAdmin to make a Database Backup
+
+# STEP 2: Backup your Database  
+
+### A) Using phpMyAdmin 
+
 1\. Open phpMyAdmin  
 
 2\. Select your database from the dropdown (usually on the left side), so that its tables are displayed (they usually display on the right side).  
@@ -41,8 +57,9 @@ Having this gives you not only an up-to-date set of files on your server, but al
 To have a redundant backup, save a copy to a thumb drive or upload it to a cloud account such as 
 Google Drive.
 
+![phpMyAdmin Backup](/images/phpMyAdmin_backup.png)
 
-### Using the Backup MySQL Plugin to make a Database Backup
+### B) Using the Backup MySQL Plugin 
 
 On hosts that permit the use of `exec()`, you can use the 
 [Backup MySQL Plugin](https://www.zen-cart.com/downloads.php?do=file&id=7)
@@ -51,6 +68,8 @@ from `YOURADMIN/backups` to your local computer.  Again, you will
 want to save a copy to a thumb drive or upload your backup to a cloud account so that you have 
 redundancy. 
 <br><br>
+
+![Backup MySQL Backup](/images/mysql_backup.png)
 
 --- 
 
