@@ -15,6 +15,13 @@ If the *Queue Purchases* setting is not used, the funds are made available in th
 
 The customer can then USE those funds for themselves, OR they can email them to friend(s) via the links provided automatically in the store (esp shopping cart sidebox). They can email as much as they want, to various people, up to the amount they've purchased. Whoever they email it to will receive a new redemption code and can follow the redemption process, either redeeming via the email link, going to the Gift Certificate FAQ page or redeeming during checkout. The customer can email the funds again if they wish or use the GV Balance for themselves.  
 
+Gift Certificates show up at checkout on the Payment page: 
+
+![Gift Certificates at Checkout](/images/gift_certificates.png) 
+
+And on the My Account page: 
+
+![Gift Certificates on My Account](/images/my_account_gift_certificates.png) 
 
 ### How do I create a Gift Certificate? 
 
@@ -68,11 +75,12 @@ A customer can enter as many Gift Certificates as they want on the checkout_paym
 
 **NOTE:** Gift Certificates are sometimes also called "Gift Vouchers" by our friends in the United Kingdom.  You will hear these terms used interchangeably. 
 
-### What Admin pages are available for Gift Certificates? 
-The Zen Cart admin has the following pages: 
+### What admin pages show Gift Certificate activity? 
+
+The Zen Cart admin has the following pages related to Gift Certificates: 
 
 - [Admin > Discounts > Gift Certificate Queue](/user/admin_pages/discounts/gift_certificate_queue/)
 - [Admin > Discounts > Gift Certificates Sent](/user/admin_pages/discounts/gift_certificates_sent/)
 - [Admin > Discounts > Send Gift Certificate](/user/admin_pages/discounts/send_gift_certificate/)
 
-If you don't see these pages, it's because you haven't yet installed gift certificates. Go to Admin > Modules > Order Total and do so.  
+If you don't see these pages, it's because you haven't yet installed gift certificates. Go to Admin > Modules > Order Total, select Gift Certificates, and press Install. 

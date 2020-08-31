@@ -93,6 +93,10 @@ As you make your list of changed files, this may be a good time to move your sto
 The benefit of moving these customizations into specific override files is that these overrides are simpler to compare/upgrade in the future, and may mean less work when it comes to the "actual" upgrade in following steps.
 
 
+#### Handling custom date fields in your database 
+
+If you have modified the structure of your database to add custom date fields, please see [date standardization](/user/upgrading/date_standardization/).
+
 ## 2\. Execution
 
 Download and unzip the latest Zen Cart version to your PC. This will be in a 3rd directory (perhaps `store_new`), separate from the other two folders compared above (eg `store` and `zen_orig`).

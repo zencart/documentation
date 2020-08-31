@@ -40,6 +40,8 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 - The table containing the EZ-Pages data (`ezpages`) was split into two tables, `ezpages` and `ezpages_content`.  This was done in order to add multi-language capabilities. Accordingly, template files (template overrides or custom files) which reference the `ezpages` table will need adjustment to account for this division.
 
+- Date format updates began in this release - see [date standardization](/user/upgrading/date_standardization/). 
+
 ### Zen Cart 1.5.5
 
 - The arguments for the notifier `NOTIFY_ORDER_AFTER_SEND_ORDER_EMAIL` were changed.  This necessitated a code change in the observers watching for it. 

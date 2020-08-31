@@ -21,14 +21,15 @@ Be sure to familiarize yourself with the content of the release (and any prior r
 ### <font color="#333399">B. If you have NO CUSTOMIZATIONS (or don't wish to preserve the ones you have), here's a high-level overview/**summary** of a slightly shorter process:</font>
 
 1.  Back up your site from the server as well as the copy on your computer.
-2.  Backup your database
-3.  Create a new directory and copy your site into it
-4.  Then create a new database and load your old database in it
-5.  Next, change the two configure.php files to utilize the new directory and database  This way ... when you attempt to upgrade you are "practicing" to see where the problems, if any will happen  
-6.  Make sure all appears to be working on your temp site.
-7.  Now load the "new" version files to your new temp directory from latest downloaded ZIP
-8.  Run the installer at `http://www.YOURSITE.com/zc_install`
-9.  Choose the *Upgrade* option  
+1.  Backup your database
+1.  Create a new directory and copy your site into it
+1.  Then create a new database and load your old database in it
+1.  Do any database conversions necessary - only necesary if you have [custom date fields](/user/upgrading/date_standardization/)
+1.  Next, change the two configure.php files to utilize the new directory and database  This way ... when you attempt to upgrade you are "practicing" to see where the problems, if any will happen  
+1.  Make sure all appears to be working on your temp site.
+1.  Now load the "new" version files to your new temp directory from latest downloaded ZIP
+1.  Run the installer at `http://www.YOURSITE.com/zc_install`
+1.  Choose the *Upgrade* option  
 ![Use the upgrade button!](/images/upgrade_button.png)
 
     **Note**: Do not select *Clean Install* or you will overwrite your database.
@@ -37,11 +38,11 @@ Be sure to familiarize yourself with the content of the release (and any prior r
     If the “Upgrade” button does not appear, then the installer was unable to connect to your database to determine its version. Check your configure.php settings and be sure the DB_* fields correspond to your new database, including that the DB_PREFIX matches the DB_PREFIX in your old site.
 
 
-10.  Process each suggested step one at a time ... leave the first checkbox that the upgrader picked checked and uncheck the others.  
+1.  Process each suggested step one at a time ... leave the first checkbox that the upgrader picked checked and uncheck the others.  
     -Advantage is that you can see your problems step by step  
     -Each time it completes it will recheck the boxes left to go.  
     -Continue in this method until all boxes are unchecked.
-11.  If you find you have issues, you are not hurting anything and can always start over without damage to your existing shop and live database.  
+1.  If you find you have issues, you are not hurting anything and can always start over without damage to your existing shop and live database.  
 
 ### QUESTION: "Why is this process so long?"
 
