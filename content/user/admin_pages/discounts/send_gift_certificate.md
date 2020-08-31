@@ -5,7 +5,9 @@ category: admin_pages
 weight: 30 
 ---
 
-This page allows you to generate gift certificates and issue them by email.
+If you haven't read [about Gift Certificates](/user/order_total/gift_certificates/) yet, please start there. 
+
+The Discounts > Send a Gift Certificate page allows you to generate gift certificates and issue them by email.
 
 ## To generate/mail a gift certificate from your web site
 Mailing gift certificates requires the Gift Certificates module to be installed (under Admin > Modules > Order Total). 
