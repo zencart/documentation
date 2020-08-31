@@ -5,9 +5,21 @@ category: order_total
 weight: 10
 ---
 
-To sell Gift Certificates in your store, you need to create them as specific products (according to special requirements, outlined below):  
+To sell Gift Certificates in your store, you need to create them as products, according to the specifications below. 
+
+Gift Certificates may be optionally queued for release by the administrator so that they are not available immediately after purchase. (Some storeowners prefer to do this for extra security.) 
+
+If the *Queue Purchases* setting in Admin > Modules > Order Total > Gift Certificates is used, then after purchase, the administrator must "release" the gift certificate. A button indicating queued gift certificates is shown in the admin panel.  Once the release is done, the Gift Certificate funds are made available to the customer, by adding them to the Customer's Gift Certificate balance.  
+
+If the *Queue Purchases* setting is not used, the funds are made available in the Customer's Gift Certificate balance immediately after purchase.  
+
+The customer can then USE those funds for themselves, OR they can email them to friend(s) via the links provided automatically in the store (esp shopping cart sidebox). They can email as much as they want, to various people, up to the amount they've purchased. Whoever they email it to will receive a new redemption code and can follow the redemption process, either redeeming via the email link, going to the Gift Certificate FAQ page or redeeming during checkout. The customer can email the funds again if they wish or use the GV Balance for themselves.  
+
+
+### How do I create a Gift Certificate? 
 
 1\. In the Admin, make a new category called Gift Certificates. Add a product to the category called Gift Certificates.  
+
 2\. On the Product Information Page fill in the blanks as follows:  
 
 *   Products Status: In Stock
@@ -40,17 +52,8 @@ To sell Gift Certificates in your store, you need to create them as specific pro
 *   Products Weight: leave blank
 
 3\. Click Preview and then Save it.  
+
 4\. Now go to Modules > Order Total, select Gift Certificates, and click Install. This installs the Gift Certificate module. 
-
-### HOW DOES IT WORK THEN ?
-
-Gift Certificates may be optionally queued for release by the administrator. 
-
-If the *Queue Purchases* setting in Admin > Modules > Order Total > Gift Certificates is used, then after purchase, the administrator must "release" the gift certificate. A button indicating queued gift certificates is shown in the admin panel.  Once the release is done, the Gift Certificate funds are made available to the customer, by adding them to the Customer's Gift Certificate balance.  
-
-If the *Queue Purchases* setting is not used, the funds are made available in the Customer's Gift Certificate balance immediately after purchase.  
-
-The customer can then USE those funds for themselves, OR they can email them to friend(s) via the links provided automatically in the store (esp shopping cart sidebox). They can email as much as they want, to various people, up to the amount they've purchased. Whoever they email it to will receive a new redemption code and can follow the redemption process, either redeeming via the email link, going to the Gift Certificate FAQ page or redeeming during checkout. The customer can email the funds again if they wish or use the GV Balance for themselves.  
 
 ### How do I sell Gift Certificates?
 1\. Create Gift Certificate products as described above  
@@ -65,3 +68,11 @@ A customer can enter as many Gift Certificates as they want on the checkout_paym
 
 **NOTE:** Gift Certificates are sometimes also called "Gift Vouchers" by our friends in the United Kingdom.  You will hear these terms used interchangeably. 
 
+### What Admin pages are available for Gift Certificates? 
+The Zen Cart admin has the following pages: 
+
+- [Admin > Discounts > Gift Certificate Queue](/user/admin_pages/discounts/gift_certificate_queue/)
+- [Admin > Discounts > Gift Certificates Sent](/user/admin_pages/discounts/gift_certificates_sent/)
+- [Admin > Discounts > Send Gift Certificate](/user/admin_pages/discounts/send_gift_certificate/)
+
+If you don't see these pages, it's because you haven't yet installed gift certificates. Go to Admin > Modules > Order Total and do so.  
