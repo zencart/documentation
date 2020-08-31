@@ -19,6 +19,10 @@ The list of Zen Cart security patches for 1.5.x+ is here: 
 
 All of these patches are included in the current release, so if you are running an older version, you should [upgrade](/user/upgrading/upgrading/) as soon as possible. 
 
+### Getting Notified of Security Updates 
+
+[subscribing to release announcements](/user/about_us/announcements) is a great way to stay informed about new releases and security updates. 
+
 ### New Security Issues 
 If you believe you have found a security issue, please do not release your finding publicly.  Instead, send reports (including proof of concept) to security [AT] zen-cart [DOT] com.  The core team will review your finding and respond appropriately. See [Security Reports](/user/about_us/about/#security-reports) for more information. 
 
