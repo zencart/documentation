@@ -5,6 +5,4 @@ category: email
 weight: 10
 ---
 
-Sending large numbers of emails from your own hosting account 
-is no longer recommended.  
-See [Newsletters](/user/email/newsletters/) for alternatives. 
+Sending large numbers of emails from your own hosting account is not recommended.  See [Newsletters](/user/email/newsletters/) for alternatives. 
