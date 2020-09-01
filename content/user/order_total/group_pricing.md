@@ -28,5 +28,5 @@ field at the bottom of the screen.  Press *Update*.
 The customer will now be entitled to the Group Discount you have configured.  The discount will be shown as a line item under the Subtotal at checkout time. 
 
 ## Other Uses for Groups 
-You can use customer groups for other restrictions as well.  For example, the [Invoice Payment Method plugin](https://www.zen-cart.com/downloads.php?do=file&id=131) checks the customer's group and only becomes visible if their group name begins with the string "invoice_". 
+While not ideal, there is the possibility that custom code can use customer groups for other purposes as well.  For example, the [Invoice Payment Method plugin](https://www.zen-cart.com/downloads.php?do=file&id=131) checks the customer's group and only becomes visible if their group name begins with the string "invoice_". 
 
