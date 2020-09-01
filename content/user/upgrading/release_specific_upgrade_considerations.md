@@ -38,7 +38,7 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
     You will want to adjust any copies of these files in your template to process an array rather than a database query.  
 
-- The table containing the EZ-Pages data (`ezpages`) was split into two tables, `ezpages` and `ezpages_content`.  This was done in order to add multi-language capabilities. Accordingly, template files (template overrides or custom files) which reference the `ezpages` table will need adjustment to account for this division.
+- The table containing the EZ-Pages data (`ezpages`) was split into two tables, `ezpages` and `ezpages_content`.  This was done in order to add multi-language capabilities. Accordingly, any files (template overrides or custom files) which reference the `ezpages` table will need adjustment to account for this division.
 
 - Date format updates began in this release - see [date standardization](/user/upgrading/date_standardization/). 
 
@@ -49,6 +49,10 @@ This document lists things you may wish to take into account as you upgrade.  Th
 - The `responsive_classic` template was introduced in this release.  If you are coming from an older release with an older template, be sure to check and verify that your template performs properly on mobile devices.  If not, you can use Responsive Classic or select another responsive template.
 
 - Starting in this version, the email css was pulled out of the individual templates into a shared file called `email/email_common.css`.  If you are creating or updating email templates, you should follow this new practice. 
+
+### Zen Cart 1.5.2 
+
+- The list of pages created by `includes/modules/pages/header_php.php` changed from a query result to an array.  So the template file `includes/templates/YOURTEMPLATE/templates/tpl_page_default.php` had to be updated to accommodate this change.
 
 ### Zen Cart 1.5.0 
 

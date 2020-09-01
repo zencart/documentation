@@ -1,6 +1,6 @@
 ---
 title: Introduction to Email in Zen Cart 
-description: Overview of Email and Basic Troubleshooting Tips
+description: Overview of the email system 
 category: email
 weight: 1
 ---
@@ -56,7 +56,10 @@ Here's how Zen Cart's email interface works:
 
 If the email doesn't get to its destination, then usually the problem is a misconfiguration of the MTA or the host is blacklisted somewhere, or ports are blocked or ... well ... the probable causes are for a system administrator to understand.
 
-**For IN DEPTH ASSISTANCE on email matters, see [Advanced Email Troubleshooting](/user/email/advanced_email_troubleshooting/)**.
+### More Troubleshooting Ideas 
+
+- [Basic email troubleshooting](/user/email/emails_not_received/)
+- [Advanced Email Troubleshooting](/user/email/advanced_email_troubleshooting/)  
 
 ### Troubleshooting Questions for your Hosting Company
 
