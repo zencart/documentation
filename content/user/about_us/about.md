@@ -15,11 +15,7 @@ To learn more, please see [how to report a bug](/user/about_us/bug_reporting/).
 
 ## **Security Reports**
 
-Zen Cart takes security issues VERY seriously. Whenever a true security risk is discovered, a fix is posted immediately, using whatever means is most appropriate. 
-
-We appreciate hearing (privately) from the community about any security exploit risks found in Zen Cart code. We would rather hear about the situation privately so we can respond publicly with a fix for everyone.This helps keep existing shops safe without advertising the risk to would-be hackers etc. 
-
-Send reports, including proof of concept, to security [AT] zen-cart [DOT] com.  
+If you find a security issue, please do not release your finding publicly; instead, follow the [security reporting protocol](/user/about_us/security_reports/). 
 
 ## **Code Contributions**
 
