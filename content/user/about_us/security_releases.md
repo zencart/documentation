@@ -21,8 +21,8 @@ All of these patches are included in the current release, so if you are running 
 
 ### Getting Notified of Security Updates 
 
-[subscribing to release announcements](/user/about_us/announcements) is a great way to stay informed about new releases and security updates. 
+[Subscribing to release announcements](/user/about_us/announcements) is a great way to stay informed about new releases and security updates. 
 
 ### New Security Issues 
-If you believe you have found a security issue, please do not release your finding publicly.  Instead, send reports (including proof of concept) to security [AT] zen-cart [DOT] com.  The core team will review your finding and respond appropriately. See [Security Reports](/user/about_us/about/#security-reports) for more information. 
+If you believe you have found a security issue, please do not release your finding publicly; instead, follow the [security reporting protocol](/user/about_us/security_reports/). 
 

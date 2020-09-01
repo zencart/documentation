@@ -13,13 +13,15 @@ get to use more recent versions of PHP, you get all the bug fixes from the past,
 
 Two words: bad guys. 
 
-Bad guys are everywhere.  Trying to steal from you.  Trying to wreck your business.  Trying to annoy you.  It's unfortunate, but it's part of operating on the Internet. 
+Bad guys are everywhere.  Trying to steal from you.  Trying to wreck your business.  Trying to harass you.  It's unfortunate, but it's part of operating on the Internet. 
 
 Upgrading PHP and Zen Cart **helps protect you** from bad guys. Both PHP and Zen Cart are constantly being improved and hardened so that it's more difficult for bad guys to cause problems.  It's an endless cycle - bad guys discover new ways of making trouble; good guys update the software to defend against the new attacks.  But you don't get the benefits of the work the good guys have done unless you upgrade! 
 
 ### Does this really happen? 
 
 Yes.  You can review the [security releases](/user/about_us/security_releases/) page and dig into these releases to discover the backstories. 
+
+[The Zen Cart team takes security seriously](/user/about_us/security_reports/), but they need your help - **you** have to keep your cart up to date. 
 
 ### What else can I do to stay safe? 
 

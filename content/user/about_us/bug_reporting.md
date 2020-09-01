@@ -19,4 +19,4 @@ The article [known bugs](/user/about_us/known_bugs/) shows significant bugs that
 
 ## Security Issues 
 
-If the bug you have found is a security issue, such as a vulnerability, please do not release your finding publicly.  Instead, send reports (including proof of concept) to security [AT] zen-cart [DOT] com.  The core team will review your finding and respond appropriately.  See [Security Reports](/user/about_us/about/#security-reports) for more information. 
+If the bug you have found is a security issue, please do not release your finding publicly; instead, follow the [security reporting protocol](/user/about_us/security_reports/). 

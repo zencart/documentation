@@ -50,6 +50,14 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 - Starting in this version, the email css was pulled out of the individual templates into a shared file called `email/email_common.css`.  If you are creating or updating email templates, you should follow this new practice. 
 
+- The `html_header.php` file in `template_default/common/` and `responsive_classic/common/` folder have 
+
+```
+header('X-Frame-Options:SAMEORIGIN');
+```
+
+to prevent clickjacking.  If you template is older than 1.5.5, you will need to manually incorporate this change. 
+
 ### Zen Cart 1.5.2 
 
 - The list of pages created by `includes/modules/pages/header_php.php` changed from a query result to an array.  So the template file `includes/templates/YOURTEMPLATE/templates/tpl_page_default.php` had to be updated to accommodate this change.
