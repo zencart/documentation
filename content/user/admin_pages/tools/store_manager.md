@@ -25,7 +25,7 @@ Note that after running "Reset ALL Products Master Categories ID" (below) you sh
 
 - Set next order number: If you want to start your order numbers at a higher initial value than 1, or need to bump them for another reason, this is the place to do it. 
 
-- Optimize Database: Databases where large numbers of inserts, updates, and deletes are done can become less efficient over time; running the optimizer will solve this problem.
+- Optimize Database: Databases where large numbers of inserts, updates, and deletes are done can become less efficient over time; running this command will solve this problem.
 
 - Cleanup Debug Log Files: This button will remove all [debug logs](/user/troubleshooting/debug_logs/) in your `/logs` folder. 
 

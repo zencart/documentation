@@ -5,7 +5,9 @@ category: admin_pages
 weight: 10
 ---
 
-This page allows you to view information about the server 
+Clicking [Version](/user/admin_pages/admin_version/) on the top right Admin navigation menu gets you to this page.  &nbsp;&nbsp;&nbsp; ![Version Link](/images/skinny_version.png)
+
+The Server/Version info page allows you to view information about the server 
 on which you are running Zen Cart. 
 
 The information at the top of the page gives you a quick snapshot of the most 

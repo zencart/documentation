@@ -1,14 +1,14 @@
 ---
-title: Email Troubleshooting - Advanced
-description: Zen Cart TroubleShooting Email - Advanced
+title: Advanced Email Troubleshooting
+description: Next steps when dealing with email problems 
 category: email
-weight: 10
+weight: 6
 aliases: 
     - /user/email/advanced_email_troubleshooting_1/
     - /user/email/advanced_email_troubleshooting_2/
 ---
 
-If you're having difficulties with email and your online store, this article will hopefully assist in resolving those problems.  Be sure you have reviewed the guidance in [introduction to email](/user/email/email_introduction/) before reading this.
+If you're having difficulties with email and your online store, this article will hopefully assist in resolving those problems.  Be sure you have reviewed the guidance in [introduction to email](/user/email/email_introduction/) and [emails not received](/user/email/emails_not_received/) before reading this.
 
 ## Basic Troubleshooting
 

@@ -1,8 +1,8 @@
 ---
-title: Emails are not being received 
-description: Deliverability issues with Zen Cart Emails 
+title: Basic Email Troubleshooting
+description: Emails are not being received - deliverability issues 
 category: email
-weight: 10
+weight: 5 
 ---
 
 ## Testing Email 
