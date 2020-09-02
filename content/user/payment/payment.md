@@ -11,12 +11,12 @@ The list of available payment modules may be seen by going to [Admin > Modules >
 
 Zen Cart has a number of built-in payment modules: 
 
-- Authorize.net - both [AIM](/user/payments/authorizenet_aim/) and [SIM](/user/payments/authorizenet_sim/) are available
+- Authorize.net - both [AIM](/user/payment/authorizenet_aim/) and [SIM](/user/payment/authorizenet_sim/) are available
 - Check/Money Order - Receive payment by check
 - Cash on Delivery - COD or in-person payment
 - Free Order - required if you have free products in your store
-- PayPal - payment processing by [PayPal](/user/payments/paypal/)
-- Square - payment processing by [Square](/user/payments/square/)
+- PayPal - payment processing by [PayPal](/user/payment/paypal/)
+- Square - payment processing by [Square](/user/payment/square/)
 
 If you are just evaluating Zen Cart or running a test-only installation, 
 then using the Check/Money Order module to process payments is the best option.
