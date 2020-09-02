@@ -27,3 +27,9 @@ Here's how to do it in Google Chrome:
 
 ![Inspect](/images/device_dropdown.png)
 
+
+Another way is just to use your mouse and grab the corner of your browser window and drag it narrower, and watch what it looks like on smaller/larger screens.
+
+Developers and designers might appreciate the https://responsively.app tool for looking at a site by simulating various common mobile devices.
+
+TIP: Don't design your site for "every possible mobile device"! It'll never be "pixel-perfect". Make it work well for the majority of devices that *your* site's visitors are using: don't worry about devices of people who aren't your target customer.
