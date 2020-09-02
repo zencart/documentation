@@ -28,6 +28,8 @@ layout: docs
 
 * [Getting Started](/user/first_steps/learning_trails/) - I'm new - how do I learn Zen Cart? 
 
+* [Glossary](/user/first_steps/glossary/) - What do all these terms mean? 
+
 * [Known Bugs in Zen Cart (by version)](/user/about_us/known_bugs/) - has my bug already been fixed?
 
 * [Installing Zen Cart](/user/first_steps/how_do_i_install/) - how do I install Zen Cart?

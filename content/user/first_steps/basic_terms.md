@@ -8,6 +8,8 @@ weight: 10
 This page explains some terms you will see throughout the documentation site
  that are used as variables to represent site specific path information. 
 
+You may also wish to browse the [glossary](/user/first_steps/glossary/).
+
 ### YOURSITE
 
 The variable `YOURSITE` is used to to represent your domain name, and thus
