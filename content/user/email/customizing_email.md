@@ -218,5 +218,5 @@ email_template_gv_queue.html</td>
 A commonly requested change is adding a message to the email your 
 customers get when they place an order. 
 This is documented in [How can I add a message to my order confirmation emails? 
-](/user/email/email_misc/#how-can-i-add-a-message-to-my-order-confirmation-emails).
+](/user/email/add_message/).
 

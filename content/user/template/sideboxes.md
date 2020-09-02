@@ -30,7 +30,7 @@ The Specials Sidebox, on the other hand, shows product images and information.
 
 ### Sideboxes and Mobile 
 
-[Responsive](/user/templates/responsive/) templates often not display sideboxes on a mobile device (especially a phone) due to space limitations.  Instead the links provided by sideboxes may be accessed from the hamburger menu at the top of the site. 
+[Responsive](/user/template/responsive/) templates often not display sideboxes on a mobile device (especially a phone) due to space limitations.  Instead the links provided by sideboxes may be accessed from the hamburger menu at the top of the site. 
 
 <img alt="Mobile - closed" src="/images/mobile_closed.png" />
 
