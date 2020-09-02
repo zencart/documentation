@@ -24,7 +24,7 @@ Be sure to familiarize yourself with the content of the release (and any prior r
 1.  Backup your database
 1.  Create a new directory and copy your site into it
 1.  Then create a new database and load your old database in it
-1.  Do any database conversions necessary - only necesary if you have [custom date fields](/user/upgrading/date_standardization/)
+1.  Do any database conversions necessary - only necessary if you have [custom date fields](/user/upgrading/date_standardization/)
 1.  Next, change the two configure.php files to utilize the new directory and database  This way ... when you attempt to upgrade you are "practicing" to see where the problems, if any will happen  
 1.  Make sure all appears to be working on your temp site.
 1.  Now load the "new" version files to your new temp directory from latest downloaded ZIP

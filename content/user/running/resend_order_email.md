@@ -13,7 +13,7 @@ There are a few options but this seems like the best one:
 1. In the sidebar on the right, there is a button for Invoice
 1. Click the invoice button
 1. On the new page that opens, do a Print (either using Control-P or your browser's Print button from the File menu)
-1. A dialog will come up, and propt you to select a printer.  Select "Save as PDF".
+1. A dialog will come up, and prompt you to select a printer.  Select "Save as PDF".
 1. Email the customer the resultant PDF of their order. 
 
 ![Save as PDF](/images/save_as_pdf.png)
