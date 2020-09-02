@@ -20,6 +20,6 @@ The following list outlines the elements of a template:
 - [Sideboxes](/user/template/sideboxes/) - narrow pieces of content that are placed on the left and right edges of all pages
 - [Centerboxes](/user/template/centerboxes/) - wide pieces of content that are placed in the center of the page on specific pages 
 - [Stylesheet](/user/template/stylesheet/) - the CSS that controls the layout of the site 
-- [Responsiveness](/user/template/mobile_mode/) - modern templates must look good on mobile devices like phones and tablets 
+- [Responsiveness](/user/template/responsive/) - modern templates must look good on mobile devices like phones and tablets 
 
 

@@ -31,14 +31,9 @@ if ($detect->isMobile() || $detect->isTablet()) {
   ...
 ```
 
-You might also want to check ` $_SESSION['layoutType'] == 'mobile' )`  
-in case that variable is set. 
+You might also want to check ` $_SESSION['layoutType'] == 'mobile'` in case that variable is set. 
 
 Another approach is the one used by [Twitter Bootstrap](https://getbootstrap.com/).   Bootstrap uses Javascript to determine the appropriate presentation for the device in use.  Bootstrap proponents argue that bootstrap is faster to load and more well maintained than Mobile Detect.  You can observe how this is done in the Zen Cart admin, which makes heavy use of Bootstrap. 
 
-Yet another approach is **not to use** any offsite scripting or mobile detection script at all!  
-
-There is a movement in responsive design that requires some forward thinking in coding.  Using tables for true spreadsheet style lists only and nesting DIV tags and CSS for responsive designs.  By thinking of div tags as containers in layout designs you can create a responsive layout without using any scripting.  
-
-The desire to support different screens are even pushing a change in browsers and demanding a change in HTML. With Cascading Style Sheets CSS3 which is growing in versions so fast that version numbers are no longer used.
+Yet another approach is **not to use** any offsite scripting or mobile detection script at all.  This school of responsive web design emphasizes using tables only for true spreadsheet style lists, and nesting DIV tags and CSS. 
 
