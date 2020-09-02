@@ -5,11 +5,18 @@ category: template
 weight: 10
 ---
 
-*Admin > Configuration > Index Listing* doesn't control a row and column layout like the [listing page layout](/user/template/listing_page_layout/) pages for New Products, All Products and Featured Products. Instead, the *Index Listing* settings control location, sort order, number of products per row and category filtering. 
+*Admin > Configuration > Index Listing* doesn't control a row and column layout like the [listing page layout](/user/template/listing_page_layout/) pages for *New Products* and *Featured Products*. Instead, the **Index Listing** settings control location, sort order, number of products per row and category filtering for the  [**centerboxes**](/user/template/centerboxes/) only.
+
+The listing pages do have other configuration settings listed under *Admin > Configuration* but those listings are for the pages only and not the centerboxes. The <span style="color:red">red arrows</span> below point to the configuration settings for the actual pages with these urls: index.php?main_page=*featured_products*, index.php?main_page=*products_new* and the actual listing of products in a category. The <span style="color:blue;">blue arrow</span>, however, points to the **Index Listing** which only controls the *centerboxes*.
+
+![Configuration Dropdown Menu](/images/config_dropdown_cutout.png) 
+
+[Centerboxes](/user/template/centerboxes/) are located below the page content as portrayed in the image below. 
 
 ## Centerbox Location & Sort Order
 
 ![Centerbox Location](/images/centerbox_location.png)
+<br><br>
 
 For example, when you don't want to show *New Products* anywhere in the cart, you turn off the link in the Categories sidebox and make sure the *New Products* sidebox is disabled. The *New Products* are still showing, however, on all the listed pages in the centerboxes below the page content as shown in the above image. Your next step then is to change the settings in the **Index Listing:** 
 
@@ -17,9 +24,8 @@ For example, when you don't want to show *New Products* anywhere in the cart, yo
 
 Most of the **Index Listing** settings control whether the different centerboxes show on different pages. Other settings at the bottom of the menu control the number of products showing per row in the centerboxes. 
 
-The centerboxes are **New Products**, **Featured Products**, **Special Products** and **Upcoming** (or expected) **Products**. There are four settings for each centerbox which correspond to the four locations where the centerboxes are displayed.
+The centerboxes are **New Products**, **Featured Products**, **Special Products** and **Upcoming** (or Expected) **Products**. There are four settings for each centerbox which correspond to the four locations where the centerboxes are displayed.
 
-Those locations are **Main Page** (home), **Category with Subcategories**, **Errors & Missing Products** and **Product listing**. These are all turned on by default. 
 
 The *New*, *Featured* and *Special Products* all look the same: a row of products: 
 
@@ -28,7 +34,10 @@ The *New*, *Featured* and *Special Products* all look the same: a row of product
 The *Upcoming Products* looks very different:
 
 ![Upcoming Products Centerbox](/images/centerbox_upcoming.png)
-<br><br>
+
+## Page Locations
+
+Those locations are **Main Page** (or the home page), **Category with Subcategories**, **Product listing**, and **Errors & Missing Products**. These are all turned on by default. The image above shows the home page with the lower portion of the centerboxes. The  **Category with Subcategories** url starts /index.php?main_page=index&cPath=. This then is any category or subcategory that has a subcategory. **Product Listing** is a category with no subcategories where the products are listed on the page. **Errors & Missing Products** obviously is when a category or product does not exist but a visitor puts in the wrong url.  
 
 If you do not want a specific centerbox showing anywhere, change the number to zero on each of the four page locations. Anything besides zero designates the sort order of the boxes with the lowest number being displayed first. The default settings have *New Products* first and the others in this order: *Featured Products* (2), *Specials* (3) and *Upcoming* (4). 
 
@@ -63,3 +72,6 @@ Hardware Subcategories:
 Mouse Subcategory
 
 ![Mouse Subcategory Featured Product](/images/centerbox_featured_hardware.png)
+<br><br>
+
+**Note**: For setting up the [Centerboxes of the Empty Shopping Cart](/user/admin_pages/configuration/configuration_stock/), those settings are in the *Admin > Configuration > Stock*
