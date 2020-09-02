@@ -1,6 +1,6 @@
 ---
-title: Mobile or Desktop - determining in your template
-description: Determining your run time environment in Zen Cart 
+title: Mobile or Desktop state? - determining in your template
+description: Determining your visitor's device in Responsive Classic
 category: template
 weight: 10
 ---
