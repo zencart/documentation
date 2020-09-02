@@ -5,7 +5,7 @@ category: template
 weight: 10
 ---
 
-Responsiveness - the ability to display properly on not just a desktop computer, but also mobile devices like phones and tablets - is a critical feature of modern templates. 
+[Responsiveness](/user/template/responsive/) - the ability to display properly on not just a desktop computer, but also mobile devices like phones and tablets - is a critical feature of modern templates. 
 
 Determining the kind of device being used can be done in different ways.  How you do it will depend on the template you are running, and what tools are available with that template. 
 

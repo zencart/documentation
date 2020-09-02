@@ -14,6 +14,7 @@ Note: If a term is not in this list, you should use a web search to learn more a
 - Hoster - a company that provides servers for you to run your site on. See [hosting and domain concepts](/user/first_steps/hosting/).
 - Name Server - a piece of Internet infrastructure that converts a domain name to an IP Address.  See [hosting and domain concepts](/user/first_steps/hosting/).
 - Overrides - Zen Cart provides the capability of partitioning your changes from the base software; this is called the override feature.  See [Default files, template default and overrides](/user/first_steps/overrides/).
+- Responsive - a template is responsive if it is designed for mobile viewing (on a phone or tablet) as well as desktop viewing.  See [Responsive Templates](/user/template/responsive/). 
 - Shared Hosting - a hosting configuration that allows you to share a server with other users to reduce cost.  See [Hosting and Domain concepts](/user/first_steps/hosting/). 
 - Sidebox - a sidebox is a block of content on the left or right hand side of your page, when viewed on a desktop.  See [sideboxes](/user/template/sideboxes/). 
 - SSL - Secure Sockets Layer.  A technology that allows you to securely transfer information between your webserver and a client browser.  See [hosting and domain concepts](/user/first_steps/hosting/).
