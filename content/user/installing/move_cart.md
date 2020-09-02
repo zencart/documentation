@@ -5,7 +5,9 @@ category: installing
 weight: 10
 ---
 
-I have installed Zen Cart to a directory. How do I rename or move that directory?
+You can install Zen Cart in the root folder of your hosting account or in a subdirectory.  See [deployment configurations](/user/first_steps/deployment_configurations/) for examples. 
+
+If you change your mind, you can move your cart (from a subfolder to root or vice versa); you just have to update some settings when you do so. 
 
 ***Scenario:*** 
 

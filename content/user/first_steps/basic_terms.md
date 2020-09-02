@@ -17,7 +17,7 @@ called "John Doe Tools" and your domain is "JohnDoeTools.com", then
 
 **Note:**  If you wish, you may install your Zen Cart in a subfolder under your `public_html` folder. For example, the site above could be stored in 
 `/home/johndoe/public_html/shop/`, which would make the URL 
-`http://www.JohnDoeTools.com/shop`. 
+`http://www.JohnDoeTools.com/shop`.  See [deployment configurations](/user/first_steps/deployment_configurations).  
 
 However, for the sake of simplicity, the explanations on this site assume you did not do this.  Don't get hung up on the fact that an article will say 
 `http://www.YOURSITE.com` rather than `http://www.YOURSITE.com/YOURSUBFOLDER/`  - 

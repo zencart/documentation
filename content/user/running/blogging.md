@@ -5,12 +5,17 @@ category: running
 weight: 10
 ---
 
-Running a blog (WordPress), a forum (phpBB, Simple Machines), or a wiki on the website where you run your shopping cart is something many Zen Cart users find attractive. 
+Running a blog (WordPress), a forum (phpBB, Simple Machines), a CMS (Drupal, Joomla) or a wiki on the website where you run your shopping cart is something many Zen Cart users find attractive. 
 
 The problem is, these software packages don't maintain themselves.  You need to keep them updated or **you run the risk of being hacked**.  Even if you keep them updated, sometimes plugins are compromised by bad guys to enable sites to be hacked.  This is not just a theoretical risk - companies like Securi get most of their business from WordPress installations that have been hacked. 
 
-So what are some alternative options?
+So: you can do this, many people do this, but it has a cost and you'll need to devote more energy to maintenance and updates if you want go down this path. Proceed with caution. 
 
+Most people who deploy blogs or other tools use [deployment model 2](/user/first_steps/deployment_configurations/). 
+
+---
+
+What are some alternative options to running a blog with your Zen Cart installation?
 
 ### Create content using EZ-Pages 
 
