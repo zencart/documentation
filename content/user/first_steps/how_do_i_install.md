@@ -90,6 +90,8 @@ Your Zen Cart files (or *any* files to run your website, for that matter) need t
 
 If it's unclear where the publicly-accessible files are to be uploaded, ask your hosting company for assistance in determining what your **webroot** folder should be.
 
+Generally you will install Zen Cart either in your webroot or in a subfolder below it.  See [deployment configurations](/user/first_steps/deployment_configurations/) for more details. 
+
 ### Where will my files be in cPanel?
 
 Your files will go into your webroot, as defined above. 
@@ -158,6 +160,8 @@ Choosing a subfolder versus loading the files into webroot is entirely your
 choice.  The only time when you would really need to use a subfolder is if you
 already have a well established website are just adding on ecommerce using 
 Zen Cart.  In that case, you'd want to put your store below your existing site. 
+
+If you want to read more about using `YOURSUBFOLDER`, please see [deployment configurations](/user/first_steps/deployment_configurations/). 
 
 ---
 ## D. Set Permissions on folders

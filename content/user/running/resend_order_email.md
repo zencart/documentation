@@ -1,14 +1,27 @@
 ---
 title: Resend Order Email
-description: I need to resend the email that is sent to the customer at checkout 
+description: I need to resend the checkout email to a customer
 category: Running
 weight: 10
 ---
 
-This need can arise if the customer created an account but [mis-typed their email](/user/running/mistyped_email/). 
+Sometimes customers need you to send an invoice or another copy of their checkout confirmation emails. 
 
-There are a few options but this seems like the best one: 
+This can happen for a variety of reasons:
 
+- the customer created an account but [mis-typed their email](/user/running/mistyped_email/). 
+- they need an invoice for tax or record keeping purposes. 
+- your cart has an [email deliverability issue](/user/email/emails_not_received/). 
+
+Here are a few ways you can address this need. 
+
+## Forward them the Admin order confirmation 
+The administrator gets a confirmation email for each order, as long as the _Send Copy of Order Confirmation Emails To_ field in [Email Settings](/user/admin_pages/configuration/configuration_emailoptions/) is set. 
+
+Note that the administrator copy of the confirmation email has additional content at the bottom, which you may want to trim prior to forwarding. 
+
+
+## Creating a PDF Invoice from Admin 
 1. Go to Admin > Customers > Orders click on the order
 1. In the sidebar on the right, there is a button for Invoice
 1. Click the invoice button
@@ -18,5 +31,6 @@ There are a few options but this seems like the best one:
 
 ![Save as PDF](/images/save_as_pdf.png)
 
-Alternately, tell them to login to their account and click the "My Account" link, where they can see the order themselves.
+## Encouraging self service 
+Tell the customer to login to their account and click the "My Account" link, where they can see the order themselves.  They can use the steps above to turn this web page into a PDF.  As an option, the [Catalog Invoice](https://www.zen-cart.com/downloads.php?do=file&id=2111) plugin allows them to create a webpage from the order in the format of the admin invoice shown in the prior option 
 
