@@ -39,6 +39,18 @@ name of the file?
 Template files (the ones with `YOURTEMPLATE` - the [template name](/user/first_steps/basic_terms/#yourtemplate) in their path) are all
 altered copies of the default file.
 
+So if a referenced template file doesn't exist, you would create it from the default file.  
+
+### Example
+To create
+
+```
+includes/languages/english/YOURTEMPLATE/header.php
+```
+
+copy
+`includes/languages/english/header.php` to `includes/languages/english/YOURTEMPLATE/header.php`
+
 ### How do you find the default file? 
 
 a) For files under `/includes/templates`, the default file is `includes/templates/template_default/FOLDER/FILENAME`. 

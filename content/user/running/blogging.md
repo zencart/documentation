@@ -27,9 +27,9 @@ Tools like MailChimp have inexpensive offerings for small businesses that allow 
 
 ### Use a static site generator 
 
-Static Site Generators (SSGs) like [Hugo](https://gohugo.io/) and [Jekyll](https://jekyllrb.com/) allow you to build a sophisticated website using a tool, and output raw HTML which can run without a database or code interpretation.  This is much less risky than a dynamic application like WordPress. 
+Static Site Generators (SSGs) like [Hugo](https://gohugo.io/) and [Jekyll](https://jekyllrb.com/) allow you to build a sophisticated website using a tool, and output raw HTML which can run without a database or code interpretation.  Since  the final output of these tools is HTML-only, it is much less risky than WordPress (which has both PHP and MySQL as potential attack surfaces). 
 
 ### Create a blog offsite
 
-Really committed to a blog, are you?  Instead of self-hosting a WordPress blog, use [wordpress.com](https://wordpress.com/) and let them host it.  There are, of course, other hosted blogging services like [Blogger](https://www.blogger.com/) or [Tumblr](https://www.tumblr.com/). 
+Really committed to a blog, are you?  Instead of self-hosting a WordPress blog, why not use [wordpress.com](https://wordpress.com/) and let them host it.  There are, of course, other hosted blogging services like [Blogger](https://www.blogger.com/) or [Tumblr](https://www.tumblr.com/). 
 
