@@ -1,5 +1,5 @@
 ---
-title: Mistyped Email Address
+title: Fixing a Mistyped Email Address
 description: My customer has mis-typed their email address and now can't login
 category: Running
 weight: 10

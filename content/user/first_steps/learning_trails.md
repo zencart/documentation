@@ -39,6 +39,11 @@ Take a look at [exploring the documentation](/user/first_steps/documentation/) t
 - [How do I rename my admin folder?](/user/installing/rename_admin/) 
 - [Browse the Admin menu sections](/user/admin_pages/menu_sections/)
 
+## Learn about Running your Zen Cart 
+- [Regular Maintenance for Zen Cart](/user/running/regular_maintenance/) - What kinds of routine maintenance should I be doing? 
+- [Logging in as a Customer](/user/running/login_as_customer/) - How do I place orders on behalf of a customer? 
+- [Tracking Inventory](/user/running/stock/) - What are my options for inventory tracking? 
+
 ## Learn Zen Cart Development 
 - [Querying the Database](/dev/code/database_querying/)
 - [Observer/Notifier System](/dev/code/notifiers/)

@@ -70,3 +70,8 @@ Home Page |`define_main_page.php` |  `index.php`
 <br>
 
 If your needs go beyond what is provided by the define pages, take a look at the FAQ on [adding pages](/user/customizing/add_pages/), which describes the use of [EZ-Pages](/user/ezpages/) as well as using plugins to build custom pages for your Zen Cart installation. 
+
+### Related 
+
+- [ Why does my define page not show up in Define Pages Editor?](/user/troubleshooting/define_not_showing/)
+

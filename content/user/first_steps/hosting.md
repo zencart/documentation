@@ -115,6 +115,12 @@ You will need to use an [FTP Tool](/user/first_steps/useful_tools/#ftp-tools)
 to transfer files between your computer and your server.  
 An example of transferring a file is provided in [Installing a File](/user/new_user_topics/no_such_file/#installing-a-file). 
 
+### cron 
+
+Cron is a utility on Linux hosting accounts that allows you to automatically schedule jobs to run at specific intervals.  An example of a job you might want to run is the [exchange rate updater](/user/admin_pages/localization/currencies/#update-currencies). 
+
+Facilities for setting up cron jobs vary; contact your hoster for details. 
+
 ### SSL Certificates
 
 An SSL certificate allows your content to be securely accessed 

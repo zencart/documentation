@@ -220,9 +220,9 @@ If you have the correct ISO 4217 code in the _code_ column, you can click on the
 
 Rates that are correctly converted will be listed in green at the top of the page. Rates that were not correctly converted will be listed in red. The website will probably try more than one converter if it has a failure in converting a particular currency. Pay attention to any red items in case you may have misspelled the ISO 4217 code for that currency, as it will not have been correctly updated. Any that were not correctly updated (either because of error or because the conversion site did not have the correct values for that currency) will have to be manually updated using the edit feature.
 
-Once you have verified that clicking the Update Currencies button operates correctly and without errors, you can optionally create a "cron job" in your hosting company's control panel to run the update automatically on a scheduled basis. The command to give it is as follows. Work with your hosting company's tech support team if you need help with determining the correct path and the correct php binary to call.
+Once you have verified that clicking the Update Currencies button operates correctly and without errors, you can optionally create a [cron job](/user/first_steps/hosting/#cron) in your hosting company's control panel to run the update automatically on a scheduled basis. The command to give it is as follows. Work with your hosting company's tech support team if you need help with determining the correct path and the correct php binary to call.
 
-```code
+```
 php /full/server/path/to/admin/currency_cron.php
 ```
 

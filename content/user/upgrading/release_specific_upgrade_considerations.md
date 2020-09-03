@@ -10,6 +10,10 @@ This document lists things you may wish to take into account as you upgrade.  Th
 - changes to the database schema or contents which deserve special notice
 - changes to basic template operation 
 
+### ALL Versions 
+
+- Check the versions of any JavaScript libraries you are importing to ensure that you are running the latest, and not an older version with known vulnerabilities. 
+
 ### Zen Cart 1.5.8
 
 - The function `zen_cfg_read_only` has been added to the core.  This means any plugin authors who use this function should remove it from the plugin (for 1.5.7+) or wrap it in `if (!function_exists('zen_cfg_read_only'))` (for older versions of Zen Cart). 
@@ -28,6 +32,8 @@ This document lists things you may wish to take into account as you upgrade.  Th
     If you have created additional cron jobs and used this file as a base, please apply the 1.5.7 changes to your custom files.
 
 - The field `products_description.products_viewed` has been deprecated. It will be deleted in a future release.  Product view tracking is now done using the table `count_product_views`. 
+
+- External links have been updated to use `rel="noopener"` or `rel="noreferrer noopener"`.  If you use external links (for social networking, manufacturer sites, product URLs, etc.) you should update your template to adopt this practice. 
 
 ### Zen Cart 1.5.6 
 

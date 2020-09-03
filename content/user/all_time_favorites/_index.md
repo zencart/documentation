@@ -36,6 +36,8 @@ layout: docs
 
 * [Release history for Zen Cart](/user/about_us/release_history/) - with links to Release Notes.  And don't forget the [security patches](/user/about_us/security_releases/), especially if you are not on the latest version. 
 
+* [Regular Maintenance for Zen Cart](/user/running/regular_maintenance/) - What kinds of routine maintenance should I be doing? 
+
 * [Server Requirements for running Zen Cart](/user/first_steps/server_requirements/) - Zen Cart version to PHP version matrix.
 
 * Templates and Overrides - how do I use them?  Read 
