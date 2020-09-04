@@ -5,9 +5,11 @@ category: shipping
 weight: 10
 ---
 
+The [USPS Shipping Module](https://www.zen-cart.com/downloads.php?do=file&id=1292) is provided as a [plugin for Zen Cart](/user/plugins/why_plugins/). 
+
 In order to use the USPS module, you need to have a USPS WebTools account, signed up to use their Rate Calculator API.
 
-If you have an account with USPS for using shipping assistance this is not the same as the WebTools user ID needed for the shopping cart.
+If you have an account with USPS for using shipping assistance, this is not the same as the WebTools user ID needed for the shopping cart.
 
 You must have a separate WebTools user ID for each web store.
 

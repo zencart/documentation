@@ -12,7 +12,9 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 ### ALL Versions 
 
-- Check the versions of any `javascript` libraries you are importing to ensure that you are running the latest, and not an older version with known vulnerabilities. Your template's `html_header.php` or `jscript/jscript_xxxxxxx.*` files are common places to check. Remember that addons to templates often bring in their own jQuery version that is likely older than the one you want to use for your template. Make sure you're only loading **one** and that it's current and compatible with all the other javascript and/or jQuery features you're already using.
+- Part of staying up to date is monitoring your [JavaScript libraries](/user/upgrading/javascript_updates/). Be sure you're not running a version with known vulnerabilities. 
+
+- Be sure external links are constructed with `rel="noreferrer noopener"`. 
 
 ### Zen Cart 1.5.8
 

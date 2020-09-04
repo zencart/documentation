@@ -29,4 +29,5 @@ Yes.  You can review the [security releases](/user/about_us/security_releases/) 
 - Perform the [recommended regular maintenance](/user/running/regular_maintenance/) of your cart. 
 - Follow the [security recommendations](/user/security/security_recommendations/) from Dr. Byte. 
 - Keep track of [the PHP Version Support Policy](https://www.php.net/supported-versions.php) so you know when the [PHP version you are running](/user/admin_pages/admin_version/) is at or near end of life.
+- Watch your [JavaScript libraries](/user/upgrading/javascript_updates/).  As vulnerabilities are discovered, you will need to update them. 
 
