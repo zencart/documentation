@@ -1,6 +1,6 @@
 ---
-title: Fixing a Mistyped Email Address
-description: My customer has mis-typed their email address and now can't login
+title: Fixing a Mis-typed Email Address
+description: My customer has a typo in their email address and now can't login
 category: Running
 weight: 10
 ---

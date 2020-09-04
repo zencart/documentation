@@ -31,5 +31,5 @@ a) rename your images so they don't share a common filename.  Right now since y
 This is explained further in [Working with Additional Images](/user/images/adding_multiple_images_to_a_product/). 
 
 b) or turn off all extra-image functionality by following 
-[these directions](/user/images/additional_images/). 
+the directions above to disable additional images.
 

@@ -1,6 +1,6 @@
 ---
 title: What are EZ-Pages? 
-description: What are EZ-Pages in Zen Cart? 
+description: The easiest way to add content to your site 
 category: ezpages
 weight: 10
 ---

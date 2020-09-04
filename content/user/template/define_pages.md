@@ -74,4 +74,5 @@ If your needs go beyond what is provided by the define pages, take a look at the
 ### Related 
 
 - [ Why does my define page not show up in Define Pages Editor?](/user/troubleshooting/define_not_showing/)
+- [ Extra Pages](/user/template/extra_pages/)
 

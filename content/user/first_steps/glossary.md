@@ -23,7 +23,7 @@ Note: If a term is not in this list, you should use a web search to learn more a
 - Template Files - The individual files which provide the customization for the site.  See [Default files, template default and overrides](/user/first_steps/overrides/).
 - VPS - a hosting configuration that puts you on your own dedicated server.  See [Hosting and Domain concepts](/user/first_steps/hosting/). 
 - Webroot - The top level folder that is visible to someone using a web browser.  See [how do I install Zen Cart](/user/first_steps/how_do_i_install/). 
-- Webserver - the computer associated with your hosting account that runs your website *or* the program on that hosting account that serves webpages (e.g. Apache).  See [hosting and domain concepts](/user/first_steps/hosting/).
+- Webserver - the computer associated with your hosting account that runs your website *or* the program on that hosting account that serves web pages (e.g. Apache).  See [hosting and domain concepts](/user/first_steps/hosting/).
 - `YOURACCOUNTFOLDER` - the folder  in your hosting account which holds your site's files. See [basic terms](/user/first_steps/basic_terms/). 
 - `YOURLANGUAGE` - the language your site is presented in, default `english`.  See [basic terms](/user/first_steps/basic_terms/). 
 - `YOURSITE` - the domain name you are using.  See [basic terms](/user/first_steps/basic_terms/). 
