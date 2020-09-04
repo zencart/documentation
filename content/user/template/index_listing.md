@@ -7,7 +7,13 @@ weight: 10
 
 *Admin > Configuration > Index Listing* doesn't control a row and column layout like the [listing page layout](/user/template/listing_page_layout/) pages for *New Products* and *Featured Products*. Instead, the **Index Listing** settings control location, sort order, number of products per row and category filtering for the  [**centerboxes**](/user/template/centerboxes/) only.
 
-The listing pages do have other configuration settings listed under *Admin > Configuration* but those listings are for the pages only and not the centerboxes. The <span style="color:red">red arrows</span> below point to the configuration settings for the actual pages with these urls: index.php?main_page=*featured_products*, index.php?main_page=*products_new* and the actual listing of products in a category. The <span style="color:blue;">blue arrow</span>, however, points to the **Index Listing** which only controls the *centerboxes*.
+The listing pages do have other configuration settings listed under *Admin > Configuration* but those listings are for the pages only and not the centerboxes. The <span style="color:red">red arrows</span> below point to the configuration settings for the actual pages with these urls: 
+
+- `index.php?main_page=featured_products` 
+- `index.php?main_page=products_new`
+- `index.php?main_page=index&cPath=...`
+
+The <span style="color:blue;">blue arrow</span>, however, points to the **Index Listing** which only controls the *centerboxes*.
 
 ![Configuration Dropdown Menu](/images/config_dropdown_cutout.png) 
 
@@ -74,4 +80,4 @@ Mouse Subcategory
 ![Mouse Subcategory Featured Product](/images/centerbox_featured_hardware.png)
 <br><br>
 
-**Note**: For setting up the [Centerboxes of the Empty Shopping Cart](/user/admin_pages/configuration/configuration_stock/), those settings are in the *Admin > Configuration > Stock*
+**Note**: The centerboxes shown on the Shopping Cart page when it is empty are controlled in [Admin > Configuration > Stock](/user/admin_pages/configuration/configuration_stock/). 

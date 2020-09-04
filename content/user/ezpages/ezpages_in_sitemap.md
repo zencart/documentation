@@ -1,6 +1,6 @@
 ---
 title: Sitemap support for EZ-Pages 
-description: Sitemap support for EZ-Pages in Zen Cart 
+description: Adding EZ-Pages to your site map 
 category: ezpages
 weight: 10
 ---
