@@ -32,5 +32,8 @@ Note that the administrator copy of the confirmation email has additional conten
 ![Save as PDF](/images/save_as_pdf.png)
 
 ## Encouraging self service 
-Tell the customer to login to their account and click the "My Account" link, where they can see the order themselves.  They can use the steps above to turn this web page into a PDF.  As an option, the [Catalog Invoice](https://www.zen-cart.com/downloads.php?do=file&id=2111) plugin allows them to create a webpage from the order in the format of the admin invoice shown in the prior option 
+Tell the customer to login to their account and click the "My Account" link, where they can see all their past orders, and click through to the specific one.
+They can print that screen, either to paper or PDF (see above).
+
+If your store needs to let customers make a PDF on a regular basis, the [Catalog Invoice](https://www.zen-cart.com/downloads.php?do=file&id=2111) plugin might be of interest.
 
