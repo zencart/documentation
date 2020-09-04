@@ -1,6 +1,6 @@
 ---
 title: I don't have the file YOURTEMPLATE/some-name
-description: Zen Cart Template File missing 
+description: What if a template file is missing? 
 category: new_user_topics
 weight: 10
 ---

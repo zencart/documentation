@@ -1,6 +1,6 @@
 ---
 title: How do I turn off the listing of categories that goes across the top of my page?
-description: Disabling category tabs 
+description: Disabling categories tabs 
 category: new_user_topics 
 weight: 10 
 ---

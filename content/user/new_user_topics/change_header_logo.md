@@ -1,6 +1,6 @@
 ---
 title: How do I change the logo or the logo alt text in the header?
-description: Changing the header logo in Zen Cart 
+description: Getting your logo to show 
 category: new_user_topics
 weight: 10
 aliases: 
