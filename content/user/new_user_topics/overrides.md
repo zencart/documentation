@@ -1,6 +1,6 @@
 ---
 title: Overrides for New Users
-description: Zen Cart Template Overrides for New Users
+description: Template Overrides for New Users
 category: new_user_topics
 weight: 10
 ---

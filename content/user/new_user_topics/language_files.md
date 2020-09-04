@@ -1,6 +1,6 @@
 ---
 title: Language Files - What are they and how are they used?
-description: Zen Cart Language Files - how are they used? 
+description: Where and how are language strings defined? 
 category: new_user_topics
 weight: 10
 ---

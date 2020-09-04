@@ -28,4 +28,18 @@ For example, if you wished the terms and conditions link to appear first, you wo
   unset ($information);
 ```
 
+### How do I add a link to the Information Sidebox? 
 
+We create the [override file](/user/first_steps/overrides/) `includes/templates/YOURTEMPLATE/sideboxes/tpl_information.php`.  
+
+Right before the list end 
+
+```
+  $content  .= '</ul>' . "\n";
+```
+
+we add the link: 
+
+```
+    $content .= '<li><a href="https://www.zen-cart.com/" target="_blank" rel="noreferrer noopener">The Greatest Shopping Cart Ever!</a></li>' . "\n" ;
+```

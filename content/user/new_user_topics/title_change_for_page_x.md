@@ -5,6 +5,8 @@ category: new_user_topics
 weight: 10
 ---
 
+`PAGE_2`, `PAGE_3` and `PAGE_4` are called the [extra pages](/user/template/extra_pages/). 
+
 To change the name of `page_2`, `page_3` or `page_4`  
 
 1\. open the appropriate file: `/includes/languages/YOURLANGUAGE/page_?.php`
@@ -30,3 +32,5 @@ Define | URL
 PAGE_2 | index.php?main_page=page_2
 PAGE_3 | index.php?main_page=page_3
 PAGE_4 | index.php?main_page=page_4
+
+

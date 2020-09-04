@@ -1,6 +1,6 @@
 ---
 title: How do I determine which files to edit? 
-description: In Zen Cart, how do I determine which files to edit? 
+description: Where do I make the change? 
 category: template
 weight: 10
 ---
