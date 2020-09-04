@@ -45,8 +45,10 @@ Take a look at [exploring the documentation](/user/first_steps/documentation/) t
 - [Tracking Inventory](/user/running/stock/) - What are my options for inventory tracking? 
 
 ## Learn Zen Cart Development 
+- [Technologies used in Zen Cart](/user/first_steps/technologies/)
 - [Querying the Database](/dev/code/database_querying/)
 - [Observer/Notifier System](/dev/code/notifiers/)
+- [Sanitization](/dev/code/admin_sanitization/)
 - [Auto Inclusion](/dev/code/inclusion/)
 - [Github Workflow for Zen Cart](/dev/contributing/github_workflow/)
 - [Plugins for Developers](/dev/plugins/)

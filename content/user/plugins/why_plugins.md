@@ -21,13 +21,17 @@ release schedule for Zen Cart, so it's not a candidate for inclusion
 into the core.  A similar logic applies to URL rewriting plugins, which 
 are often tied to a particular web server such as Apache. 
 
-## The plugin uses a third party API 
+## The plugin is an integration with an external system 
+
+As an example, consider the USPS shipping module. 
+
 The reason that the USPS shipping module is no longer bundled with Zen 
 Cart is that it changes on a schedule set by USPS, not Zen Cart. 
 Thus, any particular release of Zen Cart which included USPS could be 
 shipping an obsolete version of the software. 
 
-For this reason, USPS and UPS functionality is now provided by plugins. 
+For this reason, USPS functionality is now provided by a plugin. 
+The same is true for UPS and many other modules. 
 
 ## Desire to keep the core small 
 The smaller Zen Cart is, the easier it is to maintain, for both 

@@ -124,4 +124,4 @@ Zen Cart is not regularly tested or supported on Windows Servers or IIS.  We don
 
 
 ## Perl, Python, CGI and other languages?  
-Zen Cart does not use Perl or Python or CGI.
+Zen Cart does not use Perl or Python or CGI.  See [technologies used in Zen Cart](/user/first_steps/technologies/). 
