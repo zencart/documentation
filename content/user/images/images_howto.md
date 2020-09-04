@@ -74,6 +74,6 @@ In this example scenario we want the large picture to be either 480 pixels wide 
 11. Upload them all to **images/medium**  
 12. Create another folder called **small**. Copy all the images from **large** to it.  
 13. Run a batch-process on the files in **small** to resize to 125 pixels square; you may as well optimize for web as well.  
-14. Upload them all to **images**.  
+14. Upload the resized **images/small** files to the **images** folder (yes, "images", not "images/small") on the server.
 
 You have now given Zen Cart the best chance of giving your visitors the best visual display at the optimum download time.
