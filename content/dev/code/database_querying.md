@@ -64,9 +64,24 @@ rule | meaning
 `passthru` | no treatment; this should be avoided; only suitable for data already sanitized by a different means
 
 
+### Alternative to BindVars
+
+For very simple queries where you want to handle the casting manually, or just treat the value as a string, you may use `zen_db_input()` or `$db->prepare_input()`:
+
+```php
+$sql = "SELECT p.products_id, p.products_model, pd.products_name
+        FROM " . TABLE_PRODUCTS . " p
+        LEFT JOIN " . TABLE_PRODUCTS_DESCRIPTION . " pd USING (products_id)
+        WHERE pd.languages_id = " . (int)zen_db_input($_POST['user_language_id']) . "
+        LIMIT 10";
+```
+
+NOTE: `zen_db_input()` is an alias for `$db->prepare_input()`, (which essentially runs `mysqli_real_escape_string()` behind the scenes).
+
+
 ## Running the Query
 
-The prepared query is now executed using:
+The prepared query can now be executed using:
 
 ```php
 $results = $db->Execute($sql);
