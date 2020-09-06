@@ -17,9 +17,3 @@ Replace `Tagline Here` with your own text, making sure that the single quote mar
 
 Save the edited file to `includes/languages/english/YOURTEMPLATE/header.php` and upload it to your server.
 
-NB: By default, the text “Sales Message Goes Here” is also located in `includes/languages/english/header.php` 
-
-```
-define('HEADER_SALES_TEXT', 'Sales Message Goes Here');
-```
-
