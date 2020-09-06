@@ -34,5 +34,5 @@ Static Site Generators (SSGs) like [Hugo](https://gohugo.io/) and [Jekyll](https
 Really committed to a blog, are you?  Instead of self-hosting a WordPress blog, why not use [wordpress.com](https://wordpress.com/) and let them host it.  There are, of course, other hosted blogging services like [Blogger](https://www.blogger.com/) or [Tumblr](https://www.tumblr.com/). 
 
 ### Consider community building software 
-For some businesses, building a community makes sense.  Take a look at [Wild Apricot](https://wildapricot.com) and [Mighty Networks](https://www.mightynetworks.com/). 
+For some businesses, building a community makes sense.  Take a look at [Wild Apricot](https://wildapricot.com) or [Mighty Networks](https://www.mightynetworks.com/) or [Tribe.so](https://tribe.so).
 
