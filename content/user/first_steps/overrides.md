@@ -9,7 +9,7 @@ Zen Cart has a templating capability that allows you to modify the
 functionality and appearance of the cart.  This capability sometimes called 
 "overrides," "template overrides," or "overriding a file."  
 
-Once you have built a new template (more on this later) and overrridden
+Once you have built a new template (more on this later) and overridden
 the files you want to change, you can switch back and forth between
 your new template and the default template from the admin using 
 [Tools > Template Selection](/user/admin_pages/tools/template_selection/).
