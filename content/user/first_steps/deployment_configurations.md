@@ -10,6 +10,9 @@ Any of these are legitimate deployments.
 
 Please be sure you're familiar with [basic terms in Zen Cart](/user/first_steps/basic_terms/) prior to reading this FAQ.
 
+For instructions on moving your cart from the root to a subfolder (or vice versa), see [moving your Zen Cart folder](/user/installing/move_cart/).
+
+
 ## 1. Cart in root of store 
 
 The configuration that is assumed throughout the Storeowner Docs is that you have installed Zen Cart in the root of your hosting account.
@@ -53,5 +56,6 @@ RewriteEngine On
 RewriteRule ^index\.php$ /store/ [L]
 ```
 
-For instructions on moving your cart from the root to a subfolder (or vice versa), see [moving your Zen Cart folder](/user/installing/move_cart/).
+## 5. Advanced: Separate subdirectories for different versions
 
+Technical staff with advanced server understanding may prefer to use version-numbered directories for their Zen Cart folder, and then redirect the site's DocumentRoot setting to point to the versioned-subdirectory either by editing a vhost configuration or using a symlink. This can be convenient for staging upgrades that allow for near-zero downtime, and also very convenient downgrading if a problem were to occur. This is a strategy that should only be used by someone with advanced understanding of Zen Cart and how server vhost configurations and symlinks work.
