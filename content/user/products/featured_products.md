@@ -1,6 +1,6 @@
 ---
 title: Featured Products
-description: Zen Cart Featured Products 
+description: Highlighting specific products in your store 
 category: categories
 weight: 10
 ---

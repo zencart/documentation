@@ -5,7 +5,7 @@ category: running
 weight: 10
 ---
 
-Running a blog (WordPress), a forum (phpBB, Simple Machines), a CMS (Drupal, Joomla) or a wiki on the website where you run your shopping cart is something many Zen Cart users find attractive. 
+Running a blog (WordPress), a forum (phpBB, Simple Machines), a CMS (Drupal, Joomla) or a wiki (WikiMedia) on the website where you run your shopping cart is something many Zen Cart users find attractive. 
 
 The problem is, these software packages don't maintain themselves.  You need to keep them updated or **you run the risk of being hacked**.  Even if you keep them updated, sometimes plugins are compromised by bad guys to enable sites to be hacked.  This is not just a theoretical risk - companies like Securi get most of their business from WordPress installations that have been hacked. 
 
@@ -32,4 +32,7 @@ Static Site Generators (SSGs) like [Hugo](https://gohugo.io/) and [Jekyll](https
 ### Create a blog offsite
 
 Really committed to a blog, are you?  Instead of self-hosting a WordPress blog, why not use [wordpress.com](https://wordpress.com/) and let them host it.  There are, of course, other hosted blogging services like [Blogger](https://www.blogger.com/) or [Tumblr](https://www.tumblr.com/). 
+
+### Consider community building software 
+For some businesses, building a community makes sense.  Take a look at [Wild Apricot](https://wildapricot.com) and [Mighty Networks](https://www.mightynetworks.com/). 
 

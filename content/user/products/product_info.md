@@ -1,6 +1,6 @@
 ---
 title: Product Info page 
-description: Zen Cart Product Info page
+description: The add to cart page
 category: products
 weight: 10
 ---

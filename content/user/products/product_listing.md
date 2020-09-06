@@ -1,6 +1,6 @@
 ---
 title: Listing pages 
-description: Zen Cart Listing pages 
+description: New Products, Featured Products and All Products
 category: products
 noindex: yes
 weight: 10

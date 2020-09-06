@@ -1,6 +1,6 @@
 ---
 title: Upcoming Products
-description: Zen Cart Upcoming Products 
+description: Products that will be available in the future 
 category: categories
 weight: 10
 ---

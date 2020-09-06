@@ -1,6 +1,6 @@
 ---
 title: Linked Product - what is it? 
-description: What are Linked Products in Zen Cart
+description: Showing a product in multiple categories
 category: products
 weight: 10
 ---

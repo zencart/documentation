@@ -1,6 +1,6 @@
 ---
 title: Special Products
-description: Zen Cart Special Products 
+description: Reducing the price on a single product
 category: categories
 weight: 10
 ---
