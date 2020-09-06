@@ -7,7 +7,7 @@ weight: 10
 
 Note: If a term is not in this list, you should use a web search to learn more about it.  This list is intended to be specific to Zen Cart with only a minimal number of additional generic terms. 
 
-- Categories Tabs - [Categories Tabs](/user/new_user_topics/categories_tabs/) is the name of a feature that places a set of links to every category in your store across the width of your home page. 
+- Categories Tabs - [Categories Tabs](/user/new_user_topics/categories_tabs/) is the name of a feature that places a set of links to every category in your store across the width of your home page just below the logo and tagline. 
 - Centerbox - a [centerbox](/user/template/centerboxes/) is a block of content in the middle of the page.  
 - cPanel - a branded hosting control panel which is very popular.  See [Hosting and Domain concepts](/user/first_steps/hosting/). 
 - Default Files - The file provided by the base software that provides some functionality which can be overridden using a template file.  See [Default files, template default and overrides](/user/first_steps/overrides/).
@@ -26,7 +26,7 @@ Note: If a term is not in this list, you should use a web search to learn more a
 - Shared Hosting - a hosting configuration that allows you to share a server with other users to reduce cost.  See [Hosting and Domain concepts](/user/first_steps/hosting/). 
 - Sidebox - a [sidebox](/user/template/sideboxes/) is a block of content on the left or right hand side of your page, when viewed on a desktop.  
 - SSL - Secure Sockets Layer.  A technology that allows you to securely transfer information between your webserver and a client browser.  See [hosting and domain concepts](/user/first_steps/hosting/).
-- Template - Set of files which provide the skin for the site. See [Default files, template default and overrides](/user/first_steps/overrides/).
+- Template - Set of files which provide the skin or appearance such as colors or fonts for the site. See [Default files, template default and overrides](/user/first_steps/overrides/).
 - Template Files - The individual files which provide the customization for the site.  See [Default files, template default and overrides](/user/first_steps/overrides/).
 - VPS - a hosting configuration that puts you on your own dedicated server.  See [Hosting and Domain concepts](/user/first_steps/hosting/). 
 - Webroot - The top level folder that is visible to someone using a web browser.  See [how do I install Zen Cart](/user/first_steps/how_do_i_install/). 
