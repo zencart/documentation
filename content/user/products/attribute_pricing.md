@@ -34,7 +34,6 @@ XXL ($40)
 Using the [Attributes Controller](/user/admin_pages/catalog/attributes_controller/) you can adjust attribute prices in a number of ways. 
 
 ![Prices and Weights](/images/attributes_controller_prices.png) 
-[Larger image](/images/attributes_controller_prices.png) 
 
 - Entering a value in the *Price* field will increase the price by the specified value.  A decrease ("-") option is also available to lower the price. 
 
@@ -42,7 +41,20 @@ Using the [Attributes Controller](/user/admin_pages/catalog/attributes_controlle
 
 - OFFSET/ONETIME OFFSET - FIXME  
 
-- An attribute may be subject to quantity discounting using the fields *Attributes Qty Price Discount* and *Onetime Attributes Qty Price Discount*.   These settings are configured using [colon-separated pairs](/user/running/colon-separated-pairs/). 
+- An attribute may be subject to quantity discounting using the fields *Attributes Qty Price Discount* and *Onetime Attributes Qty Price Discount*.   These settings are configured using [colon-separated pairs](/user/running/colon-separated-pairs/).  
 
 - Pricing by Word or Letter - Both of these options are available for attributes with option type Text. 
 
+### Attribute Quantity Discounting vs Product Quantity Discounting
+
+If you only want to discount a specific variant of a product, with a specific attribute setting, attribute quantity discounting is the solution.  
+
+Suppose you want to charge $10 for size XL shirts.  To do this, you would go to Attributes Controller, edit the attribute XL, and set the Price field, under Prices and Weights, to 10. 
+
+Now suppose you want to change the pricing for XL shirts, so that you charge $10 for purchases of 1-4, but quantities of 5 or more, you only charge $3.  Remove the Price setting of 10, and enter the following in Attributes Qty Price Discount: 
+
+4:10,5:3
+
+This is an example of [colon separated pairs configuration](/user/running/colon-separated-pairs/) which is common in Zen Cart.  In this case, this setting is read, "for quantities of up to 4, add $10 to the price; for quantities of 5 or more, add 3 to the price." 
+
+**Note:** Don't confuse attribute discounts with [product quantity discounts](/user/products/quantity_discounts/), which are set using [Products Price Manager](/user/admin_pages/catalog/products_price_manager/). Product Quantity Discounting discounts bulk purchases of a specific product, irrespective of how its attributes are set.   

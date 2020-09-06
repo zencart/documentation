@@ -9,3 +9,5 @@ This page contains a variety of settings for handling product pricing (and other
 [special price](/user/admin_pages/catalog/specials/) and 
 [per-product quantity discounts](/user/products/quantity_discounts/).
 
+
+**Note:** Don't confuse these **product** quantity discounts with [**attribute** quantity discounts](/user/products/attribute_pricing/#settings-in-attributes-controller), which are set in the [Attributes Controller](/user/admin_pages/catalog/attributes_controller/#quantity-discounts). 

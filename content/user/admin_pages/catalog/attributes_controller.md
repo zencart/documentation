@@ -124,6 +124,8 @@ As you can see, the number you enter is the maximum limit of the discount, and t
 
 Negative numbers work for in these entries as well, making them quantity discounts or quantity charges. This is useful if you define a base price and would like to allow the user to have the discount off the base price.
 
+**Note:** Don't confuse these **attribute** discounts with [**product** quantity discounts](/user/products/quantity_discounts/), which are set using [Products Price Manager](/user/admin_pages/catalog/products_price_manager/). 
+
 ## Attribute Flags 
 
 ![Prices and Weights](/images/attribute_flags.png) 
