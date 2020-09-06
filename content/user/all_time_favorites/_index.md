@@ -10,6 +10,8 @@ layout: docs
 <!-- please keep in alphabetic order -->
 <!-- remember to start links with "/" -->
 
+* [Documentation ](/user/first_steps/documentation/) - hints and examples for using this documentation
+
 * [Add a Page](/user/customizing/add_pages/) - how do I add a new page to my cart? 
 
 * [Admin Password Reset](/user/troubleshooting/reset_admin_password/) - how to reset your password if you have forgotten it.
