@@ -101,7 +101,7 @@ echo '<a href="' . zen_href_link(FILENAME_EZPAGES, "id=27") . '">' . "My New EZ-
 
 **Zen Cart Upgrades**  
 
-Using the override system means you don't have to worry about over-writing your YOURTEMPLATE files when an upgrade comes along, because they are all in YOURTEMPLATE directories.  
+Using the override system means you don't have to worry about overwriting your YOURTEMPLATE files when an upgrade comes along, because they are all in YOURTEMPLATE directories.  
 
 During an upgrade you may find that new code was added to some of the core files that you are overriding. Its very easy to  compare the files in your override directories to the upgraded files. Using a 
 [file compare utility](/user/first_steps/useful_tools/#file-comparison-utility),
