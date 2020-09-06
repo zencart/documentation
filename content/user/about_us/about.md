@@ -21,7 +21,7 @@ If you find a security issue, please do not release your finding publicly; inste
 
 Zen Cart is open-source. As such, the intent is that it is extensible. The core of Zen Cart is intended to support a very diverse range of users; however, it is not intended to suit "everyone's" needs directly. Instead, we endeavor to continually make the code more adaptable and able to be enhanced by way of [community-contributed/supported plugins](/user/plugins/) that can be added to Zen Cart with minimal difficulty. In this regard, we encourage community contributions of custom-written code. 
 
-We recognize that  of custom-written code is typically created with the aim of solving one's own individual business challenges, and are not generally written to benefit "everyone". We are also aware that contributions are written with varying degrees of skillsets and comprehension of overall code. Thus, we continue to attempt to make it possible to "plug in" without having to alter core code if possible.
+We recognize that custom-written code is typically created with the aim of solving one's own individual business challenges and is not generally written to benefit "everyone". We are also aware that contributions are written with varying degrees of skillsets and comprehension of overall code. Thus, we continue to attempt to make it possible to "plug in" without having to alter core code if possible.
 See [plugin interfaces](/user/plugins/about_plugins/#plugin-interfaces) for details. 
  Not every situation is perfect, but we keep growing in this area.  
 
