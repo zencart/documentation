@@ -19,7 +19,7 @@ When installing Zen Cart, you tell Zen Cart which database to store its data in.
 
 ## How many databases does Zen Cart use?
 
-Generally speaking, a Zen Cart store only uses **one** database at a time.**  
+Generally speaking, a Zen Cart store only uses **one** database at a time.  
 
 **THIS MEANS YOU SHOULD NEVER RESTORE or IMPORT a different database into your live store's database unless you're absolutely certain that you wish to WIPE OUT the existing data!!!**  
 
