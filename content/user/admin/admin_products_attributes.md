@@ -13,4 +13,3 @@ When the button for attributes ("A") is black, as it is on the top row, the prod
 
 When it is not black, as shown on the bottom row, the product has one or more attributes. 
 
-On the storefront side, products with attributes may be 
