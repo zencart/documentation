@@ -1,11 +1,11 @@
 ---
-title: Where is the Admin / Back-end interface? 
+title: Where is the Admin / Back-end / Control Panel interface? 
 description: I don't have an "/admin" folder!
 category: first_steps 
 weight: 10
 ---
 
-You can access the Zen Cart admin area via your browser by pointing it to:
+You can access the Zen Cart admin area using your browser by pointing it to:
 
 
 ```
