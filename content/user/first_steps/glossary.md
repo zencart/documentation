@@ -26,8 +26,8 @@ Note: If a term is not in this list, you should use a web search to learn more a
 - Shared Hosting - a hosting configuration that allows you to share a server with other users to reduce cost.  See [Hosting and Domain concepts](/user/first_steps/hosting/). 
 - Sidebox - a [sidebox](/user/template/sideboxes/) is a block of content on the left or right hand side of your page, when viewed on a desktop.  
 - SSL - Secure Sockets Layer.  A technology that allows you to securely transfer information between your webserver and a client browser.  See [hosting and domain concepts](/user/first_steps/hosting/).
-- Template - Set of files which provide the skin or appearance such as colors or fonts for the site. See [Default files, template default and overrides](/user/first_steps/overrides/).
-- Template Files - The individual files which provide the customization for the site.  See [Default files, template default and overrides](/user/first_steps/overrides/).
+- Template - Set of files which provide the theme or skin (eg: layout, colors, fonts) for the site. See [Default files, template default and overrides](/user/first_steps/overrides/).
+- Template Files - The individual files (css, js, php, and some images) involved in providing the Template for the site.  See [Default files, template default and overrides](/user/first_steps/overrides/).
 - VPS - a hosting configuration that puts you on your own dedicated server.  See [Hosting and Domain concepts](/user/first_steps/hosting/). 
 - Webroot - The top level folder that is visible to someone using a web browser.  See [how do I install Zen Cart](/user/first_steps/how_do_i_install/). 
 - Webserver - the computer associated with your hosting account that runs your website *or* the program on that hosting account that serves web pages (e.g. Apache).  See [hosting and domain concepts](/user/first_steps/hosting/).
