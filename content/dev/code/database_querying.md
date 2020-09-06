@@ -135,15 +135,16 @@ $prod_name = $results->fields['products_name'];
 #### Multiple Row Responses
 If there are multiple rows returned, the most efficient way to iterate through the results is using a `foreach()` loop:
 
-```php
+```
 foreach($results as $result) {
   echo 'Product ID: ' . $result['products_id'] . ': ' . $result['products_name'] . "<br>\n";
 }
 ```
+This has worked since Zen Cart 1.5.5. 
 
 An older more verbose syntax exists in legacy code. The following accomplishes the same as the `foreach` above:
 
-```php
+```
 while (!$results->EOF) {
   echo 'Product ID: ' . $result->fields['products_id'] . ': ' . $result->fields['products_name'] . "<br>\n";
   $results->MoveNext();

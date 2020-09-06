@@ -9,7 +9,7 @@ weight: 10
 Here are some suggestions, assuming you're running the latest-released version of Zen Cart:  
 
 ### Turn off Category Counts, especially if you have a large number of categories.  
-Go to [Admin->Config->My Store](/user/admin_pages/configuration/configuration_mystore/) 
+Go to [Admin > Config > My Store](/user/admin_pages/configuration/configuration_mystore/) 
 
     - Show Category Counts=false  
     - Show Category Counts-Admin = false  

@@ -6,7 +6,7 @@ weight: 10
 ---
 
 The 
-[Admin -> Catalog -> Products Price Manager](/user/admin_pages/catalog/products_price_manager/) page allows you to add per product quantity discounts. 
+[Admin > Catalog > Products Price Manager](/user/admin_pages/catalog/products_price_manager/) page allows you to add per product quantity discounts. 
 
 - Select the product
 - Press the *Edit Product* button
@@ -20,4 +20,6 @@ The screen you see will look like this:
 
 The radio button *Discount Qty Applies to Mixed Attributes*  is referring
 to the [MIXED ON](/user/products/products_misc/#what-does-mixed-on-mean) setting from the [product editing page](/user/products/product_edit/).
+
+**Note:** This is the help for **product** quantity discounts, set using Product Price Manager.  There is a separate help page for [**attribute** quantity discounts](/user/products/attribute_pricing/#settings-in-attributes-controller), which are set in the [Attributes Controller](/user/admin_pages/catalog/attributes_controller/#quantity-discounts). 
 

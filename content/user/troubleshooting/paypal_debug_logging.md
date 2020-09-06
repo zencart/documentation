@@ -10,7 +10,7 @@ You can enable debug logging of PayPal transaction activity.
 The debug logs do NOT contain your PayPal password or API certificate information. This sensitive information is masked so that it cannot be stolen and used unscrupulously.
 Further, in the default configuration, there are protections in place to prevent snoops from finding and obtaining your log files, as they are named with some degree of randomness, making it virtually impossible to guess.
 
-1. Go to Admin->Modules->Payment ... and choose your PayPal module (either Standard/IPN or Express Checkout, Payments Pro, etc). Click Edit.
+1. Go to Admin > Modules > Payment ... and choose your PayPal module (either Standard/IPN or Express Checkout, Payments Pro, etc). Click Edit.
 
 2. Choose "Log to File" for your debug option. (recommend to NOT use log-to-email option, because the emails are harder to isolate.)
 
