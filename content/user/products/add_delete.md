@@ -1,6 +1,6 @@
 ---
 title: How do I add or delete products? 
-description: Zen Cart adding and deleting products 
+description: Managing products in your store 
 category: products
 weight: 10
 ---

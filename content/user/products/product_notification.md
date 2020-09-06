@@ -1,6 +1,6 @@
 ---
-title: Product Notification
-description: Zen Cart Product Notifications
+title: Product Notifications
+description: Keeping customers up to date about product changes 
 category: products
 weight: 10
 ---

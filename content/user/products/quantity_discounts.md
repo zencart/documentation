@@ -1,6 +1,6 @@
 ---
-title: How do I add quantity discounts to my products? 
-description: Zen Cart quantity discounts 
+title: Quantity Discounts 
+description: How do I offer discounts for bulk purchases? 
 category: products
 weight: 10
 ---
@@ -21,5 +21,11 @@ The screen you see will look like this:
 The radio button *Discount Qty Applies to Mixed Attributes*  is referring
 to the [MIXED ON](/user/products/products_misc/#what-does-mixed-on-mean) setting from the [product editing page](/user/products/product_edit/).
 
-**Note:** This is the help for **product** quantity discounts, set using Product Price Manager.  There is a separate help page for [**attribute** quantity discounts](/user/products/attribute_pricing/#settings-in-attributes-controller), which are set in the [Attributes Controller](/user/admin_pages/catalog/attributes_controller/#quantity-discounts). 
+**Note:** Quantity Discounts created using Products Price Manager will discount bulk purchases of a single product.  
+
+- If you need to discount bulk purchases across categories or the entire store, take a look at the [Quantity Discounts contribution](https://www.zen-cart.com/downloads.php?do=file&id=135) in the [Zen Cart Plugins Library](/user/plugins/plugin_library/). 
+
+- If you need to reduce the price of a product *with a specific attribute* when purchased in bulk, look at [**attribute** quantity discounts](/user/products/attribute_pricing/#settings-in-attributes-controller), which are set in the [Attributes Controller](/user/admin_pages/catalog/attributes_controller/#quantity-discounts). 
+
+
 

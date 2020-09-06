@@ -1,6 +1,6 @@
 ---
 title: How do I add or delete categories? 
-description: Zen Cart adding and deleting categories 
+description: Organizing products in categories 
 category: categories
 weight: 10
 ---

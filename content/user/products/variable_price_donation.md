@@ -1,6 +1,6 @@
 ---
 title: Variable Price Product or Donation
-description: Zen Cart Variable Price Product or Donation
+description: How to let customers set the price of a product
 category: products
 weight: 10
 ---

@@ -1,6 +1,6 @@
 ---
 title: Downloads - why do they not activate after checkout? 
-description: Zen Cart Downloads - why do they not activate after checkout? 
+description: If downloads are not visible to your customers, check here
 category: products
 weight: 10
 ---

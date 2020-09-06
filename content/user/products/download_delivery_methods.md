@@ -1,6 +1,6 @@
 ---
 title: Download delivery methods 
-description: Zen Cart Download delivery methods 
+description: How are downloads made available after checkout? 
 category: products
 weight: 10
 ---

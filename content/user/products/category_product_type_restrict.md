@@ -1,6 +1,6 @@
 ---
 title: Category product-type restrictions
-description: Zen Cart Category product-type restrictions
+description: Ensuring only one product type can be created in a category 
 category: categories
 weight: 10
 ---

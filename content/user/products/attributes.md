@@ -1,6 +1,6 @@
 ---
 title: Attributes - adding to products
-description: Zen Cart Attributes - adding to products
+description: Creating variant products using attributes
 category: products
 weight: 10
 ---

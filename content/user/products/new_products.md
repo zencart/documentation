@@ -1,6 +1,6 @@
 ---
 title: New Products
-description: Zen Cart New Products 
+description: Showing off new additions to your store
 category: categories
 weight: 10
 ---

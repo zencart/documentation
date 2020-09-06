@@ -1,6 +1,6 @@
 ---
 title: Downloadable products - verifying correctness 
-description: How to verify Zen Cart Downloadable products 
+description: Check your downloads after creating them
 category: products
 weight: 10
 ---
