@@ -1,6 +1,6 @@
 ---
 title: SSL certificate - yes you need one 
-description: You need an SSL certificate to run Zen Cart
+description: All online stores should be using SSL!
 category: first_steps 
 weight: 10
 ---
