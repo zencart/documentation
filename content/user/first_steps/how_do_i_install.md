@@ -62,7 +62,7 @@ Enter a name for your database (the version is often used for easy recognition i
 
 You will need to create a username and password for this database.  It is NOT recommended to use your cPanel credentials (i.e.: don't re-use your passwords!).  Scroll down to Add New User, fill in the information, then click on Create User.  Click the Go Back button to return to the Databases page.
 
-Finally, scroll down to the Add User To Database section, make sure the User and Database are filled in correctly, and click on Add.  Checking the ALL PRIVELEGES check box will give your user complete access to the database.  Be sure to scroll down and click on the Make Changes button.
+Finally, scroll down to the Add User To Database section, make sure the User and Database are filled in correctly, and click on Add.  Checking the ALL PRIVILEGES check box will give your user complete access to the database.  Be sure to scroll down and click on the Make Changes button.
 
 (You need the following permissions on your MySQL user: SELECT, INSERT, UPDATE, DELETE, CREATE, ALTER, INDEX, DROP.   On an H-Sphere host, this would be "dba" access, or at least read/write.)  
 
