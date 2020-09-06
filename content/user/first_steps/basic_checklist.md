@@ -50,23 +50,23 @@ your preferred language from the [Zen Cart Downloads](https://www.zen-cart.com/d
 9.  **[Admin - Modules - Shipping](/user/admin_pages/modules/shipping/)**
     *   Select and configure any desired shipping providers.  
 
-10.  **[Admin - Locations/Taxes - Zones Definitions](/user/admin_pages/locations/zones_definitions/)
-    *   Insert applicable tax zones for the regions in which you must collect tax.  
+10.  **[Admin - Locations/Taxes - Zones Definitions](/user/admin_pages/locations/zones_definitions/)**
+     *   Insert applicable tax zones for the regions in which you must collect tax.  
 
 11.  **[Admin - Locations/Taxes - Tax Classes](/user/admin_pages/locations/tax_classes/)**
-    *   Create classes for the varying tax combinations you must assign to a product. In most cases, you only require one category.  
+     *   Create classes for the varying tax combinations you must assign to a product. In most cases, you only require one category.  
 
 12.  **[Admin - Locations/Taxes - Tax Rates](/user/admin_pages/locations/tax_rates/)**
-    *   Link tax classes and zones and enter the tax rate for those combinations here.  
+     *   Link tax classes and zones and enter the tax rate for those combinations here.  
 
 13.  **[Admin - Localization - Currencies](/user/admin_pages/localization/currencies/)**
-    *   Configure the various currencies your shop will accept/process.  
+     *   Configure the various currencies your shop will accept/process.  
 
 14.  **[Admin - Localization - Languages](/user/admin_pages/localization/languages/)**
-    *   Set up the languages you wish to support in your shop.  
+     *   Set up the languages you wish to support in your shop.  
 
 15.  **[Admin - Catalog - Manufacturers](/user/admin_pages/catalog/manufacturers/)**
-    *   Enter the manufacturers that your products will be linked to.
+     *   Enter the manufacturers that your products will be linked to.
 
 ### Categories & Products
 
