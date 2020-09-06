@@ -1,6 +1,6 @@
 ---
 title: Databases 
-description: Zen Cart - Databases 
+description: Where is the data stored in Zen Cart?
 category: first_steps
 weight: 10
 ---
@@ -33,7 +33,7 @@ Some hosting companies have auto-installers that quickly dump a ZC site onto som
 
 ## How many tables are in the Zen Cart database? 
 
-As of Zen Cart 1.5.7, there are 94 tables in the Zen Cart database. 
+As of version 1.5.7, there are 94 tables in the Zen Cart database. 
 You can see a list of them by looking at the file `includes/database_tables.php`. 
 
 ## What is the schema for Zen Cart? 
