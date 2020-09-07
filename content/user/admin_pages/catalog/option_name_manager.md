@@ -8,6 +8,8 @@ weight: 40
 
 This page allows you to view, edit, add and delete option names.
 
+![Option Name Manager](/images/option_name_manager.png)
+
 ## Introduction
 
 
@@ -16,6 +18,8 @@ Before you can add attributes to your products in
 
 
 ## Creating an Option Name
+
+![Option Name Creation](/images/create_option_name.png)
 
 - In the first text box you see 
 
@@ -44,6 +48,8 @@ Click INSERT.
 
 ## Option Name Settings
 
+![Option Name Editing](/images/edit_option_name.png)
+
 If you click edit next to the option name then you can add some settings.
 
 *   Comment - text that your customers will see above your option name so make it informative to them.
@@ -70,4 +76,10 @@ The following settings are for image layout purposes
 Click *UPDATE*.
 
 You now need to set option values in [Admin - Catalog - Option Value Manager](/user/admin_pages/catalog/option_value_manager/) before adding them to your products as attributes (unless you are only using TEXT and FILE).
+
+## Sorting 
+
+Since Zen Cart 1.5.7, you have the option of sorting option names by ID as well as the default sort by name. 
+
+![Option Name Manager by ID](/images/option_name_manager_by_id.png)
 
