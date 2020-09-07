@@ -10,7 +10,7 @@ Several options exist for inventory tracking.  See
 
 Common configurations are: 
 
-### Don't track stock
+### 1. Don't track stock
 
 ```
 Check stock level = false 
@@ -20,7 +20,7 @@ Allow Checkout  = true
 
 This configuration is well suited for stores that sell virtual products, which can't be depleted. 
 
-### Track stock, but permit backorders 
+### 2. Track stock, but permit backorders 
 ```
 Check stock level = true 
 Subtract stock = true 
@@ -29,7 +29,7 @@ Allow Checkout  = true
 
 This configuration is ideal for stores that sell products where manufacturers can fill re-orders easily and out-of-stock or discontinuation situations are unlikely. 
 
-### Track stock, do not permit backorders 
+### 3. Track stock, do not permit backorders 
 ```
 Check stock level = true 
 Subtract stock = true 

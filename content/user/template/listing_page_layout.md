@@ -18,8 +18,8 @@ There are specific configurations for these pages:
 - The All Products page is configured by [Admin > Configuration > All Listing](/user/admin_pages/configuration/configuration_alllisting/).
 - Pages the products in a category are configured by [Admin > Configuration > Product Listing](/user/admin_pages/configuration/configuration_productlisting/).
 
-These four pages are share the same layout: stacked rows with one product per row.  This is different from a grid-style page like Specials.  Grid pages are laid out like the home page, with one main [centerbox](/user/template/centerboxes/). 
-[Listing pages are paginated](/user/template/pagination/) so that only a subset of the total number of results are shown.  Navigation is provided between blocks of results. 
+These four pages are share the same layout: stacked rows with one product per row.  This is different from a grid-style page like Specials: grid pages are laid out like the home page, with one main [centerbox](/user/template/centerboxes/). 
+Also, [listing pages are paginated](/user/template/pagination/) so that only a subset of the total number of results are shown.  Navigation is provided between blocks of results. 
 
 Three of the pages, New, Featured, and All Products, have configuration settings that are identical in nature. The full explanation for these display settings can be found here: [New/Featured/All Listing Configuration Settings](/user/template/new_featured_all_listing_page_configuration).
 
