@@ -16,7 +16,7 @@ Here are some things to explore:
 
 - Clicking "Console" will show you reports of any missing or unavailable files (JavaScript, CSS, etc.) 
 
-- Clicking "Lighthouse" will perform a test that will analyse your site speed and whether you are using [outdated JavaScript libraries](/user/upgrading/javascript_updates/)
+- Clicking "Lighthouse" will perform a test that will analyze your site speed and whether you are using [outdated JavaScript libraries](/user/upgrading/javascript_updates/)
 
 - Clicking "Elements" will show you the CSS rules that apply to each part of your site, enabling you to try changes right from your browser
 

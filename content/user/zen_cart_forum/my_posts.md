@@ -1,13 +1,9 @@
 ---
-title: Miscellaneous Questions about the Zen Cart Forum 
+title: How do I find the posts I (or another member) have made?
+description: Where was that question I asked ... 
 category: zen_cart_forum
-weight: 5 
+weight: 10 
 ---
-
----
-
-## How do I find what posts I've made?
-
 
 ### You can ...
 
@@ -35,6 +31,3 @@ weight: 5
 
 *   Click the "Find all posts by..." or "Find all threads started by ..." link
 
----
-<!-- please keep this at the end --> 
-{{< faq_questions >}}
