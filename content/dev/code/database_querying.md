@@ -76,7 +76,7 @@ $sql = "SELECT p.products_id, p.products_model, pd.products_name
         LIMIT 10";
 ```
 
-NOTE: `zen_db_input()` is an alias for `$db->prepare_input()`, (which essentially runs `mysqli_real_escape_string()` behind the scenes).
+**NOTE:** `zen_db_input()` is an alias for `$db->prepare_input()`, (which essentially runs `mysqli_real_escape_string()` behind the scenes).
 
 
 ## Running the Query

@@ -12,8 +12,13 @@ Please be sure you're familiar with [basic terms in Zen Cart](/user/first_steps/
 
 For instructions on moving your cart from the root to a subfolder (or vice versa), see [moving your Zen Cart folder](/user/installing/move_cart/).
 
+For clarity, we will use the folder names `store` for the cart in a subfolder, and `blog` for the blog (or other web property) in a subfolder, although of course any other folder names could be used. 
 
-## 1. Cart in root of store 
+## 1. Cart in root 
+
+```
+Cart URL: http://www.YOURSTORE.com 
+```
 
 The configuration that is assumed throughout the Storeowner Docs is that you have installed Zen Cart in the root of your hosting account.
 
@@ -21,7 +26,13 @@ Your store URL would be `https://www.YOURSTORE.com/` (or `https://www.YOURSTORE.
 
 Your files would be under the `public_html` folder in your hosting account. 
 
-## 2. Cart in root of store, blog in subfolder
+## 2. Cart in root, blog in subfolder
+
+```
+Cart URL: http://www.YOURSTORE.com 
+Blog URL: http://www.YOURSTORE.com/blog 
+```
+
 
 This is very common for people who want the kind of additional content management capabilities offered by a blog (or other tool).
 
@@ -37,7 +48,12 @@ This would also apply for a forum in a subfolder, CMS in a subfolder, etc.
 
 **Please note:** Exercise caution when adding software on top of your Zen Cart installation.  See the [blogging FAQ](/user/running/blogging).
  
-## 3. Existing website in root of store, cart in subfolder
+## 3. Existing website in root, cart in subfolder
+
+```
+Website URL: http://www.YOURSTORE.com/
+Cart URL: http://www.YOURSTORE.com/store  
+```
 
 If you have an existing website, and you'd like to add ecommerce, you can put your store in a subfolder.  We'll use the generic name `YOURSUBFOLDER` but the real name you use would likely be `store` or `shop`. 
 
@@ -45,7 +61,11 @@ Your store URL would be `https://www.YOURSTORE.com/YOURSUBFOLDER` (or `https://w
 
 Your files would be under the `public_html/YOURSUBFOLDER` folder in your hosting account. 
 
-## 4. Nothing in root of store, cart in subfolder 
+## 4. Nothing in root, cart in subfolder 
+
+```
+Cart URL: http://www.YOURSTORE.com/store  
+```
 
 Even if you don't have an existing website in the root folder, you can still place your cart in a subfolder.   The URL and file placement are like the previous case.  In this case, you'll want an `.htaccess` file to redirect anyone who comes to the root folder to the subdomain.  
 

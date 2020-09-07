@@ -13,5 +13,5 @@ When the button for attributes ("A") is black, as it is on the top row, the prod
 
 When it is not black, as shown on the bottom row, the product has one or more attributes. 
 
-On the storefront side, products with attributes show on the product info page with drop down boxes, checkboxes, text boxes or radio buttons. If you are looking at a list of products in a category, or on a [listing page](/user/products/product_listing/), the products with a "More Information" button rather than an "Add to Cart" button have attributes.
+On the storefront side, products with attributes show on the product info page with drop down boxes, checkboxes, text boxes or radio buttons. If you are looking at a list of products in a category, or on a [listing page](/user/products/product_listing/), the products with a "More Information" button rather than an "Add to Cart" button have attributes.  See [Add to Cart](/user/storefront_pages/add_to_cart/) for more details. 
 

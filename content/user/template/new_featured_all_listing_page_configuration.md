@@ -7,7 +7,8 @@ weight: 10
 
 The New Products, Featured Products, and All Products pages 
 are [listing pages](/user/storefront_pages/listing_pages/).  
-They are configured using the same kinds of settings, but each one 
+
+They are all configured using the same kinds of settings, but each one 
 has its own configuration settings page; the pages are under Admin > Configuration, and are named
 [New Listing](/user/admin_pages/configuration/configuration_newlisting/),
 [Featured Listing](/user/admin_pages/configuration/configuration_featuredlisting/), and 
@@ -33,3 +34,4 @@ The fourth number determines the spacing between fields. If we just change the m
 
 ![Featured Change Manufacturer Spacing](/images/featured_product_settings4.png) 
 
+The behavior of the Buy Now button on listing pages is discussed in [add to cart](/user/storefront_pages/add_to_cart/). 
