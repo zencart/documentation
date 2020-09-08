@@ -202,7 +202,7 @@ aliases:
 ## Redirect only pages 
 
 If you just want a link to show up in the `_index.md` file without having 
-to replicate content, you can create a file with just front matter content, and put a `url` entry in the front matter.  Use the example provided by  [`/user/admin/admin_password.md`](https://github.com/zencart/documentation/blob/master/content/user/admin/admin_password.md), which points to the file [`/user/troubleshooting/reset_admin_password`](https://github.com/zencart/documentation/blob/master/content/user/troubleshooting/reset_admin_password.md).  
+to replicate content, you can create a file with just front matter content, and put a `url:` entry in the front matter **without a trailing slash**.  Use the example provided by  [`/user/admin/admin_password.md`](https://github.com/zencart/documentation/blob/master/content/user/admin/admin_password.md), which points to the file [`/user/troubleshooting/reset_admin_password`](https://github.com/zencart/documentation/blob/master/content/user/troubleshooting/reset_admin_password.md).  
 
 You can also point to a folder rather than a single file, as is done in `/user/customizing/template_system.md`, which redirects to `/user/template`.
 
