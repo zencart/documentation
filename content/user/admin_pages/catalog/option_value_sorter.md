@@ -23,3 +23,16 @@ You can also update the sort order of options on any particular product or categ
 
 ![Update Attribute Sort Order](/images/update_option_sort_order.png)
 
+Example:
+
+You notice that the color Blue sorts before the color Black.  
+
+![Attribute Wrong Sort Order](/images/colors.png)
+
+First fix the color sort order - in Admin > Catalog > Option Value Sorter, select Color, then update the sort orders for Black and Blue.  Press Update. 
+
+This will mean all future products will have the correct sort order.  To fix any existing products, use the Update buttons below *Update Attribute Sort Order from Option Value Defaults*.  
+
+You can fix it for a single product,  for a category of products or for all products. 
+
+![Attribute Corrected Sort Order](/images/colors_fixed.png)
