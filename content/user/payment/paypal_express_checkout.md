@@ -5,7 +5,7 @@ category: payment
 weight: 10
 ---
 
-## Zen Cart and PayPal together give you a complete e-commerce and all-in-one payment solution using PayPal's Express Checkout
+## PayPal Express Checkout
 
 <div style="float:right;width: 155px;padding-left:15px;">
 
@@ -34,7 +34,7 @@ weight: 10
         4.  Choose to upgrade to a Business account and follow instructions to complete the upgrade.
         5.  If you haven't already, add a bank account to become a Verified member. Follow the instructions on the PayPal site. (This process may take 2-3 business days.)
 *   **Step 3: Setup API Access**  
-    1. Get your API credentials - [click here](https://www.paypal.com/us/cgi-bin/webscr?cmd=_get-api-signature&generic-flow=true).
+    1. Get [your API credentials](https://www.paypal.com/us/cgi-bin/webscr?cmd=_get-api-signature&generic-flow=true).
     2. Click the "Show" link under API Username, API Password and Signature and note all three values.
     3. At the top right hand side of the page, click your account name, then click Account Settings.  Navigate to **Business Information** and note your **Merchant ID.  It will look like *FDEFDEFDEFDE11*. 
     4. Use the values from the prior step in Admin > Configuration > Payment to configure the PayPal Express fields **API Signature**, **API Signature -- Password**, and **API Signature** and **Merchant ID**. 

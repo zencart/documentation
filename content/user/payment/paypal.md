@@ -1,182 +1,52 @@
 ---
-title: PayPal
-description: PayPal in Zen Cart
+title: PayPal Standard, Express and Pro - what's the difference? 
+description: Zen Cart PayPal Standard, Express and Pro - what's the difference? 
 category: payment
 weight: 10
 ---
 
-#### Express Checkout
+You're probably really looking for [Setup instructions for PayPal Express Checkout](/user/payment/paypal_express_checkout/). 
 
-Follow this link for [Setup instructions for PayPal Express Checkout](/user/payment/paypal_express_checkout/). 
+Zen Cart recommends using Express Checkout instead of Website Payments Standard.  
 
-#### Website Payments Standard
+**PayPal Express Checkout**  gives the customer two options: They can jump over to the PayPal site to login to their account BEFORE completing checkout on your store (which allows them to select their address information there and never have to re-type their address details on YOUR site, thus the "express" part of the transaction) and then choosing shipping choices and discounts/coupons etc before completing the order ....... OR they can go to the PayPal site to login to their account AFTER making shipping/payment/coupon selections on your site (and creating an account on your store and typing their address info on your store), much like they do with Standard.    
 
-[PayPal Standard is no longer recommended](/user/payment/paypal_standard/).  You should NOT be using Payments Standard; you should be using Express Checkout which is far more reliable.
+<u>**With Express Checkout, the customer can pay without having a PayPal account**</u> (as long as you have "PayPal Account Optional" enabled inside your PayPal merchant account settings:  Profile > Hosted Payment Settings > Website Payments Preferences > PayPal Account Optional = ON), except for merchants/customers in China.  
 
-But, if you insist on using the older technology of Website Payments Standard, follow these instructions:
+One important benefit is that Express Checkout does not rely entirely on the IPN communications to your store in order to release the order. Instead, it stores the order immediately when payment is completed. It doesn't have to rely on the PayPal server to talk to your server in order to store the order.  Granted, you will still want PayPal's server to be able to send IPN updates to you for any orders, in case you do refunds or adjustments to the order... so that those updates are reflected in your store's order history.  
 
-This applies to North American PayPal users (and maybe others too).
+Express Checkout has all the same features as Website Payments Standard, but is more reliable because it completes the transaction directly while the customer is actively engaged on your site. It supports all the currencies, payment methods, etc, just the same, but more efficiently. There is no monthly fee for using Express Checkout.  
 
-Important: If you're reading this far then you've ignored the important notices above: You should be using Express Checkout instead of Payments Standard. Seriously.
+PayPal sees Express Checkout as a payment option that's offered <u>in addition to</u> other payment choices such as a credit card gateway, and that adding Express is a way to allow PayPal members a very quick and easy way to pay using their PayPal account. PayPal also believes [Express Checkout improves conversions/sales.](https://www.paypal-marketing.com/paypal/html/partner/na/pdf/Winning%20at%20Checkout.pdf) Many merchants do use Express Checkout as their sole payment processing option, even without a credit card gateway.  
 
-Now, re-read the sentence above.
+Many merchants also add Website Payments Pro:  
 
-And once again.
+**Website Payments Pro** appears to the customer only as a couple fields to enter their credit card number directly on your website. They have no idea that in the background you're processing their card via PayPal.  They have to make an account on your site, and supply the address details, but once they confirm the order, the payment is collected immediately and the order saved. It doesn't rely on IPN to release the order. However, it does store any transaction updates done on the PayPal end such as refunds etc as long as IPNs can be received by your server.   Website Payments Pro is currently only offered in the USA, UK, and Canada. A monthly service charge applies, and there is an account application process and credit check to complete before the feature can be activated on your account.  PayPal Express Checkout must be enabled in order for Website Payments Pro to be offered on your site.  
 
-If you're truly choosing to ignore the important advice to use Express Checkout instead, the following settings are required to use Payments Standard:
+PayPal sees Website Payments Pro as a payment gateway for handling credit cards. That's exactly what it is. Coupled with Express Checkout, it gives your customers the maximum amount of choice about how to pay: either by credit card directly on your site, or by using their PayPal account to submit payment.  
 
-**ON THE PAYPAL WEBSITE**
+**PayPal Payments Advanced** is a new service offered starting in 2012, and requires an addon module in order to use it. Details about this service can be found on the PayPal website. There is a monthly fee to use this service, which is only available in USA.  
 
-1.  Log in.
-2.  Click on _Profile_.
-3.  Click on _Email_.
-4.  Write down your _primary_ email address. You need to use this exact email address in your Zen Cart settings in the next section below.
-5.  Click on Profile again.
-6.  Click on Instant Payment Notification Preferences.
-7.  Click on Edit.
-8.  Turn it on (check the box).
-9.  Set the URL to: `https://www.YOURSTORE.com/ipn_main_handler.php`. (The complete correct URL can be obtained from your Admin area inside the PayPal payment module's information settings.)
-10.  Click Save.
-11.  Click on Profile.
-12.  Click on My selling tools.
-13.  Click on Website Payment Preferences.
-14.  Auto Return for Website Payments - set to on.
+**PayPal Payments Standard** (formerly referred to as "PayPal IPN" in older versions of Zen Cart, or as "Website Payments Standard") takes the customer to PayPal's site AFTER the ENTIRE checkout in order to make payment.  The customer can pay without having a PayPal account (depending on what country YOU are in ... PayPal limits that feature for some countries).  After the payment is completed, your store is notified of the completed payment, after which time the order is stored in your database.  When paying with PayPal Standard, if the customer pays without making a PayPal account and closes their browser when presented with the invitation to make one, your store sits in limbo and never gets the order (due to a bug in PayPal's logic, which they've not fixed yet).  If they DO have OR make a PayPal account, you get the notification and the order is stored in your database.   
 
-Provide the Return URL (obtain correct URL from your Zen Cart admin.  It will take the form of something like the following examples): `https://www.YOURSTORE.com/index.php?main_page=checkout_process`
+IF there is any problem in PayPal's ability to communicate to your server, you will never see the order in your store (or receive the confirmation email from your store), because it relies entirely on PayPal's server being able to talk to your server in order to store the order.  
 
-15.  Other settings in this area can be set based on your preferences. Consult PayPal for their meanings.
+PayPal sees PayPal Payments Standard as a solution for merchants wanting to collect single payments especially if they have no other payment method available. There is no monthly fee for Standard (or Express Checkout)
 
-My selling tools > Website Preferences > Payment Data Transfer: If you're using PDT, make sure you have the same token in Zen Cart as you have in PayPal.
+Zen Cart recommends using PayPal Express Checkout over Website Payments Standard.  
 
-Encrypted Website Payments: Set this to OFF. Zen Cart does not currently support this option.
+More information about the various PayPal services can be found on the [PayPal website.](https://www.zen-cart.com/partners/paypal)  
 
-PayPal Account Optional: if you want to allow customers to pay by credit card and not have to create a PayPal account, set this to ON
+Another much-less-commonly-asked-about PayPal service is:  
 
-16.  Click _Save_.
-17.  If your website's language is not a Western/European language, go to Language Encoding and set your language.
-18.  **Turn off ALL tax and shipping settings in your PayPal account**. These will cause your transaction amounts to not match Zen Cart amounts, and thus your orders will not be released.
+**Payflow Pro**  is essentially *only* a merchant account.  Transactions conducted via Payflow Pro (for US Merchants) do not appear in your PayPal account ... instead, they are forwarded directly to your merchant bank account.  Basically, Payflow Pro is just like any other traditional payment gateway (akin to Authorize.net etc). In North America you can connect the Payflow Pro service to your own merchant bank account. In the UK, the Payflow Pro service is actually bundled as a hybrid service with Website Payments Pro, connecting all the transactions to your UK PayPal account, and all monies are deposited to your PayPal account, instead of directly to your bank account. There is a monthly fee for using this service.  
 
-**Note:** if you've never had your PayPal account "verified", you should follow their steps to do so.
+Zen Cart does not have built-in support for the US Payflow Pro service. However, there is a [free addon](https://www.zen-cart.com/downloads.php?do=file&id=212) which can be used for this purpose if required.  
 
-**IN ZEN CART**
+Please see PayPal's website for more [Payflow and PayPal](https://www.zen-cart.com/partners/paypal) information.  
 
-1.  Go to Admin > Modules > Payment > PayPal
-2.  If this is the first time configuring for PayPal on this site, then you need to click on _Install_.
-3.  Otherwise, click on _Edit_.
-4.  Enter the primary email address of your PayPal account.
-5.  Configure any other options as desired.
-6.  Note the URL's suggested in the top of the PayPal module's instructions - they should match what you have set in your PayPal profile in the steps above for the PayPal site.
+### Where can I learn more about PayPal? 
 
-### Using PayPal on Multiple Sites
+PayPal provides a series of [Help Guides](https://www.paypal.com/us/smarthelp/PAYPAL_HELP_GUIDE) with information about how to handle common situations. 
 
-See this FAQ Article: [Using PayPal on Multiple Sites](/user/payment/paypal_multiple_sites/). 
-
-#### Express Checkout
-
-You can use a single PayPal account to collect payments from multiple Zen Cart sites simply by following the "In Zen Cart" instructions above, for each site. Zen Cart will send override information to PayPal to let them know which store to send its notifications to.
-
-#### Website Payments Standard
-
-You REALLY should be using Express Checkout instead;  [PayPal Standard is no longer recommended](/user/payment/paypal_standard/).  
-
-But if your mind is really made up to use Payments Standard anyway, then if you use your PayPal account on non-Zen Cart sites or on eBay or perhaps on a WordPress site, **be sure that you have all "taxes" and "shipping" options disabled in your PayPal profile**; otherwise these charges will be added to your Zen Cart orders and cause them to not match, and therefore they won't be released or added to your orders list.
-
-### Things to check if it's not working (Website Payments Standard specifically)
-
-These are the common mistakes causing Website Payments Standard transactions to fail:
-
-1.  Check that the email address you enter for PayPal in Zen Cart admin matches case-sensitive exactly with your PRIMARY email address setting in your PayPal account profile on PayPal's site.
-2.  Is your PayPal account "verified" yet?
-3.  Is your PayPal account a "Business" account? (Business is preferred. Premier can be used in some cases; Personal cannot.) 
-4.  Check your PayPal profile settings on [paypal.com](http://paypal.com/)
-    *   In **Website Payment Preferences**, your Return URL should be set to your site's checkout_process page. (ie: `http://www.YOURSITE.com/directory/index.php?main_page=checkout_process`).
-    *   It is advisable to have Auto Return set to On.
-5.  **Turn off ALL tax and shipping fees in your PayPal profile**. They will cause the purchase price to mismatch when returning to Zen Cart.
-6.  NOW, **also check the following list of IPN issues** as well _(see below)_
-
-### Things to check if it's not working (IPN communications in general)
-
-These are the common configuration errors causing IPN processing to fail:
-
-1.  If it "was" working, but stopped, make sure PayPal's services are running properly. Check [PayPal Live Server Status](https://www.paypal-status.com/product/production). 
-2.  Make sure your site is *not* in [down-for-maintenance](/user/running/down_for_maintenance) mode.
-3.  Make sure your site does *not* have password-protection via .htaccess in order to get to the "store" area.
-4.  Check with your host that the server is able to do outbound TLS connections
-5.  Use your browser and go to the Login page of your store. If the page is SSL, do you get any certificate errors in your browser? Test from a couple different computers that you don't normally use. An invalid SSL certificate or one that has errors of any sort, could prevent PayPal from successfully posting the notices to your site.
-6.  Try accessing `http://YOURSITE.com/ipn_main_handler.php` with your browser. If you see PHP errors, those will need to be resolved. If you get a white screen, then the first phase of PayPal contacting your site isn't encountering errors. This doesn't mean there aren't any, it just means the initial most obvious steps are working.
-7.  There are  [communication testing tools available](/user/troubleshooting/communication_issues/).  If you are asking for troubleshooting help, please supply the URL to each of these tools after you have installed them on your site, so we can assess the responses they reveal.
-8.  Turn on [debug logging](/user/troubleshooting/paypal_debug_logging/) in your PayPal module, and post a link to the zipped log files so they can be analyzed. You'll need to check to be sure that your _/logs_ folder is marked read/write (chmod 755). Then use your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) to access/view those logs and zip-and-upload them for analysis.
-9.  Check there is no IP block or firewall to prevent PayPal's servers from talking to your server (your host should check this, and you should check any blocking you may have done via your control panel. Also check .htaccess for any _deny from_ statements and be sure none of them are addresses related to PayPal.
-    *   PayPal IP Address List and the IP addresses on PayPal's Go Live Checklist should be in your host's firewall whitelist.  See their website for details. 
-    *   For sandbox testing, also open: ipn.sandbox.paypal.com
-10.  You may find it helps to Uninstall ("remove") and Re-Install the payment module in Zen Cart admin.
-11.  When you use two PayPal accounts to make a simulation, make sure you're using the right account.
-12.  Check your PayPal profile settings on [paypal.com](http://paypal.com/):
-
-*   You need your **Instant Payment Notification preferences** ON
-
-*   Instant Payment Notification URL must be set to a valid address. Normally this is the URL of your site's `ipn_main_handler.php` (ie: `http://www.YOURSITE.com/ipn_main_handler.php` or `http://www.YOURSITE.com/directory/ipn_main_handler.php` ) However, if you're running Website Payments Standard on another website, you can leave THAT site's URL there instead, as long as it's actually working properly.
-
-13.  Using your hosting control panel, find the "Error Log" option, and check your server's errorlog entries to see if any attempts to access your site's `ipn_main_handler.php` file are being denied for any reason.
-14.  If you have a SEFU or SEO contribution installed, try removing it and testing again. Some are not configured to allow PayPal processing.
-15.  If you're using Payflow Pro (or Website Payments Pro UK), check your PayPal Manager area for any IP address restrictions. If you've got it restricted to only accept payment requests from certain IP addresses, make sure your webserver's IP address is in the list. Or clear the list out completely. A call to PayPal tech support can verify whether they have any additional IP addresses recorded that you can't see.
-16.  You can check whether PayPal has tried to send you IPN notifications that have failed, and re-send them if needed. In your PayPal account, in the My Account tab, go to the History menu and choose the IPN History option. Tick the relevant boxes and press "Resend selected". If there are many "failed", it's best to start with just checking ONE and attempting Resend. Then check your store to see if it comes through (give it 10-30 minutes). If it doesn't show up in your store, check the IPN debug logs on your server and see what errors have been recorded there.
-
-### How Does IPN work (for Website Payments Standard)?
-
-"IPN" means "Instant Payment Notification." It is part of PayPal's "Website Payments Standard" service.
-
-1.  Customer places an order on your site
-2.  For payment, they are taken to a link on PayPal's site, where they provide their information and pay for their order.
-3.  They click a link when finished (or wait 5 seconds) and return to your site.
-
-Meanwhile, between steps 2 and 3 above, PayPal's server does this:
-
-1.  PayPal's server sends a request to your website, which is waiting and listening for connections from PayPal to the `ipn_main_handler.php` page.
-2.  Your server sits waiting and listening for hits to ipn_handler.php.
-3.  When your server receives a request, it attempts to validate and be sure that the PayPal data provided matches the order details for which it is intended.
-4.  If validation passes, the customer's order is released, and it lets the PayPal server know that you received their confirmation. This handshaking happens via CURL on port 443, and requires that your server be configured for modern TLS communication to https URLs.
-5.  **NOTE:** PayPal's server will attempt the IPN notification (hourly) for up to four days if it's not successful on the first try. In this case your customer's order will not show up in your Admin until the IPN notification is successful.
-
-## Testing PayPal Transactions
-
-To test that PayPal is properly configured, you should test two methods:
-
-1.  Test by paying for something using a PayPal account (not the same account as your store).
-2.  Test by paying for something with a credit card WITHOUT creating or using a PayPal account for payment.
-
-All of these tests are to be performed in "production" or "live" mode. Do NOT use a Sandbox for testing. _(If you don't know what this means, just proceed with testing.)_
-
-### Testing using a PayPal account
-
-1.  You need a second PayPal account to do this. PayPal allows you to have two accounts per person: one personal and one business. For this test, you will pay for your purchase using funds on account in your personal PayPal account. You will be paying money to your store account (and refunding it).
-2.  Create or select a product which has a low price, such as $0.01 or maybe $1.00.
-3.  Purchase that product.
-4.  During checkout, choose the lowest-price shipping option.
-5.  During checkout, choose PayPal.
-6.  After the Checkout Confirmation screen, you'll be taken to the PayPal website to make payment.
-7.  Enter your PERSONAL PayPal account username and password.
-8.  Confirm the transaction.
-9.  You will be returned to your store after completion.
-10.  Verify that you received two or three emails: one from PayPal, one from the store to you as a customer, and one from the store to your _Admin_ address. If you did not receive the emails from the store within five minutes, then go to the Troubleshooting section of this document, above.
-11.  Log in to your BUSINESS PayPal account and refund your test transaction.
-
-### Testing without a PayPal account
-
-To test payment by credit card without using a PayPal account, use these steps:
-
-_(Before proceeding, find your credit cards, and select one that's not already associated with any PayPal account !!)_
-
-1.  Create or select a product in your store which has a low price, such as $0.01 or maybe $1.00.
-2.  Purchase that product.
-3.  During checkout, choose the lowest-price shipping option.
-4.  During checkout, choose PayPal.
-5.  After the Checkout Confirmation screen, you'll be taken to the PayPal website to make payment.
-6.  Underneath the login box for PayPal username/password, there is a link to Purchase without a PayPal account. Click that link.
-7.  Fill in and/or confirm your personal information.
-8.  Fill in your payment details including credit card number. (You should NOT use a credit card number that's already associated with any PayPal account !!)
-9.  Confirm the transaction.
-10.  You will be returned to your store after completion.
-11.  Verify that you received two or three emails: one from PayPal, one from the store to you as a customer, and one from the store to your _Admin_ address. If you did not receive the emails from the store within five minutes, then go to the Troubleshooting section of this document, above.
-12.  Log in to your BUSINESS PayPal account and refund your test transaction.
-
+---
