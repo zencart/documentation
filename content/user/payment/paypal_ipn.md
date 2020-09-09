@@ -1,5 +1,5 @@
 ---
-title: PayPal IPN Troubleshooting
+title: PayPal/IPN Troubleshooting
 description: Resolving problems with PayPal 
 category: payment
 weight: 10
@@ -7,10 +7,13 @@ weight: 10
 
 ## Things to check if PayPal payments are not working
 
-###
+### Are you getting specific error messages?
+See the [PayPal Errors](/user/payment/paypal_errors/) page to investigate.
 
+### Is the PayPal payment option not appearing?
+Did you miss any of the configuration steps when [Configuring PayPal in your Store](/user/payment/paypal_express_checkout/)?
 
-### Notifications/Updates From PayPal Regarding Orders
+### Are Transaction Updates From PayPal Not Updating Your Orders?
 
 PayPal sends automatic updates to your store whenever a transaction's status changes. Sometimes those notifications don't arrive, for various technical reasons. The following may help troubleshoot:
 
