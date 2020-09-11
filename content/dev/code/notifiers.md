@@ -21,7 +21,7 @@ If/when that event occurs, the `base` class receives control and looks to see if
 
 Here are some 'quick links' to various sections of this documentation:
 
-1. [Issuing Event Notifications](#issuing-event-notifications).  Identifies the mechanism used by _event issuers_ to issue a notification.
+1. [Triggering Event Notifications](#triggering-event-notifications).  Identifies the mechanism used to trigger a notification.
 
 2. [Observing Notifications](#observing-notifications). Identifies the mechanisms used by _event observers_ to perform their customizations.
 
@@ -40,13 +40,13 @@ Here are some 'quick links' to various sections of this documentation:
 5. [Additional Information](#additional-information).  This section has references to additional documentation on the observer/notifier system.
 
 
-## Issuing Event Notifications
+## Triggering Event Notifications
 
-The point of the observer/notifier system is to enable developers to write code that listens for certain events to happen and then perform a customized action for an event.
+The point of the observer/notifier system is to enable developers to write code that listens for certain events to happen and then perform a customized action at that point in the code execution flow.
 
-Events are identified by string-names and are triggered via call to a `notify` method by an _event issuer_.  You can see a [list of notifiers](/dev/code/notifiers_list/) provided by the Zen Cart core for reference. 
+Event names are strings and are triggered via a `notify` function.  You can see a [list of notifiers](/dev/code/notifiers_list/) in the Zen Cart core code for reference. 
 
-**Note**: Plugins (Zen Cart extensions) can also be _event issuers_.
+**Note**: Plugins (Zen Cart extensions) can also trigger notifier events.
 
 The `notify` method takes the following inputs:
 
@@ -54,7 +54,7 @@ The `notify` method takes the following inputs:
 | :---------------: | :-------: | ------------------------------------------------------------ |
 |     $eventId      |    Yes    | The string 'name' of the event, e.g. `NOTIFIER_CART_ADD_CART_END`. |
 |      $param1      |    No     | A read-only variable, the format of which varies by the `$eventId`.  Defaults to an empty array. |
-| $param2 - $param9 |    No     | A collection of read-write variables, passed as a reference.  The notification issuer is, essentially, giving permission for an observer to update these variables.  Each variable's format (and presence) varies by the `$eventId` and defaults to `null`. |
+| $param2 - $param9 |    No     | A collection of read-write variables, passed as a reference.  The code that passes these variables is giving permission for an observer to update these variables.  Each variable's format (and presence) varies by the `$eventId` and defaults to `null`. |
 
 #### Class-Based Event Notifications
 
@@ -64,22 +64,22 @@ Within a class that extends the Zen Cart `base` class, e.g.:
 class shopping_cart extends base
 ```
 
-&hellip; events can be issued via the `$this` keyword:
+&hellip; events can be triggered via the `$this` keyword:
 
 ```php
 $this->notify('EVENT_NAME');
 ```
 
-For example, the shopping cart class issues this event after an item has been added to the cart:
+For example, the shopping cart class triggers this event after an item has been added to the cart:
 ```php
 $this->notify('NOTIFIER_CART_ADD_CART_END');
 ```
 
-When a class issues a notification using the `$this` keyword, _all_ **public** class-variables are available for use by a watching observer.  If a class desires to issue a notification without that access, the global `$zco_notifier` can be used to issue that notification.
+When a class triggers a notification using the `$this` keyword, _all_ **public** class-variables are available for use by a watching observer.  If a class desires to trigger a notification without that access, the global `$zco_notifier` can be used to trigger that notification.
 
 #### Procedural Event Notifications
 
-In procedural code, functions and classes that don't `extend base`, use the global `$zco_notifier` object to issue events. For example, the `zen_mail` function triggers the following event, which allows a plugin to update the to-be-sent email format:
+In procedural application code (not in observer classes), functions and classes that don't `extend base`, use the global `$zco_notifier` object to trigger events. For example, the `zen_mail` function triggers the following event, which allows a plugin to update the to-be-sent email format:
 
 ```php
 $zco_notifier->notify('NOTIFY_EMAIL_DETERMINING_EMAIL_FORMAT', $to_email_address, $customers_email_format, $module);
@@ -101,10 +101,10 @@ There are three *base-class* methods that observers use to provide their custom 
 
 The `attach`  method is used by an _event observer_ to 'register' to receive control when a specified event (or list of events) occurs.  This method takes two parameters:
 
-1. `$observer`.  Identifies 'who' is requesting to receive control, i.e. `$this` which identifies the current class.  This value is used by the `base` class to create a unique ID associated with the observation request.
-2. `$eventIDArray`.  A simple array of event names that the observer-class is 'interested in'.
+1. `$observer`.  Identifies 'who' is requesting to receive control, i.e. `$this` which identifies the current class.  This value is used by the `base` class to create a unique ID associated with the observation request (just used internally, you don't need to worry about that unique ID).
+2. `$eventIDArray`.  A simple array of event names that the observer-class is listening for ('observing').
 
-For example, `/includes/classes/observers/class.products_viewed_counter.php` requests to be notified whenever the event `NOTIFY_PRODUCT_VIEWS_HIT_INCREMENTOR` is issued.  That event is issued by the various product types' `main_template_vars.php` modules.
+For example, `/includes/classes/observers/class.products_viewed_counter.php` requests to be notified whenever the event `NOTIFY_PRODUCT_VIEWS_HIT_INCREMENTOR` is triggered by attaching to that event. That event is then triggered in application code by the various product types' `main_template_vars.php` modules, causing the observer class to respond as described in the _update_ section below.
 
 ``` php
 class products_viewed_counter extends base {
@@ -118,14 +118,14 @@ class products_viewed_counter extends base {
 
 #### update
 
-The `update` method is used by an _event observer_ to perform event-specific actions when an event is issued. This method is passed _up to_ 11 parameters:
+The `update` method is used by an _event observer_ to perform event-specific actions when an event is triggered. This method is passed _up to_ 11 parameters:
 
-1. `&$callingClass`. This is a reference to the class in which the event occurred.  If the event is issued by a class other than the `base` (e.g. the `order` or `shopping_cart` class), then this variable can be used to manipulate any ***public*** properties within the calling class. (eg: if the event is called from the `order` class, then inside the observer you would refer to the `order` class's `$this->info` property using `$class->info`)
+1. `&$callingClass`. This is a reference to the class in which the event occurred.  If the event is triggered by a class other than the `base` (e.g. the `order` or `shopping_cart` class), then this variable can be used to manipulate any ***public*** properties within the calling class. (eg: if the event is called from the `order` class, then inside the observer you would refer to the `order` class's `$this->info` property using `$class->info`)
 2. `$eventID`. The name of the event triggered.
 3. `$param1`.  _Read-only_ data.  The value is dependent on the `$eventID`.
-4. `&$param2` through `&$param9`.  _Updateable_ variables provided by the _event issuer_.  These values, too, are dependent on the `$eventID`.
+4. `&$param2` through `&$param9`.  _Updateable_ variables provided by the code triggering the event. These values are dependent on the `$eventID`.
 
-***Note***: You can also choose to use [event-specific update-methods](#event-specific-update-methods) to handle event-related processing.
+***Note***: Instead of the generic `update()` method that fires irrespective of which eventID was triggered, you can also choose to use [event-specific update-methods](#event-specific-update-methods) to handle event-related processing.
 
 Here's the full implementation for `/includes/classes/observers/class.products_viewed_counter.php`:
 
@@ -134,7 +134,7 @@ class products_viewed_counter extends base {
 
   function __construct() {
     $this->attach($this, array('NOTIFY_PRODUCT_VIEWS_HIT_INCREMENTOR'));
-  }a
+  }
 
   function update(&$class, $eventID, $paramsArray = array())
   {
@@ -142,10 +142,10 @@ class products_viewed_counter extends base {
       if (defined('LEGACY_PRODUCTS_VIEWED_COUNTER') && LEGACY_PRODUCTS_VIEWED_COUNTER == 'on')
       {
         global $db;
-        $sql = "update " . TABLE_PRODUCTS_DESCRIPTION . "
-                set        products_viewed = products_viewed+1
-                where      products_id = '" . (int)$paramsArray . "'
-                and        language_id = '" . (int)$_SESSION['languages_id'] . "'";
+        $sql = "UPDATE " . TABLE_PRODUCTS_DESCRIPTION . "
+                SET   products_viewed = products_viewed+1
+                WHERE products_id = " . (int)$paramsArray . "
+                AND   language_id = " . (int)$_SESSION['languages_id'];
         $res = $db->Execute($sql);
       }
     }
@@ -154,7 +154,7 @@ class products_viewed_counter extends base {
 }
 ```
 
-When the `NOTIFY_PRODUCT_VIEWS_HIT_INCREMENTOR` event is issued and that constant is defined, the first parameter is _expected to be_ an integer value that identifies the specific product to be updated.  The observer's `update` method, thus, casts the first parameter to an integer value and performs the `products_viewed` update.
+When the `NOTIFY_PRODUCT_VIEWS_HIT_INCREMENTOR` event is triggered (and the shown defined constant is set to 'on'), the `$paramsArray` parameter is _expected to be_ an integer value that identifies the specific product to be updated.  The observer's `update` method thus casts that `$paramsArray` parameter to an integer value and performs the `products_viewed` update.
 
 #### detach
 
@@ -163,11 +163,14 @@ The `detach` method is used by an _event observer_ to 'un-register' from receivi
 1. `$observer`.  Identifies 'who' is requesting to receive control, i.e. `$this` which identifies the current class.  This value should be the same as that used to `attach` to the no-longer-wanted event.
 2. `$eventIDArray`.  A simple array of event names that the observer-class is no longer 'interested in'.
 
-If, for instance, an observer was interested in the *first* issuance of a given notification, the observer's `update` method, upon receiving that notification, would issue the associated `detach`.
+While seldom used, here's one way it might be used: If, for instance, an observer was interested in the *first* triggering of a given notification, the observer's `update` method, upon receiving that notification, could trigger the associated `detach` so listening stops.
+
 
 ## Loading Your Observer-Class
 
-Next step, loading and creating an 'instance' of your observer-class.  You'll create a file in the Zen Cart `/includes/auto_loaders` (or `/admin/includes/auto_loaders`) sub-directory to perform those tasks.  For the example used above, that file's named `/includes/auto_loaders/config.products_viewed_counter.php`.
+To load and create an 'instance' of your observer-class so that it is operational, you'll create a file in the Zen Cart `/includes/auto_loaders` (or `/admin/includes/auto_loaders`) sub-directory to perform those tasks.  
+
+For the example used above, that was the file named `/includes/auto_loaders/config.products_viewed_counter.php`.
 
 The file contains two auto-load statements:
 
@@ -182,9 +185,16 @@ if (!defined('IS_ADMIN_FLAG')) {
  die('Illegal Access');
 }
 $autoLoadConfig[190][] = array('autoType'=>'class',
-                              'loadFile'=>'observers/class.products_viewed_counter.php');
+
+                              // the filename, relative to the `classes` folder:
+                              'loadFile'=> DIR_FS_CATALOG . DIR_WS_CLASSES . 'observers/class.products_viewed_counter.php');
+
 $autoLoadConfig[190][] = array('autoType'=>'classInstantiate',
+
+                              // the name of the class as declared inside the observer class file
                               'className'=>'products_viewed_counter',
+
+                              // the name of the global object into which the class is instantiated
                               'objectName'=>'products_viewed_counter');
 ```
 
@@ -192,40 +202,45 @@ $autoLoadConfig[190][] = array('autoType'=>'classInstantiate',
 
 ### Choosing When to Load an Observer
 
-If your observer-class performs actions *prior to* the page-specific loading, e.g. monitoring for cart-related actions, you'll need to make sure that your observer is loaded and instantiated ***before*** any watched-for notification is issued.  In these cases, review the base Zen Cart auto-loader (`[/admin]/includes/auto_loaders/config.core.php`) to identify the load-point required.
+If your observer-class performs actions *prior to* the page-specific loading (e.g. monitoring for cart-related actions), you'll need to make sure that your observer is loaded and instantiated ***before*** any watched-for notification is triggered in application code.  In these cases, review the base Zen Cart auto-loader (`[/admin]/includes/auto_loaders/config.core.php`) to identify the load-point required.
 
 ### Auto-loaded Observers
 
-If you're developing a plugin that uses an observer-class, in earlier versions of Zen Cart, you would have had to provide ***two*** files in your plugin's distribution to get that class loaded and instantiated:
+If you're developing a plugin that uses an observer-class you might wish to utilize auto loading and instantiating of observers.
+
+While still supported, prior to Zen Cart v1.5.3 your only choice was to provide ***two*** files in your plugin's distribution to get that class loaded and instantiated:
 
 1. /includes/auto_loaders/config.your_plugin.php
 2. /includes/classes/observers/class.your_plugin.php
 
-Starting with Zen Cart v1.5.3, built-in functionality will do the  "heavy lifting" to get your class-file loaded and instantiated, saving you some effort.
+However, by following a naming convention Zen Cart will do the  "heavy lifting" to get your class-file loaded and instantiated, saving you some effort. Here are the requirements: 
 
-Here are the requirements: 
+1. The file is in the `/includes/classes/observers` sub-directory and named like: `auto.your_plugin.php`. Note the **auto.** prefix.  All files in this directory that start with **auto.** will be included (i.e. loaded).
+2. The file defines a class named **zcObserver** + the [CamelCased](http://en.wikipedia.org/wiki/CamelCase) filename, e.g. a file named `auto.your_plugin.php` will contain a class named  `zcObserverYourPlugin`.  (For debugging assistance, a myDEBUG\*.log file will be generated if a properly-named file is loaded, but the class name doesn't conform to these rules.)
 
-1. The file is in the `/includes/classes/observers` sub-directory and named **auto.**your_plugin.php.  All files in this directory that start with **auto.** will be included (i.e. loaded).
-2. The file defines a class named **zcObserver** + the [CamelCased](http://en.wikipedia.org/wiki/CamelCase) filename, e.g. a file named `auto.your_plugin.php` will contain a class named  `zcObserverYourPlugin`.  A myDEBUG\*.log file will be generated if a  properly-named file is loaded, but the class name doesn't conform to  these rules.
-
-Note that this technique will work so  long as your class doesn't have any special requirements on its load  point (auto-loaded classes are loaded at point `175`, after all other  system dependencies are loaded).   
+Note that this technique will work so long as your class doesn't have any special requirements on its load point (auto-loaded classes are loaded at point `175`, after all other system dependencies are loaded). Most observers won't need to be loaded "before" all other regular dependencies, so load-point 175 is fine in most cases. If your observer needs to be loaded earlier, then don't use this special naming convention, but instead just fallback to using auto-loader files to specify the required load-point and instantiation instructions as described above.
 
 For example, the *Products Viewed Counter* described [above](#update) could provide the same functionality and not need its auto-loader component if the observer-class file was renamed to `/includes/classes/observers/auto.products_viewed_counter.php` and its class name was updated to be `zcObserverProductsViewedCounter.php`.
 
 ### Event-Specific Update Methods
 
-Problem: If you register for a number of related events, a single `update` function will be getting different parameters depending on which event fires.
+Problem: If in one Observer class you attach to a number of different events, a single `update` function will fire for all of those events ... but that means it will likely be receiving different function parameters depending on which event was triggered.
 
-Solution: Your observer-class' `update` method(s) can be customized based on the notification received, since the parameters for a notification depend on the notification received.  So rather than use one `update` method, create separate methods to receive each type of event. 
+Solution: Your observer's `update` method can be split out into multiple functions that are customized based on the notification received, thus also easily interpreting the passed parameters coming from where that notification was triggered. 
 
-There are two syntaxes supported for this: 
+So rather than use one `update` method, create separate methods to receive each type of event, as follows.
+
+There are two syntaxes supported for this. The `update` method will only be called if neither of these other syntaxes are found:
 
 #### snake_cased event name
 This is supported since v1.5.7.
 
 For a notifier named `NOTIFY_PRODUCT_VIEWS_HIT_INCREMENTOR` you could have a function in your observer class named `notify_product_views_hit_incrementor()` instead of `update()` (and still specify all the same parameters as you would for an `update()` function.
 
-or for older versions, use the camelCased convention described below:
+This has the added benefit of being searchable just like the notifier event name (albeit lowercase).
+
+
+Alternatively, or for older versions, use the camelCased convention described below:
 
 #### camelCased event name
 
@@ -257,17 +272,18 @@ class zcObserverProductsViewedCounter extends base
 
 ### Generic Formal Parameter Interpretation
 
-One more method for interpretation of parameters is possible when using a 
-single method to monitor multiple events.  
+If you choose not to use event-specific "update" function names, then in order for your Observer to respond to the varying $parameters received when triggered, you will need to do some special treatment based on the `$eventID` that was triggered.
 
-The update method may simply "interpret" the parameters in a switch statement, according to the specific eventID being passed. Here's an example from the Edit Orders plugin.  Each of the monitored events uses different parameters, so the formal parameters used in the `update` function declaration are generic.
+The following approach is a way to trick the update method into "interpreting" the parameters using a switch statement according to the specific eventID being passed. 
+
+Here's an example from the Edit Orders plugin.  Each of the monitored events uses different parameters, so the formal parameters used in the `update` function declaration are generic.
 
 ```
     public function update(&$class, $eventID, $p1, &$p2, &$p3, &$p4, &$p5) 
     {
         switch ($eventID) {
             // -----
-            // Issued during the orders-listing sidebar generation, after the upper button-list has been created.
+            // Triggered during the orders-listing sidebar generation, after the upper button-list has been created.
             //
             // $p1 ... Contains the current $oInfo object, which contains the orders-id.
             // $p2 ... A reference to the current $contents array; the NEXT-TO-LAST element has been updated
@@ -281,7 +297,7 @@ The update method may simply "interpret" the parameters in a switch statement, a
                 break;
       
             // -----
-            // Issued during the orders-listing sidebar generation, after the lower-button-list has been created.
+            // Triggered during the orders-listing sidebar generation, after the lower-button-list has been created.
             //
             // $p1 ... Contains the current $oInfo object (could be empty), containing the orders-id.
             // $p2 ... A reference to the current $contents array; the LAST element has been updated
@@ -295,7 +311,7 @@ The update method may simply "interpret" the parameters in a switch statement, a
                 break;
                 
             // -----
-            // Issued during the orders-listing generation for each order, gives us a chance to add the icon to
+            // Triggered during the orders-listing generation for each order, gives us a chance to add the icon to
             // quickly edit the associated order.
             //
             // $p1 ... An empty array
@@ -309,13 +325,13 @@ The update method may simply "interpret" the parameters in a switch statement, a
                 break; 
 ```
 
-Some developers believe this method should not be used since it is less self-documenting than prior methods.  Others prefer it for its compactness of expression when compared to the more long-winded camelCase.
+Some developers believe this method should not be used since it is less self-documenting than prior methods.  Others prefer it for its shorter function name when compared to the more long-winded camelCase syntax.
 
 ## Additional Information
 
 ### Event Aliasing 
 
-Sometimes notifier names are changed (because of a typo, for example, or to make them more self-documenting).  When this happens, rather than just remove the old notifier, the recommended practice since Zen Cart 1.5.7 has been to alias the old name.  This way, older code which uses the old notifier name will still work. 
+Sometimes notifier names are changed (where triggered in application code) (because of a typo, for example, or to make them more self-documenting).  When this happens, rather than just remove the old notifier from the code base, the recommended practice since Zen Cart 1.5.7 has been to alias the old name.  This way older code which uses the old notifier name will still work. In some cases it makes perfect sense to fully remove an old notifier call. Use discretion when deciding whether to clean up after yourself or hold on for long-term backward compatibility.
 
 ### Plugins which support Notifier Use 
 
@@ -325,5 +341,5 @@ Some plugins which can be helpful during development when using notifiers includ
 * [Zen Cart Notifier Report](https://www.zen-cart.com/downloads.php?do=file&id=2260)
 
 ### Information about Notifiers 
-* A [list of notifiers](/dev/code/notifiers_list) is provided for the current Zen Cart release. 
+* A [list of notifiers](/dev/code/notifiers_list) for the current Zen Cart release. 
 * The output of the [Zen Cart Notifier Report](/dev/code/notifier_report/) is provided on the docs site for easy reference by developers. 
