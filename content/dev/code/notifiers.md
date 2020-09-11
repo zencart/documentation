@@ -54,7 +54,7 @@ The `notify` method takes the following inputs:
 | :---------------: | :-------: | ------------------------------------------------------------ |
 |     $eventId      |    Yes    | The string 'name' of the event, e.g. `NOTIFIER_CART_ADD_CART_END`. |
 |      $param1      |    No     | A read-only variable, the format of which varies by the `$eventId`.  Defaults to an empty array. |
-| $param2 - $param9 |    No     | A collection of read-write variables, passed as a reference.  The code that passes these variables is giving permission for an observer to update these variables.  Each variable's format (and presence) varies by the `$eventId` and defaults to `null`. |
+| $param2 ... $param9 |    No     | A collection of read-write variables, passed as a reference.  The code that passes these variables is giving permission for an observer to update these variables.  Each variable's format (and presence) varies by the `$eventId` and defaults to `null`. |
 
 #### Class-Based Event Notifications
 
