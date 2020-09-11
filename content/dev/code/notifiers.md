@@ -79,7 +79,7 @@ When a class triggers a notification using the `$this` keyword, _all_ **public**
 
 #### Procedural Event Notifications
 
-In procedural application code (eg: in any code that is not inside a class which `extends base`), use the global `$zco_notifier` object to trigger events. 
+In procedural application code (actually, in any code that is not inside a class which `extends base`), use the global `$zco_notifier` object to trigger events. 
 
 For example, the `zen_mail` function triggers the following event, which allows a plugin to update the to-be-sent email format:
 
@@ -88,6 +88,8 @@ $zco_notifier->notify('NOTIFY_EMAIL_DETERMINING_EMAIL_FORMAT', $to_email_address
 ```
 
 ## Observing Notifications
+
+### Writing Observer Classes
 
 To take advantage of notifiers, developers need to write classes to watch for them, i.e. _observe_.  There's even a nice directory, `includes/classes/observers` and `admin/includes/classes/observers`, where developers can put these classes.
 
@@ -118,7 +120,7 @@ class products_viewed_counter extends base {
 }
 ```
 
-#### update
+#### update()
 
 The `update` method is used by an _event observer_ to perform event-specific actions when an event is triggered. This method is passed _up to_ 11 parameters:
 
@@ -158,7 +160,7 @@ class products_viewed_counter extends base {
 
 When the `NOTIFY_PRODUCT_VIEWS_HIT_INCREMENTOR` event is triggered (and the shown defined constant is set to 'on'), the `$paramsArray` parameter is _expected to be_ an integer value that identifies the specific product to be updated.  The observer's `update` method thus casts that `$paramsArray` parameter to an integer value and performs the `products_viewed` update.
 
-#### detach
+#### detach()
 
 The `detach` method is used by an _event observer_ to 'un-register' from receiving specified event (or list of events) notifications.  This method takes two parameters:
 
@@ -202,7 +204,7 @@ $autoLoadConfig[190][] = array('autoType'=>'classInstantiate',
 
 ## Advanced Topics
 
-### Choosing When to Load an Observer
+### Choosing "When" to Load an Observer
 
 If your observer-class performs actions *prior to* the page-specific loading (e.g. monitoring for cart-related actions), you'll need to make sure that your observer is loaded and instantiated ***before*** any watched-for notification is triggered in application code.  In these cases, review the base Zen Cart auto-loader (`[/admin]/includes/auto_loaders/config.core.php`) to identify the load-point required.
 
