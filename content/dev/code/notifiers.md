@@ -79,7 +79,9 @@ When a class triggers a notification using the `$this` keyword, _all_ **public**
 
 #### Procedural Event Notifications
 
-In procedural application code (not in observer classes), functions and classes that don't `extend base`, use the global `$zco_notifier` object to trigger events. For example, the `zen_mail` function triggers the following event, which allows a plugin to update the to-be-sent email format:
+In procedural application code (eg: in any code that is not inside a class which `extends base`), use the global `$zco_notifier` object to trigger events. 
+
+For example, the `zen_mail` function triggers the following event, which allows a plugin to update the to-be-sent email format:
 
 ```php
 $zco_notifier->notify('NOTIFY_EMAIL_DETERMINING_EMAIL_FORMAT', $to_email_address, $customers_email_format, $module);
