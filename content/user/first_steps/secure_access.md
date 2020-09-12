@@ -7,7 +7,8 @@ weight: 10
 
 ## Having an SSL certificate 
 
-Yes, you do need an SSL certificate; it's part of running an online store. It doesn't matter that you don't do onsite credit card collection; [you still need an SSL certificate](/user/first_steps/yes_you_need_ssl/).
+[You need an SSL certificate](/user/first_steps/yes_you_need_ssl/); 
+it's part of running an online store. It doesn't matter that you don't do onsite credit card collection; you still need an SSL certificate.
 
 **Don't let this be you!**
 
@@ -43,4 +44,33 @@ Just because you run an SSL on your site doesn't mean your cPanel access is secu
 **Don't let this be you!**
 
 ![Insecure cPanel](/images/cpanel_insecure.png)
+
+## Secure Passwords 
+
+Make hard to guess!  Passwords like "ABC123" are *not hard to guess* - bad guys will try them.   Use a random combination of letters, numbers and symbols which is at least 8 characters long.  
+
+"But it's hard to remember all these passwords!"  Yes, I know.  That's why there are Password Managers. 
+
+## Use a Password Manager 
+
+Don't rely on your memory or some Post-It notes for password storage.  Use a proper password manager, and use the password generation functions that it has to keep your passwords hard to guess. 
+
+There are many password managers on the market, and many have free tiers; here are a few: 
+
+- [LastPass](https://www.lastpass.com/)
+- [1Password](https://1password.com/)
+- [Dashlane](https://dashlane.com) 
+
+## Use different passwords for each site
+
+Don't reuse passwords! Now that you have a password manager, allow it to generate and store your passwords so that each one can be unique and hard to guess.  
+
+## Transfer passwords securely
+
+Do not put passwords in an email.  This is not a secure practice.  If you have to send a password to a developer or co-worker, use a more secure means of transmission:
+
+- Over the telephone using the [phonetic alphabet](https://en.wikipedia.org/wiki/NATO_phonetic_alphabet)
+- Over SMS 
+- One time link generators like [privnote.com](https://privnote.com)
+
 

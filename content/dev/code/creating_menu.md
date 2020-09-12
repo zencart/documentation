@@ -91,3 +91,30 @@ DELETE FROM admin_pages WHERE page_key = 'toolsNewTool';
 - If you don't see your newly added item, it's likely somewhere in the middle of the menu's dropdown list.
 - Use 999 (or any other large number) for the sort order value if you want to ensure that your item is at the bottom of the menu's list.
 - To reposition an item within one of the admin menus, use your cPanel's phpMyAdmin tool and  browse the `admin_pages` table to find the added menu item and adjust its sort_order value as desired.
+
+### One thing NOT to do! 
+
+Rather than simply using the call `toolsNewTool` to see if the menu entry has already been added, some developers will delete the registration file.  
+
+```
+@unlink(DIR_WS_INCLUDES . 'functions/extra_functions/somescript_admin_page_reg.php');
+```
+
+PLEASE don't do this. If you do, it becomes difficult to create copies of the site for testing.  Instead, simply test the existence of whatever you're trying not to re-do.  For example, to see if an admin menu exists, use `zen_page_key_exists`. 
+
+## Alternate Approaches to Menu Creation 
+
+Rather than write code as shown above, some developers prefer to provide a SQL file that can be run from Admin > Tools > Install SQL Patches. 
+
+```
+INSERT INTO admin_pages (page_key, language_key, main_page, page_params, menu_key, display_on_menu, sort_order) VALUES ('mod_list', 'BOX_TOOLS_MOD_LIST', 'FILENAME_MOD_LIST', '', 'tools', 'Y', 999);
+```
+
+The advantage of this approach is that it's a one time operation with no checking overhead in the future.
+
+Still others simply point users to the [Admin Page Registration](/user/admin_pages/admins/admin_page_registration/) page. Note that this approach is not encouraged. 
+
+## Using the Encapsulated Plugin Manager 
+
+For developers targeting 1.5.7 and above, the [encapsulated plugin](/dev/plugins/encapsulated_plugins/) architecture is the new standard.  For details on SQL actions in encapsulated plugins, see [Plugin SQL Installation](/dev/plugins/encapsulated_plugins/sql_installation/). 
+

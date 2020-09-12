@@ -27,6 +27,8 @@ weight: 10
 
 *   Private Message the Support Team trying to get their attention for your post. The whole idea of the forum is education and a problem solved privately benefits no one except you.
 
+*   Hijack a thread: If a thread is asking one question and you want to ask a different one, just create a new thread in the relevant forum; don't hijack the threads.  (The exception is support threads for plugins.) 
+
 *   Cross Post. Cross Posting is posting the same message in multiple threads or posting links to threads on other boards. It's seen as spam.
 
 *   Use banners or other images in your signature line. You will be asked to remove them.  See [signature guidelines](/user/zen_cart_forum/signature/).

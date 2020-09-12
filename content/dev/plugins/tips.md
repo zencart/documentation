@@ -43,5 +43,14 @@ Combine your extra details for these two files into one file, and then add it to
 
 <hr>
 
+## Other Resources 
+
+- [Creating a menu item](/dev/code/creating_menu/)
+
+- [Creating or altering tables](/dev/code/creating_tables/)
+
+- [Building a form](/dev/code/forms/)
+
+
 ## Forum Resources 
 If you run into trouble working on your plugin, you can always post your question on the [Contribution-Writing Subforum](https://www.zen-cart.com/forumdisplay.php?43-Contribution-Writing-Guidelines). 
