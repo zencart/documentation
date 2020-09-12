@@ -8,7 +8,7 @@ weight: 10
 ## Having an SSL certificate 
 
 [You need an SSL certificate](/user/first_steps/yes_you_need_ssl/); 
-it's part of running an online store. It doesn't matter that you don't do onsite credit card collection; you still need an SSL certificate.
+it's part of running an online store. It doesn't matter that you don't do onsite credit card collection; you still need an SSL certificate.  Search engines will penalize you if you don't have one. 
 
 **Don't let this be you!**
 
@@ -47,7 +47,7 @@ Just because you run an SSL on your site doesn't mean your cPanel access is secu
 
 ## Secure Passwords 
 
-Make hard to guess!  Passwords like "ABC123" are *not hard to guess* - bad guys will try them.   Use a random combination of letters, numbers and symbols which is at least 8 characters long.  
+Make hard to guess!  Passwords like "ABC123" or "P@ssw0rd" are *not hard enough to guess*.  Bad guys will try weak passwords, and if you use one, will get access to your site.   Use a random combination of letters, numbers and symbols which is at least 8 characters long.  
 
 "But it's hard to remember all these passwords!"  Yes, I know.  That's why there are Password Managers. 
 
@@ -71,6 +71,7 @@ Do not put passwords in an email.  This is not a secure practice.  If you have t
 
 - Over the telephone using the [phonetic alphabet](https://en.wikipedia.org/wiki/NATO_phonetic_alphabet)
 - Over SMS 
-- One time link generators like [privnote.com](https://privnote.com)
+- One time link generators like [privnote.com](https://privnote.com) or [noteshred.com](https://noteshred.com)
+- Your own password manager's sharing facility 
 
 

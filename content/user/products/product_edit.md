@@ -5,10 +5,10 @@ category: products
 weight: 10
 ---
 
-The product editing screen is reached by going to [Admin > Catalog > Categories/Products](/user/admin_pages/catalog/categories/), and then navigating down to [the product level](/user/admin_pages/catalog/categories_products/). 
+The product editing screen is reached by going to [Admin > Catalog > Categories/Products](/user/admin_pages/catalog/categories/), and then navigating down to [the product level](/user/admin_pages/catalog/categories_products/) and editing a specific product. 
 
-The product adding/editing screen allows you to set all the product fields available to 
-that product type.  
+The screen allows you to set all the product fields available to 
+that product type.  It is used for both product creation and product editing.
 
 ![product editing screen](/images/product_edit.png)
 
