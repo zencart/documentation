@@ -1,6 +1,5 @@
 ---
 title: Plugin Manager
-description: Zen Cart Plugin Manager Admin Page 
 category: admin_pages
 weight: 40
 ---

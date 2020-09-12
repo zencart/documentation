@@ -1,6 +1,5 @@
 ---
 title: Reviews
-description: Zen Cart Reviews Admin Page 
 category: admin_pages
 weight: 110
 ---

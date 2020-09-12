@@ -1,6 +1,5 @@
 ---
 title: Media Manager
-description: Zen Cart Media Manager Admin Page 
 category: admin_pages
 weight: 30 
 ---

@@ -1,6 +1,5 @@
 ---
 title: Send Email 
-description: Sending email to customers and groups
 category: admin_pages
 weight: 10
 ---

@@ -1,6 +1,5 @@
 ---
 title: Store Manager
-description: Common database management tasks 
 category: admin_pages
 weight: 10
 ---

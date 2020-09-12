@@ -1,6 +1,5 @@
 ---
 title: Zone Definitions
-description: What are Zone Definitions? or Geo Zones?
 category: admin_pages
 weight: 30
 ---

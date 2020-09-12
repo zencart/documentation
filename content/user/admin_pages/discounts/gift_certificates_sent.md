@@ -1,6 +1,5 @@
 ---
 title: Gift Certificates Sent
-description: Zen Cart Gift Certificates Sent Admin Page 
 category: admin_pages
 weight: 40
 ---

@@ -1,6 +1,5 @@
 ---
 title: Coupon Creation 
-description: Making a new coupon 
 category: admin_pages
 weight: 10
 ---

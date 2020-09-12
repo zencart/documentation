@@ -1,6 +1,5 @@
 ---
 title: Categories/Products (Products Level)
-description: Zen Cart Products Admin Page 
 category: admin_pages
 weight: 12
 ---

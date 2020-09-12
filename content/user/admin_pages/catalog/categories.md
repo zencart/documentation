@@ -1,6 +1,5 @@
 ---
 title: Categories/Products
-description: Zen Cart Categories Admin Page 
 category: admin_pages
 weight: 10
 ---

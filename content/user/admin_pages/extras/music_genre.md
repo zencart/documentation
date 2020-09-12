@@ -1,6 +1,5 @@
 ---
 title: Music Genre
-description: Zen Cart Music Genre Admin Page 
 category: admin_pages
 weight: 20 
 ---

@@ -1,6 +1,5 @@
 ---
 title: Orders Status 
-description: Zen Cart Orders Status Admin Page 
 category: admin_pages
 weight: 30
 ---

@@ -1,6 +1,5 @@
 ---
 title: Define Pages Editor
-description: User editable page content 
 category: admin_pages
 weight: 10
 ---

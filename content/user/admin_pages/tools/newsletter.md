@@ -1,6 +1,5 @@
 ---
 title: Newsletter and Product Notifications Manager 
-description: Sending information to your customers
 category: admin_pages
 weight: 10
 ---

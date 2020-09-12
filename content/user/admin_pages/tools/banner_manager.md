@@ -1,6 +1,5 @@
 ---
 title: Banner Manager
-description: Turn banners off and on 
 category: admin_pages
 weight: 10 
 ---

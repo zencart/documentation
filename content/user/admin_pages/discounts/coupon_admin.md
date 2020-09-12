@@ -1,6 +1,5 @@
 ---
 title: Coupon Admin
-description: Zen Cart Coupon Admin Page 
 category: admin_pages
 weight: 10
 ---

@@ -1,6 +1,5 @@
 ---
-title: Orders Invoice
-description: Zen Cart Orders Invoice Admin Page 
+title: Orders > Invoice
 category: admin_pages
 weight: 100 
 ---

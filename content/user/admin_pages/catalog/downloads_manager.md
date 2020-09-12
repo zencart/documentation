@@ -1,6 +1,5 @@
 ---
 title: Downloads Manager 
-description: Zen Cart Downloads Manager Admin Page
 category: admin_pages
 weight: 70
 ---

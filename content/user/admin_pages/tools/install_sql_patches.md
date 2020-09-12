@@ -1,6 +1,5 @@
 ---
 title: Install SQL Patches 
-description: Running SQL scripts 
 category: admin_pages
 weight: 10
 ---
