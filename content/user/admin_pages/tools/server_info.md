@@ -1,6 +1,5 @@
 ---
 title: Server/Version Info 
-description: Finding out your software version 
 category: admin_pages
 weight: 10
 ---

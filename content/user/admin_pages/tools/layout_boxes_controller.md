@@ -1,6 +1,5 @@
 ---
 title: Layout Boxes Controller
-description: Placing sideboxes on your site 
 category: admin_pages
 weight: 10
 ---

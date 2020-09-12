@@ -1,6 +1,5 @@
 ---
-title: Orders Packing Slip 
-description: Zen Cart Orders Packing Slip Admin Page 
+title: Orders > Packing Slip 
 category: admin_pages
 weight: 110
 ---

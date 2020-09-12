@@ -1,6 +1,5 @@
 ---
 title: Order Total
-description: Zen Cart Order Total Admin Page 
 category: admin_pages
 weight: 30
 ---

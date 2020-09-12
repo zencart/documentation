@@ -1,6 +1,5 @@
 ---
 title: Developer's Tool Kit 
-description: Searching files for strings 
 category: admin_pages
 weight: 10
 ---

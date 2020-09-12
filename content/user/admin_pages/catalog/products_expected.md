@@ -1,6 +1,5 @@
 ---
 title: Products Expected 
-description: Zen Cart Products Expected Admin Page 
 category: admin_pages
 weight: 140
 ---

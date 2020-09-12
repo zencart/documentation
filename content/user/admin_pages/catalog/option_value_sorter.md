@@ -1,6 +1,5 @@
 ---
 title: Option Value Sorter 
-description: Zen Cart Option Value Sorter Admin Page 
 category: admin_pages
 weight: 90
 ---

@@ -1,6 +1,5 @@
 ---
 title: Product Types > Layout Settings
-description: Zen Cart Product Types > Layout Settings Admin Page 
 category: admin_pages
 weight: 21
 ---

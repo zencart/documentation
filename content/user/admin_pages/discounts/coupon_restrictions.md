@@ -1,6 +1,5 @@
 ---
 title: Coupon Restrictions 
-description: Zen Cart Coupon Restrictions Admin Page 
 category: admin_pages
 weight: 11
 ---

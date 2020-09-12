@@ -1,6 +1,5 @@
 ---
 title: Gift Certificate Queue
-description: Zen Cart Gift Certificate Queue Admin Page 
 category: admin_pages
 weight: 20
 ---

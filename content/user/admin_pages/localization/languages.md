@@ -1,6 +1,5 @@
 ---
 title: Languages
-description: Zen Cart Languages Admin Page 
 category: admin_pages
 weight: 20
 ---

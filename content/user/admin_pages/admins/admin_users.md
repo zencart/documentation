@@ -1,6 +1,5 @@
 ---
 title: Admin Users
-description: Zen Cart Admin Users Admin Page 
 category: admin_pages
 weight: 20 
 ---

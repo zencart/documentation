@@ -1,6 +1,5 @@
 ---
 title: Orders
-description: Zen Cart Orders Admin Page 
 category: admin_pages
 weight: 20
 ---

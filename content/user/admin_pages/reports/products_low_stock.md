@@ -1,6 +1,5 @@
 ---
 title: Products Low Stock
-description: Zen Cart Products Low Stock Admin Page 
 category: admin_pages
 weight: 30
 ---

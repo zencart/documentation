@@ -1,6 +1,5 @@
 ---
 title: Tax Rates
-description: Zen Cart Tax Rates Admin Page 
 category: admin_pages
 weight: 50
 ---

@@ -1,6 +1,5 @@
 ---
 title: Who's Online 
-description: See your site's visitors 
 category: admin_pages
 weight: 10
 ---

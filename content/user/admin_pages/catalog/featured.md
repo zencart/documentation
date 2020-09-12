@@ -1,6 +1,5 @@
 ---
 title: Featured Products
-description: Zen Cart Featured Products Admin Page 
 category: admin_pages
 weight: 130
 ---

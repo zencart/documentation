@@ -1,6 +1,5 @@
 ---
 title: EZ-Pages
-description: Add pages to your site 
 category: admin_pages
 weight: 10
 ---

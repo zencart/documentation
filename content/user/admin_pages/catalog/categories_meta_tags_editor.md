@@ -1,6 +1,5 @@
 ---
 title: Categories Meta Tags Editor
-description: Zen Cart Categories Meta Tags Editor Admin Page 
 category: admin_pages
 weight: 11
 ---

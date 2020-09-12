@@ -1,6 +1,5 @@
 ---
 title: Media Types
-description: Zen Cart Media Types Admin Page 
 category: admin_pages
 weight: 30 
 ---
