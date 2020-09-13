@@ -1,6 +1,6 @@
 ---
 title: Shipping Modules
-description: Zen Cart Shipping Modules
+description: Calculating the shipping cost for an order 
 ---
 <style>
 pre > code {

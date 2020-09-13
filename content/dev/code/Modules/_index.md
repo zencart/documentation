@@ -1,7 +1,7 @@
 ---
 title: Modules
 category: Zen Cart 
-description: Modules in the Zen Cart Core
+description: Shipping, Payment and Order Total Modules 
 weight: 100
 layout: docs
 ---

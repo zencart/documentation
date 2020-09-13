@@ -1,6 +1,6 @@
 ---
 title: Auto Inclusion System
-description: Zen Cart Auto Inclusion System
+description: What files are automatically included? 
 category: code
 weight: 10
 ---

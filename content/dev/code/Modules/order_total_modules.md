@@ -1,6 +1,6 @@
 ---
 title: Order Total Modules
-description: Zen Cart Order Total Modules
+description: Adding fees and discounts to an order 
 ---
 <style>
 pre > code {

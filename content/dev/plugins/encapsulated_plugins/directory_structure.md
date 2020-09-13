@@ -1,6 +1,6 @@
 ---
 title: Directory Structure
-description: Directory structure for encapsulated plugins 
+description: 
 weight: 1 
 layout: docs
 ---

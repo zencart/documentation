@@ -1,6 +1,6 @@
 ---
 title: Change Guidelines 
-description: Zen Cart Change Guidelines 
+description: Details of submitting your PR 
 weight: 2
 ---
 

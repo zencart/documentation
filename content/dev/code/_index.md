@@ -1,6 +1,6 @@
 ---
 title: Code
-description: Zen Cart Core Code
+description: Details for developers
 weight: 100 
 layout: docs
 ---

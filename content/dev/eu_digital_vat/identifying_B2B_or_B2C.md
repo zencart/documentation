@@ -1,6 +1,6 @@
 ---
 title: B2B or B2C
-description: Zen Cart B2B or B2C determination
+description: Identifying if a merchant is B2B or B2C for VAT purposes 
 weight: 6
 ---
 

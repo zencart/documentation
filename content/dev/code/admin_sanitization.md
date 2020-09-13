@@ -1,6 +1,6 @@
 ---
 title: Admin Request Sanitization
-description: Zen Cart Admin Request Sanitization
+description: How data is sanitized on the admin side 
 weight: 1
 ---
 

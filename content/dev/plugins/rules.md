@@ -1,6 +1,6 @@
 ---
 title: Rules for Plugins
-description: Zen Cart Rules for Plugins
+description: How to build a plugin that will be accepted 
 category: plugins
 weight: 1
 ---

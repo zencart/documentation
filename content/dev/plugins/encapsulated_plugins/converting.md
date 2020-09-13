@@ -1,6 +1,6 @@
 ---
 title: Converting a plugin to use encapsulation
-description:  
+description: 
 weight: 80
 layout: docs
 type: codepage

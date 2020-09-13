@@ -1,6 +1,6 @@
 ---
 title: Creating a New Translation
-description: Creating a New Language Pack for Zen Cart 
+description: Building a New Language Pack for Zen Cart 
 weight: 100 
 layout: docs
 ---

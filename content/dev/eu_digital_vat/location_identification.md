@@ -1,6 +1,6 @@
 ---
 title: Location
-description: Location for EU Digital VAT in Zen Cart 
+description: Location identification for EU Digital VAT 
 weight: 5
 ---
 

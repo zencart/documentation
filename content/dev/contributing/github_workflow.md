@@ -1,6 +1,6 @@
 ---
 title: Github Workflow + Pull Requests
-description: Zen Cart Github Workflow + Pull Requests
+description: Best practices for managing and submitting PRs 
 weight: 3
 ---
 

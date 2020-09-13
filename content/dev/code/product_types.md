@@ -1,6 +1,6 @@
 ---
 title: Product Types
-description: Zen Cart Product Types
+description: Creating custom products with different data requirements 
 category: admin_pages
 weight: 10
 ---
