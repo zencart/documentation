@@ -1,6 +1,6 @@
 ---
 title: Extra Folders 
-description: About Zen Cart Extra folders 
+description: extra_datafiles, extra_definitions, extra_functions and extra_configures 
 category: code
 weight: 10
 ---

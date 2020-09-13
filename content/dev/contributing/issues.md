@@ -1,6 +1,6 @@
 ---
 title: Bug Reporting
-description: Zen Cart Bug Reporting
+description: What to do if you find a bug
 weight: 5
 ---
 
@@ -51,13 +51,11 @@ The current labels are :-
     4. Duplicate (Should reference the duplicate issue)
     5. On Hold 
     6. Won't Fix
-  
-  
+
+# Security Issues 
+
+If the bug you have found is a security issue, please do not release your finding publicly; instead, follow the [security reporting protocol](/user/about_us/security_reports/). 
   
 # Reference Guide
 More information on [Github Issue Reporting](https://guides.github.com/features/issues/)
 
-
----
-
-&copy; 2014-2019 Zen Cart&reg; Creative Commons 3.0

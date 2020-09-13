@@ -1,6 +1,6 @@
 ---
 title: Cloning a Shipping Module
-description: Cloning a Zen Cart Shipping Module
+description: Building a new shipping module based on an existing one 
 ---
 You can create Shipping Modules easiest by cloning the closest matching Shipping Module to what you are trying to do.
  

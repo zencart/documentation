@@ -1,6 +1,6 @@
 ---
 title: Schema 
-description: Zen Cart Database Schema 
+description: How the Zen Cart Database is structured 
 weight: 100 
 layout: docs
 ---

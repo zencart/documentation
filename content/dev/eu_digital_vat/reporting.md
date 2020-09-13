@@ -1,6 +1,6 @@
 ---
 title: Reporting
-description: Zen Cart Reporting for EU Digital VAT
+description: What reports are required for EU Digital VAT?
 weight: 7
 ---
 

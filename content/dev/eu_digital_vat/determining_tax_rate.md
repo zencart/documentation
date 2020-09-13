@@ -1,6 +1,6 @@
 ---
 title: Tax Rate
-description: Zen Cart Tax Rate for EU Digital VAT
+description: Setting the EU Digital VAT tax rate 
 weight: 4
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Creating a new Admin menu item 
-description: Creating a new Admin menu item in Zen Cart 
+description: Best practices for adding a link to a menu 
 category: code
 weight: 10
 ---

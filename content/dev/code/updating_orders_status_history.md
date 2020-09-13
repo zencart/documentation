@@ -1,6 +1,6 @@
 ---
 title: Adding a Status-History Record to an Order
-description: Describes use of zen_update_orders_history
+description: How to use the zen_update_orders_history function 
 category: code
 weight: 10
 ---

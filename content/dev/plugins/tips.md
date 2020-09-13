@@ -1,6 +1,6 @@
 ---
 title: Tips on creating a plugin 
-description: Zen Cart - Tips on creating a plugin 
+description: Things to remember when creating a plugin for Zen Cart 
 category: plugins
 weight: 1
 ---

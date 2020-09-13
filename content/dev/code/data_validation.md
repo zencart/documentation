@@ -1,6 +1,6 @@
 ---
 title: Configuration Data Validation - About
-description: About Zen Cart Configuration Data Validation 
+description: How is data validation done for configuration values? 
 category: code
 type: codepage
 weight: 10

@@ -1,6 +1,6 @@
 ---
 title: Notifier Report 
-description: Zen Cart Notifier Report
+description: Output of the Zen Cart Notifier Report plugin 
 category: code
 type: codepage
 weight: 10

@@ -1,6 +1,6 @@
 ---
 title: Testing
-description: Zen Cart Testing
+description: Using the automated tests 
 weight: 6
 ---
 

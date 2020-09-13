@@ -1,7 +1,7 @@
 ---
 title: Zen Cart 1.5.5 Schema 
 category: schema
-description: This is the database schema for Zen Cart version 1.5.5.
+description: 
 weight: -155 
 ---
 

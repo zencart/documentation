@@ -1,6 +1,6 @@
 ---
 title: Init System
-description: Zen Cart Bootstrapping Init System
+description: How Zen Cart bootstraps itself 
 category: code
 weight: 10
 ---

@@ -1,6 +1,6 @@
 ---
 title: Plugin SQL Installation
-description:  
+description: 
 weight: 40
 layout: docs
 ---

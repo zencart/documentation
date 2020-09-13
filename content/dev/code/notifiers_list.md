@@ -1,6 +1,6 @@
 ---
 title: Notifiers - List of 
-description: List of Zen Cart Notifiers 
+description: A complete list of Zen Cart Notifiers 
 category: code
 weight: 10
 ---

@@ -1,6 +1,6 @@
 ---
 title: Coding Standards
-description: Zen Cart Coding Standards
+description: Formatting your code 
 weight: 2
 ---
 

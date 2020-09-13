@@ -1,6 +1,6 @@
 ---
 title: Opt out by Country
-description: EU Digital VAT Opt out by Country in Zen Cart 
+description: Disabling EU Digital VAT by Country in Zen Cart 
 weight: 5
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Building a Home Page widget
-description: Zen Cart Home Page widgets
+description: Adding information to the admin dashboard 
 category: code
 weight: 10
 type: codepage
