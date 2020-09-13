@@ -167,4 +167,4 @@ These are the common mistakes causing Website Payments Standard transactions to 
   - It is advisable to have Auto Return set to On.
 
 5.  **Turn off ALL tax and shipping fees in your PayPal profile**. They will cause the purchase price to mismatch when returning to Zen Cart.
-6.  NOW, **also check the [PayPal IPN Troubleshooting](/user/payments/paypal_ipn/) guidance** as well
+6.  NOW, **also check the [PayPal IPN Troubleshooting](/user/payment/paypal_ipn/) guidance** as well
