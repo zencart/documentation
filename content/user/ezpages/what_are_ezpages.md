@@ -2,7 +2,7 @@
 title: What are EZ-Pages? 
 description: The easiest way to add content to your site 
 category: ezpages
-weight: 10
+weight: 1
 ---
 EZ-Pages are a fast, easy way of creating links and additional pages.  
 
