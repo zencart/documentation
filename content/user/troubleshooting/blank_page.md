@@ -8,6 +8,13 @@ weight: 10
 A blank page (or partial blank page) occurs when the PHP interpreter 
 has a fatal error creating your page. 
 
+The image on the left is a blank page.  The image on the right, which is missing the site footer, is also a blank page. 
+
+Blank Page | Partial Blank Page 
+----|----
+![Blank Page](/images/blank_page_1.png) | ![Partial Blank Page](/images/blank_page_2.png)
+
+
 Blank pages can be caused by a number of things, and often occur just after installing, upgrading, or customizing your store. Any time you touch a PHP file, you must be sure to not introduce syntax problems, and you need to be sure that it uploaded correctly.  
 
 ## 1\. Did all your file-uploads work properly?

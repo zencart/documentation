@@ -1,8 +1,10 @@
 ---
-title: Basics - Secure Access 
-description: Secure Access to your Zen Cart 
+title: Basics - Security 
+description: Operating Zen Cart in a secure manner
 category: first_steps
 weight: 10
+aliases:
+    - /user/first_steps/secure_access/
 ---
 
 ## Having an SSL certificate 

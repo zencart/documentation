@@ -11,4 +11,4 @@ So, after 90 days has elapsed, the next time you log in to your Admin it will as
 
 If you don't want to change it "now", you will not be allowed to complete login. But your current password will let you get back to the change-your-password screen again.
 
-Keeping track of passwords and generating new secure passwords is easier with a [password manager](/user/first_steps/secure_access/#use-a-password-manager). 
+Keeping track of passwords and generating new secure passwords is easier with a [password manager](/user/first_steps/security/#use-a-password-manager). 

@@ -71,7 +71,7 @@ hoster and upload files to your cart.
 An example of transferring a file is provided in [Installing a File](/user/new_user_topics/no_such_file/#installing-a-file). 
 
 Note that whatever tool you select must have the ability to do
-[secure file transfer](/user/first_steps/secure_access/#secure-file-transfer). 
+[secure file transfer](/user/first_steps/security/#secure-file-transfer). 
 
 ### Freeware
 

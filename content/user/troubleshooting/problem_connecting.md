@@ -1,5 +1,5 @@
 ---
-title: 'Sorry! There seems to be a problem connecting to our database'
+title: 'There seems to be a problem connecting to our database'
 description:  What do I do when this message is shown? 
 category: troubleshooting
 weight: 10
