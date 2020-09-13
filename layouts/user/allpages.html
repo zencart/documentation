@@ -11,7 +11,9 @@
        {{ if (eq .Section "user") }} 
           {{ if (ne .Params.Category "admin_pages") }}
              {{ if not .Params.noindex }}
-                <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                {{ if not .Params.url }}
+                   <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                {{ end }}
              {{ end }}
           {{ end }}
        {{ end }}
