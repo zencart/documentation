@@ -1,6 +1,6 @@
 ---
 title: Blank Page troubleshooting
-description: Blank Page (or partial blank page) in Zen Cart - how to fix
+description: How do I fix a blank page or partial blank page? 
 category: troubleshooting 
 weight: 10
 ---

@@ -1,6 +1,6 @@
 ---
 title: PayPal Debug Logging 
-description: Enabling debug logging for PayPal within Zen Cart 
+description: Getting more information by enabling PayPal logs 
 category: troubleshooting 
 weight: 10
 ---

@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting errors after upgrading PHP versions 
-description: Updating PHP causes new Debug Logs in Zen Cart 
+description: Updating PHP causes new Debug Logs 
 category: troubleshooting
 weight: 10
 ---

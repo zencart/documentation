@@ -1,6 +1,6 @@
 ---
 title: No data in my store after moving hosts 
-description: Zen Cart problem - data not found after server change 
+description: Where is my data? 
 category: troubleshooting 
 weight: 10
 ---

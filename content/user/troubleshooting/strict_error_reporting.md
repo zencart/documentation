@@ -1,6 +1,6 @@
 ---
 title: What is STRICT_ERROR_REPORTING
-description: Zen Cart STRICT_ERROR_REPORTING
+description: How do I use this setting? 
 category: troubleshooting
 weight: 10
 ---
