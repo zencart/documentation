@@ -7,7 +7,7 @@ weight: 10
 
 ## Security basics
 
-- Learn about [secure access](/user/first_steps/secure_access/) to your site. 
+- Learn about [running your site securely](/user/first_steps/security/).
 
 - Get an [SSL certificate](/user/installing/enable_ssl/). Yes, [you need SSL](/user/first_steps/yes_you_need_ssl/). 
 
@@ -197,7 +197,7 @@ To stop the browser from printing the admin URL (which discloses your Admin fold
 2.  Make recent backups of your website files and database.
     *   Backup the database over a secure connection (ie: if you're using phpMyAdmin to backup, then make sure you're using HTTPS addresses in your URLs).
     *   Backup the website files over a secure connection If you're copying files via FTP, be sure to use a secure form of FTP, not plain FTP. 
-See [FTP tools](/user/first_steps/useful_tools/#ftp-tools) and [secure access](/user/first_steps/secure_access/).  
+See [FTP tools](/user/first_steps/useful_tools/#ftp-tools) and [security](/user/first_steps/security/).  
 
     *   Store the backed up database and website files into an encrypted file. Note: You should NOT keep your backups on your server. But if you do, encrypt them securely. See your hosting company for advice.
 3.  Check your server's error log regularly for odd or suspicious activity. Your hosting control panel should give you access to the Apache `error_log`.

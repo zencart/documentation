@@ -12,15 +12,12 @@ The list of available order total modules may be seen by going to [Admin > Modul
 Zen Cart has a number of built-in order total modules which allow you to 
 increase or reduce the total owed based on various factors in the order.
 *Increasing* the total is done using [fees](/user/order_total/default_fees/). 
-*Reducing* the total is done using discounts like these: 
-
-* Coupons - Create discount coupons for price reductions and free shipping 
-* Group Discount - Offer discounts to groups of customers
+*Reducing* the total is done using [discounts](/user/order_total/default_discounts). 
 
 All the line items in an order below the cart contents are order totals.
 This means the Sub-Total, Tax, Shipping, and Total are displayed via order total modules. 
 
-Zen Cart also offers a number of order total plugins, both fees and discounts: 
+Plugins provide a number of additional fee and discount options: 
 
 - [Gift Wrapping](https://www.zen-cart.com/downloads.php?do=file&id=267)
 - [Better Together](https://www.zen-cart.com/downloads.php?do=file&id=201)

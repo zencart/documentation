@@ -15,6 +15,6 @@ Go to [Admin > Admins > Admin Users](/user/admin_pages/admins/admin_users/)  You
 
 You should also make sure your admin password is not "admin" (or some other easy to guess value).  To change a password, click on the *Reset Password* button.
 
-We suggest using something at least 8 characters long, and including numbers, and not dictionary words.  See [security basics](/user/first_steps/secure_access/). 
+We suggest using something at least 8 characters long, and including numbers, and not dictionary words.  See [security basics](/user/first_steps/security/). 
 
 

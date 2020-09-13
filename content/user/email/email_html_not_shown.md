@@ -1,5 +1,5 @@
 ---
-title: Why Do Emails Not Show in HTML format?
+title: Why do emails not show in HTML format?
 description: HTML email doesn't work 
 category: email
 weight: 10

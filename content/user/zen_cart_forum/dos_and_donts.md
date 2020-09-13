@@ -1,5 +1,5 @@
 ---
-title: Do's and Don'ts 
+title: Forum Do's and Don'ts 
 description: Zen Cart Forum Etiquette
 category: zen_cart_forum
 weight: 10
