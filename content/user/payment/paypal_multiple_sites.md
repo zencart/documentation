@@ -12,7 +12,7 @@ When you set up the PayPal parameters for each of your Zen Cart sites you can gi
 
 Zen Cart will automatically tell PayPal the address of your store when a payment is submitted, so that the correct store is notified of transaction updates. Each store will see only the orders placed at/with that store.  
 
-The only setup you need to do is make sure that the "Instant Payment Notification" (IPN) setting is **enabled** in your PayPal account profile under Website Payment Receiving Preferences, as explained in the [PayPal setup/troubleshooting guide](/user/payment/paypal_troubleshooting/).
+The only setup you need to do is make sure that the "Instant Payment Notification" (IPN) setting is **enabled** in your PayPal account profile under Website Payment Receiving Preferences, as explained in the [PayPal setup/troubleshooting guide](/user/payment/paypal_ipn/).
 
 Many people wonder what to do about specifying the **Return URL** or **Notification URL**. Simply set the URLs to the appropriate address for *one* of your stores. It must point to a valid address; that is, a valid address for ANY of your stores. When processing transactions from your various Zen Cart stores, the appropriate address for each store will be substituted automatically by Zen Cart.  
 

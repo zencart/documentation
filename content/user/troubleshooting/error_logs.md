@@ -9,6 +9,6 @@ Your hosting company typically provides this via their control panel.
 
 - If you use cPanel, simply log into your cPanel admin, and click on the Errorlog button.
 - Other hosting systems may have the button elsewhere under their server admin tools
-- H-Sphere customers may have to enable errorlog support before it becomess available.
+- H-Sphere customers may have to enable errorlog support before it becomes available.
 - Some hosts don't offer it via the control panel; they may offer it via a `/logs` folder instead.  Note that this is not your Zen Cart `/logs` folder - it's a above your webroot at the top of your hosting account folder. 
 
