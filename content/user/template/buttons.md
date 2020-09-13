@@ -9,9 +9,15 @@ Many modern Zen Cart installations use the CSS Buttons feature of Zen Cart, whic
 
 ![CSS Button](/images/button_css.png)
 
+No action is required to create a CSS button; it simply uses the button text and displays it according to the styling your template has set. 
+
 Prior to CSS buttons, Zen Cart buttons were static .gif images like the one shown below: 
 
-![GIF Button](/images/button_gif.png)
+![GIF button](/images/button_gif.png)
+
+Much of them were much smaller - just enough space to fit the text describing their action. 
+
+<img src="/images/button_add_selected.gif" alt="GIF button - add selected" style="border-style: none !important" />
 
 You are free to use either setting, but most people prefer the maintenance free and more modern looking CSS buttons.  
 
