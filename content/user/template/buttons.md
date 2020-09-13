@@ -15,7 +15,7 @@ Prior to CSS buttons, Zen Cart buttons were static .gif images like the one show
 
 ![GIF button](/images/button_gif.png)
 
-Much of them were much smaller - just enough space to fit the text describing their action. 
+Many of them were much smaller - just enough space to fit the text describing their action. 
 
 <img src="/images/button_add_selected.gif" alt="GIF button - add selected" style="border-style: none !important" />
 
