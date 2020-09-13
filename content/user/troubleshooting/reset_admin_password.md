@@ -1,6 +1,6 @@
 ---
 title: Admin Password - Resetting or Changing
-description: Zen Cart Admin Password - Resetting or Changing
+description: Admin password not working?  Try these steps. 
 category: troubleshooting
 weight: 10
 aliases:
@@ -39,3 +39,4 @@ Be sure to use proper case. ie. 'Admin' for username, not 'admin'. <br>
 You will be prompted to change the password right away.<br>
 <br>
 After you log in, remember to delete this temporary admin account after creating a new one. See the [Admins > Admin Users](/user/admin_pages/admins/admin_users/) page.
+

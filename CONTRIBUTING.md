@@ -67,6 +67,12 @@ weight: 10
     
     - There are a few exceptions to this rule, such as Release History (sorted in reverse chronological order), Images (sorted by increasing complexity) and Admin Pages (sorted in the order they appear in Zen Admin), but for the most part, this rule is followed.
 
+- If you want to use a title with a colon, put the entire title string in single quotes.  Example: 
+
+```
+title: 'Parse error:  unexpected T_STRING (or similar)'
+```
+
 - Don't use a headline starting with `#`.  The `title` in the block above is sufficient.
 
 - Use backticks for denoting code and filenames.  For example, the filename "includes/classes/shopping\_cart.php" should be coded as 

@@ -1,6 +1,6 @@
 ---
 title: Diagnosing Obscure Issues
-description: Diagnosing Obscure Issues in Zen Cart 
+description: New problems no one has seen before 
 category: troubleshooting
 weight: 10
 ---

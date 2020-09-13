@@ -1,6 +1,6 @@
 ---
 title: Why am I getting 500 INTERNAL SERVER ERROR messages?
-description: Zen Cart Warning - 500 INTERNAL SERVER ERROR 
+description: How do I resolve an HTTP 500 error? 
 category: troubleshooting 
 weight: 10
 ---

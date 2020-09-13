@@ -1,6 +1,6 @@
 ---
 title: There was a security error when trying to login
-description: Zen Cart security error when trying to login
+description: What does this message mean? 
 category: troubleshooting
 weight: 10
 ---

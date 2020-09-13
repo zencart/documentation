@@ -1,6 +1,6 @@
 ---
 title: Debug Logs 
-description: Debug Logs in Zen Cart 
+description: How do I interpret a debug log? 
 category: troubleshooting
 weight: 10
 ---

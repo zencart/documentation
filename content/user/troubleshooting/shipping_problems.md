@@ -1,6 +1,6 @@
 ---
 title: Shipping Problems 
-description: Zen Cart Shipping Problems 
+description: Problems with calculating a shipping rate 
 category: troubleshooting
 weight: 10
 ---

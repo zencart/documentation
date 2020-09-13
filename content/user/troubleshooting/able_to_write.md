@@ -1,6 +1,6 @@
 ---
-title: I am able to write to the configuration file
-description: Zen Cart Warning - able to write to the configuration file
+title: 'Warning: I am able to write to the configuration file' 
+description: How do I make configuration files read-only? 
 category: troubleshooting 
 weight: 10
 ---

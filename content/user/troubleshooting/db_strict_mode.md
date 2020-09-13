@@ -1,6 +1,6 @@
 ---
 title: What is STRICT mode for my database? 
-description: Zen Cart MySQL database STRICT mode
+description: MySQL STRICT mode and its impact 
 category: troubleshooting
 weight: 10
 ---
