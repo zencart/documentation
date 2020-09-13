@@ -3,7 +3,7 @@ title: Admin menu sections
 description: All admin menus 
 category: admin_pages
 weight: 1
-index: false
+noindex: true
 ---
 
 ### [Configuration](/user/admin_pages/configuration/)

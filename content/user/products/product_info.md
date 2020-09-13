@@ -1,5 +1,5 @@
 ---
-title: Product Info page 
+title: What is the Product Info page?
 description: The add to cart page
 category: products
 weight: 10
