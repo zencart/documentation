@@ -32,7 +32,7 @@ when adding the product are:
 - [Product Qty Minimum](/user/products/product_units/) - lowest number of this product which may be purchased 
 - [Product Qty Maximum](/user/products/product_units/) - highest number of this product which may be purchased 
 - [Product Qty Units](/user/products/product_units/) - if > 1, this product must be purchased in bundles of this many 
-- [Product Qty Min/Unit Mix](/user/products/products_misc#what-does-mixed-on-mean) - can products with different attributes be combined to reach the Product Qty Minimum threshold? 
+- [Product Qty Min/Unit Mix](/user/products/mixed_on/) - can products with different attributes be combined to reach the Product Qty Minimum threshold? 
 - Products Description - details about the product 
 - Products Quantity - quantity in inventory 
 - [Products Model](/user/products/product_model/) - model number or SKU 
