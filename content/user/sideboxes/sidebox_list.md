@@ -80,7 +80,7 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
       <br><br>
       The parenthetical numbers after the category names are the number of items in that category.  This may be turned off in <em>Admin > Configuration > My Store > Show Category Counts</em>. The featured, special, new, and all product links can be removed in <em>Admin > Configuration > Layout Settings</em>
       <br><br>
-       There is another categories sidebox called <strong>document_categories</strong>, for stores with Document type products. The product type Document may be seen on the screen <em>Admin > Catalog > Product Types</em>. 
+       There is another categories sidebox called <strong>document_categories</strong>, for stores with Document type products. The product type Document may be seen on the screen <em>Admin > Catalog > Product Types</em>. <br>
 <button type="button" class="btn btn-link" data-toggle="modal" data-target="#documents_categories"> - View documents_categories</button>
 	      </div>
 	</div>

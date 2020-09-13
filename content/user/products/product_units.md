@@ -9,7 +9,7 @@ The [product editing screen](/user/products/product_edit/) shows the following f
 
 ![product units](/images/product_units.png)
 
-- Product Qty Min/Unit Mix is covered in [what does MIXED ON mean?](/user/products/products_misc#what-does-mixed-on-mean)
+- Product Qty Min/Unit Mix is covered in [what does MIXED ON mean?](/user/products/mixed_on/)
 
 - Product Quantity Box Shows just determines whether to show the quantity box on pages which allow the product to be purchased, such as [product info](/user/products/product_info) page
 
