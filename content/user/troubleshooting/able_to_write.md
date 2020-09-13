@@ -23,5 +23,5 @@ The message is saying that the webserver, using PHP, *is* able to write to the f
 
 For assistance on changing permissions settings, see [How Do I Set Permissions on Files/Folders](/user/installing/permissions/).
 
-Reference: Guide on [understanding what these CHMOD numbers mean](/user/installing/installing_misc/#what-is-chmod-and-what-do-the-numbers-mean).
+Reference: Guide on [understanding what these CHMOD numbers mean](/user/installing/chmod/).
 
