@@ -4,7 +4,7 @@ category: admin_pages
 weight: 100
 ---
 
-This page allows you to view, add, edit or delete manufacturer information.
+This page allows you to view, add, edit or delete manufacturer information. You might also refer to these as Brands.
 
 **Note:** Not all stores will use manufacturers (especially if they manufacture their own items).  If you don't need manufacturer information, ignore this screen and the manufacturer data entry field on the [product editing page](/user/products/product_edit/). 
 
