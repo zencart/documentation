@@ -1,6 +1,6 @@
 ---
 title: VAT setup instructions
-description: Zen Cart VAT setup instructions
+description: Calculating taxes in a VAT jurisdiction
 category: locations 
 aliases: 
     - /user/localization/vat 

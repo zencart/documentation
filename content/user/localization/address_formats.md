@@ -1,6 +1,6 @@
 ---
 title: Address formats - what are they? 
-description: Zen Cart Address formats - what are they? 
+description: How addresses are displayed in different countries 
 category: localization
 weight: 10
 ---

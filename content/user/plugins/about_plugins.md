@@ -1,6 +1,6 @@
 ---
 title: About Plugins 
-description: About plugins in Zen Cart 
+description: Modifying your shopping cart using plugins 
 category: plugins
 weight: -1
 ---

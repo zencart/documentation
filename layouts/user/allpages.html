@@ -12,7 +12,11 @@
           {{ if (ne .Params.Category "admin_pages") }}
              {{ if not .Params.noindex }}
                 {{ if not .Params.url }}
+                   {{ if .Description }}
+                   <li><a href="{{ .Permalink }}">{{ .Title }}</a> &nbsp; {{ .Description }}</li>
+                   {{ else }} 
                    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                   {{ end }}
                 {{ end }}
              {{ end }}
           {{ end }}

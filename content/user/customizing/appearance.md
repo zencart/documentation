@@ -1,6 +1,6 @@
 ---
 title: Changing your site's appearance 
-description: Changing the look of a Zen Cart 
+description: Changing the look of your shopping cart 
 category: customizing 
 weight: 10
 ---

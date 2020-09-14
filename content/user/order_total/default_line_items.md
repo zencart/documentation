@@ -1,6 +1,6 @@
 ---
-title: Default Line Items 
-description: Line Items in a customer order 
+title: Default line items on an order
+description: From subtotal to total 
 category: order_total
 weight: 10
 ---

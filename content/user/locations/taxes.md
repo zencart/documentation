@@ -1,6 +1,6 @@
 ---
 title: Should I charge taxes?  How much? 
-description: Should I charge taxes in Zen Cart?  How much? 
+description: What are my tax collection obligations? 
 category: locations 
 aliases: 
     - /user/localization/taxes

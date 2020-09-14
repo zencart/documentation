@@ -1,6 +1,6 @@
 ---
 title: Timezone (TZ) setting 
-description: Setting the time zone in Zen Cart 
+description: I want to use local time, not GMT 
 category: new_user_topics
 weight: 10
 ---

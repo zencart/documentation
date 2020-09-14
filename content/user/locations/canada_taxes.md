@@ -1,6 +1,6 @@
 ---
 title: Tax configuration in Canada 
-description: Zen Cart Tax configuration in Canada 
+description: Calculating taxes in Canada 
 category: locations 
 aliases: 
     - /user/localization/canada_taxes

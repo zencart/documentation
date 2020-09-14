@@ -1,6 +1,6 @@
 ---
 title: Tax calculations are wrong 
-description: Zen Cart Tax calculations are wrong 
+description: What to do when taxes don't add up 
 category: locations 
 aliases: 
     - /user/localization/tax_calc_wrong
