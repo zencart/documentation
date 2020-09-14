@@ -142,5 +142,5 @@ no = 'Sorry to hear that. Please <a href="https://github.com/zencart/documentati
     path = "/"
 
 [outputs]
-  home = ["HTML", "sitemap", "RSS"]
+  home = ["HTML", "RSS"]
 
