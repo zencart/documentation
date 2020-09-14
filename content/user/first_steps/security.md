@@ -76,4 +76,7 @@ Do not put passwords in an email.  This is not a secure practice.  If you have t
 - One time link generators like [privnote.com](https://privnote.com) or [noteshred.com](https://noteshred.com)
 - Your own password manager's sharing facility 
 
+## Scan your own computer regularly 
+
+Your own computer is also a potential target for bad guys, and if it gets infected, your website will too.  Use anti-virus / anti-malware software and scan regularly. 
 
