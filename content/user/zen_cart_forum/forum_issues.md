@@ -1,6 +1,6 @@
 ---
 title: Why can't I post? 
-description: Why can't I post to the Zen Cart Forum? 
+description: Posting to the Zen Cart Forum gives an error
 category: zen_cart_forum
 weight: 10
 ---

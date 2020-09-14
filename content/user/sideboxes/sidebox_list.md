@@ -1,6 +1,6 @@
 ---
 title: What sideboxes are available? 
-description: Zen Cart Sidebox possibilities
+description: Displaying content on the sides of a desktop view of my store
 category: sideboxes
 weight: 10
 customCss: "/css/sidebox_list.css"

@@ -1,11 +1,9 @@
 ---
-title: Contributing to the Project
+title: Contributing to the Zen Cart project
 description: Ways you can get involved in Zen Cart 
 category: about_us
 weight: 10
 ---
-
-## How can I contribute to the Zen Cart project? 
 
 There are many ways you can help the project. 
 

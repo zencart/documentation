@@ -1,6 +1,6 @@
 ---
 title: How do I set up a default tax class for new products? 
-description: Zen Cart default tax class 
+description: Save time by pre-setting a tax class for product creation 
 category: locations 
 aliases: 
     - /user/localization/default_tax_class

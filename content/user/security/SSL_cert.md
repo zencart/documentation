@@ -1,6 +1,6 @@
 ---
 title: What is an SSL certificate? 
-description: Zen Cart | What is an SSL certificate? 
+description: Basic information on SSL
 category: security 
 weight: 10
 ---
