@@ -20,9 +20,13 @@ The reason for this is that the default configuration of browsers (and Zen Cart)
 **You can clear the cached version of the current page by doing a hard refresh:**
 
 - On Windows, use  **Ctrl+Shift+R** 
-- On Mac, use **Cmd+Shift+R** 
+- On Mac, use **Cmd+Shift+R** (or **Cmd+Option+R** on Safari)
+- On most computers, hold **SHIFT** while clicking the Reload Icon with the mouse
 
 For images, you can also right click on the image, select "Open Image in New Tab",  and do a hard refresh there. 
+
+
+### Disabling Browser Cache
 
 However, since you are acting as a developer while you work on your site, you may want to turn this behavior off.  The way this is done is specific to every browser and environment, so you'll have to do a web search to figure out how to do it with the tools you are working with.  
 
