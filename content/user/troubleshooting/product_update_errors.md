@@ -25,8 +25,10 @@ Sometimes the error may appear as a `500 Internal Server Error` or `406` error.
 
 Many servers nowadays use a tool in their Apache Webserver software configuration called "mod_security" in order to prevent against hack attempts on the server.  This tool monitors the content of words/data submitted in forms on web pages, and if certain keywords are found, it flags the entire form-submission as at-risk, and prevents the entered data from being saved.
 
-Common keywords which may get flagged include: `INSERT` or `UPDATE` and other commonly-used SQL commands
+Common keywords which may get flagged include: `INSERT` or `UPDATE` and other commonly-used SQL commands. 
 
+The numbers 500, 406, 404 or 403 are 
+the [HTTP response code](/user/troubleshooting/http_response_codes/). 
 
 ### Possible Solutions:
 1. Don't use any words which are restricted by your host's rules.
