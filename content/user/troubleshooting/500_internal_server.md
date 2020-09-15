@@ -11,26 +11,24 @@ Thus, use caution when reviewing the following list. DO NOT go changing permissi
 
 ### A little background:
 
-The server your website is running on, uses a piece of software to do the "serving" of web page content to visitors browsers. THAT server has many rules defined inside it for how things are supposed to work. If *something* goes wrong, it throws up an error, AND it logs that error in its own server logs.  
-
-A good hosting company will have the server configured to record those logs so it can analyze a problem when it occurs.  
-
-Usually *you* will not have direct access to those logs, but the hosting company DOES.  
+The server your website is running on, uses a piece of software to do the "serving" of web page content to visitors browsers. THAT server has many rules defined inside it for how things are supposed to work. If *something* goes wrong, it throws up an error, AND it logs that error. 
 
 ### MOST IMPORTANT POINT:
 
-The "500 Internal Server Error" is a VERY generic catch-all error that simply means "oops, something went wrong, and I don't know what it was, or at least I'm not going to publicly tell you what it was".  
+The "500 Internal Server Error" is a VERY generic catch-all error that simply means "oops, something went wrong, and I don't know what it was, or at least I'm not going to publicly tell you what it was".  The "500" is the [HTTP response code](/user/troubleshooting/http_response_codes/). 
 
 The actual cause of the error WILL BE LOGGED in the server.  It will NOT be displayed on the screen, since many times the reason might be security-related, and to display the "actual" cause on-screen would tell a hacker exactly what to do next to get around the security systems.  
 
-<font color="#ff0000">THAT is why the fastest way to find the solution to a "500 Internal Server Error" problem is to look it up in the server's logs.</font> 
+<font color="#ff0000">THAT is why the fastest way to find the solution to a "500 Internal Server Error" problem is to look at the logs.</font> 
+
+### WHAT ARE THE LOGS? 
 
 There are 2 kinds of logs in this case:  
 
 a) Your site's `/logs/` folder, which stores PHP errors happening in your store. Sometimes a Fatal PHP error will cause your website to trigger a generic 500 Internal Server error. You can find the details of the PHP error in the myDEBUG-xxxxxx.log files in your `/logs/` folder.  
 
-More info is provided in this [FAQ on Zen Cart Debug Logs](/user/troubleshooting/debug_logs/) and 
-this [FAQ on blank page errors](/user/troubleshooting/blank_page/). 
+More info is provided in the FAQs on [Zen Cart Debug Logs](/user/troubleshooting/debug_logs/) and 
+this [blank page errors](/user/troubleshooting/blank_page/). 
 
 b) Your server's webserver error logs ... ie: Apache/Nginx and maybe PHP itself. Your hosting company will have to give you access to this information if you don't already have an Error Logs menu option in your hosting company's control panel.  
 

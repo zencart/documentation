@@ -7,7 +7,7 @@ weight: 10
 
 The "max_user_connections exceeded" message typically only happens when you're getting a flood of simultaneous connections to your site.
 
-Visitors hitting your site and triggering that error would have seen a blank page. (or whatever a 500-error page looks like for your server).
+Visitors hitting your site and triggering that error would have seen a blank page. (or whatever a [500-error](/user/troubleshooting/http_response_codes/) page looks like for your server).
 
 Most web applications like Zen Cart use only a single MySQL "user" to connect to the database, and most hosts configure max_user_connections to be big enough to handle typical traffic load. Traffic load includes all visits at any given second, including "you", your customers, your visitors-who-are-not-yet-customers, search engine bots, and anybody trying bad things on your site.
 

@@ -67,7 +67,7 @@ In this example scenario we want the large picture to be either 480 pixels wide 
 6. Now run another batch process on the two folders to  
 • resize your canvas or paper (depends what your image-editor calls it) to 500 pixels x 500 pixels and set the canvas or paper colour you want with the image centred. (Using a canvas slightly larger than your picture ensures a margin from anything else that may be on the webpage.)  
 • Optimize the images for the web  
-7. Unless you want to keep them separate you can now combine all the images into one folder called **large** as they are all 500pixels square.  
+7. Unless you want to keep them separate you can now combine all the images into one folder called **large** as they are all 500 pixels square.  
 8. Upload them all to **images/large**  
 9. Create another folder called **medium**. Copy all the images from **large** to it. 
 10. Run a batch-process on the files in **medium** to resize to 250 pixels square; you may as well optimize for web as well.  

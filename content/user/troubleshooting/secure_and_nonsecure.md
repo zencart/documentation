@@ -42,6 +42,6 @@ Basically, *never* hard-code a full `http://` URL into any page/template/stylesh
 
 
 ### ANOTHER TIP:
-Sometimes these same errors are caused by images mentioned in your stylesheet. Double-check to be sure that all those images actually exist. If they don't, then they'll produce "404 Not Found" errors, and sometimes that'll create a "loop" to attempt displaying a 404-error-page, which can in turn throw even more messages.
+Sometimes these same errors are caused by images mentioned in your stylesheet. Double-check to be sure that all those images actually exist. If they don't, then they'll produce [404 Not Found](/user/troubleshooting/http_response_codes/) errors, and sometimes that'll create a "loop" to attempt displaying a 404-error-page, which can in turn throw even more messages.
 
-And, if you have created a "custom" 404 page, then if *that* page has any missing images referenced on it, or on its stylesheets, you could end up in a loop that not only throws security/encryption errors, but also creates excessive traffic in your hosting account, which will make your hosting company unhappy.
+And, if you have created a custom 404 page, then if *that* page has any missing images referenced on it, or on its stylesheets, you could end up in a loop that not only throws security/encryption errors, but also creates excessive traffic in your hosting account, which will make your hosting company unhappy.
