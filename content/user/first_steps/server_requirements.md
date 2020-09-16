@@ -123,7 +123,7 @@ The default Zen Cart distribution contains numerous Apache `.htaccess` rules to 
 At the end of initial installation some Nginx `conf` file content suggestions are provided which you could manually copy into your nginx master configuration, to provide those same protections.
 
 
-## Windows Servers / IIS **NOT SUPPORTED** 
+## Windows Servers / IIS are **NOT SUPPORTED** 
 Zen Cart is not regularly tested or supported on Windows Servers or IIS.  We don't recommend IIS, and we don't provide any default-configuration scripts for IIS.
 
 
