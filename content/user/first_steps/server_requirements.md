@@ -14,12 +14,6 @@ _(Last updated: July 23, 2020)_
 *   See the detailed version-compatibility details in the sections below.
 *   Keep in mind that for security compliance, you should always use a PCI Compliant version of each of these required software components. That means using a ZC version that's compatible with those software component versions, too!
 
-## SSL, OpenSSL, cURL
-
-*   Zen Cart requires cURL to be installed/compiled into PHP with OpenSSL. If this capability is not available, a message to that effect will be displayed during the initial installation's system-inspection, however it will still allow installation anyway. It is up to you to ensure cURL is enabled. Consult your hosting company for assistance.
-*   You should always use HTTPS (SSL) on your store. Yes, [you really do need an SSL certificate](/user/first_steps/yes_you_need_ssl/). Be sure to regularly test your site's SSL (https) using [www.ssllabs.com/ssltest/](https://www.ssllabs.com/ssltest/index.html) and have your hosting company resolve all reported issues. If your hosting company doesn't know how to resolve the issues to at least a "B" rating, find another hosting company.
-
-
 ## PHP Version
 
 The following table shows the PHP versions compatible with each version of Zen Cart. 
@@ -54,18 +48,22 @@ FYI: Consult [PHP's Version Support Policy](https://www.php.net/supported-versio
 
 Zen Cart requires a few PHP modules/extensions installed: 
 
- - `curl`
- - `mysqli`, `pdo_mysql`
- - `zlib` - particularly beneficial to enable `zlib.output_compression`
- - `json`
+ - `bcmath`
+ - `ctype`
+ - `curl`, `openssl`
  - `fileinfo`
- - `getimagesize()`
  - `gd`
+ - `getimagesize()`
+ - `iconv`
+ - `json`
+ - `mysqli`, `pdo_mysql`
+ - `pcre`
  - `zip`
+ - `zlib`
+ 
+It is recommended to also enable the following PHP extensions:
 
-It is suggested to also enable the following PHP extensions:
-
- - `intl`, `mbstring`, `process`, `pdo_sqlite`
+ - `intl`, `mbstring`, `pcntl`, `pdo_sqlite`
 
 ### PHP Memory Recommendations
 
@@ -74,9 +72,9 @@ It is suggested to also enable the following PHP extensions:
 
 ### PHP Settings for optimum security:
 
-- ENABLE: `allow_url_fopen` is needed for checking things that don't/can't use `curl` (many shipping quote modules use this).
+- ENABLE: `allow_url_fopen` is needed for checking things that don't/can't use `curl` (many shipping-quote and currency-update modules use this).
 - DISABLE: `allow_url_include` should be OFF. Zen Cart never needs this.
-- DISABLE FUNCTIONS: `passthru`, `system`, `shell_exec` are not used by Zen Cart (but might be used by some plugins).
+- DISABLE FUNCTIONS: `passthru`, `system`, `shell_exec`. These are not used by Zen Cart core (BUT might be used by some plugins).
 
 
 ## MySQL Version
@@ -97,6 +95,12 @@ Plugin compatibility may vary.
 <font color="#ff0000"> **Using the latest version of Zen Cart is always recommended for maximum compatibility.** </font>
 
 FYI: [MySQL's Version Support Policy](https://en.wikipedia.org/wiki/MySQL#Release_history)
+
+
+## SSL, OpenSSL, cURL
+
+*   Zen Cart requires cURL to be installed/compiled into PHP with OpenSSL. If this capability is not available, a message to that effect will be displayed during the initial installation's system-inspection, however it will still allow installation anyway. It is up to you to ensure cURL is enabled. Consult your hosting company for assistance.
+*   You should always use HTTPS (SSL) on your store. Yes, [you really do need an SSL certificate](/user/first_steps/yes_you_need_ssl/). Be sure to regularly test your site's SSL (https) using [www.ssllabs.com/ssltest/](https://www.ssllabs.com/ssltest/index.html) and have your hosting company resolve all reported issues. If your hosting company doesn't know how to resolve the issues to at least a "B" rating, find another hosting company.
 
 
 ## Apache
