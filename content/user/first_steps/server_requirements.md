@@ -12,7 +12,7 @@ _(Last updated: July 23, 2020)_
 
 *   Zen Cart operates on a standard "LAMP" stack: PHP, Apache, MySQL on most operating systems (Linux/macOS/Windows)
 *   See the detailed version-compatibility details in the sections below.
-*   Keep in mind that for security compliance, you should always use a PCI Compliant version of each of these required software components. That means using a ZC version that's compatible with those software component versions, too!
+*   Keep in mind that for security compliance, you should always use a PCI Compliant version of each of these required software components, including using a Zen Cart version that's compatible with those software component versions, too!
 
 ## PHP Version
 
