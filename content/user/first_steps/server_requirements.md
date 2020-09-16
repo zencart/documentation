@@ -14,6 +14,13 @@ _(Last updated: July 23, 2020)_
 *   See the detailed version-compatibility details in the sections below.
 *   Keep in mind that for security compliance, you should always use a PCI Compliant version of each of these required software components, including using a Zen Cart version that's compatible with those software component versions, too!
 
+Links:
+- [PHP](#php-version)
+- [MySQL](#mysql-version)
+- [SSL, OpenSSL, CURL](#ssl-openssl-curl)
+- [Apache/Nginx](#apache)
+
+
 ## PHP Version
 
 The following table shows the PHP versions compatible with each version of Zen Cart. 
