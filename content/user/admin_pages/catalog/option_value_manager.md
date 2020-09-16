@@ -33,4 +33,21 @@ Since Zen Cart 1.5.7, you have been able to filter the list of option values to 
 
 ![Option Value Filter](/images/option_value_filter.png)
 
+### Global Features 
+
+Below the list of options are three more forms that allow you to do the following changes across many products at a time.  Note these forms will only show if the dropdown *Display Global Features* at the top of the page  is set to *On*. 
+
+This image shows one of the three forms as an example: 
+
+![Copy to ALL Products](/images/copy_to_all_products.png)
+
+The global features offered on this page are as follows: 
+
+- Copy a new Option Name and Value to all products[^1] with an existing Option Name and Value (shown above)
+- Delete an option Name and Value from all products[^1] 
+- Copy a new Option Name and Value to all products[^1] with an existing Option Name
+
+The first and third forms are similar; the difference is the first form requires that a product have a specific option name *and value*, whereas the third only requires that a product have a specific option name. 
+
+[^1]: instead of all products, a single category of products may be specified. 
 
