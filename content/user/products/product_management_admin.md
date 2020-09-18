@@ -49,5 +49,10 @@ Copying a product is done from the [Categories/Products](/user/admin_pages/catal
 
 ![Copying a product](/images/copy_sidebar.png)
 
+### Multiple Categories Link Manager
+
+The Multiple Categories Link Manager button takes you to the [Products to Categories](/user/admin_pages/catalog/products_to_categories/#updating-a-single-products-linked-categories) page with the product already selected.  
+
+
 ### Product Meta Tags 
 See [Products Meta Tags Editor](/user/admin_pages/catalog/products_meta_tags_editor/).
