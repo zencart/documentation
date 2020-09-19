@@ -1,6 +1,6 @@
 ---
 title: Login as Customer 
-description: Placing an order on behalf of a Customer in Zen Cart 
+description: Creating an order on behalf of a Customer in Zen Cart 
 category: Running
 weight: 10
 ---
@@ -57,3 +57,10 @@ In older Zen Cart versions a plugin is required in order to login as a customer.
 - Encrypted Master Password
 
 These plugins are all available in the [Plugins Library](https://www.zen-cart.com/downloads.php). 
+
+
+## What if the user doesn't have an account? 
+
+- If they have an email address, you can sipmly create an account for them in the storefront using their email address and a randomly chosen password
+- If they do not have an email address, you can just use an email address on your domain with a random password just to satisfy the requirement for an email address.  For example, if your customer's name was Scott Wilson, you could create an account with the email scott.wilson@YOURDOMAIN.com.  Just be sure to turn off newsletters and other emails going to this account, since they will all bounce.
+
