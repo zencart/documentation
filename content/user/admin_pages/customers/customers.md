@@ -28,7 +28,7 @@ Clicking a customers record selects that customer and opens a preview on the rig
 - view the customer's orders
 - email the customer
 - reset the customer's password (since 1.5.5) 
-- place an order on behalf of the customer (see [login as customer](/user/running/login_as_customer/)) (since 1.5.7) 
+- [login as a customer](/user/running/login_as_customer/) and place an order (since 1.5.7) 
 
 ![Customers sidebar](/images/customers_sidebar.png)
 

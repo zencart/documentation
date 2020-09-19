@@ -22,7 +22,7 @@ The Categories/Products screen described above will show a button in the right s
 
 ### Why would you use a Linked Product? 
 
-The short answer is, to make it easier for your customers to discover a specific product, no matter how they navigate your site. 
+To make it easier for your customers to discover a specific product, no matter how they navigate your site. 
 
 Let's say that your site sells TVs.  Nothing but TVs.  Seems simple till you think of the amount of listings.  There's the obvious of which manufacturer, size, resolution, and web-ready are just a few.  But,  there are a lot more considerations from the customer's view point.  Does the TV have HDMI inputs?  How many does it have?  Is it compatible as a computer monitor?  Will I need a DisplayPort to HDMI adapter?  What are the audio out capabilities? RCA?  Optical?  Plain 3.5 mini-jack?
 
@@ -58,11 +58,13 @@ Resolution
 
 The product itself is entered in only one place.  Since **_Samsung_** is nearest to the top of the category tree, you would enter the product **_Samsung MX701080_** as the first product in the category.  Be sure to include all information about the item, *_especially_* the information that identifies the other features for which you made categories.  
 
-Locate the product in the Categories and Products menu under **_Samsung_**.  Click on the blue C in the Action block of the Product Listing.  If the item only needed to be copied to one or two other categories, it can be done in the Copy To area BUT, we are going to be in several categories.  Scroll down until the **_Multiple Categories Link Manager_** appears and click on that.
+Locate the product in the Categories and Products menu under **_Samsung_**.  Click on the blue C in the Action block of the Product Listing.  If the item only needed to be copied to one or two other categories, it can be done in the Copy To area BUT, we are going to be in several categories.  Scroll down until the **_Multiple Categories Link Manager_** button appears, and click on that.  This will open up the [Products to Categories](/user/admin_pages/catalog/products_to_categories/) page. 
 
-Many options will appear but, the **_Linked Categories_** listing works best for this scenario.
+Scroll down to the **_Linked Categories_** section of the page.
 
-If the extra categories were entered correctly, you should see a **_Screen Size > 70 Inch_** option and a **_Resolution > 1080p_** option in the listing.  Ticking both of those will now have your Samsung MX701080 show up in three places on your site.  If you also had categories for Width, Height, Depth, etc. that fit this model; you can add them at this time as well.
+![P2C set linked categories](/images/p2c_set_linked.png) 
+
+If the extra categories were entered correctly, you should see a **_Screen Size > 70 Inch_** option and a **_Resolution > 1080p_** option in the listing.  Ticking both of those will now have your Samsung MX701080 show up in three places on your site.  
 
 So a customer would see this product hierarchy: 
 
@@ -80,5 +82,5 @@ Resolution
       * Other 1080p televisions 
 ```
 
-The great thing about linked products is that although they show up in multiple categories, there is really only one product.  This means that any change made to the Samsung MX701080 in the main product category will automatically change all the linked products. 
+Although linked products show up in multiple categories, there is really only one actual product in your database.  This means that any change made to the Samsung MX701080 in the main product category will automatically change all the linked products. 
 

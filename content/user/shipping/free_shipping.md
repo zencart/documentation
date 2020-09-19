@@ -10,9 +10,9 @@ During Checkout, the Shipping Selection page is automatically skipped if shippin
 
 ## How do I tell the shopping cart that shipping does not apply?
 
-Individually set products as `free shipping` by editing each one and setting `product is always free-shipping` button in the middle of the product-info/edit screen.
+Individually set products as `free shipping` by visiting the [product editing screen](/user/products/product_edit/) for each one, and setting radio button `Always Free Shipping` to `Yes`. 
 
-Then enable the `free shipping` module..
+Then enable the `free shipping` module on [Admin > Modules > Shipping](/user/admin_pages/modules/shipping/). 
 
 This will allow checkout to totally bypass the shipping page.
 
@@ -21,6 +21,7 @@ This will allow checkout to totally bypass the shipping page.
 ## How do I make shipping be free?
 
 There are several ways to make shipping be free:
+
 - mark the product as free-shipping (see above)
 - mark the product as virtual 
 - associate downloads with the product and mark it as free shipping
@@ -37,5 +38,4 @@ Then select *Shipping* from the list.
 If the module is not installed click the install button. 
 
 Click edit to configure the criteria to allow free shipping.
-
 
