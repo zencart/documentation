@@ -9,7 +9,7 @@ Defines every country with the following information:
 - Country Name
 - ISO-3166 2-letter and 3-letter country code 
 - [Address format](/user/localization/address_formats/)
-- Whether you ship to that country (since 1.5.7)
+- Whether you ship to that country
 
 ![Countries](/images/countries.png)
 
