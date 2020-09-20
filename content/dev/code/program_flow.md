@@ -19,7 +19,7 @@ Locations where an "override" can be used are noted with a ► symbol.
   - ►`/includes/extra_configures/*.php`
 
 
-- ►`/includes/autoloaders/config.xxxx.php` files (the Init System) loads things in the order defined inside the files, which follows essentially the following order:
+- ►`/includes/autoloaders/config.xxxx.php` files (the [Init System](/dev/code/init_system/)) loads things in the order defined inside the files, which follows essentially the following order:
   - Connect to Database and setup caching
   - `/includes/filenames.php`
   - `/includes/database_tables.php`
