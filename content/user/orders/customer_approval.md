@@ -1,6 +1,6 @@
 ---
 title: Customer Approval 
-description: Zen Cart Customer Approval
+description: Limiting access to your store
 category: orders 
 weight: 10
 ---

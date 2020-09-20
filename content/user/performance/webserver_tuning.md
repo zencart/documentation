@@ -1,6 +1,6 @@
 ---
 title: Webserver Tuning Tips 
-description: Tuning Tips for MySQL database performance
+description: Improving MySQL database performance
 category: performance
 weight: 10
 ---
@@ -80,4 +80,4 @@ Be aware that this log can grow VERY large very quickly if there are many proble
 
 ### General Advice
 
-You can find many articles online regarding mysql tweaking or optimization. There are many opinions, and it is really a balancing act. Determine what works best for you based on your actual site performance ... especially when it is busiest.
+You can find many articles online regarding MySQL tweaking or optimization. There are many opinions, and it is really a balancing act. Determine what works best for you based on your actual site performance ... especially when it is busiest.

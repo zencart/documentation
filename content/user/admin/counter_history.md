@@ -1,6 +1,6 @@
 ---
 title: What do the numbers in the Counter History box mean?
-description: Zen Cart admin counter history 
+description: Understanding admin counter history 
 category: admin
 weight: 10
 ---

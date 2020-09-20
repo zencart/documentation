@@ -64,14 +64,14 @@ Scroll down to the **_Linked Categories_** section of the page.
 
 ![P2C set linked categories](/images/p2c_set_linked.png) 
 
-If the extra categories were entered correctly, you should see a **_Screen Size > 70 Inch_** option and a **_Resolution > 1080p_** option in the listing.  Ticking both of those will now have your Samsung MX701080 show up in three places on your site.  
+If the extra categories were entered correctly, you should see a **_Screen Size > 70 Inch_** option and a **_Resolution > 1080p_** option in the listing.  Ticking both of those will cause the Samsung MX701080 to show up in three places on your site.  
 
 So a customer would see this product hierarchy: 
 
 ```
 Samsung
    * Samsung MX701080
-      * Other Samsung televisions 
+   * Other Samsung televisions 
 Screen Size 
    70 inch 
       * Samsung MX701080
@@ -82,5 +82,5 @@ Resolution
       * Other 1080p televisions 
 ```
 
-Although linked products show up in multiple categories, there is really only one actual product in your database.  This means that any change made to the Samsung MX701080 in the main product category will automatically change all the linked products. 
+Although linked products show up in multiple categories, there is only one product record in your database for you to maintain.  This means that any change made to the Samsung MX701080 in the main product category will automatically change all the linked products. 
 

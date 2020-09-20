@@ -1,6 +1,6 @@
 ---
 title: How do I change the header background image 
-description: Changing the header background image in Zen Cart
+description: My template uses a background image and I don't want it
 category: new_user_topics
 weight: 10
 ---

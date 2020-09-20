@@ -1,6 +1,6 @@
 ---
 title: Moving your Zen Cart folder 
-description: How do I move my cart to another folder? 
+description: Switching between subfolder and root deployment, or changing subfolder name 
 category: installing 
 weight: 10
 ---

@@ -1,6 +1,6 @@
 ---
 title: Permissions on files and folders 
-description: Permissions on files and folders in Zen Cart
+description: What access levels should be used?
 category: installing 
 weight: 10
 ---

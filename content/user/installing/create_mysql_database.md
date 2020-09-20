@@ -1,6 +1,6 @@
 ---
 title: How do I create a MySQL database? 
-description: Creating a MySQL database for Zen Cart
+description: Using cPanel to create a MySQL database 
 category: installing 
 weight: 10
 ---

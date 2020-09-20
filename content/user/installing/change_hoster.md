@@ -1,6 +1,6 @@
 ---
 title: Moving to another server 
-description: How do I move my Zen Cart to another server? 
+description: Steps to use when changing hosters 
 category: installing 
 weight: 10
 ---

@@ -1,6 +1,6 @@
 ---
 title: Blocking probing activity 
-description: Blocking probing activity in Zen Cart
+description: Stopping robots and other pests 
 category: security
 weight: 10
 ---

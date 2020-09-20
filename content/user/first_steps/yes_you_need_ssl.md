@@ -1,6 +1,6 @@
 ---
 title: SSL certificate - yes you need one 
-description: All online stores should be using SSL!
+description: Why your online store should be using SSL
 category: first_steps 
 weight: 10
 ---

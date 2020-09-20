@@ -1,6 +1,6 @@
 ---
 title: How do I remove the logo completely? 
-description: Removing the logo in Zen Cart 
+description: I don't want a logo for my site 
 category: new_user_topics
 weight: 10
 ---

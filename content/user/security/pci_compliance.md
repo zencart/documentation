@@ -1,6 +1,6 @@
 ---
-title: PCI Compliance Statement and PABP Standards
-description: Zen Cart PCI Compliance Statement and PABP Standards
+title: PCI Compliance Statement 
+description: Myths and realities about PCI and PABP Standards 
 category: security
 weight: 10
 ---

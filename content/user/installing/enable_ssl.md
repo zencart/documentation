@@ -1,6 +1,6 @@
 ---
 title: How do I enable SSL after I have installed Zen Cart?
-description: Enabling SSL after installing Zen Cart
+description: Making your cart use SSL 
 category: installing
 weight: 10
 ---

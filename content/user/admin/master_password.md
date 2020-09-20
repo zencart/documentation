@@ -1,6 +1,6 @@
 ---
 title: Master Password - Logging into a customer's account
-description: Zen Cart Master Password / Login as Customer 
+description: How to login to place an order for a customer 
 category: admin
 weight: 10
 ---

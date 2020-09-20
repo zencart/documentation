@@ -1,6 +1,6 @@
 ---
 title: Basics - URLs 
-description: Zen Cart URL structure
+description: URL structure used by Zen Cart 
 category: first_steps
 weight: 10
 ---

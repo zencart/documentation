@@ -1,6 +1,6 @@
 ---
 title: Renaming Your Admin Folder
-description: Renaming Your Zen Cart Admin Folder
+description: Obfuscating the path to your admin 
 category: Installing
 weight: 10
 ---

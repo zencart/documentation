@@ -1,6 +1,6 @@
 ---
 title: The Developer's Toolkit
-description: The Zen Cart Developer's Toolkit
+description: Searching your cart files using the admin 
 category: admin
 weight: 10
 ---
