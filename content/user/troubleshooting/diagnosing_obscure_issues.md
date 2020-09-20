@@ -1,6 +1,6 @@
 ---
 title: Diagnosing Obscure Issues
-description: New problems no one has seen before 
+description: Strategy for digging into root causes of problems
 category: troubleshooting
 weight: 10
 ---
