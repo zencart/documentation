@@ -1,14 +1,14 @@
 ---
 title: Order Statuses
-description: Reflecting your backorder process using order status
+description: Reflecting your order fulfillment process using order status
 category: localization
 weight: 10
 ---
 
 ### What is an Order Status? 
 
-The order status field is a value which encapsulates where the order is in 
-your workflow.  Zen Cart has the following default order statuses: 
+The order status field is a value which encapsulates where the order is in your workflow.
+Zen Cart has the following default order statuses: 
 
 - Pending
 - Processing
