@@ -1,14 +1,15 @@
 ---
 title: How do I change the logo or the logo alt text in the header?
-description: Cusomizing your logo 
+description: Customizing your logo 
 category: new_user_topics
 weight: 10
 aliases: 
     - /user/new_user_topics/change_powered_by/
 ---
 
-By default, Zen Cart uses `includes/templates/YOURTEMPLATE/images/logo.gif` 
-for the name of the logo image, but you can use you own filename for the logo.
+By default, Zen Cart uses `includes/templates/YOURTEMPLATE/images/logo.gif` for the filename of the logo image, but you can use your own filename for the logo.
+
+NOTE: If your logo is available as a .gif image, it's faster to just upload your logo by replacing the logo.gif file on the server. Then refresh your browser cache (CTRL+R) to see it on your site. You may still want to update the image dimensions listed in the following instructions.
 
 Using an [image editor](/user/first_steps/useful_tools/#graphics-editors), create your new logo and save it to `includes/templates/YOURTEMPLATE/images/yourname` and upload it to your server.
 
