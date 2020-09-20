@@ -28,5 +28,5 @@ When selection from a list is used, the same window is shown, but instead of pro
 
 ![Specials by ID](/images/specials_by_id.png)
 
-Read more about how [Specials](/user/products/special_products/) are handled on the storefront. 
+Specials are displayed in your store in the specials sidebox, in a centerbox and on the specials page.  To learn more, read about [how specials are handled on the storefront](/user/products/special_products/). 
 
