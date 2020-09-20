@@ -1,6 +1,6 @@
 ---
 title: Language Files - What are they and how are they used?
-description: How do I change a language string? 
+description: How do I change language text? 
 category: new_user_topics
 weight: 10
 ---
