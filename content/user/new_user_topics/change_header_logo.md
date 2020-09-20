@@ -1,6 +1,6 @@
 ---
 title: How do I change the logo or the logo alt text in the header?
-description: Getting your logo to show 
+description: Cusomizing your logo 
 category: new_user_topics
 weight: 10
 aliases: 

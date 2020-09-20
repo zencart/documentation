@@ -1,6 +1,6 @@
 ---
 title: Integrating Sales Analytics/Affiliate Tools
-description: Zen Cart Integrating Sales Analytics/Affiliate Tools
+description: JROX JAM, SNAP, iDevAffiliate and other sales information systems 
 category: orders
 weight: 10
 type: codepage

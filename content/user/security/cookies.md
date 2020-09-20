@@ -1,6 +1,6 @@
 ---
 title: How Zen Cart uses cookies 
-description: Cookies and Zen Cart 
+description: Cookies and Session data 
 category: security
 weight: 10
 ---

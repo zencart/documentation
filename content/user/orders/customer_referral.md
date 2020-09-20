@@ -1,6 +1,6 @@
 ---
 title: Customer Referral Processing
-description: Zen Cart Customer Referral Processing
+description: Rewarding customers who spread the word
 category: orders 
 weight: 10
 ---

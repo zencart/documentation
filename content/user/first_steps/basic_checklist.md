@@ -1,6 +1,6 @@
 ---
 title: Basics - Store Setup Checklist
-description: Zen Cart Basic Store Setup Checklist
+description: Things to do when setting up a store 
 category: first_steps 
 weight: 10
 ---

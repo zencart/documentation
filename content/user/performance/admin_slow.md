@@ -1,6 +1,6 @@
 ---
 title: Admin is slow or hangs forever 
-description: Admin performance with Zen Cart 
+description: Dealing with performance issues in Admin 
 category: performance
 weight: 10
 ---

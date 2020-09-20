@@ -1,6 +1,6 @@
 ---
 title: Security Recommendations
-description: Zen Cart Security Recommendations
+description: Running your site securely
 category: security
 weight: 10
 ---

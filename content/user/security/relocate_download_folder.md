@@ -1,6 +1,6 @@
 ---
 title: Download folder - Relocating 
-description: Moving your Zen Cart Download folder 
+description: Storing downloads outside of webroot 
 category: security
 weight: 10
 ---

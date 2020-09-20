@@ -1,6 +1,6 @@
 ---
 title: Basics - Default files, template default and overrides 
-description: Default Files, Override Files and Templates in Zen Cart Basic 
+description: What is a default file vs a template file? 
 category: first_steps 
 weight: 10
 ---

@@ -1,6 +1,6 @@
 ---
 title: How do I set up meta tags for my site? 
-description: Zen Cart meta tags 
+description: 'Meta Tags: title, description and keywords'
 category: admin
 weight: 10
 ---

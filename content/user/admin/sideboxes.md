@@ -1,6 +1,6 @@
 ---
 title: I want to enable/disable some sideboxes 
-description: Zen Cart Sidebox enable / disable
+description: Conditional sidebox display
 category: admin
 weight: 10
 ---

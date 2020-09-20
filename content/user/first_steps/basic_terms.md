@@ -1,6 +1,6 @@
 ---
 title: Basics - Terms and Definitions
-description: Zen Cart Basic Terms 
+description: Terms used throughout this site 
 category: first_steps
 weight: 10
 ---

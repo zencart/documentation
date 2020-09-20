@@ -1,6 +1,6 @@
 ---
 title: GZIP compression
-description: GZIP compression with Zen Cart 
+description: Compressing pages during delivery 
 category: performance
 weight: 10
 ---
@@ -10,7 +10,7 @@ reduce the size of pages before being transmission from server to browser.
 This speeds the delivery of web pages. 
 
 ### When to Use It
-However, if PHP is already configured on the server with `output_buffering` enabled, then it is already doing this compression before transmission. 
+If PHP is already configured on the server with `output_buffering` enabled, then it is already doing this compression before transmission. 
 This means that if you turn on GZip compression in Zen Cart, you're 
 doing compression twice, which can actually can slow things down.
 

@@ -1,6 +1,6 @@
 ---
 title: How do I change the "Sales Message Goes Here" or "Tagline Here" text?
-description: Removing the placeholders "Sales Message Goes Here" and "Tagline Here"
+description: Removing the language string placeholders
 category: new_user_topics 
 weight: 10 
 ---

@@ -1,6 +1,6 @@
 ---
 title: Order Statuses
-description: Order Statuses in Zen Cart 
+description: Reflecting your backorder process using order status
 category: localization
 weight: 10
 ---

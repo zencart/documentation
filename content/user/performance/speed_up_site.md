@@ -1,8 +1,8 @@
 ---
 title: How do I speed up my site? 
-description: Performance for Zen Cart 
+description: Basic performance improvement tips 
 category: performance
-weight: 10
+weight: 5 
 ---
 
 

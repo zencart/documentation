@@ -1,6 +1,6 @@
 ---
 title: Date format - changing it from the US format to dd/mm/yyyy
-description: Zen Cart Date format - changing it from the US format to dd/mm/yyyy
+description: Localizing data display 
 category: localization
 weight: 10
 ---

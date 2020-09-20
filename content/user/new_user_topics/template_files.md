@@ -1,6 +1,6 @@
 ---
 title: Template Files - What are they and how are they used?
-description: Template Files - how are they used? 
+description: What does a template do? 
 category: new_user_topics
 weight: 10
 ---

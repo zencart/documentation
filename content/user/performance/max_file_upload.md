@@ -1,9 +1,11 @@
 ---
-title: Maximum file upload size 
-description: Zen Cart Maximum file upload size 
+title: File upload limitations 
+description: Dealing with post_max_size and max_file_uploads 
 category: performance
 weight: 10
 ---
+
+Note: This does not apply to your site unless you use File Upload attributes on products. 
 
 The ability to upload files to your Zen Cart site via a browser is affected by several factors:
 

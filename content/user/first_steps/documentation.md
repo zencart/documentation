@@ -1,6 +1,6 @@
 ---
 title: Documentation
-description: Zen Cart - Exploring the documentation
+description: How to use this site 
 category: first_steps
 weight: 10
 ---
