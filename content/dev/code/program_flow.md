@@ -6,7 +6,7 @@ weight: 10
 type: codepage
 ---
 
-A storefront visit in Zen Cart follows an MVC style approach, albeit largely based on procedural code. The files involved are processed roughly in the following order. At various points there may be ["auto-loading"](/dev/code/inclusion/) of certain files in a certain directory matching a prescribed naming convention, or all files automatically executed according to certain rules for that location.
+A storefront visit in Zen Cart follows an MVC style approach, albeit largely based on procedural code. The files involved are processed roughly in the following order. At various points there may be [auto-loading](/dev/code/inclusion/) of certain files in a certain directory matching a prescribed naming convention, or all files automatically executed according to certain rules for that location.
 
 Locations where an "override" can be used are noted with a ► symbol.
 
