@@ -47,12 +47,9 @@ Here's the workflow you'll want to use as a collaborator with Zen Cart&reg; and 
 
 ### CLA - Contributor License Agreement
 
-First, before you can contribute code, you must sign the Contributor License Agreement, basically saying that you willingly offer your contributions for use without compensation or restriction and that your contributions are entirely yours and not copyrighted or licensed by someone else under restrictive rules.
+By contributing code, you are agreeing that you willingly offer your contributions for use without compensation or restriction and that your contributions are entirely yours and not copyrighted or licensed by someone else under restrictive rules.
 
-If you have not signed the CLA using the email address or username you use for github, we cannot accept your pull request.
 
-(LINK TO SIGN CLA WILL BE ADDED HERE SHORTLY)
-    
 ### Basic setup
  1. github account
   * Create a github account at [www.github.com](http://www.github.com)
