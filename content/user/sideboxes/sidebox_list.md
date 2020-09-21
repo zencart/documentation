@@ -136,33 +136,10 @@ This can be found in the setting <em>Admin > Configuration > Layout Settings</em
    </div>
    <div class="notes_col">
       The <strong>featured_products</strong> sidebox is a random display of featured products. <br>
+The <i>[more]</i> link in the header goes to the featured products page.<br>
 The <strong>specials</strong> and <strong>new_products</strong> sideboxes work similarly. <br>
-<button type="button" class="btn btn-link" data-toggle="modal" data-target="#specials">- View specials</button><br>
-<button type="button" class="btn btn-link" data-toggle="modal" data-target="#new_products">- View new_products</button>
    </div>
 </div>
-<br clear="all">
-
-<div id="specials" class="modal fade" tabindex="-1" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-        <div class="modal-body">
-            <img src="/images/sidebox_specials.png" class="img-responsive">
-        </div>
-    </div>
-  </div>
-</div>
-
-<div id="new_products" class="modal fade" tabindex="-1" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-        <div class="modal-body">
-            <img src="/images/sidebox_new_products.png" class="img-responsive">
-        </div>
-    </div>
-  </div>
-</div>
-
 <br clear="all">
 <br>
 
@@ -239,6 +216,21 @@ The <strong>specials</strong> and <strong>new_products</strong> sideboxes work s
 <br clear="all">
 <br>
 
+## New Products
+
+<br>
+<div>
+   <div class="img_col"> 
+      <img alt="New Products Sidebox" src="/images/sidebox_new_products.png" />
+   </div>
+   <div class="notes_col">
+      The <strong>new_products</strong> sidebox is a random display of <a href="/user/products/new_products/">new products</a>. <br>
+The <i>[more]</i> link in the header goes to the new products page.<br>
+The <strong>specials</strong> and <strong>featured_products</strong> sideboxes work similarly. <br>
+   </div>
+</div>
+<br clear="all">
+<br>
 
 ## Order History
 
@@ -263,7 +255,7 @@ The <strong>specials</strong> and <strong>new_products</strong> sideboxes work s
       <img alt="Product Notifications Sidebox" src="/images/sidebox_product_notifications.png" />
    </div>
    <div class="notes_col">
-      The <strong>product_notifications</strong> sidebox allows a customer to subscribe to product notifications that you post using the Newsletter and Product Notifications Manager. <br>
+      The <strong>product_notifications</strong> sidebox allows a customer to subscribe to product notifications that you post using the <a href="/user/admin_pages/tools/newsletter/">Newsletter and Product Notifications Manager</a>. <br>
    </div>
 </div>
 <br clear="all">
@@ -330,9 +322,26 @@ A second search sidebox, the <strong>search_header</strong> sidebox, is designed
       <img alt="Shopping Cart Sidebox" src="/images/sidebox_shopping_cart.png" />
    </div>
    <div class="notes_col">
-      The <strong>shopping_cart</strong> sidebox lists the items that have been added into the customer's cart.
+      The <strong>shopping_cart</strong> sidebox lists the items that have been added into the customer's cart.<br>
+The <i>[more]</i> link in the header goes to the <a href="/user/storefront_pages/shopping_cart/">shopping cart page</a>.<br>
    </div>
 	</div>
+<br clear="all">
+<br>
+
+## Specials
+
+<br>
+<div>
+   <div class="img_col"> 
+      <img alt="Specials Sidebox" src="/images/sidebox_specials.png" />
+   </div>
+   <div class="notes_col">
+      The <strong>specials</strong> sidebox is a random display of specials. <br>
+The <i>[more]</i> link in the header goes to the <a href="/user/storefront_pages/specials/">specials page</a>.<br>
+The <strong>featured</strong> and <strong>new_products</strong> sideboxes work similarly. <br>
+    </div>
+</div>
 <br clear="all">
 <br>
 
