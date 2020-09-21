@@ -1,6 +1,6 @@
 ---
 title: Home Page 
-description: Configuring your shopping cart main page 
+description: Configuring your site's main page 
 category: storefront_pages
 weight: 10
 ---

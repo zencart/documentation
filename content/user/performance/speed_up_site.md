@@ -76,7 +76,7 @@ You will want to download a copy of those log files to your PC, using your [FTP 
 Then you can purge those logs files by using the [Admin > Tools > Store Manager](/user/admin_pages/tools/store_manager/) Purge log files menu option.  
 
 ### Check Parse Times 
-Assess [Page Parse Times](/user/performance/page_parse_times/) to isolate where your bottleneck is occurring.  
+Assess Page Parse Times to isolate where your bottleneck is occurring.  
 
 ### Use MySQL slow query log 
 Use the MySQL slow query log feature to identify poorly-performing database queries.  

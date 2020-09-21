@@ -9,7 +9,7 @@ aliases:
 
 By default, Zen Cart uses `includes/templates/YOURTEMPLATE/images/logo.gif` for the filename of the logo image, but you can use your own filename for the logo.
 
-NOTE: If your logo is available as a .gif image, it's faster to just upload your logo by replacing the logo.gif file on the server. Then refresh your browser cache (CTRL+R) to see it on your site. You may still want to update the image dimensions listed in the following instructions.
+**NOTE:** If your logo is available as a .gif image, it's faster to just upload your logo by replacing the logo.gif file on the server. Then refresh your browser cache (CTRL+R) to see it on your site. You may still want to update the image dimensions listed in the following instructions.
 
 Using an [image editor](/user/first_steps/useful_tools/#graphics-editors), create your new logo and save it to `includes/templates/YOURTEMPLATE/images/yourname` and upload it to your server.
 
@@ -17,7 +17,7 @@ The name `yourname` will also include a file extension, such as `.png`, `.jpg`, 
 
 After creating your logo you can adjust the alt text, width, height, and image name in `includes/languages/english/YOURTEMPLATE/header.php`
 
-**Note:** If you don't have the file `includes/languages/english/YOURTEMPLATE/header.php`, then copy `includes/languages/english/header.php` to `includes/languages/english/YOURTEMPLATE/header.php` before editing.  See [What if I don’t have a file that some instructions mention?](/user/new_user_topics/no_such_file/)
+**NOTE:** If you don't have the file `includes/languages/english/YOURTEMPLATE/header.php`, then copy `includes/languages/english/header.php` to `includes/languages/english/YOURTEMPLATE/header.php` before editing.  See [What if I don’t have a file that some instructions mention?](/user/new_user_topics/no_such_file/)
 
 For the purpose of this example, let's assume `yourname` is `newlogo.png`, and that the logo is 200px wide and 80px tall.
 
