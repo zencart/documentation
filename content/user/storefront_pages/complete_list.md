@@ -27,8 +27,8 @@ Page 3 | index.php?main_page=page_3 |
 Page 4 | index.php?main_page=page_4 | 
 Privacy | index.php?main_page=privacy | Privacy Policy
 Product Listing |  index.php?main_page=index&cPath=NNN | 
+Product Reviews Info | index.php?main_page=product_reviews_info | Read a specific review 
 Reviews | index.php?main_page=reviews | Read all reviews 
-Reviews Info | index.php?main_page=product_reviews_info | Read a specific review 
 Shipping | index.php?main_page=shippinginfo | Shipping Policy
 Site Map | index.php?main_page=site_map | 
 Shopping Cart | index.php?main_page=shopping_cart | 
@@ -57,7 +57,7 @@ Checkout Payment Address | index.php?main_page=checkout_payment_address |
 Checkout Shipping Address | index.php?main_page=checkout_shipping_address  | 
 Checkout Shipping | index.php?main_page=checkout_shipping  | 
 Checkout Success | index.php?main_page=checkout_success  | 
-Reviews Write | index.php?main_page=product_reviews_write | Write a review 
+Product Reviews Write | index.php?main_page=product_reviews_write | Write a review 
 Unsubscribe | index.php?main_page=unsubscribe | Unsubscribe from Newsletter
  
 <br><br>
