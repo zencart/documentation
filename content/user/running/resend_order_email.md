@@ -15,10 +15,6 @@ This can happen for a variety of reasons:
 
 Here are a few ways you can get them the information they need. (Of course if you have a deliverability issue, you will need to handle that separately.) 
 
-## Using the Email Archive Manager 
-
-If you had [email archiving](/user/admin_pages/configuration/configuration_emailoptions#email_archiving_active) turned on at the time the order was placed, you can use the [Email Archive Manager](/user/email/email_archive_manager/) to resend the email.  (Note: You must be running Email Archive Manager version 1.9 or higher if your cart uses HTML email, and only the text copy of the email is re-sent.) 
-
 ## Forward them the Admin order confirmation 
 The administrator gets a confirmation email for each order, as long as the _Send Copy of Order Confirmation Emails To_ field in [Email Settings](/user/admin_pages/configuration/configuration_emailoptions/) is set. 
 
@@ -40,4 +36,8 @@ Tell the customer to login to their account and click the "My Account" link, whe
 They can print that screen, either to paper or PDF (see above).
 
 If your store needs to let customers make a PDF on a regular basis, the [Catalog Invoice](https://www.zen-cart.com/downloads.php?do=file&id=2111) plugin might be of interest.
+
+## Using the Email Archive Manager 
+
+If you had [email archiving](/user/admin_pages/configuration/configuration_emailoptions#email_archiving_active) turned on at the time the order was placed, you can use the [Email Archive Manager](/user/email/email_archive_manager/) to resend the email. 
 
