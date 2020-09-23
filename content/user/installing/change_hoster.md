@@ -36,20 +36,15 @@ c. Click on Import and click Browse.
 
 d. Select the SQL file you made in step 3a when you exported your old database, and click Go.  
 
-6\. If you're running ZC v1.5.1 or older, grab the 
-[Fix Cache Key](https://www.zen-cart.com/downloads.php?do=file&id=8)
-utility.  Upload and run this file.  **This is only required for 
-Zen Cart 1.5.1 or older.**
+6\. You're done. Open your store and admin areas to see it all ready to go! Do a test transaction. Turn off the Down For Maintenance mode.
 
-7\. You're done. Open your store and admin areas to see it all ready to go!
+7\. You should review all your email settings in Admin > Configuration > Email Options -- especially any SMTP server/account settings, and of course all your email addresses.
 
-8\. You should review all your email settings in Admin > Configuration > Email Options -- especially any SMTP server/account settings, and of course all your email addresses.
-
-9\. Once your new site is up and running, you should DELETE the database and all the PHP files/folders, etc from the OLD server.  There's no point leaving that data behind for prying eyes or worse.
+8\. Once your new site is up and running, the OLD server should be cleaned up: you should DELETE the database and all the PHP files/folders, etc from the OLD server.  There's no point leaving that data behind for prying eyes or worse.
 
 ## A Note About NameServers And Timing
 
-On a store that's taking live orders, you need to prevent orders from being taken in the old site once you've made your backup to move to the new site.  
+On a store that's taking live orders, you need to prevent orders from being accepted on the old site once you've made your database backup to move to the new site.  
 So, make the following adjustments to the steps above:  
 
 a) BEFORE taking the backup in Step 3, first login to your old site's admin, and set Admin > Configuration > Website Maintenance > Down For Maintenance = TRUE.
@@ -57,18 +52,18 @@ This is called [taking your store down for maintenance](/user/running/down_for_m
 
 b) AFTER step 5 or 6, login to your NEW store's admin, and set Down For Maintenance = FALSE.  
 
-c) NEVER disable down-for-maintenance in the OLD site. Once you've copied the database from it, you don't want to take any more orders in the old site, else they'll be lost.  
+c) NEVER disable down-for-maintenance in the OLD site. Once you've copied the database from it, you don't want to take any more orders in the old site, else they'll be lost. 
+You may even want to put up a message on the old server telling customers that the store has been updated, and that they may need to clear their browser cache and reboot in order to see the new updated site. (This is because browsers remember the old IP address.)  You could optionally delete Zen Cart and the database from the old server and just put up a simple index.html page on that server saying the same sort of message. Eventually people's browsers will all look to the new address. See the Advanced section below for ways to expediate the updates.
 
 d) Once your nameserver updates have propagated (up to 48 hours), you should be able to delete the files and database from the old server.  
 
 **NOTE:** This means your store will appear as down-for-maintenance until the DNS/Nameserver details are propagated to the region where your customers connect online. Once the propagation is done, they will see the new site on the new server, and be able to place orders.
 
 **ADVANCED TIP:**
-If you know 3 or 4 days or maybe a week ahead of time that you're going to do this sort of move, get your old hosting company to change the TTL (Time To Live) setting on your domain DNS settings to 240 (4 hours). This will help speed the effects of propagation.  
-Then, a couple days after you've completed the move, and propagation is completed, change the TTL back to normal values (whatever your new hosting company prefers to use).
+If you know 3 or 4 days or maybe a week ahead of time that you're going to do this sort of move, get your old hosting company to change the TTL (Time To Live) setting on your domain DNS settings to 3600 (1 hour). This will help speed the effects of propagation.  
+Then, a couple days after you've completed the move, and propagation is completed, change the TTL back to normal values (whatever your new hosting company prefers to use, often 86400).
 
-**NOTE:** This FAQ handles moving a cart to a new server.
-If you just want to move your cart to another folder on the 
-same server, 
-please see the [move cart FAQ](/user/installing/move_cart/). 
+
+**NOTE:** This FAQ handles moving a cart to a NEW server.
+If you just want to move your cart to another folder on the same server, please see the [move cart FAQ](/user/installing/move_cart/). 
 
