@@ -26,6 +26,8 @@ b. Download all your old site's files via FTP (or if you have the option, zip th
 
 4\. Now **upload your OLD files over the NEW files** on the NEW server, WITH TWO EXCEPTIONS: Don't overwrite the `/includes/configure.php` and `/YOURADMIN/includes/configure.php` files on the NEW server.
 
+  IMPORTANT NOTE: Your "admin" folder from the old site is probably a different name than the one that was auto-renamed in the new site. Pick one of the names and rename the other to match. Otherwise you will have two admin folders, which will leave you with confusion.
+
 5\. Go back to phpMyAdmin on your **NEW server**.  
 
 a. Select your NEW database (that you installed the NEW Zen Cart into)  
