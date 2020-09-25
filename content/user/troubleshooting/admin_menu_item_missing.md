@@ -1,5 +1,5 @@
 ---
-title: Menu item missing from Admin
+title: Admin menu item is missing
 description: I can't find an item in my Admin menu
 category: troubleshooting 
 weight: 10
