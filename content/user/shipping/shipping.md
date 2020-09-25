@@ -26,4 +26,6 @@ Zen Cart also integrates with a number of shipping vendors using plugins:
 
 More shipping plugins may be found in the [Shipping module section of the Plugins Library](https://www.zen-cart.com/downloads.php?do=cat&id=11).
 
+Many shipping modules may be restricted so that they only work in specific zones - an existing one, or one you have created.  To learn how to create a new zone, see [creating zone definitions](/user/locations/zone_definitions/). 
+
 Developers wishing to create a shipping module should see the [dev FAQs on modules](/dev/code/modules/). 

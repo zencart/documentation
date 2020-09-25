@@ -13,7 +13,9 @@ To get a link to a specific page into the this sidebox, go to [Tools > EZ-Pages]
 
 For the page to show up in the EZ-Pages sidebox, the Sidebox radio button must be set to *Yes* and the sort order must be greater than 0.
 
-### How do I add a link to the EZ-Page Sidebox? 
+![EZ-Pages Sidebox on](/images/ezpages_sidebox_on.png)
+
+### How do I add a new link to the EZ-Page Sidebox? 
 
 We create the [override file](/user/first_steps/overrides/) `includes/templates/YOURTEMPLATE/sideboxes/tpl_ezpages.php`.  
 

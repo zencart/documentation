@@ -5,6 +5,8 @@ category: ezpages
 weight: 10
 ---
 
+**Note:** This page pertains to modifying a block of code to insert a link to an EZ-Page.  You don't have to do this - links to EZ-Pages are created automatically in the [EZ-Pages sidebox](/user/sideboxes/ezpages_sidebox/) and the [EZ-Pages header and footer](/user/template/additional_links/#option-2). 
+
 For simple menus made up of EZ-Pages and non-EZ-Pages, the best solution is often to use the internal and external link functions within EZ-Pages to bring all of the links into your EZ-Pages' menus. However, sometimes this is not sufficient. An example might be if you only wanted the EZ-Page to be shown when certain conditions were met.
 
 To program an EZ-Page link we can make use of the `zen_ez_pages_link()` function that is built into Zen Cart. This will compile and return the <a> tag with the EZ-Page's information. First you will need to know the EZ-Page ID and chapter number of the page to which you want the link to point. You can find this information by going to Admin > Tools > EZ-Pages. You will find the ID in the left hand column and the chapter number in a column over towards the right of the page.
