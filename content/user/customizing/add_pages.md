@@ -35,5 +35,5 @@ The best way to create a new page is to use one of these plugins as a starting p
 
 The latter is somewhat less customizable but contains fewer files. 
 
-The advantage of creating a new page is that you can use PHP in the page, which is not an option with EZ-Pages. 
+The advantage of creating a new page is that you can use PHP in the page, which is not an option with EZ-Pages.  Being able to use PHP means you can add conditional logic, do database lookups, customize for specific groups or customer characteristics, etc. 
 

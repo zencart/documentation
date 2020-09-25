@@ -16,9 +16,11 @@ layout: docs
 
 * [Admin Password Reset](/user/troubleshooting/reset_admin_password/) - how to reset your password if you have forgotten it.
 
+* [Backup](/user/running/backup/) - how do I make a backup? 
+
 * [Blank Page](/user/troubleshooting/blank_page/) - what to do if part or all of a page is blank.
 
-* [Can Zen Cart ...](/user/miscellaneous/can_zen_cart/) - Questions about features.
+* [Can Zen Cart ...](/user/miscellaneous/can_zen_cart/) - Questions about features and capabilities.
 
 * [Customizing my site](/user/customizing/appearance/) - changing the look and feel of your cart.
 

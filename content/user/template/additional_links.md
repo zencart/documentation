@@ -7,7 +7,7 @@ weight: 10
 
 There are two options for adding additional links to the header and footer of your site.
 
-**OPTION 1:**
+### OPTION 1:
 
 Additional links requires editing two files; `tpl_header.php` and `tpl_footer.php`.
 You can add internal page links as well external links. We'll use `tpl_header.php` in this article, but the same procedures would apply to `tpl_footer.php`.
@@ -40,7 +40,7 @@ You would add an external link as outlined above.
 <li><a href="http://external_link.com">External Link Text</a></li>
 ```
 
-OPTION 2:
+### OPTION 2:
 
 Make sure the EZ-Pages header or footer are activated in [Admin > Configuration > EZ-Pages](/user/admin_pages/configuration/configuration_ezpagessettings/). 
 
@@ -55,9 +55,13 @@ Header > select Yes and add a Sort Order
 Footer > select Yes and add a Sort Order
 ```
 
+![EZ-Pages header and footer](/images/ezpages_header_footer.png)
+
 Scroll down to the `Internal Link URL` box
 
 Add your link as follows - `index.php?main_page=contact_us` 
+
+![EZ-Pages internal link](/images/ezpages_internal_link.png)
 
 (You would follow this procedure for whatever page you are adding)
 
