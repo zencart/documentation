@@ -23,13 +23,13 @@ Generally speaking, a Zen Cart store only uses **one** database at a time.
 
 **THIS MEANS YOU SHOULD NEVER RESTORE or IMPORT a different database into your live store's database unless you're absolutely certain that you wish to WIPE OUT the existing data!!!**  
 
-**Exceptions:** 
+## What are prefixes? 
 
-Some (ie: most "good") hosting accounts allow multiple databases without additional fees. Some do not. In the case of servers where only *one* database is allowed but multiple Zen Cart stores are setup in the same hosting account for different domains/sites, Zen Cart supports the use of "table prefixes" to differentiate between stores sharing that database. It identifies the tables which it uses *within* that database by the `DB_PREFIX` setting in your configure.php file.  
+Zen Cart supports the use of "table prefixes" to differentiate between its own tables and the tables used by other web applications sharing the database. It identifies the tables which it uses *within* that database by the `DB_PREFIX` setting in your configure.php file.  Prefixes often have the value `zen_` or `zc_`.
 
-So, you could have `store1_` as a prefix to all the table-names for that store, and `zen_` as a prefix to the tables for another store, and so on. That's why the table-prefixes exist.  
+Using prefixes is no longer a recommended practice; simply create one database for your Zen Cart store, and only use that database for that store. 
 
-Some hosting companies have auto-installers that quickly dump a ZC site onto someone's account. Instead of setting up multiple databases, those usually engage the `DB_PREFIX` as `zen_` by default so they can keep the tables for the store separate from the tables they auto-install for a blog or a forum or a gallery or whatever.  While this makes managing the database more difficult for the storeowner, it makes the hosting company's auto-installer easier for them because it means they get to cheap-out on the resources you use.
+Prefixes are sometimes used by Zen Cart auto-installers, which are also **not recommended**.  See [how do I install](/user/first_steps/how_do_i_install/) for details. 
 
 ## How many tables are in the Zen Cart database? 
 

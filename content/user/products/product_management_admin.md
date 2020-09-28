@@ -19,6 +19,8 @@ that product type.  Adding is done on the
 
 For more information, see the [product FAQs](/user/products/). 
 
+When you add a product, the product's master category is set to the category in which you are adding the product. 
+
 ### Editing a Product 
 
 Editing a product is also done from the [product add/edit screen](/user/products/product_edit/). 
