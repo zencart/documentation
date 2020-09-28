@@ -7,6 +7,8 @@ weight: 10
 
 Background: 
 
+- A downloadable product is a digital item such as an ebook, a music file, an image or a software product. 
+
 - Downloads are handled as product attributes.  So, first, you should familiarize yourself with [setting up attributes](/user/products/attributes/). 
 
 - Download files must be loaded by [FTP](/user/first_steps/useful_tools/#ftp-tools) to your store's  `/download` directory before trying to link those files to products/attributes.   For greater security, you can [relocate the downloads folder](/user/security/relocate_download_folder/) outside your web space. 

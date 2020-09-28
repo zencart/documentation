@@ -17,17 +17,17 @@ Go to [Admin > Config > My Store](/user/admin_pages/configuration/configuration_
     (this second one is for admin-area only when editing catalog)  
 
 ### Disable the Manufacturers sidebox if you don't need it.  
-Go to [Admin > Tools > Layout Boxes Controller](/user/admin_pages/tools/layout_boxes_controller/)
+Go to [Admin > Tools > Layout Boxes Controller](/user/admin_pages/tools/layout_boxes_controller/). 
     Find the sideboxes/manufacturers.php entry, and turn it "OFF"  
 
 ### Disable Products Viewed 
 <font color="red">NEW!</font> 
-The Zen Cart "products viewed" feature can cause performance degradation on 
+In releases prior to 1.5.7, the Zen Cart "products viewed" feature can cause performance degradation on 
 busy sites.  
 
 Disable this feature by editing ` includes/extra_datafiles/products_viewed_counter.php` and setting `LEGACY_PRODUCTS_VIEWED_COUNTER` to `off`.
 
-**NOTE:** This is done for you in Zen Cart 1.5.7 and above; this change is only relevant on 1.5.6c and below. 
+**NOTE:** This change is only relevant for Zen Cart 1.5.6c and below. 
 
 ### Ensure your images are optimized for your site.  
 
