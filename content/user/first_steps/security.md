@@ -51,6 +51,8 @@ Just because you run an SSL on your site doesn't mean your cPanel access is secu
 
 Make hard to guess!  Passwords like "ABC123" or "P@ssw0rd" are *not hard enough to guess*.  Bad guys will try weak passwords, and if you use one, will get access to your site.   Use a random combination of letters, numbers and symbols which is at least 8 characters long.  
 
+[You Should Probably Change Your Password](https://www.youtube.com/watch?v=aHaBH4LqGsI)
+
 "But it's hard to remember all these passwords!"  Yes, I know.  That's why there are Password Managers. 
 
 ## Use a Password Manager 
