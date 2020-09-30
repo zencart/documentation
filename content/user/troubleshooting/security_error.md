@@ -1,6 +1,6 @@
 ---
 title: There was a security error when trying to login
-description: What does this message mean? 
+description: Sorting out expired or invalid form submissions
 category: troubleshooting
 weight: 10
 ---
