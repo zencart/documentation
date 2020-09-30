@@ -1,5 +1,5 @@
 ---
-title: I can't stay logged in to my Admin area 
+title: Can't login or stay logged in or add-to-cart
 description: PHP Session Handling in Zen Cart 
 category: troubleshooting
 weight: 10
@@ -23,7 +23,6 @@ Before you begin, be sure you are familiar with the structure and contents of [c
 
 **NEXT, try to rule out a bad SSL configuration:**  
 
-- If your version is Zen Cart 1.3.9 or before, edit your `/admin/includes/configure.php` and change `ENABLE_SSL_ADMIN` to 'false'  
 - clear browser cache AND cookies and try again. If it's still not working:  
 - edit your `/admin/includes/configure.php` and change `HTTP_SERVER` to a URL that does NOT start with `https`  
 - clear browser cache AND cookies and try again  
@@ -36,8 +35,8 @@ Before you begin, be sure you are familiar with the structure and contents of [c
 **IF IT STILL WON'T WORK, read on:**  
 
 - Admin login sessions (and customer login sessions) are managed via the PHP session-handling functionality.  
-- When you log in, a session is generated, and the session's name is zenAdminId or zenid (for the store).  
-- When a session is started, PHP attempts to set a cookie in your browser. That cookie is intended to store that session ID so that it doesn't need to be shown in the browser all the time (ie: with &zenAdminID=243524524524525 etc) at the end of all your URLs.  
+- When you log in, a session is generated. The session's name is `zenAdminId` for admin, or `zenid` for the store.  
+- When a session is started, PHP attempts to set a cookie in your browser. That cookie is intended to store that session ID so that it doesn't need to be shown in the browser all the time (ie: with &zenid=243524524524525 etc) at the end of all your URLs.  
 - If a cookie cannot be set, then PHP simply includes the session name and number (like above) on all your URLs in order to keep you logged in.  
 - When you log out, or the session ID is lost, the session data is reset and your authentication data is removed, requiring login again.  
 
