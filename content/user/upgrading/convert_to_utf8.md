@@ -27,6 +27,7 @@ To change the database to utf8mb4, use the instructions below.
 a.  Edit <font color="#ff0000">/admin/includes/languages/english.php</font> (and all other <i>language_name</i>.php files in that folder) and set the define for CHARSET to 'utf-8'.  
     Do the same with the <font color="#ff0000">non-admin /includes/languages/english.php</font> (and other language_name.php files in that folder)  
     ... AND ...
+    
 b.  Also edit your <font color="#ff0000">two configure.php files</font> to set DB_CHARSET to 'utf8':  
     <font color="#8b4513">define('DB_CHARSET', 'utf8');  
     </font>(Remember, the configure.php files are most likely set to read-only on your server, so you'll need to change their permissions on the server to be writable before you can save the changes you're making.)  
