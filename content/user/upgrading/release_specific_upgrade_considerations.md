@@ -16,11 +16,11 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 - Be sure external links are constructed with `rel="noreferrer noopener"`. 
 
-### Zen Cart 1.5.8
+### Zen Cart 1.5.8 (currently in development phase, not released yet)
 
 - The function `zen_cfg_read_only` has been added to the core.  This means any plugin authors who use this function should remove it from the plugin (for 1.5.7+) or wrap it in `if (!function_exists('zen_cfg_read_only'))` (for older versions of Zen Cart). 
 
-- The misspelled notifier `NOTIFIY_ORDER_CART_SUBTOTAL_CALCULATE` has been deprecated and replaced by `NOTIFY_ORDER_CART_SUBTOTAL_CALCULATE`.  (Because of the [event aliasing](/dev/code/notifiers/#event-aliasing) feature, older code that references the misspelled notifier will continue to work.)
+- The misspelled notifier `NOTIFIY_ORDER_CART_SUBTOTAL_CALCULATE` has been deprecated and replaced by `NOTIFY_ORDER_CART_SUBTOTAL_CALCULATE`.  (Because of the [event aliasing](/dev/code/notifiers/#event-aliasing) feature, older code that references the misspelled notifier will continue to work, but you should still upgrade your plugins to use the correct one.)
 
 ### Zen Cart 1.5.7 
 
@@ -37,7 +37,7 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 - External links have been updated to use `rel="noopener"` or `rel="noreferrer noopener"`.  If you use external links (for social networking, manufacturer sites, product URLs, etc.) you should update your template to adopt this practice. 
 
-- A number of constants which were unused by the core were removed from language files.  If you use a plugin which relied on these defines, you should expect a PHP Notice in your `/logs` folder.   To resolve this, define the needed constants in a plugin specific file.  Examples of defines that were removed but are still used by plugins are `DATE_FORMAT_SHORT` and `DATE_TIME_FORMAT`.
+- A number of constants which were unused by the core were removed from language files.  If you use a plugin which relied on these defines, you should expect a PHP Notice in your `/logs` folder.   To resolve this, define the needed constants in a plugin specific file. Some of the defines removed are `DATE_FORMAT_SHORT` and `DATE_TIME_FORMAT`, which some plugins may have used even though core Zen Cart code does not.
 
 ### Zen Cart 1.5.6 
 
