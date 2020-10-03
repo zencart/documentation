@@ -1,9 +1,11 @@
 ---
 title: Integrating Sales Analytics/Affiliate Tools
 description: JROX JAM, SNAP, iDevAffiliate and other sales tracking systems 
-category: orders
+category: reporting 
 weight: 10
 type: codepage
+aliases:
+    - /user/orders/sales_analytics_affiliate_tools/
 ---
 
 On the "checkout_success" page, there are several pieces of data available:  

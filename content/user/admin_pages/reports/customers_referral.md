@@ -6,6 +6,8 @@ weight: 20
 
 This report creates a list of orders having a specified [referral or coupon code](/user/orders/customer_referral/).
 
+Note that this is only relevant for stores that set Customers Referral Status to "1" or "2" on the [Admin > Configuration > Customer Details](/user/admin_pages/configuration/configuration_customerdetails/) screen.   See [Customer Referral Processing](/user/reporting/customer_referral/) for more details.
+
 The page opens showing the following fields on a form:
 
 - a selector list of customer referral codes (which the customer entered when they created their account).
