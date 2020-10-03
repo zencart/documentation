@@ -10,7 +10,7 @@ weight: 10
 After [installation](/user/first_steps/how_do_i_install/), you'll want to address several things to get your basic shop operational. One suggested order of operations is the following:
 
 ### Language File setup 
-- When English is not your preferred language download, install and setup
+- When English is not your preferred language, you should download, install and setup
 a language pack for 
 your preferred language from the [Zen Cart Downloads](https://www.zen-cart.com/downloads.php?do=cat&id=6). More details are in the help page for 
 [Admin > Localization > Languages](/user/admin_pages/localization/languages/). 
@@ -27,7 +27,7 @@ your preferred language from the [Zen Cart Downloads](https://www.zen-cart.com/d
     *   Set the format of emails for _Admin_ to receive in Email Admin Format
     *   Set the email address and status for all extra emails. These are copies sent to the _Admin_ when various messages are sent to the customer.  
 
-3.  **[Admin - Configuration - Images](/user/admin_pages/configuration/configuration_images/)
+3.  **[Admin - Configuration - Images](/user/admin_pages/configuration/configuration_images/)**
     *   Verify that the image sizes are acceptable for your setup.  
 
 4.  **[Admin - Configuration - GZip Compression](/user/admin_pages/configuration/configuration_gzipcompression/)**
@@ -58,7 +58,7 @@ your preferred language from the [Zen Cart Downloads](https://www.zen-cart.com/d
 
 12.  **[Admin - Locations/Taxes - Tax Rates](/user/admin_pages/locations/tax_rates/)**
      *   Link tax classes and zones and enter the tax rate for those combinations here.  
-
+     *   If you only charge tax in one zone, and most of your produdcts are taxable, consider [setting a default tax class](/user/locations/default_tax_class/) for new products. 
 13.  **[Admin - Localization - Currencies](/user/admin_pages/localization/currencies/)**
      *   Configure the various currencies your shop will accept/process.  
 
@@ -74,14 +74,12 @@ Now that you've done basic setup, you can enter your categories and products.
 
 **[Admin - Catalog - Categories/Products](/user/admin_pages/catalog/categories_products/)**
 
-*   Add new categories to hold your products.
-*   Add new products within relevant categories.
+*   Add new categories to hold your products - see [category management in admin](/user/products/category_management_admin/). 
+*   Add new products within relevant categories - see [product management in admin](/user/products/product_management_admin/).
 
 Note:
 
-*   If you have multiple languages defined, you'll be able to enter product and category names and descriptions in various languages.
+*   If you have multiple languages defined, you'll be able to enter product and category names and descriptions in each of your languages.
 
 *   To add images, click on the _Browse_ button beside the category/product image field, and select the file on your computer. Then choose the _upload to directory_ folder to store the image in on your server. If the folder you wish to use isn't there, you'll need to go and create it with your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) first.
-
-*   The products URL is an optional external link where the customer can go to see more information about this product. If it's a link to an HTML page on your site, enter the full URL to that page. For example, perhaps you are a computer reseller and selling Microsoft products. You would provide good info in the main description, but could provide a URL where the customer could go directly to the Microsoft site to get even more detailed info if they desired. Note: Keep in mind that anytime you send a customer to someone else's site, you are potentially sending customers away from you, which is often not a good idea. Be careful not to send them to a place where they could actually buy the same product from someone else instead of you.
 
