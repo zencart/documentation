@@ -1,7 +1,7 @@
 ---
 title: Admin is slow or hangs forever 
 description: Dealing with performance issues in Admin 
-category: performance
+category: speed
 weight: 10
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: File upload limitations 
 description: Dealing with post_max_size and max_file_uploads 
-category: performance
+category: speed
 weight: 10
 ---
 
