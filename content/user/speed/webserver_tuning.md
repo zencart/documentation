@@ -1,7 +1,7 @@
 ---
 title: Webserver Tuning Tips 
 description: Improving MySQL database performance
-category: performance
+category: speed
 weight: 10
 ---
 

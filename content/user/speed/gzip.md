@@ -1,7 +1,7 @@
 ---
 title: GZIP compression
 description: Compressing pages during delivery 
-category: performance
+category: speed
 weight: 10
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: How do I speed up my site? 
 description: Basic performance improvement tips 
-category: performance
+category: speed
 weight: 5 
 ---
 
@@ -85,7 +85,7 @@ Do you have any plugins enabled that add their own tables? Maybe they're poorly 
 Or have you written any custom code or use any addons which run queries that attempt to join tables on unindexed database columns?  
 
 ### Consider additional server tuning
-Consider these [Webserver Tuning Tips](/user/performance/webserver_tuning/).
+Consider these [Webserver Tuning Tips](/user/speed/webserver_tuning/).
 
 ### Check for duplicate jQuery libraries 
 In case you haven't already considered this, make sure you're not loading more than one copy of jQuery on your site.  
