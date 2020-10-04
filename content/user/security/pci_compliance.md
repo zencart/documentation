@@ -35,7 +35,5 @@ Any customizations you do to your store render these statements incomplete and r
 
 A fresh install of Zen Cart contains several built-in payment modules which connect to an external gateway to do live credit card transaction processing. **These built-in gateway modules are designed to be PABP compliant.**  
 
-One source of information which summarizes PABP compliance can be found here: [http://authorize.net/files/developerbestpractices.pdf](http://authorize.net/files/developerbestpractices.pdf).   
-
 Any alterations made to these modules by an individual storeowner, or any addon modules built by third-party developers, may or may not be PABP compliant. The onus is on the store merchant to ensure compliance for satisfying PABP requirements for their own merchant account TOS.
 
