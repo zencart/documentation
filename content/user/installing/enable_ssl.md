@@ -67,7 +67,7 @@ do not have `HTTPS_SERVER` in the
 
 # 4\. Clear your browser's cache and cookies
 
-After making these changes, if you don't [clear your browser's cache and cookies](/user/new_user_topics/caching/), it's possible that your logins will not work because the browser is remembering information from the old URL. A simple clearing of the cache and cookies, and sometimes a restart of the browser application, is all it takes.  
+After making these changes, if you don't [clear your browser's cache and cookies](/user/new_user_topics/browser_caching/), it's possible that your logins will not work because the browser is remembering information from the old URL. A simple clearing of the cache and cookies, and sometimes a restart of the browser application, is all it takes.  
 
 # 5\. Your site is now secure! 
 
