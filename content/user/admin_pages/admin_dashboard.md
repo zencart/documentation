@@ -15,6 +15,17 @@ Here's the statistics widget, as an example.
 
 <img src="/images/widget.png" alt="Widgets on home page" />
 
+The following widgets are prebuilt on your admin home page: 
+
+- Statistics (product and category counts, reviews, etc.)
+- Special, Featured and Sale counts
+- Order counts by status
+- New Customers
+- Who's Online 
+- Visitor History 
+- New Orders 
+- Monthly Sales
+
 If you have specific things you'd like to monitor on your site, you
 can build your own widget.  See [building an admin widget](/dev/code/widget/) for details. 
 

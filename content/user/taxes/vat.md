@@ -1,9 +1,10 @@
 ---
 title: VAT setup instructions
 description: Calculating taxes in a VAT jurisdiction
-category: locations 
+category: taxes
 aliases: 
     - /user/localization/vat 
+    - /user/locations/vat 
 weight: 10
 ---
 
