@@ -1,13 +1,14 @@
 ---
 title: Tax calculations are wrong 
 description: What to do when taxes don't add up 
-category: locations 
+category: taxes
 aliases: 
     - /user/localization/tax_calc_wrong
+    - /user/locations/tax_calc_wrong
 weight: 10
 ---
 
-If you haven't configured taxes yet, please see the related articles on setting up taxes in [Locations](/user/locations/).  If you have set up taxes according to the instructions, but they don't seem to be working as expected, use the following list as a guide. If you intend to request assistance on the forum, please include the answers to these questions with your support request/inquiry:
+If you haven't configured taxes yet, please see the related articles on setting up taxes in [Taxes](/user/taxes/).  If you have set up taxes according to the instructions, but they don't seem to be working as expected, use the following list as a guide. If you intend to request assistance on the forum, please include the answers to these questions with your support request/inquiry:
 
 1. What are your store settings for these values in 
 [Admin > Configuration > My Store](/user/admin_pages/configuration/configuration_mystore/)? 

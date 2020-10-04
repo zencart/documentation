@@ -1,9 +1,10 @@
 ---
 title: Should I charge taxes?  How much? 
 description: What are my tax collection obligations? 
-category: locations 
+category: taxes
 aliases: 
     - /user/localization/taxes
+    - /user/locations/taxes
 weight: 10
 ---
 

@@ -1,9 +1,10 @@
 ---
 title: Tax configuration in Canada 
 description: Calculating taxes in Canada 
-category: locations 
+category: taxes 
 aliases: 
     - /user/localization/canada_taxes
+    - /user/locations/canada_taxes
 weight: 10
 ---
 
