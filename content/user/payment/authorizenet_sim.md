@@ -5,6 +5,10 @@ category: payment
 weight: 10
 ---
 
+## ALERT: DEPRECATED
+
+NOTE: Authorize.net has officially retired the SIM method of accepting payment. Some older accounts are still working, but you should not plan on using this module moving forward.
+
 ## REQUIREMENTS
 
 *   Authorize.net Account.   [Support Zen Cart by Clicking Here to Sign Up for an Account now](http://reseller.authorize.net/application.asp?id=131345)
