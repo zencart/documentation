@@ -1,7 +1,7 @@
 ---
 title: What do the numbers in the Counter History box mean?
 description: Understanding admin counter history 
-category: admin
+category: analytics
 aliases:
     - /user/admin/counter_history
 weight: 10
