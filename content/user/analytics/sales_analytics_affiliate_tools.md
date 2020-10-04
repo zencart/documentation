@@ -37,6 +37,28 @@ str_replace('|', '@', $order_summary['products_ordered_models']);
 ```
 if you wanted to replace `|` with `@`, for example.
 
+
+Value to replace | What to replace it with
+-----------------|------------------------
+Order Number|`<?php echo $order_summary['order_number']; ?>`
+Subtotal|`<?php echo $order_summary['order_subtotal']; ?>`
+Amount of credits/discounts on the order|`<?php echo $order_summary['credits_applied']; ?>`
+Final Total|`<?php echo $order_summary['order_total']; ?>`
+Commissionable Order Amount (does not include discounts)|`<?php echo $order_summary['commissionable_order']; ?>`
+Commissionable amount, formatted per currently selected currency formatting rules set in your admin|`<?php echo $order_summary['commissionable_order_formatted']; ?>`
+Coupon Code, if any (often used for referral tracking)|`<?php echo $order_summary['coupon_code']; ?>`
+Currency Code (3-letter ISO code)|`<?php echo $order_summary['currency_code']; ?>`
+Exchange Rate applied, if any|`<?php echo $order_summary['currency_value']; ?>`
+Payment Module used|`<?php echo $order_summary['payment_module_code']; ?>`
+Shipping Method selected by customer|`<?php echo $order_summary['shipping_method']; ?>`
+Order Status (number) denoting the order's status in your store at this present time.|`<?php echo $order_summary['orders_status']; ?>`
+Tax on the order|`<?php echo $order_summary['tax']; ?>`
+Shipping Cost on the order|`<?php echo $order_summary['shipping']; ?>`
+Order Total (the final/net total of the order, the amount sent for payment)|`<?php echo $order_summary['order_total']; ?>`
+Product Model Numbers (delimited with '`\|`')|`<?php echo $order_summary['products_ordered_models']; ?>`
+Product IDs (delimited with '`\|`')|`<?php echo $order_summary['products_ordered_ids']; ?>`
+
+
 ## Examples:  
 
 ### Snap Affiliates
