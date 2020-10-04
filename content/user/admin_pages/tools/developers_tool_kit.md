@@ -6,14 +6,11 @@ weight: 10
 
 The Developers Tool Kit is an essential tool for anyone involved in customizing Zen Cart.
 
+The Developers Tool Kit will search through all the files and directories under the directory where you installed Zen Cart for an exact match with the entered text. (Related article: [Finding Which Files To Edit](/user/new_user_topics/what_files/)
 
-The Developers Tool Kit will search through all the files and directories under the directory where you installed Zen Cart for an exact match with the entered text.
+You can use text editors and other tools directly on your PC to search through files as well.
 
-
-Your operating system probably already has a tool that searches through files, but the Developers Tool Kit has some features specifically related to Zen Cart.
-
-
-With the Developers Tool Kit, you can search through
+With the Developers Tool Kit, you can filter your searches to:
 
 - Language files
 - Function files
@@ -22,6 +19,8 @@ With the Developers Tool Kit, you can search through
 - All files
 
 Most of the time, searching through **All Files** will give the best and most reliable result. 
+
+You can also search through Configuration Settings, and even do quick edits to configuration values.
 
 
 ### Searching for text
