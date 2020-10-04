@@ -7,6 +7,8 @@ weight: 10
 
 Meta Tags are HTML elements which are designed for web browsers and search engines - they're  not designed to be looked at by humans. 
 
+For more discussion on this topic, read [How do I set up meta tags for my site?](/user/admin/meta_tags/)
+
 Meta Tag information in your pages is constructed by Zen Cart using the information from the screens below, as well as the contents of the file `includes/languages/english/YOURTEMPLATE/meta_tags.php`. 
 
 ### How can I add Meta Tags to my categories? 
