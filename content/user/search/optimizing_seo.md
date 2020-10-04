@@ -1,5 +1,5 @@
 ---
-title: Optizing My Store For SEO
+title: SEO Optimization
 description: Guidance for improving ranking in search engines
 category: search 
 weight: 10
