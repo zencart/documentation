@@ -1,7 +1,7 @@
 ---
 title: Integrating Sales Analytics/Affiliate Tools
 description: JROX JAM, SNAP, iDevAffiliate and other sales tracking systems 
-category: reporting 
+category: analytics
 weight: 10
 type: codepage
 aliases:
