@@ -1,8 +1,10 @@
 ---
-title:  Caching 
+title:  Browser Caching 
 description: Why doesn't my new image show?
 category: new_user_topics
 weight: 10
+aliases:
+    - /user/new_user_topics/caching/
 ---
 
 "Why don't I see my new image?"
