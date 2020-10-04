@@ -1,9 +1,10 @@
 ---
 title: Tax configuration in the United States
 description: Calculating taxes in the USA 
-category: locations 
+category: taxes
 aliases: 
     - /user/localization/us_taxes
+    - /user/locations/us_taxes
 weight: 10
 ---
 

@@ -1,9 +1,10 @@
 ---
 title: How do I set up a default tax class for new products? 
 description: Save time by pre-setting a tax class for product creation 
-category: locations 
+category: taxes
 aliases: 
     - /user/localization/default_tax_class
+    - /user/locations/default_tax_class
 weight: 10
 ---
 
