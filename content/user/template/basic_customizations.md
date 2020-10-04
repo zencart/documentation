@@ -98,9 +98,11 @@ to maintain images for each button; the images are generated in CSS.
 ---
 
 ### Are there any template overrides in the Admin area?
-At this time, there are no "overrides" for core files in the Admin area.
+At this time, there are no "overrides" for whole pages in the Admin area.
 
 If you wish to change admin functionality, you will have to edit the core files directly.   Be sure to keep a list of your changes for quick reference when upgrading.
+
+There are many Notifier/Observer hooks available to augment existing functionality, and several auto-loading directories allow plugins to integrate as well. Since v1.5.7 plugins for the Admin can be packaged without having to touch admin files in many cases.
 
 ---
 
