@@ -36,3 +36,7 @@ Really committed to a blog, are you?  Instead of self-hosting a WordPress blog, 
 ### Consider community building software 
 For some businesses, building a community makes sense.  Take a look at [Wild Apricot](https://wildapricot.com) or [Mighty Networks](https://www.mightynetworks.com/) or [Tribe.so](https://tribe.so).
 
+### Use the News Box Manager plugin 
+
+See [News Box Manager](https://www.zen-cart.com/downloads.php?do=file&id=2264).
+
