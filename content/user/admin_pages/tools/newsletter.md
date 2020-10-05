@@ -30,4 +30,5 @@ If you prefer to stop after drafting the newsletter, you can always come back to
 Related Pages: 
 
 - [Newsletters](/user/email/newsletters/)
+- [Product Notifications](/user/products/product_notification/) 
 
