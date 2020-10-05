@@ -12,9 +12,9 @@ Please be sure you're familiar with [basic terms in Zen Cart](/user/first_steps/
 
 For instructions on moving your cart from the root to a subfolder (or vice versa), see [moving your Zen Cart folder](/user/installing/move_cart/).
 
-For clarity, we will use the folder names `store` for the cart in a subfolder, and `blog` for the blog (or other web property) in a subfolder, although of course any other folder names could be used. 
+For clarity, we will use the folder names `store` for the cart in a subfolder, and `blog` for the blog (or other web application) in a subfolder, although of course any other folder names could be used. 
 
-## 1. Cart in root 
+## Deployment Model 1: Cart in root 
 
 ```
 Cart URL: https://www.YOURSTORE.com 
@@ -24,7 +24,7 @@ The configuration that is assumed throughout the Storeowner Docs is that you hav
 
 Your files would be under the `public_html` folder in your hosting account. 
 
-## 2. Cart in root, blog in subfolder
+## Deployment Model 2: Cart in root, blog in subfolder
 
 ```
 Cart URL: https://www.YOURSTORE.com 
@@ -42,7 +42,7 @@ This would also apply for a forum in a subfolder, CMS in a subfolder, etc.
 
 **Please note:** Exercise caution when adding software to your Zen Cart installation.  See the [blogging FAQ](/user/running/blogging).
  
-## 3. Existing website in root, cart in subfolder
+## Deployment Model 3: Existing website in root, cart in subfolder
 
 ```
 Website URL: https://www.YOURSTORE.com/
@@ -53,7 +53,7 @@ If you have an existing website, and you'd like to add ecommerce, you can put yo
 
 Your files would be under the `public_html/store` folder in your hosting account. 
 
-## 4. Nothing in root, cart in subfolder 
+## Deployment Model 4: Empty root, cart in subfolder 
 
 ```
 Cart URL: https://www.YOURSTORE.com/store  
@@ -68,6 +68,6 @@ RewriteEngine On
 RewriteRule ^index\.php$ /store/ [L]
 ```
 
-## 5. Advanced: Separate subdirectories for different versions
+## Deployment Model 5: (Advanced) Separate subdirectories for different versions
 
 Technical staff with advanced server understanding may prefer to use version-numbered directories for their Zen Cart folder, and then redirect the site's DocumentRoot setting to point to the versioned-subdirectory either by editing a vhost configuration or using a symlink. This can be convenient for staging upgrades that allow for near-zero downtime, and also very convenient downgrading if a problem were to occur. This is a strategy that should only be used by someone with advanced understanding of Zen Cart and how server vhost configurations and symlinks work.
