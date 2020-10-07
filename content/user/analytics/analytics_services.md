@@ -17,6 +17,10 @@ The simplest way to do this is to create a new file called
 
 and paste the javascript snippet code inside it.
 
+## Google Tag Manager
+
+See [/user/running/external_javascript_services/](/user/running/external_javascript_services/) for information about Tag Manager.
+
 
 ## Advanced Integration To Provide Calculated Data
 
@@ -28,5 +32,5 @@ Commonly-requested data which you can incorporate is explained in [Integrating S
 
 ## Advanced Google E-Commerce Analytics
 
-An [Advanced Ecommerce Analytics](https://github.com/torvista/zencart-ec-analytics) plugin exists to feed Google's ecommerce-specific analytics data with sales numbers from your store. It may require some custom coding changes to suit your store's unique products, but it's a handy starting point. 
+An [Advanced Ecommerce Analytics](https://www.zen-cart.com/downloads.php?do=file&id=1997) plugin exists to feed Google's ecommerce-specific analytics data with sales numbers from your store. It may require some custom coding changes to suit your store's unique products, but it's a handy starting point. 
 
