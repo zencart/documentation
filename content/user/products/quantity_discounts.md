@@ -10,9 +10,11 @@ The
 
 - Select the product
 - Press the *Edit Product* button
-- click the *Add 5 Blank Discount Qty* button
-- fill in the details
+- Click the *Add 5 Blank Discount Qty* button
+- Fill in the details
 - Update
+
+Any rows you don't fill in will be removed upon update. 
 
 The screen you see will look like this: 
 

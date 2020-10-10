@@ -5,13 +5,13 @@ category: template
 weight: 10
 ---
 
-Many modern Zen Cart installations use the CSS Buttons feature of Zen Cart, which is enabled on Admin > Configuration > Layout Settings > CSS Buttons.
+Most recent Zen Cart installations use the CSS Buttons feature of Zen Cart, which is enabled on Admin > Configuration > Layout Settings > CSS Buttons.
 
 ![CSS Button](/images/button_css.png)
 
 No action is required to create a CSS button; it simply uses the button text and displays it according to the styling your template has set. 
 
-Prior to CSS buttons, Zen Cart buttons were static .gif images like the one shown below: 
+Prior to the introduction of the CSS buttons feature in 1.3.0, Zen Cart buttons were static .gif images like the one shown below: 
 
 ![GIF button](/images/button_gif.png)
 
