@@ -24,7 +24,7 @@ In most cases of difficulties logging in to the Admin area, the problem is one o
 
     6.  If you are using `www.` in your URL on one page and *not* using `www`  in the URL on another page, you may have problems. This related FAQ may help: [how can I force www?](/user/miscellaneous/force_www/) 
 
-    7.  Try the suggestions in this related FAQ article: [I can't stay logged in to my admin](/user/troubleshooting/cant_stay_logged_in_admin/)
+    7.  Try the suggestions in this related FAQ article: [I can't stay logged in](/user/troubleshooting/cant_stay_logged_in/)
 
 3.  Apart from browser cache and cookies problems, the most common problem is not having the `https` correct in your `admin/includes/configure.php`  file.  
     See: [How do I enable SSL?](/user/installing/enable_ssl/)
