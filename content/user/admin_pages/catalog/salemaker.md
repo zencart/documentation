@@ -24,7 +24,7 @@ Some things to notice about configuring a sale:
 
 - The sale may be on one or more categories or the entire store
 - The sale may have a start date, a stop date, both or neither
-- The sale may only apply to products in a specfic price range if desired 
+- The sale may only apply to products in a specific price range if desired 
 - The sale deduction may be expressed as a percent, dollar off or final price 
 - The sale may respond in different ways to products which are already on special
 
