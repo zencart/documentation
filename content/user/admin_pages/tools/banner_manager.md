@@ -4,20 +4,38 @@ category: admin_pages
 weight: 10 
 ---
 
-This page allows you to manage various "fortune cookie"-type text and image banners.
-This section manages the individual banners and their groups.
+This page manages individual text and image banners and their groups.  When the screen is opened, a list of existing banners is displayed. 
 
-Steps include: 
+![Banner Manager](/images/banner_manager.png)
 
-- Create banner and include it in the Banner Manager banner list - In this step, a banner is also placed in a Banner Group 
-- Use Configuration : Layout Settings to assign each pre defined banner "location" in a banner group (or leave empty).
+Each banner belongs to a banner group.  Three banner groups come with Zen Cart: 
+- Wide-Banners
+- Sidebox-Banners
+- BannersAll 
 
-Banners can be HTML, Image or Flash, or a combination. It's a flexible way to add dynamic content.
+Banner Positions are provided by your template.  There are:
 
-Tips: If you are using different sizes for the banners, you can create a "Banner Group" for each size and include the banner size in the Banner Group name to keep track of which banner fits where.
+- three positions in the header (positions 1, 2 and 3), 
+- three positions in the footer (positions 1, 2 and 3), 
+- three sidebox positions (banner_box, banner_box2 and banner_box_all). 
 
-Or, you could create a banner group for each placement (group names BanHeadPos1, BanHeadPos2, BanHeadPos3, BanFootPos1, BanFootPos3, BanFootPos3).
+Generally you would choose at most one of these positions in each area. 
 
-Note however, that an empty banner group will be deleted. Once a Banner Group is added, the new name will appear in the dropdown.
+Groups are then specified in the *Banner Display Groups* settings in [Admin > Configuration > Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/).  For example, setting *Banner Display Groups - Footer Position 3* to *Wide-Banners* means that a banner in the Wide-Banners group will be shown in Footer Position three. Here's what that looks like: 
 
-Remove all banners from a Banner Group and it will disappear.
+![Wide Banner Footer Position 3](/images/banner_footer_position_3.png)
+
+Similarly, turning on the [banner_box sidebox](/user/sideboxes/sidebox_list/) and setting *Banner Display Groups - Side Box banner_box* to *Sidebox-Banners* means that a banner will be selected from the Sidebox-Banners group and shown in the banner_box sidebox. 
+
+To add a new banner, press the *New Banner* button at the bottom of the Banner Manager screen. 
+
+![New Banner](/images/new_banner.png)
+
+Tips: 
+
+- Some users like to name banner groups by size, using group names like HalfWidth, FullWidth, and so forth. 
+
+- Some users like to name banner groups by placement, using group names like BanHeadPos1, BanHeadPos2, BanHeadPos3, BanFootPos1, BanFootPos3, BanFootPos3.
+
+- Empty banner groups are be deleted. Adding a banner group is done by specifying the group name in the text field below the Banner Group dropdown on the New Banner screen. Once a Banner Group is added, the new name will appear in the dropdown.
+
