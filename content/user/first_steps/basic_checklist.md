@@ -58,7 +58,7 @@ your preferred language from the [Zen Cart Downloads](https://www.zen-cart.com/d
 
 12.  **[Admin - Locations/Taxes - Tax Rates](/user/admin_pages/locations/tax_rates/)**
      *   Link tax classes and zones and enter the tax rate for those combinations here.  
-     *   If you only charge tax in one zone, and most of your produdcts are taxable, consider [setting a default tax class](/user/taxes/default_tax_class/) for new products. 
+     *   If you only charge tax in one zone, and most of your products are taxable, consider [setting a default tax class](/user/taxes/default_tax_class/) for new products. 
 13.  **[Admin - Localization - Currencies](/user/admin_pages/localization/currencies/)**
      *   Configure the various currencies your shop will accept/process.  
 

@@ -55,7 +55,7 @@ This is called [taking your store down for maintenance](/user/running/down_for_m
 b) AFTER step 5 or 6, login to your NEW store's admin, and set Down For Maintenance = FALSE.  
 
 c) NEVER disable down-for-maintenance in the OLD site. Once you've copied the database from it, you don't want to take any more orders in the old site, else they'll be lost. 
-You may even want to put up a message on the old server telling customers that the store has been updated, and that they may need to clear their browser cache and reboot in order to see the new updated site. (This is because browsers remember the old IP address.)  You could optionally delete Zen Cart and the database from the old server and just put up a simple index.html page on that server saying the same sort of message. Eventually people's browsers will all look to the new address. See the Advanced section below for ways to expediate the updates.
+You may even want to put up a message on the old server telling customers that the store has been updated, and that they may need to clear their browser cache and reboot in order to see the new updated site. (This is because browsers remember the old IP address.)  You could optionally delete Zen Cart and the database from the old server and just put up a simple index.html page on that server saying the same sort of message. Eventually people's browsers will all look to the new address. See the Advanced section below for ways to expedite the updates.
 
 d) Once your nameserver updates have propagated (up to 48 hours), you should be able to delete the files and database from the old server.  
 
