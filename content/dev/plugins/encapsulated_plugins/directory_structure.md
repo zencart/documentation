@@ -31,9 +31,10 @@ e.g.
       
                 - includes
                     - auto_loaders
-                    - init_includes
-                    - extra_datafiles
                     - classes
+                    - extra_datafiles
+                    - init_includes
+                    - javascript
                     - languages
       
             - catalog
@@ -56,9 +57,10 @@ e.g.
       
                 - includes
                     - auto_loaders
-                    - init_includes
-                    - extra_datafiles
                     - classes
+                    - extra_datafiles
+                    - init_includes
+                    - javascript
                     - languages
       
             - catalog
@@ -78,3 +80,4 @@ ALSO: None of this works before Zen Cart v1.5.7: Plugins for prior versions must
 
 **NOTE:** The `Installer` folder is optional; you can embed the installation logic in your plugin if you prefer.  See [Installer Classes](/dev/plugins/encapsulated_plugins/installer_classes/) and [Plugin SQL Installation](/dev/plugins/encapsulated_plugins/sql_installation/) for details on using the `Installer` folder. 
 
+**NOTE on javascript loading:** naming your javascript file the same name as your file name will load the  .js file.  if you have addtional .js files to load, preface the names by the file name followed by an underscore.  for example, if your plugin has a script called `admin/rewards.php`, the ZC autoloader will load `admin/includes/javascript/rewards.js`.  In addition, the autoloader will also load anything that starts with the filename, ie `admin/includes/javascript/rewards_sha-256.js`.
