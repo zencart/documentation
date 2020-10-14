@@ -33,9 +33,7 @@ To add a new banner, press the *New Banner* button at the bottom of the Banner M
 
 Tips: 
 
-- Some users like to name banner groups by size, using group names like HalfWidth, FullWidth, and so forth. 
+- Some users like to name banner groups by size, using group names like HalfWidth, FullWidth, and so forth.  Others like to name banner groups by placement, using group names like BanHeadPos1, BanHeadPos2, BanHeadPos3, BanFootPos1, BanFootPos3, BanFootPos3.
 
-- Some users like to name banner groups by placement, using group names like BanHeadPos1, BanHeadPos2, BanHeadPos3, BanFootPos1, BanFootPos3, BanFootPos3.
-
-- Empty banner groups are be deleted. Adding a banner group is done by specifying the group name in the text field below the Banner Group dropdown on the New Banner screen. Once a Banner Group is added, the new name will appear in the dropdown.
+- Empty banner groups are deleted. Adding a banner group is done by specifying the group name in the text field below the Banner Group dropdown on the New Banner screen. Once a Banner Group is added, the new name will appear in the dropdown.
 
