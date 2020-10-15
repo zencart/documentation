@@ -55,6 +55,8 @@ Is the content Unique? (Not the same as on any other website) |
 Does it use phrases a customer would search with? |
 What problem does it say it solves/answers for a buyer? Is that what the customer would ask a search engine? |
 For images, do they provide value to the shopper? Are they unique (not the same as on any other website)? |
+Why do customers want to buy your products/services? (Ask them directly!) Work those answers into content on your site. |
+Do customers think in the same "terminology" words that I'm writing on my website and products and category names and descriptions? |
 
 
 ### Category pages
@@ -76,11 +78,17 @@ Make sure that you write unique valuable text on these pages – DO NOT use stoc
 
 Be sure to have a paragraph of three or four sentences and build in the primary keyword (search phrases) into that text at least twice, in a way that feels totally human and natural.
 
+If there are a lot of different keywords/phrases that relate to your product, consider writing Articles/Blogs that use those words/phrases more heavily than your product descriptions do. The "authority" given to your product by the "other page" can be more beneficial than having too many of those words in the product description itself.
+
 
 ### Backlinks are important!
 Links to your site, from other sites, are important. While it's ideal if those other sites are in the same industry that's not always important.
 If what you sell is useful then there are certainly related sites out there writing about "how to use" your products, etc. 
+
 Consider being a guest on a popular podcast whose listeners would use your products, as "links to your site in their site's show notes" can be beneficial.
+
+You could publish YouTube videos related to your products, such as how-to-use them, what exact "real world problems the product solves", etc.  Be sure the videos contain meaningful content, and aren't posted just to create a link. Remember: **meaningful content** is more important than just creating links or stuffing keywords.
+
 Be creative about other similar possibilities.
 
 
@@ -94,6 +102,8 @@ And, if you have products that are related to other products, where it feels lik
 
 ### Articles and other content
 EZ Pages can be a place to write articles that can educate customers, celebrate creative uses of your products, and highlight success stories.
+
+Articles should contain keywords (phrases) that your customers are searching for. And these articles should contain links to the products that your articles are referring to.
 
 Work on getting backlinks to your articles which line up with popular search terms for your site or the products discussed on those pages.
 
