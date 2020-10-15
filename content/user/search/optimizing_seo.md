@@ -36,6 +36,7 @@ Analyze performance (which products/pages get decent traffic) 3-6 months after m
 
 ### Content
 For EVERY INDIVIDUAL page, category, product on your site, look at these parts:
+
 Parts To Look At |
 -----------------|
 Page Title (Product/Category Name, or EZ Page Title) | 
@@ -94,6 +95,7 @@ Work on getting backlinks to your articles which line up with popular search ter
 Consider some of the following references:
 - [Create Good Titles And Descriptions](https://support.google.com/webmasters/answer/35624)
 - [Content Optimization Tips for SEO](https://www.link-assistant.com/news/content-optimization/)
+- [Non-Technical Strategies for Ranking Well With Your Content](https://www.youtube.com/watch?v=_TBTSGREx5A) (video)
 
 
 
