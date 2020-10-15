@@ -75,9 +75,10 @@ Yes - you can limit admin users to a subset of the superuser capabilities using
 
 ---
 
-### Can Zen Cart create SEO friendly URLs? 
-This capability is not built into Zen Cart at the current time, but an
-excellent plugin exists called [Ceon URI Mapping](https://www.zen-cart.com/downloads.php?do=file&id=2250). 
+### Can Zen Cart create SEO friendly (er, "human-friendly") URLs? 
+This capability is not built into Zen Cart at the current time, but two popular plugins exist:
+- [Ultimate SEO URLs](https://www.zen-cart.com/downloads.php?do=file&id=132)
+- [Ceon URI Mapping](https://www.zen-cart.com/downloads.php?do=file&id=2250)
 
 --- 
 ### Can Zen Cart allow me to edit an order after it was placed? 
