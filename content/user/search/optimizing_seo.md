@@ -84,6 +84,14 @@ Consider being a guest on a popular podcast whose listeners would use your produ
 Be creative about other similar possibilities.
 
 
+### Internal Linking
+Zen Cart cross-links product and category pages extensively in a way that's logical for most visitors
+
+However, if you write content on EZ-Pages or other places on your site, you should include links to the specific products that your page content is referring to.
+
+And, if you have products that are related to other products, where it feels like it would be logical to link to another product from its description, add links to connect them.
+
+
 ### Articles and other content
 EZ Pages can be a place to write articles that can educate customers, celebrate creative uses of your products, and highlight success stories.
 
@@ -95,7 +103,7 @@ Work on getting backlinks to your articles which line up with popular search ter
 Consider some of the following references:
 - [Create Good Titles And Descriptions](https://support.google.com/webmasters/answer/35624)
 - [Content Optimization Tips for SEO](https://www.link-assistant.com/news/content-optimization/)
-- [Non-Technical Strategies for Ranking Well With Your Content](https://www.youtube.com/watch?v=_TBTSGREx5A) (video)
+- [Non-Technical Strategies for Ranking Well With Your Article Content](https://www.youtube.com/watch?v=_TBTSGREx5A) (video)
 
 
 
