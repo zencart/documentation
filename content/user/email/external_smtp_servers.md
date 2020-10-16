@@ -78,6 +78,8 @@ Use the following settings in [Admin > Configuration > Email Options](/user/admi
 *   SMTP Host: smtp.office365.com 
 *   SMTP Port 587
 
+And in your Office 365 account add the email as a safe sender of the account ... essentially whitelisting yourself.
+
 Some additional steps will be required.  Try Procedure 1 first, and if that doesn't work, try Procedure 2. 
 
 ### Procedure 1: 
