@@ -21,15 +21,15 @@ Be sure to familiarize yourself with the content of the release (and any prior r
 ### <font color="#333399">B. If you have NO CUSTOMIZATIONS (or don't wish to preserve the ones you have), here's a high-level overview/**summary** of a slightly shorter process:</font>
 
 1.  Back up your site from the server as well as the copy on your computer.
-1.  Backup your database
-1.  Create a new directory and copy your site into it
-1.  Then create a new database and load your old database in it
-1.  Do any database conversions necessary - only necessary if you have [custom date fields](/user/upgrading/date_standardization/)
-1.  Next, change the two configure.php files to utilize the new directory and database  This way ... when you attempt to upgrade you are "practicing" to see where the problems, if any will happen  
-1.  Make sure all appears to be working on your temp site.
-1.  Now load the "new" version files to your new temp directory from latest downloaded ZIP
-1.  Run the installer at `http://www.YOURSITE.com/zc_install`
-1.  Choose the *Upgrade* option  
+2.  Backup your database
+3.  Create a new directory and copy your site into it
+4.  Then create a new database and load your old database in it
+5.  Do any database conversions necessary - only necessary if you have [custom date fields](/user/upgrading/date_standardization/)
+6.  Next, change the two configure.php files to utilize the new directory and database  This way ... when you attempt to upgrade you are "practicing" to see where the problems, if any will happen  
+7.  Make sure all appears to be working on your temp site.
+8.  Now load the "new" version files to your new temp directory from latest downloaded ZIP
+9.  Run the installer at `https://www.YOURSITE.com/zc_install`
+10.  Choose the *Upgrade* option  
 ![Use the upgrade button!](/images/upgrade_button.png)
 
     **Note**: Do not select *Clean Install* or you will overwrite your database.
@@ -37,11 +37,11 @@ Be sure to familiarize yourself with the content of the release (and any prior r
 
     If the “Upgrade” button does not appear, check the settings in your `includes/configure.php` file, and make sure the DB_* fields are correct.  See the FAQ [Installer does not show an Upgrade button](/user/upgrading/installer_no_upgrade/) for details.
 
-1.  Process each suggested step one at a time ... leave the first checkbox that the upgrader picked checked and uncheck the others.  
+11.  Process each suggested step one at a time ... leave the first checkbox that the upgrader picked checked and uncheck the others.  
     -Advantage is that you can see your problems step by step  
     -Each time it completes it will recheck the boxes left to go.  
     -Continue in this method until all boxes are unchecked.
-1.  If you find you have issues, you are not hurting anything and can always start over without damage to your existing shop and live database.  
+12.  If you find you have issues, you are not hurting anything and can always start over without damage to your existing shop and live database.  
 
 ### QUESTION: "Why is this process so long?"
 
@@ -58,4 +58,4 @@ So, follow the guide, and while there may be some learning involved and remember
 
 ### QUESTION: "I have a very old version. Do I upgrade in stages, or all-at-once?"
 
-**ANSWER:** You can upgrade to the latest version directly. When you do the database-upgrade step in zc_install it will show you all the database-version-levels which need upgrading, and will pre-check the checkboxes for you and will take care of upgrading through all those steps automatically. Usually you can just leave those boxes checked and put in the admin password and proceed with the upgrade, which normally will take just a few seconds.  
+**ANSWER:** You can upgrade to the latest version directly. When you do the database-upgrade step in `zc_install` it will show you all the database-version-levels which need upgrading, and will pre-check the checkboxes for you and will take care of upgrading through all those steps automatically. Usually you can just leave those boxes checked and put in the admin password and proceed with the upgrade, which normally will take just a few seconds.  
