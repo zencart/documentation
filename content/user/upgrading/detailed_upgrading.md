@@ -16,7 +16,7 @@ Before you begin, remember to make a [complete backup of your files and database
 This guide assumes for simplicity that you have Zen Cart installed in a folder called `store`.  This configuration allows you to run your old store and your new store side by side for testing before going live.  If you didn't install your current store in a subfolder, you can still install your new store in a subfolder for testing, and then remove the subfolder and install at the top level when it's time to go live. 
 
 
-## Getting Started 
+## Getting Ready 
 
 This is a basic guide to upgrading Zen Cart. If you have not yet installed Zen Cart, please see the [/docs/1.readme_installation.html](https://www.zen-cart.com/docs/1.readme_installation.html) file for installation instructions.  
 
