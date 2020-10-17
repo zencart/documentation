@@ -5,16 +5,12 @@ category: Upgrading
 weight: 10
 ---
 
-**READ THIS FIRST: [How do I rebuild my site on the new version, instead of upgrading?](https://www.zen-cart.com/entry.php?3-How-do-I-rebuild-my-site-on-the-new-version-instead-of-upgrading)**
-
-Detailed upgrade instructions that help you retain your customizations while upgrading to new features, can be found in this [related article](/user/upgrading/detailed_upgrading/).
-
 Before you begin, remember to make a [complete backup of your files and database](/user/running/backup/). 
 
-Be sure to familiarize yourself with the content of the release (and any prior releases you are upgrading through to get to the new release).  You should review 
+Be sure to familiarize yourself with the content of each of the new versions released since the one you were previously using. Two places to review include:
 
 - Relevant [**What's New**](https://www.zen-cart.com/docs/) details for releases since the one you were previously using.
-- The [Release-Specific Considerations](/user/upgrading/release_specific_upgrade_considerations/) page which points out special cases to consider from a more technical perspective. 
+- The [Release-Specific Considerations](/user/upgrading/release_specific_upgrade_considerations/) page which points out special cases to consider.
 
 ### <font color="#ff0000"> **A. If you want to PRESERVE YOUR CUSTOMIZATIONS, use these instructions [upgrading and preserving customizations](/user/upgrading/detailed_upgrading/)** </font>
 
