@@ -13,8 +13,8 @@ Before you begin, remember to make a [complete backup of your files and database
 
 Be sure to familiarize yourself with the content of the release (and any prior releases you are upgrading through to get to the new release).  You should review 
 
-- Relevant **What's New** files in the [release directory](https://www.zen-cart.com/docs/). 
-- The [Release Specific Considerations](/user/upgrading/release_specific_upgrade_considerations/) document. 
+- Relevant [**What's New**](https://www.zen-cart.com/docs/) details for releases since the one you were previously using.
+- The [Release-Specific Considerations](/user/upgrading/release_specific_upgrade_considerations/) page which points out special cases to consider from a more technical perspective. 
 
 ### <font color="#ff0000"> **A. If you want to PRESERVE YOUR CUSTOMIZATIONS, use these instructions [upgrading and preserving customizations](/user/upgrading/detailed_upgrading/)** </font>
 
