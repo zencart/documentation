@@ -13,4 +13,6 @@ weight: 10
 
 ### How do I add a link to the More Information Sidebox? 
 
-We create the [override file](/user/first_steps/overrides/) `includes/templates/YOURTEMPLATE/sideboxes/tpl_more_information.php`.  Then edit this file, and follow the instructions provided in [adding a link to the Information Sidebox](/user/sideboxes/add_link_information_sidebox/). 
+We create the [override file](/user/first_steps/overrides/) `includes/templates/YOURTEMPLATE/sideboxes/tpl_more_information.php`.  
+
+Then edit this file, and follow the instructions provided in [adding a link to the Information Sidebox](/user/sideboxes/add_link_information_sidebox/). 
