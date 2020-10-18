@@ -14,7 +14,7 @@ In most cases, that's all you need to do !!!
 
 The icon image file needs to be "square", ideally a multiple of 48x48px, such as 48x48 or 96x96 or 132x132px.
 
-NOTE: You will usually have to "bookmark" your store in your browser's favorites in order for the favicon to be cached by the browser for display.
+**NOTE:** You will usually have to "bookmark" your store in your browser's favorites in order for the favicon to be cached by the browser for display.
 Often pressing CTRL+D will quickly bookmark the page you're currently viewing.
 
 TIP: If your favicon is cached with an old/invalid image, you can fix that after uploading your replacement by simply [clearing your browser's cache](/user/new_user_topics/browser_caching/).

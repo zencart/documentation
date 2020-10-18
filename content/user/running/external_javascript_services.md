@@ -36,7 +36,7 @@ Simply use one or the other, not both.
 If you are using Google snippets for things beyond just Analytics, you can install the Google Tag Manager snippet
 in the following way. Remember: this REPLACES the basic snippet file mentioned for basic analytics above.
 
-NOTE: Using Tag Manager may make the use of Advanced Ecommerce Analytics impossible. Be sure to investigate for yourself.
+**NOTE:** Using Tag Manager may make the use of Advanced Ecommerce Analytics impossible. Be sure to investigate for yourself.
 
 `/includes/templates/YOURTEMPLATE/jscript/jscript_google_tag_manager.js`
 

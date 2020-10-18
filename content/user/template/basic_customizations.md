@@ -91,7 +91,7 @@ Upload your button images to:
 
 **NOTE:** If you are using multiple languages you need a set of buttons for each language.
 
-Another approach is to use CSS buttons feature. Turn on 
+Another approach is to use [CSS buttons](/user/template/buttons/) feature. Turn on 
 `CSS Buttons` in [Admin > Configuration > Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/).  If you do this, there is no need
 to maintain images for each button; the images are generated in CSS.
 

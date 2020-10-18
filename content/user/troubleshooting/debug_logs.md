@@ -68,6 +68,9 @@ Let's examine the back-trace provided by the first log-entry in the example give
 | /includes/modules/require_languages.php:26                  | require_once |
 | /includes/languages/english/responsive_classic/index.php:35 | define       |
 
+### How to Fix Common Debug Logs
+Many examples of debug logs and how to fix them are shown in [PHP Warnings and Deprecated messages after upgrading](/user/troubleshooting/debug_logs/). 
+
 ### Utilities
 The following tools are available for working with debug log files:
 

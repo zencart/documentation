@@ -5,7 +5,7 @@ category: upgrading
 weight: 10
 ---
 
-As you upgrade PHP from an older version, these are log messages you will commonly see.  An explanation of why this can happen is provided in [understanding errors after upgrading PHP versions](user/troubleshooting/php_debug_logs). 
+As you upgrade PHP from an older version, these are log messages you will commonly see.  An explanation of *why this can happen* is provided in [understanding errors after upgrading PHP versions](/user/troubleshooting/php_debug_logs). 
 
 Fortunately, these problems are very easy to fix.  
 

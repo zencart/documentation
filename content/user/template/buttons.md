@@ -5,7 +5,7 @@ category: template
 weight: 10
 ---
 
-Most recent Zen Cart installations use the CSS Buttons feature of Zen Cart, which is enabled on Admin > Configuration > Layout Settings > CSS Buttons.
+Most recent Zen Cart installations use the **CSS Buttons** feature of Zen Cart, which is enabled in [Admin > Configuration > Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/).
 
 ![CSS Button](/images/button_css.png)
 
