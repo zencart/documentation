@@ -1,6 +1,6 @@
 ---
-title: Upgrading - Detailed Instructions
-description: Upgrading and preserving customizations
+title: Detailed Upgrade Instructions
+description: Upgrading Step By Step -- and still keep my live store running in the meantime
 category: Upgrading
 weight: 10
 ---
