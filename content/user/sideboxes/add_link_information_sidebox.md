@@ -7,6 +7,8 @@ weight: 10
 
 This page continues the FAQ on [customizing the Information Sidebox](/user/sideboxes/information_sidebox/). It is such a common question is has been pulled out to its own page.
 
+The same technique can be used to add a link to the [More Information sidebox](/user/sideboxes/more_information_sidebox/) or the [EZ Page sidebox](/user/sideboxes/ezpages_sidebox/) just by changing the file being edited. 
+
 To add a link to the Information Sidebox, 
 we create the [override file](/user/first_steps/overrides/) `includes/templates/YOURTEMPLATE/sideboxes/tpl_information.php`.  
 
