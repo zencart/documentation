@@ -12,7 +12,7 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 ### ALL Versions 
 
-- Part of staying up to date is monitoring your [JavaScript libraries](/user/upgrading/javascript_updates/). Be sure you're not running a version with known vulnerabilities.
+- Part of staying up to date is monitoring not just your Zen Cart version, but all your other software dependencies, such as JavaScript.  Use a tool like Google Chrome Lighthouse to [find outdated JavaScript libraries with known vulnerabilities](/user/upgrading/javascript_updates/). 
 
 - Part of keeping modern is embracing newer PHP versions. You will need to address various [common issues with PHP version incompatibility](/user/upgrading/php_warnings/).
 
@@ -62,13 +62,7 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 - Starting in this version, the email css was pulled out of the individual templates into a shared file called `email/email_common.css`.  If you are creating or updating email templates, you should follow this new practice. 
 
-- The `html_header.php` file in `template_default/common/` and `responsive_classic/common/` folder contain 
-
-```
-header('X-Frame-Options:SAMEORIGIN');
-```
-
-to prevent clickjacking.  If your template is older than 1.5.5, you will need to manually incorporate this change. 
+- The `html_header.php` file in `template_default/common/` and `responsive_classic/common/` folder contain `header('X-Frame-Options:SAMEORIGIN');` to prevent clickjacking.  If your template is older than 1.5.5, you will need to manually incorporate this change. 
 
 ### Zen Cart 1.5.2 
 
