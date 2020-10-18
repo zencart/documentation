@@ -2,7 +2,7 @@
 title: Upgrading - Quick Reference
 description: Summary of Key Points For Upgrading
 category: Upgrading 
-weight: 10
+weight: 1
 ---
 
 ## Key Points Related To Upgrading
