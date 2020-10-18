@@ -93,7 +93,7 @@ We recommend that you use passwords that are at least eight or more characters l
 
 If you are going to use normal words it is a good idea to join together two normal words that don't normally go together, again separating them with spaces and maybe mixing in some uppercase letters.
 
-Admin passwords should be changed at least every 3 months.
+Admin passwords should be changed at least every 3 months. And anytime an employee leaves your company.
 
 Visit Admin > Admin Access > Admin Users to change passwords.
 
@@ -179,16 +179,8 @@ for updating/displaying bar graphs related to banner usage. If not writable, thi
 ### 11\. Remove the print URL feature from your browser
 
 To stop the browser from printing the admin URL (which discloses your Admin foldername) on the invoice follow these steps:.  
-
-*   Microsoft Internet Explorer  
-
     *   Click on _File_ then _Page Setup_
-    *   At page setup window, remove these two character combination "&u" from the header or footer text box.
-*   Firefox  
-
-    *   Click on _File_ then _Page Setup_
-    *   On page setup window click on the tab "Margins & Header/Footer". In the "Header & Footer" section set all of the drop downs to --blank--. (Or at least remove all instances of "Title" and "URL" from the various boxes.)
-*   Other browsers offer similar menu choices to change these settings.
+    *   On the Page Setup window click on the tab "Margins & Header/Footer". In the "Header & Footer" section set all of the drop downs to --blank--. (Or at least remove all instances of "Title" and "URL" from the various boxes.) (In some browsers the "URL" is denoted by the `&u` pattern, which is what you should remove.)
 
 
 ### 12\. Things to Check Up on Regularly
