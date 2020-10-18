@@ -12,9 +12,11 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 ### ALL Versions 
 
-- Part of staying up to date is monitoring your [JavaScript libraries](/user/upgrading/javascript_updates/). Be sure you're not running a version with known vulnerabilities. 
+- Part of staying up to date is monitoring your [JavaScript libraries](/user/upgrading/javascript_updates/). Be sure you're not running a version with known vulnerabilities.
 
-- Be sure external links are constructed with `rel="noreferrer noopener"`. 
+- Part of keeping modern is embracing newer PHP versions. You will need to address various [common issues with PHP version incompatibility](/user/upgrading/php_warnings/).
+
+- Be sure external links are constructed with `rel="noreferrer noopener"`.
 
 ### Zen Cart 1.5.8 (currently in development phase, not released yet)
 
