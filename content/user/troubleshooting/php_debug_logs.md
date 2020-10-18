@@ -5,6 +5,8 @@ category: troubleshooting
 weight: 10
 ---
 
+This page explains *why* PHP warnings can suddenly start occurring.  An explanation of *how to fix them* is provided in [PHP Warnings and Deprecated messages after upgrading](/user/upgrading/php_warnings/).
+
 PHP debug logs can suddenly start appearing in the following cases: 
 
 - using an older plugin which has not been updated on a newer version of PHP.
@@ -30,6 +32,5 @@ Alternatively, perhaps you upgraded your version of Zen Cart, but wound up using
 Each version of Zen Cart (and each plugin) was developed for the version of PHP that was prevalent at the time, and may not be compatible with newer PHP versions.
 See [mapping of Zen Cart versions to PHP versions](/user/first_steps/server_requirements/#php-version) for more information.
 
-Many specific examples of PHP updates causing logs are described in [debug logs](/user/troubleshooting/debug_logs/).
 
 

@@ -7,7 +7,7 @@ weight: 10
 
 ## ALERT: DEPRECATED
 
-NOTE: Authorize.net has officially retired the SIM method of accepting payment. Some older accounts are still working, but you should not plan on using this module moving forward.
+**NOTE:** Authorize.net has officially retired the SIM method of accepting payment. Some older accounts are still working, but you should not plan on using this module moving forward.
 
 ## REQUIREMENTS
 
