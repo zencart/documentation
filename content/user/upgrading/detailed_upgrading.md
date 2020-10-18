@@ -103,7 +103,6 @@ Now let's find out the differences/customizations between your site and the orig
 **Comparing Sets Of Files**
 
 > Advanced Tip: You will probably discover that combining the following "discovery of customizations" with the "execution" step will save you time.
-This document is written with the assumption that you're using only a 2-way-capable comparison tool. If you have a 3-way compare tool things will go much faster: column 1 is `zc_orig`, column 2 is `store` and column 3 is `zc_new` ... and you merge (copy) any changes between columns 2-3 into column 2 where they don't clash with column 1. Anything changed between columns 1-2 is a customization you made or a plugin has made, so you want to keep that or at least merge it with whatever is new in column 3 if anything. This sounds complicated when just reading it in words, but in practice it becomes visually quite intuitive.
 
 Unzip a copy of the original Zen Cart files for the version you _originally installed_ or last upgraded from (ie: perhaps v1.3.9 or even 1.5.1). This should be placed in a separate working folder on your PC (perhaps `zen_orig`).
 
@@ -111,6 +110,9 @@ Run a tool like [WinMerge](https://winmerge.org/) to compare the "Original" Zen 
 
 So, in WinMerge, in 2-way-compare mode, you would open the `zen_orig` directory in the left column, and the `store` directory in the right column.
 This way, in the right column you'll see all the ways in which your store's files are different from the original files on the left.
+
+> This document is written with the assumption that you're using only a 2-way-capable comparison tool. If you have a 3-way compare tool (WinMerge can do that) things will go much faster: column 1 is `zc_orig`, column 2 is `store` and column 3 is `zc_new` ... and you merge (copy) any changes between columns 2-3 into column 2 where they don't clash with column 1. Anything changed between columns 1-2 is a customization you made or a plugin has made, so you want to keep that or at least merge it with whatever is new in column 3 if anything. This sounds complicated when just reading it in words, but in practice it becomes visually quite intuitive.
+
 
 Here we are taking a list of how your actual site is customized vs the original files.
 
