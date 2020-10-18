@@ -5,13 +5,13 @@ category: Upgrading
 weight: 10 
 ---
 
-Most modern templates, as well as the Zen Cart admin, bundle in the JavaScript library `jQuery`, as well as other libraries. 
+Most modern templates, as well as the Zen Cart admin, bundle in the JavaScript library `jQuery`, as well as other JavaScript libraries. 
 
-You must check the versions of any JavaScript libraries you are importing to ensure that you are running the latest, and not an older version with known vulnerabilities. 
+You must check the versions of any libraries you are importing to ensure that you are running the latest, and not an older version with known vulnerabilities.
 
 Your template's `html_header.php` or `jscript/jscript_xxxxxxx.*` files are common places to check for direct references to old libraries.  You will also want to check the `includes/templates/YOURTEMPLATE/jscript` folder to see if there are old versions stored there. 
 
-Remember that addons to templates often bring in their own jQuery version that is likely older than the one you want to use for your template. Make sure you're only loading **one** and that it's current and compatible with all the other javascript and/or jQuery features you're already using.
+Remember that addons to templates often bring in their own jQuery version that is likely older than the one you want to use for your template. Make sure you're only loading **one** copy of jQuery, and that the copy you are loading is current and compatible with all the other javascript and/or jQuery features you're already using.
 
 A very easy way to test whether your libraries are current is to use Google Lighthouse utility.  In Google Chrome, right click and select "Inspect." 
 
