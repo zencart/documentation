@@ -81,8 +81,14 @@ cc7.gif = AustralianBankCard
 
 ### Where are the buttons and how do I change them?
 
-The list of buttons is in:
-`includes/language/english/button_names.php`
+Newer templates do not use static button images; instead, they use 
+[CSS buttons](/user/template/buttons/) feature, which generates images in CSS.
+
+To use CSS Buttons, enable them in 
+[Admin > Configuration > Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/#css_buttons).  
+
+If you wish to use static images for buttons, refer to the list of buttons in the file 
+`includes/language/english/button_names.php`.
 
 Create your buttons using your favorite [image editor](/user/first_steps/useful_tools/#graphics-editors). The buttons may to be saved as GIF, JPG or PNG. If you are not using the same format or name as the original buttons, edit `button_names.php` and save the edited file in your override directory `includes/language/english/YOURTEMPLATE/button_names.php`.
 
@@ -91,9 +97,6 @@ Upload your button images to:
 
 **NOTE:** If you are using multiple languages you need a set of buttons for each language.
 
-Another approach is to use [CSS buttons](/user/template/buttons/) feature. Turn on 
-`CSS Buttons` in [Admin > Configuration > Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/).  If you do this, there is no need
-to maintain images for each button; the images are generated in CSS.
 
 ---
 

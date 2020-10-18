@@ -5,6 +5,8 @@ category: new_user_topics
 weight: 10
 ---
 
+**Note:** This content does not apply to the responsive_classic template, and may not apply to your template. 
+
 The [default template](/user/template/template_default/) and its derivatives use a background image in the header.
 
 <img src="/images/header_bg.jpg" alt="Zen Cart background Image" />

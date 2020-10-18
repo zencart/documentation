@@ -9,7 +9,7 @@ New Zen Cart users will often customize a file like `includes/templates/responsi
 
 ```
 <li>
-  <a href="https://YOURSTORE.com/index.php?main_page=page&id=25">Important Pricing information</a>  <!-- NO! --> 
+  <a href="https://YOURSTORE.com/index.php?main_page=page&id=25">Important information</a>  <!-- NO! --> 
 </li>
 ```
 
@@ -24,7 +24,7 @@ Instead, it is better to use a relative URL, which will always work.
 
 ```
 <li>
-  <a href="index.php?main_page=page&id=25">Important Pricing information</a>
+  <a href="index.php?main_page=page&id=25">Important information</a>
 </li>
 ```
 
@@ -34,7 +34,7 @@ The same applies to the use of image tags.  In a [define page](/user/template/de
 <img src="/images/POINTS.jpg" alt="Get Points"></p>   <!-- NO! --> 
 ```
 
-The problem is, this won't work if the store is moved to a subdomain. 
+The problem is, this won't work if the store is moved to a subdomain, which is common when setting up a test site.
 
 If you don't start the path name with a slash, it *will* work correctly. 
 

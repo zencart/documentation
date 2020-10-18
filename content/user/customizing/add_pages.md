@@ -1,6 +1,6 @@
 ---
 title: Adding Pages to my site 
-description: Creating custom pages for your store's content
+description: Creating a new page for your store
 category: customizing 
 weight: 10
 ---
@@ -36,4 +36,11 @@ The best way to create a new page is to use one of these plugins as a starting p
 The latter is somewhat less customizable but contains fewer files. 
 
 The advantage of creating a new page is that you can use PHP in the page, which is not an option with EZ-Pages.  Being able to use PHP means you can add conditional logic, do database lookups, customize for specific groups or customer characteristics, etc. 
+
+### Linking to your New Page 
+
+Once you have created your new page, you'll want to link to it. A few options are: 
+
+- If you have created the page as an EZ-Page, use the [EZ-Pages sidebox](/user/sideboxes/ezpages_sidebox/).  
+- If you want the link in the Information Sidebox, use the instructions on [adding a link to the Information Sidebox](/user/sideboxes/add_link_information_sidebox/).  
 
