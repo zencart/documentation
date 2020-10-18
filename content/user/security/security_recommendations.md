@@ -236,5 +236,5 @@ While backups are good, too many is bad! ... if they're not secured.
 
 You should only keep backups that are essential for business recovery or financial/business-reference purposes. Keeping too many backups in too many places that are not monitored for privacy can lead to bad situations.
 
-(Consider: you wouldn't leave customers' credit card details in papers laying all over your file cabinets and cupboards and drawers: you'd put them in one central safe spot. Do the same with your backups, and destroy copies that don't need to be kept. This includes not leaving thumb-drives with private data on them sitting around unacccounted-for. Put the important ones someplace safe, and delete the ones that no longer have a purpose.)
+(Consider: you wouldn't leave customers' credit card details in papers laying all over your file cabinets and cupboards and drawers: you'd put them in one central safe spot. Do the same with your backups, and destroy copies that don't need to be kept. This includes not leaving thumb-drives with private data on them sitting around unaccounted-for. Put the important ones someplace safe, and delete the ones that no longer have a purpose.)
 

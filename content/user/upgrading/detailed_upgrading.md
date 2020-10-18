@@ -94,7 +94,7 @@ If you bought the plugin or template (or if a paid upgrade is available), consid
 
 
 ### File Changes: Alterations made to the files on your server
-**NOTE:** This is a time-consuming step, and will feel very "technical". Be sure to set aside undistracted time.
+**NOTE:** This is a time-consuming step, and will feel very "technical". Be sure to set aside time when you will not be distracted.
 
 Now let's find out the differences/customizations between your site and the original Zen Cart files.
 
@@ -333,14 +333,14 @@ At a high level, these are the steps to use (we will skip over the New code fami
 
 # Plugin Considerations
 
-In the discussions earlier on this page we assume the changes you have made are things like language file changes or maybe small code tweaks you did.  If the changes are plugins, there may be a better way than just porting the old changes forward to the new version: you can check the [Plugins Library](https://www.zen-cart.com/downloads.php) for an updated version of the plugin.  If you don't see one, you can ask on the plugin's support thread. It may be best to remove a plugin's "old" version's files before installing its new files (consult its documentation and filestructure to see if much has changed), in case it's important that older files be sure to be removed.
+In the discussions earlier on this page we assume the changes you have made are things like language file changes or maybe small code tweaks you did.  If the changes are plugins, there may be a better way than just porting the old changes forward to the new version: you can check the [Plugins Library](https://www.zen-cart.com/downloads.php) for an updated version of the plugin.  If you don't see one, you can ask on the plugin's support thread. It may be best to remove a plugin's "old" version's files before installing its new files (consult its documentation and file structure to see if much has changed), in case it's important that older files be sure to be removed.
 
 
 # Templates
 
 When it comes to templates, if you obtained your template from the Plugins Library, the advice above applies. If your template came from a commercial vendor, you should approach that vendor and ask about an upgrade.
 
-If you are upgrading from 1.5.4 or below, you have another decision to make: Zen Cart 1.5.5 and above are designed to be used on mobile devices as well as desktop devices.  Your older template is likely not mobile friendly, so you may wish to get one that is.  The built in [responsive classic](/user/template/other_templates/#responsive-classic-template-product-page) template introduced in v1.5.5 is a good start. 
+If you are upgrading from 1.5.4 or below, you have another decision to make: Zen Cart 1.5.5 and above are designed to be used on mobile devices as well as desktop devices.  Your older template is likely not mobile friendly, so you may wish to get one that is.  The built-in [responsive classic](/user/template/other_templates/#responsive-classic-template-product-page) template introduced in v1.5.5 is a good start. 
 
 HOWEVER: If you are changing your template, YOU SHOULD CONSIDER **TREATING A CHANGE OF TEMPLATE AS A SEPARATE STEP** FROM YOUR UPGRADE. Tweaking templates "to perfection" can endlessly delay implementing an upgrade if you aren't diligent. Better to complete your upgrade first, and do your template change as a separate step. 
 

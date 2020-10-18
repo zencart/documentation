@@ -56,7 +56,7 @@ would be a product listing page, showing products 4, 5 and 6.  The category path
 
 In the cases above, the category path for the 
 
-The listing pages described above are built in to Zen Cart; no extra work is required to create them.
+The listing pages described above are built-in to Zen Cart; no extra work is required to create them.
 
 Here's an example of what a product listing page might look like on a desktop computer: 
 

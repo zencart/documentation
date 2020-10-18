@@ -43,5 +43,5 @@ Upcoming Products | Upcoming Products
 
 ###  Creating your own centerbox 
 
-In addition to the four built in centerboxes described above, other centerboxes are available in the [Zen Cart plugins library](https://www.zen-cart.com/downloads.php).  Try searching for both "centerbox" and "centerboxes" in the Advanced Search with "Search Titles Only" set. 
+In addition to the four built-in centerboxes described above, other centerboxes are available in the [Zen Cart plugins library](https://www.zen-cart.com/downloads.php).  Try searching for both "centerbox" and "centerboxes" in the Advanced Search with "Search Titles Only" set. 
 

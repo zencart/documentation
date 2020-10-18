@@ -9,7 +9,7 @@ weight: 10
 
 Once you have done this, Zen Cart has a number of ways for you to show off your specials: 
 
-- the built in Specials Page, which appears when you navigate to `YOURSITE.com/index.php?main_page=specials`.
+- the built-in Specials Page, which appears when you navigate to `YOURSITE.com/index.php?main_page=specials`.
 - the optional Specials [Sidebox](/user/template/sideboxes/) 
 - the optional Specials [Centerbox](/user/template/centerboxes/)
 

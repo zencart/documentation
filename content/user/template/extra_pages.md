@@ -5,7 +5,7 @@ category: template
 weight: 10
 ---
 
-Because many people want to add content to their store, Zen Cart comes with three built in "extra" pages.  
+Because many people want to add content to their store, Zen Cart comes with three built-in "extra" pages.  
 
 These pages are [define pages](/user/template/define_pages/), which can be managed using the [Admin > Tools > Define Pages Editor](/user/admin_pages/tools/define_pages/). 
 

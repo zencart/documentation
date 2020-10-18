@@ -20,5 +20,5 @@ Here are some things to explore:
 
 - Clicking "Elements" will show you the CSS rules that apply to each part of your site, enabling you to try changes right from your browser
 
-Other browsers have similar built in developer tools; pick your favorite and learn as much as you can about it to keep your site in tip-top shape! 
+Other browsers have similar built-in developer tools; pick your favorite and learn as much as you can about it to keep your site in tip-top shape! 
 
