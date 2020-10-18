@@ -55,4 +55,4 @@ Featured Products | Random Featured Products for SideBox
 
 ###  Creating your own sidebox 
 
-In addition to the [built in sideboxes](/user/sideboxes/sidebox_list/), other sideboxes are available in the [sideboxes section of the Zen Cart plugins library](https://www.zen-cart.com/downloads.php?do=cat&id=12).  For example, the [Blank Sidebox](https://www.zen-cart.com/downloads.php?do=file&id=80) allows you to create your own sidebox with whatever content you wish. 
+In addition to the [built-in sideboxes](/user/sideboxes/sidebox_list/), other sideboxes are available in the [sideboxes section of the Zen Cart plugins library](https://www.zen-cart.com/downloads.php?do=cat&id=12).  For example, the [Blank Sidebox](https://www.zen-cart.com/downloads.php?do=file&id=80) allows you to create your own sidebox with whatever content you wish. 

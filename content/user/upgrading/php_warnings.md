@@ -127,7 +127,7 @@ Some older functions were removed from PHP. The `ereg` series can usually be rep
 
 This may be a result of new indirection syntax (or "variable variables" syntax), where double-dollar-signs are used.
 
-This situation is sometimes found in old unupgraded payment modules where additional braces `{`, `}` must be added. For example:
+This situation is sometimes found in old not-yet upgraded payment modules where additional braces `{`, `}` must be added. For example:
 
 Replace this:
 ```

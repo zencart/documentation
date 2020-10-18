@@ -19,8 +19,7 @@ If you are looking for integration with a specific package, it's always worth se
 At this time all customers must register with their full name, address and other information before going to the checkout. The ability to have more flexibility in the login/account creation/checkout process is on our roadmap for the future. The first steps towards buying without an account are scheduled for inclusion in Zen Cart in the future.
 
 <br />
-In the meantime, the [One Page Checkout](https://www.zen-cart.com/downloads.php?do=file&id=2095) plugin has a guest checkout feature
-built into it which might meet your needs.
+In the meantime, the [One Page Checkout](https://www.zen-cart.com/downloads.php?do=file&id=2095) plugin has a built-in guest checkout feature which might meet your needs.
 
 ---
 

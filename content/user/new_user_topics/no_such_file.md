@@ -30,7 +30,7 @@ to create a custom look for your store.
 So if your template is `responsive_sheffield_blue`, this file would be 
 `includes/templates/responsive_sheffield_blue/templates/tpl_product_info_display.php`. 
 
-If you are using the built in default `responsive_classic` template, 
+If you are using the built-in default `responsive_classic` template, 
 this file would be `includes/templates/responsive_classic/templates/tpl_product_info_display.php`. 
 
 But what if the file still doesn't exist, even if you now know the real 
