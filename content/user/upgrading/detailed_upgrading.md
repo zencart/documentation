@@ -19,13 +19,13 @@ Further, this guide is assuming that all your testing will be done in a temporar
 2. Content of new versions
 
    Upgraders, be sure to familiarize yourself with the content of each of the new versions released since the one you were previously using:
-  - Relevant [**What's New**](https://www.zen-cart.com/docs/) details for releases since the one you were previously using.
-  - The [Release-Specific Considerations](/user/upgrading/release_specific_upgrade_considerations/) page which points out special cases to consider.
-  - You should also spend some time getting familiar with any additions made to the demo data in the new version, so that you can become comfortable with any new features contained in the new release.  
+    - Relevant [**What's New**](https://www.zen-cart.com/docs/) details for releases since the one you were previously using.
+    - The [Release-Specific Considerations](/user/upgrading/release_specific_upgrade_considerations/) page which points out special cases to consider.
+    - You should also spend some time getting familiar with any additions made to the demo data in the new version, so that you can become comfortable with any new features contained in the new release.  
 
 3. Tools
 
-  To upgrade Zen Cart, you'll need the same basic tools you used to install and customize it in the first place: An [FTP tool](/user/first_steps/useful_tools/#ftp-tools), a [text editor](/user/first_steps/useful_tools/#php-html-and-text-editors) for HTML/PHP code, phpMyAdmin or equivalent access to your MySQL database, and your hosting company's Control Panel for managing your webspace.  
+    To upgrade Zen Cart, you'll need the same basic tools you used to install and customize it in the first place: An [FTP tool](/user/first_steps/useful_tools/#ftp-tools), a [text editor](/user/first_steps/useful_tools/#php-html-and-text-editors) for HTML/PHP code, phpMyAdmin or equivalent access to your MySQL database, and your hosting company's Control Panel for managing your webspace.  
 
 4. File Comparison Tool
 
@@ -215,6 +215,7 @@ Upload the files from your modified `store_new` directory on your PC (created in
 > Clarification: a couple steps earlier we created a new database in cPanel, and restored your backup database to that new database. Thus it contains a (slightly) older copy of your store's data. Here we're doing an upgrade on that data so that its structure matches what is needed for the new Zen Cart version we're testing in these steps. THIS IS NOT THE FINAL STEP, and the data is NOT THE FINAL DATA. This is only temporary for testing, but we're using a copy of your prior data as a way to test that things "work" and have a sense of confidence that the data showing up is "familiar" and "reasonable".
 
 In your browser, run `store_new/zc_install/index.php` and choose "_Upgrade_" when prompted. (Don't select "Clean Install", or you will overwrite your database.) 
+
 ![Use the upgrade button!](/images/upgrade_button.png)
 
 If the "Upgrade" button does not appear, then the installer was unable to connect to your database to determine its version. Check your configure.php settings and be sure the `DB_*` fields correspond to your new database, including that the `DB_PREFIX` matches the `DB_PREFIX` in your old site.
@@ -292,7 +293,6 @@ If you have small problems to repair, turn "Down for maintenance" on and off aga
 
 
 * * *
---
 
 # Example Upgrade Scenario:
 
