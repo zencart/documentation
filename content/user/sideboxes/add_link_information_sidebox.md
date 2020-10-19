@@ -9,16 +9,17 @@ This page continues the FAQ on [customizing the Information Sidebox](/user/sideb
 
 The same technique can be used to add a link to the [More Information sidebox](/user/sideboxes/more_information_sidebox/) or the [EZ Page sidebox](/user/sideboxes/ezpages_sidebox/) just by changing the file being edited. 
 
-To add a link to the Information Sidebox, 
-we create the [override file](/user/first_steps/overrides/) `includes/templates/YOURTEMPLATE/sideboxes/tpl_information.php`.  
+To add a link to the Information Sidebox, we create the [override file](/user/first_steps/overrides/) `includes/templates/YOURTEMPLATE/sideboxes/tpl_information.php`.  
 
-Edit this file.  Right before the list end 
+Edit this file. 
+
+Add your link before the list's ending `ul` tag:
 
 ```
 $content  .= '</ul>' . "\n";
 ```
 
-add the link. For example, linking to an external page: 
+For example, linking to an external page: 
 
 ```
 $content .= '<li><a href="https://www.zen-cart.com/" target="_blank" rel="noreferrer noopener">The Greatest Shopping Cart Ever!</a></li>' . "\n" ;
@@ -69,3 +70,7 @@ $content .= '<li><a href="index.php?main_page=page&id=25">Important information<
 
 You can read more about [the importance of relative URLs](/user/first_steps/relative_urls/) to explore this topic in greater depth. 
 
+
+### Mobile
+
+You may need to make [additional edits to control the link on mobile displays](/user/template/sideboxes/#controlling-sideboxes-on-mobile-menu)

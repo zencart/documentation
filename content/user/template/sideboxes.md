@@ -42,6 +42,12 @@ From there you can navigate to the desired page.
 
 This behavior is different from that of [centerboxes](/user/template/centerboxes/), which appear as normal on mobile. 
 
+#### Controlling Sideboxes on Mobile Menu
+
+If you wish to add more links to your mobile-menu sidebar beyond those which are controlled via Admin Switches, you may need to edit PHP files to add those links by hand.
+
+In the case of the `responsive_classic` template the file to edit is `/includes/templates/YOURTEMPLATE/templates/tpl_modules_mobile_menu.php`
+
 
 ### Sidebox Controls 
 
