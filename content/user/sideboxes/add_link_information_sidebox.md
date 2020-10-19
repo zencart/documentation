@@ -39,7 +39,7 @@ If the link is to an internal EZ-Page, use
 $content .= '<li><a href="' . zen_href_link(FILENAME_EZPAGES,'id=9') . '">' . "My new page" . '</a></li>';
 ```
 
-or you can just display it in the [EZ-Pages sidebox](/user/sideboxes/ezpages_sidebox/). 
+or if you don't want to modify code, you can just use the [EZ-Pages sidebox](/user/sideboxes/ezpages_sidebox/), which displays EZ-Pages with sidebox display on and a positive sort order.  
 
 ### Alternate Approaches 
 
@@ -73,4 +73,4 @@ You can read more about [the importance of relative URLs](/user/first_steps/rela
 
 ### Mobile
 
-You may need to make [additional edits to control the link on mobile displays](/user/template/sideboxes/#controlling-sideboxes-on-mobile-menu)
+You may need to make [additional edits to control the link on mobile displays](/user/template/sideboxes/#controlling-sideboxes-on-mobile-menu).
