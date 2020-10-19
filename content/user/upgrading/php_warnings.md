@@ -5,9 +5,11 @@ category: upgrading
 weight: 10
 ---
 
-As you upgrade PHP from an older version, these are log messages you will commonly see.  An explanation of *why this can happen* is provided in [understanding errors after upgrading PHP versions](/user/troubleshooting/php_debug_logs). 
+As you upgrade PHP from an older version, these are log messages you will commonly see.  An explanation of *why this can happen* is provided in [understanding errors after upgrading PHP versions](/user/troubleshooting/php_debug_logs). This article explains *how to fix* some of the most common problems you will see. 
 
-Fortunately, these problems are very easy to fix.  
+There are several levels of PHP problems, with the least serious being _notices_ and _warnings_. 
+
+More serious are PHP _errors_, which can cause a blank screen or partially blank screen.  If you are experiencing errors, you should also read the [blank pages troublshooting guide](/user/troubleshooting/blank_page/).
 
 Please take these as examples, not exact matches for every log you might come across. 
 
@@ -99,9 +101,6 @@ The direction for PHP 7.2+ is to refactor `each` to `foreach` as follows:
     c) `while(list($key, ) = each($foo))`
     This becomes `foreach($foo as $key => $value)`
 
-
-There are several levels of PHP problems, with the least serious being _notices_ and _warnings_. 
-More serious are PHP _errors_, which can cause a blank screen or partially blank screen.  Several common PHP errors are discussed in [this article](/user/troubleshooting/php_debug_logs/).
 
 
 ## `ereg_replace` deprecated
