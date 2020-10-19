@@ -12,7 +12,9 @@ layout: docs
 
 * [Documentation ](/user/first_steps/documentation/) - hints and examples for using this documentation
 
-* [Add a Page](/user/customizing/add_pages/) - how do I add a new page to my cart? 
+* [Add a Page](/user/customizing/add_pages/) - how do I add a new page to my store? 
+
+* [Add a Link](/user/sideboxes/add_link_information_sidebox/) - how do I add a link to the Information sidebox? 
 
 * [Admin Password Reset](/user/troubleshooting/reset_admin_password/) - how to reset your password if you have forgotten it.
 
@@ -34,9 +36,11 @@ layout: docs
 
 * [Glossary](/user/first_steps/glossary/) - What do all these terms mean? 
 
+* [Installing Zen Cart](/user/first_steps/how_do_i_install/) - how do I install Zen Cart?
+
 * [Known Bugs in Zen Cart (by version)](/user/about_us/known_bugs/) - has my bug already been fixed?
 
-* [Installing Zen Cart](/user/first_steps/how_do_i_install/) - how do I install Zen Cart?
+* Log files - Learn about [what they are](/user/troubleshooting/debug_logs/), [why you get them](/user/troubleshooting/php_debug_logs/) and [how to fix them](/user/upgrading/php_warnings/).
 
 * [Release history for Zen Cart](/user/about_us/release_history/) - with links to Release Notes.  And don't forget the [security patches](/user/about_us/security_releases/), especially if you are not on the latest version. 
 

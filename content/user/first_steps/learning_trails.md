@@ -40,9 +40,15 @@ Take a look at [exploring the documentation](/user/first_steps/documentation/) t
 - [Browse the Admin menu sections](/user/admin_pages/menu_sections/)
 
 ## Learn about Running your Zen Cart 
-- [Regular Maintenance for Zen Cart](/user/running/regular_maintenance/) - What kinds of routine maintenance should I be doing? 
-- [Logging in as a Customer](/user/running/login_as_customer/) - How do I place orders on behalf of a customer? 
-- [Tracking Inventory](/user/running/stock/) - What are my options for inventory tracking? 
+- [Regular Maintenance for Zen Cart](/user/running/regular_maintenance/)
+- [Logging in as a Customer](/user/running/login_as_customer/)
+- [Tracking Inventory](/user/running/stock/)
+
+## Learn about Troubleshooting and Debugging 
+- [Interpreting Debug Logs](/user/troubleshooting/debug_logs/)
+- [Why am I getting new logs?](/user/troubleshooting/php_debug_logs/)
+- [How do I fix these new logs?](/user/upgrading/php_warnings/)
+- [Diagnosing obscure issues](/user/troubleshooting/diagnosing_obscure_issues/)
 
 ## Learn Zen Cart Development 
 - [Technologies used in Zen Cart](/user/first_steps/technologies/)
