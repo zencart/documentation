@@ -2,7 +2,7 @@
 title: Database-Only Upgrade Instructions
 description: Upgrading if you don't want to keep your customizations 
 category: Upgrading
-weight: 10
+weight: 8 
 ---
 
 <font size="12" color="red">Warning!</font>

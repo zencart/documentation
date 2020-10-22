@@ -9,7 +9,7 @@ As you upgrade PHP from an older version, these are log messages you will common
 
 There are several levels of PHP problems, with the least serious being _notices_ and _warnings_. 
 
-More serious are PHP _errors_, which can cause a blank screen or partially blank screen.  If you are experiencing errors, you should also read the [blank pages troublshooting guide](/user/troubleshooting/blank_page/).
+More serious are PHP _errors_, which can cause a blank screen or partially blank screen.  If you are experiencing errors, you should also read the [blank pages troubleshooting guide](/user/troubleshooting/blank_page/).
 
 Please take these as examples, not exact matches for every log you might come across. 
 
