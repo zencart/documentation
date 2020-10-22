@@ -22,3 +22,24 @@ Here are some things to explore:
 
 Other browsers have similar built-in developer tools; pick your favorite and learn as much as you can about it to keep your site in tip-top shape! 
 
+## Example issues shown in the Console by Inspect 
+
+### Mixed Content 
+
+![Mixed Content](/images/mixed_content.png) 
+
+If you get a mixed content warning, it means something is being loaded over `http` instead of `https`.  In this case, for example, if you check `includes/templates/YOURTEMPLATE/common/html_header.php`, you will see something like 
+
+```
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700&amp;subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+
+```
+
+just make this load over `https` by changing it to 
+
+```
+<link href='//fonts.googleapis.com/css?family=Roboto:400,300,500,700&amp;subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+
+```
+
+
