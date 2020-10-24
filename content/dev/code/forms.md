@@ -5,10 +5,9 @@ category: code
 weight: 10
 ---
 
-Adding a custom form to your site is a common customization.  There are a 
-few guidelines for when you do this: 
+Adding a custom form to your site is a common customization.  There are a few guidelines for when you do this: 
 
-- Always [submit your form data using POST](/dev/plugins/upgrading_to_1.5/#rewriting-addon-admin-pages-to-use-form-posts-instead-of-gets). Never use GET for forms. 
+- Always [submit your form data using POST](/dev/plugins/upgrading_to_1.5/#rewriting-addon-admin-pages-to-use-form-posts-instead-of-gets). Never use GET for forms. (There are exceptions of course, but if you don't already grok best practices for that, then never use GET for forms!)
 - Use `zen_draw_form`, not the HTML `<form>` tag.  Note that when you use `zen_draw_form`, you get the `securityToken` with no extra work. 
 - [Sanitize your inputs](/dev/code/database_querying/).
 
