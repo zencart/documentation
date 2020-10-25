@@ -25,14 +25,16 @@ If your site is from an older version, your database might still contain older d
 
 ## Converting to UTF8MB4:
 
-1\. Use this [conversion utility to convert your data to UTF8](https://github.com/zencart/utf8mb4-converter) (AFTER MAKING AND TESTING A DATABASE BACKUP): [https://github.com/zencart/utf8mb4-converter](https://github.com/zencart/utf8mb4-converter)  
+1\. Use this conversion utility to convert your data to UTF8 (AFTER MAKING AND TESTING A DATABASE BACKUP): 
+
+[https://github.com/zencart/utf8mb4-converter](https://github.com/zencart/utf8mb4-converter)  
 
 2\. Update your PHP files to indicate your UTF-8 intentions. 
 
   If you installed your site NEW since v1.5.0 or newer, then the following are ALREADY done for you.<br>
   But, if you UPGRADED from a version prior to 1.5.0, then you will need to double-check each of the following:
 
-a. Check each of the following files to be sure that **if** a define for `CHARSET` is present that it is defined as `utf-8`. (If no define for `CHARSET` is present, skip that file and check the next one).
+a. Check each of the following files to be sure that **if** a define for `CHARSET` is present that it is defined as **utf-8**. (If no define for `CHARSET` is present, skip that file and check the next one).
 
   - `/admin/includes/languages/english.php`
   - `/admin/includes/languages/OTHER_LANGUAGE_NAME.php` (if any)
@@ -45,7 +47,7 @@ b. Check your `configure.php` files:
   - `/admin/includes/configure.php`
   - `/includes/configure.php`
   
-  If they have a define for `DB_CHARSET`, make sure it is set to `utf8` (not `utf-8`). (It may not be present: if so, that's fine, go to the next file.)
+  If they have a define for `DB_CHARSET`, make sure it is set to **utf8** without the dash (not `utf-8`). (It may not be present: if so, that's fine, go to the next file.)
   
   (Remember, the `configure.php` files are most likely set to read-only on your server, so you'll need to change their permissions on the server to be writable before you can save the changes you're making.)  
   

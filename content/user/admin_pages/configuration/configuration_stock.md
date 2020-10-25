@@ -47,6 +47,11 @@ Description: Define when stock needs to be re-ordered</div>
 Path: <b>Configuration > Stock</b><br />
 Description: Show Products when out of stock<br /><br />0= set product status to OFF<br />1= leave product status ON</div>
 
+<h2 id="disabled_product_status_for_search_engines">Disabled Product Status for Search Engines (**NEW in 1.5.7a)</h2>
+<div class='indent'>Key: <b>SHOW_PRODUCTS_SOLD_OUT</b><br />
+Path: <b>Configuration > Stock</b><br />
+Description: When a product is marked Disabled (status=0) but is not deleted from the database, should Search Engines still show it as Available?<br>eg:<br>True = Return HTTP 200 response<br>False = Return HTTP 410<br>(Deleting it will return HTTP 404)<br><b>Default: false</b>
+</div>
 
 <h2 id="show_sold_out_image_in_place_of_add_to_cart">Show Sold Out Image in place of Add to Cart</h2>
 

@@ -9,13 +9,13 @@ New Zen Cart users will often customize a file like `includes/templates/responsi
 
 ```
 <li>
-  <a href="https://YOURSTORE.com/index.php?main_page=page&id=25">Important information</a>  <!-- NO! --> 
+  <a href="https://YOURSTORE.com/index.php?main_page=page&id=25">Important information</a>  <!-- NO --> 
 </li>
 ```
 
 **This is not a good practice**.  This URL will not work as expected in the following circumstances: 
 
-- You move the store to a subdomain (YOURSTORE.com/shop) 
+- You move the store to a subfolder (YOURSTORE.com/shop) 
 - You change domain names 
 - You work on a temporary or local domain
 - You work on an IP address during a hoster change 
@@ -28,15 +28,15 @@ Instead, it is better to use a relative URL, which will always work.
 </li>
 ```
 
-The same applies to the use of image tags.  In a [define page](/user/template/define_pages/), for example, it is common to reference an image starting with `/`.  
+The same applies to the use of image tags.  In a [define page](/user/template/define_pages/) or an [EZ-Page](/user/ezpages/), be careful not to start image URLs with a `/`.
 
 ```
-<img src="/images/POINTS.jpg" alt="Get Points"></p>   <!-- NO! --> 
+<img src="/images/POINTS.jpg" alt="Get Points">   <!-- NO --> 
 ```
 
-The problem is, this won't work if the store is moved to a subdomain, which is common when setting up a test site.
+The reason is, this will work when the site is at the top level, but it won't work if the store is moved to a subfolder, which is common when setting up a test site.
 
-If you don't start the path name with a slash, it *will* work correctly. 
+If you don't start the path name with a slash, it *will* work correctly, whether the store is at the top level or in a subfolder. 
 
 ```
 <img src="images/POINTS.jpg" alt="Get Points"></p>
