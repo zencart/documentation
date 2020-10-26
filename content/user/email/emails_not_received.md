@@ -25,7 +25,7 @@ Go to [Admin > Configuration > Email Options](/user/admin_pages/configuration/co
 1. With SMTPAuth, you must enter your password in the _SMTP Email Account Password_ field.  Has your cPanel password changed recently?  If so, you may need to update the value in this field. 
 1. Look on your hoster's control panel and see if you can add SPF and DKIM records yourself to increase your email reputation.  In cPanel, this is done using the "Email Deliverability" application.   Work with your hoster if you are unsure about this. 
 1. ALWAYS check to see whether a junk mail filter, spam block, or other blacklist system may have trapped your message before it could be delivered
-1. Try enabling the Email Archiving feature. (Note: this can chew up server database disk space quickly.) Then use the Email Archive Viewer contribution to check and see whether Zen Cart really processed the email for sending. If it did, then the problem is related to how PHP is processing your messages after they leave Zen Cart. 
+1. Try enabling the [Email Archiving](/user/admin_pages/configuration/configuration_emailoptions/#email_archiving_active) feature. Then use the [Email Archive Manager](/user/email/email_archive_manager/) contribution to check and see whether Zen Cart really processed the email for sending. If it did, then the problem is related to how PHP is processing your messages after they leave Zen Cart. 
 1. If the issue is arising from one particular customer, ask them to whitelist email from your domain.  For very strict filters, sometimes this is the only way to get through. 
 
 ### Symptom: Email FROM-ADDRESS shows up funny
@@ -36,9 +36,11 @@ If your "FROM" email addresses contain extra brackets ")", this is due to having
 1. the Email From address may be malformed
 1. the Contact Us Pulldown contents may not be formatted properly. Note the required syntax next to the input field.
 
-## Advanced Email Troubleshooting
+## Further Email Troubleshooting
 
-* [PHPMailer Troubleshooting Guide](https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting)
+* [Diagnosing Email Problems](/user/email/email_introduction/#diagnosing-problems)
 
 * [Advanced Email Troubleshooting](/user/email/advanced_email_troubleshooting/)
+
+* [PHPMailer Troubleshooting Guide](https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting)
 
