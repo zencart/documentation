@@ -88,7 +88,7 @@ It is recommended to also enable the following PHP extensions:
 
 The following table shows the MySQL versions compatible with each version of Zen Cart.
 
-(If your store uses non-english characters in product names/descriptions, or if your customers might use emojis in order comments, you should be using MySQL 5.7.2 or newer, and utf8mb4 character set.)
+(If your store uses non-english characters in product names/descriptions, or if your customers might use emojis in order comments, you should be using MySQL 5.7.2 or newer, and the [utf8mb4 character set](/user/upgrading/convert_to_utf8/).)
 
 **Note:** Future versions of Zen Cart including v1.5.8 will require MySQL 5.7.8+ or MariaDB 10.2.7+.
 
