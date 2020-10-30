@@ -18,6 +18,8 @@ See also [Zen Cart Database Schema](/dev/schema/),
 
 This is the release history of the Zen Cart product.
 
+10/30/2020 - v1.5.7a [Release Notes](https://www.zen-cart.com/docs/whatsnew_1.5.7.html)
+
 06/23/2020 - v1.5.7 [Release Notes](https://www.zen-cart.com/docs/whatsnew_1.5.7.html)
 
 07/16/2019 - v1.5.6c
