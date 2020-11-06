@@ -6,4 +6,4 @@ weight: 10
 url: /user/admin_pages/reports/graphical_sales_report
 ---
 
-Just a redirect page 
+This page is a redirect only.

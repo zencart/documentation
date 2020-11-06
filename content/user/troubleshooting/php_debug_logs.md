@@ -30,7 +30,7 @@ What might have happened in this case is that your hoster just upgraded your PHP
 Alternatively, perhaps you upgraded your version of Zen Cart, but wound up using some old files designed for an older PHP version.
 
 Each version of Zen Cart (and each plugin) was developed for the version of PHP that was prevalent at the time, and may not be compatible with newer PHP versions.
-See [mapping of Zen Cart versions to PHP versions](/user/first_steps/server_requirements/#php-version) for more information.
+See [mapping of Zen Cart versions to PHP versions](/user/first_steps/server_requirements/#php-version) for more information about which PHP version is compatible with your Zen Cart version. 
 
 
 

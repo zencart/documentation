@@ -53,4 +53,5 @@ Is your "cache" folder set to writable (ie: chmod 755 or some other suitable val
 
 a) altered files on your server. In that case a proper checkup of all your files is in order: see [Diagnosing obscure issues](/user/troubleshooting/diagnosing_obscure_issues/). 
 
-b) a server configuration change by the hosting company (such as a PHP version change or anything else that might result in changes to the master php.ini configuration for the server or your hosting account)
+b) a server configuration change by the hosting company (such as a PHP version change or anything else that might result in changes to the master php.ini configuration for the server or your hosting account).  See [mapping of Zen Cart versions to PHP versions](/user/first_steps/server_requirements/#php-version) for more information about which PHP versions are compatible with your Zen Cart version.
+

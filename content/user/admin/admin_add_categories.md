@@ -6,4 +6,4 @@ weight: 10
 url: /user/products/add_delete_categories
 ---
 
-Just a redirect page 
+This page is a redirect only.
