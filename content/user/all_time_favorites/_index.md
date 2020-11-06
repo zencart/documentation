@@ -43,6 +43,8 @@ layout: docs
 
 * Log files - Learn about [what they are](/user/troubleshooting/debug_logs/), [why you get them](/user/troubleshooting/php_debug_logs/) and [how to fix them](/user/upgrading/php_warnings/).
 
+* Multiple Images per Product - Learn how to configure [multiple product images](/user/images/additional_images/).
+
 * [Release history for Zen Cart](/user/about_us/release_history/) - Timeline of releases with links to release notes.  And don't forget the [security patches](/user/about_us/security_releases/), especially if you are not on the latest version. 
 
 * [Regular Maintenance for Zen Cart](/user/running/regular_maintenance/) - What kinds of routine maintenance should I be doing? 
