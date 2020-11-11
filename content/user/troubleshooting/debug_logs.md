@@ -9,6 +9,8 @@ Debug logs are created by Zen Cart when the PHP interpreter has an
 error in creating a webpage.   These logs are a source of valuable information 
 that can help you resolve the underlying cause of the problem. 
 
+By default, log files are created in the `/logs` folder at the root of your store.  Some hosting setups handle this differently - see [missing log files](/user/troubleshooting/missing_log_files/) if you think this is happening to you.
+
 ### Reading a Log
 
 A debug-log's contents can be a little cryptic, here's part of one created for ***zc156c***, showing the spacing when multiple logs occur on a single page-load:

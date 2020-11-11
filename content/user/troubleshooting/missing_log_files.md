@@ -5,7 +5,9 @@ category: troubleshooting
 weight: 10
 ---
 
-In some hosting environments (notably PHP-FPM shared), error logs are not written individually to the `/logs` folder. 
+By default, Zen Cart writes debug logs into a folder called `/logs` at the root of the store.
+
+However, in some hosting environments (notably PHP-FPM shared), error logs are not written individually to the `/logs` folder. 
 
 For example, some hosts configure logging to go to a single central file.  
 
