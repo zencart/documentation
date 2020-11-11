@@ -7,7 +7,7 @@ weight: 8
 
 <font size="12" color="red">Warning!</font>
 
-This is not the [standard upgrade procedure](content/user/upgrading/detailed_upgrading/).  It will DEFINITELY cause you to lose functionality associated with your older customizations and could break things as you will have configuration settings with no associated files (sideboxes, template, etc.).  
+This is not the [standard upgrade procedure](/user/upgrading/detailed_upgrading/).  It will DEFINITELY cause you to lose functionality associated with your older customizations and could break things as you will have configuration settings with no associated files (sideboxes, template, etc.).  
 
 <hr>
 
