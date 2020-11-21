@@ -20,9 +20,13 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 ### Zen Cart 1.5.8 (currently in development phase, not released yet)
 
+- The shopfront function `zen_parse_search_string` is now a shared function but the input parameters have been reversed. Plugins that use this function will require modification.
+
+- The admin function `zen_get_countries` is now a shared function but returns different array keys. Admin plugins that use this function may use the new admin function `zen_get_countries_for_admin_pulldown`. 
+
 - The function `zen_cfg_read_only` has been added to the core.  This means any plugin authors who use this function should remove it from the plugin (for 1.5.7+) or wrap it in `if (!function_exists('zen_cfg_read_only'))` (for older versions of Zen Cart). 
 
-- The misspelled notifier `NOTIFIY_ORDER_CART_SUBTOTAL_CALCULATE` has been deprecated and replaced by `NOTIFY_ORDER_CART_SUBTOTAL_CALCULATE`.  (Because of the [event aliasing](/dev/code/notifiers/#event-aliasing) feature, older code that references the misspelled notifier will continue to work, but you should still upgrade your plugins to use the correct one.)
+- The misspelled notifier `NOTIFIY_ORDER_CART_SUBTOTAL_CALCULATE` has been deprecated and replaced by `NOTIFY_ORDER_CART_SUBTOTAL_CALCULATE`. Code that references the misspelled notifier will continue to work (due to the [event aliasing](/dev/code/notifiers/#event-aliasing) feature), but plugins should be updated to use the corrected name.
 
 ### Zen Cart 1.5.7 
 
