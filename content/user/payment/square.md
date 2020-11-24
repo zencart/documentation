@@ -5,7 +5,7 @@ category: payment
 weight: 10
 ---
 
-Since v1.5.6 support for Square Payments is build-in to Zen Cart.
+Since v1.5.6 support for Square Payments is built-in to Zen Cart.
 
 It is also distributed as a [plugin](/user/plugins/about_plugins/), so you can [obtain the latest version of Square Payments for Zen Cart](https://www.zen-cart.com/downloads.php?do=file&id=156) and upgrade (or add it to) your store as needed.
 

@@ -18,7 +18,7 @@ In the examples below, `PAGENAME` and `pagename` refer to either the `cmd=pagena
 
 ## Per-Page CSS Files
 
-You can put your custom CSS for individual Admin pages into page-specific files that will automatically load on those pages.
+You may put your custom CSS for individual Admin pages into page-specific files that will automatically load on those pages.
 
 The convention (and loading order) is:
 
@@ -27,7 +27,7 @@ The convention (and loading order) is:
 - `/zc_plugins/plugin_path...../admin/includes/css/PAGENAME.css`
 - `/YOUR_ADMIN/includes/css/PAGENAME_*.css` (note the `_`, followed by additional characters) **(THIS IS WHERE YOU PUT YOUR CUSTOM CSS)**
 
-You may consider it good practice to put your own page-specific customizations into a non-core file 
+It is a good practice to put your own page-specific customizations into a non-core file 
 (eg: `pagename_mystore.css`) so that there are fewer file conflicts when upgrading.
 
 Plugins not using the zc_plugins structure should put their page-specific CSS additions into a file using a naming convention akin to: `pagename_pluginname.css`
@@ -35,7 +35,7 @@ Plugins not using the zc_plugins structure should put their page-specific CSS ad
 
 ## Per-Page JS Files
 
-You can put your custom Javascript for individual Admin pages into page-specific files that will automatically load on those pages.
+You may put your custom Javascript for individual Admin pages into page-specific files that will automatically load on those pages.
 
 The convention (and loading order) is:
 
@@ -50,7 +50,7 @@ The convention (and loading order) is:
 - `/YOUR_ADMIN/includes/javascript/PAGENAME_*.js` (note the `_`, followed by additional characters)
 - `/YOUR_ADMIN/includes/javascript/PAGENAME_*.php` (note the `_`, followed by additional characters)
 
-You may consider it good practice to put your own page-specific customizations into a non-core file 
+It is a good practice to put your own page-specific customizations into a non-core file 
 (eg: `pagename_mystore.js`) so that there are fewer file conflicts when upgrading.
 
 Plugins not using the zc_plugins structure should put their page-specific custom javascript into a file using a naming convention akin to: `pagename_pluginname.js`
