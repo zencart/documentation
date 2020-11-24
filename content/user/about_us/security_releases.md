@@ -9,6 +9,7 @@ weight: 10
 
 The list of Zen Cart security patches for 1.5.x+ is here: 
 
+*   [Patch for 1.5.7/1.5.7a (November 2020)](https://www.zen-cart.com/showthread.php?227448-Security-Patch-for-v157-v157a)
 *   [Notify Patch (July 2019)](https://www.zen-cart.com/showthread.php?225676-Security-Patch-for-all-versions-prior-to-v156c)
 *   [PHPMailer Patch (Dec 2016)](https://www.zen-cart.com/showthread.php?221619-Patch-PHPMailer-security-patch-(Dec-2016)-for-v155c-and-older)
 *   [Admin Privilege Escalation patches (12 May 2016)](https://www.zen-cart.com/showthread.php?220186-Patch-for-Admin-Privilege-Escalation-issue-in-v150-v155-(fixed-in-v155a))
