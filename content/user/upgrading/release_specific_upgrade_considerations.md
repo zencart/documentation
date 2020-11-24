@@ -50,7 +50,7 @@ This document lists things you may wish to take into account as you upgrade.  Th
 - The variable `$downloads`, returned from `includes/modules/downloads`, changed from a query result to an array.  The following template files had to be updated to accommodate this change: 
 
     - `tpl_modules_downloads.php`
-    - `tpl_account_history_info_default.php`
+    - `tpl_account_history_info_default.php` (possibly) 
 
     You will want to adjust any copies of these files in your template to process an array rather than a database query.  
 
