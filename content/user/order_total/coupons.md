@@ -67,3 +67,8 @@ Once they fill in the code and press Enter, it will be checked for validity, and
 If they wish to remove a coupon, they can enter a different coupon code, or they can type "REMOVE", and press Enter.
 
 ![Discount Coupon Entry](/images/discount_coupon_entry.png)
+
+## Coupon Types 
+
+The `coupons` table has a `coupon_type` field. The possible values for coupon_type are shown in the `collect_posts` function in `includes/modules/order_total/ot_coupon.php` in Zen Cart 1.5.8 or higher. 
+

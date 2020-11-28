@@ -116,6 +116,13 @@ Path: <b>Configuration > Product Listing</b><br />
 Description: What do you want to use to indicate Sort Order Descending?<br />Default = -</div>
 
 
+<h2 id="columns_per_row">Columns Per Row</h2>
+
+<div class='indent'>Key: <b>PRODUCT_LISTING_COLUMNS_PER_ROW</b><br />
+Path: <b>Configuration > Product Listing</b><br />
+Description: Select the number of columns of products to show per row in the product listing.<br>Recommended: 3<br>1=[rows] mode.</div>
+
+
 <h2 id="include_product_listing_alpha_sorter_dropdown">Include Product Listing Alpha Sorter Dropdown</h2>
 
 <div class='indent'>Key: <b>PRODUCT_LIST_ALPHA_SORTER</b><br />
