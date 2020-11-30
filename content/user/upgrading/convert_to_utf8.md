@@ -15,10 +15,10 @@ If your customers enter emoji symbols in order-comments or contact-us emails, it
 
 Also, older database structures don't handle non-english characters as well as utf8 does, which is why utf8 has been the international "standard" for many years.
 
-Since Zen Cart v1.5.0 all **new** sites install database tables with the UTF8 character-set.<br>
-Since Zen Cart v1.5.6 all **new** sites install database tables with the UTF8MB4 character-set.
+Since Zen Cart v1.5.0 all **new** sites create database tables with the UTF8 character-set.<br>
+Since Zen Cart v1.5.6 all **new** sites create database tables with the UTF8MB4 character-set.
 
-If your site is from an older version, your database might still contain older data structures that don't support modern multibyte characters.
+If your site was created from an older version, your database might still contain older database structures that don't support modern multibyte characters.
 
 **To change the database to utf8mb4, use the instructions below.**
 
