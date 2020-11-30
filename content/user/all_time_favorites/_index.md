@@ -45,9 +45,11 @@ layout: docs
 
 * Multiple Images per Product - Learn how to configure [multiple product images](/user/images/additional_images/).
 
-* [Release history for Zen Cart](/user/about_us/release_history/) - Timeline of releases with links to release notes.  And don't forget the [security patches](/user/about_us/security_releases/), especially if you are not on the latest version. 
+* [Release history for Zen Cart](/user/about_us/release_history/) - Timeline of releases with links to release notes.  (See also [Security Patches](/user/about_us/security_releases/)). 
 
 * [Regular Maintenance for Zen Cart](/user/running/regular_maintenance/) - What kinds of routine maintenance should I be doing? 
+
+* [Security Patches](/user/about_us/security_releases/) are released as issues are discovered. 
 
 * [Server Requirements for running Zen Cart](/user/first_steps/server_requirements/) - Zen Cart version to PHP version matrix.
 
