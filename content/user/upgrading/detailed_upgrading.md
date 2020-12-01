@@ -119,6 +119,14 @@ Here we are taking a list of how your actual site is customized vs the original 
 **Make note of all the files that are "different", and how.**
 In WinMerge you can double-click on each file and note what the differences are.
 
+Here are some examples of how WinMerge will allow you to see differences in files. 
+
+#### Comparing Directories
+![Comparing Directories](/images/upg-dir-compare.png)
+
+#### Comparing Files 
+![Comparing Files](/images/upg-file-compare.png)
+
 #### Types of File Differences
 There will be many differences:
 
