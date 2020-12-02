@@ -1,6 +1,6 @@
 ---
 title: I've got TEXT_MAIN being displayed on my page
-description: Unexpected uppercase words showing in Zen Cart 
+description: Unexpected uppercase words showing in page content or error logs
 category: troubleshooting 
 weight: 10
 ---
