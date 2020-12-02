@@ -22,6 +22,7 @@ You may put your custom CSS for individual Admin pages into page-specific files 
 
 The convention (and loading order) is:
 
+- `/YOUR_ADMIN/includes/css/stylesheet.css` (this is a core file, but is loaded on every page; only edit if your changes are for everywhere)
 - `/YOUR_ADMIN/includes/css/PAGENAME.css`
 - `/zc_plugins/plugin_path...../admin/includes/css/global_stylesheet.css`
 - `/zc_plugins/plugin_path...../admin/includes/css/PAGENAME.css`
