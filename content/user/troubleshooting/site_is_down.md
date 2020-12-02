@@ -22,6 +22,6 @@ To test whether there may actually be a server problem, try these tools:
 
 [GeoPeeker](https://www.geopeeker.com) to view the site from 6 places around the world
 
-[NodePing](https://nodeping.com/?rid=2011092618071CZGM) monitor your site's essential services and be notified by email/SMS when problems occur.
+[NodePing](https://nodeping.com/?rid=2011092618071CZGM) monitors your site's essential services and notifies you by email or SMS when problems occur.
 
 And of course, contact your Hosting Company for assistance if the site is indeed down (not responding).
