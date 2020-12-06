@@ -7,12 +7,18 @@ aliases:
    - /user/template/customizing
 ---
 
-To get ideas about building your own template, take a look at the 
-other templates available for Zen Cart. 
+## Looking to build your own template?
+
+First, before you do that, consider using the Bootstrap4 template, as it has a good modern interface and its colors can be customized directly from the Admin. For more specific customization, its CSS is easy to customize by virtue of using the standards-based Bootstrap framework.
+It is already mobile-friendly, and has a clean "look" to it.
+
+## Other Templates
+
+To get ideas about building your own template, take a look at the other templates available for Zen Cart. 
 
 {{< templates >}}
 
-<br><br>
+## Creating Your Own Template
 
 This is an outline of the steps you should follow: 
 
@@ -24,10 +30,11 @@ This is an outline of the steps you should follow:
     common/
     css/
     images/
+    jscript/
     templates/
     ```
 
-1. copy the existing files from the `responsive_classic/css` and `responsive_classic/images` into the appropriate folders in your new working area
+1. copy the existing files from the `responsive_classic/css` and `responsive_classic/images` into the appropriate folders in your new working area. Also copy the `responsive_class/jscript/jscript_framework.php` file to your new `jscript` folder.
 
 1. copy `tpl_header.php` from the `responsive_classic/common` folder.  You'll want to edit this file to incorporate your custom page-header.  This file governs the appearance of the top of all of your pages.
 
