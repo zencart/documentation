@@ -9,7 +9,7 @@ aliases:
 
 ## Looking to build your own template?
 
-First, before you do that, consider using the Bootstrap4 template, as it has a good modern interface and its colors can be customized directly from the Admin. For more specific customization, its CSS is easy to customize by virtue of using the standards-based Bootstrap framework.
+First, before you do that, consider using the [Bootstrap4 template](https://www.zen-cart.com/downloads.php?do=file&id=2191), as it has a good modern interface and its colors can be customized directly from the Admin. For more specific customization, its CSS is easy to customize by virtue of using the standards-based Bootstrap framework.
 It is already mobile-friendly, and has a clean "look" to it.
 
 ## Other Templates
