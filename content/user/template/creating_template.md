@@ -22,9 +22,9 @@ To get ideas about building your own template, take a look at the other template
 
 This is an outline of the steps you should follow: 
 
-1. make a new folder, perhaps something like `includes/templates/mary`.  This is the working area for your own custom template
+1. make a new folder, perhaps something like `includes/templates/mary`.  This is the working area for your own custom template.
 
-1. make 4 subfolders in there:
+1. make the following subfolders in there:
 
     ```
     common/
