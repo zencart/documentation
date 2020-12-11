@@ -22,6 +22,7 @@ An example of a plugin which adds a date field is [Order Delivery Date](https://
 To get the custom field `order_delivery_date` into the new format, use following command in phpMyAdmin or in [Install SQL Patches](/user/admin_pages/tools/install_sql_patches/): 
 
 ```
+SET SQL_MODE = "ALLOW_INVALID_DATES";
 UPDATE orders SET order_delivery_date = '0001-01-01 00:00:00' WHERE order_delivery_date < '0001-01-01';
 ```
 
