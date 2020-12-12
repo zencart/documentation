@@ -155,10 +155,8 @@ $EMAIL_MESSAGE_HTML (actual pwd reset info)
 ## CATALOG AREA:
 
 ### Contact-Us
-```
-$CONTACT_US_OFFICE_FROM (Office-Use: contains from email address & contact name)  
-$EMAIL_MESSAGE_HTML (message composed by customer to admin)  
-```
+NOTE: Contact-Us emails are always sent as text. This helps prevent some spam issues.
+
 
 ### Welcome Email
 ```
