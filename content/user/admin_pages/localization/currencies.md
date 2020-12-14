@@ -235,6 +235,8 @@ A series of entry fields, same as provided for the _add new currency_ button wil
 
 If you no longer want a particular currency, click on the line showing the currency you want to delete. The right arrow will appear in the action column, then click on the _delete_ button. You will be asked to confirm if you want to delete that currency. Click on the _delete_ button again to do so, or click the _cancel_ button if you do not wish to delete this particular currency.
 
+If you are deleting all currencies except your "default" currency, be sure to set that Default currency's exchange rate Value to 1.0000.
+
 ## Not displaying the Currencies box
 
 If you only operate with one currency, Euro for example, you may wish to delete all others and set the exchange value to 1.
