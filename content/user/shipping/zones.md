@@ -37,7 +37,8 @@ When you enter these country lists, enter them into the Zone X Countries fields,
 
 1: US  
 2: CA  
-3: AT,BE,GB,FR,DE,GL,IS,IE,IT,NO,NL,DK,PL,ES,SE,CH,FI,PT,IL,GR 4: JP,AU,NZ,SG  
+3: AT,BE,GB,FR,DE,GL,IS,IE,IT,NO,NL,DK,PL,ES,SE,CH,FI,PT,IL,GR
+4: JP,AU,NZ,SG  
 5: TW,CN,HK  
 
 Now you need to set up the shipping rate tables for each zone. Again, some time and effort will go into setting the appropriate rates. You will define a set of weight ranges and the shipping price for each range. 
