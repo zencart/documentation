@@ -44,7 +44,7 @@ Here's how Zen Cart's email interface works:
 3.  change send-to email addresses ... DO NOT TEST USING FREE MAIL SERVICES ... your mail is often dropped to a junkmail black hole.
 4.  be sure there are no embedded carriage returns in your send-to email addresses.
 5.  check your junkmail settings.
-6.  research whether your mailserver or hosting company is blacklisted (you can check [http://www.mxtoolbox.com/blacklists.aspx](http://www.mxtoolbox.com/blacklists.aspx) or google for _smtp blacklist_ for additional resources)
+6.  research whether your mailserver or hosting company is blacklisted (you can check [http://www.mxtoolbox.com/blacklists.aspx](http://www.mxtoolbox.com/blacklists.aspx) or search online for _smtp blacklist_ for additional resources)
 7.  try setting the option for **Emails must send from known domain?** to true. This causes the email "sender" address to be more aligned to your own website, and thus less likely to be rejected while processing. This should always be set to true nowadays.
 8.  try testing with HTML emails OFF, since many spam filters block HTML-formatted messages before they even get out the gate.
 9.  check the mailserver logs ... is it complaining about something, either inbound or outbound?
@@ -80,4 +80,9 @@ Ask your host whether your/their mailserver is blacklisted by anyone. If so, try
 Is your account's SPF record correct? DKIM?
 
 AOL and Hotmail dump emails originating from server/client IP addresses that fail DNS reverse lookup. You should talk to your webhost to ensure that your webserver and hosting account / domain are properly configured with a PTR or DNS reverse lookup.
+
+### Email Treated As Spam?
+
+You might want to register your domain with [Google Postmaster Tools](https://postmaster.google.com/) to let it collect data about emails you send to recipients using Google's email platform, so that it can report to you any issues it detects with emails you're sending to them.
+
 
