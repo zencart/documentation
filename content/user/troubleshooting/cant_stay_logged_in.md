@@ -24,7 +24,7 @@ Before you begin, be sure you are familiar with the structure and contents of [c
 **NEXT, try to rule out a bad SSL configuration:**  
 
 - clear browser cache AND cookies and try again. If it's still not working:  
-- edit your `/admin/includes/configure.php` and change `HTTP_SERVER` to a URL that does NOT start with `https`  
+- temporarily edit your `/admin/includes/configure.php` and change `HTTP_SERVER` to a URL that does NOT start with `https` (just as a test)
 - clear browser cache AND cookies and try again  
 
 **IS IT A DOMAIN NAME PROBLEM?**
