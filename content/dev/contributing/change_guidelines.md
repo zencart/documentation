@@ -13,6 +13,8 @@ For non-trivial changes, the best practice is to have a single PR for each issue
 * A user may wish to see how to resolve a specific problem in their currently running cart, and wants to change the fewest things possible.
 * A small self-contained (aka "canonical") changeset is easier to evaluate.
 
+### How To Get My Changes Reviewed And Accepted?
+[How To Make Your Code Reviewer Fall In Love With You](https://mtlynch.io/code-review-love/) should be required reading for everyone submitting code.
 
 ## Bug Fixes and Formatting 
 When changing existing files, try not to make large formatting changes. 
