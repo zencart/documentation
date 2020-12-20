@@ -60,7 +60,7 @@ This is for the purpose of maintainability, and controlling understanding of the
 
 ## Require and Include statements 
 
-When doing a `require` or `include`, use single quotes and no brackets. 
+When doing a `require` or `include`, use single quotes and no parentheses. 
 
 ```
 require DIR_WS_INCLUDES . 'footer.php';
@@ -68,7 +68,9 @@ require DIR_WS_INCLUDES . 'footer.php';
 
 ## Quotation marks 
 
-Remember that double quoted strings are checked for interpolation.  So prefer single quoted strings in cases where variables are not used.  If single and double quotes are used within a string, use single quotes on the outside.
+Remember that double quoted strings are checked for interpolation.  
+
+Use single quoted strings in cases where variables are not used.  If single and double quotes are used within a string, use single quotes on the outside.
 
 ```
 echo 'Token set. You may now continue configuring the module.'; 
@@ -129,10 +131,10 @@ Note that this rule is not required in cases where a block is opened by PHP (as 
 End an array with a comma and put the closing bracket on a new line.  In this way, plugin authors can just insert a line after the last entry and have a smaller diff: 
 
 ```
-   ... 
+[
    'class' => $totals->fields['class'],
    'value' => $totals->fields['value'],
-);
+];
 ```
 
 
@@ -144,7 +146,7 @@ Where possible, try to keep these things separate:
 - Files in `includes/templates` should be where display markup resides (not extensive logic).
 
 ## Static Data 
-Try to avoid db tables that are strictly static data, unless they're useful in query joins with other relational data.  Keep this information in code files instead. If it needs to be globally available, use `extra_configures`.
+Try to avoid creating db tables that are strictly static data, unless they're useful in query joins with other relational data.  Keep this information in code files instead. If it needs to be globally available, use `extra_configures`.
 
 ## Namespaced Autoloading
 In Zen Cart 1.5.7 some code is now using the [PSR-4 autoloading standard](https://www.php-fig.org/psr/psr-4/) for handling code in the \ZenCart namespace (ie: the files in `/includes/library`).
