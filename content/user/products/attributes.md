@@ -1,18 +1,18 @@
 ---
 title: Attributes - adding to products
-description: Creating variant products using attributes
+description: Creating product variants using attributes
 category: products
 weight: 10
 ---
 
-There are 3 parts to [attributes](/user/products/attributes_info/):  
+There are three aspects to adding [attributes](/user/products/attributes_info/) to a product:  
 
-*   Option Name
-*   Option Value
-*   Attribute on the product
+*   Option Name: The name of the option/attribute/variant
+*   Option Value: The values that the option may have
+*   Attribute: Assigning those option names and values to the product
 
 
-### Defining Option Names:
+## Defining the Option Names
 
 This is done in [Admin > Catalog > Option Name Manager](/user/admin_pages/catalog/option_name_manager/).
 
@@ -21,18 +21,18 @@ This is done in [Admin > Catalog > Option Name Manager](/user/admin_pages/catalo
 
 **Color**  
 
-a) Order (This is the sort order the Option Name displays on the screen.)  
+a) Sort Order - determines the order in which multiple Option Names are displayed.  
 
-b) Select an Option Type:  
+b) Option Type:  
 
-*   Dropdown (note when only 1 option value this will automatically be switched to a Radio Button and later when more than one value it will automatically switch to the dropdown)
+*   Dropdown (note that a dropdown with only a single value assigned will be displayed as a radio button)
 *   Radio Button
 *   Checkbox
-*   TEXT (this does not get an Option Value)
-*   FILE (This does not get an Option Value)
-*   READONLY (this is for **Display Purposes Only** and is not part of a calculation nor does it appear in the Shopping Cart or the Order. It is more or less an Informational Attribute that can be used with 1 to many products and then, later, changed in one place to change on all products.)
+*   TEXT (this does not have an Option Value)
+*   FILE (This does not have an Option Value)
+*   READONLY (this is for **Display Purposes Only** and is not part of a calculation nor does it appear in the Shopping Cart or the Order. It is effectively an Informational Attribute that can be used with multiple products to easily make a global change to those products).
 
-On some Option Names, based on the Type.  There are more settings if you Edit the Option Name:  
+On some types of Option Names there are more settings available if you Edit the Option Name:  
 
 For Option Type TEXT:  
 
@@ -44,25 +44,36 @@ For Option Type Radio buttons and checkboxes:
 
 *   There are choices of image layout
 
-### Defining Option Values
+## Defining Option Values
 
 This is done in [Admin > Catalog > Option Value Manager](/user/admin_pages/catalog/option_value_manager/).
 
-a) Pick the Option Name  
-b) Give a Name like Red  
-c) Give a default Sort Order  
+a) Select the Option Name  
+b) Add a value such as "Red"  
+c) Enter a Sort Order  
 
-The sort order is used if you want to globally sort your Option Values to match otherwise you can set these manually per product or later update a product, category or whole store.  
+The sort order is used if you want to globally sort your Option Values to be the same, otherwise you can set these manually per product or later update a product, category or whole store.
 
-### Attributes Controller
 
-Now you should have made several Option Names like 
+### Default Option Value
+When you have Option Names that have more than one Value, it is a good idea to define a Default Option Value, which will be pre-selected when the product page is first loaded.
+
+There are three options for setting a Default:
+1. Any valid option could be a default.
+2. You could create a compulsory option value named "Choose:" but flag it as *For Display Purposes only* to not allow it to be added to the shopping cart (eg: they must choose another option value from the other values you define).
+3. You could create an optional option value named "None" so the customer can opt out of selecting a value (in this case you should **not** flag the option as *For Display Purposes only* so that a purchase may proceed with the default still selected).
+
+
+
+## Example
+
+Now you may have several Option Names such as: 
 
 *   Color
 *   Size
 *   etc.
 
-And then set the Option Values for these like:  
+with assigned Option Values such as:  
 
 *   Red
 *   Orange
@@ -82,9 +93,9 @@ and
 *   X-Large
 *   X-Small
 
-Using the Default Sort Order on these values will help you later in getting them into a nice display on the product pages.  
+Setting a Default Sort Order on these values determines the order of display on the product page. 
 
-Example, to create the Option Values for the Option Name **Color:**  
+For example, to create the Option Values for the Option Name **Color:**  
 
 Option Name Color  
 Option Value Red  
@@ -122,43 +133,34 @@ Option Name Color
 Option Value White  
 Option Sort Order 90  
 
-It is also a good idea to make a Default Option Value that the Customer **cannot** add to the cart to force the Customer to make a proper choice with:  
+## Attributes Controller
 
-Option Name Color  
-Option Value Pick a Color from Below (or something that suits your site best)  
-Option Sort Order 0  
-Default Attribute to be Marked Selected: YES  
-Use for Display Purposes Only: YES  
-
-**Adding the Attributes to the Products**  
-
-So now to add them to the products.  
+**Adding Attributes to the Product**  
+  
 This is done via the Attributes Controller  
 
-**a) Select a Product to add Attributes to**  
+**a) Select the Product**  
 
-You can look up a product in a couple ways:
+Choose a Category. The categories listed with a `*` have products in them. Choosing a category with products will display the first product and the Previous/Next buttons.
 
-- Either pick a Category or a Product  
-- When you pick a category, the ones with a `*` have products in them and this will display the first product Previous/Next  
-- When you pick a product,  click display, this sets the category to this product's master category id, so you can now use the Previous/Next if you like.  
+Navigate through the category with the Previous/Next buttons or choose a product from the dropdown list.
 
 **b) Add the Attribute Option Name+Value Pairs**  
 
-Once the Product is displayed that you want to add attributes to, go to the Add Attributes box  
+Once the required Product is selected, go to the Adding New Attributes box  
 
-- The Product Name should already be selected.  
+1\. Select the Option Name.  
+This will display all the Option Values defined for that Name.
 
-1\. Now select the Option Name  
+2\. Select an Option Value to add to the product.  
 
-2\. Next select a matching Option Value, notice they say what kind of Option Type you have selected.  ie:  Blue [COLOR]  
-    You will notice the Option Values say their names and next to them the Option Name that they match to.  
+3\. Edit the parameters associated with the Value.
 
-3\. Depending on what you want to do with attributes there are several methods to price, add weight, sort order, and mark the type of attribute this is.  
+Price display is determined by the product option [priced by attribute](/user/products/attribute_pricing/#product-priced-by-attributes-vs-attributes-with-prices/). 
 
 Price can be entered with a prefix of + or - or blank.  
 
- \+ and blank will add the attribute price  
+ \+ and blank will add the attribute price   
  \- will subtract the attribute price  
 
 Weight can be entered optionally if it effects the product weight with a prefix of + or - or blank.  
@@ -180,26 +182,28 @@ which are controlled by attribute settings.
 
 See [Attributes Controller](/user/admin_pages/catalog/attributes_controller/). 
 
-4\. Then there are the Attribute Flags in the colored boxes.  
-These are used to help distinguish other features of the attribute such as:  
+4\. The Attribute Flags in the colored boxes define behaviours of the attribute such as:  
 
-*   Use for display only (attribute cannot be selected and added to cart. Good for things like "Select from Below" to force the customer to make their own choice and not just hit Add to Cart and get a pink snail instead of a blue snail.
-*   Attribute is Free when product is Free (Some products you may set to Free, but the some attributes are free and some attributes cost money.)
-*   Default Attribute (Should be used especially on Radio buttons, or if you have an attribute you prefer the customer selects.)
-*   Apply Discounts used by Product Sale/Special (this will apply the same type of discount that the product is getting from the products_price vs the special or sale price.)
-*   Include in Base Price (when products are priced by attributes mark the attributes include in base price then the lowest price in each Option Name group are added together to make up the product price. 
-**NOTE:** when not the product is not marked priced by attribute this setting has no effect on the price.)
-*   Attribute Required for TEXT (Some text is required text and cannot be left blank by the customer.)
+*   Used for display purposes only (attribute cannot be selected and added to cart).  
+ If this is enabled, it forces the customer to choose a different option to the default (which could be "Choose" for example). If this is not enabled, it allows a purchase to be made without selecting a non-default option (a default option may be "None" in this case) i.e. making the attribute optional.  
+    Good for things like "Select from Below" to force the customer to make their own choice and not just hit Add to Cart and get a pink snail instead of a blue snail.
+*   Attribute is Free when product is Free. Some products you may set to Free, but then some attributes may be free and some attributes not.
+
+*   Default Attribute (shown selected on page first-load) should be used especially with Radio buttons, or if you have an attribute you would prefer the customer to select.
+*   Apply Discounts used by Product Sale/Special. This will apply the same type of discount that the product is getting from the products_price vs the special or sale price.
+*   Include in Base Price. When products are priced by attributes, attributes marked include in base price are added to the base price. The lowest priced option value is used from each option name.
+**NOTE:** when the product is not priced by attribute this setting has no effect on the price.
+*   Attribute Required for TEXT. Some text is required text/cannot be left blank by the customer.
 
 5\. If this attribute is a downloadable file, enter the filename.  
 
 6\. **Be sure to click Add to add the newly-defined Attribute.**  
 You can always edit or delete them after adding.  
 
-When done, you can update the sort orders for the product to the Option Value sort order by pressing the button at the top of the page.  
+When done, you may update the sort orders for the product to the Option Value default sort order by choosing that Additional Action, at the top of the page..  
 
 ### Downloadable Products
 
-Note: if you plan on using downloads, be sure you have configured your Attribute Settings for the files.  See **Admin > Configuration > Attribute Settings**.  
+Note: if you plan on using downloads, be sure you have configured your Attribute Settings for the files. See **Admin > Configuration > Attribute Settings**.  
 
 For more information, see [configuring downloadable attributes](/user/products/downloadable/).
