@@ -7,12 +7,12 @@ weight: 10
 
 There are three aspects to adding [attributes](/user/products/attributes_info/) to a product:  
 
-*   Option Name: The name of the option/attribute/variant
+*   Option Name: The name of the option
 *   Option Value: The values that the option may have
-*   Attribute: Assigning those option names and values to the product
+*   Attribute: Assigning the combinations of those option names and values to the product, creating the desired variants
 
 
-## Defining the Option Names
+## Defining Option Names
 
 This is done in [Admin > Catalog > Option Name Manager](/user/admin_pages/catalog/option_name_manager/).
 
@@ -133,10 +133,8 @@ Option Name Color
 Option Value White  
 Option Sort Order 90  
 
-## Attributes Controller
+## Assigning Attributes Variants To Products
 
-**Adding Attributes to the Product**  
-  
 This is done via the Attributes Controller  
 
 **a) Select the Product**  
@@ -204,6 +202,6 @@ When done, you may update the sort orders for the product to the Option Value de
 
 ### Downloadable Products
 
-Note: if you plan on using downloads, be sure you have configured your Attribute Settings for the files. See **Admin > Configuration > Attribute Settings**.  
+Note: if you plan on using downloads, be sure you have configured your Attribute Settings for handling files. See **Admin > Configuration > Attribute Settings**.  
 
 For more information, see [configuring downloadable attributes](/user/products/downloadable/).
