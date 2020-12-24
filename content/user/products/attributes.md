@@ -7,12 +7,12 @@ weight: 10
 
 There are three aspects to adding [attributes](/user/products/attributes_info/) to a product:  
 
-*   The name of the option/attribute/variant
-*   The values that the option may have
-*   Assigning that option name and values to the product
+*   Option Name: The name of the option/attribute/variant
+*   Option Value: The values that the option may have
+*   Attribute: Assigning those option names and values to the product
 
 
-### Defining the Option Name:
+## Defining the Option Names
 
 This is done in [Admin > Catalog > Option Name Manager](/user/admin_pages/catalog/option_name_manager/).
 
@@ -44,7 +44,7 @@ For Option Type Radio buttons and checkboxes:
 
 *   There are choices of image layout
 
-### Defining Option Values
+## Defining Option Values
 
 This is done in [Admin > Catalog > Option Value Manager](/user/admin_pages/catalog/option_value_manager/).
 
@@ -52,9 +52,20 @@ a) Select the Option Name
 b) Add a value such as "Red"  
 c) Enter a Sort Order  
 
-The sort order is used if you want to globally sort your Option Values to be the same, otherwise you can set these manually per product or later update a product, category or whole store.  
+The sort order is used if you want to globally sort your Option Values to be the same, otherwise you can set these manually per product or later update a product, category or whole store.
 
-### Attributes Controller
+
+### Default Option Value
+When you have Option Names that have more than one Value, it is a good idea to define a Default Option Value, which will be pre-selected when the product page is first loaded.
+
+There are three options for setting a Default:
+1. Any valid option could be a default.
+2. You could create a compulsory option value named "Choose:" but flag it as *For Display Purposes only* to not allow it to be added to the shopping cart (eg: they must choose another option value from the other values you define).
+3. You could create an optional option value named "None" so the customer can opt out of selecting a value (in this case you should **not** flag the option as *For Display Purposes only* so that a purchase may proceed with the default still selected).
+
+
+
+## Example
 
 Now you may have several Option Names such as: 
 
@@ -82,7 +93,7 @@ and
 *   X-Large
 *   X-Small
 
-Using a Default Sort Order on these values define the order of display on the product page. 
+Setting a Default Sort Order on these values determines the order of display on the product page. 
 
 For example, to create the Option Values for the Option Name **Color:**  
 
@@ -122,9 +133,7 @@ Option Name Color
 Option Value White  
 Option Sort Order 90  
 
-It is also a good idea to define a Default Option Value, which is the option value pre-selected when the product page is first loaded.
-It may be "Choose" for a compulsory attribe (in this case the option will be flagged as For Display Purposes only in the Attributes Controller to not allow it to be added to the shopping cart).
-It may be "None" for an optional attribute (in this case the option will be flagged as not For Display Purposes only in the Attributes Controller to allow a purchase to proceed with the default still selected).
+## Attributes Controller
 
 **Adding Attributes to the Product**  
   
