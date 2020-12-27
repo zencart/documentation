@@ -22,9 +22,12 @@ An example of a plugin which adds a date field is [Order Delivery Date](https://
 To get the custom field `order_delivery_date` into the new format, use following command in phpMyAdmin or in [Install SQL Patches](/user/admin_pages/tools/install_sql_patches/): 
 
 ```
-SET SQL_MODE = "ALLOW_INVALID_DATES";
-UPDATE orders SET order_delivery_date = '0001-01-01 00:00:00' WHERE order_delivery_date < '0001-01-01';
+UPDATE orders SET order_delivery_date = '0001-01-01 00:00:00' WHERE CAST(order_delivery_date AS CHAR(19)) = '0000-00-00 00:00:00';
 ```
+
+**Note**: If you use that command on phpMyAdmin and your site uses a `DB_PREFIX` (e.g. `zen_`), you will need to add that prefix to any database table name.  For the example above, you'll replace `orders` with `zen_orders`.
+
+
 
 For reference, the script that does the date updating is stored in `zc_install/sql/install/zero_dates_cleanup.sql`.
 
