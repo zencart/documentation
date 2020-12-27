@@ -19,11 +19,16 @@ However, the upgrade process can only do this for built-in fields.  If you have 
 
 An example of a plugin which adds a date field is [Order Delivery Date](https://www.zen-cart.com/downloads.php?do=file&id=683).  It adds a field called `order_delivery_date` to the `orders` table. 
 
-To get the custom field `order_delivery_date` into the new format, use following command in phpMyAdmin or in [Install SQL Patches](/user/admin_pages/tools/install_sql_patches/): 
+To get the custom `datetime` field `order_delivery_date` into the new format, use following command in phpMyAdmin or in [Install SQL Patches](/user/admin_pages/tools/install_sql_patches/): 
 
 ```
-SET SQL_MODE = "ALLOW_INVALID_DATES";
-UPDATE orders SET order_delivery_date = '0001-01-01 00:00:00' WHERE order_delivery_date < '0001-01-01';
+UPDATE orders SET order_delivery_date = '0001-01-01 00:00:00'
+WHERE CAST(order_delivery_date AS CHAR(19)) = '0000-00-00 00:00:00';
+```
+
+or if the field were just a `date` field then:
+```
+UPDATE thetablename SET thefieldname = '0001-01-01' WHERE CAST(thefieldname AS CHAR(10)) = '0000-00-00';
 ```
 
 For reference, the script that does the date updating is stored in `zc_install/sql/install/zero_dates_cleanup.sql`.
