@@ -19,13 +19,18 @@ However, the upgrade process can only do this for built-in fields.  If you have 
 
 An example of a plugin which adds a date field is [Order Delivery Date](https://www.zen-cart.com/downloads.php?do=file&id=683).  It adds a field called `order_delivery_date` to the `orders` table. 
 
-To get the custom field `order_delivery_date` into the new format, use following command in phpMyAdmin or in [Install SQL Patches](/user/admin_pages/tools/install_sql_patches/): 
+To get the custom `datetime` field `order_delivery_date` into the new format, use following command in phpMyAdmin or in [Install SQL Patches](/user/admin_pages/tools/install_sql_patches/): 
 
 ```
 UPDATE orders SET order_delivery_date = '0001-01-01 00:00:00' WHERE CAST(order_delivery_date AS CHAR(19)) = '0000-00-00 00:00:00';
 ```
 
-**Note**: If you use that command on phpMyAdmin and your site uses a `DB_PREFIX` (e.g. `zen_`), you will need to add that prefix to any database table name.  For the example above, you'll replace `orders` with `zen_orders`.
+or if the field were just a `date` field then:
+```
+UPDATE thetablename SET thefieldname = '0001-01-01' WHERE CAST(thefieldname AS CHAR(10)) = '0000-00-00';
+```
+
+**Note**: If you run that command via phpMyAdmin and your site uses a `DB_PREFIX` (e.g. `zen_`), you will need to add that prefix to any database table name.  For the example above, you'll replace `orders` with `zen_orders`.
 
 
 
