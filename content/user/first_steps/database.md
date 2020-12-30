@@ -23,6 +23,10 @@ Generally speaking, a Zen Cart store only uses **one** database at a time.
 
 **THIS MEANS YOU SHOULD NEVER RESTORE or IMPORT a different database into your live store's database unless you're absolutely certain that you wish to WIPE OUT the existing data!!!**  
 
+## What permissions does a database need?
+
+See the [Installation docs](/user/first_steps/how_do_i_install/#5-have-you-created-a-database) for database creation and permissions details.
+
 ## What are prefixes? 
 
 Zen Cart supports the use of "table prefixes" to differentiate between its own tables and the tables used by other web applications sharing the database. It identifies the tables which it uses *within* that database by the `DB_PREFIX` setting in your configure.php file.  Prefixes often have the value `zen_` or `zc_`.
