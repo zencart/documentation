@@ -1,25 +1,27 @@
 ---
 title: SSL certificate - yes you need one 
-description: Why your online store should be using SSL
+description: Why your online store should be using SSL / HTTPS
 category: first_steps 
 weight: 10
 ---
 
-If you understand that you need an SSL certificate, you can skip this article.
+Using HTTPS for secure communication is the norm, and expected, on all websites -- especially those engaged in e-commerce.
+
+If you understand that you need to use HTTPS and already have an SSL certificate, you can skip this article.
 
 If you're not sure what an SSL certificate is, please review [what is an SSL certificate](/user/security/ssl_cert/) first.
 
 <hr>
 
-Many storeowners are uncertain whether they should add an SSL to their site, citing various reasons, including cost and complexity of setup.  
+Many storeowners are uncertain whether they should use HTTPS (add SSL to their site), citing various reasons, including cost and complexity of setup.  
 
-**MODERN ANSWER: Yes, you should use SSL on your site. Not only does it lend to protecting sensitive information, but it is also becoming more and more important for good search engine ranking nowadays.**  
+**MODERN ANSWER: Yes, you should use SSL on your site. Not only does it lend to protecting sensitive information, it is also important for good search engine ranking nowadays.**  
 
 Now for the technical and bigger-picture explanation:  
 
 Here are the things to consider:  
 
-**WHY USE SSL?**  
+**WHY USE SSL?**
 
 SSL encrypts communications between your customer's browser and your webserver. This means nobody can snoop on what they're transmitting to you (such as someone spying on internet traffic in a cafe or wifi hotspot, or library)  
 
@@ -31,12 +33,12 @@ Years ago, there was a line of thinking that if your site did payment collection
 
 Even back then, this was bad advice.  
 
-Here's why: without an SSL certificate, traffic to and from your website transmits over the Internet in clear plain text.  So, anyone who's watching can see what's being sent. 
+Here's why: without using HTTPS (SSL), traffic to and from your website transmits over the Internet in clear plain text.  So, anyone who's watching can see what's being sent. 
 
 - Without an SSL certificate, your admin credentials are transmitted in plain text, meaning anyone can see them and get access to your admin panel. 
 - Without an SSL certificate, your customer's personal information and purchase data are transmitted in plain text, meaning anyone who is watching can record these details. 
 
-Finally, SSL is considered a ranking factor by Google. And, many browsers now warn customers not to purchase from sites that don't have an SSL. 
+Finally, SSL is considered a ranking factor by Google. And, many browsers now warn customers not to purchase from sites that don't use SSL / HTTPS. 
 
 See that ugly warning? 
 
@@ -46,7 +48,7 @@ See that ugly warning?
 
 **HOW DOES ZEN CART IMPLEMENT MY SSL?**  
 
-Arrange an SSL certificate with your hosting company, and then update your `configure.php` files to use your SSL URL address (the one starting with `https` rather than `http`) for the value (second parameter) of each of these defines. 
+Arrange for an SSL certificate with your hosting company, and then update your `configure.php` files to use your SSL URL address (the one starting with `https` rather than `http`) for the value (second parameter, the URL) of each of these defines:
 
 `includes/configure.php`: update your `HTTP_SERVER` and `HTTPS_SERVER` defines. 
 
@@ -72,7 +74,7 @@ Installing an SSL certificate is a subject specific to your hosting account. Wor
 
 Then make sure you can visit your site using your SSL URL without getting server errors.  
 
-And then you can tell Zen Cart to use your new SSL URL. See the FAQ below for that part.  
+And then you can tell Zen Cart to use your new SSL URL. See the defines above, or consult the FAQs below for that part.  
 
 ### Further Related Reading:  
 
