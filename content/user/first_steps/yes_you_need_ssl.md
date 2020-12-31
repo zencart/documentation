@@ -11,7 +11,7 @@ If you're not sure what an SSL certificate is, please review [what is an SSL cer
 
 <hr>
 
-Many storeowners are uncertain whether they should add SSL to their site, citing various reasons, including cost and complexity of setup.  
+Many storeowners are uncertain whether they should add an SSL to their site, citing various reasons, including cost and complexity of setup.  
 
 **MODERN ANSWER: Yes, you should use SSL on your site. Not only does it lend to protecting sensitive information, but it is also becoming more and more important for good search engine ranking nowadays.**  
 
@@ -31,13 +31,12 @@ Years ago, there was a line of thinking that if your site did payment collection
 
 Even back then, this was bad advice.  
 
-Here's why: without an SSL certificate, traffic to and from your website transits the Internet in clear plain text.  So anyone who's watching can see what's being sent. 
+Here's why: without an SSL certificate, traffic to and from your website transmits over the Internet in clear plain text.  So, anyone who's watching can see what's being sent. 
 
 - Without an SSL certificate, your admin credentials are transmitted in plain text, meaning anyone can see them and get access to your admin panel. 
-- Without an SSL certificate, your customer's personal information and purchase data are transmitted in plain text, meaning anyone who's watching can record these details. 
+- Without an SSL certificate, your customer's personal information and purchase data are transmitted in plain text, meaning anyone who is watching can record these details. 
 
-Finally, SSL is considered a ranking factor by Google, and many browsers
-now warn customers not to purchase from sites that don't have SSL. 
+Finally, SSL is considered a ranking factor by Google. And, many browsers now warn customers not to purchase from sites that don't have an SSL. 
 
 See that ugly warning? 
 
@@ -69,7 +68,7 @@ Change all these defines, even the ones that start with `HTTP_`.  Why?  Because 
 
 **HOW DO I INSTALL A CERTIFICATE?**
 
-Installing an SSL certificate is a subject specific to your hosting account. Work with your hosting company or follow their FAQ documentation to buy and install an SSL certificate in your hosting account.  
+Installing an SSL certificate is a subject specific to your hosting account. Work with your hosting company or follow their FAQ documentation to buy and install an SSL certificate in your hosting account.  Many hosts will provide a free SSL certificate with certain hosting plans.
 
 Then make sure you can visit your site using your SSL URL without getting server errors.  
 
