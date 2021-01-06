@@ -27,36 +27,19 @@ And on the My Account page:
 
 1\. In the Admin, make a new category called Gift Certificates. Add a product to the category called Gift Certificates.  
 
-2\. On the Product Information Page fill in the blanks as follows:  
+2\. On the Product Information Page, use these settings: 
 
-*   Products Status: In Stock
-*   Date Available: leave blank
-*   Products Manufacturer: leave blank
 *   Products Name: Gift Certificate
-*   Product is Free: No
-*   Product is Call for Price: No
-*   Product Priced by Attributes: Yes No  
-    This is up to you, if you choose to price by attributes you only need a single 'product'.
+*   Product Priced by Attributes: This is up to you, if you choose to price by attributes you only need a single 'product'.  Otherwise you need gift certificates at various price points. 
 *   Tax Class: choose appropriate
 *   Products Price (Net): Your price or zero if pricing by attributes.
 *   Products Price (Gross): figured automatically
-*   Virtual Products do not have a shipping charge and do not require a shipping address such a Services, Gift Certificates, etc. Always Free Shipping does not have a shipping charge, but do require a shipping address Downloads are assumed to be Virtual Products - Neither option needs to be marked
 *   Product is Virtual: Yes, Skip Shipping
 *   Always Free Shipping: No.
-*   Products Quantity Box Shows: Yes, Show
-*   Product Qty Minimum: leave blank
-*   Product Qty Maximum: 0 = Unlimited, 1 = No Qty Boxes or Max ##
-*   Product Qty Units: leave blank
-*   Product Qty Min/Unit Mix: leave blank
 *   Products Description: Your description.
 *   Products Quantity: leave blank or put in a large number to track number sold.  
     If you are finding that you cannot add a Gift Certificate to your cart while shopping, try adding a quantity here!
-*   Products Model: GIFT-xxxxx
-*   The model MUST begin with GIFT
-*   Products Image: Upload an image
-*   Upload to directory: choose directory
-*   Products URL: leave blank
-*   Products Weight: leave blank
+*   Products Model: GIFT-xxxxx (Note: The model MUST begin with the string "GIFT")
 
 3\. Click Preview and then Save it.  
 
