@@ -5,10 +5,9 @@ category: admin
 weight: 10
 ---
 
-There are settings in [Admin > Configuration > Maximum Values](/user/admin_pages/configuration/configuration_maximumvalues/) to determine what "New Product" means: 
+The setting [Admin > Configuration > Maximum Values > New Product Listing - Limited to ...](/user/admin_pages/configuration/configuration_maximumvalues/) determines what "New Product" means: 
 
 ```
-New Product Listing - Limited to ...
 Limit the New Product Listing to
 0= All Products
 1= Current Month
@@ -19,6 +18,8 @@ Limit the New Product Listing to
 90= 90 Days
 120= 120 Days
 ```
+
+Reducing this value means a more efficient query for generating a list of new products. 
 
 
 ALTERNATIVE:

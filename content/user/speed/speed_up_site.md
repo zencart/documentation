@@ -47,7 +47,7 @@ In [Admin > Configuration > Attribute Settings](/user/admin_pages/configuration/
 - Enable Attribute Images -- If you're not adding images to your attributes, turn this off  
 - Enable Text Pricing by word or letter -- If you're not offering text attributes which calculate per-word or per-letter, turn this off.  
 
-   (b). In the [Attributes Controller](/user/admin_pages/catalog/attributes_controller/), when you are adding an attribute to a product, set "Apply Discounts Used by Product Special/Sale: No" (assuming that the options don't have cost associated with them); this will heavily reduce your parse times.  
+- In the [Attributes Controller](/user/admin_pages/catalog/attributes_controller/), when you are adding an attribute to a product, set "Apply Discounts Used by Product Special/Sale: No" (assuming that the options don't have cost associated with them); this will heavily reduce your parse times.  
 
 ### Home Page performance 
 If it's primarily your home page (ie: the storefront) that's slow, you might consider turning off content-boxes related to specials and featured products, as they generate a lot of extra queries to extract special pricing information.  
@@ -60,7 +60,7 @@ If you really can't make your categories more lean, consider turning off the pre
 Further, when you have a LOT of products in large numbers of subcategories, you may find significant improvement by going to [Admin > Configuration > Index Listing](/user/admin_pages/configuration/configuration_indexlisting/) and turning off the first 8 settings there (setting them to 0). Adjust as necessary, depending on what content you wish to display.  
 
 ### Reduce New Products window 
-The "new products" selection window is by default set to "Forever". Setting [the new product timeframe to a smaller window](/user/admin/what_is_new/) will make the display of "new products" (in sideboxes and center content-boxes) run much faster, and thus improve speed.  
+The "new products" selection window is by default set to "Forever". The configuration setting  [Admin > Configuration > Maximum Values > New Product Listing - Limited to ...](/user/admin_pages/configuration/configuration_maximumvalues/) tells the system how far back to look when creating a list of new products. [Setting the new product timeframe to a smaller window](/user/admin/what_is_new/) will make the display of "new products" (in sideboxes and center content-boxes) run much faster, and thus improve speed.  
 
 ### Consider GZip Compression
 In some cases, enabling gzip compression can be helpful for people experiencing slowness loading a site over slow internet connections:  
