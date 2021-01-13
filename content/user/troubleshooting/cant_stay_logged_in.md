@@ -25,7 +25,8 @@ Before you begin, be sure you are familiar with the structure and contents of [c
 
 - clear browser cache AND cookies and try again. If it's still not working:  
 - temporarily edit your `/admin/includes/configure.php` and change `HTTP_SERVER` to a URL that does NOT start with `https` (just as a test)
-- clear browser cache AND cookies and try again  
+- clear browser cache AND cookies and try again
+- turn off any .htaccess URL rewrites you may have created (If you've created them wrong then the rewrites/redirects may be breaking everything).
 
 **IS IT A DOMAIN NAME PROBLEM?**
 
@@ -42,6 +43,7 @@ Before you begin, be sure you are familiar with the structure and contents of [c
 
 **Possible causes of session-mgmt problems include:**  
 
+- SSL misconfiguration, or URL-rewrite/redirect misconfiguration
 - cookies are blocked by firewall or by browser configuration  
 - PHP is misconfigured or has certain session settings set to methods incompatible with Zen Cart such as session-auto-start and transitive-sid etc. The installer warns about these if they are a problem.  
 - you have your site configured to store session data in files but your filesystem doesn't have permissions set in such a way as to allow storage of the data  
@@ -54,4 +56,7 @@ Is your "cache" folder set to writable (ie: chmod 755 or some other suitable val
 a) altered files on your server. In that case a proper checkup of all your files is in order: see [Diagnosing obscure issues](/user/troubleshooting/diagnosing_obscure_issues/). 
 
 b) a server configuration change by the hosting company (such as a PHP version change or anything else that might result in changes to the master php.ini configuration for the server or your hosting account).  See [mapping of Zen Cart versions to PHP versions](/user/first_steps/server_requirements/#php-version) for more information about which PHP versions are compatible with your Zen Cart version.
+
+c) domain/SSL changes made to your DNS or hosting account.
+
 
