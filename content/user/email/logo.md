@@ -5,7 +5,6 @@ category: email
 weight: 10
 ---
 
-Related: [Using your logo on packing slips and invoices](/user/customizing/use_company_logo/).
 
 The email logo is contained in the file `email/header.jpg`. 
 
@@ -27,3 +26,6 @@ Sometimes the change will not show up right away in emails that have already bee
 
 **NOTE: ** You must be sending HTML emails for this to work.**  See the Enable HTML Emails setting in [Admin > Configuration > Email Options ](/user/admin_pages/configuration/configuration_emailoptions/) setting.
 
+## Related Articles 
+- [Using your logo on packing slips and invoices](/user/orders/high_res_logo)
+- [Changing the logo in the header](/user/new_user_topics/change_header_logo/)
