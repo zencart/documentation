@@ -43,5 +43,8 @@ and replace it with
 zen_image(DIR_WS_IMAGES . HEADER_LOGO_IMAGE, HEADER_ALT_TEXT, HEADER_LOGO_WIDTH, HEADER_LOGO_HEIGHT);
 ```
 
-Related: [How do I change the logo in my HTML emails?](/user/email/logo/) 
+## Related Articles 
+- [How do I change the logo in my HTML emails?](/user/email/logo/) 
+- [Changing the logo in the header](/user/new_user_topics/change_header_logo/)
+
 
