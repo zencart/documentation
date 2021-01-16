@@ -22,11 +22,11 @@ You may put your custom CSS for individual Admin pages into page-specific files 
 
 The convention (and loading order) is:
 
-- `/YOUR_ADMIN/includes/css/stylesheet.css` (this is a core file, but is loaded on every page; only edit if your changes are for everywhere)
-- `/YOUR_ADMIN/includes/css/PAGENAME.css`
+- `/YOURADMIN/includes/css/stylesheet.css` (this is a core file, but is loaded on every page; only edit if your changes are for everywhere)
+- `/YOURADMIN/includes/css/PAGENAME.css`
 - `/zc_plugins/plugin_path...../admin/includes/css/global_stylesheet.css`
 - `/zc_plugins/plugin_path...../admin/includes/css/PAGENAME.css`
-- `/YOUR_ADMIN/includes/css/PAGENAME_*.css` (note the `_`, followed by additional characters) **(THIS IS WHERE YOU PUT YOUR CUSTOM CSS)**
+- `/YOURADMIN/includes/css/PAGENAME_*.css` (note the `_`, followed by additional characters) **(THIS IS WHERE YOU PUT YOUR CUSTOM CSS)**
 
 It is a good practice to put your own page-specific customizations into a non-core file 
 (eg: `pagename_mystore.css`) so that there are fewer file conflicts when upgrading.
@@ -40,16 +40,16 @@ You may put your custom Javascript for individual Admin pages into page-specific
 
 The convention (and loading order) is:
 
-- `/YOUR_ADMIN/includes/javascript/PAGENAME.js`
-- `/YOUR_ADMIN/includes/javascript/PAGENAME.php`
+- `/YOURADMIN/includes/javascript/PAGENAME.js`
+- `/YOURADMIN/includes/javascript/PAGENAME.php`
 - `/zc_plugins/plugin_path...../admin/includes/javascript/global_jscript.php`
 - `/zc_plugins/plugin_path...../admin/includes/javascript/global_jscript.js`
 - `/zc_plugins/plugin_path...../admin/includes/javascript/PAGENAME.php`
 - `/zc_plugins/plugin_path...../admin/includes/javascript/PAGENAME.js`
 - `/zc_plugins/plugin_path...../admin/includes/javascript/PAGENAME_*.php`  (note the `_`, followed by additional characters)
 - `/zc_plugins/plugin_path...../admin/includes/javascript/PAGENAME_*.js`  (note the `_`, followed by additional characters)
-- `/YOUR_ADMIN/includes/javascript/PAGENAME_*.js` (note the `_`, followed by additional characters)
-- `/YOUR_ADMIN/includes/javascript/PAGENAME_*.php` (note the `_`, followed by additional characters)
+- `/YOURADMIN/includes/javascript/PAGENAME_*.js` (note the `_`, followed by additional characters)
+- `/YOURADMIN/includes/javascript/PAGENAME_*.php` (note the `_`, followed by additional characters)
 
 It is a good practice to put your own page-specific customizations into a non-core file 
 (eg: `pagename_mystore.js`) so that there are fewer file conflicts when upgrading.
