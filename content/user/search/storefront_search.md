@@ -44,3 +44,5 @@ meta_tags_products_description | metatags_description [^2]
 You can see [the database schema](/dev/schema/) if you wish to learn more about how the database is structured. 
 
 The _Search in Product Descriptions_ checkbox is provided because sometimes searching the product description produces false positive search results.   
+
+If the configuration setting [SKIP_SINGLE_PRODUCT_CATEGORIES](/user/admin_pages/configuration/configuration_layoutsettings/#skip_1prod_categories) is true, and a search returns a single value, the product listing page will be bypassed and the product info page will be displayed for the resulting product. 
