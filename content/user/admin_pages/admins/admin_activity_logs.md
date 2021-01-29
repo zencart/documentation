@@ -22,7 +22,7 @@ If you are receiving the message, "The Admin Activity Logs table has records ove
 this is what you should do: 
 
 a) Go to Admins > Admin Activity Logs.  Where it says, "Review or Export Logs," check the box that says "Save to file on server" and press the *Go* button
-on the right.  This will save your logs to disk in case you need them for troubleshooting. 
+on the right.  This will save your logs to disk in case you need them for troubleshooting.  The recommended retention period is 12 months. 
 
 b) At the bottom of the screen, press the *Reset* button.  This will
 take you to the Admin Activity Log Manager manager page.  On this page, 
