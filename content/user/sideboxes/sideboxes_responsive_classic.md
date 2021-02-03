@@ -12,7 +12,7 @@ The responsive classic template will display the built-in sideboxes in the follo
 
 In other modes (phone in portrait or landscape mode, tablet in portrait mode), the built-in sideboxes do not display. 
 
-This behavior is implemented in the several files, so if you want to implement it for *your custom* sideboxes, you'll need to make the changes described below. We'll use the [Mailchimp Sidebox](https://www.zen-cart.com/downloads.php?do=file&id=425) as the example. 
+This behavior is implemented in the several files, so if you want to implement it for *your custom* sideboxes, you'll need to make the changes described below. We'll use the [MailChimp Sidebox](https://www.zen-cart.com/downloads.php?do=file&id=425) as the example. 
 
 
 a) Edit `includes/templates/responsive_classic/css/responsive_default.css`.  Both the landscape and portrait mode blocks of the CSS turn off the built in sideboxes like this: 
