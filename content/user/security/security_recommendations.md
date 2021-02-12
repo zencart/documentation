@@ -64,7 +64,7 @@ A free account on Cloudflare.com will let you manage your DNS through them, and 
 
 By default Cloudflare will then block all kinds of bad traffic automatically for you.
 
-You can set up a firewwall rule (one of five free rules available) to block a "list" of IP addresses that you manage. 
+You can set up a firewall rule (one of five free rules available) to block a "list" of IP addresses that you manage. 
 You can set up other firewall rules to block entire countries. (Be sure to only block countries you will actually never intend to sell to.)
 
 In order for it to work, you must change your domain's Name Servers (in your domain registrar) to point to Cloudflare instead of to your hosting company.
