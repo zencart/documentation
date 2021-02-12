@@ -85,4 +85,6 @@ AOL and Hotmail dump emails originating from server/client IP addresses that fai
 
 You might want to register your domain with [Google Postmaster Tools](https://postmaster.google.com/) to let it collect data about emails you send to recipients using Google's email platform, so that it can report to you any issues it detects with emails you're sending to them.
 
+Also see [email treated as spam](/user/email/spam/)
+
 
