@@ -29,14 +29,14 @@ The following table shows the PHP versions compatible with each version of Zen C
 
 *   <font color="#ff0000">**Zen Cart v1.5.7** is designed for PHP 5.6 through PHP 7.4</font> (it will trigger some errors on PHP 8)
 *   <font color="#ff0000">**Zen Cart v1.5.6** is designed for PHP 5.5 through PHP 7.3</font>
-*   <font color="#ff0000">**Zen Cart v1.5.5** is designed for PHP 5.5 up to PHP 7.1</font> 
+*   <font color="#ff0000">**Zen Cart v1.5.5** is designed for PHP 5.5 through PHP 7.1</font> 
 *   <font color="#ff0000">**Zen Cart v1.5.4** is designed for PHP 5.5 and PHP 5.6</font> 
-*   **Zen Cart v1.5.3** is compatible with PHP 5.3.7 thru PHP 5.6 
-*   **Zen Cart v1.5.2** is compatible with PHP 5.3.7 thru PHP 5.6 (or PHP 5.2.14 with weakened security)
-*   **Zen Cart v1.5.1** is compatible with PHP 5.2.14 thru PHP 5.3.x.
-*   **Zen Cart v1.5.0** is compatible with PHP 5.2.14 thru PHP 5.3.x.
-*   **Zen Cart v1.3.9** series is compatible with PHP 5.2.10 thru PHP 5.3.x.
-*   **Zen Cart v1.3.7-v1.3.8a** are compatible with PHP 4.3.2 thru PHP 5.2.x, but *not* PHP 5.3.
+*   **Zen Cart v1.5.3** is compatible with PHP 5.3.7 through PHP 5.6 
+*   **Zen Cart v1.5.2** is compatible with PHP 5.3.7 through PHP 5.6 (or PHP 5.2.14+ with weakened security)
+*   **Zen Cart v1.5.1** is compatible with PHP 5.2.14 through PHP 5.3.
+*   **Zen Cart v1.5.0** is compatible with PHP 5.2.14 through PHP 5.3.
+*   **Zen Cart v1.3.9** series is compatible with PHP 5.2.10 through PHP 5.3.
+*   **Zen Cart v1.3.7-v1.3.8a** are compatible with PHP 4.3.2 through PHP 5.2.x, but *not* PHP 5.3.
 *   **Zen Cart v1.2.x through v1.3.6** are compatible with PHP 4.3.2 - 4.4.x. They are NOT compatible with PHP 5.
 
 PHP compatibility requirements of Plugins may vary. Consult each plugin's documentation and support discussion-thread for details.  
@@ -49,7 +49,7 @@ It is best to **use the most recent PHP version that your Zen Cart version suppo
 
 FYI: Consult [PHP's Version Support Policy](https://www.php.net/supported-versions.php) to understand whether your PHP version is still supported. Remember: old versions are not PCI compliant, and are not deemed "secure" if they are out of the maintenance period.
 
-<font color="#ff0000">**NOTE:** PHP 5.x is officially obsolete. So are many of the early PHP 7 versions. You should be moving to the latest version of PHP (and matching Zen Cart version) as soon as possible!</font>  
+<font color="#ff0000">**NOTE:** PHP 5.X IS OFFICIALLY OBSOLETE. So are many of the early PHP 7 versions. You should be moving to the latest version of PHP (and matching Zen Cart version) as soon as possible!</font>  
 
 ### PHP Extensions/Modules used by Zen Cart
 
@@ -88,7 +88,7 @@ It is recommended to also enable the following PHP extensions:
 
 The following table shows the MySQL versions compatible with each version of Zen Cart.
 
-(If your store uses non-english characters in product names/descriptions, or if your customers might use emojis in order comments, you should be using MySQL 5.7.2 or newer, and the [utf8mb4 character set](/user/upgrading/convert_to_utf8/).)
+(If your store uses non-english characters in product names/descriptions, or if your customers might use emojis in order comments, you should be using MySQL 5.7.2 or newer, and the [utf8mb4 character set](/user/upgrading/convert_to_utf8/) and upgrading to the latest Zen Cart version.)
 
 **Note:** Future versions of Zen Cart including v1.5.8 will require MySQL 5.7.8+ or MariaDB 10.2.7+.
 
@@ -109,7 +109,7 @@ FYI: [MySQL's Version Support Policy](https://en.wikipedia.org/wiki/MySQL#Releas
 ## SSL, OpenSSL, cURL
 
 *   Zen Cart requires cURL to be installed/compiled into PHP with OpenSSL. If this capability is not available, a message to that effect will be displayed during the initial installation's system-inspection, however it will still allow installation anyway. It is up to you to ensure cURL is enabled. Consult your hosting company for assistance.
-*   You should always use HTTPS (SSL) on your store. Yes, [you really do need an SSL certificate](/user/first_steps/yes_you_need_ssl/). Be sure to regularly test your site's SSL (https) using [www.ssllabs.com/ssltest/](https://www.ssllabs.com/ssltest/index.html) and have your hosting company resolve all reported issues. If your hosting company doesn't know how to resolve the issues to at least a "B" rating, find another hosting company.
+*   You should always use HTTPS (SSL) on your store. Yes, [you really do need an SSL certificate](/user/first_steps/yes_you_need_ssl/). Be sure to regularly test your site's SSL (https) using [www.ssllabs.com/ssltest/](https://www.ssllabs.com/ssltest/index.html) and have your hosting company resolve all reported issues. If your hosting company doesn't know how to resolve the issues to at least a "B" rating, find a more reliable hosting company.
 
 
 ## Apache
