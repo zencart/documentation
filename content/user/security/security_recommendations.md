@@ -58,24 +58,18 @@ Go to Admin > Configuration > Email Options, and change your Email Transport Pro
 This will not only help prevent outgoing emails from ending up in spam folders, but will also prevent the disclosure of your admin folder when sending emails from your admin screens.
 
 
-### 4\. Set configure.php files read-only
+### 4\. Consider using a firewall service like Cloudflare
 
-It's advisable to CHMOD (set permissions) on the two configure.php files as <u>**read-only**</u>. Typically this means setting them to _644_, or in some cases _444_.  
+A free account on Cloudflare.com will let you manage your DNS through them, and set up IP-blocking from malicious visitors.
 
-The configure.php files are located in:  
+By default Cloudflare will then block all kinds of bad traffic automatically for you.
 
-```
-/includes/configure.php  
-/YOURADMIN/includes/configure.php  
-```
+You can set up a firwewall rule (one of five free rules available) to block a "list" of IP addresses that you manage. 
+You can set up other firewall rules to block entire countries. (Be sure to only block countries you will actually never intend to sell to.)
 
-`YOURADMIN` is the name of your Admin directory.  [Read this](/user/first_steps/basic_terms/) for important clarification. 
+In order for it to work, you must change your domain's Name Servers (in your domain registrar) to point to Cloudflare instead of to your hosting company.
 
-Quite often setting permissions on a file to read only via FTP will not work, and even if the permission looks like it was set to read only after first changing it via FTP, it really may not have been. 
-
-Verify the correct setting by entering the store and seeing if there is a warning message on the top of the screen. "Warning: I am able to write to the configuration file:..." In this case you will need to use the "File Manager" supplied with your webhosting account to make the permissions change. Contact your hosting company for assistance.
-
-If you're using a Windows server using IIS, simply set the file as _Read-Only_ for _Everyone_. 
+If you wish to block IP addresses independently from your store's Admin (whether you also use Cloudflare or not) you might consider installing the [Access Blocker plugin](https://www.zen-cart.com/downloads.php?do=file&id=2237)
 
 
 ### 5\. Delete any unused _Admin_ accounts
