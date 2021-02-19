@@ -47,6 +47,7 @@ Text search tools are useful for finding the locations of strings you want to ch
 
 ### Online Image Editors
 
+*   [GlorifyApp](https://start.glorifyapp.com)
 *   [Crello](https://crello.com/)
 *   [Stencil](https://getstencil.com/)
 *   [Canva](https://canva.com)
