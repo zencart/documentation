@@ -26,8 +26,8 @@ Here are some options.
 ## Hash Validation Tools
 
 *   [HashTab](http://implbits.com/products/hashtab/) - Windows tool for validating MD5/SHA1 hashes of downloaded files
-*   [Windows checksum tool](https://support.microsoft.com/kb/841290)
 *   [Microsoft checksum tool](https://support.microsoft.com/kb/889768)
+*   [Get-FileHash checksum tool](https://docs.microsoft.com/en-ca/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-7.1)
 
 ## Text-Search Tools
 
