@@ -28,3 +28,5 @@ Note that after running "Reset ALL Products Master Categories ID" (below) you sh
 
 - Cleanup Debug Log Files: This button will remove all [debug logs](/user/troubleshooting/debug_logs/) in your `/logs` folder. 
 
+Prior to 1.5.7, there was an option to "Reset ALL Products Viewed."  Since the refactoring of the [products viewed](/user/admin_pages/reports/products_viewed/) report in 1.5.7, this has been removed.
+ 
