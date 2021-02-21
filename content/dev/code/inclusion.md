@@ -23,7 +23,7 @@ See [Extra folders](/dev/code/extra_folders/) for a complete list.
 
 ### Auto Loaded Observers 
 
-These are described in the [Notifiers and Observers](/dev/code/notifiers/#auto-loaded-observers) documentation. Auto-loaded Observer files include those in `includes/classes/observers` (and Admin) whose name begins with `auto` and which define a class named **zcObserver** + the [CamelCased](http://en.wikipedia.org/wiki/CamelCase) filename. 
+These are described in the [Notifiers and Observers](/dev/code/notifiers/#auto-loaded-observers) documentation. Auto-loaded Observer files include those in `includes/classes/observers` (and Admin) whose name begins with `auto.` and which define a class named **zcObserver** + the [CamelCased](http://en.wikipedia.org/wiki/CamelCase) filename - for example, `class zcObserverFooObserver`. 
 
 ### Stylesheets 
 
