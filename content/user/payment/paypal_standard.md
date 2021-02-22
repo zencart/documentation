@@ -1,6 +1,6 @@
 ---
 title: PayPal Standard - Potential Problems 
-description: Why you shouldn't use PayPal Standard with a store
+description: Why you shouldn't use PayPal Standard 
 category: payment
 weight: 10
 ---
