@@ -18,7 +18,9 @@ weight: 10
 *   Get PayPal's industry-leading security fraud-prevention systems.
 *   Take advantage of comprehensive PayPal's online reports that help you measure sales and manage your business easily.
 
-## Here's how to put Zen Cart and Express Checkout to work for your business.
+## Configuring Zen Cart to use PayPal Express Checkout 
+
+Here's how to put Zen Cart and Express Checkout to work for your business.
 
 *   **Step 1: [Download and install the latest version of Zen Cart](https://www.zen-cart.com/latest)**
 *   **Step 2: Set Up a Verified PayPal Business Account**
@@ -36,11 +38,13 @@ weight: 10
 *   **Step 3: Setup API Access**  
     1. Get [your API credentials](https://www.paypal.com/us/cgi-bin/webscr?cmd=_get-api-signature&generic-flow=true).
     2. Click the "Show" link under API Username, API Password and Signature and note all three values.
-    3. At the top right hand side of the page, click your account name, then click Account Settings.  Navigate to **Business Information** and note your **Merchant ID.  It will look like *FDEFDEFDEFDE11*. 
+    3. At the top right hand side of the page, click your account name, then click Account Settings.  Navigate to **Business Information** and note your **Merchant ID**.  It will look like *FDEFDEFDEFDE11*. 
     4. Use the values from the prior step in Admin > Configuration > Payment to configure the PayPal Express fields **API Signature**, **API Signature -- Password**, and **API Signature** and **Merchant ID**. 
 
 
-## Add your own merchant account and accept credit cards without sending your customers off-site
+## Configuring Zen Cart to accept credit cards directly on your site 
+
+Here's how to add your own merchant account and accept credit cards without sending your customers off-site
 
 Get the features of an internet merchant account and payment gateway with Website Payments Pro. Control your checkout from start to finish by integrating PayPal Website Payments Pro with your Zen Cart shopping cart.
 

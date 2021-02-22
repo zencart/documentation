@@ -226,7 +226,7 @@ Note that this technique will work so long as your class doesn't have any specia
 
 For example, the *Products Viewed Counter* described [above](#update) could provide the same functionality and not need its auto-loader component if the observer-class file was renamed to `/includes/classes/observers/auto.products_viewed_counter.php` and its class name was updated to be `zcObserverProductsViewedCounter.php`.
 
-**Note:** The text above describes the behavior of auto loading on the storefront side.  Support for auto-loading on the admin side was added in Zen Cart 1.5.7. 
+**Note:** Auto loading has been available on the storefront side since Zen Cart 1.5.3. Support for auto-loading on the admin side was added in Zen Cart 1.5.7.
 
 ### Event-Specific Update Methods
 

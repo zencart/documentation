@@ -45,6 +45,8 @@ layout: docs
 
 * Multiple Images per Product - Learn how to configure [multiple product images](/user/images/additional_images/).
 
+* PayPal Standard (IPN) - why [you shouldn't use PayPal Standard](/user/payment/paypal_standard/) and how to [switch to PayPal Express](/user/payment/paypal_express_checkout/). 
+
 * [Release history for Zen Cart](/user/about_us/release_history/) - Timeline of releases with links to release notes.  (See also [Security Patches](/user/about_us/security_releases/)). 
 
 * [Regular Maintenance for Zen Cart](/user/running/regular_maintenance/) - What kinds of routine maintenance should I be doing? 
