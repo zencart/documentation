@@ -91,7 +91,7 @@ class my_order_total extends base
 
         if ($this_totals_conditions_are_satisified) {
             $order->info['total'] += $my_cost;
-            $this->output = array (
+            $this->output[] = array (
                 'title' => $this->title,
                 'value' => $my_cost,
                 'text' => $currencies->format ($my_cost, true,  $order->info['currency'], $order->info['currency_value']),
