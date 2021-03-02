@@ -22,3 +22,12 @@ There are 2 approaches to addressing this:
 version_check=off
 ```
 
+### Other settings that can cause slowdowns
+In addition to the settings mentioned above, additional settings you may wish to change to improve admin performance are as follows:
+
+- Admin > Configuration > My Store > Show if version update available
+- Admin > Configuration > E-Mail Options > Audience-Select Count Display
+
+Each of these settings has its own documentation.
+
+
