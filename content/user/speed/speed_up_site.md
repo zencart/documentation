@@ -84,6 +84,15 @@ Do you have any plugins enabled that add their own tables? Maybe they're poorly 
 
 Or have you written any custom code or use any addons which run queries that attempt to join tables on unindexed database columns?  
 
+### Review other settings that can cause slowdowns 
+
+In addition to the settings mentioned above, additional settings you may wish to change to improve performance are as follows: 
+
+- Admin > Configuration > Maximum Values > Manufacturers List - Verify Product Exist
+- Admin > Configuration > Settings > IP to Host Conversion Status
+
+Each of these settings has its own documentation. 
+
 ### Consider additional server tuning
 Consider these [Webserver Tuning Tips](/user/speed/webserver_tuning/).
 
