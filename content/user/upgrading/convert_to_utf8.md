@@ -5,16 +5,17 @@ category: upgrading
 weight: 20
 ---
 
-### Do I need to convert to UTF-8?
+## Do I need to convert to UTF-8?
 
-Short answer: yes.
+**Short answer: yes.**
 
 Modern databases can handle "multibyte characters" such as emojis. Older databases cannot.
 
-If your customers enter emoji symbols in order-comments or contact-us emails, it may trigger errors on your store resulting in unexpected results and lost details.
+If your customers enter emoji symbols in order-comments or contact-us emails, it may trigger errors on your store resulting in unexpected results and lost details. Sometimes spammers use these symbols in an effort to trip up your store with error logs and wasted CPU processing.
 
-Also, older database structures don't handle non-english characters as well as utf8 does, which is why utf8 has been the international "standard" for many years.
+Also, older database structures don't handle non-english characters as well as utf8 does, [which is why utf8](https://www.youtube.com/watch?v=MijmeoH9LT4) has been the international "standard" for many years.
 
+### What does my store currently use?
 Since Zen Cart v1.5.0 all **new** sites create database tables with the UTF8 character-set.<br>
 Since Zen Cart v1.5.6 all **new** sites create database tables with the UTF8MB4 character-set.
 
@@ -25,11 +26,17 @@ If your site was created from an older version, your database might still contai
 
 ## Converting to UTF8MB4:
 
-1\. Use this conversion utility to convert your data to UTF8 (AFTER MAKING AND TESTING A DATABASE BACKUP): 
+### 1\. Converting the database
+Use this conversion utility to convert your data to UTF8 (AFTER MAKING AND TESTING A DATABASE BACKUP): 
 
 [https://github.com/zencart/utf8mb4-converter](https://github.com/zencart/utf8mb4-converter)  
 
-2\. Update your PHP files to indicate your UTF-8 intentions. 
+If you encounter errors converting certain tables due to bad data in them, simply fix the bad data and then re-run the script. While a full list of possible database-problems is beyond the scope of this article, common bad-data issues might include bad date formats in existing data (see other article in these docs to help with that), or broken tables (such as broken auto-increments or corrupt indexes) which are usually fixed by simply running a `repair` on the table either from phpMyAdmin's Operations tab or via your hosting control panel's databases page or by manually running `REPAIR TABLE tablename;` in phpMyAdmin.
+
+
+### 2\. Configuring your store
+
+You must also update your PHP files to indicate your UTF-8 intentions. 
 
   If you installed your site NEW since v1.5.0 or newer, then the following are ALREADY done for you.<br>
   But, if you UPGRADED from a version prior to 1.5.0, then you will need to double-check each of the following:
@@ -51,6 +58,3 @@ b. Check your `configure.php` files:
   
   (Remember, the `configure.php` files are most likely set to read-only on your server, so you'll need to change their permissions on the server to be writable before you can save the changes you're making.)  
   
-
-
-ASIDE: <font color="#696969">Useful video about the history behind why UTF8 was created:</font> [https://www.youtube.com/watch?v=MijmeoH9LT4](https://www.youtube.com/watch?v=MijmeoH9LT4)
