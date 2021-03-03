@@ -11,9 +11,9 @@ of your database to add custom date fields.
 #### Handling custom date fields in your database 
 Zen Cart uses a specific string (rather than NULL) for date fields to indicate that the date has not been set. 
 
-In older versions of Zen Cart, the string was `0000-00-00`.  However, since then, mySQL has updated their definition of allowable date formats to exclude this string.  
+In older versions of Zen Cart, the string was `0000-00-00`.  However, since then, MySQL has updated their definition of allowable date formats to exclude this string.  
 
-Since Zen Cart 1.5.6, the upgrade process has included steps necessary to convert these older style dates (`0000-00-00`) to a newer value (`0001-01-01`), which is acceptable to mySQL. 
+Since Zen Cart 1.5.6, the upgrade process has included steps necessary to convert these older style dates (`0000-00-00`) to a newer value (`0001-01-01`), which is acceptable to MySQL. 
 
 However, the upgrade process can only do this for built-in fields.  If you have customized your database to include additional fields (perhaps via a plugin, or perhaps with your own custom code), you will need to make the same changes to your own database. 
 

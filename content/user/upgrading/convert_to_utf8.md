@@ -31,8 +31,10 @@ Use this conversion utility to convert your data to UTF8 (AFTER MAKING AND TESTI
 
 [https://github.com/zencart/utf8mb4-converter](https://github.com/zencart/utf8mb4-converter)  
 
-If you encounter errors converting certain tables due to bad data in them, simply fix the bad data and then re-run the script. While a full list of possible database-problems is beyond the scope of this article, common bad-data issues might include [bad date formats in existing data](https://docs.zen-cart.com/user/upgrading/date_standardization/), or broken tables (such as broken auto-increments or corrupt indexes) which are usually fixed by simply running a `repair` on the table either from phpMyAdmin's Operations tab or via your hosting control panel's databases page or by manually running `REPAIR TABLE tablename;` in phpMyAdmin.
-
+If you encounter errors converting certain tables due to bad data in them, simply fix the bad data and then re-run the script. While a full list of possible database-problems is beyond the scope of this article, common bad-data issues might include the following: 
+- [bad date formats](/user/upgrading/date_standardization/) in existing data
+- [broken tables](/user/upgrading/fixing_broken_tables), such as broken auto-increments or corrupt indexes
+- bad data - details coming soon. 
 
 ### 2\. Configuring your store
 
