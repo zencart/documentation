@@ -97,9 +97,15 @@ Again, it must be an A record not an IP or CNAME alias.
 
 This allows receiving mail servers to query by IP address to ensure that the sending mail server is who or what it claims to be. MX records can also be checked to see if it belongs to that domain.
 
+Check for a PTR record with the [intoDNS](https://intodns.com) tool
+
 ### BLACKLISTING
 
-Blacklisting is complex, insofar as there is no single definitive 'blacklist'. There are LOTS of them, some good, some bad, some insufferably pompous, righteous and infallible. Check. If you find your domain on a blacklist, all you can do is attempt to get it removed. As a general rule ALL dynamic IP addresses i.e. those from home broadband connections and similar are almost automatically blacklisted. If you want to run your site from a computer on your desk, you are going to have to get a static IP address.
+Blacklisting is complex, insofar as there is no single definitive 'blacklist'. There are LOTS of them, some good, some bad, some insufferably pompous, self-righteous and claiming to be infallible. 
+
+If you find your domain on a blacklist, all you can do is attempt to get it removed. 
+
+As a general rule ALL dynamic IP addresses i.e. those from home broadband connections and similar are almost automatically blacklisted. If you want to run your site from a computer on your desk, you are going to have to get a static IP address.
 
 ### SPF RECORDS
 
