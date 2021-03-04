@@ -25,8 +25,8 @@ For the purpose of this example, let's assume `yourname` is `newlogo.png`, and t
 
 ```
 define('HEADER_ALT_TEXT', 'My new alt text');
-define('HEADER_LOGO_WIDTH', '200px');
-define('HEADER_LOGO_HEIGHT', '80px');
+define('HEADER_LOGO_WIDTH', '200');
+define('HEADER_LOGO_HEIGHT', '80');
 define('HEADER_LOGO_IMAGE', 'newlogo.png');
 ```
 
@@ -57,8 +57,8 @@ A similar change should be made in `admin/includes/languages/english.php`, which
 
 ```
 define('HEADER_ALT_TEXT', 'My new alt text');
-define('HEADER_LOGO_WIDTH', '200px');
-define('HEADER_LOGO_HEIGHT', '80px');
+define('HEADER_LOGO_WIDTH', '200');
+define('HEADER_LOGO_HEIGHT', '80');
 define('HEADER_LOGO_IMAGE', 'newlogo.png');
 ```
 
