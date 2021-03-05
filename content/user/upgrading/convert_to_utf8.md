@@ -33,8 +33,7 @@ Use this conversion utility to convert your data to UTF8 (AFTER MAKING AND TESTI
 
 If you encounter errors converting certain tables due to bad data in them, simply fix the bad data and then re-run the script. While a full list of possible database-problems is beyond the scope of this article, common bad-data issues might include the following: 
 - [bad date formats](/user/upgrading/date_standardization/) in existing data
-- [broken tables](/user/upgrading/fixing_broken_tables), such as broken auto-increments or corrupt indexes
-- bad data - details coming soon. 
+- [broken tables](/user/upgrading/fixing_broken_tables/), such as broken auto-increments or corrupt indexes
 
 ### 2\. Configuring your store
 
