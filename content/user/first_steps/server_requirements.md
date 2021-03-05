@@ -6,7 +6,7 @@ weight: 10
 ---
 ## Zen Cart specifications - Server Requirements
 
-_(Last updated: July 23, 2020)_  
+_(Last updated: March 5, 2021)_  
 
 *Minimum* server requirements:  
 
@@ -27,7 +27,7 @@ The following table shows the PHP versions compatible with each version of Zen C
 
 **Note:** future versions of Zen Cart including v1.5.8 will require PHP 7.3+.
 
-*   <font color="#ff0000">**Zen Cart v1.5.7** is designed for PHP 5.6 through PHP 7.4</font> (it will trigger some errors on PHP 8)
+*   <font color="#ff0000">**Zen Cart v1.5.7** is designed for PHP 5.6 through PHP 8.0</font> (below v157c may trigger some errors on PHP 8)
 *   <font color="#ff0000">**Zen Cart v1.5.6** is designed for PHP 5.5 through PHP 7.3</font>
 *   <font color="#ff0000">**Zen Cart v1.5.5** is designed for PHP 5.5 through PHP 7.1</font> 
 *   <font color="#ff0000">**Zen Cart v1.5.4** is designed for PHP 5.5 and PHP 5.6</font> 
@@ -49,7 +49,7 @@ It is best to **use the most recent PHP version that your Zen Cart version suppo
 
 FYI: Consult [PHP's Version Support Policy](https://www.php.net/supported-versions.php) to understand whether your PHP version is still supported. Remember: old versions are not PCI compliant, and are not deemed "secure" if they are out of the maintenance period.
 
-<font color="#ff0000">**NOTE:** PHP 5.X IS OFFICIALLY OBSOLETE. So are many of the early PHP 7 versions. You should be moving to the latest version of PHP (and matching Zen Cart version) as soon as possible!</font>  
+<font color="#ff0000">**NOTE:** PHP 5.X IS OFFICIALLY OBSOLETE. So are most PHP 7 versions. You should be moving to the latest version of PHP (and matching Zen Cart version) as soon as possible!</font>  
 
 ### PHP Extensions/Modules used by Zen Cart
 
@@ -92,8 +92,8 @@ The following table shows the MySQL versions compatible with each version of Zen
 
 **Note:** Future versions of Zen Cart including v1.5.8 will require MySQL 5.7.8+ or MariaDB 10.2.7+.
 
-*   Zen Cart v1.5.7 expects MySQL 5.1 to 8.0, or MariaDB 10.1 to 10.4
-*   Zen Cart v1.5.6 expects MySQL 5.1 to 5.7, or MariaDB 10.1 to 10.4 ("strict" errors may occur with 5.7 or 10.2-10.4)
+*   Zen Cart v1.5.7 expects MySQL 5.1 to 8.0, or MariaDB 10.1 to 10.5
+*   Zen Cart v1.5.6 expects MySQL 5.1 to 5.7, or MariaDB 10.1 to 10.4 ("strict" errors may occur with 5.7 or 10.2-10.5)
 *   Zen Cart v1.5.5 expects MySQL 5.1 to 5.7, or MariaDB 10.1 ("strict" errors may occur with 5.7 or 10.2)
 *   Zen Cart v1.5.0 to v1.5.4 expects MySQL 5.1 to 5.5, and <u>may</u> work with MariaDB 10.1
 *   Zen Cart v1.3.9 is compatible with MySQL 4.1.3+ thru 5.1
