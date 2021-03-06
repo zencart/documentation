@@ -352,3 +352,14 @@ If you are upgrading from 1.5.4 or below, you have another decision to make: Zen
 
 HOWEVER: If you are changing your template, YOU SHOULD CONSIDER **TREATING A CHANGE OF TEMPLATE AS A SEPARATE STEP** FROM YOUR UPGRADE. Tweaking templates "to perfection" can endlessly delay implementing an upgrade if you aren't diligent. Better to complete your upgrade first, and do your template change as a separate step. 
 
+# Character Set 
+
+**Note:** If you initially created your store with Zen Cart 1.5.6 or higher, you are already using utf8mb4; no action is required. 
+
+The MySQL Character set you are using defines the legal characters within a string.  Early versions of Zen Cart used the latin1 character set, which can be used to represent English and other Western European languages.  (You may also hear this character set referred to as "iso-8859-1.")
+
+As of Zen Cart v1.5.0 all **new** sites created database tables with the UTF8 character-set.
+
+As of Zen Cart v1.5.6 all **new** sites created database tables with the UTF8MB4 character-set.
+
+If your site was created using a Zen Cart version prior to 1.5.6, you may want to consider updating your character set.  Using utf8mb4 is currently considered the best practice; it allows you to support a variety of languages, as well as emojis.  For guidance on changing your character set, please see [this article](/user/upgrading/convert_to_utf8). 

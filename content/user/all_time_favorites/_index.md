@@ -53,7 +53,7 @@ layout: docs
 
 * [Security Patches](/user/about_us/security_releases/) are released as issues are discovered. 
 
-* [Server Requirements for running Zen Cart](/user/first_steps/server_requirements/) - Zen Cart version to PHP version matrix.
+* [Server Requirements for running Zen Cart](/user/first_steps/server_requirements/) - Zen Cart version to PHP version compatibility matrix.
 
 * Templates and Overrides - How do I use them?  Read 
 [the introduction](https://docs.zen-cart.com/user/first_steps/overrides/), 
@@ -62,6 +62,8 @@ and then
 [the summary](https://docs.zen-cart.com/user/template/template_overrides/). 
 
 * [Upgrading Zen Cart](/user/upgrading/upgrading/) - How do I upgrade my old cart?
+
+* [UTF8 and UTF8MB4](/user/upgrading/detailed_upgrading/#character-set) - What is UTF8 and why do I need it? 
 
 * [Version Information](/user/first_steps/version/) - How to determine your PHP, MySQL and Zen Cart version numbers.
 
