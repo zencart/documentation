@@ -58,4 +58,32 @@ b. Check your `configure.php` files:
   If they have a define for `DB_CHARSET`, make sure it is set to **utf8** without the dash (not `utf-8`). (It may not be present: if so, that's fine, go to the next file.)
   
   (Remember, the `configure.php` files are most likely set to read-only on your server, so you'll need to change their permissions on the server to be writable before you can save the changes you're making.)  
-  
+ 
+## Issues with Converting prior to 03/05/2021 
+
+Versions of the converter `utf8mb4-conversion.php` and the older version, which was called `latin1-to-utf8-conversion.php`, prior to 03/05/2021 had an issue with incorrectly removing default values during the conversion.  A script exists to fix this issue; see the section "Missing Defaults" in the readme file for [https://github.com/zencart/utf8mb4-converter](https://github.com/zencart/utf8mb4-converter). 
+
+Please note this issue only affects people who ran versions of this script prior to 03/05/2021. 
+
+You will know you have this issue if database insert operations are failing because fields don't have default values.  For example, creating a new admin will fail with 
+
+```
+--> PHP Fatal error: 1364:Field 'prev_pass1' doesn't have a default value :: INSERT INTO admin
+SET admin_name = 'admin',
+admin_email = 'help@thatsoftwareguy.com',
+admin_pass = '....',
+admin_profile = 1,
+pwd_last_change_date = now(),
+```
+You can also tell by schema inspection if you have this problem - instead of 
+
+```
+  prev_pass1 varchar(255) NOT NULL default '' 
+```
+
+you will see 
+
+```
+  prev_pass1 varchar(255) NOT NULL 
+```
+
