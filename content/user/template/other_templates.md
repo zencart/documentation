@@ -21,3 +21,11 @@ See the other FAQs on [the template system and overrides](/user/template/) for m
 ### Responsive Classic Template - Product Page (Mobile) 
 ![Responsive Classic Template Product Page on Mobile](/images/responsive_classic_full.png)
 
+Another well supported option is the [Bootstrap template](https://www.zen-cart.com/downloads.php?do=file&id=2191).
+
+### Bootstrap Template - Product Page (Desktop) 
+![Bootstrap Template Product Page on Desktop](/images/bootstrap_desktop.png)
+
+### Bootstrap Template - Product Page (Mobile) 
+![Bootstrap Template Product Page on Mobile](/images/bootstrap_full.png)
+
