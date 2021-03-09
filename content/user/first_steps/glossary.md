@@ -18,6 +18,7 @@ Note: If a term is not in this list, use a web search to learn more about it.  T
 - Extra Pages - [Extra pages](/user/template/extra_pages/) are the three built-in additional content pages that people can use without needing to add software to their installation. 
 - EZ-Pages - Zen Cart provides the ability for storeowners to create their own content pages without a developer through the [EZ-Pages](/user/ezpages/) facility. 
 - Hoster - a company that provides servers for you to run your site on. See [hosting and domain concepts](/user/first_steps/hosting/).
+- Info Box - an info box is like a sidebox for the admin side.  When an item fro ma list is selected, an info box appears on the right with more details on that item. For example, on the customers page, details on the selected customer would appear; on the orders page, details on that order.
 - IP Address - a number assigned to a piece of hardware connected to the Internet.  Computers identify each other by IP Address.  See [hosting and domain concepts](/user/first_steps/hosting/).
 - JavaScript - a scripting language that adds dynamic effects to your website. 
 - Linked Product - a [linked product](/user/products/linked_product/) is a product which exists in multiple categories (categories other than the product's master category).
