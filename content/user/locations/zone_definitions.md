@@ -27,6 +27,17 @@ Country: United States
 Zone: (specific Zone here)  
 ```
 
+### To manually create a Zone using the Zen Cart Admin 
+Suppose you want to create a zone containing Alaska and Hawaii only.  
+Here are the required steps: 
+
+- Go to Admin > Locations > Zones Definitions.  Press the Insert button. 
+- Enter a name (we will use "Non Continental US") and a description (Alaska and Hawaii). Press Enter
+- A new row appears with the zone name "Non Continental US." In the Infobox on the right, press the Details button. 
+- Press Insert, and select Country = "United States" and Zone = "Alaska".  Press Insert. 
+- Press Insert, and select Country = "United States" and Zone = "Hawaii".  Press Insert. 
+- You're done!  You now have a new zone you can use anywhere Zone restriction is allowed, such as a shipping module's configuration. 
+
 ### To create a Zone for the US Continental 48 States & DC
 
 ```
