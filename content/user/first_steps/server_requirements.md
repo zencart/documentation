@@ -83,6 +83,8 @@ It is recommended to also enable the following PHP extensions:
 - DISABLE: `allow_url_include` should be OFF. Zen Cart never needs this.
 - DISABLE FUNCTIONS: `passthru`, `system`, `shell_exec`. These are not used by Zen Cart core (BUT might be used by some plugins).
 
+> You may wonder: "How do I configure all these things?" They're server-side configuration, entirely outside of Zen Cart itself. Talk to your hosting company for assistance. They deal with this stuff every day, and they know exactly how to do this stuff on the server you're paying them for.
+
 
 ## MySQL Version
 
@@ -120,7 +122,7 @@ Zen Cart works primarily with Apache 2.4 or 2.2
 
 The Apache configuration must have `AllowOverride` set to `All` or at least `Limit Indexes Options`. (Without this the `.htaccess` rules will fail and trigger `500 Server Error` errors.)
 
-Recommended Apache modules include: `expires`, `headers`, `env`, `alias`, `deflate`, `ssl`, `http2`, `mime`, `phpX`, `rewrite` (in addition to other standard/default modules).
+Recommended Apache modules include: `expires`, `headers`, `env`, `alias`, `deflate`, `ssl`, `http2`, `mime`, `phpX`, `rewrite` (in addition to other standard/default modules for a typical webserver serving PHP applications).
 
 
 ## Nginx  
