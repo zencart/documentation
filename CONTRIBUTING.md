@@ -260,17 +260,15 @@ nosearch: yes
 
 More layout options are available than you might think - here are some examples:
 
-- Accordion: [Release History](/user/about_us/release_history/) 
+- Accordion: [Release History](https://docs.zen-cart.com/user/about_us/release_history/) 
 
-- Footnotes (Markdown): [HTML Email Templates](/user/email/html_email_templates/) 
+- Footnotes: [HTML Email Templates](https://docs.zen-cart.com/user/email/html_email_templates/) 
 
-- Footnotes (HTML): [Coupon Admin](/admin_pages/discounts/coupon_admin/) 
+- Per page CSS: [What sideboxes are available?](https://docs.zen-cart.com/user/sideboxes/sidebox_list/)
 
-- Per page CSS: [What sideboxes are available?](/user/sideboxes/sidebox_list/)
+- Popup Images: [What sideboxes are available?](https://docs.zen-cart.com/user/sideboxes/sidebox_list/)
 
-- Popup Images: [What sideboxes are available?](/user/sideboxes/sidebox_list/)
-
-- Tables: [How do I change the title of main\_page=page_X?](/user/new_user_topics/title_change_for_page_x/)
+- Tables: [How do I change the title of main\_page=page_X?](https://docs.zen-cart.com/user/new_user_topics/title_change_for_page_x/)
 
 ## Shared Content
 
