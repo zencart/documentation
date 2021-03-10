@@ -1,4 +1,3 @@
-./user/first_steps/server_requirements.md ---
 title: Server Requirements for running Zen Cart
 description: What kind of server do I need?  
 category: Installing
