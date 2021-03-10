@@ -10,8 +10,8 @@ The email logo is contained in the file `email/header.jpg`.
 
 Replace this file with your logo, then update the following two files: 
 
-* `admin/includes/languages/english/email_extras.php`. 
 * `includes/languages/english/YOURTEMPLATE/email_extras.php` 
+* `admin/includes/languages/english/email_extras.php`. 
 
 In each file, you will want to update the block 
 
