@@ -83,3 +83,14 @@ Note:
 
 *   To add images, click on the _Browse_ button beside the category/product image field, and select the file on your computer. Then choose the _upload to directory_ folder to store the image in on your server. If the folder you wish to use isn't there, you'll need to go and create it with your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) first.
 
+### Documenting your Policies 
+
+The key business policies you will need to document have pages set up for you by default; all you need to do is fill them in.  Go to Admin > Tools > Define Pages Editor and flush out these files: 
+
+File | Description | URL
+-----|-------------|-----
+`define_conditions.php` | your store's terms and conditions | index.php?main_page=conditions
+`define_privacy.php` | your store's privacy policy | index.php?main_page=privacy
+`define_shippinginfo.php` | your store's shipping and returns policy | index.php?main_page=shippinginfo
+
+

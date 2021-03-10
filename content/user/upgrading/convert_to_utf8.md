@@ -87,3 +87,9 @@ you will see
   prev_pass1 varchar(255) NOT NULL 
 ```
 
+Similarly, creating a new customer account will fail with a message like 
+
+```
+--> PHP Fatal error: 1364:Field 'customers_referral' doesn't have a default value :: INSERT INTO zen_customers 
+...
+```
