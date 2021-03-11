@@ -11,7 +11,7 @@ aliases:
 
 By default, Zen Cart uses `includes/templates/YOURTEMPLATE/images/logo.gif` for the filename of the logo image, but you can use your own filename for the logo.
 
-**NOTE:** If your logo is available as a .gif image, it's faster to just upload your logo by replacing the logo.gif file on the server. Then refresh your browser cache (CTRL+R) to see it on your site. You may still want to update the image dimensions listed in the following instructions.
+**NOTE:** If your logo is already available as a .gif image, it's faster to just upload your logo by naming the file as logo.gif and replacing the logo.gif file on the server. Then refresh your browser cache (CTRL+R) to see it on your site. You may still want to update the image dimensions listed in the following instructions.
 
 Using an [image editor](/user/first_steps/useful_tools/#graphics-editors), create your new logo and save it to `includes/templates/YOURTEMPLATE/images/yourname` and upload it to your server.
 
@@ -25,8 +25,8 @@ For the purpose of this example, let's assume `yourname` is `newlogo.png`, and t
 
 ```
 define('HEADER_ALT_TEXT', 'My new alt text');
-define('HEADER_LOGO_WIDTH', '200');
-define('HEADER_LOGO_HEIGHT', '80');
+define('HEADER_LOGO_WIDTH', '200'); // this is the number of pixels
+define('HEADER_LOGO_HEIGHT', '80'); // this is the number of pixels
 define('HEADER_LOGO_IMAGE', 'newlogo.png');
 ```
 
@@ -53,7 +53,7 @@ To center the logo use `text-align: center;`
 To right align the logo use `float: right;`
 
 ## Admin Header 
-A similar change should be made in `admin/includes/languages/english.php`, which contains the same four PHP define statements. 
+A similar change should be made in `admin/includes/languages/english.php`, which contains the same four PHP define statements. You might use a different image in your admin. The filename mentioned here refers to a *different* file and location than the one used above for the storefront. See notes below.
 
 ```
 define('HEADER_ALT_TEXT', 'My new alt text');
