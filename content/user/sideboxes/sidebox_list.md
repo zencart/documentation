@@ -181,7 +181,8 @@ The <strong>specials</strong> and <strong>new_products</strong> sideboxes work s
       <img alt="Manufacterers Sidebox" src="/images/sidebox_manufacturers.png" />
    </div>
    <div class="notes_col">
-      The <strong>manufacturers</strong> sidebox is a dropdown list of the manufacturers. Selecting an entry from this list will show all that manufacturer's products.  <br>A related sidebox, <strong>manufacturers_info</strong> appears only on the product pages with information about the product's specific manufacturer.<br>
+      The <strong>manufacturers</strong> sidebox is a dropdown list of the manufacturers. Selecting an entry from this list will show all that manufacturer's products. (NOTE: Only manufacturers that have products associated with them will be shown in this list. You can link manufacturers to products in your Admin panel.)<br>
+       A related sidebox, <strong>manufacturers_info</strong> appears only on the product pages with information about the product's specific manufacturer.<br>
 <button type="button" class="btn btn-link" data-toggle="modal" data-target="#manufacturers_info">- View manufacturers_info</button>
 
    </div>
