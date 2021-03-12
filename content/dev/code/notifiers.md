@@ -172,22 +172,17 @@ While seldom used, here's one way it might be used: If, for instance, an observe
 
 ## Loading Your Observer-Class
 
-Observers may be loaded automatically or manually.  Automatic loading is less work for plugin authors, but offers less flexibility in terms of timing.  
+Observers may be loaded automatically or manually.  Automatic loading is less work for plugin authors, but offers less flexibility in terms of load-order which can sometimes interfere with required dependencies.
 
 ### Choosing "When" to Load an Observer
 
-If your observer-class performs actions *prior to* the page-specific loading (e.g. monitoring for cart-related actions), you'll need to make sure that your observer is loaded and instantiated ***before*** any watched-for notification is triggered in application code.  In these cases, review the base Zen Cart auto-loader (`[/admin]/includes/auto_loaders/config.core.php`) to identify the load-point required.
+If your observer-class performs actions *prior to* the page-specific loading (e.g. monitoring for cart-related actions), you'll need to make sure that your observer is loaded and instantiated ***before*** any watched-for notifier is triggered in application code.  In these cases, review the base Zen Cart auto-loader (`[/admin]/includes/auto_loaders/config.core.php`) to identify the load-point required.
 
 ### Auto-loaded Observers
 
-If you're developing a plugin that uses an observer-class you might wish to utilize auto loading and instantiating of observers.
+If you're developing a plugin that uses an Observer class you might wish to utilize auto loading and instantiating of observers. These auto-instantiated Observers will be loaded near the end of the list of load-points, so typically all dependencies will already be available. This works great in the vast majority of cases, and makes your Observer less brittle and easier to maintain across Zen Cart version upgrades.
 
-While still supported, prior to Zen Cart v1.5.3 your only choice was to provide ***two*** files in your plugin's distribution to get that class loaded and instantiated:
-
-1. /includes/auto_loaders/config.your_plugin.php
-2. /includes/classes/observers/class.your_plugin.php
-
-However, by following a naming convention Zen Cart will do the  "heavy lifting" to get your class-file loaded and instantiated, saving you some effort. Here are the requirements: 
+By following a naming convention Zen Cart will both load and instantiate your Observer class automatically. Here are the requirements: 
 
 1. The file is in the `/includes/classes/observers` sub-directory and named like: `auto.your_plugin.php`. Note the **auto.** prefix.  All files in this directory that start with **auto.** will be included (i.e. loaded).
 2. The file defines a class named **zcObserver** + the [CamelCased](http://en.wikipedia.org/wiki/CamelCase) filename, e.g. a file named `auto.your_plugin.php` will contain a class named  `zcObserverYourPlugin`.  (For debugging assistance, a myDEBUG\*.log file will be generated if a properly-named file is loaded, but the class name doesn't conform to these rules.)
@@ -196,9 +191,14 @@ Note that this technique will work so long as your class doesn't have any specia
 
 For example, the *Products Viewed Counter* described [above](#update) could provide the same functionality and not need its auto-loader component if the observer-class file was renamed to `/includes/classes/observers/auto.products_viewed_counter.php` and its class name was updated to be `zcObserverProductsViewedCounter.php`.
 
-**Note:** Auto loading has been available on the storefront side since Zen Cart 1.5.3. Support for auto-loading on the admin side was added in Zen Cart 1.5.7.
+**Note:** Auto loading has been available on the storefront side since Zen Cart 1.5.3, and on the admin side since Zen Cart 1.5.7.  For versions prior to that you can use the Manually-loaded option below.
 
 ### Manually-loaded Observers
+
+For manually-instantiating Observers at customized load-points, you must provide at least ***two*** files in your plugin's distribution to get that class loaded and instantiated:
+
+1. /includes/auto_loaders/config.your_plugin.php
+2. /includes/classes/observers/class.your_plugin.php
 
 To load and create an 'instance' of your observer-class so that it is operational, you'll create a file in the Zen Cart `/includes/auto_loaders` (or `/admin/includes/auto_loaders`) sub-directory to perform those tasks.  
 
@@ -229,6 +229,7 @@ $autoLoadConfig[190][] = array('autoType'=>'classInstantiate',
                               // the name of the global object into which the class is instantiated
                               'objectName'=>'products_viewed_counter');
 ```
+
 
 ## Advanced Topics
 
