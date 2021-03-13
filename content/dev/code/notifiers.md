@@ -187,7 +187,7 @@ Note that this technique will work so long as your class doesn't have any specia
 
 For example, the *Products Viewed Counter* described [above](#update) could provide the same functionality and not need its auto-loader component if the observer-class file was renamed to `/includes/classes/observers/auto.products_viewed_counter.php` and its class name was updated to be `zcObserverProductsViewedCounter.php`.
 
-**Note:** Auto loading has been available on the storefront side since Zen Cart 1.5.3, and on the admin side since Zen Cart 1.5.7.  For versions prior to that you can use the Manually-loaded option below.
+**Note:** Auto loading has been available on the storefront side since Zen Cart 1.5.3, and on the admin side since Zen Cart 1.5.7.  For versions prior to that you can use the Manually-loaded option below.  Alternately, to backport admin side autoloading to 1.5.6, see [this PR](https://github.com/zencart/zencart/commit/bc195baf258c11b73f29de41020e1c0505e4d462).
 
 ### Manually-loaded Observers
 
