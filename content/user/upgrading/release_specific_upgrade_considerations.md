@@ -41,9 +41,11 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
     If you have created additional cron jobs and used this file as a base, please apply the 1.5.7 changes to your custom files.
 
-- The field `products_description.products_viewed` has been deprecated. It will be deleted in a future release.  Product view tracking is now done using the table `count_product_views`. 
+- The database field `products_description.products_viewed` has been deprecated. It will be deleted in a future release.  Product view tracking is now done using the table `count_product_views`. 
 
 - External links have been updated to use `rel="noopener"` or `rel="noreferrer noopener"`.  If you use external links (for social networking, manufacturer sites, product URLs, etc.) you should update your template to adopt this practice. 
+
+- The `shopping_cart` page no longer uses `TEXT_INFORMATION` from the `shopping_cart.php` language file. You will need to move the content of that define to the new `html_includes/YOURTEMPLATE/define_shopping_cart.php` page.
 
 - A number of constants which were unused by the core were removed from language files.  If you use a plugin which relied on these defines, you should expect a PHP Notice in your `/logs` folder.   To resolve this, define the needed constants in a plugin specific file. Some of the defines removed are `DATE_FORMAT_SHORT` and `DATE_TIME_FORMAT`, which some plugins may have used even though core Zen Cart code does not.
 
