@@ -8,9 +8,10 @@ weight: 10
 <!-- RELEASETIME - update -->
 <!-- see find_notifiers in https://github.com/scottcwilson/zencart_tools --> 
 
+This is a list of notifiers used in Zen Cart in the current release. 
+
 For a list of notifiers with module name, line number and parameters, 
-please install [the Notifier Report software](https://github.com/lat9/notifier_report), 
-or see [Notifier Report](/dev/code/notifier_report/) on this site. 
+please install the [Notifier Report](https://github.com/lat9/notifier_report) on your site, or see [the output of Notifier Report](/dev/code/notifier_report/) here. 
 
 
 ```
