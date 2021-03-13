@@ -1,5 +1,4 @@
-
-\---
+---
 title: Define Pages 
 description: Customizing your store with define pages 
 category: template

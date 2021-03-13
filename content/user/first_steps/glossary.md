@@ -15,6 +15,7 @@ Note: If a term is not in this list, use a web search to learn more about it.  T
 - Document Root - another term for "webroot." 
 - Domain Name - (also "domain") the mnemonic name of your website.  The domain name of this site is `zen-cart.com`.  See [hosting and domain concepts](/user/first_steps/hosting/).  A Name Server converts this mnemonic name into an IP Address. 
 - Downloadable Product - A [downloadable product](/user/products/downloadable/) is a digital item such as an ebook, a music file, an image or a software product.
+- DTK - Short for [Developer's Tool Kit](/user/admin/developers_toolkit/). 
 - Extra Pages - [Extra pages](/user/template/extra_pages/) are the three built-in additional content pages that people can use without needing to add software to their installation. 
 - EZ-Pages - Zen Cart provides the ability for storeowners to create their own content pages without a developer through the [EZ-Pages](/user/ezpages/) facility. 
 - Hoster - a company that provides servers for you to run your site on. See [hosting and domain concepts](/user/first_steps/hosting/).
