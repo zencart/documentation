@@ -25,17 +25,13 @@ Here are some 'quick links' to various sections of this documentation:
 
 2. [Observing Notifications](#observing-notifications). Identifies the mechanisms used by _event observers_ to perform their customizations.
 
-3. [Loading Your Observer Class](#loading-your-observer-class).  Identifies how to load your observer-class so that it can begin its observations.
+3. [Loading Your Observer Class](#loading-your-observer-class).  Identifies how to load your observer-class so that it can begin its observations.  You may choose between [automatic loading](/dev/code/notifiers/#auto-loaded-observers) and [manual loading](/dev/code/notifiers/#manually-loaded-observers). 
 
 4. [Advanced Topics](#advanced-topics). This section identifies additional methods that can be used to auto-load an observer-class and create event-specific event-handlers.
 
-    a. [Choosing When to Load an Observer](#choosing-when-to-load-an-observer).
+    a. [Event-Specific Update Methods](#event-specific-update-methods).
 
-    b. [Auto-loaded Observers](#auto-loaded-observers).
-
-    c. [Event-Specific Update Methods](#event-specific-update-methods).
-
-    d. [Generic Formal Parameter Interpretation](#generic-formal-parameter-interpretation).
+    b. [Generic Formal Parameter Interpretation](#generic-formal-parameter-interpretation).
 
 5. [Additional Information](#additional-information).  This section has references to additional documentation on the observer/notifier system.
 
@@ -187,7 +183,7 @@ By following a naming convention Zen Cart will both load and instantiate your Ob
 1. The file is in the `/includes/classes/observers` sub-directory and named like: `auto.your_plugin.php`. Note the **auto.** prefix.  All files in this directory that start with **auto.** will be included (i.e. loaded).
 2. The file defines a class named **zcObserver** + the [CamelCased](http://en.wikipedia.org/wiki/CamelCase) filename, e.g. a file named `auto.your_plugin.php` will contain a class named  `zcObserverYourPlugin`.  (For debugging assistance, a myDEBUG\*.log file will be generated if a properly-named file is loaded, but the class name doesn't conform to these rules.)
 
-Note that this technique will work so long as your class doesn't have any special requirements on its load point (auto-loaded classes are loaded at point `175`, after all other system dependencies are loaded). Most observers won't need to be loaded "before" all other regular dependencies, so load-point 175 is fine in most cases. If your observer needs to be loaded earlier, then don't use this special naming convention, but instead just fallback to using auto-loader files to specify the required load-point and instantiation instructions as described above.
+Note that this technique will work so long as your class doesn't have any special requirements on its load point (auto-loaded classes are loaded at point `175`, after all other system dependencies are loaded). Most observers won't need to be loaded "before" all other regular dependencies, so load-point 175 is fine in most cases. If your observer needs to be loaded earlier, then don't use this special naming convention, but instead manual loading, which is described below. 
 
 For example, the *Products Viewed Counter* described [above](#update) could provide the same functionality and not need its auto-loader component if the observer-class file was renamed to `/includes/classes/observers/auto.products_viewed_counter.php` and its class name was updated to be `zcObserverProductsViewedCounter.php`.
 
@@ -354,4 +350,6 @@ Some plugins which can be helpful during development when using notifiers includ
 
 ### Information about Notifiers 
 * A [list of notifiers](/dev/code/notifiers_list) for the current Zen Cart release. 
-* The output of the [Zen Cart Notifier Report](/dev/code/notifier_report/) is provided on the docs site for easy reference by developers. 
+* The [output of the Zen Cart Notifier Report](/dev/code/notifier_report/) run against the current release is provided on the docs site for easy reference by developers.  
+* You may also install the [Notifier Report](https://github.com/lat9/notifier_report) on your own site to get the list of notifiers for your version, which could differ from the official list if you have made changes or are not running the current version. 
+
