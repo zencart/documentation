@@ -1,6 +1,6 @@
 ---
 title: Coding Standards
-description: Formatting your code 
+description: Formatting and Coding Best Practices 
 weight: 2
 ---
 
@@ -150,4 +150,18 @@ Try to avoid creating db tables that are strictly static data, unless they're us
 
 ## Namespaced Autoloading
 In Zen Cart 1.5.7 some code is now using the [PSR-4 autoloading standard](https://www.php-fig.org/psr/psr-4/) for handling code in the \ZenCart namespace (ie: the files in `/includes/library`).
+
+## Parameters 
+Instead of just passing a boolean value, consider naming  the parameter for greater clarify. 
+
+Rather than this: 
+```
+   $filter = zen_get_linked_products_for_category($cat_id, true); 
+```
+
+Do this: 
+```
+   $filter = zen_get_linked_products_for_category($cat_id, $first_only = true); 
+
+```
 
