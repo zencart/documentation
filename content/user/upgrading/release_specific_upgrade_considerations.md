@@ -49,6 +49,8 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 - A number of constants which were unused by the core were removed from language files.  If you use a plugin which relied on these defines, you should expect a PHP Notice in your `/logs` folder.   To resolve this, define the needed constants in a plugin specific file. Some of the defines removed are `DATE_FORMAT_SHORT` and `DATE_TIME_FORMAT`, which some plugins may have used even though core Zen Cart code does not.
 
+- The [Display Logs plugin](https://www.zen-cart.com/downloads.php?do=file&id=1583) is now built-in. If you had its files installed in prior versions, remove all those files as part of your upgrade. Then if you want to enable the plugin simply go to Admin &gt; Modules &gt; Plugins.
+
 ### Zen Cart 1.5.6 
 
 - The variable `$downloads`, returned from `includes/modules/downloads`, changed from a query result to an array.  The following template files had to be updated to accommodate this change: 
