@@ -103,19 +103,22 @@ Check for a PTR record with the [intoDNS](https://intodns.com) tool
 
 Blacklisting is complex, insofar as there is no single definitive 'blacklist'. There are LOTS of them, some good, some bad, some insufferably pompous, self-righteous and claiming to be infallible. 
 
-If you find your domain on a blacklist, all you can do is attempt to get it removed. 
+If you find your domain on a blacklist, all you can do is attempt to get it removed. Unless you are self-hosting, your host is the best help in dealing with any blacklisting(s).  Have your host make sure you have valid SPF, DKIM, and DMARC settings (See Examples Below) and then they can quickly get you off a blacklist.
 
 As a general rule ALL dynamic IP addresses i.e. those from home broadband connections and similar are almost automatically blacklisted. If you want to run your site from a computer on your desk, you are going to have to get a static IP address.
 
 ### SPF RECORDS
 
-An SPF record is yet another DNS record, this time a TXT record that allows you to specify which machines are ALLOWED to send mail for your domain. The set-up has many possibilities; do a web search to learn more about it.
+A Sender Policy Framework (SPF) record is yet another DNS record. This TXT record allows you to specify which machines are ALLOWED to send mail for your domain. For instance, if you use something like Constant Contact to send mail on behalf of your site, you will need the same records for Constant Contact that you have for your domain. The set-up has many possibilities; do a web search to learn more about it.
 
-It is easy to succumb to the temptation to make the SPF definition broader than it should be. Resist. Another point that is easy to overlook with SPF records is that the mail server that sends out the email for your site should be included in your SPF record. I'll repeat that. The mail server that sends out the email for your site MUST be included in your SPF record. If it is not, why are you doing this?
+It is easy to succumb to the temptation to make the SPF definition broader than it should be. Resist. Another point that is easy to overlook with SPF records is that the mail server that sends out the email for your site should be included in your SPF record. As mentioned before, any site or mail service that sends mail on behalf of your domain should have an SPF record to accurately identify you and any additional mail servers used to send mail from your site.
 
-Any, all or none of the above (DNS, MX, SPF, etc) may be set up for you by your domain registrar or hosting service. What is much more important is that you check, and fix anything that is not correct.
+Any, all or none of the above (DNS, MX, SPF, DKIM, or DMARC) may be set up for you by your domain registrar or hosting service. What is much more important is that you check, and fix anything that is not correct and ensure the ones that are helpful to your business are in place and correct.
 
-All of the above can be checked by visiting [http://www.dnsstuff.com](http://www.dnsstuff.com) and doing a dnsReport on your domain. Check the mail section of the report, and fix any reported warning, error or problem that is within your power.
+All of the above can be checked by visiting [https://mxtoolbox.com](https://mxtoolbox.com) and taking advantage of their various diagnostic tools.  The site opens with a form for your domain name and an "MX Lookup" button.  Entering your domain, and clicking the button will quickly let you know if something is incorrect.  From the result, you can also do a Blacklist Check and SMTP Test.
+
+A simple SPF record might look like:
+yoursite.com. 14400 IN TXT "v=spf1 ip4:###.###.###.### ~all" where the # signs represent the IP address of your mail server.
 
 Checking DNS entries can be done using `nslookup` in Windows, or `dig` on Unix/Linux machines. Understanding the command line options and the output is unfortunately not quite so simple. Here are some starting points:
 
@@ -126,6 +129,31 @@ Checking DNS entries can be done using `nslookup` in Windows, or `dig` on Unix/L
  dig MX mydomain.com
 
 </pre>
+
+### DKIM RECORDS
+
+DomainKeys Identified Mail (DKIM) is another method for protecting the email world from spam, spoofing, and phishing. "It is a form of email authentication that allows an organization to claim responsibility for a message in a way that can be validated by the recipient."
+
+DKIM uses an encryption key to let receivers know exactly who is sending the email.  The digital signature is added to the header of an e-mail message.  That signature is located in your DNS records and is used by the receiver to verify your identity.  Unlike DMARC, it does not tell the receiver what to do with suspicious email. Until recently, SPF and DKIM were all that was needed when sending e-mail from your domain.
+
+If you use a mail service, check with that service to ensure you are using the additional DKIM record in the proper way needed to verify your email.  A simple example would look like:
+default.\_domainkey 14400 IN TXT "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiGdR2xFCm6A8xm43B4uLViQl52Gsaqt+BwkVU9bqNRE97CrA9AK3G/9a3aNLk3lsFE09oKcNPRb9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtLm36vxZJzP4jaSBHcXI3JDa9NXVaMeZsFRCjA2KWY3huR+d2TmaHMi3cDBpYEryslnMc2zgFpzKdoQ2Pvftt/WTiM4/O+DKmTVGawwNuhAPYAv+Yea+kTKl" 1Eyh40t2oYUmd2V8ywLf1wx/664Qpvq9YdgnVAguNu/kOVM3mHCPyMfhC6Z9oWS2Wn6JU8Qa8BViuIvJQCiQzCd5FtTloEECXbLXGMJZO2Calj4KtlNvgRLoLsy/bHU6A9oQ8IBBxiRdRzbxkCa9QIDAQAB\;
+
+
+### DMARC RECORDS
+
+New to the verification of email process is Domain-based Message Authentication, Reproting, and Conformance (DMARC).  DMARC needs a valid SPF and DKIM for your site in order for it to work.  It builds on the identificaton provided by SPF and DKIM by adding what the receiver should do if the email fails some check performed by the receiver.  It also lets the receiver know how they can report the failure to you for repair.
+
+You can Google the parts of the DMARC file but know that the DMAC TXT file is basically going to address are Policies (three choices telling the receiver what to do if the mail fails their check) and Reports (which of two report options you would like).
+
+The DMARC does not require the receiver to do anything with incoming email.  It is what you suggest they do with your email.  Its their choice to do what they will with the mail.
+
+For instance, you can tell the receiver to do nothing with a failure, quarantine it, or reject it completely.  Those are the available policies.  They can do as asked or completely ignore your request.
+
+The rua/ruf portion of the DMARC file lets the receiver know if you want to be notified of a problem and to which email you would like the failure/quarantine report sent.  You can set this in such a way that you will get an e-mail back for every email sent.  While that might be okay for intial site troubleshooting, you shoud cooordinate this with your host to make sure you are not inundated with email when there is not delivery problem.
+
+Like the DKIM, you should make sure the DMARC is properly created for any extra email services that may send from your domain.  A DMARC with all its options would look something like:
+\_dmarc 14400 IN TXT v=DMARC1\;p=quarantine\;sp=none\;adkim=s\;aspf=s\;pct=100\;fo=0\;rf=afrf\;ri=86400\;ruf=mailto:mymailbox\@mydomain.com
 
 ## 2\. Email Addresses
 
