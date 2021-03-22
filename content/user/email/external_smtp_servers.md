@@ -61,7 +61,7 @@ Zen Cart supports this by using the following settings in [Admin > Configuration
 
 [^1]: If this value does not appear in your list of Email Transport options, see [this forum post](https://www.zen-cart.com/showthread.php?223581-Done-v1-5-6-EMAIL_TRANSPORT-settings-created-by-install-upgrade-missing-Gmail&p=1372383#post1372383). 
 
-**Note:** To use email (eg `SMTPAUTH`) with a Google mail account you need to enable `allow less secure authentication` inside your google account settings. (This name sounds much worse than it is; it's still secure.) 
+**Note:** To use email (eg `SMTPAUTH`) with a Google mail account you need to enable [`allow less secure authentication`](https://myaccount.google.com/lesssecureapps) inside your google account settings. (This name sounds much worse than it is; it's still secure.) 
 
 Instructions on allowing less secure apps to use your account are provided [here](https://support.google.com/accounts/answer/6010255?hl=en). 
 
