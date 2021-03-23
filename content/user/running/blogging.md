@@ -23,6 +23,8 @@ The Zen Cart [EZ-Pages](/user/ezpages/) system allows you to create content usin
 
 ### Create and send a newsletter regularly
 
+Creating and building an email list using a [newsletter](/user/email/newsletters/) is a great way to develop a community.
+
 Tools like MailChimp have inexpensive offerings for small businesses that allow you to stay in touch with your customers.  You can even preserve your content in a [campaign archive](https://mailchimp.com/help/about-email-campaign-archives-and-pages/) so customers who come along after you sent it can still see it. 
 
 ### Use a static site generator 

@@ -146,7 +146,7 @@ If you use a 3rd-party mail service check with that service to ensure you add an
 A simple DKIM example record would look like:
 
 ```
-default.\_domainkey 14400 IN TXT "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiGdR2xFCm6A8xm43B4uLViQl52Gsaqt+BwkVU9bqNRE97CrA9AK3G/9a3aNLk3lsFE09oKcNPRb9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtLm36vxZJzP4jaSBHcXI3JDa9NXVaMeZsFRCjA2KWY3huR+d2TmaHMi3cDBpYEryslnMc2zgFpzKdoQ2Pvftt/WTiM4/O+DKmTVGawwNuhAPYAv+Yea+kTKl"
+default.\_domainkey 14400 IN TXT "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiGdR2xFCm6A8xm43B4uLViQl52Gsaqt+...WTiM4/O+DKmTVGawwNuhAPYAv+Yea+kTKl"
 ```
 
 ### DMARC RECORDS

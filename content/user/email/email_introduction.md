@@ -77,7 +77,7 @@ As mentioned earlier, if the emails are showing in the archive log (assuming you
 
 Ask your host whether your/their mailserver is blacklisted by anyone. If so, try to get the blacklisting removed.
 
-Is your account's SPF record correct? DKIM?
+Is your account's SPF record correct? DKIM?  In cPanel you can add SPF and DKIM records using the "Email Deliverability" application.   Work with your hoster if you are unsure about this.
 
 AOL and Hotmail dump emails originating from server/client IP addresses that fail DNS reverse lookup. You should talk to your webhost to ensure that your webserver and hosting account / domain are properly configured with a PTR or DNS reverse lookup.
 
