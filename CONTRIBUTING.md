@@ -277,6 +277,13 @@ Try not to copy and paste, since this means content will need to be maintained i
 * If the shared content is structural, use a shortcode or modify a template.  This is an advanced area; please ask first.  
 * Otherwise, simply link to the content in the main place it exists. See the section *Links* above. 
 
+## Technical content 
+
+- Please prefix the title of technical content with "Technical - ".
+- Please include the shortcode `technical` at the top of the page. 
+
+See `/user/upgrading/convert_to_utf8.md` for an example. 
+
 ## CSS
 There are two CSS files you can modify: 
 

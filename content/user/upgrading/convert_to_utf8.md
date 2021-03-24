@@ -5,6 +5,8 @@ category: upgrading
 weight: 20
 ---
 
+{{< technical >}}
+
 ## Do I need to convert to UTF-8?
 
 **Short answer: yes.**

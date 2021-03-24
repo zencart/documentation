@@ -1,9 +1,11 @@
 ---
-title: Building help for your admin plugin 
+title: Technical - Building help for your admin plugin 
 description: Creating easy-to-access help for your Zen Cart admin-side modification
 category: plugins
 weight: 10
 ---
+
+{{< technical >}}
 
 ## Help for New Admin Pages 
 
