@@ -11,13 +11,13 @@ layout: docs
 <!-- remember to start links with "/" -->
 
 
-* [Add a Page](/user/customizing/add_pages/) - How do I add a new page to my store? 
+* [Add a Page](/user/customizing/add_pages/) - How do I add new pages to my store? 
 
-* [Add a Link](/user/sideboxes/add_link_information_sidebox/) - How do I add a link to the Information sidebox? 
+* [Add a Link](/user/sideboxes/add_link_information_sidebox/) - How do I add links to the Information sidebox? 
 
-* [Admin Password Reset](/user/troubleshooting/reset_admin_password/) - How to reset your password if you have forgotten it.
+* [Admin Password Reset](/user/troubleshooting/reset_admin_password/) - How to update your password if you have forgotten it.
 
-* [Backup](/user/running/backup/) - How do I make a backup? 
+* [Backup](/user/running/backup/) - How do I back up my store? 
 
 * [Blank Page](/user/troubleshooting/blank_page/) - What to do if part or all of a page is blank.
 

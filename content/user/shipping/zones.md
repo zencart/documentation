@@ -47,8 +47,11 @@ These values are entered as [colon-separated pairs](/user/running/colon-separate
 
 For instance, you might want an order than weighs more than 0 and less than or equal to 3 to cost 5.50 to ship to a certain zone.
 
-This would be defined by this: 3:5.5
+You would then use the following setting in the Shipping Table: 
 
+```
+3:5.5
+```
 
 You should combine a bunch of these rates together in a comma delimited list and enter them into the "Zone X Shipping Table" fields where "X" is the zone number. For example, this might be used for Zone 1:
 
