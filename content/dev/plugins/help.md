@@ -36,7 +36,7 @@ If you are not running Zen Cart 1.5.7 or higher, you will need to pull in [this 
 
 ## Help for Modules (Shipping, Payment or Order Totals) 
 
-TBD - waiting on PR 4246 to be merged. 
+Module help is another feature which has been built-in since Zen Cart 1.5.8.  If you are not yet using this version or higher, you can merge [this PR](https://github.com/zencart/zencart/commit/77d4434ed5469c2f65e79a890ac6a4cb4fe85ac4) into your cart. 
 
 ## Examples of PHP Help Files 
 
@@ -78,20 +78,11 @@ echo 'Settings for this plugin are configured in <a href="'  . HTTPS_CATALOG_SER
 ?>
 ```
 
-### Pulling in a define page 
+### Collaborating on Help 
 
-Using a custom built [define page](/user/template/define_pages/) to store content means the storeowner can update the help independently without needing a developer.
+If you need to allow multiple people to update the help simultaneously, consider linking out to a collaboration tool such as Google Docs. 
 
 Here's how to pull it into a custom PHP help page. The page should be in `includes/languages/english/define_myplugin.php`.
-
-```
-<?php
-   echo 'Note: To edit this file, go to <a href="'  . HTTPS_CATALOG_SERVER . DIR_WS_ADMIN . '../define_pages_editor.php" target="_blank">Admin > Tools > Define Pages Editor</a> and select "define_myplugin.php"<br><br>';
-   $define_page = zen_get_file_directory(DIR_FS_CATALOG_LANGUAGES . $_SESSION['language'] . '/html_includes/', 'define_myplugin', 'false');
-   $text = file_get_contents($define_page);
-   echo $text;
-?>
-```
 
 ### Pulling in a function 
 
