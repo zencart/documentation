@@ -9,7 +9,7 @@ weight: 20
 This page allows you to view and edit product types.  The most common 
 product type is `Product - General`.
 
-What are the product-type options for in the Admin area?
+What are the product type options for in the Admin area?
 
 When you go to the Admin > Catalog > Categories/Products you have a list of your categories. Beside the New Product button is a pulldown menu. Whatever product type you select from this menu before clicking New Product is the type of product you will create.
 

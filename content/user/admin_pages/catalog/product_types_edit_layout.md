@@ -4,6 +4,8 @@ category: admin_pages
 weight: 21
 ---
 
+Zen Cart is flexible enough to allow multiple product types so that stores with special needs can create a custom product with the required data fields and behaviors. However, the most common product type is `Product - General`, and this is the only product type that most stores use.  
+
 Each [product type](/user/admin_pages/catalog/product_types/) can choose to show or hide specific fields. 
 
 The Product Types Layout Settings page has a series of flags that allow you to enable or disable the fields that are shown on the Product Info page *for the currently selected product type*.   These augment the product-type-independent fields which are set on Admin > Configuration > Layout Settings. 
