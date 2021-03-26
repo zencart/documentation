@@ -1,6 +1,6 @@
 ---
 title: Other templates for Zen Cart
-description: Changing the appearance of your cart 
+description: Changing the appearance of your cart by using a new template
 category: template
 weight: 10
 ---
@@ -12,6 +12,7 @@ The base template is Zen Cart is called [template_default](/user/template/templa
 `responsive_classic` is another sample custom template, but it is more modern than `classic`. It was designed [to be responsive](/user/template/responsive/), which is a way of saying that it works on mobile devices.  When the `classic` template was created, there were no mobile devices, so that wasn't a concern.
 
 {{< templates >}}
+
 
 See the other FAQs on [the template system and overrides](/user/template/) for more information.
 
@@ -28,4 +29,15 @@ Another well supported option is the [Bootstrap template](https://www.zen-cart.c
 
 ### Bootstrap Template - Product Page (Mobile) 
 ![Bootstrap Template Product Page on Mobile](/images/bootstrap_full.png)
+
+## Commercial Templates 
+
+There are software vendors who sell templates for Zen Cart.  Many of them are extremely visually attractive.  But exercise caution! 
+
+- Some of these templates were built for WordPress, not Zen Cart, so they don't respect configuration settings and are much harder to work on.
+- Some of these templates were built for much older versions of Zen Cart, and haven't been upgraded.  
+- Some of these templates remove large pieces of core code functionality to simplify the template builder's job (because they don't take the time to learn all the things Zen Cart can do with its various configuration switches or product features), which means that things you would expect to work do not. 
+
+Be sure to discuss these issues with your template provider and make the transaction with an awareness of what you are taking on.  
+Don't be afraid to get them to put in writing whether they have tested the template's functionality with all of Zen Cart's features, and whether they will support you if things "break" when you change Zen Cart configuration settings.
 
