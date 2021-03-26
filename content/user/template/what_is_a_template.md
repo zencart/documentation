@@ -11,7 +11,7 @@ Zen Cart files.
 
 ---
 ### What is a template? 
-A template (sometimes called a "theme") is a set of files that controls how
+A template (sometimes called a "theme" or a "skin" in other software) is a set of files that controls how
 the Zen Cart storefront looks.  
 
 The following list outlines the elements of a template: 
@@ -41,6 +41,17 @@ See [the list of non-overridable files](/user/template/template_overrides/#what-
 ---
 ### What is template default? 
 See [the template default FAQ](/user/template/template_default/). 
+
+---
+### What is responsive classic? 
+In Zen Cart 1.5.5, a new template was developed in response to the 
+increasing adoption of mobile devices like phones and tablets. Its name 
+was Responsive Classic. 
+See [other templates for Zen Cart](/user/template/other_templates/).
+
+---
+### What other templates are available? 
+See [other templates for Zen Cart](/user/template/other_templates/).
 
 ---
 ### I created a new template, but can't see it in Admin > Tools > Template Selection
