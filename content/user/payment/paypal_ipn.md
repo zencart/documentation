@@ -5,14 +5,33 @@ category: payment
 weight: 10
 ---
 
-## Things to check if PayPal payments are not working
+These are things to check if PayPal payments are not working.
 
+---
 ### Are you getting specific error messages?
 See the [PayPal Errors](/user/payment/paypal_errors/) page to investigate.
 
+---
+### Are you getting "Whoops?" timeouts when you return to your cart after payment? 
+
+Note: This only applies to PayPal Standard. 
+
+This is a result of the samesite cookie rule that modern browsers are enforcing.  If you want to force browsers into lower-security mode by disabling the samesite cookie rules they're programmed to follow, then you can do the following:
+
+Create a file named `includes/extra_configures/samesite_cookie.php` containing the following:
+
+```
+<?php
+// -----
+// Samesite cookie needs to be 'none' when doing offsite payment gateway redirects
+//
+define('COOKIE_SAMESITE', 'none');
+```
+---
 ### Is the PayPal payment option not appearing?
 Did you miss any of the configuration steps when [Configuring PayPal in your Store](/user/payment/paypal_express_checkout/)?
 
+---
 ### Are Transaction Updates From PayPal Not Updating Your Orders?
 
 PayPal sends automatic updates to your store whenever a transaction's status changes. Sometimes those notifications don't arrive, for various technical reasons. The following may help troubleshoot:
