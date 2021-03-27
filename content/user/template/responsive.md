@@ -32,4 +32,13 @@ Another way is just to use your mouse and grab the corner of your browser window
 
 Developers and designers might appreciate the https://responsively.app tool for looking at a site by simulating various common mobile devices.
 
-TIP: Don't design your site for "every possible mobile device"! It'll never be "pixel-perfect". Make it work well for the majority of devices that *your* site's visitors are using: don't worry about devices of people who aren't your target customer.
+TIP: Don't design your site for "every possible mobile device." It will never be "pixel-perfect." Make it work well for the majority of devices that *your* site's visitors are using: don't worry about devices of people who aren't your target customer.
+
+## How do you achieve responsiveness? 
+
+In order to determine how to lay out a page, the template must first determine the length and width of the visitor's screen. 
+
+- The Responsive Classic template uses browser user-agent-detection 
+- The Bootstrap template uses media queries
+
+A deeper discussion of these topics is presented in the [Mobile or Desktop state?](/user/template/mobile_mode/) article. 

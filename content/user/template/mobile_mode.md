@@ -1,6 +1,6 @@
 ---
-title: Mobile or Desktop state? - determining in your template
-description: Determining your visitor's device in Responsive Classic
+title: Mobile or Desktop state? 
+description: Determining your visitor's screen size 
 category: template
 weight: 10
 ---
