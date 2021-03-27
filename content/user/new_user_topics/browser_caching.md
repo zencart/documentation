@@ -11,9 +11,9 @@ aliases:
 
 "Why don't I see my new CSS style?" 
 
-"Where's my javascript function update?" 
+"Where's my JavaScript function update?" 
 
-If you upload a new file with the same name as an existing file, in many cases you won't see the change right away in your browser.  This could be for an image, a CSS file or a javascript file.  Why is this? 
+If you upload a new file with the same name as an existing file, in many cases you won't see the change right away in your browser.  This could be for an image, a CSS file or a JavaScript file.  Why is this? 
 
 It's because of a browser behavior called _caching_.  
 

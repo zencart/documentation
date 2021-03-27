@@ -1,6 +1,6 @@
 ---
 title: Adding Google Analytics or Google Tag Manager
-description: How do I install javascript snippets for 3rd-party tools?
+description: How do I install JavaScript snippets for 3rd-party tools?
 category: running
 weight: 10
 ---
@@ -11,7 +11,7 @@ There are many analytics services available. One popular one is Google Analytics
 
 These instructions apply for any vendor, not just Google. Substitute their name in the filename below.
 
-To add VERY BASIC Google Analytics to your site, Google gives you a javascript code snippet to install.
+To add VERY BASIC Google Analytics to your site, Google gives you a JavaScript code snippet to install.
 
 The simplest way to install this basic code snippet is:
 

@@ -19,8 +19,8 @@ But you don't know where to put this new code.
 1\. First, you need to make sure you have an appropriate override file in place.  
 
 THERE ARE TWO OPTIONS:  
-a) javascript file (recommended)  
-To do it with a javascript file, simply create the following file:  
+a) JavaScript file (recommended)  
+To do it with a JavaScript file, simply create the following file:  
 /includes/modules/pages/checkout_success/jscript_myaffiliate_program.php  
 
 b) template file:  

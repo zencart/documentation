@@ -36,7 +36,7 @@ Plugins not using the zc_plugins structure should put their page-specific CSS ad
 
 ## Per-Page JS Files
 
-You may put your custom Javascript for individual Admin pages into page-specific files that will automatically load on those pages.
+You may put your custom JavaScript for individual Admin pages into page-specific files that will automatically load on those pages.
 
 The convention (and loading order) is:
 
@@ -54,5 +54,5 @@ The convention (and loading order) is:
 It is a good practice to put your own page-specific customizations into a non-core file 
 (eg: `pagename_mystore.js`) so that there are fewer file conflicts when upgrading.
 
-Plugins not using the zc_plugins structure should put their page-specific custom javascript into a file using a naming convention akin to: `pagename_pluginname.js`
+Plugins not using the zc_plugins structure should put their page-specific custom JavaScript into a file using a naming convention akin to: `pagename_pluginname.js`
 

@@ -36,6 +36,7 @@ There are software vendors who sell templates for Zen Cart.  Many of them are ex
 
 - Some of these templates were built for WordPress, not Zen Cart, so they don't respect configuration settings and are much harder to work on.
 - Some of these templates were built for much older versions of Zen Cart, and haven't been upgraded.  
+- Some of these templates include old versions of JavaScript libraries, which must be updated. 
 - Some of these templates remove large pieces of core code functionality to simplify the template builder's job (because they don't take the time to learn all the things Zen Cart can do with its various configuration switches or product features), which means that things you would expect to work do not. 
 
 Be sure to discuss these issues with your template provider and make the transaction with an awareness of what you are taking on.  
