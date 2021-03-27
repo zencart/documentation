@@ -1,6 +1,6 @@
 ---
-title: Javascript Customization 
-description: Adding or changing Javascript 
+title: JavaScript Customization 
+description: Adding or changing JavaScript 
 category: template
 weight: 10
 type: codepage
@@ -36,9 +36,9 @@ However, in this case, you DO need to include the <code>&lt;script .... &gt;</co
 </p>
 
 ### On_Load Override How-To
-<p>This is a bit of another angle on the use of Javascript in Zen Cart pages.
+<p>This is a bit of another angle on the use of JavaScript in Zen Cart pages.
 </p><p>Zen Cart's modular system can be used to insert &lt;body&gt; tag "onload" event handling on a site-wide or per-page basis very easily. Within your /includes/templates/YOURTEMPLATE/ folder, you can create a <code>/jscript/on_load/</code> folder for this purpose. 
-</p><p>Any <b>on_load_*.js</b> file in this directory can be used to modify the body tag with a javascript on_load() function.
+</p><p>Any <b>on_load_*.js</b> file in this directory can be used to modify the body tag with a JavaScript <i>on_load()</i> function.
 </p><p><br>
 </p>
 
@@ -88,7 +88,7 @@ Let's look at the login page:
 
 #### EXAMPLE #2 (on_load calls on all pages in your shop)
 <p>Sometimes a designer wishes to preload rollover images on the page for menu purposes. In this case, the implementation is two-fold:
-</p><p>1. Create a file with javascript function definitions for the preload activities, and place it in:
+</p><p>1. Create a file with JavaScript function definitions for the preload activities, and place it in:
 </p><p><code>includes/templates/{template_directory}/jscript/jscript_preloadimages.js</code>
 </p><p>2. Create a file for the onload code as:
 </p><p><code>includes/templates/{template_directory}/jscript/on_load/on_load_image_preload.js</code>

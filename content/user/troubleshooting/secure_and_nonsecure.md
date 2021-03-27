@@ -28,7 +28,7 @@ That indicates that somewhere in your templates or stylesheets you have hard-cod
 
 This can also happen if you have added banners with `http://` links and not told them to skip display on SSL pages.
 
-This can also happen if you have added click-tracking tools to your site via javascript, which link to `http://` pages somewhere.
+This can also happen if you have added click-tracking tools to your site via JavaScript, which link to `http://` pages somewhere.
 
 You can identify most culprits by searching your browser's View Source for:
 `src="http://`

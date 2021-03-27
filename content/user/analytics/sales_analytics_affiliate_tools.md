@@ -117,7 +117,7 @@ if (!isset($order_summary['products_ordered_models'])) {
 
 
 ## Advanced Use  
-Advanced programmers might choose programmatic hooks instead of javascript callbacks, by invoking the [notifier system](/dev/code/notifiers/). This involves hooking 
+Advanced programmers might choose programmatic hooks instead of JavaScript callbacks, by invoking the [notifier system](/dev/code/notifiers/). This involves hooking 
 `NOTIFY_CHECKOUT_PROCESS_HANDLE_AFFILIATES` and referencing the 
 `$_SESSION['order_summary']` array in place of the non-global 
 `$order_summary` array.  

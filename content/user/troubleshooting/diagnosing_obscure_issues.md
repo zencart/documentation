@@ -22,7 +22,7 @@ The most detailed procedure to follow to find out what's wrong when you've made 
 *   Files that have been upgraded incompletely.
 *   Files that have been corrupted during upload by becoming double-spaced due to improper handling of end-of-line characters.
 *   Override files that have altered normal operation.
-*   Recently-added widgets/snippets, especially javascript from 3rd party services.
+*   Recently-added widgets/snippets, especially JavaScript from 3rd party services.
 *   Additional non-original files of any sort, especially those that contain "define" statements, since those can change normal operation.
 
 **Most Common Causes:**
@@ -30,7 +30,7 @@ The most detailed procedure to follow to find out what's wrong when you've made 
 *   In many cases it's a result of `define()` statements being customized and missing the closing `'` or `')` or `');` or maybe using `'` marks inside strings but not using `\'` instead so the `'` is treated properly.
 *   Second most common root cause is poorly-written plugins.
 *   Next most common is an incomplete upgrade of PHP files.
-*   Third-party javascript you've added to your site.
+*   Third-party JavaScript you've added to your site.
 *   Configuration switch settings you've changed in your Admin
 
 **Other Causes:**

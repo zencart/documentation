@@ -13,7 +13,7 @@ weight: 1
 - [Version-Specific Considerations](/user/upgrading/release_specific_upgrade_considerations/)
 
 ## After Upgrading
-- [Keep Your Javascript Scripts Updated](/user/upgrading/javascript_updates/)
+- [Keep Your JavaScript Scripts Updated](/user/upgrading/javascript_updates/)
 - [Should I Change My Database Character Set to UTF8?](/user/upgrading/convert_to_utf8/)
 
 ## Troubleshooting

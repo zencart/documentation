@@ -9,13 +9,13 @@ One of the most popular analytics tracking services is Google Analytics.
 Other excellent competing tools include Fathom Analytics and Piwik/Matomo.
 
 ## Basic snippet installation
-These services will provide you with a "javascript snippet" to insert onto your site.
+These services will provide you with a "JavaScript snippet" to insert onto your site.
 
 The simplest way to do this is to create a new file called
 
 `/includes/template/YOURTEMPLATENAME/jscript/jscript_piwik_analytics.js` (or rename for your desired service)
 
-and paste the javascript snippet code inside it.
+and paste the JavaScript snippet code inside it.
 
 ## Google Tag Manager
 
@@ -25,7 +25,7 @@ See [/user/running/external_javascript_services/](/user/running/external_javascr
 ## Advanced Integration To Provide Calculated Data
 
 If you need to do some data queries or numeric calculations, you will need to change the `.js` extension in the above file to `.php`
-and then you can write PHP code intertwined with the javascript code.
+and then you can write PHP code intertwined with the JavaScript code.
 
 Commonly-requested data which you can incorporate is explained in [Integrating Sales/Analytics/Affiliate Tools](/user/analytics/sales_analytics_affiliate_tools/)
 
