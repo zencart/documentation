@@ -195,6 +195,7 @@ See [FTP tools](/user/first_steps/useful_tools/#ftp-tools) and [security](/user/
     * Ensure that other websites on your server with security issues cannot be used to get to your site and cause harm.
 6.  If your business warrants, or you still want additional assurance (especially if running forum software on your site, or other scripts outside of Zen Cart), hire a security consultant to check your site regularly and give you peace of mind in exchange for a few dollars.
 7.  Check your Zen Cart /logs/ or /cache/ folder for myDEBUG-XXXXX.log files to see whether any errors are happening which need to be fixed. Delete the log files after you've addressed the errors.  If you are not sure how to read log files, see [reading a myDEBUG log](/user/troubleshooting/debug_logs/). 
+8.   Ensure your [JavaScript libraries are up to date](/user/upgrading/javascript_updates/) using a tool light Google Lighthouse. 
 
 ### 13. Server Operating System Patches
 
