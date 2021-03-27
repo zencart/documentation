@@ -5,6 +5,9 @@ category: payment
 weight: 10
 ---
 
+Here are some common PayPal errors and the steps required to fix them. 
+
+--- 
 
 ### We cannot process your payment at this time. Please retry your purchase (PayPal)
 

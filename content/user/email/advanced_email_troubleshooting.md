@@ -151,7 +151,7 @@ default.\_domainkey 14400 IN TXT "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiGdR2xFCm6A8xm
 
 ### DMARC RECORDS
 
-Domain-based Message Authentication, Reporting, and Conformance (DMARC) builds on the identificaton provided by SPF and DKIM by specifying what the receiver should do if the email fails some check performed by the receiver.  It also optionally lets the receiver know how they can report the failure to you for repair. Email clients (receivers) don't "have to" do what DMARC tells them, but more and more will follow the instructions if they are properly configured.
+Domain-based Message Authentication, Reporting, and Conformance (DMARC) builds on the identification provided by SPF and DKIM by specifying what the receiver should do if the email fails some check performed by the receiver.  It also optionally lets the receiver know how they can report the failure to you for repair. Email clients (receivers) don't "have to" do what DMARC tells them, but more and more will follow the instructions if they are properly configured.
 
 DMARC requires a valid SPF and DKIM record set in your domain's DNS in order for it to work.
 
