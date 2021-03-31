@@ -23,20 +23,20 @@ class zcObserverMyPluginHelp extends base {
   function update(&$class, $eventID, $page, &$help_page) {
      if ($eventID == 'NOTIFIER_PLUGIN_HELP_PAGE_URL_LOOKUP') {
         if ($page == FILENAME_MYPLUGIN_NAME) {
-           $help_page = "help/myplugin.html"; 
+           $help_page = "link-to-your-help-page"; 
         }
      }
   }
 }
 ```
 
-Then create a help file in `YOURADMIN/help/myplugin.html` (or `YOURADMIN/help/myplugin.php` if you need to execute code) to store your help text.
-
 If you are not running Zen Cart 1.5.7 or higher, you will need to pull in [this PR](https://github.com/zencart/zencart/commit/bc195baf258c11b73f29de41020e1c0505e4d462) to your cart to get admin observers to autoload. 
 
 ## Help for Modules (Shipping, Payment or Order Totals) 
 
 Module help is another feature which has been built-in since Zen Cart 1.5.8.  If you are not yet using this version or higher, you can merge [this PR](https://github.com/zencart/zencart/commit/77d4434ed5469c2f65e79a890ac6a4cb4fe85ac4) into your cart. 
+
+The help function returns an array. If the array key `link` is set, then presing the Help button will open a new tab for that link.  If the key `body` is set, then the value data for `body` will be displayed in a modal dialog.
 
 ## Examples of PHP Help Files 
 
@@ -81,8 +81,6 @@ echo 'Settings for this plugin are configured in <a href="'  . HTTPS_CATALOG_SER
 ### Collaborating on Help 
 
 If you need to allow multiple people to update the help simultaneously, consider linking out to a collaboration tool such as Google Docs. 
-
-Here's how to pull it into a custom PHP help page. The page should be in `includes/languages/english/define_myplugin.php`.
 
 ### Pulling in a function 
 
