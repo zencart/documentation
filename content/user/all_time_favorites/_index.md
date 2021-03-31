@@ -25,6 +25,8 @@ layout: docs
 
 * [Customizing my site](/user/customizing/appearance/) - Changing the look and feel of your cart.
 
+* [Development environment](/user/running/local_testing/) - how do I set up a local development environment for testing? 
+
 * [Documentation ](/user/first_steps/documentation/) - Hints and examples for using this documentation
 
 * [Downloading Zen Cart](/user/first_steps/get_zen_cart/) - Where do I download the Zen Cart software?

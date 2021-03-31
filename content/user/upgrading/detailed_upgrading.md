@@ -190,6 +190,8 @@ Also read the plugin's upgrade documentation to note whether it says that some "
 
 # 3\. Testing
 
+**Note:** As an alternative, rather than testing on your server, you can [set up a local development environment](/user/running/local_testing/) and test there. 
+
 ## Take a fresh backup
 First, take a fresh database backup from your live store:
 
