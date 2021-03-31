@@ -21,7 +21,7 @@ Then in the dialog that comes up, on the right side, click "Lighthouse."
 
 ![Lighthouse](/images/lighthouse.png)
 
-Click the Generate Report button, and look under "Best Practices."  The second error message in this screenshot indicates some libraries need updating. 
+Click the Generate Report button, and look under "Best Practices."  The message in this screenshot indicates that the Bootstrap and jQuery libraries need to be updated. 
 
 ![Lighthouse error](/images/best_practices.png)
 
