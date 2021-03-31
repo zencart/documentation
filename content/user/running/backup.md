@@ -72,8 +72,14 @@ redundancy.
 ![Backup MySQL Backup](/images/mysql_backup.png)
 
 --- 
+## Setting up your cart on your own computer 
 
-## TO RESTORE YOUR DATABASE:
+Now that you have a fresh copy of your database and files, it's the 
+ideal time to [create a local development environment](/user/running/local_testing/). 
+
+--- 
+
+## Restoring a Database
 
 - Open phpMyAdmin  
 - From the dropdown menu, select the database you wish to restore INTO  
