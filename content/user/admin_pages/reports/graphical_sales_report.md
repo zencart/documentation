@@ -1,6 +1,6 @@
 ---
 title: Sales Report with Graphs
-category: admin_pages
+category: reports
 weight: 60
 ---
 

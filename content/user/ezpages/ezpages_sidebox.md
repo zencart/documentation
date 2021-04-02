@@ -3,7 +3,7 @@ title: EZ-Pages sidebox
 description: Customizing the Important Links sidebox  
 category: template
 weight: 10
-url: /user/sideboxes/ezpages_sidebox
+noindex: yes
 ---
 
-This page is a redirect only.
+Please see [this page](/user/sideboxes/ezpages_sidebox/).
