@@ -2,10 +2,8 @@
 title: Download folder - Moving 
 description: Securing your downloads 
 category: products
-url: /user/security/relocate_download_folder
 weight: 10
+noindex: yes
 ---
 
-
-This page is a redirect only.
-
+Please see [this page](/user/security/relocate_download_folder/).

@@ -205,21 +205,14 @@ aliases:
     - /user/new_user_topics/change_powered_by/
 ```
 
-## Redirect only pages 
-
-If you just want a link to show up in the `_index.md` file without having 
-to replicate content, you can create a file with just front matter content, and put a `url:` entry in the front matter **without a trailing slash**.  Use the example provided by  [`/user/admin/admin_password.md`](https://github.com/zencart/documentation/blob/master/content/user/admin/admin_password.md), which points to the file [`/user/troubleshooting/reset_admin_password`](https://github.com/zencart/documentation/blob/master/content/user/troubleshooting/reset_admin_password.md).  
-
-You can also point to a folder rather than a single file, as is done in `/user/customizing/template_system.md`, which redirects to `/user/template`.
-
-Pages with a `url` entry in their front matter are called _redirect only_ pages.  Note that redirect-only pages do not require `noindex` or `nosearch` in the front matter (see below); since they have a `url` element, that is sufficient. 
-
 ## Crosslink only pages 
 
 A page with minimal content and mostly links is called a _crosslink only_ page. 
 These pages are like linked products - they ensure that someone browsing a category will see related content.  An example is `/user/products/product_listing.md`.
 
-Crosslink only pages should have `noindex` in their front matter. 
+Crosslink only pages should have `noindex: yes` in their front matter. 
+
+We are no longer using a `url` in the front matter to redirect because it doesn't work reliably. 
 
 ## Excluding pages from the All FAQs index 
 

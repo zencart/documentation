@@ -3,8 +3,7 @@ title: How do I add images to a sidebox?
 description: Placing images in a sidebox 
 category: template
 weight: 10
-url: /user/template/add_image_box
+noindex: yes
 ---
 
-This page is a redirect only.
-
+Please see [this page](/user/template/add_image_box/).

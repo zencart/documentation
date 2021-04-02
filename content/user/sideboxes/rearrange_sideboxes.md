@@ -3,8 +3,8 @@ title: How do I rearrange sideboxes?
 description: Changing sidebox sort order 
 category: template
 weight: 10
-url: /user/template/remove_rearrange_sideboxes
+noindex: yes
 ---
 
-This page is a redirect only.
+Please see [this page](/user/template/remove_rearrange_sideboxes/).
 
