@@ -1,6 +1,6 @@
 ---
 title: Release History
-description: Zen Cart Release History
+description: Zen Cart Version History
 category: about_us
 weight: 10
 ---
@@ -19,6 +19,8 @@ and
 ---
 
 This is the release history of the Zen Cart product.
+
+03/05/2021 - v1.5.7c [Release Notes](https://www.zen-cart.com/docs/whatsnew_1.5.7.html)
 
 11/23/2020 - v1.5.7b [Release Notes](https://www.zen-cart.com/docs/whatsnew_1.5.7.html)
 

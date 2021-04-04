@@ -1,5 +1,5 @@
 ---
-title: How to I put a search box in my site header 
+title: How do I put a search box in my site header 
 description: Configuring header search 
 category: search 
 weight: 10
