@@ -76,16 +76,21 @@ title: 'Parse error:  unexpected T_STRING (or similar)'
 - Don't use a headline starting with `#`.  The `title` in the block above is sufficient.
 
 - Use backticks for denoting code and filenames.  For example, the filename "includes/classes/shopping\_cart.php" should be coded as 
+
+```
 `includes/classes/shopping_cart.php`
+```  
+
+This will make it appear as follows: `includes/classes/shopping_cart.php`.
 
 - If you do need to escape an underscore outside of backticks, you can use a backslash, like this: `\_`.  
 
 - If you are converting an old file from the Tutorials/FAQ area, be sure to change any references to `content.php` (the old way) to a new page on the docs site. Example: 
 
 OLD WAY: 
-<pre>
-Check out the &lt;a href="https://www.zen-cart.com/content.php?48-what-are-the-server-requirements-to-run-zen-cart" target="&#95;blank"&gt;Server Requirements For Running Zen Cart&lt;/a&gt;
-</pre>
+```
+Check out the <a href="https://www.zen-cart.com/content.php?48-what-are-the-server-requirements-to-run-zen-cart">Server Requirements For Running Zen Cart</a>;
+```
 
 NEW WAY: 
 
@@ -107,7 +112,7 @@ Check out the [Server Requirements for Running Zen Cart](/user/first_steps/serve
 not this: 
 
 <pre>
-Check out the [Server Requirements for Running Zen Cart](/user/first_steps/server_requirements.md).  
+Check out the [Server Requirements for Running Zen Cart](/user/first_steps/server_requirements.md).        **NO!**
 </pre> 
 
 
