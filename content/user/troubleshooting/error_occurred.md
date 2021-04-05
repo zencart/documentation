@@ -19,8 +19,6 @@ It could be a problem with:
 
 To find out the actual REAL error message that's occurring, view your site's myDEBUG-xxxxxx.log files located in your site's `/logs` folder.  More information on accessing those logs is provided in [blank page troubleshooting](/user/troubleshooting/blank_page/). 
 
-(For versions prior to 1.5, logs were stored in `/cache`.)
-
 Once you've found the actual error message details from those logs, search for those messages using the search option on this page or in the main Zen Cart support forum for additional steps in resolving the problem.
 
 Alternatively, to see the actual MySQL error message details, you can TEMPORARILY enable `STRICT_ERROR_REPORTING` as described in [the strict error reporting FAQ](/user/troubleshooting/strict_error_reporting/).
