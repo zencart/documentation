@@ -40,7 +40,10 @@ If the logged in Admin person is not allowed access due to the admin profile, th
 
 #### Using 
 
-Admins can access any customer’s account directly from the Admin Customers list by using the “Place Order” button that is shown in the sidebar. 
+Admins can access any customer’s account directly from the Admin Customers list by using the “Place Order” button that is shown in the sidebar of Admin > Customers > Customers. 
+
+<img src="/images/login_as_customer.png" alt="Login as Customer" />
+<br><br>
 
 Admins can login as customer directly from the public website using the customer's email address and any Admin password that is associated with an admin profile that allows access.
 > Note: Once you arrive at the customer login screen, ANY allowed Admin Password can be used, not just the password of the current admin.
