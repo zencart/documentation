@@ -21,6 +21,9 @@ What are some alternative options to running a blog with your Zen Cart installat
 
 The Zen Cart [EZ-Pages](/user/ezpages/) system allows you to create content using a secure, controlled facility.  This content can then be displayed on your site.   You can even organize your pages into chapters and have a table of contents. 
 
+### Use News Box Manager 
+The [News Box Manager](https://www.zen-cart.com/downloads.php?do=file&id=2264) plugin allows you to create new pages for your site.
+
 ### Create and send a newsletter regularly
 
 Creating and building an email list using a [newsletter](/user/email/newsletters/) is a great way to develop a community.

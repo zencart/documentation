@@ -37,6 +37,12 @@ The latter is somewhat less customizable but contains fewer files.
 
 The advantage of creating a new page is that you can use PHP in the page, which is not an option with EZ-Pages.  Being able to use PHP means you can add conditional logic, do database lookups, customize for specific groups or customer characteristics, etc. 
 
+### Add infrastructure to build multiple pages 
+
+Use this plugin as a starting point: 
+- [News Box Manager](https://www.zen-cart.com/downloads.php?do=file&id=2264) 
+
+
 ## Linking to your New Page 
 
 Once you have created your new page, you'll want to link to it. A few options are: 
