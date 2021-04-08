@@ -17,8 +17,8 @@ You might want to set the banner status to off for banners you don't want to sho
 ### BANNER STYLES
 There are 2 styles of banners: sidebox and wide banners
 
-Sidebox banners are narrower and designed to fit in a sidebox.
-Wide Banners are designed to span the width of your page.  The images should be wide, but not too tall.
+[Sidebox Banners](/user/sideboxes/sidebox_list/#banners) are narrower and designed to fit in a sidebox.
+Wide Banners are designed to **span the width of your page**.  The images should be wide, but not too tall.
 
 You can give almost whatever group name you want to a banner. Banners in the same group will be randomly displayed one at a time in the position indicated in `Layout Settings` (see below).
 
