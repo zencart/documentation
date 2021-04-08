@@ -48,7 +48,7 @@ Only one banner is displayed at a time in any banner position. (There is an exce
 
 In the default template the following are where these banners will be displayed:
 
-<img src="/images/banners_header" alt="Header Positions for Banner Groups">
+<img src="/images/banners_header.png" alt="Header Positions for Banner Groups">
 
 <img src="/images/banners_footer.png" alt="Footer Positions for Banner Groups">
 
