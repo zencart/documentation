@@ -1,5 +1,5 @@
 ---
-title: How do I set up and report on banner ads? 
+title: How do I set up banners? and report on banner ads? 
 description: Banner management in admin 
 category: admin
 weight: 10
