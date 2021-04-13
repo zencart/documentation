@@ -8,6 +8,8 @@ weight: 10
 
 Zen Cart uses the term _Listing Page_ to refer to a page that shows a number of products in a stack of rows in the center of the page. The _Product Listing Page_ is a listing page that shows all the products in a category. 
 
+**Note:** The Product Listing page is sometimes also called the _Index Listing Page_.
+
 More information on listing pages is provided in the [storefront listing pages](/user/storefront_pages/listing_pages/) FAQ. 
 
 The layout for listing pages is described in more detail in [listing page layout](/user/template/listing_page_layout/). 

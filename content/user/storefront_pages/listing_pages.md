@@ -18,7 +18,7 @@ Product Listing | index.php?main_page=index&cPath=NNN
 
 Where _NNN_ is a category path of a category containing products. 
 
-The _Product Listing pages_ are the pages that are created when viewing a category which contains products (rather than other categories). 
+The _Product Listing page_ is the page that is created when viewing a category which contains products (rather than other categories).  It is sometimes also called the _Index Listing page_. 
 
 _Category pages_ are pages showing only categories.  This term is less used, and category pages have fewer configuration options.  Also, the category page is displayed as a grid of images, so it's different from the other listing pages discussed here. 
 

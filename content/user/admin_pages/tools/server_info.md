@@ -12,9 +12,9 @@ on which you are running Zen Cart.
 The information at the top of the page gives you a quick snapshot of the most 
 critical values: 
 
-- (a) PHP Version: Version of PHP you are using 
-- (b) Database Engine: Version of MySQL you are using 
-- (c) PHP Memory Limit: [The amount of memory a script is allowed to allocate](https://www.php.net/manual/en/ini.core.php#ini.memory-limit)
+- (a) PHP Version: Version of PHP you are using.
+- (b) Database Engine: Version of MySQL you are using.
+- (c) PHP Memory Limit: The amount of memory a script is allowed to allocate, per the [PHP Documentation on this setting](https://www.php.net/manual/en/ini.core.php#ini.memory-limit).  Read more about [PHP memory limit and Zen Cart](/user/first_steps/server_requirements/#php-memory-recommendations).
 - (d) Database: (Since Zen Cart 1.5.6) the name of the database from your `admin/includes/configure.php` file 
 
 Below this is the history of your database (e).
