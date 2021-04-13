@@ -77,6 +77,8 @@ It is recommended to also enable the following PHP extensions:
 - **memory_limit** suggested: **128M** or higher such as 256M or 512M if your server can handle it.
 - **post_max_size** and **upload_max_filesize** should be set to whatever max file size you or your customers may upload. Usually **8M** is sufficient for most sites, but if you're accepting huge uploads, set both to the max size of accepted combined uploads.  
 
+**Note:** In some environments, changing your PHP version can reset your memory_limit setting.  Be sure to go to the [version page](/user/admin_pages/tools/server_info/) after updating PHP to verify the setting of your PHP Memory Limit. 
+
 ### PHP Settings for optimum security:
 
 - ENABLE: `allow_url_fopen` is needed for checking things that don't/can't use `curl` (many shipping-quote and currency-update modules use this).
