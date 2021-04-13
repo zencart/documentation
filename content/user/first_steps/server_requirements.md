@@ -49,7 +49,7 @@ It is best to **use the most recent PHP version that your Zen Cart version suppo
 
 FYI: Consult [PHP's Version Support Policy](https://www.php.net/supported-versions.php) to understand whether your PHP version is still supported. Remember: old versions are not PCI compliant, and are not deemed "secure" if they are out of the maintenance period.
 
-<font color="#ff0000">**NOTE:** PHP 5.X IS OFFICIALLY OBSOLETE. So are most PHP 7 versions. You should be moving to the latest version of PHP (and matching Zen Cart version) as soon as possible!</font>  
+<font color="#ff0000">**NOTE:** PHP 5.X IS OFFICIALLY OBSOLETE as are early PHP 7 versions like 7.0, 7,1, 7.2. You should be moving to the latest version of PHP (and matching Zen Cart version) as soon as possible!</font>  
 
 ### PHP Extensions/Modules used by Zen Cart
 
