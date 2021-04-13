@@ -20,7 +20,6 @@ The address format and shipping status can be seen in the right sidebar, which i
 ![Countries - USA](/images/countries_usa.png)
 
 
-## Disabling Countries
+## Disabling/Enabling Countries
 
-In your Admin->Locations/Taxes->Countries screen, you can click on the green "status" icon to toggle the country's status off. Or if it's red, click the red icon to turn it on. The screen updates immediately with the change.
-
+In your Admin->Locations/Taxes->Countries screen, you can click on the green "status" icon to toggle the country's status off. The screen updates immediately with the change. If you don't see the country alphabetically in the list, it may have been previously disabled.  This moves a country to the end of the list, clicking the red icon will turn the country back on.
