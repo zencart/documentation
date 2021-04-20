@@ -18,6 +18,8 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 - Be sure external links are constructed with `rel="noreferrer noopener"`.
 
+- If you use a custom template, check it against [the template security changes list](/user/template/template_changes/). 
+
 ### Zen Cart 1.5.8 (currently in development phase, not released yet)
 
 - Most "functions" (both admin and non-admin) have been consolidated into files located in `/includes/functions/`. Some have been merged together. Some changes are listed below.
@@ -71,8 +73,6 @@ This document lists things you may wish to take into account as you upgrade.  Th
 - The `responsive_classic` template was introduced in this release.  If you are coming from an older release with an older template, be sure to check and verify that your template performs properly on mobile devices.  If not, you can use Responsive Classic or select another responsive template.
 
 - Starting in this version, the email css was pulled out of the individual templates into a shared file called `email/email_common.css`.  If you are creating or updating email templates, you should follow this new practice. 
-
-- The `html_header.php` file in `template_default/common/` and `responsive_classic/common/` folder contain `header('X-Frame-Options:SAMEORIGIN');` to prevent clickjacking.  If your template is older than 1.5.5, you will need to manually incorporate this change. 
 
 ### Zen Cart 1.5.2 
 

@@ -46,7 +46,8 @@ See [the template default FAQ](/user/template/template_default/).
 ### What is responsive classic? 
 The "Responsive Classic" template was added as the main template in Zen Cart 1.5.5.
 It uses techniques like browser user-agent-detection to adapt its display for mobile devices like phones and tablets.
-See [other templates for Zen Cart](/user/template/other_templates/).
+See [other templates for Zen Cart](/user/template/other_templates/) and 
+[the Responsive Classic FAQ](/user/template/responsive_classic/). 
 
 ---
 ### What other templates are available? 

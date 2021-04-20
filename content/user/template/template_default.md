@@ -1,6 +1,6 @@
 ---
 title: Template Default - what is it? 
-description: Zen Cart Template Default - what is it? 
+description: What is the default template? 
 category: template
 weight: 10
 ---

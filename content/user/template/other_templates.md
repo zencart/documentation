@@ -1,4 +1,3 @@
-
 ---
 title: Other templates for Zen Cart
 description: Changing the appearance of your cart by using a new template
@@ -10,28 +9,18 @@ The base template is Zen Cart is called [template_default](/user/template/templa
 
 `classic` is a sample custom template. You can create your own custom templates;  `classic` is just an example. Anything that's not in your custom template but exists in template_default will be automatically loaded from template_default for you. Thus, when you're building a custom template, all you need in your custom template folder are the files/folders that you've customized/changed/added. Everything else is taken from the [default files](/user/first_steps/overrides/#default-files). 
 
-`responsive_classic` is another sample custom template, but it is more modern than `classic`. It was designed [to be responsive](/user/template/responsive/), which is a way of saying that it works on mobile devices.  When the `classic` template was created, there were no mobile devices, so that wasn't a concern.
+`responsive_classic` is another sample custom template, but it is more modern than `classic`. It was designed [to be responsive](/user/template/responsive/), which is a way of saying that it works on mobile devices.  When the `classic` template was created, there were no mobile devices, so that wasn't a concern.  More details on this template are provided in the [responsive classic FAQ](/user/template/responsive_classic/).
+
+The community contributed [bootstrap template](/user/template/bootstrap/) is another good option for a responsive template. 
 
 {{< templates >}}
 
+<br>
 
 See the other FAQs on [the template system and overrides](/user/template/) for more information.
 
-### Responsive Classic Template - Product Page (Desktop) 
-![Responsive Classic Template Product Page on Desktop](/images/responsive_classic_desktop.png)
 
-### Responsive Classic Template - Product Page (Mobile) 
-![Responsive Classic Template Product Page on Mobile](/images/responsive_classic_full.png)
-
-Another well supported option is the [Bootstrap template](https://www.zen-cart.com/downloads.php?do=file&id=2191).
-
-### Bootstrap Template - Product Page (Desktop) 
-![Bootstrap Template Product Page on Desktop](/images/bootstrap_desktop.png)
-
-### Bootstrap Template - Product Page (Mobile) 
-![Bootstrap Template Product Page on Mobile](/images/bootstrap_full.png)
-
-## Commercial Templates 
+### Commercial Templates 
 
 There are software vendors who sell templates for Zen Cart.  Many of them are extremely visually attractive.  But exercise caution! 
 
@@ -40,7 +29,8 @@ There are software vendors who sell templates for Zen Cart.  Many of them are ex
 - Some of these templates were built for much older versions of Zen Cart, and haven't been upgraded.  
 - Some of these templates will use PHP short "open" tags, which are deprecated and scheduled for removal from PHP.
 - Some of these templates include old versions of JavaScript libraries, which must be updated. 
-- Some of these templates remove large pieces of core code functionality to simplify the template builder's job (because they don't take the time to learn all the things Zen Cart can do with its various configuration switches or product features), which means that things you would expect to work do not. 
+- Some of these templates remove large pieces of core code functionality to simplify the template builder's job (because they don't take the time to learn all the things Zen Cart can do with its various configuration switches or product features), which means that things you would expect to work do not.
+- Some of these templates will not have incorporated the latest [template security changes](/user/template/template_changes/).
 
 Be sure to discuss these issues with your template provider and make the transaction with an awareness of what you are taking on.  
 Don't be afraid to get them to put in writing whether they have tested the template's functionality with all of Zen Cart's features, and whether they will support you if things "break" when you change Zen Cart configuration settings.

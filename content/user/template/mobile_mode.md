@@ -9,8 +9,9 @@ weight: 10
 
 Determining the kind of device being used can be done in different ways.  How you do it will depend on the template you are running, and what tools are available with that template. 
 
-The `responsive_classic` template, as well as many other templates,
-builds in the [Mobile_Detect](http://mobiledetect.net/) library.  
+The `responsive_classic` template 
+uses the [Mobile_Detect](http://mobiledetect.net/) library to 
+determine the screen characteristics. 
 
 Use this to query the environment and react accordingly. 
 
