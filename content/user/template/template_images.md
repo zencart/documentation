@@ -1,6 +1,6 @@
 ---
 title: Template Images 
-description: What directories contain all the template images? (i.e. buttons, icons, images etc.)?
+description: What directories contain all the template images, buttons, and icons? 
 category: template
 weight: 10
 ---
