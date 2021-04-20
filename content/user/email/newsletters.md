@@ -30,7 +30,9 @@ A [MailChimp Integration](https://www.zen-cart.com/downloads.php?do=file&id=425)
 ### Other Alternatives 
 Other providers exist as well but have very limited free features or can be
 expensive, or may not have integrations for Zen Cart. 
-Constant Contact is a popular one.
+
+Constant Contact is a popular one, but they don't have an API for easily 
+adding to the newsletter list during account creation. 
 
 If you want to look for other options, do a web search for "newsletter provider service."
 
