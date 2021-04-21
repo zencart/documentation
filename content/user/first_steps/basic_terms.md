@@ -64,13 +64,19 @@ is just
 
 `/includes/languages/english/`
 
+### YOURACCOUNT
+The variable `YOURACCOUNT` is used to refer to the name yoru hosting company
+gives to your account.  For cPanel users, this will often be your login username and the name of the folder where your webroot resides.  
+
+
 ### YOURACCOUNTFOLDER 
 The variable `YOURACCOUNTFOLDER` is used to refer to the folder in your hosting 
 account which holds your site's files.  A very common setup is the following,
-assuming your account name is `johndoe`: 
+assuming the value of `YOURACCOUNT` is `johndoe` (i.e. that your account name is `johndoe`): 
 
+* `/home/johndoe/` - the top level directory you can access using FTP.  Putting files here will mean they are out of reach of a web browser, which can be useful for security;  see [relocating your download folder](/user/security/relocate_download_folder/) for an example.  
 * `/home/johndoe/public_html/` - the top level directory your webserver 
-can access. 
+can access (your webroot). 
 
 Everything will be under `YOURACCOUNTFOLDER` when you view files, either in an [FTP tool](/user/first_steps/useful_tools/#ftp-tools) or in your cPanel's File Manager. 
 
