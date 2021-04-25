@@ -5,7 +5,7 @@ category: products
 weight: 10
 ---
 
-**Downloads are not activated until payment has been received.**
+## Downloads are not activated until payment has been received.
 
 When your customer pays using a payment module whose configuration is set to "Orders Status: Pending", it means you've requested that all purchases with that module mean you DO NOT yet have the payment.
 
@@ -18,3 +18,8 @@ But if you intend to NOT review ANY freecharger purchases, then you can set the 
 
 You also want to check the two `Downloads Controller Order Status Value` settings on [Admin > Configuration > Attribute Settings](/user/admin_pages/configuration/configuration_attributesettings/).  When the order status is between these two values, the customer may download their files (assuming the download is not expired and not too many days have passed since the order - these are also configurable settings). 
 
+## NOTES:
+- The product must be configured with a valid download in order for download details to display.
+- The working downloadable product must be properly configured BEFORE the order is placed. Edits made to the product *after* the order is placed will not get applied to previous orders.
+- See: [How to create downloadable items](/user/products/downloadable/)
+- See: [Verifying downloadable items](/user/products/downloadable_verifying/)
