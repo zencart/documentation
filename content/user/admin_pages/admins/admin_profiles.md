@@ -4,7 +4,12 @@ category: admin_pages
 weight: 10
 ---
 
-The capabilities of an administrator in Zen Cart are limited by the _profile_ for that account.  The profile for each administrator can be seen in the [Admins > Admin Users](/user/admin_pages/admins/admin_users/) screen.  A profile is assigned to an administrator account when it is created. 
+The capabilities of an administrator in Zen Cart are limited by the _profile_ for that account.  The available profiles are shown on this screen (Admins > Admin Profiles).  
+
+![Admin Profiles](/images/profiles.png)
+
+
+The profile for each administrator can be seen in the [Admins > Admin Users](/user/admin_pages/admins/admin_users/) screen.  A profile is assigned to an administrator account when it is created. 
 
 ![Admin Users](/images/admin_users_2.png)
 
