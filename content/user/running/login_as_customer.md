@@ -22,13 +22,16 @@ This can be particularly helpful in cases where:
 After logging into your Store Admin, go to Configuration > My Store
 There are 3 settings that can be configured to allow Login As Customer:
 
-- Customer PLACE ORDER: Single AdminID Default: 0 (no access)
-- Customer PLACE ORDER: Admin ProfileID Default 0 (no access)
-- Customer PLACE ORDER: Passwordless Login True/False
+- Customer PLACE ORDER: Single AdminID 
+- Customer PLACE ORDER: Admin ProfileID
+- Customer PLACE ORDER: Passwordless Login 
+
+The ProfileID is shown in the [Admin Profiles](/user/admin_pages/admins/admin_profiles/) screen. 
+The AdminID is shown in the [Admin Users](/user/admin_pages/admins/admin_users/) screen.
 
 **Single Admin ID** allows the Admin User ID (Admin > Admins > Admin Users ) to log in to the customer’s account using the password associated with that admin ID as long as the Admin Profile for that Admin ID allows access to Customers > Customers in the admin profile setup.
 
-**Admin ProfileID** allows any Admin Profile ID (Admin > Admins > Admin Profiles ) to login to the customer’s account as long as the Admin Profile is allowed access to Customers/Customers in the admin profile setup.
+**Admin ProfileID** allows any Admin Profile ID (Admin > Admins > Admin Profiles ) to login to the customer’s account as long as the Admin Profile is allowed access to Customers/Customers in the admin profile setup.  Setting this value to 1 (where 1 is the admin profile ID for SuperUser) will allos all superusers to login as customers. 
 
 **Passwordless Login** True allows direct access to the customer’s account from within Admin without using a password. This may have PCI security concerns, so use with caution. The default setting is FALSE.
 

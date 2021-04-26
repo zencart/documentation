@@ -30,7 +30,7 @@ For images, you can also right click on the image, select "Open Image in New Tab
 
 ### Disabling Browser Cache
 
-However, since you are acting as a developer while you work on your site, you may want to turn this behavior off.  The way this is done is specific to every browser and environment, so you'll have to do a web search to figure out how to do it with the tools you are working with.  
+Since you are acting as a developer while you work on your site, you may want to turn caching off.  The way this is done is specific to every browser and environment, so you'll have to do a web search to figure out how to do it with the tools you are working with.  
 
 _The easiest way_ to get this working the first time is to use Google Chrome on a desktop computer, and follow these steps: 
 

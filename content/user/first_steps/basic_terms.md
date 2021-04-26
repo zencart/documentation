@@ -65,7 +65,7 @@ is just
 `/includes/languages/english/`
 
 ### YOURACCOUNT
-The variable `YOURACCOUNT` is used to refer to the name yoru hosting company
+The variable `YOURACCOUNT` is used to refer to the name of your hosting company
 gives to your account.  For cPanel users, this will often be your login username and the name of the folder where your webroot resides.  
 
 
