@@ -23,3 +23,6 @@ To send notifications to those who have signed up, go to [Admin > Tools > Newsle
 
 When sending, it will ask you which products your notice applies to. Select, and send.
 
+![Product Selection in Notifications Manager](/images/product_notification.png)
+
+
