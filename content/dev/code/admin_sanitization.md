@@ -143,7 +143,7 @@ Zen Cart defines the following default case-insensitive sanitizers:
 
     POST values only 
     
-    uses `[^0-9a-z.!@#$%^& ()`_+-~/\\]` regex
+    uses ``[^0-9a-z.!@#$%^& ()`_+-~/\\]`` regex
 
     
 + `ALPHANUM_DASH_UNDERSCORE`
@@ -194,6 +194,12 @@ Zen Cart defines the following default case-insensitive sanitizers:
     
     Uses `[^a-z0-9_,\.\-]` regex
 
+
++ `FLOAT_VALUE_REGEX`
+
+    POST Values only
+    
+    Uses `[^0-9,\.\-\+]` regex
 
 + `PRODUCT_NAME_DEEP_REGEX`
 
