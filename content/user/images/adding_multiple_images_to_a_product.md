@@ -5,7 +5,7 @@ category: images
 weight: 30
 ---
 
-## A Product Owns 1 Filename 
+## A Product Owns One Filename 
 
 Note: the base image name is the original image name loaded for the product.
 
