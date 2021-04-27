@@ -5,7 +5,7 @@ category: images
 weight: 30
 ---
 
-## A product owns 1 filename 
+## A Product Owns 1 Filename 
 
 Note: the base image name is the original image name loaded for the product.
 
@@ -51,7 +51,7 @@ You can also change the suffix for Large and Medium from `_LRG` and `_MED` to so
 
 I use the suffixes so when looking at 2000 images I can tell what size I am really looking at just from the name. (Very handy for troubleshooting whether the right image is being loaded.)  
 
-## Additional information
+## Additional Information
 
 Note: the **base image name is the original image name loaded for the product.**  
 
@@ -145,7 +145,7 @@ The use of subdirectories help on speed or directory limits, especially on slowe
 - /images/large/abcd_3_LRG.jpg - large version of the abcd_3 thumbnail  
 ```
 
-### Related topics
+### Related Topics
 
 a. Attribute images can be added to individual attribute options via [Admin > Catalog > Attributes Controller](/user/admin_pages/catalog/attributes_controller/).
 
