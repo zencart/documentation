@@ -31,7 +31,7 @@ The AdminID is shown in the [Admin Users](/user/admin_pages/admins/admin_users/)
 
 **Single Admin ID** allows the Admin User ID (Admin > Admins > Admin Users ) to log in to the customer’s account using the password associated with that admin ID as long as the Admin Profile for that Admin ID allows access to Customers > Customers in the admin profile setup.
 
-**Admin ProfileID** allows any Admin Profile ID (Admin > Admins > Admin Profiles ) to login to the customer’s account as long as the Admin Profile is allowed access to Customers/Customers in the admin profile setup.  Setting this value to 1 (where 1 is the admin profile ID for SuperUser) will allos all superusers to login as customers. 
+**Admin ProfileID** allows any Admin Profile ID (Admin > Admins > Admin Profiles ) to login to the customer’s account as long as the Admin Profile is allowed access to Customers/Customers in the admin profile setup.  Setting this value to 1 (where 1 is the default admin profile ID for SuperUser) will allow all superusers to login as customers. 
 
 **Passwordless Login** True allows direct access to the customer’s account from within Admin without using a password. This may have PCI security concerns, so use with caution. The default setting is FALSE.
 
