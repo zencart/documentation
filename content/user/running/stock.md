@@ -5,7 +5,7 @@ category: Running
 weight: 10
 ---
 
-Several options exist for inventory tracking.  See 
+Many options exist for inventory tracking.  See 
 [Admin > Configuration > Stock](/user/admin_pages/configuration/configuration_stock/) for details.
 
 Common configurations are: 
@@ -38,3 +38,8 @@ Allow Checkout  = false
 
 This configuration would be a good match for stores that sell unique or limited quantity products, such as artisan produced goods. 
 
+### Status handling for Subtract stock = true
+
+Stores that track stock (i.e. have Subtract stock = true) also need to decide on whether changes are required to the [status of a product](/user/products/products_status/) when the quantity in stock goes to zero. 
+
+The configuration setting `Products status in Catalog when out of stock should be set to` controls this.  When set to 0, a product will change status to Disabled when the last one is sold.  When set to 1, no status change will occur. 

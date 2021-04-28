@@ -16,7 +16,7 @@ Some fields in the `Product - General` product type that can be set
 when adding the product are: 
 
 
-- Products Status - set to Disabled to not display in the storefront; Enabled otherwise
+- [Products Status](/user/products/products_status/) - set to Disabled to not display in the storefront; Enabled otherwise
 - [Date Available](/user/products/upcoming_products/) - use if the product will not be available until the future
 - Products Manufacturer - select a [manufacturer](/user/admin_pages/catalog/manufacturers/) if you organize products by manufacturer
 - Products Name - title for the product 
