@@ -14,19 +14,10 @@ See the [PayPal Errors](/user/payment/paypal_errors/) page to investigate.
 ---
 ### Are you getting "Whoops?" timeouts when you return to your cart after payment? 
 
-Note: This only applies to PayPal Standard. 
+Note: The only PayPal method subject to this issue is PayPal Standard.  It does not apply to PayPal Express or PayPal Payments Pro. 
 
-This is a result of the samesite cookie rule that modern browsers are enforcing.  If you want to force browsers into lower-security mode by disabling the samesite cookie rules they're programmed to follow, then you can do the following:
+See the article [Whoops timeouts after payment](/user/payment/payment_whoops_timeouts/). 
 
-Create a file named `includes/extra_configures/samesite_cookie.php` containing the following:
-
-```
-<?php
-// -----
-// Samesite cookie needs to be 'none' when doing offsite payment gateway redirects
-//
-define('COOKIE_SAMESITE', 'none');
-```
 ---
 ### Is the PayPal payment option not appearing?
 Did you miss any of the configuration steps when [Configuring PayPal in your Store](/user/payment/paypal_express_checkout/)?
