@@ -5,7 +5,7 @@ category: troubleshooting
 weight: 10
 ---
 
-Admin menu items are controlled by two factors:
+Admin menu items are controlled by the following factors:
 
 1. Profile Permissions
 
@@ -13,7 +13,15 @@ Admin menu items are controlled by two factors:
    
    See [Admin Profiles](/user/admin_pages/admins/admin_profiles/) for more information.
 
-2. Text strings defined to display the item
+2. A database entry in the `admin_pages` table.  Here is an example of the creation of such an entry being added: 
+
+```
+INSERT INTO admin_pages (page_key, language_key, main_page, page_params, menu_key, display_on_menu, sort_order) VALUES ('pricepop', 'BOX_TOOLS_PRICEPOP', 'FILENAME_PRICEPOP', '', 'tools', 'Y', 500);
+```
+
+(Note that `BOX_TOOLS_PRICEPOP` and `FILENAME_PRICEPOP` must be defined as noted below.) 
+
+3. Text strings defined to display the item
 
 Menu options don't display if the `FILENAME_` or `BOX_` constants for them aren't defined.
 
