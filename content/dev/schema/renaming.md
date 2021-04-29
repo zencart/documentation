@@ -4,6 +4,8 @@ category: schema
 description: How to Batch-Rename Database Tables
 ---
 
+The use of [database prefixes](/user/first_steps/database/#what-are-prefixes) was common in the past but is not common or recommended now that hosting plans are more generous with the number of databases permitted. 
+
 ## Removing Database Table-Name Prefixes
 
 If your database has tables named with a `zen_` or `zc_` or other prefix and you want to remove those prefixes, you must rename all those tables manually, and update your Zen Cart configuration to recognize the change.

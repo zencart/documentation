@@ -7,9 +7,9 @@ weight: 10
 
 The base template is Zen Cart is called [template_default](/user/template/template_default/). 
 
-`classic` is a sample custom template. You can create your own custom templates;  `classic` is just an example. Anything that's not in your custom template but exists in template_default will be automatically loaded from template_default for you. Thus, when you're building a custom template, all you need in your custom template folder are the files/folders that you've customized/changed/added. Everything else is taken from the [default files](/user/first_steps/overrides/#default-files). 
+Classic is a sample custom template. You can create your own custom templates;  Classic is just an example. Anything that's not in your custom template but exists in template_default will be automatically loaded from template_default for you. Thus, when you're building a custom template, all you need in your custom template folder are the files/folders that you've customized/changed/added. Everything else is taken from the [default files](/user/first_steps/overrides/#default-files). 
 
-`responsive_classic` is another sample custom template, but it is more modern than `classic`. It was designed [to be responsive](/user/template/responsive/), which is a way of saying that it works on mobile devices.  When the `classic` template was created, there were no mobile devices, so that wasn't a concern.  More details on this template are provided in the [responsive classic FAQ](/user/template/responsive_classic/).
+Responsive Classic is another sample custom template, but it is more modern than Classic. It was designed [to be responsive](/user/template/responsive/), which is a way of saying that it works on mobile devices.  When the `classic` template was created, there were no mobile devices, so that wasn't a concern.  More details on this template are provided in the [Responsive Classic FAQ](/user/template/responsive_classic/).
 
 The community contributed [bootstrap template](/user/template/bootstrap/) is another good option for a responsive template. 
 
@@ -35,3 +35,10 @@ There are software vendors who sell templates for Zen Cart.  Many of them are ex
 Be sure to discuss these issues with your template provider and make the transaction with an awareness of what you are taking on.  
 Don't be afraid to get them to put in writing whether they have tested the template's functionality with all of Zen Cart's features, and whether they will support you if things "break" when you change Zen Cart configuration settings.
 
+### Switching templates during an upgrade 
+
+As is noted in the [detailed upgrading guide](/user/upgrading/detailed_upgrading/), an upgrade is not the ideal time to switch templates; consider upgrading first and then choosing a new template. 
+
+> Tweaking templates "to perfection" can endlessly delay implementing an upgrade if you aren't diligent. 
+
+If you *must* change templates (because you're coming from an old version of Zen Cart with a non-responsive template, for example), consider using the [Responsive Classic](/user/template/responsive_classic/) template until your upgrade is complete and live, and *then* changing your template. 
