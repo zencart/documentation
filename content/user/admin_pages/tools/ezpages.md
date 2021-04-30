@@ -9,6 +9,15 @@ This page allows you to add and remove special EZ-Pages, pages which are easier 
 
 The number on the left hand side is the EZ-Page id.
 
+# Adding New EZ-Pages 
+
+At the bottom right side of the page shown above is a "New Page" button.  Press it, and you'll be taken to a page creation screen. 
+
+# Modifying and Deleting EZ-Pages 
+
+If you select a specific EZ-Page, a sidebar appears with Edit and Delete buttons. 
+
+
 # Setting Visibility 
 
 A set of configurations determines where links to EZ-Pages are shown. In  Admin > Tools > EZ-Pages, you will see a set of fields like the following: 

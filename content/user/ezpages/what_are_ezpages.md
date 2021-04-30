@@ -14,6 +14,9 @@ The additional Pages can be for:
 
 In Addition, there is the ability to create "related" links in the format of a Chapter (group) and its TOC (related pages/links).  
 
+See [Admin Interface to EZ-Pages](/user/admin_pages/tools/ezpages/) to learn about the how EZ-Pages are set up and managed. 
+
+
 ### Link Naming
 
 Links are named by the Page Title. All Links need a Page Title in order to function.  
@@ -112,4 +115,8 @@ If you try to set a combination of HTML Content, Internal Link and/or External L
 
 When using Editors such as CKEditor, if you hit enter in the HTML Content area,
 whitespace will be added. These will be detected as "content" and will override any Internal Link URL or External Link URL.  
+
+### Other options for adding pages 
+
+For many situations, EZ-Pages offer exactly what is needed for creating new pages and new content for your Zen Cart.  However, if you need more flexibility (such as the ability to embed PHP code), take a look at the other options shown in [Adding Pages to my site](/user/customizing/add_pages/). 
 
