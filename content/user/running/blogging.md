@@ -9,7 +9,7 @@ Running a blog (WordPress), a forum (phpBB, Simple Machines), a CMS (Drupal, Joo
 
 The problem is, these software packages don't maintain themselves.  You need to keep them updated or **you run the risk of being hacked**.  Even if you keep them updated, sometimes plugins are compromised by bad guys to enable sites to be hacked.  This is not just a theoretical risk - companies like Securi get most of their business from WordPress installations that have been hacked. 
 
-So: you can do this, many people do this, but it has a cost and you'll need to devote more energy to maintenance and updates if you want go down this path. Proceed with caution. 
+So: you can do this, many people do this, but it has a cost and you'll need to devote more energy to maintenance and updates if you want go down this path. Proceed with caution.  This topic is discussed in more depth in [installing additional software packages](/user/running/additional_software/). 
 
 Most people who deploy blogs or other tools use [deployment model 2](/user/first_steps/deployment_configurations/). 
 
