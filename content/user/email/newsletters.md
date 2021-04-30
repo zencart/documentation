@@ -27,13 +27,10 @@ They also have paid features and now position themselves as a full marketing pla
 A [MailChimp Integration](https://www.zen-cart.com/downloads.php?do=file&id=425) plugin is available for Zen Cart. 
 
 
-### Other Alternatives 
-Other providers exist as well but have very limited free features or can be
-expensive, or may not have integrations for Zen Cart. 
+### MailChimp Alternatives 
+Other providers exist as well, but you will need to do your own integration. 
 
-Constant Contact is a popular one, but they don't have an API for easily 
-adding to the newsletter list during account creation. 
+Some names you might have heard of are Constant Contact, SendInBlue, SendGrid, and Sendy. 
 
 If you want to look for other options, do a web search for "newsletter provider service."
-
 
