@@ -7,7 +7,7 @@ weight: 10
 
 Note: If a term is not in this list, use a web search to learn more about it.  This list is intended to be specific to Zen Cart, with only a minimal number of additional generic terms. 
 
-- ASV - an Approved Scanning Vendor; a company that has been certified as competant to evaluate the security of your website. 
+- ASV - an Approved Scanning Vendor; a company that has been certified as competent to evaluate the security of your website. 
 - Categories Tabs - [Categories Tabs](/user/new_user_topics/categories_tabs/) is the name of a feature that places a set of links to every category in your store across the width of your home page just below the logo and tagline. 
 - Centerbox - a [centerbox](/user/template/centerboxes/) is a block of content in the middle of the page.  
 - cPanel - a branded hosting control panel which is very popular.  See [Hosting and Domain concepts](/user/first_steps/hosting/). 

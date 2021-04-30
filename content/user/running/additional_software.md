@@ -13,5 +13,9 @@ So: you can do this, many people do this, but it has a cost and you'll need to d
 
 ### Considerations: 
 
-- Zen Cart is PCI Compliant.  What this means in simple language is that it can pass a security scan done by an ASV (Approved Scanning Vendor).  Many other software packages are not PCI Compliant, so if you deploy them, you will fail a scan.  **At any time**, your payment processor can demand that you run a scan and can cut you off if you cannot show that you have passed.  And you cannot simply go to another provider if this occurs, because they report these situations to the regulators in your jurisdiction, who can impose fines.  PCI imposes a much higher level of security requirement than the average website requires, and because you handle payments, you are subject to this requirement. 
+- Zen Cart can pass a PCI security scan done by an ASV (Approved Scanning Vendor).  Many other software packages cannot do this, so if you deploy them, you will fail a scan.  **At any time**, your payment processor can demand that you run a scan and can cut you off if you cannot prove that you have passed.  And you cannot simply go to another provider if this occurs, because they report these situations to the regulators in your jurisdiction, who can impose fines.  PCI imposes a much higher level of security requirement than the average website requires, and because you handle payments, you are subject to this requirement. 
+
+- If you still want to blog, see [blogging](/user/running/blogging/) for alternatives to installing WordPress on your Zen Cart server. 
+
+- If your additional software is for sending email (such as phpList), consider migrating to a paid email service provider. The FAQ on [Newsletters](/user/email/newsletters/) provides some suggestions. 
 
