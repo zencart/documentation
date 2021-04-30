@@ -51,3 +51,13 @@ Once you have created your new page, you'll want to link to it. A few options ar
 - If you want the link in the Information Sidebox, use the instructions on [adding a link to the Information Sidebox](/user/sideboxes/add_link_information_sidebox/).  
 - You can put the link in the [header](/user/template/header/) or [footer](/user/template/footer/) of your site, but the method of doing so will depend on your template.
 
+## Direct Access to Files 
+
+You may wish to simply provide files (such as PDFs) on your site without requiring the registration and purchase steps associated with paid downloads.
+
+The recommended method of doing this is as follows:
+
+- Create a new folder at the top level of your cart.  Remember that Zen Cart already comes with `/docs` and `/download` folders, so choose another name. 
+- Prior to populating the folder, create an `index.html` and `.htaccess` file that limits access in the folder.  You can copy these files from the `/download` folder and customize as needed.  
+Note: If you are using Ngnix or another webserver other than Apache, you will have to make the approriate security changes for that system. 
+
