@@ -11,7 +11,7 @@ That is, there isn't much of a "template" system, especially when compared to th
 While it embraces an MVC structure, it doesn't currently fully separate presentation from backend logic.
 
 That said, since v1.5.7 many (v1.5.8 expands it to _all_) admin pages support some degree of per-page CSS and JS file inclusion. 
-(This is driven by the use of `admin_html_head.php` instead of directly outputting all the `<head>` tag content bespokely within the page itself.)
+(This is driven by the use of `admin_html_head.php` instead of directly outputting all the `<head>` tag content directly within the page itself.)
 
 In the examples below, `PAGENAME` and `pagename` refer to either the `cmd=pagename` value or the `/admin/pagename.php` value, depending on the page/URL.
 

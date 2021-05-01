@@ -31,7 +31,7 @@ Use or add the define, toward the bottom of the file:
   define('DB_MYSQL_MODE', 'NO_ENGINE_SUBSTITUTION');
 ```
 
-(eg: according to the [MySQL docs](https://dev.mysql.com/doc/refman/8.0/en/sql-mode.html), setting it to a mode like NO_ENGINE_SUBSTITUTION skips strict mode because there are other mode names that handle strict-related things. Again, this should only be a temporary measure unti you update your database and query code.)
+(eg: according to the [MySQL docs](https://dev.mysql.com/doc/refman/8.0/en/sql-mode.html), setting it to a mode like NO_ENGINE_SUBSTITUTION skips strict mode because there are other mode names that handle strict-related things. Again, this should only be a temporary measure until you update your database and query code.)
 
 The define for `DB_MYSQL_MODE` will work in Zen Cart 1.5.5 and above.  
 In Zen Cart versions older than 1.5.5, you would need to do more extensive modification to interoperate with newer versions of MySQL.  Hopefully you are not doing this!  You should really [upgrade Zen Cart](/user/upgrading/) instead!

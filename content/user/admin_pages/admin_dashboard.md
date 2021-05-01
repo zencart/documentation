@@ -15,7 +15,7 @@ Here's the statistics widget, as an example.
 
 <img src="/images/widget.png" alt="Widgets on home page" />
 
-The following widgets are prebuilt on your admin home page: 
+The following widgets are pre-built on your admin home page: 
 
 - Statistics (product and category counts, reviews, etc.)
 - Special, Featured and Sale counts
