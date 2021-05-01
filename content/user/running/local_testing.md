@@ -26,7 +26,7 @@ Follow the procedure specified in [how do I backup my store?](/user/running/back
 
 ## 3. Update your configure.php files 
 
-You will need to go through this file and set each entry to point to your local environnment. 
+You will need to go through this file and set each entry to point to your local environment. 
 
 ## 4. Try a simple update to see if things work. 
 Try updating (for example), `includes/languages/YOURTEMPLATE/english.php` and, then refresh your browser page and make sure the change appears. 

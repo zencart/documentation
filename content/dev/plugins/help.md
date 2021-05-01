@@ -36,7 +36,7 @@ If you are not running Zen Cart 1.5.7 or higher, you will need to pull in [this 
 
 Module help is another feature which has been built-in since Zen Cart 1.5.8.  If you are not yet using this version or higher, you can merge [this PR](https://github.com/zencart/zencart/commit/77d4434ed5469c2f65e79a890ac6a4cb4fe85ac4) into your cart. 
 
-The help function returns an array. If the array key `link` is set, then presing the Help button will open a new tab for that link.  If the key `body` is set, then the value data for `body` will be displayed in a modal dialog.
+The help function returns an array. If the array key `link` is set, then pressing the Help button will open a new tab for that link.  If the key `body` is set, then the value data for `body` will be displayed in a modal dialog.
 
 ## Examples of PHP Help Files 
 
