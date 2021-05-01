@@ -11,7 +11,9 @@ Most of the files that you distribute in the `new_tool.zip` file are identical w
 
 1. `/YOUR_ADMIN/new_tool.php`.  Contains the code that implements your new tool.
 
-2. `/YOUR_ADMIN/includes/extra_datafiles/new_tool_filenames.php`.  Contains the filename definition for your new tool, e.g. `define('FILENAME_NEW_TOOL', 'new_tool');`.
+2. `/YOUR_ADMIN/includes/extra_datafiles/new_tool_filenames.php`.  Contains the filename (without extension) definition for your new tool, e.g. `define('FILENAME_NEW_TOOL', 'new_tool');`.  
+
+   **Be careful to leave off the `.php` extension when doing this.**
 
 3. `/YOUR_ADMIN/includes/languages/english/extra_definitions/new_tool_name.php`.  Contains the menu entry text definition for your new tool, e.g. `define('BOX_TOOLS_NEW_TOOL', 'New Tool');`. Can be repeated as multiple files for additional languages if needed.
 

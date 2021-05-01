@@ -92,6 +92,8 @@ operating system functionality.
 The Zen Cart project recommends a number of hosting providers on 
 their [Recommended Services](https://www.zen-cart.com/content.php?3-services) page.
 
+If you haven't yet selected a hoster, please read [picking a hoster](/user/installing/pick_hosting/).
+
 ### Webserver 
 
 The word *webserver* (or *web server*) can mean different things based on context. 
