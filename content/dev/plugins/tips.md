@@ -60,6 +60,18 @@ already been done.
 
 <hr>
 
+## Automatic update checks 
+
+Use `plugin_version_check_for_updates` to call the Zen Cart plugin server so that users will know if you have a new release. See how this is done in an existing plugin such as USPS or Square. 
+
+## Database change checks 
+
+- At a minimum, warn if things are not as expected.  See `adminInitializationChecks` in `includes/modules/shipping/usps.php`. 
+
+- Ensure your schema is correct.  See `tableCheckup` in `includes/modules/payment/paypal.php` for an example of how to do this.
+
+- Ensure all required database entries are present in the configuration table.  See `keys` function in `includes/modules/payment/authorizenet.php`.
+
 ## Other Resources 
 
 - [Creating a menu item](/dev/code/creating_menu/)

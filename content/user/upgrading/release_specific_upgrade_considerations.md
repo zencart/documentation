@@ -18,7 +18,7 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 - Be sure external links are constructed with `rel="noreferrer noopener"`.
 
-- If you use a custom template, check it against [the template security changes list](/user/template/template_changes/). 
+- If you use a custom template, check it against [the template changes list](/user/template/template_changes/). 
 
 ### Zen Cart 1.5.8 (currently in development phase, not released yet)
 
