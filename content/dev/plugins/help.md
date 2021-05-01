@@ -100,3 +100,7 @@ print_r($body);
 echo '</pre>';
 ```
 
+### Putting help files on a server 
+
+If you are deploying help files to a newly created folder, be sure to follow the guidelines in [Direct Access to Files](/user/customizing/add_pages/#direct-access-to-files). 
+

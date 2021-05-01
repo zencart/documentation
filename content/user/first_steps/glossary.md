@@ -7,7 +7,8 @@ weight: 10
 
 Note: If a term is not in this list, use a web search to learn more about it.  This list is intended to be specific to Zen Cart, with only a minimal number of additional generic terms. 
 
-- ASV - an Approved Scanning Vendor; a company that has been certified as competent to evaluate the security of your website. 
+- AOSC - Attestation of Scan Compliance; a document provided by an ASV that your site has been successfully scanned and found to be secure. 
+- ASV - Approved Scanning Vendor; a company that has been certified as qualified to evaluate the security of your website. 
 - Categories Tabs - [Categories Tabs](/user/new_user_topics/categories_tabs/) is the name of a feature that places a set of links to every category in your store across the width of your home page just below the logo and tagline. 
 - Centerbox - a [centerbox](/user/template/centerboxes/) is a block of content in the middle of the page.  
 - cPanel - a branded hosting control panel which is very popular.  See [Hosting and Domain concepts](/user/first_steps/hosting/). 
@@ -39,7 +40,7 @@ Note: If a term is not in this list, use a web search to learn more about it.  T
 - SSL - Secure Sockets Layer.  A technology that allows you to securely transfer information between your webserver and a client browser.  See [hosting and domain concepts](/user/first_steps/hosting/).
 - Template - Set of files which provide the theme or skin (eg: layout, colors, fonts) for the site. See [Default files, template default and overrides](/user/first_steps/overrides/).
 - Template Files - The individual files (css, js, php, and some images) involved in providing the Template for the site.  See [Default files, template default and overrides](/user/first_steps/overrides/).
-- VPS - a hosting configuration that puts you on your own dedicated server.  See [Hosting and Domain concepts](/user/first_steps/hosting/). 
+- VPS - Virtual Private Server - a hosting configuration that puts you on your own dedicated server.  See [Hosting and Domain concepts](/user/first_steps/hosting/). 
 - Webroot - The top level folder that is visible to someone using a web browser.  See [how do I install Zen Cart](/user/first_steps/how_do_i_install/). 
 - Webserver - the computer associated with your hosting account that runs your website *or* the program on that hosting account that serves web pages (e.g. Apache).  See [hosting and domain concepts](/user/first_steps/hosting/).
 - YOURACCOUNTFOLDER - the folder  in your hosting account which holds your site's files. See [basic terms](/user/first_steps/basic_terms/). 

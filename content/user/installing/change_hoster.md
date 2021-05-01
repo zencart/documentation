@@ -5,6 +5,8 @@ category: installing
 weight: 10
 ---
 
+If you haven't yet selected a hoster, please read [picking a hoster](/user/installing/pick_hosting/). 
+
 **FIRST:**  If you are moving your site, DO NOT UPGRADE AT THE SAME TIME!!!   Do your Zen Cart upgrade BEFORE moving, or AFTER moving, but never DURING the move. Otherwise you'll typically run into problems that can't be quickly resolved because you've intertwined software issues with server issues thus confusing the picture. YOU HAVE BEEN WARNED!
 
 1\. On your **NEW host**, create a new MySQL **database**. Note the username, password, database name, and host name (usually localhost).
