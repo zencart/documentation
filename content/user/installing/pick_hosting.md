@@ -13,11 +13,11 @@ their [Recommended Services](https://www.zen-cart.com/content.php?3-services) pa
 
 Further Considerations: 
 
-- One way to evaluate hosts is to run the [test suite offered by SSLLabs](https://ssllabs.com/ssltest).  You will want to make sure any host you consider has an A or A+ rating.  (A B rating might be ok if it's something that can be easily fixed by them, but exercise caution.)  
+- One way to evaluate hosts is to run the [test offered by SSLLabs](https://ssllabs.com/ssltest).  You will want to make sure any host you consider has an A or A+ rating.  (A B rating might be ok if it's something that can be easily fixed by them, but exercise caution.)  
 
    A highly rated host will help make any PCI scan you run more likely to succeed.  The more secure your host, the more secure your site.
 
-   Don't be like these guys! 
+   Here's an example of a poor report: 
 
 ![SSL Test - C Grade](/images/ssltest_c_grade.png)
 

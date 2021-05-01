@@ -1,5 +1,5 @@
 ---
-title: Template Security Changes 
+title: Template Changes 
 description: Keeping your custom template up to date.
 category: template 
 weight: 10 
@@ -13,12 +13,13 @@ the Responsive Classic template, you get all the latest fixes.
 But what if you are using another template?  How can you check to see if it
 has all the most recent fixes? 
 
-This page is intended to present a list of security fixes you will want 
+This page is intended to present a list of security fixes and other improvements you will want 
 to add to your template if they are not present and you have overridden the file. (If you have not overridden the file, you are using the updated copy
 in `template_default`.)  You can check 
 the folder `includes/templates/template_default` for the base copy of 
 the specified file if you're not sure where a change should go. 
 
+## Security Fixes 
 * `common/html_header.php` - use `header('X-Frame-Options:SAMEORIGIN');` to prevent clickjacking.
 
 * `common/html_header.php` - pull in most recent versions of jQuery and other libraries.
@@ -37,3 +38,16 @@ the specified file if you're not sure where a change should go.
 
 * `templates/tpl_account_history_info_default.php` - use `zen_output_string_protected` for output of `$_GET['order_id']`. 
 
+## Client side validation 
+
+The following files were updated in Zen Cart 1.5.5 to specify a field type and required flag where needed when creating input fields. 
+
+* `templates/tpl_account_edit_default.php`
+* `templates/tpl_account_password_default.php`
+* `templates/tpl_contact_us_default.php`
+* `templates/tpl_login_default.php`
+* `templates/tpl_modules_address_book_details.php`
+* `templates/tpl_modules_checkout_new_address.php`
+* `templates/tpl_modules_create_account.php`
+* `templates/tpl_password_forgotten_default.php `
+`
