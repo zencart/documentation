@@ -56,3 +56,7 @@ Now you have an up to date copy of your database with an up to date copy of the 
 ### Testing 
 1. Create a test order, take it all the way through to checkout success, then view the order in your test admin.  Make sure everything is working as expected.
 
+### Updating PHP 
+
+- [Update your PHP version](/user/upgrading/php_version/) if appropriate. 
+

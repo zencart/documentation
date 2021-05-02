@@ -280,6 +280,8 @@ To go live, do the following:
 
 - Re-run any plugin installation/removal scripts just like you did for the temporary testing. (This is why you took notes of any special things needed for each plugin)
 
+- [Update your PHP version](/user/upgrading/php_version/) if appropriate. 
+
 ### Verify
 
 - [ ] Test the store to be sure that things are operating as desired. 
@@ -328,6 +330,7 @@ At a high level, these are the steps to use (we will skip over the New code fami
 - Create a NEW database in cPanel, using the new `DB_DATABASE` name you used in the last step of updating your configuration files. Fill this database from the backup that you just made.
 - point your browser to `store_new/zc_install`, which will take you through the database update process.
 - do any install/remove steps relevant to any addons you're adding/removing
+- [Update your PHP version](/user/upgrading/php_version/) if appropriate. 
 - test `store_new`, going through the shopping, buying and order fulfillment process.
 - When you're ready to go live, do the following: 
   - take a final backup of your live store database for safekeeping

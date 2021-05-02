@@ -14,7 +14,7 @@ critical values:
 
 - (a) PHP Version: Version of PHP you are using.
 - (b) Database Engine: Version of MySQL you are using.
-- (c) PHP Memory Limit: The amount of memory a script is allowed to allocate, per the [PHP Documentation on this setting](https://www.php.net/manual/en/ini.core.php#ini.memory-limit).  Read more about [PHP memory limit and Zen Cart](/user/first_steps/server_requirements/#php-memory-recommendations).
+- (c) PHP Memory Limit: The amount of memory a script is allowed to allocate, per the [PHP Documentation on this setting](https://www.php.net/manual/en/ini.core.php#ini.memory-limit).  Read more about choosing an initial value for memory limit in [PHP memory limit and Zen Cart](/user/first_steps/server_requirements/#php-memory-recommendations), and checking and updating the value in [PHP memory_limit](/user/running/memory_limit/).
 - (d) Database: (Since Zen Cart 1.5.6) the name of the database from your `admin/includes/configure.php` file 
 
 Below this is the history of your database (e).

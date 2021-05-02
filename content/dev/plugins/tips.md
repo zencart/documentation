@@ -93,6 +93,10 @@ if (!defined('MODULE_PAYMENT_AUTHORIZENET_CURRENCY')) {
 }
 ```
 
+## Adding Configuration settings 
+
+If your plugin requires new configuration data, see [Adding a configuration setting](/dev/plugins/adding_config/).
+
 ## More Checks 
 
 Since Zen Cart 1.5.8, all modules (shipping, payment and order_total) have supported an optional function called `get_configuration_errors`.  This allows a developer to verify the configuration settings and report on problems. 

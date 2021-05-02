@@ -55,7 +55,7 @@ layout: docs
 
 * [Security Patches](/user/about_us/security_releases/) are released as issues are discovered. 
 
-* [Server Requirements for running Zen Cart](/user/first_steps/server_requirements/) - Zen Cart version to PHP version compatibility matrix.
+* [Server Requirements for running Zen Cart](/user/first_steps/server_requirements/#php-version) - Zen Cart version to PHP version compatibility matrix.
 
 * Templates and Overrides - How do I use them?  Read 
 [the introduction](https://docs.zen-cart.com/user/first_steps/overrides/), 
