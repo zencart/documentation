@@ -19,6 +19,8 @@ The [version information for Zen Cart, PHP and MySQL](/user/first_steps/version/
 
 [PHP's Version Support Policy](https://www.php.net/supported-versions.php) will tell you if your PHP version is still supported. Remember: old versions are not PCI compliant, and are not deemed "secure" if they are out of the maintenance period.
 
+You will want to run the latest PHP version which is appropriate for your Zen Cart version.  See  [Server Requirements for running Zen Cart](/user/first_steps/server_requirements/#php-version).
+
 ## JavaScript library versions
 JavaScript libraries such as jQuery are updated as issues are found.  It's best to use the most current version of each library you use. 
 
