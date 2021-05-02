@@ -64,13 +64,38 @@ already been done.
 
 Use `plugin_version_check_for_updates` to call the Zen Cart plugin server so that users will know if you have a new release. See how this is done in an existing plugin such as USPS or Square. 
 
-## Database change checks 
+```
+        $new_version_details = plugin_version_check_for_updates(self::USPS_ZEN_CART_PLUGIN_ID, self::USPS_CURRENT_VERSION);
+        if ($new_version_details !== false) {
+            $this->title .= '<span class="alert">' . ' - NOTE: A NEW VERSION OF THIS PLUGIN IS AVAILABLE. <a href="' . $new_version_details['link'] . '" target="_blank">[Details]</a>' . '</span>';
+        }
+```
 
-- At a minimum, warn if things are not as expected.  See `adminInitializationChecks` in `includes/modules/shipping/usps.php`. 
+## Database change checks 
 
 - Ensure your schema is correct.  See `tableCheckup` in `includes/modules/payment/paypal.php` for an example of how to do this.
 
-- Ensure all required database entries are present in the configuration table.  See `keys` function in `includes/modules/payment/authorizenet.php`.
+```
+$fieldOkay1 = (method_exists($sniffer, 'field_type')) ? $sniffer->field_type(TABLE_PAYPAL, 'txn_id', 'varchar(20)', true) : -1;
+ ... 
+
+if ($fieldOkay1 !== true) {
+  $db->Execute("ALTER TABLE " . TABLE_PAYPAL . " CHANGE payment_type payment_type varchar(40) NOT NULL default ''");
+  ... 
+```
+
+
+- Ensure all required database entries are present in the configuration table.  Insert them if they are not.  See `keys` function in `includes/modules/payment/authorizenet.php`.
+
+```
+if (!defined('MODULE_PAYMENT_AUTHORIZENET_CURRENCY')) {
+  $db->Execute("INSERT INTO " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) VALUES ('Currency Supported', 'MODULE_PAYMENT_AUTHORIZENET_CURRENCY', 'USD', 'Which currency is your Authnet Gateway Account configured to accept?<br>(Purchases in any other currency will be pre-converted to this currency before submission using the exchange rates in your store admin.)', '6', '0', 'zen_cfg_select_option(array(\'USD\', \'CAD\', \'GBP\', \'EUR\', \'AUD\', \'NZD\'), ', now())");
+}
+```
+
+## More Checks 
+
+Since Zen Cart 1.5.8, all modules (shipping, payment and order_total) have supported an optional function called `get_configuration_errors`.  This allows a developer to verify the configuration settings and report on problems. 
 
 ## Other Resources 
 

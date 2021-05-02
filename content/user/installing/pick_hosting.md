@@ -11,11 +11,15 @@ As noted in [Basics - Hosting and Domain concepts](/user/first_steps/hosting/#ho
 - The Zen Cart project recommends a number of hosting providers on
 their [Recommended Services](https://www.zen-cart.com/content.php?3-services) page.
 
-Further Considerations: 
+### SSLLabs Evaluation
 
-- One way to evaluate hosts is to run the [test offered by SSLLabs](https://ssllabs.com/ssltest).  You will want to make sure any host you consider has an A or A+ rating.  (A B rating might be ok if it's something that can be easily fixed by them, but exercise caution.)  
+One way to evaluate hosts is to run the [test offered by SSLLabs](https://ssllabs.com/ssltest).  You will want to make sure any host you consider has an "A" or "A+" rating.  (A "B" rating might be ok if it's something that can be easily fixed post-purchase.)  
 
    A highly rated host will help make any PCI scan you run more likely to succeed.  The more secure your host, the more secure your site.
+
+   Here's an example of an excellent report: 
+
+![SSL Test - A+ Grade](/images/ssltest_aplus_grade.png)
 
    Here's an example of a poor report: 
 
