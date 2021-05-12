@@ -60,15 +60,15 @@ already been done.
 
 <hr>
 
-## Automatic update checks 
+## Automatic New Version checks 
 
 Use `plugin_version_check_for_updates` to call the Zen Cart plugin server so that users will know if you have a new release. See how this is done in an existing plugin such as USPS or Square. 
 
 ```
-        $new_version_details = plugin_version_check_for_updates(self::USPS_ZEN_CART_PLUGIN_ID, self::USPS_CURRENT_VERSION);
-        if ($new_version_details !== false) {
-            $this->title .= '<span class="alert">' . ' - NOTE: A NEW VERSION OF THIS PLUGIN IS AVAILABLE. <a href="' . $new_version_details['link'] . '" target="_blank">[Details]</a>' . '</span>';
-        }
+$new_version_details = plugin_version_check_for_updates(self::USPS_ZEN_CART_PLUGIN_ID, self::USPS_CURRENT_VERSION);
+if ($new_version_details !== false) {
+    $this->title .= '<span class="alert">' . ' - NOTE: A NEW VERSION OF THIS PLUGIN IS AVAILABLE. <a href="' . $new_version_details['link'] . '" target="_blank">[Details]</a>' . '</span>';
+}
 ```
 
 ## Database change checks 

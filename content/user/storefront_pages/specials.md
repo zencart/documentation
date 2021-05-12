@@ -16,6 +16,8 @@ Other places specials are shown:
 
 Since the specials sidebox and centerbox only display a small subset of products on special, the products shown are chosen at random.  The specials page shows all products on special, so the order is fixed. 
 
+Unlike the [listing page layout](/user/template/listing_page_layout), where items are shown in rows, the specials page looks like the home page,  with one main [centerbox](/user/template/centerboxes/) showing items in a grid.
+
 ### Related: 
 
 - [Admin > Catalog > Specials](/user/admin_pages/catalog/specials/)
