@@ -97,6 +97,17 @@ if (!defined('MODULE_PAYMENT_AUTHORIZENET_CURRENCY')) {
 
 If your plugin requires new configuration data, see [Adding a configuration setting](/dev/plugins/adding_config/).
 
+## Avoiding the Missing Menu problem 
+If your plugin is an admin command, remember that some storeowners may want non-superusers to be able to run your utility.   Be sure you have created the relevant `admin_pages` table entries - see [Admin menu item is missing](/user/troubleshooting/admin_menu_item_missing/).
+
+## Checking Zen Cart version
+
+Your plugin may need to do something different depending on the Zen Cart version. Use the `PROJECT_VERSION_` settings in `includes/version.php` for this.  As an example, this checks for a Zen Cart version of 1.5.7 or higher: 
+
+```
+if (version_compare(PROJECT_VERSION_NAME . ' ' . PROJECT_VERSION_MAJOR . '.' . PROJECT_VERSION_MINOR, '1.5.7', '>=')) {
+```
+
 ## More Checks 
 
 Since Zen Cart 1.5.8, all modules (shipping, payment and order_total) have supported an optional function called `get_configuration_errors`.  This allows a developer to verify the configuration settings and report on problems. 
