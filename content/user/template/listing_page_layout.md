@@ -19,7 +19,7 @@ There are specific configurations for these pages:
 - Pages the products in a category are configured by [Admin > Configuration > Product Listing](/user/admin_pages/configuration/configuration_productlisting/).
 
 These four pages are share the same layout features: 
-- stacked rows with one product per row.  Note that since 1.5.7b, it has been poissible to display products in a [grid layout](/user/template/listing_columns/) with multiple columns per row. 
+- stacked rows with one product per row.  Note that since 1.5.7b, it has been possible to display products in a [grid layout](/user/template/listing_columns/) with multiple columns per row. 
 - [paginated results display](/user/template/pagination/) so that only a subset of the total number of results are shown on each page.  Navigation is provided between pages of results. 
 
 Three of the pages, New, Featured, and All Products, have configuration settings that are identical in nature. The full explanation for these display settings can be found here: [New/Featured/All Listing Configuration Settings](/user/template/new_featured_all_listing_page_configuration).

@@ -36,3 +36,4 @@ to `Admin > Admins > Edit Profiles` and check the *Edit Orders* box.
 <img src="/images/admin_profiles.png" alt="Zen Cart Admin Profiles" />
 <br /><br />
 
+**Note:** If you don't see an item in this list that does appear on the Superuser admin menu, review the troubleshooting instructions in  [Admin menu item is missing](/user/troubleshooting/admin_menu_item_missing/).

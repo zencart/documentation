@@ -1,6 +1,6 @@
 ---
 title: Downloadable products - how to create? 
-description: Digital products - software, music and books 
+description: Digital downloads - software, music and books 
 category: products
 weight: 10
 ---
