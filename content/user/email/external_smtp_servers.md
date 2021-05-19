@@ -63,7 +63,9 @@ Zen Cart supports this by using the following settings in [Admin > Configuration
 
 **Note:** To use email (eg `SMTPAUTH`) with a Google mail account you need to enable [`allow less secure authentication`](https://myaccount.google.com/lesssecureapps) inside your google account settings. (This name sounds much worse than it is; it's still secure.) 
 
-Instructions on allowing less secure apps to use your account are provided [here](https://support.google.com/accounts/answer/6010255?hl=en). 
+Instructions on allowing less secure apps to use your account are provided [here](https://support.google.com/accounts/answer/6010255?hl=en).
+
+You may also need to [visit the unlock CAPTCHA page](https://www.google.com/accounts/DisplayUnlockCaptcha) to allow 3rd party access.
 
 More technical information is available in [Google's Help Center](http://mail.google.com/support/bin/answer.py?answer=13287).
 
