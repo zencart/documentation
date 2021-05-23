@@ -22,11 +22,11 @@ In each file, you will want to update the block
   define ('EMAIL_LOGO_ALT_TITLE_TEXT', 'Zen Cart! The Art of E-commerce');
 ```
 
-If you use the same logo for your site and your email, the values for these defined constants will be the same ones as you entered in your `includes/languages/english/YOUR_TEMPLATE/header.php` file. 
+If you use the same logo for your site and your email, the values for these defined constants will be the same ones as you entered in your `includes/languages/english/YOURTEMPLATE/header.php` file. 
 
 Sometimes the change will not show up right away in emails that have already been sent and viewed, due to caching. Simply close your email program and re-open it to see the change take effect.  If your email is browser-based, clear your browser cache to see the change.  See [Image Caching](/user/new_user_topics/change_header_logo/#image-caching) for more details. 
 
-**NOTE: ** You must be sending HTML emails for this to work.**  See the Enable HTML Emails setting in [Admin > Configuration > Email Options ](/user/admin_pages/configuration/configuration_emailoptions/) setting.
+**NOTE: You must be sending HTML emails for this to work.**  See the Enable HTML Emails setting in [Admin > Configuration > Email Options ](/user/admin_pages/configuration/configuration_emailoptions/) setting.
 
 ## Related Articles 
 - [Using your logo on packing slips and invoices](/user/orders/high_res_logo)
