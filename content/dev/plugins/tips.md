@@ -98,7 +98,7 @@ if (!defined('MODULE_PAYMENT_AUTHORIZENET_CURRENCY')) {
 If your plugin requires new configuration data, see [Adding a configuration setting](/dev/plugins/adding_config/).
 
 ## Avoiding the Missing Menu problem 
-If your plugin is an admin command, remember that some storeowners may want non-superusers to be able to run your utility.   Be sure you have created the relevant `admin_pages` table entries - see [Admin menu item is missing](/user/troubleshooting/admin_menu_item_missing/).
+If your plugin is an admin page, remember that some storeowners may want non-superusers to be able to run your utility.   Be sure you have created the relevant `admin_pages` table entries - see [Admin menu item is missing](/user/troubleshooting/admin_menu_item_missing/).
 
 ## Checking Zen Cart version
 
