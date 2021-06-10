@@ -11,7 +11,7 @@ Here are some suggestions, assuming you're running the latest-released version o
 ### Turn off Category Counts, especially if you have a large number of categories.  
 Go to [Admin > Config > My Store](/user/admin_pages/configuration/configuration_mystore/) 
 
-    - Show Category Counts=false  
+    - Show Category Counts = false  
     - Show Category Counts-Admin = false  
 
     (this second one is for admin-area only when editing catalog)  
@@ -89,7 +89,7 @@ Or have you written any custom code or use any addons which run queries that att
 In addition to the settings mentioned above, additional settings you may wish to change to improve performance are as follows: 
 
 - Admin > Configuration > Maximum Values > Manufacturers List - Verify Product Exist
-- Admin > Configuration > Settings > IP to Host Conversion Status
+- Admin > Configuration > Sessions > IP to Host Conversion Status
 
 Each of these settings has its own documentation. 
 
