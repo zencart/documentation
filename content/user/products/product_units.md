@@ -9,15 +9,15 @@ The [product editing screen](/user/products/product_edit/) shows the following f
 
 ![product units](/images/product_units.png)
 
-- Product Qty Min/Unit Mix is covered in [what does MIXED ON mean?](/user/products/mixed_on/)
+- Product Quantity Box Shows just determines whether to show the quantity box on pages which allow the product to be purchased, such as [product info](/user/products/product_info) page, and possibly also the [listing pages](/user/products/product_listing/).
 
-- Product Quantity Box Shows just determines whether to show the quantity box on pages which allow the product to be purchased, such as [product info](/user/products/product_info) page
+- Product Qty Minimum is the lowest number of this product which may be purchased.
 
-- Product Qty Minimum is the lowest number of this product which may be purchased
+- Product Qty Maximum is the highest number of this product which may be purchased.
 
-- Product Qty Maximum is the highest number of this product which may be purchased
+- Product Qty Units is used when the product needs to be purchased in bundles.
 
-- Product Qty Units is used when the product needs to be purchased in bundles 
+- Product Qty Min/Unit Mix is covered in [What does MIXED ON mean?](/user/products/mixed_on/).
 
 For example, if 
 
