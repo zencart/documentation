@@ -10,7 +10,7 @@ weight: 1
 - **[How To Upgrade - Detailed Guide](/user/upgrading/detailed_upgrading/) YES, READ THIS!!!!**
 - [Why Upgrade?](/user/upgrading/about_upgrading/) (Protecting your site from bad actors)
 - [Date Standardization](/user/upgrading/date_standardization/)
-- [Version-Specific Considerations](/user/upgrading/release_specific_upgrade_considerations/)
+- [Release Specific Upgrade Considerations](/user/upgrading/release_specific_upgrade_considerations/)
 
 ## After Upgrading
 - [Keep Your JavaScript Scripts Updated](/user/upgrading/javascript_updates/)

@@ -97,6 +97,12 @@ Yes, there are several ways you can [add a new page](/user/customizing/add_pages
 
 --- 
 <!-- please keep this at the end --> 
-### Is there a list of features that Zen Cart offers? 
+### Is there a list of features that Zen Cart currently offers? 
 Yes - see [What features does Zen Cart offer?](/user/about_us/features/)
+
+--- 
+
+### Is there a roadmap of Zen Cart features planned for the future? 
+There is a subforum called [Development Road Map](https://www.zen-cart.com/forumdisplay.php?4-Development-Road-Map).
+
 

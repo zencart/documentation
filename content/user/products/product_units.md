@@ -15,7 +15,7 @@ The [product editing screen](/user/products/product_edit/) shows the following f
 
 - Product Qty Minimum is the lowest number of this product which may be purchased
 
-- Product Qty Maximum is the lowest number of this product which may be purchased
+- Product Qty Maximum is the highest number of this product which may be purchased
 
 - Product Qty Units is used when the product needs to be purchased in bundles 
 
@@ -28,4 +28,10 @@ For example, if
 Then purchases of 500, 750, 1000 and so on would be accepted. 
 
 Attempting to purchase 501 of this product would be shown as an error on the shopping cart page, and checkout would be blocked until the quantity was fixed.
+
+For Product Qty Maximum, the values 0 and 1 are special: 
+
+- when set to 0 (the default), there is no limit on the number that may be purchased.
+- when set to 1, only one of the product may only be purchased, so there is no quantity box displayed next to the add to cart button.
+
 
