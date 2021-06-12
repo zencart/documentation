@@ -6,7 +6,9 @@ weight: 10
 ---
 
 On the [product editing page](/user/products/product_edit/), 
-when the setting `Product Qty Minimum` is greater than 1, the 
+there are a number of [settings related to sale quantities](/user/products/product_units/).  One of them is called Product Qty Min/Unit Mix . 
+
+When the setting `Product Qty Minimum` is greater than 1, the 
 setting `Product Qty Min/Unit Mix` is used in determining 
 whether the minimum has been met, both for purchasing and for 
 [quantity discounts](/user/products/quantity_discounts/). 

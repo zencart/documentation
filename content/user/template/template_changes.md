@@ -5,6 +5,8 @@ category: template
 weight: 10 
 ---
 
+**Note:** Please be sure to also check [Release Specific Upgrade Considerations](/user/upgrading/release_specific_upgrade_considerations/).
+
 ## Introduction 
 
 If you start building a new Zen Cart with the latest version, and use
@@ -37,6 +39,15 @@ the specified file if you're not sure where a change should go.
 * `templates/tpl_product_free_shipping_info_display.php` - use `zen_output_string_protected` in `productInfoLink`. 
 
 * `templates/tpl_account_history_info_default.php` - use `zen_output_string_protected` for output of `$_GET['order_id']`. 
+
+## Anti-Spam 
+
+The following template files have had anti-spam features added that should be incorporated in your custom template: 
+
+* `templates/tpl_product_reviews_write_default.php`
+* `templates/tpl_contact_us_default.php`
+* `templates/tpl_modules_create_account.php`
+* `templates/tpl_ask_a_question_default.php`
 
 ## Client side validation 
 

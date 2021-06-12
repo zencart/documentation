@@ -10,6 +10,8 @@ This document lists things you may wish to take into account as you upgrade.  Th
 - changes to the database schema or contents which deserve special notice
 - changes to basic template operation 
 
+**Note:** Please be sure to also check [Template Changes](/user/template/template_changes/).
+
 ### ALL Versions 
 
 - Part of staying up to date is monitoring not just your Zen Cart version, but all your other software dependencies, such as JavaScript.  Use a tool like Google Chrome Lighthouse to [find outdated JavaScript libraries with known vulnerabilities](/user/upgrading/javascript_updates/). 

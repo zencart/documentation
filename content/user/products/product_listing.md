@@ -6,9 +6,16 @@ noindex: yes
 weight: 10
 ---
 
-Zen Cart uses the term _Listing Page_ to refer to a page that shows a number of products in a stack of rows in the center of the page. The _Product Listing Page_ is a listing page that shows all the products in a category. 
+Zen Cart uses the term _Listing Page_ to refer to a page that shows a number of products in a stack of rows in the center of the page. 
 
-**Note:** The Product Listing page is sometimes also called the _Index Listing Page_.
+- The _Product Listing Page_ is a listing page that shows all the products in a category.  The Product Listing page is sometimes also called the _Index Listing Page_.
+
+- The New Products page shows recently added products (as defined in 
+[this setting](/user/admin_pages/configuration/configuration_maximumvalues/#new_product_listing__limited_to_)).
+
+- The Featured Products page shows products which have been [marked as featured](/user/admin_pages/catalog/featured/). 
+
+- The All Products page shows all the products in your store.  
 
 More information on listing pages is provided in the [storefront listing pages](/user/storefront_pages/listing_pages/) FAQ. 
 
