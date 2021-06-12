@@ -5,15 +5,15 @@ category: Running
 weight: 10
 ---
 
-Sometimes customers need you to send an invoice or another copy of their checkout confirmation emails. 
+Sometimes customers need you to send an invoice or a copy of their checkout confirmation email. 
 
 This can happen for a variety of reasons:
 
 - the customer created an account but [mis-typed their email](/user/running/mistyped_email/). 
 - they need an invoice for tax or record keeping purposes. 
-- your cart has an [email deliverability issue](/user/email/emails_not_received/). 
+- your cart has an [email deliverability issue](/user/email/emails_not_received/) so they never received their original order confirmation. 
 
-Here are a few ways you can get them the information they need. (Of course if you have a deliverability issue, you will need to handle that separately.) 
+Here are a few ways you can get them the information they need. 
 
 ## Forward them the Admin order confirmation 
 The administrator gets a confirmation email for each order, as long as the _Send Copy of Order Confirmation Emails To_ field in [Email Settings](/user/admin_pages/configuration/configuration_emailoptions/) is set. 
