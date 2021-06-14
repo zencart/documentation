@@ -20,17 +20,17 @@ The desktop display is similar, but because a desktop screen is wider, more prod
 
 <br><br>
 
-Pagination controls are provided in the Zen Cart admin on the page [Admin > Configuration > Maximum Values](/user/admin_pages/configuration/configuration_maximumvalues/): 
+Pagination controls are provided in the Zen Cart admin on the page [Admin > Configuration > Maximum Values](/user/admin_pages/configuration/configuration_maximumvalues/).  Note that names of these settings changed in Zen Cart 1.5.8.
 
-Page Name | Control 
-----------|------- 
-Specials  | Products on Special
-New Products | New Products Listing- Number Per Page 
-Featured Products | Maximum Display of Featured Products Page
-Advanced Search Results | Products Listing- Number Per Page 
-Index Listing | Products Listing- Number Per Page 
-All Products | Maximum Display of Products All Page 
+Page Name | Pre-1.5.8 | 1.5.8 and above | 
+----------|-----------|-----------------| 
+Specials  | Products on Special | Products on Special Page| 
+New Products | New Products Listing- Number Per Page | New Products Page|
+Featured Products | Maximum Display of Featured Products Page | Featured Products Page|
+Index Listing | Products Listing- Number Per Page | Products Listing Page | 
+All Products | Maximum Display of Products All Page | All Products Page |
 
+Note that the Advanced Search Results also uses the setting from the Index listing. 
 <br><br>
 
 The behavior and appearance of the **Next** and **Previous** navigation links is controlled using settings on the [Admin > Configuration > Product Info](/user/admin_pages/configuration/configuration_productinfo/) page. 

@@ -12,6 +12,7 @@ weight: 1
 - [Date Standardization](/user/upgrading/date_standardization/)
 - [Release Specific Upgrade Considerations](/user/upgrading/release_specific_upgrade_considerations/)
 - [Template Changes](/user/template/template_changes/)
+- [Configiuration Parameter Name Changes](/user/upgrading/configuration_name_changes/)
 
 ## After Upgrading
 - [Keep Your JavaScript Scripts Updated](/user/upgrading/javascript_updates/)

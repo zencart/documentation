@@ -1,4 +1,4 @@
----
+template/centerboxes.md---
 title: Centerboxes  
 description: What are Zen Cart centerboxes? 
 category: template
@@ -30,16 +30,16 @@ This behavior is different from that of [sideboxes](/user/template/sideboxes/), 
 
 ### Centerbox Controls
 
-The number of products shown in a centerbox is controlled using an Admin setting on the page [Admin > Configuration > Maximum Values](/user/admin_pages/configuration/configuration_maximumvalues/): 
+The number of products shown in a centerbox is controlled using an Admin setting on the page [Admin > Configuration > Maximum Values](/user/admin_pages/configuration/configuration_maximumvalues/).  Note that names of these settings changed in Zen Cart 1.5.8.
 
-Centerbox Name | Control 
-----------|------- 
-Specials  | Maximum Display of Specials Products - Main Page 
-New Products | New Products Module 
-Featured Products | Maximum Display of Featured Products - Main Page
-Upcoming Products | Upcoming Products 
+Centerbox Name | Pre-1.5.8 | 1.5.8 and above | 
+---------------|-----------|-----------------|
+Specials  | Maximum Display of Specials Products - Main Page | Products on Special Centerbox 
+New Products | New Products Module | New Products Centerbox
+Featured Products | Maximum Display of Featured Products - Main Page | Featured Products Centerbox 
+Upcoming Products | Upcoming Products | Upcoming Products Centerbox 
 
-<br><br>
+<br>
 
 ###  Creating your own centerbox 
 
