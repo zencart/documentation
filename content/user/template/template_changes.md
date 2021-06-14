@@ -42,7 +42,7 @@ the specified file if you're not sure where a change should go.
 
 ## Anti-Spam 
 
-The following template files have had anti-spam features added that should be incorporated in your custom template: 
+The following template files were updated in Zen Cart 1.5.7 with anti-spam features: 
 
 * `templates/tpl_product_reviews_write_default.php`
 * `templates/tpl_contact_us_default.php`
@@ -51,7 +51,7 @@ The following template files have had anti-spam features added that should be in
 
 ## Client side validation 
 
-The following files were updated in Zen Cart 1.5.5 to specify a field type and required flag where needed when creating input fields. 
+The following files were updated in Zen Cart 1.5.5 to specify a field type and required flag where needed when creating input fields:
 
 * `templates/tpl_account_edit_default.php`
 * `templates/tpl_account_password_default.php`
@@ -60,5 +60,5 @@ The following files were updated in Zen Cart 1.5.5 to specify a field type and r
 * `templates/tpl_modules_address_book_details.php`
 * `templates/tpl_modules_checkout_new_address.php`
 * `templates/tpl_modules_create_account.php`
-* `templates/tpl_password_forgotten_default.php `
-`
+* `templates/tpl_password_forgotten_default.php`
+
