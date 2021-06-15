@@ -1,4 +1,4 @@
-template/centerboxes.md---
+---
 title: Centerboxes  
 description: What are Zen Cart centerboxes? 
 category: template
