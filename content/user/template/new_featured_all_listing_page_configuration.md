@@ -16,9 +16,32 @@ has its own configuration settings page; the pages are under Admin > Configurati
 
 For example, Admin > Configuration > Featured Listing, the top settings are:
 
+- Display Product Image	
+- Display Product Quantity	
+- Display Product Buy Now Button	
+- Display Product Name
+- Display Product Model	
+- Display Product Manufacturer Name	
+- Display Product Price
+- Display Product Weight
+- Display Product Date Added
+
+and each of these values is set the same way, with a 4 digit value: 
+
+- 0= off
+- 1st digit Left or Right
+- 2nd and 3rd digit Sort Order
+- 4th digit number of breaks after
+
+Another way to describe this is that the digits are ABBC where 
+
+- A is 1 for display on left, 2 for display on right 
+- BB is the sort order (00-99)
+- C is the number of line breaks after the field is displayed (0-9).
+
 ![Featured Products Settings](/images/featured_products_settings.png) 
 
-Note that each setting has a four digit value; each digit or combination of digits controls a separate setting. 
+Note that each setting has a four digit value; each digit or combination of digits controls a separate aspect of the display. 
 
 The first digit controls whether that piece of the listing, say the product name, will show or not. You have to chose either a 1 or a 2 in order for it to show on the listing. Product name has a value of 2101, indicating it is to be shown. If that value was changed to 3101, it disappears from the page. 
 
