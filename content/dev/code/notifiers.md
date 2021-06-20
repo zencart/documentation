@@ -243,7 +243,9 @@ There are two syntaxes supported for this. The `update` method will only be call
 #### snake_cased event name
 This is supported since v1.5.7.
 
-For a notifier named `NOTIFY_PRODUCT_VIEWS_HIT_INCREMENTOR` you could have a function in your observer class named `notify_product_views_hit_incrementor()` instead of `update()` (and still specify all the same parameters as you would for an `update()` function.
+If the notifier begins with `NOTIFY_` or `NOTIFIER_` then your observer class's function can use the same name.
+
+Example: For a notifier named `NOTIFY_PRODUCT_VIEWS_HIT_INCREMENTOR` you could have a function in your observer class named `notify_product_views_hit_incrementor()` instead of `update()` (and still specify all the same parameters as you would for an `update()` function.
 
 This has the added benefit of being searchable just like the notifier event name (albeit lowercase).
 
