@@ -229,6 +229,13 @@ $autoLoadConfig[190][] = array('autoType'=>'classInstantiate',
 
 ## Advanced Topics
 
+### Shared Logic For Multiple Events
+
+Given that the Observer class is indeed a class, you can break out your processing logic into many smaller discrete functions for individual purposes. 
+This allows you to call that private/protected function from within multiple event-specific functions, without having to duplicate code.
+Pairing that with meaningful function names increases readability and comprehension of what's happening where.
+
+Examples: a function for doing some specific debug-logging logic, called by multiple events. Or a function for parsing/cleaning input data. Or a function for writing specific db updates that happen in multiple scenarios.
 
 ### Event-Specific Update Methods
 
@@ -286,7 +293,7 @@ If you choose not to use event-specific "update" function names, then in order f
 
 The following approach is a way to trick the update method into "interpreting" the parameters using a switch statement according to the specific eventID being passed. 
 
-This switch-case approach allows the same code to be used for multiple notifiers if you are also using event-specific methods in the same file.
+For the procedural-coding thinker, this switch-case approach allows the same code to be used for multiple notifiers if you are also using event-specific methods in the same file.
 
 Here's an example from the Edit Orders plugin.  Each of the monitored events uses different parameters, so the formal parameters used in the `update` function declaration are generic.
 
