@@ -286,6 +286,8 @@ If you choose not to use event-specific "update" function names, then in order f
 
 The following approach is a way to trick the update method into "interpreting" the parameters using a switch statement according to the specific eventID being passed. 
 
+This switch-case approach allows the same code to be used for multiple notifiers if you are also using event-specific methods in the same file.
+
 Here's an example from the Edit Orders plugin.  Each of the monitored events uses different parameters, so the formal parameters used in the `update` function declaration are generic.
 
 ```
