@@ -62,9 +62,23 @@ Zen Cart can add a fee line item on the basis of a variety of factors:
 See [Order Total Modules](/user/order_total/order_total/) for more details. 
 
 ---
+### Can Zen Cart track my inventory? 
+
+Zen Cart offers basic inventory management (quantity in stock), with related settings like whether to allow checkout when stock is not sufficient to fill an order.  See [tracking inventory](/user/running/stock/) for more details.
+
+Note that full cost-of-goods sold (COGS) tracking is not part of Zen  Cart, and would require an external system, such as an Enterprise Resource Planning (ERP) tool. 
+
+---
 ### Can Zen Cart sell products with variants? 
 Zen Cart supports variants through the [attributes system](/user/products/attributes/).  You can add
 color, size, or any other product variant to your products with no limitations.
+
+---
+
+### Can Zen Cart track the stock of products with variants? 
+
+At the current time, Zen Cart does not track the stock of individual product variants (a t-shirt's stock of large versus medium, for example).  There are commercial modifications that address this requirement however, such as 
+the [Products' Options' Stock Manager (POSM)](https://vinosdefrutastropicales.com/product_extra_files/options_stock/readme.html). 
 
 ---
 

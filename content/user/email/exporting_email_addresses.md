@@ -5,7 +5,7 @@ category: email
 weight: 10
 ---
 
-To export email addresses, grab the [Email Address Exporter](https://www.zen-cart.com/downloads.php?do=file&id=6) plugin from our downloads site.
+To export email addresses, grab the [Email Address Exporter](https://www.zen-cart.com/downloads.php?do=file&id=6) plugin from the Zen Cart plugins library.
 
 The readme in the plugin zip file explains how to install and how to use.
 
