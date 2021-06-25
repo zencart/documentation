@@ -90,7 +90,7 @@ You will of course want to review the contents of those files first so you can a
 
 If you don't purge them, it will eventually slow down your website's performance, and use up a large amount of disk space.  
 
-**NOTE:** If you're running Zen Cart v1.3.8 or older, you REALLY need to UPGRADE ASAP! In the meantime, to enable the debug logging on older versions, use the [Debug Error-Logging Tool](https://www.zen-cart.com/downloads.php?do=file&id=606) from our downloads area.  
+**NOTE:** If you're running Zen Cart v1.3.8 or older, you REALLY need to UPGRADE ASAP! In the meantime, to enable the debug logging on older versions, use the [Debug Error-Logging Tool](https://www.zen-cart.com/downloads.php?do=file&id=606) from the Zen Cart plugins library.  
 
 ### b) Using Error Messages
 

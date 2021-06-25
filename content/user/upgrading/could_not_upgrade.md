@@ -15,5 +15,5 @@ What has happened is that the upgrade has stopped because one of the tests which
 
 The file `zc_install/includes/systemChecks.yml` contains the list of checks done at each version to ensure that the database has actually been up to date.  So in the case above, reviewing the 1.5.6 checks will narrow down the things to check to see what might have failed.
 
-One very common failure is a an inability to run an ALTER TABLE because the table in question still has old format dates.  See the page [date standardization](/user/upgrading/date_standardization/) to see how to fix this.
+One very common root cause for this issue is a failure running an `ALTER TABLE` required by an upgrade because the table in question still has old format dates.  See the page [date standardization](/user/upgrading/date_standardization/) for instructions on how to fix this.
 
