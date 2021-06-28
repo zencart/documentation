@@ -11,7 +11,7 @@ then selecting `Product - General` (or whatever your product type is),
 then clicking *Edit Layout* and setting `Show Additional Images` to 1.
 
 Then add additional images for your products, following the naming 
-conventions set out in [Working with Additional Images](/user/images/adding_multiple_images_to_a_product/). 
+conventions set out in [Image Filename conventions](/user/images/adding_multiple_images_to_a_product/). 
 
 
 ### How do I disable the additional images feature? 
