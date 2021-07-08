@@ -43,13 +43,13 @@ Having this gives you not only an up-to-date set of files on your server, but al
 
 3\. Click on the Export tab. **NOTE:** Be sure you've already selected your database from the pulldown BEFORE clicking on the Export tab
 
-4\. Many of the default settings are fine; however, choosing the "Custom" export type will allow you to optimize your backup by selecting the following ("tick" here means "tick the checkbox" or "select the option"):
+4\. Many of the default settings are fine; however, choosing the "Custom" export type will allow you to optimize your backup.  Generally the default settings are correct, but just in case: ("tick" here means "tick the checkbox" or "select the option"):
 
-- Tick DROP TABLE
-- Tick AUTO_INCREMENT
-- Tick Enclose table and fieldnames with backquotes
-- UNTICK the "CREATE DATABASE / USE statement" checkbox (you do NOT want it adding this)
-- Tick either use gzipped or zipped output so the exported data is compressed into a smaller file
+- Tick "Save output to a file" 
+- UNTICK "CREATE DATABASE / USE statement" 
+- Tick "Add DROP TABLE"
+- Tick "AUTO_INCREMENT value"
+- Tick "Enclose table and column names with backquotes"
 - Tick "Complete Inserts" (helpful during upgrades if you have many custom fields added by modifications made to your site)
 - Tick "Extended Inserts" to help keep the file smaller, especially if you are just making backups for safekeeping and not for troubleshooting something.
 
@@ -59,7 +59,13 @@ Google Drive.
 
 ![phpMyAdmin Backup](/images/phpMyAdmin_backup.png)
 
-### B) Using the Backup MySQL Plugin 
+### B) Using cPanel Backup 
+
+If your cPanel has a "Backup" utility, scroll down to "Download a MySQL Database Backup" and click the link corresponding to your database.  This will download a compressed database backup. 
+
+![cPanel Backup](/images/cpanel_backup.png)
+
+### C) Using the Backup MySQL Plugin 
 
 On hosts that permit the use of `exec()`, you can use the 
 [Backup MySQL Plugin](https://www.zen-cart.com/downloads.php?do=file&id=7)
