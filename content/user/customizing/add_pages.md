@@ -25,6 +25,12 @@ You may use these pages to add content to your site.
 
 Turn on creation of links to these pages from [Admin > Configuration > Define Page Status](/user/admin_pages/configuration/configuration_definepagestatus/), then modify the page content using the [Define Pages Editor](/user/admin_pages/tools/define_pages/). 
 
+### Use a Plugin 
+
+This plugin adds six new define pages which can be used just like page_2 .. page_4.
+
+- [Twitch Add Extra Pages - Add Define Pages](https://www.zen-cart.com/downloads.php?do=file&id=2319) 
+
 ### Build a new custom page 
 
 A number of files go into building a new page.  The best way to create a new page is to use one of these plugins as a starting point: 
