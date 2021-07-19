@@ -152,3 +152,18 @@ while (!$results->EOF) {
 ```
 
 
+# Advanced
+
+## Randomized Query Responses
+
+If you wish to have the query_factory pick a random record from the query result, two steps are required:
+
+a) instead of `$db->Execute()`, call `$db->ExecuteRandomMulti()` when running the query
+
+b) instead of `$db->MoveNext()`, call `$db->MoveNextRandom()` when iterating through the results
+
+In core code this is typically done in sideboxes and centerboxes when showing things like Specials and Featured Products, so that the customer doesn't always see only the most recently edited items. It's also helpful for search engines to not always see exactly the same content on every visit.
+
+Also note that randomizing the data like this means the page cannot be cached, so if you're using external caching systems to index your page (like Cloudflare), you may not see the randomized results change on every page hit due to stale cache.
+
+
