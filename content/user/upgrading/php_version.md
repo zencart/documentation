@@ -1,6 +1,6 @@
 ---
 title: Updating your PHP Version 
-description: Changing PHP version after an upgrade
+description: Moving to a higher PHP version after an upgrade
 category: upgrading 
 weight: 20
 ---
@@ -9,12 +9,8 @@ After you go live with an upgrade, you will likely want to update your PHP Versi
 
 You will want to run the latest PHP version which is appropriate for your Zen Cart version.  See  [Server Requirements for running Zen Cart](/user/first_steps/server_requirements/#php-version).
 
-The process of changing your PHP is server-specific:
+The process of changing your PHP is server-specific, depending on whether your hoster uses PHP Selector, MultiPHP Manager or some other utility. See [PHP Configuration](/user/upgrading/php_configuration/) for more information. 
 
-- Some hosts running cPanel provide MultiPHP Manager tool
-- Some hosts running cPanel provide PHP Selector 
-- Some hosts use `php.ini` files
- 
 Your hoster likely provides a knowledge base with instructions.  Contact your hoster if you are unsure how to proceed. 
 
 **Note:** In some environments, changing your PHP version can reset your memory_limit setting.  Be sure to go to the [version page](/user/admin_pages/tools/server_info/) after updating PHP to verify the setting of your PHP Memory Limit.  For more details, see [memory_limit](/user/running/memory_limit/). 
