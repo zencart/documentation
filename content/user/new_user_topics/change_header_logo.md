@@ -65,6 +65,16 @@ define('HEADER_LOGO_IMAGE', 'newlogo.png');
 The image itself should be placed in the `admin/images/` folder.
 See [Using your logo on packing slips and invoices](/user/orders/high_res_logo) for more details.
 
+If the logo in your admin is too wide for the white background, adjust the size of the div in admin/login.php. You'll see 3 lines that look like this:
+
+```
+      <div class="row">
+        <div class="col-sm-offset-1 col-md-offset-3 col-lg-offset-4 col-xs-12 col-sm-10 col-md-6 col-lg-4 text-center">
+          <div class="login-main-div login-box-shadow">
+```
+
+For desktop display, try adjusting `col-lg-4` to `col-lg-6`, for example, then adjust `col-lg-offset-4` to `col-lg-offset-3`.  Experiement with different values until you find one that works.
+
 ## Image Caching 
 
 The reason the instructions above recommend using the new name `newlogo.png` is to ensure that the cache isn't used.
