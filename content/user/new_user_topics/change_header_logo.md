@@ -73,7 +73,7 @@ If the logo in your admin is too wide for the white background, adjust the size 
           <div class="login-main-div login-box-shadow">
 ```
 
-For desktop display, try adjusting `col-lg-4` to `col-lg-6`, for example, then adjust `col-lg-offset-4` to `col-lg-offset-3`.  Experiement with different values until you find one that works.
+For desktop display, try adjusting `col-lg-4` to `col-lg-6`, for example, then adjust `col-lg-offset-4` to `col-lg-offset-3`.  Experiment with different values until you find one that works.
 
 ## Image Caching 
 

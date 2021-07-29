@@ -45,6 +45,8 @@ layout: docs
 
 * Log files - Learn about [what they are](/user/troubleshooting/debug_logs/), [why you get them](/user/troubleshooting/php_debug_logs/) and [how to fix them](/user/upgrading/php_warnings/).
 
+* Logos - All about your [store logo in Zen Cart](/user/running/logos/). 
+
 * Multiple Images per Product - Learn how to configure [multiple product images](/user/images/additional_images/).
 
 * PayPal Standard (IPN) - why [you shouldn't use PayPal Standard](/user/payment/paypal_standard/) and how to [switch to PayPal Express](/user/payment/paypal_express_checkout/). 
