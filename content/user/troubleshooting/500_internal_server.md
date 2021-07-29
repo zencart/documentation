@@ -103,6 +103,23 @@ In such cases, if you use the [Zen Cart debug logs](/user/troubleshooting/blank_
 
 <tr>
 
+<td>Missing File</td>
+
+<td>
+
+Using PHP `require` or `require_once` to pull in a file that doesn't exist will generate a 500 error.  For example, attempting to pull in the Magento infrastructure 
+
+```
+require_once 'app/Mage.php';
+```
+
+doesn't work well in Zen Cart and will cause an HTTP 500 to be returned.
+</td>
+
+</tr>
+
+<tr>
+
 <td>Bad configure.php contents</td>
 
 <td>
