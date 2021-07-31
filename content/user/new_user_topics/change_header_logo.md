@@ -65,7 +65,7 @@ define('HEADER_LOGO_IMAGE', 'newlogo.png');
 The image itself should be placed in the `admin/images/` folder.
 See [Using your logo on packing slips and invoices](/user/orders/high_res_logo) for more details.
 
-If the logo in your admin is too wide for the white background, adjust the size of the div in admin/login.php. You'll see 3 lines that look like this:
+If the logo in your admin is too wide for the white background, adjust the size of the div in `admin/login.php`. You'll see 3 lines that look like this:
 
 ```
       <div class="row">
