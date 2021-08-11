@@ -29,7 +29,8 @@ In most cases of difficulties logging in to the Admin area, the problem is one o
 3.  Apart from browser cache and cookies problems, the most common problem is not having the `https` correct in your `admin/includes/configure.php`  file.  
     See: [How do I enable SSL?](/user/installing/enable_ssl/)
 
-4.  If your admin password has been forgotten, or if you've done an admin password reset but forgot what the new password was, you'll have to reset the password via the database. See the FAQ for [resetting the Admin password to default](/user/troubleshooting/reset_admin_password/). 
+4.  Try using another browser, turning off browser plugins or logging out of and then back in to your password manager.  Sometimes login failures are simply local environmental issues that you need to straighten out.
 
 5.  If you've installed your site into a folder whose name contains spaces, rename the folder so that it doesn't have spaces anymore. Update your [configure.php files](/user/miscellaneous/configure/) accordingly.
 
+If all else fails, you may need to reset your admin password via the database. See the FAQ for [resetting your admin password](/user/troubleshooting/reset_admin_password/). 

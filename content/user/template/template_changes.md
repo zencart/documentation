@@ -1,16 +1,14 @@
 ---
-title: Template Changes 
+title: Template Updates 
 description: Keeping your custom template up to date.
 category: template 
 weight: 10 
 ---
 
-**Note:** Please be sure to also check [Release Specific Upgrade Considerations](/user/upgrading/release_specific_upgrade_considerations/).
-
 ## Introduction 
 
 If you start building a new Zen Cart with the latest version, and use
-the Responsive Classic template, you get all the latest fixes. 
+the Responsive Classic template (or the very well maintained [Bootstrap template](/user/template/bootstrap/)), you get all the latest fixes. 
 
 But what if you are using another template?  How can you check to see if it
 has all the most recent fixes? 
@@ -61,4 +59,7 @@ The following files were updated in Zen Cart 1.5.5 to specify a field type and r
 * `templates/tpl_modules_checkout_new_address.php`
 * `templates/tpl_modules_create_account.php`
 * `templates/tpl_password_forgotten_default.php`
+
+
+**Note:** Please be sure to also check [Release Specific Upgrade Considerations](/user/upgrading/release_specific_upgrade_considerations/) when doing an upgrade.
 
