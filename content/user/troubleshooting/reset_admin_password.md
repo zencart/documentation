@@ -1,11 +1,13 @@
 ---
 title: Admin Password - Resetting or Changing
-description: Admin password not working?  Try these steps. 
+description: Reset your admin password using these steps
 category: troubleshooting
 weight: 10
 aliases:
     - /user/admin/admin_password/
 ---
+
+If you [can't login to your admin](/user/troubleshooting/cant_login/), you may need to reset your admin password. 
 
 ## 1. Login and change it directly
 If you are able to login to your Admin, and merely want to change your password, simply login, then go to the "Account" menu and change your password there.
