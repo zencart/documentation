@@ -15,3 +15,10 @@ Instead of using the [Mobile_Detect](http://mobiledetect.net/) library to determ
 ### Bootstrap Template - Product Page (Mobile) 
 ![Bootstrap Template Product Page on Mobile](/images/bootstrap_full.png)
 
+### Colors in the Bootstrap Template
+
+One of the best things about the Bootstrap template is that it puts the control of colors in the hands of the storeowner.  Using Admin > Tools > ZCA Bootstrap Colors, you can set many of the colors in your template. 
+
+![Bootstrap Colors](/images/bootstrap_colors.png)
+
+
