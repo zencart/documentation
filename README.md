@@ -4,6 +4,12 @@
 
 Merged PRs to the Content area of this repo automatically deploy to https://docs.zen-cart.com
 
+
+## Contributing
+
+Interesting in contributing to these docs? Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+
+
 ## Content
 
 Create and update files in the `content/dev` and `content/user` folders, for developer and user documentation respectively.   
@@ -40,10 +46,6 @@ hugo server
 
 The repository is based on the [Docsy](https://www.docsy.dev/docs/) Documentation Template, in case you need a reference for troubleshooting purposes.
 
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ### Security
 
