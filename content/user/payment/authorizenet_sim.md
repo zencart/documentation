@@ -5,9 +5,11 @@ category: payment
 weight: 10
 ---
 
-## ALERT: DEPRECATED
+<font color="red">
+<h1>ALERT: DEPRECATED</h1>
+</font>
 
-**NOTE:** Authorize.net has officially retired the SIM method of accepting payment. Some older accounts are still working, but you should not plan on using this module moving forward.
+**NOTE:** Authorize.net has officially retired the SIM method of accepting payment. Some older accounts are still working, but you should not plan on using this module moving forward.  Instead, please see [Authorize.net AIM](/user/payment/authorizenet_aim/).
 
 ## REQUIREMENTS
 
