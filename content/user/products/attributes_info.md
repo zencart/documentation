@@ -43,3 +43,7 @@ more about downloadable products, read:
 
 - [Creating Downloadable products](/user/products/downloadable/)
 - [Downloadable products - verifying correctness](/user/products/downloadable_verifying/) 
+
+Creating a test store with the demo data allows you to see how 
+various scenarios may be accomplished.  See [demo data](/user/first_steps/demo_data) for details.
+

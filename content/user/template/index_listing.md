@@ -69,7 +69,7 @@ The centerboxes on the home page and the errors and missing pages will show all 
 
 ![Filter for Centerboxes](/images/centerbox_filter.png)
 
-The demo Zen Cart site has 9 featured products but in the Hardware Category only two are featured. Both show on the first page where all 8 sub-categories appear. But on the product listing page in the mice category, only the featured mouse appears.
+The Zen Cart demo data has nine featured products, but in the Hardware Category only two are featured. Both show on the first page where all eight sub-categories appear. But on the product listing page in the mice category, only the featured mouse appears.
 
 Hardware Subcategories:
 

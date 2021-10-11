@@ -45,4 +45,5 @@ Press the large "Update Category Links" button to the right, and the linking is 
 A set of global tools is available to allow you to change multiple products at a time. 
 
 ![P2C Global Tools](/images/global_p2c.png) 
- 
+
+Note that you may also reset the master category id for all products using the [Store Manager](/user/admin_pages/tools/store_manager/) page, which offers a *Reset ALL Products Master Categories ID* button.
