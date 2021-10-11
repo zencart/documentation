@@ -256,6 +256,8 @@ You may also decide later to set up a test site with the demo data AND a separat
 
 After you click Save Store Settings, there will be some hesitation as the database tables are created and the demo data is optionally loaded. You will see some progress indicators as the database is loaded.  
 
+For a list of features shown by the demo data, please see [demo data](/user/first_steps/demo_data). 
+
 ### Admin Setup
 
 Now, complete the Admin Information to set your Login name, Admin email address and password.  

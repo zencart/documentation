@@ -12,9 +12,9 @@ Since 1.5.7, Zen Cart includes a configuration setting called [Columns Per Row](
 This is what it looks like when `Columns Per Row` is set to 3.
 ![3 Columns per Row](/images/listing_col_3.png)
 
-<br><br>
+<br>
 
-This is what it looks like when `Columns Per Row` is set to 1.  The value 1 may be considered to be "rows mode." 
+This is what it looks like when `Columns Per Row` is set to 1.  Using this setting is called *rows mode*. 
 
 ![1 Column per Row](/images/listing_col_1.png)
 
@@ -23,7 +23,9 @@ Note that the setting `Columns Per Row` only applies to Product Listing pages, n
 
 In the Bootstrap template, the recommended value of `Columns Per Row` is 0, which allows the template to determine how many columns will fit on the screen dynamically.  A smaller window will have fewer columns, and a larger window will have more.  
 
-Here's a Bootstrap listing page in a wide window (around 1500px): 
+Setting `Columns Per Row` to 0 is called *fluid mode* in the Bootstrap template.   The Bootstrap template is best run in either rows mode or fluid mode.
+
+Here's a Bootstrap listing page in fluid mode in a wide window (around 1500px): 
 
 ![Wide window - 4 columns](/images/bs_listing_wide.png)
 
