@@ -37,7 +37,7 @@ The define for `DB_MYSQL_MODE` will work in Zen Cart 1.5.5 and above.
 In Zen Cart versions older than 1.5.5, you would need to do more extensive modification to interoperate with newer versions of MySQL.  Hopefully you are not doing this!  You should really [upgrade Zen Cart](/user/upgrading/) instead!
 
 ## Properly Fixing
-Also note that turning on STRICT mode **is only a temporary workaround**. The correct solution is to update your code.  
+Also note that turning off STRICT mode **is only a temporary workaround**. The correct solution is to update your code.  
 
 In the case of the example above, there are two options: 
 
