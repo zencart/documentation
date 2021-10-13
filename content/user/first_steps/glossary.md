@@ -21,6 +21,7 @@ Note: If a term is not in this list, use a web search to learn more about it.  T
 - Extra Pages - [Extra pages](/user/template/extra_pages/) are the three built-in additional content pages that people can use without needing to add software to their installation. 
 - EZ-Pages - Zen Cart provides the ability for storeowners to create their own content pages without a developer through the [EZ-Pages](/user/ezpages/) facility. 
 - Hoster - a company that provides servers for you to run your site on. See [hosting and domain concepts](/user/first_steps/hosting/).
+- Index Listing Page - sometimes the  [product listing page](/user/storefront_pages/listing_pages/) is called the index listing page.  There is no difference between the two terms. 
 - Info Box - an info box is like a sidebox for the admin side.  When an item from a list is selected, an info box appears on the right with more details on that item. For example, on the customers page, details on the selected customer would appear; on the orders page, details on that order.
 - IP Address - a number assigned to a piece of hardware connected to the Internet.  Computers identify each other by IP Address.  See [hosting and domain concepts](/user/first_steps/hosting/).
 - JavaScript - a scripting language that adds dynamic effects to your website. 
@@ -37,6 +38,7 @@ Note: If a term is not in this list, use a web search to learn more about it.  T
 - Shared Hosting - a hosting configuration that allows you to share a server with other users to reduce cost.  See [Hosting and Domain concepts](/user/first_steps/hosting/). 
 - Sidebox - a [sidebox](/user/template/sideboxes/) is a block of content on the left or right hand side of your page, when viewed on a desktop.  
 - Special - a [special](/user/admin_pages/catalog/specials/) is a price reduction on one product. See also Sale. 
+- Spider - a spider is a computer program running on the Internet which tries to index the contents of a website. Spiders are also called "web crawlers."  Zen Cart keeps a list of spiders in the file `includes/spiders.txt`.
 - SSL - Secure Sockets Layer.  A technology that allows you to securely transfer information between your webserver and a client browser.  See [hosting and domain concepts](/user/first_steps/hosting/).
 - Template - Set of files which provide the theme or skin (eg: layout, colors, fonts) for the site. See [Default files, template default and overrides](/user/first_steps/overrides/).
 - Template Files - The individual files (css, js, php, and some images) involved in providing the Template for the site.  See [Default files, template default and overrides](/user/first_steps/overrides/).

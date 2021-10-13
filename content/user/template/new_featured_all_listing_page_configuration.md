@@ -59,5 +59,5 @@ The fourth number determines the spacing between fields. If we just change the m
 
 The behavior of the Buy Now button on listing pages is discussed in [add to cart](/user/storefront_pages/add_to_cart/). 
 
-The [Product Listing pages](/user/storefront_pages/product_listing/) have their own configuration, which is described in the [product listing configuration page](/user/admin_pages/configuration/configuration_productlisting/).
+The [Product Listing pages](/user/storefront_pages/product_listing/) have their own configuration, which is described in the [product listing configuration page](/user/template/product_listing_page_configuration/). 
 
