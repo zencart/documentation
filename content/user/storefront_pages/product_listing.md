@@ -11,8 +11,8 @@ The Product Listing page shows products in a specific category. By default they 
  
 - The configuration settings for these pages are in [Admin > Configuration > Product Listing](/user/admin_pages/configuration/configuration_productlisting/). 
 
-- Alternatively, the listing pages can be displayed in columnar layout - see [Columnar Layout for Product Listing pages](/user/template/listing_columns/).
+- Alternatively, the product listing pages can be displayed in columnar layout - see [Columnar Layout for Product Listing pages](/user/template/listing_columns/).
 
 - Centerboxes may be displayed below product listing page results - see [Index Listing Configuration](/user/template/index_listing/).
 
-
+- Details on the configuration of the product listing page are provided in [Product Listing Configuration Settings](/user/template/product_listing_page_configuration).
