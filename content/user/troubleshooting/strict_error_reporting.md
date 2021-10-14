@@ -26,3 +26,6 @@ When you're done, simply delete the file you just created above.
 
 If that doesn't disable it, then that means you've enabled it in another file on your server. You will need to search your entire site for that define statement and remove it. (See the [Developer's Toolkit](/user/admin_pages/tools/developers_tool_kit/) for that.)
 
+### Is this the same as STRICT mode?
+No - STRICT mode is a database setting. They are not related.  [Read about STRICT mode](/user/troubleshooting/db_strict_mode/).
+
