@@ -43,7 +43,7 @@ Using the [Attributes Controller](/user/admin_pages/catalog/attributes_controlle
 
 - An attribute may be subject to quantity discounting using the fields *Attributes Qty Price Discount* and *Onetime Attributes Qty Price Discount*.   These settings are configured using [colon-separated pairs](/user/running/colon-separated-pairs/).  
 
-- Pricing by Word or Letter - Both of these options are available for attributes with option type Text. 
+- Pricing by Word or Letter - Both of these options are available for attributes with option type TEXT. 
 
 ### Attribute Quantity Discounting vs Product Quantity Discounting
 

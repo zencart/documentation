@@ -23,7 +23,7 @@ Zen Cart offers the following types of attributes:
 - file downloads
 - read only attributes 
 
-Here's an example from the Zen Cart sample data.  
+Here's an example from the Zen Cart demo data.  
 This is a cropped view of the product info page for one of the same products.
 The product has a dropdown
 attribute called *Media Type*, and three checkbox attributes. 
