@@ -8,8 +8,10 @@ Admin Activity Logs allows you to access the logging data which is
 created when actions are taken in the admin.  This can be used as a 
 security audit or to figure out when an undesired change was made. 
 
-You cannot directly view your admin activity logs on this page, but you
-can export them as a CSV, and download the output to your own computer. 
+You cannot directly view your admin activity logs on this page.  To view this table, you will have to use phpMyAdmin, or 
+export a CSV, and download the output to your own computer. 
+
+When viewing this data, note that the field `gzpost` is a json-encoded blob, so you will not be able to view it directly in phpMyAdmin or in a phpMyAdmin export.  However, using the Export feature built into this page (at the top) will allow you to view the gzpost data. 
 
 ![Admin Activity Log Manager](/images/admin_activity_logs.png) 
 
