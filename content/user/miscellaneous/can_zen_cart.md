@@ -110,6 +110,11 @@ Yes you can.  See [Master Password capabilities](/user/admin/master_password/).
 Yes, there are several ways you can [add a new page](/user/customizing/add_pages/). 
 
 --- 
+### Does Zen Cart come with demo data? 
+
+Yes, and many of the product's features can be seen by installing with the demo data.  See [demo data](/user/first_steps/demo_data/) for details. 
+
+--- 
 <!-- please keep this at the end --> 
 ### Is there a list of features that Zen Cart currently offers? 
 Yes - see [What features does Zen Cart offer?](/user/about_us/features/)

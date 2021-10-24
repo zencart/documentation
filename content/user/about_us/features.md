@@ -80,6 +80,7 @@ weight: 10
 - Multiple Language Support
 - Multiple Currency Support
 - Ability to add new pages 
+- Can be installed with demo data for evaluation.
 
 Do you have a question about whether Zen Cart offers a particular feature? It might be answered [on the miscellaneous FAQs page](/user/miscellaneous/can_zen_cart/).
 
