@@ -26,9 +26,9 @@ Possible Causes:
 2. Your `/includes/configure.php` and `/admin/includes/configure.php` files contain settings for the database (`DB_SERVER`
 `DB_SERVER_USERNAME`, `DB_SERVER_PASSWORD`, `DB_DATABASE`), which are used to log in to the database.
 
-    The `0 DB_ERROR_NOT_CONNECTED` error can occur when those database settings no longer match the actual details for the MySQL server, the MySQL database, or the MySQL user+password, or if the database server is broken for some reason.
+    The `0 DB_ERROR_NOT_CONNECTED` error can occur when those database settings no longer match the actual details for the MySQL server, the MySQL database, or the MySQL username+password, or if the database server is broken for some reason.
 
-    For example, if you recently changed your MySQL user/database/password and didn't put those same changes into your `configure.php` files, you'll need to update those files to match what's required by your MySQL database server. 
+    For example, if you recently changed your MySQL username/database/password and didn't put those same changes into your `configure.php` files, you'll need to update those files to match what's required by your MySQL database server. 
 
 3. Some frequently updated tables (such as `sessions` or `whos_online` 
 can become corrupt, and cause this problem.  Run a "repair" on the database. Most hosts have a Database Repair option listed beside the database names in the webhosting control panel. Ask your host if you need help finding this.

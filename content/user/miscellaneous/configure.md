@@ -137,7 +137,10 @@ define('DB_CHARSET', 'utf8');
 This is the collation or character set that Zen Cart tells MySQL to use when exchanging database data back and forth.
 While `utf8` is common, using `utf8mb4` enables support for emojis and other multibyte characters. 
 However, changing this setting must be done before first install, or else you must manually update all the table fields in your database after changing it here. 
-See [this article](user/upgrading/convert_to_utf8) for a utility which can help you convert data from `latin1`/`iso-8859-1` to `utf8`. 
+
+See [this article](/user/upgrading/detailed_upgrading/#character-set) for more details on character set. 
+
+See [this article](/user/upgrading/convert_to_utf8) for a utility which can help you convert data from `latin1`/`iso-8859-1` to `utf8`. 
 
 ```
 define('DB_SERVER', 'localhost');  
