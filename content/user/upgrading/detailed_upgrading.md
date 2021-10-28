@@ -372,3 +372,10 @@ As of Zen Cart v1.5.0 all **new** sites created database tables with the UTF8 ch
 As of Zen Cart v1.5.6 all **new** sites created database tables with the UTF8MB4 character-set.
 
 If your site was created using a Zen Cart version prior to 1.5.6, you may want to consider updating your character set.  Using utf8mb4 is currently considered the best practice; it allows you to support a variety of languages, as well as emojis.  For guidance on changing your character set, please see [this article](/user/upgrading/convert_to_utf8). 
+
+Other terms you might hear which are related to character set:
+
+- collation: how strings are compared during a sort (arranging in alphabetical order).
+- accent insensitivity (ai).  With accent insensitivity, there is no difference between e, è, é, ê and ë when sorting.
+- case insensitivity (ci).  With case insensitivity, there is no difference between p and P when sorting.
+

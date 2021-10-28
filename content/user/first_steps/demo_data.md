@@ -40,8 +40,8 @@ index.php?main_page=product_info&products_id=123
 - pricing by word - product 131 has per word pricing.
 - quantity discounts - products 127 and 176 demonstrate this feature.
 - quantity limits - products 105 and 106 have maximum purchase quantities; products 53-56 have other quantity restrictions. 
-Demonstrations of many other features can be found simply by searching for the feature name.
 - sales - search for "Sale" 
 - specials - search for "Special" 
 
+Demonstrations of many other features can be found simply by searching for the feature name.
 
