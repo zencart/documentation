@@ -1,6 +1,6 @@
 ---
 title: Database-Only Upgrade Instructions
-description: Upgrading if you don't want to keep your customizations 
+description: Quickie upgrading if you don't want to keep your customizations 
 category: Upgrading
 weight: 8 
 ---
