@@ -1,5 +1,5 @@
 ---
-title: Querying The Database
+title: Querying the Database
 description: Using QueryFactory
 category: code
 type: codepage
@@ -76,7 +76,7 @@ $sql = "SELECT p.products_id, p.products_model, pd.products_name
         LIMIT 10";
 ```
 
-**NOTE:** `zen_db_input()` is an alias for `$db->prepare_input()`, (which essentially runs `mysqli_real_escape_string()` behind the scenes).
+**NOTE:** `zen_db_input()` is an alias for `$db->prepare_input()`, which runs `mysqli_real_escape_string()` on its argument.
 
 
 ## Running the Query
@@ -167,3 +167,18 @@ In core code this is typically done in sideboxes and centerboxes when showing th
 Also note that randomizing the data like this means the page cannot be cached, so if you're using external caching systems to index your page (like Cloudflare), you may not see the randomized results change on every page hit due to stale cache.
 
 
+## SQL Injection 
+
+Your best defense against potential SQL injection attacks is to sanitize inputs as noted above.  Simply using a POSTed variable in a query is not safe! 
+
+```
+$query = $db->Execute("UPDATE " . TABLE_CUSTOMERS . " SET customers_firstname = '" . $_POST['name'] . "'";    // DO NOT DO THIS! 
+```
+Instead, use `bindVars` as described above. 
+
+```
+$query = $db->Execute("UPDATE " . TABLE_CUSTOMERS . " SET customers_firstname = :name:";    // DO THIS INSTEAD! 
+$query = $db->bindVars($query, ':name:', $_POST['name'], 'string');
+```
+
+ 

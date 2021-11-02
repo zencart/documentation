@@ -37,6 +37,7 @@ Note: If a term is not in this list, use a web search to learn more about it.  T
 - Sale - a [sale](/user/admin_pages/catalog/salemaker/) is a price reduction on one or more categories of products. See also Special. 
 - Shared Hosting - a hosting configuration that allows you to share a server with other users to reduce cost.  See [Hosting and Domain concepts](/user/first_steps/hosting/). 
 - Sidebox - a [sidebox](/user/template/sideboxes/) is a block of content on the left or right hand side of your page, when viewed on a desktop.  
+- SNAF - an acronym meaning Specials, New Products, All Products and Featured. 
 - Special - a [special](/user/admin_pages/catalog/specials/) is a price reduction on one product. See also Sale. 
 - Spider - a spider is a computer program running on the Internet which tries to index the contents of a website. Spiders are also called "web crawlers."  Zen Cart keeps a list of spiders in the file `includes/spiders.txt`.
 - SSL - Secure Sockets Layer.  A technology that allows you to securely transfer information between your webserver and a client browser.  See [hosting and domain concepts](/user/first_steps/hosting/).
