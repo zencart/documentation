@@ -7,7 +7,7 @@ weight: 10
 
 The exact method will depend upon whether you are creating a small image to be repeated, or a image that will either span the box or is intended to be centered within it. 
 
-Firstly create your image and place it in the images directory of your template.
+Firstly, create your image and place it in the images directory of your template.
 
 Then find the following blocks in your CSS:
 

@@ -35,7 +35,7 @@ Specifically, use small images for thumbnails, slightly larger for product pages
 
 See also these articles: 
 
-- [Adding Multiple Images To Products](/user/images/adding_multiple_images_to_a_product/) 
+- [Adding Multiple Images To Products](/user/images/additional_images/) 
 - [Preparing and Optimizing Images](/user/images/images_howto/) 
 
 ### Disable unused attribute settings 
