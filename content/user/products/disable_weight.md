@@ -5,7 +5,7 @@ category: products
 weight: 10
 ---
 
-Firstly let's be clear about the difference between a [listing page](/user/storefront_pages/listing_pages/) and the [product info](/user/storefront_pages/product_info/) page. When you see a number of products listed together, that's a listing page. For example, the New Products page is a listing page.  The page showing all products in a category is also a listing page called the _product listing page_.  When you click on one of the individual products in a list, you will be taken to the product info page.
+First, let's be clear about the difference between a [listing page](/user/storefront_pages/listing_pages/) and the [product info](/user/storefront_pages/product_info/) page. When you see a number of products listed together, that's a listing page. For example, the New Products page is a listing page.  The page showing all products in a category is also a listing page called the _product listing page_.  When you click on one of the individual products in a list, you will be taken to the product info page.
 
 To turn off weight on the product listing pages, login to your Admin area and then choose [Configuration > Product Listing](/user/admin_pages/configuration/configuration_productlisting/), then select *Display Product Weight* and set it to 0.  The other New, Featured and All Products listing pages each have their own configuration menus. 
 

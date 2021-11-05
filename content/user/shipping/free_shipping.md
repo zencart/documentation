@@ -5,14 +5,14 @@ category: shipping
 weight: 10
 ---
 
-During Checkout, the Shipping Selection page is automatically skipped if shipping does not apply to any products in the order.
+Note: During Checkout, the Shipping Selection page is automatically skipped if shipping does not apply to any products in the order.
 
 
 ## How do I tell the shopping cart that shipping does not apply?
 
 Individually set products as `free shipping` by visiting the [product editing screen](/user/products/product_edit/) for each one, and setting radio button `Always Free Shipping` to `Yes`. 
 
-Then enable the `free shipping` module on [Admin > Modules > Shipping](/user/admin_pages/modules/shipping/). 
+Then enable the `FREE SHIPPING!` module on [Admin > Modules > Shipping](/user/admin_pages/modules/shipping/). 
 
 This will allow checkout to totally bypass the shipping page.
 
@@ -26,7 +26,8 @@ There are several ways to make shipping be free:
 - mark the product as virtual 
 - associate downloads with the product and mark it as free shipping
 - create coupons that have Free Shipping as part of the discounting they provide
-- use shipping modules that offer free-shipping based on special criteria (see below)
+- use the Free Options shipping module, which offers free-shipping based on special criteria you can set (see below)
+- set the product weight to 0, and set [Order Free Shipping 0 Weight Status](/user/admin_pages/configuration/configuration_shippingpackaging/#order_free_shipping_0_weight_status) 
 
 --- 
 
@@ -38,4 +39,34 @@ Then select *Shipping* from the list.
 If the module is not installed click the install button. 
 
 Click edit to configure the criteria to allow free shipping.
+
+## How can I allow free shipping but still show other shipping options as choices?
+
+You may wish to offer free shipping but still present paid shipping options,for example if your other shipping options are expedited for a higher fee.
+
+If this case, use the `Free Shipping Options` module on [Admin > Modules > Shipping](/user/admin_pages/modules/shipping/). 
+
+You may configure shipping to be free under any of these conditions: 
+
+- Always 
+- Order Total less than or greater than a specified value 
+- Order Weight less than or greater than a specified value 
+- Order Item Count less than or greater than a specified value
+
+
+## My store shows free shipping but I don't want it! 
+
+You may need to do one or more of these things. 
+
+- Go to [Admin > Modules > Order Total](/user/admin_pages/modules/order_total/), and select *Shipping*, then press Edit.   If *Allow Free Shipping* is true, turn it to false, or if you simply want to raise the  threshold, update the field *Free Shipping For Orders Over*. 
+
+- Go to [Admin > Modules > Shipping](/user/admin_pages/modules/shipping/), and adjust or remove `Free Shipping Options` and/or `FREE SHIPPING!`. 
+ 
+- Go to [Admin > Configuration > Shipping/Packaging](/user/admin_pages/configuration/configuration_shippingpackaging) and set `Order Free Shipping 0 Weight Status` to 0.  Or, if you wish zero weight packages to generally be shipped free, but you're finding some products are zero weight and shouldn't be, see options below. 
+
+## How do I find Zero Weight products in my store? 
+
+- You could [build a report](/dev/code/reports/) to show items with zero weight. 
+- You could [build a dashboard widget](/dev/code/widget/) to display zero weight items on your admin home page.
+ 
 
