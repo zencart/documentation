@@ -5,8 +5,7 @@ category: shipping
 weight: 10
 ---
 
-Note: During Checkout, the Shipping Selection page is automatically skipped if shipping does not apply to any products in the order.
-
+Note: During Checkout, the Shipping Selection page is automatically skipped if all products in the cart are virtual.  
 
 ## How do I tell the shopping cart that shipping does not apply?
 
@@ -18,9 +17,9 @@ This will allow checkout to totally bypass the shipping page.
 
 ---
 
-## How do I make shipping be free?
+## How do I make shipping free?
 
-There are several ways to make shipping be free:
+There are several ways to offer free shipping: 
 
 - mark the product as free-shipping (see above)
 - mark the product as virtual 
@@ -62,11 +61,15 @@ You may need to do one or more of these things.
 
 - Go to [Admin > Modules > Shipping](/user/admin_pages/modules/shipping/), and adjust or remove `Free Shipping Options` and/or `FREE SHIPPING!`. 
  
-- Go to [Admin > Configuration > Shipping/Packaging](/user/admin_pages/configuration/configuration_shippingpackaging) and set `Order Free Shipping 0 Weight Status` to 0.  Or, if you wish zero weight packages to generally be shipped free, but you're finding some products are zero weight and shouldn't be, see options below. 
+- Go to [Admin > Configuration > Shipping/Packaging](/user/admin_pages/configuration/configuration_shippingpackaging) and set `Order Free Shipping 0 Weight Status` to 0.  Or, if you wish zero weight packages to generally be shipped free, but you're finding some products are zero weight and shouldn't be, you'll want to find all of those and fix them.  See options below for finding these misconfigured products. 
 
-## How do I find Zero Weight products in my store? 
+## How do I find products incorrectly configured with zero weight? 
 
 - You could [build a report](/dev/code/reports/) to show items with zero weight. 
 - You could [build a dashboard widget](/dev/code/widget/) to display zero weight items on your admin home page.
  
+- You could run a SQL query from phpMyAdmin.  
+```
+SELECT p.products_id, pd.products_name FROM products p, products_description pd WHERE p.products_id = pd.products_id AND p.products_weight = 0 AND products_virtual = 0; 
+```
 
