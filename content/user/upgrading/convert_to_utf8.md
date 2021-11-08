@@ -31,7 +31,7 @@ If your site was created from an older version, your database might still contai
 ### 1\. Converting the database
 Use this conversion utility to convert your data to UTF8 (AFTER MAKING AND TESTING A DATABASE BACKUP): 
 
-[https://github.com/zencart/utf8mb4-converter](https://github.com/zencart/utf8mb4-converter)  
+[https://github.com/zencart/utf8mb4-converter](https://www.zen-cart.com/downloads.php?do=file&id=1318)
 
 If you encounter errors converting certain tables due to bad data in them, simply fix the bad data and then re-run the script. While a full list of possible database-problems is beyond the scope of this article, common bad-data issues might include the following: 
 - [bad date formats](/user/upgrading/date_standardization/) in existing data
