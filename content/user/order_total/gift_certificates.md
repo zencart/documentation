@@ -23,6 +23,9 @@ And on the My Account page:
 
 ![Gift Certificates on My Account](/images/my_account_gift_certificates.png) 
 
+Your customers can also redeem gift certificates on the GV FAQ page (`index.php?main_page=gv_faq`).
+
+
 ### How do I create a Gift Certificate? 
 
 1\. In the Admin, make a new category called Gift Certificates. Add a product to the category called Gift Certificates.  
@@ -52,7 +55,7 @@ And on the My Account page:
 4\. When Gift Certificates are purchased, be sure to log into your Admin area and release them if you've configured it to queue them rather than auto-release them.
 
 ### Can a customer use multiple gift certificates at a time?
-A customer can enter as many Gift Certificates as they want on the checkout_payment page or gift-certificate redemption page, and then apply what ever portion of their Gift Certificate Balance to the order.
+A customer can enter as many Gift Certificates as they want on the checkout_payment page or gift-certificate redemption page (`index.php?main_page=gv_faq`), and then apply what ever portion of their Gift Certificate Balance to the order.
 
 **NOTE:** Gift Certificates can also be claimed by using the link provided in the email and logging in to claim the Gift Certificate to add it to their available balance.   And then they are free to apply the amount to use against any future order during checkout on the checkout_payment.
 
