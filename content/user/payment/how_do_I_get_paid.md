@@ -15,6 +15,7 @@ Naturally, you will typically wait for the check to arrive and clear your bank b
 
 This precaution also holds true for Bank Transfer, e-Transfer or Bank Deposit: you wait for payment before fulfilling the order.
 
+Note: The Check/Money Order module can be used for *any* payment method where transfer of funds does not take place within the checkout flow.  For example, you can accept payment by Zelle or Venmo simply by modifying the language defines in in `./includes/languages/english/modules/payment/moneyorder.php`.  
 
 ## Credit Card
 

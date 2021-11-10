@@ -24,5 +24,21 @@ On this page, the top settings are:
 
 Each of these values is set the same way, with a zero (indicating do not display this field on the listing page) or a positive number (indicating display this field in this order). 
 
-These values are also used when the [PRODUCT_LISTING_DEFAULT_SORT_ORDER](/user/admin_pages/configuration/configuration_productlisting/#display_product_listing_default_sort_order) field is set on the Admin > Configuration > Product Listing page.  See [sort order](/user/customizing/sort_order/) for more details. 
+There are two things about the display of index listing pages that can be changed using admin controls: 
+
+*a) How products are sorted when displayed on an index listing page:*
+
+By default, the sort order of products is done according to the sort order field on the products editing page. 
+
+This can be changed using [Display Product Listing Default Sort Order](/user/admin_pages/configuration/configuration_productlisting/#display_product_listing_default_sort_order) on the Admin > Configuration > Product Listing page.  See [sort order](/user/customizing/sort_order/) for more details. When this value is set, one of the fields above (name, price, quantity, etc.) will be used to sort the products. 
+
+*b) How each product is displayed on the listing page.*
+
+The "Display" controls described above indicate whether a particular field is shown for a product.  The layout in which they are shown is less configurable than the [New Listing - Featured Listing - All Listing configuration settings](/user/template/new_featured_all_listing_page_configuration/)   - there are basically three columns per row of listed product: 
+
+- the image is on the left 
+- the price and add to cart box is on the right
+- in the center are product name, model, manufacturer, description, quantity and weight. 
+
+This behavior may be modified by changing the template file `includes/modules/YOURTEMPLATE/product_listing.php`.
 
