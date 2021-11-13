@@ -17,6 +17,8 @@ This precaution also holds true for Bank Transfer, e-Transfer or Bank Deposit: y
 
 Note: The Check/Money Order module can be used for *any* payment method where transfer of funds does not take place within the checkout flow.  For example, you can accept payment by Zelle or Venmo simply by modifying the language defines in in `./includes/languages/english/modules/payment/moneyorder.php`.  
 
+Alternately, you may [clone the moneyorder payment module](/dev/code/modules/clone_payment/) to build a Venmo module with its own rules and behaviors.
+
 ## Credit Card
 
 _**Before you can accept credit cards directly you must have a merchant account with a Credit Card processing company such as Square, Stripe or Authorize.net.**_

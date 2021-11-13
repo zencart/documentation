@@ -2,7 +2,7 @@
 title: Cloning a Shipping Module
 description: Building a new shipping module based on an existing one 
 ---
-You can create Shipping Modules easiest by cloning the closest matching Shipping Module to what you are trying to do.
+You can create new Shipping Module by making a clone of the closest matching Shipping Module to what you are trying to do.
  
 As an example, we will consider the `flat` shipping module. 
  
