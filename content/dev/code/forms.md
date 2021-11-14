@@ -1,6 +1,6 @@
 ---
 title: Building a Form 
-description: Adding a custom form to collect other data
+description: Adding a custom form to collect data
 category: code
 weight: 10
 ---
