@@ -8,7 +8,7 @@ weight: 20
 ### How do I enable the additional images feature? 
 Go to [Admin > Catalog > Product Types](/user/admin_pages/catalog/product_types/),
 then selecting `Product - General` (or whatever your product type is),
-then clicking *Edit Layout* and setting `Show Additional Images` to 1.
+then clicking *Layout Settings*, and setting `Show Product Additional Images` to 1.
 
 Then add additional images for your products, following the naming 
 conventions set out in [Image Filename conventions](/user/images/image_filename_conventions/). 
@@ -18,7 +18,7 @@ conventions set out in [Image Filename conventions](/user/images/image_filename_
 
 Go to [Admin > Catalog > Product Types](/user/admin_pages/catalog/product_types/),
 then selecting `Product - General` (or whatever your product type is),
-then clicking *Edit Layout* and setting `Show Additional Images` to 0.
+then clicking *Layout Settings* and setting `Show Product Additional Images` to 0.
 
 ### Why do I see images for other products on my product pages?
 

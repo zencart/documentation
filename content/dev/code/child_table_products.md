@@ -18,9 +18,8 @@ Why would you create a child table rather than just extend the products table?  
 The decision is yours, based on your needs.  
 
 Considerations: 
-
+- You will need to build code to handle adding, updating and deleting this data.
 - What happens when a product is deleted?  You may wish to modify `admin/includes/modules/delete_product_confirm.php` or the `zen_remove_product` function. 
 - What happens when a product is copied?  You may wish to modify `admin/includes/modules/copy_product_confirm.php`. 
-
 
 
