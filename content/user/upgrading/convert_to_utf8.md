@@ -1,8 +1,8 @@
 ---
-title: Technical - Converting from iso-8859-1 to utf8 or utf8mb4
+title: Converting from iso-8859-1 to utf8 or utf8mb4
 description: Modern sites should use UTF8 or UTF8MB4
 category: upgrading 
-weight: 20
+weight: 10
 ---
 
 {{< technical >}}

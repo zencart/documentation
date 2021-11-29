@@ -22,4 +22,4 @@ Considerations:
 - What happens when a product is deleted?  You may wish to modify `admin/includes/modules/delete_product_confirm.php` or the `zen_remove_product` function. 
 - What happens when a product is copied?  You may wish to modify `admin/includes/modules/copy_product_confirm.php`. 
 
-
+Then you will need to [customize your template to display the new field](/dev/code/displaying_custom_fields/). 

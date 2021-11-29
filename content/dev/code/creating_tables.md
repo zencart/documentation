@@ -23,4 +23,5 @@ This would go in `includes/extra_datafiles/xsell_definitions.php` and `admin/inc
 Changing a table's structure - adding or removing fields, modifying default values and so forth - is done with the SQL `ALTER TABLE` command.  Again, you may provide a .sql file or automate this action. 
 
 
-
+## Related Articles 
+- [Adding a field to the products table](/dev/code/add_field_products/). 

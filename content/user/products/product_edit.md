@@ -25,7 +25,7 @@ when adding the product are:
 - [Product Priced by Attributes](/user/products/attribute_pricing/) - is the product's price determined by its attribute settings?  
 - Tax Class - if taxes are applicable, which ones? 
 - Products Price (Net) - base price of product before taxes 
-- Products Price (Gross) - computed using net price plus applicable taxes 
+- Products Price (Gross) - computed using net price plus applicable taxes if the product was shipped to the location specified Admin > Configuration > My Store > Zone.  (Think: if my store offered pickup, what taxes would I need to charge?)
 - Product is Virtual - is the product a completely digital item 
 - Always Free Shipping - does the product ship for free? 
 - Products Quantity Box Shows - whether to show the quantity box on pages which allow the product to be purchased, such as [product info](/user/products/product_info) page
