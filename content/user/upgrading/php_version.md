@@ -2,7 +2,7 @@
 title: Updating your PHP Version 
 description: Moving to a higher PHP version after an upgrade
 category: upgrading 
-weight: 20
+weight: 10
 ---
 
 After you go live with an upgrade, you will likely want to update your PHP Version.  For example, if you were running Zen Cart 1.5.1, you were probably using PHP 5.6 or 7.1.  After deploying Zen Cart 1.5.7, you will want to update your PHP version to PHP 7.4. 

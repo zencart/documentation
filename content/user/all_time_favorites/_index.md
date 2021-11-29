@@ -15,6 +15,8 @@ layout: docs
 
 * [Add a Link](/user/sideboxes/add_link_information_sidebox/) - How do I add links to the Information sidebox? 
 
+* [Add a New Field](/dev/code/add_field_products/) How do I add a custom field to the products table?
+
 * [Admin Password Reset](/user/troubleshooting/reset_admin_password/) - How to update your password if you have forgotten it.
 
 * [Backup](/user/running/backup/) - How do I back up my store? 
@@ -64,6 +66,8 @@ layout: docs
 [the details](https://docs.zen-cart.com/user/new_user_topics/overrides/), 
 and then 
 [the summary](https://docs.zen-cart.com/user/template/template_overrides/). 
+
+* [Time Zone](/user/new_user_topics/timezone/) - How do I make the store use my local timezone?  It uses GMT now. 
 
 * [Upgrading Zen Cart](/user/upgrading/upgrading/) - How do I upgrade my old cart?
 

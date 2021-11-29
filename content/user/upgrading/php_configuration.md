@@ -2,7 +2,7 @@
 title: PHP Configuration 
 description: Changing PHP version or PHP Settings 
 category: upgrading 
-weight: 20
+weight: 10
 ---
 
 The process of changing your PHP version is server-specific:

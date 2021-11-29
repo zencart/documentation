@@ -5,6 +5,9 @@ category: code
 weight: 10
 ---
 
-A plugin has been developed that demonstrates the use of observers to add a field to the products table.  [View Extra Product Fields on Github](https://github.com/torvista/Zen_Cart-Extra_Product_Fields).
+A plugin called [Extra Product Fields](https://github.com/torvista/Zen_Cart-Extra_Product_Fields)
+has been developed that demonstrates the use of observers to add a field to the products table.  
 
 As an alternative approach, you may wish to [create a child table](/dev/code/child_table_products/). 
+
+Then you will need to [customize your template to display the new field](/dev/code/displaying_custom_fields/). 

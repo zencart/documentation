@@ -2,7 +2,7 @@
 title: Mixed Collation Errors 
 description: How to handle "Illegal mix of collations" after upgrade 
 category: upgrading 
-weight: 20
+weight: 10
 ---
 
 If you are getting PHP log files that say things like: 

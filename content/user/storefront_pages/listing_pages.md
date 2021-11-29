@@ -68,5 +68,6 @@ And here's the Featured Products listing page showing a different layout:
 
 The layout for listing pages is described in more detail in [listing page layout](/user/template/listing_page_layout/). 
 
-The configuration settings for the New Products, Featured Products and All Products listing pages is explained in [new/featured/all products listing page configuration](/user/template/new_featured_all_listing_page_configuration/). 
+The configuration settings for the New Products, Featured Products and All Products listing pages are explained in [new/featured/all products listing page configuration](/user/template/new_featured_all_listing_page_configuration/). 
 
+The configuration settings for the Product Listing pages are explained in [listing page configuration](/user/template/product_listing_page_configuration/).
