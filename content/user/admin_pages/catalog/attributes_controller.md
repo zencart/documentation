@@ -65,7 +65,11 @@ For TEXT
 *   Price per word and free words
 *   Price per letter and free letters
 
-### Quantity Discounts
+**Note:** If you don't see per word and letter pricing, it's because you have turned off [Enable Text Pricing by word or letter](/user/admin_pages/configuration/configuration_attributesettings/#enable_text_pricing_by_word_or_letter) on the Admin > Configuration > Attributes Settings screen.
+
+Similarly, if you don't see the Price Factor fields, it's because you have turned off [Enable Price Factor](/user/admin_pages/configuration/configuration_attributesettings/#enable_price_factor) on the Admin > Configuration > Attributes Settings screen.
+
+### Attribute Quantity Discounts
 
 **Quantity discounts** (_Attributes Qty Price Discount_) are useful when the entire group of products being ordered has a different price if a certain number of them are ordered. _Note_: The price amount specified for a given number of items will be applied to the entire group of items; the price does not get applied to items in steps.
 
@@ -125,6 +129,11 @@ Negative numbers work for in these entries as well, making them quantity discoun
 
 **Note:** Don't confuse these **attribute** discounts with [**product** quantity discounts](/user/products/quantity_discounts/), which are set using [Products Price Manager](/user/admin_pages/catalog/products_price_manager/). 
 
+- *Product quantity discounts* show you amounts off according to the size of the order.  
+- *Attribute quantity discounts* show you decreasing prices for a particular attribute according to the size of the order. 
+
+**Note:** If you don't see this section of the page, it's because you have turned off [Enable Qty Price Discount](/user/admin_pages/configuration/configuration_attributesettings/#enable_qty_price_discount) on the Admin > Configuration > Attributes Settings screen.
+
 ## Attribute Flags 
 
 ![Prices and Weights](/images/attribute_flags.png) 
@@ -132,17 +141,17 @@ Negative numbers work for in these entries as well, making them quantity discoun
 
 These are used to help distinguish other features of the attribute such as:
 
-*   Use for **display only** - attribute cannot be selected and added to cart. Good for things like "Select from Below" to force the customer to make their own choice and not just hit Add to Cart and get a pink ball instead of a blue ball
+*   Used For Display Purposes Only - attribute cannot be selected and added to cart. Good for things like "Select from Below" to force the customer to make their own choice and not just hit Add to Cart and get a pink ball instead of a blue ball.
 
-*   Attribute is **Free when product is Free** - the attribute will be free if the product is free otherwise prices you've set will apply
+*   Attribute is Free when Product is Free - the attribute will be free if the product is free otherwise prices you've set will apply.
 
-*   **Default** Attribute - sets the attribute as default so it is already selected
+*   Default Attribute to be Marked Selected - sets the attribute as default so it is already selected.
 
-*   **Apply Discounts** - used by Product Sale/Special -this will apply the same type of discount that the product is getting from the products price vs the special or sale price
+*   Apply Discounts Used by Product Special/Sale - this will apply the same type of discount that the product is getting from the products price vs the special or sale price.
 
-*   **Include in Base Price** - when products are priced by attributes if this setting is selected then the lowest priced attributes will all be added to the base price of the product and displayed to the customer.
+*   Include in Base Price When Priced by Attributes - when products are priced by attributes if this setting is selected then the lowest priced attributes will all be added to the base price of the product and displayed to the customer.
 
-*   Attribute **Required** for TEXT - means the customer must fill in this field before adding it to the cart
+*   Attribute Required for Text or File - means the customer must fill in this field before adding it to the cart.
 
 ## Attribute Images
 
@@ -160,6 +169,8 @@ click *Update*.
 To delete an existing image, select *Yes* for *Remove Image? ...*
 
 click *Update*.
+
+**Note:** If you don't see this section of the page, it's because you have turned off [Enable Attribute Images](/user/admin_pages/configuration/configuration_attributesettings/#enable_attribute_images) on the Admin > Configuration > Attributes Settings screen.
 
 ## Downloadable Products As Attributes
 

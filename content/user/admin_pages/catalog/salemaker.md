@@ -28,4 +28,4 @@ Some things to notice about configuring a sale:
 - The sale deduction may be expressed as a percent, dollar off or final price 
 - The sale may respond in different ways to products which are already on special
 
-
+Sales may optionally apply to the attribute prices when products have priced attributes.  When such products are put on sale, the flag **Apply Discounts Used by Product Special/Sale** in the [attributes controller](/user/admin_pages/catalog/attributes_controller/#attribute-flags) determines whether the sale discount is also applied to the attributes price. 
