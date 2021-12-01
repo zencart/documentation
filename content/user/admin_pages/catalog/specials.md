@@ -30,3 +30,4 @@ When selection from a list is used, the same window is shown, but instead of pro
 
 Specials are displayed in your store in the specials sidebox, in a centerbox and on the specials page.  To learn more, read about [how specials are handled on the storefront](/user/products/special_products/). 
 
+Specials may optionally apply to the attribute prices when products have priced attributes.  When such products are put on special, the flag **Apply Discounts Used by Product Special/Sale** in the [attributes controller](/user/admin_pages/catalog/attributes_controller/#attribute-flags) determines whether the special discount is also applied to the attributes price. 
