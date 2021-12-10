@@ -9,7 +9,7 @@ Zen Cart permits you to add discounts to specific types of orders.
 
 * [Coupons](/user/order_total/coupons/) - Create discount coupons for price reductions and free shipping 
 
-* [Group Discounts](/user/order_total/group_pricing/) - Offer discounts to groups of customers
+* [Group Pricing](/user/order_total/group_pricing/) - Offer discounts to groups of customers
 
 There are also [plugins which allow you to discount and reduce the order total](https://www.zen-cart.com/downloads.php?do=cat&id=7). 
 

@@ -21,6 +21,8 @@ layout: docs
 
 * [Backup](/user/running/backup/) - How do I back up my store? 
 
+* [Black Question Marks](/user/upgrading/character_sets/) - Why do I see a backwards black question mark on my site? 
+
 * [Blank Page](/user/troubleshooting/blank_page/) - What to do if part or all of a page is blank.
 
 * [Can Zen Cart do this?](/user/miscellaneous/can_zen_cart/) - Questions about features and capabilities.

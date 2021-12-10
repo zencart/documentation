@@ -29,3 +29,5 @@ Some things to notice about configuring a sale:
 - The sale may respond in different ways to products which are already on special
 
 Sales may optionally apply to the attribute prices when products have priced attributes.  When such products are put on sale, the flag **Apply Discounts Used by Product Special/Sale** in the [attributes controller](/user/admin_pages/catalog/attributes_controller/#attribute-flags) determines whether the sale discount is also applied to the attributes price. 
+
+Sales are displayed in your store in by directly reducing the price on the product info page, listing pages, the shopping cart page, and so forth.  To learn more, read about [how sales are handled on the storefront](/user/products/sale_products/). 
