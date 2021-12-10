@@ -365,7 +365,7 @@ Better to complete your upgrade first, and do your template change as a separate
 
 **Note:** If you initially created your store with Zen Cart 1.5.6 or higher, you are already using utf8mb4; no action is required. 
 
-The MySQL Character set you are using defines the legal characters within a string.  Early versions of Zen Cart used the latin1 character set, which can be used to represent English and other Western European languages.  (You may also hear this character set referred to as "iso-8859-1.")
+The MySQL Character set you are using defines the legal characters within a string.  Early versions of Zen Cart used the `latin1` character set, which can be used to represent English and other Western European languages.  (You may also hear this character set referred to as "iso-8859-1.")
 
 As of Zen Cart v1.5.0 all **new** sites created database tables with the UTF8 character-set.
 

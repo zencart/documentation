@@ -72,3 +72,6 @@ If they wish to remove a coupon, they can enter a different coupon code, or they
 
 The `coupons` table has a `coupon_type` field. The possible values for coupon_type are shown in the `collect_posts` function in `includes/modules/order_total/ot_coupon.php` in Zen Cart 1.5.8 or higher. 
 
+## Display of Coupon Discounts 
+Coupon Discounts are shown in the order summary on the checkout payment and
+ checkout confirmation pages.  See [price reductions](/user/products/price_reductions/) for details. 

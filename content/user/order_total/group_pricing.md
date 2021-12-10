@@ -12,7 +12,7 @@ If you want to offer a group discount, you need to first enable group pricing
 Go to: [Admin > Modules > Order Total](/user/admin_pages/modules/order_total/) and select Group Pricing (ot_group_pricing).   
 If it's not already installed, click Install to enable it.  
 
-## Group Discounts
+## Group Pricing
 
 Go to [Admin > Customers > Group Pricing](/user/admin_pages/customers/group_pricing/). 
 
@@ -30,3 +30,6 @@ The customer will now be entitled to the Group Discount you have configured.  Th
 ## Other Uses for Groups 
 While not ideal, there is the possibility that custom code can use customer groups for other purposes as well.  For example, the [Invoice Payment Method plugin](https://www.zen-cart.com/downloads.php?do=file&id=131) checks the customer's group and only becomes visible if their group name begins with the string "invoice_". 
 
+## Display of Group Discounts 
+Group Discounts are shown in the order summary on the checkout payment and
+ checkout confirmation pages.  See [price reductions](/user/products/price_reductions/) for details. 
