@@ -5,6 +5,7 @@ category: categories
 weight: 10
 ---
 
+## Sales and Specials 
 Both [Specials](/user/products/special_products/) and [Sales](/user/products/sale_products/) have configurable start and end dates, which means you don't have to turn them off or on by hand if you don't want to.  
 
 Here's how they work: 
@@ -20,3 +21,11 @@ Here's how they work:
 
 So a sale with a start date of 01/27/2021 and an end date of 01/28/2021 would run from only on 01/27/2021.  As soon as the date changed, the sale would end.  (The actual database update ending the sale would occur on the first page load after 01/28/2021 began.)
 
+## Featured Products 
+
+[Featured Products](/user/admin_pages/catalog/featured/) also have a start and end date, and work the same way Sales and Specials do, as described above.
+
+## Upcoming Products 
+
+Since Zen Cart 1.5.7, it has been possible to automatically enable any disabled [Upcoming Product](/user/products/upcoming_products/) on its available date, 
+using the [enable disabled product by available date](/user/admin_pages/configuration/configuration_stock/#enable_disabled_product_by_available_date) feature. 

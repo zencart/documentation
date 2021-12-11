@@ -10,6 +10,8 @@ layout: docs
 <!-- please keep in alphabetic order -->
 <!-- remember to start links with "/" -->
 
+Once you know [What Zen Cart is](/user/about_us/what_is_zen_cart/), you might want to know the answers to some of these other questions. 
+
 
 * [Add a Page](/user/customizing/add_pages/) - How do I add new pages to my store? 
 
