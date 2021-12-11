@@ -35,6 +35,17 @@ Zen Cart supports UPS, USPS, Canada Post, and [many other shippers](/user/shippi
 
 ---
 
+### Can I set my own shipping rates with Zen Cart? 
+
+You may offer [free shipping](/user/shipping/free_shipping/) or price shipping according to a variety of factors, such as the number or weight of items in an order.  See [Available Shipping Modules](/user/shipping/shipping/#available-shipping-modules) for more details.
+
+---
+### Can Zen Cart create shipping labels? 
+
+No, but Zen Cart is supported by [ShipStation](https://www.shipstation.com), which is a popular postage and label creation solution.  Some other options are discussed in the [shipping labels FAQ](/user/shipping/labels/).
+
+---
+
 ### Does Zen Cart support my preferred payment provider? 
 Zen Cart supports PayPal, Authorize, Square, and [many other payment processors](/user/payment/). 
 
@@ -51,6 +62,14 @@ Zen Cart supports a number of discounting mechanisms:
 - and [other discounting methods](/user/order_total/). 
 
 ---
+### Can Zen Cart offer tiered, customer specific or bundled pricing? 
+
+- Tiered pricing is available on a per product basis using [Quantity Discounts](/user/products/quantity_discounts/) 
+- Customer specific pricing is not available natively but can be performed with plugins.
+- Bundled pricing (sometimes called kit or package pricing) is not available natively but can be performed with plugins.
+
+---
+
 ### Can Zen Cart add fees to an order? 
 
 Zen Cart can add a fee line item on the basis of a variety of factors:
