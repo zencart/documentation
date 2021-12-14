@@ -9,7 +9,7 @@ Using [XAMPP](https://www.apachefriends.org/) (Windows, Mac, Linux) or [MAMP](ht
 
 For the remainder of this document, these tools will be referred to as **AMP** for convenience. 
 
-**Note:** If you don't feel comfortable doing this, the second best option for creating a test cart is creating a new folder on your live server.  This option is discussed [here](/user/running/local_testing/#testing-on-your-server/). 
+**Note:** If you don't feel comfortable doing this, the second best option for creating a test cart is creating a new folder on your live server.  This option is discussed [here](/user/running/local_testing/#testing-on-your-server).
 
 ---
 
@@ -40,7 +40,7 @@ This is not as good as a local test environment, but better than putting unteste
 
 ## 1. Create a new test store on your server
 
-Create a NEW database in cPanel called `test_store`. 
+Create a NEW database in cPanel called `test_store`. Create a database user that has full permissions to access this database. 
 
 Use the backup that you just made from your live site to fill the database with data. (See [restoring the database](/user/running/backup/#to-restore-your-database).)
 
@@ -48,6 +48,9 @@ Create a new folder on your server called  `test_store`.  Copy the files from yo
 
 ## 2. Prepare the configure.php files
 
-In your `test_store` folder, update the `includes/configure.php` and `admin/includes/dist-configure.php` files so that the path names and database names are for your test store. 
+In your `test_store` folder, update the `includes/configure.php` and `admin/includes/dist-configure.php` files:  
+- Set the path names to your test store.
+- Set the database name to `test_store`.
+- Set `DB_SERVER_USERNAME` and `DB_SERVER_PASSWORD` to the new database user and password you created in the first step.
 
 

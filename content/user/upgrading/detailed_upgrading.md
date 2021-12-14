@@ -201,7 +201,7 @@ First, take a fresh database backup from your live store:
 
 ## Create a temporary new store on your server, for testing
 
-Create a NEW database in cPanel. 
+Create a NEW database in cPanel. Create a database user that has full permissions to access this database.
 
 Use the backup that you just made from your live site to fill the database with data. (See [restoring the database](/user/running/backup/#to-restore-your-database).)
 
@@ -215,6 +215,7 @@ On your PC, in your `store_new` folder, copy
 Edit these two files and set all the parameters, using your existing live store as a guide.
 - Remember to specify your **NEW** database name when filling in `DB_DATABASE`. 
 - But remember to use the same `DB_PREFIX` value from the old site's configure.php file, because if it is not the same then the database tables won't be recognized correctly.
+- Set `DB_SERVER_USERNAME` and `DB_SERVER_PASSWORD` to the new database user and password you created in the first step
 
 ## Upload the files to a temporary directory on your server
 Upload the files from your modified `store_new` directory on your PC (created in step 2) into a temporary directory on your server, perhaps also called `store_new`.
