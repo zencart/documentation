@@ -44,7 +44,7 @@ https://MYSTORE.com/MYADMINNAME/index.php?cmd=stats_products_zero_weight
 
 but you don't see it in the dropdown Admin > Reports.  Why not? 
 
-The answer is, it needs to be added to the admin pages table, which requires some defined contants.  If you look at any of the [reports in the Plugins area](https://www.zen-cart.com/downloads.php?do=cat&id=1), you'll see how this is done. We will look at [Disabled Products Report](https://www.zen-cart.com/downloads.php?do=file&id=2302) to see one example: 
+The answer is, it needs to be added to the admin pages table, which requires some defined constants.  If you look at any of the [reports in the Plugins area](https://www.zen-cart.com/downloads.php?do=cat&id=1), you'll see how this is done. We will look at [Disabled Products Report](https://www.zen-cart.com/downloads.php?do=file&id=2302) to see one example: 
 
 This report creates a third file called `admin/includes/extra_datafiles/products_disabled.php`.  So create your own file, using the naming convention above, called `admin/includes/extra_datafiles/products_zero_weight.php`.
 
