@@ -99,6 +99,20 @@ color, size, or any other product variant to your products with no limitations.
 At the current time, Zen Cart does not track the stock of individual product variants (a t-shirt's stock of large versus medium, for example).  There are commercial modifications that address this requirement however, such as 
 the [Products' Options' Stock Manager (POSM)](https://vinosdefrutastropicales.com/product_extra_files/options_stock/readme.html). 
 
+Note that this plugin is sometimes called Products Options Stock Manager (without the apostrophes). 
+
+There are also open source plugins which provide this capability; search for "Stock by Attributes." 
+
+---
+
+### Can Zen Cart configure products with dependent attributes? 
+
+Dependent attributes describes a situation where the options for one attribute can only be determined when a prior attribute has a specific known value.
+
+For example: A t-shirt in size XL may only come in black or grey, but in size Medium may be available in more black, grey, blue and green. 
+
+The POSM plugin referenced above also does this. 
+
 ---
 
 ### Can Zen Cart allow me to create restricted admin accounts? 
