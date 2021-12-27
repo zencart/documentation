@@ -24,7 +24,7 @@ Secondly, core code uses CSRF tokens for all form interactions. The use of these
 
 However, reports such as https://www.trustwave.com/Resources/SpiderLabs-Blog/TWSL2016-006--Multiple-XSS-Vulnerabilities-reported-for-Zen-Cart/
 made us reconsider. 
-While we still contend that the CSRF protection mitigates these supposed XSS vulnerabilities, there are three good reasons to address them with extra sanitization.
+While we still contend that the CSRF protection mitigates these supposed XSS vulnerabilities, there are three good reasons to address them with extra sanitization:
 
 1. We cannot guarantee that 3rd party plugins use the CSRF token system (although there are some safeties to ensure they do).
 
@@ -107,19 +107,33 @@ An example of the contents might be
 
 or
 
-
     $sanitizer = AdminRequestSanitizer::getInstance();
     $group = array(
       'col_html_text' => array('sanitizerType' => 'PRODUCT_DESC_REGEX', 'method' => 'post'),
         );
     $sanitizer->addComplexSanitization($group);
 
+
+
 The structure of the defining array is:
 
 1. sanitizerType = The name of a sanitizer group (see the group names below) 
 2. method = get|post|both
-3. pages = (optional) an array of pages (i.e.: for edit_orders.php specify 'edit_orders' here) which this sanitizer rule will be applied to; (if not supplied, will apply to all pages)
-4. params = (optional) this is used only for the MULTI_DIMENSIONAL sanitizer, which explained below.
+3. pages = (optional) an array of pages which this sanitizer rule will be applied to; (if not supplied, will apply to all pages)
+4. params = (optional) this is used only for the MULTI_DIMENSIONAL sanitizer, which is explained below.
+
+Here's a specific example from the [News Box Manager](https://www.zen-cart.com/downloads.php?do=file&id=2264) plugin.  The file `admin/includes/extra_datafiles/news_box_manager_sanitization.php` sanitizes the fields `news_title` and `news_content` when they are updated: 
+
+```
+if (class_exists('AdminRequestSanitizer') && method_exists('AdminRequestSanitizer', 'getInstance')) {
+    $news_mgr_sanitizer = AdminRequestSanitizer::getInstance();
+    $news_mgr_sanitizer->addSimpleSanitization('PRODUCT_DESC_REGEX', array('news_title', 'news_content'));
+}
+```
+
+The `pages` parameter is not specified here because this particular plugin 
+is designed for easy extension, so that pages can be added simply by copying a single file (and requiring someone to modify this file as well 
+to add the new page would be contrary to that intention.)
 
 
 ### General Sanitization Groups
