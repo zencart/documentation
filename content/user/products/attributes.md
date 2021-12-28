@@ -205,3 +205,10 @@ When done, you may update the sort orders for the product to the Option Value de
 Note: if you plan on using downloads, be sure you have configured your Attribute Settings for handling files. See **Admin > Configuration > Attribute Settings**.  
 
 For more information, see [configuring downloadable attributes](/user/products/downloadable/).
+
+### Dependent Attributes 
+
+Dependent attributes are these whose range of values depend on the values of previously set attributes.  For example, the values for Car Model depend on the value of Car Make. 
+
+Zen Cart does not natively support this feature but plugins can provide [dependent attribute](/user/miscellaneous/can_zen_cart/#can-zen-cart-configure-products-with-dependent-attributes) support.
+
