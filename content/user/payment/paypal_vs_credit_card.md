@@ -34,7 +34,7 @@ However, some customers are not given this option, and are required to create a 
 
 *   Note that the **PayPal Express Checkout** product technically does not allow the option to make payment without having a PayPal account (although many Zen Cart sites do have success with this option due to special concessions granted by PayPal to the Zen Cart software). PayPal has always intended that Express Checkout be offered in addition to other payment choices such as a credit card gateway, and that adding Express is a way to allow PayPal members a very quick and easy way to pay using their PayPal account.  
 
-*   UPDATE: PayPal has now stated that they will permit PayPal Express Checkout Business customers to not require that customers have a PayPal account.  In your PayPal account, click on your account name at the top right, then click Account Settings, and navigate to the Website Payments section, then look for PayPal account optional.  You want this to be **On**.  Also, in your PayPal Express configuration, you want the *Use InContext Checkout?* setting to be **Old**.
+*   UPDATE: PayPal has now stated that they will permit PayPal Express Checkout Business customers to not require that customers have a PayPal account.  In your PayPal account, click on your account name at the top right, then click Account Settings, and navigate to the Website Payments section, then look for PayPal account optional.  You want this to be **On**.  Also, in your Zen Cart PayPal Express configuration, you want the *Use InContext Checkout?* setting to be **Old**.
 
 ![PayPal Account Optional](/images/paypal_account_optional.png)
 
