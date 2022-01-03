@@ -7,7 +7,16 @@ weight: 10
 
 The [Bootstrap template](https://www.zen-cart.com/downloads.php?do=file&id=2191) is a well supported, standards-based [responsive](/user/template/responsive/) template which was built by the Zen Cart community. 
 
-Instead of using the [Mobile_Detect](http://mobiledetect.net/) library to determine the screen characteristics, it uses CSS media queries.  It does not use separate CSS files for each device type, and the CSS it does use is much more compact than what is used by the older [Responsive Classic](/user/template/responsive_classic/) template. 
+The Bootstrap template is built on the [Bootstrap](https://getbootstrap.com/) front-end toolkit.  It differs from the older [Responsive Classic](/user/template/responsive_classic/) template in the following ways: 
+
+||Bootstrap|Responsive Classic| 
+-|-|-|
+|Determining screen size|CSS Media Queries | [Mobile_Detect](http://mobiledetect.net/) library |
+|CSS|Single CSS file|Separate CSS for desktop, tablet and phone|
+|Orientation Handling|Built in|Requires different CSS for landscape vs portrait on mobile devices|
+|Device Support|Device independent|Lists specific devices|
+
+Bootstrap template version 3.X is based on [Bootstrap 4](https://getbootstrap.com/docs/4.6/getting-started/introduction/).  You can find the exact version of Bootstrap in use by looking at the file `includes/templates/bootstrap/common/html_header.php`, which pulls in the Bootstrap javascript and css.
 
 ### Bootstrap Template - Product Page (Desktop) 
 ![Bootstrap Template Product Page on Desktop](/images/bootstrap_desktop.png)

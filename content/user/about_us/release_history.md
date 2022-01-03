@@ -16,6 +16,8 @@ See also [Zen Cart Database Schema](/dev/schema/),
 and
 [PHP version compatibility with Zen Cart](/user/first_steps/server_requirements/#php-version). 
 
+If you need to get a copy of Zen Cart (current or older version), please see [Downloading Zen Cart](https://docs.zen-cart.com/user/first_steps/get_zen_cart/). 
+
 ---
 
 This is the release history of the Zen Cart product.
