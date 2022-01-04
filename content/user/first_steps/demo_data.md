@@ -45,3 +45,14 @@ index.php?main_page=product_info&products_id=123
 
 Demonstrations of many other features can be found simply by searching for the feature name.
 
+### Demo Images 
+
+After Zen Cart 1.5.8, the demo images are not deployed by default.
+
+If you wish to use the demo images to make the demo data look more realistic, they may be obtained from the `zc_install/demo_images` folder, i.e. 
+
+```
+cd images
+unzip ../zc_install/demo_images/images.zip
+```
+

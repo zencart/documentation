@@ -111,3 +111,4 @@ Klamath Falls, OR 97603
 
 Please note: Zen Ventures, LLC is not a charity, but your gift can be written off as a normal business expense.
 
+If you have a Github account, you may [donate through Github](https://github.com/sponsors/zencart).
