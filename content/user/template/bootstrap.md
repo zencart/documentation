@@ -16,7 +16,7 @@ The Bootstrap template is built on the [Bootstrap](https://getbootstrap.com/) fr
 |Orientation Handling|Built in|Requires different CSS for landscape vs portrait on mobile devices|
 |Device Support|Device independent|Lists specific devices|
 
-Bootstrap template version 3.X is based on [Bootstrap 4](https://getbootstrap.com/docs/4.6/getting-started/introduction/).  You can find the exact version of Bootstrap in use by looking at the file `includes/templates/bootstrap/common/html_header.php`, which pulls in the Bootstrap javascript and css.
+Bootstrap template version 3.X is based on [Bootstrap 4](https://getbootstrap.com/docs/4.6/getting-started/introduction/).  You can find the exact version of Bootstrap (`major.minor.patch`) in use by looking at the file `includes/templates/bootstrap/common/html_header.php`, which pulls in the Bootstrap javascript and css.
 
 ### Bootstrap Template - Product Page (Desktop) 
 ![Bootstrap Template Product Page on Desktop](/images/bootstrap_desktop.png)
