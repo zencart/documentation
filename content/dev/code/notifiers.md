@@ -352,6 +352,8 @@ Some developers believe this method should not be used since it is less self-doc
 
 Sometimes notifier names are changed (where triggered in application code) (because of a typo, for example, or to make them more self-documenting).  When this happens, rather than just remove the old notifier from the code base, the recommended practice since Zen Cart 1.5.7 has been to alias the old name.  This way older code which uses the old notifier name will still work. In some cases it makes perfect sense to fully remove an old notifier call. Use discretion when deciding whether to clean up after yourself or hold on for long-term backward compatibility.
 
+An example of a notifier name which has been aliased due to a typo is `NOTIFIY_ORDER_CART_SUBTOTAL_CALCULATE`.
+
 ### Plugins which support Notifier Use 
 
 Some plugins which can be helpful during development when using notifiers include:
