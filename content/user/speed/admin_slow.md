@@ -31,6 +31,13 @@ In addition to the settings mentioned above, additional settings you may wish to
 Each of these settings has its own documentation.
 
 ### Software Changes to consider 
-Sometimes one of the widgets on the dashboard is the cause of the slowness.  You can tweak these to improve performance at the cost of less functionality.  For example, on busy stores, it might make sense to modify `admin/includes/modules/dashboard_widgets/RecentOrdersDashboardWidget.php` and turn off `$includeAttributesInProductDetailRows`.
+Sometimes one of the widgets on the dashboard is the cause of the slowness.  You can tweak these to improve performance at the cost of less functionality.  These are things you can try: 
 
-You can try disabling specific widgets by modifying `admin/index_dashboard.php`.
+- modify `admin/includes/modules/dashboard_widgets/RecentOrdersDashboardWidget.php` and set `$includeAttributesInPopoverRows` to `false`.
+
+- modify `admin/orders.php` and set `$includeAttributesInProductDetailRows` to `false`. 
+
+
+You may also wish to disable specific widgets by modifying `admin/index_dashboard.php`.
+
+
