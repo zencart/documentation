@@ -25,7 +25,7 @@ Of course, a hybrid approach is possible where (2) is performed, and then issues
 
 ### Issues with the Converter 
 
-The Converter is not perfect.  It allows rapid conversion of language files, but 10% of the output needs to be fixed by hand.  Translators following approach (2) above will need to resolve the following situations by hand, since they are not correctly processed by the Converter: 
+The Converter is not perfect.  It allows rapid conversion of language files, but some portion of the output will still need manual correction.  Translators following approach (2) above will need to make changes in the following situations: 
 
 - references to global variables such as `$template` (example: `lang.credit_cards.php`) 
 
@@ -33,9 +33,22 @@ The Converter is not perfect.  It allows rapid conversion of language files, but
 
 - backward references to language definitions from earlier within the same file (example: `lang.shopping_cart.php` reference to `TEXT_CART_HELP`)
 
-- calls to `zen_href_link` (example: `lang.checkout_success.php`)
+- Parameterized calls to `zen_href_link` (example: `lang.checkout_success.php`)
 
 - definitions which begin with a constant (example: `gv_faq.php` definition for `NAVBAR_TITLE`)
  
-Referring to the `english` translation will provide guidance on the correct approach for fixing these issues. 
+Referring to the `english` translation will demonstrate a known-working approach for fixing these issues. 
 
+One common failure the converter has is failing to change a comma to a double arrow operator in a `define`.  For example, changing 
+
+`define('TEXT_ONETIME_CHARGES_EMAIL',"\t" . '*onetime charges = ');`
+
+to 
+
+`'TEXT_ONETIME_CHARGES_EMAIL', "\t" . '*onetime charges = ',`
+
+These failures can be detected with this grep pattern: 
+
+```
+grep "'[A-Z0-9_]*'[\s]*," *.php | grep -v "=>"
+```
