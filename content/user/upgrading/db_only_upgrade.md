@@ -48,8 +48,8 @@ Now you have an up to date copy of your database with an up to date copy of the 
 
 ### Customization
 1. Customize the following files, referring to your live site to see what needs to be changed: 
-- `includes/languages/responsive_classic/english.php `
-- `includes/languages/english/email_extras.php`
+- `includes/languages/responsive_classic/english.php`
+- `includes/languages/english/responsive_classic/email_extras.php`
 - `admin/includes/languages/english/email_extras.php`
 
 
@@ -60,3 +60,8 @@ Now you have an up to date copy of your database with an up to date copy of the 
 
 - [Update your PHP version](/user/upgrading/php_version/) if appropriate. 
 
+## If you have a little more time ... 
+
+It's worth your while to switch from the Responsive Classic template to the [Bootstrap template](/user/template/bootstrap/).  It looks much better and it's just a bit more work.  Redo the customization step above for the storefront files:
+- `includes/languages/bootstrap/english.php`
+- `includes/languages/english/bootstrap/email_extras.php`

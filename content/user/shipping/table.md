@@ -1,11 +1,11 @@
 ---
-title: Table Shipping Module Setup 
+title: Table Rate Shipping Module Setup 
 description: How to price shipping by item weight, price or count
 category: shipping 
 weight: 10
 ---
 
-The Table Shipping module allows you to price your shipping in any one of three possible ways: 
+The Table Rate Shipping module allows you to price your shipping in any one of three possible ways: 
 
 - according to the total weight of the shipment
 - according to the total price of the shipment
