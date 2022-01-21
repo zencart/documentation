@@ -55,9 +55,14 @@ Start by logging into your admin page. Then select `Tools > Developers Tool Kit`
 
 ### Admin Field Descriptions Still in English
 
+This means one of two things happened: 
+
 - The language pack did not contain a full translation of the admin descriptions held in the database.  Contact the language pack creator to ask if translation is available.
 
 OR
 
 - You have not run the sql patch for the admin files.  See your installation instruction and run the sql patch.
 
+### Language Files in Zen Cart 1.5.8 
+
+The structure of the language files was changed in Zen Cart 1.5.8.  A description of the changes and conversion procedures is provided in the developer's guide to [158 Language Files](/dev/languages/158_language_files/). 

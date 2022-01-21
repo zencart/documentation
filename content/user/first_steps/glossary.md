@@ -42,6 +42,7 @@ Note: If a term is not in this list, use a web search to learn more about it.  T
 - SNAF - an acronym meaning Specials, New Products, All Products and Featured. 
 - Special - a [special](/user/admin_pages/catalog/specials/) is a price reduction on one product. See also Sale. 
 - Spider - a spider is a computer program running on the Internet which tries to index the contents of a website. Spiders are also called "web crawlers."  Zen Cart keeps a list of spiders in the file `includes/spiders.txt`.
+- Sub-Zone: This term refers to a zone which is an element of a larger zone.  For example, Florida is a sub-zone of United States of America.
 - SSL - Secure Sockets Layer.  A technology that allows you to securely transfer information between your webserver and a client browser.  See [hosting and domain concepts](/user/first_steps/hosting/).
 - Template - Set of files which provide the theme or skin (eg: layout, colors, fonts) for the site. See [Default files, template default and overrides](/user/first_steps/overrides/).
 - Template Files - The individual files (css, js, php, and some images) involved in providing the Template for the site.  See [Default files, template default and overrides](/user/first_steps/overrides/).
