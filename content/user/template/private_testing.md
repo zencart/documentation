@@ -5,7 +5,7 @@ category: template
 weight: 10
 ---
 
-It is possible for an admin user to privately test a new template while other users see the regular template.  Use these steps: 
+In recent versions of Zen Cart, it is possible for an admin user to privately test a new template while other users see the regular template.  Use these steps: 
 
 -  Determine your IP Address
 -  Go to the screen Admin > Configuration > Website Maintenance, and enter your IP Address in the *Down For Maintenance (exclude this IP-Address)* field. 
@@ -42,3 +42,17 @@ https://MYSTORE.com/index.php?main_page=index&cPath=6&t=MYTEMPLATE
 
 - When you're finished testing, append `t=off` to the URL to stop private testing.
 
+If you want to make other templates available to all users (i.e. not limit it to IP addresses from the Down For Maintenance list), make the following changes: 
+
+- copy `includes/init_includes/init_templates.php` to `includes/init_includes/overrides/init_templates.php`
+- At the bottom of `includes/init_includes/overrides/init_templates.php`
+
+change 
+```
+if (zen_is_whitelisted_admin_ip()) {
+```
+to
+
+```
+if (1) {
+```
