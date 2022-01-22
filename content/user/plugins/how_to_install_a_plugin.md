@@ -10,7 +10,7 @@ If you installed your Zen Cart using Fantastico or perhaps had a friend or subco
 ## Reading the instructions
 
 This page shows you how to copy files into your cart. This is just one part of installation; there may be many associated tasks that need to be done. 
-Most contributions come with a README file; please take the time to review it to get the whole picture of how installation is to be done.  
+Most plugins come with a README file; please take the time to review it to get the whole picture of how installation is to be done.  
 
 Reading the instructions **before** starting installation is a great way to reduce grief.  This cannot be overstated.  Even a straightforward plugin like 
 [Simple Google Analytics](https://www.zen-cart.com/downloads.php?do=file&id=272) 
@@ -33,7 +33,7 @@ Before you start, you'll need to verify that you have some things.
 
 ## Zip File Structure
 
-Here's the complete structure of the [Quantity Discounts](https://www.zen-cart.com/downloads.php?do=file&id=135) contribution, as an example. 
+Here's the complete structure of the [Quantity Discounts](https://www.zen-cart.com/downloads.php?do=file&id=135) plugin, as an example. 
 
 ```
 ./includes
@@ -62,7 +62,7 @@ The hierarchy of these files is intended to exactly duplicate the structure of y
 If your cart is under (say)  /httpdocs/public_html/, the instructions would be the same; FTP to your site; cd to <code>/httpdocs/public_html/</code>
 then transfer the <code>includes</code> folder over. 
 
-So in fact, to install this contribution, all you have to do is copy these two files into your cart, turn on the Quantity Discounts order total module (under Admin > Modules > Order Totals), and you're done.  
+So in fact, to install this plugin, all you have to do is copy these two files into your cart, turn on the Quantity Discounts order total module (under Admin > Modules > Order Totals), and you're done.  
 
 ## Templates and Core Files
 
@@ -90,7 +90,7 @@ If your template name is "apple", you would install this file in
 
 `./includes/modules/apple/sales_index.php`
 
-Not all files can be handled by the template system. For instance, files in `includes/modules/pages` cannot be overridden. A recommendation for files like this is that during the installation process, you make a backup of the original file, and name it <original-filename>.orig. For instance, the [Gift Wrap at Checkout](https://www.zen-cart.com/downloads.php?do=file&id=267) contribution modifies the file `./admin/invoice.php` Prior to installation, rename this file `./admin/invoice.php.orig`  
+Not all files can be handled by the template system. For instance, files in `includes/modules/pages` cannot be overridden. A recommendation for files like this is that during the installation process, you make a backup of the original file, and name it <original-filename>.orig. For instance, the [Gift Wrap at Checkout](https://www.zen-cart.com/downloads.php?do=file&id=267) plugin modifies the file `./admin/invoice.php` Prior to installation, rename this file `./admin/invoice.php.orig`  
 This serves two purposes:
 
 *   In the event of a problem, you can easily restore the original file
@@ -100,7 +100,7 @@ Note that ".orig" should be a suffix onto the original filename. (Don't name the
 
 ## Merging Template Files
 
-If a contribution includes a template file change, you can simply 
+If a plugin includes a template file change, you can simply 
 compare the file provided to the unaltered file from a fresh 
 Zen Cart download (using either `template_default` or `responsive_classic` as the base template, as appropriate) to see how to apply 
 those changes to your template files. 

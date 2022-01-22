@@ -5,7 +5,7 @@ category: plugins
 weight: 10 
 ---
 
-The Zen Cart forum hosts the [Plugins Library](https://www.zen-cart.com/downloads.php), where open source contributions to Zen Cart may be obtained.
+The Zen Cart forum hosts the [Plugins Library](https://www.zen-cart.com/downloads.php), where open source modifications to Zen Cart may be obtained.
 
 These plugins are supported on the Zen Cart forum by volunteers.
 

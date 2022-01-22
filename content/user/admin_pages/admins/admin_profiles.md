@@ -27,7 +27,7 @@ requirements.
 
 Remember to review your admin profiles 
 as you add new functions to your admin.  For example, if you 
-install [Edit Orders](https://www.zen-cart.com/downloads.php?do=file&id=1513), 
+install [Edit Orders](/user/orders/edit_orders/), 
 although your `Order Processing` profile can run all the standard functions 
 under `Admin > Customers`, they still can't run Edit Orders until you go 
 to `Admin > Admins > Edit Profiles` and check the *Edit Orders* box. 

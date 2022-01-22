@@ -20,7 +20,7 @@ b. Test it.
 c. Make **backups** of the NEW server's `/includes/configure.php` and `/admin/includes/configure.php` files by downloading them (FTP) to your PC.  
 
 3\. On your **OLD host**, Make a **COMPLETE backup** of your DATABASE and STORE.  
-a. Use either the [Backup MySQL Database](https://www.zen-cart.com/downloads.php?do=file&id=7) contribution to do the backup of your database, or use phpMyAdmin to export your entire database.  Include the "DROP" tables command, and under Data, choose "Complete Inserts" and "Extended Inserts".  
+a. Use either the [Backup MySQL Database](https://www.zen-cart.com/downloads.php?do=file&id=7) plugin to do the backup of your database, or use phpMyAdmin to export your entire database.  Include the "DROP" tables command, and under Data, choose "Complete Inserts" and "Extended Inserts".  
 Save the SQL file to your PC for later.     Click here for 
 advice on [doing a backup](/user/running/backup/). 
 

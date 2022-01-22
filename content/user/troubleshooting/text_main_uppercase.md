@@ -35,5 +35,5 @@ define('TEXT_MAIN', '');
 
 10% of the time it's because you've failed to upload the language file altogether, and thus the define is missing.
 
-You might start with checking which files you've edited recently or contributions you've added, or compare your files vs a fresh set of Zen Cart files.
+You might start with checking which files you've edited recently or plugins you've added, or compare your files vs a fresh set of Zen Cart files.
 
