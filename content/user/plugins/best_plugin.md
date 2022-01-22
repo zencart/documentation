@@ -36,8 +36,8 @@ it will be pulled into the core  There are good reasons for [keeping some plugin
 Plugins which are pretty much universally useful and have earned honorable mention in this documentation are: 
 
 - [Backup MySQL](https://www.zen-cart.com/downloads.php?do=file&id=7)
-- [Edit Orders](https://www.zen-cart.com/downloads.php?do=file&id=1513)
-- [Email Archive Manager](https://www.zen-cart.com/downloads.php?do=file&id=101)
+- [Edit Orders](/user/orders/edit_orders/)
+- [Email Archive Manager](/user/email/email_archive_manager)
 - [EasyPopulate](https://www.zen-cart.com/downloads.php?do=file&id=2069)
 - [MailChimp Integration](https://www.zen-cart.com/downloads.php?do=file&id=425)
 - [One Page Checkout](https://www.zen-cart.com/downloads.php?do=file&id=2095) 

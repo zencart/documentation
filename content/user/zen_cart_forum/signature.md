@@ -15,7 +15,7 @@ Updated August 2011
     **Example: http://www.my-site.com or <a href="http://www.my-site.com">My Store</a>**
 *   You may have one link for each Zen Cart powered store that you operate. This must just be a simple hyperlink to your business website, with _no advertising copy_.  
     **Example: http://www.my-site.com or <a href="http://www.my-site.com">My Store</a>**____  
-*   You may have links to any contributions that you have created/amended. Links must be to the Zen Cart download area. Offsite links are not allowed.  
+*   You may have links to any plugins that you have created/amended. Links must be to the Zen Cart download area. Offsite links are not allowed.  
 *   Other content such as 'Thought of the day', Quotes etc are acceptable as long as they conform to all of the other rules herein.  
 
 ### An acceptable signature line would be:

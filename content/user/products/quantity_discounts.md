@@ -25,7 +25,7 @@ to the [MIXED ON](/user/products/mixed_on/) setting from the [product editing pa
 
 **Note:** Quantity Discounts created using Products Price Manager will discount bulk purchases of a single product.  
 
-- If you need to discount bulk purchases across categories or the entire store, take a look at the [Quantity Discounts contribution](https://www.zen-cart.com/downloads.php?do=file&id=135) in the [Zen Cart Plugins Library](/user/plugins/plugin_library/). 
+- If you need to discount bulk purchases across categories or the entire store, take a look at the [Quantity Discounts plugin](https://www.zen-cart.com/downloads.php?do=file&id=135) in the [Zen Cart Plugins Library](/user/plugins/plugin_library/). 
 
 - If you need to reduce the price of a product *with a specific attribute* when purchased in bulk, look at [**attribute** quantity discounts](/user/products/attribute_pricing/#settings-in-attributes-controller), which are set in the [Attributes Controller](/user/admin_pages/catalog/attributes_controller/#quantity-discounts). 
 

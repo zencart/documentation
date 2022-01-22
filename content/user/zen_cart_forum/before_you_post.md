@@ -25,7 +25,7 @@ weight: 10
 
     *   Is it a new install or an upgrade?
 
-    *   What the addons/contributions you have installed?
+    *   What plugins you have installed?
 
     *   What customizations have you made?
 

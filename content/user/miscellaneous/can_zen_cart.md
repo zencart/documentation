@@ -127,7 +127,7 @@ This capability is not built into Zen Cart at the current time, but two popular 
 --- 
 ### Can Zen Cart allow me to edit an order after it was placed? 
 Editing orders may be performed using the plugin 
-[Edit Orders](https://www.zen-cart.com/downloads.php?do=file&id=1513).
+[Edit Orders](/user/orders/edit_orders).
 
 ---
 
