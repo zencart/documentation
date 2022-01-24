@@ -39,6 +39,8 @@ The Converter is not perfect.  It allows rapid conversion of language files, but
 
 - checks for `if (!defined(` (example: `paypalwpp.php`)
 
+- links to javascript functions (example: `shopping_cart.php` definition for `TEXT_CART_HELP`)
+
 - definitions which begin with a constant (example: `gv_faq.php` definition for `NAVBAR_TITLE`)
  
 Referring to the `english` translation will demonstrate a known-working approach for fixing these issues. 

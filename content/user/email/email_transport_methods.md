@@ -1,6 +1,6 @@
 ---
-title: Emails Transport Methods 
-description: PHP, SMTP, SMTPAuth and Sendmail 
+title: Email Transport Methods 
+description: SMTPAuth and other ways to send email 
 category: email
 weight: 10
 ---
@@ -14,5 +14,16 @@ Go to [Admin > Configuration > Email Options](/user/admin_pages/configuration/co
 1. "smtp" or "smtpauth" -- for reliable email, many hosts require that you use "smtp" or usually "smtpauth" and set all the SMTP settings shown lower on the page.
 1. "sendmail" -- if "php" doesn't work and you're not running a windows server, this is your next likely choice.
 1. "sendmail -f" -- this is ideal in cases where your webserver configuration has some tighter security requirements -- esp in busy shared-hosting environments.
-1. "qmail" --  for linux/unix hosts running `Qmail` as `sendmail` wrapper at `/var/qmail/bin/sendmail`.
+
+Zen Cart also supports the use of Qmail and Gmail. 
+
+Using SMTPAuth, along with [DKIM and SPF](/user/email/advanced_email_troubleshooting/), is generally the most trouble-free way to send email from your cart. 
+
+You may also wish to use SMTPAuth with [an external SMTP provider](/user/email/external_smtp_servers/) such as SMTP2Go or Mailgun. 
+
+Using Google Mail can be problematic for a number of reasons: 
+
+- If bad guys send spam through your contact us form, Google can decide you are a spammer and start blocking your email.  This could wind up making all your cart's emails (even order confirmations) non-deliverable. 
+
+- Configuring Google Mail to work with an external system like Zen Cart requires you to reduce the security level of Google Mail. 
 

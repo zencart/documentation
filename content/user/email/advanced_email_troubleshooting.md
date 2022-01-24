@@ -1,6 +1,6 @@
 ---
 title: Advanced Email Troubleshooting
-description: Next steps when dealing with email problems 
+description: Next steps for deliverability, including SFP, DKIM and DMARC
 category: email
 weight: 6
 aliases: 
@@ -263,7 +263,6 @@ Be sure to delete that email_debug.php file when you're done testing; otherwise 
 *   Most mail clients allow you to view the mail headers and message source, which are very valuable diagnostic tools.
 *   Accept that the free web based services change the rules regularly and arbitrarily, and that customer email that went through fine last week can disappear or be flagged as Spam this week.
 *   Establish whether your hosts have any emails-per-hour or other limits, and keep them in mind when you send out that 10,000 email Newsletter and mailshot.
-
 
 
 When all else fails, 
