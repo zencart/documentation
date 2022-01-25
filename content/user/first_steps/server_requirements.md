@@ -27,8 +27,8 @@ The following table shows the PHP versions compatible with each version of Zen C
 
 **Note:** future versions of Zen Cart including v1.5.8 will require PHP 7.3+.
 
-*   <font color="#ff0000">**Zen Cart v1.5.7** is designed for PHP 5.6 through PHP 7.4</font><br>
-(Developers may test under PHP 8.0 but should disable WARNING and NOTICE messages, since these will still be produced.)
+*   <font color="#ff0000">**Zen Cart v1.5.7** is designed for PHP 5.6 through PHP 8.0</font><br>
+(If you are using PHP 8.0, be sure to [suppress logging duplicate-language definitions](/user/troubleshooting/constant_already_defined/)). 
 *   <font color="#ff0000">**Zen Cart v1.5.6** is designed for PHP 5.5 through PHP 7.3</font>
 *   <font color="#ff0000">**Zen Cart v1.5.5** is designed for PHP 5.5 through PHP 7.1</font> 
 *   <font color="#ff0000">**Zen Cart v1.5.4** is designed for PHP 5.5 and PHP 5.6</font> 
