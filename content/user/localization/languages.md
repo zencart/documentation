@@ -5,50 +5,74 @@ category: localization
 weight: 10
 ---
 
-### What is a Language Pack ? 
+## What is a Language Pack ? 
 
-In Zen Cart, the messages displayed by the storefront and admin area
-are kept in a separate area so they can be converted from English to any 
-other language. 
+A Language Pack is the group of files that contain the texts displayed on the pages of Zen Cart.  All the texts (constants) used in Zen Cart are in a fileset separated from the program files, to facilitate translation. The storefront and the admin have their own language fileset, each under a /languages directory.
 
-Languages for your cart may be managed in 
-[Admin > Localization > Languages](/user/admin_pages/localization/languages/). 
+By default, Zen Cart only includes the fileset for english (US). Other Language Packs are available from the Zen Cart [Plugins Library](https://www.zen-cart.com/downloads.php?do=cat&id=6).
+
+Always read the corresponding support thread for a Language Pack to learn the current state of a language pack/how up to date it is and whether it is being maintained on a version control site like GitHub.
+
+A Language Pack is a great deal of work to maintain and since they are all the results of efforts by the community, it is common that some languages are not kept up to date with the current Zen Cart.
+
+Consequently, installing an older language pack in a current Zen Cart and having to update it yourself is something that you will need to accept if you want to use that language. It will not destroy your shop, but it will certainly result in multiple errors (white screens and corresponding debug logs) that are easily rectified. See the section below on Updating a Language Pack.
+
+If updating is necessary, you should update the language pack BEFORE registering it in the Zen Cart admin.
 
 ## Installing a Language Pack
 
-To make your store multi-lingual, add the language in your admin using 
-[Admin > Localization > Languages > Add](/user/admin_pages/localization/languages/). 
-
-Once you have added a new language, you will need to get the language pack files that 
-correspond to that language.  Language packs may be found in 
-the [Plugins Library](https://www.zen-cart.com/downloads.php?do=cat&id=6).
-
-Language packs are structured to correspond to your cart folders, so you can just 
-rename the admin folder, if one exists, and then upload all the files. 
+As always with any modifications, this should be tested and checked calmly and methodically in a **development copy** of your shop, **NOT** the production site, as older packs will take some time to be corrected/updated. 
 
 If you're not familiar with installing a Zen Cart plugin, follow the instructions on 
 [how to install a plugin](/user/plugins/how_to_install_a_plugin/). 
 
-## Troubleshooting a Language Pack
-Here are some symptoms you might see, and ideas on how to resolve them.
+"Installing" has two steps.
+1. Copying the files into the site. At this point the Zen Cart code will not try and use it and so no problems should occur.
+If you know the pack needs updating, it should be done now, as described below.
 
-### Blank White Screen (on Storefront) After Language Pack Installed.
+2. Registering the new language in the Admin using 
+[Admin > Localization > Languages > Add](/user/admin_pages/localization/languages/). 
 
-There are likely to be missing language files. Check the logs directory for `myDEBUG-YYYYMMDD-HHMMSS-nnnnnn.log` files and look for `failed to open stream: No such file or directory`. Before it you should see a file path of the missing file. 
+Apart from adding the language option to the admin and the shopfront, the registering action will also create entries for the category and product names in the new language, by copying the english texts.
+Since it is a good thing if this procedure executes without errors, it is advised to update the language pack first to hopefully avoid any errors. But, since this is being tested on a development site, it is not so critical.
+
+## Updating a Language Pack
+
+If the language pack is for an older version than the current Zen Cart, you should copy those files into a vanilla, current version of Zen Cart for comparison with the english fileset (using Beyond Compare/WinMerge or equivalent).
+
+All files, the folder/file structure and the constant definitions that exist in the english files **must** be replicated/mirrored exactly in the additional language pack fileset. You may find that some texts may exist in the old pack but not in the new, but maybe they have been moved elsewhere. So, you should cut and save these "extra" constants to re-use when you discover where they were moved to.
+
+If files or constants are missing in the language pack, at some point while navigating the shop the code will "look for" that definition and not find it, thereby causing a white screen but with a corresponding debug log that will tell you exactly what was not found. Hence easy to fix!
+
+You should also consider the community aspect of Zen Cart and the free software you are using and ensure **your** valuable updating work is available to others, by locating a copy of the files on a public repository such as GitHub, to avoid others having to repeat your work and to allow others to improve it for everyone's benefit.
+
+Here are some symptoms you might see.
+
+### Blank White Screen After Language Pack Installed.
+
+This is due to a missing file, syntax error in a file or a missing constant.
+
+Check the logs directory for `myDEBUG-YYYYMMDD-HHMMSS-nnnnnn.log` files and look for `failed to open stream: No such file or directory`. Before it you should see a file path of the missing file. 
     
 ```
     PHP Warning: require_once(**YOURSITE/includes/languages/YOURLANGUAGE/MISSINGFILE.php**): failed to open stream: No such file or directory in YOURSITE/includes/languages/YOURLANGUAGE.php on line 607
 ``` 
     
 Find the file in the english language folder `YOURSITE/includes/languages/english/MISSINGFILE.php` and copy to your language folder.
+
+```
+PHP Fatal error:  Uncaught Error: Undefined constant "MODULE_PAYMENT_MONEYORDER_TEXT_ACCOUNTS".... 
+``` 
     
-**NOTE:** You may have to repeat this task multiple times for older version language packs.
+Find the constant name in the english language files and copy it to the corresponding file in the language pack. You can translate it now or later, or not at all if it is an admin file and you don't care. But it **MUST** exist.
 
-### Capitalised Titles Displayed in English
+**NOTE:** You must navigate through every page on the shop to check this as different files are loaded on different pages.
 
-If you get sections named displayed as capitalised title with underscore between, e.g.`HEADING_TITLE`, again it will be because language files have not been included in the original language pack. Finding these can be more tricky as the same title may be used in multiple places. 
+### Capitalized Titles Displayed in English
 
-Start by logging into your admin page. Then select `Tools > Developers Tool Kit` in the tool kit, and enter the name of the missing variable.  Search `All Language Files for ENGLISH - Catalog/Admin`. This should produce a list of places where the variable is defined.
+If you get sections named displayed as capitalized title with underscore between, e.g.`HEADING_TITLE`, again it will be because language files have not been included in the language pack. Finding these can be trickier as the same title may be used in multiple places. 
+
+Start by logging into your admin page. Then select `Tools > Developers Tool Kit` in the tool kit and enter the name of the missing variable.  Search `All Language Files for ENGLISH - Catalog/Admin`. This should produce a list of places where the variable is defined.
  
 - If it is only one place, then transfer that file from the english location to YOURLANGUAGE equivalent location.
 - If there are multiple listings, then go back to the storefront and add `&language=en` to then end of the URL or if `&language=YOURLANGUAGECODE` is already present, change YOURLANGUAGECODE to `en`.  Then refresh the page and look at the correct wording. Use this wording to find the correct file and copy the file from the english location to YOURLANGUAGE equivalent location.
@@ -61,8 +85,16 @@ This means one of two things happened:
 
 OR
 
-- You have not run the sql patch for the admin files.  See your installation instruction and run the sql patch.
+- You have not run the sql patch for the admin files.  See your installation instructions and run the sql patch.
 
-### Language Files in Zen Cart 1.5.8 
+### Some Texts Have Odd Characters Instead of Accented Letters
 
-The structure of the language files was changed in Zen Cart 1.5.8.  A description of the changes and conversion procedures is provided in the developer's guide to [158 Language Files](/dev/languages/158_language_files/). 
+The language file that contains this text is not encoded in utf-8 with no BOM. You can open the file in a suitable editor (like Notepad++) to change the encoding, but if many files are not encoded correctly, there are free programs available that can encode all the files at once.
+
+## Language Files from Zen Cart 1.5.8 onwards
+
+The structure of the language files was completely changed in Zen Cart 1.5.8.
+
+A description of the changes and conversion procedure is provided in the developer's guide to [158 Language Files](/dev/languages/158_language_files/).
+
+
