@@ -18,7 +18,7 @@ Links:
 - [PHP](#php-version)
 - [MySQL](#mysql-version)
 - [SSL, OpenSSL, CURL](#ssl-openssl-curl)
-- [Apache/Nginx](#Apache)
+- [Apache/Nginx](#apache)
 
 
 ## PHP Version

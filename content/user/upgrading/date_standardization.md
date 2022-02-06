@@ -19,13 +19,21 @@ Since Zen Cart 1.5.6, the upgrade process has included steps necessary to fix th
 
 (In the case of `datetime` values, the appended value for time remains 00:00:00; it has not changed.) 
 
-However, the upgrade process can only do this for built-in fields.  If you have customized your database to include additional fields (perhaps via a plugin, or perhaps with your own custom code), you will need to make the same changes to your own database. 
+However, the upgrade process can only do this for built-in fields.  If you have customized your database to include additional fields (perhaps via a plugin, or perhaps with your own custom code), you will need to make the same changes to your own database.  Failure to do so can mean an incomplete upgrade that will have to be fixed by hand by re-applying the failed SQL statements. 
+
+The debug log which is produced when a bad date is present will look like this: 
+
+```
+--> PHP Fatal error: 1292:Incorrect datetime value: '0000-00-00 00:00:00' for column 'customers_dob' at row 3048 :: ALTER TABLE zen_customers ADD tax_exempt tinyint(1) default 0; ==> (as called by) /Users/scott/Sites/store/admin/sqlpatch.php on line 291 <== in /Users/scott/Sites/store/includes/classes/db/mysql/query_factory.php on line 170.
+```
 
 Examples of plugins which add a datetime or date field are: 
 
 - [Order Delivery Date](https://www.zen-cart.com/downloads.php?do=file&id=683).  It adds a `datetime` field called `order_delivery_date` to the `orders` table. (Note: Some earlier versions of the plugin created this field as a `date`.)
 
 - [Ceon Back In Stock Notifications](https://www.zen-cart.com/downloads.php?do=file&id=773).  It creates a `datetime` field called `date_subscribed` in a new table called `back_in_stock_notification_subscriptions`. 
+
+Example fix: 
 
 To get the custom `datetime` field `order_delivery_date` into the new format, use following command in phpMyAdmin or in [Install SQL Patches](/user/admin_pages/tools/install_sql_patches/): 
 
