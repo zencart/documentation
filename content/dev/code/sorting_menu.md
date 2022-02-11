@@ -5,10 +5,26 @@ category: code
 weight: 10
 ---
 
-By default, admin menus are sorted by the sort order of their entries.  However, since some menus are long, alphabetical sorting is more desirable. 
+By default, the list under each of the main admin menu titles  (Cofiguration, Catalog, Modules etc...) are ordered according to each items sort_order as defined in the database, which is set on initial installation. However, it is possible to alphasort these entries. 
 
-This was first done in Zen Cart 1.5.7, where the Tools menu is presented in alphabetical order. 
+This functionality is controlled in the admin main language file, eg.  `admin/includes/languages/english.php` 
 
-This can be controlled (and disabled) in `admin/includes/languages/english.php` in the category `MENU_CATEGORIES_TO_SORT_BY_NAME`.
+by the constant
 
-To sort a Configuration menu entry (such as My Store) by name, modify `admin/configuration.php` to check the `$gID` parameter in the select at the start of the `tbody`, and order by `configuration_title` rather than `sort_order` for the desired menus. 
+`MENU_CATEGORIES_TO_SORT_BY_NAME`
+
+by adding a comma-separated list of the menu_key values (as defined in the admin_menus database table)
+
+eg:
+`'configuration,catalog,modules,customers,taxes,localization,reports,tools,gv,acccess,extras'`
+
+Under the Configuration menu (My Store, Minimum values etc,), the list in each submenu can also be alphasorted by the constant
+
+ `CONFIGURATION_MENU_ENTRIES_TO_SORT_BY_NAME`
+
+by adding a comma-separated list of the configuration IDs (gID) of each submenu, 
+e.g. '1,2,3,4' etc
+
+The gID of each submenu can be ascertained by hovering the cursor over each submenu item and noting the number of the final parameter gID of the link,
+
+eg. for Minimum Values:  https://MYWEBSITE/MY_ADMIN/index.php?cmd=configuration&**gID=2**
