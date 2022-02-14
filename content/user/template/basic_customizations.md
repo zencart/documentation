@@ -82,7 +82,10 @@ cc7.gif = AustralianBankCard
 ### Where are the buttons and how do I change them?
 
 Newer templates do not use static button images; instead, they use 
-[CSS buttons](/user/template/buttons/) feature, which generates images in CSS.
+[CSS buttons](/user/template/buttons/) feature, which uses CSS to style the text as a button.  
+The text used is the alt text for each image button, defined in the language files.
+
+Note that in the case of a Submit button, the text allowed is limited to 30 characters: if this is exceeded the image is used instead.
 
 To use CSS Buttons, enable them in 
 [Admin > Configuration > Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/#css_buttons).  
