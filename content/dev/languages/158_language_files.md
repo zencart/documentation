@@ -17,7 +17,7 @@ In the process of doing this work, the language files were reviewed for duplicat
 
 Developers seeking to build new translations for 1.5.8 and above have two options: 
 
-1. Start with the English files, and do the translations by hand.  The advantage of this approach is that it is just translation; all the necessary code changes in each langugage file have been done. 
+1. Start with the English files, and do the translations by hand.  The advantage of this approach is that it is just translation; all the necessary code changes in each language file have been done. 
 
 2. Start with an older translation, and run the [Language File Converter](https://github.com/torvista/Zen_Cart-Language_File_Converter). This reduces the translation burden, but requires coding skills, since the produced files will need to be hand edited in cases where the tool didn't produce perfect results. 
 
