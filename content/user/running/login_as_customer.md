@@ -1,11 +1,11 @@
 ---
-title: Login as Customer 
+title: Place Order
 description: Creating an order on behalf of a Customer in Zen Cart 
 category: Running
 weight: 10
 ---
 
-Login As Customer allows an administrator to log into a customer’s account.
+The **Place Order** button in the Admin > Customers > Customers screen allows an administrator to log into a customer’s account.
 
 This can be particularly helpful in cases where:
 

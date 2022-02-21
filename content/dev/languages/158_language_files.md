@@ -1,13 +1,15 @@
 ---
-title: 158 Language files
-description: Building a New Language Pack for Zen Cart 
+title: Developer Information on Array based Language files
+description: Structure of Language Packs for Zen Cart 1.5.8 and above 
 weight: 100 
 layout: docs
 ---
 
-In Zen Cart 1.5.8, the language file structure was modified so that the PHP `define` statement would not be used directly.  The reason for this is that newer versions of PHP will emit warning messages when a constant is redefined, so the old approach would create debug logs if something wasn't done.
+In Zen Cart 1.5.8, the language file structure was modified so that the PHP `define` statement is no longer used directly.  The reason for this is that newer versions of PHP will emit warning messages when a constant is redefined, so the old approach would create debug logs if something wasn't done.
 
-The new design builds an array of language definitions which are built into constants once all of them are read.  This allows for the following kinds of behavior: 
+The new design builds an array of language definitions which are built into constants once all of them are read.  For this reason, the new files are called *array based language files* (as opposed to the older *define based language files*). 
+
+Using arrays allows for the following kinds of behavior: 
 
 - Create a set of language definitions in the storefront override files, but run the base file to ensure that any missing definitions are created, while not updating any definitions that are changed in the override.
 
@@ -58,3 +60,8 @@ These failures can be detected with this grep pattern:
 ```
 grep "'[A-Z0-9_]*'[\s]*," *.php | grep -v "=>"
 ```
+
+### Available Array Based Language Packs for Zen Cart 1.5.8 and above
+
+Please see [User information on Array based Language files](/user/localization/158_language_files/). 
+
