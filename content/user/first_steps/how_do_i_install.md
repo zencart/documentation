@@ -258,6 +258,9 @@ After you click Save Store Settings, there will be some hesitation as the databa
 
 For a list of features shown by the demo data, please see [demo data](/user/first_steps/demo_data). 
 
+### Demo Images 
+After 1.5.8, the demo images are no longer automatically installed; to install them, see the instructions in [demo images](/user/first_steps/demo_data/#demo-images).
+
 ### Admin Setup
 
 Now, complete the Admin Information to set your Login name, Admin email address and password.  

@@ -23,6 +23,7 @@ Enter the admin email address, and wait for your new password to arrive by email
 
 - <b>Temporary Lockout:</b> If you accidentally type the wrong password twice (which can easily happen if you're tired or distracted), remember that if you type the wrong password a third time, you get locked out of your admin account for 30 minutes - and the system won't tell you this because it assumes you're a bad guy trying to break in.
 - <b>Password Managers:</b> If you are using a [password manager](/user/first_steps/security/#use-a-password-manager), the password manager *may* be overwriting what you are filling in so your password change doesn't work.  Try changing your password in a browser where you are not running (or logged out of) your password manager, and then save your new password in your password manager.
+- <b>www vs non-www:</b> Your hoster may be configured to redirect `www.mystore.com` to `mystore.com`.  If this is the case, you will want to specify the non-www site (i.e. `https://mystore.com`) in your `admin/includes/configure.php` file. 
 - <b>Browser Plugins:</b> The same advice applies with other browser plugins - they might be breaking the Zen Cart admin login.  Try a browser you don't normally use and see if you can login successfully there. 
 
 ## 5. Use phpMyAdmin 
