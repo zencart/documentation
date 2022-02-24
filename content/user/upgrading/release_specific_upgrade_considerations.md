@@ -34,6 +34,10 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 - The misspelled notifier `NOTIFIY_ORDER_CART_SUBTOTAL_CALCULATE` has been deprecated and replaced by `NOTIFY_ORDER_CART_SUBTOTAL_CALCULATE`. Code that references the misspelled notifier will continue to work (due to the [event aliasing](/dev/code/notifiers/#event-aliasing) feature), but plugins should be updated to use the corrected name.
 
+- The constant `ROBOTS_PAGES_TO_SKIP` was previously located in the language file `meta_tags.php` despite not being language-related.   
+It has been moved to its own file in `/includes/extra_configures/robots_pages_to_skip.php`.  
+Plugin pages that do not require indexing (such as Back In Stock subscribe/unsubscribe) should be added to the list in the constant definition.
+
 ### Zen Cart 1.5.7 
 
 - The configuration constant `UPLOAD_FILENAME_EXTENSIONS` was removed from the database and replaced with an entry in `includes/classes/upload.php`.   If you have modified this constant from its original setting of `jpg,jpeg,gif,png,eps,cdr,ai,pdf,tif,tiff,bmp,zip` you will want to add a custom define (in a new file) in both your `/includes/extra_configures/` and `YOUR_ADMIN/includes/extra_configures/` directories to set all the allowed extensions you want to support site-wide.
