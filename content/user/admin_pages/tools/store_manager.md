@@ -26,7 +26,7 @@ Note that after running "Reset ALL Products Master Categories ID" (below) you sh
 
 - Optimize Database: Databases where large numbers of inserts, updates, and deletes are done can become less efficient over time; running this command will solve this problem.
 
-- Cleanup Debug Log Files: This button will remove all [debug logs](/user/troubleshooting/debug_logs/) in your `/logs` folder. 
+- Cleanup Debug Log Files: This button will remove all [debug logs](/user/troubleshooting/debug_logs/) in your `/logs` folder.  See [removing debug logs](/user/running/removing_debug_logs/) for more details.
 
 Prior to 1.5.7, there was an option to "Reset ALL Products Viewed." This option was removed because it is unnecessary since the [products viewed](/user/admin_pages/reports/products_viewed/) report now allows filtering by date range.
  
