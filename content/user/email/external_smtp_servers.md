@@ -129,4 +129,10 @@ Other choices that Zen Cart users have had success with are:
 - Mandrill (by MailChimp)
 - SMTP2Go
 - Mailgun 
+- SendGrid
 
+## Troubleshooting 
+
+- You may have to tell your hoster that you want to use an external SMTP server and have them open port 587. 
+- You may need to [troubleshoot PHPMailer](https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting).
+- You may have to review [email troubleshooting instructions](/user/email/emails_not_received/). 
