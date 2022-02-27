@@ -232,7 +232,20 @@ The character set used is similar, but if you are not in North America, it could
 
 It is inevitable and unfortunate that certain short emails, such as 'password forgotten', especially when sent as HTML emails, appear to mail-server Spam filters as just an image (the logo) and a small amount of text, which they regard as a flag for potential Spam mail.
 
-## 4\. SMTP Handshake Debugging
+## 4\. Testing connectivity to your SMTP server
+
+Assuming you have a VPS and cPanel, you can open a Terminal window and check to be sure you can get to your SMTP server. 
+
+Here's a system where sending via Sendgrid will not work because you can't connect:
+
+![Connection Failure](/images/smtp_connect_fail.png) 
+
+Here's a system where sending via Sendgrid *will* work:
+
+![Connection Success](/images/smtp_connect_succeed.png) 
+
+
+## 5\. SMTP Handshake Debugging
 
 If you are troubleshooting problems with SMTP or SMTPAUTH and want to see the exact responses from the SMTP server handshake, you can do the following to cause the email server conversation to be displayed on-screen during delivery. THIS IS ABSOLUTELY UNSUITABLE FOR USE ON A LIVE STORE because visitors to your site have no business seeing any of the information displayed, and some of the information could be misused by those with malicious intent. USE WITH CAUTION!
 
@@ -250,7 +263,7 @@ Then try sending another email. The SMTP handshake information will be dumped to
 Be sure to delete that email_debug.php file when you're done testing; otherwise your store won't work properly because of the bizarre information that gets output to the screen!
 
 
-## 5\. What to do when it doesn't work?
+## 6\. What to do when it doesn't work?
 
 *   Write down any error messages or error numbers, and if you have access to your website logs, check them for any errors relevant to the problem. See the /logs/ folder for error details.
 *   Get extra debug details by using the debug trick mentioned in [TroubleShooting Email - Advanced Part I](/user/email/advanced_email_troubleshooting/#4-smtp-handshake-debugging).
