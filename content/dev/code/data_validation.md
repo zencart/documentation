@@ -1,4 +1,4 @@
----
+ee---
 title: Configuration Data Validation - About
 description: How is data validation done for configuration values? 
 category: code
