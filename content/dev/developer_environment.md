@@ -7,10 +7,9 @@ weight: 10
 
 ## Writing PHP code for Zen Cart requires no particularly special environment.
 
-1. A PHP-aware IDE is useful. We use PhpStorm. 
+1. A PHP-aware IDE is very useful to highlight basic syntax errors. We use PhpStorm (commercial) but there are various free IDEs available.
    It's helpful if your editor honors the `.editorconfig` standard which sets out formatting standards for code files.
-2. A LAMP stack is useful for running a local dev store. 
-   Common options for this include XAMPP, WAMP/MAMP, and even Laravel Valet.
+2. A LAMP stack is necessary to locally host a working development copy of your store. Common options for this include XAMPP, WAMP/MAMP, Laragon, and even Laravel Valet.
 
 ## Code Formatting
 
@@ -24,37 +23,38 @@ See [Coding Standards](/dev/contributing/coding_standards) for more details.
 
 ## Version Control
 
-We encourage you to read the [section on Git](/dev/contributing/github_workflow/)
+Zen Cart is developed using GitHub version control. We encourage you to create a GitHub account, firstly to become aware of project activity, and secondly to encourage your input. Read the [section on Git](/dev/contributing/github_workflow/)
 to learn about the workflow that the project uses.
 
-## Retaining Default Directory Structure
+## Retaining the Default Directory Structure
 
-By default you will get warnings if you don't rename the `admin` folder and delete the `zc_install` folder. 
+By default, warnings are displayed if you don't rename the `admin` folder and delete the `zc_install` folder. 
 
-To eliminate these warnings, create a file called `admin/includes/extra_configures/dev-skip_admin_rename.php` in which you add the following 2 entries:
+To eliminate these warnings but maintain those folders you may create a file called `admin/includes/extra_configures/dev-skip_admin_rename.php` containing these two constants:
 ```php
     define('ADMIN_BLOCK_WARNING_OVERRIDE', 'true');
     define('WARN_INSTALL_EXISTENCE', '0');
 ```
 
-The filename prefix `dev-` is significant: the project `.gitignore` file is set to bypass files starting with that string.  So you can keep this new file in your fork of the Zen Cart project with no worries about accidentally checking it in.
+The filename prefix `dev-` is significant: the project `.gitignore` file ignores files with this prefix so you can keep this new file in your GitHub fork of the zencart project without accidentally checking it in.
 
 ## Configuration Keys 
-It can be very helpful to see the `configuration_key` values for configuration entries while you are looking at your admin and thinking about writing code. 
-The keys are shown in the [All Configs](/user/admin_pages/configuration/all/) page, but you can show them in your own admin, where they will also show any local configs you have added, using this procedure: 
+Every option that may be modified in the Admin screens is a constant stored in the database. It is very helpful to know the name of a constant (the `configuration_key`) when searching in code for their use or to use them in your own code. 
 
-- In your admin, go to the hidden page `configuration.php?gID=6`. 
+The keys used by Zen Cart are listed in the [All Configs](/user/admin_pages/configuration/all/) page, but that will not be a comprehensive list for **your** site as it does not include possible Plugins.  
+However, the constant names may be displayed by enabling an admin option: 
+
+- In your admin, each submenu under the Configuration menu has an url such as `admin/index.php?cmd=configuration&gID=1.`  
+Manually change the gID to `gID=6` to display an additional page.
 - Look for the value *Admin configuration_key shows*.  
 - Set this value to 1. 
 
-Now, whenever you look at values in Admin > Configuration, you'll see the 
-key value as well, which you will use in code. 
+Now when editing an admin option, the constant name will be shown in the InfoBox title.
 
 <img src="/images/show_keys.png" alt="Show Configuration Keys in Zen Cart" width="50%" />
 <br><br>
 
-
-Example: I am writing some code, and I need to see if the configuration allows add to cart on out of stock products.  Go to `Admin > Configuration > Stock` and select *Show Sold Out Image in place of Add to Cart*.  You'll see the key value is `SHOW_PRODUCTS_SOLD_OUT_IMAGE`.  So your code would be, 
+Example use: I need to see if the configuration allows add to cart on out of stock products.  Go to `Admin > Configuration > Stock` and select *Show Sold Out Image in place of Add to Cart*.  You'll see the key value is `SHOW_PRODUCTS_SOLD_OUT_IMAGE`.  So your code would be, 
 
 ```
 if (SHOW_PRODUCTS_SOLD_OUT_IMAGE == '0') { 
@@ -62,9 +62,9 @@ if (SHOW_PRODUCTS_SOLD_OUT_IMAGE == '0') {
 ...
 ```
 
-## Overriding zc_install defaults
+## Overriding the Installer (/zc_install) defaults
 
-Since v1.5.6 the `zc_install` process allows you to specify a `DEVELOPER_MODE` environment variable, which if detected, will override two operations that occur at the end of `zc_install`: renaming the admin directory, and selecting an Admin password.
+Since v1.5.6 the `zc_install` process allows you to specify a `DEVELOPER_MODE` environment variable, which if detected, will override two operations that occur at the end of `zc_install`: the auto-renaming of the admin directory, and auto-creation of an Admin password.
 
 If `DEVELOPER_MODE` is enabled, then the `admin` directory will not be renamed, and the `Admin` user password will be set to `developer1` by default. 
 
@@ -74,3 +74,29 @@ Since v1.5.7, the `zc_install/includes/localConfig.php` file allows you to speci
 
 **NOTE:** These defines only work if the `DEVELOPER_MODE` setting is enabled/detected.
 
+## Overriding Email Sending
+To prevent the sending of any emails at all
+`define('DEVELOPER_OVERRIDE_EMAIL_STATUS', 'false')`
+
+To send all emails to a specific testing address
+`define('DEVELOPER_OVERRIDE_EMAIL_ADDRESS', 'root@localhost.com')`
+
+The function zen_mail checks for these constants at the moment of processing an email and acts accordingly.
+
+The function zen_mail could be called from the admin or the catalog, so the constants need to be available in both environments, ideally defined in one place and easily visible to avoid accidental copying to the production site.
+
+One option is to place the constants in a storefront file  
+e.g:
+`/includes/extra_configures/dev-email_overrides.php`
+
+and then "include" this file via an admin file  
+e.g:
+`ADMIN/includes/extra_configures/dev-email_overrides.php`
+
+containing
+
+```
+<?php
+include DIR_FS_CATALOG . DIR_WS_INCLUDES . 'extra_configures/dev-email_overrides.php';
+```
+When the admin environment detects these constants as defined, a message is displayed in the admin messageStack to that effect. 
