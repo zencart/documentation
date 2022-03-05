@@ -32,7 +32,7 @@ A [MailChimp Integration](https://www.zen-cart.com/downloads.php?do=file&id=425)
 ### MailChimp Alternatives 
 Other providers exist as well, but you will need to do your own integration. 
 
-Some names you might have heard of are Constant Contact, SendInBlue, SendGrid, and Sendy. 
+Some names you might have heard of are Constant Contact, SendInBlue, and Sendy. 
 
 If you want to look for other options, do a web search for "newsletter provider service."
 
