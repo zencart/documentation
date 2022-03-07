@@ -18,16 +18,16 @@ The information in these files can be placed into four categories as follows:
 **Your Own Definitions** can contain text you might find necessary in your particular shop. This information is contained in `.php` files stored in the folder 
 `include/languages/english/extra_definitions/`.
 
-**Define pages** are default pages used by Zen Cart and can be edited as necessary. You can also add your own pages if you find that necessary. These files are located in `includes/languages/english/html_includes/`. 
+**Define pages** are default pages used by Zen Cart and can be edited as necessary. You can also add your own pages if you find that necessary. These files are located in `includes/languages/english/html_includes/`.  For more information on this topic, see [setting up Define Pages](/user/new_user_topics/setting_up_define_pages). 
 
-The information in these files is constructed using "define statements" which consist of a CONSTANT and the information contained in that CONSTANT as shown in the example below.  
+The information in language files (other than the define pages described above) is constructed using PHP "define statements," which consist of a CONSTANT and the information contained in that CONSTANT as shown in the example below.  
 
 ```
 define('MY_CONSTANT', 'This is my information');
 ```
 
 The advantage of these "define statements" is that text information can be included in your template files using a constant rather than a hardcoded value, 
-allowing you to easily change templates but preserve your language customizations.
+allowing you to easily change templates but preserve your language customizations.  It also facilitates [making your store multi-language](/user/localization/languages/).
 
 ## **Examples and Usage**
 
