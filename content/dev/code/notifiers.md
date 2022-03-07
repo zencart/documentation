@@ -118,7 +118,10 @@ class products_viewed_counter extends base {
 
 #### update()
 
-The `update` method is used by an _event observer_ to perform event-specific actions when an event is triggered. This method is passed _up to_ 11 parameters:
+The `update` method is used by an _event observer_ to perform event-specific actions when an event is triggered.  
+***Note***: If you find `update` is **not** being triggered by an event as expected, ensure your class is being instantiated **before** the notifier event. Auto-loaded observers are loaded at breakpoint 175. For earlier instantiation, the observer must be manually loaded, see [Choosing When to Load an Observer](#choosing-when-to-load-an-observer).
+
+The `update` method may be passed _up to_ 11 parameters:
 
 1. `&$callingClass`. This is a reference to the class in which the event occurred.  If the event is triggered by a class other than the `base` (e.g. the `order` or `shopping_cart` class), then this variable can be used to manipulate any ***public*** properties within the calling class. (eg: if the event is called from the `order` class, then inside the observer you would refer to the `order` class's `$this->info` property using `$class->info`)
 2. `$eventID`. The name of the event triggered.
