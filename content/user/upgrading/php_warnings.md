@@ -33,6 +33,21 @@ to
     if (defined('MODULE_SHIPPING_BOXES_MANAGER_STATUS') && MODULE_SHIPPING_BOXES_MANAGER_STATUS == 'true') {
 ```
 
+Another variant of the undefined constant problem can occur in language files. 
+
+```
+--> PHP Warning: Use of undefined constant BUTTON_IMAGE_ADD_TO_CART - assumed 'BUTTON_IMAGE_ADD_TO_CART' (this will throw an Error in a future version of PHP) in /public_html/zen-cart-v1.5.7/includes/modules/YOURTEMPLATE/specials_index.php on line 86.
+```
+
+In this case, your template is using a defined constant which does not exist in your language file set.  If the define is used in multiple places, you can add it to `includes/languages/YOURTEMPLATE/english.php` or another globally loaded file; otherwise, add it to the language file for the page in question. 
+
+In this case, we'll add this statement to the file `includes/languages/english/YOURTEMPLATE/button_names.php`, which is loaded for all pages. 
+
+```
+define('BUTTON_IMAGE_ADD_TO_CART', 'button_add_to_cart.gif');
+```
+
+
 ## Methods with the same name as their class ...  
 
 ```
@@ -170,4 +185,36 @@ You cannot just rename the functions.
 
 While on the surface it may seem simple to rewrite the functions to the new syntax, a MUCH BETTER approach is to rewrite your code to use Zen Cart's own DB querying logic, which is both more secure and more consistent across the application.
 
+## Sizeof and related issues
+
+Older PHP code might check to see if a string is null using something like: 
+
+```
+    if (sizeof($categories->fields['categories_image']) == 0) 
+```
+
+The newer way to test this is to use the `empty` PHP function: 
+
+
+```
+    if (empty($categories->fields['categories_image'])) 
+```
+
+Similarly, checks for a non-empty array may need changes: 
+
+```
+    if (sizeof($array) > 0) {
+```
+
+Could give a PHP warning like:
+
+```
+Warning: sizeof(): Parameter must be an array or an object that implements Countable
+```
+
+To avoid this, check the value using `empty` 
+
+```
+    if (!empty($array)) {
+```
 
