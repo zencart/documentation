@@ -30,13 +30,20 @@ the specified file if you're not sure where a change should go.
 
 * `templates/tpl_account_default.php` - use `zen_output_string_protected` for `$orders['order_name'])` display. 
 
+* `templates/tpl_account_history_info_default.php` - use `zen_output_string_protected` for output of `$_GET['order_id']`. 
+
+* `templates/tpl_checkout_confirmation_default.php` - use `zen_output_string_protected` for attribute value display. 
+
 * `templates/tpl_product_info_display.php` - use `zen_output_string_protected` in `productInfoLink`. 
 
 * `templates/tpl_product_music_info_display.php` - use `zen_output_string_protected` in `productInfoLink`. 
 
 * `templates/tpl_product_free_shipping_info_display.php` - use `zen_output_string_protected` in `productInfoLink`. 
 
-* `templates/tpl_account_history_info_default.php` - use `zen_output_string_protected` for output of `$_GET['order_id']`. 
+* `templates/tpl_product_reviews_default.php` - use `zen_output_string_protected` for review display.
+
+* `templates/tpl_reviews_default.php` - use `zen_output_string_protected` for review display.
+
 
 ## Anti-Spam 
 
@@ -62,4 +69,8 @@ The following files were updated in Zen Cart 1.5.5 to specify a field type and r
 
 
 **Note:** Please be sure to also check [Release Specific Upgrade Considerations](/user/upgrading/release_specific_upgrade_considerations/) when doing an upgrade.
+
+## PHP Updates 
+
+You will also want to make changes so that your older template is compliant with the latest version of PHP.  See [PHP Warnings and Deprecated messages](/user/upgrading/php_warnings/) for some common changes. 
 

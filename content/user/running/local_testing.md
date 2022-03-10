@@ -1,19 +1,27 @@
 ---
-title: Setting up a local test environment 
+title: Setting up a test environment 
 description: Using a Local Web Server to create a Development Environment
 category: Running
 weight: 10
 ---
 
-Using [XAMPP](https://www.apachefriends.org/) (Windows, Mac, Linux) or [MAMP](https://www.mamp.info/) (Windows, Mac), you can create a test environment on your own computer for your Zen Cart. 
+It's not good to deploy untested changes directly onto your live store!  Doing so can lead to outages and lost sales.
 
-For the remainder of this document, these tools will be referred to as **AMP** for convenience. 
+Instead, it's best to test and debug changes (including new plugins) 
+on a test store.
 
-**Note:** If you don't feel comfortable doing this, the second best option for creating a test cart is creating a new folder on your live server.  This option is discussed [here](/user/running/local_testing/#testing-on-your-server).
+You have two options for setting up a test environment:
+
+1. Testing Locally: Creating a test store on your own PC
+2. Testing on your Server: Creating a test store on your server
 
 ---
 
 # Testing Locally
+
+Using [XAMPP](https://www.apachefriends.org/) (Windows, Mac, Linux) or [MAMP](https://www.mamp.info/) (Windows, Mac), you can create a test environment on your own computer for your Zen Cart. 
+
+For the remainder of this document, these tools will be referred to as **AMP** for convenience. 
 
 ## 1. Make a backup of your files and database 
 
