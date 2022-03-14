@@ -59,6 +59,8 @@ Plugin pages that do not require indexing (such as Back In Stock subscribe/unsub
 
 - The [Display Logs plugin](https://www.zen-cart.com/downloads.php?do=file&id=1583) is now built-in. If you had its files installed in prior versions, remove all those files as part of your upgrade. Then if you want to enable the plugin simply go to Admin &gt; Modules &gt; Plugins.
 
+- The [Admin Login as Customer plugin](https://www.zen-cart.com/downloads.php?do=file&id=583), which allowed you to login on a customer's behalf, is now built-in. If you had its files installed in prior versions, remove all those files as part of your upgrade, and configure as described on the [Place Order](/user/running/login_as_customer/) help page.
+
 - The login form built by `includes/templates/template_default/templates/tpl_login_default.php` was changed so that the `id` and `class` are both `loginForm`, rather than `login`, as in prior releases.  This is important since a direct reference to `loginForm` is made in includes/modules/pages/login/on_load_main.js.
 
 ### Zen Cart 1.5.6 

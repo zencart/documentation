@@ -132,7 +132,7 @@ There will be many differences:
 
 - language defines for displayed text - those will be simple to carry forward.
 - actual programming/code differences -- for these you will need to make detailed notes in order to carry over those changes to the new version.
-- plugins/addons you've installed -- these often contain numerous programming changes, and may not be fully compatible with the newer Zen Cart release or a newer PHP version.
+- plugins/addons you've installed -- these often contain numerous programming changes, and may not be fully compatible with the newer Zen Cart release or a newer PHP version.  Be sure to check if there's a more up to date version of a plugin you are using during an upgrade.
 
 Sometimes you won't know why the code is different. You may not recognize why you would have ever changed it. Lots of times it may be that those changes are from a plugin you installed, especially one that changed original Zen Cart files. Your list of add-ons/plugins may help you narrow down the source of any differences you're finding between versions. 
 You may have to download the add-on again (ie: the older version of it) to take a look at the readme or code contained in it. 
@@ -159,6 +159,8 @@ If you have modified the structure of your database to add custom date fields, p
 Download and unzip the latest Zen Cart version to your PC. This will be in a 3rd directory (perhaps `store_new`), separate from the other two folders compared above (eg `store` and `zen_orig`).
 
 Using the list of files you made earlier, go through each "changed" file, and re-make your changes from the old version onto the new version.
+
+> IMPORTANT: You always want to build on the latest set of Zen Cart files.  This means store_new contains the current version of Zen Cart, and you apply your changes to that.  **DO NOT** start with your old version and apply the changes from the latest version of Zen Cart. 
 
 > Clarification: here you are essentially re-building your `store` customizations onto the `store_new` directory.
 
@@ -248,13 +250,13 @@ Once you're satisfied that you've tested everything, it's time to go live.
 ## Checklist
 Here are a few things to double-check:
 
-- [ ] Visual look and feel is good on both desktop and mobile. Small screens and large.
-- [ ] Customer login and add-to-cart works correctly
-- [ ] Shipping quotes are working as expected
-- [ ] Checkout can complete. (It may be better to test this after really going "live", with a real purchase)
-- [ ] As you click around your site, no errors are getting logged in the `/logs` directory of the test site. Such logs would indicate possible error conditions that you will need to fix.
-- [ ] The Admin pages for your store can properly access product/customer/order data
-- [ ] Anything specific to the functionality provided by the plugins you added
+- Visual look and feel is good on both desktop and mobile. Small screens and large.
+- Customer login and add-to-cart works correctly
+- Shipping quotes are working as expected
+- Checkout can complete. (It may be better to test this after really going "live", with a real purchase)
+- As you click around your site, no errors are getting logged in the `/logs` directory of the test site. Such logs would indicate possible error conditions that you will need to fix.
+- The Admin pages for your store can properly access product/customer/order data
+- Anything specific to the functionality provided by the plugins you added
 
 
 ### Put your store down-for-maintenance again
@@ -281,28 +283,32 @@ To go live, do the following:
 
 - Re-run any plugin installation/removal scripts just like you did for the temporary testing. (This is why you took notes of any special things needed for each plugin)
 
+- Visit each of the admin pages Modules > Shipping, Modules > Payment, Modules > Order Total to allow your modules to insert any missing keys. 
+
 - [Update your PHP version](/user/upgrading/php_version/) if appropriate. 
 
 ### Verify
 
-- [ ] Test the store to be sure that things are operating as desired. 
-- [ ] See the checklist above. Test those things, and everything else you can think of.
-- [ ] **Turn off** `Down For Maintenance` so customers can shop
+
+- Create a test order, take it all the way through to checkout success, then view the order in your admin.  Make sure everything is working as expected.  It's a good practice to test each of your payment modules by running a test order.
+- Test the store to be sure that things are operating as desired. 
+- See the checklist above. Test those things, and everything else you can think of.
+- **Turn off** `Down For Maintenance` so customers can shop
 
 If you have small problems to repair, turn "Down for maintenance" on and off again as necessary.
 
 
 ### Cleanup
 
-- [ ] On the server, delete your `store_old` directory. (Don't leave old stuff sitting on the server because it can lead to security issues or unexpected bad side-effects. You don't want anyone to buy something from the old site!) If you need to keep it for reference or in case you want to downgrade, be sure to rename it to include the date and something random, and set a reminder on your calendar to remove it within the next week! (Downgrading is never recommended anyway.)
+- On the server, delete your `store_old` directory. (Don't leave old stuff sitting on the server because it can lead to security issues or unexpected bad side-effects. You don't want anyone to buy something from the old site!) If you need to keep it for reference or in case you want to downgrade, be sure to rename it to include the date and something random, and set a reminder on your calendar to remove it within the next week! (Downgrading is never recommended anyway.)
 
-- [ ] Update your lists of plugins/templates/customizations that you prepared. Make sure it's thorough and that your brain will understand it next time you do an upgrade. You will thank yourself later for making sure your notes make sense.
+- Update your lists of plugins/templates/customizations that you prepared. Make sure it's thorough and that your brain will understand it next time you do an upgrade. You will thank yourself later for making sure your notes make sense.
 
-- [ ] If you decided during the upgrade that you'd like to put a different template on your site, now you can start working on that as a separate project, independent of your upgrade.
+- If you decided during the upgrade that you'd like to put a different template on your site, now you can start working on that as a separate project, independent of your upgrade.
 
-- [ ] Store your backups someplace for safekeeping. Consider a thumb-drive that you keep with your financial records. The backup can also serve as a snapshot for your data if you need to look back for reference.
+- Store your backups someplace for safekeeping. Consider a thumb-drive that you keep with your financial records. The backup can also serve as a snapshot for your data if you need to look back for reference.
 
-- [ ] Delete any extra backups you made, especially if they contained your database or customer data. You should only keep copies that are essential for business recovery or financial/business-reference purposes. Keeping too many backups in too many places that are not monitored for privacy can lead to bad situations. (Consider: you wouldn't leave customers' credit card details in papers laying all over your file cabinets and cupboards and drawers: you'd put them in one central safe spot. Do the same with your backups, and destroy copies that don't need to be kept.)
+- Delete any extra backups you made, especially if they contained your database or customer data. You should only keep copies that are essential for business recovery or financial/business-reference purposes. Keeping too many backups in too many places that are not monitored for privacy can lead to bad situations. (Consider: you wouldn't leave customers' credit card details in papers laying all over your file cabinets and cupboards and drawers: you'd put them in one central safe spot. Do the same with your backups, and destroy copies that don't need to be kept.)
 
 
 * * *
