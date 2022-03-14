@@ -39,6 +39,10 @@ where the problems, if any will happen
 
 Now you have an up to date copy of your database with an up to date copy of the Zen Cart files. 
 
+### Database Changes
+
+- Go to Admin > Tools > Template Selection and set your template to Responsive Classic (since your old template won't exist on your updated site).  
+- Visit each of the admin pages Modules > Shipping, Modules > Payment, Modules > Order Total to allow your modules to insert any missing keys. 
 
 ### Copy from live site 
 1. Copy the `/images` folder from your live site onto your test site

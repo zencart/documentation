@@ -14,6 +14,10 @@ weight: 1
 - [Template Changes](/user/template/template_changes/)
 - [Configuration Parameter Name Changes](/user/upgrading/configuration_name_changes/)
 
+## Upgrading Approaches 
+- [Standard Upgrade](/user/upgrading/detailed_upgrading/) - preserving your customizations
+- [Database-Only Upgrade](/user/upgrading/db_only_upgrade/) - quickie upgrade if you want to start over; does not preserve customizations
+
 ## After Upgrading
 - [Keep Your JavaScript Scripts Updated](/user/upgrading/javascript_updates/)
 - [Should I Change My Database Character Set to UTF8?](/user/upgrading/convert_to_utf8/)
