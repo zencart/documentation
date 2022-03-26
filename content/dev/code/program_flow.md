@@ -8,6 +8,11 @@ type: codepage
 
 A storefront visit in Zen Cart follows an MVC style approach, albeit largely based on procedural code. The files involved are processed roughly in the following order. At various points there may be [auto-loading](/dev/code/inclusion/) of certain files in a certain directory matching a prescribed naming convention, or all files automatically executed according to certain rules for that location.
 
+If debugging the program flow, there is a useful constant available in `/includes/application_top.php` which will show the file loading order in the browser output if set to true:
+```php
+define('DEBUG_AUTOLOAD', false);
+```
+
 Locations where an "override" can be used are noted with a ► symbol.
 
 - `/index.php`
@@ -40,6 +45,7 @@ Locations where an "override" can be used are noted with a ► symbol.
   - Enable navigation history
   - Load MessageStack
   - Check for “Down For Maintenance” or “Customer Not Authorized yet” status
+    - ►`/includes/init/includes/init_customer_auth.php`
   - Process Cart Content Adds/Update, File Uploads
   - Process specialized functions
       - Who’s online detection and logging
