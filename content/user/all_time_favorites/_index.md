@@ -61,7 +61,7 @@ Once you know [What Zen Cart is](/user/about_us/what_is_zen_cart/), you might wa
 
 * [Regular Maintenance for Zen Cart](/user/running/regular_maintenance/) - What kinds of routine maintenance should I be doing? 
 
-* [Security Patches](/user/about_us/security_releases/) are released as issues are discovered. 
+* [Security Patches](/user/about_us/security_releases/) are released as issues are discovered.  And don't forget about [template updates](/user/template/template_changes/).
 
 * [Server Requirements for running Zen Cart](/user/first_steps/server_requirements/#php-version) - Zen Cart version to PHP version compatibility matrix.
 
