@@ -37,12 +37,20 @@ where the problems, if any will happen
 
 ![Use the upgrade button!](/images/upgrade_button.png)
 
-Now you have an up to date copy of your database with an up to date copy of the Zen Cart files. 
+### The zc_install process 
+
+Once you press the Upgrade button, the screen will show you a list of updates to be performed.
+
+![Updates being performed](/images/full_db_upgrade.png)
+
+**Be patient** - it can take a while to do all the updating required. 
+
+Once this action completes, you have an up to date copy of your database.
 
 ### Database Changes
 
 - Go to Admin > Tools > Template Selection and set your template to Responsive Classic (since your old template won't exist on your updated site).  
-- Visit each of the admin pages Modules > Shipping, Modules > Payment, Modules > Order Total to allow your modules to insert any missing keys. 
+- Visit each of the admin pages Modules > Shipping, Modules > Payment, Modules > Order Total to allow your modules to insert any missing keys.   Some modules may require re-installation to add keys. 
 
 ### Copy from live site 
 1. Copy the `/images` folder from your live site onto your test site

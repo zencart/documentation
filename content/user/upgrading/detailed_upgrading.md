@@ -233,7 +233,21 @@ In your browser, run `store_new/zc_install/index.php` and choose "_Upgrade_" whe
 
 If the "Upgrade" button does not appear, then the installer was unable to connect to your database to determine its version. Check your configure.php settings and be sure the `DB_*` fields correspond to your new database, including that the `DB_PREFIX` matches the `DB_PREFIX` in your old site.
 
-Run any install/upgrade steps for any plugins you've installed/upgraded. And removals for any plugins you're removing.
+### The zc_install process
+
+Once you press the Upgrade button, the screen will show you a list of updates to be performed.
+
+![Updates being performed](/images/full_db_upgrade.png)
+
+**Be patient** - it can take a while to do all the updating required. 
+
+Once this action completes, you have an up to date copy of your database.
+
+
+## Database Changes
+- If you are changing your template, Go to Admin > Tools > Template Selection and set your template to Responsive Classic (since your old template won't exist on your updated site).  
+- Visit each of the admin pages Modules > Shipping, Modules > Payment, Modules > Order Total to allow your modules to insert any missing keys.   Some modules may require re-installation to add keys. 
+- Run any install/upgrade steps for any plugins you've installed/upgraded. And removals for any plugins you're removing.
 
 ## Test the temporary new store
 Test your customizations. Edit as needed. Compare with the test/demo install performed earlier, as needed.
