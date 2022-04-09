@@ -70,7 +70,15 @@ If they wish to remove a coupon, they can enter a different coupon code, or they
 
 ## Coupon Types 
 
-The `coupons` table has a `coupon_type` field. The possible values for coupon_type are shown in the `collect_posts` function in `includes/modules/order_total/ot_coupon.php` in Zen Cart 1.5.8 or higher. 
+The `coupons` table has a `coupon_type` field. The possible values for coupon_type are: 
+
+- S - Free Shipping
+- P - Percent Off 
+- E - Percent Off and Free Shipping
+- F - Fixed Amount Off
+- O - Fixed Amount Off and Free Shipping 
+- G - Gift Certificate  
+
 
 ## Display of Coupon Discounts 
 Coupon Discounts are shown in the order summary on the checkout payment and

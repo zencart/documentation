@@ -62,6 +62,11 @@ Further, when you have a LOT of products in large numbers of subcategories, you 
 ### Reduce New Products window 
 The "new products" selection window is by default set to "Forever". The configuration setting  [Admin > Configuration > Maximum Values > New Product Listing - Limited to ...](/user/admin_pages/configuration/configuration_maximumvalues/) tells the system how far back to look when creating a list of new products. [Setting the new product timeframe to a smaller window](/user/admin/what_is_new/) will make the display of "new products" (in sideboxes and center content-boxes) run much faster, and thus improve speed.  
 
+### Disable Also Purchased Products 
+
+The [Also Purchased Products](/user/template/also_purchased/) display on the product info page is an expensive
+query when the orders table is large. Try setting [Also Purchased Products Columns per Row](/user/admin_pages/configuration/configuration_productinfo/#also_purchased_products_columns_per_row) to 0 to disable this feature, and see if that noticeably increases the speed of your product pages.
+
 ### Consider GZip Compression
 In some cases, enabling gzip compression can be helpful for people experiencing slowness loading a site over slow internet connections:  
 Go to [Admin > Config > GZip Compression](/user/admin_pages/configuration/configuration_gzipcompression/) and set Enable GZip Compression = 1  
