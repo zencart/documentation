@@ -1,0 +1,20 @@
+---
+title: Square Payments Form Module
+description: Zen Cart Square Payments Form Module
+category: payment
+weight: 10
+---
+
+<font color="red">
+<h1>ALERT: DEPRECATED</h1>
+</font>
+
+**NOTE:** Square has officially retired the library which this module uses.  Please use the [Square Web Payments](/user/payments/square/) module instead.  
+
+Documentation on this newer module is contained in the [Square](/user/payments/square/) page. 
+
+This module will cease to work in July 2022. 
+
+It was included in Zen Cart 1.5.5 through 1.5.7. 
+
+If you need to access this module for historical purposes, please get it from [the plugins library](https://www.zen-cart.com/downloads.php?do=file&id=156). 
