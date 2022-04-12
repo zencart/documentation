@@ -1,28 +1,23 @@
 ---
-title: Square 
+title: Square Web Payments API
 description: How to collect payments with Square 
 category: payment
 weight: 10
 ---
 
 There are two Square modules for Zen Cart: 
-- A newer one, based on the Square Web Payments API 
-- An older one, based on SqPaymentForm, which will be deprecated in 2022
+- A newer one, based on the Square Web Payments API, which is currently available as the [Square Web Payments API plugin](https://www.zen-cart.com/downloads.php?do=file&id=2345). 
+- An older one, based on the Square Payments Form library.  This was built in to Zen Cart from 1.5.5 to 1.5.7.  Please note this library has been deprecated by Square, and the older module will cease to work in July 2022.  The [Square Payments Form documentation](/user/payment/square_payments_form/) is maintained for historical purposes. 
 
-Square users will need to move to the new [Square Web Payments API plugin](https://www.zen-cart.com/downloads.php?do=file&id=2345). 
+## Newer Module - Square Web Payments API 
+The newer Square module is available in the Plugins library as [Square Web Payments API plugin](https://www.zen-cart.com/downloads.php?do=file&id=2345). 
 
-## Newer Integration - Square API 
-The newer Square integration is available in the Plugins library as [Square Web Payments API plugin](https://www.zen-cart.com/downloads.php?do=file&id=2345). 
+## Installing Square Web Payments - first time 
 
-Please note that the newer integration requires PHP 7.4, so you will need
-to be running Zen Cart 1.5.7 or higher. If you need to upgrade, please 
-review the [upgrading instructions](/user/upgrading/). 
+TBD
 
-## Older Integration - SqPaymentForm 
-The original Square integration was built in to Zen Cart 1.5.6 and 1.5.7.
 
-It is also distributed as a [plugin](/user/plugins/about_plugins/), so you can [obtain the latest version of Square Payments for Zen Cart](https://www.zen-cart.com/downloads.php?do=file&id=156) and upgrade (or add it to) your store as needed.
+## Upgrading from Square Payments Form to Square Web Payments 
 
-The setup instructions are in a [README file included with the plugin zip](https://github.com/zencart/square_payments_for_zencart).  
-If you prefer, you may also [read the Square setup instructions here](https://www.zen-cart.com/content.php?349-Square-Payments-for-Zen-Cart). 
+TBD
 
