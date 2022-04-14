@@ -7,7 +7,7 @@ weight: 10
 
 ## REQUIREMENTS
 
-*   Authorize.net Account [Support Zen Cart by Clicking Here to Sign Up for an Account now](http://reseller.authorize.net/application.asp?id=131345)
+*   Authorize.net Account [Support Zen Cart by Clicking Here to Sign Up for an Account now](https://account.authorize.net/ui/themes/anet/oauth/PricingPage.aspx?resellerId=10023)
 *   CURL is required and MUST be compiled into PHP with TLS/SSL support  
 
 *   Your Username and Transaction key (generated in your authorize.net account area)
