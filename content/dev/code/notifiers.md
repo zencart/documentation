@@ -186,11 +186,13 @@ By following a naming convention Zen Cart will both load and instantiate your Ob
 1. The file is in the `/includes/classes/observers` sub-directory and named like: `auto.your_plugin.php`. Note the **auto.** prefix.  All files in this directory that start with **auto.** will be included (i.e. loaded).
 2. The file defines a class named **zcObserver** + the [CamelCased](http://en.wikipedia.org/wiki/CamelCase) filename, e.g. a file named `auto.your_plugin.php` will contain a class named  `zcObserverYourPlugin`.  (For debugging assistance, a myDEBUG\*.log file will be generated if a properly-named file is loaded, but the class name doesn't conform to these rules.)
 
-Note that this technique will work so long as your class doesn't have any special requirements on its load point (auto-loaded classes are loaded at point `175`, after all other system dependencies are loaded). Most observers won't need to be loaded "before" all other regular dependencies, so load-point 175 is fine in most cases. If your observer needs to be loaded earlier, then don't use this special naming convention, but instead manual loading, which is described below. 
-
-For example, the *Products Viewed Counter* described [above](#update) could provide the same functionality and not need its auto-loader component if the observer-class file was renamed to `/includes/classes/observers/auto.products_viewed_counter.php` and its class name was updated to be `zcObserverProductsViewedCounter.php`.
+**Note:** This technique will work so long as your class doesn't have any special requirements on its load point (auto-loaded classes are loaded at point `175`, after all other system dependencies are loaded). Most observers won't need to be loaded "before" all other regular dependencies, so load-point 175 is fine in most cases. If your observer needs to be loaded earlier, then don't use this special naming convention, but instead manual loading, which is described below.   An example of a notifier whose observer should not use auto loading is ZEN_GET_PRODUCTS_STOCK.  This fires from the shopping cart class, which has a load point of 80.  If you need to observe this notifier, you will want to load earlier than 80. 
 
 **Note:** Auto loading has been available on the storefront side since Zen Cart 1.5.3, and on the admin side since Zen Cart 1.5.7.  For versions prior to that you can use the Manually-loaded option below.  Alternately, to backport admin side autoloading to 1.5.6, see [this PR](https://github.com/zencart/zencart/commit/bc195baf258c11b73f29de41020e1c0505e4d462).
+
+### Changing a Manually-loaded Observer to use Auto Loading 
+
+The *Products Viewed Counter* described [above](#update) could provide the same functionality and not need its auto-loader component if the observer-class file was renamed to `/includes/classes/observers/auto.products_viewed_counter.php` and its class name was updated to be `zcObserverProductsViewedCounter.php`.
 
 ### Manually-loaded Observers
 
