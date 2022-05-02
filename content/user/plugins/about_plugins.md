@@ -25,9 +25,11 @@ code modifications for Zen Cart that modify or extend the default behavior.
 
 ### Plugin Interfaces 
 To enable developers to build plugins 
-in an organized manner, a number of facilities are provided: 
+without touching core files, 
+a number of facilities are provided: 
 
 * [Overrides](/user/template/template_overrides/)
+* [Site Specific Overrides](/user/customizing/site_specific_overrides/)
 * [Notifiers/Observers](/dev/code/notifiers/)
 * [Init System](/dev/code/init_system/)
 * [Extra folders](/dev/code/extra_folders/) 

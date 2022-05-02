@@ -21,7 +21,7 @@ In the Admin > Catalog > Product Types menu, there is a listing of product types
 - select the default settings for entry of new products of that type
 - choose how fields are displayed 
 
-This capability to set defaults and appearance on a per product type basis is provided through the [Layout Settings](/user/admin_pages/catalog/product_types_edit_layout/) screen. 
+This capability to set defaults and appearance on a per product type basis is provided through the [Per Type Layout Settings](/user/admin_pages/catalog/product_types_edit_layout/) screen. 
 
 ![Product Type Sidebar](/images/product_general_sidebar.png)
 
