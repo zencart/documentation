@@ -38,6 +38,7 @@ All of these folders to "writable" (often this means 755).
 *   /pub
 *   /admin/backups
 *   /admin/images/graphs
+*   /zc_install/includes/nginx_conf
 ```
 
 ### Using cPanel
@@ -80,6 +81,7 @@ chmod -R 755 ./pub
 chmod -R 755 ./images
 chmod -R 755 ./includes/languages/english/html_includes
 chmod -R 755 ./admin/backups
+chmod -R 755 ./zc_install/includes/nginx_conf
 ```
 
 
