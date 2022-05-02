@@ -15,7 +15,7 @@ Relevant links:
 
 ### How do I get my store home page to open to a certain category?
 
-Open the [Admin  >Configuration  >Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/). 
+Open the [Admin > Configuration > Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/). 
 
 Find "Main Page - Opens with Category"
 
