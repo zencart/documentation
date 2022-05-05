@@ -23,3 +23,11 @@ and enter the tax class ID number you obtained in step 1 above.
 
 Next time you add a product, the tax class is pre-selected.
 
+If you want to do an audit of your database to see if any products are mis-coded, you can use a query like this: 
+
+```
+SELECT p.products_id, pd.products_name FROM products p, products_description pd WHERE p.products_id = pd.products_id AND products_tax_class_id != 1;
+```
+
+(This assumes that "Taxable Goods" is Tax Class id "1".)
+
