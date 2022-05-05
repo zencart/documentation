@@ -4,8 +4,9 @@ description: How addresses are displayed in different countries
 category: localization
 weight: 10
 ---
-You may have noticed the address format value ranges between 1 and 6.
-The Uk is 6 and most other countries are 1. 
+You may have noticed the address format value ranges between 1 and 20.
+The UK is 6, USA is 7 and most other countries are 5. There is a [full list below.](#zen-cart-158) The Default format is 1 which is no longer used by any country.
+
 What exactly is the 'format' ?
 
 Address formats are based on international ISO standard formats.
@@ -169,7 +170,9 @@ This table is structured as follows:
 
 The default entries can be seen in the file `zc_install/sql/install/mysql_zencart.sql`.
 
-As of Zen Cart 1.5.6, they are: 
+### Zen Cart 1.5.6
+
+The entries are:
 
 <table>
 <tr><td>ID</td><td>Value</td></tr>
@@ -192,13 +195,15 @@ The values are used as follows:
 6 - UK/GB 
 7 - Australia
 ```
-As of Zen Cart 1.5.8, additional address formats have been added. If you upgrade from a previous version of Zen Cart then any address codes you have created will be moved outside of the new default range and all ordres and country entries that used them will be adjusted.
+### Zen Cart 1.5.8
 
-Below is a table with the formats an example of the address and the countries to which they are applied.
+Additional address formats have been added to Zen Cart 1.5.8. If you upgrade from a previous version of Zen Cart then any address codes you have created will be moved outside of the new default range and all orders and country entries that used them will be adjusted.
+
+Below is a table with the Format ID, Address formats, an example of the address and the countries to which they are applied.
 
 | Format | Address Format| Example  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| Countries |
 |--------|----------------------|---------------|------------|
-|1|$firstname $lastname$cr$streets$cr$city, $postcode$cr$statecomma$country |firstname surname<br>street address<br>addressline2<br>city, postcode<br>state, country|  Default Not used|
+|1|$firstname $lastname$cr$streets$cr$city, $postcode$cr$statecomma$country |firstname surname<br>street address<br>addressline2<br>city, postcode<br>state, country|  Default - Not Used|
 |2|$firstname $lastname$cr$streets$cr$city, $state    $postcode$cr$country|firstname surname<br>street address<br>addressline2<br>city, state postcode<br>country|Latvia<br>Myanmar<br>Saint Kitts and Nevis<br>Somalia<br>Trinidad and Tobago|
 |3|$firstname $lastname$cr$streets$cr$city$cr $postcode - $statecomma$country|firstname surname<br>street address<br>addressline2<br>city<br>postcode - state, country|Not Used|
 |4|$firstname $lastname$cr$streets$cr$city ($postcode)$cr$country|firstname surname<br>street address<br>addressline2<br>city (postcode)<br>country|Not Used|
