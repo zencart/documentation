@@ -15,3 +15,4 @@ The following behaviors can be enabled or disabled by this file:
 
 - displaying the Brand page link in the Information sidebox 
 
+Information on the [admin site-specific overrides file](/user/admin/site_specific_overrides/) is also available. 

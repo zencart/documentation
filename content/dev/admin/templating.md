@@ -56,3 +56,6 @@ It is a good practice to put your own page-specific customizations into a non-co
 
 Plugins not using the zc_plugins structure should put their page-specific custom JavaScript into a file using a naming convention akin to: `pagename_pluginname.js`
 
+## Site Specific Overrides 
+
+Starting in Zen Cart 1.5.8, an [admin site-specific override](/user/admin/site_specific_overrides/) capability exists. 
