@@ -5,11 +5,11 @@ category: admin
 weight: 10
 ---
 
-Starting in Zen Cart 1.5.8, a file called `admin/includes/extra_datafiles/dist-site_specific_overrides.php` is provided.  
+Starting in Zen Cart 1.5.8, a file called `admin/includes/extra_datafiles/dist-site_specific_admin_overrides.php` is provided.  
 
 Copy this file to 
 
-`admin/includes/extra_datafiles/site_specific_overrides.php`
+`admin/includes/extra_datafiles/site_specific_admin_overrides.php`
 
 and customize to taste. 
 
