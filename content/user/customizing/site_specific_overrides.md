@@ -16,6 +16,7 @@ and customize to taste.
 The following behaviors can be enabled or disabled by this file: 
 
 - displaying the Brand page link in the Information sidebox 
+- displaying the About Us link in the Information sidebox
 
 Example: turn on the Brand page link in the Information sidebox:
 
