@@ -107,6 +107,8 @@ If you find your domain on a blacklist, all you can do is attempt to get it remo
 
 As a general rule ALL dynamic IP addresses i.e. those from home broadband connections and similar are almost automatically blacklisted. If you want to run your site from a computer on your desk, you are going to have to get a static IP address.
 
+### 1.1 SPF, DKIM and DMARC
+
 ### SPF RECORDS
 
 A Sender Policy Framework (SPF) record is yet another DNS record. This TXT record allows you to specify which machines are ALLOWED to send mail for your domain. For instance, if you use something like Constant Contact to send mail on behalf of your site, you will need the same records for Constant Contact that you have for your domain. The set-up has many possibilities; do a web search to learn more about it.
