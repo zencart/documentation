@@ -1,6 +1,6 @@
 ---
-title: Fixing Addresses
-description: Fixing Customer Addresses in Zen Cart 
+title: Fixing Physical Addresses
+description: Fixing Customer Shipping and Billing Addresses in Zen Cart 
 category: Running
 weight: 10
 ---
