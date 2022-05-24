@@ -40,7 +40,7 @@ Find `Categories - Always Show on Main Page`, click edit and enable the feature.
 ---
 
 ### Can I remove the "Powered by Zen Cart" from the footer of my cart?
-Shops that wish to be listed in the [Zen Showcase](/user/about_us/showcase/) must leave "Powered by Zen Cart" in the footer for identification. Leaving the "Powered by Zen Cart" is advantageous to both you and Zen Cart because a relevant reciprocal link can help you with search engine rankings. In the event you do not wish to be listed in the Zen Showcase, "Powered by Zen Cart" may be removed, but it may not be changed.
+Yes.  Keeping this link is not required.  
 
 ---
 
