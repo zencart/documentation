@@ -31,7 +31,7 @@ The convention (and loading order) is:
 It is a good practice to put your own page-specific customizations into a non-core file 
 (eg: `pagename_mystore.css`) so that there are fewer file conflicts when upgrading.
 
-Plugins not using the zc_plugins structure should put their page-specific CSS additions into a file using a naming convention akin to: `pagename_pluginname.css`
+Plugins not using the `zc_plugins` structure should put their page-specific CSS additions into a file using a naming convention akin to: `pagename_pluginname.css`
 
 
 ## Per-Page JS Files
@@ -54,7 +54,7 @@ The convention (and loading order) is:
 It is a good practice to put your own page-specific customizations into a non-core file 
 (eg: `pagename_mystore.js`) so that there are fewer file conflicts when upgrading.
 
-Plugins not using the zc_plugins structure should put their page-specific custom JavaScript into a file using a naming convention akin to: `pagename_pluginname.js`
+Plugins not using the `zc_plugins` structure should put their page-specific custom JavaScript into a file using a naming convention akin to: `pagename_pluginname.js`
 
 ## Site Specific Overrides 
 
