@@ -9,7 +9,7 @@ weight: 10
 <h1>ALERT: DEPRECATED</h1>
 </font>
 
-**NOTE:** Square has officially this method of payment.  Please use the [Square Web Payments](/user/payment/square/) module instead.  
+**NOTE:** Square has officially retired this method of payment.  Please use the [Square Web Payments](/user/payment/square/) module instead.  
 
 This module will cease to work in July 2022. 
 

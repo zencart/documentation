@@ -22,12 +22,26 @@ Do you want the category to have a subcategory or do you want to add products to
 
 When you know what the category is to be used for, click the appropriate button to create a new product or a new category. 
 
-## Categories level 
+# Categories Level 
 Generally at the top level of the store, you will have categories.
 Below this level, you may have sub-categories (possibly going several levels
 deep), eventually leading to a level of products only. 
 
-At the level where you only have categories, there are a series of action icons on the right.
+At the level where you only have categories, you'll see a table with a number of rows that will look something like this:
+
+![admin categories](/images/admin_category_listing_rows.png)
+
+## Status Icons
+
+Under the Status column header, you'll see an icon that is either red or green, with an optional yellow icon.
+
+- Red means the category is disabled
+- Green means the category is enabled
+- Yellow means the category contains [linked products](/user/products/linked_product/)
+
+
+## Action Icons
+There are a series of action icons on the right.
 
 <img src="/images/categories_icons.png" alt="Admin Category Listing Icons" style="float: right" /> 
 <br clear="all" />
@@ -41,7 +55,15 @@ Trash Can | [delete a category](/user/products/category_management_admin/#deleti
 M | [move a category](/user/products/category_management_admin/#moving-a-category) - change the category's place in the hierarchy
 Asterisk | use the [category meta tags editor](/user/admin_pages/catalog/categories_meta_tags_editor/) 
 
-## Products Level 
+Some of these icons change color depending on the category: 
+
+Button | Meaning
+-------|-------
+![orange star](/images/admin_button_orange_star.png) | Category has custom meta tags 
+![white star](/images/admin_button_white_star.png) | Category does not have custom meta tags 
+
+
+# Products Level 
 If you are at a level where the Categories screen only shows products, 
 you have a different set of capabilities. 
 See [Categories/Products (Products Level) page](/user/admin_pages/catalog/categories_products/).
