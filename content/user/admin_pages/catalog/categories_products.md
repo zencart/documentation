@@ -6,8 +6,20 @@ weight: 12
 
 **Note:** If you are looking for the Categories screen showing categories, please [see this page](/user/admin_pages/catalog/categories/). 
 
-If you are at a level where the Categories screen only shows products, 
-there are a set of action icons on the right.
+If you are at a level where the Categories screen only shows products, you'll see a table with a number of rows that will look something like this: 
+
+![admin categories products](/images/admin_product_listing_rows.png) 
+
+## Status Icons
+
+Under the Status column header, you'll see an icon that is either red or green, with an optional yellow icon.
+
+- Red means the product is disabled
+- Green means the product is enabled
+- Yellow means the product is [linked](/user/products/linked_product/)
+
+## Action Icons 
+There are a set of action icons on the right.
 
 <img src="/images/products_icons.png" alt="Admin Product Listing Icons" style="float: right" /> 
 <br clear="all" />
@@ -23,4 +35,16 @@ C | [copy a product](/user/products/product_management_admin/#copying-a-product)
 A | use the [attributes controller](/user/admin_pages/catalog/attributes_controller/)
 Dollar Sign | use the [products price manager](/user/admin_pages/catalog/products_price_manager/)
 Asterisk | use the [meta tags editor](/user/admin_pages/catalog/products_meta_tags_editor/). 
+
+
+Some of these icons change color depending on the product:
+
+Button | Meaning
+-------|-------
+![blue A](/images/admin_button_blue_a.png) | Product has attributes 
+![black A](/images/admin_button_black_a.png) | Product does not have attributes 
+![orange star](/images/admin_button_orange_star.png) | Product has custom meta tags 
+![white star](/images/admin_button_white_star.png) | Product does not have custom meta tags 
+![green dollar](/images/admin_button_green_dollar.png) | Product may be added to cart 
+![white dollar](/images/admin_button_white_dollar.png) | Product may not be added to cart 
 
