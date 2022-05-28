@@ -124,7 +124,7 @@ You can get more help on this topic from [Microsoft's website](https://support.m
 
 ## Other Choices 
 
-Other choices that Zen Cart users have had success with are: 
+Other SMTP providers that Zen Cart users have had success with are: 
 
 - Mandrill (by MailChimp)
 - SMTP2Go
