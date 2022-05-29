@@ -65,3 +65,28 @@ grep "'[A-Z0-9_]*'[\s]*," *.php | grep -v "=>"
 
 Please see [User information on Array based Language files](/user/localization/158_language_files/). 
 
+## Code Conversion 
+
+If you need to include a language file, the old style of doing so 
+
+```
+  $langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . "/modules/order_total/" .  "ot_group_pricing.php";
+  include_once ($langfile);
+```
+
+will no longer work for 1.5.8 and above.  However, plugin authors may want to make their code compatible with both 1.5.7 and 1.5.8.  Here's one approach: 
+
+```
+  $filename = "ot_group_pricing.php"; 
+  $old_langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . "/modules/order_total/" .  $filename; 
+  $new_langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . "/modules/order_total/" .  "lang." . $filename; 
+  if (file_exists($old_langfile)) {
+          include_once ($old_langfile);
+  } else if (file_exists($new_langfile)) {
+     global $languageLoader; 
+     $folder = "/modules/order_total/"; 
+     $languageLoader->loadExtraLanguageFiles(DIR_FS_CATALOG . DIR_WS_LANGUAGES,  $_SESSION['language'], $filename, $folder);
+  }
+```
+
+
