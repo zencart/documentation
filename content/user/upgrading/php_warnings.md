@@ -218,3 +218,6 @@ To avoid this, check the value using `empty`
     if (!empty($array)) {
 ```
 
+More suggestions and recommendations are available in the [PHP migration guides](/dev/plugins/php_updating/) in the Developer Docs.
+
+

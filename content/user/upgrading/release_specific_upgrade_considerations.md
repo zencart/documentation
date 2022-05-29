@@ -26,6 +26,8 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 - Most "functions" (both admin and non-admin) have been consolidated into files located in `/includes/functions/`. Some have been merged together. Some changes are listed below.
 
+- Language file inclusions must be changed to comply with the new language file format.  See [Developer Information on Array based Language files](/dev//languages/158_language_files/) for more details. 
+
 - The function `zen_parse_search_string` input parameters have been reversed. Plugins that use this function will require modification.
 
 - The function `zen_get_countries` returns different array keys than previously. Admin plugins that use this function may use the new admin function `zen_get_countries_for_admin_pulldown`. 
