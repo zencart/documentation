@@ -20,14 +20,14 @@ The newer Square module is available in the Plugins library as [Square Web Payme
 ## Installing Square Web Payments - first time 
 1. Install the Square Web Payments module files.  Then to go to Admin > Modules > Payments > Square WebPay, and press Install. 
 1. Login at [https://connect.squareup.com/apps](https://connect.squareup.com/apps) to view the apps you've connected to your account.
-1. Click **+** to create a New Application for your Zen Cart store. Give it a name, such as "Webstore", and click Save.
-1. Click on the application icon that was just created (named "Webstore" or whatever name you used).
+1. Click **+** to create a New Application for your Zen Cart store. Give it a name, such as "WebPay", and click Save.
+1. Click on the application icon that was just created (named "WebPay" or whatever name you used).
 1. The environment will be Sandbox by default.  Click "Production".
-1. Copy and Paste the Production Application ID into your Square WebPay configuration. 
+1. Copy and Paste the Production Application ID into your Square WebPay configuration in Zen Cart admin. 
 1. Click on the OAuth tab. In the "Redirect URL" field, enter https://YOURSTORE.com/squareWebPay_handler.php and click Save at the bottom. (Ensure the URL you enter points to the correct directory (or subdirectory) on your server.)
-1. Now click the "Show" button for the Production Application Secret.  Copy and Paste the secret into your Square Webpay config.
+1. Now click the "Show" button for the Production Application Secret.  Copy and Paste the secret into your Square WebPay configuration in Zen Cart admin.
 1. In your Zen Cart admin, press Update to save the new Square WebPay config values. 
-1. Click the green button in the sidebar that says "Click here to login and Authorize your account."  If everything is correct, the Sort Order LED for Square WebPay will go green. 
+1. Click the green button in the Zen Cart admin sidebar that says "Click here to login and Authorize your account."  If everything is correct, the Sort Order LED for Square WebPay will go green. 
 1. Click the Edit button one more time.  This will fill in the Location ID field.  Press Update. 
 
 

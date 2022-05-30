@@ -47,4 +47,5 @@ Button | Meaning
 ![white star](/images/admin_button_white_star.png) | Product does not have custom meta tags 
 ![green dollar](/images/admin_button_green_dollar.png) | Product may be added to cart 
 ![white dollar](/images/admin_button_white_dollar.png) | Product may not be added to cart 
+![dark green dollar](/images/admin_button_dark_green_dollar.png) | Product has quantity discounts and may be added to cart (since Zen Cart 1.5.8)
 
