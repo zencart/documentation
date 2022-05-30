@@ -14,8 +14,7 @@ The newer Square module is available in the Plugins library as [Square Web Payme
 
 ## Requirements
 1. You must be using SSL on your website
-1. You will need a Square account, already validated and connected with your bank. You may create a Square merchant account at [squareup.com](https://squareup.com/).
-1. You need to create an App inside your Square account. See below for instructions.
+1. You will need a Square account, already validated and connected with your bank. You may [create a Square merchant account here](https://squareup.com/t/f_partnerships/d_partnerpage/p_zencart/c_general/o_free_processing/u_signup/l_us?route=signup%3Fsignup_token%3D6BB5B2E676)
 
 
 ## Installing Square Web Payments - first time 
