@@ -5,9 +5,27 @@ weight: 100
 layout: docs
 ---
 
-In Zen Cart 1.5.8, the language file structure was modified so that the PHP `define` statement is no longer used directly.  The reason for this is that newer versions of PHP will emit warning messages when a constant is redefined, so the old approach would create debug logs if something wasn't done.
+In Zen Cart 1.5.8, the language file structure was modified so that the PHP `define` statement is no longer used directly to set a language constant.  The reason for this is that newer versions of PHP will emit warning messages when a constant is redefined (in an override vs core file), so the old approach would create debug logs if something wasn't done.
 
 The new design builds an array of language definitions which are built into constants once all of them are read.  For this reason, the new files are called *array based language files* (as opposed to the older *define based language files*). 
+
+So for example, in Zen Cart 1.5.7, the file `includes/languages/english/login.php` would have: 
+
+```
+define('HEADING_TITLE', 'Welcome, Please Sign In');
+```
+
+In Zen Cart 1.5.8, the file `includes/languages/english/lang.login.php` would have: 
+
+```
+$define = [
+...
+    'HEADING_TITLE' => 'Welcome, Please Sign In',
+... ]; 
+
+```
+
+with a `define` to be done later after all the strings had been gathered.
 
 Using arrays allows for the following kinds of behavior: 
 
@@ -67,26 +85,5 @@ Please see [User information on Array based Language files](/user/localization/1
 
 ## Code Conversion 
 
-If you need to include a language file, the old style of doing so 
-
-```
-  $langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . "/modules/order_total/" .  "ot_group_pricing.php";
-  include_once ($langfile);
-```
-
-will no longer work for 1.5.8 and above.  However, plugin authors may want to make their code compatible with both 1.5.7 and 1.5.8.  Here's one approach: 
-
-```
-  $filename = "ot_group_pricing.php"; 
-  $old_langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . "/modules/order_total/" .  $filename; 
-  $new_langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . "/modules/order_total/" .  "lang." . $filename; 
-  if (file_exists($old_langfile)) {
-          include_once ($old_langfile);
-  } else if (file_exists($new_langfile)) {
-     global $languageLoader; 
-     $folder = "/modules/order_total/"; 
-     $languageLoader->loadExtraLanguageFiles(DIR_FS_CATALOG . DIR_WS_LANGUAGES,  $_SESSION['language'], $filename, $folder);
-  }
-```
-
+If you need to include a language file directly, see the code example in the [Upgrading plugins for 1.5.8](/dev/plugins/upgrading_to_158/#array-based-language-files) FAQ.
 

@@ -1,6 +1,6 @@
 ---
 title: Square Payments Form Module
-description: Zen Cart Square Payments Form Module
+description: The original Zen Cart Square Module (DEPRECATED)
 category: payment
 weight: 10
 ---
