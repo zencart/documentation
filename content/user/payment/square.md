@@ -12,6 +12,10 @@ There are two Square modules for Zen Cart:
 ## Newer Module - Square Web Payments API 
 The newer Square module is available in the Plugins library as [Square Web Payments API plugin](https://www.zen-cart.com/downloads.php?do=file&id=2345). 
 
+![Square Modules](/images/square_payment_modules.png)
+- The top one is the old Square module.
+- The bottom one is the new Square module.
+
 ## Requirements
 1. You must be using SSL on your website
 1. You will need a Square account, already validated and connected with your bank. You may [create a Square merchant account here](https://squareup.com/t/f_partnerships/d_partnerpage/p_zencart/c_general/o_free_processing/u_signup/l_us?route=signup%3Fsignup_token%3D6BB5B2E676)
