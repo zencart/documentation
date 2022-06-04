@@ -1,7 +1,7 @@
 ---
 title: Customer Groups
 category: admin_pages
-weight: 10
+weight: 25
 ---
 
 The Customer Groups page allows you to view your customer groups. This is a new feature which was added in Zen Cart 1.5.8. 
@@ -21,5 +21,7 @@ The columns in the list are:
 - Description of group 
  
 Clicking a group record selects that group and opens a preview on the right hand side of the page.  From there, the group record may be edited or deleted.  
+
+A customer may only belong to one [pricing group](/user/admin_pages/customers/group_pricing/), but may be in any number of customer groups. 
 
 
