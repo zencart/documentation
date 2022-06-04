@@ -7,6 +7,8 @@ weight: 10
 
 Define pages are special pieces of content that appear above normal page content for certain pages.  Unlike language strings, Define pages may be modified in the Admin.  The [Admin > Tools > Define Pages Editor](/user/admin_pages/tools/define_pages/) help page lists the pages with define page content. 
 
+The phrase "Define Pages" can also be used to refer to the stand-alone pages whose content is created in the Define Pages Editor, and which are controlled using the [Define Pages Status](/user/admin_pages/configuration/configuration_definepagestatus/) admin page.
+
 The Define pages also come with a set of controls in admin, which are shown on [Admin > Configuration > Define Pages Status](/user/admin_pages/configuration/configuration_definepagestatus/).  These controls allow you to determine whether the block of content created by the Define Pages editor is shown on the associated page, and whether links to the associated page will be created. 
 
 - The setting _Link ON_ means a link to the page will be created in any content block which is designed to link to this page.  For example, setting _Link ON_ for Define Page 2 means a link to `index.php?main_page=page_2` will be created in the Responsive Classic Mobile Menu, the More Information Sidebox and the Site Map.  Conversely, _Link OFF_ means no such link will be created. 
@@ -38,14 +40,14 @@ _Link ON_ is also interpreted by some popular plugins such as Flexible Footer.
 
 <br>
 
-The phrase "Define Pages" can also be used to refer to the stand-alone pages which contain only define page content: 
+The pages listed below are considered Define Pages, since their content is controlled using the Define Pages Editor.
 
 <br>
 
 Page Name | File| URL 
 ----------|-----|-----
-Ask a Question | define_ask_a_question.php | `index.php?main_page=ask_a_question` 
-Contact Us | define_contact_us.php | `index.php?main_page=contact_us` 
+Ask a Question | `define_ask_a_question.php` | `index.php?main_page=ask_a_question` 
+Contact Us | `define_contact_us.php` | `index.php?main_page=contact_us` 
 Privacy | `define_privacy.php` | `index.php?main_page=privacy`  
 Shipping Info | `define_shippinginfo.php` | `index.php?main_page=shippinginfo` 
 Conditions of Use | `define_conditions.php` | `index.php?main_page=conditions` 

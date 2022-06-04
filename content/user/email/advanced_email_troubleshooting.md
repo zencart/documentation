@@ -220,7 +220,7 @@ To add to the woes of the would-be website mailer - you - there is the small mat
 
 Additionally, when websites send email as 'nobody', it's very common for the hosting company to have the server configured to show the .php script filename in the (normally hidden) raw email headers. This allows them to very quickly determine whether an email was sent from a legitimate script or not.  Usually they'll simply shut down that script quickly, and tell the account holder that there's a problem, giving them a few days to come up with a fix.
 
-Other websites use Suexec or SuPHP, which run the website code as the website owner rather than 'nobody' and the effect is mitigated. Particularly if the website owner is something like web_admin and has an email mailbox. They come with their own brand of drawbacks, so there is no free lunch, but things are improving over time. Setting an 'Email From' address and 'must send from known domain' may help, and are recommended for any site.
+Other websites use Suexec or SuPHP, which run the website code as the website owner rather than 'nobody' and the effect is mitigated. Particularly if the website owner is something like web_admin and has an email mailbox. They come with their own drawbacks, so there is no free lunch, but things are improving over time. Setting an 'Email From' address and 'must send from known domain' may help, and are recommended for any site.
 
 ### ENCODING AND CHARACTER SETS
 

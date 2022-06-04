@@ -14,6 +14,7 @@ Advanced Search | index.php?main_page=advanced_search  |
 Advanced Search Result | index.php?main_page=advanced_search_result  | 
 All Products | index.php?main_page=products_all  | 
 Brands | index.php?main_page=brands | Shop by Brand
+Category Listing |  index.php?main_page=index&cPath=NNN | Shows subcategories in a category
 Conditions of Use | index.php?main_page=conditions | 
 Contact Us | index.php?main_page=contact_us | 
 Create Account | index.php?main_page=create_account | 
@@ -26,7 +27,7 @@ Page 2 | index.php?main_page=page_2 |
 Page 3 | index.php?main_page=page_3 | 
 Page 4 | index.php?main_page=page_4 | 
 Privacy | index.php?main_page=privacy | Privacy Policy
-Product Listing |  index.php?main_page=index&cPath=NNN | 
+Product Listing |  index.php?main_page=index&cPath=NNN | Shows products in a category 
 Product Reviews Info | index.php?main_page=product_reviews_info | Read a specific review 
 Reviews | index.php?main_page=reviews | Read all reviews 
 Shipping | index.php?main_page=shippinginfo | Shipping Policy
