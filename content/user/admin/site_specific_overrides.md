@@ -15,8 +15,7 @@ and customize to taste.
 
 The following behaviors can be enabled or disabled by this file: 
 - Enable/disable zcDate debug
-- Enable/disable product/attribute images on the invoice
-- Enable/disable product/attribute images on the packing slip
+- The [order display](/user/admin_pages/customers/order_display_options/) for images, tax display, etc. 
 
 
 Example: disable product images on packing slip and invoice: 

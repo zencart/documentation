@@ -34,5 +34,6 @@ Opening an order displays the order details screen, which shows the customer inf
 
 In this order, the first history entry is from when the order was placed, the second was done by an administrator and resulted in an email to the customer, and the third was done by an administrator and will only be visible in the admin, and not to the customer.
 
-
 For more information, see the [customer and order FAQs](/user/orders/). 
+
+Some display features on this page may be switched off and on - see [switchable features on order pages](/user/admin_pages/customers/order_display_options/).

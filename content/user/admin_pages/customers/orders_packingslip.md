@@ -13,5 +13,5 @@ The packing slip only contains the products in the order and the customer's bill
 
 <img src="/images/packingslip.png" alt="Zen Cart Packing Slip" /> 
 
-  
+Some display features on this page may be switched off and on - see [switchable features on order pages](/user/admin_pages/customers/order_display_options/).
 
