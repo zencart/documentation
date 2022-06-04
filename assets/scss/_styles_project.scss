@@ -31,3 +31,37 @@ pre > code {
     }
   }
 }
+
+/* Header - show search box on mobile */
+@media (max-width: 868px){
+.td-navbar {display:block;text-align:center;}
+.td-navbar .td-navbar-nav-scroll {font-size:1rem;}
+ul.navbar-nav.mt-2.mt-lg-0 {display:inline-flex;margin-top:0px!important;margin-left:1.5rem;}
+.td-navbar-cover {background: $primary!important;}
+.navbar-nav.d-none.d-lg-block {display:inline-block!important;margin-right:0.2rem}
+}
+
+/* Header - alignment of elements */
+@media (min-width:869px) and (max-width:937px){
+.navbar-nav.d-none.d-lg-block {max-width:25%;display:inline-block!important;}
+ul.navbar-nav.mt-2.mt-lg-0 {margin-top:0!important;}
+#main_navbar {margin:0.25 auto 0;}
+}
+
+@media (min-width:938px) and (max-width: 991px){
+.navbar-nav.d-none.d-lg-block {max-width:27%;display:inline-block!important;margin-right:0.5rem}
+ul.navbar-nav.mt-2.mt-lg-0 {margin-top:0!important;}
+}
+
+@media (min-width:992px) and (max-width:1090px){
+.navbar-nav.d-none.d-lg-block {max-width:27%;}
+ul.navbar-nav.mt-2.mt-lg-0 {margin-top:0!important;}
+}
+
+/* Homepage - make header background solid on large screens to prevent text overlap (HACK) */ 
+@media (min-width:869px){
+.td-navbar-cover {background:#955239!important;}	
+}
+
+/* Homepage - center body elements */
+ul.mainpage_list {padding-left:0;}
