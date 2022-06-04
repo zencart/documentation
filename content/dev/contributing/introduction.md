@@ -33,3 +33,12 @@ It's really as easy as 1-2-3 ...
 
 3. As you start working on your code changes and pull request, review the [Coding Standards](/dev/contributing/coding_standards) guide to ensure that your code matches both the formatting and testing requirements. If you're submitting a new feature and know how to write PHP code tests, please be sure to submit tests with your code.
 
+## Forum Links
+New contributors may find these forum links helpful: 
+
+- [How to Contribute to Zen-Cat - Part I XAMPP](https://www.zen-cart.com/showthread.php?228856-How-to-Contribute-to-Zen-Cat-Part-I-XAMPP)
+- [How to Contribute to Zen-Cat - Part II xDebug](https://www.zen-cart.com/showthread.php?228857-How-to-Contribute-to-Zen-Cat-Part-II-xDebug)
+- [How to Contribute to Zen-Cart - Part III PHP](https://www.zen-cart.com/showthread.php?228858-How-to-Contribute-to-Zen-Cart-Part-III-PHP)
+
+
+
