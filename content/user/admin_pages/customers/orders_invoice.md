@@ -10,5 +10,4 @@ In this context, "invoice" means a summary of the order, not an account to be pa
 
 <img src="/images/invoice.png" alt="Zen Cart Invoice" /> 
 
-  
-
+Some display features on this page may be switched off and on - see [switchable features on order pages](/user/admin_pages/customers/order_display_options/).
