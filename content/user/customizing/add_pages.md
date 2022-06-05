@@ -41,6 +41,8 @@ A number of files go into building a new page.  The best way to create a new pag
 
 The latter is somewhat less customizable but contains fewer files. 
 
+(Note that the About Us page is built in to Zen Cart 1.5.8 and higher; these plugins are referenced only as examples of how to build a page.) 
+
 The advantage of creating a new page is that you can use PHP in the page, which is not an option with EZ-Pages.  Being able to use PHP means you can add conditional logic, do database lookups, customize for specific groups or customer characteristics, etc. 
 
 ### Add infrastructure to build multiple pages 
