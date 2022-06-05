@@ -27,10 +27,10 @@ $content .= '<li><a href="https://www.zen-cart.com/" target="_blank" rel="norefe
 
 **Note:** In subsequent examples, the appended linefeed (`. "\n"`) is dropped for clarity. 
 
-If the link if to an internal page, use the `zen_href_link` function.  For example, the About Us page can be added to the Information Sidebox with 
+If the link if to an internal page, use the `zen_href_link` function.  For example, if you have a page called "News" (and have defined `FILENAME_NEWS` and `BOX_INFORMATION_NEWS`), a link to this page may be added to the Information Sidebox with 
 
 ```
-$content .= '<li><a href="' . zen_href_link(FILENAME_ABOUT_US) . '">' . BOX_INFORMATION_ABOUT_US . '</a></li>';
+$content .= '<li><a href="' . zen_href_link(FILENAME_NEWS) . '">' . BOX_INFORMATION_NEWS . '</a></li>';
 ```
 
 If the link is to an internal EZ-Page, use 

@@ -175,6 +175,7 @@ The <strong>specials</strong> and <strong>new_products</strong> sideboxes work s
 
 ## Manufacturers
 
+
 <br>
 <div>
    <div class="img_col"> 

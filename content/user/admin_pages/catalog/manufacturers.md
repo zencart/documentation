@@ -20,3 +20,5 @@ Clicking the *edit* icon on a manufacturer in the list open the record in the si
 
 ![Edit Manufacturer](/images/edit_manufacturer.png)
 
+Manufacturers are shown on the storefront in the [manufacturers sidebox](/user/sideboxes/sidebox_list/#manufacturers) and the [brands page](/user/storefront_pages/brands/).
+

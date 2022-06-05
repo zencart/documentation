@@ -46,7 +46,8 @@ The pages listed below are considered Define Pages, since their content is contr
 
 Page Name | File| URL 
 ----------|-----|-----
-Ask a Question | `define_ask_a_question.php` | `index.php?main_page=ask_a_question` 
+About Us| `define_about_us.php` | `index.php?main_page=about_us` (1.5.8 andabove)
+Ask a Question | `define_ask_a_question.php` | `index.php?main_page=ask_a_question`  (1.5.7 and above)
 Contact Us | `define_contact_us.php` | `index.php?main_page=contact_us` 
 Privacy | `define_privacy.php` | `index.php?main_page=privacy`  
 Shipping Info | `define_shippinginfo.php` | `index.php?main_page=shippinginfo` 
@@ -68,8 +69,10 @@ Shopping Cart |`define_shopping_cart.php` |  `index.php?main_page=shopping_cart`
 Checkout Success |`define_checkout_success.php` |  `index.php?main_page=checkout_success`
 Home Page |`define_main_page.php` |  `index.php`
 
+Some newer pages use the [site specific overrides](/user/customizing/site_specific_overrides/) file for enabling/disabling links instead of Configuration > Define Pages: 
 
-<br>
+- About Us 
+- Brands 
 
 If your needs go beyond what is provided by the define pages, take a look at the FAQ on [adding pages](/user/customizing/add_pages/), which describes the use of [EZ-Pages](/user/ezpages/) as well as using plugins to build custom pages for your Zen Cart installation. 
 

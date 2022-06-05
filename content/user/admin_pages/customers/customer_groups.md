@@ -24,4 +24,4 @@ Clicking a group record selects that group and opens a preview on the right hand
 
 A customer may only belong to one [pricing group](/user/admin_pages/customers/group_pricing/), but may be in any number of customer groups. 
 
-
+The Groups feature is highly specific to store needs.  See [Using Customer Groups](/user/customizing/customer_groups) for ideas.

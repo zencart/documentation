@@ -28,7 +28,16 @@ For example, if you wished the terms and conditions link to appear first, you wo
   unset ($information);
 ```
 
+### What determines which links are shown in the Information Sidebox? 
+- Most of the pages in this sidebox may have links enabled or disabled using [Admin > Configuration > Define Page Status](/user/admin_pages/configuration/configuration_definepagestatus/)
+- The About Us and Brands pages have their links controlled by the [site specific overrides](/user/customizing/site_specific_overrides/) file. 
+
+
 ### How do I add a link to the Information Sidebox? 
 
 This question is answered in the FAQ [Adding a Link to the Information sidebox](/user/sideboxes/add_link_information_sidebox/). 
+
+### What if the link should only be available to logged in users? 
+
+Wrap the link in `if zen_is_logged_in()`.  See [protecting pages](/user/customizing/protecting_pages/) for more information. 
 
