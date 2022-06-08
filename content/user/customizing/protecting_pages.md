@@ -13,7 +13,7 @@ Modify `includes/modules/pages/page_2/header_php.php` to include at the top:
 
 ```
 // if the customer is not logged on, redirect them to the login page
-  if (!zen_is_logged_in()) {
+  if (!zen_is_logged_in() || zen_in_guest_checkout()) {
     global $messageStack; 
     $messageStack->add_session('login','Restricted content for approved accountholders only - please login', 'warning'); 
     $_SESSION['navigation']->set_snapshot();

@@ -39,5 +39,5 @@ This question is answered in the FAQ [Adding a Link to the Information sidebox](
 
 ### What if the link should only be available to logged in users? 
 
-Wrap the link in `if zen_is_logged_in()`.  See [protecting pages](/user/customizing/protecting_pages/) for more information. 
+Wrap the code that creates the link in a check for the appropriate conditions.  See [protecting pages](/user/customizing/protecting_pages/) for more information. 
 
