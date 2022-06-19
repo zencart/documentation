@@ -5,7 +5,7 @@ category: troubleshooting
 weight: 10
 ---
 
-Debug logs like this: 
+[Debug logs](/user/troubleshooting/debug_logs/) like this: 
 
 ```
 --> PHP Warning: Constant TEXT_MAIN already defined in /Users/scott/Sites/store/includes/languages/english/index.php on line 9.

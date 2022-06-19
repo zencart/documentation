@@ -5,7 +5,7 @@ category: upgrading
 weight: 10
 ---
 
-As you upgrade PHP from an older version, these are log messages you will commonly see.  An explanation of *why this can happen* is provided in [understanding errors after upgrading PHP versions](/user/troubleshooting/php_debug_logs). This article explains *how to fix* some of the most common problems you will see. 
+As you upgrade PHP from an older version, these are [debug log messages](/user/troubleshooting/debug_logs/) you will commonly see.  An explanation of *why this can happen* is provided in [understanding errors after upgrading PHP versions](/user/troubleshooting/php_debug_logs). This article explains *how to fix* some of the most common problems you will see. 
 
 There are several levels of PHP problems, with the least serious being _notices_ and _warnings_. 
 
@@ -184,6 +184,27 @@ Since PHP 5.5 the `mysql_xxxxx()` functions were removed in favor of the `mysqli
 You cannot just rename the functions. 
 
 While on the surface it may seem simple to rewrite the functions to the new syntax, a MUCH BETTER approach is to rewrite your code to use Zen Cart's own DB querying logic, which is both more secure and more consistent across the application.
+
+## Undefined constant warnings in module files
+
+Files under `/includes/modules/payment`, `/includes/modules/shipping` and `/includes/modules/order_total` were updated in Zen Cart 1.5.6 so that module defines were not referenced until it was determined that the module had been installed.  
+
+Using the example of `shipping/flat.php`, prior to 1.5.6, the constructor would do
+
+```
+      $this->sort_order = MODULE_SHIPPING_FLAT_SORT_ORDER;
+```
+
+This will generate a warning in newer versions of PHP if `flat` is not installed, since the variable `MODULE_SHIPPING_FLAT_SORT_ORDER` will not be in the database. 
+
+Newer versions of Zen Cart check the sort order as an indication that a module has been installed, and return early if it is not defined.
+
+```
+      $this->sort_order = defined('MODULE_SHIPPING_FLAT_SORT_ORDER') ? MODULE_SHIPPING_FLAT_SORT_ORDER : null;
+      if (null === $this->sort_order) return false;
+``` 
+
+If you have custom modules, you should make the analagous change to those files to avoid creating PHP warnings. 
 
 ## Sizeof and related issues
 

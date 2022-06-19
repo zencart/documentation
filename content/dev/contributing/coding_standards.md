@@ -164,4 +164,6 @@ Do this:
    $filter = zen_get_linked_products_for_category($cat_id, $first_only = true); 
 
 ```
+## More Information
+More information is provided in [PHP Idioms](/dev/code/php_idioms/).
 

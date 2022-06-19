@@ -75,7 +75,7 @@ Go to [Admin > Config > GZip Compression](/user/admin_pages/configuration/config
 Ensure that your stylesheets don't contain any references to image files that don't exist on your server. (You can use the [Website Optimizer Speed Test](http://www.websiteoptimization.com/services/analyze/index.html) site to quickly find missing images on specific pages.)  
 
 ### Remove Excess debug/log files
-If your site has generated a large number of debug log files, it can cause some degree of slowdown. (This is worsened if you're using v1.5.0 or older, where those log files are stored on the /cache/ folder. Having a lot of non-caching files in the /cache/ folder can lead to serious slowdowns on all versions.)  
+If your site has generated a large number of [debug log files](/user/troubleshooting/debug_logs/), it can cause some degree of slowdown. (This is worsened if you're using v1.5.0 or older, where those log files are stored on the /cache/ folder. Having a lot of non-caching files in the /cache/ folder can lead to serious slowdowns on all versions.)  
 
 You will want to download a copy of those log files to your PC, using your [FTP tool](/user/first_steps/useful_tools/#ftp-tools). Then analyze them to see what errors might be occurring on your site on a regular basis.  
 Then you can purge those logs files by using the [Admin > Tools > Store Manager](/user/admin_pages/tools/store_manager/) Purge log files menu option.  

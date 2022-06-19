@@ -5,7 +5,7 @@ category: template
 weight: 10
 ---
 
-The [Bootstrap template](https://www.zen-cart.com/downloads.php?do=file&id=2191) is a well supported, standards-based [responsive](/user/template/responsive/) template which was built by the Zen Cart community. 
+The [Bootstrap template](https://www.zen-cart.com/downloads.php?do=file&id=2191) is a well supported, standards-based, [responsive](/user/template/responsive/) template which was built by the Zen Cart community. 
 
 The Bootstrap template is built on the [Bootstrap](https://getbootstrap.com/) front-end toolkit.  It differs from the older [Responsive Classic](/user/template/responsive_classic/) template in the following ways: 
 
