@@ -21,12 +21,14 @@ They append to a single log file, which is stored in
 If you are missing log files, you'll want to work with your hoster to see how 
 they have configured logging. 
 
-You can determine if your host has you configured to run FPM by looking at the 
-[Server/Version Info](/user/admin_pages/tools/server_info) page, under the **cgi-fcgi** section.
+You can determine if your host has you configured to run PHP-FPM by looking at the 
+[Server/Version Info](/user/admin_pages/tools/server_info) page, under the **cgi-fcgi** section.  
+
+(Note: If you don't see the line that says "php-fpm active," then it's not active.)
 
 ![FPM](/images/fpm.png)
 
-If it is, look under the **Core** section to determine where your log is stored:
+If PHP-FPM is active, look under the **Core** section to determine where your log is stored:
 
 ![FPM Log](/images/fpm_log.png)
 

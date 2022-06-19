@@ -34,6 +34,13 @@ Developers and designers might appreciate the https://responsively.app tool for 
 
 TIP: Don't design your site for "every possible mobile device." It will never be "pixel-perfect." Make it work well for the majority of devices that *your* site's visitors are using: don't worry about devices of people who aren't your target customer.
 
+## Does Zen Cart offer a responsive template? 
+
+Zen Cart has two free responsive templates which are well supported: 
+
+- The [Responsive Classic template](/user/template/responsive_classic/)
+- The [Bootstrap template](/user/template/bootstrap/)
+
 ## How do you achieve responsiveness? 
 
 In order to determine how to lay out a page, the template must first determine the length and width of the visitor's screen. 
