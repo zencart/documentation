@@ -162,8 +162,11 @@ Rather than this:
 Do this: 
 ```
    $filter = zen_get_linked_products_for_category($cat_id, $first_only = true); 
-
 ```
+
+## PHP Short Echo Tags 
+At this time, PHP Short Echo Tags (`<?=` in lieu of `<?php echo`) are not preferred. 
+
 ## More Information
 More information is provided in [PHP Idioms](/dev/code/php_idioms/).
 
