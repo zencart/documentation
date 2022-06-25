@@ -12,7 +12,7 @@ In order to add products to your site, you will first need at least one category
 
 Create a category by clicking the "new category" button.
 
-**Note:** Products must be placed inside categories; products and categories cannot coexist at the same level. 
+**Note:** Products must be placed inside categories; products and categories cannot coexist at the same level.  See [products and categories at the same level](/user/troubleshooting/products_categories_same_level).
 
 Because of this rule, it is recommended that you have at least one category. 
 

@@ -13,7 +13,7 @@ Click the new category button.
 
 On the next page fill in the category name, description, and other information, and click *Save*.
 
-**Note:** A category can hold sub-categories or products, but not both at the same level.
+**Note:** A category can hold sub-categories or products, but not both at the same level.  See [products and categories at the same level](/user/troubleshooting/products_categories_same_level).
 
 ### How do I delete a category? 
 
