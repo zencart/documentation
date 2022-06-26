@@ -36,3 +36,29 @@ img {
    border-style: solid !important; 
    margin-top: 10px; 
 }
+
+/* Adjust left column and main content sizes to accommodate foldable sidebar sections */
+
+@media (min-width:768px) and (max-width:816px) {
+  .row > main {
+    max-width: 70%!important;
+  }	
+}
+
+@media (min-width:817px) and (max-width:1199px) {
+  .row > main {
+    max-width: 72%!important;
+  }	
+}
+
+@media (min-width:768px) and (max-width:999px) {
+  .td-sidebar {
+    min-width: 14rem;
+  }
+}
+
+@media (min-width:1000px) {
+  .td-sidebar {
+    min-width: 17rem;
+  }
+}

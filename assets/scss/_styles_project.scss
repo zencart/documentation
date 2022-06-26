@@ -32,36 +32,73 @@ pre > code {
   }
 }
 
-/* Header - show search box on mobile */
-@media (max-width: 868px){
-.td-navbar {display:block;text-align:center;}
-.td-navbar .td-navbar-nav-scroll {font-size:1rem;}
-ul.navbar-nav.mt-2.mt-lg-0 {display:inline-flex;margin-top:0px!important;margin-left:1.5rem;}
-.td-navbar-cover {background: $primary!important;}
-.navbar-nav.d-none.d-lg-block {display:inline-block!important;margin-right:0.2rem}
-}
-
 /* Header - alignment of elements */
-@media (min-width:869px) and (max-width:937px){
-.navbar-nav.d-none.d-lg-block {max-width:25%;display:inline-block!important;}
-ul.navbar-nav.mt-2.mt-lg-0 {margin-top:0!important;}
-#main_navbar {margin:0.25 auto 0;}
+
+@media (max-width: 768px) {
+  ul.navbar-nav.mt-2.mt-lg-0 {
+    margin-left: 1.5rem;
+  }
 }
 
-@media (min-width:938px) and (max-width: 991px){
-.navbar-nav.d-none.d-lg-block {max-width:27%;display:inline-block!important;margin-right:0.5rem}
-ul.navbar-nav.mt-2.mt-lg-0 {margin-top:0!important;}
+@media (min-width:768px) and (max-width:868px) {
+  #main_navbar {
+    margin: 0;
+  }
 }
 
-@media (min-width:992px) and (max-width:1090px){
-.navbar-nav.d-none.d-lg-block {max-width:27%;}
-ul.navbar-nav.mt-2.mt-lg-0 {margin-top:0!important;}
+@media (min-width:869px) and (max-width:937px) {
+  .navbar-nav.d-none.d-lg-block {
+    max-width: 25%;
+	display: inline-block!important;
+  }
 }
 
-/* Homepage - make header background solid on large screens to prevent text overlap (HACK) */ 
-@media (min-width:869px){
-.td-navbar-cover {background:#955239!important;}	
+@media (min-width:938px) and (max-width: 991px) {
+  .navbar-nav.d-none.d-lg-block {
+    max-width: 27%;
+	display: inline-block!important;
+	margin-right: 0.5rem;
+  }
+}
+
+@media (min-width:992px) and (max-width:1090px) {
+  .navbar-nav.d-none.d-lg-block {
+    max-width: 27%;
+  }
+}
+
+@media (max-width: 1090px) {
+  ul.navbar-nav.mt-2.mt-lg-0 {
+    margin-top: 0!important;
+  }
+}
+
+/* Left Column - min width of search box */
+@media (min-width:768px) {
+  .td-sidebar__search {
+    min-width: 184px;
+  }
+}
+
+@media (min-width:868px) {
+  .td-sidebar__search {
+    display:none!important;
+  }
+  #td-section-nav {
+    padding-top: 0.5rem!important;
+  }
+}
+
+/* Homepage - make header background solid on large screens to prevent text overlap */
+ 
+@media (min-width:869px) {
+  .td-navbar-cover {
+    background: #955239!important;
+  }	
 }
 
 /* Homepage - center body elements */
-ul.mainpage_list {padding-left:0;}
+
+ul.mainpage_list {
+  padding-left:0;
+}
