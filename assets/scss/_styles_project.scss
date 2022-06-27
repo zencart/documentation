@@ -89,6 +89,12 @@ pre > code {
   }
 }
 
+/* Left Column - reduce indent of headings without child */
+
+nav.foldable-nav .without-child {
+  padding-left: 0.7em;
+}
+
 /* Homepage - make header background solid on large screens to prevent text overlap */
  
 @media (min-width:869px) {
