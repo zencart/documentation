@@ -164,6 +164,21 @@ Do this:
    $filter = zen_get_linked_products_for_category($cat_id, $first_only = true); 
 ```
 
+## Strict comparisons 
+Unless data is coming in from an external source (such as a payment module), strict comparisons are preferred. 
+
+Rather than this: 
+
+```
+   if ($boolean_variable) {  
+```
+
+If possible, do this: 
+
+```
+   if ($boolean_variable === true) {  
+```
+
 ## PHP Short Echo Tags 
 At this time, PHP Short Echo Tags (`<?=` in lieu of `<?php echo`) are not preferred. 
 
