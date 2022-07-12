@@ -44,3 +44,6 @@ Please note: do NOT remove the old Square files from your Zen Cart installation.
 1. Use the Installation instructions above. 
 1. Once you are certain Square Web Payments is working, Go to Admin > Modules > Payment > Square and click **Remove**. 
 
+## Square Errors 
+If you get an error from Square (in particular, "The provided OAuth access token has expired"), see [Square Error Messages](/user/payment/square_errors/). 
+
