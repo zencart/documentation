@@ -110,8 +110,16 @@ If your plugin is an admin page, remember that some storeowners may want non-sup
 Your plugin may need to do something different depending on the Zen Cart version. Use the `PROJECT_VERSION_` settings in `includes/version.php` for this.  As an example, this checks for a Zen Cart version of 1.5.7 or higher: 
 
 ```
-if (version_compare(PROJECT_VERSION_NAME . ' ' . PROJECT_VERSION_MAJOR . '.' . PROJECT_VERSION_MINOR, '1.5.7', '>=')) {
+if ((PROJECT_VERSION_MAJOR . '.' . PROJECT_VERSION_MINOR) > '1.5.7') {
 ```
+
+For Zen Cart 1.5.7 and later, there is a helper function that you can use to simplify your code:
+
+```php
+if (zen_get_zcversion() > '1.5.7') {}
+```
+
+
 
 ## More Checks 
 
