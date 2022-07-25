@@ -4,12 +4,15 @@ weight: 20
 layout: docs
 category: release_process
 ---
-To manage the release process, you must have `Maintainer` access to the Zen Cart
-github repository.
+To run the release process, you must have the following:
 
-You must have access to and have downloaded the VersionStamper application.
+- `Maintainer` access to the Zen Cart github repository.
 
-You must have ssh access to the main Zen Cart website, and the Version/Ping server.
+- A local copy of the [VersionStamper](https://github.com/zencart/versionstamper) application.
 
-You should have an up to date checkout of the branch that you are releasing and ensure
-your `main` branch is up to date as well.
+- ssh access to the main Zen Cart website (zen-cart.com), and the Version/Ping server (ping.zen-cart.com).
+
+- an up to date copy of both the branch that you are releasing, and the `main` branch. 
+
+
+

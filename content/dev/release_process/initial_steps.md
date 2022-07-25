@@ -4,8 +4,6 @@ weight: 30
 layout: docs
 category: release_process
 ---
-# Initial Steps
-
 The initial phase of the release process consists of
 
  + Locking the repository for merges
@@ -16,18 +14,18 @@ The initial phase of the release process consists of
 # Locking Repository
 
 While doing the initial steps of process release, at least up to the tagging release stage,
-we need to ensure that np commits/merges are created against the release branch and the main branch,
+we need to ensure that no commits/merges are created against the release branch and the main branch,
 except where necessary for the release.
 
-The simplest way of doing this is to communicate with all developers who have merge priveleges.
+Message all developers who have merge privileges using the Skype Dev Chat channel, and then lock the branch you are building.  Go to [the branches page](https://github.com/zencart/zencart/settings/branches) and set a branch protection rule.  Here is a list of [branch protection rules for 158](https://github.com/zencart/zencart/settings/branch_protection_rules/26951040) for example.  Click on the checkbox for *Require a pull request before merging*
+then set the required approvals to 6, and the branch will be effectively locked.  
 
-Would suggest using the Skype Dev Chat channel for this.
 
 # Updating Code
 
 Before tagging a release we need to ensure code is up to date.
 
-We need to update the [Documenation Website](https:docs.zen-cart.com/release) to ensure that it reflects changes that have happened within
+We need to update the [Documentation Website](https:docs.zen-cart.com/release) to ensure that it reflects changes that have happened within
 the release and stamp files that have been changed/added with correct copyright and other headers.
 
 # Release Documentation
