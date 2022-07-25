@@ -35,11 +35,11 @@ After this we then need to create the release on github.
 
 https://github.com/zencart/zencart/tags
 
-![ Github Tags](../../static/images/github-tags_page_zencart.png)
+![ Github Tags](/images/github-tags_page_zencart.png)
 
 By clicking on the ... on the right hand side we can create a release.
 
-![Github Create Release](../../static/images/github_create_release_zencart.png)
+![Github Create Release](/images/github_create_release_zencart.png)
 
 
 The title is usually the same name as the tag name.
