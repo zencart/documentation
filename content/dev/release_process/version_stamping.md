@@ -4,8 +4,6 @@ weight: 40
 layout: docs
 category: release_process
 ---
-# Version Stamping
-
 Version stamping consists of a number of processes that are actioned on files that have 
 changed in the release.
 
@@ -13,7 +11,7 @@ Those actions are
 
  + Update the copyright year in the header of the fie to the current year.
  + Add/Update the details of what release the file was added/modified
- + create a list of files that were added/deleted or modified and sort into those sections.
+ + Create a list of files that were added/deleted or modified and sort into those sections.
 
 For this we use a Php script to automate this process.
 
@@ -21,13 +19,14 @@ The script is available in the https://github.com/zencart/zencart-release-proces
 
 This is a private repository, so you may need to request access.
 
-O the checkout of your Zen Cart code you need to create a feature branch for the version stamping changes.
-E.g. git checkout -b version-stamping-v158-alpha
+You need to create a feature branch for the version stamping changes, e.g.
+
+`git checkout -b version-stamping-v158-alpha`
 
 
 # Installing
 
-Clone the repository to your local computer.
+Clone the [https://github.com/zencart/versionstamper](https://github.com/zencart/versionstamper) repository to your local computer.
 
 While there are some basic intall instruction in the readme.md for VersionStamper
 more explicit instructions follow.
