@@ -45,6 +45,8 @@ Once you know [What Zen Cart is](/user/about_us/what_is_zen_cart/), you might wa
 
 * [Glossary](/user/first_steps/glossary/) - What do all these terms mean? 
 
+* [Hiring](/user/zen_cart_forum/chw/) - How do I hire someone to do an upgrade or take care of my cart? 
+
 * [Installing Zen Cart](/user/first_steps/how_do_i_install/) - How do I install Zen Cart?
 
 * [Known Bugs in Zen Cart (by version)](/user/about_us/known_bugs/) - Has my bug already been fixed?

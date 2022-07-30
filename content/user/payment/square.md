@@ -36,6 +36,19 @@ Please note: do NOT remove the old Square files from your Zen Cart installation.
   - Click the green button in the Zen Cart admin sidebar that says "Click here to login and Authorize your account."  If everything is correct, the Sort Order LED for Square WebPay will go green. 
   - Click the **Edit** button one more time.  This will fill in the Location ID field.  Click **Update**. 
 
+## Reinstalling Square Web Payments
+
+If your access token goes bad, you can get into a state where you have to delete and reinstall Square.  Here's what you need to do to configure the module once you have reinstalled it:
+
+1. Login at [https://connect.squareup.com/apps](https://connect.squareup.com/apps) to view the apps you've connected to your account.
+1. Click on the application icon that you created (probably named "WebPay" or whatever name you used).
+1. Copy and Paste the Production Application ID into your Square WebPay configuration in Zen Cart admin. 
+1. Click on the OAuth tab. 
+1. Now click **Show** on the Production Application secret field.  Copy and Paste the secret into your Square WebPay configuration in Zen Cart admin.
+1. In your Zen Cart admin, do the following: 
+  - Click **Update** to save the new Square WebPay config values. 
+  - Click the green button in the Zen Cart admin sidebar that says "Click here to login and Authorize your account."  If everything is correct, the Sort Order LED for Square WebPay will go green. 
+  - Click the **Edit** button one more time.  This will fill in the Location ID field.  Click **Update**. 
 
 ## Upgrading to Square Web Payments from Square Payments Form 
 
