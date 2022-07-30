@@ -16,13 +16,28 @@ Customer is attempting to complete a purchase and paying via Square. They login,
 
 **Action to Resolve:** 
 
-1. Open Square in your Zen Cart Admin by going to Admin > Modules > Payment > Square WebPay and clicking Edit.
+1. Open Square in your Zen Cart Admin by going to Admin > Modules > Payment > Square WebPay and clicking Edit.  Be sure to click Edit before going further. 
 
-1. Login at [https://connect.squareup.com/apps](https://connect.squareup.com/apps) and open the app you are using for payment. 
+1. Go to [https://connect.squareup.com/apps](https://connect.squareup.com/apps), click "Sign In" and open the app you are using for payment. 
 
 1. Click the OAuth link on the left, then click the "Replace secret" button.
 
 1. Click "Show" on the Application secret, and paste it into your Zen Cart Admin. 
 
+If you forgot to click Edit in the first step, you likely have a blank screen on the right hand side of the page when you do click Edit.
 
+Here's what to do if that happens: 
 
+- Edit the URL in the address bar, which will end with 
+
+```
+&action=edit
+```
+
+Change this to 
+
+```
+&action=delete 
+```
+
+and press Enter.  Press the "Remove Module" button and remove Square WebPay.  Then re-add it using the [reinstall instructions](/user/payment/square/#reinstalling-square-web-payments). 
