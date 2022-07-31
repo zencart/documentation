@@ -11,7 +11,7 @@ weight: 10
 
 **NOTE:** Square has officially retired this method of payment.  Please use the [Square Web Payments](/user/payment/square/) module instead.  
 
-This module will cease to work in July 2022. 
+This module will cease to work in late 2022. 
 
 It was included in Zen Cart 1.5.5 through 1.5.7. 
 
