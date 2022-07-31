@@ -22,7 +22,7 @@ Customer is attempting to complete a purchase and paying via Square. They login,
 
 1. Click the OAuth link on the left, then click the "Replace secret" button.
 
-1. Click "Show" on the Application secret, and paste it into your Zen Cart Admin. 
+1. Click "Show" on the Production Application secret, and paste it into your Zen Cart Admin. 
 
 If you forgot to click Edit in the first step, you likely have a blank screen on the right hand side of the page when you do click Edit.
 
