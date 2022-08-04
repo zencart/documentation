@@ -11,3 +11,5 @@ has been developed that demonstrates the use of observers to add a field to the 
 As an alternative approach, you may wish to [create a child table](/dev/code/child_table_products/). 
 
 Then you will need to [customize your template to display the new field](/dev/code/displaying_custom_fields/). 
+
+Related: [How to modify a field in the products table](/dev/code/modify_field_products). 
