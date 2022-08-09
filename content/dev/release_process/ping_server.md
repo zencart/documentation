@@ -9,20 +9,15 @@ The ping server([ping.zen-cart.com](https://ping.zen-cart.com)) is an endpoint t
 
 It will notify a shop owner if a new release is available.
 
-Currently you need SSH access to the Ping Server to update these details.
+You need to gave been given login access to https://ping.zen-cart.com/dashboard
 
-Details are in /var/www/html/versionServer/config/zcversion.php
+and then access the `versions` menu.
 
-```return [
-    'versionMajor' => '1',
-    'versionMinor' => '5.7d',
-    'versionDetail' => 'Security + PHP8 fixes',
-    'versionPatch1' => '0',
-    'versionPatch2' => '0',
-    'versionPatchDetail' => 'Recommended Upgrade',
-    'versionDownloadURI' => 'https://www.zen-cart.com/showthread.php?228675-Zen-Cart-v1-5-7d-released!!',
-];
-```
+![ Ping Server Dashboard](/images/ping-version-menu.png)
+
+We can then create a new release.
+
+![ Ping Version Edit](/images/ping-version-edit.png)
 
 For a full release we only need to edit 
 
@@ -47,3 +42,6 @@ A brief description of the new release.
 
 Generally a link to the release announcement.
 e.g. https://www.zen-cart.com/showthread.php?228675-Zen-Cart-v1-5-7d-released!!
+
+## is_current
+
