@@ -61,13 +61,17 @@ Once you have created your new page, you'll want to link to it. A few options ar
 
 ## Direct Access to Files 
 
-You may wish to simply provide files (such as PDFs) on your site without requiring the registration and purchase steps associated with paid downloads.
+You may wish to simply provide files (such as PDFs or zips) on your site without requiring the registration and purchase steps associated with paid downloads.
 
-The recommended method of doing this is as follows:
+For example, you may wish to provide: 
 
-- Create a new folder at the top level of your cart.  Remember that Zen Cart already comes with `/docs` and `/download` folders, so choose another name. 
-- Prior to populating the folder, create an `index.html` and `.htaccess` file that limits access in the folder.  You can copy these files from the `/download` folder and customize as needed.  
-Note: If you are using Ngnix or another webserver other than Apache, you will have to make the appropriate security changes for that system. 
+`https://MYSTORE.com/pdfs/acme_anvil_user_manual.pdf`
+
+or perhaps
+
+`https://MYSTORE.com/zips/acme_manuals.zip`
+
+The recommended method of doing this is described in [Downloads which are not products](/user/products/downloads_not_products/). 
 
 If what you want to do is associate PDFs with specific products, look at the [PDF Attachment in Product Description](https://www.zen-cart.com/downloads.php?do=file&id=1642) plugin.
 
