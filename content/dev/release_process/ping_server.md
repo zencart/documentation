@@ -9,7 +9,7 @@ The ping server([ping.zen-cart.com](https://ping.zen-cart.com)) is an endpoint t
 
 It will notify a shop owner if a new release is available.
 
-You need to gave been given login access to https://ping.zen-cart.com/dashboard
+You need to have login access to https://ping.zen-cart.com/dashboard
 
 and then access the `versions` menu.
 
