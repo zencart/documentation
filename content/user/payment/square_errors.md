@@ -1,11 +1,11 @@
  ---
-title: Square Error Messages
-description: Understanding the various Square errors
+title: Square Errors and Issues 
+description: Handling problems with Square WebPay
 category: payment
 weight: 10
 ---
 
-Here are some common Square errors and the steps required to fix them. 
+Here are some common Square issues and the steps required to fix them. 
 
 --- 
 
@@ -49,3 +49,9 @@ Change this to
 ```
 
 and press Enter.  Press the "Remove Module" button and remove Square WebPay.  Then re-add it using the [reinstall instructions](/user/payment/square/#reinstalling-square-web-payments). 
+
+###  Two Factor Authentication
+
+Square uses two factor authentication (either via SMS or an authenticator app).  If you have multiple people accessing your Square dashboard (either multiple store admins or a store admin and a web developer), be sure that both of them can authenticate independently. (Without this, the one who can't authenticate will be locked out until the other one is available.)
+
+As a short term solution, you can disable two factor authentication in the Square Dashboard by clicking on **Personal Information** under **Account**, then clicking **Disable 2-step verification**.
