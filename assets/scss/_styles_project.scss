@@ -65,3 +65,7 @@ ul.navbar-nav.mt-2.mt-lg-0 {margin-top:0!important;}
 
 /* Homepage - center body elements */
 ul.mainpage_list {padding-left:0;}
+
+/* Homepage - Correct Color Contrast for Footer Links */
+.col-12.col-sm-4.text-center.py-2.order-sm-2 a {color: #6aafff;}
+.col-12.col-sm-4.text-center.py-2.order-sm-2 a:hover {color: #f2f2f2;}
