@@ -1,6 +1,6 @@
 ---
 title: Authorize.net SIM Payment Module
-description: Zen Cart Authorize.net SIM Payment Module
+description: Zen Cart Authorize.net SIM Payment Module (DEPRECATED)
 category: payment
 weight: 10
 ---
