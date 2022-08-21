@@ -23,3 +23,4 @@ Make sure that the single quote marks at the beginning and end are not left out.
 
 Save the edited file to `includes/languages/english/YOURTEMPLATE/index.php` and upload it to your server.
 
+**NOTE:  Removing this item or setting it to '' is a violation of Accessibility Structure requirements.
