@@ -22,7 +22,7 @@ weight: 10
 
 Here's how to put Zen Cart and Express Checkout to work for your business.
 
-*   **Step 1: [Download and install the latest version of Zen Cart](https://www.zen-cart.com/latest)**
+*   **Step 1: [Download and install the latest version of Zen Cart](/user/first_steps/get_zen_cart/)**
 *   **Step 2: Set Up a Verified PayPal Business Account**
     *   Customers who don't have an existing PayPal account:
         1.  [**Go to** ![PayPal [link]](/images/paypal.gif "PayPal [link]")](https://www.zen-cart.com/partners/paypal-ec)

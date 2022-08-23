@@ -13,7 +13,7 @@ The hoster-provided or publicly available **"packaged bundles" of Zen Cart are n
 - Do not use "Web Application Installer" to install Zen Cart. 
 - Do not use Installatron to install Zen Cart. 
 
-Instead, **we recommend manual installation**.  Manual installation of files from the [official download](https://www.zen-cart.com/latest) enables you to build a system which is secure, optimized, and up to date. Manual installation ensures that you know *exactly* what *you* have put onto your site.  
+Instead, **we recommend manual installation**.  Manual installation of files from the [official download](/user/first_steps/get_zen_cart/) enables you to build a system which is secure, optimized, and up to date. Manual installation ensures that you know *exactly* what *you* have put onto your site.  
 
 
 This is a basic guide to installing Zen Cart. If you already have Zen Cart installed and wish to upgrade from a previous version to this new release, please see the upgrading instructions [in the Release document](https://www.zen-cart.com/docs/). 
@@ -21,7 +21,7 @@ This is a basic guide to installing Zen Cart. If you already have Zen Cart insta
 ---
 ## A. The Basics
 
-You have [downloaded the Zen Cart software from an official source](https://www.zen-cart.com/latest), and want to build an online shopping cart.
+You have [downloaded the Zen Cart software from an official source](/user/first_steps/get_zen_cart/), and want to build an online shopping cart.
 
 Questions to ask yourself:
 
@@ -116,13 +116,13 @@ If your host provides cPanel as your hosting control panel, installation and upg
 ### Getting the files on the server.
 
 At this point, it is assumed you have a copy of 
-the [official download](https://www.zen-cart.com/latest) of Zen Cart.
+the [official download](/user/first_steps/get_zen_cart/) of Zen Cart.
 
 Open the cPanel provided by your host.  Normally, this is done by going to `https://YOURSITE.com/cpanel` OR `https://YOURSITE.com:2083`.  You will need your username and password assigned to you when you obtained your hosting in order to log in to the cPanel.
 
 The File Manager is located in the Files Section of cPanel.  Click on the File Manager icon and the File Manager will open.  Unless you are very familiar with the folder tree of cPanel, we recommend opening the Settings and selecting 'WebRoot' as the default opening directory.  Refreshing the page will bring up the files currently in your `public_html` folder.
 
-Next, you will upload [the latest zip file](https://www.zen-cart.com/latest) to your server using the Upload menu icon. (You must download the zip file first, before continuing.) Click on Upload and the upload page will appear in the browser.  Drag the zip file to the "Drop files here to start uploading" area and the upload will automatically start.  When the progress bar shows 100% with complete underneath, click on the Go Back link to return to your `/public_html` folder.  If you don't see the zip file in the `public_html` folder, click on Reload in the menu to refresh the page.
+Next, you will upload [the latest zip file](/user/first_steps/get_zen_cart/) to your server using the Upload menu icon. (You must download the zip file first, before continuing.) Click on Upload and the upload page will appear in the browser.  Drag the zip file to the "Drop files here to start uploading" area and the upload will automatically start.  When the progress bar shows 100% with complete underneath, click on the Go Back link to return to your `/public_html` folder.  If you don't see the zip file in the `public_html` folder, click on Reload in the menu to refresh the page.
 
 Find the zip file.  Normally Zen Cart uses the following naming format when distributing code: `zen-cart-CURRENT_VERSION-RELEASE_DATE.zip`.  Right-click on the file and select Extract.  You should see a home icon with `/public_html` pre-filled in the box.  Make sure your browser matches `/public_html` with no trailing `/` and click on the Extract File(s) button.  Click Close on the Extraction Results screen.
 
@@ -140,7 +140,7 @@ This step is only required if you did not install your files using
 cPanel in the previous step. 
 
 At this point, it is assumed you have a copy of 
-the [official download](https://www.zen-cart.com/latest) 
+the [official download](/user/first_steps/get_zen_cart/) 
 of Zen Cart.
 
 Upload, via FTP, the whole Zen Cart distribution into a directory on your server.  You can put it in your webroot or in a folder below that. 
