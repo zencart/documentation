@@ -15,11 +15,11 @@ Those actions are
 
 For this we use a Php script to automate this process.
 
-The script is available in the https://github.com/zencart/zencart-release-process repository.
+The script is available in the https://github.com/zencart/versionstamper repository.
 
 This is a private repository, so you may need to request access.
 
-You need to create a feature branch for the version stamping changes, e.g.
+You need to create a feature branch in your Zen Cart directory for the version stamping changes, e.g.
 
 `git checkout -b version-stamping-v158-alpha`
 
@@ -28,18 +28,11 @@ You need to create a feature branch for the version stamping changes, e.g.
 
 Clone the [https://github.com/zencart/versionstamper](https://github.com/zencart/versionstamper) repository to your local computer.
 
-While there are some basic intall instruction in the readme.md for VersionStamper
-more explicit instructions follow.
-
-`clone repository`
-
-`copy config.example.php to config.php`
-
-`composer install`
+Follow the instructions in the README. 
 
 ## config file
 
-```return  [
+```$opts = [
 'newVersion'    => 'v1.5.8-alpha', // note at this point we don't have to have a tag
 'commitDate'    => '2022', //the date that will be used for the updatecommit
 'copyrightDate' => '2022', //the date that will be used for the copyright date
@@ -77,6 +70,10 @@ where there are multiple releases within a branch.
 
 This is the hash of the last commit to the branch we are working on.
 Can be found by looking at the github commits for our branch
+
+### rootPath 
+
+Be sure to update rootpath to the PATH to your local git folder.
 
 ## executing version stamper
 
