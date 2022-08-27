@@ -54,6 +54,13 @@ If a file needs reformatting, that reformatting should be a SEPARATE commit (and
 
 This is for the purpose of maintainability, and controlling understanding of the flow of code changes ... especially important if a bug is later found in the code.
 
+Guidelines on reformats: 
+
+**PLEASE use restraint in deciding when a reformat is truly required.** Reformats cause unskilled storeowners grief when they go to upgrade, and use up limited core committer time while not fixing bugs.
+
+- Please do not reformat files unless they  have already been changed for functional reasons within a release.  
+- Reformatting should be done with phpStorm set to PSR-12 standards.  See [this StackOverflow post](https://stackoverflow.com/questions/57475642/phpstorm-and-psr-12-how-can-i-add-it-as-default-coding-style). 
+
 ---
 
 # Additional Guidelines 
@@ -162,6 +169,28 @@ Rather than this:
 Do this: 
 ```
    $filter = zen_get_linked_products_for_category($cat_id, $first_only = true); 
+```
+
+## Facilitating Future Changes 
+
+Structure your code so that future changes create smaller diffs.  So for example, 
+
+- When creating an array, put each entry on a new line followed by a comma (even the last one).  That way someone can just add a new entry on a new line if a new entry is needed.
+- Don't put large complex blocks of logic on a single line.  Don't do this, for example: 
+```
+        $lc_text = '<h3 class="itemTitle"><a href="' . zen_href_link(zen_get_info_page($listing->fields['products_id']), 'cPath=' . (($_GET['manufacturers_id'] > 0 and $_GET['filter_id'] > 0) ?  zen_get_generated_category_path_rev($_GET['filter_id']) : ($_GET['cPath'] > 0 ? zen_get_generated_category_path_rev($_GET['cPath']) : zen_get_generated_category_path_rev($listing->fields['master_categories_id']))) . '&products_id=' . $listing->fields['products_id']) . '">' . $listing->fields['products_name'] . '</a></h3><div class="listingDescription">' . zen_trunc_string(zen_clean_html(stripslashes(zen_get_products_description($listing->fields['products_id'], $_SESSION['languages_id']))), PRODUCT_LIST_DESCRIPTION) . '</div>';
+```
+- Don't put php close tags on the same line as code unless the open tag is also on that line.  Rather than this: 
+```
+} else { echo "foo"; } ?>
+```
+
+use this:
+```
+} else { 
+  echo "foo"; 
+} 
+?>
 ```
 
 ## Strict comparisons 
