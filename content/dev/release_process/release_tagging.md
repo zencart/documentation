@@ -6,7 +6,7 @@ category: release_process
 ---
 We are now ready to tag the release.
 
-You should already have a checkout of the release branch. Ensure this is up to date, especailly
+Ensure your Zen Cart folder is up to date, especailly
 as you will have merged the version stamping changes.
 
 Now we tag the release 
@@ -36,13 +36,17 @@ https://github.com/zencart/zencart/tags
 
 ![ Github Tags](/images/github-tags_page_zencart.png)
 
-By clicking on the ... on the right hand side we can create a release.
+By clicking on the ... on the far right hand side we can create a release.
 
 ![Github Create Release](/images/github_create_release_zencart.png)
 
 
 The title is usually the same name as the tag name.
 
-The description should point the the https://docs.zen-cart.com release documentation.
+For Pre-Releases: 
+- Don't forget to check the pre-release box 
 
-Don't for get to mark it as a pre-release if necessary.
+For Official Releases: 
+- The textarea below the Release title should reference the the https://docs.zen-cart.com release documentation.
+
+

@@ -4,13 +4,16 @@ weight: 70
 layout: docs
 category: release_process
 ---
-Before updating release links you should create a release announcment thread on the forum.
+
+Note: if you are doing a pre-release rather than an official release, please skip this step. 
+
+Before updating release links, you should create a release announcement thread on the forum.
 
 https://www.zen-cart.com/newthread.php?do=newthread&f=2
 
 [An example release announcement](https://www.zen-cart.com/showthread.php?228675-Zen-Cart-v1-5-7d-released!)
 
-**When creating the release announcemnent you should create it as a sticky announcement**
+**When creating the release announcement, you should create it as a sticky announcement**
 
 Release links are placed on the [home page](https://www.zen-cart.com) of the Zen Cart Web Site.
 

@@ -88,23 +88,40 @@ Be sure to update rootpath to the PATH to your local git folder.
 
 `php versionstamp.php app:version-stamp`
 
-This will run the version stamper in debug mode>
-e.g. It will output information about the changes it would make, without altering any files.
+This will run the version stamper in debug mode 
+i.e. It will output information about the changes it would make, without altering any files.
 
 We could also do
 `php versionstamp.php app:version-stamp > somefile.txt`
 
-to create a log of proposed changes that we could review
+to create a log of proposed changes that we could review.
+
+**Remember that we should have created a feature branch in our Zen Cart folder to encapsulate these changes, rather
+than running directly against our working branch.**
+
+If you run `git status` in your Zen Cart folder, you should see something like, 
+
+```
+On branch version-stamping-v158-alpha
+nothing to commit, working tree clean
+```
 
 To actually make changes we would use
 
 `php versionstamp.php app:version-stamp --mode=run`
 
-**Remember that we should create a feature branch to encapsulate these changes, rather
-than running directly against our working branch.**
+Once the version stamping is complete, you will need to go to your Zen Cart folder and 
+commit and merge the changes created by the version stamping.
+Remember you will have to bypass merge protections since the branch has been locked for merges.
 
-Once the version stamping is complete, you will need to go to your Zen Cart checkout and 
-commit and merge the changes created by the version stamping
+```
+git add .
+git commit 
+git push 
+-- Merge this change
+git checkout v158
+-- update your branch
+```
 
 ## Capture information in release notes
 
