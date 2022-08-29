@@ -19,3 +19,8 @@ Notes on using EasyPopulate:
 - Loading data is a two-step process: first you upload the file, then you import the data.
 - The key for product data imports is the model number field.  You may wish to use [Find Duplicate Models](https://www.zen-cart.com/downloads.php?do=file&id=1323) as an aid to making your model numbers unique if you suspect you have duplicates. 
 
+## DbIo - an alternative to EasyPopulate 
+
+Please see [Database I/O Manager (DbIo)](https://www.zen-cart.com/downloads.php?do=file&id=2091). 
+
+

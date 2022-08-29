@@ -53,3 +53,12 @@ the [Products' Options' Stock Manager (POSM)](https://vinosdefrutastropicales.co
 
 Zen Cart does not provide ERP functionality that some larger businesses may require.  Please see [ERP](/user/running/erp/) for ideas.
 
+## Are there plugins that help with stock keeping? 
+
+- [CSV Inventory](https://www.zen-cart.com/downloads.php?do=file&id=2326)
+- [CSV Stock Update](https://www.zen-cart.com/downloads.php?do=file&id=2209)
+- [Inventory Updater](https://www.zen-cart.com/downloads.php?do=file&id=2279)
+- [Quick Quantity Update](https://www.zen-cart.com/downloads.php?do=file&id=1847) 
+
+See also [EasyPopulate and DbIo](/user/products/easypopulate/). 
+
