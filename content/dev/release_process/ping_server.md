@@ -5,6 +5,9 @@ layout: docs
 category: release_process
 ---
 
+Note: if you are doing a pre-release rather than an official release, please skip this step. 
+
+
 The ping server([ping.zen-cart.com](https://ping.zen-cart.com)) is an endpoint that allows for a call home from within Zen Cart admin.
 
 It will notify a shop owner if a new release is available.

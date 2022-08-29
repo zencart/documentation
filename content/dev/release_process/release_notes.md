@@ -8,13 +8,13 @@ Could log some release details here
 
 # v1.5.8-alpha
 
-## 27 Aug 2022
+## 29 Aug 2022
 
-first_hash = c80dc0f2f88e3d461fca826a0a42aa5567a9dfcc
+first_hash = 28b79ce2120771411d08ef2c7cce5058e42a2cc3
 
-last_hash = 81782eb678d072952ad919629e0352c77a49aaba
+last_hash = 3bb5429b64095b89c671aae8f3e31cc9163b86b9
 
-initial version stamping commit = https://github.com/zencart/zencart/commit/532a5904f0bab3f69c9a3703f7bc3593a54894a9
+initial version stamping commit = https://github.com/zencart/zencart/commit/b33bf3888b0f7b660d0f7747c5901ff968eca5ab
 
 
 ## 12 Jul 2022
