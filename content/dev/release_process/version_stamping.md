@@ -74,7 +74,8 @@ version stamp code to do this.
 
 There are currently no command line options for this and it will output something like :-
 
-```last Hash = 3bb5429b64095b89c671aae8f3e31cc9163b86b9
+```
+last Hash = 3bb5429b64095b89c671aae8f3e31cc9163b86b9
 first Hash = 28b79ce2120771411d08ef2c7cce5058e42a2cc3
 ```
 The output can then be used to update the `config.php` file.
