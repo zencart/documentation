@@ -33,16 +33,22 @@ Follow the instructions in the README.
 ## config file
 
 ```$opts = [
-'newVersion'    => 'v1.5.8-alpha', // note at this point we don't have to have a tag
-'commitDate'    => '2022', //the date that will be used for the updatecommit
-'copyrightDate' => '2022', //the date that will be used for the copyright date
-'firstHash'     => 'c80dc0f2f88e3d461fca826a0a42aa5567a9dfcc', // usually the hash of tagged prior release
-'lastHash'      => '81782eb678d072952ad919629e0352c77a49aaba', // usually the hash of the last commit for this new release
-'ignoreDirectories' => ['includes/classes/vendors', '.circleci', '.github', 'laravel'],
-'rootPath'      => '/home/wilt/Projects/zencart/'
+    'prevOfficialRelease' => 'v1.5.7d',
+    'newVersion' => 'v1.5.8-alpha2', // note at this point we don't have to have a tag
+    'prevStampedVersion' => 'v1.5.8-alpha', // note at this point we don't have to have a tag
+    'commitDate' => '2022', //the date that will be used for the updatecommit
+    'copyrightDate' => '2022', //the date that will be used for the copyright date
+    'firstHash' => '28b79ce2120771411d08ef2c7cce5058e42a2cc3', // usually the hash of tagged prior release
+    'lastHash' => '3bb5429b64095b89c671aae8f3e31cc9163b86b9', // usually the hash of the last commit for this new release
+    'ignoreDirectories' => ['includes/classes/vendors', '.circleci', '.github', 'laravel', 'not_for_release'],
+    'rootPath' => '/home/wilt/Projects/zencart/',
+    'authorMap' => ['Chris Brown' => 'DrByte', 'Ian Wilson' => 'Zcwilt', 'zcwilt' => 'Zcwilt']
 ];
+
 ```
 
++ prevOfficialRelease The most recent official release e.g. v1.5.7d
++ prevStampedVersion The name of the most recent release that was version stamped (may have been a pre-release)
 + newVersion - the version name of the release being worked on e.g. v1.5.8-alpha
 + commitDate - the year to use for updating the commit date - will be deprecated for auto setting
 + copyrightDate - the tear to use for the copyright date  - will be deprecated for auto setting
@@ -53,23 +59,25 @@ Follow the instructions in the README.
 
 ### firstHash
 
-The `firstHash` represents the point which the release being worked on was branched from `master`
+The `firstHash` represents the first commit after a previous tag/branch was created.
+It also should represent the first commit after the last known version stamping commit was created.
 This can sometimes be difficult to find manually.
-
-We can do something like
-`git rev-list --ancestry-path $(git merge-base main v158)..v158 | tail -1`
-replacing `v158` with the version we are working on
-
-@FIXME need better instructions for getting first hash.
-
-
-note: this assumes all versions prior were merged into master, and while the above is using a branch name, we may need to use a tag name
-where there are multiple releases within a branch.
 
 ### lastHash
 
 This is the hash of the last commit to the branch we are working on.
-Can be found by looking at the github commits for our branch
+
+To help with finding both the first/last hash, we also have a command line within the 
+version stamp code to do this. 
+
+`php versionstamp.php app:hash-suggest`
+
+There are currently no command line options for this and it will output something like :-
+
+```last Hash = 3bb5429b64095b89c671aae8f3e31cc9163b86b9
+first Hash = 28b79ce2120771411d08ef2c7cce5058e42a2cc3
+```
+The output can then be used to update the `config.php` file.
 
 ### rootPath 
 
@@ -96,6 +104,8 @@ than running directly against our working branch.**
 
 Once the version stamping is complete, you will need to go to your Zen Cart checkout and 
 commit and merge the changes created by the version stamping
+
+## Capture information in release notes
 
 There is a section of these docs called [Release Notes]({{< ref "release_notes" >}} "release notes"), in which you should capture some
 basic information about the release progress.

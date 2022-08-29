@@ -10,9 +10,9 @@ Could log some release details here
 
 ## 27 Aug 2022
 
-first_hash = bc80dc0f2f88e3d461fca826a0a42aa5567a9dfcc
+first_hash = c80dc0f2f88e3d461fca826a0a42aa5567a9dfcc
 
-last_hash = 136cf2dfae30d112cc7e1d9bc7210f4bf423b4fe
+last_hash = 81782eb678d072952ad919629e0352c77a49aaba
 
 initial version stamping commit = https://github.com/zencart/zencart/commit/532a5904f0bab3f69c9a3703f7bc3593a54894a9
 
