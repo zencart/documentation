@@ -85,7 +85,7 @@ See [Order Total Modules](/user/order_total/order_total/) for more details.
 
 Zen Cart offers basic inventory management (quantity in stock), with related settings like whether to allow checkout when stock is not sufficient to fill an order.  See [tracking inventory](/user/running/stock/) for more details.
 
-Note that full cost-of-goods sold (COGS) tracking is not part of Zen  Cart, and would require an external system, such as an Enterprise Resource Planning (ERP) tool. 
+Note that full cost-of-goods sold (COGS) tracking is not part of Zen  Cart, and would require an external system, such as an [Enterprise Resource Planning (or ERP) tool](/user/running/erp/). 
 
 ---
 ### Can Zen Cart sell products with variants? 

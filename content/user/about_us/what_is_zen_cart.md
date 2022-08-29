@@ -18,6 +18,6 @@ A self-hosted open source application gives you complete freedom to customize to
 While Zen Cart provides all the pieces you need to sell online, there are some things it does not do: 
 
 - It does not provide CRM functionality beyond a list of customers and their billing and shipping addresses.
-- It does not provide ERP or accounting functionality, beyond recording orders and products sold.  Costing data, FIFO or LIFO stock management and things of that nature are beyond the scope of what it does. 
+- It does not provide [ERP or accounting functionality](/user/running/erp/), beyond recording orders and products sold.  Costing data, FIFO or LIFO stock management and things of that nature are beyond the scope of what it does. 
 - It does not provide blogging functionality, although you can create new pages and manage content as needed. 
 
