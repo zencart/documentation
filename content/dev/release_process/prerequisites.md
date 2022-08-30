@@ -16,5 +16,8 @@ To run the release process, you must have the following:
 
 - an up to date copy of both the branch that you are releasing, and the `main` branch. 
 
-
-
+<div style="text-align:right;" id="next">
+   <a class="btn btn-lg btn-primary mr-3 mb-4" href="/dev/release_process/initial_steps/">
+        Next - Initial Steps<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+   </a>
+</div>

@@ -41,3 +41,9 @@ edit and test the pages locally before pushing changes,
 
 While previously we would duplicate content in the `/docs` folder of the release and on the
 https://zen-cart.com/docs folder, these now redirect to the documentation website.
+
+<div style="text-align:right;" id="next">
+   <a class="btn btn-lg btn-primary mr-3 mb-4" href="/dev/release_process/version_stamping/">
+        Next - Version Stamping<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+   </a>
+</div>
