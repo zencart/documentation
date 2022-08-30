@@ -54,4 +54,10 @@ and press Enter.  Press the "Remove Module" button and remove Square WebPay.  Th
 
 Square uses two factor authentication (either via SMS or an authenticator app).  If you have multiple people accessing your Square dashboard (either multiple store admins or a store admin and a web developer), be sure that both of them can authenticate independently. (Without this, the one who can't authenticate will be locked out until the other one is available.)
 
-As a short term solution, you can disable two factor authentication in the Square Dashboard by clicking on **Personal Information** under **Account**, then clicking **Disable 2-step verification**.
+As a short term solution, you can disable two factor authentication in the Square Dashboard as follows: 
+- click on your name at the top right of the page, then click **Account Settings**.
+- On the left hand side of the page, under **Account*, click **Personal Information**. 
+- Click **Disable 2-step verification**.
+
+**Note:** The Square Dashboard is not the same as the Developer Portal.  To get to the Dashboard from the Portal, clcick your name at the top right, then click "Seller Dashboard." 
+
