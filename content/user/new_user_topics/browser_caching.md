@@ -52,10 +52,12 @@ _The easiest way_ to get this working the first time is to use Google Chrome on 
 
 Once you have mastered this technique, you can figure out how to do it in other browsers and environments.  _It is particularly tedious to do this on a mobile device_, so use a desktop computer until you have more experience doing this sort of thing. 
 
-## Other forms of Caching 
+## Other Causes of Caching 
 
 There are other kinds of caching which can be set up server-side that you might need to check or disable during development, or your changes won't be immediately visible.  For example, 
 
 - Some hosters (notably SiteGround) run a utility called Dynamic Cache
 - CloudFlare has built-in caching 
 - Some sites running Securi and/or WordPress have caching 
+- [FPM](/user/running/fpm) based servers often cache pages
+
