@@ -5,7 +5,7 @@ layout: docs
 category: release_process
 ---
 
-Note: if you are doing a pre-release rather than an official release, please skip this step. 
+Note: if you are doing a pre-release rather than an official release, please skip this step and go to the [next step](#next). 
 
 Before updating release links, you should create a release announcement thread on the forum.
 
@@ -67,3 +67,9 @@ and
 
 where the SHA needs to be updated.
 
+
+<div style="text-align:right;" id="next">
+   <a class="btn btn-lg btn-primary mr-3 mb-4" href="/dev/release_process/manifest/">
+        Next - Release Manifests<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+   </a>
+</div>

@@ -127,3 +127,10 @@ git checkout v158
 
 There is a section of these docs called [Release Notes]({{< ref "release_notes" >}} "release notes"), in which you should capture some
 basic information about the release progress.
+
+
+<div style="text-align:right;" id="next">
+   <a class="btn btn-lg btn-primary mr-3 mb-4" href="/dev/release_process/release_tagging/">
+        Next - Release Tagging<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+   </a>
+</div>

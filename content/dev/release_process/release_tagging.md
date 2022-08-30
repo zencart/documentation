@@ -49,4 +49,8 @@ For Pre-Releases:
 For Official Releases: 
 - The textarea below the Release title should reference the the https://docs.zen-cart.com release documentation.
 
-
+<div style="text-align:right;" id="next">
+   <a class="btn btn-lg btn-primary mr-3 mb-4" href="/dev/release_process/ping_server/">
+        Next - Ping Server<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+   </a>
+</div>
