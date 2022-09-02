@@ -49,7 +49,7 @@ Plugin pages that do not require indexing (such as Back In Stock subscribe/unsub
     - `init_file_db_names.php`
     - `init_database.php`
 
-    If you have created additional cron jobs and used this file as a base, please apply the 1.5.7 changes to your custom files.
+    If you have created additional [cron jobs](/user/first_steps/hosting/#cron) and used this file as a base, please apply the 1.5.7 changes to your custom files.
 
 - The database field `products_description.products_viewed` has been deprecated. It will be deleted in a future release.  Product view tracking is now done using the table `count_product_views`. 
 
