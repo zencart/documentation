@@ -10,3 +10,6 @@ These are links to historic Zen Cart release zips.
 
 Currently we host all of the 15x series zips, with older zips hosted on sourceforge.net
 
+- [v15x series](/history/v15x/)
+- [v13x series](/history/v13x/)  
+
