@@ -1,14 +1,13 @@
 ---
-title: Notes for Releases
+title: Release Log
 weight: 100
 layout: docs
 category: release_process
 ---
-Could log some release details here
 
-# v1.5.8-alpha
+# v1.5.8-alpha2 
 
-## 29 Aug 2022
+Built 29 Aug 2022
 
 first_hash = 28b79ce2120771411d08ef2c7cce5058e42a2cc3
 
@@ -17,7 +16,8 @@ last_hash = 3bb5429b64095b89c671aae8f3e31cc9163b86b9
 initial version stamping commit = https://github.com/zencart/zencart/commit/b33bf3888b0f7b660d0f7747c5901ff968eca5ab
 
 
-## 12 Jul 2022
+# v1.5.8-alpha
+Built 12 Jul 2022
 
 first_hash = bc80dc0f2f88e3d461fca826a0a42aa5567a9dfcc
 

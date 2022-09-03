@@ -19,7 +19,7 @@ It may be that you may need to do some remedial commits at this point.
 
 **For any new commits at this point, we should manually update headers as 
 it is difficult to re-run the version stamper. You may also need to update `docs`
-and your [Release Notes]({{< ref "release_notes" >}} "release notes") as well.**
+and your [Release Log]({{< ref "release_log" >}} "release log") as well.**
 
 If you have added extra commits you will need to update the release tag.
 

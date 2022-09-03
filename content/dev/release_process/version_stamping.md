@@ -19,18 +19,22 @@ The script is available in the https://github.com/zencart/versionstamper reposit
 
 This is a private repository, so you may need to request access.
 
-You need to create a feature branch in your Zen Cart directory for the version stamping changes, e.g.
+## Preparatory Actions for Version Stamping 
+
+1. Edit the file `includes/version.php` and check it in to update the version.
+
+1. Create a feature branch in your Zen Cart directory for the version stamping changes, e.g.
 
 `git checkout -b version-stamping-v158-alpha`
 
 
-# Installing
+## Installing the Version Stamper
 
 Clone the [https://github.com/zencart/versionstamper](https://github.com/zencart/versionstamper) repository to your local computer.
 
 Follow the instructions in the README. 
 
-## config file
+### config file
 
 ```$opts = [
     'prevOfficialRelease' => 'v1.5.7d',
@@ -57,13 +61,13 @@ Follow the instructions in the README.
 + ignoreDirectories - a list of directories to ignore for changes
 + rootPath - the absolute path to your Zen Cart checkout
 
-### firstHash
+#### firstHash
 
 The `firstHash` represents the first commit after a previous tag/branch was created.
 It also should represent the first commit after the last known version stamping commit was created.
 This can sometimes be difficult to find manually.
 
-### lastHash
+#### lastHash
 
 This is the hash of the last commit to the branch we are working on.
 
@@ -80,11 +84,11 @@ first Hash = 28b79ce2120771411d08ef2c7cce5058e42a2cc3
 ```
 The output can then be used to update the `config.php` file.
 
-### rootPath 
+#### rootPath 
 
 Be sure to update rootpath to the PATH to your local git folder.
 
-## executing version stamper
+## Executing the Version Stamper
 
 `php versionstamp.php app:version-stamp`
 
@@ -123,9 +127,9 @@ git checkout v158
 -- update your branch
 ```
 
-## Capture information in release notes
+## Capturing information in Release Log
 
-There is a section of these docs called [Release Notes]({{< ref "release_notes" >}} "release notes"), in which you should capture some
+There is a section of these docs called [Release Log]({{< ref "release_log" >}} "release log"), in which you should capture some
 basic information about the release progress.
 
 
@@ -134,3 +138,5 @@ basic information about the release progress.
         Next - Release Tagging<i class="fas fa-arrow-alt-circle-right ml-2"></i>
    </a>
 </div>
+
+
