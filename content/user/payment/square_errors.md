@@ -20,7 +20,15 @@ Or you get an email that says
 [ACCESS_TOKEN_EXPIRED]: The provided OAuth access token has expired. 
 ```
 
-## Fixing the Problem:
+## Fixing the Problem (short procedure):
+
+This will generally work.  If it doesn't, use the long procedure below. 
+1. Open Square in your Zen Cart Admin by going to Admin > Modules > Payment > Square WebPay and clicking Edit.  
+1. Click "Update" at the bottom of the sidebar for Square WebPay.  This should refresh the token. 
+
+Make a test purchase to verify that the problem has been fixed. 
+
+## Fixing the Problem (long procedure):
 **Action to Resolve:** 
 
 1. Open Square in your Zen Cart Admin by going to Admin > Modules > Payment > Square WebPay and clicking Edit.  **Be sure to click Edit before going further.**
@@ -30,6 +38,10 @@ Or you get an email that says
 1. Click the OAuth link on the left, then click the "Replace secret" button.
 
 1. Click "Show" on the Production Application secret, and paste it into your Zen Cart Admin in the *Application Secret (OAuth)* field. 
+
+1. Click "Update" at the bottom of the sidebar for Square WebPay.  
+
+Make a test purchase to verify that the problem has been fixed. 
 
 ## I get a white screen in Admin where Square Configuration should be!
 
