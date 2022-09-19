@@ -30,7 +30,7 @@
         }
 
         @include media-breakpoint-up(md) {
-            & > li > ul {
+            & > ul {
                 padding-left: .5rem;
             }
         }
