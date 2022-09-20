@@ -29,9 +29,27 @@ will no longer work for 1.5.8 and above.  However, plugin authors may want to ma
   }
 ```
 
+### PHP 8.2 and objects 
+PHP 8.2 introduces a new restriction which deprecates the use of dynamic properties.   
+
+There are two ways to fix this: 
+- Change your class to declare and scope all their properties (class member variables) in the class definition.  You can see an example of this in `includes/modules/order_total/ot_group_pricing.php` in how the variables `$check` and `$code` are declared and scoped explicitly in 1.5.8 but not in 1.5.7. 
+
+- Change your class to explictly allow dynamic properties.  You can see an example of this in `admin/includes/classes/object_info.php` - the class declaration is preceded by 
+
+```
+#[AllowDynamicProperties]
+```
+
+This second method should be used sparingly and only in cases where arbitrary properties are possible (as in `objectInfo`).  If the number of properties is fixed and finite, you should simply explicitly declare them in the class.  Doing so will protect you from introducing bugs by spelling the name of a property incorrectly (this was the intention of this PHP change, after all.)
+
 ### PHP 8.2 objectInfo and plugins 
 
-PHP 8.2 introduces a new restriction which deprecates the use of dynamic properties.  For core modules in admin, the `objectInfo` class has been extended to contain all possible data elements (based on the creation of an instance from a query result).  Plugin developers using custom tables (or even references to built-in tables which are not used by other core modules) should simply extend `objectInfo`.  Consider the following example from Email Archive Manager: 
+As noted above, PHP 8.2 introduces a new restriction which deprecates the use of dynamic properties.  
+
+For core modules in admin, the `objectInfo` class has been extended to explicitly permit dynamic properties. 
+
+Plugin developers using custom tables may extend `objectInfo` to add properties, or rely on `objectInfo`'s opt-in to dynamic properties .  The former technique is shown in the following example from [Email Archive Manager](https://www.zen-cart.com/downloads.php?do=file&id=101): 
 
 ```
   class eam_objectInfo extends objectInfo {
