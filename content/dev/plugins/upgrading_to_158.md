@@ -33,7 +33,7 @@ will no longer work for 1.5.8 and above.  However, plugin authors may want to ma
 PHP 8.2 introduces a new restriction which deprecates the use of dynamic properties.   
 
 There are two ways to fix this: 
-- Change your class to declare and scope all their properties (class member variables) in the class definition.  You can see an example of this in `includes/modules/order_total/ot_group_pricing.php` in how the variables `$check` and `$code` are declared and scoped explicitly in 1.5.8 but not in 1.5.7. 
+- Change your class to declare and scope all their properties (class member variables) in the class definition.  You can see an example of this in `includes/modules/order_total/ot_group_pricing.php` in how the variables `$_check` and `$code` are declared and scoped explicitly in 1.5.8 but not in 1.5.7. 
 
 - Change your class to explictly allow dynamic properties.  You can see an example of this in `admin/includes/classes/object_info.php` - the class declaration is preceded by 
 
