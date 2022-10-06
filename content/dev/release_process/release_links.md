@@ -57,7 +57,7 @@ The areas that need changing are ...
 <a target="_blank" href="https://github.com/zencart/zencart/archive/refs/tags/v1.5.7d.zip" style="display:block">
 ```
 
-where the hrefs need updating to point to the release zips on gitub and the forum relese announcement thread.
+where the hrefs need updating to point to the release zips on gitub and the forum release announcement thread.
 
 and 
 

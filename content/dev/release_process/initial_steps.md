@@ -8,12 +8,12 @@ The initial phase of the release process consists of
 
  + Locking the repository for merges
  + Ensuring all code is up to date
- + tagging the release
+ + Tagging the release
 
 
 # Locking Repository
 
-While doing the initial steps of process release, at least up to the tagging release stage,
+While doing the initial steps of the release process, at least up to the tagging release stage,
 we need to ensure that no commits/merges are created against the release branch and the main branch,
 except where necessary for the release.
 
@@ -23,14 +23,15 @@ then set the required approvals to 6, and the branch will be effectively locked.
 
 # Updating Code
 
-Before tagging a release we need to ensure code is up to date.
+Before tagging a release we need to:
 
-We need to update the [Documentation Website](https:docs.zen-cart.com/release) to ensure that it reflects changes that have happened within
+- ensure code is up to date.
+- update the [Documentation Website](https:docs.zen-cart.com/release) to ensure that it reflects changes that have happened within
 the release and stamp files that have been changed/added with correct copyright and other headers.
 
 # Release Documentation
 
-The [Documenation Website](https:docs.zen-cart.com/release)  contains details of changes between versions and general installation instructions.
+The [Documentation Website](https:docs.zen-cart.com/release)  contains details of changes between versions and general installation instructions.
 
 The 2 main pages that need adding/updating are the [Whats New](https://docs.zen-cart.com/release/whatsnew_1.5.7.html)
 and [Changed Files](https://docs.zen-cart.com/release/changed_files-v1-5-7.html) pages.
