@@ -59,7 +59,7 @@ Once you know [What Zen Cart is](/user/about_us/what_is_zen_cart/), you might wa
 
 * PayPal Standard (IPN) - why [you shouldn't use PayPal Standard](/user/payment/paypal_standard/) and how to [switch to PayPal Express](/user/payment/paypal_express_checkout/). 
 
-* [Release history for Zen Cart](/user/about_us/release_history/) - Timeline of when each version was released with links to release notes.  (See also [Security Patches](/user/about_us/security_releases/)). 
+* [Release History for Zen Cart](/user/about_us/release_history/) - Timeline of when each version was released with links to release notes.  (See also [Security Patches](/user/about_us/security_releases/)). 
 
 * [Regular Maintenance for Zen Cart](/user/running/regular_maintenance/) - What kinds of routine maintenance should I be doing? 
 
