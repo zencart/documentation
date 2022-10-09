@@ -107,9 +107,9 @@ use
 $email = new eam_objectInfo($email_sql->fields);
 ```
 
-### PHP 8.2 and strftime 
+### PHP 8.1 and strftime 
 
-PHP 8.2 has deprecated `strftime`.  Change calls to use the new `zcDate` class.
+PHP 8.1 has deprecated `strftime`.  Change calls to use the new `zcDate` class.
 
 Before:
 ```
