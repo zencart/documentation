@@ -18,22 +18,51 @@ will no longer work for 1.5.8 and above.  However, plugin authors may want to ma
 
 ```
   $filename = "ot_group_pricing.php"; 
-  $old_langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . "/modules/order_total/" .  $filename; 
-  $new_langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . "/modules/order_total/" .  "lang." . $filename; 
-  if (file_exists($old_langfile)) {
-          include_once ($old_langfile);
-  } else if (file_exists($new_langfile)) {
+  $folder = "/modules/order_total/";  // end with slash 
+  $old_langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . $folder .  $filename; 
+  $new_langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . $folder .  "lang." . $filename; 
+  if (file_exists($new_langfile)) {
      global $languageLoader; 
-     $folder = "/modules/order_total/"; 
      $languageLoader->loadExtraLanguageFiles(DIR_FS_CATALOG . DIR_WS_LANGUAGES,  $_SESSION['language'], $filename, $folder);
+  } else if (file_exists($old_langfile)) {
+     include_once ($old_langfile);
   }
 ```
 
 ### PHP 8.2 and objects 
-PHP 8.2 introduces a new restriction which deprecates the use of dynamic properties.   
+PHP 8.2 introduces a new restriction which deprecates the use of dynamic properties.  
+
+This means in a class, you can no longer do something like 
+
+```
+   class Foo extends base 
+   {
+      function __construct() {
+        ...
+      }
+   }
+
+   $f = new Foo(); 
+   ...
+   if (some-condition) { 
+      $f->enabled = true;   // deprecated! 
+   }
+```
 
 There are two ways to fix this: 
-- Change your class to declare and scope all their properties (class member variables) in the class definition.  You can see an example of this in `includes/modules/order_total/ot_group_pricing.php` in how the variables `$_check` and `$code` are declared and scoped explicitly in 1.5.8 but not in 1.5.7. 
+- Change your class to declare all their properties (class member variables) in the class definition.  You can see an example of this in `includes/modules/order_total/ot_group_pricing.php` in how the variables `$_check` and `$code` are declared with visibility explicitly in 1.5.8 but not in 1.5.7. 
+
+For the example above, it would be 
+
+```
+   class Foo extends base 
+   {
+      public enabled = false; 
+      function __construct() {
+        ...
+      }
+   }
+```
 
 - Change your class to explictly allow dynamic properties.  You can see an example of this in `admin/includes/classes/object_info.php` - the class declaration is preceded by 
 
@@ -76,5 +105,19 @@ use
 
 ```
 $email = new eam_objectInfo($email_sql->fields);
+```
+
+### PHP 8.2 and strftime 
+
+PHP 8.2 has deprecated `strftime`.  Change calls to use the new `zcDate` class.
+
+Before:
+```
+   echo strftime('%B');
+```
+
+Now:
+```
+   echo $zcDate->output('%B'); 
 ```
 
