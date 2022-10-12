@@ -57,7 +57,7 @@ For the example above, it would be
 ```
    class Foo extends base 
    {
-      public enabled = false; 
+      public $enabled = false; 
       function __construct() {
         ...
       }
