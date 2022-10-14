@@ -23,6 +23,8 @@ This is a private repository, so you may need to request access.
 
 1. Edit the file `includes/version.php` and check it in to update the version.
 
+1. Edit the file `zc_install/includes/version.php` and check it in to update the version.
+
 1. Create a feature branch in your Zen Cart directory for the version stamping changes, e.g.
 
 `git checkout -b version-stamping-v158-alpha`
