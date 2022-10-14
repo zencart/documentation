@@ -120,4 +120,8 @@ Now:
 ```
    echo $zcDate->output('%B'); 
 ```
-
+NB. To use inside a function or another class you will need to add 
+```
+   global $zcDate;
+```
+before you use `zcDate` for the first time.
