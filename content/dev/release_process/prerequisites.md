@@ -12,7 +12,9 @@ To run the release process, you must have the following:
 
 - A local copy of the [VersionStamper](https://github.com/zencart/versionstamper) application.
 
-- ssh access to the main Zen Cart website (zen-cart.com), and the Version/Ping server (ping.zen-cart.com).
+- Admin access to the main Zen Cart website (MissionControl)
+
+- Admin access to the Version/Ping server (ping.zen-cart.com/dashboard).
 
 - an up to date copy of both the branch that you are releasing, and the `main` branch. 
 
