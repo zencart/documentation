@@ -9,13 +9,31 @@ We are now ready to tag the release.
 Ensure your Zen Cart folder is up to date, especailly
 as you will have merged the version stamping changes.
 
-Now we tag the release 
+Now we tag the release.
+
+### Prerequisites
+If you have not pulled the current list of tags, do so now: 
+
+```
+git fetch --tags
+```
+
+You can confirm your local copy of tags using 
+
+```
+git tag --list
+```
+
+### Tagging 
+
+**Note:** The tag *must* be the same as the `newVersion` setting in the versionstamper's `config.php` file. 
 
 `git tag v1.5.8-alpha` obviously replacing the release name as appropriate
 
 `git push upstream --tags`
 
-It may be that you may need to do some remedial commits at this point.
+If you test the resultant build, and find a problem, 
+it may be that you may need to do some remedial commits at this point.
 
 **For any new commits at this point, we should manually update headers as 
 it is difficult to re-run the version stamper. You may also need to update `docs`
@@ -30,6 +48,8 @@ git tag v1.5.8-alpha
 git push upstream --tags
 ```
 
+### Create the Release on Github
+
 After this we then need to create the release on github.
 
 https://github.com/zencart/zencart/tags
@@ -41,13 +61,17 @@ By clicking on the ... on the far right hand side we can create a release.
 ![Github Create Release](/images/github_create_release_zencart.png)
 
 
-The title is usually the same name as the tag name.
+The title should be the same name as the tag name.
 
 For Pre-Releases: 
 - Don't forget to check the pre-release box 
 
 For Official Releases: 
-- The textarea below the Release title should reference the the https://docs.zen-cart.com release documentation.
+- The textarea below the Release title should reference the https://docs.zen-cart.com release documentation.
+
+It's a good idea to also check the "Create a discussion for this release" box. 
+
+When you're ready, press the **Publish Release** button.
 
 <div style="text-align:right;" id="next">
    <a class="btn btn-lg btn-primary mr-3 mb-4" href="/dev/release_process/ping_server/">

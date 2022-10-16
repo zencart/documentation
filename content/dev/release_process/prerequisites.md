@@ -16,6 +16,15 @@ To run the release process, you must have the following:
 
 - an up to date copy of both the branch that you are releasing, and the `main` branch. 
 
+The final steps before beginning the release process are: 
+
+- Update the version.php files: 
+
+1. Edit the file `includes/version.php` and check it in to update the version.
+
+1. Edit the file `zc_install/includes/version.php` and check it in to update the version.
+
+
 <div style="text-align:right;" id="next">
    <a class="btn btn-lg btn-primary mr-3 mb-4" href="/dev/release_process/initial_steps/">
         Next - Initial Steps<i class="fas fa-arrow-alt-circle-right ml-2"></i>

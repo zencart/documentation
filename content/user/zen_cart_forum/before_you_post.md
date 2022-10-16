@@ -9,7 +9,7 @@ weight: 10
 
 ### Do your homework:
 
-*   Check the the [Zen Cart documentation](/user/)
+*   Check the [Zen Cart documentation](/user/)
 
 *   [Search the forum](https://www.zen-cart.com/search.php)
 

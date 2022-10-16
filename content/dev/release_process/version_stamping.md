@@ -21,10 +21,6 @@ This is a private repository, so you may need to request access.
 
 ## Preparatory Actions for Version Stamping 
 
-1. Edit the file `includes/version.php` and check it in to update the version.
-
-1. Edit the file `zc_install/includes/version.php` and check it in to update the version.
-
 1. Create a feature branch in your Zen Cart directory for the version stamping changes, e.g.
 
 `git checkout -b version-stamping-v158-alpha`
@@ -73,24 +69,43 @@ This can sometimes be difficult to find manually.
 
 This is the hash of the last commit to the branch we are working on.
 
-To help with finding both the first/last hash, we also have a command line within the 
-version stamp code to do this. 
+#### rootPath 
+
+Be sure to update rootpath to the PATH to your local git folder.
+
+#### newVersion 
+
+It is critically important that the spelling of this new version number is exactly what you want to use; it cannot be changed once the version stamper has been run. 
+
+
+## Determining the Values of firstHash and lastHash
+To help with finding both the first/last hash, we have a command line option within the version stamp code: 
 
 `php versionstamp.php app:hash-suggest`
 
-There are currently no command line options for this and it will output something like :-
+This command will output something like:
 
 ```
 last Hash = 3bb5429b64095b89c671aae8f3e31cc9163b86b9
 first Hash = 28b79ce2120771411d08ef2c7cce5058e42a2cc3
 ```
-The output can then be used to update the `config.php` file.
 
-#### rootPath 
+The output values can then be used to update the `config.php` file.
 
-Be sure to update rootpath to the PATH to your local git folder.
+**Note:** Be sure the `prevStampedVersion` setting in the `config.php` file is correct prior to running this command.  You can find the exact spelling of the prior version by looking at the [releases page](https://github.com/zencart/zencart/releases). 
+
 
 ## Executing the Version Stamper
+
+**Remember that we should have created a feature branch in our Zen Cart folder to encapsulate these changes, rather
+than running directly against our working branch.**
+
+If you run `git status` in your Zen Cart folder, you should see something like, 
+
+```
+On branch version-stamping-v158-alpha
+nothing to commit, working tree clean
+```
 
 `php versionstamp.php app:version-stamp`
 
@@ -102,15 +117,6 @@ We could also do
 
 to create a log of proposed changes that we could review.
 
-**Remember that we should have created a feature branch in our Zen Cart folder to encapsulate these changes, rather
-than running directly against our working branch.**
-
-If you run `git status` in your Zen Cart folder, you should see something like, 
-
-```
-On branch version-stamping-v158-alpha
-nothing to commit, working tree clean
-```
 
 To actually make changes we would use
 
