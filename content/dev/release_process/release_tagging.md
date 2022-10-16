@@ -83,8 +83,6 @@ Take some time to verify the build you just published.  Since you already did pr
 
 - update the What's New and Changed Files documents for the release in [zencart_documentation/content/release](https://docs.zen-cart.com/release/).
 
-- Add the new version as a checkbox to the plugin list. (**FIXME**)
-
 - Create a release announcement on the Zen Cart Forum.  Create it as a sticky post.  Here is an [example release announcement](https://www.zen-cart.com/showthread.php?229041-Zen-Cart-1-5-8-Released!).   
 
 <div style="text-align:right;" id="next">
