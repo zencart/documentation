@@ -52,7 +52,7 @@ noindex: true
 *   [Specials](/user/admin_pages/catalog/specials/) — View, edit or delete special pricing.
 *   [Featured Products](/user/admin_pages/catalog/featured/) — View, add, edit or delete featured products.
 *   [SaleMaker](/user/admin_pages/catalog/salemaker/) — View, add, edit or delete sales.
-*   [Products Expected](/user/admin_pages/catalog/products_expected/) — View or edit expected products.
+*   [Upcoming Products](/user/admin_pages/catalog/products_expected/) — View or edit upcoming products.
 *   [Products to Categories](/user/admin_pages/catalog/products_to_categories/) — Manage product-category mappings.
 
 ### [Modules](/user/admin_pages/modules/)

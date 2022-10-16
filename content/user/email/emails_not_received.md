@@ -31,6 +31,7 @@ Go to [Admin > Configuration > Email Options](/user/admin_pages/configuration/co
 1. Try enabling the [Email Archiving](/user/admin_pages/configuration/configuration_emailoptions/#email_archiving_active) feature. Then use the [Email Archive Manager](/user/email/email_archive_manager/) plugin to check and see whether Zen Cart really processed the email for sending. If it did, then the problem is related to how PHP is processing your messages after they leave Zen Cart. 
 1. If the issue is arising from one particular customer, ask them to whitelist email from your domain.  For very strict filters, sometimes this is the only way to get through. 
 1. Check if the customer's [email address is mis-typed](/user/running/mistyped_email/). 
+1. Look for debug logs in the `/logs` folder.   Logs for email failures are named with the prefix `myDEBUG-bounced-email-adm-` for admin created emails, and `myDEBUG-bounced-email-` for storefront emails.
 
 ### Symptom: Email FROM-ADDRESS shows up funny
 If your "FROM" email addresses contain extra brackets ")", this is due to having an incorrectly-formed email address defined in your store `Email Address (sent FROM)` setting.

@@ -1,5 +1,5 @@
 ---
-title: Products Expected 
+title: Upcoming Products 
 category: admin_pages
 weight: 140
 ---
@@ -11,6 +11,8 @@ These are called the Expected Products (or "Upcoming Products).
 From this page, you may edit any product in the list of expected products. 
 
 The Date Available field is set on the [Product Editing screen](/user/products/product_edit/). 
+
+**Note:** Upcoming Products were called "Products Expected" in releases prior to v1.5.8.
 
 ## Related 
 
