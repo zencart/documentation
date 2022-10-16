@@ -7,14 +7,6 @@ category: release_process
 
 Note: if you are doing a pre-release rather than an official release, please skip this step and go to the [next step](#next). 
 
-Before updating release links, you should create a release announcement thread on the forum.
-
-https://www.zen-cart.com/newthread.php?do=newthread&f=2
-
-[An example release announcement](https://www.zen-cart.com/showthread.php?228675-Zen-Cart-v1-5-7d-released!)
-
-**When creating the release announcement, you should create it as a sticky announcement**
-
 Release links are placed on the [home page](https://www.zen-cart.com) of the Zen Cart Web Site.
 
 ![ Download Links](/images/download_links.png)
@@ -49,24 +41,16 @@ The actual content that manages the release information looks like
     </div>
 ```
 
-The areas that need changing are ...
+The areas that need changing are: 
 
-```html
-<a href="https://github.com/zencart/zencart/archive/refs/tags/v1.5.7d.zip" target="_blank"><img src="/images/styles/zencart/style/ZC-in-the-box.jpg"></a>
-<div style="font-size:14px;margin-bottom:20px"><a href="https://www.zen-cart.com/showthread.php?228675-Zen-Cart-v1-5-7d-released!!">v1.5.7d Release Announcement</a></div>
-<a target="_blank" href="https://github.com/zencart/zencart/archive/refs/tags/v1.5.7d.zip" style="display:block">
-```
+- release announcement
+- download link
+- SHA
 
-where the hrefs need updating to point to the release zips on gitub and the forum release announcement thread.
+To determine the SHA value, download the release zip from Github, and compute the SHA with the appropriate method for your platform. 
 
-and 
-
-```html
-<div style="font-size:10px;margin-bottom:20px">SHA256: 0b115b58745cd09a0e4ae2795df437f051552d453ff9d0d9f333d96685836294</div>
-```
-
-where the SHA needs to be updated.
-
+- MacOS: `shasum -a 256  ./zencart-1.5.8.zip`
+- Linux: ` sha256sum zencart-1.5.8.zip`
 
 <div style="text-align:right;" id="next">
    <a class="btn btn-lg btn-primary mr-3 mb-4" href="/dev/release_process/manifest/">

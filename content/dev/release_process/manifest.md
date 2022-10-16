@@ -15,6 +15,8 @@ You need have login access to https://ping.zen-cart.com/dashboard
 
 ![ Manifest List](/images/manifest-list.png)
 
+Enter the "New Manifest Tag Name" (the tag name you created in prior steps), and click the "New Version" button.
+
 <div style="text-align:right;" id="next">
    <a class="btn btn-lg btn-primary mr-3 mb-4" href="/dev/release_process/post_release/">
         Next - Post Release Tasks<i class="fas fa-arrow-alt-circle-right ml-2"></i>
