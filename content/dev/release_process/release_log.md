@@ -5,6 +5,16 @@ layout: docs
 category: release_process
 ---
 
+# v1.5.8
+
+Built 16 Oct 2022
+
+first_hash = 479d5e1eb597aa09e5c879ee2c2e8aaabb78f45d
+
+last_hash = c2c5301bd3d2b9a9783936cbfd519249873f7415
+
+initial version stamping commit = https://github.com/zencart/zencart/commit/936158f544f07237cd20fe081c6d513c62ece2a3
+
 # v1.5.8-alpha2 
 
 Built 29 Aug 2022
