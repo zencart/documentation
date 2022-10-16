@@ -22,6 +22,8 @@ If you need to get a copy of Zen Cart (current or older version), please see [Do
 
 This is the release history of the Zen Cart product.
 
+10/16/2022 - v1.5.8
+
 02/27/2022 - v1.5.7d
 
 03/05/2021 - v1.5.7c 
