@@ -32,6 +32,9 @@ git tag --list
 
 `git push upstream --tags`
 
+### Possible Remedial Commits 
+
+After creating the release on Github (the next step), you will want to test the build and make sure it works.  
 If you test the resultant build, and find a problem, 
 it may be that you may need to do some remedial commits at this point.
 
@@ -73,13 +76,16 @@ It's a good idea to also check the "Create a discussion for this release" box.
 
 When you're ready, press the **Publish Release** button.
 
+### Verification 
+Take some time to verify the build you just published.  Since you already did pre-testing before beginning the build process, hopefully there will be no issues, but if there are, return to the [Possible Remedial Commits](/dev/release_process/release_tagging/#possible-remedial-commits) step. 
+
 ### Additional Release Tasks: 
 
 - update the What's New and Changed Files documents for the release in [zencart_documentation/content/release](https://docs.zen-cart.com/release/).
 
 - Add the new version as a checkbox to the plugin list. (**FIXME**)
 
-- Create a release announcement on the Zen Cart Forum. 
+- Create a release announcement on the Zen Cart Forum.  Create it as a sticky post.  Here is an [example release announcement](https://www.zen-cart.com/showthread.php?229041-Zen-Cart-1-5-8-Released!).   
 
 <div style="text-align:right;" id="next">
    <a class="btn btn-lg btn-primary mr-3 mb-4" href="/dev/release_process/ping_server/">

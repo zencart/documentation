@@ -28,6 +28,9 @@ Before tagging a release we need to:
 - update the [Documentation Website](https:docs.zen-cart.com/release) to ensure that it reflects changes that have happened within
 the release and stamp files that have been changed/added with correct copyright and other headers.
 
+# Testing Prior to the build 
+Create a new shop using the branch you are about to build, and run through some tests.  You want to be confident that what you're building will work. 
+
 # Release Documentation
 
 The [Documentation Website](https:docs.zen-cart.com/release)  contains details of changes between versions and general installation instructions.
