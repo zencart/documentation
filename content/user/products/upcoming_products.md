@@ -19,10 +19,11 @@ You may also configure upcoming products to appear in the following places:
 
 Some stores will set the [products status](/user/products/products_status/) of an upcoming product to Disabled until the release date is reached.  In this case, a storeowner may wish to automate the transition to products status Enabled by using the [enable disabled product by available date](/user/admin_pages/configuration/configuration_stock/#enable_disabled_product_by_available_date) feature, which has been available since Zen Cart 1.5.7. 
 
+**Note:** Upcoming Products were called "Products Expected" in releases prior to v1.5.8.
 
 ## Related 
 
-- [Products Expected Admin Screen](/user/admin_pages/catalog/products_expected/)
+- [Upcoming Products Admin Screen](/user/admin_pages/catalog/products_expected/)
 - [how to enable/disable the Upcoming Products section](/user/admin/centerboxes/)
 - [Enable disabled product by available date](/user/admin_pages/configuration/configuration_stock/#enable_disabled_product_by_available_date)
 

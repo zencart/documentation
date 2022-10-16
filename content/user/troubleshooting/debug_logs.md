@@ -73,6 +73,12 @@ Let's examine the back-trace provided by the first log-entry in the example give
 ### How to Fix Common Debug Logs
 Many examples of debug logs and how to fix them are shown in [PHP Warnings and Deprecated messages after upgrading](/user/upgrading/php_warnings/). 
 
+### Special Logs 
+Some logs will follow special file naming conventions to make them more easily identifiable.   The following prefixes are used: 
+
+- `myDEBUG-bounced-email-adm-` failure to send email from admin
+- `myDEBUG-bounced-email-` failure to send email from storefront
+
 ### Utilities
 The following tools are available for working with debug log files:
 

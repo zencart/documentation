@@ -55,6 +55,8 @@ If you click edit next to the option name then you can add some settings.
 
 e.g. If the option name is to upload a file, tell your customer what file extensions are allowed.
 
+*   Position for Comment - use 0 to display the comment above the field; use 1 to display the comment below the field.  Note that this setting was introduced in version 1.5.8. 
+
 *   Rows - the number of rows you want your input/text area box to be.
 
 *   Display Size - the size of the input/text area box on the screen your customers see.
