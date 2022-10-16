@@ -73,6 +73,14 @@ It's a good idea to also check the "Create a discussion for this release" box.
 
 When you're ready, press the **Publish Release** button.
 
+### Additional Release Tasks: 
+
+- update the What's New and Changed Files documents for the release in [zencart_documentation/content/release](https://docs.zen-cart.com/release/).
+
+- Add the new version as a checkbox to the plugin list. (**FIXME**)
+
+- Create a release announcement on the Zen Cart Forum. 
+
 <div style="text-align:right;" id="next">
    <a class="btn btn-lg btn-primary mr-3 mb-4" href="/dev/release_process/ping_server/">
         Next - Ping Server<i class="fas fa-arrow-alt-circle-right ml-2"></i>
