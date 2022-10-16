@@ -17,7 +17,7 @@ and then access the `versions` menu.
 
 ![ Ping Server Dashboard](/images/ping-version-menu.png)
 
-We can then create a new release.
+We can then create a new release by clicking the "New Version" button.
 
 ![ Ping Version Edit](/images/ping-version-edit.png)
 
@@ -38,15 +38,17 @@ e.g. 5.7.d
 
 ## versionDetail
 
-A brief description of the new release.
+A brief description of the new release. (Future: link to release announcement) 
 
 ## versionDownloadURI
 
-Generally a link to the release announcement.
+A link to the release announcement.
 e.g. https://www.zen-cart.com/showthread.php?228675-Zen-Cart-v1-5-7d-released!!
 
-## is_current
+Future: link to download (e.g. https://github.com/zencart/zencart/archive/refs/tags/v1.5.8.zip) 
 
+## is_current
+Check the box.
 
 <div style="text-align:right;" id="next">
    <a class="btn btn-lg btn-primary mr-3 mb-4" href="/dev/release_process/release_links/">
