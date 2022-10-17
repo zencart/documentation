@@ -38,9 +38,11 @@ After creating the release on Github (the next step), you will want to test the 
 If you test the resultant build, and find a problem, 
 it may be that you may need to do some remedial commits at this point.
 
-**For any new commits at this point, we should manually update headers as 
-it is difficult to re-run the version stamper. You may also need to update `docs`
-and your [Release Log]({{< ref "release_log" >}} "release log") as well.**
+**For any new commits at this point, you must manually update headers as 
+it is difficult to re-run the version stamper.**
+
+- Edit files to update headers - change date and committer name
+- Create PR, merge, update your branch
 
 If you have added extra commits you will need to update the release tag.
 
@@ -50,6 +52,14 @@ git push --delete upstream v1.5.8
 git tag v1.5.8
 git push upstream --tags
 ```
+
+Then re-run these steps of the build: 
+- Create the release on Github (as noted below). 
+- Note new commit hash and update [Release Log]({{< ref "release_log" >}} "release log") 
+- Update the [zip file SHA on the home page](/dev/release_process/release_links/).
+- Update the [Release Manifest](/dev/release_process/manifest/)
+- Check the [Releases Page](https://github.com/zencart/zencart/releases) and be sure the build you just did is Published and the old one is removed.
+- If required, update `docs` (What's New file, Changed Files).
 
 ### Create the Release on Github
 
