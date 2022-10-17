@@ -102,13 +102,6 @@ Path: <b>Configuration > Minimum Values</b><br />
 Description: Minimum length of credit card number</div>
 
 
-<h2 id="credit_card_cvv_number">Credit Card CVV Number</h2>
-
-<div class='indent'>Key: <b>CC_CVV_MIN_LENGTH</b><br />
-Path: <b>Configuration > Minimum Values</b><br />
-Description: Minimum length of credit card CVV number</div>
-
-
 <h2 id="product_review_text">Product Review Text</h2>
 
 <div class='indent'>Key: <b>REVIEW_TEXT_MIN_LENGTH</b><br />

@@ -167,13 +167,6 @@ Path: <b>Configuration > Layout Settings</b><br />
 Description: Show Category Count for 0 Products?<br />0= off<br />1= on</div>
 
 
-<h2 id="split_categories_box">Split Categories Box</h2>
-
-<div class='indent'>Key: <b>CATEGORIES_SPLIT_DISPLAY</b><br />
-Path: <b>Configuration > Layout Settings</b><br />
-Description: Split the categories box display by product type</div>
-
-
 <h2 id="shopping_cart__show_totals">Shopping Cart - Show Totals</h2>
 
 <div class='indent'>Key: <b>SHOW_TOTALS_IN_CART</b><br />
@@ -213,63 +206,63 @@ Description: Always Show Categories and SubCategories<br />0= off, just show Top
 
 <div class='indent'>Key: <b>SHOW_BANNERS_GROUP_SET1</b><br />
 Path: <b>Configuration > Layout Settings</b><br />
-Description: The Banner Display Groups can be from 1 Banner Group or Multiple Banner Groups<br /><br />For Multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Header Position 1?<br />Leave blank for none</div>
+Description: The Banner Display Groups can be from one Banner Group or multiple Banner Groups<br /><br />For multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Header Position 1?<br />Leave blank for none</div>
 
 
 <h2 id="banner_display_groups__header_position_2">Banner Display Groups - Header Position 2</h2>
 
 <div class='indent'>Key: <b>SHOW_BANNERS_GROUP_SET2</b><br />
 Path: <b>Configuration > Layout Settings</b><br />
-Description: The Banner Display Groups can be from 1 Banner Group or Multiple Banner Groups<br /><br />For Multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Header Position 2?<br />Leave blank for none</div>
+Description: The Banner Display Groups can be from one Banner Group or multiple Banner Groups<br /><br />For multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Header Position 2?<br />Leave blank for none</div>
 
 
 <h2 id="banner_display_groups__header_position_3">Banner Display Groups - Header Position 3</h2>
 
 <div class='indent'>Key: <b>SHOW_BANNERS_GROUP_SET3</b><br />
 Path: <b>Configuration > Layout Settings</b><br />
-Description: The Banner Display Groups can be from 1 Banner Group or Multiple Banner Groups<br /><br />For Multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Header Position 3?<br />Leave blank for none</div>
+Description: The Banner Display Groups can be from one Banner Group or multiple Banner Groups<br /><br />For multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Header Position 3?<br />Leave blank for none</div>
 
 
 <h2 id="banner_display_groups__footer_position_1">Banner Display Groups - Footer Position 1</h2>
 
 <div class='indent'>Key: <b>SHOW_BANNERS_GROUP_SET4</b><br />
 Path: <b>Configuration > Layout Settings</b><br />
-Description: The Banner Display Groups can be from 1 Banner Group or Multiple Banner Groups<br /><br />For Multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Footer Position 1?<br />Leave blank for none</div>
+Description: The Banner Display Groups can be from one Banner Group or multiple Banner Groups<br /><br />For multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Footer Position 1?<br />Leave blank for none</div>
 
 
 <h2 id="banner_display_groups__footer_position_2">Banner Display Groups - Footer Position 2</h2>
 
 <div class='indent'>Key: <b>SHOW_BANNERS_GROUP_SET5</b><br />
 Path: <b>Configuration > Layout Settings</b><br />
-Description: The Banner Display Groups can be from 1 Banner Group or Multiple Banner Groups<br /><br />For Multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Footer Position 2?<br />Leave blank for none</div>
+Description: The Banner Display Groups can be from one Banner Group or multiple Banner Groups<br /><br />For multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Footer Position 2?<br />Leave blank for none</div>
 
 
 <h2 id="banner_display_groups__footer_position_3">Banner Display Groups - Footer Position 3</h2>
 
 <div class='indent'>Key: <b>SHOW_BANNERS_GROUP_SET6</b><br />
 Path: <b>Configuration > Layout Settings</b><br />
-Description: The Banner Display Groups can be from 1 Banner Group or Multiple Banner Groups<br /><br />For Multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />Default Group is Wide-Banners<br /><br />What Banner Group(s) do you want to use in the Footer Position 3?<br />Leave blank for none</div>
+Description: The Banner Display Groups can be from one Banner Group or multiple Banner Groups<br /><br />For multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />Default Group is Wide-Banners<br /><br />What Banner Group(s) do you want to use in the Footer Position 3?<br />Leave blank for none</div>
 
 
 <h2 id="banner_display_groups__side_box_banner_box">Banner Display Groups - Side Box banner_box</h2>
 
 <div class='indent'>Key: <b>SHOW_BANNERS_GROUP_SET7</b><br />
 Path: <b>Configuration > Layout Settings</b><br />
-Description: The Banner Display Groups can be from 1 Banner Group or Multiple Banner Groups<br /><br />For Multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br />Default Group is SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Side Box - banner_box?<br />Leave blank for none</div>
+Description: The Banner Display Groups can be from one Banner Group or multiple Banner Groups<br /><br />For multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br />Default Group is SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Side Box - banner_box?<br />Leave blank for none</div>
 
 
 <h2 id="banner_display_groups__side_box_banner_box2">Banner Display Groups - Side Box banner_box2</h2>
 
 <div class='indent'>Key: <b>SHOW_BANNERS_GROUP_SET8</b><br />
 Path: <b>Configuration > Layout Settings</b><br />
-Description: The Banner Display Groups can be from 1 Banner Group or Multiple Banner Groups<br /><br />For Multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br />Default Group is SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Side Box - banner_box2?<br />Leave blank for none</div>
+Description: The Banner Display Groups can be from one Banner Group or multiple Banner Groups<br /><br />For multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br />Default Group is SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Side Box - banner_box2?<br />Leave blank for none</div>
 
 
 <h2 id="banner_display_group__side_box_banner_box_all">Banner Display Group - Side Box banner_box_all</h2>
 
 <div class='indent'>Key: <b>SHOW_BANNERS_GROUP_SET_ALL</b><br />
 Path: <b>Configuration > Layout Settings</b><br />
-Description: The Banner Display Group may only be from one (1) Banner Group for the Banner All sidebox<br /><br />Default Group is BannersAll<br /><br />What Banner Group do you want to use in the Side Box - banner_box_all?<br />Leave blank for none</div>
+Description: The Banner Display Group may only be from one Banner Group for the Banner All sidebox<br /><br />Default Group is BannersAll<br /><br />What Banner Group do you want to use in the Side Box - banner_box_all?<br />Leave blank for none</div>
 
 
 <h2 id="footer__show_ip_address_status">Footer - Show IP Address status</h2>
@@ -297,7 +290,7 @@ Description: How many discount quantities should show per row on Product Info Pa
 
 <div class='indent'>Key: <b>CATEGORIES_PRODUCTS_SORT_ORDER</b><br />
 Path: <b>Configuration > Layout Settings</b><br />
-Description: Categories/Products Display Sort Order<br />0= Categories/Products Sort Order/Name<br />1= Categories/Products Name<br />2= Products Model<br />3= Products Qty+, Products Name<br />4= Products Qty-, Products Name<br />5= Products Price+, Products Name<br />6= Products Price-, Products Name</div>
+Description: <p>Set the initial sort order for the Admin Category/Product listing page.</p>&nbsp;0 = Categories/Products: Sort Order, Name<br>&nbsp;1 = Categories/Products: Name<br>&nbsp;2 = Categories: ID+ / Products: Model<br>&nbsp;3 = Categories: ID- / Products: Qty+, Name<br>&nbsp;4 = Categories: Status, Name+ / Products: Qty-, Name<br>&nbsp;5 = Categories: Status, Name- / Products: Price+, Name<br>&nbsp;6 = Products: Price-, Name<br>&nbsp;7 = Products: Model-<br>&nbsp;8 = Products: Status+<br>&nbsp;9 = Products: Status-<br>10 = Products: ID<br>11 = Products: Weight</div>
 
 
 <h2 id="option_names_and_values_global_add_copy_and_delete_features_status">Option Names and Values Global Add, Copy and Delete Features Status</h2>
@@ -307,11 +300,11 @@ Path: <b>Configuration > Layout Settings</b><br />
 Description: Option Names and Values Global Add, Copy and Delete Features Status<br />0= Hide Features<br />1= Show Features<br />(Default=1)</div>
 
 
-<h2 id="categoriestabs_menu_onoff">Categories-Tabs Menu ON/OFF</h2>
+<h2 id="category_header_menu_onoff">Category Header Menu ON/OFF</h2>
 
 <div class='indent'>Key: <b>CATEGORIES_TABS_STATUS</b><br />
 Path: <b>Configuration > Layout Settings</b><br />
-Description: Categories-Tabs<br />This enables the display of your store's categories as a menu across the top of your header. There are many potential creative uses for this.<br />0= Hide Categories Tabs<br />1= Show Categories Tabs</div>
+Description: Category Header Nav<br />This enables the display of your store's categories as a menu across the top of your header. There are many potential creative uses for this.<br />0= Hide Categories Tabs<br />1= Show Categories Tabs</div>
 
 
 <h2 id="site_map__include_my_account_links">Site Map - include My Account Links?</h2>

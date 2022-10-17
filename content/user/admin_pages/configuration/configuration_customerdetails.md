@@ -39,18 +39,18 @@ Path: <b>Configuration > Customer Details</b><br />
 Description: Display state field during account creation and with account information</div>
 
 
-<h2 id="state__always_display_as_pulldown">State - Always display as pulldown?</h2>
+<h2 id="state_field__display_as_pulldown_when_possible">State field - Display as pulldown when possible?</h2>
 
 <div class='indent'>Key: <b>ACCOUNT_STATE_DRAW_INITIAL_DROPDOWN</b><br />
 Path: <b>Configuration > Customer Details</b><br />
-Description: When state field is displayed, should it always be a pulldown menu?</div>
+Description: If zones have been defined for a country, the State field may be displayed as a dropdown populated by the defined zones. Otherwise a text field is displayed for customer entry.<br><strong>true</strong>: When a State field is used, display a pulldown menu whenever possible.<br><strong>false</strong>: When a State field is used, always display a text input field.</div>
 
 
-<h2 id="create_account_default_country_id">Create Account Default Country ID</h2>
+<h2 id="create_account_default_country">Create Account Default Country</h2>
 
 <div class='indent'>Key: <b>SHOW_CREATE_ACCOUNT_DEFAULT_COUNTRY</b><br />
 Path: <b>Configuration > Customer Details</b><br />
-Description: Set Create Account Default Country ID to:<br />Default is 223</div>
+Description: Set the default/pre-selected country on the Create Account page to:<br>(default is United States)</div>
 
 
 <h2 id="fax_number">Fax Number</h2>
@@ -130,17 +130,10 @@ Path: <b>Configuration > Customer Details</b><br />
 Description: Customer Authorization: Hide Footer <br />(true=hide false=show)</div>
 
 
-<h2 id="customer_authorization_hide_prices">Customer Authorization: Hide Prices</h2>
-
-<div class='indent'>Key: <b>CUSTOMERS_AUTHORIZATION_PRICES_OFF</b><br />
-Path: <b>Configuration > Customer Details</b><br />
-Description: Customer Authorization: Hide Prices <br />(true=hide false=show)</div>
-
-
 <h2 id="customers_referral_status">Customers Referral Status</h2>
 
 <div class='indent'>Key: <b>CUSTOMERS_REFERRAL_STATUS</b><br />
 Path: <b>Configuration > Customer Details</b><br />
-Description: Customers Referral Code is created from<br />0= Off<br />1= 1st Discount Coupon Code used<br />2= Customer can add during create account or edit if blank<br /><br />NOTE: Once the Customers Referral Code has been set it can only be changed in the Admin Customer</div>
+Description: Customers Referral Code is created from<br />0= Off<br />1= 1st Discount Coupon Code used<br />2= Customer can add during create account or edit if blank<br /><br />NOTE: Once the Customers Referral Code has been set it can only be changed by the Administrator</div>
 
 

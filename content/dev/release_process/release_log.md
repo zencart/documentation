@@ -15,6 +15,9 @@ last_hash = c2c5301bd3d2b9a9783936cbfd519249873f7415
 
 initial version stamping commit = https://github.com/zencart/zencart/commit/936158f544f07237cd20fe081c6d513c62ece2a3
 
+Note that a rebuild was done the next day to add the `zc_install` fixes.
+Commit Hash was 1c97c4b463310d64d75016aa06b9f951a436171e. 
+
 # v1.5.8-alpha2 
 
 Built 29 Aug 2022

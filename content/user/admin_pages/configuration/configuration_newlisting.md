@@ -4,7 +4,7 @@ category: admin_pages
 weight: 200 
 ---
 
-See <a href="/user/template/new_featured_all_listing_page_configuration/">New Listing Configuration</a> for instructions on use.
+Controls the appearance of the New Products page.  See <a href="/user/template/new_featured_all_listing_page_configuration/">New Listing Configuration</a> for instructions on use.
 
 <h2 id="display_product_image">Display Product Image</h2>
 
@@ -97,7 +97,7 @@ Path: <b>Configuration > New Listing</b><br />
 Description: Do you want to display Add Multiple Products Qty Box and Set Button Location?<br />0= off<br />1= Top<br />2= Bottom<br />3= Both</div>
 
 
-<h2 id="mask_upcoming_products_from_being_include_as_new_products">Mask Upcoming Products from being include as New Products</h2>
+<h2 id="mask_upcoming_products_from_being_included_as_new_products">Mask Upcoming Products from being included as New Products</h2>
 
 <div class='indent'>Key: <b>SHOW_NEW_PRODUCTS_UPCOMING_MASKED</b><br />
 Path: <b>Configuration > New Listing</b><br />

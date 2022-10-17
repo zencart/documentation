@@ -32,25 +32,25 @@ Path: <b>Configuration > Maximum Values</b><br />
 Description: Number of numbered pagination links to display on Mobile devices (assuming your template supports mobile-specific settings)</div>
 
 
-<h2 id="products_on_special_">Products on Special </h2>
+<h2 id="products_on_special_page">Products on Special Page</h2>
 
 <div class='indent'>Key: <b>MAX_DISPLAY_SPECIAL_PRODUCTS</b><br />
 Path: <b>Configuration > Maximum Values</b><br />
-Description: Number of products on special to display</div>
+Description: Number of products to show per page on the Specials page</div>
 
 
-<h2 id="new_products_module">New Products Module</h2>
+<h2 id="new_products_centerbox">New Products Centerbox</h2>
 
 <div class='indent'>Key: <b>MAX_DISPLAY_NEW_PRODUCTS</b><br />
 Path: <b>Configuration > Maximum Values</b><br />
-Description: Number of new products to display in a category</div>
+Description: Number of products to display in the New Products centerbox</div>
 
 
-<h2 id="upcoming_products_">Upcoming Products </h2>
+<h2 id="upcoming_products_centerbox">Upcoming Products Centerbox</h2>
 
 <div class='indent'>Key: <b>MAX_DISPLAY_UPCOMING_PRODUCTS</b><br />
 Path: <b>Configuration > Maximum Values</b><br />
-Description: Number of 'upcoming' products to display</div>
+Description: Number of products to display in the Upcoming Products centerbox</div>
 
 
 <h2 id="manufacturers_list__scroll_box_sizestyle">Manufacturers List - Scroll Box Size/Style</h2>
@@ -137,11 +137,11 @@ Path: <b>Configuration > Maximum Values</b><br />
 Description: How many categories to list per row</div>
 
 
-<h2 id="new_products_listing_number_per_page">New Products Listing- Number Per Page</h2>
+<h2 id="new_products_page">New Products Page</h2>
 
 <div class='indent'>Key: <b>MAX_DISPLAY_PRODUCTS_NEW</b><br />
 Path: <b>Configuration > Maximum Values</b><br />
-Description: Number of new products listed per page</div>
+Description: Number of products to show per page when viewing New Products</div>
 
 
 <h2 id="best_sellers_for_box">Best Sellers For Box</h2>
@@ -207,13 +207,6 @@ Path: <b>Configuration > Maximum Values</b><br />
 Description: Maximum number of option names and values to display in the products attributes page</div>
 
 
-<h2 id="products_attributes__attributes_controller_display">Products Attributes - Attributes Controller Display</h2>
-
-<div class='indent'>Key: <b>MAX_ROW_LISTS_ATTRIBUTES_CONTROLLER</b><br />
-Path: <b>Configuration > Maximum Values</b><br />
-Description: Maximum number of attributes to display in the Attributes Controller page</div>
-
-
 <h2 id="products_attributes__downloads_manager_display">Products Attributes - Downloads Manager Display</h2>
 
 <div class='indent'>Key: <b>MAX_DISPLAY_SEARCH_RESULTS_DOWNLOADS_MANAGER</b><br />
@@ -228,25 +221,25 @@ Path: <b>Configuration > Maximum Values</b><br />
 Description: Number of featured products to list per screen - Admin</div>
 
 
-<h2 id="maximum_display_of_featured_products__main_page">Maximum Display of Featured Products - Main Page</h2>
+<h2 id="featured_products_centerbox">Featured Products Centerbox</h2>
 
 <div class='indent'>Key: <b>MAX_DISPLAY_SEARCH_RESULTS_FEATURED</b><br />
 Path: <b>Configuration > Maximum Values</b><br />
-Description: Number of featured products to list on main page</div>
+Description: Number of products to display in the Featured Products centerbox</div>
 
 
-<h2 id="maximum_display_of_featured_products_page">Maximum Display of Featured Products Page</h2>
+<h2 id="featured_products_page">Featured Products Page</h2>
 
 <div class='indent'>Key: <b>MAX_DISPLAY_PRODUCTS_FEATURED_PRODUCTS</b><br />
 Path: <b>Configuration > Maximum Values</b><br />
-Description: Number of featured products to list per screen</div>
+Description: Number of products to show per page when viewing Featured Products</div>
 
 
-<h2 id="products_listing_number_per_page">Products Listing- Number Per Page</h2>
+<h2 id="products_listing_page">Products Listing Page</h2>
 
 <div class='indent'>Key: <b>MAX_DISPLAY_PRODUCTS_LISTING</b><br />
 Path: <b>Configuration > Maximum Values</b><br />
-Description: Maximum Number of Products to list per page on main page</div>
+Description: Number of products to show per page when viewing an index listing</div>
 
 
 <h2 id="random_featured_products_for_sidebox">Random Featured Products for SideBox</h2>
@@ -256,11 +249,11 @@ Path: <b>Configuration > Maximum Values</b><br />
 Description: Number of random FEATURED products to rotate in the sidebox<br />Enter the number of products to display in this sidebox at one time.<br /><br />How many products do you want to display in this sidebox?</div>
 
 
-<h2 id="maximum_display_of_specials_products__main_page">Maximum Display of Specials Products - Main Page</h2>
+<h2 id="products_on_special_centerbox">Products on Special Centerbox</h2>
 
 <div class='indent'>Key: <b>MAX_DISPLAY_SPECIAL_PRODUCTS_INDEX</b><br />
 Path: <b>Configuration > Maximum Values</b><br />
-Description: Number of special products to list on main page</div>
+Description: Number of products to display in the Products on Special centerbox</div>
 
 
 <h2 id="new_product_listing__limited_to_">New Product Listing - Limited to ...</h2>
@@ -270,11 +263,11 @@ Path: <b>Configuration > Maximum Values</b><br />
 Description: Limit the New Product Listing to<br />0= All Products<br />1= Current Month<br />7= 7 Days<br />14= 14 Days<br />30= 30 Days<br />60= 60 Days<br />90= 90 Days<br />120= 120 Days</div>
 
 
-<h2 id="maximum_display_of_products_all_page">Maximum Display of Products All Page</h2>
+<h2 id="all_products_page">All Products Page</h2>
 
 <div class='indent'>Key: <b>MAX_DISPLAY_PRODUCTS_ALL</b><br />
 Path: <b>Configuration > Maximum Values</b><br />
-Description: Number of products to list per screen</div>
+Description: Number of products to show per page on the All Products page</div>
 
 
 <h2 id="maximum_display_of_language_flags_in_language_side_box">Maximum Display of Language Flags in Language Side Box</h2>

@@ -47,11 +47,13 @@ Description: Define when stock needs to be re-ordered</div>
 Path: <b>Configuration > Stock</b><br />
 Description: Show Products when out of stock<br /><br />0= set product status to OFF<br />1= leave product status ON</div>
 
-<h2 id="disabled_product_status_for_search_engines">Disabled Product Status for Search Engines (**NEW in 1.5.7a)</h2>
-<div class='indent'>Key: <b>SHOW_PRODUCTS_SOLD_OUT</b><br />
+
+<h2 id="disabled_product_status_for_search_engines">Disabled Product Status for Search Engines</h2>
+
+<div class='indent'>Key: <b>DISABLED_PRODUCTS_TRIGGER_HTTP200</b><br />
 Path: <b>Configuration > Stock</b><br />
-Description: When a product is marked Disabled (status=0) but is not deleted from the database, should Search Engines still show it as Available?<br>eg:<br>True = Return HTTP 200 response<br>False = Return HTTP 410<br>(Deleting it will return HTTP 404)<br><b>Default: false</b>
-</div>
+Description: When a product is marked Disabled (status=0) but is not deleted from the database, should Search Engines still show it as Available?<br>eg:<br>True = Return HTTP 200 response<br>False = Return HTTP 410<br>(Deleting it will return HTTP 404)<br><b>Default: false</b></div>
+
 
 <h2 id="show_sold_out_image_in_place_of_add_to_cart">Show Sold Out Image in place of Add to Cart</h2>
 
@@ -64,7 +66,7 @@ Description: Show Sold Out Image instead of Add to Cart Button<br /><br />0= off
 
 <div class='indent'>Key: <b>ENABLE_DISABLED_UPCOMING_PRODUCT</b><br />
 Path: <b>Configuration > Stock</b><br />
-Description: How should hidden (disabled) product with a future available date be made visible (active) to customers when the date is reached?<br /></div>
+Description: How should disabled products with a future available date be made active when the date is reached?<br /></div>
 
 
 <h2 id="product_quantity_decimals">Product Quantity Decimals</h2>
