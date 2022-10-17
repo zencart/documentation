@@ -28,7 +28,7 @@ git tag --list
 
 **Note:** The tag *must* be the same as the `newVersion` setting in the versionstamper's `config.php` file. 
 
-`git tag v1.5.8-alpha` obviously replacing the release name as appropriate
+`git tag v1.5.8` obviously replacing the release name as appropriate
 
 `git push upstream --tags`
 
@@ -45,9 +45,9 @@ and your [Release Log]({{< ref "release_log" >}} "release log") as well.**
 If you have added extra commits you will need to update the release tag.
 
 ```
-git tag -d v1.5.8-alpha
-git push --delete upstream v1.5.8-alpha
-git tag v1.5.8-alpha
+git tag -d v1.5.8
+git push --delete upstream v1.5.8
+git tag v1.5.8
 git push upstream --tags
 ```
 

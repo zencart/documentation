@@ -53,4 +53,5 @@ insert into vb_dl2_zcversions (versiontext) values ('v1.5.8')
 - Search the documentation in https://github.com/zencart/documentation for the string RELEASETIME and update those files.
 
 - Run the `build_doc` and `view schema` tools as noted in the [Release Time](https://github.com/scottcwilson/zencart_tools). 
- 
+
+- **Emergency Re-release:** - If something was missed and you have to do a re-release, go back to [Remedial Commits](/dev/release_process/release_tagging/#possible-remedial-commits). 

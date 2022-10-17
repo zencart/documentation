@@ -19,11 +19,13 @@ The script is available in the https://github.com/zencart/versionstamper reposit
 
 This is a private repository, so you may need to request access.
 
+**FIXME:** In 1.5.8, we stamped the alpha builds.  It is not clear whether this was the right decision; perhaps only final release builds should be stamped.  TBD.
+
 ## Preparatory Actions for Version Stamping 
 
 1. Create a feature branch in your Zen Cart directory for the version stamping changes, e.g.
 
-`git checkout -b version-stamping-v158-alpha`
+`git checkout -b version-stamping-v158`
 
 
 ## Installing the Version Stamper
@@ -36,8 +38,8 @@ Follow the instructions in the README.
 
 ```$opts = [
     'prevOfficialRelease' => 'v1.5.7d',
-    'newVersion' => 'v1.5.8-alpha2', // note at this point we don't have to have a tag
-    'prevStampedVersion' => 'v1.5.8-alpha', // note at this point we don't have to have a tag
+    'newVersion' => 'v1.5.8', // note at this point we don't have to have a tag
+    'prevStampedVersion' => 'v1.5.8', // note at this point we don't have to have a tag
     'commitDate' => '2022', //the date that will be used for the updatecommit
     'copyrightDate' => '2022', //the date that will be used for the copyright date
     'firstHash' => '28b79ce2120771411d08ef2c7cce5058e42a2cc3', // usually the hash of tagged prior release
@@ -51,7 +53,7 @@ Follow the instructions in the README.
 
 + prevOfficialRelease The most recent official release e.g. v1.5.7d
 + prevStampedVersion The name of the most recent release that was version stamped (may have been a pre-release)
-+ newVersion - the version name of the release being worked on e.g. v1.5.8-alpha
++ newVersion - the version name of the release being worked on e.g. v1.5.8
 + commitDate - the year to use for updating the commit date - will be deprecated for auto setting
 + copyrightDate - the tear to use for the copyright date  - will be deprecated for auto setting
 + firstHash - the hash of the first commit in this branch - see below
@@ -103,7 +105,7 @@ than running directly against our working branch.**
 If you run `git status` in your Zen Cart folder, you should see something like, 
 
 ```
-On branch version-stamping-v158-alpha
+On branch version-stamping-v158
 nothing to commit, working tree clean
 ```
 
