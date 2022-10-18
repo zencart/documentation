@@ -75,29 +75,28 @@
                 Upgrade Instructions
             </h1>
             <p>
-                See the online docs for Release-Specific considerations to note regarding this version. <a href="https://docs.zen-cart.com/user/upgrading/">https://docs.zen-cart.com/user/upgrading/</a>
+                See the online docs for upgrading advice, including Release-Specific considerations to note regarding this version. <a href="https://docs.zen-cart.com/user/upgrading/">https://docs.zen-cart.com/user/upgrading/</a>
                 <br>
                 <br>
-                This document only mentions the actual changes specific to v1.5.8 since v1.5.7, and additional notes may have been added to the online notes.
+                This document only mentions the actual changes specific to v1.5.8 since v1.5.7. 
             </p>
             <h2>
-                From v1.5.7
+                All Versions
             </h2>
             <p>
-                If you are already using v1.5.7 and <em>*have NOT customized or altered*</em> any of the files listed in the changed_files-v1.5.8.html document, then simply replace those files with the new files as listed.
+                If you are upgrading from the prior release, please do a <a href="https://docs.zen-cart.com/user/upgrading/detailed_upgrading/" rel="noreferrer noopener" target="_blank">standard site upgrade</a>. 
             </p>
             <p>
-            <p>
-                If you have <em>*customized or altered*</em> certain files, you must merge your customizations into the new versions of those files.
+                If you are upgrading from a release which is older than the prior release, you may wish to consider starting again using a <a href="https://docs.zen-cart.com/user/upgrading/db_only_upgrade/" rel="noreferrer noopener" target="_blank">database only upgrade</a>. 
             </p>
             <p>
-                If you are using Addons/Plugins that use modified versions of those files, you must compare those plugin files to the original Zen Cart files of the version for which those plugins were built, to identify the modifications. Subsequently you must replicate those modifications in the v1.5.8 file.
+            Many older templates are going to be difficult to bring forward. If you are using an older template - especially one that is not <a href="https://docs.zen-cart.com/user/template/responsive/">responsive</a> - you may wish to consider migrating to <a href="https://docs.zen-cart.com/user/template/responsive_classic/">Responsive Classic</a> or <a href="https://docs.zen-cart.com/user/template/bootstrap/">Bootstrap</a>.
             </p>
-            <h2>
-                From v1.5.6 or older
-            </h2>
             <p>
-                If you are upgrading from a version OLDER than v1.5.7, then please do a <a href="https://www.zen-cart.com/upgrades" rel="noreferrer noopener" target="_blank">standard site upgrade</a>. Be sure to review all the links in this article, including tips on staging the upgrade in a separate directory/folder.
+                Be sure to review all the links in this article, including tips on staging the upgrade in a separate directory/folder.
+            </p>
+            <p>
+                If you are using Addons/Plugins that use modified versions of core Zen Cart files, you must compare those plugin files to the original Zen Cart files of the version for which those plugins were built, to identify the modifications. Subsequently you must replicate those modifications in the v1.5.8 file.  Be sure to check the plugin's support thread to see if a new version has been released since the one you installed before.
             </p>
             <h1>
                 CHANGELOG - List of Changed Files 
@@ -165,6 +164,9 @@
             </p>
             <p>
             Zen Cart now uses <a href="https://docs.zen-cart.com/user/localization/158_language_files/">Array based language files</a>.  For plugins with language files which are not overridden, the older style may still be used.
+            </p>
+            <p>
+            If you're doing an upgrade and are worried about all the language file changes you'll have to figure out, rather than porting *all* your customizations, you may want to start small and add customizations as they are needed.  Many older templates made unnecessary changes which you will not want to carry forward.  See <a href="https://docs.zen-cart.com/user/localization/basic_158_language_customizations/">basic language file customizations</a> for a minimal starting list.
             </p>
             <p>
             For developers with language skills wishing to provide a translation, <a href="https://docs.zen-cart.com/dev/languages/158_language_files/">developer information on Array based language files</a> is provided.
