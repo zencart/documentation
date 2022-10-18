@@ -68,10 +68,10 @@ Once you know [What Zen Cart is](/user/about_us/what_is_zen_cart/), you might wa
 * [Server Requirements for running Zen Cart](/user/first_steps/server_requirements/#php-version) - Zen Cart version to PHP version compatibility matrix.
 
 * Templates and Overrides - How do I use them?  Read 
-[the introduction](https://docs.zen-cart.com/user/first_steps/overrides/), 
-[the details](https://docs.zen-cart.com/user/new_user_topics/overrides/), 
+[the introduction](/user/first_steps/overrides/), 
+[the details](/user/new_user_topics/overrides/), 
 and then 
-[the summary](https://docs.zen-cart.com/user/template/template_overrides/). 
+[the summary](/user/template/template_overrides/). 
 
 * [Time Zone](/user/new_user_topics/timezone/) - How do I make the store use my local timezone?  It uses GMT now. 
 

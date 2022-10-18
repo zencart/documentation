@@ -52,11 +52,11 @@ insert into vb_dl2_zcversions (versiontext) values ('v1.5.8')
 
 - Run the `build_doc` and `view schema` tools as noted in the [Release Time](https://github.com/scottcwilson/zencart_tools). 
 
-- **Emergency Re-release:** - If something was missed and you have to do a re-release, go back to [Remedial Commits](/dev/release_process/release_tagging/#possible-remedial-commits). 
+- **Emergency Re-release:** If something was missed and you have to do a re-release, go back to [Remedial Commits](/dev/release_process/release_tagging/#possible-remedial-commits). 
 
 A day or two after the build has been released when you're confident that all is well: 
 
 - Message all developers who have merge privileges using the Skype Dev Chat channel, and then unlock the branch you are building.  Go to [the branches page](https://github.com/zencart/zencart/settings/branches) and de-activate the branch protection rule you created earlier (uncheck the "PR required" checkbox for the rule).
 
-- Begin process of formally merging release to Master/Main
+- Begin process of formally merging release to Master/Main **FIXME - unsure**
 

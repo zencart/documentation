@@ -39,6 +39,7 @@ Define Page 4 | Link to Page 4 created in Site Map, More Information Sidebox and
 _Link ON_ is also interpreted by some popular plugins such as Flexible Footer. 
 
 <br>
+<div id="define_page_files"></div>
 
 The pages listed below are considered Define Pages, since their content is controlled using the Define Pages Editor.
 

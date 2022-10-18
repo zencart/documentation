@@ -30,7 +30,8 @@ Login to Github and go to the [Zen Cart committers member list](https://github.c
 
 This is not required for all members, but may be useful in case vBulletin needs to be modified in some way.  An example is adding a super administrator, as noted above - this cannot be done in the vBulletin UI; it requires a file change.
 
-Give them to OpenSSH passphrase and have them create a key for passwordless ssh. 
+Give them the server IP, port and passphrase and have them create a key for passwordless ssh. 
+
 ### Allowing them to update the PingServer 
 
 This is required for the [Ping Server ](/dev/release_process/ping_server/) 
