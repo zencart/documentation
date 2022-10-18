@@ -47,6 +47,38 @@ The sql file should reside in
 
 Note that an uninstall script (called `uninstall.sql`) may be placed in the same folder. 
 
+### Currently Supported SQL Commands
+
+- DROP TABLE IF EXISTS \<table name>;
+- DROP TABLE \<table name>;
+- CREATE TABLE IF NOT EXISTS \<table name> \<additional sql>;
+- CREATE TABLE \<table name> \<additional sql>;
+- TRUNCATE TABLE \<table name>;
+- REPLACE INTO \<table name> \<additional sql>;
+- INSERT INTO  \<table name> \<additional sql>;
+- INSERT IGNORE INTO \<table name> <additional sql>;
+- ALTER TABLE \<table name> \<additional sql>;
+- RENAME TABLE \<table name> TO \<table name>;
+- UPDATE \<table name> \<additional sql>;
+- DELETE FROM \<table name> \<additional sql>;
+- DROP INDEX \<index name> ON \<table name>;
+- CREATE INDEX \<index name> ON \<table name> \<additional sql>;
+- SELECT \<fields> FROM \<table name> \<additional sql>;
+- SELECT \<fields> FROM \<table name> \<join type> JOIN \<table name> \<additional sql>
+    
+Where: 
+- \<table name> is the name of the table(s) which may require a suffix adding
+- \<additional sql> is additional valid sql for the statement. **It must not contain any table names that may require prefixing**
+- \<index name> is the name of the index to be created/dropped
+- \<join type> is the type  INNER, OUTER, etc.
+    
+Note:
+- There must be exactly one space before \<table name>.
+- The statement before the first \< must be single spaced.
+- There can be multiple JOIN statements in a select.
+- Every statement must end with ";".
+- Sub selects are not available.    
+
 
 ## SQL Installer Classes
 
