@@ -22,11 +22,11 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 - If you use a custom template, check it against [the template changes list](/user/template/template_changes/). 
 
-### Zen Cart 1.5.8 (currently in development phase, not released yet)
+### Zen Cart 1.5.8 
 
 - Most "functions" (both admin and non-admin) have been consolidated into files located in `/includes/functions/`. Some have been merged together. Some changes are listed below.
 
-- Language file inclusions must be changed to comply with the new language file format.  See [Developer Information on Array based Language files](/dev//languages/158_language_files/) for more details. 
+- Language file inclusions must be changed to comply with the new language file format.  See [Developer Information on Array based Language files](/dev//languages/158_language_files/) for more details.  You may wish to consider doing only the [basic language file customizations](/user/localization/basic_158_language_customizations/).
 
 - The function `zen_parse_search_string` input parameters have been reversed. Plugins that use this function will require modification.
 
