@@ -22,7 +22,7 @@ If you need to get a copy of Zen Cart (current or older version), please see [Do
 
 This is the release history of the Zen Cart product.
 
-10/16/2022 - v1.5.8 [Release Notes](/release/whatsnew_1.5.8.html#whatsNew)
+10/16/2022 - v1.5.8 [Release Notes](/release/whatsnew_1.5.8.html)
 
 02/27/2022 - v1.5.7d
 
@@ -41,6 +41,17 @@ This is the release history of the Zen Cart product.
 01/04/2019 - v1.5.6a
 
 12/10/2018 - v1.5.6 [Release Notes](https://www.zen-cart.com/docs/whatsnew_1.5.6.html)
+
+
+<!-- show prior two versions then put everything else below here --> 
+
+<p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#collapseVersions" role="button" aria-expanded="false" aria-controls="collapseVersions">
+    See older versions 
+  </a>
+</p>
+<div class="collapse" id="collapseVersions">
+  <div class="card card-body">
 
 12/31/2017 - v1.5.5f
 
@@ -65,14 +76,6 @@ This is the release history of the Zen Cart product.
 09/18/2012 - v1.5.1 [Release Notes](https://www.zen-cart.com/docs/whatsnew_1.5.1.html)
 
 12/30/2011 - v1.5.0 [Release Notes](https://www.zen-cart.com/docs/whatsnew_1.5.0.html)
-
-<p>
-  <a class="btn btn-primary" data-toggle="collapse" href="#collapseVersions" role="button" aria-expanded="false" aria-controls="collapseVersions">
-    See older versions 
-  </a>
-</p>
-<div class="collapse" id="collapseVersions">
-  <div class="card card-body">
 
 10/27/2010 - v1.3.9h
 
