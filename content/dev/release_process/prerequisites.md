@@ -12,7 +12,7 @@ To run the release process, you must have the following:
 
 - A local copy of the [VersionStamper](https://github.com/zencart/versionstamper) application.
 
-- Admin access to the main Zen Cart website (MissionControl)
+- Admin access to the main Zen Cart website 
 
 - Admin access to the Version/Ping server (ping.zen-cart.com/dashboard).
 
