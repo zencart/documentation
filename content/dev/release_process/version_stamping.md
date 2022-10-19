@@ -19,8 +19,6 @@ The script is available in the https://github.com/zencart/versionstamper reposit
 
 This is a private repository, so you may need to request access.
 
-**FIXME:** In 1.5.8, we stamped the alpha builds.  It is not clear whether this was the right decision; perhaps only final release builds should be stamped.  TBD.
-
 ## Preparatory Actions for Version Stamping 
 
 1. Create a feature branch in your Zen Cart directory for the version stamping changes, e.g.

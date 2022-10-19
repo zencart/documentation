@@ -1,0 +1,10 @@
+Docs: 
+- updating Implementation guide - add to steps (perhaps post-release steps?)
+- updating what's new and changed files docs
+
+
+Process: 
+
+- In 1.5.8, we stamped the alpha builds.  It is not clear whether this was the right decision; perhaps only final release builds should be stamped.  TBD.
+If we change, update version_stamping.md
+

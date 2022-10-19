@@ -48,7 +48,7 @@ In `not_for_release/testFramework/Browser/duskConfigures` you will need to creat
 
 `$user.configure.dusk/php` where `$user` is replaced by the user that your php scripts run as.
 
-You can find this by echoing $_SERVER['USER] in some php script.
+You can find this by echoing `$_SERVER['USER']` in some php script.
 
 An example file `dusk.configure.php` can be used as a template.
 

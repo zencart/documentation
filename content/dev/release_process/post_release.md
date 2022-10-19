@@ -60,3 +60,5 @@ A day or two after the build has been released when you're confident that all is
 
 - Begin process of formally merging release to Master/Main **FIXME - unsure**
 
+- Take some time to review the What's New document in the [release folder](/release) to be sure it's complete. 
+
