@@ -13,7 +13,7 @@ category: release_process
 
 Instructions: 
 ```
-- Login to https://www.zen-cart.com/ZenMissionControl/index.php
+- Login to the admin panel for zen-cart.com
 - Thread Prefixes -> Thread prefix manager 
 - Where it says "Zen Cart version", click on Add Prefix 
 ```
@@ -35,7 +35,7 @@ click Save
 
 Instructions: 
 ```
-- Login to https://www.zen-cart.com/ZenMissionControl/index.php
+- Login to the admin panel for zen-cart.com
 
 - Maintenance -> Execute SQL Query 
 
