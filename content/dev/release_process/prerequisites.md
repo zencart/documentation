@@ -28,9 +28,11 @@ The final steps before beginning the release process are:
 
 1. Edit the files `zc_install/sql/install/mysql_zencart.sql` and `zc_install/sql/updates/mysql_upgrade_zencart_158.sql` and check it in to update the database version. 
 
-- Do copyright updates: 
+- Do copyright updates in the following files: 
 
-1. Update docs/INSTALL.TXT
+1. docs/INSTALL.TXT
+1. docs/what's new file for this release
+1. docs/changed files for this release
 
 <div style="text-align:right;" id="next">
    <a class="btn btn-lg btn-primary mr-3 mb-4" href="/dev/release_process/initial_steps/">
