@@ -1,5 +1,5 @@
 ---
-title: Basic 158 Language Customizations
+title: Basic 158+ Language Customizations
 description: Starting from scratch for 1.5.8 with language files
 category: localization
 weight: 10
@@ -15,13 +15,13 @@ Note: You will still want your [define page](/user/template/define_pages/#define
 
 |File|Defines|
 |----|-------|
-|`lang.english.php`|`HEADER_ALT_TEXT, HEADER_LOGO_HEIGHT, HEADER_LOGO_IMAGE, HEADER_LOGO_WIDTH` |
+|`lang.english.php`|`HEADER_ALT_TEXT, HEADER_LOGO_IMAGE, HEADER_LOGO_WIDTH, HEADER_LOGO_HEIGHT` |
 
 ## Files in admin/includes/languages/english
 
 |File|Defines|
 |----|-------|
-|`lang.email_extras.php`|`EMAIL_LOGO_FILENAME, EMAIL_LOGO_WIDTH, EMAIL_LOGO_HEIGHT, EMAIL_LOGO_ALT_TITLE_TEXT`| 
+|`lang.email_extras.php`|`EMAIL_LOGO_ALT_TITLE_TEXT, EMAIL_LOGO_FILENAME, EMAIL_LOGO_WIDTH, EMAIL_LOGO_HEIGHT`| 
 
 
 # Storefront side 
@@ -30,8 +30,8 @@ Note: You will still want your [define page](/user/template/define_pages/#define
 
 |File|Defines|
 |----|-------|
-|`lang.email_extras.php`|`EMAIL_LOGO_FILENAME, EMAIL_LOGO_WIDTH, EMAIL_LOGO_HEIGHT, EMAIL_LOGO_ALT_TITLE_TEXT`| 
-|`lang.header.php`|`HEADER_ALT_TEXT, HEADER_SALES_TEXT, HEADER_LOGO_WIDTH, HEADER_LOGO_HEIGHT, HEADER_LOGO_IMAGE`|
+|`lang.email_extras.php`|`EMAIL_LOGO_ALT_TITLE_TEXT, EMAIL_LOGO_FILENAME, EMAIL_LOGO_WIDTH, EMAIL_LOGO_HEIGHT`| 
+|`lang.header.php`|`HEADER_ALT_TEXT, HEADER_LOGO_IMAGE, HEADER_LOGO_WIDTH, HEADER_LOGO_HEIGHT, HEADER_SALES_TEXT`|
 |`lang.meta_tags.php`|`TITLE, SITE_TAGLINE, CUSTOM_KEYWORDS `|
 |`lang.index.php`|`HEADING_TITLE, HEADING_TITLE_NESTED`|
 
