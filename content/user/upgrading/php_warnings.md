@@ -1,6 +1,6 @@
 ---
 title: PHP Warnings and Deprecated messages after upgrading
-description: How to fix the most common PHP7 messages
+description: How to fix the most common PHP7+ messages
 category: upgrading 
 weight: 10
 ---
@@ -12,6 +12,12 @@ There are several levels of PHP problems, with the least serious being _notices_
 More serious are PHP _errors_, which can cause a blank screen or partially blank screen.  If you are experiencing errors, you should also read the [blank pages troubleshooting guide](/user/troubleshooting/blank_page/).
 
 Please take these as examples, not exact matches for every log you might come across. 
+
+## Logs related to PHP8 
+
+PHP8 is a *major change*.  Zen Cart 1.5.8 is designed to work with PHP 8 well, but older versions and older plugins will give you problems.  Here are some notes on [updating plugins to work with PHP8](/dev/plugins/upgrading_to_158/).
+
+If you are using PHP 8.0 with v1.5.7, be sure to [suppress logging duplicate-language definitions](/user/troubleshooting/constant_already_defined/).
 
 ## Undefined constant 
 
