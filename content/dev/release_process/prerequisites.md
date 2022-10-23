@@ -18,17 +18,38 @@ To run the release process, you must have the following:
 
 - an up to date copy of both the branch that you are releasing, and the `main` branch. 
 
-The final steps before beginning the release process are: 
+Once you have these things, you're almost ready to begin.
 
-- Update the version.php files: 
+# Final Steps Before Beginning
+## Update the version.php files: 
 
-1. Edit the file `includes/version.php` and check it in to update the version.
+1. Edit the file `includes/version.php` and update the version.
 
-1. Edit the file `zc_install/includes/version.php` and check it in to update the version.
+1. Edit the file `zc_install/includes/version.php` and update the version.
 
-1. Edit the files `zc_install/sql/install/mysql_zencart.sql` and `zc_install/sql/updates/mysql_upgrade_zencart_158.sql` and check it in to update the database version. 
+1. Edit the file `zc_install/sql/install/mysql_zencart.sql` and update the version number in the `project_version` and `project_version_history` tables. 
 
-- Do copyright updates in the following files: 
+1. Edit the file `zc_install/sql/updates/mysql_upgrade_zencart_158.sql` and update the version number in the `project_version` and `project_version_history` tables. 
+
+1. Ensure the version number in `zc_install/includes/systemChecks.yml` is the current version. 
+
+This can be confusing because sometimes the update letter is included and sometimes it isn't.  The thing to remember is that the database version does not include the letter, because the database doesn't change just because of a patch release.  
+
+Here's what should be in these files for version 1.5.7b: 
+
+|File | Version 
+------|--------
+|`includes/version.php`| `define('PROJECT_VERSION_MINOR', '5.7b');`|
+|`zc_install/includes/version.php`|`define('PROJECT_VERSION_MINOR', '5.7b');`|
+|`zc_install/sql/install/mysql_zencart.sql`|`project_version_patch1` for the two `Zen-Cart Main` rows should be `5.7b`|
+|`zc_install/sql/install/mysql_zencart.sql`|`project_version_patch1` for the two `Zen-Cart Database` rows should be `5.7`|
+|`zc_install/sql/updates/mysql_upgrade_zencart_157.sql`|Same two changes as install script above|
+|`zc_install/includes/systemChecks.yml`|Top `checkDBVersion` block should be `version: '1.5.7'`|
+
+
+## Copyright Updates
+
+Do copyright updates in the following files: 
 
 1. docs/INSTALL.TXT
 1. docs/what's new file for this release
