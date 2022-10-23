@@ -5,7 +5,7 @@ category: upgrading
 weight: 10
 ---
 
-After you go live with an upgrade, you will likely want to update your PHP Version.  For example, if you were running Zen Cart 1.5.1, you were probably using PHP 5.6 or 7.1.  After deploying Zen Cart 1.5.7, you will want to update your PHP version to PHP 7.4. 
+After you go live with an upgrade, you will likely want to update your PHP Version.  For example, if you were running Zen Cart 1.5.1, you were probably using PHP 5.6 or 7.1.  After deploying Zen Cart 1.5.7, you will want to update your PHP version to PHP 7.4. And after deploying Zen Cart 1.5.8, you will want to update your PHP version to 8.0 or 8.1.  
 
 You will want to run the latest PHP version which is appropriate for your Zen Cart version.  See  [Server Requirements for running Zen Cart](/user/first_steps/server_requirements/#php-version).
 

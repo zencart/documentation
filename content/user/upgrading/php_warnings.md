@@ -19,6 +19,10 @@ PHP8 is a *major change*.  Zen Cart 1.5.8 is designed to work with PHP 8 well, b
 
 If you are using PHP 8.0 with v1.5.7, be sure to [suppress logging duplicate-language definitions](/user/troubleshooting/constant_already_defined/).
 
+### Logs related to PHP 8.2
+
+PHP 8.2 is *the deprecation release*.  We have tried to shake out as many of the issues in the core as we could prior to release, but there may be some lingering, and there will absolutely be issues with plugins.  See [upgrading plugins to work with 1.5.8/PHP 8.0+](/dev/plugins/upgrading_to_158/) for ideas on how to fix the issues you encounter.  You may also wish to [track development of Zen Cart on Github](https://github.com/zencart/zencart/) to see what we're preparing for the next release.
+
 ## Undefined constant 
 
 ```
