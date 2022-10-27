@@ -18,8 +18,10 @@ Legend:
 - e: [categories tabs](/user/new_user_topics/categories_tabs/)
 - f: [EZ-Pages header bar](/user/ezpages/ezpages_header_bar/)
 
+### Footer
+
 This screenshot below shows the bottom of a page in a Zen Cart storefront. 
-The entire width of the page is taken up by the footer.
+The entire width of the page is taken up by the footer.  The black bar at the top of the footer with links to Home, My Account, Site Map, etc is the [EZ-Pages footer bar](/user/ezpages/ezpages_footer_bar/).
 
 ![Page bottom](/images/page_bottom.png)
 
