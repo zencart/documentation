@@ -62,3 +62,11 @@ A day or two after the build has been released when you're confident that all is
 
 - Take some time to review the What's New document in the [release folder](/release) to be sure it's complete. 
 
+## Post-Release Things to Consider 
+
+- Is it time to remove old versions from the plugin version list?
+
+- Is it time to hide older what's new / changed files documents in the [releases](/releases) folder? 
+
+- Are there old stuck posts on the forum that should be unstuck? 
+
