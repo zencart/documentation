@@ -29,7 +29,7 @@ weight: 1
 
 ## QUESTION: "But it seems like a long process ..."
 
-An "upgrade" is essentially a rebuilding of your site.
+**ANSWER:** It is!  An "upgrade" is essentially a rebuilding of your site.
 
 The suggested upgrade process is the recommended way to do it so that you rebuild your site in a <u>temporary location,</u> letting you resolve all potential problems *before* you ever touch your actual live site. 
 
@@ -50,3 +50,11 @@ So, follow the guide, and while there may be some learning involved and remember
 **ANSWER:** You can upgrade to the latest version directly.<br>
 For the "files" portion of the upgrade, simply use the latest version.<br>
 And when you do the database-upgrade step via `zc_install` it will show you all the database-version-levels which need upgrading, and will pre-check the checkboxes for you and will take care of upgrading through all those steps automatically. Usually you can just leave those boxes checked and put in the admin password and proceed with the upgrade, which normally will take just a few seconds.  
+
+
+## QUESTION: "I can't figure this out!  What do I do?" 
+
+**ANSWER:** Upgrading is a complex and time consuming process that requires skills that many (if not most) shop owners just don't have.<br>
+The good news is that Zen Cart has a [Commercial Help Wanted](https://www.zen-cart.com/forumdisplay.php?138-Commercial-Help-Wanted) forum, where you
+can hire a contractor to do this work for you.
+

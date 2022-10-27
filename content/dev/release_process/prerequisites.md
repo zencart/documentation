@@ -46,6 +46,8 @@ Here's what should be in these files for version 1.5.7b:
 |`zc_install/sql/updates/mysql_upgrade_zencart_157.sql`|Same two changes as install script above|
 |`zc_install/includes/systemChecks.yml`|Top `checkDBVersion` block should be `version: '1.5.7'`|
 
+There are other version related updates to do, but they're not part of the build, so they are detailed in [post release tasks](/dev/release_process/post_release/).
+
 
 ## Copyright Updates
 
