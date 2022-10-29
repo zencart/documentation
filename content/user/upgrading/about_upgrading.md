@@ -37,3 +37,8 @@ Yes.  You can review the [security releases](/user/about_us/security_releases/) 
 - Keep track of [the PHP Version Support Policy](https://www.php.net/supported-versions.php) so you know when the [PHP version you are running](/user/admin_pages/admin_version/) is at or near end of life.
 - Watch your [JavaScript libraries](/user/upgrading/javascript_updates/).  As vulnerabilities are discovered, you will need to update them. 
 
+## Why Else? 
+
+The advantage of keeping your site up to date is that you get all the new features and fixes that are added in each release.  Just look at the [Release Notes](/user/about_us/release_history/) for any release and you can see the changes that were made from the prior release. 
+
+

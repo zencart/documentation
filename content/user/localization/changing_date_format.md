@@ -7,51 +7,62 @@ weight: 10
 
 There are a number of different date formats used around the world, and the approach for changing to any of them is broadly the same. In this tutorial we'll show how to change from the default US format (mm/dd/yyyy) to the dd/mm/yyyy format used in most other English-speaking countries and those speaking many other languages. As date formats are generally language-specific (or in the case of English, dialect-specific) we'll be editing two Zen Cart language files to make this change.  
 
-### 1\. open file includes/languages/YOURTEMPLATE/YOURLANGUAGE.php
+If you are looking for the instructions for versions prior to Zen Cart 1.5.8, please see [Date format for 1.5.7 and below](/user/localization/changing_date_format_157/). 
 
-(if this file doesn't exist, create it by copying the file `includes/languages/YOURLANGUAGE.php` to this location).  
 
-### 2\. find this section:
+# Instructions for 1.5.8 and above 
+
+### 1. Open file `includes/languages/YOURTEMPLATE/lang.YOURLANGUAGE.php`
+
+(if this file doesn't exist, create it by copying the file `includes/languages/lang.YOURLANGUAGE.php` to this location).  
+
+### 1a. find this line
 
 ```
-@setlocale(LC_TIME, 'en_US.ISO_8859-1');
+$locales = ['en_US', 'en_US.utf8', 'en', 'English_United States.1252'];
+```
+and replace with:  
 
-define('DATE_FORMAT_SHORT', '%m/%d/%Y'); // this is used for strftime()
+```
+$locales = ['en_GB', 'en_GB.utf8', 'en']
+```
 
-define('DATE_FORMAT_LONG', '%A %d %B, %Y'); // this is used for strftime()
+### 1b. find these lines 
 
-define('DATE_FORMAT', 'm/d/Y'); // this is used for date()
+```
+    'DATE_FORMAT' => 'm/d/Y',
 
-define('DATE_TIME_FORMAT', DATE_FORMAT_SHORT . ' %H:%M:%S');
+    'DOB_FORMAT_STRING' => 'mm/dd/yyyy',
 ```
 
 and replace with:  
 
 ```
-@setlocale(LC_TIME, 'en_GB.ISO_8859-1');
+    'DATE_FORMAT' => 'd/m/Y',
 
-define('DATE_FORMAT_SHORT', '%d/%m/%Y'); // this is used for strftime()
-
-define('DATE_FORMAT_LONG', '%A %d %B, %Y'); // this is used for strftime()
-
-define('DATE_FORMAT', 'd/m/Y'); // this is used for date()
-
-define('DATE_TIME_FORMAT', DATE_FORMAT_SHORT . ' %H:%M:%S');
+    'DOB_FORMAT_STRING' => 'dd/mm/yyyy',
 ```
 
-### 3\. in the same file find this section:
+### 1c. find these lines 
 
 ```
-// Return date in raw format
+    'ENTRY_DATE_OF_BIRTH_ERROR' => 'Is your birth date correct? Our system requires the date in this format: MM/DD/YYYY (eg 05/21/1970) or this format: YYYY-MM-DD (eg 1970-05-21)',
+    'ENTRY_DATE_OF_BIRTH_TEXT' => '* (eg. 05/21/1970 or 1970-05-21)',
+```
 
-// $date should be in format mm/dd/yyyy
+and replace with:  
 
-// raw date is in format YYYYMMDD, or DDMMYYYY
+```
+    'ENTRY_DATE_OF_BIRTH_ERROR' => 'Is your birth date correct? Our system requires the date in this format: DD/MM/YYYY (eg 21/05/1970) or this format: YYYY-MM-DD (eg 1970-05-21)',
+    'ENTRY_DATE_OF_BIRTH_TEXT' => '* (eg. 21/05/1970 or 1970-05-21)',
+```
 
-if (!function_exists('zen_date_raw')) {
+### 2. Open file `includes/functions/functions_dates.php`
 
-  function zen_date_raw($date, $reverse = false) {
+### 2a. find `zen_date_raw`
 
+change
+```
     if ($reverse) {
 
       return substr($date, 3, 2) . substr($date, 0, 2) . substr($date, 6, 4);
@@ -67,19 +78,9 @@ if (!function_exists('zen_date_raw')) {
 }
 ```
 
-and replace with:  
+to: 
 
 ```
-// Return date in raw format
-
-// $date should be in format dd/mm/yyyy
-
-// raw date is in format YYYYMMDD, or DDMMYYYY
-
-if (!function_exists('zen_date_raw')) {
-
-  function zen_date_raw($date, $reverse = false) {
-
     if ($reverse) {
 
       return substr($date, 0, 2) . substr($date, 3, 2) . substr($date, 6, 4);
@@ -96,156 +97,52 @@ if (!function_exists('zen_date_raw')) {
 ```
 
 
-### 4\. In the same file find this section:
 
-```
-// text for date of birth example
-
-define('DOB_FORMAT_STRING', 'mm/dd/yyyy');
-
-```
-
-and replace with:  
-
-```
-// text for date of birth example
-
-define('DOB_FORMAT_STRING', 'dd/mm/yyyy');
-```
-
-### 5\. In the same file find this section:
-
-`define('ENTRY_DATE_OF_BIRTH_ERROR', 'Is your birth date correct? Our system requires the date in this format: MM/DD/YYYY (eg 05/21/1970)');`
-
-`define('ENTRY_DATE_OF_BIRTH_TEXT', '* (eg. 05/21/1970)'); `
-
-and replace with:  
-
-
-`define('ENTRY_DATE_OF_BIRTH_ERROR', 'Is your birth date correct? Our system requires the date in this format: DD/MM/YYYY (eg 21/05/1970)');`
-
-`define('ENTRY_DATE_OF_BIRTH_TEXT', '* (eg. 21/05/1970)');`
-
-
-### 6\. Open file admin/includes/languages/YOURLANGUAGE.php
+### 3. Open file `admin/includes/languages/lang.YOURLANGUAGE.php`
 
 (this file cannot be over-ridden at present, so you will need to edit the file directly and be careful to reapply the changes if you upgrade to a later version of Zen Cart)  
 
-### 7\. Find this section:
 
+### 3a. Perform the same change as you did in 1a.
+
+### 3b. find these lines 
 ```
-setlocale(LC_TIME, 'en_US.ISO_8859-1');
-
-define('DATE_FORMAT_SHORT', '%m/%d/%Y'); // this is used for strftime()
-
-define('DATE_FORMAT_LONG', '%A %d %B, %Y'); // this is used for strftime()
-
-define('DATE_FORMAT', 'm/d/Y'); // this is used for date()
-
-define('PHP_DATE_TIME_FORMAT', 'm/d/Y H:i:s'); // this is used for date()
-
-define('DATE_TIME_FORMAT', DATE_FORMAT_SHORT . ' %H:%M:%S');
-
-define('DATE_FORMAT_SPIFFYCAL', 'MM/dd/yyyy'); //Use only 'dd', 'MM' and 'yyyy' here in any order
+    'DATE_FORMAT' => 'm/d/Y',
+    'DATE_FORMAT_SHORT' => '%m/%d/%Y',
+    'DATE_FORMAT_SPIFFYCAL' => 'MM/dd/yyyy',
 ```
 
-and replace with:  
+and replace with 
 
 ```
-setlocale(LC_TIME, 'en_GB.ISO_8859-1');
-
-define('DATE_FORMAT_SHORT', '%d/%m/%Y'); // this is used for strftime()
-
-define('DATE_FORMAT_LONG', '%A %d %B, %Y'); // this is used for strftime()
-
-define('DATE_FORMAT', 'd/m/Y'); // this is used for date()
-
-define('PHP_DATE_TIME_FORMAT', 'd/m/Y H:i:s'); // this is used for date()
-
-define('DATE_TIME_FORMAT', DATE_FORMAT_SHORT . ' %H:%M:%S');
-
-define('DATE_FORMAT_SPIFFYCAL', 'dd/MM/yyyy'); //Use only 'dd', 'MM' and 'yyyy' here in any order
+    'DATE_FORMAT' => 'd/m/Y',
+    'DATE_FORMAT_SHORT' => '%d/%m/%Y',
+    'DATE_FORMAT_SPIFFYCAL' => 'dd/MM/yyyy',
 ```
 
-### 8\. In the same file find this section:
+### 3c. find these lines
 
 ```
-// Return date in raw format
-
-// $date should be in format mm/dd/yyyy
-
-// raw date is in format YYYYMMDD, or DDMMYYYY
-
-function zen_date_raw($date, $reverse = false) {
-
-  if ($reverse) {
-
-    return substr($date, 3, 2) . substr($date, 0, 2) . substr($date, 6, 4);
-
-  } else {
-
-    return substr($date, 6, 4) . substr($date, 0, 2) . substr($date, 3, 2);
-
-  }
-
-}
+    'ENTRY_DATE_OF_BIRTH_ERROR' => '&nbsp;<span class="errorText">(eg. 05/21/1970)</span>',
 ```
 
-and replace with:
+and replace with
 
 ```
-// Return date in raw format
-
-// $date should be in format dd/mm/yyyy
-
-// raw date is in format YYYYMMDD, or DDMMYYYY
-
-function zen_date_raw($date, $reverse = false) {
-
-  if ($reverse) {
-
-    return substr($date, 0, 2) . substr($date, 3, 2) . substr($date, 6, 4);
-
-  } else {
-
-    return substr($date, 6, 4) . substr($date, 3, 2) . substr($date, 0, 2);
-
-  }
-
-}
+    'ENTRY_DATE_OF_BIRTH_ERROR' => '&nbsp;<span class="errorText">(eg. 21/05/1970)</span>',
 ```
 
-### 9\. In the same file find this section:
+### 3d. find these lines
 
 ```
-// text for date of birth example
-
-define('DOB_FORMAT_STRING', 'mm/dd/yyyy');
+    'PHP_DATE_TIME_FORMAT' => 'm/d/Y H:i:s',
 ```
 
-and replace with:  
+and replace with
 
 ```
-// text for date of birth example
-
-define('DOB_FORMAT_STRING', 'dd/mm/yyyy');
+    'PHP_DATE_TIME_FORMAT' => 'd/m/Y H:i:s',
 ```
-
-### 10\. In the same file find this section:
-
-`define('JS_DOB', '* The \'Date of Birth\' entry must be in the format: xx/xx/xxxx (month/date/year).\n');`
-
-and replace with:  
-
-`define('JS_DOB', '* The \'Date of Birth\' entry must be in the format: xx/xx/xxxx (date/month/year).\n');`
-
-### 11\. In the same file find this section:
-
-`define('ENTRY_DATE_OF_BIRTH_ERROR', '&nbsp;<span class="errorText">(eg. 05/21/1970)</span>');`
-
-and replace with:  
-
-`define('ENTRY_DATE_OF_BIRTH_ERROR', '&nbsp;<span class="errorText">(eg. 21/05/1970)</span>');`
 
 And that's it, you're done!  
 

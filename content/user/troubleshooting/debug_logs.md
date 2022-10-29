@@ -73,6 +73,16 @@ Let's examine the back-trace provided by the first log-entry in the example give
 ### How to Fix Common Debug Logs
 Many examples of debug logs and how to fix them are shown in [PHP Warnings and Deprecated messages after upgrading](/user/upgrading/php_warnings/). 
 
+### Logs and Versioning
+As PHP is improved and enhanced, things that didn't create a debug log in older PHP versions now do.  So if your hoster upgrades your PHP version, you might start seeing new logs.
+
+Every version of Zen Cart that is released fixes a number of debug logs which occurred in prior releases, especially with PHP versions that were released after that version of Zen Cart was released.  
+- You can see your Zen Cart and PHP versions on the Admin [Version](/user/first_steps/version/) screen. 
+- You can see the mapping of [Zen Cart version to PHP version](/user/first_steps/server_requirements/#php-version) to compare your current PHP version and Zen Cart version. 
+- You can see the [Release History of Zen Cart](/user/about_us/release_history/) to see how current your copy is.
+
+So if you're seeing a lot of logs, and your Zen Cart version is old, and especially if it's not recent enough for your PHP version, you should [upgrade](/user/upgrading/). 
+
 ### Special Logs 
 Some logs will follow special file naming conventions to make them more easily identifiable.   The following prefixes are used: 
 
@@ -87,6 +97,6 @@ The following tools are available for working with debug log files:
 These are for older versions of Zen Cart:
 
 - [Display Log Files](https://www.zen-cart.com/downloads.php?do=file&id=1583) - View the contents of the log-files via an admin tool. Built in to Zen Cart since 1.5.7.
-- [myDEBUG log Backtrace](https://www.zen-cart.com/downloads.php?do=file&id=1879) - shows stack trace when a log is created. Built in to Zen Cart after 1.5.5. 
+- [myDEBUG log Backtrace](https://www.zen-cart.com/downloads.php?do=file&id=1879) - shows stack trace when a log is created. Built in to Zen Cart since 1.5.5. 
 - [Report All Errors](https://www.zen-cart.com/downloads.php?do=file&id=1792) - shows more extensive error logging than is done by default in Zen Cart. Built in to Zen Cart since 1.5.7.
 
