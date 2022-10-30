@@ -24,7 +24,7 @@ $locales = ['en_US', 'en_US.utf8', 'en', 'English_United States.1252'];
 and replace with:  
 
 ```
-$locales = ['en_GB', 'en_GB.utf8', 'en']
+$locales = ['en_GB', 'en_GB.utf8', 'en'];
 ```
 
 ### 1b. find these lines 
@@ -103,7 +103,17 @@ to:
 (this file cannot be over-ridden at present, so you will need to edit the file directly and be careful to reapply the changes if you upgrade to a later version of Zen Cart)  
 
 
-### 3a. Perform the same change as you did in 1a.
+### 3a. find this line
+
+```
+@setlocale(LC_TIME, ['en_US', 'en_US.utf8', 'en', 'English_United States.1252']);
+```
+and replace with 
+
+```
+@setlocale(LC_TIME, ['en_GB', 'en_GB.utf8', 'en']); 
+```
+
 
 ### 3b. find these lines 
 ```
