@@ -203,32 +203,35 @@ For manually-instantiating Observers at customized load-points, you must provide
 
 To load and create an 'instance' of your observer-class so that it is operational, you'll create a file in the Zen Cart `/includes/auto_loaders` (or `/admin/includes/auto_loaders`) sub-directory to perform those tasks.  
 
-For the example used above, that was the file named `/includes/auto_loaders/config.products_viewed_counter.php`.
+For the example used above, that was the file named `/includes/auto_loaders/config.your_plugin.php`.
 
 The file contains two auto-load statements:
 
 1. An `autoType` of `class` to load your observer's class-file.
 2. An `autoType` of `classInstantiate` to create an instance of your observer-class.
 
-The 'load-point', in this example `190` indicates the *relative* position within the auto-loading process at which the auto-load actions are to be performed.  Most observers can safely load at load-point `190` or later (after all the base Zen Cart auto-loaders have completed).  See [Choosing When to Load an Observer](#choosing-when-to-load-an-observer) for some special cases.
+The 'load-point', in this example `200` indicates the *relative* position within the auto-loading process at which the auto-load actions are to be performed.  Most observers can safely load at load-point `200` or later (after all the base Zen Cart auto-loaders have completed).  See [Choosing When to Load an Observer](#choosing-when-to-load-an-observer) for some special cases.
 
 
 ```php
 if (!defined('IS_ADMIN_FLAG')) {
  die('Illegal Access');
 }
-$autoLoadConfig[190][] = array('autoType'=>'class',
+$autoLoadConfig[200][] = [
+    'autoType'=>'class',
 
-                              // the filename, relative to the `classes` folder:
-                              'loadFile'=> DIR_FS_CATALOG . DIR_WS_CLASSES . 'observers/class.products_viewed_counter.php');
+    // the filename, relative to the `classes` folder:
+    'loadFile'=>'observers/class.your_plugin.php'
+];
+$autoLoadConfig[200][] = [
+    'autoType'=>'classInstantiate',
 
-$autoLoadConfig[190][] = array('autoType'=>'classInstantiate',
+    // the name of the class as declared inside the observer class file
+    'className'=>'your_plugin',
 
-                              // the name of the class as declared inside the observer class file
-                              'className'=>'products_viewed_counter',
-
-                              // the name of the global object into which the class is instantiated
-                              'objectName'=>'products_viewed_counter');
+    // the name of the global object into which the class is instantiated
+    'objectName'=>'your_plugin'
+];
 ```
 
 
