@@ -5,10 +5,22 @@ category: plugins
 weight: 10
 ---
 
-If you are creating a plugin or customizing some code, and you want to create a setting which can be changed in the admin without modifying code, you can put it in the database in an appropriate configuration group.  For example, a value relating to shipping should go in configuration group 7 (Shipping and Packaging).  
-
+If you are creating a plugin or customizing some code, and you want to create a setting which can be changed in the admin without modifying code, you can put it in the database in an appropriate configuration group.  For example, a value relating to shipping should go in configuration group 7 (Shipping and Packaging).
+ 
 ```
 INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, last_modified, date_added) VALUES ('Canada Shipping Surcharge', 'CANADA_SHIPPING_SURCHARGE', '12', 'Additional fee for shipping to Canada - added to quote from shipper', 7, 125, NULL, now());
+```
+
+Then, in your code, instead of hardcoding a number 
+
+```
+$shipping_cost += 12; 
+```
+
+refer to a configuration variable 
+
+```
+$shipping_cost += (float)CANADA_SHIPPING_SURCHARGE; 
 ```
 
 Global settings should go in configuration group 1 (My Store).
