@@ -16,7 +16,7 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 - Part of staying up to date is monitoring not just your Zen Cart version, but all your other software dependencies, such as JavaScript.  Use a tool like Google Chrome Lighthouse to [find outdated JavaScript libraries with known vulnerabilities](/user/upgrading/javascript_updates/). 
 
-- Part of keeping modern is embracing newer PHP versions. You will need to address various [common issues with PHP version incompatibility](/user/upgrading/php_warnings/).
+- Another part of staying up to date is embracing newer PHP versions. You will need to address various [common issues with PHP version incompatibility](/user/upgrading/php_warnings/).
 
 - Be sure external links are constructed with `rel="noreferrer noopener"`.
 
@@ -24,9 +24,13 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 ### Zen Cart 1.5.8 
 
-- Most "functions" (both admin and non-admin) have been consolidated into files located in `/includes/functions/`. Some have been merged together. Some changes are listed below.
+- Zen Cart 1.5.8 still runs on PHP 7.3 and 7.4 but was created for PHP 8+.  PHP8 is a major change from PHP7, and many plugins will require work before they are usable.  Work with the community and your developer to be sure any modifiations you make are ready for PHP 8.  See [Upgrading plugins to work with 1.5.8/PHP 8.0+](/dev/plugins/upgrading_to_158/).
 
-- Language file inclusions must be changed to comply with the new language file format.  See [Developer Information on Array based Language files](/dev//languages/158_language_files/) for more details.  You may wish to consider doing only the [basic language file customizations](/user/localization/basic_158_language_customizations/).
+- A new file, `includes/init_includes/init_non_db_settings.php`, was introduced to store defined constants which are not language specific. 
+
+- Most "functions" (both admin and non-admin) have been consolidated into files located in `/includes/functions/`. Some have been merged together. Some changes are listed below.  This change was done to eliminate the duplication of identical (or nearly identical) functions between the storefront and admin that was present in prior releases.
+
+- Language files were changed to a new format.  See [Developer Information on Array based Language files](/dev//languages/158_language_files/) for more details.  If you are upgrading, you may wish to consider doing only the [basic language file customizations](/user/localization/basic_158_language_customizations/) rather than port all the changes you had from prior releases.  Core language files should be overriden in the new format; plugin language files may use the old or the new file format. 
 
 - The function `zen_parse_search_string` input parameters have been reversed. Plugins that use this function will require modification.
 

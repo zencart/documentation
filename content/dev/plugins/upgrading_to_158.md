@@ -4,6 +4,8 @@ description: Upgrading old Zen Cart plugins to work with Zen Cart 1.5.8
 category: plugins
 ---
 
+PHP8 is a major change, and many older plugins will require attention before they can be used without problems. 
+
 ## Array Based Language Files 
 To avoid duplicate define notices from PHP, Zen Cart 1.5.8 uses [Array Based Language Files](/dev/languages/158_language_files/).
 
@@ -129,3 +131,8 @@ NB. To use inside a function or another class you will need to add
    global $zcDate;
 ```
 before you use `zcDate` for the first time.
+
+### Related Pages
+
+- [PHP Idioms](/dev/code/php_idioms/)
+- [Release Specific Upgrade Considerations](/user/upgrading/release_specific_upgrade_considerations/)
