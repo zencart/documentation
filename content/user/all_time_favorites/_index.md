@@ -75,7 +75,7 @@ and then
 
 * [Time Zone](/user/new_user_topics/timezone/) - How do I make the store use my local timezone?  It uses GMT now. 
 
-* [Upgrading Zen Cart](/user/upgrading/upgrading/) - How do I upgrade my old cart?
+* [Upgrading Zen Cart](/user/upgrading/upgrading/) - How do I upgrade my old cart?  What [Release Specific Upgrade Considerations](/user/upgrading/release_specific_upgrade_considerations/) do I need to know about? 
 
 * [UTF8 and UTF8MB4](/user/upgrading/detailed_upgrading/#character-set) - What is UTF8 and why do I need it? 
 
