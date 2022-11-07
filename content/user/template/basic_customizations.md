@@ -10,7 +10,6 @@ Before you read this article, please be sure you are familiar with
 Zen Cart files. 
 
 ---
-<!-- this file isn't named _misc.md but it's really a misc file --> 
 
 {{< misc >}} 
 

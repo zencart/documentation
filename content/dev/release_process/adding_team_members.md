@@ -27,6 +27,8 @@ This is required for merging PRs and doing the [Release Tagging](/dev/release_pr
 
 Login to Github and go to the [Zen Cart committers member list](https://github.com/orgs/zencart/teams/committers/members).  Press the "Add a member" button.
 
+The documentation site has its own core committers list, called [doc-collaborators](https://github.com/orgs/zencart/teams/doc-collaborators/members).  The same process is used to add new members to that list.
+
 ### Allowing somone to ssh to Reynolds
 
 This is not required for all members, but may be useful in case vBulletin needs to be modified in some way.  An example is adding a super administrator, as noted above - this cannot be done in the vBulletin UI; it requires a file change.
@@ -58,7 +60,7 @@ Github does not permit you to assign an issue to any arbitrary user.
 Issues may only be assigned to 
 - the user who opened the issue
 - a user who commented on an issue 
-- a member of the [Github ZenCart Contributors](https://github.com/orgs/zencart/teams/contributors/members)
+- a member of the [Github ZenCart Contributors](https://github.com/orgs/zencart/teams/contributors/members) team.
 
-To add someone to the Github ZenCart Contributors list, invite them using the "Add a member" button on the [contributors page](https://github.com/orgs/zencart/teams/contributors/members).  Once they accept, they will appear in the list of members.  You can learn more about how this process works by reading [these instructions from Github](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-teams-and-people-with-access-to-your-repository). 
+To add someone to the Github ZenCart Contributors team, invite them using the "Add a member" button on the [Contributors team page](https://github.com/orgs/zencart/teams/contributors/members).  Once they accept, they will appear in the list of members.  You can learn more about how this process works by reading [these instructions from Github](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-teams-and-people-with-access-to-your-repository). 
 
