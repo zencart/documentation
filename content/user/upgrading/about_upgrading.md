@@ -41,4 +41,7 @@ Yes.  You can review the [security releases](/user/about_us/security_releases/) 
 
 The advantage of keeping your site up to date is that you get all the new features and fixes that are added in each release.  Just look at the [Release Notes](/user/about_us/release_history/) for any release and you can see the changes that were made from the prior release. 
 
+## OK, but Why Else? 
+
+If the arguments above haven't yet convinced you then consider this: hosters sunset older versions of PHP as time goes on, because they don't have to incur the security risk that comes with running older software.  This means that one day, your older cart will simply *stop working*. Wouldn't it be better to get ahead of this? 
 
