@@ -1,5 +1,5 @@
 ---
-title: Square Web Payments API
+title: Square WebPay
 description: How to collect payments with Square 
 category: payment
 weight: 10

@@ -1,11 +1,11 @@
  ---
-title: Square Errors and Issues 
+title: Square WebPay Errors and Issues 
 description: Handling problems with Square WebPay
 category: payment
 weight: 10
 ---
 
-Here are some common Square issues and the steps required to fix them. 
+Here are some common Square WebPay issues and the steps required to fix them. 
 
 --- 
 

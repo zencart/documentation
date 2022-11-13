@@ -1,5 +1,5 @@
  ---
-title: Square - Avoiding Token Expiry 
+title: Square WebPay - Avoiding Token Expiry 
 description: Preventing "OAuth access token has expired" 
 category: payment
 weight: 10
