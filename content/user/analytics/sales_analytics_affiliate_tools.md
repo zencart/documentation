@@ -86,11 +86,14 @@ if ($current_page_base == 'checkout_success') {
 
 ### JROX JAM  
 
+**Note: As late 2022, it appears that JROX JAM is no longer actively supported.  Migrating to an alternative is recommended.**
+
 No need to edit any core Zen Cart files.  
 Simply create a new file: `/includes/modules/pages/checkout_success/jscript_jam.php` and be sure to set the correct URL for your JAM system:
 
 ```
-   echo '<script type="text/javascript"  src="http://www.yourdomain.com/affiliates/sale.php?amount=' . $order_summary['commissionable_order'] . '&trans_id=' . $order_summary['order_number'] . '"></script>';
+<?php
+   echo '<script type="text/javascript"  src="https://www.YOURDOMAIN.com/affiliates/sale.php?amount=' . $order_summary['commissionable_order'] . '&trans_id=' . $order_summary['order_number'] . '"></script>';
 ```
 
 **Adding product IDs or Model Numbers on older versions:**  

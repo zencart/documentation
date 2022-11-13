@@ -6,7 +6,7 @@ layout: docs
 type: codepage
 ---
 
-**Note:** In Zen Cart 1.5.7, only *admin* side plugins may be encapsulated.  The intention is to support catalog side plugin encapsulation in Zen Cart 1.5.8. 
+**Note:** At the current time, only *admin* side plugins may be encapsulated.  The intention is to support catalog side plugin encapsulation in a future release. 
 
 **Note** For simplicity, files like `license.txt`, `README.txt` and `docs` are omitted; no changes are made to those files, which are not deployed. 
 
