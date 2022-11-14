@@ -7,7 +7,7 @@ category: plugins
 PHP8 is a major change, and many older plugins will require attention before they can be used without problems. 
 
 ## Array Based Language Files 
-To avoid duplicate define notices from PHP, Zen Cart 1.5.8 uses [Array Based Language Files](/dev/languages/158_language_files/).
+To avoid duplicate define notices from PHP, Zen Cart 1.5.8 uses [Array Based Language Files](/dev/code/158_language_files/).
 
 If you need to include a language file, the old style of doing so 
 
@@ -33,6 +33,16 @@ will no longer work for 1.5.8 and above.  However, plugin authors may want to ma
      }
      include_once ($old_langfile);
   }
+```
+
+On the admin side, you could do something like this: 
+
+```
+if (function_exists('zen_get_zcversion') && zen_get_zcversion() >= '1.5.8') { 
+   require 'includes/languages/english/lang.ezpages.php'; 
+} else {
+   require 'includes/languages/english/ezpages.php'; 
+}
 ```
 
 ### PHP 8.2 and objects 

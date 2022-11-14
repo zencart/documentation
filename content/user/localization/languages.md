@@ -95,6 +95,6 @@ The language file that contains this text is not encoded in utf-8 with no BOM. Y
 
 The structure of the language files was completely changed in Zen Cart 1.5.8.
 
-A description of the changes and conversion procedure is provided in the developer's guide to [158 Language Files](/dev/languages/158_language_files/).
+A description of the changes and conversion procedure is provided in the developer's guide to [158 Language Files](/dev/code/158_language_files/).
 
 
