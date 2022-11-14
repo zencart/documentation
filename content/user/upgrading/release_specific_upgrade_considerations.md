@@ -30,7 +30,7 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 - Most "functions" (both admin and non-admin) have been consolidated into files located in `/includes/functions/`. Some have been merged together. Some changes are listed below.  This change was done to eliminate the duplication of identical (or nearly identical) functions between the storefront and admin that was present in prior releases.
 
-- Language files were changed to a new format.  See [Developer Information on Array based Language files](/dev//languages/158_language_files/) for more details.  If you are upgrading, you may wish to consider doing only the [basic language file customizations](/user/localization/basic_158_language_customizations/) rather than port all the changes you had from prior releases.  Core language files should be overriden in the new format; plugin language files may use the old or the new file format. 
+- Language files were changed to a new format.  See [Developer Information on Array based Language files](/dev/code/158_language_files/) for more details.  If you are upgrading, you may wish to consider doing only the [basic language file customizations](/user/localization/basic_158_language_customizations/) rather than port all the changes you had from prior releases.  Core language files should be overriden in the new format; plugin language files may use the old or the new file format. 
 
 - The function `zen_parse_search_string` input parameters have been reversed. Plugins that use this function will require modification.
 

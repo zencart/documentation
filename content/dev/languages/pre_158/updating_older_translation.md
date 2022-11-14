@@ -1,5 +1,5 @@
 ---
-title: Updating an Older Translation
+title: Updating an Older Translation (DEPRECATED - 1.5.7 and below)
 description: How to Update an Older Translation Pack to the Latest Version of Zen Cart
 weight: 100 
 layout: docs
