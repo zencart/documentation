@@ -56,6 +56,13 @@ or visit http://www.YOURSITE.com/store/ and enter the code during the checkout p
 
 This email address was given to us by you or by one of our customers. If you feel that you have received this email in error, please send an email to YOURSITE@YOURMAIL.com
 ```
+
+Then, when they go to checkout, payment (either in part or in full) by gift certficate will be permitted.  
+
+![Gift Certificates at Checkout](/images/gift_certificates.png)
+
+In the case shown, for example, they could pay up to $50 of the amount due with their gift certificate balance.
+
 ## Releasing Gift Certificates Created by Admin 
 For stores that use the *Queue Purchases* setting in Admin > Modules > Order Total > Gift Certificates, purchased Gift Certificates must be released before they can be used. 
 
