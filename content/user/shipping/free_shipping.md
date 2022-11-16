@@ -52,6 +52,11 @@ You may configure shipping to be free under any of these conditions:
 - Order Weight less than or greater than a specified value 
 - Order Item Count less than or greater than a specified value
 
+Then your customer would see something like this: 
+
+![Free plus paid shipping](/images/free_plus_shipping.png)
+
+**Note:** If you are doing this, be sure to set `Always Free Shipping` on the [Product Editing page](/user/products/product_edit/) to false. 
 
 ## My store shows free shipping but I don't want it! 
 
