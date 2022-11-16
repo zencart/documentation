@@ -168,29 +168,45 @@ Like the DKIM, you should make sure the DMARC is properly created for any extra 
 
 ## 2\. Email Addresses
 
-When you purchased your domain, you also, as a side effect obtained the ability to create an unlimited number of email addresses for that domain. If you feel that the world needs myfavouriteauntsally@myshinynewstore.com, go ahead. When Aunt Sally gets an internet connection, I'm sure she'll be very happy.
+If you received an email today from JeffyB@gmail.com offering to make you rich by selling your product for you, what would you do?  What if the email came from JeffB@amazon.com?  I bet that second one really got your attention.  Email can make it look like your company is run out of your mother's basement or is soon to be on the fortune 500 list.  I don't think JeffyB@gmail.con would even be considered.  On your way to making that 500 list, there are some email addresses that are required in the United States and, while not specificallly demanded in other areas, the GDPR is getting close.
 
-What it did not necessarily get you is a site where that mail is hosted. In most cases your hosting service or registrar will offer this, but there is no standard package. Some offer only forwarding or similar, or charge extra per email address.
+When you purchased your domain, hopefully you also gained the right to create some email addresses for your account at no extra charge.  Some hosts may be charging for emails accounts.  Some actually charge for each account added.  This may be due to the tightening of email rules.  Those hosts see a new revenue stream as most folks require or need several email accounts.
 
-There is, again, no standard list of what email addresses are necessary for a site. From a standards point of view, one is absolutely essential, and that is postmaster@mydomain.com. bounce@mydomain.com is also highly desirable. This is not in jest, the standards stipulate that all mail domains MUST have a postmaster mailbox, and some 'purist' mail server set-ups will check, and refuse mail from the domain if it is not there.
+### Role Emails
 
-Typically, websites will have something like sales@ , info@ , support@ , admin@ , webmaster@ , and anything else you care to define. These can be aliases of a single mailbox, but it is better to explicitly define them than to rely on a 'catchall' define to accept any mail to the domain. i.e. if you use an email address on the website, then define and create it, even if it is just as an alias for admin@ or whatever, it is desirable for it to exist as an explicit definition, than as a vague anything@.
+Role emails can be both required and/or optional.  In the US, the Internet Mail Consortium has long required certain email addresses while highly suggesting others.  You can find the whole story on addresses required for errors [RFC 5321] (https://www.ietf.org/rfc/rfc5321.txt) and abuse [RFC 2142] (https://www.ietf.org/rfc/rfc2142.txt) on a site.
 
-### FORWARDING?
+postmaster@yourDomain.com is a required email if you are using SMTP and still highly recommended if using Zen Cart's built in PHP mail.  The same goes for abuse@yourDomain.com.
 
-The subject of forwarding is contentious, as it is very tempting to define a single mailbox, with all other addresses as aliases of that mailbox, and set it to forward to your 'home' or usual email address. If that usual address is in the same domain or on the same mail server, I would give a cautious yes. Any other mail server or domain, I say no. it is all too easy for an intermediate or the destination mail server to decide it is Spam or junk or insignificant and bin it or delete it. Ideally, use a separate mailbox and set your mail client to explicitly fetch the mail from the server as an additional account in your email client. Do not forward.
+Other Role email addresses that are recommended with any website are:
 
-Note that hosting companies and registrars may set up all or none of the above for you, or give you a control panel where you can do much of it yourself.
+webmaster@yourDomain.com
+info@yourDomain.com
+sales@yourDomain.com
+unsubscribe@yourDomain.com - If you have removed the built-in process of Zen Cart emails.
+dmarc@yourDomain.com - you could have your DMARC reports sent to this address for review.
+Nice to have emails might be:
+shipping@yourDomain
+marketing@yourDomain
+######@yourDomain with ###### being the name of a staff member
 
-### FREE EMAIL ADDRESSES
+With role emails it may be better to have too many than not enough.
 
-Similarly, much has been said about using 'free' email addresses on websites. I believe there is a simple test. Ask yourself whether you would buy from a website whose contact address was `dodgyventures@yahoo.com`? 
+### Redirects/Forwards
 
-There is also the issue of their Terms and Conditions in which you agree to allow content scanning of your mail to target ads at you. I'm not sure how well that squares with the various customer privacy enacted in various parts of the world, when it comes to your customers' personal and payment details, order details, purchase history etc. even if it is just automated scanning.
+Most hosts that provide email services also allow you to create the role emails listed above.  They may also provide you with a "catch-all" or default address.  This will send all mail for your site to an email address that you set in your maintenance portal.  This is one way to not have to have a lot of email accounts to track and look up everyday.  However, keep in mind that using this will forward ANY email to the address you provide.  Most will abandon this method shortly after implementation.  You'll never know how much junk is coming at you daily until you set a default address.
 
-You should, however, use such services for testing when you have everything else set up and working, as it is not wise to tell potential and actual customers which email addresses they may and may not use. Be aware however that these large entities make it as difficult as possible to actually send any email to their addresses. If any of the settings/setup mentioned above (part 1 of this article, ie: DNS, MX, SPF, valid accounts, etc) are not in place, you will find your site mail disappearing (dumped in a black hole and never delivered because it fails various rules/tests) or ending up in the Spam bin. They are all fairly ruthless about that, and curing it can be prolonged and more educational than you might choose.
+It IS a good idea to create forwards in the case of commonly misspelled emails.  Let's say you have a guy on your staff named Jon.  Odd name you say?  In 2021, statistics show 279 baby boys named Jon versus John.  But, Jon keeps getting the "Why don't you answer my emails?" phone message.  The simple solution is to add a forwarder for the email address john@yourDomain.com and send it to jon@yourDomain.com.
 
-Whenever I suggest this, I am told 'But XXXXX is a great company!  They would never treat their customers like this!!! How can you be so mean?' I reply ' Yes they can, and in fact, they do treat their customers like this. You have made a basic error. You are not the customer, you are the product.'
+Don't think that the answer to all this is just forwarding all these emails to "jeffyB@gmail.com."  If you do NOT actually have the account in your email program, you will NOT be able to answer as "JeffB@amazon.com".  You may never need to respond to an abuse, unsubscribe, or postmaster email but, in order to do it correctly, you must have those accounts in your email program.
+
+Redirects and forwards should be evaluated to see if they will need a response.  If so, a domain email will be needed to send manual replies.
+
+### Autoresponders
+
+We've all sent an email before and got a return email that says "JeffB is out of the office for two weeks curising, golfing, skiing, or mountain climbing".  This can be helpful but also a problem.  You need to make sure the emails you are responding to are not coming from a bot that also has an autoresponder.  You could get back from your afternoon at the lake (you're NOT Jeff B from that A place) and find that you inbox is full from two bots spending the afternoon going back and forth with "Hello?" - "Hello?"  They will not stop until your inbox is full.  The really bad news is that your postmaster and abuse boxes will start to fill up next.  Temporary Autoresponders are great.  A permanent auotresponder to unsubscribe@yourDomain.com saying, "We're sorry to see you go but have removed your email address from our system.  Please allow X days for this to be fully implemented in our system."  Or, an autoresponder to webmaster@yourDomain.com might say, "Our webmaster is looking into the problem and will get back to you soon".
+
+Autoresponders should be at a minimum and thoroughly tested to ensure you are not creating a bot war.
 
 ## 3\. The Website.
 
