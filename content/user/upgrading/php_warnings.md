@@ -1,5 +1,5 @@
 ---
-title: PHP Warnings and Deprecated messages after upgrading
+title: PHP Errors, Warnings and Deprecated messages after upgrading
 description: How to fix the most common PHP7+ messages
 category: upgrading 
 weight: 10
@@ -248,6 +248,24 @@ To avoid this, check the value using `empty`
 ```
     if (!empty($array)) {
 ```
+
+## Array and string offset access syntax with curly braces is no longer supported
+
+In older versions of PHP, you could refer to an array entry using curly braces instead of square brackets. 
+
+PHP 7.4 deprecated this syntax, and in higher versions of PHP it becomes a fatal error.  Fortunately, This is one of the easiest syntax errors to fix. Simply change the curly braces to square brackets.  So for example, change 
+
+```
+        $c = $s{$i};
+```
+
+to 
+
+```
+        $c = $s[$i];
+```
+
+<hr>
 
 More suggestions and recommendations are available in the [PHP migration guides](/dev/plugins/php_updating/) in the Developer Docs.
 

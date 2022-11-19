@@ -33,7 +33,10 @@ installation by using the [Changed Files plugin](https://www.zen-cart.com/downlo
 ## 2\. Have you created any syntax errors in your customizations and/or file edits?
 
 A PHP syntax error will very often result in a blank screen, or a partially-blank screen.  
+
 When this happens, there is often also an entry in the server's errorlog, which you can often view via your hosting control panel area. But, sometimes you can't view that log without requesting your hosting company to access it for you, for privacy reasons. So, alternatively you can use the debug logging built-in to Zen Cart, which is described below. 
+
+Other pages in this documentation show some common examples of [syntax errors](/user/upgrading/php_warnings/) and how to fix them.
 
 ## 3\. Are you running an older cart on a newer PHP? 
 
