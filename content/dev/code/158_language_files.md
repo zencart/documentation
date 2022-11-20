@@ -1,7 +1,7 @@
 ---
-title: Developer Information on Array based Language files
+title: Language Files - Developer Information on Array based Language files
 description: Structure of Language Packs for Zen Cart 1.5.8 and above 
-weight: 100 
+weight: 10 
 layout: docs
 ---
 
@@ -35,7 +35,8 @@ Using arrays allows for the following kinds of behavior:
 
 In the process of doing this work, the language files were reviewed for duplicates, and consolidation was done where appropriate to reduce the burden on translators. 
 
-Related: 
+### Related: 
+- [Language Files - New and Legacy in 1.5.8](/dev/code/158_order_language_files/)
 - [User information on Array based Language files](/user/localization/158_language_files/)
 - [Creating a Language Pack for Zen Cart 1.5.8 and above](/dev/languages/creating_a_language_pack/) 
 

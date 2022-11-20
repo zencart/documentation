@@ -35,7 +35,7 @@ will no longer work for 1.5.8 and above.  However, plugin authors may want to ma
   }
 ```
 
-On the admin side, you could do something like this: 
+On the admin side, you can do something like this: 
 
 ```
 if (function_exists('zen_get_zcversion') && zen_get_zcversion() >= '1.5.8') { 
@@ -44,6 +44,8 @@ if (function_exists('zen_get_zcversion') && zen_get_zcversion() >= '1.5.8') {
    require 'includes/languages/english/ezpages.php'; 
 }
 ```
+
+If your plugin creates its own new language file, you are not required to update it; unique legacy language files will still be loaded.  See [Language Files - New and Legacy in 1.5.8](/dev/code/158_order_language_files/).
 
 ### PHP 8.2 and objects 
 PHP 8.2 introduces a new restriction which deprecates the use of dynamic properties.  
