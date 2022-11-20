@@ -15,8 +15,10 @@ and customize to taste.
 
 The following behaviors can be enabled or disabled by this file: 
 
-- displaying the [Brands page](/user/storefront_pages/brands/) link in the Information sidebox 
 - displaying the About Us link in the Information sidebox
+- displaying the [Brands page](/user/storefront_pages/brands/) link in the Information sidebox 
+- (developers) whether to enable debug on the `zcDate` class. 
+- (developers) whether to bypass loading string-matches of legacy language files (see [Substring Matching](/dev/code/158_order_language_files/) for details).
 
 Example: turn on the Brands page link in the Information sidebox:
 
