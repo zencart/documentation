@@ -36,17 +36,50 @@ You can enter customizable TEXT-ONLY content in the lower section, which will be
 The email template system operates through the 
 `email_*.htm` files in your `/email` folder.
 
+## Template Search Order
+The HTML template which will be used when `zen_mail` is called is determined according to the following order of search, checking in the `email/` folder at the top of your cart installation.  The first match causes the check to stop, and that template is used. 
+
+In each check below, the file prefix `email_template_` and suffix `.html` is added when looking for a file.  Remove `_extra` or `_admin` from `$module`. 
+
+- look for a file named `email_template_$module.html` under the language folder 
+- look for a file named `email_template_$module.html` under the main folder
+- look for a file named `email_template_$current_page_base.html` under the language folder 
+- look for a file named `email_template_$current_page_base.html` under the main folder
+- look for a file named `$block['EMAIL_TEMPLATE_FILENAME']`
+- look for a file named `default` under the language folder  
+- look for a file named `default` under the main folder  
+
+Consider the following scenario: 
+- `$current_page_base` = `send_po` 
+- `$module` = `vendor_extra`
+- `$block['EMAIL_TEMPLATE_FILENAME']` = `email/email_template_bigcorp`
+- Language being used is English 
+
+The search goes as follows.  As soon as a matching file is found, the search stops, and that template is used. 
+
+```
+email/en/email_template_vendor.html 
+email/email_template_vendor.html 
+email/en/email_template_send_po.html 
+email/email_template_send_po.html 
+email/email_template_bigcorp.html
+email/en/email_template_default.html 
+email/email_template_default.html 
+```
+
+
 ## MULTIPLE LANGUAGES
 
 You can duplicate the template files into language-specific folders using the language "short" code, using the following format:  
 
-/email/ = this is your english/master set of files  
-/emai//fr/ = french  
-/email/de/ = german  
-/email/es/ = spanish  
+- `/email/` = this is your English/master set of files  
+- `/email/en/` = English (if English is not the default language) 
+- `/email/fr/` = French  
+- `/email/de/` = German  
+- `/email/es/` = Spanish  
 ...  
 
-If you don't copy a certain file into the language folder, the english master will be used.  
+If you don't copy a certain file into the language folder, the master will be used.  
 
 ## EMAIL TEMPLATE STYLESHEET
 
