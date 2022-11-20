@@ -37,6 +37,21 @@ exist, the second one (the older style define based file) is ignored.
 
 Again, if both older and newer style files exist, the older files are ignored. 
 
+## Substring Matching 
+
+Language files which are substring matches of the main language file being loaded are also loaded.  For example, if you browse to 
+
+```
+index.php?main_page=video
+```
+
+The language file `includes/languages/english/lang.video.php` is loaded (assuming it exists), and also any file matching `includes/languages/english/lang.video*.php`
+
+If only a legacy language file exists, then  
+the language file `includes/languages/english/video.php` is loaded, and also any file matching `includes/languages/english/video*.php`
+
+Substring matching is normally desired, but for legacy files it can cause duplicate defines.  For this reason, provision for bypassing it is made in the [site specific overrides file](/user/customizing/site_specific_overrides).  If you are running Zen Cart 1.5.8 but not 1.5.8a, see [PR 5397](https://github.com/zencart/zencart/pull/5397). 
+
 ### Related: 
 - [Developer information on Array based Language files](/dev/code/158_language_files/)
 - [User information on Array based Language files](/user/localization/158_language_files/)
