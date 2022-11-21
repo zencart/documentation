@@ -45,7 +45,7 @@ if (function_exists('zen_get_zcversion') && zen_get_zcversion() >= '1.5.8') {
 }
 ```
 
-If your plugin creates its own new language file, you are not required to update it; unique legacy language files will still be loaded.  See [Language Files - New and Legacy in 1.5.8](/dev/code/158_order_language_files/).
+If your plugin creates its own new language file, you are not required to update it; unique legacy language files will still be loaded.  See [Language Files - New vs Legacy in 1.5.8](/dev/code/158_order_language_files/).
 
 ### Turning off substring match language loading 
 Substring matching language loading is a feature in Zen Cart where when a page's primary language file is loaded, any other language file that starts with the page name will also be loaded.  For example, going to `index.php?main_page=video` will load legacy language file `video.php` but also any other language file whose name starts with "video". 

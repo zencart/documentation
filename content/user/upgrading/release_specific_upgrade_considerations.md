@@ -10,7 +10,7 @@ This document lists things you may wish to take into account as you upgrade.  Th
 - changes to the database schema or contents which deserve special notice
 - changes to basic template operation 
 
-**Note:** Please be sure to also check [Template Changes](/user/template/template_changes/).
+**Note:** Please be sure to also check [Template Updates](/user/template/template_changes/).
 
 ### ALL Versions 
 
@@ -24,7 +24,7 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 ### Zen Cart 1.5.8 
 
-- Zen Cart 1.5.8 still runs on PHP 7.3 and 7.4 but was created for PHP 8+.  PHP8 is a major change from PHP7, and many plugins will require work before they are usable.  Work with the community and your developer to be sure any modifications you make are ready for PHP 8.  See [Upgrading plugins to work with 1.5.8/PHP 8.0+](/dev/plugins/upgrading_to_158/).
+- Zen Cart 1.5.8 still runs on PHP 7.3 and 7.4 but was created for PHP 8+.  **PHP8 is a major change from PHP7**, and many plugins will require work before they are usable.  Work with the community and your developer to be sure any modifications you make are ready for PHP 8.  See [Upgrading plugins to work with 1.5.8/PHP 8.0+](/dev/plugins/upgrading_to_158/).
 
 - A new file, `includes/init_includes/init_non_db_settings.php`, was introduced. Defined constants which are not language specific were migrated out of language files into this file.
 
