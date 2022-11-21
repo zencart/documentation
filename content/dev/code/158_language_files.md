@@ -36,7 +36,7 @@ Using arrays allows for the following kinds of behavior:
 In the process of doing this work, the language files were reviewed for duplicates, and consolidation was done where appropriate to reduce the burden on translators. 
 
 ### Related: 
-- [Language Files - New and Legacy in 1.5.8](/dev/code/158_order_language_files/)
+- [Language Files - New vs Legacy in 1.5.8](/dev/code/158_order_language_files/)
 - [User information on Array based Language files](/user/localization/158_language_files/)
 - [Creating a Language Pack for Zen Cart 1.5.8 and above](/dev/languages/creating_a_language_pack/) 
 

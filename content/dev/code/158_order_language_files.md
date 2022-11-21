@@ -1,5 +1,5 @@
 ---
-title: Language Files - New and Legacy in 1.5.8+
+title: Language Files - New vs Legacy in 1.5.8+
 description: How legacy language defines are handled for Zen Cart 1.5.8 and above 
 weight: 10 
 layout: docs
@@ -9,7 +9,7 @@ If you are not familiar with language files in 1.5.8, please see
 [Developer information on Array based Language files](/dev/code/158_language_files/).
 
 For backwards compatibility with plugins, Zen Cart 1.5.8+ still 
-processes older define based language files, if they are the only ones available.  This allows older plugins to work in 1.5.8.
+processes older define based language files, if they are the only ones available.  This allows older plugins to work in 1.5.8.  But the new format is preferred to the old format, as explained below.
 
 ### Storefront: 
 - The main language file is `includes/languages/lang.english.php`.  
@@ -45,12 +45,11 @@ Language files which are substring matches of the main language file being loade
 index.php?main_page=video
 ```
 
-The language file `includes/languages/english/lang.video.php` is loaded (assuming it exists), and also any file matching `includes/languages/english/lang.video*.php`
+The language file `includes/languages/english/lang.video.php` is loaded (assuming it exists), and also any file matching `includes/languages/english/lang.video*.php`.
 
-If only a legacy language file exists, then  
-the language file `includes/languages/english/video.php` is loaded, and also any file matching `includes/languages/english/video*.php`
+If only a legacy language file exists, then  the language file `includes/languages/english/video.php` is loaded, and also any file matching `includes/languages/english/video*.php`.
 
-Substring matching is normally desired, but for legacy files it can cause duplicate defines.  For this reason, provision for bypassing it is made in the [site specific overrides file](/user/customizing/site_specific_overrides).  If you are running Zen Cart 1.5.8 but not 1.5.8a, see [PR 5397](https://github.com/zencart/zencart/pull/5397). 
+Substring matching is normally desired, but for legacy files it can cause duplicate defines, which is flagged by newer versions of PHP.  For this reason, provision for bypassing it is made in the [site specific overrides file](/user/customizing/site_specific_overrides) in 1.5.8a and above.  If you are running Zen Cart 1.5.8 but not 1.5.8a, see [PR 5397](https://github.com/zencart/zencart/pull/5397). 
 
 ### Related: 
 - [Developer information on Array based Language files](/dev/code/158_language_files/)

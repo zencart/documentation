@@ -9,7 +9,7 @@ weight: 10
 
 A Language Pack is the group of files that contain the texts displayed on the pages of Zen Cart.  All the texts (constants) used in Zen Cart are in a fileset separated from the program files, to facilitate translation. The storefront and the admin have their own language fileset, each under a /languages directory.
 
-By default, Zen Cart only includes the fileset for english (US). Other Language Packs are available from the Zen Cart [Plugins Library](https://www.zen-cart.com/downloads.php?do=cat&id=6).
+By default, Zen Cart only includes the fileset for english (US). Other Language Packs are available from the Zen Cart [Plugins Library](https://www.zen-cart.com/downloads.php?do=cat&id=6) and from the Github repos of individual developers. 
 
 Always read the corresponding support thread for a Language Pack to learn the current state of a language pack/how up to date it is and whether it is being maintained on a version control site like GitHub.
 
@@ -97,4 +97,5 @@ The structure of the language files was completely changed in Zen Cart 1.5.8.
 
 A description of the changes and conversion procedure is provided in the developer's guide to [158 Language Files](/dev/code/158_language_files/).
 
+Developers wishing to work on language packs are referred to the [Creating a Language Pack](/dev/languages/creating_a_language_pack/) page.
 

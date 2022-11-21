@@ -21,7 +21,7 @@ Because these new language packs are just now being built and are subject to fre
 - [Spanish](https://github.com/torvista/Zen_Cart-Spanish_Language_Pack/tree/v158) 
 
 ### Related: 
-- [Language Files - New and Legacy in 1.5.8](/dev/code/158_order_language_files/)
+- [Language Files - New vs Legacy in 1.5.8](/dev/code/158_order_language_files/)
 - [Developer information on Array based Language files](/dev/code/158_language_files/)
 - [Creating a Language Pack for Zen Cart 1.5.8 and above](/dev/languages/creating_a_language_pack/) 
 
