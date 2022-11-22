@@ -35,6 +35,45 @@ Using arrays allows for the following kinds of behavior:
 
 In the process of doing this work, the language files were reviewed for duplicates, and consolidation was done where appropriate to reduce the burden on translators. 
 
+### Handling back references within a file 
+
+In Zen Cart 1.5.7 and below, structures like the following were possible: 
+
+```
+  define('TEXT_GV_NAME','Gift Certificate');
+...
+  define('BOX_INFORMATION_GV', TEXT_GV_NAME . ' FAQ');
+```
+
+In 1.5.8, you must create array elements which reference earlier array entries 
+*after* creating the entire `$define` array. 
+
+```
+$define = [
+...
+    'TEXT_GV_NAME' => 'Gift Certificate',
+...
+]; 
+$define['BOX_INFORMATION_GV'] = $define['TEXT_GV_NAME'] . ' FAQ';
+```
+
+This example is taken from `includes/langauges/lang.english.php`.
+
+### Handling back references between files 
+
+Prior to Zen Cart 1.5.8, the `define` operations were done incrementally, so a language file which was loaded later could refer to one loaded earlier. 
+
+For example, a file in `includes/languages/english/extra_definitions/` could do this: 
+```
+define('ABOUT', '<li><a href="' . zen_href_link(FILENAME_ABOUT_US) . '">' . BOX_INFORMATION_ABOUT_US . '</a></li>');
+```
+
+This is no longer permitted; the constant must be replaced by a string. 
+
+```
+define('ABOUT', '<li><a href="' . zen_href_link(FILENAME_ABOUT_US) . '">' . 'About Us' . '</a></li>');
+```
+
 ### Related: 
 - [Language Files - New vs Legacy in 1.5.8](/dev/code/158_order_language_files/)
 - [User information on Array based Language files](/user/localization/158_language_files/)

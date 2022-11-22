@@ -249,6 +249,28 @@ To avoid this, check the value using `empty`
     if (!empty($array)) {
 ```
 
+## Undefined array key
+
+Checking to see if an optional array element is set has changed - you can no longer do 
+
+```
+if ($response['var1'] != '') {
+```
+unless you are certain the array element `var1` exists. 
+
+If you do this, and the element does not exist, you will get a PHP Warning
+
+```
+--> PHP Warning: Undefined array key var1 
+```
+
+To fix, change to 
+
+```
+if (!empty($response['var1'])) {
+```
+
+
 ## Array and string offset access syntax with curly braces is no longer supported
 
 In older versions of PHP, you could refer to an array entry using curly braces instead of square brackets. 
