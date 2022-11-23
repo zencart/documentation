@@ -35,13 +35,15 @@ will no longer work for 1.5.8 and above.  However, plugin authors may want to ma
   }
 ```
 
-On the admin side, you can do something like this: 
+On the admin side, you can do something like this.  Assume the file to 
+be loaded is `admin/includes/languages/english/some-custom-file.php` in 1.5.7 and `admin/includes/languages/english/lang.some-custom-file.php` in 1.5.8: 
 
 ```
 if (function_exists('zen_get_zcversion') && zen_get_zcversion() >= '1.5.8') { 
-   require 'includes/languages/english/lang.ezpages.php'; 
+   $filename = 'some-custom-file.php';
+   $languageLoader->loadExtraLanguageFiles( DIR_WS_LANGUAGES, $_SESSION['language'],  $filename, '/');
 } else {
-   require 'includes/languages/english/ezpages.php'; 
+   require 'includes/languages/english/some-custom-file.php'; 
 }
 ```
 
