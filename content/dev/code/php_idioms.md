@@ -7,15 +7,15 @@ weight: 10
 
 This document is intended to capture PHP changes that some developers may find unclear because they differ from what was done in the past.  Some but not all are driven by PHP8 changes.  
 
-## The use of `===`: 
+## Identical comparison operator 
 
-This comparison operator means "equal to and of the same type."  It has become more important in PHP8+ which does stricter comparisons.  
+The comparison operator `===` means "equal to and of the same type."  It has become more important in PHP8+, which does stricter comparisons.  
 
 See the PHP documentation on [Comparison Operators](https://www.php.net/manual/en/language.operators.comparison.php) for more details. 
 
-## The use of `??`
+## Null coalescing operator 
 
-This operator (null coalescing) checks that the first operand exists and is not null.  If so, it returns the first  operand; otherwise, it returns the second operand.
+This null coalescing operator `??` checks that the first operand exists and is not null.  If so, it returns the first  operand; otherwise, it returns the second operand.
 
 So 
 
