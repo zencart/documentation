@@ -270,7 +270,7 @@ To fix, change to
 if (!empty($response['var1'])) {
 ```
 
-If they array element is referenced in the middle of a statement, use the [null coalescing operator](/dev/code/php_idioms/#null-coalescing-operator) to prevent invalid references. 
+If the array element is referenced in the middle of a statement, use the [null coalescing operator](/dev/code/php_idioms/#null-coalescing-operator) to prevent invalid references. 
 
 So for example, if `$response['var1']` might not be set, change 
 
