@@ -270,6 +270,19 @@ To fix, change to
 if (!empty($response['var1'])) {
 ```
 
+If they array element is referenced in the middle of a statement, use the [null coalescing operator](/dev/code/php_idioms/#null-coalescing-operator) to prevent invalid references. 
+
+So for example, if `$response['var1']` might not be set, change 
+
+```
+echo 'Message is ' . $response['txt'] . ' ' . $response['var1']; 
+``` 
+
+to 
+
+```
+echo 'Message is ' . $response['txt'] . ' ' . ($response['var1'] ?? ''); 
+``` 
 
 ## Array and string offset access syntax with curly braces is no longer supported
 

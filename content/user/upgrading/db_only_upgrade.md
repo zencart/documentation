@@ -1,6 +1,6 @@
 ---
 title: Database-Only Upgrade Instructions
-description: Quickie upgrading if you don't want to keep your customizations 
+description: Lower cost quickie upgrading
 category: Upgrading
 weight: 8 
 ---
@@ -17,9 +17,9 @@ Doing a database only upgrade might be appropriate in situations like this:
 - your hoster just [updated PHP to a version which is not compatible with your older Zen Cart software](/user/first_steps/server_requirements/#php-version).
 - you have minimal customizations and your current template is not mobile compatible. 
 
-You will lose your customizations, but you won't lose your data and you'll be using the latest software, which is more secure. 
+**You will lose your customizations**, but you won't lose your data and you'll be using the latest software, which is more secure. 
 
-You will be using the `responsive_classic` template initially.  You can always add a new template later after your store is up and running. 
+You will be using the `responsive_classic` template initially.  **You can always add a new template later after your store is up and running.**
 
 ### Setup 
 
@@ -59,21 +59,15 @@ Once this action completes, you have an up to date copy of your database.
 
 
 ### Customization
-1. Customize the following files, referring to your live site to see what needs to be changed: 
-- `includes/languages/responsive_classic/english.php`
-- `includes/languages/english/responsive_classic/email_extras.php`
-- `admin/includes/languages/english/email_extras.php`
-
+1. Customize only the critical language files. See [Basic 158+ Language Customizations](/user/localization/basic_158_language_customizations/) 
 
 ### Testing 
 1. Create a test order, take it all the way through to checkout success, then view the order in your test admin.  Make sure everything is working as expected.
 
 ### Updating PHP 
 
-- [Update your PHP version](/user/upgrading/php_version/) if appropriate. 
+- [Update your PHP version](/user/upgrading/php_version/)
 
 ## If you have a little more time ... 
 
-It's worth your while to switch from the Responsive Classic template to the [Bootstrap template](/user/template/bootstrap/).  It looks much better and it's just a bit more work.  Redo the customization step above for the storefront files:
-- `includes/languages/bootstrap/english.php`
-- `includes/languages/english/bootstrap/email_extras.php`
+It's worth your while to switch from the Responsive Classic template to the [Bootstrap template](/user/template/bootstrap/).  It looks much better and it's just a bit more work.  Redo the [basic language customizations](/user/localization/basic_158_language_customizations/) step for the storefront, using placing the files in `includes/languages/english/bootstrap`.
