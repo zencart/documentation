@@ -1,6 +1,6 @@
 ---
 title: Encapsulated Plugins
-description: A new architecture for writing plugins
+description: A new architecture for writing plugins (admin only)
 category: plugins
 weight: 10
 ---

@@ -35,6 +35,53 @@ Using arrays allows for the following kinds of behavior:
 
 In the process of doing this work, the language files were reviewed for duplicates, and consolidation was done where appropriate to reduce the burden on translators. 
 
+### Loading a language file
+
+If you need to specifically include a language file, the old style of doing so 
+
+```
+  $langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . "/modules/order_total/" .  "ot_group_pricing.php";
+  include_once ($langfile);
+```
+
+will no longer work for 1.5.8 and above.  However, plugin authors may want to make their code compatible with both 1.5.7 and 1.5.8.  Here's one approach, which also allows for template overrides: 
+
+```
+  $filename = "ot_group_pricing.php"; 
+  $folder = "/modules/order_total/";  // end with slash 
+  $old_langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . $folder .  $filename; 
+  $new_langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . $folder .  "lang." . $filename; 
+  if (file_exists($new_langfile)) {
+     global $languageLoader; 
+     $languageLoader->loadExtraLanguageFiles(DIR_FS_CATALOG . DIR_WS_LANGUAGES,  $_SESSION['language'], $filename, $folder); 
+  } else if (file_exists($old_langfile)) {
+     $tpl_old_langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . $folder .  $template_dir . '/' . $filename; 
+     if (file_exists($tpl_old_langfile)) {
+        $old_langfile = $tpl_old_langfile; 
+     }
+     include_once ($old_langfile);
+  }
+```
+
+If the file to be loaded was just in `includes/languages/english/` (and not the `modules/order_total` subfolder), the changes to the code above would just be for the first two variables.  To load the file `includes/languages/english/lang.media_common.php` it would be, 
+
+```
+  $filename = "media_common.php"; 
+  $folder = "/";  // end with slash 
+```
+
+On the admin side, you can do something like this.  Assume the file to 
+be loaded is `admin/includes/languages/english/some-custom-file.php` in 1.5.7 and `admin/includes/languages/english/lang.some-custom-file.php` in 1.5.8: 
+
+```
+if (function_exists('zen_get_zcversion') && zen_get_zcversion() >= '1.5.8') { 
+   $filename = 'some-custom-file.php';
+   $languageLoader->loadExtraLanguageFiles( DIR_WS_LANGUAGES, $_SESSION['language'],  $filename, '/');
+} else {
+   require 'includes/languages/english/some-custom-file.php'; 
+}
+```
+
 ### Handling back references within a file 
 
 In Zen Cart 1.5.7 and below, structures like the following were possible: 
@@ -74,9 +121,5 @@ This is no longer permitted; the constant must be replaced by a string.
 define('ABOUT', '<li><a href="' . zen_href_link(FILENAME_ABOUT_US) . '">' . 'About Us' . '</a></li>');
 ```
 
-### Related: 
-- [Upgrading plugins to work with 1.5.8/PHP 8.0+](/dev/plugins/upgrading_to_158/)
-- [Language Files - New vs Legacy in 1.5.8](/dev/code/158_order_language_files/)
-- [User information on Array based Language files](/user/localization/158_language_files/)
-- [Creating a Language Pack for Zen Cart 1.5.8 and above](/dev/languages/creating_a_language_pack/) 
+{{% language_help_links %}}
 

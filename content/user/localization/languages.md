@@ -1,5 +1,5 @@
 ---
-title: Language Support 
+title: Language Packs 
 description: Making Zen Cart multi-language 
 category: localization
 weight: 10
