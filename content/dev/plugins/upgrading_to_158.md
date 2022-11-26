@@ -9,48 +9,12 @@ PHP8 is a major change, and many older plugins will require attention before the
 ## Array Based Language Files 
 To avoid duplicate define notices from PHP, Zen Cart 1.5.8 uses [Array Based Language Files](/dev/code/158_language_files/).
 
-If you need to include a language file, the old style of doing so 
-
-```
-  $langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . "/modules/order_total/" .  "ot_group_pricing.php";
-  include_once ($langfile);
-```
-
-will no longer work for 1.5.8 and above.  However, plugin authors may want to make their code compatible with both 1.5.7 and 1.5.8.  Here's one approach, which also allows for template overrides: 
-
-```
-  $filename = "ot_group_pricing.php"; 
-  $folder = "/modules/order_total/";  // end with slash 
-  $old_langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . $folder .  $filename; 
-  $new_langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . $folder .  "lang." . $filename; 
-  if (file_exists($new_langfile)) {
-     global $languageLoader; 
-     $languageLoader->loadExtraLanguageFiles(DIR_FS_CATALOG . DIR_WS_LANGUAGES,  $_SESSION['language'], $filename, $folder); // not $new_langfile - use base name
-  } else if (file_exists($old_langfile)) {
-     $tpl_old_langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . $folder .  $template_dir . '/' . $filename; 
-     if (file_exists($tpl_old_langfile)) {
-        $old_langfile = $tpl_old_langfile; 
-     }
-     include_once ($old_langfile);
-  }
-```
-
-On the admin side, you can do something like this.  Assume the file to 
-be loaded is `admin/includes/languages/english/some-custom-file.php` in 1.5.7 and `admin/includes/languages/english/lang.some-custom-file.php` in 1.5.8: 
-
-```
-if (function_exists('zen_get_zcversion') && zen_get_zcversion() >= '1.5.8') { 
-   $filename = 'some-custom-file.php';
-   $languageLoader->loadExtraLanguageFiles( DIR_WS_LANGUAGES, $_SESSION['language'],  $filename, '/');
-} else {
-   require 'includes/languages/english/some-custom-file.php'; 
-}
-```
+If you need to load a language file that's not already being loaded by the [default language file loading process](/dev/plugins/language_files/), see [loading a language file](/dev/code/158_language_files/#loading-a-language-file)
 
 If your plugin creates its own new language file, you are not required to update it; unique legacy language files will still be loaded.  See [Language Files - New vs Legacy in 1.5.8](/dev/code/158_order_language_files/).
 
 ### Turning off substring match language loading 
-Substring matching language loading is a feature in Zen Cart where when a page's primary language file is loaded, any other language file that starts with the page name will also be loaded.  For example, going to `index.php?main_page=video` will load legacy language file `video.php` but also any other language file whose name starts with "video". 
+Substring matching language loading is a feature in Zen Cart where when a page's primary language file is loaded, any other language file that starts with the page name will also be loaded.  For example, going to `index.php?main_page=video` will load language file `lang.video.php` but also any other language file whose name starts with "video" such as `lang.video_success.php`.
 
 Due to stricter rules about `define` uniqueness, you may need to disable 
 this behavior for your plugin - see [Substring Matching](/dev/code/158_order_language_files/).

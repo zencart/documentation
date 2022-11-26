@@ -14,8 +14,8 @@ This is not the [standard upgrade procedure](/user/upgrading/detailed_upgrading/
 Doing a database only upgrade might be appropriate in situations like this:
 
 - you are coming from Zen Cart 1.5.4 or older version, and you don't have time or budget for a proper upgrade.  
-- your hoster just [updated PHP to a version which is not compatible with your older Zen Cart software](/user/first_steps/server_requirements/#php-version).
-- you have minimal customizations and your current template is not mobile compatible. 
+- your hoster just [updated PHP to a version which is not compatible with your older Zen Cart software](/user/first_steps/server_requirements/#php-version), and your cart no longer works.
+- you have minimal customizations and your current template is not mobile compatible, and you just want to get current.
 
 **You will lose your customizations**, but you won't lose your data and you'll be using the latest software, which is more secure. 
 
@@ -53,20 +53,20 @@ Once this action completes, you have an up to date copy of your database.
 - Visit each of the admin pages Modules > Shipping, Modules > Payment, Modules > Order Total to allow your modules to insert any missing keys.   Some modules may require re-installation to add keys. 
 
 ### Copy from live site 
-1. Copy the `/images` folder from your live site onto your test site
-2. Copy in any new images you created from your live site's `includes/templates/YOURTEMPLATE/images` folder to the test site's `includes/templates/responsive_classic/images` folder 
-3. Copy in any new images you created from your live site's `email` folder to the test site's `email` folder 
+- Copy the `/images` folder from your live site onto your test site.
+- Copy in any new images you created from your live site's `includes/templates/YOURTEMPLATE/images` folder to the test site's `includes/templates/responsive_classic/images` folder.
+- Copy in any new images you created from your live site's `email` folder to the test site's `email` folder.
 
 
 ### Customization
-1. Customize only the critical language files. See [Basic 158+ Language Customizations](/user/localization/basic_158_language_customizations/) 
+- Customize only the critical language files. See [Basic 158+ Language Customizations](/user/localization/basic_158_language_customizations/).
 
 ### Testing 
-1. Create a test order, take it all the way through to checkout success, then view the order in your test admin.  Make sure everything is working as expected.
+- Create a test order, take it all the way through to checkout success, then view the order in your test admin.  Make sure everything is working as expected.
 
 ### Updating PHP 
 
-- [Update your PHP version](/user/upgrading/php_version/)
+- [Update your PHP version](/user/upgrading/php_version/).
 
 ## If you have a little more time ... 
 

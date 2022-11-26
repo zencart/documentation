@@ -51,8 +51,5 @@ If only a legacy language file exists, then  the language file `includes/languag
 
 Substring matching is normally desired, but for legacy files it can cause duplicate defines, which is flagged by newer versions of PHP.  For this reason, provision for bypassing it is made in the [site specific overrides file](/user/customizing/site_specific_overrides) in 1.5.8a and above.  If you are running Zen Cart 1.5.8 but not 1.5.8a, see [PR 5397](https://github.com/zencart/zencart/pull/5397). 
 
-### Related: 
-- [Developer information on Array based Language files](/dev/code/158_language_files/)
-- [User information on Array based Language files](/user/localization/158_language_files/)
-- [Creating a Language Pack for Zen Cart 1.5.8 and above](/dev/languages/creating_a_language_pack/) 
+{{% language_help_links %}}
 
