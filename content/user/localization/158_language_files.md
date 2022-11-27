@@ -19,6 +19,7 @@ Because these new language packs are just now being built and are subject to fre
 ### Available Array Based Language Packs for Zen Cart 1.5.8 and above
 
 - [Spanish](https://github.com/torvista/Zen_Cart-Spanish_Language_Pack/tree/v158) 
+- [Japanese](https://www.zen-cart.com/downloads.php?do=file&id=2359)
 
 {{% language_help_links %}}
 

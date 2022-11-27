@@ -116,8 +116,5 @@ NB. To use inside a function or another class you will need to add
 ```
 before you use `zcDate` for the first time.
 
-### Related Pages
+{{% code_help_links %}} 
 
-- [PHP Errors, Warnings and Deprecated messages after upgrading](/user/upgrading/php_warnings/)
-- [PHP Idioms](/dev/code/php_idioms/)
-- [Release Specific Upgrade Considerations](/user/upgrading/release_specific_upgrade_considerations/)

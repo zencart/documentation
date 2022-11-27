@@ -302,6 +302,4 @@ to
 
 <hr>
 
-More suggestions and recommendations are available in the [PHP migration guides](/dev/plugins/php_updating/) in the Developer Docs.
-
-
+{{% code_help_links %}} 
