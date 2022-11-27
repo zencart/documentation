@@ -61,3 +61,4 @@ Please see [User information on Array based Language files](/user/localization/1
 
 If you need to include a language file directly, see the code example in the [Upgrading plugins for 1.5.8](/dev/plugins/upgrading_to_158/#array-based-language-files) FAQ.
 
+{{% language_help_links %}}
