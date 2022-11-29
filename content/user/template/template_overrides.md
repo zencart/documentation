@@ -76,12 +76,14 @@ At the moment, these elements of your cart do not support overrides:
 - `includes/modules/pages`
 - The `shipping`, `payment` and `order total` folders under `includes/modules`
 
+However, you may still modify their operation without changing core code by using [notifiers](/dev/code/notifiers/) and the other mechanisms described below.
+
 
 ## Other Mechanisms for Changing Cart Appearance  
 
 Some behaviors are controlled by the [show flags](/user/customizing/show_flags/) in the admin.
 
-Starting in 1.5.8, there are [site specific overrides](/user/customizing/site_specific_overrides/), which allow you to change the behavior of Zen Cart without touching core files. 
+Starting in 1.5.8, there are [site specific overrides](/user/customizing/site_specific_overrides/), which allow you to change some aspects of Zen Cart without touching core files. 
 
 There are also other mechanisms to allow you modify the 
 behavior of the system without touching core files.
