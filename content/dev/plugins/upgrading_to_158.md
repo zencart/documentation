@@ -17,7 +17,7 @@ If your plugin creates its own new language file, you are not required to update
 Substring matching language loading is a feature in Zen Cart where when a page's primary language file is loaded, any other language file that starts with the page name will also be loaded.  For example, going to `index.php?main_page=video` will load language file `lang.video.php` but also any other language file whose name starts with "video" such as `lang.video_success.php`.
 
 Due to stricter rules about `define` uniqueness, you may need to disable 
-this behavior for your plugin - see [Substring Matching](/dev/code/158_order_language_files/).
+this behavior for your plugin - see [Substring Matching](/dev/code/158_order_language_files/#substring-matching).
 
 ### PHP 8.2 and objects 
 PHP 8.2 introduces a new restriction which deprecates the use of dynamic properties.  
