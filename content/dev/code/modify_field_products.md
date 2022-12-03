@@ -22,4 +22,5 @@ ALTER TABLE products MODIFY COLUMN products_model varchar(40) default NULL;
 If your database uses a prefix, you must use it on those two table names (e.g. `ALTER TABLE zen_orders_products`, `ALTER TABLE zen_products`).
 
 
-Related: [How to add a field to the products table](/dev/code/add_field_products). 
+### Related 
+- [How to add a field to the products table](/dev/code/add_field_products)

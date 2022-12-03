@@ -30,6 +30,14 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 - Most "functions" (both admin and non-admin) have been consolidated into files located in `/includes/functions/`. Some have been merged together. Some changes are listed below.  This change was done to eliminate the duplication of identical (or nearly identical) functions between the storefront and admin that was present in prior releases.
 
+- Some functions have been renamed: 
+   - `zen_draw_products_pull_down` was renamed to `zen_draw_pulldown_products`
+   - `zen_draw_products_pull_down_attributes` was renamed to `zen_draw_pulldown_products_having_attributes`
+   - `zen_draw_products_pull_down_categories` was renamed to `zen_draw_pulldown_categories_having_products`
+   - `zen_draw_products_pull_down_categories_attributes` was renamed to `zen_draw_pulldown_categories_having_products_with_attributes`.
+
+- Zen Cart 1.5.8a will provide aliases for these functions so that the old names will still work, but will create a deprecation log. 
+ 
 - Language files were changed to a new format.  See [Developer Information on Array based Language files](/dev/code/158_language_files/) for more details.  If you are upgrading, you may wish to consider doing only the [basic language file customizations](/user/localization/basic_158_language_customizations/) rather than port all the changes you had from prior releases.  Core language files should be overriden in the new format; plugin language files may use the old or the new file format. 
 
 - Because of the changes to language files, additional steps will need to be taken if you are trying to create global variables.  In prior releases, defining a new variable in a language file was sufficient; now you will need to explicitly global it: 

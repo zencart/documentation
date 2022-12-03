@@ -11,7 +11,8 @@ Note: If a term is not in this list, use a web search to learn more about it.  T
 - ASV - Approved Scanning Vendor; a company that has been certified as qualified to evaluate the security of your website. 
 - Categories Tabs - [Categories Tabs](/user/new_user_topics/categories_tabs/) is the name of a feature that places a set of links to every category in your store across the width of your home page just below the logo and tagline. 
 - Centerbox - a [centerbox](/user/template/centerboxes/) is a block of content in the middle of the page.  
-- Character Set - A set of codes which represent a written language. Current versions of Zen Cart use the utf8mb4 character set. 
+- Character Set - A [character set](/user/upgrading/detailed_upgrading/#character-set) is a group of codes which represent a written language. Current versions of Zen Cart use the utf8mb4 character set. 
+- Collation: A setting which determines how strings are compared during a sort.
 - cPanel - a branded hosting control panel which is very popular.  See [Hosting and Domain concepts](/user/first_steps/hosting/). 
 - Default Files - The file provided by the base software that provides some functionality which can be overridden using a template file.  See [Default files, template default and overrides](/user/first_steps/overrides/).
 - Define Pages - [Define pages](/user/template/define_pages/) are special pieces of content that appear above normal page content for certain pages.

@@ -38,7 +38,7 @@ Further, this guide is assuming that all your testing will be done in a temporar
 
 
 
-Upgrading follows 3 core stages. We suggest you take your time going through each stage carefully and methodically. Don't rush the process. 
+After familiarization, upgrading follows three core stages. We suggest you take your time going through each stage carefully and methodically. Don't rush the process. 
 
 And as always, be sure you keep good backups before you begin and perhaps additional backups at various steps along the way.
 
@@ -192,7 +192,9 @@ Also read the plugin's upgrade documentation to note whether it says that some "
 
 # 3\. Testing
 
-**Note:** As an alternative, rather than testing on your server, you can [set up a local development environment](/user/running/local_testing/) and test there. 
+**Note:** As an alternative, rather than testing on your server, you can [set up a local development environment](/user/running/local_testing/) and test there. This is particularly important if your old cart version uses a PHP version that's older than the minimum version required by the new Zen Cart version.  In this case, you won't be able to run old and new side by side on the same server. 
+
+
 
 ## Take a fresh backup
 First, take a fresh database backup from your live store:

@@ -32,7 +32,7 @@ You will be using the `responsive_classic` template initially.  **You can always
 6.  Next, change the two configure.php files to utilize the new directory and
 database  This way ... when you attempt to upgrade you are "practicing" to see
 where the problems, if any will happen
-7.  Run the installer at `https://www.YOURSITE.com/zc_install`
+7.  Run the installer at `https://www.YOURSITE.com/zc_install`.  **Note:** if your current PHP version is very old, you may need to change it to run the installer.  This will likely take down your live store.  If you aren't sure you can get this whole procedure done quickly, consider [setting up a test environment](/user/running/local_testing/) and doing the upgrade there. 
 8.  Choose the *Upgrade* option
 
 ![Use the upgrade button!](/images/upgrade_button.png)
