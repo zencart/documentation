@@ -30,27 +30,31 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 - Most "functions" (both admin and non-admin) have been consolidated into files located in `/includes/functions/`. Some have been merged together. Some changes are listed below.  This change was done to eliminate the duplication of identical (or nearly identical) functions between the storefront and admin that was present in prior releases.
 
-- Some functions have been renamed: 
-   - `zen_draw_products_pull_down` was renamed to `zen_draw_pulldown_products`
-   - `zen_draw_products_pull_down_attributes` was renamed to `zen_draw_pulldown_products_having_attributes`
-   - `zen_draw_products_pull_down_categories` was renamed to `zen_draw_pulldown_categories_having_products`
-   - `zen_draw_products_pull_down_categories_attributes` was renamed to `zen_draw_pulldown_categories_having_products_with_attributes`.
+- Some functions have been renamed. 
+Zen Cart 1.5.8a will provide aliases for these functions so that the old names will still work, but will create a deprecation log. 
 
-- Zen Cart 1.5.8a will provide aliases for these functions so that the old names will still work, but will create a deprecation log. 
+   |Old Name|New Name|
+   |-------|--------|
+   |`zen_draw_products_pull_down`|`zen_draw_pulldown_products`|
+   |`zen_draw_products_pull_down_attributes` | `zen_draw_pulldown_products_having_attributes`|
+   |`zen_draw_products_pull_down_categories` | `zen_draw_pulldown_categories_having_products`|
+   |`zen_draw_products_pull_down_categories_attributes` | `zen_draw_pulldown_categories_having_products_with_attributes`|
+
+<br>
  
 - Language files were changed to a new format.  See [Developer Information on Array based Language files](/dev/code/158_language_files/) for more details.  If you are upgrading, you may wish to consider doing only the [basic language file customizations](/user/localization/basic_158_language_customizations/) rather than port all the changes you had from prior releases.  Core language files should be overriden in the new format; plugin language files may use the old or the new file format. 
 
 - Because of the changes to language files, additional steps will need to be taken if you are trying to create global variables.  In prior releases, defining a new variable in a language file was sufficient; now you will need to explicitly global it: 
 
-```
-$GLOBALS['some_variable'] = $some_variable;
-```
+   ```
+   $GLOBALS['some_variable'] = $some_variable;
+   ```
 
 - The function `zen_parse_search_string` input parameters have been reversed. Plugins that use this function will require modification.
 
 - The function `zen_get_countries` returns different array keys than previously. Admin plugins that use this function may use the new admin function `zen_get_countries_for_admin_pulldown`. 
 
-- The function `zen_cfg_read_only` has been added.  This means any plugin authors who provided their own version of this function should remove it from their plugin (for 1.5.7+) or wrap it in `if (!function_exists('zen_cfg_read_only'))` (for older versions of Zen Cart). 
+- The function `zen_cfg_read_only` has been added.  This means any plugin authors who provided their own version of this function should remove it from their plugin for 1.5.8, or wrap it in `if (!function_exists('zen_cfg_read_only'))` if support is needed for older versions of Zen Cart. 
 
 - The misspelled notifier `NOTIFIY_ORDER_CART_SUBTOTAL_CALCULATE` has been deprecated and replaced by `NOTIFY_ORDER_CART_SUBTOTAL_CALCULATE`. Code that references the misspelled notifier will continue to work (due to the [event aliasing](/dev/code/notifiers/#event-aliasing) feature), but plugins should be updated to use the corrected name.
 
