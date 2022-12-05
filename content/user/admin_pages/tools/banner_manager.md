@@ -8,7 +8,11 @@ This page manages individual text and image banners and their groups.  When the 
 
 ![Banner Manager](/images/banner_manager.png)
 
-Each banner belongs to a banner group.  Three banner groups come with Zen Cart: 
+Each banner (text or image) belongs to a banner group.  Having multiple banners in a banner group allows different banners to be displayed in rotation at the same position.
+
+The position of a Banner Group on the shopfront page is defined in the [Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/) page. 
+
+Three banner groups come with Zen Cart: 
 - Wide-Banners
 - Sidebox-Banners
 - BannersAll 
