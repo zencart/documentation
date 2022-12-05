@@ -25,6 +25,10 @@ Banner Positions are provided by your template.  There are:
 
 Generally you would choose at most one of these positions in each area. 
 
+These positions can be seen in this diagram from @lat9: 
+
+![Banner Positions](/images/banner_positions.jpg)
+
 Groups are then specified in the *Banner Display Groups* settings in [Admin > Configuration > Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/).  For example, setting *Banner Display Groups - Footer Position 3* to *Wide-Banners* means that a banner in the Wide-Banners group will be shown in Footer Position three. Here's what that looks like: 
 
 ![Wide Banner Footer Position 3](/images/banner_footer_position_3.png)
