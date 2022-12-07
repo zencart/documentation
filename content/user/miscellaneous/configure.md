@@ -41,8 +41,7 @@ However, keep in mind that there IS a similarity between `DIR_WS_CATALOG` and `D
 and thus `DIR_WS_CATALOG` is: `/store/`
 
 (`DIR_WS_CATALOG` points to whatever follows the [webroot](/user/first_steps/how_do_i_install#what-is-my-webroot), configuration of your hosting account, 
-ie: which folder your account points to for your actual site.  
-In most cases this folder is named `public_html` or `htdocs` or `httpdocs`)  
+ie: which folder your account points to for your actual site.  In most cases this folder is named `public_html` or `htdocs` or `httpdocs`)  
 
 **Other Paths:**
 

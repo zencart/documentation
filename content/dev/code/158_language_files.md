@@ -37,14 +37,16 @@ In the process of doing this work, the language files were reviewed for duplicat
 
 ### Loading a language file
 
-If you need to specifically include a language file, the old style of doing so 
+If you need to specifically include a core language file, logic that was used in Zen Cart 1.5.7 and before: 
 
 ```
   $langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . "/modules/order_total/" .  "ot_group_pricing.php";
   include_once ($langfile);
 ```
 
-will no longer work for 1.5.8 and above.  However, plugin authors may want to make their code compatible with both 1.5.7 and 1.5.8.  Here's one approach, which also allows for template overrides: 
+will no longer work for 1.5.8 and above, since both the filename and the structure have changed.  
+
+However, plugin authors may want to make their code compatible with both 1.5.7 and 1.5.8.  Here's one approach, which also allows for template overrides: 
 
 ```
   $filename = "ot_group_pricing.php"; 
@@ -76,11 +78,23 @@ be loaded is `admin/includes/languages/english/some-custom-file.php` in 1.5.7 an
 ```
 if (function_exists('zen_get_zcversion') && zen_get_zcversion() >= '1.5.8') { 
    $filename = 'some-custom-file.php';
-   $languageLoader->loadExtraLanguageFiles( DIR_WS_LANGUAGES, $_SESSION['language'],  $filename, '/');
+   $languageLoader->loadExtraLanguageFiles( DIR_WS_LANGUAGES, $_SESSION['language'],  $filename, '/');  
 } else {
    require 'includes/languages/english/some-custom-file.php'; 
 }
 ```
+
+**Note:** 1.5.8 **can** still use the old style of inclusion for custom files in the older format, i.e. 
+
+```
+   require 'includes/languages/english/some-custom-file.php'; 
+```
+
+However, if this is done: 
+- the file must not be overridden 
+- the file's definitions must be unique for the page on which they are included
+
+If these rules are not followed, duplicate definition logs will be produced.
 
 ### Handling back references within a file 
 
