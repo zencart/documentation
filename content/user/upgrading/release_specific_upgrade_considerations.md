@@ -39,6 +39,7 @@ Zen Cart 1.5.8a will provide aliases for these functions so that the old names w
    |`zen_draw_products_pull_down_attributes` | `zen_draw_pulldown_products_having_attributes`|
    |`zen_draw_products_pull_down_categories` | `zen_draw_pulldown_categories_having_products`|
    |`zen_draw_products_pull_down_categories_attributes` | `zen_draw_pulldown_categories_having_products_with_attributes`|
+   |`zen_get_orders_status` | `zen_get_orders_status_pulldown_array`|
 
 <br>
  
