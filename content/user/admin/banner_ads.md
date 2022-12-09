@@ -72,7 +72,7 @@ Banner Display Groups - Side Box banner_box_all = SHOW_BANNERS_GROUP_SET_ALL
 
 ### How do I generate a report on banner advertising? 
 
-Banner statistics are tracked on an ongoing basis. When you open [Admin > Tools > Banner Manager](/user/admin_pages/tools/banner_manager/), you can see the last 3 days' details on-screen.
+Banner statistics are tracked on an ongoing basis. When you open [Admin > Tools > Banner Manager](/user/admin_pages/tools/banner_manager/), you can see the last 3 days' details on-screen.  
 
-For more information, under the "Action" column, you see a small white graph symbol. Click on that to view stats for day/month/year.
+For more information, under the "Action" column, you see a small white graph icon. Click on that to view [Banner Statistics](/user/admin_pages/tools/banner_statistics/) for day/month/year.
 
