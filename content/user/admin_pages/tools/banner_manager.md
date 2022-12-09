@@ -4,7 +4,7 @@ category: admin_pages
 weight: 10 
 ---
 
-This page manages individual text and image banners and their groups.  When the screen is opened, a list of existing banners is displayed. 
+This page manages your cart's [banners](/user/admin/banner_ads/) - individual text and image banners and their groups.  When the screen is opened, a list of existing banners is displayed. 
 
 ![Banner Manager](/images/banner_manager.png)
 
