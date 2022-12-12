@@ -60,7 +60,7 @@ When you have Option Names that have more than one Value, it is a good idea to d
 
 There are three options for setting a Default:
 1. Any valid option could be a default.
-2. You could create a compulsory option value named "Choose:" but flag it as *For Display Purposes only* to not allow it to be added to the shopping cart (eg: they must choose another option value from the other values you define).
+2. You could create a compulsory option value named "Choose:" but flag it as *For Display Purposes only* to not allow it to be added to the shopping cart (eg: they must choose another option value from the other values you define).  See [How do I make dropdowns start with "Please Select"](/user/products/please_select/) for more details.
 3. You could create an optional option value named "None" so the customer can opt out of selecting a value (in this case you should **not** flag the option as *For Display Purposes only* so that a purchase may proceed with the default still selected).
 
 
