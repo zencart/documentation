@@ -63,10 +63,41 @@ and the [Overrides FAQs](/user/template/template_overrides/).
 
 ## 5\. Do you have bad product data?
 
-(This refers to product pages mainly, not "all pages".)  
+(This refers to product pages like `product_info` mainly, not all pages.)  
 Sometimes when entering product data, if you copy+paste from another application (especially MS Word), weird "special" characters might get inserted, which can cause trouble in unexpected places. Make sure your product names and descriptions are clean.  
 
 And for product-images, make sure you don't have spaces and hyphens in the product-image-filenames.  
+
+## 6\. Checking file loading 
+
+Turning on file loading debugging can help pinpoint some issues. 
+
+If your admin is failing to load, try temporarily editing 
+`admin/includes/application_bootstrap.php`, and change 
+
+```
+define('DEBUG_AUTOLOAD', false);
+```
+
+to 
+
+```
+define('DEBUG_AUTOLOAD', true);
+```
+
+Then re-load the admin page and look for failures in the output.  You might see something like 
+
+```
+[286] => processing class - /home/client/public_html/includes/classes/pulldown.php
+[287] => loading class - /home/client/public_html/includes/classes/pulldown.php - FAILED
+```
+
+which tells you the file `includes/classes/pulldown.php` is bad or missing. 
+
+The same test can be run on the storefront by editing `includes/application_top.php` and turning on `DEBUG_AUTOLOAD` there..
+
+Be sure to restore these files once you are done testing. 
+
 
 ## Working with Debug Logs
 

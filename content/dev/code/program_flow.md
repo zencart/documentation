@@ -6,13 +6,19 @@ weight: 10
 type: codepage
 ---
 
-A storefront visit in Zen Cart follows an MVC style approach, albeit largely based on procedural code. The files involved are processed roughly in the following order. At various points there may be [auto-loading](/dev/code/inclusion/) of certain files in a certain directory matching a prescribed naming convention, or all files automatically executed according to certain rules for that location.
+A storefront visit in Zen Cart follows an MVC style approach, albeit largely based on procedural code. The files involved are processed roughly in the order shown below. 
 
-If debugging the program flow, there is a useful constant available in `/includes/application_top.php` which will show the file loading order in the browser output if set to true:
+## AutoLoading 
+At various points there may be [auto-loading](/dev/code/inclusion/) of certain files in a certain directory matching a prescribed naming convention, or all files automatically executed according to certain rules for that location.
+
+If debugging the program flow, there is a useful constant called `DEBUG_AUTOLOAD` which will show the file loading order in the browser output if set to true:
 ```php
 define('DEBUG_AUTOLOAD', false);
 ```
 
+See [Checking file loading](/user/troubleshooting/blank_page/#6-checking-file-loading) for instructions on use. 
+
+## File Load Order
 Locations where an "override" can be used are noted with a ► symbol.
 
 - `/index.php`
