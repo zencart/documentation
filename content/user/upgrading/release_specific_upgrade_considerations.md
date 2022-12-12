@@ -31,7 +31,7 @@ This document lists things you may wish to take into account as you upgrade.  Th
 - Most "functions" (both admin and non-admin) have been consolidated into files located in `/includes/functions/`. Some have been merged together. Some changes are listed below.  This change was done to eliminate the duplication of identical (or nearly identical) functions between the storefront and admin that was present in prior releases.
 
 - Some functions have been renamed. 
-Zen Cart 1.5.8a will provide aliases for these functions so that the old names will still work, but will create a deprecation log. 
+Zen Cart 1.5.8a will provide aliases for these functions so that the old names will still work, but will create a deprecation log. (To fix the log, change the function call from using the old name to the new name.)
 
    |Old Name|New Name|
    |-------|--------|

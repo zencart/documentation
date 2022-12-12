@@ -186,14 +186,19 @@
             <ul>
                 <li>(Note: no database changes between v158/v158a, so no need to run zc_install again if v158 is already installed.)</li>
                 <li>Admin: Add legend to EZ-Pages admin page.</li>
+                <li>Admin: Aliases added for renamed functions to make plugin upgrading easier.</li>
+                <li>Admin: Dashboard order status links fixed.</li>
+                <li>Admin: Fixed search to accomodate special characters.</li>
+                <li>Admin: Search box removed during add by ID for specials, featured pages.</li>
                 <li>Admin: Updated CKEditor for HTML5 compliance.</li>
-                <li>Admin: Added aliases for renamed functions to make plugin upgrading easier.</li>
+                <li>Core: Addition of aliases for renamed functions.</li>
                 <li>Core: Improve compliance with PHP 8.2 rules.</li>
                 <li>Core: Show language_id in debug logs to assist in handling language file fixing in multilanguage stores.</li>
                 <li>Documentation: Added upgrade document back into the distribution.</li>
                 <li>Storefront: Added support for <a href="https://docs.zen-cart.com/user/template/template_switching/">template_init scripts</a> to be run when switching templates.</li>
                 <li>Storefront: Allow plugins to skip <a href="https://docs.zen-cart.com/dev/code/158_order_language_files/#substring-matching">substring matchine language file loads for legacy files.</li>
                 <li>Storefront: Fixes requirement for USD as a currency when using PayPal.</li>
+                <li>Storefront: Transaction id missing from PayPal email fixed.</li>
                <li>Templates: Allow a template to register as single column only.</li>
                 <li>Upgrade: Resolved zc_install upgrade checks affecting sites using prefixes.</li>
             </ul>

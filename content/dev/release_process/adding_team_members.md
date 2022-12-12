@@ -62,5 +62,9 @@ Issues may only be assigned to
 - a user who commented on an issue 
 - a member of the [Github ZenCart Contributors](https://github.com/orgs/zencart/teams/contributors/members) team.
 
-To add someone to the Github ZenCart Contributors team, invite them using the "Add a member" button on the [Contributors team page](https://github.com/orgs/zencart/teams/contributors/members).  Once they accept, they will appear in the list of members.  You can learn more about how this process works by reading [these instructions from Github](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-teams-and-people-with-access-to-your-repository). 
+### Adding Someone to the Github ZenCart Contributors team
+- Go to the [Contributors team page](https://github.com/orgs/zencart/teams/contributors/members).
+- Click the "Add a member" button at the top right.
+
+Once they accept, they will appear in the list of members.  You can learn more about how this process works by reading [these instructions from Github](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-teams-and-people-with-access-to-your-repository). 
 
