@@ -4,7 +4,7 @@ description: Upgrading old Zen Cart plugins to work with Zen Cart 1.5.8
 category: plugins
 ---
 
-PHP8 is a major change, and many older plugins will require attention before they can be used without problems. 
+PHP8 is a major change, and many older plugins will require attention before they can be used without problems.   Be sure to verify plugins in [a test environment](/user/running/local_testing/) before pushing them to a live store. 
 
 ## Array Based Language Files 
 To avoid duplicate define notices from PHP, Zen Cart 1.5.8 uses [Array Based Language Files](/dev/code/158_language_files/).
