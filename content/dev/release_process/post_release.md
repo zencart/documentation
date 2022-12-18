@@ -48,6 +48,8 @@ insert into vb_dl2_zcversions (versiontext) values ('v1.5.8')
 
 - Create a "Known Bugs in <release>" thread on the [Upgrading to 1.5.x subforum](https://www.zen-cart.com/forumdisplay.php?156-Upgrading-to-1-5-x).   Update the release announcement and the [known bugs](/user/about_us/known_bugs/) page with this link.
 
+- Ensure the [Release Specific Upgrade Considerations](/user/upgrading/release_specific_upgrade_considerations/) doc has a statement about this release.
+
 - Search the documentation in https://github.com/zencart/documentation for the string RELEASETIME and update those files.
 
 - Run the `build_doc` and `view schema` tools as noted in the [Release Time](https://github.com/scottcwilson/zencart_tools). 

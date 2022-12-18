@@ -13,6 +13,8 @@ Example:
 - A shirt in sizes small, medium and large.
 - A book in hardcover or paperback 
 
+Without attributes, you would have to have three shirt products (one for each size) and two book products (one for each binding). 
+
 Zen Cart offers the following types of attributes:
 
 - radio buttons 
@@ -34,7 +36,7 @@ To learn more about attributes, read:
 
 - [Option Name Manager](/user/admin_pages/catalog/option_name_manager/)
 - [Option Value Manager](/user/admin_pages/catalog/option_value_manager/)
-- [Adding attributes to products](/user/products/attributes/)
+- [Adding Attributes to Products](/user/products/attributes/)
 - [Attribute Pricing](/user/products/attribute_pricing/)
 - [Attributes Controller](/user/admin_pages/catalog/attributes_controller/)
 

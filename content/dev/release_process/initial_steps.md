@@ -25,8 +25,7 @@ Message all developers who have merge privileges using the Skype Dev Chat channe
 Before tagging a release we need to:
 
 - ensure code is up to date.
-- update the [Documentation Website](https:docs.zen-cart.com/release) to ensure that it reflects changes that have happened within
-the release and stamp files that have been changed/added with correct copyright and other headers.
+- update the [Documentation Website](https:docs.zen-cart.com/release) to ensure that it reflects changes that have happened within the release.
 
 # Testing Prior to the build 
 Create a new shop using the branch you are about to build, and run through some tests.  You want to be confident that what you're building will work. 

@@ -48,6 +48,18 @@ Here's what should be in these files for version 1.5.7b:
 
 There are other version related updates to do, but they're not part of the build, so they are detailed in [post release tasks](/dev/release_process/post_release/).
 
+## For Major Releases - set the highest PHP Supported 
+
+Update these places: 
+
+Code Files: 
+
+- `zc_install/includes/languages/en_us/main.php` (set `TEXT_ERROR_PHP_VERSION`)
+- `zc_install/includes/systemChecks.yml` (set `checkPhpVersion`)
+
+Documentation Files: 
+- [Server Requirements](/user/first_steps/server_requirements/#php-version)
+
 
 ## Copyright Updates
 

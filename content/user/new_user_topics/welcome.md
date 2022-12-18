@@ -21,12 +21,16 @@ define('TEXT_GREETING_PERSONAL', 'Hello <span class="greetUser">%s</span>!');
 
 As you can see, there are two Welcome messages depending upon whether you wish Zen Cart to be a fully functioning store, or just a showroom.
 
-Edit the message starting from the word “Welcome” but be careful not to change the text in angled brackets, or the brackets themselves. Make sure that the single quote marks are not left out. If you want to include an apostrophe in your text e.g. “Lucy's Store”, you will need to put an escape character before the apostrophe, i.e. “Lucy\'s Store”.
+Edit the message starting from the word “Welcome” but be careful not to change the text in angled brackets, or the brackets themselves. Make sure that the single quote marks are not left out. If you want to include an apostrophe in your text e.g. “Lucy's Store”, you will need to put an escape character before the apostrophe, i.e. 
+
+```
+Lucy\'s Store
+```
 
 Save the edited file and upload it to your server.
 
 If you want to eliminate “Welcome Guest! Would you like to log yourself in?” message completely, turn off the Customer Greeting in your 
 [Admin > Configuration > Layout settings](/user/admin_pages/configuration/configuration_layoutsettings/).  Go to *Customer Greeting - Show on Index Page* and set it to 0.
 
-NOTE:  Completely removing this message will result in an Accessibility structure violation as the result woould be h1 to h3 on the main page versus h1 (Congratulations!), h2 (Welcome), and h3 (define_main_page.php).
+NOTE:  Completely removing this message will result in an Accessibility structure violation as the result would be h1 to h3 on the main page versus h1 (Congratulations!), h2 (Welcome), and h3 (define_main_page.php).
 
