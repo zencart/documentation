@@ -7,7 +7,21 @@ layout: docs
 
 In Zen Cart 1.5.8, the language file structure was modified so that the PHP `define` statement is no longer used directly to set a language constant.  The reason for this is that newer versions of PHP will emit warning messages when a constant is redefined (in an override vs core file), so the old approach would create debug logs if something wasn't done.
 
-The new design builds an array of language definitions which are built into constants once all of them are read.  For this reason, the new files are called *array based language files* (as opposed to the older *define based language files*). 
+The new design builds an array of language definitions which are built into constants once all of them are read.  For this reason, the new files are called *array based language files* (as opposed to the older *define based language files*).
+
+**Note:** 1.5.8 **can** still use the old style of inclusion for custom files in the older format, so older plugins and addons will run just fine without requiring modification, i.e.
+
+```
+   require 'includes/languages/english/some-custom-file.php';
+```
+
+However, if this is done:
+- the file must not be overridden
+- the file's definitions must be unique for the page on which they are included
+
+If these rules are not followed, duplicate definition logs will be produced.  With this in mind, let's look at how the current system of array based language files works.
+
+### Example
 
 So for example, in Zen Cart 1.5.7, the file `includes/languages/english/login.php` would have: 
 
@@ -44,7 +58,7 @@ If you need to specifically include a core language file, logic that was used in
   include_once ($langfile);
 ```
 
-will no longer work for 1.5.8 and above, since both the filename and the structure have changed.  
+needs to be migrated for 1.5.8 and above, because both the filename and the structure of this core file have changed.  The old file is simply not there any more, it has been migrated to `lang.ot_group_pricing.php`.
 
 However, plugin authors may want to make their code compatible with both 1.5.7 and 1.5.8.  Here's one approach, which also allows for template overrides: 
 
@@ -83,18 +97,6 @@ if (function_exists('zen_get_zcversion') && zen_get_zcversion() >= '1.5.8') {
    require 'includes/languages/english/some-custom-file.php'; 
 }
 ```
-
-**Note:** 1.5.8 **can** still use the old style of inclusion for custom files in the older format, i.e. 
-
-```
-   require 'includes/languages/english/some-custom-file.php'; 
-```
-
-However, if this is done: 
-- the file must not be overridden 
-- the file's definitions must be unique for the page on which they are included
-
-If these rules are not followed, duplicate definition logs will be produced.
 
 ### Handling back references within a file 
 
