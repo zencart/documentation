@@ -9,7 +9,7 @@ In Zen Cart 1.5.8, the language file structure was modified so that the PHP `def
 
 The new design builds an array of language definitions which are built into constants once all of them are read.  For this reason, the new files are called *array based language files* (as opposed to the older *define based language files*).
 
-**Note:** 1.5.8 **can** still use the old style of inclusion for custom files in the older format, so older plugins and addons will run just fine without requiring modification, i.e.
+**Note:** 1.5.8 **can** still use the old style of inclusion for non-core custom files in the older format, so older plugins and addons will run just fine without requiring modification, i.e.
 
 ```
    require 'includes/languages/english/some-custom-file.php';
@@ -47,11 +47,11 @@ Using arrays allows for the following kinds of behavior:
 
 - Create a definition in the main language file which works for most cases, but allow it to be overridden in a per-page language file. 
 
-In the process of doing this work, the language files were reviewed for duplicates, and consolidation was done where appropriate to reduce the burden on translators. 
+In the process of doing this work, the language files were reviewed for duplicates, and consolidation was done where appropriate to reduce the burden on translators.  So some constant definitions have moved or been renamed - be sure to apply your changes and customizations with this in mind.
 
 ### Loading a language file
 
-If you need to specifically include a core language file, logic that was used in Zen Cart 1.5.7 and before: 
+If you need to specifically include a **core** language file, logic that was used in Zen Cart 1.5.7 and before: 
 
 ```
   $langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . "/modules/order_total/" .  "ot_group_pricing.php";
@@ -60,7 +60,7 @@ If you need to specifically include a core language file, logic that was used in
 
 needs to be migrated for 1.5.8 and above, because both the filename and the structure of this core file have changed.  The old file is simply not there any more, it has been migrated to `lang.ot_group_pricing.php`.
 
-However, plugin authors may want to make their code compatible with both 1.5.7 and 1.5.8.  Here's one approach, which also allows for template overrides: 
+However, plugin authors may want to make their code compatible with both 1.5.7 and 1.5.8.  Here's one approach for manually loading a language file in both old and new formats, which also allows for template overrides: 
 
 ```
   $filename = "ot_group_pricing.php"; 

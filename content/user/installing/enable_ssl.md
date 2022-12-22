@@ -9,7 +9,8 @@ See also [Basic Hosting and Domain concepts](/user/first_steps/hosting/).
 
 SSL (secure socket layer) is used to encrypt communications between the browser and the server, thus protecting sensitive data being transferred from your customers to your store. You will recognize SSL mode by seeing the familiar `https://` in the URL in your browser's address bar. This should always also be accompanied by a secure padlock symbol in your browser, often in the address bar with the URL or in the status bar at the bottom of the browser window. 
 
-Considerations:  
+**Note:** Some hosters offer to "help you" make your site secure.  Unless they are Zen Cart specialists, be wary, because they will likely not do step 3 below, which will lead you into a world of pain! 
+
 
 # 1\. Purchase your SSL certificate 
 
