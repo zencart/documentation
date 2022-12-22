@@ -77,7 +77,7 @@ You will also want to make changes so that your older template is compliant with
 ## Notifiers 
 Notifiers are commonly added to each Zen Cart release.  If your custom template is using a notifier-based plugin, you will need to make sure it has all the latest notifiers. 
 
-### Notifiers in files under `includes/templates/template_default` 
+### Notifiers in files under `includes/templates/template_default/` 
 
 ```
 ./common/html_header.php:  NOTIFY_HTML_HEAD_END
@@ -92,7 +92,7 @@ Notifiers are commonly added to each Zen Cart release.  If your custom template 
 ./common/tpl_tabular_display.php: NOTIFY_TPL_TABULAR_DISPLAY_START
 ```
 
-### Notifiers in files under `includes/modules`
+### Notifiers in files under `includes/modules/`
 
 ```
 additional_images.php: NOTIFY_MODULES_ADDITIONAL_IMAGES_FILE_MATCH
@@ -165,4 +165,14 @@ product_listing.php: NOTIFY_PRODUCT_LISTING_END
 product_listing_alpha_sorter.php: NOTIFY_PRODUCT_LISTING_ALPHA_SORTER_SELECTLIST
 specials_index.php: NOTIFY_MODULES_SPECIALS_INDEX_B4_LIST_BOX
 ```
+
+### Notifiers in files under `includes/modules/sideboxes/`
+```
+./ezpages.php: NOTIFY_START_EZPAGES_SIDEBOX
+./ezpages.php: NOTIFY_END_EZPAGES_SIDEBOX
+./ezpages.php: NOTIFY_END_EZPAGES_SIDEBOX
+```
+
+Other notifiers may have been added to non-overridable files as well; you can compare the [complete list of notifiers](/dev/code/notifiers_list/) to what you have in your files using the [Notifier Report](https://github.com/lat9/notifier_report).
+
 
