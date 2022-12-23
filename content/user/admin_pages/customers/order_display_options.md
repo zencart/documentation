@@ -35,7 +35,14 @@ The following flags may be set for the Packingslip page:
 Flag | Default | Behavior 
 -----|---------|---------
 `$show_product_images` | true | Display product images on packingslip 
-`$show_attrib_images` | true | Display attribute images on packingslip 
+`$show_attrib_images` | true | Display attribute images on packingslip
+
+If you require a different behaviour for the packing slip the following flags may be used to overide the default or invoice page flags:
+
+Flag | Default | Behavior 
+-----|---------|---------
+`$show_product_images_pack` | true | Display product images on packingslip 
+`$show_attrib_images_pack` | true | Display attribute images on packingslip
 
 
 
