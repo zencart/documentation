@@ -13,21 +13,11 @@ Copy this file to
 
 and customize to taste. 
 
-The following behaviors can be enabled or disabled by this file: 
-- Enable/disable zcDate debug
-- The [order display](/user/admin_pages/customers/order_display_options/) for images, tax display, etc. 
+Many behaviors can be enabled or disabled by this file, such as:
+- indicating whether the downloads manager page should show the file date
+- modifying the [order display](/user/admin_pages/customers/order_display_options/) for images, tax display, etc. 
+- (developers) whether to enable debug on the `zcDate` class.
 
-
-Example: disable product images on packing slip and invoice: 
-```
-$show_product_images = false;
-```
-
-Example: disable product images on invoice only: 
-```
-if ($_GET['cmd'] == 'invoice') { 
-   $show_product_images = false;
-}
-```
+See the file itself for specifics and details.
 
 Information on the [storefront site-specific overrides file](/user/customizing/site_specific_overrides/) is also available. 
