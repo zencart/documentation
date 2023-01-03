@@ -23,4 +23,6 @@ Version information is particularly important if you are upgrading Zen Cart
 or your hoster is upgrading PHP.  You want to be sure you have a 
 [compatible PHP for your Zen Cart version](/user/first_steps/server_requirements/). 
 
-**Note:** If you are writing code and you need to do a version check, see [Zen Cart Version Checking in your Plugin](/dev/plugins/version/).
+**Note:** 
+- If you are writing code and you need to do a version check, see [Zen Cart Version Checking in your Plugin](/dev/plugins/version/).
+- If you are looking for the version check message that appears in the upper right hand corner of the admin, see [New Version message](/user/admin_pages/admin_new_version_available/).
