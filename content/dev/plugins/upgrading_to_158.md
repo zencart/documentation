@@ -110,6 +110,20 @@ Now:
 ```
    echo $zcDate->output('%B'); 
 ```
+
+Or if more arguments are used, the change is: 
+
+Before: 
+```
+    $retVal = strftime(DATE_FORMAT_LONG, mktime($hour, $minute, $second, $month, $day, $year));
+```
+
+Now:
+```
+    $retVal = $zcDate->output(DATE_FORMAT_LONG, mktime($hour, $minute, $second, $month, $day, $year));
+```
+
+
 NB. To use inside a function or another class you will need to add 
 ```
    global $zcDate;

@@ -1,6 +1,6 @@
 ---
 title: Adding New Configuration Values to a Module
-description: Modifying module keys with out requiring remove/reinstall
+description: Modifying module keys without requiring remove/reinstall
 ---
 
 Over time, you may find that the initial set of configuration values for a module is not adequate.  For example, you want to add a new feature, which requires its own configuration, or a vendor (a shipper or a bank) may require additional data to authenticate the account. 
@@ -22,7 +22,9 @@ Remove and re-install was annoying for users, and error prone in cases where mod
 
 ## Dynamically Handling Missing Configuration Values 
 
-To detect and recover from this condition, the newer way is to simply add the configuration settings in the `keys()` method.   Care must be taken to ensure that the module is already installed (check the `_STATUS` setting) so that the config won't be added twice when an the `install` method is run. 
+To detect and recover from this condition, the newer way is to simply add the configuration settings in the `check()` method.   (Note that some older modules use the `keys()` method for this purpose; either method is acceptable.)
+
+Care must be taken to ensure that the module is already installed (check the `_STATUS` setting) so that the config won't be added twice when an the `install` method is run. 
 
 From paypalwpp.php line 704 in Zen Cart 1.5.7d, 
 
