@@ -75,3 +75,19 @@ The recommended method of doing this is described in [Downloads which are not pr
 
 If what you want to do is associate PDFs with specific products, look at the [PDF Attachment in Product Description](https://www.zen-cart.com/downloads.php?do=file&id=1642) plugin.
 
+## Define Pages
+
+While [Define Pages](/user/template/define_pages/) won't create entirely new pages, the mechanism can be used to inject additional content into your site. 
+
+## Use of PHP 
+
+The use of PHP in new pages is subject to the following restrictions: 
+
+Mechanism | Restrictions 
+----------|--------------
+EZ Pages  | not allowed
+Built in extra pages | allowed, no restrictions
+Plugins   | allowed, no restrictions (assuming plugin creates a custom page) 
+New Custom Page | allowed, no restrictions 
+Define Pages | allowed but not recommended; should not be used if CKEditor is also used
+
