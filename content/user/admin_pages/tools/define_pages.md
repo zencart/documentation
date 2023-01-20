@@ -10,6 +10,7 @@ Define Pages Editor gives you an option to change the content of the following p
 
 Page Name | Define Page File 
 ----------|-----------------
+About Us | define_about_us.php (since 1.5.8)
 Ask a Question Page | define_ask_a_question.php (since 1.5.7)
 Checkout Success Page | define_checkout_success.php
 Conditions of Use | define_conditions.php
@@ -30,3 +31,6 @@ Site Map | define_site_map.php
 ![Define Pages Editor](/images/define_pages_editor.png)
 
 Define pages content and links to define pages may be enabled or disabled in [Admin > Configuration > Define Page Status ](/user/admin_pages/configuration/configuration_definepagestatus/). 
+
+Define pages are one of many ways of [adding content to your site](/user/customizing/add_pages/).   
+
