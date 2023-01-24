@@ -14,6 +14,7 @@ a) `/YOURADMIN/includes/extra_configures/  `
 b) `/includes/extra_configures/  `
 
 ```
+<?php
 /**
  * @package security
  * @copyright Copyright 2003-2011 Zen Cart Development Team
