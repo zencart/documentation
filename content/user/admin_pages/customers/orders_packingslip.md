@@ -7,7 +7,7 @@ weight: 110
 The Orders Packing Slip page allows you to view a packing slip for a particular order.
 
 
-In this context, an "invoice" means a summary of the order, not an account to be paid.  The invoice 
+In this context, an "invoice" means a summary of the order, not an account to be paid.  
 
 The packing slip only contains the products in the order and the customer's billing and shipping address, in contrast to the [order invoice](/user/admin_pages/customers/orders_invoice/), which contains the full order information.
 
