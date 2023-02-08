@@ -79,12 +79,24 @@ However, plugin authors may want to make their code compatible with both 1.5.7 a
   }
 ```
 
+If the plugin is targeted at 1.5.8+ only, the code above can be simplified: 
+```
+  $filename = "ot_group_pricing.php"; 
+  $folder = "/modules/order_total/";  // end with slash 
+  $new_langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . $folder .  "lang." . $filename; 
+  if (file_exists($new_langfile)) {
+     global $languageLoader; 
+     $languageLoader->loadExtraLanguageFiles(DIR_FS_CATALOG . DIR_WS_LANGUAGES,  $_SESSION['language'], $filename, $folder); 
+  }
+```
+
 If the file to be loaded was just in `includes/languages/english/` (and not the `modules/order_total` subfolder), the changes to the code above would just be for the first two variables.  To load the file `includes/languages/english/lang.media_common.php` it would be, 
 
 ```
   $filename = "media_common.php"; 
   $folder = "/";  // end with slash 
 ```
+
 
 On the admin side, you can do something like this.  Assume the file to 
 be loaded is `admin/includes/languages/english/some-custom-file.php` in 1.5.7 and `admin/includes/languages/english/lang.some-custom-file.php` in 1.5.8: 
