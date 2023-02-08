@@ -59,3 +59,8 @@ Plugins not using the `zc_plugins` structure should put their page-specific cust
 ## Site Specific Overrides 
 
 Starting in Zen Cart 1.5.8, an [admin site-specific override](/user/admin/site_specific_overrides/) capability exists. 
+
+## Related 
+
+- [Customizing your Admin](/user/customizing/admin_customizing)
+
