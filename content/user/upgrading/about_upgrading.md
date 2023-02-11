@@ -9,15 +9,17 @@ weight: 5
 
 To skip the "why" part and just get started, see the [Upgrading section](/user/upgrading) of the docs.
 
-### Why?
+### Why should I upgrade?
 
 **Upgrading is important!  When you upgrade, you get security improvements, you get to use more recent versions of PHP, you get all the bug fixes from the past, and you get new features with every release!**  We highly encourage all users to stay upgraded.
 
-If upgrading is beyond your ability, please post an ad in our [Commercial Help Wanted Forum](https://www.zen-cart.com/forumdisplay.php?138-Commercial-Help-Wanted) and hire a developer to do your upgrade for you. 
+Upgrading is like changing the oil in your car.  Sure, you can drive a car for quite a while without doing an oil change, but eventually it will catch up to you, and you'll have a big problem.
 
-**Why is upgrading important?**
+If upgrading is beyond your ability, please post an ad in our [Commercial Help Wanted Forum](https://www.zen-cart.com/forumdisplay.php?138-Commercial-Help-Wanted) and hire a developer to do your upgrade for you. Or, you can use the [Quickie Upgrade](/user/upgrading/db_only_upgrade/) procedure, and be up to date in no time. 
 
-Two words: **bad guys**.
+## What does upgrading get me? 
+
+The most important benefit from upgrading is **protection from bad guys**. 
 
 Bad guys are everywhere.  Trying to steal from you.  Trying to wreck your business.  Trying to harass you.  It's unfortunate, but it's part of operating online. 
 
@@ -43,5 +45,5 @@ The advantage of keeping your site up to date is that you get all the new featur
 
 ## OK, but Why Else? 
 
-If the arguments above haven't yet convinced you then consider this: hosters sunset older versions of PHP as time goes on, because they don't have to incur the security risk that comes with running older software.  This means that one day, your older cart will simply *stop working*. Wouldn't it be better to get ahead of this? 
+If the arguments above haven't yet convinced you then consider this: hosters **remove** older versions of PHP as time goes on, because they don't have to incur the security risk that comes with running older software.  They move everyone running older versions of PHP to newer versions.  But your old cart won't run on a newer version of PHP.  This means that one day, your older cart will simply *stop working*, sometimes even without warning. Wouldn't it be better to get ahead of this? 
 
