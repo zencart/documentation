@@ -12,7 +12,7 @@ On the "checkout_success" page, there are several pieces of data available:
 
 *   **$order_summary['order_number']** = The current order number
 *   **$order_summary['order_subtotal']** = The subtotal of the price of all products in the cart, before shipping etc
-*   **$order_summary['credits_applied']** = A sum of all discounts/credits applied to the order (ie: handled by "credit" ot modules such as coupons and gift certificates and customer-group-discounts etc)
+*   **$order_summary['credits_applied']** = A sum of all discounts/credits applied to the order (ie: handled by "credit" order total modules such as coupons, gift certificates and customer-group-discounts)
 *   **$order_summary['commissionable_order']** = The amount of the purchase that is commissionable, ie: subtotal minus discounts
 *   **$order_summary['commissionable_order_formatted']** = Formatted according to the current currency
 *   **$order_summary['coupon_code']** = The coupon code used in this order, if any

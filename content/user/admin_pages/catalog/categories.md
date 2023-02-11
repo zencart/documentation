@@ -31,6 +31,13 @@ At the level where you only have categories, you'll see a table with a number of
 
 ![admin categories](/images/admin_category_listing_rows.png)
 
+## ID and Name
+
+The first field on the left hand side is the numeric category ID.
+
+Next to that is a field containing the category name, with two icons to the left of the name.  The first icon will open the category in the storefront (allowing you to check the appearance of images and text related to the category), and the second icon, which is a file folder, indicates that this is a category.  (If it were a product, that icon would not be present.)
+
+
 ## Status Icons
 
 Under the Status column header, you'll see an icon that is either red or green, with an optional yellow icon.

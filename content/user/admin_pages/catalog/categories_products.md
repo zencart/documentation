@@ -10,6 +10,12 @@ If you are at a level where the Categories screen only shows products, you'll se
 
 ![admin categories products](/images/admin_product_listing_rows.png) 
 
+## ID and Name
+
+The first field on the left hand side is the numeric product ID.
+
+Next to that is a field containing the product name, with an icon to the left of the name.  The icon will open the category in the storefront (allowing you to check the appearance of images and text related to the product).  
+
 ## Status Icons
 
 Under the Status column header, you'll see an icon that is either red or green, with an optional yellow icon.
