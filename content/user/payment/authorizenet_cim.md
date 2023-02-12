@@ -33,7 +33,7 @@ You need to generate your username and transaction key:
 1.  Login to your Zen Cart Admin
 2.  Go to Modules
 3.  Go to Payment
-4.  Select Authorize.net AIM and click Install
+4.  Select New Credit Card (authorizenet_cim) and click Install
 5.  Enter your Login ID and Transaction Key as recorded earlier
 6.  Configure the rest of the settings as desired:
 
@@ -47,6 +47,7 @@ You need to generate your username and transaction key:
 7.  Set Completed Order Status - For Captured and Approved orders, what order-status should be set?  Default recommended is "Processing"
 8.  Set Refunded Order Status - For transactions that are refunded, this order status setting will be used. Recommended: "Pending"
 9.  Debug Mode - If you need to diagnose what details are sent to and received from the Authorize.net gateway, enable this option. Logs will be stored in the /cache folder and numbered in obscurity to prevent snooping. Set it to "Alerts Only" if you want to be emailed if payment system errors occur but not clutter log folders on the server.  
+10.  Once properly configured the Authorize.net Card on File - COF will now also be enabled.
 
 ## TESTING
 
@@ -62,8 +63,10 @@ To test your shop,
 
 ## TRANSACTION DATA SHOWN IN ZEN CART  
 
-1\. Incorporated with each successful order is a listing of:  
+1. Incorporated with each successful order is a listing of:  
 * Authorize.net Transaction ID 
 * Approval Code  
 * Amount 
+
+2. This module creates its own payment table.  From within the admin, there are easy to read buttons, to void transactions, settle on authorizations, refund transactions, as well as collect more money from card on file transactions if you add items to the order.
 
