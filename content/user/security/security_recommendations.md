@@ -58,19 +58,11 @@ Go to Admin > Configuration > Email Options, and change your Email Transport Pro
 This will not only help prevent outgoing emails from ending up in spam folders, but will also prevent the disclosure of your admin folder when sending emails from your admin screens.
 
 
-### 4\. Consider using a firewall service like Cloudflare
+### 4\. Block bad guys as needed 
 
-A free account on Cloudflare.com will let you manage your DNS through them, and set up IP-blocking from malicious visitors.
+Depending on the amount of bad traffic you get, you may need to look at solutions like Cloudflare, cpHulk, Access Blocker, Config Server Firewall, etc. 
 
-By default Cloudflare will then block all kinds of bad traffic automatically for you.
-
-You can set up a firewall rule (one of five free rules available) to block a "list" of IP addresses that you manage. 
-You can set up other firewall rules to block entire countries. (Be sure to only block countries you will actually never intend to sell to.)
-
-In order for it to work, you must change your domain's Name Servers (in your domain registrar) to point to Cloudflare instead of to your hosting company.
-
-If you wish to block IP addresses independently from your store's Admin (whether you also use Cloudflare or not) you might consider installing the [Access Blocker plugin](https://www.zen-cart.com/downloads.php?do=file&id=2237)
-
+Please see [blocking attacks](/user/troubleshooting/blocking_attacks/) for more details. 
 
 ### 5\. Delete any unused _Admin_ accounts
 
