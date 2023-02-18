@@ -25,10 +25,14 @@ If your site was created from an older version, your database might still contai
 
 **To change the database to utf8mb4, use the instructions below.**
 
+## Pre-Conversion to UTF8
+
+If your database contains a mix of latin1 and utf8, it is sometimes helpful to pre-convert your database to entirely utf8 before attempting the move to utf8mb4. 
+Use the plugin [Convert db2utf8](https://www.zen-cart.com/downloads.php?do=file&id=1318) to do this.
 
 ## Converting to UTF8MB4:
 
-### 1\. Converting the database
+### 1. Converting the database
 Use this conversion utility to convert your data to UTF8 (AFTER MAKING AND TESTING A DATABASE BACKUP): 
 
 [https://github.com/zencart/utf8mb4-converter](https://www.zen-cart.com/downloads.php?do=file&id=1318)
@@ -37,7 +41,7 @@ If you encounter errors converting certain tables due to bad data in them, simpl
 - [bad date formats](/user/upgrading/date_standardization/) in existing data
 - [broken tables](/user/upgrading/fixing_broken_tables/), such as broken auto-increments or corrupt indexes
 
-### 2\. Configuring your store
+### 2. Configuring your store
 
 You must also update your PHP files to indicate your UTF-8 intentions. 
 
