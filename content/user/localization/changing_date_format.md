@@ -98,60 +98,24 @@ to:
 
 
 
-### 3. Open file `admin/includes/languages/lang.YOURLANGUAGE.php`
+### 3. Create file `admin/includes/languages/extra_definitions/lang.admin_overrides.php`
 
-(this file cannot be over-ridden at present, so you will need to edit the file directly and be careful to reapply the changes if you upgrade to a later version of Zen Cart)  
+(if it all ready exists simply add the lines below excluding the line `<?PHP` )
 
-
-### 3a. find this line
-
-```
-@setlocale(LC_TIME, ['en_US', 'en_US.utf8', 'en', 'English_United States.1252']);
-```
-and replace with 
+### 3a. insert the following lines
 
 ```
-@setlocale(LC_TIME, ['en_GB', 'en_GB.utf8', 'en']); 
-```
+<?php
+@setlocale(LC_TIME, ['en_GB', 'en_GB.utf8', 'en']);
 
+$define['DATE_FORMAT'] = 'd/m/Y';
+$define['DATE_FORMAT_SHORT'] = '%d/%m/%Y';
+$define['DATE_FORMAT_SPIFFYCAL'] = 'dd/MM/yyyy';
+$define['ENTRY_DATE_OF_BIRTH_ERROR'] = '&nbsp;<span class="errorText">(eg. 21/05/1970)</span>';
+$define['PHP_DATE_TIME_FORMAT'] = 'd/m/Y H:i:s';
 
-### 3b. find these lines 
-```
-    'DATE_FORMAT' => 'm/d/Y',
-    'DATE_FORMAT_SHORT' => '%m/%d/%Y',
-    'DATE_FORMAT_SPIFFYCAL' => 'MM/dd/yyyy',
-```
+return $define;
 
-and replace with 
-
-```
-    'DATE_FORMAT' => 'd/m/Y',
-    'DATE_FORMAT_SHORT' => '%d/%m/%Y',
-    'DATE_FORMAT_SPIFFYCAL' => 'dd/MM/yyyy',
-```
-
-### 3c. find these lines
-
-```
-    'ENTRY_DATE_OF_BIRTH_ERROR' => '&nbsp;<span class="errorText">(eg. 05/21/1970)</span>',
-```
-
-and replace with
-
-```
-    'ENTRY_DATE_OF_BIRTH_ERROR' => '&nbsp;<span class="errorText">(eg. 21/05/1970)</span>',
-```
-
-### 3d. find these lines
-
-```
-    'PHP_DATE_TIME_FORMAT' => 'm/d/Y H:i:s',
-```
-
-and replace with
-
-```
-    'PHP_DATE_TIME_FORMAT' => 'd/m/Y H:i:s',
 ```
 
 And that's it, you're done!  
