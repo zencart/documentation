@@ -37,7 +37,7 @@ Prefixes are sometimes used by Zen Cart auto-installers, which are also **not re
 
 ## How many tables are in the Zen Cart database? 
 
-As of version 1.5.7, there are 94 tables in the Zen Cart database. 
+As of version 1.5.8, there are 94 tables in the Zen Cart database. 
 You can see a list of them by looking at the file `includes/database_tables.php`. 
 
 ## What is the schema for Zen Cart? 
