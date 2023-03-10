@@ -52,7 +52,9 @@ insert into vb_dl2_zcversions (versiontext) values ('v1.5.8')
 
 - Search the documentation in https://github.com/zencart/documentation for the string RELEASETIME and update those files.
 
-- Run the `build_doc` and `view schema` tools as noted in the [Release Time](https://github.com/scottcwilson/zencart_tools). 
+- Run the `build_doc` and `view schema` tools.
+   - `build_doc` is in the [Zen Cart Tools](https://github.com/scottcwilson/zencart_tools) repo.  It creates the [configuration documentation](https://docs.zen-cart.com/user/admin_pages/configuration/).  
+   - `view_schema` is a plugin located [here](https://www.zen-cart.com/downloads.php?do=file&id=2270). It creates the [schema documentation](https://docs.zen-cart.com/dev/schema/).  Install the plugin, then do an Inspect in Google Chrome on the output and copy the element with id="pageWrapper" into a new file in `zencart_documentation/content/dev/schema`.  Remove the opening and closing div tags.
 
 - **Emergency Re-release:** If something was missed and you have to do a re-release, go back to [Remedial Commits](/dev/release_process/release_tagging/#possible-remedial-commits). 
 
