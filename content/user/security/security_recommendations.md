@@ -53,7 +53,7 @@ Some 3rd-party auto-install scripts provided by hosting companies also use a dir
 
 ### 3\. Use SMTPAUTH or SMTP as your Email Transport method, instead of the generic "PHP" or "sendmail" settings.
 
-Go to Admin > Configuration > Email Options, and change your Email Transport Protocol to SMTPAUTH, and then fill in all the SMTP credentials in the other settings lower on that same screen.
+Go to Admin > Configuration > Email, and change your Email Transport Protocol to SMTPAUTH, and then fill in all the SMTP credentials in the other settings lower on that same screen.
 
 This will not only help prevent outgoing emails from ending up in spam folders, but will also prevent the disclosure of your admin folder when sending emails from your admin screens.
 

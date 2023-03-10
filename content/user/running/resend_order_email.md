@@ -16,7 +16,7 @@ This can happen for a variety of reasons:
 Here are a few ways you can get them the information they need. 
 
 ## Forward them the Admin order confirmation 
-The administrator gets a confirmation email for each order, as long as the _Send Copy of Order Confirmation Emails To_ field in [Email Settings](/user/admin_pages/configuration/configuration_emailoptions/) is set. 
+The administrator gets a confirmation email for each order, as long as the _Send Copy of Order Confirmation Emails To_ field in [Email Settings](/user/admin_pages/configuration/configuration_email/) is set. 
 
 Note that the administrator copy of the confirmation email has additional content at the bottom, which you may want to trim prior to forwarding. 
 
@@ -39,5 +39,5 @@ If your store needs to let customers make a PDF on a regular basis, the [Catalog
 
 ## Using the Email Archive Manager 
 
-If you had [email archiving](/user/admin_pages/configuration/configuration_emailoptions#email_archiving_active) turned on at the time the order was placed, you can use the [Email Archive Manager](/user/email/email_archive_manager/) to resend the email. 
+If you had [email archiving](/user/admin_pages/configuration/configuration_email#email_archiving_active) turned on at the time the order was placed, you can use the [Email Archive Manager](/user/email/email_archive_manager/) to resend the email. 
 

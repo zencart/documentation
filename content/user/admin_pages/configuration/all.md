@@ -34,8 +34,8 @@ nosearch: true
 # Configuration > Logging
 {{% include "/user/admin_pages/configuration/configuration_logging.md" %}}
 
-# Configuration > E-Mail Options
-{{% include "/user/admin_pages/configuration/configuration_emailoptions.md" %}}
+# Configuration > E-Mail 
+{{% include "/user/admin_pages/configuration/configuration_email.md" %}}
 
 # Configuration > Attribute Settings
 {{% include "/user/admin_pages/configuration/configuration_attributesettings.md" %}}

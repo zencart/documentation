@@ -19,7 +19,7 @@ noindex: true
 *   [Product Listing](/user/admin_pages/configuration/configuration_productlisting/) — Controls appearance of main _Product Listing_ pages.
 *   [Stock](/user/admin_pages/configuration/configuration_stock/) — Control various options regarding stock control.
 *   [Logging](/user/admin_pages/configuration/configuration_logging/) — Controls how events are logged.
-*   [E-Mail Options](/user/admin_pages/configuration/configuration_emailoptions/) — Various email configuration options.
+*   [E-Mail](/user/admin_pages/configuration/configuration_email/) — Various email configuration options.
 *   [Attribute Settings](/user/admin_pages/configuration/configuration_attributesettings/) — Controls how product attributes are handled.
 *   [GZip Compression](/user/admin_pages/configuration/configuration_gzipcompression/) — Controls compression settings if the information is transmitted to the user's web browser in compressed format.
 *   [Sessions](/user/admin_pages/configuration/configuration_sessions/) - Controls PHP Sessions settings.
