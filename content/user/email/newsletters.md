@@ -14,8 +14,7 @@ mass quantities of broadcast emails, and doing so could cause you to be treated 
 Instead, we recommend that you use an *Email Service Provider* (ESP) to handle your
 bulk emailing needs.  See below for more information about using an ESP. 
 
-### Exporting Email Addresses 
-To export email addresses, use the [Email Address Exporter](https://www.zen-cart.com/downloads.php?do=file&id=6) plugin and use it to feed the emails into a 3rd-party provider.
+As another alternative, in Zen Cart 1.5.8 and above you may continue using the Newsletter Manager, but use a different email transport method so your own host is not sending the emails.  See below for more information on this.
 
 # Using an Email Service Provider 
 
@@ -48,5 +47,22 @@ Because you are no longer using Zen Cart's newsletter feature, you will want to 
 
 Most Email Service Providers will provide you with a signup form to use on your website that allows you to allow people to signup for your newsletter.  Use this form, either as a [sidebox](/user/template/sideboxes/) or as a [new custom page](/user/customizing/add_pages/#build-a-new-custom-page). 
 
-Generally unsubscribes will be done by clicking the unsubscribe link that is provided at the bottom of your email; doing this within your cart is somewhat complicated and will require custom coding.
+Generally unsubscribes will be done by clicking the unsubscribe link that is provided at the bottom of your newsletter; doing this within your cart is somewhat complicated and will require custom coding.
  
+### Exporting Email Addresses 
+You will need to populate your subscriber list in whatever email service provider you choose.
+
+To export email addresses, use the [Email Address Exporter](https://www.zen-cart.com/downloads.php?do=file&id=6) plugin and use it to feed the emails into a 3rd-party provider.
+
+# Using the Newsletter SMTP Email settings 
+
+In Zen Cart 1.5.8 and above, the page [Admin > Configuration > Email](/user/admin_pages/configuration/configuration_email/) screen has the following new values: 
+
+- Newsletter SMTP Email Account Mailbox
+- Newsletter SMTP Email Account Password
+- Newsletter SMTP Email Mail Host
+- Newsletter SMTP Email Mail Server Port
+- Newsletter Modules 
+
+Any of the pages listed in `Newsletter Modules` will use the values configured in these fields for sending email, so you can use the Zen Cart tools to build your email but an [External SMTP Server](/user/email/external_smtp_servers/) to send them. 
+
