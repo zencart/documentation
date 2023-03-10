@@ -42,7 +42,7 @@ d. Select the SQL file you made in step 3a when you exported your old database, 
 
 6\. You're done. Open your store and admin areas to see it all ready to go! Do a test transaction. Turn off the Down For Maintenance mode.
 
-7\. You should review all your email settings in Admin > Configuration > Email Options -- especially any SMTP server/account settings, and of course all your email addresses.
+7\. You should review all your email settings in Admin > Configuration > Email -- especially any SMTP server/account settings, and of course all your email addresses.
 
 8\. Once your new site is up and running, the OLD server should be cleaned up: you should DELETE the database and all the PHP files/folders, etc from the OLD server.  There's no point leaving that data behind for prying eyes or worse.
 

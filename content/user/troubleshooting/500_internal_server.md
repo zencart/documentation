@@ -136,7 +136,7 @@ If the URLs or paths, or anything else for that matter, in your [configure.php f
 
 <td>
 
-If your blank-screen or 500-error is occurring at the same time as your store is attempting to send emails, this might be something to look into. Some hosts are extra strict about NOT using the *PHP* setting for [Admin > Configuration > Email Options](/user/admin_pages/configuration/configuration_emailoptions/) in the *Email Transport Protocol* field. 
+If your blank-screen or 500-error is occurring at the same time as your store is attempting to send emails, this might be something to look into. Some hosts are extra strict about NOT using the *PHP* setting for [Admin > Configuration > Email](/user/admin_pages/configuration/configuration_email/) in the *Email Transport Protocol* field. 
 
 Instead, set it to *SMTP* and specify the correct email server address in the *SMTP Email Host setting*, also on that screen. For even more assistance on email issues, see [Email Troubleshooting](/user/troubleshooting/email_issues/). 
 </td>

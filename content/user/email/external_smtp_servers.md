@@ -41,7 +41,7 @@ If you're hosting someplace other than Yahoo but trying to send email through yo
 
 Gmail / Google Apps Mail requires that your email communications occur over a secure channel, which means you need to send on port `587` for TLS. 
 
-Zen Cart supports this by using the following settings in [Admin > Configuration > Email Options](/user/admin_pages/configuration/configuration_emailoptions/):
+Zen Cart supports this by using the following settings in [Admin > Configuration > Email](/user/admin_pages/configuration/configuration_email/):
 
 ### Gmail
 
@@ -75,7 +75,7 @@ You may also have to open your webserver's firewall to allow access to Google's 
 
 ## Office 365 
 
-Use the following settings in [Admin > Configuration > Email Options](/user/admin_pages/configuration/configuration_emailoptions/):
+Use the following settings in [Admin > Configuration > Email](/user/admin_pages/configuration/configuration_email/):
 
 *   Email Transport: smtpauth 
 *   SMTP Username: your Outlook email address 

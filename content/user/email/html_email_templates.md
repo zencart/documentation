@@ -7,7 +7,7 @@ weight: 10
 
 ### Email System Settings relating to rich text messages:
 
-In Admin >Configuration > E-Mail Options
+In Admin >Configuration > Email 
 
 a. Make sure your "**E-Mail Transport Method**" is set appropriately for the webserver you're using. Using SMTPAUTH is strongly advised. Do not use "PHP" unless nothing else works.  
 

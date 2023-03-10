@@ -26,7 +26,7 @@ version_check=off
 In addition to the settings mentioned above, additional settings you may wish to change to improve admin performance are as follows:
 
 - Admin > Configuration > My Store > Show if version update available
-- Admin > Configuration > E-Mail Options > Audience-Select Count Display
+- Admin > Configuration > Email > Audience-Select Count Display
 
 Each of these settings has its own documentation.
 

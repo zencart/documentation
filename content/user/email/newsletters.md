@@ -41,7 +41,7 @@ Because you are no longer using Zen Cart's newsletter feature, you will want to 
 
 - Turn off [Show Newsletter Checkbox](/user/admin_pages/configuration/configuration_customerdetails/#show_newsletter_checkbox) in Admin > Configuration > Customer Details. 
 
-- Turn off [Display "Newsletter Unsubscribe" Link](/user/admin_pages/configuration/configuration_emailoptions/#display_newsletter_unsubscribe_link) in Admin > Configuration > E-Mail Options. 
+- Turn off [Display "Newsletter Unsubscribe" Link](/user/admin_pages/configuration/configuration_email/#display_newsletter_unsubscribe_link) in Admin > Configuration > Email. 
 
 ### Handling Subscribes and Unsubscribes
 
@@ -56,7 +56,7 @@ To export email addresses, use the [Email Address Exporter](https://www.zen-cart
 
 # Using the Newsletter SMTP Email settings 
 
-In Zen Cart 1.5.8 and above, the page [Admin > Configuration > Email](/user/admin_pages/configuration/configuration_email/) screen has the following new values: 
+In Zen Cart 1.5.8 and above, the page [Admin > Configuration > Email](/user/admin_pages/configuration/configuration_email/) has the following new values: 
 
 - Newsletter SMTP Email Account Mailbox
 - Newsletter SMTP Email Account Password

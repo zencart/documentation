@@ -22,7 +22,7 @@ your preferred language from the [Zen Cart Downloads](https://www.zen-cart.com/d
     *   Basis of Shipping Tax - choose what level tax is calculated at for shipping.
     *   HTML Editor - select your editor for product descriptions and emails/newsletters.  
 
-2.  **[Admin - Configuration - E-Mail Options](/user/admin_pages/configuration/configuration_emailoptions/)**
+2.  **[Admin - Configuration - Email](/user/admin_pages/configuration/configuration_email/)**
     *   If you want to send HTML-based emails, turn on Use MIME HTML When Sending Emails
     *   Set the format of emails for _Admin_ to receive in Email Admin Format
     *   Set the email address and status for all extra emails. These are copies sent to the _Admin_ when various messages are sent to the customer.  

@@ -20,4 +20,4 @@ Clicking on any particular line provides a brief view of the email, and an oppor
 ![Email Archive Detail](/images/email_archive_detail.png)
 
 To use the Email Archive Manager, you must enable email archiving in 
-[Admin > Configuration > Email Options](/user/admin_pages/configuration/configuration_emailoptions#email_archiving_active).
+[Admin > Configuration > Email](/user/admin_pages/configuration/configuration_email#email_archiving_active).

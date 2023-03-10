@@ -26,7 +26,7 @@ If you use the same logo for your site and your email, the values for these defi
 
 Sometimes the change will not show up right away in emails that have already been sent and viewed, due to caching. Simply close your email program and re-open it to see the change take effect.  If your email is browser-based, clear your browser cache to see the change.  See [caching](/user/new_user_topics/browser_caching/) for more details. 
 
-**NOTE: You must be sending HTML emails for this to work.**  See the Enable HTML Emails setting in [Admin > Configuration > Email Options ](/user/admin_pages/configuration/configuration_emailoptions/) setting.
+**NOTE: You must be sending HTML emails for this to work.**  See the Enable HTML Emails setting in [Admin > Configuration > Email](/user/admin_pages/configuration/configuration_email/) setting.
 
 ## Related Articles 
 - [Using your logo on packing slips and invoices](/user/orders/high_res_logo)

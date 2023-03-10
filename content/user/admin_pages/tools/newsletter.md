@@ -7,7 +7,7 @@ weight: 10
 This page allows you to compose a newsletter or product notification 
 email message to be sent to a customer or a group of customers.
 
-If you have [HTML enabled](/user/admin_pages/configuration/configuration_emailoptions/#enable_html_emails), you will be allowed to create the message in
+If you have [HTML enabled](/user/admin_pages/configuration/configuration_email/#enable_html_emails), you will be allowed to create the message in
 both rich and plain text; otherwise, you will only be allowed to use plain text.
 
 <br>
