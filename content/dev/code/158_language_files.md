@@ -54,7 +54,7 @@ In the process of doing this work, the language files were reviewed for duplicat
 If you need to specifically include a **core** language file, logic that was used in Zen Cart 1.5.7 and before: 
 
 ```
-  $langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . "/modules/order_total/" .  "ot_group_pricing.php";
+  $langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . '/modules/order_total/' .  'ot_group_pricing.php';
   include_once ($langfile);
 ```
 
@@ -63,10 +63,10 @@ needs to be migrated for 1.5.8 and above, because both the filename and the stru
 However, plugin authors may want to make their code compatible with both 1.5.7 and 1.5.8.  Here's one approach for manually loading a language file in both old and new formats, which also allows for template overrides: 
 
 ```
-  $filename = "ot_group_pricing.php"; 
-  $folder = "/modules/order_total/";  // end with slash 
+  $filename = 'ot_group_pricing.php'; 
+  $folder = '/modules/order_total/';  // end with slash 
   $old_langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . $folder .  $filename; 
-  $new_langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . $folder .  "lang." . $filename; 
+  $new_langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . $folder .  'lang.' . $filename; 
   if (file_exists($new_langfile)) {
      global $languageLoader; 
      $languageLoader->loadExtraLanguageFiles(DIR_FS_CATALOG . DIR_WS_LANGUAGES,  $_SESSION['language'], $filename, $folder); 
@@ -81,9 +81,9 @@ However, plugin authors may want to make their code compatible with both 1.5.7 a
 
 If the plugin is targeted at 1.5.8+ only, the code above can be simplified: 
 ```
-  $filename = "ot_group_pricing.php"; 
-  $folder = "/modules/order_total/";  // end with slash 
-  $new_langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . $folder .  "lang." . $filename; 
+  $filename = 'ot_group_pricing.php'; 
+  $folder = '/modules/order_total/';  // end with slash 
+  $new_langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . $folder .  'lang.' . $filename; 
   if (file_exists($new_langfile)) {
      global $languageLoader; 
      $languageLoader->loadExtraLanguageFiles(DIR_FS_CATALOG . DIR_WS_LANGUAGES,  $_SESSION['language'], $filename, $folder); 
@@ -93,8 +93,8 @@ If the plugin is targeted at 1.5.8+ only, the code above can be simplified:
 If the file to be loaded was just in `includes/languages/english/` (and not the `modules/order_total` subfolder), the changes to the code above would just be for the first two variables.  To load the file `includes/languages/english/lang.media_common.php` it would be, 
 
 ```
-  $filename = "media_common.php"; 
-  $folder = "/";  // end with slash 
+  $filename = 'media_common.php'; 
+  $folder = '/';  // end with slash 
 ```
 
 
