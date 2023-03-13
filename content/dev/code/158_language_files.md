@@ -67,7 +67,7 @@ However, plugin authors may want to make their code compatible with both 1.5.7 a
   $folder = '/modules/order_total/';  // end with slash 
   $old_langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . $folder .  $filename; 
   $new_langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . $folder .  'lang.' . $filename; 
-  if (file_exists($new_langfile)) {
+  if (isset($GLOBALS['languageLoader']) && file_exists($new_langfile)) {
      global $languageLoader; 
      $languageLoader->loadExtraLanguageFiles(DIR_FS_CATALOG . DIR_WS_LANGUAGES,  $_SESSION['language'], $filename, $folder); 
   } else if (file_exists($old_langfile)) {
