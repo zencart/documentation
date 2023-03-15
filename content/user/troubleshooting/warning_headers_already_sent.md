@@ -57,3 +57,5 @@ d) the rest of the info simply shows other execution information, mainly the par
 To change the encoding on the file, look for the "Save As" menu item in your
 [text editor](/user/first_steps/useful_tools/#php-html-and-text-editors).
 
+The utility [Find Extra Spaces](https://github.com/torvista/Zen_Cart-Find_Extra_Spaces) may be helpful in tracking down issues like this.  
+
