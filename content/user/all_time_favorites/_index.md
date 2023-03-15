@@ -67,6 +67,8 @@ Once you know [What Zen Cart is](/user/about_us/what_is_zen_cart/), you might wa
 
 * [Server Requirements for running Zen Cart](/user/first_steps/server_requirements/#php-version) - Zen Cart version to PHP version compatibility matrix.
 
+* [Spam Traffic](/user/running/spam/) - Handling abuse of your site.
+
 * Templates and Overrides - How do I use them?  Read 
 [the introduction](/user/first_steps/overrides/), 
 [the details](/user/new_user_topics/overrides/), 
