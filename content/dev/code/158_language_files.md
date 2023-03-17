@@ -60,14 +60,14 @@ If you need to specifically include a **core** language file, logic that was use
 
 needs to be migrated for 1.5.8 and above, because both the filename and the structure of this core file have changed.  The old file is simply not there any more, it has been migrated to `lang.ot_group_pricing.php`.
 
-However, plugin authors may want to make their code compatible with both 1.5.7 and 1.5.8.  Here's one approach for manually loading a language file in both old and new formats, which also allows for template overrides: 
+However, plugin authors may want to make their code backwards compatible with both 1.5.7 (`LanguageLoader` class first introduced to provide admin side `$languageLoader` variable) and 1.5.8. Here's one approach for manually loading a language file using both old and new (***default***) formats, which also allows for template overrides: 
 
 ```
   $filename = 'ot_group_pricing.php'; 
   $folder = '/modules/order_total/';  // end with slash 
   $old_langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . $folder .  $filename; 
   $new_langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . $folder .  'lang.' . $filename; 
-  if (isset($GLOBALS['languageLoader']) && file_exists($new_langfile)) {
+  if (file_exists($new_langfile)) {
      global $languageLoader; 
      $languageLoader->loadExtraLanguageFiles(DIR_FS_CATALOG . DIR_WS_LANGUAGES,  $_SESSION['language'], $filename, $folder); 
   } else if (file_exists($old_langfile)) {
