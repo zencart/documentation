@@ -44,7 +44,7 @@ The actual content that manages the release information looks like
 The areas that need changing are: 
 
 - release announcement
-- download link
+- download link (there are two of them!)
 - SHA
 
 To determine the SHA value, download the release zip from Github, and compute the SHA with the appropriate method for your platform. 
