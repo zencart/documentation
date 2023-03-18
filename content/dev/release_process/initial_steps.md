@@ -8,8 +8,10 @@ The initial phase of the release process consists of
 
  + Locking the repository for merges
  + Ensuring all code is up to date
- + Tagging the release
+ + Ensuring the current code runs properly
+ + Preparing the Release Documentation
 
+When this is all done, we can stamp and tag the release.
 
 # Locking Repository
 
@@ -29,6 +31,8 @@ Before tagging a release we need to:
 
 # Testing Prior to the build 
 Create a new shop using the branch you are about to build, and run through some tests.  You want to be confident that what you're building will work. 
+
+**Hopefully you have been testing up until now and have not introduced major changes right before the build.**  This will give you a much greater chance of success. 
 
 # Release Documentation
 
