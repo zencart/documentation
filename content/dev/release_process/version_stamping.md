@@ -63,11 +63,11 @@ Follow the instructions in the README.
 
 The `firstHash` represents the first commit after a previous tag/branch was created.
 It also should represent the first commit after the last known version stamping commit was created.
-This can sometimes be difficult to find manually.
+This can sometimes be difficult to find manually.  See section below. 
 
 #### lastHash
 
-This is the hash of the last commit to the branch we are working on.
+This is the hash of the last commit to the branch we are working on.  See section below.
 
 #### rootPath 
 
@@ -107,6 +107,8 @@ On branch version-stamping-v158
 nothing to commit, working tree clean
 ```
 
+Back in your version stamper folder, run the stamper in debug mode first.
+
 `php versionstamp.php app:version-stamp`
 
 This will run the version stamper in debug mode 
@@ -138,7 +140,7 @@ git checkout v158
 ## Capturing information in Release Log
 
 There is a section of these docs called [Release Log]({{< ref "release_log" >}} "release log"), in which you should capture some
-basic information about the release progress.
+basic information about the release progress.  Update `/dev/release_process/release_log/`.
 
 
 <div style="text-align:right;" id="next">

@@ -11,6 +11,8 @@ as you will have merged the version stamping changes.
 
 Now we tag the release.
 
+Go to your Zen Cart folder, which now is on the branch you are releasing (e.g. 1.5.8) and has all the updates from stamping. 
+
 ### Prerequisites
 If you have not pulled the current list of tags, do so now: 
 
@@ -32,10 +34,47 @@ git tag --list
 
 `git push upstream --tags`
 
+
+### Create the Release on Github
+
+After this we then need to create the release on github.
+
+https://github.com/zencart/zencart/tags
+
+![ Github Tags](/images/github-tags_page_zencart.png)
+
+By clicking on the ... on the far right hand side we can create a release.
+
+![Github Create Release](/images/github_create_release_zencart.png)
+
+
+The Release title should be the same name as the tag name.
+
+For Pre-Releases: 
+- Don't forget to check the pre-release box 
+
+For Official Releases: 
+- The textarea below the Release title should reference the https://docs.zen-cart.com/release release documentation.
+
+It's a good idea to also check the "Create a discussion for this release" box. 
+
+When you're ready, press the **Publish Release** button.
+
+### Verification 
+Take some time to verify the build you just published.  Since you already did pre-testing before beginning the build process, hopefully there will be no issues, but if there are, return to the [Possible Remedial Commits](/dev/release_process/release_tagging/#possible-remedial-commits) step. 
+
+### Additional Release Tasks: 
+
+- update the What's New and Changed Files documents for the release in [zencart_documentation/content/release](https://docs.zen-cart.com/release/).
+
+- Create a release announcement on the Zen Cart Forum.  Create it as a sticky post.  Here is an [example release announcement](https://www.zen-cart.com/showthread.php?229041-Zen-Cart-1-5-8-Released!).   
+
 ### Possible Remedial Commits 
 
-After creating the release on Github (the next step), you will want to test the build and make sure it works.  
-If you test the resultant build, and find a problem, 
+(You can skip this step if everything went well)
+
+After creating the release on Github, you will want to test the build and make sure it works.  
+If you test and find a problem, 
 it may be that you may need to do some remedial commits at this point.
 
 **For any new commits at this point, you must manually update headers as 
@@ -60,40 +99,6 @@ Then re-run these steps of the build:
 - Update the [Release Manifest](/dev/release_process/manifest/)
 - Check the [Releases Page](https://github.com/zencart/zencart/releases) and be sure the build you just did is Published and the old one is removed.
 - If required, update `docs` (What's New file, Changed Files).
-
-### Create the Release on Github
-
-After this we then need to create the release on github.
-
-https://github.com/zencart/zencart/tags
-
-![ Github Tags](/images/github-tags_page_zencart.png)
-
-By clicking on the ... on the far right hand side we can create a release.
-
-![Github Create Release](/images/github_create_release_zencart.png)
-
-
-The title should be the same name as the tag name.
-
-For Pre-Releases: 
-- Don't forget to check the pre-release box 
-
-For Official Releases: 
-- The textarea below the Release title should reference the https://docs.zen-cart.com release documentation.
-
-It's a good idea to also check the "Create a discussion for this release" box. 
-
-When you're ready, press the **Publish Release** button.
-
-### Verification 
-Take some time to verify the build you just published.  Since you already did pre-testing before beginning the build process, hopefully there will be no issues, but if there are, return to the [Possible Remedial Commits](/dev/release_process/release_tagging/#possible-remedial-commits) step. 
-
-### Additional Release Tasks: 
-
-- update the What's New and Changed Files documents for the release in [zencart_documentation/content/release](https://docs.zen-cart.com/release/).
-
-- Create a release announcement on the Zen Cart Forum.  Create it as a sticky post.  Here is an [example release announcement](https://www.zen-cart.com/showthread.php?229041-Zen-Cart-1-5-8-Released!).   
 
 <div style="text-align:right;" id="next">
    <a class="btn btn-lg btn-primary mr-3 mb-4" href="/dev/release_process/ping_server/">
