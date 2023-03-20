@@ -44,6 +44,8 @@ insert into vb_dl2_zcversions (versiontext) values ('v1.5.8')
 
 ## Other Post-Release Tasks 
 
+The first item applies to all releases; subsequent items are for major releases only. 
+
 - Update the [Release History](/user/about_us/release_history/) page with the new version and date.
 
 - Create a "Known Bugs in <release>" thread on the [Upgrading to 1.5.x subforum](https://www.zen-cart.com/forumdisplay.php?156-Upgrading-to-1-5-x).   Update the release announcement and the [known bugs](/user/about_us/known_bugs/) page with this link.
