@@ -63,11 +63,14 @@ When you're ready, press the **Publish Release** button.
 ### Verification 
 Take some time to verify the build you just published.  Since you already did pre-testing before beginning the build process, hopefully there will be no issues, but if there are, return to the [Possible Remedial Commits](/dev/release_process/release_tagging/#possible-remedial-commits) step. 
 
-### Additional Release Tasks: 
 
-- update the What's New and Changed Files documents for the release in [zencart_documentation/content/release](https://docs.zen-cart.com/release/).
+<div style="text-align:right;" id="next">
+   <a class="btn btn-lg btn-primary mr-3 mb-4" href="/dev/release_process/additional_release_tasks/">
+        Next - Additional Release Tasks<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+   </a>
+</div>
 
-- Create a release announcement on the Zen Cart Forum.  Create it as a sticky post.  Here is an [example release announcement](https://www.zen-cart.com/showthread.php?229041-Zen-Cart-1-5-8-Released!).   
+<hr>
 
 ### Possible Remedial Commits 
 
@@ -101,7 +104,7 @@ Then re-run these steps of the build:
 - If required, update `docs` (What's New file, Changed Files).
 
 <div style="text-align:right;" id="next">
-   <a class="btn btn-lg btn-primary mr-3 mb-4" href="/dev/release_process/ping_server/">
-        Next - Ping Server<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+   <a class="btn btn-lg btn-primary mr-3 mb-4" href="/dev/release_process/additional_release_tasks/">
+        Next - Additional Release Tasks<i class="fas fa-arrow-alt-circle-right ml-2"></i>
    </a>
 </div>
