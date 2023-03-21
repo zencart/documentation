@@ -7,7 +7,7 @@ category: release_process
 
 Note: if you are doing a pre-release rather than an official release, please skip this step and go to the [next step](#next). 
 
-Release links are placed on the [home page](https://www.zen-cart.com) of the Zen Cart Web Site.
+Release links are placed on the [Home page](https://www.zen-cart.com) of the Zen Cart Web Site.
 
 ![ Download Links](/images/download_links.png)
 
@@ -23,7 +23,7 @@ The actual content that manages the release information looks like
 
 <div class="vbcms_content" style="width:100%;">
     <div class="my_right_box"  style="width:33%;text-align:center;float:right;">
-        <a href="https://github.com/zencart/zencart/archive/refs/tags/v1.5.7d.zip" target="_blank"><img src="/images/styles/zencart/style/ZC-in-the-box.jpg"></a>
+      <img src="/images/styles/zencart/style/ZC-in-the-box.jpg">
 <div style="font-size:14px;margin-bottom:20px"><a href="https://www.zen-cart.com/showthread.php?228675-Zen-Cart-v1-5-7d-released!!">v1.5.7d Release Announcement</a></div>
 <a target="_blank" href="https://github.com/zencart/zencart/archive/refs/tags/v1.5.7d.zip" style="display:block">
 <div class="dlButton"><p class="verBubble"><span class="verNum">v1.5.7d</span></p> Download Zip File</div>
@@ -44,7 +44,7 @@ The actual content that manages the release information looks like
 The areas that need changing are: 
 
 - release announcement
-- download link (there are two of them!)
+- download link 
 - SHA
 
 To determine the SHA value, download the release zip from Github, and compute the SHA with the appropriate method for your platform. 
