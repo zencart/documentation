@@ -13,7 +13,7 @@ http://WWW.YOURSITE.COM/admin-foldername/index.php
 ```
 
 
-or, if you installed your site in a subfolder, like this:
+or, if you installed your site in a [subfolder](/user/installing/subfolder/), like this:
 
 ```
 http://WWW.YOURSITE.COM/subfolder/admin-foldername/index.php

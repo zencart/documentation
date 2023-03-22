@@ -17,7 +17,7 @@ to show the path to access your site over the web.  If your site is
 called "John Doe Tools" and your domain is "JohnDoeTools.com", then 
 `http://www.YOURSITE.com` really means `http://www.JohnDoeTools.com`. 
 
-**Note:**  If you wish, you may install your Zen Cart in a subfolder under your `public_html` folder. For example, the site above could be stored in 
+**Note:**  If you wish, you may install your Zen Cart in a [subfolder](/user/installing/subfolder/) under your `public_html` folder. For example, the site above could be stored in 
 `/home/johndoe/public_html/shop/`, which would make the URL 
 `http://www.JohnDoeTools.com/shop`.  See [deployment configurations](/user/first_steps/deployment_configurations).  
 

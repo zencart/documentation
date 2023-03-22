@@ -15,7 +15,7 @@ New Zen Cart users will often customize a file like `includes/templates/responsi
 
 **This is not a good practice**.  This URL will not work as expected in the following circumstances: 
 
-- You move the store to a subfolder (YOURSTORE.com/shop) 
+- You move the store to a [subfolder](/user/installing/subfolder/) 
 - You change domain names 
 - You work on a temporary or local domain
 - You work on an IP address during a hoster change 
