@@ -5,7 +5,7 @@ category: Upgrading
 weight: 7
 ---
 
-This guide assumes for simplicity that you have Zen Cart installed in a folder called `store`.  This configuration (placing your store in a subdirectory) allows you to run your old store and your new store side by side for testing before going live.  If you didn't install your current store in a subfolder, you can still install your new store in a subfolder for testing, and then remove the subfolder and install at the top level when it's time to go live. 
+This guide assumes for simplicity that you have Zen Cart installed in a folder called `store`.  This configuration (placing your store in a subdirectory) allows you to run your old store and your new store side by side for testing before going live.  If you didn't install your current store in a [subfolder](/user/installing/subfolder/), you can still install your new store in a subfolder for testing, and then remove the subfolder and install at the top level when it's time to go live. 
 
 This guide also mentions _cPanel_ when referring to the Control Panel offered by your hosting company for managing your hosting account's databases, file permissions, etc. While cPanel is a popular brand, your hosting company may offer something else. Consult them for help if needed.
 

@@ -18,7 +18,9 @@ Most FTP programs will allow you to change file permissions.
 
 Connect to your site with your FTP program.
 
-Move to your `public_html` directory, and perhaps into your `zencart` folder underneath `public_html`, if you've installed into a subfolder.
+Move to your `public_html` directory. 
+
+If you have installed your cart in a [subfolder](/user/installing/subfolder/), move to that folder. Some common subfolder names are `store`, `shop` or `cart`. 
 
 Then look for a "Properties" command that can be applied to that directory (often if you right click, Properties will be one of the options).
 

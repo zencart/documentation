@@ -7,7 +7,7 @@ weight: 10
 
 You can install Zen Cart in the root folder of your hosting account or in a subdirectory.  See [deployment configurations](/user/first_steps/deployment_configurations/) for examples. 
 
-If you change your mind, you can move your cart (from a subfolder to root or vice versa); you just have to update some settings when you do so. 
+If you change your mind, you can move your cart (from a [subfolder](/user/installing/subfolder/) to root or vice versa); you just have to update some settings when you do so. 
 
 ***Scenario:*** 
 
