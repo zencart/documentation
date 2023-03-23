@@ -63,9 +63,13 @@ It is **not** recommended to run both at the same time.
   - Set up cPHulk to email you notifications when an IP address is blocked.
   - Review the cPHulk logs regularly to ensure that legitimate users are not being blocked.
   - If you find that a legitimate IP address has been blocked, you can whitelist the IP address in cPHulk.
-It is important to review the CSF or cPhulk logs regularly to ensure that legitimate users are not being inadvertently blocked and to adjust the CSF settings accordingly. Additionally, you can configure CSF to send email alerts when certain events occur, such as when an IP address is blocked or unblocked. This can help you stay informed about the activity on your server and ensure that your server is protected against various security threats.
+  - You can block entire countries in cPHulk if needed.
+It is important to review the CSF or cPHulk logs regularly to ensure that legitimate users are not being inadvertently blocked and to adjust the CSF settings accordingly. Additionally, you can configure CSF to send email alerts when certain events occur, such as when an IP address is blocked or unblocked. This can help you stay informed about the activity on your server and ensure that your server is protected against various security threats.
 
 ## Access Blocker 
 If you wish to block IP addresses independently from your store's Admin (whether you also use Cloudflare or not) you might consider installing the [Access Blocker plugin](https://www.zen-cart.com/downloads.php?do=file&id=2237)
 
+## Related 
+
+- [Abuse and Spam](/user/running/spam/)
 
