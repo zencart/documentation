@@ -84,7 +84,7 @@ The reason for separating them out into a special directory is to allow for thos
 To load an `init_script` we use the following control array structure:
 
 <pre>
-$autoLoadConfig[] = array(array('autoType'=>'init_script', 'loadFile'=> 'init_database.php'));
+$autoLoadConfig[] = array('autoType'=>'init_script', 'loadFile'=>'init_database.php');
 </pre>
 
 #### classes
