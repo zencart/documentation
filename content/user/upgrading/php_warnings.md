@@ -249,6 +249,24 @@ To avoid this, check the value using `empty`
     if (!empty($array)) {
 ```
 
+When specific array entries don't exist in some cases, for example if 
+
+```
+    $this->ccv_response= $response[38];
+```
+ 
+produces the error message 
+
+```
+--> PHP Warning: Undefined array key 38 
+```
+
+You can use an empty check to handle this, as shown above, or you can use the null coalescing operator:  
+
+```
+    $this->ccv_response= ($response[38] ?? '');
+```
+
 ## Undefined array key
 
 Checking to see if an optional array element is set has changed - you can no longer do 
