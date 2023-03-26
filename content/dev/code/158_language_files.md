@@ -65,13 +65,13 @@ However, plugin authors may want to make their code compatible with both 1.5.7 a
 ```
   $filename = 'ot_group_pricing.php'; 
   $folder = '/modules/order_total/';  // end with slash 
-  $old_langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . $folder .  $filename; 
-  $new_langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . $folder .  'lang.' . $filename; 
+  $old_langfile = DIR_FS_CATALOG . DIR_WS_LANGUAGES . $_SESSION['language'] . $folder .  $filename; 
+  $new_langfile = DIR_FS_CATALOG . DIR_WS_LANGUAGES . $_SESSION['language'] . $folder .  'lang.' . $filename; 
   if (file_exists($new_langfile)) {
      global $languageLoader; 
      $languageLoader->loadExtraLanguageFiles(DIR_FS_CATALOG . DIR_WS_LANGUAGES,  $_SESSION['language'], $filename, $folder); 
   } else if (file_exists($old_langfile)) {
-     $tpl_old_langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . $folder .  $template_dir . '/' . $filename; 
+     $tpl_old_langfile = DIR_FS_CATALOG . DIR_WS_LANGUAGES . $_SESSION['language'] . $folder .  $template_dir . '/' . $filename; 
      if (file_exists($tpl_old_langfile)) {
         $old_langfile = $tpl_old_langfile; 
      }
@@ -98,7 +98,8 @@ If the file to be loaded was just in `includes/languages/english/` (and not the 
 ```
 
 
-On the admin side, you can do something like this.  Assume the file to 
+If you are loading an admin side language file, you can do something like this.
+Assume the file to 
 be loaded is `admin/includes/languages/english/some-custom-file.php` in 1.5.7 and `admin/includes/languages/english/lang.some-custom-file.php` in 1.5.8: 
 
 ```

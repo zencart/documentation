@@ -5,17 +5,25 @@ category: troubleshooting
 weight: 10
 ---
 
-The "max_user_connections exceeded" message typically only happens when you're getting a flood of simultaneous connections to your site.
+The log message will look like this: 
+
+```
+--> PHP Warning: mysqli_connect(): (HY000/1203): User user1 already has more than 'max_user_connections' active connections in /home/client/public_html/includes/classes/db/mysql/query_factory.php on line 63.
+```
+
+This message can happen when you're getting a flood of simultaneous connections to your site that is exceeding your server's capacity.
 
 Visitors hitting your site and triggering that error would have seen a blank page. (or whatever a [500-error](/user/troubleshooting/http_response_codes/) page looks like for your server).
 
-Most web applications like Zen Cart use only a single MySQL "user" to connect to the database, and most hosts configure max_user_connections to be big enough to handle typical traffic load. Traffic load includes all visits at any given second, including "you", your customers, your visitors-who-are-not-yet-customers, search engine bots, and anybody trying bad things on your site.
+Web applications like Zen Cart use only a single MySQL "user" to connect to the database, and most hosts configure `max_user_connections` to be big enough to handle typical traffic load. Traffic load includes all visits at any given second, including "you", your customers, your visitors-who-are-not-yet-customers, search engine bots, and anybody trying bad things on your site.
 
-Possible causes:
+Possible root causes of this error:
 
-- Sending an email promotion and everyone opens the email and clicks on a link to your site from inside that email "all at the same time", causing a "flood" of simultaneous traffic larger than the max_user_connections setting
+- Sending an email promotion and everyone opens the email and clicks on a link to your site from inside that email "all at the same time", causing a "flood" of simultaneous traffic larger than the `max_user_connections` setting
 
-- Disobedient Search Engine spiders/crawlers. Normally bots crawl at a slow enough pace to not overload your site. Obedient crawlers will read a robots.txt file you can place on your site to tell each search engine what rules you want them to follow, such as how much time to wait between hits. Only the good crawlers will obey these rules, so it's not a magic fix for bad actors.
+- Disobedient Search Engine spiders/crawlers. Normally bots crawl at a slow enough pace to not overload your site. Obedient crawlers will read a robots.txt file you can place on your site to tell each search engine what rules you want them to follow, such as how much time to wait between hits. Only the good crawlers will obey these rules, so it's not a guaranteed fix.
+
+- Malicious actors sending bad traffic.  
 
 Things to check:
 
@@ -24,6 +32,13 @@ If the problem is chronic, you might consider IP blocking, because there's no go
 
 Options:
 
-- If you think there's enough demand for more legit traffic, you could ask whether your hosting company will increase the max_user_connections setting to something higher.
+- If you think there's enough demand for more legit traffic, you could ask whether your hosting company will increase the `max_user_connections` setting to something higher.  (You will likely need to upgrade to a higher, more expensive tier of service for them to agree.)
+
 - You could block IP addresses of bad traffic after inspecting each IP in the logs to be sure it makes sense to block them.
+
 - You could configure the robots.txt file to tell bots to crawl more slowly - http://www.robotstxt.org
+
+- See [Abuse and Spam](/user/running/spam/) and [Blocking Traffic](/user/troubleshooting/blocking_attacks/) for suggestions for dealing with bad traffic. 
+
+- If you are on a VPS, you can use WHM's Edit SQL Configuration tool to raise the **Max Connections** value. 
+
