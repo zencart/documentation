@@ -7,7 +7,7 @@ weight: 10
 
 There are two Square modules for Zen Cart: 
 - A newer one, based on the Square Web Payments API, which is currently available as the [Square Web Payments API plugin](https://www.zen-cart.com/downloads.php?do=file&id=2345). 
-- An older one, based on the Square Payments Form library.  This was built in to Zen Cart from 1.5.5 to 1.5.7.  Please note this library has been deprecated by Square, and the older module will cease to work in late 2022.  The [Square Payments Form documentation](/user/payment/square_payments_form/) is maintained for historical purposes. 
+- An older one, based on the Square Payments Form library.  This was built in to Zen Cart from 1.5.5 to 1.5.7.  Please note this library has been deprecated by Square, and the older module ceased to work in late 2022.  The [Square Payments Form documentation](/user/payment/square_payments_form/) is maintained for historical purposes. 
 
 ## Newer Module - Square Web Payments API 
 The newer Square module is available in the Plugins library as [Square Web Payments API plugin](https://www.zen-cart.com/downloads.php?do=file&id=2345). 
@@ -36,6 +36,23 @@ Please note: do NOT remove the old Square files from your Zen Cart installation.
   - Click **Update** to save the new Square WebPay config values. 
   - Click the green button in the Zen Cart admin sidebar that says "Click here to login and Authorize your account."  If everything is correct, the Sort Order LED for Square WebPay will go green. 
   - Click the **Edit** button one more time.  This will fill in the Location ID field.  Click **Update**. 
+  
+## Handling Refunds, Captures, Voids
+
+### Refunds
+When viewing a transaction in your store Admin, if it was paid using Square within the last 120 days, you will be shown the option to Refund some or all of the payment. Simply enter the amount you wish to refund. Then check the box to confirm, and click **Submit**. You will see a status message confirming the refund has been issued.
+
+NOTE: You SHOULD do all refunds via your store Admin. While you might be able to start a refund from your Square Dashboard, that will NOT automatically update your orders in Zen Cart to show the change in status. But if you do the refund from within your Zen Cart Admin, the refund will show in both places, as well as in the customer's order-status-history, which is a more friendly experience for them.
+
+### Captures
+If you've configured the module to "authorize only" instead of automatically capturing each "purchase", then you will also see an option to Capture the previously-authorized transaction. CAPTURES MUST BE DONE WITHIN 6 DAYS, or they will be voided automatically, releasing the hold on those funds for the customer.
+
+NOTE: Captures can ONLY be done via your store Admin. You will not see uncaptured (authorize-only) transactions in your Square Dashboard.
+
+### Voids
+If you've configured the module to "authorize only", then you will see a Void option. This can be used to cancel an Authorization and release the "hold" on those funds back to the customer.
+
+NOTE: Voids can ONLY be done via your store Admin. You will not see authorize-only transactions in your Square Dashboard.
 
 ## Reinstalling Square Web Payments
 
