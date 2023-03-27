@@ -40,7 +40,7 @@ Please note: do NOT remove the old Square files from your Zen Cart installation.
 ## Handling Refunds, Captures, Voids
 
 ### Refunds
-When viewing a transaction in your store Admin, if it was paid using Square within the last 120 days, you will be shown the option to Refund some or all of the payment. Simply enter the amount you wish to refund. Then check the box to confirm, and click Submit. You will see a status message confirming the refund has been issued.
+When viewing a transaction in your store Admin, if it was paid using Square within the last 120 days, you will be shown the option to Refund some or all of the payment. Simply enter the amount you wish to refund. Then check the box to confirm, and click **Submit**. You will see a status message confirming the refund has been issued.
 
 NOTE: You SHOULD do all refunds via your store Admin. While you might be able to start a refund from your Square Dashboard, that will NOT automatically update your orders in Zen Cart to show the change in status. But if you do the refund from within your Zen Cart Admin, the refund will show in both places, as well as in the customer's order-status-history, which is a more friendly experience for them.
 
