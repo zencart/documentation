@@ -98,7 +98,7 @@ to:
 
 
 
-### 3. Create file `admin/includes/languages/extra_definitions/lang.admin_overrides.php`
+### 3. Create file `admin/includes/languages/english/extra_definitions/lang.admin_overrides.php`
 
 (if it all ready exists simply add the lines below excluding the line `<?PHP` )
 

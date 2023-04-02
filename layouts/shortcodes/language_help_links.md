@@ -5,3 +5,4 @@
 - [Language Files - User information on Array based Language files](/user/localization/158_language_files/)
 - [Release Specific Upgrade Considerations](/user/upgrading/release_specific_upgrade_considerations/)
 - [Upgrading plugins to work with 1.5.8/PHP 8.0+](/dev/plugins/upgrading_to_158/)
+- [Basic 158+ Language Customizations](/user/localization/basic_158_language_customizations/)

@@ -13,6 +13,8 @@ See here: for a [list of common server SMTP addresses](http://www.arclab.com/pro
 
 **Note:** Many customers prefer that you have a legitimate email address matching your domain name, not something like `billys-store@gmail.com` which is rather less authentic-looking. Build credibility with your customers by getting proper email addresses to match your domain name!
 
+**NOTE:** Using GMail, Office 365, Yahoo or GoDaddy for Zen Cart email are not recommended.  You will have much less trouble choosing one of the [real SMTP email service providers](/user/email/external_smtp_servers/#email-service-providers) instead.
+
 ## SMTP over TLS
 
 TLS is the modern preferred method for secure email transfer. To use TLS, simply set your port to `587`.
@@ -38,6 +40,8 @@ If you're hosting someplace other than Yahoo but trying to send email through yo
 
 
 ## Google Mail / Gmail
+
+**NOTE:** These instructions may no longer work.  Your fallback option is to switch to one of the [real SMTP email service providers](/user/email/external_smtp_servers/#email-service-providers).
 
 Gmail / Google Apps Mail requires that your email communications occur over a secure channel, which means you need to send on port `587` for TLS. 
 
@@ -74,6 +78,8 @@ You may have to have your host make some changes to your domain's `MX` records i
 You may also have to open your webserver's firewall to allow access to Google's servers and whatever port you're using to communicate with them. Your hosting company's server administrator will know how to identify the correct address and how to fix their firewall accordingly.
 
 ## Office 365 
+
+**NOTE:** These instructions may no longer work.  Your fallback option is to switch to one of the [real SMTP email service providers](/user/email/external_smtp_servers/#email-service-providers).
 
 Use the following settings in [Admin > Configuration > Email](/user/admin_pages/configuration/configuration_email/):
 
@@ -122,14 +128,14 @@ You can get more help on this topic from [Microsoft's website](https://support.m
 2.  Set your Max Email limit:
     *   If you have a GoDaddy hosting plan and plan to use it for sending emails from your Zen Cart site, you should check your email account list and set the `smtp relay transmissions per day` to the max of 250/day instead of the default of 0/day.
 
-## Other Choices 
+## Email Service Providers 
 
-Other SMTP providers that Zen Cart users have had success with are: 
+SMTP Email Service Providers that Zen Cart users have had success with are: 
 
-- Mandrill (by MailChimp)
 - SMTP2Go
 - Mailgun 
 - SendGrid
+- Mandrill (by MailChimp)
 
 ## Troubleshooting 
 
