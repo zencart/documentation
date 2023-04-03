@@ -62,7 +62,20 @@ Show your work!  Demonstrate how you tested the change you are submitting.
 
 <hr>
 
+**Special Case: Brand New files**
+
+If you are adding a new file, please be sure to add the header so the version stamper can update the file on the next release.
+
+```
+/**
+ * @copyright Copyright 2003-2023 Zen Cart Development Team
+ * @license https://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
+ * @version $Id:   
+ */
+```
+
 **Linking Related Issues**
+
 Related Issues should be referenced using `#` followed by the issue number, ie: `#12345`.
 If the PR fully resolves a related issue, prefix the issue number with `Fixes `, ie: `Fixes #12345` in order to link them up so the issue is automatically closed when the PR gets merged.
 
