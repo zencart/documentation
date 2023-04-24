@@ -60,6 +60,8 @@ scroll down to the Databases section and click on MySQL Databases.  The Create N
 
 Enter a name for your database (the version is often used for easy recognition in multi-database environments) and click on Create Database.  Then, click the Go Back button to return to the Databases page.
 
+**Note:** When you name your database, do *NOT* include the Zen Cart version in the name.  The reason is that you will eventually upgrade your cart from the current version, and then the database name will be confusing if it contains the initial version as a substring. 
+
 You will need to create a username and password for this database.  It is NOT recommended to use your cPanel credentials (i.e.: don't re-use your passwords!).  Scroll down to Add New User, fill in the information, then click on Create User.  Click the Go Back button to return to the Databases page.
 
 Finally, scroll down to the Add User To Database section, make sure the User and Database are filled in correctly, and click on Add.  Checking the ALL PRIVILEGES check box will give your user complete access to the database.  Be sure to scroll down and click on the Make Changes button.

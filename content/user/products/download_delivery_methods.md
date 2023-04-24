@@ -4,7 +4,7 @@ description: How are downloads made available after checkout?
 category: products
 weight: 10
 ---
-For downloadable products, there are several ways of delivering downloadable content to your customers, depending on your hosting configuration.  
+For [downloadable products](/user/products/downloadable/), there are several ways of delivering downloadable content to your customers, depending on your hosting configuration.  
 
 You can find these options in [Admin > Configuration > Attribute Settings](/user/admin_pages/configuration/configuration_attributesettings/):
 

@@ -237,4 +237,5 @@ Read more about [downloadable combo products](/user/products/products_shippable_
 - [Downloads - why do they not activate after checkout](/user/products/downloads_activating/)
 - [Download Delivery Methods](/user/products/download_delivery_methods/)
 - [Moving your Download Folder](/user/security/relocate_download_folder/) 
+- [Verifying Correctness of Downloadable Products](/user/products/downloadable_verifying/)
 
