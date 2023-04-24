@@ -53,6 +53,8 @@ If you have an existing website, and you'd like to add ecommerce, you can put yo
 
 Your files would be under the `public_html/store` folder in your hosting account. 
 
+See [Subfolder Names](#subfolder-names) below.
+
 ## Deployment Model 4: Empty root, cart in subfolder 
 
 ```
@@ -67,6 +69,14 @@ As an example, if your subfolder were called `store`, you would do this:
 RewriteEngine On
 RewriteRule ^index\.php$ /store/ [L]
 ```
+### Subfolder Names
+
+**Please note:** Do not use the Zen Cart version as the subfolder name.  
+For example, do not put your site in `https://www.YOURSITE.com/zen155e` or `https://www.YOURSITE.com/zc154/`. The reasons for this are as follows: 
+
+- You will eventually upgrade your site, and then the folder name and actual version will not match, which will be confusing.  And changing the subfolder name will break any inbound links you have.
+- If you delay upgrading your site after new releases are made, you are advertising the fact that your site software is old, which can tempt bad guys to probe for vulnerabilities. 
+
 
 ## Deployment Model 5: (Advanced) Separate subdirectories for different versions
 

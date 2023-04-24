@@ -23,7 +23,7 @@ Links:
 
 ## PHP Version
 
-The following list shows the PHP versions compatible with each version of Zen Cart. 
+The following list shows the PHP versions compatible with each version of Zen Cart. (Note that this refers to the Zen Cart core only. Plugin compatibility depends on the specific plugin, and may or may not support this range of PHP versions.)
 
 *   <font color="#ff0000">**Zen Cart v1.5.8** is designed for PHP 7.3 through PHP 8.2</font><br>
 *   <font color="#ff0000">**Zen Cart v1.5.7** is designed for PHP 5.6 through PHP 8.0</font><br>

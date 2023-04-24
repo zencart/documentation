@@ -132,5 +132,43 @@ NB. To use inside a function or another class you will need to add
 ```
 before you use `zcDate` for the first time.
 
+### PHP 8.2 and object properties 
+
+If you get an error like: 
+
+```
+PHP Fatal error: Uncaught Error: Cannot access private property queryFactory::$count_queries in .../includes/classes/sitemapxml.php:735
+```
+
+This line is 
+```
+ $this->statisticModuleQueries = $db->count_queries;
+```
+
+There are a couple of options: 
+
+- It may be appropriate to make the property public.  To do this, you would change `query_factory.php` from: 
+
+```
+private $count_queries = 0;
+```
+to
+```
+public $count_queries = 0;
+```
+
+- It may be appropriate to add a getter instead. Since `query_factory.php` is a core file, this is the better approach.  Change 
+
+```
+ $this->statisticModuleQueries = $db->count_queries;
+```
+to
+
+```
+ $this->statisticModuleQueries = $db->queryCount(); 
+```
+
+
+
 {{% code_help_links %}} 
 
