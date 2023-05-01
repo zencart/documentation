@@ -7,6 +7,7 @@ weight: 10
 
 The following plugins help address abuse of your website: 
 
+- [AbuseIPDB](https://www.zen-cart.com/downloads.php?do=file&id=2371)
 - [Access Blocker](https://www.zen-cart.com/downloads.php?do=file&id=2237)
 - [Delete Spam Customers](https://www.zen-cart.com/downloads.php?do=file&id=2253) 
 - [Google ReCaptcha](https://www.zen-cart.com/downloads.php?do=file&id=1455)
