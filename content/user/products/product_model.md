@@ -11,3 +11,4 @@ Using a model number is completely optional, and won't make sense for some store
 
 If you do use model numbers, you may wish to ensure that they are unique. The plugin [Find Duplicate Models](https://www.zen-cart.com/downloads.php?do=file&id=1323) may be used for this.   This process is very important for stores that use Quickbooks or other external systems that require unique model identifiers. 
 
+Note that models beginning with the string "GIFT" are reserved for [gift certificates](/user/order_total/gift_certificates/) only, and should not be used for other products.  

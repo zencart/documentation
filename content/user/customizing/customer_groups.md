@@ -26,7 +26,7 @@ In the `__construct` method of the shipping module, below the other checks for e
 
 ## Restricting a Payment Method to a Customer Group 
 
-In the `__construct` method of the payment module, below the check which ensres `sort_order` is set, add 
+In the `__construct` method of the payment module, below the check which ensures `sort_order` is set, add 
 
 ```
      if (IS_ADMIN_FLAG !== true) { 
