@@ -17,9 +17,11 @@ Most people who deploy blogs or other tools use [deployment model 2](/user/first
 
 What are some alternative options to running a blog with your Zen Cart installation?
 
-### Create content using EZ-Pages 
+### Adding Content Pages to your Cart 
 
 The Zen Cart [EZ-Pages](/user/ezpages/) system allows you to create content using a secure, controlled facility.  This content can then be displayed on your site.   You can even organize your pages into chapters and have a table of contents. 
+
+There are also other mechanisms for [adding pages to your site](/user/customizing/add_pages/). 
 
 ### Use News Box Manager 
 The [News Box Manager](https://www.zen-cart.com/downloads.php?do=file&id=2264) plugin allows you to create new pages for your site.
