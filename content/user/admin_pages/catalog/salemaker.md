@@ -49,5 +49,6 @@ The sale deduction will not be applied to Specials. The Specials price will disp
 The sale deduction will be applied to the Special price. A compounded price will be displayed. (eg. Regular price $10.00, Specials price is $9.50, SaleCondition is 10%. The product's final price will show $8.55. An additional 10% off the Specials price.)
 - Leaving the Start Date empty will start the sale immediately.
 - Leave the End Date empty if you do not want the sale to expire.
+- Clicking the red or green status icon on the Salemaker main page to start or stop a sale only works if the Start and End date are not set; otherwise, the sale is automatically started and stopped. 
 - Checking a category automatically includes the sub-categories.
 

@@ -21,8 +21,7 @@ other TLDs are available, including country specific TLDs (`.co.uk` for the
 United Kingdom, for example). 
 
 - A **domain registrar** keeps your domain.  Popular domain registrars 
-include GoDaddy, NameCheap, and Network Solutions.  Generally you 
-will buy your domain name 
+include GoDaddy, NameCheap, and Network Solutions.  
 
     If a domain is *not* owned by someone else, you may simply buy it 
 from a registrar for a small fixed fee.  Then you just have to renew it

@@ -118,6 +118,8 @@ You can get more help on this topic from [Microsoft's website](https://support.m
 
 ## GoDaddy Hosting Plans
 
+**Note:** As of the time of writing, GoDaddy has outsourced their email handling to Microsoft, so these instructions may not work.
+
 1.  If using the default `PHP` setting for Email Transport method doesn't work, try the following:
     *   Use `SMTP` for your Email Transport setting instead.
     *   Set your SMTP Email Server address to: `relay-hosting.secureserver.net`, and the Mail Server Port to `25`
