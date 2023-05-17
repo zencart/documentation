@@ -19,3 +19,6 @@ Note that by default, YOURLANGUAGE is "english" and YOURTEMPLATE is "responsive_
 
 **NOTE:** if your template is looking for an image in the 
 `includes/templates/YOURTEMPLATE/images` folder but cannot find it, Zen Cart will use the image in the `includes/templates/template_default/images` folder.
+
+**NOTE:** if you update your `logo.gif` filename or filename extension or the dimensions of the image, you need to also make corresponding adjustments to your `header.php` file as described at: https://docs.zen-cart.com/user/new_user_topics/change_header_logo.
+
