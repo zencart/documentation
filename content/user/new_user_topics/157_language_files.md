@@ -1,11 +1,11 @@
 ---
-title: Language Files - What are they and how are they used? (1.5.8+)
-description: How do I change language text in 1.5.8 and above? 
+title: Language Files - What are they and how are they used? (1.5.7)
+description: How do I change language text in 1.5.7 or below? 
 category: new_user_topics
 weight: 10
 ---
 
-**NOTE:** These instructions are for Zen Cart 1.5.8 and higher. If you need instructions for 1.5.7 or below, please see [Language Files - 1.5.7](/user/new_user_topics/157_language_files/). 
+**NOTE:** These instructions are for Zen Cart 1.5.7 and below. If you need instructions for 1.5.8 or above, please see [Language Files - 1.5.8](/user/new_user_topics/language_files/). 
 
 Zen Cart uses language files or a "languages system"  to define the text content used by the various display pages of your cart.  
 
@@ -22,72 +22,65 @@ The information in these files can be placed into four categories as follows:
 
 **Define pages** are default pages used by Zen Cart and can be edited as necessary. You can also add your own pages if you find that necessary. These files are located in `includes/languages/english/html_includes/`.  For more information on this topic, see [setting up Define Pages](/user/new_user_topics/setting_up_define_pages). 
 
-The information in language files (other than the define pages described above) is constructed by building a PHP array of definitions.  When all language files have been read, these arrays are built into constant definitions using PHP "define statements." 
+The information in language files (other than the define pages described above) is constructed using PHP "define statements," which consist of a CONSTANT and the information contained in that CONSTANT as shown in the example below.  
 
-In older versions, constants were defined directly in language files; this was changed in Zen Cart 1.5.8 because of new restrictions on the re-definition of constants in PHP 8. 
+```
+define('MY_CONSTANT', 'This is my information');
+```
 
-The advantage of separating out language strings is that text information can be included in your template files using a constant rather than a hardcoded value, 
+The advantage of these "define statements" is that text information can be included in your template files using a constant rather than a hardcoded value, 
 allowing you to easily change templates but preserve your language customizations.  It also facilitates [making your store multi-language](/user/localization/languages/).
 
 ## **Examples and Usage**
 
 > **Global Definitions**
 
-> The definitions in `includes/languages/lang.english.php` include the footer text, the sidebox headings, text used by the forms in Zen Cart and various error messages.  
+> The definitions in `includes/languages/english.php` include the footer text, the sidebox headings, text used by the forms in Zen Cart and various error messages.  
 > 
-> *   From `includes/languages/lang.english.php`
+> *   From `includes/languages/english.php`
 
 ```
-$define = [
-'BOX_HEADING_CATEGORIES' => 'Categories',
+define('BOX_HEADING_CATEGORIES', 'Categories');
 ...
-'ENTRY_FIRST_NAME' => 'First Name:', 
+define('ENTRY_FIRST_NAME', 'First Name:');
 ... 
-'ENTRY_STREET_ADDRESS_ERROR' => 'Your Street Address must contain a minimum of ' . ENTRY_STREET_ADDRESS_MIN_LENGTH . ' characters.',
+define('ENTRY_STREET_ADDRESS_ERROR', 'Your Street Address must contain a minimum of ' . ENTRY_STREET_ADDRESS_MIN_LENGTH . ' characters.');
 ```
 
 > **Page Specific Definitions**  
 > These definitions are exactly what the title says; They define text information for specific display pages in your cart.  
 > The basic information in these files includes the text for the page heading and the text for the navbar. Depending on the page, you will also find information for e-mail messages and for the tasks carried out by a particular display page.  
 
-> *   From `includes/languages/english/lang.conditions.php`
+> *   From `includes/languages/english/conditions.php`:
 
 ```
-$define = [
-    'NAVBAR_TITLE' => 'Conditions of Use',
-    'HEADING_TITLE' => 'Conditions of Use',
-...
+define('NAVBAR_TITLE', 'Conditions of Use');
+define('HEADING_TITLE', 'Conditions of Use');
 ```
 
-> *   From `includes/languages/english/lang.header.php`:
+> *   From `includes/languages/english/header.php`:
 ```
-$define = [
-...
-    'HEADER_ALT_TEXT' => 'Powered by Zen Cart :: The Art of E-Commerce',
-    'HEADER_LOGO_IMAGE' => 'logo.gif',
-    'HEADER_LOGO_WIDTH' => '254',
-    'HEADER_LOGO_HEIGHT' => '68',
-...
-
+define('HEADER_ALT_TEXT', 'Powered by Zen Cart :: The Art of E-Commerce');
 ```
 
+```
+define('HEADER_SALES_TEXT', 'TagLine Here');  
+define('HEADER_LOGO_WIDTH', '192px');  
+define('HEADER_LOGO_HEIGHT', '64px');  
+define('HEADER_LOGO_IMAGE', 'logo.gif');</span>
+```
 > 
-> *   From `includes/languages/english/lang.contact_us.php`:
+> *   From `includes/languages/english/contact_us.php`
 ```
-$define = [
-    'HEADING_TITLE' => 'Contact Us',
-    'NAVBAR_TITLE' => 'Contact Us',
-...
+define('ENTRY_NAME', 'Full Name:');
+define('ENTRY_EMAIL', 'Email Address:');
+define('ENTRY_ENQUIRY', 'Message:');
 ```
 
 
 > **Your Own Definitions**  
-> As you customize your cart, you may find that you need to include additional definitions. 
-
-- You can create a new-style definition file (say, `lang.yourdefinitionfile.php`), and save it to `includes/languages/ENGLISH/extra_definitions`.
-
-- As long as the definitions are not already used in Zen Cart, you may also create an old-style definition file (using the syntax from [Language Files - 1.5.7](/user/new_user_topics/157_language_files/). 
-
+> As you customize your cart, you may find that you need to include additional definitions. You can do this by creating a definition file (say, `yourdefinitionfile.php`) and saving it to `includes/languages/ENGLISH/extra_definitions`
+Constructing your own defines would follow the pattern shown above.  
 
 > **Define Pages**  
 > These pages include your privacy statement, your conditions of use and shipping and handling information.  

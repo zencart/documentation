@@ -16,7 +16,7 @@ The links in the black background are created by `includes/templates/YOURTEMPLAT
 
 The search box in the upper right is called [header search](/user/sideboxes/search_box_header_only/).
 
-Below this is the logo and tagline.  Both of these are set in `includes/languages/english/YOURTEMPLATE/header.php`.
+Below this is the logo and tagline.  Both of these are set in `includes/languages/english/YOURTEMPLATE/lang.header.php`  (or `includes/languages/english/YOURTEMPLATE/header.php` for 1.5.7 and below).
 
 The block of links with the blue background is called [categories tabs](/user/new_user_topics/categories_tabs/). 
 

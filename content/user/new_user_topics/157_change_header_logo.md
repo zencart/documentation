@@ -1,11 +1,13 @@
 ---
-title: How do I change the logo or the logo alt text in the header in 1.5.8+?
-description: Customizing your logo in 1.5.8 and above 
+title: How do I change the logo or the logo alt text in the header in 1.5.7?
+description: Customizing your logo in 1.5.7 and below 
 category: new_user_topics
 weight: 10
+aliases: 
+    - /user/new_user_topics/change_powered_by/
 ---
 
-+**NOTE:** These instructions are for Zen Cart 1.5.8 and higher. If you need instructions for 1.5.7 or below, please see [Change Header Logo - 1.5.7](/user/new_user_topics/157_change_header_logo/).
+**NOTE:** These instructions are for Zen Cart 1.5.7 and below. If you need instructions for 1.5.8 or above, please see [Change Header Logo - 1.5.8](/user/new_user_topics/change_header_logo/).
 
 ## Storefront Header 
 
@@ -17,17 +19,17 @@ Using an [image editor](/user/first_steps/useful_tools/#graphics-editors), creat
 
 The name `yourname` will also include a file extension, such as `.png`, `.jpg`, etc. 
 
-After creating your logo you can adjust the alt text, width, height, and image name in `includes/languages/english/YOURTEMPLATE/lang.header.php` (or `includes/languages/english/YOURTEMPLATE/header.php` in 1.5.7 or below). 
+After creating your logo you can adjust the alt text, width, height, and image name in `includes/languages/english/YOURTEMPLATE/header.php`. 
 
-**NOTE:** In 1.5.8 and above, If you don't have the file `includes/languages/english/YOURTEMPLATE/lang.header.php`, then copy `includes/languages/english/lang.header.php` to `includes/languages/english/YOURTEMPLATE/header.php` before editing.  See [What if I don’t have a file that some instructions mention?](/user/new_user_topics/no_such_file/)
+**NOTE:** If you don't have the file `includes/languages/english/YOURTEMPLATE/header.php`, then copy `includes/languages/english/header.php` to `includes/languages/english/YOURTEMPLATE/header.php` before editing.  See [What if I don’t have a file that some instructions mention?](/user/new_user_topics/no_such_file/)
 
 For the purpose of this example, let's assume `yourname` is `newlogo.png`, and that the logo is 200px wide and 80px tall.
 
 ```
-    'HEADER_ALT_TEXT' => 'my new alt text',
-    'HEADER_LOGO_IMAGE' => 'newlogo.png',
-    'HEADER_LOGO_WIDTH' => '200',
-    'HEADER_LOGO_HEIGHT' => '80',
+define('HEADER_ALT_TEXT', 'My new alt text');
+define('HEADER_LOGO_WIDTH', '200'); // this is the number of pixels
+define('HEADER_LOGO_HEIGHT', '80'); // this is the number of pixels
+define('HEADER_LOGO_IMAGE', 'newlogo.png');
 ```
 
 Save this file and upload it to your server. 
@@ -53,13 +55,13 @@ To center the logo use `text-align: center;`
 To right align the logo use `float: right;`
 
 ## Admin Header 
-A similar change should be made in `admin/includes/languages/lang.english.php`, which contains the same four PHP define statements. You might use a different image in your admin. The filename mentioned here refers to a *different* file and location than the one used above for the storefront. See notes below.
+A similar change should be made in `admin/includes/languages/english.php`, which contains the same four PHP define statements. You might use a different image in your admin. The filename mentioned here refers to a *different* file and location than the one used above for the storefront. See notes below.
 
 ```
-    'HEADER_ALT_TEXT' => 'my new alt text',
-    'HEADER_LOGO_IMAGE' => 'newlogo.png',
-    'HEADER_LOGO_WIDTH' => '200',
-    'HEADER_LOGO_HEIGHT' => '80',
+define('HEADER_ALT_TEXT', 'My new alt text');
+define('HEADER_LOGO_WIDTH', '200');
+define('HEADER_LOGO_HEIGHT', '80');
+define('HEADER_LOGO_IMAGE', 'newlogo.png');
 ```
 
 The image itself should be placed in the `admin/images/` folder.
