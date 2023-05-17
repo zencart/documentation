@@ -41,7 +41,17 @@ altered copies of the default file.
 
 So if a referenced template file doesn't exist, you would create it from the default file.  
 
-### Example
+### Example (1.5.8) 
+To create
+
+```
+includes/languages/english/YOURTEMPLATE/lang.header.php
+```
+
+copy
+`includes/languages/english/lang.header.php` to `includes/languages/english/YOURTEMPLATE/lang.header.php`
+
+### Example (1.5.7) 
 To create
 
 ```
@@ -62,7 +72,27 @@ create it by copying the original from the default file.
 
 [Learn more about default files](/user/first_steps/overrides/#default-files).
 
-### What about language files? 
+### What about language files? (1.5.8 and above) 
+
+Language files are very similar.  If your language is French, and the instructions say, 
+
+```
+Update includes/languages/english/YOURTEMPLATE/lang.checkout_shipping.php
+```
+
+then you would want to update 
+
+```
+includes/languages/french/YOURTEMPLATE/lang.checkout_shipping.php
+```
+
+and if that file doesn't exist, you would create it from 
+
+```
+includes/languages/french/lang.checkout_shipping.php
+```
+
+### What about language files? (1.5.7 and below) 
 
 Language files are very similar.  If your language is French, and the instructions say, 
 
