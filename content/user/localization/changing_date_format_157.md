@@ -1,5 +1,5 @@
 ---
-title: Date format in 1.5.7 and below - changing it from the US format to dd/mm/yyyy
+title: Date format - changing it from the US format to dd/mm/yyyy (1.5.7-)
 description: Localizing data display in 1.5.7 and below
 category: localization
 weight: 10

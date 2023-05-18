@@ -1,11 +1,11 @@
 ---
-title: How do I change the logo or the logo alt text in the header in 1.5.8+?
+title: How do I change the logo or the logo alt text in the header? (1.5.8+)
 description: Customizing your logo in 1.5.8 and above 
 category: new_user_topics
 weight: 10
 ---
 
-+**NOTE:** These instructions are for Zen Cart 1.5.8 and higher. If you need instructions for 1.5.7 or below, please see [Change Header Logo - 1.5.7](/user/new_user_topics/157_change_header_logo/).
+**NOTE:** These instructions are for Zen Cart 1.5.8 and higher. If you need instructions for 1.5.7 or below, please see [Change Header Logo - 1.5.7](/user/new_user_topics/157_change_header_logo/).
 
 ## Storefront Header 
 

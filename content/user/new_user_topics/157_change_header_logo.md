@@ -1,5 +1,5 @@
 ---
-title: How do I change the logo or the logo alt text in the header in 1.5.7?
+title: How do I change the logo or the logo alt text in the header? (1.5.7-)
 description: Customizing your logo in 1.5.7 and below 
 category: new_user_topics
 weight: 10

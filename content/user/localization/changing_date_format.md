@@ -1,14 +1,13 @@
 ---
-title: Date format - changing it from the US format to dd/mm/yyyy
+title: Date format - changing it from the US format to dd/mm/yyyy (1.5.8+)
 description: Localizing data display 
 category: localization
 weight: 10
 ---
 
+**NOTE:** These instructions are for Zen Cart 1.5.8 and above.  If you are looking for the instructions for versions prior to Zen Cart 1.5.8, please see [Date format for 1.5.7 and below](/user/localization/changing_date_format_157/). 
+
 There are a number of different date formats used around the world, and the approach for changing to any of them is broadly the same. In this tutorial we'll show how to change from the default US format (mm/dd/yyyy) to the dd/mm/yyyy format used in most other English-speaking countries and those speaking many other languages. As date formats are generally language-specific (or in the case of English, dialect-specific) we'll be editing two Zen Cart language files to make this change.  
-
-If you are looking for the instructions for versions prior to Zen Cart 1.5.8, please see [Date format for 1.5.7 and below](/user/localization/changing_date_format_157/). 
-
 
 # Instructions for 1.5.8 and above 
 
