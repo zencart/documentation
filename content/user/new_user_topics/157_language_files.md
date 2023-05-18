@@ -1,5 +1,5 @@
 ---
-title: Language Files - What are they and how are they used? (1.5.7)
+title: Language Files - What are they and how are they used? (1.5.7-)
 description: How do I change language text in 1.5.7 or below? 
 category: new_user_topics
 weight: 10

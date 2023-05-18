@@ -6,11 +6,11 @@ noindex: true
 layout: docs
 ---
 
-<!-- unlike other _index files, this one SHOULD have direct links -->
+<!-- unlike other _index.md files, this one SHOULD have direct links -->
 <!-- please keep in alphabetic order -->
 <!-- remember to start links with "/" -->
 
-Once you know [What Zen Cart is](/user/about_us/what_is_zen_cart/), you might want to know the answers to some of these other questions. 
+Once you know [what Zen Cart is](/user/about_us/what_is_zen_cart/), you might want to know the answers to some of these other questions. 
 
 
 * [Add a Page](/user/customizing/add_pages/) - How do I add new pages to my store? 
