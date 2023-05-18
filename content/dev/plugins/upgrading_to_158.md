@@ -132,6 +132,27 @@ NB. To use inside a function or another class you will need to add
 ```
 before you use `zcDate` for the first time.
 
+### PHP 8.1 and null strings passed as parameters
+
+If you get an error like 
+
+```
+--> PHP Deprecated: htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /admin/customers.php on line 754.
+```
+
+You would change 
+
+```
+htmlspecialchars($cInfo->street_address, ENT_COMPAT, CHARSET, true),
+```
+
+to 
+
+```
+htmlspecialchars($cInfo->street_address ?? '', ENT_COMPAT, CHARSET, true),
+```
+
+
 ### PHP 8.2 and object properties 
 
 If you get an error like: 

@@ -19,7 +19,7 @@ The name `yourname` will also include a file extension, such as `.png`, `.jpg`, 
 
 After creating your logo you can adjust the alt text, width, height, and image name in `includes/languages/english/YOURTEMPLATE/lang.header.php` (or `includes/languages/english/YOURTEMPLATE/header.php` in 1.5.7 or below). 
 
-**NOTE:** In 1.5.8 and above, If you don't have the file `includes/languages/english/YOURTEMPLATE/lang.header.php`, then copy `includes/languages/english/lang.header.php` to `includes/languages/english/YOURTEMPLATE/header.php` before editing.  See [What if I don’t have a file that some instructions mention?](/user/new_user_topics/no_such_file/)
+**NOTE:** In 1.5.8 and above, If you don't have the file `includes/languages/english/YOURTEMPLATE/lang.header.php`, then copy `includes/languages/english/lang.header.php` to `includes/languages/english/YOURTEMPLATE/lang.header.php` before editing.  See [What if I don’t have a file that some instructions mention?](/user/new_user_topics/no_such_file/)
 
 For the purpose of this example, let's assume `yourname` is `newlogo.png`, and that the logo is 200px wide and 80px tall.
 
