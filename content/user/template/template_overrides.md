@@ -15,8 +15,10 @@ Before you read this, please review
 Overrides were created to simplify upgrading and templating. 
 
 ## What Can I Override? 
+
+### Files under a folder with the name of your template 
 Any file which exists in a folder which has a `classic` subfolder 
-can be overridden. 
+can be overridden by creating a folder with the name of your template, and copying the file in there. 
 
 As of Zen Cart 1.5.6, this list is: 
 
@@ -37,6 +39,8 @@ In addition, you can override:
 ```
 includes/index_filters/ 
 ```
+
+As an example of this, if your template is called `bootstrap`, then to override `includes/modules/category_row.php`, you would create `includes/modules/bootstrap/category_row.php`.
 
 
 You can also override any folder in your template folder.
@@ -60,19 +64,25 @@ YOUR_TEMPLATE/sideboxes/
 YOUR_TEMPLATE/templates/
 ```
 
+As an example of this, if your template is called `bootstrap`, then to override `includes/templates/template_default/templates/tpl_product_info_display.php` you would create `includes/templates/bootstrap/templates/tpl_product_info_display.php`.
+
+### Files in Other Places 
 You can also place overrides in these folders: 
 ```
-./includes/auto_loaders/overrides/
-./includes/init_includes/overrides/
-./admin/includes/auto_loaders/overrides/
-./admin/includes/init_includes/overrides/
+includes/auto_loaders/overrides/
+includes/init_includes/overrides/
+admin/includes/auto_loaders/overrides/
+admin/includes/init_includes/overrides/
 ```
+
+As an example of this, to override `admin/includes/init_includes/init_admin_auth.php`, you would created `admin/includes/init_includes/overrides/init_admin_auth.php`.
+
 
 ## What Can I NOT Override? 
 
-At the moment, these elements of your cart do not support overrides:
+At the moment, these folders of your cart do not support overrides:
 
-- Admin
+- `admin` (except in the `auto_loaders` and `init_includes` folders, as noted above)
 - `includes/modules/pages`
 - The `shipping`, `payment` and `order total` folders under `includes/modules`
 

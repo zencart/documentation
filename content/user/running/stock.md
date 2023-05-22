@@ -5,7 +5,7 @@ category: Running
 weight: 10
 ---
 
-Many options exist for inventory tracking.  See 
+Many options exist for stock management and inventory tracking.  See 
 [Admin > Configuration > Stock](/user/admin_pages/configuration/configuration_stock/) for details.
 
 Common configurations are: 

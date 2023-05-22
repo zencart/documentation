@@ -24,3 +24,11 @@ Notes on using EasyPopulate:
 Please see [Database I/O Manager (DbIo)](https://www.zen-cart.com/downloads.php?do=file&id=2091). 
 
 
+## Custom Population Scripts
+
+Many stores will use custom scripts that read feed files, externally generated CSVs and other sources of product data.  Some things to consider if you are building or maintaining such a tool:
+
+- Be sure to create entries in the `products_to_categories` table that map each product to at least one category.
+- Be sure to run [Products Price Sorter](/user/admin_pages/tools/store_manager/) after changing prices so sort by price will work properly.  The programmatic way to do this is by calling `zen_update_products_price_sorter()`.
+
+
