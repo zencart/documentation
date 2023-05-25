@@ -56,7 +56,7 @@ and replace with:
     'ENTRY_DATE_OF_BIRTH_TEXT' => '* (eg. 21/05/1970 or 1970-05-21)',
 ```
 
-### 2. Open file `includes/functions/functions_dates.php`
+### 2. Open file `includes/functions/functions_dates.php` NB. As of version 1.5.8a this step is not necessary go straight to [step 3](#3-create-file-adminincludeslanguagesenglishextra_definitionslangadmin_overridesphp)
 
 ### 2a. find `zen_date_raw`
 
