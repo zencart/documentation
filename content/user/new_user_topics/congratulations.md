@@ -10,7 +10,10 @@ The default `Congratulations! You have successfully installed your Zen Cart; E-C
 To edit this important text, do the following:
 
 ## Zen Cart 1.5.8 and above: 
-Open the `includes/languages/english/lang.index.php` file and find the following code:
+Edit `includes/languages/english/YOURTEMPLATE/lang.index.php`.
+(Copy `includes/languages/english/lang.index.php` to `includes/languages/english/YOURTEMPLATE/lang.index.php` if the override file doesn't already exist.)  
+
+Find the following code:
 
 ```
     'HEADING_TITLE' => 'Congratulations! You have successfully installed your Zen Cart&reg; E-Commerce Solution.',
@@ -22,12 +25,14 @@ Make sure that the single quote marks at the beginning and end are not left out.
 
 **NOTE: There is a similar line that starts with `'HEADING_TITLE_NESTED'`, so be sure to replace both lines.**
 
-Save the edited file to `includes/languages/english/YOURTEMPLATE/lang.index.php` and upload it to your server.
 
 **NOTE:  Removing this item or setting it to `''` is a violation of Accessibility Structure requirements.**
 
 ## Zen Cart 1.5.7 and below: 
-Open the `includes/languages/english/index.php` file and find the following code:
+Edit `includes/languages/english/YOURTEMPLATE/index.php`. 
+(Copy `includes/languages/english/index.php` to `includes/languages/english/YOURTEMPLATE/index.php` if the override file doesn't already exist.)  
+
+Find the following code:
 
 ```
   define('HEADING_TITLE', 'Congratulations! You have successfully installed your Zen Cart&reg; E-Commerce Solution.');
@@ -38,7 +43,5 @@ Replace the text starting “Congratulations” with your own text that is welco
 Make sure that the single quote marks at the beginning and end are not left out. If your text includes single-quotes (apostrophes) be sure to add a `\` before them to "escape" them for proper PHP syntax.
 
 **NOTE: This line occurs twice, so be sure to replace both lines.**
-
-Save the edited file to `includes/languages/english/YOURTEMPLATE/index.php` and upload it to your server.
 
 **NOTE:  Removing this item or setting it to `''` is a violation of Accessibility Structure requirements.**
