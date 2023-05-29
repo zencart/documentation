@@ -10,7 +10,7 @@ Listing Pages are used to show groups of results.  Examples of listing pages are
 - New Products 
 - Featured Products
 - All Products
-- Product Listing page for category 3
+- Product Listing page for a specific category (Index Listing Page)
 
 There are specific configurations for these pages: 
 
@@ -28,6 +28,28 @@ Three of the pages, New, Featured, and All Products, have configuration settings
 The Product Listing page configuration is a bit different.  A full explanation for its display settings can be found here: [Product Listing Configuration Settings](/user/template/product_listing_page_configuration).
 
 
-The [Admin > Configuration > Index Listing](/user/admin_pages/configuration/configuration_indexlisting/) configuration settings are actually for Centerboxes, not the Product Listing page.  It is explained in the [Index Listing Configuration](/user/template/index_listing) FAQ. 
+The [Admin > Configuration > Index Listing](/user/admin_pages/configuration/configuration_indexlisting/) configuration settings are actually for Centerboxes, not the Product Listing page.  This is explained in the [Index Listing Configuration](/user/template/index_listing) FAQ. 
 
+### Buy Button Behavior - Index listing page 
+The option to buy from the index listing page is controlled by two settings in Configuration > Product Listing page: 
+
+- `Display Product Add to Cart Button` 
+- `Display Multiple Products Qty Box Status and Set Button Location`
+
+Assuming all products on the listing page may be added to the cart: 
+
+- if `Display Multiple Products Qty Box Status` is 0 and `Display Product Add to Cart Button` is 1, a "Buy Now" button is shown on the listing page for each product.  Only one of each product may be added at a time. 
+- if `Display Multiple Products Qty Box Status` is 0 and `Display Product Add to Cart Button` is 2, an "Add to Cart" button with a quantity box is shown on the listing page for each product. 
+- if `Display Multiple Products Qty Box Status` is non-zero, a quantity box is shown for each product on the listing page. At the top and bottom of the page, buttons are provided which add all non-zero quantities of products set on that page. 
+
+### Buy Button Behavior - other listing pages
+The option to buy from the New, Featured and All listing pages is controlled by two settings in the specific configuration page shown above: 
+
+- `Display Product Buy Now Button` 
+- `Display Multiple Products Qty Box Status and Set Button Location`
+
+Assuming the first config is non-zero, and all products on the listing page may be added to the cart: 
+
+- if `Display Multiple Products Qty Box Status` is zero, and the a "Buy Now" button is shown on the listing page for each product.  Only one of each product may be added at a time. 
+- if `Display Multiple Products Qty Box Status` is non-zero, a quantity box is shown for each product on the listing page. At the top and bottom of the page, buttons are provided which add all non-zero quantities of products set on that page. 
 

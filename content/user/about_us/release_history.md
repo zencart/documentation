@@ -176,3 +176,5 @@ This is the release history of the Zen Cart product.
 </div>
 </div>
 
+The [current Zen Cart documentation](https://github.com/zencart/documentation) was first created in April 2020. After it had matured, it fully replaced the legacy documentation in vBulletin - [see announcement](https://www.zen-cart.com/showthread.php?226534-Refreshed-Zen-Cart-Documentation).
+
