@@ -74,3 +74,6 @@ You can read more about [the importance of relative URLs](/user/first_steps/rela
 ### Mobile
 
 You may need to make [additional edits to control the link on mobile displays](/user/template/sideboxes/#controlling-sideboxes-on-mobile-menu).
+
+### More Examples 
+See [creating links to other pages](/user/customizing/creating_links/). 

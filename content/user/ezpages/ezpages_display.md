@@ -46,6 +46,12 @@ If you're in HTML (say in a list), you would use
 <li><a href="<?php echo zen_href_link(FILENAME_EZPAGES, 'id=19'); ?>"><?php echo NEW_PAGE_TITLE; ?></a></li>
 ```
 
+or if it's pure HTML (being edited in CKEditor for example), do to it without PHP would be 
+
+```
+<li><a href="index.php?main_page=page&id=19">title-of-ezpage-19</a></li>
+```
+
 You would define `NEW_PAGE_TITLE` in a file like, `includes/languages/english/extra_definitions/my_ezpages.php` as follows:
 
 ```
@@ -56,4 +62,6 @@ define('NEW_PAGE_TITLE','Name of My New Page');
 Once you do this, your link will be displayed and your page content will be displayed when users visit that EZ-Page, by going to `YOURSITE.com/index.php?main_page=page&id=19`, even if the page is not displayed in the header, sidebox or footer.  
 
 The *Page is Visible* flag has been available since Zen Cart 1.5.6; prior to that, the page had to be set to appear in the header, sidebox or footer.  If it were not, users visiting the page would see the message, "Sorry, the page you were attempting to access cannot be found."
+
+See also [creating links to other pages](/user/customizing/creating_links/). 
 
