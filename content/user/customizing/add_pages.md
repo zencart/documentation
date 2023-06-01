@@ -58,9 +58,13 @@ Once you have created your new page, you'll want to link to it. A few options ar
 - If you have created the page as an EZ-Page, use the [EZ-Pages sidebox](/user/sideboxes/ezpages_sidebox/).  
 - If you want the link in the Information Sidebox, use the instructions on [adding a link to the Information Sidebox](/user/sideboxes/add_link_information_sidebox/).  
 - You can put the link in the [header](/user/template/header/) or [footer](/user/template/footer/) of your site, but the method of doing so will depend on your template.
-- If you need to link to your new page from HTML, see [creating links](/user/customizing/creating_links/). 
+- If you need to link to your new page, see [creating links](/user/customizing/creating_links/). 
 
-## Direct Access to Files 
+## Site Map
+
+If you add custom pages to your site, don't forget to add them to your sitemap.  Copy `includes/templates/template_default/templates/tpl_site_map_default.php` to `includes/templates/YOURTEMPLATE/templates/tpl_site_map_default.php` (if the override file is not already there), and add a link to your new page. 
+
+## Providing Direct Access to Files 
 
 You may wish to simply provide files (such as PDFs or zips) on your site without requiring the registration and purchase steps associated with paid downloads.
 
