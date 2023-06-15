@@ -47,7 +47,15 @@ If you want to add some custom definitions, say to lang.english.php, there are a
   $define['MY_NEW_ENTRY'] = 'My entry value'; 
 ```
 
-- You can add them to a new array, and append that array to the original one.
+- Or, you can append them to the original array directly: 
+
+```
+  $define += [
+     'MY_NEW_ENTRY' => 'My entry value', 
+  ]; 
+```
+
+- Or, you can add them to a new array, and append that array to the original one.
 
 ```
   $new_defines = [
