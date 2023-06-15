@@ -24,7 +24,7 @@ Notes:
 
 - Many gateways can be configured to [Auth Only instead of Auth and Capture](/user/payment/auth_only/) if your concern is that the final order total might change.
 
-- The plugin [Authorize.net CIM Card on file](https://www.zen-cart.com/downloads.php?do=file&id=2272) allows you to securely store credit card information at the payment gateway.  The Zen-Cart database stores only a token for use in future charges.  This method of tokenizing credit card data is the accepted best practice for enacting card on file transactions.
+- The plugin [Authorize.net CIM Card on file](https://www.zen-cart.com/downloads.php?do=file&id=2272) allows you to securely store credit card information at the payment gateway.  The Zen Cart database stores only a token for use in future charges.  This method of tokenizing credit card data is the accepted best practice for enacting card on file transactions.
 
 All these options give you a credit card entry form on your checkout payment page, which is what most customers will expect.  (Naturally they all require an [SSL certificate](/user/security/ssl_cert/), but hopefully you already have one; if not, [install SSL](/user/installing/enable_ssl/) first.)
 
