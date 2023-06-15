@@ -72,4 +72,5 @@ If you wish to block IP addresses independently from your store's Admin (whether
 ## Related 
 
 - [Abuse and Spam](/user/running/spam/)
+- [Blocking probing activity](/user/security/block_probes/)
 

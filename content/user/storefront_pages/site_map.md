@@ -15,3 +15,20 @@ This site map is produced for the benefit of human visitors, and should not be c
 
 The site map may be accessed at the URL `index.php?main_page=site_map`.  There is frequently a link to the site map in a store's footer, header or a sidebox. 
 
+## Extending the Site Map 
+
+You may wish to extend your sitemap if you have customized your site in the following ways: 
+
+- [Custom added pages](/user/customizing/add_pages/)
+- [Non-product Downloads](/user/products/downloads_not_products/)
+
+The easiest way to do this is to 
+
+- Copy the file `includes/templates/template_default/templates/tpl_site_map_default.php` to your template (i.e. `includes/templates/YOURTEMPLATE/templates/tpl_site_map_default.php`) 
+- Either add specific references to files (the way `FILENAME_SPECIALS` is handled) or add PHP code that creates a list dynamically (either using a database query or a filesystem operation). 
+
+If you want to list all the files in the folder, these StackOverflow posts might help: 
+
+- [Display all files in a directory sorted alphabetically](https://stackoverflow.com/questions/3977500/how-can-i-list-all-files-in-a-directory-sorted-alphabetically-using-php?rq=3)
+- [Display all PDF files in descending order of upload date](https://stackoverflow.com/questions/40861946/how-can-i-display-and-list-all-pdf-files-in-a-directory-in-an-html-table-in-the) 
+

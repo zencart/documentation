@@ -85,3 +85,9 @@ unset($contaminated);
 unset($query2,  $query, $querydec2, $querydec, $querydecsws, $useragent, $lcuseragent,  $lcuseragentsws, $requesturi, $lcrequesturi, $lcrequesturisws, $lcpost,  $lcpostsws);
 /* *** END OF INOCULATION *** */
 ```
+
+
+## Related 
+
+- [Blocking Attacks](/user/troubleshooting/blocking_attacks/)
+
