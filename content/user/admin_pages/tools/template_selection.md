@@ -21,3 +21,6 @@ When the Change the Template button is pressed, a dropdown selector list of avai
 See the [Template Documentation](/user/template/) for instructions on creating your own template.
 
 To test a template privately before making it live, use the instructions in [privately testing a template](/user/template/private_testing/). 
+
+After changing the template, proceed to the [Admin > Tools > Layout Boxes Controller](/user/admin_pages/tools/layout_boxes_controller/) screen to set up sideboxes.
+

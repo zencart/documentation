@@ -24,6 +24,15 @@ There are many [built-in sideboxes](/user/sideboxes/sidebox_list/).  Choose the 
 
 For more information about sideboxes, see [the sidebox FAQs](/user/sideboxes/).
 
+### Copying Sidebox Settings 
+
+After moving to a new template, the initial sidebox settings will likely be all off.  In 1.5.8 and above, you may copy the sidebox settings from another template easily using the Reset Settings tool.
+
+![Reset Settings](/images/reset_settings.png)
+
+Users of prior releases should use the [Copy Sideboxes](https://www.zen-cart.com/downloads.php?do=file&id=1828) plugin.
+
+
 ### Layout Boxes Controller prior to 1.5.8 
 
 This page changed significantly in Zen Cart 1.5.8 due to 
