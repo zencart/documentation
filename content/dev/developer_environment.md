@@ -74,6 +74,10 @@ Since v1.5.7, the `zc_install/includes/localConfig.php` file allows you to speci
 
 **NOTE:** These defines only work if the `DEVELOPER_MODE` setting is enabled/detected.
 
+A simple way of add the `DEVELOPER_MODE` setting is to create a file inside `zc_install/includes/extra_configures`
+
+e.g. `zc_install/includes/extra_configures/dev_mode.php`
+
 ## Overriding Email Sending
 To prevent the sending of any emails at all
 `define('DEVELOPER_OVERRIDE_EMAIL_STATUS', 'false')`
@@ -100,3 +104,17 @@ containing
 include DIR_FS_CATALOG . DIR_WS_INCLUDES . 'extra_configures/dev-email_overrides.php';
 ```
 When the admin environment detects these constants as defined, a message is displayed in the admin messageStack to that effect. 
+
+## Innodb Settings 
+
+The Zen Cart installer allows for setting a define to create all Database tables usin InnoDb rather than MyIsam.
+
+To enable this you need to add a define e.g. 
+
+`define('USE_INNODB', true);`
+
+Furthermore, you can also add another define that disables whether individual tables are not created as InnoDb tables and left as MyISAM tables. 
+
+e.g. 
+
+`define('INNODB_BLACKLIST', ['address_book']);`
