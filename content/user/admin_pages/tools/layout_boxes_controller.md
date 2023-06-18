@@ -30,7 +30,9 @@ After moving to a new template, the initial sidebox settings will likely be all 
 
 ![Reset Settings](/images/reset_settings.png)
 
-Users of prior releases should use the [Copy Sideboxes](https://www.zen-cart.com/downloads.php?do=file&id=1828) plugin.
+The reset settings tool only shows templates which exist under `includes/templates/`, so if you're doing an upgrade and switching templates, and you don't want to copy in the old template, you should use the [Copy Sideboxes](https://www.zen-cart.com/downloads.php?do=file&id=1828) plugin.
+
+Users of releases prior to 1.5.8 should also use the [Copy Sideboxes](https://www.zen-cart.com/downloads.php?do=file&id=1828) plugin to copy sidebox settings.
 
 
 ### Layout Boxes Controller prior to 1.5.8 
