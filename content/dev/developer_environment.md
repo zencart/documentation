@@ -74,7 +74,7 @@ Since v1.5.7, the `zc_install/includes/localConfig.php` file allows you to speci
 
 **NOTE:** These defines only work if the `DEVELOPER_MODE` setting is enabled/detected.
 
-A simple way of add the `DEVELOPER_MODE` setting is to create a file inside `zc_install/includes/extra_configures`
+A simple way of adding the `DEVELOPER_MODE` setting is to create a file inside `zc_install/includes/extra_configures`
 
 e.g. `zc_install/includes/extra_configures/dev_mode.php`
 
@@ -107,7 +107,7 @@ When the admin environment detects these constants as defined, a message is disp
 
 ## Innodb Settings 
 
-The Zen Cart installer allows for setting a define to create all Database tables usin InnoDb rather than MyIsam.
+The Zen Cart installer allows for setting a define to create all Database tables using InnoDb rather than MyIsam.
 
 To enable this you need to add a define e.g. 
 
