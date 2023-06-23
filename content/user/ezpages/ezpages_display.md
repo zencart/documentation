@@ -46,7 +46,7 @@ If you're in HTML (say in a list), you would use
 <li><a href="<?php echo zen_href_link(FILENAME_EZPAGES, 'id=19'); ?>"><?php echo NEW_PAGE_TITLE; ?></a></li>
 ```
 
-or if it's pure HTML (being edited in CKEditor for example), do to it without PHP would be 
+or if it's pure HTML (being edited in plain text editor, for example), to do it without PHP would be 
 
 ```
 <li><a href="index.php?main_page=page&id=19">title-of-ezpage-19</a></li>
