@@ -1,7 +1,7 @@
 ---
 title: Zen Cart Storeowner Docs
 description: Documentation for Zen Cart Users
-linkTitle: Historic Releaes
+linkTitle: Historic Releases
 weight: 5
 layout: docs
 type: codepage
