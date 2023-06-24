@@ -10,6 +10,7 @@ These are all the zips released in the 1.5.x series.
 
 For information about the required versions of PHP and MySQL for each release, please see [the server requirements page](/user/first_steps/server_requirements/).
 
+- **Zen Cart version 1.5.8 and newer** can be found on Github: [https://github.com/zencart/zencart/releases](https://github.com/zencart/zencart/releases)
 - [zencart-1.5.7d.zip](/history/release-zips/15x-series/zencart-1.5.7d.zip) sha256: 0b115b58745cd09a0e4ae2795df437f051552d453ff9d0d9f333d96685836294
 - [zen-cart-v1.5.7c-03052021.zip](/history/release-zips/15x-series/zen-cart-v1.5.7c-03052021.zip) sha256: cbb282706e3a5dd7b3d8df445c1602d93b99bfc93a5bd0016b0e88fe2803fc43
 - [zen-cart-v1.5.7b-11232020.zip](/history/release-zips/15x-series/zen-cart-v1.5.7b-11232020.zip) sha256: 33ad7fa78a7506e659636920c78e23b5c3cbf4f7b586d11592af2dbf9f00129b
