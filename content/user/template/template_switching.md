@@ -9,15 +9,27 @@ The process of changing templates can be done using the [Template Selection](/us
 
 But what if the templates you are switching between expect different configuration values?  It's tedious to do these by hand, especially if you're switching back and forth doing tests.
 
-That's why Zen Cart 1.5.8a introduces a new feature called `template_init`.  Place a file called `template_init.php` in the includes/templates/YOURTEMPLATE folder.  It will run when the template  is set to YOURTEMPLATE.
+That's why Zen Cart 1.5.8a introduces a new feature called `template_init`.  
+Place a file called `template_init.php` in the includes/templates/YOURTEMPLATE folder.  
+It will execute when the template is set to YOURTEMPLATE.  
+Note this functionality is not available/these queries are not executed when using  [Private Template Testing](/user/template/private_testing/) .
 
 For example, here's a template init that turns off CSS buttons when this template is selected: 
 
 ```
 <?php
 // Settings for Older Template
-$db->Execute("UPDATE " . TABLE_CONFIGURATION . " SET configuration_value='No' WHERE configuration_key  = 'IMAGE_USE_CSS_BUTTONS'");
+$db->Execute("UPDATE " . TABLE_CONFIGURATION . " SET configuration_value='No' WHERE configuration_key = 'IMAGE_USE_CSS_BUTTONS'");
 ```
+
+A corresponding query should exist in `template_init.php` of the other template(s) to restore the value when switching back:
+
+```
+<?php
+// Settings for Newer Template(s)
+$db->Execute("UPDATE " . TABLE_CONFIGURATION . " SET configuration_value='Yes' WHERE configuration_key = 'IMAGE_USE_CSS_BUTTONS'");
+```
+
 Any configuration variable can be set in the same way.
 
 If you can't recall the name of a particular variable, remember you can look it up on the  [All Configuration Settings](/user/admin_pages/configuration/all/) page. 
