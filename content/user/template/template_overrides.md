@@ -75,7 +75,7 @@ admin/includes/auto_loaders/overrides/
 admin/includes/init_includes/overrides/
 ```
 
-As an example of this, to override `admin/includes/init_includes/init_admin_auth.php`, you would created `admin/includes/init_includes/overrides/init_admin_auth.php`.
+As an example of this, to override `admin/includes/init_includes/init_admin_auth.php`, you would create `admin/includes/init_includes/overrides/init_admin_auth.php`.
 
 
 ## What Can I NOT Override? 
@@ -83,7 +83,7 @@ As an example of this, to override `admin/includes/init_includes/init_admin_auth
 At the moment, these folders of your cart do not support overrides:
 
 - `admin` (except in the `auto_loaders` and `init_includes` folders, as noted above)
-- `includes/modules/pages`
+- `includes/modules/pages` (but you can add more files to a page's folder. See the [Init System](/dev/code/init_system/) documentation)
 - The `shipping`, `payment` and `order total` folders under `includes/modules`
 
 However, you may still modify their operation without changing core code by using [notifiers](/dev/code/notifiers/) and the other mechanisms described below.
@@ -95,8 +95,7 @@ Some behaviors are controlled by the [show flags](/user/customizing/show_flags/)
 
 Starting in 1.5.8, there are [site specific overrides](/user/customizing/site_specific_overrides/), which allow you to change some aspects of Zen Cart without touching core files. 
 
-There are also other mechanisms to allow you modify the 
-behavior of the system without touching core files.
+There are also other mechanisms to allow you modify the behavior of the system without touching core files.
 These are more advanced topics, intended for developers. 
 
 - [Notifiers/Observers](/dev/code/notifiers/)
