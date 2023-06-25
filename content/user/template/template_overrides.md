@@ -83,7 +83,7 @@ As an example of this, to override `admin/includes/init_includes/init_admin_auth
 At the moment, these folders of your cart do not support overrides:
 
 - `admin` (except in the `auto_loaders` and `init_includes` folders, as noted above)
-- `includes/modules/pages` (but you can add more files to a page's folder. See the [Init System](/dev/code/init_system/) documentation)
+- `includes/modules/pages` (but you can add more files to a page's folder. See the [header_php.php Program Flow](/dev/code/program_flow/) developer documentation)
 - The `shipping`, `payment` and `order total` folders under `includes/modules`
 
 However, you may still modify their operation without changing core code by using [notifiers](/dev/code/notifiers/) and the other mechanisms described below.
@@ -100,7 +100,8 @@ These are more advanced topics, intended for developers.
 
 - [Notifiers/Observers](/dev/code/notifiers/)
 - [Init System](/dev/code/init_system/)
-- [Extra folders](/dev/code/extra_folders/) 
+- [Extra folders](/dev/code/extra_folders/)
+- [Program Flow](/dev/code/program_flow/)
 
 See also [plugin tips](/dev/plugins/tips/) for more suggestions. 
 
