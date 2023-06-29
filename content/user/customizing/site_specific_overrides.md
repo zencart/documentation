@@ -5,6 +5,8 @@ category: customizing
 weight: 10
 ---
 
+## Admin Program File 
+
 Starting in Zen Cart 1.5.8, a file called `includes/extra_datafiles/dist-site_specific_overrides.php` is provided.  
 
 Copy this file to 
@@ -23,3 +25,14 @@ Many behaviors can be enabled or disabled by this file, such as:
 See the file itself for specifics and details.
 
 Information on the [admin site-specific overrides file](/user/admin/site_specific_overrides/) is also available. 
+
+## Admin Non-Database Settings File 
+
+Starting in Zen Cart 1.5.8, a file called `/includes/init_includes/dist-init_site_specific_non_db_settings.php` is provided.  
+
+Copy this file to 
+
+`/includes/init_includes/init_site_specific_non_db_settings.php`
+
+and customize to taste. The settings that may be altered in this file are  listed in the file `includes/init_includes/init_non_db_settings.php`.
+
