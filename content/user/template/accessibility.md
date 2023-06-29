@@ -55,10 +55,12 @@ Zen Cart uses image `alt` tags to help describe images.  For example, in the dem
 This HTML is rendered by a browser like this: 
 
 <img src="/images/product_info_image.png" alt="Product Info Page - Main Image" />
+<br><br>
 
 When images are turned off, it is rendered in the browser like this:  
 
 <img src="/images/product_info_no_image.png" alt="Product Info Page - Main Image" />
+<br><br>
 
 
 The `alt` tags Zen Cart uses come from the title of the product, category, or item.  If you look at the demo items added to a site  without their images turned on, the display of the Hardware category looks like a dual listing of everything when, in fact, it's just the alt tag providing that second and vital bit of information.

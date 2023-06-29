@@ -8,13 +8,14 @@ weight: 10
 Sending large numbers of emails (newsletters or other marketing content)
 using [Send Email](/user/admin_pages/tools/send_email/) or 
 [Newsletter Manager](/user/admin_pages/tools/newsletter/)
+with your regular email method - as specified in [EMAIL_TRANSPORT](/user/admin_pages/configuration/configuration_email/) - 
 is not recommended.  Your server and hosting account probably don't allow for
 mass quantities of broadcast emails, and doing so could cause you to be treated like a spammer. 
 
 Instead, we recommend that you use an *Email Service Provider* (ESP) to handle your
 bulk emailing needs.  See below for more information about using an ESP. 
 
-As another alternative, in Zen Cart 1.5.8 and above you may continue using the Newsletter Manager, but use a different email transport method so your own host is not sending the emails.  See below for more information on this.
+For Newsletter Manager, another alternative exists in Zen Cart 1.5.8 and above.  You may continue using the Newsletter Manager, but use a different email transport method so your own host is not sending the emails.  See below for more information on this.
 
 # Using an Email Service Provider 
 

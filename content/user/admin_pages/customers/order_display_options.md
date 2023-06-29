@@ -34,8 +34,8 @@ The following flags may be set for the Packingslip page:
 
 Flag | Default | Behavior 
 -----|---------|---------
-`$show_product_images` | true | Display product images on packingslip 
-`$show_attrib_images` | true | Display attribute images on packingslip 
+`$show_product_images_pack` | true | Display product images on packingslip 
+`$show_attrib_images_pack` | true | Display attribute images on packingslip 
 
-
+Note that the first release of Zen Cart 1.5.8 did not include `$show_product_images_pack` and `$show_attrib_images_pack` but simply overloaded the two variables `$show_product` and `$show_attrib_images` to cover both the Invoice and Packingslip.
 
