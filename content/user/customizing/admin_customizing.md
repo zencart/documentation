@@ -5,7 +5,8 @@ category: customizing
 weight: 10
 ---
 
-TBD
+Please see [Admin Site Specific Overrides](/user/admin/site_specific_overrides/).
+
 
 ## Related 
 - [Admin Templating](/dev/admin/templating/)

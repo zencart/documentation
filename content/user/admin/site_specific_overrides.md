@@ -5,6 +5,8 @@ category: admin
 weight: 10
 ---
 
+## Admin Program file 
+
 Starting in Zen Cart 1.5.8, a file called `admin/includes/extra_datafiles/dist-site_specific_admin_overrides.php` is provided.  
 
 Copy this file to 
@@ -21,3 +23,14 @@ Many behaviors can be enabled or disabled by this file, such as:
 See the file itself for specifics and details.
 
 Information on the [storefront site-specific overrides file](/user/customizing/site_specific_overrides/) is also available. 
+
+## Admin CSS File
+
+Starting in Zen Cart 1.5.8a, a file called `admin/includes/css/dist-site-specific-styles.php` is provided.  
+
+Copy this file to 
+
+`admin/includes/css/site-specific-styles.php`
+
+and customize to taste. 
+
