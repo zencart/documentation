@@ -15,7 +15,7 @@ FIXME - work in progress
 
 ## Preparation / Initial Setup
 
-To prepare to run the Unit Test and Feature test suites:
+To prepare to run the Unit Test and Feature Test suites:
 
 1. First, install Composer:
 
@@ -35,7 +35,7 @@ composer unit-tests
 
 in the root directory of your Zen Cart install.
 
-Currently, there are no local configuration requirements needed to run unit tests.
+Currently there are no local configuration requirements needed to run unit tests.
 
 ## Feature Tests
 
