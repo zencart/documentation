@@ -133,7 +133,7 @@ $define = [
 $define['BOX_INFORMATION_GV'] = $define['TEXT_GV_NAME'] . ' FAQ';
 ```
 
-This example is taken from `includes/langauges/lang.english.php`.
+This example is taken from `includes/languages/lang.english.php`.
 
 ### Handling back references between files 
 
