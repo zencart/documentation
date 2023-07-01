@@ -13,7 +13,7 @@ It will be able to use language definitions from the following files, which will
 
 - the main language file `includes/languages/lang.english.php` and the templated version of that file, `includes/languages/YOURTEMPLATE/lang.english.php`. 
 
-- files in `includes/langauges/english/extra_definitions` (and their templated versions)
+- files in `includes/languages/english/extra_definitions` (and their templated versions)
 
 - The page's own language file, `includes/languages/english/lang.newpage.php` 
 
