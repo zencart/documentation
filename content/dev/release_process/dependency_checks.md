@@ -40,10 +40,12 @@ Embedded references to external files that may require updating:
    - `admin/includes/keepalive_module.php`
 
 - Bootstrap:
-  - `includes/templates/template_default/templates/tpl_zc_phpupgrade_default.php`
-  - `includes/templates/template_default/templates/tpl_zc_install_suggested_default.php`
   - `admin/includes/admin_html_head.php`
   - `admin/includes/javascript_loader.php`
+
+  Note that the following error-condition template files do not share common header components from the default template because they are intended to be as "standalone" as possible, in case other template-system files are damaged:
+  - `includes/templates/template_default/templates/tpl_zc_phpupgrade_default.php`
+  - `includes/templates/template_default/templates/tpl_zc_install_suggested_default.php`
 
 - Font Awesome:
   - `includes/templates/responsive_classic/common/html_header.php`
