@@ -11,9 +11,13 @@ Before doing a build (especially a new release vs. a patch), it's a good idea to
 
 The following should be checked: 
 
+## Complete Projects 
 - `includes/classes/vendors/PHPMailer`
 - `includes/classes/Mobile_Detect.php`
 - `admin/includes/javascript/jquery-ui-i18n.min.js`
+- `zc_install/includes/vendors/yaml`
+
+## References within Files 
 
 Embedded references to external files that may require updating: 
 
@@ -51,4 +55,6 @@ Embedded references to external files that may require updating:
   - `admin/includes/css/font-awesome.min.css`
   - `admin/includes/stylesheet.css`
 
+## Laravel Dependencies 
+  - `laravel/vendor/*`  
 
