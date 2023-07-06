@@ -25,3 +25,7 @@ Some older plugins may still use these files.  Migrating to the new standard is 
 
 
 ![Admin HTML Header change example 2](/images/admin_html_head_2.png)
+
+You will also want to remove references to the old `init()` javascript function. 
+
+![Admin HTML Header change example 3](/images/admin_html_head_3.png)
