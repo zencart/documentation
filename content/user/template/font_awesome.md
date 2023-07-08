@@ -6,7 +6,7 @@ weight: 10
 type: codepage
 ---
 
-Font Awesome provides a set of vector icons and social logos for your website.   It is one of the most popular icon sets available. 
+The [Font Awesome library](https://fontawesome.com/) provides a set of vector icons and social logos for your website.   It is one of the most popular icon sets available. 
 
 You can see an example of the use of Font Awesome in the icons shown on Admin > Catalog > Categories/Products: 
 
@@ -28,5 +28,5 @@ The pencil, trash can, dollar sign and asterisk are icons from Font Awesome.
 
 ## Backwards Compatibility 
 
-In Zen Cart 1.5.8b and above, for backwards compatibility with plugins that have not yet been updated, by default, the [Font Awesome v4 shim](https://fontawesome.com/v5/docs/web/setup/upgrade-from-v4) is loaded so that older Font Awesome classes may be used.
+In Zen Cart 1.5.8b and above, for backwards compatibility with plugins that have not yet been updated, by default, the [Font Awesome v4 shim](https://fontawesome.com/v5/docs/web/setup/upgrade-from-v4) is loaded so that older Font Awesome classes may be used.  Loading the shim can be switched off in the [site specific overrides](/user/admin/site_specific_overrides/).
 
