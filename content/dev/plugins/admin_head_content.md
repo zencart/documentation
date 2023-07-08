@@ -29,3 +29,6 @@ Some older plugins may still use these files.  Migrating to the new standard is 
 You will also want to remove references to the old `init()` javascript function. 
 
 ![Admin HTML Header change example 3](/images/admin_html_head_3.png)
+
+If you need your plugin to work on older and newer versions of Zen Cart, see [this forum post](https://www.zen-cart.com/showthread.php?229591-Plugin-Maintainers-Upcoming-changes-in-Zen-Cart-1-5-8b&p=1395812#post1395812) for an example block of code.
+
