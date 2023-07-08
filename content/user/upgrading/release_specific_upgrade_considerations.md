@@ -25,7 +25,7 @@ This document lists things you may wish to take into account as you upgrade.  Th
 ### Zen Cart 1.5.8b
 
 - This release does away with the older files that were used prior to the creation of `admin_html_head.php`.  Please see [Admin head content](/dev/plugins/admin_head_content/) for details. 
-
+- This release updates the [FontAwesome library](https://fontawesome.com/) from version 4 to version 6.  A number of class names have been changed between those two versions, and the Zen Cart core has been updated to use these newer names.  For backwards compatibility, however, the [FontAwesome v4 shim](https://fontawesome.com/v5/docs/web/setup/upgrade-from-v4) is being loaded.  Loading the shim is a feature that can be disabled using the [Admin site specific override file](/user/admin/site_specific_overrides/). 
 
 ### Zen Cart 1.5.8 and Zen Cart 1.5.8a 
 

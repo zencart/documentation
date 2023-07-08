@@ -14,7 +14,12 @@ The following should be checked:
 ## Complete Projects 
 - `includes/classes/vendors/PHPMailer`
 - `includes/classes/Mobile_Detect.php`
+- `includes/templates/responsive_classic/jscript/jquery.min.js`
+- `includes/templates/template_default/jscript/jquery.min.js`
+- `admin/includes/javascript/jquery.min.js`
 - `admin/includes/javascript/jquery-ui-i18n.min.js`
+- `admin/includes/css/font-awesome.min.css`
+- `admin/includes/css/bootstrap.min.css`
 - `zc_install/includes/vendors/yaml`
 
 ## References within Files 
@@ -54,7 +59,6 @@ Embedded references to external files that may require updating:
 - Font Awesome:
   - `includes/templates/responsive_classic/common/html_header.php`
   - `admin/includes/admin_html_head.php`
-  - `admin/includes/css/font-awesome.min.css`
   - `admin/includes/stylesheet.css`
 
 ## Laravel Dependencies 
