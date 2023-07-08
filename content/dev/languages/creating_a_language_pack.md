@@ -9,11 +9,15 @@ This documentation is for Zen Cart 1.5.8 and above; if you need the older docume
 
 If you are not familiar with the new language file format for Zen Cart 1.5.8 and above, please see [Developer Information on Array based Language files](/dev/code/158_language_files/). 
 
+<hr>
+
+If you're multilingual, we'd love to have your help building new language packs.  We have [a few updated language packs](/user/localization/updated_language_packs/) but we need more. 
+
 Developers seeking to build new translations for 1.5.8 and above have two options: 
 
 1. Start with the English files, and do the translations by hand.  The advantage of this approach is that it is just translation; all the necessary code changes in each language file have been done. 
 
-2. Start with an older translation, and run the [Language File Converter](https://github.com/torvista/Zen_Cart-Language_File_Converter). This reduces the translation burden, but requires coding skills, since the produced files will need to be hand edited in cases where the tool didn't produce perfect results. 
+2. Start with an [older language pack](https://www.zen-cart.com/downloads.php?do=cat&id=6), and run the [Language File Converter](https://github.com/torvista/Zen_Cart-Language_File_Converter). This reduces the translation burden, but requires coding skills, since the produced files will need to be hand edited in cases where the tool didn't produce perfect results. 
 
 Of course, a hybrid approach is possible where (2) is performed, and then issues are resolved on a per-file basis using approach (1). 
 
