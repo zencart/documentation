@@ -19,7 +19,7 @@ Many behaviors can be enabled or disabled by this file, such as:
 - indicating whether the downloads manager page should show the file date
 - modifying the [order display](/user/admin_pages/customers/order_display_options/) for images, tax display, etc. 
 - (developers) whether to enable debug on the `zcDate` class.
-- (developers) whether to load the [Font Awesome v4 shim](https://fontawesome.com/v5/docs/web/setup/upgrade-from-v4).
+- (developers) whether to load the [Font Awesome](/user/template/font_awesome/) v4 shim for backwards compatibility.
 
 See the file itself for specifics and details.
 
