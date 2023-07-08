@@ -10,17 +10,16 @@ on your storefront, and where they should be placed.
 This page changed significantly in Zen Cart 1.5.8 due to 
 the introduction of the `$uses_single_column_layout_settings` entry in the [template_info](/user/template/template_info/) file. 
 
-For templates that have `$uses_single_column_layout_settings` set to true
+For templates that have `$uses_single_column_layout_settings` set to true  
 ![layout Boxes Controller Single](/images/layout_boxes_controller_single.png)
 
-Editing an an entry will bring up a dialog like this:
+Editing an an entry will bring up a dialog like this:  
 ![Layout Boxes Controller Edit Single](/images/layout_boxes_controller_edit_single.png)
 
-For templates that have `$uses_single_column_layout_settings` set to false
+For templates that have `$uses_single_column_layout_settings` set to false  
 ![Layout Boxes Controller](/images/layout_boxes_controller.png)
 
-Editing an an entry will bring up a dialog like this:
- 
+Editing an an entry will bring up a dialog like this:   
 ![Layout Boxes Controller Edit](/images/layout_boxes_controller_edit.png)
 
 ### Sideboxes 
