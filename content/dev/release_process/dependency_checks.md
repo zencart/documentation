@@ -9,6 +9,8 @@ Before doing a build (especially a new release vs. a patch), it's a good idea to
 
 **Try to do these a few weeks before the build so you have time to test, and you don't break the build at the last minute.**
 
+Also, make time to run a [Lighthouse check](/user/upgrading/javascript_updates/) before the release to be sure no Javascript libraries with known vulnerabilities are in use. 
+
 The following should be checked: 
 
 ## Complete Projects 

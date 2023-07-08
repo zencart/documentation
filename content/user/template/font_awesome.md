@@ -30,3 +30,7 @@ The pencil, trash can, dollar sign and asterisk are icons from Font Awesome.
 
 In Zen Cart 1.5.8b and above, for backwards compatibility with plugins that have not yet been updated, by default, the [Font Awesome v4 shim](https://fontawesome.com/v5/docs/web/setup/upgrade-from-v4) is loaded so that older Font Awesome classes may be used.  Loading the shim can be switched off in the [site specific overrides](/user/admin/site_specific_overrides/).
 
+An example of the kind of change that needs to be made to older code to go from V4 to V6 is shown in this image: 
+
+![Font Awesome Migration](/images/fa_6.png)
+

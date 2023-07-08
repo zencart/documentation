@@ -76,3 +76,5 @@ A day or two after the build has been released when you're confident that all is
 
 - Are there old stuck posts on the forum that should be unstuck? 
 
+- Check the Zen Cart and Zen Cart Documentation project for tags that mark things that need to be taken care of - there might be a 'Post Release 1.5.X' tag or something like that, for example. 
+
