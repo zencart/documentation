@@ -70,5 +70,27 @@ These files are exactly the same format as standard Zen Cart `configure.php` fil
 
 ### Migrations and Seeders
 
-TBD
+As the functional tests rely on a populated database, the test framework use Laravel like 
+migrations and seeders.
+
+Migrations create the tables we need and seeders add data to the tables. 
+
+The initial migrations and seeders are run automatically by the test framework and mirror what 
+would be created by zc_install with demo data.
+
+There may be times though where you may want to alter the data to test a specific bug. 
+An example may be when a search is not finding a product that contains certain strings, 
+or a salemaker with specific data is not applying correctly.
+
+In these cases you can create your own data seeder to add this data just for your test.
+
+Custom seeders are created in the `not_for_release/testFramework/Support/database/Seeders/CustomSeeders/` directory.
+
+An example is `not_for_release/testFramework/Support/database/Seeders/CustomSeeders/StoreWizardSeeder.php`
+
+You can run a custom seeder in your tests using 
+
+`$this->runCustomSeeder('StoreWizardSeeder');`
+
+replacing `StoreWizardSeeder` with the name of your seeder class.
 
