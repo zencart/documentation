@@ -44,7 +44,7 @@ testing of the application as a whole. The tests will typically access the appli
 Feature tests can also interact with the application, by setting form values and submitting those forms.
 
 NOTE: Current feature tests don't support javascript so interactions with pages that use javascript may not be possible.
-It is planned in the future to all interactions with pages that rely on javascript using something like `Selenium` or `Panther`.
+It is planned in the future to allow interactions with pages that rely on javascript using something like `Selenium` or `Panther`.
 
 WARNING: Feature tests rely on Re-creating the database on each separate test suite. This means it will destroy you database. 
 However, given that you should only be testing on a local development environment, this shouldn't be a problem.
