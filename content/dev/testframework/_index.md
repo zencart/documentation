@@ -6,10 +6,10 @@ layout: docs
 ---
 
 The Test Framework resides within the `not_for_release/testFramework` directory. This directory is only really available
-if you `checkout` the Zen Cart code using git. It is not available if you just download the Zen Cart code via a
+if you `checkout` the Zen Cart code using `git`. It is not available if you just download the Zen Cart code via a
 `release` link.
 
-Running Zen Cart tests locally has the potential to **override your Zen Cart database and destroy data.**
+ALERT: Running Zen Cart tests locally has the potential to **overwrite your Zen Cart database and destroy data.**
 
 FIXME - work in progress
 
@@ -17,17 +17,17 @@ FIXME - work in progress
 
 To prepare to run the Unit Test and Feature Test suites:
 
-1. First, install Composer:
+1. First, install Composer on your PC:
 
 * go to `getcomposer.org`
-* download and install
+* download and install according to your operating system
 * follow the Getting Started instructions.
 
-2. Run `composer install`
+2. Run `composer install` from inside root directory of your Zen Cart, on your PC.
 
 ## Unit Tests
 
-Unit tests can be run using
+Unit tests can be run using:
 
 ```
 composer unit-tests
@@ -40,7 +40,7 @@ Currently there are no local configuration requirements needed to run unit tests
 ## Feature Tests
 
 While unit tests allow testing of functions/classes and other small fragments of code, feature tests allow 
-testing of the application as a whole. The tests will typically access the application via URL's and test the resulting html those URL's return.
+testing of the application as a whole. The tests will typically access the application via URLs and test the resulting html returned by those URLs.
 Feature tests can also interact with the application, by setting form values and submitting those forms.
 
 NOTE: Current feature tests don't support javascript so interactions with pages that use javascript may not be possible.
@@ -51,27 +51,24 @@ However, given that you should only be testing on a local development environmen
 
 Feature tests can be run using `composer functional-tests`
 
-### Configuration.
+### Configuration
 
 Feature tests override the standard `configure.php` files used by Zen Cart and require you to create new configure files just for testing purposes.
 
 Your configure files should be created in the `not_for_release/testFramework/Support/configs` directory and will be named 
 
-`_USER_.store.configure.php` and `_USER_.admin.configure.php` where the `_USER_` is replaced by 
-the user that your local environment runs as.
+`_USER_.store.configure.php` and `_USER_.admin.configure.php` where the `_USER_` is replaced by the user that your local environment runs as.
 
 You can find that user by running the following from the root of your installation.
 
 `php ./not_for_release/testFramework/detectUser.php`
 
 These files are exactly the same format as standard Zen Cart `configure.php` files and you can copy the 
-
 `admin.configure.php.example` and `store.configure.php.example` files as starting points.
 
 ### Migrations and Seeders
 
-As the functional tests rely on a populated database, the test framework use Laravel like 
-migrations and seeders.
+As the functional tests rely on a populated database, the test framework uses Laravel-like migrations and seeders.
 
 Migrations create the tables we need and seeders add data to the tables. 
 
