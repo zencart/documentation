@@ -58,9 +58,9 @@ Zen Cart has a number of built-in shipping modules which allow you to charge for
 
 Zen Cart also integrates with a number of shipping vendors using plugins:
 
-- [UPS](https://www.zen-cart.com/downloads.php?do=file&id=1293)
-- [UPS XML with Negotiated Rates](https://www.zen-cart.com/downloads.php?do=file&id=126)
-- [USPS](https://www.zen-cart.com/downloads.php?do=file&id=1292)
+- [UPS](/user/shipping/ups/)
+- [USPS](/user/shipping/usps)
+- [FedEx](/user/shipping/fedex)
 - [Canada Post](https://www.zen-cart.com/downloads.php?do=file&id=4)
 - [Royal Mail](https://www.zen-cart.com/downloads.php?do=file&id=190)
 
