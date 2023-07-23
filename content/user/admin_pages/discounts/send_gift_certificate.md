@@ -16,7 +16,7 @@ Mailing gift certificates requires the Gift Certificates module to be installed 
 1. Log in to the Zen Cart Admin section.
 
 
-2. Go to Gift Certificate/Coupons > Mail Gift Certificates.
+2. Go to Discounts > Send a Gift Certificate.
 
 
 3. In the drop down menu select and existing customer to send the gift certificate, or enter a new address in the field below it.
