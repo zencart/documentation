@@ -96,7 +96,7 @@
                 Be sure to review all the links in this article, including tips on staging the upgrade in a separate directory/folder.
             </p>
             <p>
-                If you are using Addons/Plugins that use modified versions of core Zen Cart files, you must compare those plugin files to the original Zen Cart files of the version for which those plugins were built, to identify the modifications. Subsequently you must replicate those modifications in the v1.5.8 file.  Be sure to check the plugin's support thread to see if a new version has been released since the one you installed before.
+                If you are using Addons/Plugins that use modified versions of core Zen Cart files, you must compare those plugin files to the original Zen Cart files of the version for which those plugins were built, to identify the modifications. Subsequently you must replicate those modifications in the release version of the file.  Be sure to check the plugin's support thread to see if a new version has been released since the one you installed before.
             </p>
             <h1>
                 CHANGELOG - List of Changed Files 
@@ -186,21 +186,21 @@ PLEASE NOTE: 2.0.0 has not yet been released, and this document is a work in pro
                 The fixes/changes in v2.0.0 since v1.5.8a include:
             </h2>
             <ul>
-                <li>(Note: no database changes between v158a/158b, so no need to run zc_install again if v158 is already installed.)</li>
                 <li>Admin: Corrected display of Who's Online.</li>
                 <li>Admin: Corrected handling of salemaker start date/end date.</li>
                 <li>Admin: Coupon Restrict dropdown only shows products not already selected.</li>
                 <li>Admin: Handle emails with embedded '+' signs.</li>
                 <li>Admin: Improve layout of search box.</li>
                 <li>Admin: Manufacturers page now has insert button when list is empty.</li>
-                <li>Admin: Removed files superceded by admin/includes/admin_html_head.php.  Plugin authors please see <a href="https://docs.zen-cart.com/dev/plugins/admin_head_content/">Admin Head Content</a></li>
+                <li>Admin: Removed files superceded by admin/includes/admin_html_head.php.  Plugin authors please see <a href="https://docs.zen-cart.com/dev/plugins/admin_head_content/">Admin Head Content</a> for details.</li>
                 <li>Core: Numerous updates for PHP 8.1 and 8.2 to resolve debug logs created by those newer PHP versions.</li>
                 <li>Core: Dependency update - Updating to Font Awesome 6 (from 4.7).  See <a href="https://docs.zen-cart.com/user/template/font_awesome/">Font Awesome</a> for details.</li>
+                <li>Core: When $db connection is down, generate fewer logs </li>
                 <li>Storefront: Accessibility improvements.</li>
                 <li>Storefront: Additional Images are only shown if there is a main image. Users of the Additional Product Images plugin who wish to disable this behavior, see <a href="https://docs.zen-cart.com/user/customizing/site_specific_overrides/">site specific overrides</a>.</li>
                 <li>Storefront: Shipping modules now visible in Shipping Estimator when zone restriction and non-pulldown state setting is used.</li>
                 <li>Storefront: State dropdowns are now sorted alphabetically for all countries.</li>
-               <li>All known v1.5.7 bugfixes and security fixes are included in v1.5.8.</li>
+               <li>All known v1.5.8 bugfixes and security fixes are included in v2.0.0.</li>
                <li>... and many other incremental improvements to make Zen Cart more efficient, more robust and easier to use.</li>
             </ul>
             <div>
