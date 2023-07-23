@@ -20,14 +20,16 @@ If you need to get a copy of Zen Cart (current or older version), please see [Do
 
 ---
 
-Zen Cart Releases come in two flavors: major releases (whose names do not contain alphabetic characters) and patch releases (whose names do contain alphabetic characters).  For example, 1.5.7 and 1.5.8 are minor releases, whereas 1.5.7c and 1.5.8a are patch releases. 
+The version numbering system for Zen Cart has changed starting with 2.0.0, please see [Zen Cart Versioning](/user/about_us/versioning/) for details.
 
-Major releases contain more feature content and file changes, and may modify the database; minor releases do not modify the database.  Upgrading to a patch release from a major release (or from a prior patch release) is also simpler due to the smaller number of changes. 
+Prior to version 2.0.0, Zen Cart Releases were either full releases and patch releases.
+
+Full releases contain more feature content and file changes, and may modify the database; patch releases do not modify the database.  Upgrading to a patch release from a full release (or from a prior patch release) is also simpler due to the smaller number of changes. 
 
 --- 
 This is the release history of the Zen Cart product.
 
-Zen Cart 1.5.8b is a work in progress, to be released later in 2023.
+Zen Cart 2.0.0 is a work in progress, to be released later in 2023.
 
 03/18/2023 - v1.5.8a 
 
