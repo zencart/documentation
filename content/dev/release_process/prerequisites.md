@@ -23,7 +23,7 @@ To run the release process, you must have the following:
 Once you have these things, you're almost ready to begin.
 
 # Final Steps Before Beginning
-## Update the version.php files: 
+## Update the versioning files: 
 
 1. Edit the file `includes/version.php` and update the version.
 
@@ -35,6 +35,10 @@ Once you have these things, you're almost ready to begin.
 
 1. Ensure the version number in `zc_install/includes/systemChecks.yml` is the current version. 
 
+1. Ensure the new version number has been added to `zc_install/ajaxLoadUpdatesSql.php`.
+
+1. Ensure the new version number has been added to `zc_install/includes/modules/pages/database_upgrade/header_php.php`. 
+
 This can be confusing because sometimes the update letter is included and sometimes it isn't.  The thing to remember is that the database version does not include the letter, because the database doesn't change just because of a patch release.  
 
 Here's what should be in these files for version 1.5.8a: 
@@ -43,10 +47,11 @@ Here's what should be in these files for version 1.5.8a:
 ------|--------
 |`includes/version.php`| `define('PROJECT_VERSION_MINOR', '5.8a');`|
 |`zc_install/includes/version.php`|`define('PROJECT_VERSION_MINOR', '5.8a');`|
-|`zc_install/sql/install/mysql_zencart.sql`|`project_version_patch1` for the two `Zen-Cart Main` rows should be `5.8a`|
-|`zc_install/sql/install/mysql_zencart.sql`|`project_version_patch1` for the two `Zen-Cart Database` rows should be `5.8`|
+|`zc_install/sql/install/mysql_zencart.sql`|`project_version_patch1` for the two `Zen-Cart Main` rows should be `5.8a`<br>`project_version_patch1` for the two `Zen-Cart Database` rows should be `5.8`|
 |`zc_install/sql/updates/mysql_upgrade_zencart_158.sql`|Same two changes as install script above|
 |`zc_install/includes/systemChecks.yml`|Top `checkDBVersion` block should be `version: '1.5.8'`|
+|`zc_install/ajaxLoadUpdatesSql.php`|`'1.5.8'=>array('required'=>'1.5.7'),`|
+|`zc_install/includes/modules/pages/database_upgrade/header_php.php`|`$versionArray[] = '1.5.8';`|
 
 There are other version related updates to do, but they're not part of the build, so they are detailed in [post release tasks](/dev/release_process/post_release/).
 
@@ -61,7 +66,7 @@ Code Files:
 
 Documentation Files: 
 - [Server Requirements](/user/first_steps/server_requirements/#php-version) in `/user/first_steps/server_requirements.md`.
-
+- What's New file for this release, e.g. [What's New in 1.5.8](https://docs.zen-cart.com/release/whatsnew_1.5.8.html) under "About PHP Versions".
 
 ## Copyright Updates
 
