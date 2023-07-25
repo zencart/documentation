@@ -58,12 +58,15 @@ Embedded references to external files that may require updating:
   - `admin/includes/admin_html_head.php`
   - `admin/includes/javascript_loader.php`
 
-  Note that the following error-condition template files do not share common header components from the default template because they are intended to be as "standalone" as possible, in case other template-system files are damaged:
+ Note that the following error-condition template files do not share common header components from the default template because they are intended to be as "standalone" as possible, in case other template-system files are damaged:
   - `includes/templates/template_default/templates/tpl_zc_phpupgrade_default.php`
   - `includes/templates/template_default/templates/tpl_zc_install_suggested_default.php`
+
+> CAUTION: Be mindful that upgrading Bootstrap between Bootstrap's "major" releases is usually a very cumbersome task because they change class-names and utility markup, which affects every page where Bootstrap markup is used (ie: every Admin page). But upgrading minor updates is mostly a drop-in-replacement of JS/CSS files.
 
 - Font Awesome: https://fontawesome.com/
   - `includes/templates/responsive_classic/common/html_header.php`
   - `admin/includes/admin_html_head.php`
   - `admin/includes/stylesheet.css`
 
+> CAUTION: Be mindful that upgrading FontAwesome between its "major" releases is usually a very cumbersome task because icon naming strategies may be different, which affects every page where FA icons are used (ie: numerous Admin pages, and Catalog templates). But upgrading minor updates is mostly a drop-in-replacement of some CSS files.
