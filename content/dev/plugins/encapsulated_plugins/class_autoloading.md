@@ -46,6 +46,11 @@ now in the admin/display_logs.php file, I can add this call after the line
 $cache = new Cache();
 $cache->test
 ```
+Note: we also need to add 
+```php
+use Zencart\Plugins\Admin\DisplayLogs\Cache;
+```
+to the beginning of the file.
 
 When the DisplayLogs plugin is installed we should see the `FOOOOO`output when navigating to its menu entry.
 
