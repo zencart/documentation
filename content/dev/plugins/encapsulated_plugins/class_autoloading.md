@@ -5,7 +5,7 @@ weight: 35
 layout: docs
 ---
 
-# Class Autoloading
+## Class Autoloading
 
 Encapsulated plugins allows you to Autoload classes based on 2 scenarios.
 
