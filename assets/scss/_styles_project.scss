@@ -32,39 +32,133 @@ pre > code {
   }
 }
 
+/* Sidebar Search Box - hide on mobile but leave hamburger visible */
+@media (max-width:767px) {
+  #content-mobile form.td-sidebar__search {
+    visibility:hidden;
+	padding-bottom:0;
+  }
+  .td-sidebar {
+    padding-bottom: 0;
+  }
+  #content-mobile form.td-sidebar__search button {
+    visibility:visible;
+  }
+}
+
+/* Mobile Search - resize Algolia popup */
+@media (min-width:460px) and (max-width:678px) {
+  .algolia-autocomplete .ds-dropdown-menu {
+    min-width:400px!important;
+  }
+}
+
+@media (max-width:459px) {
+  .algolia-autocomplete .ds-dropdown-menu {
+    min-width:300px!important;
+  }
+}
+
+
 /* Header - show search box on mobile */
 @media (max-width: 868px){
-.td-navbar {display:block;text-align:center;}
-.td-navbar .td-navbar-nav-scroll {font-size:1rem;}
-ul.navbar-nav.mt-2.mt-lg-0 {display:inline-flex;margin-top:0px!important;margin-left:1.5rem;}
-.td-navbar-cover {background: $primary!important;}
-.navbar-nav.d-none.d-lg-block {display:inline-block!important;margin-right:0.2rem}
+  .td-navbar {
+    position:relative;
+	display:block;
+	text-align:center;
+  }
+  .td-navbar .td-navbar-nav-scroll {
+    font-size:1rem;
+  }
+  ul.navbar-nav.mt-2.mt-lg-0 {
+    display:inline-flex;
+	  margin-top:0px!important;
+	    margin-left:1.5rem;
+  }
+  .td-navbar-cover {
+    background: $primary!important;
+  }
+  .navbar-nav.d-none.d-lg-block {
+    display:inline-block!important;
+	margin-right:0.2rem;
+	margin-left:2.1rem;
+  }
 }
 
 /* Header - alignment of elements */
-@media (min-width:869px) and (max-width:937px){
-.navbar-nav.d-none.d-lg-block {max-width:25%;display:inline-block!important;}
-ul.navbar-nav.mt-2.mt-lg-0 {margin-top:0!important;}
-#main_navbar {margin:0.25 auto 0;}
+
+@media (max-width: 768px) {
+  ul.navbar-nav.mt-2.mt-lg-0 {
+    margin-left: 1.5rem;
+  }
 }
 
-@media (min-width:938px) and (max-width: 991px){
-.navbar-nav.d-none.d-lg-block {max-width:27%;display:inline-block!important;margin-right:0.5rem}
-ul.navbar-nav.mt-2.mt-lg-0 {margin-top:0!important;}
+@media (min-width:768px) and (max-width:868px) {
+  #main_navbar {
+    margin: 0;
+  }
 }
 
-@media (min-width:992px) and (max-width:1090px){
-.navbar-nav.d-none.d-lg-block {max-width:27%;}
-ul.navbar-nav.mt-2.mt-lg-0 {margin-top:0!important;}
+@media (min-width:869px) and (max-width:937px) {
+  .navbar-nav.d-none.d-lg-block {
+    max-width: 25%;
+	display: inline-block!important;
+  }
 }
 
-/* Homepage - make header background solid on large screens to prevent text overlap (HACK) */ 
-@media (min-width:869px){
-.td-navbar-cover {background:#955239!important;}	
+@media (min-width:938px) and (max-width: 991px) {
+  .navbar-nav.d-none.d-lg-block {
+    max-width: 27%;
+	display: inline-block!important;
+	margin-right: 0.5rem;
+  }
+}
+
+@media (min-width:992px) and (max-width:1090px) {
+  .navbar-nav.d-none.d-lg-block {
+    max-width: 27%;
+  }
+}
+
+@media (max-width: 1090px) {
+  ul.navbar-nav.mt-2.mt-lg-0 {
+    margin-top: 0!important;
+  }
+}
+
+/* Left Column - reduce indent of headings without child */
+
+nav.foldable-nav .without-child {
+  padding-left: 0.7em;
+}
+#td-section-nav {padding-top:0.5em;}
+
+/* Left Column - hide search box */
+@media (min-width:768px) {
+  #content-mobile form.td-sidebar__search {
+    display:none!important;
+  }
+  .td-sidebar {
+    padding-top: 0.5rem;
+  }
+  .td-main main {
+    padding-top: 1.5rem;
+  }
+}
+
+/* Homepage - make header background solid on large screens to prevent text overlap */
+ 
+@media (min-width:869px) {
+  .td-navbar-cover {
+    background: #955239!important;
+  }	
 }
 
 /* Homepage - center body elements */
-ul.mainpage_list {padding-left:0;}
+
+ul.mainpage_list {
+  padding-left:0;
+}
 
 /* Homepage - Correct Color Contrast for Footer Links */
 .col-12.col-sm-4.text-center.py-2.order-sm-2 a {color: #6aafff;}
