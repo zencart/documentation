@@ -43,6 +43,8 @@ Embedded references to external files that may require updating:
 - jQuery mmenu: https://plugins.jquery.com/mmenu/
   - `includes/templates/responsive_classic/common/html_header.php `
   - `includes/templates/responsive_classic/templates/tpl_modules_mobile_menu.php `
+ 
+Note that the license for mmenu changed in their v5.6.0 to CC-BY-NC-4.0, which is not compatible with Zen Cart's GPLv2 license. So cannot distribute 5.6.0 or newer with Zen Cart. Bugfixes must be applied directly to current distro files instead.
 
 - jQuery UI: https://jqueryui.com/ 
   - `admin/includes/admin_html_head.php`
