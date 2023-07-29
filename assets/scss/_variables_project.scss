@@ -60,3 +60,9 @@ img {
     min-width: 17rem;
   }
 }
+
+@media (min-width:768px) { 
+  body > div.container-fluid.td-outer > div.td-main {
+     margin-top: 4.2rem;
+  } 
+}
