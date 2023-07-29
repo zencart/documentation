@@ -22,6 +22,8 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 - If you use a custom template, check it against [the template changes list](/user/template/template_changes/). 
 
+- If you use a custom template, you will want to perform your own [accessibility review](/user/template/accessibility/).  
+
 ### Zen Cart 2.0.0 
 
 - This release removes the older files that were used prior to the creation of `admin_html_head.php` in Zen Cart 1.5.7.  Please see [Admin head content](/dev/plugins/admin_head_content/) for details. 
@@ -108,13 +110,25 @@ Plugin pages that do not require indexing (such as Back In Stock subscribe/unsub
 
 ### Zen Cart 1.5.5
 
+- The second argument to `$db->perform` was expanded.  In Zen 1.5.4 and below, the field name was the key, and the field value the array value 
+
+```
+$sql_data_array['customers_gender'] = $customers_gender;
+```
+
+Now the keys have no significance and each array value is self-describing:
+
+```
+$sql_data_array[] = array('fieldName'=>'customers_gender', 'value'=>$customers_gender, 'type'=>'stringIgnoreNull');
+```
+
 - The arguments for the notifier `NOTIFY_ORDER_AFTER_SEND_ORDER_EMAIL` were changed.  This necessitated a code change in the observers watching for it. 
 
 - The `responsive_classic` template was introduced in this release.  If you are coming from an older release with an older template, be sure to check and verify that your template performs properly on mobile devices.  If not, you can use Responsive Classic or select another responsive template.
 
 - Starting in this version, the email css was pulled out of the individual templates into a shared file called `email/email_common.css`.  If you are creating or updating email templates, you should follow this new practice. 
 
-- The phpBB object was removed
+- The phpBB object was removed.
 
 ### Zen Cart 1.5.2 
 
