@@ -44,6 +44,9 @@ the specified file if you're not sure where a change should go.
 
 * `templates/tpl_reviews_default.php` - use `zen_output_string_protected` for review display.
 
+## Accessibility Changes
+
+Starting in Zen Cart 1.5.6 and continuing in Zen Cart 1.5.8 and 1.5.8, significant improvements were made to both the Bootstrap and Responsive Classic templates to ensure they meet accessibility guidelines.  If you are using a custom template, you will want to perform your own [accessibility review](/user/template/accessibility/).  
 
 ## Anti-Spam 
 
