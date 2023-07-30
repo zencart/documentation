@@ -22,7 +22,7 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 - If you use a custom template, check it against [the template changes list](/user/template/template_changes/). 
 
-- If you use a custom template, you will want to perform your own [accessibility review](/user/template/accessibility/).  
+- If you use a custom template, you will want to perform your own [accessibility review](/user/accessibility/accessibility/).  
 
 ### Zen Cart 2.0.0 
 

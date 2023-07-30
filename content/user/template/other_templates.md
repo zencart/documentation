@@ -42,3 +42,15 @@ As is noted in the [detailed upgrading guide](/user/upgrading/detailed_upgrading
 > Tweaking templates "to perfection" can endlessly delay implementing an upgrade if you aren't diligent. 
 
 If you *must* change templates (because you're coming from an old version of Zen Cart with a non-responsive template, for example), consider using the [Responsive Classic](/user/template/responsive_classic/) template until your upgrade is complete and live, and *then* changing your template. 
+
+
+## Accessibility and Templates
+Both the 
+[Responsive Classic template](/user/template/responsive_classic/) and the 
+[Bootstrap template](/user/template/bootstrap/) are not only kept up to date,
+but are rated highly by accessibility testers out of the box.  If you use
+another template - particularly a commercial template - you will have to 
+perform your own [accessibility testing](/user/accessibility/accessibility/) and 
+make any necessary adjustments yourself. 
+
+

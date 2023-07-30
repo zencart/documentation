@@ -16,7 +16,7 @@ This is a partial list of regular maintenance activities you should do on your s
 - Check your [JavaScript libraries](/user/upgrading/javascript_updates/). Be sure you're not running a version with known vulnerabilities. 
 - Use [Google Chrome Inspect](/user/running/inspect/) or [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights) to test the performance of your site and look for problems.  Many other web page speed testing tools exist; try them too.
 - Perform a [security audit](/user/security/security_recommendations/#12-things-to-check-up-on-regularly) on your site. 
-- Check your [website accessibility](/user/template/accessibility/). **This is particularly important for websites in the United States due to litigation risk.**
+- Check your [website accessibility](/user/accessibility/accessibility/). **This is particularly important for websites in the United States due to litigation risk.**
 - Optional: Run "Optimize Database" from [Admin > Tools > Store Manager](/user/admin_pages/tools/store_manager/). 
 
 
