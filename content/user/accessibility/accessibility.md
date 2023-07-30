@@ -79,11 +79,37 @@ The manager at your local grocery will keep the milk, bread, and eggs separate. 
 
 Additionally, from the SEO standpoint, search engines frown upon separate products for each option and reward logical attribute use.
 
-#### Where's My Help?
+### Where's My Help?
 
-There's a good [video](https://www.youtube.com/watch?v=3f31oufqFSM) that shows the ways you can increase accessibility on your site.
+As the digital landscape evolves, web accessibility has become a crucial aspect of website development. Ensuring that all users, regardless of disabilities or impairments, can access and interact with online content is not only ethically important but also a legal requirement in many jurisdictions. The following articles include Important items you should check on your site, commonly used test programs, and other useful tools. By using a combination of these tools, website owners can gain valuable insights into potential barriers and take necessary steps to make their websites accessible to all users, regardless of their abilities or disabilities.
 
-Several free testers are available on the internet.  If you are using Chrome, Opera, or Firefox browsers, an Accessibility Test is already available for your browser as an extension.  Just go to the [W3C Easy Check Page](https://www.w3.org/WAI/test-evaluate/preliminary/) and click on the *Tools: WebDev Toolbar and IE WAT (Optional)* link for more information about your browser's extension.
+#### Important Accessibility Concerns
+
+* ALT Text
+* Color Contrast
+* ARIA Labels
+
+#### Available Tools
+
+The following free tools are valuable in assessing the accessibility of a website.  Most will only test the current page and all are not infallible.  Along with viewing the website's actual code, using several of the following tools on any site where accessibility compliance is in doubt is a good practice.
+
+* Lighthouse
+* ANDI by SSA
+* WebAIM's WAVE
+* Siteimprove's Chrome Extension
+* Axe DevTools free version
+* siegemedia's Contrast Ratio Tool
+* Accessibility Widgets
+
+#### Other Useful Tools
+
+Yes, there are several other free tools that can be included in the list to help website owners meet accessibility standards and ensure their websites are more inclusive. Here are a few notable ones:
+
+* AChecker - AChecker is an open-source accessibility evaluation tool that allows website owners to upload their web pages for assessment against WCAG standards. It offers detailed reports and guidance for improving accessibility.
+* HTML_CodeSniffer - HTML_CodeSniffer is a bookmarklet that scans web pages for accessibility issues, providing feedback based on WCAG guidelines. It is a free, easy-to-use tool that can be added to any browser.
+* NoCoffee Vision Simulator - NoCoffee is a browser extension that simulates various visual impairments, such as color blindness and low vision, allowing website owners to experience how their content appears to users with these disabilities.
+* NVDA Screen Reader - NVDA (NonVisual Desktop Access) is a free, open-source screen reader for Windows. Website owners can use NVDA to test their website's compatibility with screen readers and ensure a seamless experience for users with visual impairments.
+* VoiceOver - VoiceOver is a built-in screen reader on macOS and iOS devices. Website owners with access to Apple devices can use VoiceOver to test their websites' accessibility for users with visual impairments.
 
 ---
 <!-- please keep this at the end --> 
