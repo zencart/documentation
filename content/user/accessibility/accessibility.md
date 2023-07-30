@@ -2,7 +2,7 @@
 title: Accessibility Overview
 description: WCAG and Section 508
 category: accessibility
-weight: 10
+weight: 5
 ---
 
 Before you read this article, please be sure you are familiar with [Basic Terms](/user/first_steps/basic_terms/) used in describing Zen Cart files. 
