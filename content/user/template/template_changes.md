@@ -46,7 +46,7 @@ the specified file if you're not sure where a change should go.
 
 ## Accessibility Changes
 
-Starting in Zen Cart 1.5.6 and continuing in Zen Cart 1.5.8 and 1.5.8, significant improvements were made to both the Bootstrap and Responsive Classic templates to ensure they meet accessibility guidelines.  If you are using a custom template, you will want to perform your own [accessibility review](/user/template/accessibility/).  
+Starting in Zen Cart 1.5.6 and continuing in Zen Cart 1.5.8 and 1.5.8, significant improvements were made to both the Bootstrap and Responsive Classic templates to ensure they meet accessibility guidelines.  If you are using a custom template, you will want to perform your own [accessibility review](/user/accessibility/accessibility/).  
 
 ## Anti-Spam 
 

@@ -49,6 +49,12 @@ It uses techniques like browser user-agent-detection to adapt its display for mo
 See [other templates for Zen Cart](/user/template/other_templates/) and 
 [the Responsive Classic FAQ](/user/template/responsive_classic/). 
 
+### What is the Bootstrap template? 
+The "Bootstrap" template is a community contribution which is well-supported and up to date. 
+It uses the Bootstrap library to adapt its display for mobile devices like phones and tablets.
+See [other templates for Zen Cart](/user/template/other_templates/) and 
+[the Bootstrap FAQ](/user/template/bootstrap/). 
+
 ---
 ### What other templates are available? 
 See [other templates for Zen Cart](/user/template/other_templates/).
