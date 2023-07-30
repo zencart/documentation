@@ -2,7 +2,7 @@
 title: All Time Favorites
 description: Frequently asked questions about Zen Cart 
 weight: 10
-noindex: true
+noindex: yes
 layout: docs
 ---
 
