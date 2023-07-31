@@ -90,12 +90,12 @@ The following articles include Important items you should check on your site, co
 The following free tools are valuable in assessing the accessibility of a website.  Most will only test the current page and all are not infallible.  Along with viewing the website's actual code, using several of the following tools on any site where accessibility compliance is in doubt is a good practice.
 
 * [Lighthouse](/user/accessibility/tools/lighthouse/)
-* ANDI by SSA
-* WebAIM's WAVE
-* Siteimprove's Chrome Extension
-* Axe DevTools free version
-* siegemedia's Contrast Ratio Tool
-* Accessibility Widgets
+* [ANDI by SSA].(/user/accessibility/tools/andi/)
+* [WebAIM's WAVE].(/user/accessibility/tools/wave/)
+* [Siteimprove's Chrome Extension].(/user/accessibility/tools/siteimprove/)
+* [Axe DevTools free version].(/user/accessibility/tools/devtools/)
+* [siegemedia's Contrast Ratio Tool].(/user/accessibility/tools/siegemedia/)
+* [Accessibility Widgets].(/user/accessibility/tools/widgets/)
 
 ### Other Useful Tools
 
@@ -110,8 +110,8 @@ Yes, there are several other free tools that can be included in the list to help
 ### Important Accessibility Concerns
 
 * [ALT Text](/user/accessibility/concerns/alt_text/)
-* Color Contrast
-* ARIA Labels
+* [Color Contrast].(/user/accessibility/concerns/color_contrast/)
+* [ARIA Labels].(/user/accessibility/concerns/aria_labels/)
 
 
 ---
