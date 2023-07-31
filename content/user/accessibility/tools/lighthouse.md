@@ -1,7 +1,7 @@
 ---
 title: Lighthouse 
 description: How can I use Google Lighthouse to test accessibility? 
-category: accessibility
+category: accessibility_tools
 weight: 10
 ---
 
