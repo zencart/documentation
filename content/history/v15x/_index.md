@@ -12,7 +12,7 @@ For information about the required versions of PHP and MySQL for each release, p
 
 Zen Cart version 1.5.8 and 1.5.8a can be found on Github: [https://github.com/zencart/zencart/releases](https://github.com/zencart/zencart/releases)
 
-Zen Cart v1.5.7 and older can be downloaded using these links:
+Zen Cart v1.5.0 to 1.5.7 can be downloaded using these links:
 - [zencart-1.5.7d.zip](/history/release-zips/15x-series/zencart-1.5.7d.zip) sha256: 0b115b58745cd09a0e4ae2795df437f051552d453ff9d0d9f333d96685836294
 - [zen-cart-v1.5.7c-03052021.zip](/history/release-zips/15x-series/zen-cart-v1.5.7c-03052021.zip) sha256: cbb282706e3a5dd7b3d8df445c1602d93b99bfc93a5bd0016b0e88fe2803fc43
 - [zen-cart-v1.5.7b-11232020.zip](/history/release-zips/15x-series/zen-cart-v1.5.7b-11232020.zip) sha256: 33ad7fa78a7506e659636920c78e23b5c3cbf4f7b586d11592af2dbf9f00129b
