@@ -7,7 +7,7 @@ weight: 20
 
 Ensuring Proper Color Contrast for Text, Buttons, and Links: A Comprehensive Guide
 
-## 33 Introduction
+## Introduction
 
 Color contrast is a critical aspect of web accessibility, ensuring that text, buttons, and links are easily readable for all users, including those with visual impairments. Proper color contrast enhances legibility and usability, providing a better user experience. In this guide, we will explore how to ensure color contrast is adequately addressed and checked for text, buttons, and links, including different states such as plain, hover, and active.
 

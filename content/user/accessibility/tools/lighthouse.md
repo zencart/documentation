@@ -11,6 +11,18 @@ Utilizing Google Lighthouse to Enhance Website Accessibility Standards
 
 Google Lighthouse, a powerful tool integrated into Google Chrome's Developer Tools, offers website owners an effective means to evaluate and improve their website's accessibility. In this article, we will explore how website owners can leverage Lighthouse to meet accessibility standards.
 
+## Accessing Lighthouse 
+
+In Google Chrome, right click and select "Inspect." 
+
+![Inspect](/images/browser_inspect.png)
+
+A dialog will come up with a number of options on the top menu bar.  Click "Lighthouse," which will be on the right hand side.
+
+![Lighthouse](/images/lighthouse.png)
+
+Sometimes it can be best to do this in an Incognito window if you have a lot of browser extensions. 
+
 ## Understanding Lighthouse:
 
 Lighthouse is an open-source automated tool that assesses the quality and performance of web pages. Originally designed for auditing web performance, it has since expanded to include audits for various aspects of web development, including accessibility. The accessibility audit examines a website for potential barriers that may impede users with disabilities from accessing and interacting with its content.
