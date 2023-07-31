@@ -1,3 +1,5 @@
+<hr>
+
 ### Language File Help: 
 - [Creating a Language Pack for Zen Cart 1.5.8 and above](/dev/languages/creating_a_language_pack/) 
 - [Language Files - New vs Legacy in 1.5.8](/dev/code/158_order_language_files/)
