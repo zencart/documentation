@@ -1,12 +1,17 @@
-### ALT Text
+---
+title: Alt Text
+description: What role does Alt Text play in accessibility? 
+category: accessibility
+weight: 10
+---
 
-The Significance of Alt Text in Web Accessibility and Best Practices for Creating It
+This document will discuss the significance of Alt Text in Web Accessibility,  and best practices for creating alt text.
 
-#### Introduction
+## Introduction
 
 Alt text, short for alternative text, is a crucial aspect of web accessibility. It is used to provide a text alternative to non-text content such as images, videos, and graphics. Alt text ensures that users with visual impairments or those using assistive technologies, such as screen readers, can understand the content conveyed by these elements. The good news is that most of your alt text needs are met by the Zen Cart software.  However, images you add to areas other than categories or products (e.g., define_ or EZpages) will need to have the alt text added. In this article, we will explore the importance of alt text in web accessibility and recommend some best practices for creating effective alt text.
 
-#### The Importance of Alt Text in Web Accessibility
+## The Importance of Alt Text in Web Accessibility
 
 * **Providing Context:** Alt text offers context and information about images and other non-text elements, enabling users who cannot perceive these elements visually to understand their purpose or content.
 
@@ -16,7 +21,7 @@ Alt text, short for alternative text, is a crucial aspect of web accessibility. 
 
 * **Ensuring Compliance with Web Accessibility Standards:** Providing alt text is a requirement under Web Content Accessibility Guidelines (WCAG). By adding appropriate alt text, website owners demonstrate their commitment to accessibility and inclusivity.
 
-#### Best Practices for Creating Alt Text
+## Best Practices for Creating Alt Text
 
 * **Be Descriptive and Informative:** Alt text should be concise yet descriptive, conveying the essential information about the image's content, purpose, or function. It should provide enough detail for users to understand the context without being overly verbose.
 
@@ -36,6 +41,6 @@ Alt text, short for alternative text, is a crucial aspect of web accessibility. 
 
 * **Testing with Screen Readers:** Test the alt text using popular screen readers, such as NVDA or VoiceOver, to verify that the descriptions are read accurately and provide the intended context.
 
-#### Conclusion
+## Conclusion
 
 By adhering to best practices for creating alt text, website owners can enhance the overall user experience and demonstrate their commitment to inclusivity. Descriptive and informative alt text enables users of assistive technologies to engage with content effectively, while considering the image's context and purpose ensures relevancy.

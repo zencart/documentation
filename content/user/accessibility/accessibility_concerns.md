@@ -5,5 +5,9 @@ category: accessibility
 weight: 10
 ---
 
-Content coming soon! 
+#### Important Accessibility Concerns
+
+* [ALT Text](/user/accessibility/alt_text/)
+* Color Contrast
+* ARIA Labels
 
