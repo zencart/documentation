@@ -89,29 +89,29 @@ The following articles include Important items you should check on your site, co
 
 The following free tools are valuable in assessing the accessibility of a website.  Most will only test the current page and all are not infallible.  Along with viewing the website's actual code, using several of the following tools on any site where accessibility compliance is in doubt is a good practice.
 
+* [Accessibility Checker from Siteimprove](/user/accessibility/tools/siteimprove/)
+* [ANDI from SSA](/user/accessibility/tools/andi/)
+* [Contrast Ratio Tool from Siege Media](/user/accessibility/tools/siegemedia/)
+* [DevTools free version from Axe](/user/accessibility/tools/devtools/)
 * [Lighthouse](/user/accessibility/tools/lighthouse/)
-* [ANDI by SSA](/user/accessibility/tools/andi/)
-* [WebAIM's WAVE](/user/accessibility/tools/wave/)
-* [Siteimprove's Chrome Extension](/user/accessibility/tools/siteimprove/)
-* [Axe DevTools free version](/user/accessibility/tools/devtools/)
-* [siegemedia's Contrast Ratio Tool](/user/accessibility/tools/siegemedia/)
-* [Accessibility Widgets](/user/accessibility/tools/widgets/)
+* [WAVE from WebAIM](/user/accessibility/tools/wave/)
 
 ### Other Useful Tools
 
 Yes, there are several other free tools that can be included in the list to help website owners meet accessibility standards and ensure their websites are more inclusive. Here are a few notable ones:
 
-* AChecker - AChecker is an open-source accessibility evaluation tool that allows website owners to upload their web pages for assessment against WCAG standards. It offers detailed reports and guidance for improving accessibility.
-* HTML_CodeSniffer - HTML_CodeSniffer is a bookmarklet that scans web pages for accessibility issues, providing feedback based on WCAG guidelines. It is a free, easy-to-use tool that can be added to any browser.
-* NoCoffee Vision Simulator - NoCoffee is a browser extension that simulates various visual impairments, such as color blindness and low vision, allowing website owners to experience how their content appears to users with these disabilities.
-* NVDA Screen Reader - NVDA (NonVisual Desktop Access) is a free, open-source screen reader for Windows. Website owners can use NVDA to test their website's compatibility with screen readers and ensure a seamless experience for users with visual impairments.
-* VoiceOver - VoiceOver is a built-in screen reader on macOS and iOS devices. Website owners with access to Apple devices can use VoiceOver to test their websites' accessibility for users with visual impairments.
+* [Accessibility Widgets](/user/accessibility/tools/widgets/) - Accessibility widgets (like the one on this site) are a popular aid to accessibility.
+* [AChecker](https://websiteaccessibilitychecker.com/checker/index.php) - AChecker is an open-source accessibility evaluation tool that allows website owners to upload their web pages for assessment against WCAG standards. It offers detailed reports and guidance for improving accessibility.
+* [HTML_CodeSniffer](https://squizlabs.github.io/HTML_CodeSniffer/) - HTML_CodeSniffer is a bookmarklet that scans web pages for accessibility issues, providing feedback based on WCAG guidelines. It is a free, easy-to-use tool that can be added to any browser.
+* [NoCoffee Vision Simulator](https://uxpro.cc/toolbox/nocoffee/) - NoCoffee is a browser extension that simulates various visual impairments, such as color blindness and low vision, allowing website owners to experience how their content appears to users with these disabilities.
+* [NVDA Screen Reader](https://www.nvaccess.org/download/) - NVDA (NonVisual Desktop Access) is a free, open-source screen reader for Windows. Website owners can use NVDA to test their website's compatibility with screen readers and ensure a seamless experience for users with visual impairments.
+* [VoiceOver](https://www.apple.com/voiceover/info/guide/_1121.html) - VoiceOver is a built-in screen reader on macOS and iOS devices. Website owners with access to Apple devices can use VoiceOver to test their websites' accessibility for users with visual impairments.
 
 ### Important Accessibility Concerns
 
 * [ALT Text](/user/accessibility/concerns/alt_text/)
-* [Color Contrast](/user/accessibility/concerns/color_contrast/)
 * [ARIA Labels](/user/accessibility/concerns/aria_labels/)
+* [Color Contrast](/user/accessibility/concerns/color_contrast/)
 
 
 ---

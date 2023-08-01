@@ -1,7 +1,7 @@
 ---
 title: Alt Text
 description: What role does Alt Text play in accessibility? 
-category: accessibility_concerns
+category: concerns
 weight: 10
 ---
 

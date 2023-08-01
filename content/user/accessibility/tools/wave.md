@@ -1,21 +1,21 @@
 ---
-title: WEbAIM's WAVE 
-description: A quick test of your page with WAVE 
-category: accessibility_tools
+title: WAVE from WebAIM
+description: Using WAVE to run a quick accessibility test of your page 
+category: tools
 weight: 30
 ---
 
-Enhancing Website Accessibility Standards with WebAIM's WAVE
-
 ## Introduction
 
-WebAIM's WAVE (Web Accessibility Evaluation Tool). Developed by the Web Accessibility In Mind (WebAIM) organization, WAVE is a user-friendly web accessibility evaluation tool that provides valuable insights into potential accessibility issues on websites. In this article, we will explore how website owners can effectively use WAVE to meet accessibility standards.
+WAVE (Web Accessibility Evaluation Tool) was developed by the Web Accessibility In Mind (WebAIM) organization. WAVE is a user-friendly web accessibility evaluation tool that provides valuable insights into potential accessibility issues on websites. In this article, we will explore how website owners can effectively use WAVE to meet accessibility standards.
+
+## Accessing WAVE 
+You can go to the [WebAIM website](https://wave.webaim.org/) to access the WAVE browser extension.  Alternatively, Chrome users can install it from the Chrome Web Store.
 
 ## Understanding WebAIM's WAVE
 
 WebAIM's WAVE is a web-based tool that allows website owners to assess their web pages for accessibility barriers. It provides a comprehensive report, identifying potential issues and offering helpful suggestions for improving accessibility. The tool is freely available, making it accessible to website owners of all backgrounds.
 
-* **Accessing WAVE** - To utilize WAVE, website owners can visit the WebAIM website and access the WAVE evaluation tool from the homepage. Alternatively, they can install the WAVE browser extension, which enables them to evaluate any webpage they visit directly from their browser.
 
 * **Running an Evaluation** - Once on the WAVE evaluation page or while browsing a specific webpage using the extension, website owners can initiate the evaluation process by clicking the "Evaluate" button. WAVE will then analyze the webpage's elements and provide a detailed accessibility report.
 

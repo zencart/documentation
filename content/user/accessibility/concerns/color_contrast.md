@@ -1,8 +1,8 @@
 ---
 title: Color Contrast
 description: What role does Color Contrast play in accessibility? 
-category: accessibility_concerns
-weight: 20
+category: concerns
+weight: 10
 ---
 
 Ensuring Proper Color Contrast for Text, Buttons, and Links: A Comprehensive Guide
