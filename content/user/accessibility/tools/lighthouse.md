@@ -13,11 +13,11 @@ Google Lighthouse, a powerful tool integrated into Google Chrome's Developer Too
 
 ## Accessing Lighthouse 
 
-In Google Chrome, right click and select "Inspect." 
+In Google Chrome, right-click and select "Inspect." 
 
 ![Inspect](/images/browser_inspect.png)
 
-A dialog will come up with a number of options on the top menu bar.  Click "Lighthouse," which will be on the right hand side.
+A dialog will come up with a number of options on the top menu bar.  Click "Lighthouse," which will be on the right-hand side.
 
 ![Lighthouse](/images/lighthouse.png)
 
@@ -27,11 +27,11 @@ Sometimes it can be best to do this in an Incognito window if you have a lot of 
 
 Lighthouse is an open-source automated tool that assesses the quality and performance of web pages. Originally designed for auditing web performance, it has since expanded to include audits for various aspects of web development, including accessibility. The accessibility audit examines a website for potential barriers that may impede users with disabilities from accessing and interacting with its content.
 
-* **Running the Accessibility Audit** - To utilize Lighthouse for accessibility auditing, website owners can simply open their website in Google Chrome, access the Developer Tools (F12 key or right-click and choose "Inspect"), and navigate to the "Lighthouse" tab. From there, they can choose the "Accessibility" option and run the audit.
+* **Running the Accessibility Audit** - To utilize Lighthouse for accessibility auditing, website owners can simply open their website in Google Chrome, access the Developer Tools (F12 key or right-click and choose "Inspect"), and navigate to the "Lighthouse" tab. From there, they can select the "Accessibility" option and run the audit.
 
 * **Analyzing the Accessibility Report** - Once the audit is complete, website owners will receive an accessibility report detailing issues that need attention. The report is divided into categories, each highlighting specific elements affecting accessibility, such as contrast ratios, semantic structure, keyboard navigation, and more. Each item is accompanied by a severity level, indicating its impact on users, and suggestions for improvement.
 
-* **Addressing Accessibility Issues** - After reviewing the report, website owners can prioritize addressing the flagged issues. Lighthouse not only identifies the problems but also provides guidance on how to rectify them. For example, it may suggest adding alternative text to images, properly labeling form elements, or improving focus states for keyboard navigation.
+* **Addressing Accessibility Issues** - Website owners can prioritize addressing the flagged issues after reviewing the report. Lighthouse not only identifies the problems but also provides guidance on how to rectify them. For example, it may suggest adding alternative text to images, correctly labeling form elements, or improving focus states for keyboard navigation.
 
 * **Ensuring Keyboard Accessibility** - One of the key aspects of web accessibility is ensuring that all functionalities are operable through keyboard inputs alone, as some users rely on assistive technologies like screen readers or keyboard navigation. Lighthouse evaluates a website's keyboard accessibility, and website owners can use this feedback to make necessary adjustments, such as implementing focus styles and avoiding elements that solely rely on mouse interactions.
 * **Assessing Color Contrast** - Color contrast is essential for users with visual impairments. Lighthouse assesses the color contrast of text and background elements, and website owners can make necessary changes to ensure content remains easily legible for all users.
