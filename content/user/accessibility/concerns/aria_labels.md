@@ -1,7 +1,7 @@
 ---
 title: ARIA Labels
 description: What is an ARIA Label 
-category: accessibility_concerns
+category: concerns
 weight: 10
 ---
 

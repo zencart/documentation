@@ -1,21 +1,21 @@
 ---
-title: Lighthouse 
-description: Usig the Chrome extension from siteimprove 
-category: accessibility_tools
-weight: 40
+title: Accessibility Checker from Siteimprove 
+description: Using the Chrome extension Siteimprove Accessibility Checker
+category: tools
+weight: 10
 ---
-
-Improving Website Accessibility Standards with Siteimprove's Chrome Extension
 
 ## Introduction
 
-Siteimprove Chrome extension. Siteimprove is a renowned digital accessibility and quality assurance platform that offers a powerful Chrome extension to help website owners identify and address accessibility issues. In this article, we will explore how website owners can effectively use Siteimprove's Chrome extension to meet accessibility standards.
+Siteimprove is a digital accessibility and quality assurance platform that offers a powerful Chrome extension to help website owners identify and address accessibility issues. In this article, we will explore how website owners can effectively use Siteimprove's Chrome extension to meet accessibility standards.
+
+## Accessing Siteimprove Accessibility Checker
+
+Chrome users can go to the [Chrome Web Store](https://chrome.google.com/webstore/category/extensions) and search for "Siteimprove Accessibility Checker"]. 
 
 ## Understanding Siteimprove's Chrome Extension
 
 Siteimprove's Chrome extension is a versatile tool that provides a real-time evaluation of a website's accessibility and quality. It integrates seamlessly into the Chrome browser, enabling website owners to access comprehensive insights into potential accessibility barriers while navigating their own websites or exploring other web pages. The extension empowers website owners to identify issues promptly, receive detailed reports, and take proactive steps toward improving accessibility.
-
-* **Installing the Chrome Extension** - To begin using Siteimprove's Chrome extension, website owners can find it in the Chrome Web Store and add it to their browser. Once installed, the extension places an icon in the browser's toolbar for easy access.
 
 * **Real-Time Accessibility Analysis** - After installation, the extension works seamlessly while browsing the web. Website owners can visit their own website or any other page and activate the extension by clicking on the icon. The extension then performs a real-time accessibility analysis of the page, highlighting any potential issues.
 

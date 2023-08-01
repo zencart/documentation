@@ -1,11 +1,9 @@
 ---
 title: Accessibility Widgets
 description: Are Accessibility Widgets a Magic Wand?
-category: accessibility
+category: tools
 weight: 70
 ---
-
-Not Necessarily a Tool, But "Icing on the Cake"
 
 ## Introduction:
 

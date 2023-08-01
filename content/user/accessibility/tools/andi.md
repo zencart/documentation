@@ -1,21 +1,22 @@
 ---
 title: ANDI from SSA
 description: Testing Accessibility Compliance with ANDI 
-category: accessibility_tools
-weight: 20
+category: tools
+weight: 10
 ---
-
-Enhancing Website Accessibility Standards with ANDI
 
 ## Introduction
 
 Accessible Name and Description Inspector (ANDI). Developed by the Social Security Administration (SSA), ANDI is a powerful browser extension that empowers website owners to assess and improve their website's accessibility. In this article, we will explore how website owners can effectively use ANDI to meet accessibility standards.
 
+## Accessing ANDI 
+
+To get started with ANDI, website owners can install the extension in their preferred browser from [the official ANDI site](https://www.ssa.gov/accessibility/andi/help/install.html). Once installed, ANDI becomes readily available as a toolbar icon, ready for use on any webpage.
+
+
 ## Understanding ANDI
 
 Accessible Name and Description Inspector (ANDI) is a free, open-source browser extension available for Google Chrome and Mozilla Firefox. It is designed to help developers and website owners evaluate the accessibility of web elements and assess how screen readers interpret the content. ANDI assists in identifying potential issues related to alternative text for images, ARIA (Accessible Rich Internet Applications) attributes, and other accessibility features.
-
-* **Installing ANDI** - To get started with ANDI, website owners can install the extension in their preferred browser from the official repository. Once installed, ANDI becomes readily available as a toolbar icon, ready for use on any webpage.
 
 * **Examining Alternative Text for Images** - A significant aspect of web accessibility is providing alternative text for images. With ANDI, website owners can easily examine the alt attributes of images on their website. It allows them to ensure that every image is equipped with descriptive and meaningful alternative text, enabling users with visual impairments to comprehend the content conveyed by images.
 
