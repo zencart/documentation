@@ -10,23 +10,28 @@ The Server/Version info page allows you to view information about the server
 on which you are running Zen Cart. 
 
 The information at the top of the page gives you a quick snapshot of the most 
-critical values: 
+critical server configuration items: 
 
-- (a) PHP Version: Version of PHP you are using.
-- (b) Database Engine: Version of MySQL you are using.
-- (c) PHP Memory Limit: The amount of memory a script is allowed to allocate, per the [PHP Documentation on this setting](https://www.php.net/manual/en/ini.core.php#ini.memory-limit).  Read more about choosing an initial value for memory limit in [PHP memory limit and Zen Cart](/user/first_steps/server_requirements/#php-memory-recommendations), and checking and updating the value in [PHP memory_limit](/user/running/memory_limit/).
+- (a) PHP Version: Version of PHP you are using
+- (b) Database Engine: Version of MySQL you are using
+- (c) PHP Memory Limit: The amount of memory a script is allowed to allocate, per the [PHP Documentation on this setting](https://www.php.net/manual/en/ini.core.php#ini.memory-limit).  Read more about choosing an initial value for memory limit in [PHP memory limit and Zen Cart](/user/first_steps/server_requirements/#php-memory-recommendations), and checking and updating the value in [PHP memory_limit](/user/running/memory_limit/)
 - (d) Database: (Since Zen Cart 1.5.6) the name of the database from your `admin/includes/configure.php` file 
 
-Below this is the history of your database (e).
+Next is information about Zen Cart itself: 
+- (e) history of your database
+- (f) your Zen Cart version
 
-Below (a) is the output of [`phpinfo()`](https://www.php.net/manual/en/function.phpinfo.php). 
+Note: The best practice is to be running the [latest Zen Cart version](/user/first_steps/get_zen_cart/). 
+
+Next, below (a) is the output of [`phpinfo()`](https://www.php.net/manual/en/function.phpinfo.php). 
 
 <img src="/images/version_info_zc_156.png" alt="Zen Cart Version information" />
+<br>
 
 Be sure the version of PHP you are running is a 
 [supported version](https://www.php.net/supported-versions.php). 
 Running an older unsupported version leaves you vulnerable to attack 
-by bad guys.  Stay up to date! 
+by bad guys.  Note that updating PHP sometimes means [upgrading your Zen Cart software](/user/upgrading) so that you're running the [latest Zen Cart version](/user/first_steps/get_zen_cart/). 
 
 If your Database Engine value shows *MariaDB*, 
 then, if needed, you can see the 
