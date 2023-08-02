@@ -39,6 +39,10 @@ Both widgets are AI-driven web accessibility solutions that aim to make websites
 
 * **Legal Compliance** - Relying solely on a widget may not be sufficient to meet legal requirements for accessibility in some jurisdictions, where full WCAG compliance is mandated.
 
+## Getting a Widget for Your Site
+
+If you'd like to get a widget like this for your website, you may purchase one from our [Zen Cart Certified hosting partner MyZenCartHost.com](https://ada4zencart.com). 
+
 ## Conclusion
 
 These widgets are not a "Magic Wand". They can be a helpful step toward making a website more accessible, especially for smaller businesses with limited resources. However, it's important to recognize that such tools have limitations and may not fully address the diverse needs of users with disabilities. To achieve true and comprehensive accessibility, website owners should consider combining automated solutions with manual accessibility audits and updates. Collaborating with accessibility experts and implementing a more holistic approach will result in a website that is genuinely inclusive and welcoming to all users, regardless of their abilities or disabilities.
