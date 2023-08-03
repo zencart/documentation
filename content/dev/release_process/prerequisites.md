@@ -25,6 +25,8 @@ Once you have these things, you're almost ready to begin.
 # Final Steps Before Beginning
 ## Update the versioning files: 
 
+NOTE: If you are setting up a pre-release, please see [Pre-Release Notes](/dev/release_process/pre_release_notes/).
+
 1. Edit the file `includes/version.php` and update the version.
 
 1. Edit the file `zc_install/includes/version.php` and update the version.

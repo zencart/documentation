@@ -6,7 +6,7 @@ layout: docs
 type: codepage
 ---
 
-These are all the zips released in the 1.5.x series.
+These are all the zips released in the 1.5.x series up to 1.5.7d.
 
 For information about the required versions of PHP and MySQL for each release, please see [the server requirements page](/user/first_steps/server_requirements/).
 
