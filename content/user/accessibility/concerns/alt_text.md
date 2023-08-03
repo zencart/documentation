@@ -5,11 +5,9 @@ category: concerns
 weight: 10
 ---
 
-This document will discuss the significance of Alt Text in Web Accessibility,  and best practices for creating alt text.
-
 ## Introduction
 
-Alt text, short for alternative text, is a crucial aspect of web accessibility. It is used to provide a text alternative to non-text content such as images, videos, and graphics. Alt text ensures that users with visual impairments or those using assistive technologies, such as screen readers, can understand the content conveyed by these elements. The good news is that most of your alt text needs are met by the Zen Cart software.  However, images you add to areas other than categories or products (e.g., define_ or EZpages) will need to have the alt text added. In this article, we will explore the importance of alt text in web accessibility and recommend some best practices for creating effective alt text.
+Alt text, short for alternative text, is a crucial aspect of web accessibility. It is used to provide a text alternative to non-text content such as images, videos, and graphics. Alt text ensures that users with visual impairments or those using assistive technologies, such as screen readers, can understand the content conveyed by these elements. The good news is that most of your alt text needs are met by the Zen Cart software.  However, images you add to areas other than categories or products (e.g., define_ or EZpages) will need to have alt text added. In this article, we will explore the importance of alt text in web accessibility and recommend some best practices for creating effective alt text.
 
 ## The Importance of Alt Text in Web Accessibility
 
@@ -17,9 +15,9 @@ Alt text, short for alternative text, is a crucial aspect of web accessibility. 
 
 * **Assisting Screen Reader Users:** Screen readers rely on alt text to describe images to users with visual impairments. Well-crafted alt text ensures that these users are not excluded from comprehending the visual content on the website.
 
-* Enhancing SEO:** Alt text is beneficial for search engine optimization (SEO). When search engine crawlers index a website, they use alt text to understand and rank the relevance of images and other non-text content, potentially improving the website's search engine rankings.
+* **Enhancing SEO:** Alt text is beneficial for search engine optimization (SEO). When search engine crawlers index a website, they use alt text to understand and rank the relevance of images and other non-text content, potentially improving the website's search engine rankings.
 
-* **Ensuring Compliance with Web Accessibility Standards:** Providing alt text is a requirement under Web Content Accessibility Guidelines (WCAG). By adding appropriate alt text, website owners demonstrate their commitment to accessibility and inclusivity.
+* **Ensuring Compliance with Web Accessibility Standards:** Providing alt text is a requirement under Web Content Accessibility Guidelines (WCAG). By adding appropriate alt text, you demonstrate your commitment to accessibility and inclusivity.
 
 ## Best Practices for Creating Alt Text
 
@@ -43,4 +41,4 @@ Alt text, short for alternative text, is a crucial aspect of web accessibility. 
 
 ## Conclusion
 
-By adhering to best practices for creating alt text, website owners can enhance the overall user experience and demonstrate their commitment to inclusivity. Descriptive and informative alt text enables users of assistive technologies to engage with content effectively, while considering the image's context and purpose ensures relevancy.
+By adhering to best practices for creating alt text, you can enhance the overall user experience and demonstrate your commitment to inclusivity. Descriptive and informative alt text enables users of assistive technologies to engage with content effectively, while considering the image's context and purpose ensures relevancy.
