@@ -6,9 +6,15 @@ layout: docs
 type: codepage
 ---
 
-These are links to historic Zen Cart release zips.
+## Primary
+[Latest Releases](https://github.com/zencart/zencart/releases)
 
-Currently we host all of the 15x series zips, with older zips hosted on sourceforge.net
+You can find all Zen Cart releases since v1.5.0 on [Github at https://github.com/zencart/zencart/releases](https://github.com/zencart/zencart/releases)
+
+
+## Older Links
+
+Links to older versions can also be found below:
 
 - [v15x series](/history/v15x/)
 - [v13x series](/history/v13x/)  
