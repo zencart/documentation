@@ -9,7 +9,7 @@ Before you read this article, please be sure you are familiar with [Basic Terms]
 
 ## What is Accessibility? 
 
-Web Content Accessibility Guidelines (WCAG) is developed through the W3C process in cooperation with individuals and organizations around the world, with the goal of providing a single shared standard for web content accessibility that meets the needs of individuals, organizations, and governments internationally.  You'll find a great article on the [W3C Web Design and Applications page](https://www.w3.org/standards/webdesign/accessibility).
+Web Content Accessibility Guidelines (WCAG) were developed with the goal of providing a single shared standard for web content accessibility that meets the needs of individuals, organizations, and governments internationally.  You'll find a great article on the [W3C Web Design and Applications page](https://www.w3.org/standards/webdesign/accessibility) that explains this initiative.
 
 What follows are just a few of the things that Zen Cart users should consider when creating or editing their template and site.  Think of it as a quick triumvirate of accessibility steps to think about.  These three are the most common accessibility standards that should be considered when adding anything to your site.
 
@@ -35,12 +35,22 @@ In fact, the contrast ratio this produces is 3.99 to 1, which fails three out of
 </div>
 <br>
 
-
 See the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) for more details.
+
+Can we improve this message further?  Yes we can!  
+
+People with visual impairments may not realize that the red message you are displaying is a serious error (rather than just a status message).  You can enhance the accessibility of messages using icons or other images that re-enforce what you are saying. 
+
+<div border="1" style="background:#FFFFFF; border: 1px solid black; padding: 5px;">
+<i class="fas fa-exclamation-triangle" title="error" style="color: #B30000"></i><font color="#B30000"></i>This is an error message!</font>
+</div>
+<br>
+
+You could also use a stop sign, or high/medium/low icons to ensure your message is understood by the visually impaired.  And what's best is that this is a win-win, because it helps your fully sighted viewers recognize the importance of the message too. 
 
 ## What Am I Looking At?
 
-But Accessibility is not just about the visually challenged.  What about the folks in developing countries or a remote ranch in Texas or Montana?  What's the average internet speed in the Alaskan Bush?  You might wonder what they would have in common but, probably just because you're in your home or office with megabytes of bandwidth.  There are folks who are still using virtual dial-up speed to surf the net!
+Accessibility is not just about the visually challenged.  What about the folks in developing countries or a remote ranch in Texas or Montana?  What's the average internet speed in the Alaskan Bush?  You might wonder what they would have in common but, probably just because you're in your home or office with megabytes of bandwidth.  There are folks who are still using virtual dial-up speed to surf the net!
 
 "What am I supposed to do about their problem?" you might ask.  The answer is Alternative Text for Images.  How does that help their problem?
 
@@ -73,21 +83,29 @@ Any time you add an image to your site, make sure the alt tag is included and un
 
 Remember the number of visually challenged individuals in the US?  Well, there's another 1.2 percent of the population that can be affected by "Special Effects" on your website.  Remember the big rage of blinking text in the \'80s and \'90s?  Well, there are a lot of folks who got physically ill from the blinking.  Fast-moving sliders, quick pop-ups, and even color changes on hover can be a problem for these folks.
 
-## Where Can I find ...?
+## What should I test? 
 
-The manager at your local grocery will keep the milk, bread, and eggs separate.  Not to meet some federal, state, or local standard, but to make you go throughout the store while shopping rather than go to one counter and leave.  Is it good practice for your website?  Probably not.  If I'm looking for the latest team tee shirts for my wife and me, what would be the most convenient way to shop for those?  Maybe mixing the men's and women's together in one product is over the top but, having a separate product for each size or color can go the other way and frustrate the customer.  Imagine having to go to one page for the shirt, another for the color, and another for the size.  You might think no one would do that but, it happens.  Zen Cart provides the Attributes Controller to help you consolidate the options for an item and make shopping easier for your client.
+Testing every single page on your site is not practical or even required.  You can get good coverage starting with these tests: 
 
-Additionally, from the SEO standpoint, search engines frown upon separate products for each option and reward logical attribute use.
+- Home Page 
+- Category Listing page (if you have categories with a depth of 2 or greater)
+- Product Listing page 
+- Product Info page 
+- Shopping Cart page 
+
+Once you've done that, look for non-product pages on your site: 
+- See what links are included in the site map - custom pages, define pages, etc. 
+- See what links are in the header, sideboxes and footer of your home page.  
 
 ## Where's My Help?
 
 As the digital landscape evolves, web accessibility has become a crucial aspect of website development. Ensuring that all users, regardless of disabilities or impairments, can access and interact with online content is not only ethically important but also a legal requirement in many jurisdictions. 
 
-The following articles include Important items you should check on your site, commonly used test programs, and other useful tools. By using a combination of these tools, website owners can gain valuable insights into potential barriers and take necessary steps to make their websites accessible to all users, regardless of their abilities or disabilities.
+The following articles include important items you should check on your site, commonly used test programs, and other useful tools. By using a combination of these tools, you can gain valuable insights into potential barriers and take necessary steps to make your websites accessible to all users, regardless of their abilities or disabilities.
 
 ### Accessibility Tools
 
-The following free tools are valuable in assessing the accessibility of a website.  Most will only test the current page and all are not infallible.  Along with viewing the website's actual code, using several of the following tools on any site where accessibility compliance is in doubt is a good practice.
+The following free tools are valuable in assessing the accessibility of a website.  Most will only test the current page and none are infallible.  Along with viewing the website's actual code, using several of the following tools on any site where accessibility compliance is in doubt is a good practice.
 
 * [Accessibility Checker from Siteimprove](/user/accessibility/tools/siteimprove/)
 * [ANDI from SSA](/user/accessibility/tools/andi/)
@@ -96,16 +114,19 @@ The following free tools are valuable in assessing the accessibility of a websit
 * [Lighthouse](/user/accessibility/tools/lighthouse/)
 * [WAVE from WebAIM](/user/accessibility/tools/wave/)
 
+### Accessibility Widgets 
+
+[Accessibility Widgets](/user/accessibility/tools/widgets/), like the one on this site in the lower right corner, are a popular aid to accessibility.  If you'd like to get a widget for your site, you may purchase one from a [Zen Cart Certified hosting partner](https://ada4zencart.com/index.php?main_page=index&referrer=C4ADA_11659651175).
+
 ### Other Useful Tools
 
-Yes, there are several other free tools that can be included in the list to help website owners meet accessibility standards and ensure their websites are more inclusive. Here are a few notable ones:
+Yes, there are several other free tools that can be included in the list to help you meet accessibility standards and ensure your websites are more inclusive. Here are a few notable ones:
 
-* [Accessibility Widgets](/user/accessibility/tools/widgets/) - Accessibility widgets (like the one on this site) are a popular aid to accessibility.
-* [AChecker](https://websiteaccessibilitychecker.com/checker/index.php) - AChecker is an open-source accessibility evaluation tool that allows website owners to upload their web pages for assessment against WCAG standards. It offers detailed reports and guidance for improving accessibility.
-* [HTML_CodeSniffer](https://squizlabs.github.io/HTML_CodeSniffer/) - HTML_CodeSniffer is a bookmarklet that scans web pages for accessibility issues, providing feedback based on WCAG guidelines. It is a free, easy-to-use tool that can be added to any browser.
-* [NoCoffee Vision Simulator](https://uxpro.cc/toolbox/nocoffee/) - NoCoffee is a browser extension that simulates various visual impairments, such as color blindness and low vision, allowing website owners to experience how their content appears to users with these disabilities.
-* [NVDA Screen Reader](https://www.nvaccess.org/download/) - NVDA (NonVisual Desktop Access) is a free, open-source screen reader for Windows. Website owners can use NVDA to test their website's compatibility with screen readers and ensure a seamless experience for users with visual impairments.
-* [VoiceOver](https://www.apple.com/voiceover/info/guide/_1121.html) - VoiceOver is a built-in screen reader on macOS and iOS devices. Website owners with access to Apple devices can use VoiceOver to test their websites' accessibility for users with visual impairments.
+* [AChecker](https://websiteaccessibilitychecker.com/checker/index.php) - an open-source accessibility evaluation tool that allows you to upload your web pages for assessment against WCAG standards. It offers detailed reports and guidance for improving accessibility.
+* [HTML_CodeSniffer](https://squizlabs.github.io/HTML_CodeSniffer/) - a bookmarklet that scans web pages for accessibility issues, providing feedback based on WCAG guidelines. It is a free, easy-to-use tool that can be added to any browser.
+* [NoCoffee Vision Simulator](https://uxpro.cc/toolbox/nocoffee/) - a browser extension that simulates various visual impairments, such as color blindness and low vision, allowing you to experience how your content appears to users with these disabilities.
+* [NVDA (Non Visual Desktop Access) Screen Reader](https://www.nvaccess.org/download/) - a free, open-source screen reader for Windows. You can use NVDA to test your website's compatibility with screen readers and ensure a seamless experience for users with visual impairments.
+* [VoiceOver](https://www.apple.com/voiceover/info/guide/_1121.html) - a built-in screen reader on macOS and iOS devices. Anyone with access to Apple devices can use VoiceOver to test their websites' accessibility for users with visual impairments.
 
 ### Important Accessibility Concerns
 
