@@ -1,6 +1,6 @@
 ---
-title: Upgrading plugins to work with 1.5.8/PHP 8.0+ 
-description: Upgrading old Zen Cart plugins to work with Zen Cart 1.5.8
+title: Upgrading plugins to work with PHP8+/1.5.8+
+description: Upgrading old Zen Cart plugins to work with PHP 8.x and Zen Cart 1.5.8+
 category: plugins
 ---
 
@@ -189,6 +189,15 @@ to
  $this->statisticModuleQueries = $db->queryCount(); 
 ```
 
+### PHP 8.0+ and missing constants 
+
+If you get a debug log like this: 
+
+```
+[04-Aug-2023 11:50:03 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "SOME_CONSTANT" in /Users/scott/Sites/gh_demo_200/...
+```
+
+please see [missing language constants](/user/localization/missing_language_constants/).
 
 
 {{% code_help_links %}} 

@@ -49,7 +49,7 @@ If your hoster updated your PHP version, be aware that if you're running an old 
 
 The most common customization errors include:  
 
-*   adding or deleting apostrophes or quotations (ie: ' or " marks) inside define() statements, resulting in mismatched quotes
+*   adding or deleting apostrophes or quotations (ie: ' or " marks) inside `define()` statements, resulting in mismatched quotes
 *   removing or adding punctuation to define() statements, thus breaking the correct syntax. A define() statement should look like this:
 
 ```
@@ -59,7 +59,7 @@ The most common customization errors include:
 *   missing semi-colons and periods, unbalanced parentheses, braces, brackets
 *   uploading files to the wrong places. For more information about overrides, see the [Overrides Chart](https://www.zen-cart.com/downloads.php?do=file&id=192)
 and the [Overrides FAQs](/user/template/template_overrides/). 
-*   When renaming files (for backup), be sure to NOT keep the extension ".php". For instance, rename header_php.php to header_php.old or header_php.php.20110701, BUT *NOT* header_php.old.php.
+*   When renaming files (for backup), be sure to NOT keep the extension ".php". For instance, rename header_php.php to header_php.old or header_php.php.20110701, **NOT** header_php.old.php.
 
 ## 5\. Do you have bad product data?
 
@@ -136,8 +136,7 @@ Kinds of errors:
 
 How to read the errors:  
 
-*   Note that many error/warning messages will be a result of previous error/warning messages.  
-    <font color="#FF0000">**Deal with them in the order they appear**,</font> and don't blame the later errors until the earlier ones are dealt with first.
+*   Note that many error/warning messages will be a result of previous error/warning messages.  <font color="#FF0000">**Deal with them in the order they appear**,</font> and don't spend time on the later errors until the earlier ones are dealt with first.
 *   One of the MOST COMMON errors you'll see is addressed here: [Warning: Headers Already Sent ...](/user/troubleshooting/warning_headers_already_sent/).
 *   Use the search option on this page to find answers to any other errors you find.
 
@@ -145,6 +144,10 @@ How to read the errors:
 
 If you're seeing a blank screen but have no log files in your /logs/ folder,
 it could be that your configuration has changed the default logging behavior.  See [Missing Log files](/user/troubleshooting/missing_log_files/). 
+
+### d) Common fixes 
+
+The [Upgrading plugins to 1.5.8](/dev/plugins/upgrading_to_158) page shows some common issues and fixes.
 
 * * *
 

@@ -74,3 +74,5 @@ $define['FEATURED'] = '<li><a href="' . zen_href_link(FILENAME_FEATURED_PRODUCTS
 Notice that the anchor text is `$define['TABLE_HEADING_FEATURED_PRODUCTS']` rather than `TABLE_HEADING_FEATURED_PRODUCTS`.
 
 You can read more about array based language files in [Language Files - Developer Information on Array based Language files](/dev/code/158_language_files/). 
+
+{{% language_help_links %}}
