@@ -28,18 +28,23 @@ If your site was created from an older version, your database might still contai
 ## Pre-Conversion to UTF8
 
 If your database contains a mix of latin1 and utf8, it is sometimes helpful to pre-convert your database to entirely utf8 before attempting the move to utf8mb4. 
-Use the plugin [Convert db2utf8](https://www.zen-cart.com/downloads.php?do=file&id=1318) to do this.
+Use the plugin [Convert Zen Cart Database Conversion Tool](https://www.zen-cart.com/downloads.php?do=file&id=2367) to do this.
 
 ## Converting to UTF8MB4:
 
 ### 1. Converting the database
-Use this conversion utility to convert your data to UTF8 (AFTER MAKING AND TESTING A DATABASE BACKUP): 
+Use this plugin to convert your data to UTF8 (AFTER MAKING AND TESTING A DATABASE BACKUP): 
 
-[https://github.com/zencart/utf8mb4-converter](https://www.zen-cart.com/downloads.php?do=file&id=1318)
+[Convert Zen Cart Database Conversion Tool](https://www.zen-cart.com/downloads.php?do=file&id=2367)
 
 If you encounter errors converting certain tables due to bad data in them, simply fix the bad data and then re-run the script. While a full list of possible database-problems is beyond the scope of this article, common bad-data issues might include the following: 
 - [bad date formats](/user/upgrading/date_standardization/) in existing data
 - [broken tables](/user/upgrading/fixing_broken_tables/), such as broken auto-increments or corrupt indexes
+
+The converter gives nicely formatted error output that allows you to isolate any issues. 
+
+![Database Conversion issue](/images/convert_db.png)
+
 
 ### 2. Configuring your store
 
@@ -65,37 +70,9 @@ b. Check your `configure.php` files:
   
   (Remember, the `configure.php` files are most likely set to read-only on your server, so you'll need to change their permissions on the server to be writable before you can save the changes you're making.)  
  
-## Issues with Converting prior to 03/05/2021 
+## Prior versions of the database converter 
 
-Versions of the converter `utf8mb4-conversion.php` and the older version, which was called `latin1-to-utf8-conversion.php`, prior to 03/05/2021 had an issue with incorrectly removing default values during the conversion.  A script exists to fix this issue; see the section "Missing Defaults" in the readme file for [https://github.com/zencart/utf8mb4-converter](https://github.com/zencart/utf8mb4-converter). 
+Older versions of the convert such as `utf8mb4-conversion.php` and 
+`latin1-to-utf8-conversion.php` are deprecated and no longer recommended. 
 
-Please note this issue only affects people who ran versions of this script prior to 03/05/2021. 
-
-You will know you have this issue if database insert operations are failing because fields don't have default values.  For example, creating a new admin will fail with 
-
-```
---> PHP Fatal error: 1364:Field 'prev_pass1' doesn't have a default value :: INSERT INTO admin
-SET admin_name = 'admin',
-admin_email = 'help@thatsoftwareguy.com',
-admin_pass = '....',
-admin_profile = 1,
-pwd_last_change_date = now(),
-```
-You can also tell by schema inspection if you have this problem - instead of 
-
-```
-  prev_pass1 varchar(255) NOT NULL default '' 
-```
-
-you will see 
-
-```
-  prev_pass1 varchar(255) NOT NULL 
-```
-
-Similarly, creating a new customer account will fail with a message like 
-
-```
---> PHP Fatal error: 1364:Field 'customers_referral' doesn't have a default value :: INSERT INTO zen_customers 
-...
-```
+[Some notes on older versions of the database converter](/user/upgrading/old_converter/) are maintained for those who used it in the past. 
