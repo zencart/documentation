@@ -17,7 +17,7 @@ Flag | Default | Behavior
 `$quick_view_popover_enabled` | false | Enables clickable icon on order listing to show order contents 
 `$includeAttributesInProductDetailRows` | true | Shows attributes in popover 
 `$show_product_tax` | true | Shows tax columns 
-`$show_zone_info` | true | shows zone where the order was shipped 
+`$show_zone_info` | true | Shows zone where the order was shipped 
 
 ## Invoice Page 
 
