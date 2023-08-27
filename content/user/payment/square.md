@@ -24,8 +24,9 @@ Please note: do NOT remove the old Square files from your Zen Cart installation.
 
 ## Installing Square Web Payments - first time 
 1. Install the Square Web Payments module files.  Then to go to Admin > Modules > Payments > Square WebPay, and click **Install**. 
+1. Double check - did you just install the module "Square WebPay"?  If you're on the module "Square," it will look very similar but won't work. 
 1. Login at [https://connect.squareup.com/apps](https://connect.squareup.com/apps) to view the apps you've connected to your account.
-1. Click **+** to create a New Application for your Zen Cart store. Give it a name, such as "WebPay".
+1. Click **+** to create a New Application for your Zen Cart store. Give it a name, such as "WebPay". **You cannot delete the app or change its name once it is created, so choose carefully; if it's for a test installation of your site, call it WebPay-Test or something like that.**
 2. Version 1.0.1 of Square Web Payments requires **API Version 2022-02-16.** Ensure you have selected the correct version and click **Save**.
 3. Click on the application icon that was just created (named "WebPay" or whatever name you used).
 4. The environment will be Sandbox by default.  Click "Production".
@@ -36,7 +37,10 @@ Please note: do NOT remove the old Square files from your Zen Cart installation.
   - Click **Update** to save the new Square WebPay config values. 
   - Click the green button in the Zen Cart admin sidebar that says "Click here to login and Authorize your account."  If everything is correct, the Sort Order LED for Square WebPay will go green. 
   - Click the **Edit** button one more time.  This will fill in the Location ID field.  Click **Update**. 
-  
+9. If this isn't working, check again to be sure you are editing the "Square WebPay" module not the old "Square" module - it's easy to get the two mixed up.
+ 
+Once you have installed and successfully tested Square Webpay, you will want to [create a cron job to refresh the Square token](/user/payment/square_avoiding_token_expiry/). 
+ 
 ## Handling Refunds, Captures, Voids
 
 ### Refunds

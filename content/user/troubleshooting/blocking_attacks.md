@@ -5,6 +5,17 @@ category: troubleshooting
 weight: 10
 ---
 
+## Determining an IP Address
+
+IP Addresses may be viewed in the following locations: 
+
+- Admin > Customers > Orders > Edit - the order details page shows the IP Address of the person who placed the order.  
+
+- Admin > Customers > Customers - from the customer listing page, the registration IP address for that customer is shown (in Zen Cart 1.5.8 and above). 
+
+- Admin > Tools > Who's Online - the address of each session is shown.
+
+In each case, clicking the IP Address will show you more information about it. 
 
 ## Cloudflare
 
