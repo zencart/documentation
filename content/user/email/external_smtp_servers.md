@@ -5,7 +5,7 @@ category: email
 weight: 10
 ---
 
-Some people prefer to use resources such as Gmail or Yahoo! Mail for sending their business emails. There are differing schools of thought about the merits of doing so. If you deem that this is the best practice for your business, the following information may be of help to you.
+Generally web hosting accounts come with built-in email capabilities, but some people prefer not to use them.  There are differing schools of thought about the merits of this approach. If you deem that this is the best practice for your business, the following information may be of help to you.
 
 **NOTE:** If you are self-hosting on a local PC server for development purposes, remember that your ISP (internet provider) usually blocks outgoing traffic on port 25, which is commonly used for email. Anything on port 25 destined for any server other than the ISP's own email server is generally blocked in order to control spam. You will need to choose another port (usually 587 or sometimes 465) and use SMTPAUTH and specify the correct SMTP server credentials.
 
@@ -13,7 +13,7 @@ See here: for a [list of common server SMTP addresses](http://www.arclab.com/pro
 
 **Note:** Many customers prefer that you have a legitimate email address matching your domain name, not something like `billys-store@gmail.com` which is rather less authentic-looking. Build credibility with your customers by getting proper email addresses to match your domain name!
 
-**NOTE:** Using GMail, Office 365, Yahoo or GoDaddy for Zen Cart email are not recommended.  You will have much less trouble choosing one of the [real SMTP email service providers](/user/email/external_smtp_servers/#email-service-providers) instead.
+**NOTE:** Using GMail, Office 365, Yahoo or GoDaddy for Zen Cart email are no longer recommended.  You will have much less trouble choosing one of the [real SMTP email service providers](/user/email/external_smtp_servers/#email-service-providers) instead.
 
 ## SMTP over TLS
 
