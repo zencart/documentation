@@ -22,5 +22,9 @@ In 1.5.7a, a new configuration value called [Disabled Product Status for Search 
 
 Disabled products will still be excluded from listing pages; this config only affects the product info page.
 
-Shopowners who set this config to true will likely want to modify their `product_info` templates to prevent an add to cart, state whether the unavailability is temporary or permanent, and so forth. 
+Shopowners who set this config to true will likely want to modify their `product_info` templates to detect disabled status and take action: 
+- if `products_quantity` is > 0, the add to cart button is shown, which is undesirable since the cart won't actually honor an add to cart request for a disabled product. 
+- if `products_quantity` is <= 0, the sold out message is shown, which may or may not be desirable depending on why the product was disabled. 
+- it may be desirable to state whether the unavailability is temporary or permanent.
+- if possible, a link to an alternative or substitute product may prevent the customer from going elsewhere. 
 
