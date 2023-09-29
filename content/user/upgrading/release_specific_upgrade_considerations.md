@@ -59,6 +59,8 @@ Zen Cart 1.5.8a will provide aliases for these functions so that the old names w
    $GLOBALS['some_variable'] = $some_variable;
    ```
 
+- Because of the changes to language files, significant language string related changes were made to the template file `tpl_gv_faq_default.php`.  If your template has overridden this file, you will need to update it. 
+
 - The function `zen_parse_search_string` input parameters have been reversed. Plugins that use this function will require modification.
 
 - The function `zen_get_countries` returns different array keys than previously. Admin plugins that use this function may use the new admin function `zen_get_countries_for_admin_pulldown`. 
