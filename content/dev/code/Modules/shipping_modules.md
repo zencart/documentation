@@ -37,7 +37,7 @@ A shipping-module's class definition includes, at a minimum, the following publi
 Variable Name | Variable Type |Variable Usage
 ------------- | -------------- | -------------
 code | string | Contains the unique identifier for this shipping-module; normally set to the module's class name.
-enabled | boolean | Determines whether (true) or not (false) the module is enabled for use during the current storefront checkout.
+enabled | bool | Determines whether (true) or not (false) the module is enabled for use during the current storefront checkout.
 title | string | Contains the title displayed for the shipping-module in both the Admin *Modules > Shipping* and the storefront shipping quote. This variable is normally initialized during class construction to a (shopfront) language-file definition in the shipping module, e.g. MODULE_SHIPPING_*(module name)*_TEXT_TITLE
 description | string | A description of the module displayed only in the Admin,  *Modules > Shipping*.  This variable is normally initialized during class construction to a (shopfront) language-file definition in the shipping module, e.g. MODULE_SHIPPING_*(module name)*_TEXT_DESCRIPTION
 tax_class | integer | Identifies the `tax_class_id` associated with the tax to be applied to this shipping module's costs.  If the value is 0, the shipping cost is untaxed.
@@ -57,7 +57,7 @@ class myshipping extends base
 }
 ```
 #### quote
-This function determines the quote (i.e. the shipping cost) for either all methods supported by the module or for the specified module sub-method, depending on the function's input value.  That quote information is returned in the class variable `quotes`: an associative array containing the following fields:
+This function determines the quote (i.e. the shipping cost) for either each of the module's available methods or for the specified module sub-method, depending on the function's `$method` input value.  If no quote(s) is/are available, regardless the value provided for the `$method` input, the shipping module sets its `quotes` property to either `(bool)false` or an empty array (`[]`) and returns that value.  Otherwise, the quote information is returned in the class property`quotes`: an associative array containing the following fields:
 
 Element Name | Required | Type | Description
 ------------ | :----: | ----------- | ----
@@ -114,12 +114,12 @@ class myshipping extends base
 ```
 
 ##### General Quote (all methods)
-When the `quote` function is called with an input `$method` value of '' (an empty string), the function returns an array containing quotes for **all** methods it provides.  One `methods` array entry is provided for each *method* applicable to the current order.
+When the `quote` function is called with an input `$method` value of '' (an empty string) and one or more quotes is available, the function returns an array containing quotes for **all** methods it provides.  One `methods` array entry is provided for each *method* applicable to the current order.
 
 This form of the function call is used by the *Shipping Estimator* and in the shipping-method selection provided by the `checkout_shipping` page's handling.
 
 ##### Specific Method
-When the `quote` function is called with a non-empty value in the `$method` input, the function returns an array containing the quote for *that specific method*.  In this case, the quote can return an error indication if the specified shipping method is not available for the order.
+When the `quote` function is called with a non-empty value in the `$method` input and the quote is available, the function returns an array containing the quote for *that specific method*.
 
 #### check
 This function, called from admin-level *Modules > Shipping* processing, returns a boolean value indicating whether (true) or not (false) the shipping-module is currently installed.
