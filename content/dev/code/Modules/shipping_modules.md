@@ -37,7 +37,7 @@ A shipping-module's class definition includes, at a minimum, the following publi
 Variable Name | Variable Type |Variable Usage
 ------------- | -------------- | -------------
 code | string | Contains the unique identifier for this shipping-module; normally set to the module's class name.
-enabled | boolean | Determines whether (true) or not (false) the module is enabled for use during the current storefront checkout.
+enabled | bool | Determines whether (true) or not (false) the module is enabled for use during the current storefront checkout.
 title | string | Contains the title displayed for the shipping-module in both the Admin *Modules > Shipping* and the storefront shipping quote. This variable is normally initialized during class construction to a (shopfront) language-file definition in the shipping module, e.g. MODULE_SHIPPING_*(module name)*_TEXT_TITLE
 description | string | A description of the module displayed only in the Admin,  *Modules > Shipping*.  This variable is normally initialized during class construction to a (shopfront) language-file definition in the shipping module, e.g. MODULE_SHIPPING_*(module name)*_TEXT_DESCRIPTION
 tax_class | integer | Identifies the `tax_class_id` associated with the tax to be applied to this shipping module's costs.  If the value is 0, the shipping cost is untaxed.
@@ -49,7 +49,7 @@ A shipping-module's class constructor performs initialization of its class varia
 ```php
 class myshipping extends base
 {
-    public function __construct ()
+    public function __construct()
     {
     }
 
@@ -57,7 +57,7 @@ class myshipping extends base
 }
 ```
 #### quote
-This function determines the quote (i.e. the shipping cost) for either all methods supported by the module or for the specified module sub-method, depending on the function's input value.  That quote information is returned in the class variable `quotes`: an associative array containing the following fields:
+This function determines the quote (i.e. the shipping cost) for either each of the module's available methods or for the specified module sub-method, depending on the function's `$method` input value.  If no quote(s) is/are available, regardless the value provided for the `$method` input, the shipping module sets its `quotes` property to either `(bool)false` or an empty array (`[]`) and returns that value.  Otherwise, the quote information is returned in the class property`quotes`: an associative array containing the following fields:
 
 Element Name | Required | Type | Description
 ------------ | :----: | ----------- | ----
@@ -82,28 +82,28 @@ Basic `quote` function processing is illustrated below.
 class myshipping extends base
 {
     ...
-    public function quote ($method = '')
+    public function quote($method = '')
     {
         global $order;
 
         ...
 
-        $this->quotes = array (
+        $this->quotes = [
             'id' => $this->code,
             'module' => $this->title,
-            'methods' => array (
-                array (
+            'methods' => [
+                [
                    'id' => $method_name,
                    'title' => $method_description,
                    'cost' => $method_cost
-                ),
+                ],
                 ...
-            ),
-        );
+            ],
+        ];
         if ($this->tax_class > 0) {
             $this->quotes['tax'] = zen_get_tax_rate($this->tax_class, $order->delivery['country']['id'], $order->delivery['zone_id']);
         }
-        if (zen_not_null($this->icon)) {
+        if (!empty($this->icon)) {
             $this->quotes['icon'] = zen_image($this->icon, $this->title);
         }
         return $this->quotes;
@@ -114,13 +114,13 @@ class myshipping extends base
 ```
 
 ##### General Quote (all methods)
-When the `quote` function is called with an input `$method` value of '' (an empty string), the function returns an array containing quotes for **all** methods it provides.  One `methods` array entry is provided for each *method* applicable to the current order.
+When the `quote` function is called with an input `$method` value of '' (an empty string) and one or more quotes is available, the function returns an array containing quotes for **all** methods it provides.  One `methods` array entry is provided for each *method* applicable to the current order.
 
 This form of the function call is used by the *Shipping Estimator* and in the shipping-method selection provided by the `checkout_shipping` page's handling.
 
 ##### Specific Method
-When the `quote` function is called with a non-blank value in the `$method` input, the function returns an array containing the quote for *that specific method*.  In this case, the quote can return an error indication if the specified shipping method is not available for the order.
- 
+When the `quote` function is called with a non-empty value in the `$method` input and the quote is available, the function returns an array containing the quote for *that specific method*.
+
 #### check
 This function, called from admin-level *Modules > Shipping* processing, returns a boolean value indicating whether (true) or not (false) the shipping-module is currently installed.
 ```php
@@ -128,11 +128,11 @@ class myshipping extends base
 {
     ...
 
-    public function check ()
+    public function check()
     {
         global $db;
         if (!isset ($this->_check)) {
-            $check_query = $db->Execute ("SELECT configuration_value FROM " . TABLE_CONFIGURATION . " WHERE configuration_key = 'MODULE_SHIPPING_MYSHIPPING_STATUS' LIMIT 1");
+            $check_query = $db->Execute("SELECT configuration_value FROM " . TABLE_CONFIGURATION . " WHERE configuration_key = 'MODULE_SHIPPING_MYSHIPPING_STATUS' LIMIT 1");
             $this->_check = !$check_query->EOF;
         }
         return $this->_check;
@@ -148,16 +148,16 @@ class myshipping extends base
 {
     ...
 
-    public function install () 
+    public function install() 
     {
         global $db;
 
-        $db->Execute ("INSERT INTO " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) VALUES ('Enable Flat Shipping', 'MODULE_SHIPPING_MYSHIPPING_STATUS', 'True', 'Do you want to offer "my shipping" shipping?', '6', '0', 'zen_cfg_select_option(array(\'True\', \'False\'), ', now())");
-        $db->Execute ("INSERT INTO " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('Shipping Cost', 'MODULE_SHIPPING_MYSHIPPING_COST', '5.00', 'The shipping cost for all orders using this shipping method.', '6', '0', now())");
-        $db->Execute ("INSERT INTO " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) VALUES ('Tax Class', 'MODULE_SHIPPING_MYSHIPPING_TAX_CLASS', '0', 'Use the following tax class on the shipping fee.', '6', '0', 'zen_get_tax_class_title', 'zen_cfg_pull_down_tax_classes(', now())");
-        $db->Execute ("INSERT INTO " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) VALUES ('Tax Basis', 'MODULE_SHIPPING_MYSHIPPING_TAX_BASIS', 'Shipping', 'On what basis is Shipping Tax calculated. Options are<br />Shipping - Based on customers Shipping Address<br />Billing Based on customers Billing address<br />Store - Based on Store address if Billing/Shipping Zone equals Store zone', '6', '0', 'zen_cfg_select_option(array(\'Shipping\', \'Billing\', \'Store\'), ', now())");
-        $db->Execute ("INSERT INTO " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) VALUES ('Shipping Zone', 'MODULE_SHIPPING_MYSHIPPING_ZONE', '0', 'If a zone is selected, only enable this shipping method for that zone.', '6', '0', 'zen_get_zone_class_title', 'zen_cfg_pull_down_zone_classes(', now())");
-        $db->Execute ("INSERT INTO " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('Sort Order', 'MODULE_SHIPPING_MYSHIPPING_SORT_ORDER', '0', 'Sort order of display.', '6', '0', now())");
+        $db->Execute("INSERT INTO " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) VALUES ('Enable Flat Shipping', 'MODULE_SHIPPING_MYSHIPPING_STATUS', 'True', 'Do you want to offer "my shipping" shipping?', 6, 0, 'zen_cfg_select_option([\'True\', \'False\'], ', now())");
+        $db->Execute("INSERT INTO " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('Shipping Cost', 'MODULE_SHIPPING_MYSHIPPING_COST', '5.00', 'The shipping cost for all orders using this shipping method.', 6, 0, now())");
+        $db->Execute("INSERT INTO " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) VALUES ('Tax Class', 'MODULE_SHIPPING_MYSHIPPING_TAX_CLASS', '0', 'Use the following tax class on the shipping fee.', 6, 0, 'zen_get_tax_class_title', 'zen_cfg_pull_down_tax_classes(', now())");
+        $db->Execute("INSERT INTO " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) VALUES ('Tax Basis', 'MODULE_SHIPPING_MYSHIPPING_TAX_BASIS', 'Shipping', 'On what basis is Shipping Tax calculated. Options are<br>Shipping - Based on customers Shipping Address<br>Billing Based on customers Billing address<br>Store - Based on Store address if Billing/Shipping Zone equals Store zone', 6, 0, 'zen_cfg_select_option([\'Shipping\', \'Billing\', \'Store\'], ', now())");
+        $db->Execute("INSERT INTO " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) VALUES ('Shipping Zone', 'MODULE_SHIPPING_MYSHIPPING_ZONE', '0', 'If a zone is selected, only enable this shipping method for that zone.', 6, 0, 'zen_get_zone_class_title', 'zen_cfg_pull_down_zone_classes(', now())");
+        $db->Execute("INSERT INTO " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('Sort Order', 'MODULE_SHIPPING_MYSHIPPING_SORT_ORDER', '0', 'Sort order of display.', 6, 0, now())");
 
         ...
 
@@ -175,16 +175,16 @@ class myshipping extends base
 {
     ...
 
-    public function keys () 
+    public function keys() 
     {
-        return array (
+        return [
             'MODULE_SHIPPING_MYSHIPPING_STATUS', 
             'MODULE_SHIPPING_MYSHIPPING_COST', 
             'MODULE_SHIPPING_MYSHIPPING_TAX_CLASS', 
             'MODULE_SHIPPING_MYSHIPPING_TAX_BASIS', 
             'MODULE_SHIPPING_MYSHIPPING_ZONE', 
             'MODULE_SHIPPING_MYSHIPPING_SORT_ORDER'
-        );
+        ];
     }
 
     ...
@@ -198,10 +198,10 @@ class myshipping extends base
 {
     ...
 
-    public function remove () 
+    public function remove() 
     {
         global $db;
-      	$db->Execute ("DELETE FROM " . TABLE_CONFIGURATION . " WHERE configuration_key LIKE 'MODULE\_SHIPPING\_MYSHIPPING\_%'");
+      	$db->Execute("DELETE FROM " . TABLE_CONFIGURATION . " WHERE configuration_key LIKE 'MODULE\_SHIPPING\_MYSHIPPING\_%'");
     }
 
     ...
@@ -224,4 +224,4 @@ Configuration Name | Configuration Value
 Procedurally, all configuration options for a shipping module names `myshipping` should be named `MODULE_SHIPPING_`MYSHIPPING`_*`, as should all language constants for the module, to ensure uniqueness of those constants.
 
 ### Troubleshooting
-Since the admin-level processing by *Modules > Shipping* loads all `.php` modules present in the `/includes/modules/shipping` folder, make sure that any backup files in that directory have the `.php` extension are renamed (use `.php.bak` or `.php~`), or errors will result during the admin loading.
+Since the admin-level processing by *Modules > Shipping* loads all `.php` modules present in the `/includes/modules/shipping` folder, make sure that any backup files in that directory have the `.php` extension changed, e.g. `.php~` or `.php.old`, or errors will result during the admin loading.
