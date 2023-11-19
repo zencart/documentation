@@ -16,6 +16,7 @@ Here are some options.
 *   [Sublime Text](https://www.sublimetext.com) (Windows, Mac, Linux)
 *   [VS Code](https://code.visualstudio.com) (Windows, Mac, Linux)
 *   [Notepad++](https://notepad-plus-plus.org) (Windows)
+*   [CodeLobster](https://codelobster.com) (Windows, Mac, Linux)
 
 ### Commercial
 
