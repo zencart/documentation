@@ -172,13 +172,14 @@ Also note that randomizing the data like this means the page cannot be cached, s
 Your best defense against potential SQL injection attacks is to sanitize inputs as noted above.  Simply using a POSTed variable in a query is not safe! 
 
 ```
-$query = $db->Execute("UPDATE " . TABLE_CUSTOMERS . " SET customers_firstname = '" . $_POST['name'] . "'";    // DO NOT DO THIS! 
+$query = $db->Execute("UPDATE " . TABLE_CUSTOMERS . " SET customers_firstname = '" . $_POST['name'] . "'");    // DO NOT DO THIS! 
 ```
 Instead, use `bindVars` as described above. 
 
 ```
-$query = $db->Execute("UPDATE " . TABLE_CUSTOMERS . " SET customers_firstname = :name:";    // DO THIS INSTEAD! 
+$query = "UPDATE " . TABLE_CUSTOMERS . " SET customers_firstname = :name:";    // DO THIS INSTEAD! 
 $query = $db->bindVars($query, ':name:', $_POST['name'], 'string');
+$db->Execute($query);
 ```
 
  
