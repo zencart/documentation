@@ -1,9 +1,10 @@
 {{ with .Site.Params.algolia_docsearch }}
-<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script> docsearch({
-apiKey: 'e208df89c09bccb327a5f79dcae705dd',
+appId: '7KE9ZZBAHM',
+apiKey: '760301bb4e25c5033d9bdc12ae15598c',
 indexName: 'zen-cart',
-inputSelector: '.td-search-input',
+container: '#docsearch',
 debug: false // Set debug to true if you want to inspect the dropdown
 });
 </script>
