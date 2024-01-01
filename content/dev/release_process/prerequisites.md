@@ -57,7 +57,7 @@ Here's what should be in these files for version 1.5.8a:
 
 There are other version related updates to do, but they're not part of the build, so they are detailed in [post release tasks](/dev/release_process/post_release/).
 
-## For Major Releases - set the highest PHP Supported 
+## For Major Releases - set the PHP Version range
 
 Update these places: 
 
@@ -65,10 +65,17 @@ Code Files:
 
 - `zc_install/includes/languages/en_us/main.php` (set `TEXT_ERROR_PHP_VERSION`)
 - `zc_install/includes/systemChecks.yml` (set `checkPhpVersion`)
+- `zc_install/index.php`
 
 Documentation Files: 
 - [Server Requirements](/user/first_steps/server_requirements/#php-version) in `/user/first_steps/server_requirements.md`.
 - What's New file for this release, e.g. [What's New in 1.5.8](https://docs.zen-cart.com/release/whatsnew_1.5.8.html) under "About PHP Versions".
+- `Readme.md` under [Zen Cart github home page](https://github.com/zencart/zencart)
+
+Other considerations: 
+- `composer.json`
+- whole Laravel install can be upgraded to newer
+- update github workflows so tests run on desired versions
 
 ## Copyright Updates
 
