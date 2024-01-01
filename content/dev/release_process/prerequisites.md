@@ -68,9 +68,9 @@ Code Files:
 - `zc_install/index.php` (only change if zc_install itself needs a newer PHP version: we want zc_install to run for inspection even on older PHP)
 
 Documentation Files: 
-- [Server Requirements](/user/first_steps/server_requirements/#php-version) in `/user/first_steps/server_requirements.md`.
-- What's New file for this release, e.g. [What's New in 1.5.8](https://docs.zen-cart.com/release/whatsnew_1.5.8.html) under "About PHP Versions".
-- `Readme.md` under [Zen Cart github home page](https://github.com/zencart/zencart)
+- [Server Requirements](/user/first_steps/server_requirements/#php-version) in `user/first_steps/server_requirements.md`.
+- What's New file for this release, e.g. [What's New in 1.5.8](https://docs.zen-cart.com/release/whatsnew_1.5.8.html) under "About PHP Versions".  This file is in the `release` folder.
+- `README.md` under [Zen Cart github home page](https://github.com/zencart/zencart)
 
 Other considerations: 
 - `/composer.json`
