@@ -26,7 +26,7 @@ The following list shows the PHP versions compatible with each version of Zen Ca
 
 Please note that the  lower versions of PHP in a supported range are only intended to allow you to get through the upgrade process more easily.  The goal should be to use the highest version of PHP supported by your version, since it will have the most current fixes and security patches.
 
-*   <font color="#ff0000">**Zen Cart v2.0.0** is designed for PHP 7.3 through PHP 8.3</font><br>
+*   <font color="#ff0000">**Zen Cart v2.0.0** is designed for PHP 8.0 through PHP 8.3</font><br>
 *   <font color="#ff0000">**Zen Cart v1.5.8** is designed for PHP 7.3 through PHP 8.3 (with PHP 8.1 recommended and PHP 8.2 or less required for `zc_install`)</font><br>
 *   <font color="#ff0000">**Zen Cart v1.5.7** is designed for PHP 5.6 through PHP 8.0 (with PHP 7.4 recommended)</font><br>
 (If you are using PHP 8.0 with v1.5.7, be sure to [suppress logging duplicate-language definitions](/user/troubleshooting/constant_already_defined/)). 
@@ -51,7 +51,7 @@ It is best to **use the most recent PHP version that your Zen Cart version suppo
 
 FYI: Consult [PHP's Version Support Policy](https://www.php.net/supported-versions.php) to understand whether your PHP version is still supported. Remember: old versions are not PCI compliant, and are not deemed "secure" if they are out of the maintenance period.
 
-<font color="#ff0000">**NOTE:** PHP 5.x and PHP 7.x ARE OFFICIALLY OBSOLETE. You should be moving to the latest version of PHP (and a matching Zen Cart version) as soon as possible!</font>  
+<font color="#ff0000">**NOTE:** PHP PHP 7.x IS OFFICIALLY OBSOLETE. You should be moving to the latest version of PHP (and a matching Zen Cart version) as soon as possible!</font>  
 
 ### PHP Extensions/Modules used by Zen Cart
 
@@ -96,6 +96,7 @@ The following list shows the MySQL versions compatible with each version of Zen 
 
 (If your store uses non-english characters in product names/descriptions, or if your customers might use emojis in order comments, you should be using MySQL 5.7.2 or newer, and the [utf8mb4 character set](/user/upgrading/convert_to_utf8/) and upgrading to the latest Zen Cart version.)
 
+*   Zen Cart v2.0.0 requires MySQL 5.7.8+ or MariaDB 10.2.7+ (where "+" means "or newer")
 *   Zen Cart v1.5.8 requires MySQL 5.7.8+ or MariaDB 10.2.7+ (where "+" means "or newer")
 *   Zen Cart v1.5.7 expects MySQL 5.1 to 8.0, or MariaDB 10.1 to 10.5
 *   Zen Cart v1.5.6 expects MySQL 5.1 to 5.7, or MariaDB 10.1 to 10.4 ("strict" errors may occur with 5.7 or 10.2-10.5)
