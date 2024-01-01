@@ -65,7 +65,7 @@ Code Files:
 
 - `zc_install/includes/languages/en_us/main.php` (set `TEXT_ERROR_PHP_VERSION`)
 - `zc_install/includes/systemChecks.yml` (set `checkPhpVersion`)
-- `zc_install/index.php`
+- `zc_install/index.php` (only change if zc_install itself needs a newer PHP version: we want zc_install to run for inspection even on older PHP)
 
 Documentation Files: 
 - [Server Requirements](/user/first_steps/server_requirements/#php-version) in `/user/first_steps/server_requirements.md`.
@@ -73,9 +73,9 @@ Documentation Files:
 - `Readme.md` under [Zen Cart github home page](https://github.com/zencart/zencart)
 
 Other considerations: 
-- `composer.json`
-- whole Laravel install can be upgraded to newer
-- update github workflows so tests run on desired versions
+- `/composer.json`
+- `/laravel` - long before release, the bundled Laravel code should be matching PHP dependencies)
+- Update github workflows so tests run on desired versions
 
 ## Copyright Updates
 
