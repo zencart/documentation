@@ -104,7 +104,7 @@
                 CHANGELOG - List of Changed Files 
             </h1>
             <p>
-                For a list of files that have been changed since v1.5.7, see the <a href="changed_files-v2-0-0.html" rel="noreferrer noopener" target="_blank">changed_files-v2.0.0.html</a> document.
+                For a list of files that have been changed since v1.5.8, see the <a href="changed_files-v2-0-0.html" rel="noreferrer noopener" target="_blank">changed_files-v2.0.0.html</a> document.
             </p>
         </div>
     </section> <!-- End upgradeInstructions //-->
@@ -168,7 +168,7 @@
             Zen Cart now uses <a href="https://docs.zen-cart.com/user/localization/158_language_files/">Array based language files</a>.  For plugins with language files which are not overridden, the older style may still be used.
             </p>
             <p>
-            If you're doing an upgrade and are worried about all the language file changes you'll have to figure out, rather than porting *all* your customizations, you may want to start small and add customizations as they are needed.  Many older templates made unnecessary changes which you will not want to carry forward.  See <a href="https://docs.zen-cart.com/user/localization/basic_158_language_customizations/">basic language file customizations</a> for a minimal starting list.
+            If you're doing an upgrade from a pre-1.5.8 Zen Cart version and are worried about all the language file changes you'll have to figure out, there is another option.  Rather than porting *all* your customizations, you may want to start small and add customizations as they are needed.  Many older templates made unnecessary changes which you will not want to carry forward.  See <a href="https://docs.zen-cart.com/user/localization/basic_158_language_customizations/">basic language file customizations</a> for a minimal starting list.
             </p>
             <p>
             For developers with language skills wishing to provide a translation, <a href="https://docs.zen-cart.com/dev/languages/158_language_files/">developer information on Array based language files</a> is provided.
@@ -188,16 +188,20 @@
                 The fixes/changes in v2.0.0 since v1.5.8a include:
             </h2>
             <ul>
-                <li>Admin: Consolidated product-type modules to reduce code duplication.  Now, per-product-type specific files are only required if they differ from the main file.<li>
+                <li>Admin: product pages now have a show/hide image option.</li>
+                <li>Admin: Consolidated product-type modules to reduce code duplication.  Now, per-product-type specific files are only required if they differ from the main file.</li>
                 <li>Admin: Corrected display of Who's Online.</li>
                 <li>Admin: Corrected handling of salemaker start date/end date.</li>
                 <li>Admin: Coupon Restrict dropdown only shows products not already selected.</li>
+                <li>Admin: Customers list can now show registration IP if set.</li>
                 <li>Admin: Handle emails with embedded '+' signs.</li>
                 <li>Admin: Improve layout of search box.</li>
                 <li>Admin: Manufacturers page now has insert button when list is empty.</li>
                 <li>Admin: More pages converted to HTML5.</li>
                 <li>Admin: Orders screen now uses ipdata.co for IP Address information retrieval.</li>
                 <li>Admin: Removed files superceded by admin/includes/admin_html_head.php.  Plugin authors please see <a href="https://docs.zen-cart.com/dev/plugins/admin_head_content/">Admin Head Content</a> for details.</li>
+                <li>Admin: Search improvements for customers, coupons, developer's toolkit.</li>
+                <li>Admin: Sort improvements for Specials and Featured pages.</li>
                 <li>Core: Addition of manufacturer's part number (MPN) to the products table.</li>
                 <li>Core: Addition of shipping tax rate to the orders table.</li>
                 <li>Core: Updates to international zones and country names.</li>
@@ -205,6 +209,8 @@
                 <li>Core: Dependency update - Updating to Font Awesome 6 (from 4.7).  See <a href="https://docs.zen-cart.com/user/template/font_awesome/">Font Awesome</a> for details.</li>
                 <li>Core: When $db connection is down, generate fewer logs.</li>
                 <li>Core: Performance improvements for stores with large databases.</li>
+                <li>Core: Wholesale pricing now built-in.</li>
+                <li>Core: Improve multi-currency handling throughout cart.</li>
                 <li>Storefront: Accessibility improvements.</li>
                 <li>Storefront: Additional Images are only shown if there is a main image. Users of the Additional Product Images plugin who wish to disable this behavior, see <a href="https://docs.zen-cart.com/user/customizing/site_specific_overrides/">site specific overrides</a>.</li>
                 <li>Storefront: Ability to compute category counts by distinct products, to avoid double-counting linked products.  Users wishing this behavior should see <a href="https://docs.zen-cart.com/user/customizing/site_specific_overrides/">site specific overrides</a>.</li>
@@ -219,7 +225,7 @@
             <div>
                <!--  FIXME 
                 <p>
-                    A detailed list of all edits to all files can be seen on Github at: <a href="https://github.com/zencart/zencart/compare/v157...v158">v1.5.7...v1.5.8</a>
+                    A detailed list of all edits to all files can be seen on Github at: <a href="https://github.com/zencart/zencart/compare/v158...v200">v1.5.8...v2.0.0</a>
                 </p>
                -->
             </div>
