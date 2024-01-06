@@ -17,6 +17,8 @@ The process of changing PHP settings is also server-specific:
  
 Your hoster likely provides a knowledge base with instructions.  Contact your hoster if you are unsure how to proceed. 
 
+If you want to run multiple versions of PHP on your server (for example, to keep a live site going with an older version and test an upgrade with a newer version), see [Multiple PHP Versions](/user/upgrading/multiple_php_versions/).
+
 Once you are done changing PHP version or a PHP setting, use the 
 [Version](/user/admin_pages/admin_version/) link on the top right navigation menu to confirm that the change you made is recognized by Zen Cart. 
 
