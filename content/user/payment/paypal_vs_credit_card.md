@@ -1,6 +1,6 @@
 ---
-title: PayPal - Paying with Credit Card vs a PayPal Account
-description: Customer questions regarding paypal
+title: PayPal Paying with Credit Card vs a PayPal Account
+description: Customer questions regarding PayPal
 category: payment 
 weight: 10
 ---
