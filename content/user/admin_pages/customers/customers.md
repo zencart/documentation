@@ -19,6 +19,7 @@ The columns in the list are:
 - Customer Company 
 - Date the customer record was created
 - Date the customer last logged in 
+- Customer's wholesale level if [wholesale pricing](/user/products/wholesale_pricing/) is enabled (Zen Cart 2.0.0 or higher).
 - Customer's [pricing group](/user/admin_pages/customers/group_pricing/) (if set) 
 - Customers [Gift Certificate](/user/order_total/gift_certificates/) balance (if any)
 - Customer's [authorization status](/user/orders/customer_approval/) (You can ban a customer by clicking the green icon so it turns red)
