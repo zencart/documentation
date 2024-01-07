@@ -18,7 +18,11 @@ Any rows you don't fill in will be removed upon update.
 
 The screen you see will look like this: 
 
-<img src="/images/products_price_manager.png" alt="products_price_manager.png" />
+![Products Price Manager](/images/products_price_manager.png)
+
+If you have [wholesale pricing](/user/products/wholesale_pricing/) enabled, another column appears for setting the wholesale discount value. 
+
+![Wholesale Discount Value](/images/wholesale_discount_values.gif)
 
 The radio button *Discount Qty Applies to Mixed Attributes*  is referring
 to the [MIXED ON](/user/products/mixed_on/) setting from the [product editing page](/user/products/product_edit/).

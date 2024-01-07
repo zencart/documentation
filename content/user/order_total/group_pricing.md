@@ -12,6 +12,8 @@ If you want to offer a group discount, you need to first enable group pricing
 Go to: [Admin > Modules > Order Total](/user/admin_pages/modules/order_total/) and select Group Pricing (ot_group_pricing).   
 If it's not already installed, click Install to enable it.  
 
+Note that for users of [wholesale pricing](/user/products/wholesale_pricing/): customers may be assigned to wholesale pricing groups or group pricing groups but not both. 
+
 ## Group Pricing
 
 Go to [Admin > Customers > Group Pricing](/user/admin_pages/customers/group_pricing/). 
