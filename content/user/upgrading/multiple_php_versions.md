@@ -7,6 +7,8 @@ weight: 10
 
 If you want to run multiple versions of PHP on your server (for example, to keep a live site going with an older version and test an upgrade with a newer version), these instructions should help.
 
+If you are unfamiliar with the terms webroot, YOURACCOUNT and YOURSITE, please see [basic terms](/user/first_steps/basic_terms/).
+
 Generally your host will only allow you to run one version of PHP per domain.  But if you create one or more subdomains, each subdomain may also have its own version of PHP.  
 
 ## Create an alternate webroot 
@@ -40,4 +42,10 @@ The PHP version you select should be the latest supported version that works wit
 
 For instance, with Zen Cart 1.5.8a, you could use PHP 7.4, 8.0, 8.1 or 8.2.  (See [Server Requirements for running Zen Cart](/user/first_steps/server_requirements/#php-version) for other versions.)
 
+## Installing your new version
 
+Upload your software to the folder `/home/YOURACCOUNT/test.YOURSITE.com/`. Be sure the two `configure.php` files use this folder as `DIR_FS_CATALOG`, and that all of the `HTTP*_SERVER` settings use the subdomain URL, not the main domain URL.  For example, 
+
+```
+define('HTTPS_SERVER', 'https://test.YOURSITE.com');
+```

@@ -32,6 +32,7 @@ website, and Zen Cart is being used to add-on ecommerce functionality
 (rather than to provide your entire website). 
 
 **Please note:** Do not use the Zen Cart version as the value for `YOURSUBFOLDER`.  For example, do not put your site in `https://www.YOURSITE.com/zen155e` or `https://www.YOURSITE.com/zc154/`. 
+The reason for this is that your Zen Cart version will change over time when the site gets updated, and it will be confusing to have your Zen Cart 1.5.8 installation in a folder called `zc154` or `zen155e`.
 See [deployment configurations](/user/first_steps/deployment_configurations#subfolder-names) for more information.
 
 ### YOURTEMPLATE 
@@ -69,7 +70,7 @@ is just
 
 ### YOURACCOUNT
 The variable `YOURACCOUNT` is used to refer to the name of your hosting company
-gives to your account.  For cPanel users, this will often be your login username and the name of the folder where your webroot resides.  
+gives to your account.  For cPanel users, this will often be your login username.
 
 
 ### YOURACCOUNTFOLDER 
@@ -77,11 +78,10 @@ The variable `YOURACCOUNTFOLDER` is used to refer to the folder in your hosting
 account which holds your site's files.  A very common setup is the following,
 assuming the value of `YOURACCOUNT` is `johndoe` (i.e. that your account name is `johndoe`): 
 
-* `/home/johndoe/` - the top level directory you can access using FTP.  Putting files here will mean they are out of reach of a web browser, which can be useful for security;  see [relocating your download folder](/user/security/relocate_download_folder/) for an example.  
-* `/home/johndoe/public_html/` - the top level directory your webserver 
-can access (your webroot). 
+* YOURACCOUNTFOLDER is `/home/johndoe/` - the top level directory you can access using FTP.  Putting files here will mean they are out of reach of a web browser, which can be useful for security;  see [relocating your download folder](/user/security/relocate_download_folder/) for an example.  
+* Your Webroot is `/home/johndoe/public_html/` - the top level directory your webserver can access.
 
-Everything will be under `YOURACCOUNTFOLDER` when you view files, either in an [FTP tool](/user/first_steps/useful_tools/#ftp-tools) or in your cPanel's File Manager. 
+Everything will be under `YOURACCOUNTFOLDER` when you view files, either in an [FTP tool](/user/first_steps/useful_tools/#ftp-tools) or in your cPanel's File Manager.  It's even more convenient to set your FTP to go to your webroot, since this is where you will upload your code file changes.
 
 Once you are familiar with these basic terms, you should learn about 
 [overrides](/user/first_steps/overrides/). 
