@@ -20,7 +20,7 @@ The screen you see will look like this:
 
 ![Products Price Manager](/images/products_price_manager.png)
 
-If you have [wholesale pricing](/user/products/wholesale_pricing/) enabled, another column appears for setting the wholesale discount value. 
+Since 2.0.0, if you have [wholesale pricing](/user/products/wholesale_pricing/) enabled, another column appears for setting the wholesale discount value. 
 
 ![Wholesale Discount Value](/images/wholesale_discount_values.gif)
 

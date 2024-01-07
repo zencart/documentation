@@ -21,7 +21,7 @@ Many behaviors can be enabled or disabled by this file, such as:
 - displaying the [Brands page](/user/storefront_pages/brands/) link in the Information sidebox 
 - (developers) whether to enable debug on the `zcDate` class
 - (developers) whether to bypass loading string-matches of legacy language files (see [Substring Matching](/dev/code/158_order_language_files/) for details).
-- (developers) whether to load the [Font Awesome](/user/template/font_awesome/) v4 shim for backwards compatibility.
+- (developers) whether to disable loading the [Font Awesome](/user/template/font_awesome/) v4 shim if backwards compatibility is not needed.
 
 See the file itself for specifics and details.
 
