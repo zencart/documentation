@@ -27,4 +27,5 @@ a new column called Wholesale Discount Values is shown.
 
 ![Wholesale Discount Value](/images/wholesale_discount_values.gif) 
 
+Customers who are eligible for Wholesale Pricing are not eligible for Sales, Specials and Group Pricing; Wholesale Pricing replaces these other discounting methods. 
 
