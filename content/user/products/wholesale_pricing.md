@@ -20,7 +20,7 @@ Of the stores that use wholesale pricing, many will only have one wholesale leve
 - premium business customers (level 2), and 
 - a third level for a single company that buys in enormous volumes, Wally World (level 3). 
 
-The value in the Wholesale Level field of the Customer Detail page would thus be:
+The value in the Wholesale Level field on the Customer Detail page would thus be:
 - 0 (retail customers), 
 - 1 (business customers), 
 - 2 (premium business customers), or 
@@ -38,19 +38,19 @@ On the [product editing screen](/user/products/product_edit/), a new field calle
 
 The Wholesale Price field is a dash separated list of discounts - either actual prices or percent off discounts.  
 
-If wholesale level 1 customers get 5% off, level 2 get 10% off, and level 3 get 25% off, the value in the Wholesale Price field of the Customer Detail page would be:
+If wholesale level 1 customers get 5% off, level 2 get 10% off, and level 3 get 25% off, the value in the Wholesale Price field on the product editing page would be:
 
 ```
 5%-10%-25%
 ``` 
 
-If the regular price of the item is $20, but wholesale level 1 customers only pay $18, level 2 pay $15, and level 3 pay $12, the value in the Wholesale Price field of the Customer Detail page would be:
+If the regular price of the item is $20, but wholesale level 1 customers only pay $18, level 2 pay $15, and level 3 pay $12, the value in the Wholesale Price field of the product editing page would be:
 
 ```
 18-15-12
 ```
 
-If this is a low margin item and all wholesalers only get 5% off, the value in the Wholesale Price field of the Customer Detail page would be:
+If this is a low margin item and all wholesalers only get 5% off, the value in the Wholesale Price field of the product editing page would be:
 
 ```
 5%

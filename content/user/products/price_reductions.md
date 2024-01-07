@@ -10,7 +10,7 @@ There are a variety of ways products can be discounted in Zen Cart:
 - Using [Specials](/user/products/special_products/) or [Sales](/user/products/sale_products/)
 - Using [Quantity Discounts](/user/products/quantity_discounts/)
 - Using an [Order Total Module](/user/order_total/order_total/) such as Group Pricing or Coupons.
-- In Zen Cart 2.0.0 and above, using [wholesale pricing](/user/products/wholesale_pricing).
+- Since Zen Cart 2.0.0, using [wholesale pricing](/user/products/wholesale_pricing).
 
 Each of these results in a price reduction which is presented in a different way. 
 
