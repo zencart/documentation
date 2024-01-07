@@ -34,4 +34,8 @@ Clicking a customers record selects that customer and opens a preview on the rig
 
 Editing the customer record takes you to the customer details screen, which shows the customer's default address, telephone number and email address, as well as other settings specific to that customer. 
 
+![Edit Customer 1](/images/edit_customer_1.gif)
+![Edit Customer 2](/images/edit_customer_2.gif)
+
+
 For more information, see the [customer and order data FAQs](/user/orders/). 
