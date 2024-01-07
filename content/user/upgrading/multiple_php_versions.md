@@ -30,9 +30,9 @@ Make sure the Share document root is not checked, and that the folder we just cr
 You now have a subdomain of `test.YOURSITE.com` ready to be set up.
 
 ## Setting the PHP for the Subdomain
-If your cPanel does NOT have a Software Section with a selection of MultiPhP Manager, you may need your host’s help on this step.
+If your cPanel does NOT have a Software Section with a selection of MultiPHP Manager, you may need your host’s help on this step.
 
-If you don’t have MultiPhP Manager, ask your host to set the PHP for the `test.YOURSITE.com` folder that you created.
+If you don’t have MultiPHP Manager, ask your host to set the PHP for the `test.YOURSITE.com` folder that you created.
 
 If you do have MultiPHP Manager, go to the Software Section in the cPanel and open MultiPHP Manager. Set the PHP version appropriately.
 
