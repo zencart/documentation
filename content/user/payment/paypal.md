@@ -7,7 +7,7 @@ weight: 10
 
 If you have already decided to use PayPal Express, see [Setup instructions for PayPal Express Checkout](/user/payment/paypal_express_checkout/). 
 
-Zen Cart recommends using Express Checkout instead of Website Payments Standard.  Another option is a newer module, called [PayPal RESTful](/user/payments/paypal_restful/), which will be available soon, and will eventually replace both PayPal Express and PayPal Website Payments Pro.
+Zen Cart recommends using Express Checkout instead of PayPal Standard.  Another option is a newer module, called [PayPal RESTful](/user/payments/paypal_restful/), which will be available soon, and will eventually replace both PayPal Express and PayPal Website Payments Pro.
 
 **PayPal Express Checkout**  gives the customer two options: They can jump over to the PayPal site to login to their account BEFORE completing checkout on your store (which allows them to select their address information there and never have to re-type their address details on YOUR site, thus the "express" part of the transaction) and then choosing shipping choices and discounts/coupons etc before completing the order ....... OR they can go to the PayPal site to login to their account AFTER making shipping/payment/coupon selections on your site (and creating an account on your store and typing their address info on your store), much like they do with Standard.    
 
@@ -15,7 +15,9 @@ Zen Cart recommends using Express Checkout instead of Website Payments Standard.
 
 One important benefit is that Express Checkout does not rely entirely on the IPN communications to your store in order to release the order. Instead, it stores the order immediately when payment is completed. It doesn't have to rely on the PayPal server to talk to your server in order to store the order.  Granted, you will still want PayPal's server to be able to send IPN updates to you for any orders, in case you do refunds or adjustments to the order... so that those updates are reflected in your store's order history.  
 
-Express Checkout has all the same features as Website Payments Standard, but is more reliable because it completes the transaction directly while the customer is actively engaged on your site. It supports all the currencies, payment methods, etc, just the same, but more efficiently. There is no monthly fee for using Express Checkout.  
+[PayPal Standard is no longer recommended](/user/payment/paypal_standard).  You should NOT be using Payments Standard; you should be using Express Checkout which is far more reliable.
+
+Express Checkout has all the same features as PayPal Standard, but is more reliable because it completes the transaction directly while the customer is actively engaged on your site. It supports all the currencies, payment methods, etc, just the same, but more efficiently. There is no monthly fee for using Express Checkout.  
 
 PayPal sees Express Checkout as a payment option that's offered <u>in addition to</u> other payment choices such as a credit card gateway, and that adding Express is a way to allow PayPal members a very quick and easy way to pay using their PayPal account. PayPal also believes [Express Checkout improves conversions/sales.](https://www.paypal-marketing.com/paypal/html/partner/na/pdf/Winning%20at%20Checkout.pdf) Many merchants do use Express Checkout as their sole payment processing option, even without a credit card gateway.  
 
