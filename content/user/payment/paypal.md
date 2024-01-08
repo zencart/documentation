@@ -5,9 +5,9 @@ category: payment
 weight: 10
 ---
 
-You're probably really looking for [Setup instructions for PayPal Express Checkout](/user/payment/paypal_express_checkout/). 
+If you have already decided to use PayPal Express, see [Setup instructions for PayPal Express Checkout](/user/payment/paypal_express_checkout/). 
 
-Zen Cart recommends using Express Checkout instead of Website Payments Standard.  
+Zen Cart recommends using Express Checkout instead of Website Payments Standard.  Another option is a newer module, called [PayPal RESTful](/user/payments/paypal_restful/), which will be available soon, and will eventually replace both PayPal Express and PayPal Website Payments Pro.
 
 **PayPal Express Checkout**  gives the customer two options: They can jump over to the PayPal site to login to their account BEFORE completing checkout on your store (which allows them to select their address information there and never have to re-type their address details on YOUR site, thus the "express" part of the transaction) and then choosing shipping choices and discounts/coupons etc before completing the order ....... OR they can go to the PayPal site to login to their account AFTER making shipping/payment/coupon selections on your site (and creating an account on your store and typing their address info on your store), much like they do with Standard.    
 
@@ -35,9 +35,9 @@ PayPal sees PayPal Payments Standard as a solution for merchants wanting to coll
 
 Zen Cart recommends using PayPal Express Checkout over Website Payments Standard.  
 
-More information about the various PayPal services can be found on the [PayPal website.](https://www.zen-cart.com/partners/paypal)  
+### Other PayPal Services 
 
-Another much-less-commonly-asked-about PayPal service is:  
+**PayPal RESTful** is a new integration which uses PayPal's latest API.  See [PayPal RESTful](/user/payment/paypal_restful) for more details.
 
 **Payflow Pro**  is essentially *only* a merchant account.  Transactions conducted via Payflow Pro (for US Merchants) do not appear in your PayPal account ... instead, they are forwarded directly to your merchant bank account.  Basically, Payflow Pro is just like any other traditional payment gateway (akin to Authorize.net etc). In North America you can connect the Payflow Pro service to your own merchant bank account. In the UK, the Payflow Pro service is actually bundled as a hybrid service with Website Payments Pro, connecting all the transactions to your UK PayPal account, and all monies are deposited to your PayPal account, instead of directly to your bank account. There is a monthly fee for using this service.  
 
@@ -45,8 +45,12 @@ Zen Cart does not have built-in support for the US Payflow Pro service. However,
 
 Please see PayPal's website for more [Payflow and PayPal](https://www.zen-cart.com/partners/paypal) information.  
 
+**PayPal Commerce** is another PayPal offering.  It is not supported at this time by Zen Cart, and adding it is not on the roadmap.
+
 ### Where can I learn more about PayPal? 
 
 PayPal provides a series of [Help Guides](https://www.paypal.com/us/smarthelp/PAYPAL_HELP_GUIDE) with information about how to handle common situations. 
+
+More information about the various PayPal services can be found on the [PayPal website.](https://www.zen-cart.com/partners/paypal)  
 
 ---

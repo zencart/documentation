@@ -9,5 +9,6 @@ At the current time, the Zen Cart core team has no plans to develop a PayPal Com
 
 - Use [Square](/user/payment/square/) 
 - Use [PayPal Express](/user/payment/paypal_express_checkout/)
+- Use [PayPal RESTful](/user/payment/paypal_restful/)
 - Contact a software vendor and work with them. 
  
