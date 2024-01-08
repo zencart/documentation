@@ -78,7 +78,7 @@ If you want to do this, look at the example in [Colorbox for Zen Cart](https://w
 
 ## Database change checks 
 
-- Ensure your schema is correct.  See `tableCheckup` in `includes/modules/payment/paypal.php` for an example of how to do this.
+- Ensure your schema is correct.  See `tableCheckup` in `includes/modules/payment/paypal.php` for an example of how to do this.  You can also read more about the [sniffer object](/dev/code/database_querying/#sniffer-object) that does the required work. 
 
 ```
 $fieldOkay1 = (method_exists($sniffer, 'field_type')) ? $sniffer->field_type(TABLE_PAYPAL, 'txn_id', 'varchar(20)', true) : -1;

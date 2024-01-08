@@ -182,4 +182,15 @@ $query = $db->bindVars($query, ':name:', $_POST['name'], 'string');
 $db->Execute($query);
 ```
 
- 
+## Sniffer Object 
+
+The file `includes/classes/sniffer.php` defines the `sniffer` class.  The purpose
+of this class is to allow you to deduce the presence (or absence) of various things in the database.  Its methods are: 
+
+- `field_exists` - is a particular column in a table? 
+- `field_type` - what is the type of a particular column in table? 
+- `rowExists` - does a row exist where the specified column has the specified value? 
+- `rowExistsComposite` - does a row exist where the specified columns have the specified values? 
+
+See [database change checks](/dev/plugins/tips/#database-change-checks) for an example of using the sniffer object. 
+
