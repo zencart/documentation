@@ -1,5 +1,5 @@
 ---
-title: Configuration > Credit Cards
+title: Configuration ▸ Credit Cards
 category: admin_pages
 weight: 160 
 ---
