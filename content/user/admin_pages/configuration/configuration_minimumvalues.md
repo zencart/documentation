@@ -1,5 +1,5 @@
 ---
-title: Configuration > Minimum Values
+title: Configuration \u003E Minimum Values
 category: admin_pages
 weight: 20 
 ---
