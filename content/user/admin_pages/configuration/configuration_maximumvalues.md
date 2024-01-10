@@ -1,5 +1,5 @@
 ---
-title: Configuration > Maximum Values
+title: Configuration &gt; Maximum Values
 category: admin_pages
 weight: 30 
 ---
