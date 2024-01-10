@@ -1,5 +1,5 @@
 ---
-title: Configuration > Customer Details
+title: Configuration ≫ Customer Details
 category: admin_pages
 weight: 50 
 ---
