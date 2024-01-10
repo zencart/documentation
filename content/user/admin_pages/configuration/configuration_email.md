@@ -1,5 +1,5 @@
 ---
-title: Configuration > Email
+title: Configuration `>` Email
 category: admin_pages
 weight: 100 
 ---
