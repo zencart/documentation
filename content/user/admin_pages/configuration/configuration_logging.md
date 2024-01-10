@@ -1,5 +1,5 @@
 ---
-title: Configuration > Logging
+title: Configuration &#x3E; Logging
 category: admin_pages
 weight: 90 
 ---

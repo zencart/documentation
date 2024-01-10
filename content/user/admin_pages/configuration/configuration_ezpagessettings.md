@@ -1,5 +1,5 @@
 ---
-title: Configuration > EZ-Pages Settings
+title: Configuration \> EZ-Pages Settings
 category: admin_pages
 weight: 250 
 ---
