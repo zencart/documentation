@@ -28,16 +28,16 @@ Next, below (a) is the output of [`phpinfo()`](https://www.php.net/manual/en/fun
 <img src="/images/version_info_zc_156.png" alt="Zen Cart Version information" />
 <br>
 
-Be sure the version of PHP you are running is a 
+Be sure the version of PHP (a) you are running is a 
 [supported version](https://www.php.net/supported-versions.php). 
 Running an older unsupported version leaves you vulnerable to attack 
 by bad guys.  Note that updating PHP sometimes means [upgrading your Zen Cart software](/user/upgrading) so that you're running the [latest Zen Cart version](/user/first_steps/get_zen_cart/). 
 
-If your Database Engine value shows *MariaDB*, 
+If your Database Engine (b) value shows *MariaDB*, 
 then, if needed, you can see the 
 [MySQL to MariaDB compatibility matrix here](https://mariadb.com/kb/en/mariadb-vs-mysql-compatibility/).
 
-If you are coming to this page because of a new problem with your cart, be sure your Zen Cart version is compatible with your PHP version.  Refer to the [PHP Version - Zen Cart version compatibility matrix](/user/first_steps/server_requirements/#php-version). 
+If you are coming to this page because of a new problem with your cart, be sure your Zen Cart version (f) is compatible with your PHP version (a).  Refer to the [PHP Version - Zen Cart version compatibility matrix](/user/first_steps/server_requirements/#php-version). 
 
 ## More Info on Version Checking
 
