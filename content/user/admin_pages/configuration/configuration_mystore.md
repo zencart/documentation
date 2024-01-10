@@ -1,5 +1,5 @@
 ---
-title: Configuration > My Store
+title: Configuration &#62; My Store
 category: admin_pages
 weight: 10 
 ---
