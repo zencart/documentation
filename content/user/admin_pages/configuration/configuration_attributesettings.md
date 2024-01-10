@@ -1,5 +1,5 @@
 ---
-title: Configuration > Attribute Settings
+title: Configuration ≫ Attribute Settings
 category: admin_pages
 weight: 110 
 ---

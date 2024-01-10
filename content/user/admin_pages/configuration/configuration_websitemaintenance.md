@@ -1,5 +1,5 @@
 ---
-title: Configuration > Website Maintenance
+title: Configuration ≫ Website Maintenance
 category: admin_pages
 weight: 190 
 ---

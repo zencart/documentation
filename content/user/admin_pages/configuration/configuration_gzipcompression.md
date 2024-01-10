@@ -1,5 +1,5 @@
 ---
-title: Configuration > GZip Compression
+title: Configuration ≫ GZip Compression
 category: admin_pages
 weight: 120 
 ---

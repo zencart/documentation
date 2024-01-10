@@ -1,5 +1,5 @@
 ---
-title: Configuration > GV Coupons
+title: Configuration ≫ GV Coupons
 category: admin_pages
 weight: 150 
 ---

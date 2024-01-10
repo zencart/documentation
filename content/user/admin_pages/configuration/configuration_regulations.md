@@ -1,5 +1,5 @@
 ---
-title: Configuration > Regulations
+title: Configuration ≫ Regulations
 category: admin_pages
 weight: 140 
 ---

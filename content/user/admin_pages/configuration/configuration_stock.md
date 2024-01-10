@@ -1,5 +1,5 @@
 ---
-title: Configuration > Stock
+title: Configuration ≫ Stock
 category: admin_pages
 weight: 80 
 ---
@@ -66,7 +66,7 @@ Description: Show Sold Out Image instead of Add to Cart Button<br /><br />0= off
 
 <div class='indent'>Key: <b>ENABLE_DISABLED_UPCOMING_PRODUCT</b><br />
 Path: <b>Configuration > Stock</b><br />
-Description: How should disabled products with a future available date be made active when the date is reached?<br /></div>
+Description: How should hidden (disabled) product with a future available date be made visible (active) to customers when the date is reached?<br /></div>
 
 
 <h2 id="product_quantity_decimals">Product Quantity Decimals</h2>

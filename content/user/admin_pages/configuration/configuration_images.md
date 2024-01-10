@@ -1,5 +1,5 @@
 ---
-title: Configuration > Images
+title: Configuration ≫ Images
 category: admin_pages
 weight: 40 
 ---

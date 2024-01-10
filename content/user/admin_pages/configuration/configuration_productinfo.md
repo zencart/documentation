@@ -1,5 +1,5 @@
 ---
-title: Configuration > Product Info
+title: Configuration ≫ Product Info
 category: admin_pages
 weight: 170 
 ---
@@ -120,9 +120,8 @@ Description: Product Info - Show the Price is Call for Price Image or Text on Di
 
 <div class='indent'>Key: <b>PRODUCTS_QTY_BOX_STATUS</b><br />
 Path: <b>Configuration > Product Info</b><br />
-Description: What should the Default Quantity Box Status be set to when adding New Products?<br /><br />
-0= off: hides the Qty Box and the Add to Cart button will add one product to the cart. In the shopping cart, the option to update the quantity of the product will be disabled.<br />
-1= on: will show a Qty Box with a default quantity of 1.</div>
+Description: What should the Default Quantity Box Status be set to when adding New Products?<br /><br />0= off<br />1= on<br />NOTE: This will show a Qty Box when ON and default the Add to Cart to 1</div>
+
 
 <h2 id="product_reviews_require_approval">Product Reviews Require Approval</h2>
 

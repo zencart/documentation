@@ -1,5 +1,5 @@
 ---
-title: Configuration &#8811; Define Page Status
+title: Configuration ≫ Define Page Status
 category: admin_pages
 weight: 240 
 ---

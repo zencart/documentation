@@ -1,5 +1,5 @@
 ---
-title: Configuration > Index Listing
+title: Configuration ≫ Index Listing
 category: admin_pages
 weight: 230 
 ---
