@@ -1,5 +1,5 @@
 ---
-title: Configuration > Sessions
+title: Configuration ≫ Sessions
 category: admin_pages
 weight: 130 
 ---

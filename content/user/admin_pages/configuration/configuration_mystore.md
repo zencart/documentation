@@ -1,5 +1,5 @@
 ---
-title: Configuration &#62; My Store
+title: Configuration ≫ My Store
 category: admin_pages
 weight: 10 
 ---
@@ -163,6 +163,13 @@ Description: Always show Sales Tax even when amount is $0.00?<br />0= Off<br />1
 <div class='indent'>Key: <b>SHOW_SPLIT_TAX_CHECKOUT</b><br />
 Path: <b>Configuration > My Store</b><br />
 Description: If multiple tax rates apply, show each rate as a separate line at checkout</div>
+
+
+<h2 id="wholesale_pricing">Wholesale Pricing</h2>
+
+<div class='indent'>Key: <b>WHOLESALE_PRICING_CONFIG</b><br />
+Path: <b>Configuration > My Store</b><br />
+Description: Should <em>Wholesale Pricing</em> be enabled for your site?  Choose <b>false</b> (the default) if you don't want that feature enabled. Otherwise, choose <b>Tax Exempt</b> to enable with tax-exemptions for all wholesale customers or <b>Pricing Only</b> to apply tax as usual for wholesale customers.</div>
 
 
 <h2 id="store_status">Store Status</h2>

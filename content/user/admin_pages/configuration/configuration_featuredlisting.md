@@ -1,5 +1,5 @@
 ---
-title: Configuration > Featured Listing
+title: Configuration ≫ Featured Listing
 category: admin_pages
 weight: 210 
 ---

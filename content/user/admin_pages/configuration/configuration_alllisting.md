@@ -1,5 +1,5 @@
 ---
-title: Configuration > All Listing
+title: Configuration ≫ All Listing
 category: admin_pages
 weight: 220 
 ---

@@ -1,5 +1,5 @@
 ---
-title: Configuration > Layout Settings
+title: Configuration ≫ Layout Settings
 category: admin_pages
 weight: 180 
 ---
@@ -10,14 +10,14 @@ See also <a href="/user/admin_pages/catalog/product_types_edit_layout/">Admin &g
 
 <div class='indent'>Key: <b>BOX_WIDTH_LEFT</b><br />
 Path: <b>Configuration > Layout Settings</b><br />
-Description: Width of the Left Column Boxes<br />px may be included<br />Default = 150px</div>
+Description: Width of the Left Column Boxes<br>px may be included<br>Default = 150px<br><b>This configuration has no affect with the ZCA Responsive Components or ZCA Bootstrap Themes</b></div>
 
 
 <h2 id="column_width__right_boxes">Column Width - Right Boxes</h2>
 
 <div class='indent'>Key: <b>BOX_WIDTH_RIGHT</b><br />
 Path: <b>Configuration > Layout Settings</b><br />
-Description: Width of the Right Column Boxes<br />px may be included<br />Default = 150px</div>
+Description: Width of the Right Column Boxes<br>px may be included<br>Default = 150px<br><b>This configuration has no affect with the ZCA Responsive Components or ZCA Bootstrap Themes</b></div>
 
 
 <h2 id="bread_crumbs_navigation_separator">Bread Crumbs Navigation Separator</h2>
@@ -108,14 +108,14 @@ Description: Show Column Right, unless page override exists?<br />0= Column Righ
 
 <div class='indent'>Key: <b>COLUMN_WIDTH_LEFT</b><br />
 Path: <b>Configuration > Layout Settings</b><br />
-Description: Width of the Left Column<br />px may be included<br />Default = 150px</div>
+Description: Width of the Left Column<br>px may be included<br>Default = 150px<br><br><b>This configuration has no affect with the ZCA Responsive Components or ZCA Bootstrap Themes</b></div>
 
 
 <h2 id="column_width__right">Column Width - Right</h2>
 
 <div class='indent'>Key: <b>COLUMN_WIDTH_RIGHT</b><br />
 Path: <b>Configuration > Layout Settings</b><br />
-Description: Width of the Right Column<br />px may be included<br />Default = 150px</div>
+Description: Width of the Right Column<br>px may be included<br>Default = 150px<br><b>This configuration has no affect with the ZCA Responsive Components or ZCA Bootstrap Themes</b></div>
 
 
 <h2 id="categories_separator_between_links_status">Categories Separator between links Status</h2>
@@ -206,63 +206,63 @@ Description: Always Show Categories and SubCategories<br />0= off, just show Top
 
 <div class='indent'>Key: <b>SHOW_BANNERS_GROUP_SET1</b><br />
 Path: <b>Configuration > Layout Settings</b><br />
-Description: The Banner Display Groups can be from one Banner Group or multiple Banner Groups<br /><br />For multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Header Position 1?<br />Leave blank for none</div>
+Description: The Banner Display Groups can be from 1 Banner Group or Multiple Banner Groups<br /><br />For Multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Header Position 1?<br />Leave blank for none</div>
 
 
 <h2 id="banner_display_groups__header_position_2">Banner Display Groups - Header Position 2</h2>
 
 <div class='indent'>Key: <b>SHOW_BANNERS_GROUP_SET2</b><br />
 Path: <b>Configuration > Layout Settings</b><br />
-Description: The Banner Display Groups can be from one Banner Group or multiple Banner Groups<br /><br />For multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Header Position 2?<br />Leave blank for none</div>
+Description: The Banner Display Groups can be from 1 Banner Group or Multiple Banner Groups<br /><br />For Multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Header Position 2?<br />Leave blank for none</div>
 
 
 <h2 id="banner_display_groups__header_position_3">Banner Display Groups - Header Position 3</h2>
 
 <div class='indent'>Key: <b>SHOW_BANNERS_GROUP_SET3</b><br />
 Path: <b>Configuration > Layout Settings</b><br />
-Description: The Banner Display Groups can be from one Banner Group or multiple Banner Groups<br /><br />For multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Header Position 3?<br />Leave blank for none</div>
+Description: The Banner Display Groups can be from 1 Banner Group or Multiple Banner Groups<br /><br />For Multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Header Position 3?<br />Leave blank for none</div>
 
 
 <h2 id="banner_display_groups__footer_position_1">Banner Display Groups - Footer Position 1</h2>
 
 <div class='indent'>Key: <b>SHOW_BANNERS_GROUP_SET4</b><br />
 Path: <b>Configuration > Layout Settings</b><br />
-Description: The Banner Display Groups can be from one Banner Group or multiple Banner Groups<br /><br />For multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Footer Position 1?<br />Leave blank for none</div>
+Description: The Banner Display Groups can be from 1 Banner Group or Multiple Banner Groups<br /><br />For Multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Footer Position 1?<br />Leave blank for none</div>
 
 
 <h2 id="banner_display_groups__footer_position_2">Banner Display Groups - Footer Position 2</h2>
 
 <div class='indent'>Key: <b>SHOW_BANNERS_GROUP_SET5</b><br />
 Path: <b>Configuration > Layout Settings</b><br />
-Description: The Banner Display Groups can be from one Banner Group or multiple Banner Groups<br /><br />For multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Footer Position 2?<br />Leave blank for none</div>
+Description: The Banner Display Groups can be from 1 Banner Group or Multiple Banner Groups<br /><br />For Multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Footer Position 2?<br />Leave blank for none</div>
 
 
 <h2 id="banner_display_groups__footer_position_3">Banner Display Groups - Footer Position 3</h2>
 
 <div class='indent'>Key: <b>SHOW_BANNERS_GROUP_SET6</b><br />
 Path: <b>Configuration > Layout Settings</b><br />
-Description: The Banner Display Groups can be from one Banner Group or multiple Banner Groups<br /><br />For multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />Default Group is Wide-Banners<br /><br />What Banner Group(s) do you want to use in the Footer Position 3?<br />Leave blank for none</div>
+Description: The Banner Display Groups can be from 1 Banner Group or Multiple Banner Groups<br /><br />For Multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br /><br />Default Group is Wide-Banners<br /><br />What Banner Group(s) do you want to use in the Footer Position 3?<br />Leave blank for none</div>
 
 
 <h2 id="banner_display_groups__side_box_banner_box">Banner Display Groups - Side Box banner_box</h2>
 
 <div class='indent'>Key: <b>SHOW_BANNERS_GROUP_SET7</b><br />
 Path: <b>Configuration > Layout Settings</b><br />
-Description: The Banner Display Groups can be from one Banner Group or multiple Banner Groups<br /><br />For multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br />Default Group is SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Side Box - banner_box?<br />Leave blank for none</div>
+Description: The Banner Display Groups can be from 1 Banner Group or Multiple Banner Groups<br /><br />For Multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br />Default Group is SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Side Box - banner_box?<br />Leave blank for none</div>
 
 
 <h2 id="banner_display_groups__side_box_banner_box2">Banner Display Groups - Side Box banner_box2</h2>
 
 <div class='indent'>Key: <b>SHOW_BANNERS_GROUP_SET8</b><br />
 Path: <b>Configuration > Layout Settings</b><br />
-Description: The Banner Display Groups can be from one Banner Group or multiple Banner Groups<br /><br />For multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br />Default Group is SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Side Box - banner_box2?<br />Leave blank for none</div>
+Description: The Banner Display Groups can be from 1 Banner Group or Multiple Banner Groups<br /><br />For Multiple Banner Groups enter the Banner Group Name separated by a colon <strong>:</strong><br /><br />Example: Wide-Banners:SideBox-Banners<br />Default Group is SideBox-Banners<br /><br />What Banner Group(s) do you want to use in the Side Box - banner_box2?<br />Leave blank for none</div>
 
 
 <h2 id="banner_display_group__side_box_banner_box_all">Banner Display Group - Side Box banner_box_all</h2>
 
 <div class='indent'>Key: <b>SHOW_BANNERS_GROUP_SET_ALL</b><br />
 Path: <b>Configuration > Layout Settings</b><br />
-Description: The Banner Display Group may only be from one Banner Group for the Banner All sidebox<br /><br />Default Group is BannersAll<br /><br />What Banner Group do you want to use in the Side Box - banner_box_all?<br />Leave blank for none</div>
+Description: The Banner Display Group may only be from one (1) Banner Group for the Banner All sidebox<br /><br />Default Group is BannersAll<br /><br />What Banner Group do you want to use in the Side Box - banner_box_all?<br />Leave blank for none</div>
 
 
 <h2 id="footer__show_ip_address_status">Footer - Show IP Address status</h2>

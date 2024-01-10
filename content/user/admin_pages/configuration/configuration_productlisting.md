@@ -1,5 +1,5 @@
 ---
-title: Configuration > Product Listing
+title: Configuration ≫ Product Listing
 category: admin_pages
 weight: 70 
 ---
@@ -120,7 +120,7 @@ Description: What do you want to use to indicate Sort Order Descending?<br />Def
 
 <div class='indent'>Key: <b>PRODUCT_LISTING_COLUMNS_PER_ROW</b><br />
 Path: <b>Configuration > Product Listing</b><br />
-Description: Select the number of columns of products to show per row in the product listing.<br>Recommended: 3<br>1=[rows] mode.</div>
+Description: Select the number of columns of products to show per row in the product listing.<br>Recommended: 3<br>1=[rows] mode.<br><br>For the <code>bootstrap</code> template, use 0 (fluid columns) or 1 (rows).<br></div>
 
 
 <h2 id="include_product_listing_alpha_sorter_dropdown">Include Product Listing Alpha Sorter Dropdown</h2>
