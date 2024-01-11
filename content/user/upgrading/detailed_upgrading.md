@@ -5,7 +5,9 @@ category: Upgrading
 weight: 7
 ---
 
-This guide assumes for simplicity that you have Zen Cart installed in a folder called `store`.  This configuration (placing your store in a subdirectory) allows you to run your old store and your new store side by side for testing before going live.  If you didn't install your current store in a [subfolder](/user/installing/subfolder/), you can still install your new store in a subfolder for testing, and then remove the subfolder and install at the top level when it's time to go live. 
+This guide assumes for simplicity that you have Zen Cart installed in a folder called `store`.  This configuration (placing your store in a subdirectory) allows you to run your old store and your new store side by side for testing before going live.  If you didn't install your current store in a [subfolder](/user/installing/subfolder/), you can still install your new store in a subfolder for testing, and then remove the subfolder and install at the top level when it's time to go live.  
+
+Note that if you are installing a test version of your cart that uses a different version of PHP than your live site, see [Multiple PHP Versions](/user/upgrading/multiple_php_versions/) for instructions, since the procedure is a little different. 
 
 This guide also mentions _cPanel_ when referring to the Control Panel offered by your hosting company for managing your hosting account's databases, file permissions, etc. While cPanel is a popular brand, your hosting company may offer something else. Consult them for help if needed.
 
@@ -160,7 +162,7 @@ Download and unzip the latest Zen Cart version to your PC. This will be in a 3rd
 
 Using the list of files you made earlier, go through each "changed" file, and re-make your changes from the old version onto the new version.
 
-> IMPORTANT: You always want to build on the latest set of Zen Cart files.  This means store_new contains the current version of Zen Cart, and you apply your changes to that.  **DO NOT** start with your old version and apply the changes from the latest version of Zen Cart. 
+> IMPORTANT: You always want to build on the latest set of Zen Cart files.  This means `store_new` contains the current version of Zen Cart, and you apply your changes to that.  **DO NOT** start with your old version and apply the changes from the latest version of Zen Cart. 
 
 > Clarification: here you are essentially re-building your `store` customizations onto the `store_new` directory.
 
@@ -224,6 +226,7 @@ Edit these two files and set all the parameters, using your existing live store 
 ## Upload the files to a temporary directory on your server
 Upload the files from your modified `store_new` directory on your PC (created in step 2) into a temporary directory on your server, perhaps also called `store_new`.
 
+Note that if you are installing an upgraded version of your cart that uses a different version of PHP than your live site, see [Multiple PHP Versions](/user/upgrading/multiple_php_versions/) for instructions, since the procedure is a little different. 
 
 ## Run zc_install to upgrade the temporary database
 
