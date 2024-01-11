@@ -7,79 +7,79 @@ nosearch: true
 <br /><br />
 
 ---
-# Admin > Configuration > My Store
+# Admin ≫ Configuration ≫ My Store
 {{% include "/user/admin_pages/configuration/configuration_mystore.md" %}}
 
-# Admin > Configuration > Minimum Values
+# Admin ≫ Configuration ≫ Minimum Values
 {{% include "/user/admin_pages/configuration/configuration_minimumvalues.md" %}}
 
-# Admin > Configuration > Maximum Values
+# Admin ≫ Configuration ≫ Maximum Values
 {{% include "/user/admin_pages/configuration/configuration_maximumvalues.md" %}}
 
-# Admin > Configuration > Images
+# Admin ≫ Configuration ≫ Images
 {{% include "/user/admin_pages/configuration/configuration_images.md" %}}
 
-# Configuration > Customer Details
+# Configuration ≫ Customer Details
 {{% include "/user/admin_pages/configuration/configuration_customerdetails.md" %}}
 
-# Configuration > Shipping/Packaging
+# Configuration ≫ Shipping/Packaging
 {{% include "/user/admin_pages/configuration/configuration_shippingpackaging.md" %}}
 
-# Configuration > Product Listing
+# Configuration ≫ Product Listing
 {{% include "/user/admin_pages/configuration/configuration_productlisting.md" %}}
 
-# Configuration > Stock
+# Configuration ≫ Stock
 {{% include "/user/admin_pages/configuration/configuration_stock.md" %}}
 
-# Configuration > Logging
+# Configuration ≫ Logging
 {{% include "/user/admin_pages/configuration/configuration_logging.md" %}}
 
-# Configuration > E-Mail 
+# Configuration ≫ E-Mail 
 {{% include "/user/admin_pages/configuration/configuration_email.md" %}}
 
-# Configuration > Attribute Settings
+# Configuration ≫ Attribute Settings
 {{% include "/user/admin_pages/configuration/configuration_attributesettings.md" %}}
 
-# Configuration > GZip Compression
+# Configuration ≫ GZip Compression
 {{% include "/user/admin_pages/configuration/configuration_gzipcompression.md" %}}
 
-# Configuration > Sessions
+# Configuration ≫ Sessions
 {{% include "/user/admin_pages/configuration/configuration_sessions.md" %}}
 
-# Configuration > Regulations
+# Configuration ≫ Regulations
 {{% include "/user/admin_pages/configuration/configuration_regulations.md" %}}
 
-# Configuration > GV Coupons
+# Configuration ≫ GV Coupons
 {{% include "/user/admin_pages/configuration/configuration_gvcoupons.md" %}}
 
-# Configuration > Credit Cards
+# Configuration ≫ Credit Cards
 {{% include "/user/admin_pages/configuration/configuration_creditcards.md" %}}
 
-# Configuration > Product Info
+# Configuration ≫ Product Info
 {{% include "/user/admin_pages/configuration/configuration_productinfo.md" %}}
 
-# Configuration > Layout Settings
+# Configuration ≫ Layout Settings
 {{% include "/user/admin_pages/configuration/configuration_layoutsettings.md" %}}
 
-# Configuration > Website Maintenance
+# Configuration ≫ Website Maintenance
 {{% include "/user/admin_pages/configuration/configuration_websitemaintenance.md" %}}
 
-# Configuration > New Listing
+# Configuration ≫ New Listing
 {{% include "/user/admin_pages/configuration/configuration_newlisting.md" %}}
 
-# Configuration > Featured Listing
+# Configuration ≫ Featured Listing
 {{% include "/user/admin_pages/configuration/configuration_featuredlisting.md" %}}
 
-# Configuration > All Listing
+# Configuration ≫ All Listing
 {{% include "/user/admin_pages/configuration/configuration_alllisting.md" %}}
 
-# Configuration > Index Listing
+# Configuration ≫ Index Listing
 {{% include "/user/admin_pages/configuration/configuration_indexlisting.md" %}}
 
-# Configuration > Define Page Status
+# Configuration ≫ Define Page Status
 {{% include "/user/admin_pages/configuration/configuration_definepagestatus.md" %}}
 
-# Configuration > EZ-Pages Settings
+# Configuration ≫ EZ-Pages Settings
 {{% include "/user/admin_pages/configuration/configuration_ezpagessettings.md" %}}
 
 <style>
