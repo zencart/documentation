@@ -15,3 +15,4 @@ and
 [deployment model 4](/user/first_steps/deployment_configurations/#deployment-model-4-empty-root-cart-in-subfolder) 
 for examples of subfolder deployments. 
 
+Note that if you are installing a test version of your cart that uses a different version of PHP than your live site, see [Multiple PHP Versions](/user/upgrading/multiple_php_versions/) for instructions, since the procedure is a little different. 
