@@ -25,7 +25,7 @@ For example, linking to an external page:
 $content .= '<li><a href="https://www.zen-cart.com/" target="_blank" rel="noreferrer noopener">The Greatest Shopping Cart Ever!</a></li>' . "\n" ;
 ```
 
-**Note:** In subsequent examples, the appended linefeed (`. "\n"`) is dropped for clarity. 
+**Note:** In subsequent examples, the appended linefeed `. "\n"` is dropped for clarity. 
 
 If the link if to an internal page, use the `zen_href_link` function.  For example, if you have a page called "News" (and have defined `FILENAME_NEWS` and `BOX_INFORMATION_NEWS`), a link to this page may be added to the Information Sidebox with 
 

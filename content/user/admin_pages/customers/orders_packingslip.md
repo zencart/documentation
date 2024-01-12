@@ -1,5 +1,5 @@
 ---
-title: Orders > Packing Slip 
+title: Orders ≫ Packing Slip 
 category: admin_pages
 weight: 110
 ---

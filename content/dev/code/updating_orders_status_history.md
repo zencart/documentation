@@ -49,6 +49,16 @@ The `zen_update_orders_history` function will create an additional `orders_statu
 2. The `$orders_new_status` is different from the order's current status.
 3. The `$message` to be recorded is not 'empty'.
 
+### Typical Function Call for Plugin Authors/Developers
+
+You have just taken an action that you want recorded in the order status history table.  Simply pass in the order id and a string with what you want recorded.
+
+```
+zen_update_orders_history($oID, 'A comment describing the action taken');
+```
+
+No email is sent and the entry is only shown in the admin. 
+
 ### Notifications Issued
 
 The function also provides a collection of notifications, enabling additional store-specific processing.

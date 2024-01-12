@@ -125,8 +125,7 @@ Check out the [Server Requirements for Running Zen Cart](/user/first_steps/serve
     
     For details see the article [Basic Terms](user/new_user_topics/basic_terms). 
 
-    **Please DO NOT use any other convention** like `/YOUR_CUSTOM_TEMPLATE/`, `/YOUR_STORE/`, `YOURSTORE`, `/your_site/`, `/custom/` , etc. - use the standard names above. 
-
+    **Please DO NOT use any other convention** like `/YOUR_CUSTOM_TEMPLATE/`, `/YOUR_STORE/`, `YOURSTORE`, `/your_site/`, `/custom/` , etc. - use the standard names above.  The reason underscores are not used in the documentation is that they are a special character for Markdown, so using them without backticks will mess up the formatting of a page. 
 
 - Use a space padded greater than sign (` > `) for describing click paths in the Admin, rather than ellipses.  For example, use this: 
 
@@ -140,6 +139,7 @@ NOT THIS:
 
 `Configuration->EZ-Pages Settings`              **NO!** 
 
+An exception is made for the frontmatter `title` where `>` is mangled by Algolia, so `≫` has been used instead. 
 
 ## Links 
 
@@ -334,5 +334,8 @@ Some folders under `/content` contain a file called `developers_read_me.txt`.  T
 
 See also the Github repo https://github.com/scottcwilson/zencart_tools
 
+## Reindexing of changes 
+
+Documentation reindexing by Algolia occurs daily at 3am UTC.
 
 

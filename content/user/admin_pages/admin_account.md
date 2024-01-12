@@ -1,5 +1,5 @@
 ---
-title: Admin > Account link
+title: Admin ≫ Account link
 description: Changing your admin login email and password 
 category: admin_pages
 weight: 510
