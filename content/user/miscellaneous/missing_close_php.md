@@ -1,5 +1,5 @@
 ---
-title: Some of my PHP files are missing the ?> at the end of the file
+title: Some of my PHP files are missing the PHP closing tag at the end of the file
 description: Is a missing PHP closing tag an error? 
 category: miscellaneous
 weight: 10

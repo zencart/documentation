@@ -1,5 +1,5 @@
 ---
-title: Admin > Version link 
+title: Admin ≫ Version link 
 description: Finding your PHP, MySQL and Zen Cart version
 category: admin_pages
 weight: 500

@@ -1,5 +1,5 @@
 ---
-title: Orders > Invoice
+title: Orders ≫ Invoice
 category: admin_pages
 weight: 100 
 ---

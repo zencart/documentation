@@ -1,5 +1,5 @@
 ---
-title: Product Types > Layout Settings
+title: Product Types ≫ Layout Settings
 category: admin_pages
 weight: 21
 ---

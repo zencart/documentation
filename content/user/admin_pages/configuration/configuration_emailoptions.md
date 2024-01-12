@@ -1,5 +1,5 @@
 ---
-title: Configuration > E-Mail Options
+title: Configuration ≫ E-Mail Options
 category: admin_pages
 weight: 100 
 index: false

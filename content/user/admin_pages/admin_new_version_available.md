@@ -1,5 +1,5 @@
 ---
-title: Admin > New Version Available message 
+title: Admin ≫ New Version Available message 
 description: Release announcements right in your admin
 category: admin_pages
 weight: 530
