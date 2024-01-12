@@ -5,7 +5,7 @@ category: payment
 weight: 10
 ---
 
-**Coming Soon! This module is currently in development.**
+**This module is currently in beta: https://www.zen-cart.com/downloads.php?do=file&id=2382**
 
 PayPal RESTful is a new integration with PayPal which uses the 
 [PayPal REST API](https://developer.paypal.com/api/rest/).
