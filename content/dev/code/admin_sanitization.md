@@ -4,18 +4,13 @@ description: How data is sanitized on the admin side
 weight: 1
 ---
 
-## Introduction / History 
+The Admin Sanitization features use a number of sanitization groups. Each group performs a sanitization on specific GET/POST parameters. 
+For GET/POST parameters that are not already sanitized within these groups we then run a default sanitization 
+(i.e.: simply running `htmlspecialchars()` on it).
 
-In versions prior to v1.5.5 very little was done in terms of globally sanitizing $_GET or $_POST parameters in Admin code.
+## Why Sanitize?
 
-There was some global sanitization done for $_GET parameters 
-e.g. 
- https://github.com/zencart/zencart/blob/v154/admin/includes/init_includes/init_sanitize.php
-
-and sanitization may have been done on an individual parameter basis, mainly at output, 
-using htmlspecialchars (`zen_output_string_protected()`).
-
-The reason no stronger sanitization was used was twofold:
+Historically, weaker sanitization was used for two reasons:
 
 Firstly, Admin allows lots of parameters to include what would be considered dangerous characters. 
 e.g. product descriptions allow script tags, and other inputs allow some html, such as product names.
@@ -32,20 +27,11 @@ While we still contend that the CSRF protection mitigates these supposed XSS vul
 
 3. Good security practice.
 
-We have therefore introduced a new sanitization class into v1.5.5 which takes a much more aggressive stance than previous code. 
-
-The new code is likely to have an effect on plugins that add or change admin functionality. To mitigate this some 
-overrides and switches have been allowed for. This documentation should allow plugin authors and sites that 
-already use plugins to workaround potential problems.
-
-The new code introduces a number of sanitization groups. Each group performs a sanitization on specific GET/POST 
-parameters. For GET/POST parameters that are not already sanitized within these groups we then run a 
-default sanitization (i.e.: simply running `htmlspecialchars()` on it).
 
 ## TEMPORARILY Disabling Strict Sanitization
 
-If you find that some of your admin plugins are no longer working properly then you should look first to see if new 
-versions of those plugins are available, i.e.: that support the new v1.5.5 sanitization. 
+If you find that some of your pre-v1.5.5 admin plugins are no longer working properly then you should look first to see if new 
+versions of those plugins are available, i.e.: that support the sanitization methods implemented since v1.5.5. 
 
 If new versions are not available, or you need to keep your current admin working while you update, then you can disable
 the strict(default) sanitization by doing the following:
@@ -76,7 +62,7 @@ To enable logging create a new file in `/admin/includes/extra_configures/` that 
 ## For Developers. How to use the sanitization in plugins.
 
 If you are a developer who wants to update your current code, or you are developing a new plugin, the following
-are some tips to keep your plugin compatible with v1.5.5 core functionality.
+are some tips to keep your plugin compatible with core functionality.
 
 
 ### Parameter Naming
@@ -306,6 +292,7 @@ deeper arrays with a further MULTI_DIMENSIONAL sanitizer array.
 
 
 ### Custom Sanitizers 
+
 tbd
 
 
