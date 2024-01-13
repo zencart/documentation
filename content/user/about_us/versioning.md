@@ -8,7 +8,7 @@ weight: 10
 Note: This FAQ covers versioning of Zen Cart for release 2.0.0 and forward. 
 
 
-Starting with release 2.0.0 (to be released in Fall 2023), the version numbering system used by Zen Cart has been changed to be more standards-based.
+Starting with release 2.0.0 (to be released in early 2024), the version numbering system used by Zen Cart has been changed to be more standards-based.
 
 In this system, releases are numbered using [Semantic Versioning](https://semver.org/), also known as [PHP "standard"](https://www.php.net/manual/en/function.version-compare.php) versioning:
 

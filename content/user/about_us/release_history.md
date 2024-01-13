@@ -29,7 +29,7 @@ Full releases contain more feature content and file changes, and may modify the 
 --- 
 This is the release history of the Zen Cart product.
 
-Zen Cart 2.0.0 is a work in progress, to be released later in 2023.
+Zen Cart 2.0.0 is a work in progress, to be released later in early 2024.
 
 03/18/2023 - v1.5.8a 
 
