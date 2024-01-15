@@ -71,3 +71,8 @@ Once this action completes, you have an up to date copy of your database.
 ## If you have a little more time ... 
 
 It's worth your while to switch from the Responsive Classic template to the [Bootstrap template](/user/template/bootstrap/).  It looks much better and it's just a bit more work.  Redo the [basic language customizations](/user/localization/basic_158_language_customizations/) step for the storefront, using placing the files in `includes/languages/english/bootstrap`.
+
+## After Golive 
+
+{{% post_upgrade_golive_links %}}
+

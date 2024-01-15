@@ -18,7 +18,7 @@ This is a partial list of regular maintenance activities you should do on your s
 - Perform a [security audit](/user/security/security_recommendations/#12-things-to-check-up-on-regularly) on your site. 
 - Check your [website accessibility](/user/accessibility/accessibility/). **This is particularly important for websites in the United States due to litigation risk.**
 - Optional: Run "Optimize Database" from [Admin > Tools > Store Manager](/user/admin_pages/tools/store_manager/). 
-
+- Be sure you are subscribed to the [Known Bugs](/user/about_us/known_bugs/) thread for your release.  Update your store as fixes are announced.
 
 ## Cleaning Up Disk Space
 

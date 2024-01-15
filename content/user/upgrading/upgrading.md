@@ -21,6 +21,7 @@ weight: 1
 ## After Upgrading
 - [Keep Your JavaScript Scripts Updated](/user/upgrading/javascript_updates/)
 - [Should I Change My Database Character Set to UTF8?](/user/upgrading/convert_to_utf8/)
+{{% post_upgrade_golive_links %}}
 
 ## Troubleshooting
 - [Why Don't I See An Option To Upgrade My Database?](/user/upgrading/installer_no_upgrade/)
