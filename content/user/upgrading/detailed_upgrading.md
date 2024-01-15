@@ -329,6 +329,10 @@ If you have small problems to repair, turn "Down for maintenance" on and off aga
 
 - Delete any extra backups you made, especially if they contained your database or customer data. You should only keep copies that are essential for business recovery or financial/business-reference purposes. Keeping too many backups in too many places that are not monitored for privacy can lead to bad situations. (Consider: you wouldn't leave customers' credit card details in papers laying all over your file cabinets and cupboards and drawers: you'd put them in one central safe spot. Do the same with your backups, and destroy copies that don't need to be kept.)
 
+### After Golive 
+
+{{% post_upgrade_golive_links %}}
+
 
 * * *
 
