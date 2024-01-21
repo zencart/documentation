@@ -7,6 +7,7 @@ weight: 1
 
 ## Key Points Related To Upgrading
 
+- [Checking your available PHP version](/user/upgrading/check_php_version)
 - **[How To Upgrade - Detailed Guide](/user/upgrading/detailed_upgrading/) YES, READ THIS!!!!**
 - [Why Upgrade?](/user/upgrading/about_upgrading/) (Protecting your site from bad actors)
 - [Date Standardization](/user/upgrading/date_standardization/)
