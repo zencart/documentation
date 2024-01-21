@@ -1,5 +1,5 @@
 ---
-title: What features does Zen Cart offer? 
+title: Features of Zen Cart 
 description: What capabilities are built in to this ecommerce solution? 
 category: about_us
 weight: 10
@@ -33,7 +33,7 @@ weight: 10
 - Store layout can be controlled in great detail simply by switching settings in the Admin area
 - Entire categories of products (or individual products) can be enabled/disabled with just a few clicks
 - Sort order of products is easily controlled in the admin area
-- If you need to take your site offline for a period of maintenance, you can do it easily by posting advance notices, as well as a friendly Down For Maintenance page that's also Search-Engine friendly
+- If you need to take your site offline for a period of maintenance, you can do it easily by posting advance notices, as well as a Down For Maintenance page that's also Search-Engine friendly
 - During maintenance intervals, specified IP addresses may still access the site for testing
 - Nearly every piece of information about your products can be controlled in the Admin areas, giving you the ability to fine-tune how your products and services appear to your customers without needing to write code
 - Multiple items can be added to the shopping cart from a listing page by simply entering quantities and clicking Add
@@ -82,5 +82,7 @@ weight: 10
 - Ability to add new pages 
 - Can be installed with demo data for evaluation.
 
-Do you have a question about whether Zen Cart offers a particular feature? It might be answered [on the miscellaneous FAQs page](/user/miscellaneous/can_zen_cart/).
+Zen Cart also has a [plugins](/user/plugins/) capability that allows for extension of its core capabilities.
+
+Do you have a question about whether Zen Cart offers a particular feature? It might be answered on the [Can Zen Cart do this?](/user/miscellaneous/can_zen_cart/) page.
 
