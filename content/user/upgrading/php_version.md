@@ -5,7 +5,7 @@ category: upgrading
 weight: 10
 ---
 
-Before you begin your upgrade, you may wish to [check which PHP versions](/user/upgrading/check_php_version) are available. 
+Before you begin your upgrade, you may wish to check [which PHP versions are available](/user/upgrading/check_php_version).
 
 After you go live with an upgrade, you will likely want to update your PHP Version.  For example, if you were running Zen Cart 1.5.1, you were probably using PHP 5.6 or 7.1.  After deploying Zen Cart 1.5.7, you will want to update your PHP version to PHP 7.4. And after deploying Zen Cart 1.5.8, you will want to update your PHP version to 8.0 or 8.1.  
 

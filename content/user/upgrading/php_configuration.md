@@ -1,9 +1,11 @@
 ---
-title: PHP Configuration 
+title: PHP Version and Configuration 
 description: Changing PHP version or PHP Settings 
 category: upgrading 
 weight: 10
 ---
+
+Before changing PHP versions, check [which PHP versions are available](/user/upgrading/check_php_version).  If the one you want isn't available, contact your hoster. 
 
 The process of changing your PHP version is server-specific:
 - Some hosts running cPanel provide MultiPHP Manager tool

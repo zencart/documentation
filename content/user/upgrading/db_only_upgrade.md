@@ -23,6 +23,8 @@ You will be using the `responsive_classic` template initially.  **You can always
 
 ### Setup 
 
+Note that if you are building a test version of your cart that uses a different version of PHP than your live site, see [Multiple PHP Versions](/user/upgrading/multiple_php_versions/) for instructions, since the procedure is a little different. 
+
 1.  **CRITICAL:** [Back up your site](/user/running/backup/#step-1-backup-your-files) 
 2.  **CRITICAL:** [Backup your database](/user/running/backup/#step-2-backup-your-database)
 3.  Create a new directory called "test" and put the latest version of Zen Cart into it. We'll call this your *test site*. 
