@@ -9,6 +9,8 @@ If you want to run multiple versions of PHP on your server (for example, to keep
 
 If you are unfamiliar with the terms webroot, YOURACCOUNT and YOURSITE, please see [basic terms](/user/first_steps/basic_terms/).
 
+First, you should verify that the desired [PHP Version is available](/user/upgrading/php_version/) on your host.
+
 Generally your host will only allow you to run one version of PHP per domain.  But if you create one or more subdomains, each subdomain may also have its own version of PHP.  
 
 ## Create an alternate webroot 
