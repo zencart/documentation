@@ -27,7 +27,7 @@ Thus, any particular release of Zen Cart which included USPS could be shipping a
 
 For this reason, USPS functionality is provided by a plugin. 
 
-The same is true for UPS and many other modules. 
+The same is true for many other shipping and payment modules. 
 
 ## Desire to keep the core small 
 The smaller Zen Cart is, the easier it is to maintain, for both the developers on the core team and for individual store owners.  

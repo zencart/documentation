@@ -16,10 +16,9 @@ If you are looking for integration with a specific package, it's always worth se
 
 ### Can customers purchase from my Zen Cart shop without creating an account?
 
-At this time all customers must register with their full name, address and other information before going to the checkout. The ability to have more flexibility in the login/account creation/checkout process is on our roadmap for the future. The first steps towards buying without an account are scheduled for inclusion in Zen Cart in the future.
+At this time all customers must register with their full name, address and other information before going to the checkout. 
 
-<br />
-In the meantime, the [One Page Checkout](https://www.zen-cart.com/downloads.php?do=file&id=2095) plugin has a built-in guest checkout feature which might meet your needs.
+However, the [One Page Checkout](https://www.zen-cart.com/downloads.php?do=file&id=2095) plugin has a built-in guest checkout feature which might meet your needs.
 
 ---
 
@@ -119,10 +118,8 @@ Yes - you can limit admin users to a subset of the superuser capabilities using
 
 ---
 
-### Can Zen Cart create SEO friendly (er, "human-friendly") URLs? 
-This capability is not built into Zen Cart at the current time, but two popular plugins exist:
-- [Ultimate SEO URLs](https://www.zen-cart.com/downloads.php?do=file&id=132)
-- [Ceon URI Mapping](https://www.zen-cart.com/downloads.php?do=file&id=2250)
+### Can Zen Cart create SEO friendly URLs? 
+The plugin [Ultimate SEO URLs](https://www.zen-cart.com/downloads.php?do=file&id=132) allows Zen Cart to create keyword-rich URLs. 
 
 --- 
 ### Can Zen Cart allow me to edit an order after it was placed? 

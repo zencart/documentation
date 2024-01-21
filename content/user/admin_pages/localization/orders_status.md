@@ -7,6 +7,8 @@ weight: 30
 The [Order Status](/user/localization/orders_status/) field encapsulates where 
 the order is in your order processing workflow. 
 
+It can be set on the [order details](/user/admin_pages/customers/orders/) page in the box that allows you to add entries to the order history.
+
 The Admin > Localization > Order Status  page allows you to add names of new order status entries, edit existing order status name entries, or delete an order status name entry.
 
 ## Add a new Order Status
