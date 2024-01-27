@@ -72,3 +72,10 @@ Note that the license for mmenu changed in their v5.6.0 to CC-BY-NC-4.0, which i
   - `admin/includes/stylesheet.css`
 
 > CAUTION: Be mindful that upgrading FontAwesome between its "major" releases is usually a very cumbersome task because icon naming strategies may be different, which affects every page where FA icons are used (ie: numerous Admin pages, and Catalog templates). But upgrading minor updates is mostly a drop-in-replacement of some CSS files.
+
+
+<div style="text-align:right;" id="next">
+   <a class="btn btn-lg btn-primary mr-3 mb-4" href="/dev/release_process/prerequisites/">
+        Next - Prerequisites<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+   </a>
+</div>

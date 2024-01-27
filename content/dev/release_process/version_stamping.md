@@ -140,7 +140,7 @@ git checkout v158
 ## Capturing information in Release Log
 
 There is a section of these docs called [Release Log]({{< ref "release_log" >}} "release log"), in which you should capture some
-basic information about the release progress.  Update `/dev/release_process/release_log/`.
+basic information about the release progress.  Update `/dev/release_process/release_log.md`.
 
 
 <div style="text-align:right;" id="next">

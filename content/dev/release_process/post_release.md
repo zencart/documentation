@@ -44,7 +44,7 @@ insert into vb_dl2_zcversions (versiontext) values ('v1.5.8')
 
 ## Other Post-Release Tasks 
 
-The first item applies to all releases; subsequent items are for major releases only. 
+The first item applies to all releases (other than pre-releases); subsequent items are for major releases only. 
 
 - Update the [Release History](/user/about_us/release_history/) page with the new version and date.
 
