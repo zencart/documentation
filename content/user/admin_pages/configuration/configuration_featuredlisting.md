@@ -1,10 +1,12 @@
 ---
-title: Configuration ≫ Featured Listing
+title: Configuration ≫ Featured Listing (v1.x.x Only)
 category: admin_pages
 weight: 210 
 ---
 
-Controls the appearance of the Featured Products page. See <a href="/user/template/new_featured_all_listing_page_configuration/">Featured Listing Configuration</a> for instructions on use.
+Controls the appearance of the Featured Products page in Zen Cart v1.x.x. See <a href="/user/template/new_featured_all_listing_page_configuration_v1/">Featured Listing Configuration in v1.x.x</a> for instructions on use.
+
+For Zen Cart 2.0.0 and newer, please see <a href="/user/template/new_featured_all_listing_page_configuration/">Featured Listing Configuration</a>.
 
 <h2 id="display_product_image">Display Product Image</h2>
 

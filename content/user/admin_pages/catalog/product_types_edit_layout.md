@@ -28,6 +28,11 @@ If you are a developer, see [technical information on product types](/dev/code/p
 
 ### Issue: I have suppressed the display fields on the Product Info page, but they are still showing on the listing pages.
 
+#### Guidance for Zen Cart v2.x.x: 
+The switches for New, All and Featured listing pages, as well as 
+the switches for the [Product Listing pages](/user/storefront_pages/product_listing/) are provided on the [product listing configuration page](/user/admin_pages/configuration/configuration_productlisting/) in Admin > Configuration > Product Listing. 
+
+#### Guidance for Zen Cart v1.x.x: 
 There are separate switches for the New, All and Featured listing pages, which are shown in [new/featured/all products listing page configuration](/user/template/new_featured_all_listing_page_configuration/). 
 
 The switches for the [Product Listing pages](/user/storefront_pages/product_listing/)  are provided on the [product listing configuration page](/user/admin_pages/configuration/configuration_productlisting/) in Admin > Configuration > Product Listing. 

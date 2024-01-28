@@ -13,11 +13,11 @@ Those actions are
  + Add/Update the details of what release the file was added/modified
  + Create a list of files that were added/deleted or modified and sort into those sections.
 
-For this we use a Php script to automate this process.
+We use a php script to automate this process.
 
 The script is available in the https://github.com/zencart/versionstamper repository.
 
-This is a private repository, so you may need to request access.
+This is a private repository for team members only.
 
 ## Preparatory Actions for Version Stamping 
 

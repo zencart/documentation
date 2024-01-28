@@ -5,5 +5,6 @@ layout: docs
 category: release_process
 ---
 
-This content has been moved to a Zen Cart private repo.
+This content has been moved to 
+the infrastructure repo (team members only).
 

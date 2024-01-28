@@ -64,13 +64,13 @@ nosearch: true
 # Configuration ≫ Website Maintenance
 {{% include "/user/admin_pages/configuration/configuration_websitemaintenance.md" %}}
 
-# Configuration ≫ New Listing
+# Configuration ≫ New Listing  (Zen Cart v1.x.x only)
 {{% include "/user/admin_pages/configuration/configuration_newlisting.md" %}}
 
-# Configuration ≫ Featured Listing
+# Configuration ≫ Featured Listing  (Zen Cart v1.x.x only)
 {{% include "/user/admin_pages/configuration/configuration_featuredlisting.md" %}}
 
-# Configuration ≫ All Listing
+# Configuration ≫ All Listing  (Zen Cart v1.x.x only)
 {{% include "/user/admin_pages/configuration/configuration_alllisting.md" %}}
 
 # Configuration ≫ Index Listing
