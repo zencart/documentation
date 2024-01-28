@@ -5,8 +5,22 @@ category: storefront_pages
 weight: 10
 ---
 
-The specials page shows all the products in your store which are currently on special.  The list is presented in a grid format with pagination.  The special price reduction is shown prominently in red, and the original price is marked with strikethrough.
+The specials page shows all the products in your store which are currently on special.  
 
+The presentation of the page depends on the Zen Cart version you are running: 
+
+- In Zen Cart 2.x.x, products on special are presented as [listing pages](/user/storefront_pages/listing_pages/).  The [Columns Per Row](/user/template/listing_columns/) setting determins whether the products are shown in a grid or in a table. 
+- In Zen Cart 1.x.x, products on special are presented in a grid format with pagination.  The special price reduction is shown prominently in red, and the original price is marked with strikethrough.  Unlike the [listing page layout](/user/template/listing_page_layout), where items are shown in rows, the specials page looks like the home page,  with one main [centerbox](/user/template/centerboxes/) showing items in a grid.
+
+## Specials in v2.0.0 (grid)
+![Specials 2.0.0 Grid](/images/specials_200_grid.png)
+
+
+## Specials in v2.0.0 (table)
+![Specials 2.0.0 Table](/images/specials_200_table.png)
+
+
+## Specials in v1.0.0 
 ![Specials Page](/images/specials_page.png)
 
 Other places specials are shown: 
@@ -16,7 +30,6 @@ Other places specials are shown:
 
 Since the specials sidebox and centerbox only display a small subset of products on special, the products shown are chosen at random.  The specials page shows all products on special, so the order is fixed. 
 
-Unlike the [listing page layout](/user/template/listing_page_layout), where items are shown in rows, the specials page looks like the home page,  with one main [centerbox](/user/template/centerboxes/) showing items in a grid.
 
 ### Related: 
 
