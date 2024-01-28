@@ -11,3 +11,10 @@ The New Products, Featured Products, and All Products pages
 are [listing pages](/user/storefront_pages/listing_pages/).  
 
 In v2.x.x, they are all configured the same way [product listing](/user/storefront_pages/product_listing/) pages are, using the settings described in the [product listing configuration page](/user/template/product_listing_page_configuration/). 
+
+Changes from v1.x.x that should be noted: 
+- Specials/New/All/Featured pages now use the same product-listing template as the category navigation does
+- all these pages will also follow the setting for "columns per row", so if the product-listing uses rows, so will S/N/A/F page; likewise, if set to 3 columns, all pages will use 3 columns. (Example in screenshots below.)
+- the "click column headings for sort" is replaced by the sort dropdown
+- pagination is not changed
+

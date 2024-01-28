@@ -71,7 +71,7 @@ Description: Convert IP Address to Host Address<br /><br />Note: on some servers
 
 <div class='indent'>Key: <b>SESSION_USE_ROOT_COOKIE_PATH</b><br />
 Path: <b>Configuration > Sessions</b><br />
-Description: Normally Zen Cart will use the directory that a store resides in as the cookie path. This can cause problems with some servers. This setting allows you to set the cookie path to the root of the server, rather than the store directory. It should only be used if you have problems with sessions. <strong>Default Value = False</strong><br /><br /><strong>Changing this setting may mean you have problems logging into your admin, you should clear your browser cookies to overcome this.</strong></div>
+Description: Normally Zen Cart will use the directory that a store resides in as the cookie path. This can cause problems with some servers. This setting allows you to set the cookie path to the root of the server, rather than the store directory. It should only be used if you have problems with sessions. <strong>Default Value = False</strong><br><br><strong>Changing this setting may mean you have problems logging into your admin, you should clear your browser cookies to overcome this.</strong></div>
 
 
 <h2 id="add_period_prefix_to_cookie_domain">Add period prefix to cookie domain</h2>

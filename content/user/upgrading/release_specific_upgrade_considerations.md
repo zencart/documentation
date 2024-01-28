@@ -26,6 +26,7 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 ### Zen Cart 2.0.0 
 
+- This release modifies the configuration of the Specials/New/All/Featured pages so that they all use the same settings that the product listing pages do.  See [New/Featured/All Listing Configuration Settings](/user/template/new_featured_all_listing_page_configuration/).
 - This release removes all the admin product-type files from the core.  For example, in `admin/includes/modules/product_music/`, the following files have been removed: `copy_product_confirm.php`, `copy_product.php`, `delete_product_confirm.php`, `update_product.php`.  You may still override product type specific files if you wish by simply copying the base file to the product-type directory.
 - This release removes the older files that were used prior to the creation of `admin_html_head.php` in Zen Cart 1.5.7.  Please see [Admin head content](/dev/plugins/admin_head_content/) for details. 
 - This release updates [FontAwesome](/user/template/font_awesome/) from version 4 to version 6.  A number of class names have been changed between those two versions, and the Zen Cart core has been updated to use these newer names.  For backwards compatibility, however, the [FontAwesome v4 shim](https://fontawesome.com/v5/docs/web/setup/upgrade-from-v4) is being loaded.  Loading the shim is a feature that can be disabled using the [Admin site specific override file](/user/admin/site_specific_overrides/) or the [Storefront site specific override file](/user/customizing/site_specific_overrides/).

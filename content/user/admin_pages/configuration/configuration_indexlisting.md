@@ -1,7 +1,7 @@
 ---
 title: Configuration ≫ Index Listing
 category: admin_pages
-weight: 230 
+weight: 200 
 ---
 
 <h2 id="show_new_products_on_main_page">Show New Products on Main Page</h2>
