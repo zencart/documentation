@@ -74,11 +74,39 @@ Path: <b>Configuration > Product Listing</b><br />
 Description: Sets the location of the Prev/Next Split Page Navigation</div>
 
 
-<h2 id="display_product_listing_default_sort_order">Display Product Listing Default Sort Order</h2>
+<h2 id="sort_order_default__product_listing">Sort Order Default - Product Listing</h2>
 
 <div class='indent'>Key: <b>PRODUCT_LISTING_DEFAULT_SORT_ORDER</b><br />
 Path: <b>Configuration > Product Listing</b><br />
 Description: Product Listing Default sort order?<br />NOTE: Leave Blank for Product Sort Order. Sort the Product Listing in the order you wish for the default display to start in to get the sort order setting. Example: 2a</div>
+
+
+<h2 id="sort_order_default__new_products">Sort Order Default - New Products</h2>
+
+<div class='indent'>Key: <b>PRODUCT_NEW_LIST_SORT_DEFAULT</b><br />
+Path: <b>Configuration > Product Listing</b><br />
+Description: What Sort Order Default should be used for New Products Display?<br />Default= 6 for Date New to Old<br /><br />1= Products Name<br />2= Products Name Desc<br />3= Price low to high, Products Name<br />4= Price high to low, Products Name<br />5= Model<br />6= Date Added desc<br />7= Date Added<br />8= Product Sort Order</div>
+
+
+<h2 id="sort_order_default__featured">Sort Order Default - Featured</h2>
+
+<div class='indent'>Key: <b>PRODUCT_FEATURED_LIST_SORT_DEFAULT</b><br />
+Path: <b>Configuration > Product Listing</b><br />
+Description: What Sort Order Default should be used for Featured Product Display?<br />Default= 1 for Product Name<br /><br />1= Products Name<br />2= Products Name Desc<br />3= Price low to high, Products Name<br />4= Price high to low, Products Name<br />5= Model<br />6= Date Added desc<br />7= Date Added<br />8= Product Sort Order</div>
+
+
+<h2 id="sort_order_default__allproducts">Sort Order Default - All-Products</h2>
+
+<div class='indent'>Key: <b>PRODUCT_ALL_LIST_SORT_DEFAULT</b><br />
+Path: <b>Configuration > Product Listing</b><br />
+Description: What Sort Order Default should be used for All Products Display?<br />Default= 1 for Product Name<br /><br />1= Products Name<br />2= Products Name Desc<br />3= Price low to high, Products Name<br />4= Price high to low, Products Name<br />5= Model<br />6= Date Added desc<br />7= Date Added<br />8= Product Sort Order</div>
+
+
+<h2 id="mask_upcoming_products_from_being_included_as_new_products">Mask Upcoming Products from being included as New Products</h2>
+
+<div class='indent'>Key: <b>SHOW_NEW_PRODUCTS_UPCOMING_MASKED</b><br />
+Path: <b>Configuration > Product Listing</b><br />
+Description: Do you want to mask Upcoming Products from being included as New Products in Listing, Sideboxes and Centerbox?<br />0= off<br />1= on</div>
 
 
 <h2 id="display_product_add_to_cart_button_0off_1on_2on_with_qty_box_per_product">Display Product Add to Cart Button (0=off; 1=on; 2=on with Qty Box per Product)</h2>

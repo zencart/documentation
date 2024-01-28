@@ -52,7 +52,7 @@ Description: Display Shipping Weight and Number of Boxes?<br /><br />0= off<br /
 
 <div class='indent'>Key: <b>ORDER_WEIGHT_ZERO_STATUS</b><br />
 Path: <b>Configuration > Shipping/Packaging</b><br />
-Description: If there is no weight to the order, does the order have Free Shipping?<br>0= no<br>1= yes<br><br>Note: When using Free Shipping, Enable the Free Shipping Module.  It will only show when shipping is free.</div>
+Description: If there is no weight to the order, does the order have Free Shipping?<br>0= no<br>1= yes<br><br>Note: When using Free Shipping, enable the Free Shipping Module (freeshipper).  It will only show when shipping is free.</div>
 
 
 <h2 id="shipping_estimator_display_settings_for_shopping_cart">Shipping Estimator Display Settings for Shopping Cart</h2>

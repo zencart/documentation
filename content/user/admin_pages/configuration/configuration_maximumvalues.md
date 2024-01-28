@@ -141,7 +141,7 @@ Description: How many categories to list per row</div>
 
 <div class='indent'>Key: <b>MAX_DISPLAY_PRODUCTS_NEW</b><br />
 Path: <b>Configuration > Maximum Values</b><br />
-Description: Number of products to show per page on the New Products page</div>
+Description: Number of products to show per page when viewing New Products</div>
 
 
 <h2 id="best_sellers_for_box">Best Sellers For Box</h2>

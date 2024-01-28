@@ -1,7 +1,7 @@
 ---
 title: Configuration ≫ Define Page Status
 category: admin_pages
-weight: 240 
+weight: 210 
 ---
 
 See <a href="/user/template/define_pages/">Define Pages</a> for instructions on use.
