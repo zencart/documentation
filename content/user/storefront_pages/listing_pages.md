@@ -68,6 +68,8 @@ And here's the Featured Products listing page showing a different layout:
 
 The layout for listing pages is described in more detail in [listing page layout](/user/template/listing_page_layout/). 
 
-The configuration settings for the New Products, Featured Products and All Products listing pages are explained in [new/featured/all products listing page configuration](/user/template/new_featured_all_listing_page_configuration/). 
+The configuration settings for the New Products, Featured Products and All Products listing pages are version dependant: 
+- For Zen Cart v2.x.x, they are the same as for produst listing pages.  See [listing page configuration](/user/template/product_listing_page_configuration/).
+- For Zen Cart v1.x.x, see [new/featured/all products listing page configuration](/user/template/new_featured_all_listing_page_configuration_v1/). 
 
 The configuration settings for the Product Listing pages are explained in [listing page configuration](/user/template/product_listing_page_configuration/).
