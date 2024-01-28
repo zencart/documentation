@@ -9,7 +9,7 @@ The Product Listing (or Index Listing) pages
 are [listing pages](/user/storefront_pages/listing_pages/) showing
 all products in a specific category. 
 
-These pages have their own configuration settings page, which is 
+These pages have their own configuration settings page, which is described in 
 [Admin > Configuration > Product Listing](/user/admin_pages/configuration/configuration_productlisting/).
 
 On this page, the top settings are:
@@ -43,3 +43,4 @@ The "Display" controls described above indicate whether a particular field is sh
 This behavior may be modified by changing the template file `includes/modules/YOURTEMPLATE/product_listing.php`.
 
 Note that since Zen Cart 2.0.0, the New Products, Featured Products, All Products and Specials pages have been configured the same as as product listing pages. 
+
