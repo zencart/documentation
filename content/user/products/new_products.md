@@ -20,4 +20,6 @@ You may also configure new products to appear in the following places:
 Determination of what qualifies as "new" is also configurable, using 
 [Admin > Configuration > Maximum Values > New Product Listing - Limited to ... ](/user/admin_pages/configuration/configuration_maximumvalues/#new_product_listing__limited_to_).
 
-The display of items on the New Products page is controlled on the [Admin > Configuration > New Listing page](/user/admin_pages/configuration/configuration_newlisting/).  Setting the Display values on this page is described in greater detail in [New Listing - Featured Listing - All Listing configuration settings](/user/template/new_featured_all_listing_page_configuration/). 
+The display of items on the New Products page is controlled as follows:
+- In v2.0.0 and higher, on the [Admin > Configuration > Product Listing page](/user/admin_pages/configuration/configuration_productlisting/).  Setting the Display values on this page is described in greater detail in [New Listing - Featured Listing - All Listing configuration settings](/user/template/new_featured_all_listing_page_configuration/). 
+- In v1.5.8a and lower, on the [Admin > Configuration > New Listing page](/user/admin_pages/configuration/configuration_newlisting/).  Setting the Display values on this page is described in greater detail in [New Listing - Featured Listing - All Listing configuration settings](/user/template/new_featured_all_listing_page_configuration/). 

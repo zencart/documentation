@@ -6,7 +6,10 @@ category: release_process
 ---
 
 ## Post-Release Tasks for the Zen Cart Forum 
-- Add the new version to the Zen Cart Version dropdown on the forum for new thread creation. (Note that this is not required for patch releases.)
+
+### Add the new version to the Zen Cart Version dropdown on the forum
+
+(Note that this is not required for patch releases.)
 
 <img src="/images/forum_version_selection.png"> 
 <br><br>
@@ -28,19 +31,14 @@ leave display order as 10
 click Save
 ```
 
-- Add the new version as a checkbox to the plugin version list. (Note that this is not required for patch releases.)
+### Add the new version as a checkbox to the plugin version list. 
+
+(Note that this is not required for patch releases.)
 
 <img src="/images/plugin_version_selection.png"> 
 <br><br>
 
-Instructions: 
-```
-- Login to the admin panel for zen-cart.com
-
-- Maintenance -> Execute SQL Query 
-
-insert into vb_dl2_zcversions (versiontext) values ('v1.5.8')
-```
+Instructions: see infrastructure repo (team members only). 
 
 ## Other Post-Release Tasks 
 
@@ -76,5 +74,5 @@ A day or two after the build has been released when you're confident that all is
 
 - Are there old stuck posts on the forum that should be unstuck? 
 
-- Check the Zen Cart and Zen Cart Documentation project for tags that mark things that need to be taken care of - there might be a 'Post Release 1.5.X' tag or something like that, for example. 
+- Check the Zen Cart and Zen Cart Documentation projects for tags that mark things that need to be taken care of - there might be a 'Post Release 2.0.0' tag or something like that, for example. 
 
