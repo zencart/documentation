@@ -62,9 +62,7 @@ A day or two after the build has been released when you're confident that all is
 
 - Message all developers who have merge privileges using the Skype Dev Chat channel, and then unlock the branch you are building.  Go to [the branches page](https://github.com/zencart/zencart/settings/branches) and de-activate the branch protection rule you created earlier (uncheck the "PR required" checkbox for the rule).
 
-- Begin process of formally merging release to Master/Main **FIXME - unsure**
-
-- Take some time to review the What's New document in the [release folder](/release) to be sure it's complete. 
+- Take some time to review the What's New and Changed Files documents in the [release folder](/release) to be sure they are complete. 
 
 ## Post-Release Things to Consider 
 
