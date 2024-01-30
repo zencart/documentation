@@ -5,7 +5,7 @@ category: template
 weight: 10
 ---
 
-Please note: This content is for Zen Cart 1.x.x.  For Zen Cart v2.0.0 and newer, see [Listing Configuration Settings](/user/template/new_featured_all_listing_page_configuration_v1/).
+Please note: This content is for Zen Cart 1.x.x.  For Zen Cart v2.0.0 and newer, see [Listing Configuration Settings](/user/template/new_featured_all_listing_page_configuration/).
 
 The New Products, Featured Products, and All Products pages 
 are [listing pages](/user/storefront_pages/listing_pages/).  

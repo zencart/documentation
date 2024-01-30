@@ -18,8 +18,9 @@ This is what it looks like when `Columns Per Row` is set to 1.  Using this setti
 
 ![1 Column per Row](/images/listing_col_1.png)
 
-
-Note that the setting `Columns Per Row` only applies to Product Listing pages, not other listing pages such as All Products or New Products.
+**Version Difference**
+- In Zen Cart 2.x.x, `Columns Per Row` applies to all listing pages.  See [listing page configuration](/user/template/product_listing_page_configuration/). 
+- In Zen Cart 1.x.x, `Columns Per Row` only applies to Product Listing pages, not other listing pages such as All Products or New Products. See  [new/featured/all products listing page configuration](/user/template/new_featured_all_listing_page_configuration_v1/).
 
 In the Bootstrap template, the recommended value of `Columns Per Row` is 0, which allows the template to determine how many columns will fit on the screen dynamically.  A smaller window will have fewer columns, and a larger window will have more.  
 
