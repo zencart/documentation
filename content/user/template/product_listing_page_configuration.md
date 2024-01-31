@@ -5,9 +5,7 @@ category: template
 weight: 10
 ---
 
-The Product Listing (or Index Listing) pages 
-are [listing pages](/user/storefront_pages/listing_pages/) showing
-all products in a specific category. 
+The Product Listing (or Index Listing) pages are [listing pages](/user/storefront_pages/listing_pages/) showing all products in a specific category. 
 
 These pages have their own configuration settings page, which is described in 
 [Admin > Configuration > Product Listing](/user/admin_pages/configuration/configuration_productlisting/).
