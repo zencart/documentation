@@ -34,7 +34,7 @@ This can be changed using [Display Product Listing Default Sort Order](/user/adm
 
 *b) How each product is displayed on the listing page.*
 
-The "Display" controls described above indicate whether a particular field is shown for a product.  The layout in which they are shown has are three columns per row of listed product: 
+The "Display" controls described above indicate whether a particular field is shown for a product.  The layout in which they are shown has three columns per row of listed products: 
 
 - the image is on the left 
 - the price and add to cart box is on the right
