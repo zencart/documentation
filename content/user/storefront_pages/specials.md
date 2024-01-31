@@ -5,13 +5,16 @@ category: storefront_pages
 weight: 10
 ---
 
-The specials page shows all the products in your store which are currently on special.  
+The specials page shows all the products in your store which are currently on special.
+
+As with all specials/sales, the special price reduction is shown prominently in red, and the original price is marked with strikethrough. 
 
 The presentation of the page depends on the Zen Cart version you are running: 
 
-- In Zen Cart 2.x.x, products on special are presented as [listing pages](/user/storefront_pages/listing_pages/).  The [Columns Per Row](/user/template/listing_columns/) setting determins whether the products are shown in a grid or in a table. 
-- In Zen Cart 1.x.x, products on special are presented in a grid format with pagination.  The special price reduction is shown prominently in red, and the original price is marked with strikethrough.  Unlike the [listing page layout](/user/template/listing_page_layout), where items are shown in rows, the specials page looks like the home page,  with one main [centerbox](/user/template/centerboxes/) showing items in a grid.
+- In Zen Cart 2.x.x, products on special are presented as [listing pages](/user/storefront_pages/listing_pages/).  The [Columns Per Row](/user/template/listing_columns/) setting determines whether the products are shown in a grid or in a table. 
+- In Zen Cart 1.x.x, products on special are presented in a grid format with pagination. Unlike the [listing page layout](/user/template/listing_page_layout), where items are shown in rows, the specials page looks like the home page,  with one main [centerbox](/user/template/centerboxes/) showing items in a grid.
 
+The default sort order is "the date the special was created, newest-created first".
 
 ## Specials in v2.0.0 (table)
 ![Specials 2.0.0 Table](/images/specials_200_table.png)
