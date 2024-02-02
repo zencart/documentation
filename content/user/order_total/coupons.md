@@ -22,7 +22,13 @@ If the coupon is for a percentage discount, enter the percent sign after the num
 
 If the coupon is for free shipping, check the free shipping box. 
 
-You can enter a coupon code, or if you leave it blank, the system will generate a random code for you.  
+You can enter a coupon code, or if you leave it blank, the system will generate a random code for you.
+
+To limit the total number of times a coupon may be used, enter a number in the "Uses per coupon" text box.  For example your offer may be "first 100 customers get this great discount".
+
+To limit the number of times any specific customer may use a coupon, enter a number in the "Uses per customer" text  box.  For example, to prevent any one customer abusing the coupon and placing many orders using its discount, limit the "Uses per customer" to 1.
+
+You can enter a comma separated list of **"Referrers"**, if you have an arrangement with an affiliate third party website, so that visitors from those websites will automatically have a coupon applied, see [Coupon Referrers](#Coupon-Referrers).
 
 Save the coupon.  
 
@@ -48,6 +54,16 @@ Then, you would add the Product or Products allowed, specifically, if not alread
 These Restrictions will then **ALLOW** or **DENY** the use of the Discount Coupon.  
 
 These Restrictions can then be seen by the Customer via the **Discount Coupons** link in the **Information sidebox**, which opens the Discount Coupon page.  On this page, the customer can enter the Discount Coupon redemption code to see any limits placed on the Discount Coupon.  
+
+## Coupon Referrers
+
+e.g. `example.com`, or `onesite.com,twosite.com`
+
+A comma separated list of domain names let you specify which websites linking to your own shop will cause this coupon to auto-apply as the visitor enters your site.  For example, if your coupon code is `25PCOFF`, and if you know that the page `https://example.com/amazing-stuff` contains a hyperlink to your shop, you would enter `example.com` in the Referrers textbox for your coupon.  Any visitor who is on that example.com page and clicks the link to your shop will get the coupon applied automatically.
+
+This allows you to have a call-to-action on `example.com` such as "Click here to get 10% off any product at MyShop.com" and a simple link to your shop, without any ugly query parameters and the like being present.  Please see [Coupon Code As A Query Parameter](#Coupon-Code-As-A-Query-Parameter) for how to achieve a similar effect with a modified URL to your site.
+
+Bear in mind that content on the internet can be very long lived, so keep an eye on the `Uses per coupon` value is set to a sensible limit.
 
 ## Discount Coupon Page 
 
@@ -83,3 +99,9 @@ The `coupons` table has a `coupon_type` field. The possible values for coupon_ty
 ## Display of Coupon Discounts 
 Coupon Discounts are shown in the order summary on the checkout payment and
  checkout confirmation pages.  See [price reductions](/user/products/price_reductions/) for details. 
+
+## Coupon Code As A Query Parameter
+
+You can use the `coupon_code` query parameter to automatically apply a coupon when a visitor visits your site by having them use a URL like `https://myshop.com?coupon_code=TEST123`.  The `coupon_code` parameter can be used on any page on your site, not just the home page.
+
+This is a slightly more unsightly way to automatically apply coupons compared to [Coupon Referrers](#Coupon-Referrers) but has the advantage that anyone can use the URL regardless of their origin, for example in QR codes, emails, print ads etc.
