@@ -109,13 +109,13 @@ Any time you're going to contribute code changes, you'll want to first make a wo
 
 * command line:
  1. cd into the directory of the repository you're intending to make changes to
- 2. In this example we'll be branching from the v158 branch
- 3. Type: `git branch name-of-your-new-branch-here v158 `
+ 2. In this example we'll be branching from the master branch
+ 3. Type: `git branch name-of-your-new-branch-here master`
  4. Type: `git checkout name-of-your-new-branch-here`
       
 * [SourceTree](http://www.sourcetreeapp.com/):
  1. First, make sure you're in "History View"  (View, History View)
- 2. Find where it shows `upstream/v158`, and right-click on that row. Choose Branch... from the pop-up menu
+ 2. Find where it shows `upstream/master`, and right-click on that row. Choose Branch... from the pop-up menu
  3. Give it the new branch name
  4. Leave the "checkout new branch" box checked
  5. Click Create Branch or OK
@@ -200,7 +200,7 @@ You'll do this from your browser:
 2. Go to *your* zencart repository.
 3. You will see a green "Compare and Pull Request" button. Click it. (If it's been several hours since you did the push, it might not show the green bar. In that case, click the 'Branches' link, where you will see a Pull Request button next to each of your branches. Click the one next to the branch you want to do the pull request from.)
 4. Now you can review the collection of commits and file changes, and add a descriptive message to the pull request. If you're fixing something that's already got an open issue for it, be sure that the issue number is included in your Pull Request message. ie: #101. If you believe your Pull Request fully fixes the open issue, then say "Fixes #101", as the keyword "Fixes" helps do proper cleanup of tickets once closed.
-5. TIP: If you are contributing to Zen Cart v158, be sure that your pull request "compare" is indeed being compared against the `zencart:v158` branch.
+5. TIP: Generally your compare should be against `zencart:master`.  If you are contributing to a patch release, be sure that your pull request "compare" is indeed being compared against the `zencart:name-of-release` branch.  
 6. Click the next green button to Create Pull Request
 7. Now you [wait for others to review your code](https://github.com/thoughtbot/guides/tree/master/code-review). The Zen Cart team (and anyone else who has clicked "Watch" on the Zen Cart main repository) will get an alert about the pull request. Anyone wishing to reply with their opinions of what you've submitted can engage in dialog with you and one another while the code is reviewed. 
 8. If your code hasn't complied with the coding standards, or has bugs or is incomplete, you may be asked to submit more commits to rectify the problems. In that case, you will repeat the steps above for making code changes, making commits, and pushing those commits to github. As long as you push to the same branch on github, then all those commits will automatically be included in the pull request, so reviewers can see the updates you push.
@@ -212,14 +212,14 @@ When you or others make pull requests that are accepted into the Zen Cart core r
 
 * command line:
  1. type: `git fetch upstream`
- 2. type: `git checkout v158` (ie: if you're going to pull changes from the `v158` branch)
- 3. type: `git merge upstream/v158` (merges your local copy with the upstream remote)
+ 2. type: `git checkout master` (ie: if you're going to pull changes from the `master` branch)
+ 3. type: `git merge upstream/master` (merges your local copy with the upstream remote)
  4. type: `git push` (brings your forked repository up-to-date)
 
 * [SourceTree](http://www.sourcetreeapp.com/):
  1. Click the Pull button in the top button bar
  2. For Pull From Repository, choose "upstream" from the pulldown menu
- 3. For Remote Branch To Pull, choose "v158"
+ 3. For Remote Branch To Pull, choose "master"
  4. Leave the "commit merged changes immediately" box checked, and the others unchecked.
  5. Click OK
 

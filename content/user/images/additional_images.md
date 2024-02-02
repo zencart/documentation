@@ -36,3 +36,16 @@ the directions above to disable additional images.
 ### Is there an easier way to manage multiple product images? 
 
 The popular plugin [Image Handler](/user/images/image_plugins/) allows you to manage multiple product images. 
+
+### How will additional images appear? 
+
+Additional images are shown below the main product image, and can be clicked on the same way the main image can - see [Popups](/user/images/popups).
+
+This product has one additional image.
+
+![Single Additional Image](/images/main_additional_1.png)
+
+This product has multiple additional images. 
+
+![Multiple Additional Images](/images/main_additional_2.png)
+
