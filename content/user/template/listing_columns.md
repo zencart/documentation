@@ -20,8 +20,9 @@ This is what it looks like when `Columns Per Row` is set to 1.  Using this setti
 
 **Version Difference**
 - In Zen Cart 2.x.x, `Columns Per Row` applies to all listing pages.  See [listing page configuration](/user/template/product_listing_page_configuration/). 
-- In Zen Cart 1.x.x, `Columns Per Row` only applies to Product Listing pages, not other listing pages such as All Products or New Products. See  [new/featured/all products listing page configuration](/user/template/new_featured_all_listing_page_configuration_v1/).
+- In Zen Cart 1.x.x, `Columns Per Row` only applies to Product Listing pages, not other listing pages such as All Products or New Products. See  [new/featured/all products listing page configuration in v1.x.x](/user/template/new_featured_all_listing_page_configuration_v1/).
 
+## Fluid Mode in Bootstrap
 In the Bootstrap template, the recommended value of `Columns Per Row` is 0, which allows the template to determine how many columns will fit on the screen dynamically.  A smaller window will have fewer columns, and a larger window will have more.  
 
 Setting `Columns Per Row` to 0 is called *fluid mode* in the Bootstrap template.   The Bootstrap template is best run in either rows mode or fluid mode.
@@ -38,5 +39,8 @@ And finally, here's what the same page looks like when the window is narrowed to
 
 ![Tablet window - 1 column](/images/bs_listing_phone.png)
 
-Developer Tip: the number of columns shown at each window size may be adjusted by editing `includes/modules/bootstrap/product_listing.php` and modifying for `$grid_classes_matrix`.
+Developer Tips: 
+- the number of columns shown at each window size may be adjusted customizing the `$grid_classes_matrix` data structure.  Instructions for doing so are provided in `includes/modules/bootstrap/product_listing.php`.
+- If you are switching back and forth between templates, and want to use rows mode in one and fluid mode in another, consider using the [template_init](/user/template/template_switching/) feature.
+
 

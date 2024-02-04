@@ -38,3 +38,22 @@ If you can't recall the name of a particular variable, remember you can look it 
 
 If you are using an older Zen Cart version and want this feature, you can merge [this PR](https://github.com/zencart/zencart/pull/5370/files) into your copy of `admin/template_select.php`.
 
+This capability makes it easy to switch back and forth between the [Bootstrap](/user/template/bootstrap/) and [Responsive Classic](/user/template/responsive_classic/) templates.  
+
+Create `includes/templates/bootstrap/template_init.php` as follows:
+```
+<?php
+// Settings for Bootstrap
+$db->Execute("UPDATE " . TABLE_CONFIGURATION . " SET configuration_value='0' WHERE configuration_key = 'PRODUCT_LISTING_COLUMNS_PER_ROW'");
+```
+
+Then  create `includes/templates/responsive_classic/template_init.php` as follows: 
+
+```
+<?php
+// Settings for Bootstrap
+$db->Execute("UPDATE " . TABLE_CONFIGURATION . " SET configuration_value='1' WHERE configuration_key = 'PRODUCT_LISTING_COLUMNS_PER_ROW'");
+```
+
+Now switching to Bootstrap will make your product listing pages display in [fluid mode](/user/template/listing_columns/), and switching to Responsive Classic will make your product listing pages display in rows mode, without you having to remember to make admin changes.
+
