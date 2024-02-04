@@ -282,11 +282,6 @@ If you do this, and the element does not exist, you will get a PHP Warning
 --> PHP Warning: Undefined array key var1 
 ```
 
-To fix, change to 
-
-```
-if (!empty($response['var1'])) {
-```
 
 If the array element is referenced in the middle of a statement, use the [null coalescing operator](/dev/code/php_idioms/#null-coalescing-operator) to prevent invalid references. 
 
@@ -301,6 +296,26 @@ to
 ```
 echo 'Message is ' . $response['txt'] . ' ' . ($response['var1'] ?? ''); 
 ``` 
+
+Similarly, if the array element is referenced on the right hand side of an equals sign, you can use the null coalescing operator.
+
+If you get 
+
+```
+--> PHP Notice: Undefined index: order_add_comment 
+```
+
+from 
+
+```
+$order->info['comments'] = $_SESSION['order_add_comment'];
+```
+
+change to
+
+```
+$order->info['comments'] = ($_SESSION['order_add_comment'] ?? '');
+```
 
 ## Array and string offset access syntax with curly braces is no longer supported
 
