@@ -55,6 +55,10 @@ Now suppose you want to change the pricing for XL shirts, so that you charge $10
 
 4:10,5:3
 
+This field is on the lower left hand side of the Attributes Controller page, below One Time Factor and above Attribute Flags. 
+
+![Attribute Quantity Discounts](/images/attr_qd.png)
+
 This is an example of [colon separated pairs configuration](/user/running/colon-separated-pairs/) which is common in Zen Cart.  In this case, this setting is read, "for quantities of up to 4, add $10 to the price; for quantities of 5 or more, add 3 to the price." 
 
 **Note:** Don't confuse attribute discounts with [product quantity discounts](/user/products/quantity_discounts/), which are set using [Products Price Manager](/user/admin_pages/catalog/products_price_manager/). Product Quantity Discounting discounts bulk purchases of a specific product, irrespective of how its attributes are set.   
