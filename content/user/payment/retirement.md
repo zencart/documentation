@@ -13,3 +13,18 @@ Setting a payment module to "Retired" disables it so that new orders may not be 
 
 Retirement is currently available for PayPal Express and PayPal Website Payments Pro to enable a smooth transition to [PayPal RESTful](/user/payment/paypal_restful/).
 
+## Retirement in Zen Cart 1.5.8 and prior 
+
+Since the Retired state is not available for older releases, you need to change some code to disable the display of the older PayPal modules.  Edit `includes/classes/payment.php`. In Zen Cart 1.5.8/1.5.8a, go to line 78.  Change 
+
+```
+              if ($class !='freecharger') {
+```
+
+to 
+
+```
+              if ($class !='freecharger' && $class != 'paypaldp' && $class != 'paypalwpp' && $class != 'paypal') {
+```
+
+
