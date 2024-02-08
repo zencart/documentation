@@ -52,6 +52,8 @@ The first item applies to all releases (other than pre-releases); subsequent ite
 
 - Search the documentation in https://github.com/zencart/documentation for the string RELEASETIME and update those files.
 
+- Update the [What's New with Zen Cart](/user/about_us/whats_new/) page.
+
 - Run the `build_doc` and `view schema` tools.
    - `build_doc` is in the [Zen Cart Tools](https://github.com/scottcwilson/zencart_tools) repo.  It creates the [configuration documentation](https://docs.zen-cart.com/user/admin_pages/configuration/).  
    - `view_schema` is a plugin located [here](https://www.zen-cart.com/downloads.php?do=file&id=2270). It creates the [schema documentation](https://docs.zen-cart.com/dev/schema/).  Install the plugin, then do an Inspect in Google Chrome on the output and copy the element with id="pageWrapper" into a new file in `zencart_documentation/content/dev/schema`.  Remove the opening and closing div tags.

@@ -6,7 +6,6 @@ menu:
   main:
     weight: 10
 layout: docs
-type: codepage
 ---
 
 Quick Links: &nbsp;
@@ -16,3 +15,5 @@ Quick Links: &nbsp;
 &nbsp; [All Configs](/user/admin_pages/configuration/all/) &nbsp; | 
 &nbsp; [Glossary](/user/first_steps/glossary/) &nbsp; | 
 &nbsp; [Release Docs](/release/) 
+
+What's New with Zen Cart?  [Click here to find out](/user/about_us/whats_new/).
