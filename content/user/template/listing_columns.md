@@ -5,6 +5,8 @@ category: template
 weight: 10
 ---
 
+**Note:** This page refers to product listings.  There's a separate page for [category listings](/user/template/listing_columns_categories/).
+
 Since 1.5.7, Zen Cart includes a configuration setting called [Columns Per Row](/user/admin_pages/configuration/configuration_productlisting/#columns_per_row).  This setting allows you to display multiple columns of products per row on the Product Listing page. 
 
 **Note:** Your template must also support this setting.  Both the Responsive Classic and [Bootstrap](/user/template/bootstrap/) templates support this setting.  Many older templates use a version of the Column Grid Layout plugin, which is deprecated by this setting.
@@ -37,7 +39,7 @@ And here's what the same page looks like when the window is narrowed to 1024px (
 
 And finally, here's what the same page looks like when the window is narrowed to 500 px (mobile phone): 
 
-![Tablet window - 1 column](/images/bs_listing_phone.png)
+![Phone window - 1 column](/images/bs_listing_phone.png)
 
 Developer Tips: 
 - the number of columns shown at each window size may be adjusted customizing the `$grid_classes_matrix` data structure.  Instructions for doing so are provided in `includes/modules/bootstrap/product_listing.php`.

@@ -53,11 +53,11 @@ define('HTTPS_SERVER', 'https://test.YOURSITE.com');
 ```
 
 ## SSL 
-You may need to run AutoSSL at this point to get your SSL certificate for your new subdomain.
+You may need to take steps at this point to get your SSL certificate for your new subdomain.  On cPanel, go to SSL/TLS Status, select your new domain and run AutoSSL.
 
 ## Configure Files 
 
-You'll have to tweak your configure files of course.
+You'll have to tweak your configure files as shown below. 
 
 ### includes/configure.php 
 ```
