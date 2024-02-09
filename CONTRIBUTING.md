@@ -227,7 +227,15 @@ To avoid duplicate entries in the [All FAQs](https://docs.zen-cart.com/user/_all
 noindex: yes
 ```
 
-## Excluding pages search 
+## Excluding pages from a directory index
+
+If you don't want a page to be shown when you click on a directory, add the following line to the page frontmatter: 
+
+```
+index: false
+```
+
+## Excluding pages from search results
 
 To avoid duplicate entries in search results, add the following line to the page frontmatter for pages with duplicate content: 
 
