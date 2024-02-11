@@ -25,6 +25,22 @@ If your site was created from an older version, your database might still contai
 
 **To change the database to utf8mb4, use the instructions below.**
 
+## Who cares about modern multibyte characters? 
+You do!  
+
+- Your customer might use an emoji in the comments field: 
+```
+Please deliver as fast as possible! 😄
+```
+- Your customer might have an accent or other special character in their name or address.   
+```
+Katrín Tanja Davíðsdóttir
+```
+
+In some cases, data entry like this can cause corruption (or worse, a white screen) if you're not using utf8mb4.
+
+**To change the database to utf8mb4, use the instructions below.**
+
 ## Pre-Conversion to UTF8
 
 If your database contains a mix of latin1 and utf8, it is sometimes helpful to pre-convert your database to entirely utf8 before attempting the move to utf8mb4. 
@@ -55,6 +71,15 @@ You must also update your PHP files to indicate your UTF-8 intentions.
 
 a. Check each of the following files to be sure that **if** a define for `CHARSET` is present that it is defined as **utf-8**. (If no define for `CHARSET` is present, skip that file and check the next one).
 
+For Zen Cart 1.5.8 and above: 
+  - `/admin/includes/languages/lang.english.php`
+  - `/admin/includes/languages/lang.OTHER_LANGUAGE_NAME.php` (if any)
+  - `/includes/languages/lang.english.php`
+  - `/includes/languages/TEMPLATE_NAME/lang.english.php` (if any)
+  - `/includes/languages/lang.OTHER_LANGUAGE_NAME.php` (if any)
+  - `/includes/languages/TEMPLATE_NAME/lang.OTHER_LANGUAGE_NAME.php` (if any)
+
+For older versions of Zen Cart: 
   - `/admin/includes/languages/english.php`
   - `/admin/includes/languages/OTHER_LANGUAGE_NAME.php` (if any)
   - `/includes/languages/english.php`
