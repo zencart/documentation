@@ -13,9 +13,7 @@ Starting in Zen Cart 1.5.7, a new file `admin/includes/admin_html_head.php` was 
 
 In prior versions, the code to do this was replicated on each admin page.
 
-Since then, admin pages have updated over time to remove the replicated blocks of code in favor of a single inclusion of `admin_html_head.php`.  
-
-The following files which controlled this in older versions are as follows, and WILL BE REMOVED IN Zen Cart 2.1.0: 
+Since then, admin pages have updated over time to remove the replicated blocks of code in favor of a single inclusion of `admin_html_head.php`.  As of Zen Cart 2.0.0, this change is complete, and older files used by the old method have been deprecated.  This includes: 
 
 - `admin/includes/menu.css`
 - `admin/includes/menu.js`
