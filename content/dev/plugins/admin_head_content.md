@@ -21,8 +21,6 @@ Since then, admin pages have updated over time to remove the replicated blocks o
 
 Some older plugins may still use these files.  Migrating to the new standard is straightforward; simply replace the old contents of the `<head>` element by a reference to `admin_html_head.php`.
 
-If you maintain a plugin which needs to work on both older and newer versions of Zen Cart simultaneously, see [this forum post](https://www.zen-cart.com/showthread.php?229611-Plugin-Maintainers-Important-details-for-Zen-Cart-2-0-0&p=1396050#post1396050) for an example block of code that can be used to support both.
-
 
 ![Admin HTML Header change example 1](/images/admin_html_head.png)
 
@@ -33,4 +31,6 @@ You will also want to remove references to the old `init()` javascript function.
 
 ![Admin HTML Header change example 3](/images/admin_html_head_3.png)
 
+
+If you maintain a plugin which needs to work on both older and newer versions of Zen Cart simultaneously, see [this forum post](https://www.zen-cart.com/showthread.php?229611-Plugin-Maintainers-Important-details-for-Zen-Cart-2-0-0&p=1396050#post1396050) for an example block of code that can be used to support both.
 

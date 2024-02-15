@@ -26,6 +26,7 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 ### Zen Cart 2.0.0 
 
+- The load order of all `extra` folders is now done alphabetically.  Prior to this, file system order was used.  
 - This release modifies the configuration of the Specials/New/All/Featured pages so that they all use the same settings that the product listing pages do.  See [New/Featured/All Listing Configuration Settings](/user/template/new_featured_all_listing_page_configuration/).
 - This release removes all the admin product-type files from the core.  For example, in `admin/includes/modules/product_music/`, the following files have been removed: `copy_product_confirm.php`, `copy_product.php`, `delete_product_confirm.php`, `update_product.php`.  You may still override product type specific files if you wish by simply copying the base file to the product-type directory.  See `admin/includes/modules/HOW_OVERRIDES_WORK_HERE.txt` in the distribution.
 - This release deprecates the older files that were used prior to the creation of `admin_html_head.php` in Zen Cart 1.5.7.  Please see [Admin head content](/dev/plugins/admin_head_content/) for details. 
