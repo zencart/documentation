@@ -36,16 +36,16 @@ This is best illustrated by an example.  Consider the following configuration:
 
 This shows that the listing page will display four fields per row, in the following order: 
 
-- product image
-- product name
-- product price / add to cart 
-- product quantity in stock
+1. product image
+1. product name
+1. product price / add to cart 
+1. product quantity in stock
 
 If the value of `PRODUCT_LISTING_DEFAULT_SORT_ORDER` is blank, the rows will be sorted according to the per product sort order and product name.   Since frequently per product sort order is zero, this means the products are shown sorted by name, like this: 
 
 ![Listing Page sorted by product name](/images/pl_config_2.png)
 
-But if the `PRODUCT_LISTING_DEFAULT_SORT_ORDER` value is 4d, the products are shown sorted by the 4th displayed field (product quantity) in descending order.  The result will look like this: 
+But if the `PRODUCT_LISTING_DEFAULT_SORT_ORDER` value is 4d, the products are shown sorted by the 4th displayed field (product quantity in stock) in descending order.  The result will look like this: 
 
 ![Listing Page sorted by product name](/images/pl_config_3.png)
 
