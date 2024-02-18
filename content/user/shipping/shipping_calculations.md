@@ -8,7 +8,7 @@ weight: 10
 To view the settings related to shipping, go to 
 [Admin > Configuration > Shipping/Packaging](/user/admin_pages/configuration/configuration_shippingpackaging/). 
 
-There is no support for dimensional calculations in the Zen Cart shipping calculations; it is done entirely by weight. (There are some Plugins that handle dimensions if you need that capability.)
+There is no support for dimensional calculations in the Zen Cart shipping calculations; it is done entirely by weight. There are some Plugins that handle dimensions if you need that capability, and dimensions for products are supported starting in Zen Cart 2.0.0; see [shipping dimensions](/user/shipping/dimensions).
 
 The "small to medium box" corresponds to "an order whose weight does not exceed the maximum package weight." 
 
