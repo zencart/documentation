@@ -12,10 +12,10 @@ that product type.  It is used for both product creation and product editing.
 
 ![product editing screen](/images/product_edit.png)
 
-Some fields in the `Product - General` product type that can be set 
-when adding the product are: 
+The fields in the `Product - General` product type that can be set 
+when adding or editing a product are: 
 
-
+- Master Category - the category for the product. The product may also be in other categories using the [linked categories](/user/products/linked_product/) feature. 
 - [Products Status](/user/products/products_status/) - set to Disabled to not display in the storefront; Enabled otherwise
 - [Date Available](/user/products/upcoming_products/) - use if the product will not be available until the future
 - Products Manufacturer - select a [manufacturer](/user/admin_pages/catalog/manufacturers/) if you organize products by manufacturer
@@ -40,6 +40,8 @@ when adding the product are:
 - Products Image - main photo for product 
 - Products URL - if there is another web page that provides more information, add the URL here 
 - Products Shipping Weight - weight before adding packing materials 
+- Length, Width and Height: Since Zen Cart 2.0.0 it has been possible to add [product dimensions](/user/shipping/shipping_dimensions/) to a product.
+- Ships in Own Box: Since Zen Cart 2.0.0 it has been possible to specify products that ship in their own box.  See [product dimensions](/user/shipping/shipping_dimensions/).  Note that these products do not incur additional tare weight.See [How Weight and Tare Are Determined](/user/shipping/shipping_calculations/) for more details. 
 - Sort Order - the order the product will be displayed in on a [listing page](/user/products/product_listing/). 
 
 For more information, see the [product FAQs](/user/products/). 
