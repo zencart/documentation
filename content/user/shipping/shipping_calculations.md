@@ -131,3 +131,6 @@ _(*) See note in examples above_
 
 Calculation of total weight: 30 pounds of product, grossed up by 10% = 33 pounds, plus 5 pounds = 38 pounds. 
 
+### Products which Ship in their Own Boxes 
+
+Since Zen Cart 2.0.0, it has been possible to identify products which ship in their own boxes using the new [shipping dimensions](/user/shipping/shipping_dimensions/) settings.   Such products will not incur additional tare weight; the weight entered in their `Products Shipping Weight` field will cover the entire weight. 
