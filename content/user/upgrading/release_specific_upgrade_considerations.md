@@ -26,7 +26,7 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 ### Zen Cart 2.0.0 
 
-- [Shipping Dimensions](/user/shipping/shipping_dimensions) are now part of product data.  Users of the "Canada Post" and "Numinix Product Fields" plugins should be aware that the field `products_ready_to_ship` has been renamed `product_ships_in_own_box`. 
+- [Shipping Dimensions](/user/shipping/shipping_dimensions) are now part of product data.  Users of the "Canada Post" and "Numinix Product Fields" plugins should be aware that the field `products_ready_to_ship` has been renamed `product_ships_in_own_box`, and the `zc_install` upgrade script will do the rename for you. 
 - The load order of all `extra` folders is now done alphabetically.  Prior to this, file system order was used.  
 - This release modifies the configuration of the Specials/New/All/Featured pages so that they all use the same settings that the product listing pages do.  See [New/Featured/All Listing Configuration Settings](/user/template/new_featured_all_listing_page_configuration/).
 - This release removes all the admin product-type files from the core.  For example, in `admin/includes/modules/product_music/`, the following files have been removed: `copy_product_confirm.php`, `copy_product.php`, `delete_product_confirm.php`, `update_product.php`.  You may still override product type specific files if you wish by simply copying the base file to the product-type directory.  See `admin/includes/modules/HOW_OVERRIDES_WORK_HERE.txt` in the distribution.

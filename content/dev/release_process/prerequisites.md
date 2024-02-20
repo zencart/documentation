@@ -74,7 +74,6 @@ Other Code Files:
 - `zc_install/includes/languages/en_us/main.php` (set `TEXT_ERROR_PHP_VERSION`)
 - `zc_install/includes/systemChecks.yml` (set `checkPhpVersion`)
 - `zc_install/index.php` (only change if zc_install itself needs a newer PHP version: we want zc_install to run for inspection even on older PHP)
-` includes/functions/php_polyfills.php` (possibly)
 
 Documentation Files: 
 - [Server Requirements](/user/first_steps/server_requirements/#php-version) in `user/first_steps/server_requirements.md`.
