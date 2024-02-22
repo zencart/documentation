@@ -37,6 +37,8 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 - Zen Cart 1.5.8 still runs on PHP 7.3 and 7.4 but was created for PHP 8+.  **PHP8 is a major change from PHP7**, and many plugins will require work before they are usable.  Work with the community and your developer to be sure any modifications you make are ready for PHP 8.  See [Upgrading plugins to work with 1.5.8/PHP 8.0+](/dev/plugins/upgrading_to_158/).
 
+- Subsequent to the release of 1.5.8a, a change was made to PHP which caused carts to white screen with the log message [PHP Fatal error:  Uncaught IntlException: datefmt_create: invalid locale: U_ILLEGAL_ARGUMENT_ERROR](https://www.zen-cart.com/showthread.php?229771-IntlDateFormatter-php-issue).  
+
 - A new file, `includes/init_includes/init_non_db_settings.php`, was introduced. Defined constants which are not language specific were migrated out of language files into this file.
 
 - Most "functions" (both admin and non-admin) have been consolidated into files located in `/includes/functions/`. Some have been merged together. Some changes are listed below.  This change was done to eliminate the duplication of identical (or nearly identical) functions between the storefront and admin that was present in prior releases.
