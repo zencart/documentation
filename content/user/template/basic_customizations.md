@@ -52,6 +52,8 @@ To remove a CSS element, such as a border, simply comment out the line you don't
 
 For more information on Cascading Style Sheets search the Internet for links to tutorials and references.
 
+Note that the [Bootstrap template](/user/template/bootstrap/) includes an admin accessible utility called [ZCA Bootstrap Colors](/user/template/bootstrap/#colors-in-the-bootstrap-template), which allows you to modify most template colors from the admin.
+
 ---
 
 ## How do I change the "MyCard" images for Credit Cards?

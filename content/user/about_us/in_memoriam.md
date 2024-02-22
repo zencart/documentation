@@ -9,6 +9,7 @@ hide_feedback: true
 The Zen Cart project has benefited greatly from the efforts of these 
 individuals who are no longer with us.  May they rest in peace. 
 
+- [Judy Gunderson](https://www.zen-cart.com/member.php?26257) (stellarweb) 
 - [Andrew Berezin](https://www.zen-cart.com/showthread.php?225602) (a_berezin) 
 - [Rod Gasson](https://www.zen-cart.com/showthread.php?225946) (rodg)
 - [Conor Kerr](https://www.zen-cart.com/showthread.php?202939) (ceon) 

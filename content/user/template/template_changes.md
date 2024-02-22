@@ -8,7 +8,7 @@ weight: 10
 ## Introduction 
 
 If you start building a new Zen Cart with the latest version, and use
-the Responsive Classic template (or the very well maintained [Bootstrap template](/user/template/bootstrap/)), you get all the latest fixes. 
+the [Responsive Classic template](/user/template/responsive_classic/) (or the very well maintained [Bootstrap template](/user/template/bootstrap/)), you get all the latest fixes. 
 
 But what if you are using another template?  How can you check to see if it
 has all the most recent fixes? 
@@ -76,6 +76,10 @@ The following files were updated in Zen Cart 1.5.5 to specify a field type and r
 ## PHP Updates 
 
 You will also want to make changes so that your older template is compliant with the latest version of PHP.  See [PHP Warnings and Deprecated messages](/user/upgrading/php_warnings/) for some common changes. 
+
+Please note: many Zen Cart templates were written to work under PHP 5 (or even PHP 4).  You will have to do a significant amount of work to bring them up to date to work with PHP 8, which is why the [Responsive Classic template](/user/template/responsive_classic/) and [Bootstrap template](/user/template/bootstrap/) are recommended.
+
+If you do wish to update an older template, see [Upgrading plugins to work with 1.5.8/PHP 8.0+](/dev/plugins/upgrading_to_158/) and [PHP 7 updates](/user/upgrading/php_warnings/). 
 
 ## Notifiers 
 Notifiers are commonly added to each Zen Cart release.  If your custom template is using a notifier-based plugin, you will need to make sure it has all the latest notifiers. 
