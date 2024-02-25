@@ -2,7 +2,7 @@
 title: Other Topics 
 description: Other information about SEO in Zen Cart 
 category: seo
-weight: 10
+weight: 1000
 ---
 
 ## Disabled Product Status for Search Engines
@@ -15,7 +15,7 @@ The default installation of Zen Cart does not create "SEO URLs" (URLs that are s
 - [Ultimate SEO URLs](https://www.zen-cart.com/downloads.php?do=file&id=132)
 - [CEON URI Mapping](https://github.com/JSWebSteve/Ceon-URI-Mapping-V5.1.0)
 
-Please note that the plugin [Ultimate SEO URLs](https://www.zen-cart.com/downloads.php?do=file&id=132) is no longer supported.
+Please note that the plugin [Simple SEO URLs](https://www.zen-cart.com/downloads.php?do=file&id=1754) is no longer supported.
 
 ## Images and SEO
 Image alt text is used by search engines and can improve your SEO.  See [Alt Text](/user/accessibility/concerns/alt_text/) for more details. 
