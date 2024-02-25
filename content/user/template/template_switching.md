@@ -5,6 +5,8 @@ category: template
 weight: 10
 ---
 
+**Note:** Users of Zen Cart 2.0.0 and above have access to the even more powerful [template settings](/dev/code/template_settings/) file feature. 
+
 The process of changing templates can be done using the [Template Selection](/user/admin_pages/tools/template_selection/) screen under Admin > Tools. 
 
 But what if the templates you are switching between expect different configuration values?  It's tedious to do these by hand, especially if you're switching back and forth doing tests.
@@ -51,7 +53,7 @@ Then  create `includes/templates/responsive_classic/template_init.php` as follow
 
 ```
 <?php
-// Settings for Bootstrap
+// Settings for Responsive Classic
 $db->Execute("UPDATE " . TABLE_CONFIGURATION . " SET configuration_value='1' WHERE configuration_key = 'PRODUCT_LISTING_COLUMNS_PER_ROW'");
 ```
 

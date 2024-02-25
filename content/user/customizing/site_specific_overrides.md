@@ -41,3 +41,6 @@ Copy this file to
 
 and customize to taste. The settings that may be altered in this file are listed in the file `includes/init_includes/init_non_db_settings.php`.
 
+## Related Links 
+- [Template Settings](/dev/code/template_settings/) file
+

@@ -1,6 +1,6 @@
 ---
 title: Search 
-description: Customer Search, Admin Search and SEO 
+description: Storefront Search and Admin Search 
 weight: 100
 layout: docs
 ---

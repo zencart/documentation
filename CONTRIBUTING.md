@@ -203,17 +203,25 @@ https://www.zen-cart.com/latest
 
 ## Renaming files
 
-If it is necessary to rename a file, be sure to use [Hugo aliasing](https://gohugo.io/content-management/urls/) so as not break any external links to the page.  You can see an example of where this was done in `change_header_logo.md`, which used to be named `change_powered_by.md`.  The front matter of the file has an alias to the old name: 
+If it is necessary to rename or move a file, be sure to use [Hugo aliasing](https://gohugo.io/content-management/urls/) so as not break any external links to the page.  You can see an example of where this was done in the `/user/taxes/tax_calc_wrong.md` page, which used to be named `/user/locations/tax_calc_wrong.md`.  The front matter of the file has an alias to the old name: 
 
 ```
 aliases:
-    - /user/new_user_topics/change_powered_by/
+    - /user/locations/tax_calc_wrong
 ```
+
+Aliases can sometimes cause problems, so an alternate approach is to create a crosslink only page, as described below.
 
 ## Crosslink only pages 
 
 A page with minimal content and mostly links is called a _crosslink only_ page. 
-These pages are like linked products - they ensure that someone browsing a category will see related content.  An example is `/user/products/product_listing.md`.
+These pages are like linked products - they ensure that someone browsing a category will see related content.  An example is `/user/ezpages/ezpages_sidebox.md`.
+
+The body of this page is just a link to the new page: 
+
+```
+Please see [this page](/user/sideboxes/ezpages_sidebox/).
+```
 
 Crosslink only pages should have `noindex: yes` in their front matter. 
 

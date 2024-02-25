@@ -5,7 +5,7 @@ category: code
 weight: 10
 ---
 
-Starting with Zen Cart v2.0.0 there is a `tpl()` function that can be used to access site configuration settings that are customized to a specific template.
+Starting with Zen Cart v2.0.0 there is a `tpl()` function which can be used to access site configuration settings that are customized to a specific template.
 
 This means you can have the usual global settings configured in the Admin as usual, but allow for template-specific overrides which only take effect when a certain template is used.
 
@@ -13,7 +13,7 @@ One benefit of this for both storeowners and developers is the ability to try ou
 
 It also allows template authors to distribute configuration settings with their template, without those settings messing with a store's already-configured settings.
 
-> NOTE: This can be used in tandem with the `init_site_specific_non_db_settings.php` feature available since Zen Cart v1.5.8.
+> NOTE: This can be used in tandem with the `init_site_specific_non_db_settings.php` feature available since Zen Cart v1.5.8 - see [Site Specific Overrides](/user/customizing/site_specific_overrides/).
 
 
 ## Requirements
