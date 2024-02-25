@@ -6,7 +6,7 @@ weight: 10
 ---
 
 ## Disabled Product Status for Search Engines
-Zen Cart has a configuration setting called [DISABLED_PRODUCTS_TRIGGER_HTTP200](/user/admin_pages/configuration/configuration_stock/#disabled_product_status_for_search_engines).  The default behavior of the product is to not show a product info page for a disabled product; this switch allows the behavior to be changed.  Users who set this value to `true` may require template changes to ensure customers to not actually buy disabled products. See [this page](https://github.com/zencart/zencart/discussions/6165) for more information.
+Zen Cart has a configuration setting called [DISABLED_PRODUCTS_TRIGGER_HTTP200](/user/admin_pages/configuration/configuration_stock/#disabled_product_status_for_search_engines).  The default behavior of the product is to not show a product info page for a disabled product; this switch allows the behavior to be changed.  Users who set this value to `true` may require template changes to ensure customers do not actually buy disabled products. See [this page](https://github.com/zencart/zencart/discussions/6165) for more information.
 
 ## SEO URLs 
 
