@@ -32,6 +32,9 @@ git tag --list
 
 `git tag v1.5.8` obviously replacing the release name as appropriate
 
+Typically this tag will be updated on the remote too.  Check 
+https://github.com/zencart/zencart/tags to be sure.  If it's not there, do 
+
 `git push upstream --tags`
 
 
@@ -56,7 +59,7 @@ For Pre-Releases:
 For Official Releases: 
 - The textarea below the Release title should reference the https://docs.zen-cart.com/release release documentation.
 
-It's a good idea to also check the "Create a discussion for this release" box. 
+It's a good idea to also check the "Create a discussion for this release" box if it's not a pre-release. 
 
 When you're ready, press the **Publish Release** button.
 
