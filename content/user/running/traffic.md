@@ -18,5 +18,5 @@ The [sitemap plugin](https://www.zen-cart.com/downloads.php?do=file&id=367) allo
 
 - Participate in forums in your area of business, and add your URL to your forum signature. For example, if you sell plants, participate actively in gardening forums.  Just be sure to follow community standards (don't spam the forum with ads for your products, for example).
 
-Also be sure you have done all the possible [SEO Optimization](/user/search/optimizing_seo/) possible for your site. 
+Also be sure you have done all the possible [SEO Optimization](/user/seo/optimizing_seo/) possible for your site. 
 

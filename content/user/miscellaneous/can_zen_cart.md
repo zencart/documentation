@@ -119,7 +119,7 @@ Yes - you can limit admin users to a subset of the superuser capabilities using
 ---
 
 ### Can Zen Cart create SEO friendly URLs? 
-The plugin [Ultimate SEO URLs](https://www.zen-cart.com/downloads.php?do=file&id=132) allows Zen Cart to create keyword-rich URLs. 
+Not by default, but plugins are available.  Please see [SEO URLs](/user/seo/other_topics/#seo-urls).
 
 --- 
 ### Can Zen Cart allow me to edit an order after it was placed? 

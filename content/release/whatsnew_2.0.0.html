@@ -199,6 +199,8 @@
                 <li>Admin: Coupon Restrict dropdown only shows products not already selected.</li>
                 <li>Admin: Customers default address id bug fix.</li>
                 <li>Admin: Customers list will now show registration IP if set.  This behavior may also be disabled; see <a href="https://docs.zen-cart.com/user/admin/site_specific_overrides/">admin specific overrides</a>.</li>
+                <li>Admin: Delete product checks to ensure product exists first.</li>
+                <li>Admin: Developers now have a [template settings](/dev/code/template_settings/) file to facilitate template switching.</li>
                 <li>Admin: Orders listing sidebox provides direct link to customer account.</li>
                 <li>Admin: Order details page provides a direct link to customer account.</li>
                 <li>Admin: Handle emails with embedded '+' signs.</li>
@@ -240,6 +242,7 @@
                 <li>Storefront: Shipping modules now visible in Shipping Estimator when zone restriction and non-pulldown state setting is used.</li>
                 <li>Storefront: State dropdowns are now sorted alphabetically for all countries.</li>
                 <li>System: All "extra" folders are now loaded alphabetically.  In prior releases, they were loaded in filesystem order, which would sometimes result in system-dependent issues.</li>
+                <li>System: The issue that caused the Uncaught IntlException: datefmt_create: invalid locale: U_ILLEGAL_ARGUMENT_ERROR problem for users running PHP 8.1/8.2 no longer requires configure.php changes.</li>
                 <li>Database: Correction of known issues with zones.</li>
                 <li>Installer: Improved UI and progress reporting in zc_install.</li>
                 <li>All known v1.5.8/v1.5.8a bugfixes and security fixes are included in v2.0.0.</li>
