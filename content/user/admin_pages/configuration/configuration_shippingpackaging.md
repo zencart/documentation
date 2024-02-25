@@ -41,6 +41,20 @@ Path: <b>Configuration > Shipping/Packaging</b><br />
 Description: What is the weight of typical packaging for Large packages?<br />Example: 10% + 1lb 10:1<br />10% + 0lbs 10:0<br />0% + 5lbs 0:5<br />0% + 0lbs 0:0</div>
 
 
+<h2 id="shipping_weight_units">Shipping Weight Units</h2>
+
+<div class='indent'>Key: <b>SHIPPING_WEIGHT_UNITS</b><br />
+Path: <b>Configuration > Shipping/Packaging</b><br />
+Description: How should shipping modules treat the weights set on products? (remember, 1 ounce=0.0625 lbs, so choose lbs). <b>NOTE: You must still manually update your language files to show the correct units visually.</b></div>
+
+
+<h2 id="shipping_dimension_units">Shipping Dimension Units</h2>
+
+<div class='indent'>Key: <b>SHIPPING_DIMENSION_UNITS</b><br />
+Path: <b>Configuration > Shipping/Packaging</b><br />
+Description: In which unit of measurement does your store save length/width/height for your products?</div>
+
+
 <h2 id="display_number_of_boxes_and_weight_status">Display Number of Boxes and Weight Status</h2>
 
 <div class='indent'>Key: <b>SHIPPING_BOX_WEIGHT_DISPLAY</b><br />

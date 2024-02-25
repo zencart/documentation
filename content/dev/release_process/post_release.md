@@ -55,7 +55,7 @@ The first item applies to all releases (other than pre-releases); subsequent ite
 - Update the [What's New with Zen Cart](/user/about_us/whats_new/) page.
 
 - Run the `build_doc` and `view schema` tools.
-   - `build_doc` is in the [Zen Cart Tools](https://github.com/scottcwilson/zencart_tools) repo.  It creates the [configuration documentation](https://docs.zen-cart.com/user/admin_pages/configuration/).  
+   - `build_doc` is in the [Zen Cart Tools](https://github.com/scottcwilson/zencart_tools) repo.  It creates the [configuration documentation](https://docs.zen-cart.com/user/admin_pages/configuration/).  Install it in the admin folder for the new release, edit the file and set `TARGET_FOLDER`, then run it; it will update the Zen Cart documentation folder. 
    - `view_schema` is a plugin located [here](https://www.zen-cart.com/downloads.php?do=file&id=2270). It creates the [schema documentation](https://docs.zen-cart.com/dev/schema/).  Install the plugin, then do an Inspect in Google Chrome on the output and copy the element with id="pageWrapper" into a new file in `zencart_documentation/content/dev/schema`.  Remove the opening and closing div tags.
 
 - **Emergency Re-release:** If something was missed and you have to do a re-release, go back to [Remedial Commits](/dev/release_process/release_tagging/#possible-remedial-commits). 

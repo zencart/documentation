@@ -10,14 +10,14 @@ See also <a href="/user/admin_pages/catalog/product_types_edit_layout/">Admin > 
 
 <div class='indent'>Key: <b>BOX_WIDTH_LEFT</b><br />
 Path: <b>Configuration > Layout Settings</b><br />
-Description: Width of the Left Column Boxes<br>px may be included<br>Default = 150px<br><b>This configuration has no affect with the ZCA Responsive Components or ZCA Bootstrap Themes</b></div>
+Description: Width of the Left Column Boxes<br />px may be included<br />Default = 150px</div>
 
 
 <h2 id="column_width__right_boxes">Column Width - Right Boxes</h2>
 
 <div class='indent'>Key: <b>BOX_WIDTH_RIGHT</b><br />
 Path: <b>Configuration > Layout Settings</b><br />
-Description: Width of the Right Column Boxes<br>px may be included<br>Default = 150px<br><b>This configuration has no affect with the ZCA Responsive Components or ZCA Bootstrap Themes</b></div>
+Description: Width of the Right Column Boxes<br />px may be included<br />Default = 150px</div>
 
 
 <h2 id="bread_crumbs_navigation_separator">Bread Crumbs Navigation Separator</h2>
@@ -108,14 +108,14 @@ Description: Show Column Right, unless page override exists?<br />0= Column Righ
 
 <div class='indent'>Key: <b>COLUMN_WIDTH_LEFT</b><br />
 Path: <b>Configuration > Layout Settings</b><br />
-Description: Width of the Left Column<br>px may be included<br>Default = 150px<br><br><b>This configuration has no affect with the ZCA Responsive Components or ZCA Bootstrap Themes</b></div>
+Description: Width of the Left Column<br />px may be included<br />Default = 150px</div>
 
 
 <h2 id="column_width__right">Column Width - Right</h2>
 
 <div class='indent'>Key: <b>COLUMN_WIDTH_RIGHT</b><br />
 Path: <b>Configuration > Layout Settings</b><br />
-Description: Width of the Right Column<br>px may be included<br>Default = 150px<br><b>This configuration has no affect with the ZCA Responsive Components or ZCA Bootstrap Themes</b></div>
+Description: Width of the Right Column<br />px may be included<br />Default = 150px</div>
 
 
 <h2 id="categories_separator_between_links_status">Categories Separator between links Status</h2>

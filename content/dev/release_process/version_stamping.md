@@ -23,7 +23,7 @@ This is a private repository for team members only.
 
 1. Create a feature branch in your Zen Cart directory for the version stamping changes, e.g.
 
-`git checkout -b version-stamping-v158`
+`git checkout -b version-stamping-v200`
 
 
 ## Installing the Version Stamper
@@ -103,7 +103,7 @@ than running directly against our working branch.**
 If you run `git status` in your Zen Cart folder, you should see something like, 
 
 ```
-On branch version-stamping-v158
+On branch version-stamping-v200
 nothing to commit, working tree clean
 ```
 
@@ -133,7 +133,7 @@ git add .
 git commit 
 git push 
 -- Merge this change
-git checkout v158
+git checkout master
 -- update your branch
 ```
 
