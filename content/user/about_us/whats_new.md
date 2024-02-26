@@ -5,6 +5,7 @@ category: about_us
 weight: 10
 ---
 
+- February 2024: The first beta release for 2.0.0 was built; here's the [2.0.0 Beta 1 Feedback](https://www.zen-cart.com/showthread.php?229962-Feedback-on-2-0-0-beta1) forum thread. 
 - February 2024: The PayPal integration for Zen Cart has been refreshed with the newer [PayPal RESTful API](/user/payment/paypal_restful/).  The new plugin [PayPal RESTful API](https://www.zen-cart.com/downloads.php?do=file&id=2382) Production Release 1.0 was just completed.  This will eventually replace our older PayPal integrations. 
 - January 2024: The upcoming release is called 2.0.0.  Here's the [2.0.0 Release Roadmap Thread](https://www.zen-cart.com/showthread.php?229610-The-next-release-Zen-Cart-2-0-0).  The first alpha release was built; here's the [2.0.0 Alpha 1 Feedback](https://www.zen-cart.com/showthread.php?229906-Feedback-on-2-0-0-alpha1) forum thread. 
 - December 2023: Here's the [2023 Recap](https://www.zen-cart.com/showthread.php?229885-2023-Recap).
