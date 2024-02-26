@@ -5,7 +5,7 @@ layout: docs
 category: release_process
 ---
 
-Note: if you are doing a pre-release rather than an official release, please skip this step and go to the [next step](#next). 
+Note: if you are doing a pre-release rather than an official release, please skip this step and go to the [next step](/dev/release_process/post_release/). 
 
 The manifest api shows a hash of all files in a release. 
 
