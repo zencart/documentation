@@ -89,6 +89,6 @@ Description: Do you want to display the Order Comments on the Admin Invoice?<br 
 Path: <b>Configuration > Shipping/Packaging</b><br />
 Description: Do you want to display the Order Comments on the Admin Packing Slip?<br />0= OFF<br />1= First Comment by Customer only<br />2= All Comments for the Order</div>
 
-<div><br /><sup>*</sup>All examples are given for Imperial units (lbs). If you are using SI units (Kgs) then replce lb(s) with kg(s) in the examples.</div>
+<div><br /><sup>*</sup>All examples are given for Imperial units (lbs). If you are using SI units (Kgs) then replace lb(s) with kg(s) in the examples.</div>
 
 
