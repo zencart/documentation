@@ -31,21 +31,21 @@ Description: Carriers have a max weight limit for a single package. This is a co
 
 <div class='indent'>Key: <b>SHIPPING_BOX_WEIGHT</b><br />
 Path: <b>Configuration > Shipping/Packaging</b><br />
-Description: What is the weight of typical packaging of small to medium packages?<br />Example: 10% + 1lb 10:1<br />10% + 0lbs 10:0<br />0% + 5lbs 0:5<br />0% + 0lbs 0:0</div>
+Description: What is the weight of typical packaging of small to medium packages?<br />Example<sup>*</sup>: 10% + 1lb 10:1<br />10% + 0lbs 10:0<br />0% + 5lbs 0:5<br />0% + 1/2lbs (8oz) 0:0.5<br />0% + 0lbs 0:0</div>
 
 
 <h2 id="larger_packages__added_packaging_percentageweight">Larger packages - added packaging percentage:weight</h2>
 
 <div class='indent'>Key: <b>SHIPPING_BOX_PADDING</b><br />
 Path: <b>Configuration > Shipping/Packaging</b><br />
-Description: What is the weight of typical packaging for Large packages?<br />Example: 10% + 1lb 10:1<br />10% + 0lbs 10:0<br />0% + 5lbs 0:5<br />0% + 0lbs 0:0</div>
+Description: What is the weight of typical packaging for Large packages?<br />Example<sup>*</sup>: 10% + 1lb 10:1<br />10% + 0lbs 10:0<br />0% + 5lbs 0:5<br />0% + 1/2lbs (8oz) 0:0.5<br />0% + 0lbs 0:0</div>
 
 
 <h2 id="shipping_weight_units">Shipping Weight Units</h2>
 
 <div class='indent'>Key: <b>SHIPPING_WEIGHT_UNITS</b><br />
 Path: <b>Configuration > Shipping/Packaging</b><br />
-Description: How should shipping modules treat the weights set on products? (remember, 1 ounce=0.0625 lbs, so choose lbs). <b>NOTE: You must still manually update your language files to show the correct units visually.</b></div>
+Description: How should shipping modules treat the weights set on products? (remember if you are using lbs 1 ounce=0.0625 lbs). <b>NOTE: You must still manually update your language files to show the correct units visually.</b></div>
 
 
 <h2 id="shipping_dimension_units">Shipping Dimension Units</h2>
@@ -88,5 +88,7 @@ Description: Do you want to display the Order Comments on the Admin Invoice?<br 
 <div class='indent'>Key: <b>ORDER_COMMENTS_PACKING_SLIP</b><br />
 Path: <b>Configuration > Shipping/Packaging</b><br />
 Description: Do you want to display the Order Comments on the Admin Packing Slip?<br />0= OFF<br />1= First Comment by Customer only<br />2= All Comments for the Order</div>
+
+<div><br /><sup>*</sup>All examples are given for Imperial units (lbs). If you are using SI units (Kgs) then replce lb(s) with kg(s) in the examples.</div>
 
 
