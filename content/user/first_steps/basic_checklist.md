@@ -92,5 +92,6 @@ File | Description | URL
 `define_conditions.php` | your store's [terms and conditions](/user/storefront_pages/conditions/) | index.php?main_page=conditions
 `define_privacy.php` | your store's [privacy policy](/user/storefront_pages/privacy/)| index.php?main_page=privacy
 `define_shippinginfo.php` | your store's [shipping and returns](/user/storefront_pages/shippinginfo/) policy | index.php?main_page=shippinginfo
+`define_accessibility.php` | your store's [accessibility statement](/user/storefront_pages/accessibility/) | index.php?main_page=conditions
 
 

@@ -151,7 +151,7 @@ The <strong>specials</strong> and <strong>new_products</strong> sideboxes work s
       <img alt="Information Sidebox" src="/images/sidebox_information.png" />
    </div>
    <div class="notes_col">
-      The <strong>information</strong> sidebox presents links to the <a href="/user/template/define_pages/">define pages</a>. Included are shipping information, privacy, conditions, contact us, gift certificate, coupon, and newsletter unsubscribe. 
+      The <strong>information</strong> sidebox presents links to the <a href="/user/template/define_pages/">define pages</a>. Included are shipping information, privacy, conditions, contact us, gift certificate, coupon, and newsletter unsubscribe.  Additional pages are shown in newer versions of Zen Cart (about us, ask a question, accessibility).
    </div>
 	</div>
 <br clear="all">

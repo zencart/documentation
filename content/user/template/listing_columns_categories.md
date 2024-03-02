@@ -18,7 +18,7 @@ But on a mobile device, that many won't fit, so it drops to one per row.
 ![Phone window - 1 column](/images/bs_cat_listing_phone.png)
 
 ## Fluid Mode in Bootstrap
-In the Bootstrap template, setting `Categories To List Per Row` to 0 allows the template to determine how many categories will fit on the screen dynamically.  A smaller window will have fewer categories , and a larger window will have more.  Setting `Categories to List Per Row` to 0 is called *fluid mode* in the Bootstrap template.   
+In the [Bootstrap](/user/template/bootstrap) template, setting `Categories To List Per Row` to 0 allows the template to determine how many categories will fit on the screen dynamically.  A smaller window will have fewer categories , and a larger window will have more.  Setting `Categories to List Per Row` to 0 is called *fluid mode* in the Bootstrap template.   
 
 Here's a Bootstrap category listing page in fluid mode in a wide window (around 1500px): 
 
@@ -34,7 +34,7 @@ And finally, here's what the same page looks like when the window is narrowed to
 
 The default number of categories per row shown on a mobile device is 1, but I increased it to 2 using the first developer tip below.
 
-**Note:** Your template must also support values 0 for this setting.  Both the Responsive Classic and [Bootstrap](/user/template/bootstrap/) templates do. 
+**Note:** Your template must also support values 0 for this setting.  Both the [Responsive Classic](/user/template/responsive_classic/) and [Bootstrap](/user/template/bootstrap/) templates do. 
 
 Developer Tips: 
 - the number of columns shown at each window size may be adjusted customizing the `$grid_category_classes_matrix` data structure.  Instructions for doing so are provided in `includes/modules/bootstrap/category_row.php`.

@@ -128,6 +128,8 @@ Once the version stamping is complete, you will need to go to your Zen Cart fold
 commit and merge the changes created by the version stamping.
 Remember you will have to bypass merge protections since the branch has been locked for merges.
 
+Be sure to use a comment which indicates which version number is being stamped (e.g. "Version stamping 2.0.0"). 
+
 ```
 git add .
 git commit 

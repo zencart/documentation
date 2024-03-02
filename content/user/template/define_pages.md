@@ -47,7 +47,8 @@ The pages listed below are considered Define Pages, since their content is contr
 
 Page Name | File| URL 
 ----------|-----|-----
-About Us| `define_about_us.php` | `index.php?main_page=about_us` (1.5.8 andabove)
+About Us| `define_about_us.php` | `index.php?main_page=about_us` (1.5.8 and above)
+Accessibility| `define_accessibility.php` | `index.php?main_page=accessibility` (2.0.0 and above)
 Ask a Question | `define_ask_a_question.php` | `index.php?main_page=ask_a_question`  (1.5.7 and above)
 Contact Us | `define_contact_us.php` | `index.php?main_page=contact_us` 
 Privacy | `define_privacy.php` | `index.php?main_page=privacy`  
