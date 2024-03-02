@@ -11,6 +11,7 @@ Define Pages Editor gives you an option to change the content of the following p
 Page Name | Define Page File 
 ----------|-----------------
 About Us | define_about_us.php (since 1.5.8)
+Accessibility | define_accessibility.php (since 2.0.0)
 Ask a Question Page | define_ask_a_question.php (since 1.5.7)
 Checkout Success Page | define_checkout_success.php
 Conditions of Use | define_conditions.php

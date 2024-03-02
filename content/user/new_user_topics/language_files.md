@@ -93,10 +93,11 @@ $define = [
 > These pages include your privacy statement, your conditions of use and shipping and handling information.  
 > These files can be edited in a text editor and uploaded to your server, or you can edit them in your admin control panel in the [Define Pages Editor](/user/admin_pages/tools/define_pages/). 
 
-> *   Pages from this folder
+> *   Pages from this folder (partial list)
 
 ```
 define_privacy.php  
 define_conditions.php  
 define_shippinginfo.php
 ```
+

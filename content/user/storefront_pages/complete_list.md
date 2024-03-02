@@ -10,9 +10,11 @@ Pages not requiring login are:
 Page | URL | Notes 
 -----|-----|------
 About Us | index.php?main_page=about_us | 
+Accessibility | index.php?main_page=accessibility| 
 Advanced Search | index.php?main_page=advanced_search  | 
 Advanced Search Result | index.php?main_page=advanced_search_result  | 
 All Products | index.php?main_page=products_all  | 
+Ask a Question | index.php?main_page=ask_a_question | 
 Brands | index.php?main_page=brands | Shop by Brand
 Category Listing |  index.php?main_page=index&cPath=NNN | Shows subcategories in a category
 Conditions of Use | index.php?main_page=conditions | 
@@ -51,7 +53,6 @@ Account Newsletters | index.php?main_page=account_newsletters | Manage newslette
 Account Notifications | index.php?main_page=account_notifications | 
 Account Password | index.php?main_page=account_password | 
 Address Book | index.php?main_page=address_book | 
-Ask a Question | index.php?main_page=ask_a_question | 
 Checkout Confirmation| index.php?main_page=checkout_confirmation  | 
 Checkout Payment | index.php?main_page=checkout_payment | 
 Checkout Payment Address | index.php?main_page=checkout_payment_address | 

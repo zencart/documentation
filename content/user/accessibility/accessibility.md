@@ -134,6 +134,9 @@ Yes, there are several other free tools that can be included in the list to help
 * [ARIA Labels](/user/accessibility/concerns/aria_labels/)
 * [Color Contrast](/user/accessibility/concerns/color_contrast/)
 
+### Your Store's Accessibility Statement
+
+Since Zen Cart 2.0.0, an [accessibility page](/user/storefront_pages/accessibility/) has been part of the base build.  Fill this page in with a statement about your store's accessibility.
 
 ---
 <!-- please keep this at the end --> 

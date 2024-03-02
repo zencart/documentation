@@ -85,6 +85,8 @@ and then
 
 * [Version Information](/user/first_steps/version/) - How to determine your PHP, MySQL and Zen Cart version numbers.
 
+* [What's New?](/user/about_us/whats_new/) - What's the latest news on the Zen Cart project?
+
 * [Why don't I see my change?](/user/new_user_topics/browser_caching/) - I am making changes to an image / to CSS / to a page, and it's not showing up!
 
 <style>.panel-line { display:none; }</style> 
