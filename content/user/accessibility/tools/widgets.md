@@ -39,6 +39,8 @@ Both widgets are AI-driven web accessibility solutions that aim to make websites
 
 * **Legal Compliance** - Relying solely on a widget may not be sufficient to meet legal requirements for accessibility in some jurisdictions, where full WCAG compliance is mandated.
 
+There is also a school of thought that these tools (that are sometimes called overlays) are directionally wrong, and that efforts should be instead focused on resolving the shortcomings of the underlying code.  See [Overlay Fact Sheet](https://overlayfactsheet.com/) for a summary of this argument.
+
 ## Getting a Widget for Your Site
 
 If you'd like to get a widget like this for your website, you may purchase one from a [Zen Cart Certified hosting partner](https://ada4zencart.com/index.php?main_page=index&referrer=C4ADA_11659651175). 
