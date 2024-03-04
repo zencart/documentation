@@ -33,7 +33,7 @@ So to redirect this with a RewriteRule requires a RewriteCond to match the query
 >RewriteCond %{QUERY_STRING} ^.*products_id=8263$  
 RewriteRule ^index\.php$ /index.php?main_page=product_info&cPath=97&products_id=9015 [R=301,L]
 
-In this example,   
+In this example, note the following about RewriteCond:   
 `^` - start of the string to match  
 `.*` - is any number of any characters. You could use more of the query string, but using this means it captures urls with different or missing cPaths.  
 `products_id=8263` - is the part you want to match  
@@ -44,7 +44,7 @@ In the RewriteRule,
 `\.` – the backslash is just escaping the decimal point  
 `$` - the end of the url  
 `/index.php?main_page=product_info&cPath=97&products_id=9015` - the destination on the same server  
-`[R=301,L]` – 301 is the code to return to the server, L means it’s the last rule/don’t process any more rules. 
+`[R=301,L]` – 301 is the code to return to the server, L means it’s the last rule/don’t process any more rules for the RewriteCond above it. 
 
 
 
