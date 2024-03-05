@@ -11,6 +11,7 @@ Prior to Zen Cart 1.5.8, the About Us page was provided as a plugin:
 
 - [About Us](https://www.zen-cart.com/downloads.php?do=file&id=86) 
 - [Skinny About Us](https://www.zen-cart.com/downloads.php?do=file&id=2198) 
+
 The latter is somewhat less customizable but contains fewer files. 
 
 You may use the About Us page to show content about your store that is designed to build credibility. 

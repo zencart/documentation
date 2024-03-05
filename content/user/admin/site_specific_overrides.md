@@ -5,6 +5,8 @@ category: admin
 weight: 10
 ---
 
+Note: This document is for the Admin side site specific overrides. [Here are the storefront site specific overrides](/user/customizing/site_specific_overrides/). 
+
 ## Admin Setting Overrides 
 
 Starting from Zen Cart 1.5.8, a file called `admin/includes/extra_datafiles/dist-site_specific_admin_overrides.php`  

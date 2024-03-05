@@ -5,6 +5,8 @@ category: customizing
 weight: 10
 ---
 
+Note: This document is for the storefront side site specific overrides. [Here are the Admin site specific overrides](/user/admin/site_specific_overrides/). 
+
 ## Setting Overrides 
 
 Starting in Zen Cart 1.5.8, a file called `includes/extra_datafiles/dist-site_specific_overrides.php` is provided.  
@@ -17,7 +19,8 @@ and customize to taste.
 
 Many behaviors can be enabled or disabled by this file, such as:
 
-- displaying the About Us link in the Information sidebox (```$flag_show_about_us_sidebox_link```).
+- displaying the [About Us](/user/storefront_pages/about_us/) link in the Information sidebox (```$flag_show_about_us_sidebox_link```).
+- displaying the [Accessibility Page](/user/storefront_pages/accessibility/) link in the Information sidebox (```$flag_show_accessibility_sidebox_link```).
 - displaying the [Brands page](/user/storefront_pages/brands/) link in the Information sidebox (```$flag_show_brand_sidebox_link```).
 - (developers) whether to enable debug on the `zcDate` class (```$zen_date_debug```).
 - (developers) whether to bypass loading string-matches of legacy language files (```'NO_LANGUAGE_SUBSTRING_MATCH'```)  (see [Substring Matching](/dev/code/158_order_language_files/) for details).
