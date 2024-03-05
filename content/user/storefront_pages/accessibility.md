@@ -18,5 +18,11 @@ A possible starting point would be something like:
 >
 > Telephone number / Email address / Contact form URL
 
+It's also recommended that you offer to run orders for people who are having 
+trouble using your site.  You can use the procedure specified on the [Place order](/user/running/login_as_customer/) page.  You can use this sort of language on your accessibility page and/or your about us page: 
+
+> If you are having trouble placing an order, please contact us 
+> and we will place an order on our website on your behalf.
+
 The accessibility page is built in to version 2.0.0 of Zen Cart.  An [accessibility page plugin](https://www.zen-cart.com/downloads.php?do=file&id=2383) is available as a plugin for older versions.
 

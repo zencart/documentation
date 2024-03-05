@@ -17,7 +17,7 @@ Generally your host will only allow you to run one version of PHP per domain.  B
 With cPanel’s File Manager, navigate to `/home/YOURACCOUNT/`. This is known as "above webroot." If your cPanel File Manager loads with `/public_html`, just click on "Up One Level" to be “above the root.”  This is where you will place your test site.  Create a folder called "test" to hold the contents of your test site.
 
 ## Creating a Subdomain.
-In cPanel, navigate to the Domains Section and click on the Create a New Domain option. 
+In cPanel, navigate to the Domains Section.  Click the icon called "Domains."  Then, click on the "Create a New Domain" option. 
 
 ![Subdomain](/images/sub_domain_1.png)
 
