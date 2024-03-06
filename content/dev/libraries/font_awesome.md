@@ -9,18 +9,23 @@ type: codepage
 The [Font Awesome library](https://fontawesome.com/) provides a set of vector icons and social logos for your website.   It is one of the most popular icon sets available. See [Font Awesome](/user/template/fontawesome/) for storeowner docs.
 
 ## Font Awesome Versions in Zen Cart 
+Both the admin and provided storefront templates (`template_default` and `responsive_classic`) use the same version.
+
 - Font Awesome 6.4 is included in Zen Cart 2.0.0 and above.  
 - Font Awesome 4.7 is included in Zen Cart 1.5.5-1.5.8.
 
 ## Font Awesome Versions in the Bootstrap Template 
 
-- [Bootstrap template](/user/template/bootstrap/) version 3.5.0 and above uses Font Awesome 5.15. 
+The [Bootstrap template](/user/template/bootstrap/) uses its own version of Font Awesome, which may not be the same as the version used by `template_default`.
 
-## Font Awesome Help 
+- Bootstrap template version 3.5.0 and above uses Font Awesome 5.15. 
 
-- [Font Awesome 6](https://fontawesome.com/v6/docs)
-- [Font Awesome 5](https://fontawesome.com/v5/docs)
-- [Font Awesome 4.7](https://fontawesome.com/v4.7.0/)
+## Font Awesome Help and Icons 
+Help|Icons
+----|----
+[Font Awesome 6 Help](https://fontawesome.com/v6/docs) | [Font Awesome 6 icons](https://fontawesome.com/v6/search)
+[Font Awesome 5 Help](https://fontawesome.com/v5/docs) |[Font Awesome 5 icons](https://fontawesome.com/v5/search)
+[Font Awesome 4.7 Help](https://fontawesome.com/v4.7.0/)|[Font Awesome 4.7 icons](https://fontawesome.com/v4/icons/)
 
 ## Backwards Compatibility 
 
