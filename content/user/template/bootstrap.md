@@ -5,6 +5,8 @@ category: template
 weight: 10
 ---
 
+Developers: please see [developer information on Bootstrap](/dev/libraries/bootstrap/) for technical details.
+
 The [Bootstrap template](https://www.zen-cart.com/downloads.php?do=file&id=2191) is a well supported, standards-based, [responsive](/user/template/responsive/) template which was built by the Zen Cart community. 
 
 The Bootstrap template is built on the [Bootstrap](https://getbootstrap.com/) front-end toolkit.  It differs from - **and is better than** - the older [Responsive Classic](/user/template/responsive_classic/) template in the following ways: 
@@ -32,4 +34,6 @@ One of the best things about the Bootstrap template is that it puts the control 
 
 ![Bootstrap Colors](/images/bootstrap_colors.png)
 
+### Icons in the Bootstrap Template 
 
+The Bootstrap template uses [FontAwesome](/user/template/font_awesome/).  Technical details on versions are provided in [Font Awesome in Zen Cart](/dev/libraries/font_awesome/). 
