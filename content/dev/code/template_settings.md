@@ -1,11 +1,11 @@
 ---
-title: Template Settings and the tpl() function
+title: Template Settings and the $tplSetting object
 description: Overriding global settings per-template
 category: code
 weight: 10
 ---
 
-Starting with Zen Cart v2.0.0 there is a `tpl()` function which can be used to access site configuration settings that are customized to a specific template.
+Starting with Zen Cart v2.0.0 there is a `$tplSetting` object which can be used to access site configuration settings that are customized to a specific template.
 
 This means you can have the usual global settings configured in the Admin as usual, but allow for template-specific overrides which only take effect when a certain template is used.
 
@@ -19,7 +19,7 @@ It also allows template authors to distribute configuration settings with their 
 ## Requirements
 
 There are two requirements, using Zen Cart v2.0.0 or newer:
-- the template must use `tpl()` to access settings instead of directly referring to the global CONSTANT
+- the template must use `$tplSetting` to access settings instead of directly referring to the global CONSTANT
 - the template's `/includes/templates/YOUR_TEMPLATE_NAME/template_settings.php` file must contain the override settings. (See the 2 kinds of overrides, explained below)
 
 
@@ -42,9 +42,9 @@ Banners are rendered in various positions of the template, and it's possible tha
 
   In the case of our example, we're looking at the controls for `SHOW_BANNERS_GROUP_SET2`.
 
-2. **Replace the constant with tpl() in the template.** 
+2. **Replace the constant with $tplSetting->foo in the template.** 
 
-  Look in your template files for wherever that `SHOW_BANNERS_GROUP_SET2` constant is used, and replace the constant with a function call to `tpl()` whose first parameter is that constant.
+  Look in your template files for wherever that `SHOW_BANNERS_GROUP_SET2` constant is used, and replace the constant with a reference to `$tplSetting->foo` where `foo` is that constant.
 
   eg:
 ```php
@@ -52,7 +52,7 @@ Banners are rendered in various positions of the template, and it's possible tha
 ```
 becomes the following, where two replacements are made:
 ```
-  if (tpl('SHOW_BANNERS_GROUP_SET2') != '' && $banner = zen_banner_exists('dynamic', tpl('SHOW_BANNERS_GROUP_SET2'))) {
+  if ($tplSetting->SHOW_BANNERS_GROUP_SET2 != '' && $banner = zen_banner_exists('dynamic', $tplSetting->SHOW_BANNERS_GROUP_SET2)) {
 ```
 
   To test, things should work as they did before, without any change yet because we haven't configured an override setting yet. We'll do that next:
@@ -105,6 +105,29 @@ This can work in your favor.
 
 ## Technical Information for Developers
 
+### About the `$tplSetting` helper object
+
+#### Lookup Order
+
+The `$tplSetting` object looks for a value to return using this order:
+
+1. The global $tpl_settings array for a key matching the $setting requested. (It loads that array upon instantiation.)
+2. A defined CONSTANT matching the $setting requested
+3. If nothing is found, `null` is returned
+
+
+#### Casting types
+
+The `$tplSetting` object allows you to set a `type` to cast each setting to upon return.
+
+eg: $tplSetting->ACCOUNT_STATE_DRAW_INITIAL_DROPDOWN is an admin configuration setting, stored as a string.
+So `echo $tplSetting->ACCOUNT_STATE_DRAW_INITIAL_DROPDOWN;` would normally return `'false'` as a string.
+But if we set it to boolean, like this:
+`$tplSetting->setType('ACCOUNT_STATE_DRAW_INITIAL_DROPDOWN', 'bool');`
+then
+`echo $tplSetting->ACCOUNT_STATE_DRAW_INITIAL_DROPDOWN;` returns `false` as a boolean.
+
+
 ### Load Order
 Zen Cart loads certain features/settings in a prescribed order. If you have a setting defined earlier in the process, it will be overridden if something else defines the same thing later on.
 
@@ -117,33 +140,3 @@ Related init-system load-order information:
 - `functions` and `extra_functions` files at breakpoint 60
 - `template_settings.php` at breakpoint 110
 - followed by language-defines and `extra_definitions` for the current language
-
-### About the `tpl()` helper function
-
-#### Lookup Order
-
-The `tpl()` function looks for a value to return using this order:
-
-1. The global $tpl_settings array for a key matching the $setting requested
-2. A defined CONSTANT matching the $setting requested
-3. Optionally, a global $var of the name of the $setting requested
-4. If nothing is found, the supplied default will be returned
-5. Else `null` is returned
-
-
-#### Function Parameters
-There are some advanced features available to the `tpl()` helper function.
-
-Here is the function signature:
-`function tpl(string $setting, string $cast_to = null, $default = null, bool $check_globals = false): mixed`
-
-- `$setting` is the lookup key;
-- `$cast_to` lets you specify a (basic) PHP type to cast the returned value to. This saves you having to cast it separately after getting the response back;
-- `$default` is the value that is returned if the `$setting` is not found in `$tpl_settings` array and not defined as a CONSTANT;
-- `$check_globals` allows you to tell it to also check for a global variable named the same as the $setting (case will be checked for exact-match to `$setting`, and also the all-lower-case form, eg `strtolower($setting)`).
-
-
-Advanced: You "could" query *any* constant and cast its value to a certain type.
-
-Or you "could" query *any* constant, and if not found, have it return your supplied default value.
-
