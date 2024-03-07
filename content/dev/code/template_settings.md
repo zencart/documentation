@@ -115,17 +115,38 @@ The `$tplSetting` object looks for a value to return using this order:
 2. A defined CONSTANT matching the $setting requested
 3. If nothing is found, `null` is returned
 
-
 #### Casting types
 
 The `$tplSetting` object allows you to set a `type` to cast each setting to upon return.
 
-eg: $tplSetting->ACCOUNT_STATE_DRAW_INITIAL_DROPDOWN is an admin configuration setting, stored as a string.
+eg: `ACCOUNT_STATE_DRAW_INITIAL_DROPDOWN` is an admin configuration setting, stored as a string.
+
 So `echo $tplSetting->ACCOUNT_STATE_DRAW_INITIAL_DROPDOWN;` would normally return `'false'` as a string.
+
 But if we set it to boolean, like this:
 `$tplSetting->setType('ACCOUNT_STATE_DRAW_INITIAL_DROPDOWN', 'bool');`
+
 then
 `echo $tplSetting->ACCOUNT_STATE_DRAW_INITIAL_DROPDOWN;` returns `false` as a boolean.
+
+#### Combining types and values in `$tpl_settings[]` array
+
+The basic use of the `$tpl_settings` array lets you establish values to return when a specific key is referenced.
+
+But if you want to also specify how to cast those values into a certain PHP type without manually calling `->setType()` on each one, you can declare them in the initial `$tpl_settings` array as nested values of `value` and `type (see example below). The `$tplSetting` object will look for this nested-array format and use it automatically if the array keys match, instead of treating the setting as an array.
+
+Example:
+
+```
+$tpl_settings['GET_VALUE_OF_TWO'] = '2';
+// $tplSetting->GET_VALUE_OF_TWO will return the string '2'.
+
+$tpl_settings['GET_VALUE_OF_TWO'] = [
+    'value' => '2',
+    'type' => 'int',
+    ];
+// $tplSetting->GET_VALUE_OF_TWO will return the integer 2.
+```
 
 
 ### Load Order
