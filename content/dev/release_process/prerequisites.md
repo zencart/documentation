@@ -43,17 +43,23 @@ NOTE: If you are setting up a pre-release, please see [Pre-Release Notes](/dev/r
 
 This can be confusing because sometimes the update letter is included and sometimes it isn't.  The thing to remember is that the database version does not include the letter, because the database doesn't change just because of a patch release.  
 
+Shortcut for editing these 7 files:
+
+```
+vi includes/version.php zc_install/includes/version.php zc_install/sql/install/mysql_zencart.sql zc_install/sql/updates/mysql_upgrade_zencart_200.sql zc_install/includes/systemChecks.yml zc_install/ajaxLoadUpdatesSql.php zc_install/includes/modules/pages/database_upgrade/header_php.php
+```
+
 Here's what should be in these files for version 1.5.8a: 
 
-|File | Version 
-------|--------
-|`includes/version.php`| `define('PROJECT_VERSION_MINOR', '5.8a');`|
-|`zc_install/includes/version.php`|`define('PROJECT_VERSION_MINOR', '5.8a');`|
-|`zc_install/sql/install/mysql_zencart.sql`|`project_version_patch1` for the two `Zen-Cart Main` rows should be `5.8a`<br>`project_version_patch1` for the two `Zen-Cart Database` rows should be `5.8`|
-|`zc_install/sql/updates/mysql_upgrade_zencart_158.sql`|Same two changes as install script above|
-|`zc_install/includes/systemChecks.yml`|Top `checkDBVersion` block should be `version: '1.5.8'`|
-|`zc_install/ajaxLoadUpdatesSql.php`|`'1.5.8'=>array('required'=>'1.5.7'),`|
-|`zc_install/includes/modules/pages/database_upgrade/header_php.php`|`$versionArray[] = '1.5.8';`|
+|#|File | Version 
+-|------|--------
+|1|`includes/version.php`| `define('PROJECT_VERSION_MINOR', '5.8a');`|
+|2|`zc_install/includes/version.php`|`define('PROJECT_VERSION_MINOR', '5.8a');`|
+|3|`zc_install/sql/install/mysql_zencart.sql`|`project_version_patch1` for the two `Zen-Cart Main` rows should be `5.8a`<br>`project_version_patch1` for the two `Zen-Cart Database` rows should be `5.8`|
+|4|`zc_install/sql/updates/mysql_upgrade_zencart_158.sql`|Same two changes as install script above|
+|5|`zc_install/includes/systemChecks.yml`|Top `checkDBVersion` block should be `version: '1.5.8'`|
+|6|`zc_install/ajaxLoadUpdatesSql.php`|`'1.5.8'=>array('required'=>'1.5.7'),`|
+|7|`zc_install/includes/modules/pages/database_upgrade/header_php.php`|`$versionArray[] = '1.5.8';`|
 
 There are other version related updates to do, but they're not part of the build, so they are detailed in [post release tasks](/dev/release_process/post_release/).
 

@@ -50,6 +50,8 @@ The first item applies to all releases (other than pre-releases); subsequent ite
 
 - Ensure the [Release Specific Upgrade Considerations](/user/upgrading/release_specific_upgrade_considerations/) doc has a statement about this release.
 
+- Update the pages in [Third Party Libraries](/dev/libraries/) if any major library version changes have been made.
+
 - Search the documentation in https://github.com/zencart/documentation for the string RELEASETIME and update those files.
 
 - Update the [What's New with Zen Cart](/user/about_us/whats_new/) page.
