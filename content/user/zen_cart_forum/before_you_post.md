@@ -21,7 +21,7 @@ weight: 10
 
 *   **You should include answers to all of these questions:**  
 
-    *   What version of Zen Cart?
+    *   What [version of Zen Cart](/user/admin_pages/tools/server_info/)?
 
     *   Is it a new install or an upgrade?
 
@@ -35,13 +35,15 @@ weight: 10
 
         *   What operating system?
 
-    *   What version of PHP is installed on the server?
+    *   What [version of PHP](/user/admin_pages/tools/server_info/) is installed on the server?
 
-    *   What version of MySQL is installed on the server?
+    *   What [version of MySQL](/user/admin_pages/tools/server_info/) is installed on the server?
 
     *   What you were doing when your problem occurred?
 
     *   What are the steps to reproduce the problem?
+
+    *   Are any [debug logs](/user/troubleshooting/debug_logs/) produced by the problem? 
 
     *   Have you attempted to fix the problem?  
 
@@ -56,5 +58,12 @@ weight: 10
     If you haven't received an answer in a reasonable amount of time **you may reply to your own post WITH MORE information**. DO NOT post "Well?" or "Can someone please help". That is considered bumping and you will probably get yelled at.
 
     Duplicate posts are subject to being locked or deleted, as they simply bring confusion to those helping or others reading/searching for information later, and are seen as spam-like.
+
+### Still no answers? 
+
+In all likelihood, the answer to your question is, 
+
+> You will have to work with a developer to build something that works for your specific needs.
+
 
 
