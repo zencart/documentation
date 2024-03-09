@@ -31,21 +31,21 @@ Description: Carriers have a max weight limit for a single package. This is a co
 
 <div class='indent'>Key: <b>SHIPPING_BOX_WEIGHT</b><br />
 Path: <b>Configuration > Shipping/Packaging</b><br />
-Description: What is the weight of typical packaging of small to medium packages?<br />Example: 10% + 1lb 10:1<br />10% + 0lbs 10:0<br />0% + 5lbs 0:5<br />0% + 0lbs 0:0</div>
+Description: What is the weight of typical packaging of small to medium packages?<br>Example:<br>Unit = Your SHIPPING_WEIGHT_UNITS (lbs or kgs) <br> 10% + 1 Unit 10:1<br>10% + 0 Units 10:0<br>0% + 5 Units 0:5<br>0% + 1/2 Unit 0:0.5<br>0% + 0 Units 0:0</div>
 
 
 <h2 id="larger_packages__added_packaging_percentageweight">Larger packages - added packaging percentage:weight</h2>
 
 <div class='indent'>Key: <b>SHIPPING_BOX_PADDING</b><br />
 Path: <b>Configuration > Shipping/Packaging</b><br />
-Description: What is the weight of typical packaging for Large packages?<br />Example: 10% + 1lb 10:1<br />10% + 0lbs 10:0<br />0% + 5lbs 0:5<br />0% + 0lbs 0:0</div>
+Description: What is the weight of typical packaging for Large packages?<br>Example:<br>Unit = Your SHIPPING_WEIGHT_UNITS (lbs or kgs) <br> 10% + 1 Unit 10:1<br>10% + 0 Units 10:0<br>0% + 5 Units 0:5<br>0% + 1/2 Unit 0:0.5<br>0% + 0 Units 0:0</div>
 
 
 <h2 id="shipping_weight_units">Shipping Weight Units</h2>
 
 <div class='indent'>Key: <b>SHIPPING_WEIGHT_UNITS</b><br />
 Path: <b>Configuration > Shipping/Packaging</b><br />
-Description: How should shipping modules treat the weights set on products? (remember, 1 ounce=0.0625 lbs, so choose lbs). <b>NOTE: You must still manually update your language files to show the correct units visually.</b></div>
+Description: How should shipping modules treat the weights set on products? (remember if using lbs, 1 ounce=0.0625). <b>NOTE: You must still manually update your language files to show the correct units visually.</b></div>
 
 
 <h2 id="shipping_dimension_units">Shipping Dimension Units</h2>
