@@ -39,4 +39,4 @@ Editing the customer record takes you to the customer details screen, which show
 ![Edit Customer 2](/images/edit_customer_2.gif)
 
 
-For more information, see the [customer and order data FAQs](/user/orders/). 
+For more information, see the FAQs on [customers](/user/admin_pages/customers/) and [orders](/user/orders/). 

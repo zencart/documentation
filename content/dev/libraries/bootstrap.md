@@ -6,7 +6,7 @@ weight: 10
 type: codepage
 ---
 
-## Bootstrap Template 
+## Bootstrap in the Bootstrap Template 
 
 Bootstrap template version 3.X is based on [Bootstrap 4](https://getbootstrap.com/docs/4.6/getting-started/introduction/).  You can find the exact version of Bootstrap (`major.minor.patch`) in use by looking at the file `includes/templates/bootstrap/common/html_header.php`, which pulls in the Bootstrap javascript and css.
 
@@ -27,6 +27,7 @@ You may follow this effort by monitoring [this PR](https://github.com/zencart/ze
 
 ## Help on Bootstrap
 
+- [Bootstrap 5](https://getbootstrap.com/docs/5.0/)
 - [Bootstrap 4](https://getbootstrap.com/docs/4.6/)
 - [Bootstrap 3](https://getbootstrap.com/docs/3.3/)
 
