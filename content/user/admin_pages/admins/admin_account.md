@@ -4,7 +4,7 @@ category: admin_pages
 weight: 200 
 ---
 
-Admin Account is like the [Admin Users](/user/admin_pages/admins/admin_users) page, but filtered to only show the currently logged in admin account.
+Admin Account is like the [Admin Users](/user/admin_pages/admins/admin_users) page, but filtered to only show the currently logged in admin account. It's the currently-logged-in Admin user's "profile" page.
 
 ![Admin Users](/images/admin_account.png)
 
