@@ -13,6 +13,8 @@ The master branch is now the current release.  If a patch is being done from a r
 
 ## Versioning files 
 
+Before doing the version updates, create a new branch specifically for these changes. 
+
 Here's what should be in these files for version 2.0.0-alpha1:
 
 |#|File | Version 

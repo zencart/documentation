@@ -5,6 +5,7 @@ category: about_us
 weight: 10
 ---
 
+- March 2024: [Reminder to migrate off the old UPS API](https://www.zen-cart.com/showthread.php?229812-UPS-XML-will-stop-working-June-2024-(here-s-new-OAUTH-module)&p=1399614#post1399614) posted on forum.  Two months left to upgrade to [UPS Shipping RESTful API](https://www.zen-cart.com/downloads.php?do=file&id=2374) or update your custom code.  The old API will stop working on  **June 3, 2024**.
 - March 2024: Release Candidate 1 for 2.0.0 was built; here's the [2.0.0 RC 1 Feedback](https://www.zen-cart.com/showthread.php?229991-Feedback-on-2-0-0-rc1) forum thread. 
 - February 2024: The [Edit Orders](https://www.zen-cart.com/downloads.php?do=file&id=1513) plugin has been updated for Zen Cart 1.5.8.
 - February 2024: The PayPal integration for Zen Cart has been refreshed with the newer [PayPal RESTful API](/user/payment/paypal_restful/).  The new plugin [PayPal RESTful API](https://www.zen-cart.com/downloads.php?do=file&id=2382) Production Release 1.0 was just completed.  This will eventually replace our older PayPal integrations. 

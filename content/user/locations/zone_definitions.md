@@ -38,6 +38,11 @@ Here are the required steps:
 - Press Insert, and select Country = "United States" and Zone = "Hawaii".  Press Insert. 
 - You're done!  You now have a new zone you can use anywhere Zone restriction is allowed, such as a shipping module's configuration. 
 
+<hr>
+
+**Note:** The procedures described in the remainder of this document
+are direct changes to your database which are best performed in phpMyAdmin, not the "Install SQL Patches" tool. 
+
 ### To create a Zone for the US Continental 48 States & DC
 
 ```
