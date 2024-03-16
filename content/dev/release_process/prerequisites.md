@@ -27,6 +27,8 @@ Once you have these things, you're almost ready to begin.
 
 NOTE: If you are setting up a pre-release, please see [Pre-Release Notes](/dev/release_process/pre_release_notes/).
 
+Before doing the version updates, create a new branch specifically for these changes. 
+
 1. Edit the file `includes/version.php` and update the version.
 
 1. Edit the file `zc_install/includes/version.php` and update the version.
@@ -101,7 +103,7 @@ Do copyright updates in the following files:
 
 ## Check in! 
 
-You'll want to check in all these changes so they get version stamped correctly. 
+You'll want to check in all these changes so they get version stamped correctly.  Merge the branch you created for these changes. 
 
 
 

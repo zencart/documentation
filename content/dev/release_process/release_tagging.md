@@ -30,7 +30,9 @@ git tag --list
 
 **Note:** The tag *must* be the same as the `newVersion` setting in the versionstamper's `config.php` file. 
 
-`git tag v1.5.8` obviously replacing the release name as appropriate
+`git tag v1.5.8` 
+
+obviously replacing the release name as appropriate.
 
 Typically this tag will be updated on the remote too.  Check 
 https://github.com/zencart/zencart/tags to be sure.  If it's not there, do 
