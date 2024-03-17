@@ -30,6 +30,15 @@ If both
 ```
 exist, the second one (the older style define based file) is ignored.
 
+Second Example:
+
+If both exist:
+
+./includes/languages/english/lang.order_status.php
+./includes/languages/english/MY_TEMPLATE/order_status.php
+
+The 2nd file will be ignored; even though that file is in an override directory.
+
 ### Admin: 
 - The main language file is `admin/includes/languages/lang.english.php`.  
 - Each page has its own language file, `admin/includes/languages/english/lang.PAGENAME.php`.
