@@ -49,7 +49,12 @@ It is planned in the future to allow interactions with pages that rely on javasc
 WARNING: Feature tests rely on Re-creating the database on each separate test suite. This means it will destroy you database. 
 However, given that you should only be testing on a local development environment, this shouldn't be a problem.
 
-Feature tests can be run using `composer functional-tests`
+Feature tests can be run using 
+
+- `composer feature-tests` will run all feature tests
+- `composer feature-tests-store` will run feature tests just for the store
+- `composer feature-tests-admin` will run feature tests just for the admin
+
 
 ### Configuration
 
@@ -68,12 +73,8 @@ These files are exactly the same format as standard Zen Cart `configure.php` fil
 
 ### Migrations and Seeders
 
-As the functional tests rely on a populated database, the test framework uses Laravel-like migrations and seeders.
-
-Migrations create the tables we need and seeders add data to the tables. 
-
-The initial migrations and seeders are run automatically by the test framework and mirror what 
-would be created by zc_install with demo data.
+As the functional tests rely on a populated database, the test framework uses the mysql install files and demo data found within 
+the zc_install folder, so this directory needs to be present.
 
 There may be times though where you may want to alter the data to test a specific bug. 
 An example may be when a search is not finding a product that contains certain strings, 
@@ -81,7 +82,7 @@ or a salemaker with specific data is not applying correctly.
 
 In these cases you can create your own data seeder to add this data just for your test.
 
-Custom seeders are created in the `not_for_release/testFramework/Support/database/Seeders/CustomSeeders/` directory.
+Custom seeders are created in the `not_for_release/testFramework/Support/database/Seeders/` directory.
 
 An example is `not_for_release/testFramework/Support/database/Seeders/CustomSeeders/StoreWizardSeeder.php`
 
@@ -91,3 +92,13 @@ You can run a custom seeder in your tests using
 
 replacing `StoreWizardSeeder` with the name of your seeder class.
 
+### Mail Server 
+
+By default the Test Framework disables the sending of emails.
+This can be overridden by usng another configure fil
+An eample exists at `not_for_release/testFramework/Support/configs/main.configure.php.example`
+The example shows settings for using a local Mailpit instance. `
+Note: Any misconfiguration here will likely result in failing tests.
+
+As with other configure files nited above the actual configure file should be named ``
+`_USER_.store.configure.php` with `_USER` being replaced by the user running the tests.
