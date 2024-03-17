@@ -18,17 +18,20 @@ processes older define based language files, if they are the only ones available
 - This file may be overridden as `includes/languages/english/YOURTEMPLATE/lang.PAGENAME.php`.
 - If the above page specific files do not exist, the system checks for an older define based file, `includes/languages/english/YOURTEMPLATE/PAGENAME.php` and `includes/languages/english/PAGENAME.php`. 
 
-If both older and newer style files exist, the older files are ignored. 
+If both older and newer style files exist, the older files are ignored, including their overrides.
 
 Example: 
 
-If both 
+Given the following files are present, only the "newer-style" files will be processed, and the "older-style" files ignored.
 
 ```
-./includes/languages/english/lang.order_status.php
-./includes/languages/english/order_status.php
+./includes/languages/english/YOURTEMPLATE/lang.order_status.php (newer-style override file)
+./includes/languages/english/lang.order_status.php  (main newer-style file)
+// (if either of the above exist, the following are ignored)
+./includes/languages/english/YOURTEMPLATE/order_status.php (older-style override file)
+./includes/languages/english/order_status.php  (older-style main file)
 ```
-exist, the second one (the older style define based file) is ignored.
+
 
 ### Admin: 
 - The main language file is `admin/includes/languages/lang.english.php`.  
