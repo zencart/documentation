@@ -34,8 +34,10 @@ Second Example:
 
 If both exist:
 
+```
 ./includes/languages/english/lang.order_status.php
 ./includes/languages/english/MY_TEMPLATE/order_status.php
+```
 
 The 2nd file will be ignored; even though that file is in an override directory.
 
