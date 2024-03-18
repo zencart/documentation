@@ -31,9 +31,13 @@ See the [Installation docs](/user/first_steps/how_do_i_install/#5-have-you-creat
 
 Zen Cart supports the use of "table prefixes" to differentiate between its own tables and the tables used by other web applications sharing the database. It identifies the tables which it uses *within* that database by the `DB_PREFIX` setting in your configure.php file.  Prefixes often have the value `zen_` or `zc_`.
 
-Using prefixes is no longer a recommended practice; simply create one database for your Zen Cart store, and only use that database for that store. 
+The use of the `DB_PREFIX` setting is discussed in [prefix](/user/miscellaneous/configure/#db_prefix).
 
-Prefixes are sometimes used by Zen Cart auto-installers, which are also **not recommended**.  See [how do I install](/user/first_steps/how_do_i_install/) for details. 
+Using prefixes is no longer a recommended practice; simply create one database for your Zen Cart store, and only use that database for that store.  If your website uses other database-backed applications (such as WordPress), put the tables required in a separate database.  Modern hosters will permit you to have many databases, not just one.
+
+Prefixes are sometimes used by Zen Cart auto-installers, which are also **not recommended**.  See [how do I install](/user/first_steps/how_do_i_install/) for details on installing Zen Cart. 
+
+**Note:** If you run any commands via phpMyAdmin and your site uses a prefix, 
 
 ## How many tables are in the Zen Cart database? 
 

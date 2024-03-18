@@ -41,7 +41,7 @@ Here are the required steps:
 <hr>
 
 **Note:** The procedures described in the remainder of this document
-are direct changes to your database which are best performed in phpMyAdmin, not the "Install SQL Patches" tool. 
+are direct changes to your database which are best performed in phpMyAdmin, not the "Install SQL Patches" tool.   Be sure to manually add your database prefix to the table name if you have a [prefix](/user/miscellaneous/configure/#db_prefix).
 
 ### To create a Zone for the US Continental 48 States & DC
 

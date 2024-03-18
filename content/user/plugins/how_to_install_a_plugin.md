@@ -110,7 +110,7 @@ those changes to your template files.
 
 Some plugins require database changes. For instance, Gift Wrap at Checkout includes a file called orders_wrap.sql, which modifies your database.  
 
-These files are best run through the Zen Cart admin panel, which will take care of the prefix (if you have one). To do this, go to Admin > Tools > Install SQL patches.  
+These files are best run through the Zen Cart admin panel, which will take care of the [prefix](/user/miscellaneous/configure/#db_prefix) (if you have one). To do this, go to Admin > Tools > Install SQL patches.  
 
 Alternately, you can run them using phpMyAdmin, but you will need to edit the .sql script to account for the prefix. 
 
@@ -130,7 +130,7 @@ CREATE TABLE zen_orders_giftwrap(
 
 assuming your prefix is `zen_`.  
 
-If you have used a prefix, it is stored in `includes/configure.php`; look for the variable DB_PREFIX.  
+If you have used a prefix, it is stored in `includes/configure.php`; look for the variable `DB_PREFIX`.  
 
 If you do an install and get an error like
 

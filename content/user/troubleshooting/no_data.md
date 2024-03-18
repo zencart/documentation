@@ -16,7 +16,7 @@ After moving, or after installation, if you're getting `1146 Table 'configuratio
 If it's saying that the `configuration` table doesn't exist, then it's connecting to a database somewhere, but not the one that contains Zen Cart tables.  Make sure that you've properly set the database server/host name, database name, username/password properly for the new server in your [configure.php files](/user/miscellaneous/configure/).
 
 ### DB_PREFIX
-If you're importing data from another server, you **must** use the **same** setting for `DB_PREFIX` on the new server as you had on the old server. Otherwise you're telling the software to point to a set of tables in your database that 
+If you're importing data from another server, you **must** use the **same** setting for the [prefix](/user/miscellaneous/configure/#db_prefix) (`DB_PREFIX`) on the new server as you had on the old server. Otherwise you're telling the software to point to a set of tables in your database that 
 are either incorrect or non-existent. 
 
 `DB_PREFIX` is defined in your configure.php files.

@@ -13,6 +13,7 @@ In v2.x.x, they are all configured the same way [product listing](/user/storefro
 
 Upgraders from v1.x.x please note the following: 
 - Specials/New/All/Featured pages now use the same product-listing template as the category navigation does.
+- The menu items "All Listing," "New Listing" and "Featured Listing" under the Configuration Menu are no longer there; go to the Configuration &gt; Product Listing menu instead to configure the layout of these pages.
 - The default behavior of the Specials page has changed from a grid layout to whatever is configured in the [Columns Per Row](/user/template/listing_columns/) setting.
 - All these pages will also follow the setting for "columns per row", so if the product-listing uses rows, so will S/N/A/F pages; likewise, if set to 3 columns, all pages will use 3 columns. 
 - The old "click column headings for sort" is replaced by the sort dropdown.

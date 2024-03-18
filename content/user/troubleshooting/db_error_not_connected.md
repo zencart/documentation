@@ -9,7 +9,7 @@ weight: 10
 
 Possible Causes: 
 
-1. Your `/includes/configure.php` and `/admin/includes/configure.php` files specify a [prefix](/user/first_steps/database/#what-are-prefixes) for your database tables (`DB_PREFIX`) which does not match what was used when creating the tables.  Not matching the prefix value (or specifying one when it is not needed) is a very common mistake for older installations being upgraded.  View your database in phpMyAdmin and see if a prefix is used.  The first Zen Cart table should be called (something like) `address_book`. 
+1. Your `/includes/configure.php` and `/admin/includes/configure.php` files specify a [prefix](/user/miscellaneous/configure/#db_prefix) for your database tables (`DB_PREFIX`) which does not match what was used when creating the tables.  Not matching the prefix value (or specifying one when it is not needed) is a very common mistake for older installations being upgraded.  View your database in phpMyAdmin and see if a prefix is used.  The first Zen Cart table should be called (something like) `address_book`. 
 
    If it is called `address_book`, then your `DB_PREFIX` value should be `''`.
 

@@ -36,7 +36,7 @@ INSERT INTO admin (admin_name, admin_email, admin_pass, admin_profile)
 VALUES ('Admin', 'admin@localhost', '351683ea4e19efe34874b501fdbf9792:9b', 1);
 ```
 
-**NOTE**: If you are using a prefix for your database tables, you'll naturally need to add that prefix to the table name above.  For example, if your prefix is `zc_`, you would use 
+**NOTE**: If you are using a [prefix](/user/miscellaneous/configure/#db_prefix) for your database tables, you'll need to add that prefix to the table name above.  For example, if your prefix is `zc_`, you would use 
 
 `DELETE FROM zc_admin` and `INSERT INTO zc_admin` in the commands above. 
 

@@ -63,7 +63,7 @@ ALTER TABLE thetablename MODIFY COLUMN thefieldname date NOT NULL default '0001-
 
 **Notes**: 
 
-1. If you run any commands via phpMyAdmin and your site uses a `DB_PREFIX` (e.g. `zen_`), you will need to add that prefix to any database table name.  For the example above, you'll replace `orders` with `zen_orders`.
+1. If you run any commands via phpMyAdmin and your site uses a [prefix](/user/miscellaneous/configure/#db_prefix) (e.g. `zen_`), you will need to add that prefix to any database table name.  For the example above, you'll replace `orders` with `zen_orders`.
 2. The PHP code that uses that custom field might be checking for the field's value to be '0000-00-00 00:00:00' (for a datetime field) or '0000-00-00' (for a date field).  So don't just fix your database - be sure to inspect the associated PHP code and make any changes required there too.
 
 

@@ -6,7 +6,7 @@ weight: 1
 ---
 
 
-**Quick Summary:**
+## Quick Summary
 
 `HTTP_SERVER` is the domain name of your site (eg: `https://www.YOURSITE.com`). Visiting this URL will take customers to the "webroot" of your domain, whether or not your store is located in that spot.  
 
@@ -31,7 +31,7 @@ So, if your settings for those values point to the wrong place, you'll instantly
 Of course SSL urls will only work properly if you actually have SSL available on your site, with a valid SSL certificate. Talk to your hosting company about proper SSL certificate configuration for your domain and hosting account.
 
 
-**PATHS:**  
+## Paths
 
 `DIR_FS_CATALOG` points to the physical file folder path on the server. If you're only changing the URL of your site and not actually changing the foldername where the site sits, then you don't need to touch this.  
 
@@ -43,7 +43,7 @@ and thus `DIR_WS_CATALOG` is: `/store/`
 (`DIR_WS_CATALOG` points to whatever follows the [webroot](/user/first_steps/how_do_i_install#what-is-my-webroot), configuration of your hosting account, 
 ie: which folder your account points to for your actual site.  In most cases this folder is named `public_html` or `htdocs` or `httpdocs`)  
 
-**Other Paths:**
+## Other Paths
 
 The following paths RARELY require changing, and only when doing advanced alterations in how files are stored on your server. Best not to change them unless you first study exactly what the changed effect will be.
 
@@ -64,19 +64,23 @@ The following line might be changed by a storeowner who sells downloadable items
 `define('DIR_FS_DOWNLOAD', DIR_FS_CATALOG . 'download/');`
 
 
-**DATABASE SETTINGS**  
+## Database Settings
+
+### `DB_TYPE`
+
 ```
 define('DB_TYPE', 'mysql');  
 ```
 In Zen Cart, the only valid value for this is 'mysql'.  
 
+### `DB_PREFIX`
 ```
 define('DB_PREFIX', ''); // prefix for database table names -- preferred to be left empty  
 ```
 The prefix is used only when your hosting server's configuration allows you only a single database in your hosting account, and is an undesired workaround to allow multiple software applications to share the same database without clashing tablenames.  
 Ideally you will leave this blank, as shown here.  
 
-Some hosting companies offering "one-click installs" (which are NOT recommended by Zen Cart) will stuff `zen_` in there as a prefix. This can create all kinds of confusion when you try moving your site to another server and forget (or don't know) that the prefix has been set and all your tablenames were altered.  
+Some hosting companies offering "one-click installs" (which are [NOT recommended](/user/first_steps/how_do_i_install/#Preface) by Zen Cart) will stuff `zen_` in there as a prefix. This can create all kinds of confusion when you try moving your site to another server and forget (or don't know) that the prefix has been set and all your tablenames were altered.  
 
 Here's an example of what using `DB_PREFIX` does in your database:  
 
@@ -86,11 +90,11 @@ Here's an example of what using `DB_PREFIX` does in your database:
 
 <tr valign="top" class="cms_table_tr" style="background-color: yellow">
 
-<td class="cms_table_td">**no prefix**</td>
+<td class="cms_table_td"><b>no prefix</b></td>
 
-<td class="cms_table_td">**'zen_' prefix**</td>
+<td class="cms_table_td"><b>'zen_' prefix</b></td>
 
-<td class="cms_table_td">**'fred_' prefix**</td>
+<td class="cms_table_td"><b>'fred_' prefix</b></td>
 
 </tr>
 
@@ -128,7 +132,10 @@ Here's an example of what using `DB_PREFIX` does in your database:
 
 </table>
 
+**Note:** If you run any commands via phpMyAdmin and your site uses a prefix, 
+you will need to add that prefix to any database table name.  
 
+### `DB_CHARSET`
 ```
 define('DB_CHARSET', 'utf8');  
 ```
@@ -141,6 +148,7 @@ See [this article](/user/upgrading/detailed_upgrading/#character-set) for more d
 
 See [this article](/user/upgrading/convert_to_utf8) for a utility which can help you convert your database from `latin1`/`iso-8859-1` to `utf8`. 
 
+### `DB_SERVER`
 ```
 define('DB_SERVER', 'localhost');  
 ```
@@ -155,7 +163,7 @@ define('DB_DATABASE', 'your assigned databasename');
 
 These settings are selected by you when you create the database for your store. In some cases they might be assigned for you by an automated database-creation feature in your hosting company's control panel. Usually you are able to select them yourself. Sometimes the username and databasename have your hosting account name added at the beginning, e.g. `yourname_dbname123` even though you selected just `dbname123`. Your hosting company's control panel will show you this if it makes this alteration for you.
 
-**OTHER SETTINGS (Advanced)**  
+## Other Settings (Advanced)
 
 ```
 define('SQL_CACHE_METHOD', 'none');  
