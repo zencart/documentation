@@ -38,6 +38,7 @@ Using prefixes is no longer a recommended practice; simply create one database f
 Prefixes are sometimes used by Zen Cart auto-installers, which are also **not recommended**.  See [how do I install](/user/first_steps/how_do_i_install/) for details on installing Zen Cart. 
 
 **Note:** If you run any commands via phpMyAdmin and your site uses a prefix, 
+you will need to add that prefix to any database table name.
 
 ## How many tables are in the Zen Cart database? 
 
