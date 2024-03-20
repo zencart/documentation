@@ -51,7 +51,7 @@ It is best to **use the most recent PHP version that your Zen Cart version suppo
 
 FYI: Consult [PHP's Version Support Policy](https://www.php.net/supported-versions.php) to understand whether your PHP version is still supported. Remember: old versions are not PCI compliant, and are not deemed "secure" if they are out of the maintenance period.
 
-<font color="#ff0000">**NOTE:** PHP PHP 7.x IS OFFICIALLY OBSOLETE. You should be moving to the latest version of PHP (and a matching Zen Cart version) as soon as possible!</font>  
+<font color="#ff0000">**NOTE:** PHP 7.x IS OFFICIALLY OBSOLETE. You should be moving to the latest version of PHP (and a matching Zen Cart version) as soon as possible!</font>  
 
 ### PHP Extensions/Modules used by Zen Cart
 
@@ -64,6 +64,7 @@ Zen Cart requires a few PHP modules/extensions installed:
  - `gd`
  - `getimagesize()`
  - `iconv`
+ - `intl`  (required since v2.0.0)
  - `json`
  - `mysqli`, `pdo_mysql`
  - `pcre`
@@ -72,7 +73,7 @@ Zen Cart requires a few PHP modules/extensions installed:
  
 It is recommended to also enable the following PHP extensions:
 
- - `intl`, `mbstring`, `pcntl`, `pdo_sqlite`
+ - `mbstring`, `pcntl`, `pdo_sqlite`
 
 ### PHP Memory Recommendations
 
