@@ -49,5 +49,7 @@ If the arguments above haven't yet convinced you then consider this: hosters **r
 
 ## Fine! Any other reasons? 
 
+Staying up to date with your software is actually required by [PCI](/user/payment/pci/) rules that you agreed to when setting up your merchant account for accepting credit cards.  It's part of rule 6, which you can [read on Wikipedia](https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard).
+
 In many cases, you will not be able to use newer plugins on an older version of Zen Cart.  Plugins often say things like "Requires Zen Cart 1.5.6b or higher."  This means they depend on internal changes in Zen Cart that were made in that version and carried forward.  They literally will not work on older versions of Zen Cart. 
 
