@@ -22,7 +22,10 @@ New order statuses can be created in
 
 When an order is first placed, by default it is put into status "Pending."  This can be overridden by most payment modules using the dropdown labelled "Set Order Status" in the payment module's own configuration.
 
-"Pending" is a good status for [offline payment modules](/user/payment/offline/), since you haven't received the money yet at the time the order is placed. 
+"Pending" is a good status in the following situations: 
+- For payment modules configured for [Authorize Only](/user/payment/auth_only/) rather than Authorize and Capture.
+- For [offline payment modules](/user/payment/offline/), since you haven't received the money yet at the time the order is placed. 
+- For any other unconfirmed or uncompleted payment. 
 
 ### How can I set my orders to status Shipped? 
 
