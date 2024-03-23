@@ -20,7 +20,9 @@ The process is this:
 4. Choose the option to `Capture` the funds. This charges the card and puts the money in your bank account during the next settlement/processing batch.
 5. Ship the goods
 
+If you set your payment module to Authorize-Only, be sure to set the [Order Status](/user/localization/orders_status/) to Pending, just like an [offline payment module](/user/payment/offline/). 
+
 ## Authorize And Capture Immediately
 The process is this:
 1. Customer places an order and submits for payment. The card is authorized and funds captured immediately.
-2. You fulfill the order by shipping the goods. (Or customer gets immediate access to their downloads.)
+2. You fulfill the order by shipping the goods (or customer gets immediate access to their downloads).

@@ -1,6 +1,6 @@
 ---
 title: PayPal Commerce 
-description: PayPal Commerce, PayPal Pro, 3D Secure
+description: PayPal Commerce, 3D Secure
 category: payment
 weight: 10
 ---

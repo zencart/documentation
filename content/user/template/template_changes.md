@@ -20,6 +20,9 @@ the folder `includes/templates/template_default` for the base copy of
 the specified file if you're not sure where a change should go. 
 
 ## Security Fixes 
+
+Perhaps the most critical security fix required for any modification is to be sure to use `zen_output_string_protected` when outputting character data which could possibly include an XSS attack.   You'll see a couple of mentions of this below, but you should also audit any non-template custom code you have written to ensure this is being done. 
+
 * `common/html_header.php` - use `header('X-Frame-Options:SAMEORIGIN');` to prevent clickjacking.
 
 * `common/html_header.php` - pull in most recent versions of jQuery and other libraries.

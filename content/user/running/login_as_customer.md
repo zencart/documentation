@@ -53,6 +53,9 @@ Admins can login as customer directly from the public website using the customer
 
 Once logged into the customer’s account, the admin can place orders, view and change anything that the customer can edit within their account as well as “PLACE ORDER” as/for the customer.
 
+Get the cart filled with the needed items.  Then, to complete the order, you have a couple of options: 
+- email them and ask them to login and complete the order 
+- call them and take a credit card over the phone (if your store has on-site credit card payment). 
 
 ### Prior to Zen Cart 1.5.7
 

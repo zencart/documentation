@@ -9,14 +9,19 @@ aliases:
 
 ## Looking to build your own template?
 
-First, before you do that, consider using the [Bootstrap4 template](https://www.zen-cart.com/downloads.php?do=file&id=2191), as it has a good modern interface and its colors can be customized directly from the Admin. For more specific customization, its CSS is easy to customize by virtue of using the standards-based Bootstrap framework.
+First, before you do that, consider using the [Bootstrap4 template](/user/template/bootstrap/), as it has a good modern interface and its colors can be customized directly from the Admin. For more specific customization, its CSS is easy to customize by virtue of using the standards-based Bootstrap framework.
 It is already mobile-friendly, and has a clean "look" to it.
+
+You might also consider the built-in [Responsive Classic template](/user/template/responsive_classic/) as a starting point. 
 
 ## Other Templates
 
 To get ideas about building your own template, take a look at the other templates available for Zen Cart. 
 
 {{< templates >}}
+<br>
+Just remember that any older template you look at may not have all the 
+[template changes](/user/template/template_changes/) that Responsive Classic and Bootstrap do.
 
 ## Scaffolding Your Own Template
 
