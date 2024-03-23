@@ -18,6 +18,12 @@ Zen Cart has the following default order statuses:
 New order statuses can be created in 
 [Admin > Localization > Orders Status](/user/admin_pages/localization/orders_status/). 
 
+### What is the initial status of an order?
+
+When an order is first placed, by default it is put into status "Pending."  This can be overridden by most payment modules using the dropdown labelled "Set Order Status" in the payment module's own configuration.
+
+"Pending" is a good status for [offline payment modules](/user/payment/offline/), since you haven't received the money yet at the time the order is placed. 
+
 ### How can I set my orders to status Shipped? 
 
 You can add a new order status (Shipped) by going to

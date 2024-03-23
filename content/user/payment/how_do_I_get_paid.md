@@ -9,19 +9,11 @@ Collecting payment from customers requires a means for extracting funds from the
 
 ## Check/Money Order
 
-If you offer check/money-order, then it's up to them to send the check to you.  
-
-Naturally, you will typically wait for the check to arrive and clear your bank before shipping the goods.  
-
-This precaution also holds true for Bank Transfer, e-Transfer or Bank Deposit: you wait for payment before fulfilling the order.
-
-Note: The Check/Money Order module can be used for *any* payment method where transfer of funds does not take place within the checkout flow.  For example, you can accept payment by Zelle or Venmo simply by modifying the language defines in in `./includes/languages/english/modules/payment/moneyorder.php`.  
-
-Alternately, you may [clone the moneyorder payment module](/dev/code/modules/clone_payment/) to build a Venmo module with its own rules and behaviors.
+Check/Money Order is one of the build-in [offline payment methods](/user/payment/offline) available in Zen Cart. 
 
 ## Credit Card
 
-_**Before you can accept credit cards directly you must have a merchant account with a Credit Card processing company such as Square, Stripe or Authorize.net.**_
+_**Before you can accept credit cards directly, you must have a merchant account with a Credit Card processing company such as Square, Stripe or Authorize.net.**_
 
 If you offer to let your customers pay by Credit Card, there are several ways to do this:  
 

@@ -5,6 +5,8 @@ category: payment
 weight: 10
 ---
 
+[Authorizenet CIM Card on File](https://www.zen-cart.com/downloads.php?do=file&id=2272) is a plugin for Zen Cart which allows vendors to offer secure credit card storage for customers so checkout is easier. 
+
 ## REQUIREMENTS
 
 *   Authorize.net Account [Support Authorize CIM Development by Clicking Here to Sign Up for an Account now](http://reseller.authorize.net/application/?resellerId=111066)

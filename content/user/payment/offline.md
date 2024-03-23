@@ -1,0 +1,36 @@
+---
+title: Offline Payment
+description: Taking payment outside the checkout flow process 
+category: payment
+weight: 10 
+---
+
+Sometimes it is convenient to offer payment methods which are not credit-card-based, but rather dependant on an action which will occur after the order is placed.    These are called offline payment methods. 
+
+## Check/Money Order
+
+If you offer check/money-order, then it's up to the buyer to send the check to you.  
+
+Naturally, you will typically wait for the check to arrive and clear your bank before shipping the goods.  
+
+This precaution also holds true for Bank Transfer, e-Transfer or Bank Deposit: you wait for payment before fulfilling the order.
+
+The mechanism for doing this in Zen Cart is to set the Order Status for the Check/Money Order module to "Pending."  It should stay in this state until payment is received.  
+
+Note: The Check/Money Order module can be used for *any* payment method where transfer of funds does not take place within the checkout flow.  For example, you can accept payment by Venmo simply by modifying the language defines in in `./includes/languages/english/modules/payment/moneyorder.php`.  
+
+Alternately, you may [clone the moneyorder payment module](/dev/code/modules/clone_payment/) to build a Venmo module with its own rules and behaviors.
+
+## Other Built-In Offline payment methods 
+
+Zen Cart also offers the following built-in offline payment methods:
+
+- Cash On Delivery (COD)
+
+## Plugins for Offline Payment 
+
+Finally, plugins are available for other offline payment methods: 
+
+- [Invoice](https://www.zen-cart.com/downloads.php?do=file&id=131)
+- [Zelle](https://www.zen-cart.com/downloads.php?do=file&id=2301)
+
