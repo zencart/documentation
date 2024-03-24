@@ -11,7 +11,7 @@ Please note: the following article should not be relied upon as "official". Offi
 
 The PCI Data Security Standards (PCI DSS, or just PCI) are a set of best practices designed to protect cardholder data and prevent fraud.  Any retailer who accepts credit cards must uphold the PCI rules as part of their account agreement.
 
-You can read the full [PCI Agreements](https://docs-prv.pcisecuritystandards.org/PCI%20DSS/Standard/PCI-DSS-v4_0.pdf) by by providing your name and company name, or you can read a [summary of PCI](https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard) on Wikipedia. 
+You can read the full [PCI Agreements](https://docs-prv.pcisecuritystandards.org/PCI%20DSS/Standard/PCI-DSS-v4_0.pdf) by providing your name and company name, or you can read a [summary of PCI](https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard) on Wikipedia. 
 
 ## Am I subject to PCI rules? 
 
