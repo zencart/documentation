@@ -5,12 +5,13 @@ category: payment
 weight: 10
 ---
 
-Older payment modules like `credit card` (`cc.php`) and `CEON Manual Card` (`ceon_manual_card.php`) are not recommended for the following reasons: 
+Older payment modules like "credit card" (`cc.php`) and "CEON Manual Card" (`ceon_manual_card.php`) are no longer recommended for the following reasons: 
 
-- they are not PCI Compliant
-- storing credit card details in your database puts the store owner at great financial risk in the event of a data breach.  [Fines can range from $5000 to $500,000 for said breach.](https://ebizcharge.com/blog/storing-credit-card-information-safely-in-2022-the-dos-and-donts/#:~:text=In%20addition%2C%20if%20a%20merchant,far%20outweighs%20any%20security%20solution.)
-- it may no longer be legal to do this (depending on your jurisdiction)
-- it may be a violation of your merchant agreement (depending on the terms you agreed to).
+- They are not PCI Compliant.
+- Storing credit card details in your database puts the store owner at great financial risk in the event of a data breach.  [Fines can range from $5000 to $500,000 for said breach.](https://ebizcharge.com/blog/storing-credit-card-information-safely-in-2022-the-dos-and-donts/#:~:text=In%20addition%2C%20if%20a%20merchant,far%20outweighs%20any%20security%20solution.)
+- It may no longer be legal to do this (depending on your jurisdiction).
+- It may be a violation of your merchant agreement (depending on the terms you agreed to).
+- Under PCI 4, Web Hosting companies are now also financially responsible for breaches. They are all aware and will not allow you to run any manual credit card modules.
 
 So what should you do? 
 

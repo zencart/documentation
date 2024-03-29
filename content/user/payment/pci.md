@@ -5,7 +5,7 @@ category: payment
 weight: 2
 ---
 
-Please note: the following article should not be relied upon as "official". Official PCI information should be obtained from the PCI Security Council directly or from one of their authorized Assessors.
+Please note: the following article is just an overview, and should not be relied upon as "official". Official PCI information should be obtained from the PCI Security Council directly or from one of their authorized Assessors.
 
 ## What is PCI? 
 
