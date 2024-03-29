@@ -7,6 +7,17 @@ weight: 10
 
 [Authorizenet CIM Card on File](https://www.zen-cart.com/downloads.php?do=file&id=2272) is a plugin for Zen Cart which allows vendors to offer secure credit card storage for customers so checkout is easier. 
 
+*  If you are using authorize.net for payments, this is the ONLY zen-cart payment module that utilizes the newest version of the authorize.net API.  At the time of this writing, all other modules (even ones included in the base ZC code) make use of the now [deprecated, name value pair methodology.](https://developer.authorize.net/api/upgrade_guide.html#:~:text=AIM-,deprecated,-Authorize.net%20API)
+*  If you have regular customers, and want to offer a **card on file transactions,** this is the module for you.
+*  Credit card data is stored at the gateway, **NOT in your zen-cart database.**  All that is stored in your zen-cart database is a token.  This is considered best practice in the credit card industry.
+*  This module creates payment records for all payment transactions which are visible on the detailed order page.  The table displays when the payment was authorized, when it was captured, and any refunds or voids; all without wasting bandwidth by querying authorize.net.
+*  In addition, if a customer contacts you after completion of an order, and you add to the order using edit orders (or some other method), you can create a new charge right from your admin (with the Get Money button) using the customers card on file.
+*  That button is only visible when there is an amount due on the order.
+*  It allows a customer to store multiple cards, and it is one of the most complete payment modules in that you have an audit trail for all payment transactions right on the orders page.
+  
+![Screenshot from 2024-03-28 16-53-21](https://github.com/zencart/documentation/assets/1095136/967c56bb-fdf2-42fe-aeb9-6ad1516ac5b5)
+
+
 ## REQUIREMENTS
 
 *   Authorize.net Account [Support Authorize CIM Development by Clicking Here to Sign Up for an Account now](http://reseller.authorize.net/application/?resellerId=111066)
