@@ -27,7 +27,7 @@ when adding or editing a product are:
 - Products Price (Net) - base price of product before taxes 
 - Products Price (Gross) - computed using net price plus applicable taxes if the product was shipped to the location specified Admin > Configuration > My Store > Zone.  (Think: if my store offered pickup, what taxes would I need to charge?)
 - Wholesale Price - Since Zen Cart 2.0.0, if [wholesale pricing](/user/products/wholesale_pricing) is enabled, the wholesale price is set here. 
-- Product is Virtual - is the product a completely digital item 
+- Product is Virtual - use when the product does not have a physical component but is also not a [downloadable](/user/products/downloadable/).  An example would be a service you sell, such as consulting or support.
 - Always Free Shipping - does the product ship for free? 
 - Products Quantity Box Shows - whether to show the quantity box on pages which allow the product to be purchased, such as [product info](/user/products/product_info) page. Note that **not** showing the quantity box on a product page will also disable the option to update that product's quantity in the shopping cart.  
 - [Product Qty Minimum](/user/products/product_units/) - lowest number of this product which may be purchased 

@@ -1,5 +1,5 @@
 ---
-title: Manual Credit Card Collection - Potential Problems 
+title: Manual Credit Card Collection
 description: Why you shouldn't use manual credit card processing with online stores
 category: payment
 weight: 10
@@ -19,6 +19,8 @@ So what should you do?
 - Switch to one of the [payment gateways from the Plugins Library](https://www.zen-cart.com/downloads.php?do=cat&id=8).
 
 The former will be better supported of course, but it's your choice.
+
+Please see [getting off manual card collection](/user/payment/getting_off_manual/) for ideas on replacements for manual card collection. 
 
 Notes: 
 

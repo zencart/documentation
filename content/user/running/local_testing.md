@@ -44,7 +44,7 @@ Remember that `*AMP` allows you to switch between versions of PHP.  So you can t
 ### Things to consider: 
 
 - Email sent by a local installation will often be discarded as spam by real mail servers.  If you need to view emails created by your local test cart, some options are: 
-  - using [MailHog](https://github.com/mailhog/MailHog) or a similar test tool.  Here are the [instructions from MAMP on using MailHog](https://documentation.mamp.info/en/MAMP-PRO-Mac/Servers-and-Services/MailHog/).
+  - using [MailHog](https://github.com/mailhog/MailHog) or a similar test tool (such as Mailtrap.io).  Here are the [instructions from MAMP on using MailHog](https://documentation.mamp.info/en/MAMP-PRO-Mac/Servers-and-Services/MailHog/).
   - buying an inexpensive account on an [external SMTP Server](/user/email/external_smtp_servers/) and configuring your test cart to use that. 
   - using  the [Email Archive Manager](/user/email/email_archive_manager/) and viewing email that way.  
 

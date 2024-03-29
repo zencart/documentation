@@ -5,15 +5,17 @@ category: shipping
 weight: 10
 ---
 
-Note: During Checkout, the Shipping Selection page is automatically skipped if all products in the cart are virtual.  
+Note: During Checkout, the Shipping page is automatically skipped if all products in the cart are virtual](/user/products/product_edit/).  
 
-## How do I tell the shopping cart that shipping does not apply?
+## How do I skip the Checkout Shipping page? 
 
 Individually set products as `free shipping` by visiting the [product editing screen](/user/products/product_edit/) for each one, and setting radio button `Always Free Shipping` to `Yes`. 
 
 Then enable the `FREE SHIPPING!` module on [Admin > Modules > Shipping](/user/admin_pages/modules/shipping/). 
 
 This will allow checkout to totally bypass the shipping page.
+
+As noted above, the shipping page is also checked for orders containing only virtual products. 
 
 ---
 
@@ -22,8 +24,8 @@ This will allow checkout to totally bypass the shipping page.
 There are several ways to offer free shipping: 
 
 - mark the product as free-shipping (see above)
-- mark the product as virtual 
-- associate downloads with the product and mark it as free shipping
+- mark the product as virtual (see above)
+- make the product a [downloadable product](/user/products/downloadable/)
 - create coupons that have Free Shipping as part of the discounting they provide
 - use the Free Options shipping module, which offers free-shipping based on special criteria you can set (see below)
 - set the product weight to 0, and set [Order Free Shipping 0 Weight Status](/user/admin_pages/configuration/configuration_shippingpackaging/#order_free_shipping_0_weight_status) 
