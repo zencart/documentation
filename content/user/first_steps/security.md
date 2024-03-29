@@ -39,6 +39,8 @@ Be sure your `admin/includes/configure.php` file has all URL settings using `htt
 
 Use an admin username other than `admin` (or `nimda`).  Make it hard to guess.
 
+If you are using Zen Cart 2.0.0 or higher, use [two factor authentication](/user/admin/two_factor_auth/).
+
 ## Secure cPanel Access 
 
 Just because you run an SSL on your site doesn't mean your cPanel access is secure.  Look for the padlock in your browser's address bar, and tell your hoster to fix it if it's not there! 
@@ -81,4 +83,8 @@ Do not put passwords in an email.  This is not a secure practice.  If you have t
 ## Scan your own computer regularly 
 
 Your own computer is also a potential target for bad guys, and if it gets infected, your website will too.  Use anti-virus / anti-malware software and scan regularly. 
+
+## PCI DSS 
+
+PCS DSS is a set of security standards from the credit card industry.  If you handle credit cards, you must comply with the [PCI](/user//payment/pci/) rules. 
 

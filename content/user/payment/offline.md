@@ -5,7 +5,7 @@ category: payment
 weight: 10 
 ---
 
-Sometimes it is convenient to offer payment methods which are not credit-card-based, but rather dependant on an action which will occur after the order is placed.    These are called offline payment methods. 
+Sometimes it is convenient to offer payment methods where payment does not occur when the order is placed.  Instead, they are dependant on an action which will occur **outside the shopping cart ordering process**.    These are called offline payment methods. 
 
 ## Check/Money Order
 
@@ -33,4 +33,5 @@ Finally, plugins are available for other offline payment methods:
 
 - [Invoice](https://www.zen-cart.com/downloads.php?do=file&id=131)
 - [Zelle](https://www.zen-cart.com/downloads.php?do=file&id=2301)
+- [Call In Payment](https://www.zen-cart.com/downloads.php?do=file&id=2388)
 
