@@ -37,7 +37,7 @@ Please deliver as fast as possible! 😄
 Katrín Tanja Davíðsdóttir
 ```
 
-In some cases, data entry like this can cause corruption (or worse, a white screen) if you're not using utf8mb4.
+In some cases, data entry like this can cause corruption (or worse, a white screen during an order) if you're not using utf8mb4.
 
 **To change the database to utf8mb4, use the instructions below.**
 

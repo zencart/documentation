@@ -12,7 +12,7 @@ There are two Square modules for Zen Cart:
 This page is about the newer module, Square Web Pay.
 
 ## Square WebPay
-The newer Square module is available in the Plugins library as [Square Web Payments API plugin](https://www.zen-cart.com/downloads.php?do=file&id=2345) for PHP7.  For newer versions of PHP, the module should be purchased from [the developer](https://mxworks.cc/?product=zen-cart-square-plugin-for-php-8-x).
+The newer Square module is available in the Plugins library as [Square Web Payments API plugin](https://www.zen-cart.com/downloads.php?do=file&id=2345) for PHP7.  For PHP 8 and above, the module should be purchased from [the developer](https://mxworks.cc/?product=zen-cart-square-plugin-for-php-8-x).
 
 
 ![Square Modules](/images/square_payment_modules.png)
@@ -31,27 +31,26 @@ Please note: do NOT remove the old Square files from your Zen Cart installation.
 1. Double check - did you just install the module "Square WebPay"?  If you're on the module "Square," it will look very similar but won't work. 
 1. Login at [https://connect.squareup.com/apps](https://connect.squareup.com/apps) to view the apps you've connected to your account.
 1. Click **+** to create a New Application for your Zen Cart store. Give it a name, such as "WebPay". **You cannot delete the app or change its name once it is created, so choose carefully.**  If it's for a test installation of your site with a different URL, call it WebPay-Test or something like that.
-2. Ensure you have selected the correct version.  See [Square API Version](/user/payment/square_api_version/).
-- Version 1.2.0 of Square Web Payments requires **API Version 2024-02-22.**
-- Version 1.0.1 of Square Web Payments requires **API Version 2022-02-16.**
-
-2. **API Note:** If you have a newer version of Square Web Payments, you will need to change the API version.  See [Square API Version](/user/payment/square_api_version/).
-3. Click on the application icon that was just created (named "WebPay" or whatever name you used).
-4. The environment will be Sandbox by default.  Click "Production".
-5. Copy and Paste the Production Application ID into your Square WebPay configuration *Application ID* field in Zen Cart admin. 
-6. Click on the OAuth tab. In the "Redirect URL" field, enter `https://YOURSTORE.com/squareWebPay_handler.php` and click **Save** at the bottom. (Ensure the URL you enter points to the correct directory or subdirectory on your server.)
-7. Now click **Show** on the Production Application secret field.  Copy and Paste the secret into your Square WebPay configuration *Application Secret (OAuth)* field in Zen Cart admin.
-8. In your Zen Cart admin, do the following: 
-  - Click **Update** to save the new Square WebPay config values. 
-  - Click the green button in the Zen Cart admin sidebar that says "Click here to login and Authorize your account."  If everything is correct, the Sort Order LED for Square WebPay will go green. 
-  - Click the **Edit** button one more time.  This will fill in the Location ID field.  Click **Update**. 
-9. If this isn't working, check again to be sure you are editing the "Square WebPay" module not the old "Square" module - it's easy to get the two mixed up.
+1. Ensure you have selected the correct API version.  See [Square API Version](/user/payment/square_api_version/).
+    - Version 1.2.0 of Square Web Payments requires API Version 2024-02-22.
+    - Version 1.0.1 of Square Web Payments requires API Version 2022-02-16.
+1. Click on the application icon that was just created (named "WebPay" or whatever name you used).
+1. The environment will be Sandbox by default.  Click "Production".
+1. Copy and Paste the Production Application ID into your Square WebPay configuration *Application ID* field in Zen Cart admin. 
+1. Click on the OAuth tab. In the "Redirect URL" field, enter `https://YOURSTORE.com/squareWebPay_handler.php` and click **Save** at the bottom. (Ensure the URL you enter points to the correct directory or subdirectory on your server.)
+1. Now click **Show** on the Production Application secret field.  Copy and Paste the secret into your Square WebPay configuration *Application Secret (OAuth)* field in Zen Cart admin.
+1. In your Zen Cart admin, do the following: 
+    - Click **Update** to save the new Square WebPay config values. 
+    - Click the green button in the Zen Cart admin sidebar that says "Click here to login and Authorize your account."  If everything is correct, the Sort Order LED for Square WebPay will go green. 
+    - Click the **Edit** button one more time.  This will fill in the Location ID field.  Click **Update**. 
+1. If this isn't working, check again to be sure you are editing the "Square WebPay" module not the old "Square" module - it's easy to get the two mixed up.
  
 Once you have installed and successfully tested Square Webpay, you will want to [create a cron job to refresh the Square token](/user/payment/square_avoiding_token_expiry/). 
  
 ## Updating Square Web Payments 
-1. Follow the guidance provided by @ProseLA.
-2. You may need to change the API version.  See [Square API Version](/user/payment/square_api_version/).
+
+1. Follow the guidance provided by [the developer](https://mxworks.cc/?product=zen-cart-square-plugin-for-php-8-x).
+2. You may need to update your app to change the API version.  See [Square API Version](/user/payment/square_api_version/).
 
 
 ## Handling Refunds, Captures, Voids
