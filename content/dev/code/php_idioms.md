@@ -15,7 +15,7 @@ See the PHP documentation on [Comparison Operators](https://www.php.net/manual/e
 
 ## Null coalescing operator 
 
-This null coalescing operator `??` checks that the first operand exists and is not null.  If so, it returns the first  operand; otherwise, it returns the second operand.
+This null coalescing operator `??` checks that the first operand exists and is not null, i.e. `isset`.  If so, it returns the first  operand; otherwise, it returns the second operand.
 
 So 
 
@@ -26,13 +26,13 @@ $enddate = zen_db_input($_REQUEST['end_date'] ?? date('Y-m-d'));
 is the same as: 
 
 ```
-if (!empty($_REQUEST['end_date'])) { 
+if (isset($_REQUEST['end_date'])) { 
    $enddate = zen_db_input($_REQUEST['end_date']); 
 } else {
-   $enddate = date('Y-m-d');
+   $enddate = zen_db_input(date('Y-m-d'));
 }
 ```
- 
+
 
 See the PHP documentation on [Null coalescing operator](https://www.php.net/manual/en/migration70.new-features.php#migration70.new-features.null-coalesce-op) for more details. 
 
