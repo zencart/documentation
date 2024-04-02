@@ -49,18 +49,18 @@ Using arrays allows for the following kinds of behavior:
 
 In the process of doing this work, the language files were reviewed for duplicates, and consolidation was done where appropriate to reduce the burden on translators.  So some constant definitions have moved or been renamed - be sure to apply your changes and customizations with this in mind.
 
-### Loading a language file
+### Loading a language file from a Plugin
 
-If you need to specifically include a **core** language file, logic that was used in Zen Cart 1.5.7 and before: 
+If you need to specifically include a **core** language file, logic that was used in Zen Cart 1.5.7 and before was: 
 
 ```
   $langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . '/modules/order_total/' .  'ot_group_pricing.php';
   include_once ($langfile);
 ```
 
-needs to be migrated for 1.5.8 and above, because both the filename and the structure of this core file have changed.  The old file is simply not there any more, it has been migrated to `lang.ot_group_pricing.php`.
+This needs to be updated for 1.5.8 and above, because both the filename and the structure of this core file have changed.  The old file (`ot_group_pricing.php`) is simply not there any more, it has been migrated to `lang.ot_group_pricing.php`.
 
-However, plugin authors may want to make their code compatible with both 1.5.7 and 1.5.8.  Here's one approach for manually loading a language file in both old and new formats, which also allows for template overrides: 
+Plugin authors may want to make their code compatible with both 1.5.7 and 1.5.8.  Here's one approach for manually loading a language file in both old and new formats, which also allows for template overrides: 
 
 ```
   $filename = 'ot_group_pricing.php'; 
