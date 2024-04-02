@@ -20,19 +20,21 @@ There are also settings that control the meta data which is shown on the product
 
 - To turn off the inclusion of product price in the `<title>` tag, click `Product page <title> tag - default: use Product Price`, click the dropdown and select `False`, and then press `Update`.
 
-### Issue: I am turning off the display of fields in Layout Settings, but they are still displayed on my product info page. 
+## Issue: Field still shows on Product Info
+<b>Q: I am turning off the display of fields in Layout Settings, but they are still displayed on my product info page. Why?</b>
 
 This can occur when template authors choose not to respect the flags that Zen Cart uses.  To fix this, edit `includes/templates/YOURTEMPLATE/templates/tpl_product_info_display.php` and modify the code that handles the display of the field you wish to turn off. 
 
 If you are a developer, see [technical information on product types](/dev/code/product_types/). 
 
-### Issue: I have suppressed the display fields on the Product Info page, but they are still showing on the listing pages.
+## Issue: Field still shows on Listing Pages
+<b>Q: I have suppressed the display fields on the Product Info page, but they are still showing on the listing pages.  Why?</b>
 
-#### Guidance for Zen Cart v2.x.x: 
+### Guidance for Zen Cart v2.x.x: 
 The switches for New, All and Featured listing pages, as well as 
 the switches for the [Product Listing pages](/user/storefront_pages/product_listing/) are provided on the [product listing configuration page](/user/admin_pages/configuration/configuration_productlisting/) in Admin > Configuration > Product Listing. 
 
-#### Guidance for Zen Cart v1.x.x: 
+### Guidance for Zen Cart v1.x.x: 
 There are separate switches for the New, All and Featured listing pages, which are shown in [new/featured/all products listing page configuration](/user/template/new_featured_all_listing_page_configuration/). 
 
 The switches for the [Product Listing pages](/user/storefront_pages/product_listing/)  are provided on the [product listing configuration page](/user/admin_pages/configuration/configuration_productlisting/) in Admin > Configuration > Product Listing. 

@@ -6,8 +6,8 @@ weight: 10
 ---
 
 There are two Square modules for Zen Cart: 
-- A newer one, based on the Square Web Payments API, which is currently available as the [Square Web Payments API plugin](https://www.zen-cart.com/downloads.php?do=file&id=2345). 
-- An older one, based on the Square Payments Form library.  This was built in to Zen Cart from 1.5.5 to 1.5.7.  Please note this library has been deprecated by Square, and the older module ceased to work in late 2022.  The [Square Payments Form documentation](/user/payment/square_payments_form/) is maintained for historical purposes. 
+- A newer module, based on the Square Web Payments API, which is currently available as the [Square Web Payments API plugin](https://www.zen-cart.com/downloads.php?do=file&id=2345). 
+- An older module, based on the Square Payments Form library.  This module was built in to Zen Cart from 1.5.5 to 1.5.8.  However, Square has deprecated this library, so the older module no longer works.  The [Square Payments Form documentation](/user/payment/square_payments_form/) is maintained for historical purposes. 
 
 This page is about the newer module, Square Web Pay.
 
@@ -16,7 +16,7 @@ The newer Square module is available in the Plugins library as [Square Web Payme
 
 
 ![Square Modules](/images/square_payment_modules.png)
-- The top one ("Square") is the old Square module.
+- The top one ("Square") is the old deprecated Square module.
 - The bottom ("Square WebPay") one is the new Square module.
 
 ## Requirements
