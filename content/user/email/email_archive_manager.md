@@ -5,6 +5,8 @@ category: email
 weight: 10
 ---
 
+**Please Note: All users should update to version 3.0 or higher of this plugin.  This update contains an important security patch.**
+
 The [Email Archive Manager plugin](https://www.zen-cart.com/downloads.php?do=file&id=101) allows you to view the emails sent by the cart within your Admin panel.  This can be useful in a number of situations: 
 
 - You are modifying the HTML email templates or email construction logic and you want to quickly see both the text and HTMl emails 
