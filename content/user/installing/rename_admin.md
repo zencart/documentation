@@ -5,36 +5,24 @@ category: Installing
 weight: 10
 ---
 
-While access to your admin area is protected by the requirement of your admin password, it is recommended for additional security that you rename your _admin_ directory after installation. This way, it will be significantly harder for hackers to find your admin area or attempt any attack on breaking into it.
+While access to your admin area is protected by the requirement of your admin password, it is recommended for additional security that you rename your _admin_ directory after installation. This way, it will be significantly harder for hackers to find your admin area or attempt any attack on it.
 
 Before making the following changes, make sure to have a current backup of your files and your database. 
 
-You're going to do three steps: 
-
-A) edit the configure.php settings and upload them, 
-
-B) rename the admin folder, 
-
-C) test login to the new folder.   
-
-Details are below:
-
-## Zen Cart v1.5.x:
+## Zen Cart v1.5.x / v2.x.x and Higher: 
 
 ### A - configure.php 
-If you are using v1.5.x, go to step B to rename the folder. If you are using v1.3.x, see the section below about v1.3.x which explains how to edit this file properly in that case.  
-
-There is no need to alter the admin configure.php in v1.5.x when renaming your admin folder. Simply proceed to step B.
+There is no need to alter the admin side `configure.php` file in v1.5.x and above when renaming your admin folder. Simply proceed to step B.
 
 ### B - Rename the Admin folder
 
-Using your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) or your webhost's _File Manager_, find your Zen Cart _/admin/_ directory_._ Rename the directory to match the settings you just made in step A.
+Using your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) or your webhost's "File Manager", find your Zen Cart `admin` directory. Rename the directory using a random combination of letters and numbers. 
 
 **NOTE:** DO NOT advertise this new foldername, else you defeat the entire purpose of renaming it.  And DO NOT EVER put it in your robots.txt file!
 
 ### C - Login to your admin using the new URL
 
-To login to your admin system you will now have to visit a new URL that matches the new name used in steps A and B above.  
+To login to your admin, you will now have to visit a new URL that matches the new name used in steps A and B above.  
 
 For example instead of visiting 
 
@@ -44,12 +32,21 @@ visit
 
 `www.example.com/NeW-NamE4u`
 
+### Other Notes:
+- Be sure to update your bookmarks, favorites, etc. since the URL of your admin has changed. 
+- If you are using [CEON URLs](https://www.zen-cart.com/downloads.php?do=file&id=2250), modify your `.htaccess` file to indicate that your new admin name should not be rewritten.  Using the example above (`NeW-NamE4u`): 
+
+```
+# Don't rewrite admin directory
+RewriteCond %{REQUEST_URI} !^/NeW-NamE4u [NC]
+```
+
 * * *
 
 ## Zen Cart v1.3.x:
 
 ### A - (<font color="#FF0000">This step for Zen Cart v1.3.x ONLY:</font> ) 
-Edit /admin/includes/configure.php
+Edit `/admin/includes/configure.php`
 
 **<font color="#800080">IMPORTANT NOTE: <font size="4">If you're using Zen Cart v1.5.0 or newer, you can skip this step</font>, and proceed to step B to rename the folder using your FTP program.  With v1.5.0 there's no need to edit your configure.php file when renaming your admin folder.</font>**
 
@@ -69,31 +66,31 @@ For maximum security, you may want to consider that new folder name should inclu
 Change this section:
 
 ```
- define('DIR_WS_ADMIN', '/**<font color="#ff0000">admin</font>**/');  
+ define('DIR_WS_ADMIN', '/admin/');  
  define('DIR_WS_CATALOG', '/');  
- define('DIR_WS_HTTPS_ADMIN', '/<font color="#ff0000">**admin**</font>/');  
+ define('DIR_WS_HTTPS_ADMIN', '/admin/');  
  define('DIR_WS_HTTPS_CATALOG', '/');  
 ```
 And this section:
 
 ```
- define('DIR_FS_ADMIN', '/home/mystore.com/www/public/<font color="#ff0000">**admin**</font>/');  
+ define('DIR_FS_ADMIN', '/home/mystore.com/www/public/admin/');  
  define('DIR_FS_CATALOG', '/home/mystore.com/www/public/');  
 ```
 
 You will end up with something that looks like this:
 
 ```
- define('DIR_WS_ADMIN', '/<font color="#ff0000">**mysecretadminarea**</font>/');
+ define('DIR_WS_ADMIN', '/mysecretadminarea');
  define('DIR_WS_CATALOG', '/');  
- define('DIR_WS_HTTPS_ADMIN', '/<font color="#ff0000">**mysecretadminarea**</font>/');  
+ define('DIR_WS_HTTPS_ADMIN', '/mysecretadminarea');  
  define('DIR_WS_HTTPS_CATALOG', '/');  
 ```
 
 And:  
 ```
 
-define('DIR_FS_ADMIN', '/home/mystore.com/www/public/<font color="#ff0000">**mysecretadminarea**</font>/');  
+define('DIR_FS_ADMIN', '/home/mystore.com/www/public/mysecretadminarea');  
 define('DIR_FS_CATALOG', '/home/mystore.com/www/public/');  
 ```
 

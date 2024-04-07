@@ -28,6 +28,8 @@ Make sure that the single quote marks at the beginning and end are not left out.
 
 **NOTE:  Removing this item or setting it to `''` is a violation of Accessibility Structure requirements.**
 
+You may also find [this article](/user/localization/basic_158_language_customizations/) helpful.
+
 ## Zen Cart 1.5.7 and below: 
 Edit `includes/languages/english/YOURTEMPLATE/index.php`. 
 (Copy `includes/languages/english/index.php` to `includes/languages/english/YOURTEMPLATE/index.php` if the override file doesn't already exist.)  

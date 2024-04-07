@@ -39,8 +39,6 @@ Be sure your `admin/includes/configure.php` file has all URL settings using `htt
 
 Use an admin username other than `admin` (or `nimda`).  Make it hard to guess.
 
-If you are using Zen Cart 2.0.0 or higher, use [two factor authentication](/user/admin/two_factor_auth/).
-
 ## Secure cPanel Access 
 
 Just because you run an SSL on your site doesn't mean your cPanel access is secure.  Look for the padlock in your browser's address bar, and tell your hoster to fix it if it's not there! 
