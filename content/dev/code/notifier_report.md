@@ -1,12 +1,12 @@
 ---
-title: Notifier Report 
+title: Notifier Report for Zen Cart 2.0.0
 description: Output of the Zen Cart Notifier Report plugin 
 category: code
 type: codepage
 weight: 10
 ---
 
-Run on Zen Cart 1.5.8
+Run on Zen Cart 2.0.0 
 
 <!-- RELEASETIME - update -->
 
@@ -16,16 +16,17 @@ an installation of the latest version of Zen Cart.  Get the notifier report
 from https://github.com/lat9/notifier_report 
 --> 
 
+
 #### ipn_main_handler.php
 ```
-#328: 'NOTIFY_CHECKOUT_PROCESS_BEFORE_ORDER_TOTALS_PROCESS'
-#330: 'NOTIFY_CHECKOUT_PROCESS_AFTER_ORDER_TOTALS_PROCESS'
-#342: 'NOTIFY_CHECKOUT_PROCESS_AFTER_ORDER_CREATE'
-#349: 'NOTIFY_CHECKOUT_PROCESS_AFTER_PAYMENT_MODULES_AFTER_ORDER_CREATE'
-#376: 'NOTIFY_CHECKOUT_PROCESS_AFTER_ORDER_CREATE_ADD_PRODUCTS'
-#379: 'NOTIFY_CHECKOUT_PROCESS_AFTER_SEND_ORDER_EMAIL'
-#413: 'NOTIFY_CHECKOUT_PROCESS_HANDLE_AFFILIATES', 'paypalipn'
-#494: 'NOTIFY_PAYPALIPN_STATUS_HISTORY_UPDATE', array($ordersID, $new_status, $txn_type)
+#363: 'NOTIFY_CHECKOUT_PROCESS_BEFORE_ORDER_TOTALS_PROCESS'
+#365: 'NOTIFY_CHECKOUT_PROCESS_AFTER_ORDER_TOTALS_PROCESS'
+#377: 'NOTIFY_CHECKOUT_PROCESS_AFTER_ORDER_CREATE'
+#384: 'NOTIFY_CHECKOUT_PROCESS_AFTER_PAYMENT_MODULES_AFTER_ORDER_CREATE'
+#411: 'NOTIFY_CHECKOUT_PROCESS_AFTER_ORDER_CREATE_ADD_PRODUCTS'
+#414: 'NOTIFY_CHECKOUT_PROCESS_AFTER_SEND_ORDER_EMAIL'
+#458: 'NOTIFY_CHECKOUT_PROCESS_HANDLE_AFFILIATES', 'paypalipn'
+#554: 'NOTIFY_PAYPALIPN_STATUS_HISTORY_UPDATE', [$ordersID, $new_status, $txn_type]
 
 ```
 
@@ -34,49 +35,49 @@ from https://github.com/lat9/notifier_report
 #84: 'NOTIFIER_CART_INSTANTIATE_START'
 #86: 'NOTIFIER_CART_INSTANTIATE_END'
 #106: 'NOTIFIER_CART_RESTORE_CONTENTS_START'
-#190: 'NOTIFIER_CART_RESTORE_CONTENTS_END'
-#208: 'NOTIFIER_CART_RESET_START', null, $reset_database
-#232: 'NOTIFIER_CART_RESET_END'
-#273: 'NOTIFIER_CART_ADD_CART_START', null, $product_id, $qty, $attributes, $notify
-#361: 'NOTIFIER_CART_ADD_CART_END', null, $product_id, $qty, $attributes, $notify
-#387: 'NOTIFIER_CART_UPDATE_QUANTITY_START', null, $product_id, $quantity, $attributes
-#463: 'NOTIFIER_CART_UPDATE_QUANTITY_END'
-#479: 'NOTIFIER_CART_CLEANUP_START'
-#497: 'NOTIFIER_CART_CLEANUP_END'
-#512: 'NOTIFIER_CART_COUNT_CONTENTS_START'
-#519: 'NOTIFIER_CART_COUNT_CONTENTS_END'
-#534: 'NOTIFIER_CART_GET_QUANTITY_START', null, $product_id
-#536: 'NOTIFIER_CART_GET_QUANTITY_END_QTY', null, $product_id
-#539: 'NOTIFIER_CART_GET_QUANTITY_END_FALSE', $product_id
-#552: 'NOTIFIER_CART_IN_CART_START', null, $product_id
-#554: 'NOTIFIER_CART_IN_CART_END_TRUE', null, $product_id
-#558: 'NOTIFIER_CART_IN_CART_END_FALSE', $product_id
-#571: 'NOTIFIER_CART_REMOVE_START', null, $product_id
-#588: 'NOTIFIER_CART_REMOVE_END'
-#596: 'NOTIFIER_CART_REMOVE_ALL_START'
-#598: 'NOTIFIER_CART_REMOVE_ALL_END'
-#657: 'NOTIFY_CART_CALCULATE_PRODUCT_PRICE', $products_id, $product->fields
-#736: 'NOTIFY_CART_CALCULATE_ATTRIBUTE_PRICE', $products_id, $attribute_price->fields
-#902: 'NOTIFY_CART_CALCULATE_ATTRIBUTE_WEIGHT', ['products_id' => $products_id, 'options_id' => $option], $attribute_weight->fields
-#969: 'NOTIFY_CART_ATTRIBUTES_PRICE_START', $product_id
-#991: 'NOTIFY_CART_ATTRIBUTES_PRICE_NEXT', $product_id, $attribute_price->fields
-#1083: 'NOTIFY_CART_ATTRIBUTES_PRICE_ONETIME_CHARGES_START', $product_id
-#1103: 'NOTIFY_CART_ATTRIBUTES_PRICE_ONETIME_CHARGES_NEXT', $product_id, $attribute_price->fields
-#1163: 'NOTIFY_CART_ATTRIBUTES_WEIGHT_START', $product_id
-#1178: 'NOTIFY_CART_ATTRIBUTES_WEIGHT_NEXT', $product_id, $attribute_weight_info->fields
-#1212: 'NOTIFIER_CART_GET_PRODUCTS_START', null, $check_for_valid_cart
-#1226: 'NOTIFY_CART_GET_PRODUCTS_NEXT', $products_id, $products->fields
-#1390: 'NOTIFIER_CART_GET_PRODUCTS_END', null, $products_array
-#1401: 'NOTIFIER_CART_SHOW_TOTAL_START'
-#1403: 'NOTIFIER_CART_SHOW_TOTAL_END'
-#1414: 'NOTIFIER_CART_SHOW_TOTAL_BEFORE_DISCOUNT_START'
-#1416: 'NOTIFIER_CART_SHOW_TOTAL_BEFORE_DISCOUNT_END'
-#1869: 'NOTIFIER_CART_OPTIONAL_SUCCESS_UPDATED_CART', $_POST, $goto, $parameters
-#2028: 'NOTIFIER_CART_OPTIONAL_SUCCESS_PRODUCT_ADDED_TO_CART', $_POST, $goto, $parameters
-#2036: 'NOTIFIER_CART_OPTIONAL_ATTRIBUTE_ERROR_MESSAGE_HOOK', $_POST, $the_list
-#2088: 'NOTIFIER_CART_OPTIONAL_SUCCESS_BUYNOW_ADDED_TO_CART', $_GET, $goto, $parameters
-#2165: 'NOTIFIER_CART_OPTIONAL_SUCCESS_MULTIPLE_ADDED_TO_CART', $products_list, $goto, $parameters
-#2301: 'NOTIFY_CART_USER_ACTION', null, $goto, $parameters
+#191: 'NOTIFIER_CART_RESTORE_CONTENTS_END'
+#209: 'NOTIFIER_CART_RESET_START', null, $reset_database
+#233: 'NOTIFIER_CART_RESET_END'
+#281: 'NOTIFIER_CART_ADD_CART_START', null, $product_id, $qty, $attributes, $notify
+#378: 'NOTIFIER_CART_ADD_CART_END', null, $product_id, $qty, $attributes, $notify
+#409: 'NOTIFIER_CART_UPDATE_QUANTITY_START', null, $uprid, $quantity, $attributes
+#492: 'NOTIFIER_CART_UPDATE_QUANTITY_END'
+#507: 'NOTIFIER_CART_CLEANUP_START'
+#513: 'NOTIFIER_CART_CLEANUP_END'
+#555: 'NOTIFIER_CART_COUNT_CONTENTS_START'
+#562: 'NOTIFIER_CART_COUNT_CONTENTS_END'
+#577: 'NOTIFIER_CART_GET_QUANTITY_START', null, $uprid
+#579: 'NOTIFIER_CART_GET_QUANTITY_END_QTY', null, $uprid
+#583: 'NOTIFIER_CART_GET_QUANTITY_END_FALSE', $uprid
+#595: 'NOTIFIER_CART_IN_CART_START', null, $uprid
+#597: 'NOTIFIER_CART_IN_CART_END_TRUE', null, $uprid
+#601: 'NOTIFIER_CART_IN_CART_END_FALSE', $uprid
+#613: 'NOTIFIER_CART_REMOVE_START', null, $uprid
+#618: 'NOTIFIER_CART_REMOVE_END'
+#626: 'NOTIFIER_CART_REMOVE_ALL_START'
+#628: 'NOTIFIER_CART_REMOVE_ALL_END'
+#686: 'NOTIFY_CART_CALCULATE_PRODUCT_PRICE', $uprid, $product
+#751: 'NOTIFY_CART_CALCULATE_ATTRIBUTE_PRICE', $uprid, $attribute_price->fields
+#941: 'NOTIFY_CART_CALCULATE_ATTRIBUTE_WEIGHT', ['products_id' => $uprid, 'options_id' => $option], $attribute_weight->fields
+#1003: 'NOTIFY_CART_ATTRIBUTES_PRICE_START', $uprid
+#1022: 'NOTIFY_CART_ATTRIBUTES_PRICE_NEXT', $uprid, $attribute_price
+#1123: 'NOTIFY_CART_ATTRIBUTES_PRICE_ONETIME_CHARGES_START', $uprid
+#1138: 'NOTIFY_CART_ATTRIBUTES_PRICE_ONETIME_CHARGES_NEXT', $uprid, $attribute_price
+#1188: 'NOTIFY_CART_ATTRIBUTES_WEIGHT_START', $uprid
+#1198: 'NOTIFY_CART_ATTRIBUTES_WEIGHT_NEXT', $uprid, $attribute_weight_info->fields
+#1224: 'NOTIFIER_CART_GET_PRODUCTS_START', null, $check_for_valid_cart
+#1239: 'NOTIFY_CART_GET_PRODUCTS_NEXT', $uprid, $products->fields
+#1414: 'NOTIFIER_CART_GET_PRODUCTS_END', null, $products_array
+#1425: 'NOTIFIER_CART_SHOW_TOTAL_START'
+#1427: 'NOTIFIER_CART_SHOW_TOTAL_END'
+#1438: 'NOTIFIER_CART_SHOW_TOTAL_BEFORE_DISCOUNT_START'
+#1440: 'NOTIFIER_CART_SHOW_TOTAL_BEFORE_DISCOUNT_END'
+#1890: 'NOTIFIER_CART_OPTIONAL_SUCCESS_UPDATED_CART', $_POST, $goto, $parameters
+#2096: 'NOTIFIER_CART_OPTIONAL_SUCCESS_PRODUCT_ADDED_TO_CART', $_POST, $goto, $parameters
+#2104: 'NOTIFIER_CART_OPTIONAL_ATTRIBUTE_ERROR_MESSAGE_HOOK', $_POST, $the_list
+#2161: 'NOTIFIER_CART_OPTIONAL_SUCCESS_BUYNOW_ADDED_TO_CART', $_GET, $goto, $parameters
+#2246: 'NOTIFIER_CART_OPTIONAL_SUCCESS_MULTIPLE_ADDED_TO_CART', $products_list, $goto, $parameters
+#2369: 'NOTIFY_CART_USER_ACTION', null, $goto, $parameters
 
 ```
 
@@ -97,57 +98,69 @@ from https://github.com/lat9/notifier_report
 ```
 #149: 'NOTIFY_ORDER_INSTANTIATE', [], $order_id
 #167: 'NOTIFY_ORDER_BEFORE_QUERY', [], $order_id
-#199: 'NOTIFY_ORDER_COUPON_LINK', $coupon_link->fields, $zc_coupon_link
-#366: 'NOTIFY_ORDER_QUERY_ADD_PRODUCT', $this->products[$index], $index
-#374: 'NOTIFY_ORDER_AFTER_QUERY', IS_ADMIN_FLAG, $this->orderId
-#380: 'ORDER_QUERY_ADMIN_COMPLETE', ['orders_id' => $this->orderId]
-#466: 'NOTIFY_ORDER_CART_BEGINS'
-#645: 'NOTIFY_ORDER_CART_AFTER_ADDRESSES_SET', '', $taxCountryId, $taxZoneId
-#677: 'NOTIFY_ORDER_CART_ADD_PRODUCT_LIST', ['index' => $index, 'products' => $products[$i]]
-#714: 'NOTIFY_ORDER_CART_ADD_ATTRIBUTE_LIST', ['index' => $index, 'subindex' => $subindex, 'products' => $products[$i], 'attributes' => $attributes]
-#745: 'NOTIFY_ORDER_CART_FINISHED'
-#799: 'NOTIFY_ORDER_CART_EXTERNAL_TAX_RATE_LOOKUP', STORE_PRODUCT_TAX_BASIS, $products, $loop, $index, $taxCountryId, $taxZoneId, $taxRates
-#826: 'NOTIFY_ORDER_CART_EXTERNAL_TAX_HANDLING', [], $index, $taxCountryId, $taxZoneId
-#836: 'NOTIFY_ORDER_CART_SUBTOTAL_CALCULATE', ['shown_price' => $shown_price]
-#868: 'NOTIFY_ORDER_CART_EXTERNAL_TAX_DURING_ORDER_CREATE', [], $zf_ot_modules
-#879: 'NOTIFY_ORDER_CART_ORDERSTATUS'
-#946: 'NOTIFY_ORDER_DURING_CREATE_ADDED_ORDER_HEADER', array_merge(['orders_id' => $this->orderId, 'shipping_weight' => $_SESSION['cart']->weight], $sql_data_array), $this->orderId
-#960: 'NOTIFY_ORDER_DURING_CREATE_ADDED_ORDERTOTAL_LINE_ITEM', $sql_data_array, $ot_insert_id
-#988: 'NOTIFY_ORDER_DURING_CREATE_ADDED_ORDER_COMMENT', $sql_data_array, $osh_insert_id
-#1016: 'NOTIFY_ORDER_PROCESSING_STOCK_DECREMENT_INIT', ['i' => $i], $this->products[$i], $i
-#1040: 'NOTIFY_ORDER_PROCESSING_STOCK_DECREMENT_BEGIN', $i, $stock_values
-#1067: 'NOTIFY_ORDER_PROCESSING_BESTSELLERS_UPDATE', [], $this->products[$i], $i
-#1072: 'NOTIFY_ORDER_PROCESSING_STOCK_DECREMENT_END', $i
-#1102: 'NOTIFY_ORDER_DURING_CREATE_ADDED_PRODUCT_LINE_ITEM', array_merge(['orders_products_id' => $order_products_id, 'i' => $i], $sql_data_array), $order_products_id
-#1104: 'NOTIFY_ORDER_PROCESSING_CREDIT_ACCOUNT_UPDATE_BEGIN'
-#1107: 'NOTIFY_ORDER_PROCESSING_ATTRIBUTES_BEGIN'
-#1201: 'NOTIFY_ORDER_DURING_CREATE_ADDED_ATTRIBUTE_LINE_ITEM', array_merge(['orders_products_attributes_id' => $opa_insert_id], $sql_data_array), $opa_insert_id
-#1216: 'NOTIFY_ORDER_DURING_CREATE_ADDED_ATTRIBUTE_DOWNLOAD_LINE_ITEM', $sql_data_array, $opd_insert_id
-#1222: 'NOTIFY_ORDER_PROCESSING_ATTRIBUTES_EXIST', $attributes_exist
-#1224: 'NOTIFY_ORDER_DURING_CREATE_ADD_PRODUCTS', $i, $custom_insertable_text
-#1252: 'NOTIFY_ORDER_PROCESSING_ONE_TIME_CHARGES_BEGIN', $i
-#1274: 'NOTIFY_ORDER_AFTER_ORDER_CREATE_ADD_PRODUCTS'
-#1287: 'NOTIFY_ORDER_SEND_EMAIL_INITIALIZE', [], $zf_insert_id, $order_totals, $zf_mode
-#1290: 'NOTIFY_ORDER_SEND_LOW_STOCK_EMAILS'
-#1330: 'NOTIFY_ORDER_EMAIL_BEFORE_PRODUCTS', [], $email_order, $html_msg
-#1396: 'NOTIFY_ORDER_SET_ORDER_MESSAGE'
-#1418: 'NOTIFY_ORDER_INVOICE_CONTENT_READY_TO_SEND', ['zf_insert_id' => $zf_insert_id, 'text_email' => $email_order, 'html_email' => $html_msg], $email_order, $html_msg, $send_customer_email
-#1440: 'NOTIFY_ORDER_INVOICE_CONTENT_FOR_ADDITIONAL_EMAILS', $zf_insert_id, $email_order, $html_msg, $sendExtraOrderEmail
-#1452: 'NOTIFY_ORDER_AFTER_SEND_ORDER_EMAIL', $zf_insert_id, $email_order, $extra_info, $html_msg
+#201: 'NOTIFY_ORDER_COUPON_LINK', $coupon_link->fields, $zc_coupon_link
+#372: 'NOTIFY_ORDER_QUERY_ADD_PRODUCT', $this->products[$index], $index
+#380: 'NOTIFY_ORDER_AFTER_QUERY', IS_ADMIN_FLAG, $this->orderId
+#386: 'ORDER_QUERY_ADMIN_COMPLETE', ['orders_id' => $this->orderId]
+#472: 'NOTIFY_ORDER_CART_BEGINS'
+#654: 'NOTIFY_ORDER_CART_AFTER_ADDRESSES_SET', '', $taxCountryId, $taxZoneId
+#691: 'NOTIFY_ORDER_CART_ADD_PRODUCT_LIST', ['index' => $index, 'products' => $products[$i]]
+#728: 'NOTIFY_ORDER_CART_ADD_ATTRIBUTE_LIST', ['index' => $index, 'subindex' => $subindex, 'products' => $products[$i], 'attributes' => $attributes]
+#768: 'NOTIFY_ORDER_CART_FINISHED'
+#821: 'NOTIFY_ORDER_CART_EXTERNAL_TAX_RATE_LOOKUP', STORE_PRODUCT_TAX_BASIS, $products, $loop, $index, $taxCountryId, $taxZoneId, $taxRates
+#870: 'NOTIFY_ORDER_CART_SUBTOTAL_CALCULATE', ['shown_price' => $shown_price]
+#922: 'NOTIFY_ORDER_CART_EXTERNAL_TAX_DURING_ORDER_CREATE', [], $zf_ot_modules
+#933: 'NOTIFY_ORDER_CART_ORDERSTATUS'
+#1001: 'NOTIFY_ORDER_DURING_CREATE_ADDED_ORDER_HEADER', array_merge(['orders_id' => $this->orderId, 'shipping_weight' => $_SESSION['cart']->weight], $sql_data_array), $this->orderId
+#1015: 'NOTIFY_ORDER_DURING_CREATE_ADDED_ORDERTOTAL_LINE_ITEM', $sql_data_array, $ot_insert_id
+#1043: 'NOTIFY_ORDER_DURING_CREATE_ADDED_ORDER_COMMENT', $sql_data_array, $osh_insert_id
+#1071: 'NOTIFY_ORDER_PROCESSING_STOCK_DECREMENT_INIT', ['i' => $i], $this->products[$i], $i
+#1095: 'NOTIFY_ORDER_PROCESSING_STOCK_DECREMENT_BEGIN', $i, $stock_values
+#1122: 'NOTIFY_ORDER_PROCESSING_BESTSELLERS_UPDATE', [], $this->products[$i], $i
+#1127: 'NOTIFY_ORDER_PROCESSING_STOCK_DECREMENT_END', $i
+#1157: 'NOTIFY_ORDER_DURING_CREATE_ADDED_PRODUCT_LINE_ITEM', array_merge(['orders_products_id' => $order_products_id, 'i' => $i], $sql_data_array), $order_products_id
+#1159: 'NOTIFY_ORDER_PROCESSING_CREDIT_ACCOUNT_UPDATE_BEGIN'
+#1162: 'NOTIFY_ORDER_PROCESSING_ATTRIBUTES_BEGIN'
+#1256: 'NOTIFY_ORDER_DURING_CREATE_ADDED_ATTRIBUTE_LINE_ITEM', array_merge(['orders_products_attributes_id' => $opa_insert_id], $sql_data_array), $opa_insert_id
+#1271: 'NOTIFY_ORDER_DURING_CREATE_ADDED_ATTRIBUTE_DOWNLOAD_LINE_ITEM', $sql_data_array, $opd_insert_id
+#1277: 'NOTIFY_ORDER_PROCESSING_ATTRIBUTES_EXIST', $attributes_exist
+#1279: 'NOTIFY_ORDER_DURING_CREATE_ADD_PRODUCTS', $i, $custom_insertable_text
+#1307: 'NOTIFY_ORDER_PROCESSING_ONE_TIME_CHARGES_BEGIN', $i
+#1328: 'NOTIFY_ORDER_AFTER_ORDER_CREATE_ADD_PRODUCTS'
+#1341: 'NOTIFY_ORDER_SEND_EMAIL_INITIALIZE', [], $zf_insert_id, $order_totals, $zf_mode
+#1344: 'NOTIFY_ORDER_SEND_LOW_STOCK_EMAILS'
+#1384: 'NOTIFY_ORDER_EMAIL_BEFORE_PRODUCTS', [], $email_order, $html_msg
+#1450: 'NOTIFY_ORDER_SET_ORDER_MESSAGE'
+#1472: 'NOTIFY_ORDER_INVOICE_CONTENT_READY_TO_SEND', ['zf_insert_id' => $zf_insert_id, 'text_email' => $email_order, 'html_email' => $html_msg], $email_order, $html_msg, $send_customer_email
+#1494: 'NOTIFY_ORDER_INVOICE_CONTENT_FOR_ADDITIONAL_EMAILS', $zf_insert_id, $email_order, $html_msg, $sendExtraOrderEmail
+#1506: 'NOTIFY_ORDER_AFTER_SEND_ORDER_EMAIL', $zf_insert_id, $email_order, $extra_info, $html_msg
 
 ```
 
 #### includes/classes/shipping.php
 ```
-#42: 'NOTIFY_SHIPPING_CLASS_GET_INSTALLED_MODULES', $module
-#87: 'NOTIFY_SHIPPING_MODULE_ENABLE', $include_modules[$i]['class'], $include_modules[$i]['class']
-#106: 'NOTIFY_SHIPPING_CHECK_ENABLED_FOR_ZONE', [], $class, $enabled
-#110: 'NOTIFY_SHIPPING_CHECK_ENABLED', [], $class, $enabled
-#119: 'NOTIFY_SHIPPING_MODULE_PRE_CALCULATE_BOXES_AND_TARE', [], $total_weight, $shipping_weight, $shipping_quoted, $shipping_num_boxes
-#162: 'NOTIFY_SHIPPING_MODULE_CALCULATE_BOXES_AND_TARE', [], $total_weight, $shipping_weight, $shipping_quoted, $shipping_num_boxes
-#210: 'NOTIFY_SHIPPING_MODULE_GET_ALL_QUOTES', $quotes_array, $quotes_array
-#254: 'NOTIFY_SHIPPING_EXCLUDE_FROM_CHEAPEST', $rates[$i]['module'], $exclude_from_cheapest
-#264: 'NOTIFY_SHIPPING_MODULE_CALCULATE_CHEAPEST', $cheapest, $cheapest, $rates
+#43: 'NOTIFY_SHIPPING_CLASS_GET_INSTALLED_MODULES', $module
+#99: 'NOTIFY_SHIPPING_MODULE_ENABLE', $quote_module['class'], $quote_module['class']
+#136: 'NOTIFY_SHIPPING_CHECK_ENABLED_FOR_ZONE', [], $module_class, $enabled
+#140: 'NOTIFY_SHIPPING_CHECK_ENABLED', [], $module_class, $enabled
+#155: 'NOTIFY_SHIPPING_MODULE_PRE_CALCULATE_BOXES_AND_TARE', [], $total_weight, $shipping_weight, $shipping_quoted, $shipping_num_boxes
+#198: 'NOTIFY_SHIPPING_MODULE_CALCULATE_BOXES_AND_TARE', [], $total_weight, $shipping_weight, $shipping_quoted, $shipping_num_boxes
+#254: 'NOTIFY_SHIPPING_MODULE_GET_ALL_QUOTES', $quotes_array, $quotes_array
+#308: 'NOTIFY_SHIPPING_EXCLUDE_FROM_CHEAPEST', $rate['module'], $exclude_from_cheapest
+#318: 'NOTIFY_SHIPPING_MODULE_CALCULATE_CHEAPEST', $cheapest, $cheapest, $rates
+
+```
+
+#### includes/classes/class.search.php
+```
+#110: 'NOTIFY_ADVANCED_SEARCH_RESULTS_ADDL_CLAUSE', [], $search_additional_clause
+#225: 'NOTIFY_SEARCH_COLUMNLIST_STRING', $select_column_list, $select_column_list
+#237: 'NOTIFY_SEARCH_SELECT_STRING', $select_str, $select_str
+#267: 'NOTIFY_SEARCH_FROM_STRING', $from_str, $from_str
+#333: 'NOTIFY_SEARCH_MATCHING_KEYWORD_FIELDS', '', $keyword_search_fields
+#391: 'NOTIFY_SEARCH_WHERE_STRING', $this->searchOptions->keywords, $where_str, $keyword_search_fields
+#452: 'NOTIFY_SEARCH_REAL_ORDERBY_STRING', $order_str, $order_str
+#456: 'NOTIFY_SEARCH_ORDERBY_STRING', $listing_sql
 
 ```
 
@@ -160,23 +173,33 @@ from https://github.com/lat9/notifier_report
 
 #### includes/classes/Customer.php
 ```
-#78: 'NOTIFY_ZEN_IS_CURRENTLY_LOGGED_IN', null, $is_currently_logged_in
-#88: 'NOTIFY_ZEN_IS_LOGGED_IN', null, $is_logged_in
-#119: //@TODO        'NOTIFY_?LOGIN_ATTEMPT', null, $is_logged_in
-#175: 'NOTIFY_ZEN_IN_GUEST_CHECKOUT', null, $in_guest_checkout
-#264: 'NOTIFY_CUSTOMER_DATA_LOADED', $this->data
-#350: 'NOTIFY_CUSTOMER_PRICING_GROUP_LOADED', $this->data
-#373: 'NOTIFY_CUSTOMER_CHECK_IF_BANNED', $this->data, $banned_status
-#382: 'NOTIFY_BAN_CUSTOMER', $this->data, $proceed_with_ban, $reset_shopping_session_and_basket
-#699: 'NOTIFY_MODULE_CREATE_ACCOUNT_ADDING_CUSTOMER_RECORD', null, $data
-#731: 'NOTIFY_MODULE_CREATE_ACCOUNT_ADDED_CUSTOMER_RECORD', array_merge(['customer_id' => $customer_id], $sql_data_array)
-#768: 'NOTIFY_MODULE_CREATE_ACCOUNT_ADDED_ADDRESS_BOOK_RECORD', array_merge(['address_id' => $address_id], $sql_data_array)
+#76: 'NOTIFY_CUSTOMER_IS_TAX_EXEMPT', [], $is_tax_exempt
+#128: 'NOTIFY_ZEN_IS_CURRENTLY_LOGGED_IN', null, $is_currently_logged_in
+#138: 'NOTIFY_ZEN_IS_LOGGED_IN', null, $is_logged_in
+#176: //@TODO        'NOTIFY_?LOGIN_ATTEMPT', null, $is_logged_in
+#235: 'NOTIFY_ZEN_IN_GUEST_CHECKOUT', null, $in_guest_checkout
+#342: 'NOTIFY_CUSTOMER_DATA_LOADED', $this->data
+#433: 'NOTIFY_CUSTOMER_PRICING_GROUP_LOADED', $this->data
+#459: 'NOTIFY_CUSTOMER_CHECK_IF_BANNED', $this->data, $banned_status
+#468: 'NOTIFY_BAN_CUSTOMER', $this->data, $proceed_with_ban, $reset_shopping_session_and_basket
+#833: 'NOTIFY_MODULE_CREATE_ACCOUNT_ADDING_CUSTOMER_RECORD', null, $data
+#866: 'NOTIFY_MODULE_CREATE_ACCOUNT_ADDED_CUSTOMER_RECORD', array_merge(['customer_id' => $customer_id], $sql_data_array)
+#903: 'NOTIFY_MODULE_CREATE_ACCOUNT_ADDED_ADDRESS_BOOK_RECORD', array_merge(['address_id' => $address_id], $sql_data_array)
+
+```
+
+#### includes/classes/order_total.php
+```
+#67: 'NOTIFY_ORDER_TOTAL_PROCESS_STARTS', ['order_info' => $order->info]
+#72: 'NOTIFY_ORDER_TOTAL_PROCESS_NEXT', ['class' => $class, 'order_info' => $order->info, 'ot_output' => $GLOBALS[$class]->output]
+#193: 'NOTIFY_ORDER_TOTAL_PRE_CONFIRMATION_CHECK_STARTS', ['order_info' => $orderInfoSaved]
+#197: 'NOTIFY_ORDER_TOTAL_PRE_CONFIRMATION_CHECK_NEXT', ['class' => $class, 'order_info' => $order->info, 'ot_output' => $GLOBALS[$class]->output]
 
 ```
 
 #### includes/classes/db/mysql/query_factory.php
 ```
-#995: 'NOTIFY_QUERY_FACTORY_META_DEFAULT', ['field' => $field, 'type' => $type], $this->max_length
+#1036: 'NOTIFY_QUERY_FACTORY_META_DEFAULT', ['field' => $field, 'type' => $type], $this->max_length
 
 ```
 
@@ -228,11 +251,17 @@ from https://github.com/lat9/notifier_report
 
 ```
 
+#### includes/classes/ajax/zcAjaxAdminSessionChange.php
+```
+#21: 'NOTIFY_AJAX_ADMIN_NOTIFICATIONS', '', $other_names
+
+```
+
 #### includes/init_includes/init_sanitize.php
 ```
 #18: 'NOTIFY_INIT_SANITIZE_STARTS'
-#23: 'NOTIFY_INIT_SANITIZE_GET_VAR_CHECK', ['getvarname' => $getvar], $site_array_override
-#272: 'NOTIFY_INIT_SANITIZE_ENDS'
+#23: 'NOTIFY_INIT_SANITIZE_GET_VAR_CHECK', ['name' => $varname, 'value' => $varvalue,], $site_array_override
+#273: 'NOTIFY_INIT_SANITIZE_ENDS'
 
 ```
 
@@ -256,58 +285,91 @@ from https://github.com/lat9/notifier_report
 
 ```
 
+#### includes/init_includes/init_add_crumbs.php
+```
+#61: 'NOTIFY_INIT_ADD_CRUMBS_GET_TERMS_LINK_PARAMETERS', $next_get_term, $link_parameters
+
+```
+
+#### includes/index_filters/default_filter.php
+```
+#147: 'NOTIFY_PRODUCT_LISTING_QUERY_STRING', ['default'], $listing_sql, $where_str, $order_by
+
+```
+
+#### includes/index_filters/music_genre_filter.php
+```
+#143: 'NOTIFY_PRODUCT_LISTING_QUERY_STRING', ['music_genre'], $listing_sql, $where_str, $order_by
+
+```
+
+#### includes/index_filters/record_company_filter.php
+```
+#144: 'NOTIFY_PRODUCT_LISTING_QUERY_STRING', ['record_company'], $listing_sql, $where_str, $order_by
+
+```
+
 #### includes/functions/html_output.php
 ```
 #17: 'NOTIFY_SEFU_INTERCEPT', array(), $link, $page, $parameters, $connection, $add_session_id, $static, $use_dir_ws_catalog
-#217: 'NOTIFY_HANDLE_IMAGE', [$newimg]
-#225: 'NOTIFY_OPTIMIZE_IMAGE', $template_dir, $src, $title, $width, $height, $parameters
-#307: 'PAGE_OUTPUT_IMAGE_SUBMIT'
-#331: 'PAGE_OUTPUT_IMAGE_BUTTON'
-#363: 'NOTIFY_ZEN_DRAW_BUTTON', null, $text, $classes, $added_classes, $id, $parameters, $title, $type, $the_button
-#441:  'NOTIFY_ZEN_CSS_BUTTON_SUBMIT', array( 'button_name' => $button_name, 'text' => $text, 'sec_class' => $sec_class, 'parameters' => $parameters, ), $css_button 
-#462:  'NOTIFY_ZEN_CSS_BUTTON_BUTTON', array( 'button_name' => $button_name, 'text' => $text, 'sec_class' => $sec_class, 'parameters' => $parameters, ), $css_button 
-#564:  'NOTIFY_ZEN_DRAW_INPUT_FIELD_OVERRIDE', array( 'name' => $name, 'value' => $value, 'parameters' => $parameters, 'type' => $type, 'reinsert_value' => $reinsert_value, 'required' => $required, ), $field 
-#594:  'NOTIFY_ZEN_DRAW_INPUT_FIELD', array( 'name' => $name, 'value' => $value, 'parameters' => $parameters, 'type' => $type, 'reinsert_value' => $reinsert_value, 'required' => $required, ), $field 
-#629:  'NOTIFY_ZEN_DRAW_SELECTION_FIELD_OVERRIDE', array( 'name' => $name, 'value' => $value, 'parameters' => $parameters, 'type' => $type, 'checked' => $checked ), $selection 
-#664:  'NOTIFY_ZEN_DRAW_SELECTION_FIELD', array( 'name' => $name, 'value' => $value, 'parameters' => $parameters, 'type' => $type, 'checked' => $checked ), $selection 
-#700:  'NOTIFY_ZEN_DRAW_TEXTAREA_FIELD_OVERRIDE', array( 'name' => $name, 'width' => $width, 'height' => $height, 'text' => $text, 'parameters' => $parameters, 'reinsert_value' => $reinsert_value, ), $field 
-#733:  'NOTIFY_ZEN_DRAW_TEXTAREA_FIELD', array( 'name' => $name, 'width' => $width, 'height' => $height, 'text' => $text, 'parameters' => $parameters, 'reinsert_value' => $reinsert_value, ), $field 
-#808:  'NOTIFY_ZEN_DRAW_PULL_DOWN_MENU_OVERRIDE', array( 'name' => $name, 'values' => $values, 'default' => $default, 'parameters' => $parameters, 'required' => $required, ), $field 
-#857:  'NOTIFY_ZEN_DRAW_PULL_DOWN_MENU', array( 'name' => $name, 'values' => $values, 'default' => $default, 'parameters' => $parameters, 'required' => $required, ), $field 
+#216: 'NOTIFY_HANDLE_IMAGE', [$newimg]
+#224: 'NOTIFY_OPTIMIZE_IMAGE', $template_dir, $src, $title, $width, $height, $parameters
+#305: 'PAGE_OUTPUT_IMAGE_SUBMIT'
+#329: 'PAGE_OUTPUT_IMAGE_BUTTON'
+#361: 'NOTIFY_ZEN_DRAW_BUTTON', null, $text, $classes, $added_classes, $id, $parameters, $title, $type, $the_button
+#439:  'NOTIFY_ZEN_CSS_BUTTON_SUBMIT', array( 'button_name' => $button_name, 'text' => $text, 'sec_class' => $sec_class, 'parameters' => $parameters, ), $css_button 
+#460:  'NOTIFY_ZEN_CSS_BUTTON_BUTTON', array( 'button_name' => $button_name, 'text' => $text, 'sec_class' => $sec_class, 'parameters' => $parameters, ), $css_button 
+#562:  'NOTIFY_ZEN_DRAW_INPUT_FIELD_OVERRIDE', array( 'name' => $name, 'value' => $value, 'parameters' => $parameters, 'type' => $type, 'reinsert_value' => $reinsert_value, 'required' => $required, ), $field 
+#592:  'NOTIFY_ZEN_DRAW_INPUT_FIELD', array( 'name' => $name, 'value' => $value, 'parameters' => $parameters, 'type' => $type, 'reinsert_value' => $reinsert_value, 'required' => $required, ), $field 
+#627:  'NOTIFY_ZEN_DRAW_SELECTION_FIELD_OVERRIDE', array( 'name' => $name, 'value' => $value, 'parameters' => $parameters, 'type' => $type, 'checked' => $checked ), $selection 
+#662:  'NOTIFY_ZEN_DRAW_SELECTION_FIELD', array( 'name' => $name, 'value' => $value, 'parameters' => $parameters, 'type' => $type, 'checked' => $checked ), $selection 
+#698:  'NOTIFY_ZEN_DRAW_TEXTAREA_FIELD_OVERRIDE', array( 'name' => $name, 'width' => $width, 'height' => $height, 'text' => $text, 'parameters' => $parameters, 'reinsert_value' => $reinsert_value, ), $field 
+#731:  'NOTIFY_ZEN_DRAW_TEXTAREA_FIELD', array( 'name' => $name, 'width' => $width, 'height' => $height, 'text' => $text, 'parameters' => $parameters, 'reinsert_value' => $reinsert_value, ), $field 
+#806:  'NOTIFY_ZEN_DRAW_PULL_DOWN_MENU_OVERRIDE', array( 'name' => $name, 'values' => $values, 'default' => $default, 'parameters' => $parameters, 'required' => $required, ), $field 
+#855:  'NOTIFY_ZEN_DRAW_PULL_DOWN_MENU', array( 'name' => $name, 'values' => $values, 'default' => $default, 'parameters' => $parameters, 'required' => $required, ), $field 
 
 ```
 
 #### includes/functions/functions_categories.php
 ```
-#1062: 'NOTIFIER_ADMIN_ZEN_REMOVE_CATEGORY', array(), $category_id
+#1090: 'NOTIFIER_ADMIN_ZEN_REMOVE_CATEGORY', array(), $category_id
 
 ```
 
 #### includes/functions/functions_products.php
 ```
-#74: 'NOTIFY_PRODUCT_INFO_PRODUCT_STATUS_CHECK', $product_info->fields, $product_status, $should_throw_404, $response_code, $use_custom_response_code
-#539:  'ZEN_GET_PRODUCTS_STOCK', $products_id, $products_quantity, $quantity_handled 
-#575:  'ZEN_CHECK_STOCK_MESSAGE', [ $products_id, $products_quantity ], $out_of_stock_message 
-#781: 'NOTIFY_GET_PRODUCT_ALLOW_ADD_TO_CART', $product_id, $allow_add_to_cart, $product_query_results
-#989: 'NOTIFIER_ADMIN_ZEN_REMOVE_PRODUCT', array(), $product_id, $ptc
-#1084: 'NOTIFIER_ADMIN_ZEN_PRODUCTS_ATTRIBUTES_DOWNLOAD_DELETE', array(), $product_id
+#32: 'NOTIFY_GET_PRODUCT_DETAILS', $product_id, $product
+#81: 'NOTIFY_PRODUCT_INFO_PRODUCT_STATUS_CHECK', $product_info->fields, $product_status, $should_throw_404, $response_code, $use_custom_response_code
+#540:  'ZEN_GET_PRODUCTS_STOCK', $products_id, $products_quantity, $quantity_handled 
+#571:  'ZEN_CHECK_STOCK_MESSAGE', [ $products_id, $products_quantity ], $out_of_stock_message 
+#655: 'NOTIFY_GET_PRODUCTS_DESCRIPTION', $product_id, $product
+#738: 'NOTIFY_GET_PRODUCT_ALLOW_ADD_TO_CART', $product_id, $allow_add_to_cart, $product_query_results
+#877: 'NOTIFIER_ADMIN_ZEN_REMOVE_PRODUCT', [], $product_id, $ptc
+#970: 'NOTIFIER_ADMIN_ZEN_PRODUCTS_ATTRIBUTES_DOWNLOAD_DELETE', [], $product_id
+
+```
+
+#### includes/functions/functions_search.php
+```
+#163: 'NOTIFY_BUILD_KEYWORD_SEARCH', '', $fields, $string
 
 ```
 
 #### includes/functions/functions_prices.php
 ```
-#186:  'NOTIFY_ZEN_GET_PRODUCTS_DISPLAY_PRICE_SALE', [ 'products_id' => $product_id, 'display_sale_price' => $display_sale_price, 'display_special_price' => $display_special_price, 'display_normal_price' => $display_normal_price, 'products_tax_class_id' => $product_check->fields['products_tax_class_id'] ], $pricing_handled, $show_sale_discount 
-#246:  'NOTIFY_ZEN_GET_PRODUCTS_DISPLAY_PRICE_SPECIAL', [ 'products_id' => $product_id, 'display_sale_price' => $display_sale_price, 'display_special_price' => $display_special_price, 'display_normal_price' => $display_normal_price, 'products_tax_class_id' => $product_check->fields['products_tax_class_id'], 'product_is_free' => $product_check->fields['product_is_free'] ], $pricing_handled, $show_normal_price, $show_special_price, $show_sale_price 
-#308:  'NOTIFY_ZEN_GET_PRODUCTS_DISPLAY_PRICE_NORMAL', [ 'products_id' => $product_id, 'display_sale_price' => $display_sale_price, 'display_special_price' => $display_special_price, 'display_normal_price' => $display_normal_price, 'products_tax_class_id' => $product_check->fields['products_tax_class_id'], 'product_is_free' => $product_check->fields['product_is_free'] ], $pricing_handled, $show_normal_price, $show_special_price, $show_sale_price 
-#365:  'NOTIFY_ZEN_GET_PRODUCTS_DISPLAY_PRICE_FREE_OR_CALL', [ 'product_is_free' => $product_check->fields['product_is_free'], 'product_is_call' => $product_check->fields['product_is_call'], ], $tags_handled, $free_tag, $call_tag 
-#413: 'ZEN_GET_PRODUCTS_BASE_PRICE', $product_id, $products_base_price, $base_price_is_handled
+#63: 'NOTIFY_ZEN_GET_PRODUCTS_SPECIAL_PRICE', $product->fields, $sale, $product_price
+#202:  'NOTIFY_ZEN_GET_PRODUCTS_DISPLAY_PRICE_SALE', [ 'products_id' => $product_id, 'display_sale_price' => $display_sale_price, 'display_special_price' => $display_special_price, 'display_normal_price' => $display_normal_price, 'products_tax_class_id' => $product_check->fields['products_tax_class_id'] ], $pricing_handled, $show_sale_discount 
+#264:  'NOTIFY_ZEN_GET_PRODUCTS_DISPLAY_PRICE_SPECIAL', [ 'products_id' => $product_id, 'display_sale_price' => $display_sale_price, 'display_special_price' => $display_special_price, 'display_normal_price' => $display_normal_price, 'products_tax_class_id' => $product_check->fields['products_tax_class_id'], 'product_is_free' => $product_check->fields['product_is_free'] ], $pricing_handled, $show_normal_price, $show_special_price, $show_sale_price 
+#332:  'NOTIFY_ZEN_GET_PRODUCTS_DISPLAY_PRICE_NORMAL', [ 'products_id' => $product_id, 'display_sale_price' => $display_sale_price, 'display_special_price' => $display_special_price, 'display_normal_price' => $display_normal_price, 'products_tax_class_id' => $product_check->fields['products_tax_class_id'], 'product_is_free' => $product_check->fields['product_is_free'], 'display_wholesale_price' => $display_wholesale_price, 'has_wholesale_price' => $has_wholesale_price, ], $pricing_handled, $show_normal_price, $show_special_price, $show_sale_price 
+#405:  'NOTIFY_ZEN_GET_PRODUCTS_DISPLAY_PRICE_FREE_OR_CALL', [ 'product_is_free' => $product_check->fields['product_is_free'], 'product_is_call' => $product_check->fields['product_is_call'], ], $tags_handled, $free_tag, $call_tag 
+#454: 'ZEN_GET_PRODUCTS_BASE_PRICE', $product_id, $products_base_price, $base_price_is_handled
 
 ```
 
 #### includes/functions/functions_traffic.php
 ```
-#57: 'NOTIFY_ZEN_ADMIN_INVALID_IP_DETECTED', $original_ip
-#59: 'NOTIFY_ZEN_INVALID_IP_DETECTED', $original_ip
+#50: 'NOTIFY_ZEN_ADMIN_INVALID_IP_DETECTED', $original_ip
+#52: 'NOTIFY_ZEN_INVALID_IP_DETECTED', $original_ip
 
 ```
 
@@ -337,60 +399,62 @@ from https://github.com/lat9/notifier_report
 
 #### includes/functions/functions_customers.php
 ```
-#151: 'NOTIFY_ZEN_IN_GUEST_CHECKOUT', null, $in_guest_checkout
-#163: 'NOTIFY_ZEN_IS_LOGGED_IN', null, $is_logged_in
+#160: 'NOTIFY_ZEN_IN_GUEST_CHECKOUT', null, $in_guest_checkout
+#172: 'NOTIFY_ZEN_IS_LOGGED_IN', null, $is_logged_in
 
 ```
 
 #### includes/functions/functions_general.php
 ```
-#211: 'NOTIFY_ZEN_SOLD_OUT_IMAGE', array_merge($button_check->fields, ['products_id' => (int)$product_id]), $return_button
-#221: 'NOTIFY_ZEN_GET_BUY_NOW_BUTTON_RETURN', array_merge($button_check->fields, ['products_id' => (int)$product_id]), $return_button
+#191: 'NOTIFY_ZEN_SOLD_OUT_IMAGE', array_merge($button_check->fields, ['products_id' => (int)$product_id]), $return_button
+#202: 'NOTIFY_ZEN_GET_BUY_NOW_BUTTON_RETURN', array_merge($button_check->fields, ['products_id' => (int)$product_id]), $return_button
 
 ```
 
 #### includes/functions/functions_attributes.php
 ```
-#27: 'NOTIFY_ZEN_HAS_PRODUCT_ATTRIBUTES_CHECK', ['products_id' => $product_id, 'not_readonly' => $not_readonly], $has_attributes
-#71: 'NOTIFY_FUNCTIONS_LOOKUPS_REQUIRES_ATTRIBUTES_SELECTION_OTHER', ['products_id' => $products_id], $has_attributes
-#94: 'NOTIFY_FUNCTIONS_LOOKUPS_REQUIRES_ATTRIBUTES_SELECTION', '', $query, $noSingles, $noDoubles
-#153: 'FUNCTIONS_LOOKUPS_OPTION_NAME_NO_VALUES_OPT_TYPE', $opt_type, $test_var
-#175: 'NOTIFY_ZEN_HAS_PRODUCT_ATTRIBUTES_VALUES', $product_id, $value_to_return
-#423: 'ZEN_COPY_PRODUCTS_ATTRIBUTES_START', ['from' => (int)$products_id_from, 'to' => (int)$products_id_to]
-#435: 'ZEN_COPY_PRODUCTS_ATTRIBUTES_DELETE', (int)$products_id_to
-#517: 'ZEN_COPY_PRODUCTS_ATTRIBUTES_ADD', ['pID' => (int)$products_id_to, 'fields' => $copy_from]
-#535: 'ZEN_COPY_PRODUCTS_ATTRIBUTES_ADDED_DOWNLOAD', (int)$products_id_to, $new_products_attributes_id, $new_attribute_id
-#575: 'ZEN_COPY_PRODUCTS_ATTRIBUTES_UPDATE', ['pID' => (int)$products_id_to, 'fields' => $copy_from]
-#580: 'ZEN_COPY_PRODUCTS_ATTRIBUTES_COMPLETE', ['from' => (int)$products_id_from, 'to' => (int)$products_id_to]
-#627: 'NOTIFIER_ADMIN_ZEN_DELETE_PRODUCTS_ATTRIBUTES', [], $product_id
-#734: 'NOTIFY_TEST_DOWNLOADABLE_FILE_EXISTS', $check_filename, $handler
+#29: 'NOTIFY_GET_ATTRIBUTE_DETAILS_BY_ID', [$attributes_id], $result
+#57: 'NOTIFY_GET_ATTRIBUTE_DETAILS', [$products_id, $options_id, $options_values_id], $result
+#79: 'NOTIFY_ZEN_HAS_PRODUCT_ATTRIBUTES_CHECK', ['products_id' => $product_id, 'not_readonly' => $not_readonly], $has_attributes
+#123: 'NOTIFY_FUNCTIONS_LOOKUPS_REQUIRES_ATTRIBUTES_SELECTION_OTHER', ['products_id' => $products_id], $has_attributes
+#148: 'NOTIFY_FUNCTIONS_LOOKUPS_REQUIRES_ATTRIBUTES_SELECTION', '', $query, $noSingles, $noDoubles
+#209: 'FUNCTIONS_LOOKUPS_OPTION_NAME_NO_VALUES_OPT_TYPE', $opt_type, $test_var
+#231: 'NOTIFY_ZEN_HAS_PRODUCT_ATTRIBUTES_VALUES', $product_id, $value_to_return
+#477: 'ZEN_COPY_PRODUCTS_ATTRIBUTES_START', ['from' => $products_id_from, 'to' => $products_id_to]
+#489: 'ZEN_COPY_PRODUCTS_ATTRIBUTES_DELETE', $products_id_to
+#557: 'ZEN_COPY_PRODUCTS_ATTRIBUTES_ADD', ['pID' => $products_id_to, 'fields' => $copy_from]
+#575: 'ZEN_COPY_PRODUCTS_ATTRIBUTES_ADDED_DOWNLOAD', $products_id_to, $new_products_attributes_id, $new_attribute_id
+#616: 'ZEN_COPY_PRODUCTS_ATTRIBUTES_UPDATE', ['pID' => $products_id_to, 'fields' => $copy_from]
+#621: 'ZEN_COPY_PRODUCTS_ATTRIBUTES_COMPLETE', ['from' => $products_id_from, 'to' => $products_id_to]
+#662: 'NOTIFIER_ADMIN_ZEN_DELETE_PRODUCTS_ATTRIBUTES', [], $product_id
+#775: 'NOTIFY_TEST_DOWNLOADABLE_FILE_EXISTS', $check_filename, $handler
 
 ```
 
 #### includes/functions/functions_taxes.php
 ```
-#23:  'NOTIFY_ZEN_GET_TAX_RATE_OVERRIDE', [ 'class_id' => $class_id, 'country_id' => $country_id, 'zone_id' => $zone_id ], $tax_rate 
-#90:  'NOTIFY_ZEN_GET_TAX_DESCRIPTION_OVERRIDE', [ 'class_id' => $class_id, 'country_id' => $country_id, 'zone_id' => $zone_id ], $tax_description 
-#155:  'NOTIFY_ZEN_GET_MULTIPLE_TAX_RATES_OVERRIDE', [ 'class_id' => $class_id, 'country_id' => $country_id, 'zone_id' => $zone_id, 'tax_description' => $tax_description ], $rates_array 
-#346:  'ZEN_GET_TAX_LOCATIONS', [ 'country' => $store_country, 'zone' => $store_zone ], $tax_address 
-#419:  'NOTIFY_ZEN_GET_ALL_TAX_DESCRIPTIONS_OVERRIDE', [ 'country_id' => $country_id, 'zone_id' => $zone_id ], $tax_descriptions 
+#30:  'NOTIFY_ZEN_GET_TAX_RATE_OVERRIDE', [ 'class_id' => $class_id, 'country_id' => $country_id, 'zone_id' => $zone_id ], $tax_rate 
+#97:  'NOTIFY_ZEN_GET_TAX_DESCRIPTION_OVERRIDE', [ 'class_id' => $class_id, 'country_id' => $country_id, 'zone_id' => $zone_id ], $tax_description 
+#162:  'NOTIFY_ZEN_GET_MULTIPLE_TAX_RATES_OVERRIDE', [ 'class_id' => $class_id, 'country_id' => $country_id, 'zone_id' => $zone_id, 'tax_description' => $tax_description ], $rates_array 
+#353:  'ZEN_GET_TAX_LOCATIONS', [ 'country' => $store_country, 'zone' => $store_zone ], $tax_address 
+#426:  'NOTIFY_ZEN_GET_ALL_TAX_DESCRIPTIONS_OVERRIDE', [ 'country_id' => $country_id, 'zone_id' => $zone_id ], $tax_descriptions 
 
 ```
 
 #### includes/functions/functions_email.php
 ```
-#92: 'NOTIFY_EMAIL_ADDRESS_TEST', array(), $to_name, $to_email_address, $email_subject
-#95: 'NOTIFY_EMAIL_ADDRESS_VALIDATION_FAILURE', sprintf(EMAIL_SEND_FAILED . ' (failed validation)', $to_name, $to_email_address, $email_subject)
-#176: 'NOTIFY_EMAIL_DETERMINING_EMAIL_FORMAT', $to_email_address, $customers_email_format, $module
-#196: 'NOTIFY_EMAIL_AFTER_EMAIL_FORMAT_DETERMINED'
-#312: 'NOTIFY_EMAIL_BEFORE_PROCESS_ATTACHMENTS', array('attachments'=>$attachments_list, 'module'=>$module), $mail, $attachments_list
-#342: 'NOTIFY_EMAIL_AFTER_PROCESS_ATTACHMENTS', sizeof($attachments_list)
-#384: 'NOTIFY_EMAIL_READY_TO_SEND', array($mail), $mail
-#406: 'NOTIFY_EMAIL_AFTER_SEND'
-#411: 'NOTIFY_EMAIL_AFTER_SEND_WITH_ALL_PARAMS', array($to_name, $to_email_address, $from_email_name, $from_email_address, $email_subject, $email_html, $text, $module, $ErrorInfo)
-#434: 'NOTIFY_EMAIL_AFTER_SEND_ALL_SPECIFIED_ADDRESSES'
-#457: 'NOTIFY_EMAIL_BEGIN_ARCHIVE_WRITE', array($to_name, $to_email_address, $from_email_name, $from_email_address, $email_subject, $email_html, $email_text, $module, $error_msgs)
-#760: 'NOTIFY_EMAIL_VALIDATION_TEST', array($email, $valid_address)
+#110: 'NOTIFY_EMAIL_ADDRESS_TEST', [], $to_name, $to_email_address, $email_subject
+#113: 'NOTIFY_EMAIL_ADDRESS_VALIDATION_FAILURE', sprintf(EMAIL_SEND_FAILED . ' (failed validation)', $to_name, $to_email_address, $email_subject)
+#226: 'NOTIFY_EMAIL_DETERMINING_EMAIL_FORMAT', $to_email_address, $customers_email_format, $module
+#248: 'NOTIFY_EMAIL_AFTER_EMAIL_FORMAT_DETERMINED'
+#390: 'NOTIFY_EMAIL_BEFORE_PROCESS_ATTACHMENTS', ['attachments' => $attachments_list, 'module' => $module], $mail, $attachments_list
+#422: 'NOTIFY_EMAIL_AFTER_PROCESS_ATTACHMENTS', count($attachments_list)
+#467: 'NOTIFY_EMAIL_READY_TO_SEND', [$mail], $mail
+#489: 'NOTIFY_EMAIL_AFTER_SEND'
+#494: 'NOTIFY_EMAIL_AFTER_SEND_WITH_ALL_PARAMS', [$to_name, $to_email_address, $from_email_name, $from_email_address, $email_subject, $email_html, $text, $module, $ErrorInfo]
+#520: 'NOTIFY_EMAIL_AFTER_SEND_ALL_SPECIFIED_ADDRESSES'
+#544: 'NOTIFY_EMAIL_BEGIN_ARCHIVE_WRITE', [$to_name, $to_email_address, $from_email_name, $from_email_address, $email_subject, $email_html, $email_text, $module, $error_msgs]
+#900: 'NOTIFY_EMAIL_VALIDATION_TEST', [$email, $valid_address]
 
 ```
 
@@ -411,7 +475,8 @@ from https://github.com/lat9/notifier_report
 #### includes/templates/responsive_classic/common/html_header.php
 ```
 #16: 'NOTIFY_HTML_HEAD_START', $current_page_base, $template_dir
-#214: 'NOTIFY_HTML_HEAD_END', $current_page_base
+#52: 'NOTIFY_HTML_HEAD_TAG_START', $current_page_base
+#240: 'NOTIFY_HTML_HEAD_END', $current_page_base
 
 ```
 
@@ -445,7 +510,8 @@ from https://github.com/lat9/notifier_report
 #### includes/templates/template_default/common/html_header.php
 ```
 #16: 'NOTIFY_HTML_HEAD_START', $current_page_base, $template_dir
-#168: 'NOTIFY_HTML_HEAD_END', $current_page_base
+#37: 'NOTIFY_HTML_HEAD_TAG_START', $current_page_base
+#190: 'NOTIFY_HTML_HEAD_END', $current_page_base
 
 ```
 
@@ -459,6 +525,13 @@ from https://github.com/lat9/notifier_report
 ```
 #11: 'NOTIFY_TPL_TABULAR_DISPLAY_START', $current_page_base, $list_box_contents
 #50: 'NOTIFY_TPL_TABULAR_DISPLAY_END', $current_page_base, $list_box_contents
+
+```
+
+#### includes/templates/template_default/templates/tpl_account_history_info_default.php
+```
+#21: 'NOTIFY_ACCOUNT_HISTORY_INFO_EXTRA_COLUMN_HEADING', $order, $extra_headings
+#49: 'NOTIFY_ACCOUNT_HISTORY_INFO_EXTRA_COLUMN_DATA', [ 'order' => $order, 'orders_product' => $op ], $extra_data
 
 ```
 
@@ -491,24 +564,24 @@ from https://github.com/lat9/notifier_report
 
 #### includes/modules/responsive_classic/product_listing.php
 ```
-#35: 'NOTIFY_MODULE_PRODUCT_LISTING_RESULTCOUNT', $listing_split->number_of_rows
-#283: 'NOTIFY_MODULES_PRODUCT_LISTING_PRODUCTS_BUTTON', [], $record, $lc_button
-#447: 'NOTIFY_PRODUCT_LISTING_END', $current_page_base, $list_box_contents, $listing_split, $show_top_submit_button, $show_bottom_submit_button, $show_submit, $how_many
+#38: 'NOTIFY_MODULE_PRODUCT_LISTING_RESULTCOUNT', $listing_split->number_of_rows
+#286: 'NOTIFY_MODULES_PRODUCT_LISTING_PRODUCTS_BUTTON', [], $record, $lc_button
+#451: 'NOTIFY_PRODUCT_LISTING_END', $current_page_base, $list_box_contents, $listing_split, $show_top_submit_button, $show_bottom_submit_button, $show_submit, $how_many
 
 ```
 
 #### includes/modules/checkout_new_address.php
 ```
 #10: 'NOTIFY_MODULE_START_CHECKOUT_NEW_ADDRESS'
-#134: 'NOTIFY_MODULE_CHECKOUT_NEW_ADDRESS_VALIDATION', array(), $error
-#160: 'NOTIFY_MODULE_CHECKOUT_ADDED_ADDRESS_BOOK_RECORD', array_merge(array('address_id' => $address_book_id ), $sql_data_array)
-#254: 'NOTIFY_MODULE_END_CHECKOUT_NEW_ADDRESS'
+#140: 'NOTIFY_MODULE_CHECKOUT_NEW_ADDRESS_VALIDATION', [], $error
+#173: 'NOTIFY_MODULE_CHECKOUT_ADDED_ADDRESS_BOOK_RECORD', array_merge(['address_id' => $address_book_id], $sql_data_array)
+#272: 'NOTIFY_MODULE_END_CHECKOUT_NEW_ADDRESS'
 
 ```
 
 #### includes/modules/category_row.php
 ```
-#30: 'NOTIFY_CATEGORY_ROW_IMAGE', $next_category['categories_id'], $next_category['categories_image']
+#41: 'NOTIFY_CATEGORY_ROW_IMAGE', $next_category['categories_id'], $next_category['categories_image']
 
 ```
 
@@ -524,35 +597,35 @@ from https://github.com/lat9/notifier_report
 
 #### includes/modules/attributes.php
 ```
-#117: 'NOTIFY_ATTRIBUTES_MODULE_START_OPTION', $products_options_names->fields
-#146: 'NOTIFY_ATTRIBUTES_MODULE_START_OPTIONS_LOOP', $i++, $products_options->fields, $products_options_names->fields, $data_properties, $field_disabled, $attributeDetailsArrayForJson
-#202: 'NOTIFY_ATTRIBUTES_MODULE_SALEMAKER_DISPLAY_PRICE_PERCENTAGE', $products_options->fields, $product_info->fields, $products_options_display_price, $data_properties
-#222: 'NOTIFY_ATTRIBUTES_MODULE_ORIGINAL_PRICE', $products_options->fields, $products_options_array, $products_options_display_price, $data_properties
-#295: 'NOTIFY_ATTRIBUTES_MODULE_RADIO_SELECTED', $products_options->fields, $data_properties
-#384: 'NOTIFY_ATTRIBUTES_MODULE_CHECKBOX_SELECTED', $products_options->fields, $data_properties
-#520: 'NOTIFY_ATTRIBUTES_MODULE_FORMAT_VALUE', array_merge($products_options->fields, $products_options_names->fields), $data_properties, $field_disabled, $attributeDetailsArrayForJson
-#559: 'NOTIFY_ATTRIBUTES_MODULE_BEFORE_ASSEMBLE_OUTPUTS', $products_options->fields, $data_properties, $inputFieldId, $field_disabled
-#635: 'NOTIFY_ATTRIBUTES_MODULE_DEFAULT_SWITCH', $products_options_names->fields, $options_name, $options_menu, $options_comment, $options_comment_position, $options_html_id, $data_properties, $options_inputfield_id
-#642: 'NOTIFY_ATTRIBUTES_MODULE_OPTION_BUILT', $products_options_names->fields, $options_name, $options_menu, $options_comment, $options_comment_position, $options_html_id, $options_attributes_image, $data_properties, $options_inputfield_id
-#647: 'NOTIFY_ATTRIBUTES_MODULE_END', $prod_id, $options_name, $options_menu, $options_comment, $options_comment_position, $options_html_id, $options_attributes_image, $options_inputfield_id, $attributeDetailsArrayForJson
+#118: 'NOTIFY_ATTRIBUTES_MODULE_START_OPTION', $products_options_names->fields
+#147: 'NOTIFY_ATTRIBUTES_MODULE_START_OPTIONS_LOOP', $i++, $products_options->fields, $products_options_names->fields, $data_properties, $field_disabled, $attributeDetailsArrayForJson
+#203: 'NOTIFY_ATTRIBUTES_MODULE_SALEMAKER_DISPLAY_PRICE_PERCENTAGE', $products_options->fields, $product_info->fields, $products_options_display_price, $data_properties
+#223: 'NOTIFY_ATTRIBUTES_MODULE_ORIGINAL_PRICE', $products_options->fields, $products_options_array, $products_options_display_price, $data_properties
+#296: 'NOTIFY_ATTRIBUTES_MODULE_RADIO_SELECTED', $products_options->fields, $data_properties
+#385: 'NOTIFY_ATTRIBUTES_MODULE_CHECKBOX_SELECTED', $products_options->fields, $data_properties
+#521: 'NOTIFY_ATTRIBUTES_MODULE_FORMAT_VALUE', array_merge($products_options->fields, $products_options_names->fields), $data_properties, $field_disabled, $attributeDetailsArrayForJson
+#561: 'NOTIFY_ATTRIBUTES_MODULE_BEFORE_ASSEMBLE_OUTPUTS', $products_options->fields, $data_properties, $inputFieldId, $field_disabled
+#637: 'NOTIFY_ATTRIBUTES_MODULE_DEFAULT_SWITCH', $products_options_names->fields, $options_name, $options_menu, $options_comment, $options_comment_position, $options_html_id, $data_properties, $options_inputfield_id
+#644: 'NOTIFY_ATTRIBUTES_MODULE_OPTION_BUILT', $products_options_names->fields, $options_name, $options_menu, $options_comment, $options_comment_position, $options_html_id, $options_attributes_image, $data_properties, $options_inputfield_id
+#649: 'NOTIFY_ATTRIBUTES_MODULE_END', $prod_id, $options_name, $options_menu, $options_comment, $options_comment_position, $options_html_id, $options_attributes_image, $options_inputfield_id, $attributeDetailsArrayForJson
 
 ```
 
 #### includes/modules/create_account.php
 ```
 #10: 'NOTIFY_MODULE_START_CREATE_ACCOUNT'
-#41: 'NOTIFY_CREATE_ACCOUNT_CAPTCHA_CHECK', $antiSpamFieldName, $antiSpam
+#45: 'NOTIFY_CREATE_ACCOUNT_CAPTCHA_CHECK', $antiSpamFieldName, $antiSpam
 #152: 'NOTIFY_CREATE_ACCOUNT_LOOKUP_BY_EMAIL', $email_address, $already_exists, $send_welcome_email
 #159: 'NOTIFY_NICK_CHECK_FOR_EXISTING_EMAIL', $email_address, $nick_error, $nick
 #167: 'NOTIFY_NICK_CHECK_FOR_MIN_LENGTH', $nick, $nick_error, $nick_length_min
-#169: 'NOTIFY_NICK_CHECK_FOR_DUPLICATE', $nick, $nick_error
-#258: 'NOTIFY_CREATE_ACCOUNT_VALIDATION_CHECK', array(), $error, $send_welcome_email
-#270: 'NOTIFY_FAILURE_DURING_CREATE_ACCOUNT'
-#272: 'NOTIFY_SPAM_DETECTED_DURING_CREATE_ACCOUNT'
-#298: 'NOTIFY_NICK_CREATE_NEW', $nick, $password, $nick_email, $extra_welcome_text
-#301: 'NOTIFY_LOGIN_SUCCESS_VIA_CREATE_ACCOUNT', $email_address, $extra_welcome_text, $send_welcome_email
-#406: 'NOTIFY_NICK_SET_TEMPLATE_FLAG', 0, $display_nick_field
-#410: 'NOTIFY_MODULE_END_CREATE_ACCOUNT'
+#171: 'NOTIFY_NICK_CHECK_FOR_DUPLICATE', $nick, $nick_error
+#262: 'NOTIFY_CREATE_ACCOUNT_VALIDATION_CHECK', [], $error, $send_welcome_email
+#274: 'NOTIFY_FAILURE_DURING_CREATE_ACCOUNT'
+#276: 'NOTIFY_SPAM_DETECTED_DURING_CREATE_ACCOUNT'
+#301: 'NOTIFY_NICK_CREATE_NEW', $nick, $password, $nick_email, $extra_welcome_text
+#304: 'NOTIFY_LOGIN_SUCCESS_VIA_CREATE_ACCOUNT', $email_address, $extra_welcome_text, $send_welcome_email
+#419: 'NOTIFY_NICK_SET_TEMPLATE_FLAG', 0, $display_nick_field
+#422: 'NOTIFY_MODULE_END_CREATE_ACCOUNT'
 
 ```
 
@@ -574,35 +647,27 @@ from https://github.com/lat9/notifier_report
 
 #### includes/modules/payment/paypalwpp.php
 ```
-#465: 'NOTIFY_PAYPALWPP_BEFORE_DOEXPRESSCHECKOUT'
-#522: 'NOTIFY_PAYPALWPP_BEFORE_PROCESS_FINISHED', $response
-#590: 'NOTIFY_PAYPALWPP_AFTER_PROCESS_FINISHED', $paypal_order
-#745: 'NOTIFY_PAYMENT_PAYPALWPP_INSTALLED'
-#788: 'NOTIFY_PAYMENT_PAYPALWPP_UNINSTALLED'
-#1324: 'NOTIFY_PAYMENT_PAYPALEC_SUBTOTALS_TAX', $order, $order_totals
-#1417: 'NOTIFY_PAYPALWPP_GETLINEITEMDETAILS', $numberOfLineItemsProcessed, $optionsLI
-#1767: 'NOTIFY_PAYMENT_PAYPALEC_BEFORE_SETEC', array(), $options, $order, $order_totals
-#1775: 'NOTIFY_PAYMENT_PAYPALEC_TOKEN', $response, $options
-#1892: 'NOTIFY_PAYPALEC_PARSE_GETEC_RESULT', array(), $response
-#1930: 'NOTIFY_PAYPAL_EXPRESS_CHECKOUT_PAYERID_DETERMINED', $response['PAYERID']
+#463: 'NOTIFY_PAYPALWPP_BEFORE_DOEXPRESSCHECKOUT'
+#520: 'NOTIFY_PAYPALWPP_BEFORE_PROCESS_FINISHED', $response
+#588: 'NOTIFY_PAYPALWPP_AFTER_PROCESS_FINISHED', $paypal_order
+#741: 'NOTIFY_PAYMENT_PAYPALWPP_INSTALLED'
+#784: 'NOTIFY_PAYMENT_PAYPALWPP_UNINSTALLED'
+#1320: 'NOTIFY_PAYMENT_PAYPALEC_SUBTOTALS_TAX', $order, $order_totals
+#1413: 'NOTIFY_PAYPALWPP_GETLINEITEMDETAILS', $numberOfLineItemsProcessed, $optionsLI
+#1763: 'NOTIFY_PAYMENT_PAYPALEC_BEFORE_SETEC', array(), $options, $order, $order_totals
+#1771: 'NOTIFY_PAYMENT_PAYPALEC_TOKEN', $response, $options
+#1888: 'NOTIFY_PAYPALEC_PARSE_GETEC_RESULT', array(), $response
+#1926: 'NOTIFY_PAYPAL_EXPRESS_CHECKOUT_PAYERID_DETERMINED', $response['PAYERID']
 #2066: 'NOTIFY_PAYPAL_CUSTOMER_ATTEMPT_TO_USE_INVALID_COUNTRY_CODE'
 #2162: 'NOTIFY_PAYPALEXPRESS_BYPASS_ADDRESS_CREATION', $paypal_ec_payer_info, $bypass_address_creation
-#2272: 'NOTIFY_PAYPALEXPRESS_CREATE_ACCOUNT_ADDED_CUSTOMER_RECORD', $customer_id, $sql_data_array
-#2303: 'NOTIFY_PAYPALEXPRESS_CREATE_ACCOUNT_ADDED_ADDRESS_BOOK_RECORD', array(), $address_id, $sql_data_array
-#2356: 'NOTIFY_LOGIN_SUCCESS_VIA_CREATE_ACCOUNT', 'paypal express checkout'
-#2397: 'NOTIFY_PAYPALEC_END_ECSTEP2', $order
-#2469: 'NOTIFY_PAYPALWPP_DISABLE_GET_OVERRIDE_ADDRESS', $address_id, $disable_address_override
-#2728: 'NOTIFY_HEADER_ADDRESS_BOOK_ADD_ENTRY_INVALID_ATTEMPT', $customer_id, $country_id, $address_format_id, $address_question_arr
-#2799: 'NOTIFY_HEADER_ADDRESS_BOOK_ADD_ENTRY_DONE', 'paypal express checkout', $new_address_book_id, $sql_data_array, $make_default
-#3086: 'NOTIFY_PAYPALWPP_ERROR_HANDLER', $response, $operation, $basicError, $ignoreList, $errorInfo
-
-```
-
-#### includes/modules/payment/firstdata_hco.php
-```
-#314: 'MODULE_PAYMENT_FIRSTDATA_PAYMENTPAGES_PRESUBMIT_HOOK'
-#367: 'MODULE_PAYMENT_FIRSTDATA_PAYMENTPAGES_POSTSUBMIT_HOOK', $this->authorize
-#401: 'MODULE_PAYMENT_FIRSTDATA_PAYMENTPAGES_POSTPROCESS_HOOK'
+#2273: 'NOTIFY_PAYPALEXPRESS_CREATE_ACCOUNT_ADDED_CUSTOMER_RECORD', $customer_id, $sql_data_array
+#2304: 'NOTIFY_PAYPALEXPRESS_CREATE_ACCOUNT_ADDED_ADDRESS_BOOK_RECORD', array(), $address_id, $sql_data_array
+#2357: 'NOTIFY_LOGIN_SUCCESS_VIA_CREATE_ACCOUNT', 'paypal express checkout'
+#2398: 'NOTIFY_PAYPALEC_END_ECSTEP2', $order
+#2470: 'NOTIFY_PAYPALWPP_DISABLE_GET_OVERRIDE_ADDRESS', $address_id, $disable_address_override
+#2731: 'NOTIFY_HEADER_ADDRESS_BOOK_ADD_ENTRY_INVALID_ATTEMPT', $customer_id, $country_id, $address_format_id, $address_question_arr
+#2801: 'NOTIFY_HEADER_ADDRESS_BOOK_ADD_ENTRY_DONE', 'paypal express checkout', $new_address_book_id, $sql_data_array, $make_default
+#3088: 'NOTIFY_PAYPALWPP_ERROR_HANDLER', $response, $operation, $basicError, $ignoreList, $errorInfo
 
 ```
 
@@ -623,17 +688,17 @@ from https://github.com/lat9/notifier_report
 #416: 'NOTIFY_PAYMENT_AUTHNET_EMULATOR_CHECK', $this->code, $submit_data
 #431: 'NOTIFY_PAYMENT_AUTHNET_PRESUBMIT_HOOK', $this->code, $submit_data
 #437: 'NOTIFY_PAYMENT_AUTHNET_POSTSUBMIT_HOOK', $this->code, $response
-#621: 'NOTIFY_PAYMENT_AUTHNET_MODE_SELECTION', $this->mode, $submit_data
-#701: 'NOTIFY_PAYMENT_AUTHNET_ENCAPSULATION_CHECK'
+#622: 'NOTIFY_PAYMENT_AUTHNET_MODE_SELECTION', $this->mode, $submit_data
+#702: 'NOTIFY_PAYMENT_AUTHNET_ENCAPSULATION_CHECK'
 
 ```
 
 #### includes/modules/payment/paypal.php
 ```
-#405: 'NOTIFY_PAYMENT_PAYPAL_RETURN_TO_STORE', $_GET
-#430: 'NOTIFY_PAYMENT_PAYPAL_CANCELLED_DURING_CHECKOUT', $_GET
-#581: 'NOTIFY_PAYMENT_PAYPAL_INSTALLED'
-#590: 'NOTIFY_PAYMENT_PAYPAL_UNINSTALLED'
+#403: 'NOTIFY_PAYMENT_PAYPAL_RETURN_TO_STORE', $_GET
+#428: 'NOTIFY_PAYMENT_PAYPAL_CANCELLED_DURING_CHECKOUT', $_GET
+#579: 'NOTIFY_PAYMENT_PAYPAL_INSTALLED'
+#588: 'NOTIFY_PAYMENT_PAYPAL_UNINSTALLED'
 
 ```
 
@@ -645,19 +710,19 @@ from https://github.com/lat9/notifier_report
 
 #### includes/modules/product_listing_alpha_sorter.php
 ```
-#28: 'NOTIFY_PRODUCT_LISTING_ALPHA_SORTER_SELECTLIST', isset($prefix) ? $prefix : '', $letters_list
+#29: 'NOTIFY_PRODUCT_LISTING_ALPHA_SORTER_SELECTLIST', $prefix ?? '', $letters_list
 
 ```
 
 #### includes/modules/additional_images.php
 ```
 #14: 'NOTIFY_MODULES_ADDITIONAL_PRODUCT_IMAGES_START'
-#54:  'NOTIFY_MODULES_ADDITIONAL_IMAGES_FILE_MATCH', array( 'file' => $file, 'file_extension' => $file_extension, 'products_image' => $products_image, 'products_image_base' => $products_image_base ), $current_image_match 
-#85: 'NOTIFY_MODULES_ADDITIONAL_PRODUCT_IMAGES_LIST', NULL, $images_array
-#112: 'NOTIFY_MODULES_ADDITIONAL_IMAGES_GET_LARGE', $products_name, $products_image_large
-#127: 'NOTIFY_MODULES_ADDITIONAL_IMAGES_THUMB_SLASHES', array(), $thumb_slashes
-#146:  'NOTIFY_MODULES_ADDITIONAL_IMAGES_SCRIPT_LINK', array( 'flag_display_large' => $flag_display_large, 'products_name' => $products_name, 'products_image_large' => $products_image_large, 'thumb_slashes' => $thumb_slashes, 'large_link' => $large_link, 'index' => $i ), $script_link, $link_parameters 
-#183: 'NOTIFY_MODULES_ADDITIONAL_PRODUCT_IMAGES_END'
+#56:  'NOTIFY_MODULES_ADDITIONAL_IMAGES_FILE_MATCH', array( 'file' => $file, 'file_extension' => $file_extension, 'products_image' => $products_image, 'products_image_base' => $products_image_base ), $current_image_match 
+#87: 'NOTIFY_MODULES_ADDITIONAL_PRODUCT_IMAGES_LIST', NULL, $images_array
+#116: 'NOTIFY_MODULES_ADDITIONAL_IMAGES_GET_LARGE', $products_name, $products_image_large
+#131: 'NOTIFY_MODULES_ADDITIONAL_IMAGES_THUMB_SLASHES', array(), $thumb_slashes
+#149:  'NOTIFY_MODULES_ADDITIONAL_IMAGES_SCRIPT_LINK', array( 'flag_display_large' => $flag_display_large, 'products_name' => $products_name, 'products_image_large' => $products_image_large, 'thumb_slashes' => $thumb_slashes, 'large_link' => $large_link, 'index' => $i ), $script_link, $link_parameters 
+#194: 'NOTIFY_MODULES_ADDITIONAL_PRODUCT_IMAGES_END'
 
 ```
 
@@ -690,12 +755,12 @@ from https://github.com/lat9/notifier_report
 #73: 'NOTIFY_CHECKOUT_PROCESS_BEFORE_ORDER_TOTALS_PRE_CONFIRMATION_CHECK'
 #88: 'NOTIFY_CHECKOUT_PROCESS_BEFORE_ORDER_TOTALS_PROCESS'
 #90: 'NOTIFY_CHECKOUT_PROCESS_AFTER_ORDER_TOTALS_PROCESS'
-#98: 'NOTIFY_CHECKOUT_PROCESS_AFTER_PAYMENT_MODULES_BEFOREPROCESS'
-#101: 'NOTIFY_CHECKOUT_PROCESS_AFTER_ORDER_CREATE', $insert_id
-#103: 'NOTIFY_CHECKOUT_PROCESS_AFTER_PAYMENT_MODULES_AFTER_ORDER_CREATE', $insert_id
-#107: 'NOTIFY_CHECKOUT_PROCESS_AFTER_ORDER_CREATE_ADD_PRODUCTS', $insert_id, $order
-#110: 'NOTIFY_CHECKOUT_PROCESS_AFTER_SEND_ORDER_EMAIL', $insert_id, $order
-#150: 'NOTIFY_CHECKOUT_PROCESS_HANDLE_AFFILIATES'
+#105: 'NOTIFY_CHECKOUT_PROCESS_AFTER_PAYMENT_MODULES_BEFOREPROCESS'
+#109: 'NOTIFY_CHECKOUT_PROCESS_AFTER_ORDER_CREATE', $insert_id
+#111: 'NOTIFY_CHECKOUT_PROCESS_AFTER_PAYMENT_MODULES_AFTER_ORDER_CREATE', $insert_id
+#115: 'NOTIFY_CHECKOUT_PROCESS_AFTER_ORDER_CREATE_ADD_PRODUCTS', $insert_id, $order
+#118: 'NOTIFY_CHECKOUT_PROCESS_AFTER_SEND_ORDER_EMAIL', $insert_id, $order
+#158: 'NOTIFY_CHECKOUT_PROCESS_HANDLE_AFFILIATES'
 
 ```
 
@@ -708,48 +773,57 @@ from https://github.com/lat9/notifier_report
 
 #### includes/modules/product_listing.php
 ```
-#35: 'NOTIFY_MODULE_PRODUCT_LISTING_RESULTCOUNT', $listing_split->number_of_rows
-#273: 'NOTIFY_MODULES_PRODUCT_LISTING_PRODUCTS_BUTTON', [], $record, $lc_button
-#426: 'NOTIFY_PRODUCT_LISTING_END', $current_page_base, $list_box_contents, $listing_split, $show_top_submit_button, $show_bottom_submit_button, $show_submit, $how_many
+#38: 'NOTIFY_MODULE_PRODUCT_LISTING_RESULTCOUNT', $listing_split->number_of_rows
+#279: 'NOTIFY_MODULES_PRODUCT_LISTING_PRODUCTS_BUTTON', [], $record, $lc_button
+#433: 'NOTIFY_PRODUCT_LISTING_END', $current_page_base, $list_box_contents, $listing_split, $show_top_submit_button, $show_bottom_submit_button, $show_submit, $how_many
 
 ```
 
 #### includes/modules/order_total/ot_shipping.php
 ```
-#96:  'NOTIFY_OT_SHIPPING_TAX_CALCS', array(), $external_shipping_tax_handler, $shipping_tax, $shipping_tax_description 
+#96:  'NOTIFY_OT_SHIPPING_TAX_CALCS', [], $external_shipping_tax_handler, $shipping_tax, $shipping_tax_description 
 
 ```
 
 #### includes/modules/order_total/ot_coupon.php
 ```
-#252: 'NOTIFY_OT_COUPON_GENERATE_POPUP_LINK', ['coupon_id' => $coupon_id, 'coupon_code' => $coupon_code], $couponLink
-#356: 'NOTIFY_OT_COUPON_COUPON_INFO', ['coupon_result' => $coupon_details, 'code' => $coupon_code]
-#609: 'NOTIFY_OT_COUPON_CALCS_FINISHED', ['coupon' => $coupon_details, 'order_totals' => $orderTotalDetails, 'od_amount' => $od_amount], $coupon_details
-#638: 'NOTIFY_OT_COUPON_PRODUCT_VALIDITY', ['is_product_valid' => $is_product_valid, 'i' => $i]
-#773: 'NOTIFY_OT_COUPON_COUPON_REMOVED'
-#807: 'NOTIFY_COUPON_VALIDATION_PRODUCT_RESTRICTIONS', $coupon_id, $products, $found_valid
-#985: 'NOTIFY_OT_COUPON_USES_PER_USER_CHECK', $coupon_details, $valid
-#1006: 'NOTIFY_OT_COUPON_USES_PER_CUSTOMER_GUEST_CHECKOUT_CHECK', $coupon_details, $valid
+#103: 'NOTIFY_OT_COUPON_START', true, $valid
+#218: 'NOTIFY_OT_COUPON_CREDIT_SELECTION', true, $valid
+#267: 'NOTIFY_OT_COUPON_GENERATE_POPUP_LINK', ['coupon_id' => $coupon_id, 'coupon_code' => $coupon_code], $couponLink
+#371: 'NOTIFY_OT_COUPON_COUPON_INFO', ['coupon_result' => $coupon_details, 'code' => $coupon_code]
+#623: 'NOTIFY_OT_COUPON_CALCS_FINISHED', ['coupon' => $coupon_details, 'order_totals' => $orderTotalDetails, 'od_amount' => $od_amount], $coupon_details
+#654: 'NOTIFY_OT_COUPON_PRODUCT_VALIDITY', ['is_product_valid' => $is_product_valid, 'i' => $i]
+#786: 'NOTIFY_OT_COUPON_COUPON_REMOVED'
+#820: 'NOTIFY_COUPON_VALIDATION_PRODUCT_RESTRICTIONS', $coupon_id, $products, $found_valid
+#999: 'NOTIFY_OT_COUPON_USES_PER_USER_CHECK', $coupon_details, $valid
+#1020: 'NOTIFY_OT_COUPON_USES_PER_CUSTOMER_GUEST_CHECKOUT_CHECK', $coupon_details, $valid
 
 ```
 
 #### includes/modules/new_products.php
 ```
-#80: 'NOTIFY_MODULES_NEW_PRODUCTS_B4_LIST_BOX', [], $new_products->fields, $products_price
+#83: 'NOTIFY_MODULES_NEW_PRODUCTS_B4_LIST_BOX', [], $new_products->fields, $products_price
 
 ```
 
 #### includes/modules/pages/page/header_php.php
 ```
-#18: 'NOTIFY_HEADER_START_EZPAGE'
-#194: 'NOTIFY_HEADER_END_EZPAGE'
+#19: 'NOTIFY_HEADER_START_EZPAGE'
+#141: 'NOTIFY_HEADER_END_EZPAGE'
 
 ```
 
 #### includes/modules/pages/checkout_success/header_php.php
 ```
 #11: 'NOTIFY_HEADER_START_CHECKOUT_SUCCESS'
-#171: 'NOTIFY_HEADER_END_CHECKOUT_SUCCESS'
+#197: 'NOTIFY_HEADER_END_CHECKOUT_SUCCESS'
+
+```
+
+#### includes/modules/pages/products_all/header_php.php
+```
+#11: 'NOTIFY_HEADER_START_PRODUCTS_ALL'
+#52: 'NOTIFY_HEADER_END_PRODUCTS_ALL', null
 
 ```
 
@@ -772,15 +846,15 @@ from https://github.com/lat9/notifier_report
 #14: 'NOTIFY_MAIN_TEMPLATE_VARS_START_PRODUCT_FREE_SHIPPING_INFO'
 #34: 'NOTIFY_PRODUCT_VIEWS_HIT_INCREMENTOR', (int)$_GET['products_id']
 #109: 'NOTIFY_MAIN_TEMPLATE_VARS_PRODUCT_TYPE_VARS_PRODUCT_FREE_SHIPPING_INFO'
-#149: 'NOTIFY_MAIN_TEMPLATE_VARS_EXTRA_PRODUCT_FREE_SHIPPING_INFO'
-#157: 'NOTIFY_MAIN_TEMPLATE_VARS_END_PRODUCT_FREE_SHIPPING_INFO'
+#138: 'NOTIFY_MAIN_TEMPLATE_VARS_EXTRA_PRODUCT_FREE_SHIPPING_INFO'
+#146: 'NOTIFY_MAIN_TEMPLATE_VARS_END_PRODUCT_FREE_SHIPPING_INFO'
 
 ```
 
 #### includes/modules/pages/product_free_shipping_info/header_php.php
 ```
 #11: 'NOTIFY_HEADER_START_PRODUCT_FREE_SHIPPING_INFO'
-#25: 'NOTIFY_HEADER_END_PRODUCT_FREE_SHIPPING_INFO'
+#28: 'NOTIFY_HEADER_END_PRODUCT_FREE_SHIPPING_INFO'
 
 ```
 
@@ -801,7 +875,7 @@ from https://github.com/lat9/notifier_report
 #### includes/modules/pages/checkout_payment/header_php.php
 ```
 #11: 'NOTIFY_HEADER_START_CHECKOUT_PAYMENT'
-#122: 'NOTIFY_HEADER_END_CHECKOUT_PAYMENT'
+#125: 'NOTIFY_HEADER_END_CHECKOUT_PAYMENT'
 
 ```
 
@@ -810,15 +884,15 @@ from https://github.com/lat9/notifier_report
 #14: 'NOTIFY_MAIN_TEMPLATE_VARS_START_DOCUMENT_GENERAL_INFO'
 #34: 'NOTIFY_PRODUCT_VIEWS_HIT_INCREMENTOR', (int)$_GET['products_id']
 #109: 'NOTIFY_MAIN_TEMPLATE_VARS_PRODUCT_TYPE_VARS_DOCUMENT_GENERAL_INFO'
-#150: 'NOTIFY_MAIN_TEMPLATE_VARS_EXTRA_DOCUMENT_GENERAL_INFO'
-#158: 'NOTIFY_MAIN_TEMPLATE_VARS_END_DOCUMENT_GENERAL_INFO'
+#138: 'NOTIFY_MAIN_TEMPLATE_VARS_EXTRA_DOCUMENT_GENERAL_INFO'
+#146: 'NOTIFY_MAIN_TEMPLATE_VARS_END_DOCUMENT_GENERAL_INFO'
 
 ```
 
 #### includes/modules/pages/document_general_info/header_php.php
 ```
 #11: 'NOTIFY_HEADER_START_DOCUMENT_GENERAL_INFO'
-#20: 'NOTIFY_HEADER_END_DOCUMENT_GENERAL_INFO'
+#23: 'NOTIFY_HEADER_END_DOCUMENT_GENERAL_INFO'
 
 ```
 
@@ -832,35 +906,30 @@ from https://github.com/lat9/notifier_report
 #### includes/modules/pages/checkout_confirmation/header_php.php
 ```
 #11: 'NOTIFY_HEADER_START_CHECKOUT_CONFIRMATION'
-#171: 'NOTIFY_HEADER_END_CHECKOUT_CONFIRMATION'
+#174: 'NOTIFY_HEADER_END_CHECKOUT_CONFIRMATION'
 
 ```
 
 #### includes/modules/pages/product_reviews/header_php.php
 ```
 #11: 'NOTIFY_HEADER_START_PRODUCT_REVIEWS'
-#86: 'NOTIFY_HEADER_END_PRODUCT_REVIEWS'
+#91: 'NOTIFY_HEADER_END_PRODUCT_REVIEWS'
 
 ```
 
 #### includes/modules/pages/search_result/header_php.php
 ```
-#11: 'NOTIFY_HEADER_START_ADVANCED_SEARCH_RESULTS'
-#33: 'NOTIFY_ADVANCED_SEARCH_RESULTS_ADDL_CLAUSE', [], $search_additional_clause
-#210: 'NOTIFY_SEARCH_COLUMNLIST_STRING'
-#224: 'NOTIFY_SEARCH_SELECT_STRING'
-#256: 'NOTIFY_SEARCH_FROM_STRING'
-#385: 'NOTIFY_SEARCH_WHERE_STRING'
-#447: 'NOTIFY_SEARCH_ORDERBY_STRING', $listing_sql
-#454: 'NOTIFY_SEARCH_RESULTS', $listing_sql, $keywords, $result
-#466: 'NOTIFY_HEADER_END_ADVANCED_SEARCH_RESULTS', $keywords
+#14: 'NOTIFY_HEADER_START_ADVANCED_SEARCH_RESULTS'
+#44: 'NOTIFY_SEARCH_RESULTS', $listing_sql, $keywords, $result
+#52: 'NOTIFY_SEARCH_NO_RESULTS_MESSAGE', $result, $search, $message
+#72: 'NOTIFY_HEADER_END_ADVANCED_SEARCH_RESULTS', $keywords
 
 ```
 
 #### includes/modules/pages/brands/header_php.php
 ```
 #10: 'NOTIFY_HEADER_START_BRANDS'
-#55: 'NOTIFY_HEADER_END_BRANDS'
+#65: 'NOTIFY_HEADER_END_BRANDS'
 
 ```
 
@@ -877,8 +946,7 @@ from https://github.com/lat9/notifier_report
 #### includes/modules/pages/featured_products/header_php.php
 ```
 #11: 'NOTIFY_HEADER_START_FEATURED_PRODUCTS'
-#36: 'NOTIFY_FEATURED_PRODUCTS_SQL_STRING', array(), $featured_products_query_raw, $count_key
-#82: 'NOTIFY_HEADER_END_FEATURED_PRODUCTS', $how_many
+#52: 'NOTIFY_HEADER_END_FEATURED_PRODUCTS', null
 
 ```
 
@@ -889,33 +957,28 @@ from https://github.com/lat9/notifier_report
 
 ```
 
-#### includes/modules/pages/specials/main_template_vars.php
-```
-#24: 'NOTIFY_SPECIALS_MAIN_TEMPLATE_VARS_SQL_STRING', array(), $specials_query_raw, $count_key
-#56: 'NOTIFY_SPECIALS_MAIN_TEMPLATE_VARS_END', array(), $list_box_contents
-
-```
-
 #### includes/modules/pages/specials/header_php.php
 ```
-#9: 'NOTIFY_HEADER_START_SPECIALS'
+#10: 'NOTIFY_HEADER_START_SPECIALS'
+#81: 'NOTIFY_HEADER_END_SPECIALS', null
 
 ```
 
 #### includes/modules/pages/checkout_shipping/header_php.php
 ```
 #10: 'NOTIFY_HEADER_START_CHECKOUT_SHIPPING'
-#230: 'NOTIFY_HEADER_END_CHECKOUT_SHIPPING'
+#229: 'NOTIFY_HEADER_END_CHECKOUT_SHIPPING'
 
 ```
 
 #### includes/modules/pages/ask_a_question/header_php.php
 ```
 #9: 'NOTIFY_HEADER_START_ASK_A_QUESTION'
-#53: 'NOTIFY_ASK_A_QUESTION_CAPTCHA_CHECK', $_POST
-#60: 'NOTIFY_SPAM_DETECTED_USING_CONTACT_US', $_POST
-#80: 'NOTIFY_ASK_A_QUESTION_ACTION', (isset($_SESSION['customer_id']) ? $_SESSION['customer_id'] : 0), $customer_email, $customer_name, $email_address, $name, $enquiry, $telephone
-#174: 'NOTIFY_HEADER_END_ASK_A_QUESTION'
+#29: 'NOTIFY_ASK_A_QUESTION_ALLOW_BYPASS_REDIRECT', ['products_id' => $pid, ], $bypass_redirect
+#79: 'NOTIFY_ASK_A_QUESTION_CAPTCHA_CHECK', $_POST
+#86: 'NOTIFY_SPAM_DETECTED_USING_CONTACT_US', $_POST
+#106: 'NOTIFY_ASK_A_QUESTION_ACTION', (isset($_SESSION['customer_id']) ? $_SESSION['customer_id'] : 0), $customer_email, $customer_name, $email_address, $name, $enquiry, $telephone
+#200: 'NOTIFY_HEADER_END_ASK_A_QUESTION'
 
 ```
 
@@ -929,10 +992,10 @@ from https://github.com/lat9/notifier_report
 #### includes/modules/pages/password_forgotten/header_php.php
 ```
 #11: 'NOTIFY_HEADER_START_PASSWORD_FORGOTTEN'
-#44: 'NOTIFY_PASSWORD_FORGOTTEN_VALIDATED', $email_address, $sessionMessage
-#66: 'NOTIFY_PASSWORD_FORGOTTEN_CHANGED', $email_address, $check_customer->fields['customers_id'], $new_password
-#69: 'NOTIFY_PASSWORD_FORGOTTEN_NOT_FOUND', $email_address, $sessionMessage
-#81: 'NOTIFY_HEADER_END_PASSWORD_FORGOTTEN'
+#49: 'NOTIFY_PASSWORD_FORGOTTEN_VALIDATED', $email_address, $sessionMessage
+#71: 'NOTIFY_PASSWORD_FORGOTTEN_CHANGED', $email_address, $check_customer->fields['customers_id'], $new_password
+#74: 'NOTIFY_PASSWORD_FORGOTTEN_NOT_FOUND', $email_address, $sessionMessage
+#86: 'NOTIFY_HEADER_END_PASSWORD_FORGOTTEN'
 
 ```
 
@@ -961,7 +1024,7 @@ from https://github.com/lat9/notifier_report
 #### includes/modules/pages/popup_image_additional/header_php.php
 ```
 #10: 'NOTIFY_HEADER_START_POPUP_IMAGES_ADDITIONAL'
-#49: 'NOTIFY_HEADER_END_POPUP_IMAGES_ADDITIONAL'
+#55: 'NOTIFY_HEADER_END_POPUP_IMAGES_ADDITIONAL'
 
 ```
 
@@ -970,15 +1033,15 @@ from https://github.com/lat9/notifier_report
 #14: 'NOTIFY_MAIN_TEMPLATE_VARS_START_DOCUMENT_PRODUCT_INFO'
 #34: 'NOTIFY_PRODUCT_VIEWS_HIT_INCREMENTOR', (int)$_GET['products_id']
 #109: 'NOTIFY_MAIN_TEMPLATE_VARS_PRODUCT_TYPE_VARS_DOCUMENT_PRODUCT_INFO'
-#149: 'NOTIFY_MAIN_TEMPLATE_VARS_EXTRA_DOCUMENT_PRODUCT_INFO'
-#157: 'NOTIFY_MAIN_TEMPLATE_VARS_END_DOCUMENT_PRODUCT_INFO'
+#137: 'NOTIFY_MAIN_TEMPLATE_VARS_EXTRA_DOCUMENT_PRODUCT_INFO'
+#145: 'NOTIFY_MAIN_TEMPLATE_VARS_END_DOCUMENT_PRODUCT_INFO'
 
 ```
 
 #### includes/modules/pages/document_product_info/header_php.php
 ```
 #11: 'NOTIFY_HEADER_START_DOCUMENT_PRODUCT_INFO'
-#25: 'NOTIFY_HEADER_END_DOCUMENT_PRODUCT_INFO'
+#28: 'NOTIFY_HEADER_END_DOCUMENT_PRODUCT_INFO'
 
 ```
 
@@ -991,14 +1054,14 @@ from https://github.com/lat9/notifier_report
 
 #### includes/modules/pages/gv_redeem/header_php.php
 ```
-#9: 'NOTIFY_HEADER_START_GV_REDEEM'
+#15: 'NOTIFY_HEADER_START_GV_REDEEM'
 
 ```
 
 #### includes/modules/pages/popup_image/header_php.php
 ```
 #14: 'NOTIFY_HEADER_START_POPUP_IMAGES'
-#63: 'NOTIFY_HEADER_END_POPUP_IMAGES'
+#70: 'NOTIFY_HEADER_END_POPUP_IMAGES'
 
 ```
 
@@ -1026,7 +1089,7 @@ from https://github.com/lat9/notifier_report
 #### includes/modules/pages/checkout_payment_address/header_php.php
 ```
 #11: 'NOTIFY_HEADER_START_CHECKOUT_PAYMENT_ADDRESS'
-#44: 'NOTIFY_HEADER_END_CHECKOUT_PAYMENT_ADDRESS'
+#45: 'NOTIFY_HEADER_END_CHECKOUT_PAYMENT_ADDRESS'
 
 ```
 
@@ -1047,15 +1110,15 @@ from https://github.com/lat9/notifier_report
 #14: 'NOTIFY_MAIN_TEMPLATE_VARS_START_PRODUCT_MUSIC_INFO'
 #34: 'NOTIFY_PRODUCT_VIEWS_HIT_INCREMENTOR', (int)$_GET['products_id']
 #109: 'NOTIFY_MAIN_TEMPLATE_VARS_PRODUCT_TYPE_VARS_PRODUCT_MUSIC_INFO'
-#153: 'NOTIFY_MAIN_TEMPLATE_VARS_EXTRA_PRODUCT_MUSIC_INFO'
-#161: 'NOTIFY_MAIN_TEMPLATE_VARS_END_PRODUCT_MUSIC_INFO'
+#142: 'NOTIFY_MAIN_TEMPLATE_VARS_EXTRA_PRODUCT_MUSIC_INFO'
+#150: 'NOTIFY_MAIN_TEMPLATE_VARS_END_PRODUCT_MUSIC_INFO'
 
 ```
 
 #### includes/modules/pages/product_music_info/header_php.php
 ```
 #11: 'NOTIFY_HEADER_START_PRODUCT_MUSIC_INFO'
-#25: 'NOTIFY_HEADER_END_PRODUCT_MUSIC_INFO'
+#28: 'NOTIFY_HEADER_END_PRODUCT_MUSIC_INFO'
 
 ```
 
@@ -1082,13 +1145,16 @@ from https://github.com/lat9/notifier_report
 
 #### includes/modules/pages/redirect/header_php.php
 ```
-#21: 'NOTIFY_BEFORE_REDIRECT_ACTION_PRODUCT', array(), $_GET['products_id'], $_SESSION['languages_id']
-#29: 'NOTIFY_BEFORE_REDIRECT_ACTION_PRODUCT', array(), $_GET['products_id'], $_SESSION['languages_id']
-#42: 'NOTIFY_BEFORE_REDIRECT_ACTION_MUSIC_ARTIST', array(), $_GET['artists_id'], $_SESSION['languages_id']
-#51: 'NOTIFY_BEFORE_REDIRECT_ACTION_MUSIC_ARTIST', array(), $_GET['artists_id'], $_SESSION['languages_id']
-#65: 'NOTIFY_BEFORE_REDIRECT_ACTION_RECORD_COMPANY', array(), $_GET['record_company_id'], $_SESSION['languages_id']
-#74: 'NOTIFY_BEFORE_REDIRECT_ACTION_RECORD_COMPANY', array(), $_GET['record_company_id'], $_SESSION['languages_id']
-#147: 'NOTIFY_REDIRECT_DEFAULT_ACTION'
+#35: 'NOTIFY_BEFORE_REDIRECT_ACTION_PRODUCT', [], $_GET['products_id'], $_SESSION['languages_id']
+#43: 'NOTIFY_BEFORE_REDIRECT_ACTION_PRODUCT', [], $_GET['products_id'], $default_language_id
+#57: 'NOTIFY_BEFORE_REDIRECT_ACTION_MUSIC_ARTIST', [], $_GET['artists_id'], $_SESSION['languages_id']
+#66: 'NOTIFY_BEFORE_REDIRECT_ACTION_MUSIC_ARTIST', [], $_GET['artists_id'], $default_language_id
+#81: 'NOTIFY_BEFORE_REDIRECT_ACTION_RECORD_COMPANY', [], $_GET['record_company_id'], $_SESSION['languages_id']
+#90: 'NOTIFY_BEFORE_REDIRECT_ACTION_RECORD_COMPANY', [], $_GET['record_company_id'], $default_language_id
+#104:  'NOTIFY_BEFORE_REDIRECT_ACTION_BANNER', [ 'banners_id' => (int)$_GET['goto'], 'banners_url' => $banner->fields['banners_url'], ] 
+#124:  'NOTIFY_BEFORE_REDIRECT_ACTION_MANUFACTURER', [ 'manufacturers_id' => $_GET['manufacturers_id'], 'manufacturers_url' => $manufacturer->fields['manufacturers_url'], 'language_id' => $_SESSION['languages_id'], ] 
+#150:  'NOTIFY_BEFORE_REDIRECT_ACTION_MANUFACTURER', [ 'manufacturers_id' => $_GET['manufacturers_id'], 'manufacturers_url' => $manufacturer->fields['manufacturers_url'], 'language_id' => $default_language_id, ] 
+#175: 'NOTIFY_REDIRECT_DEFAULT_ACTION', $default_language_id
 
 ```
 
@@ -1096,8 +1162,8 @@ from https://github.com/lat9/notifier_report
 ```
 #11: 'NOTIFY_HEADER_START_INDEX_MAIN_TEMPLATE_VARS'
 #54: 'NOTIFY_HEADER_INDEX_MAIN_TEMPLATE_VARS_RELEASE_PRODUCT_TYPE_VARS'
-#228: 'NOTIFY_HEADER_INDEX_MAIN_TEMPLATE_VARS_PAGE_BODY', NULL, $tpl_page_body, $current_categories_name
-#233: 'NOTIFY_HEADER_END_INDEX_MAIN_TEMPLATE_VARS', NULL, $current_categories_description
+#229: 'NOTIFY_HEADER_INDEX_MAIN_TEMPLATE_VARS_PAGE_BODY', NULL, $tpl_page_body, $current_categories_name
+#234: 'NOTIFY_HEADER_END_INDEX_MAIN_TEMPLATE_VARS', NULL, $current_categories_description
 
 ```
 
@@ -1105,7 +1171,7 @@ from https://github.com/lat9/notifier_report
 ```
 #11: 'NOTIFY_HEADER_START_INDEX'
 #63:  'NOTIFY_INDEX_CATEGORY_STATUS_CHECK', ['cPath' => $cPath, 'current_category_id' => $current_category_id], $category_redirect_handled, $current_category_not_found, $current_category_is_disabled, $current_category_has_products, $current_category_has_subcats, $category_depth 
-#146: 'NOTIFY_HEADER_END_INDEX'
+#144: 'NOTIFY_HEADER_END_INDEX'
 
 ```
 
@@ -1114,15 +1180,15 @@ from https://github.com/lat9/notifier_report
 #14: 'NOTIFY_MAIN_TEMPLATE_VARS_START_PRODUCT_INFO'
 #34: 'NOTIFY_PRODUCT_VIEWS_HIT_INCREMENTOR', (int)$_GET['products_id']
 #108: 'NOTIFY_MAIN_TEMPLATE_VARS_PRODUCT_TYPE_VARS_PRODUCT_INFO'
-#152: 'NOTIFY_MAIN_TEMPLATE_VARS_EXTRA_PRODUCT_INFO'
-#158: 'NOTIFY_MAIN_TEMPLATE_VARS_END_PRODUCT_INFO'
+#136: 'NOTIFY_MAIN_TEMPLATE_VARS_EXTRA_PRODUCT_INFO'
+#142: 'NOTIFY_MAIN_TEMPLATE_VARS_END_PRODUCT_INFO'
 
 ```
 
 #### includes/modules/pages/product_info/header_php.php
 ```
 #11: 'NOTIFY_HEADER_START_PRODUCT_INFO'
-#25: 'NOTIFY_HEADER_END_PRODUCT_INFO'
+#28: 'NOTIFY_HEADER_END_PRODUCT_INFO'
 
 ```
 
@@ -1136,7 +1202,7 @@ from https://github.com/lat9/notifier_report
 #### includes/modules/pages/gv_faq/header_php.php
 ```
 #11: 'NOTIFY_HEADER_START_GV_FAQ'
-#45: 'NOTIFY_HEADER_END_GV_FAQ'
+#37: 'NOTIFY_HEADER_END_GV_FAQ'
 
 ```
 
@@ -1171,7 +1237,7 @@ from https://github.com/lat9/notifier_report
 #### includes/modules/pages/account/header_php.php
 ```
 #10: 'NOTIFY_HEADER_START_ACCOUNT'
-#38: 'NOTIFY_HEADER_END_ACCOUNT'
+#29: 'NOTIFY_HEADER_END_ACCOUNT'
 
 ```
 
@@ -1186,7 +1252,7 @@ from https://github.com/lat9/notifier_report
 #### includes/modules/pages/checkout_shipping_address/header_php.php
 ```
 #11: 'NOTIFY_HEADER_START_CHECKOUT_SHIPPING_ADDRESS'
-#56: 'NOTIFY_HEADER_END_CHECKOUT_SHIPPING_ADDRESS'
+#57: 'NOTIFY_HEADER_END_CHECKOUT_SHIPPING_ADDRESS'
 
 ```
 
@@ -1201,14 +1267,21 @@ from https://github.com/lat9/notifier_report
 
 ```
 
+#### includes/modules/pages/products_new/header_php.php
+```
+#11: 'NOTIFY_HEADER_START_PRODUCTS_NEW'
+#58: 'NOTIFY_HEADER_END_PRODUCTS_NEW', null
+
+```
+
 #### includes/modules/pages/account_edit/header_php.php
 ```
 #10: 'NOTIFY_HEADER_START_ACCOUNT_EDIT'
-#94: 'NOTIFY_NICK_CHECK_FOR_EXISTING_EMAIL', $email_address, $nick_error, $nick
-#103: 'NOTIFY_HEADER_ACCOUNT_EDIT_VERIFY_COMPLETE'
-#107: 'NOTIFY_NICK_UPDATE_EMAIL_ADDRESS', $nick, $email_address
-#152: 'NOTIFY_HEADER_ACCOUNT_EDIT_UPDATES_COMPLETE'
-#209: 'NOTIFY_HEADER_END_ACCOUNT_EDIT'
+#90: 'NOTIFY_NICK_CHECK_FOR_EXISTING_EMAIL', $email_address, $nick_error, $nick
+#99: 'NOTIFY_HEADER_ACCOUNT_EDIT_VERIFY_COMPLETE'
+#103: 'NOTIFY_NICK_UPDATE_EMAIL_ADDRESS', $nick, $email_address
+#148: 'NOTIFY_HEADER_ACCOUNT_EDIT_UPDATES_COMPLETE'
+#202: 'NOTIFY_HEADER_END_ACCOUNT_EDIT'
 
 ```
 
@@ -1222,11 +1295,11 @@ from https://github.com/lat9/notifier_report
 #### includes/modules/pages/login/header_php.php
 ```
 #10: 'NOTIFY_HEADER_START_LOGIN'
-#69: 'NOTIFY_LOGIN_BANNED'
-#85: 'NOTIFY_PROCESS_3RD_PARTY_LOGINS', $email_address, $password, $loginAuthorized
-#105: 'NOTIFY_LOGIN_SUCCESS'
-#139: 'NOTIFY_LOGIN_FAILURE'
-#151: 'NOTIFY_HEADER_END_LOGIN'
+#73: 'NOTIFY_LOGIN_BANNED'
+#89: 'NOTIFY_PROCESS_3RD_PARTY_LOGINS', $email_address, $password, $loginAuthorized
+#109: 'NOTIFY_LOGIN_SUCCESS'
+#143: 'NOTIFY_LOGIN_FAILURE'
+#155: 'NOTIFY_HEADER_END_LOGIN'
 
 ```
 
@@ -1234,7 +1307,7 @@ from https://github.com/lat9/notifier_report
 ```
 #10: 'NOTIFY_HEADER_START_CHECKOUT_PROCESS'
 #17: 'NOTIFY_CHECKOUT_PROCESS_BEFORE_CART_RESET', $insert_id
-#29: 'NOTIFY_HEADER_END_CHECKOUT_PROCESS', $insert_id
+#25: 'NOTIFY_HEADER_END_CHECKOUT_PROCESS', $insert_id
 
 ```
 
@@ -1251,31 +1324,37 @@ from https://github.com/lat9/notifier_report
 
 ```
 
+#### includes/modules/product_prev_next.php
+```
+#14: 'NOTIFY_PRODUCT_PREV_NEXT_OVERRIDE', [], $prev_next_override
+
+```
+
 #### admin/packingslip.php
 ```
-#68: 'NOTIFY_ADMIN_ORDERS_PACKINGSLIP_ADDITIONAL_DATA_TOP', $oID, $additional_content
-#166: 'NOTIFY_ADMIN_PACKINGSLIP_HEADING', '', $extra_headings
-#186: 'NOTIFY_ADMIN_PACKINGSLIP_SORT_DISPLAY', $order->products, $sort_order
-#260: 'NOTIFY_ADMIN_PACKINGSLIP_DATA',  $order->products[$i]['id'], $extra_data
-#334: 'NOTIFY_ADMIN_ORDERS_PACKINGSLIP_ADDITIONAL_DATA_BOTTOM', $oID, $additional_content
+#56: 'NOTIFY_ADMIN_ORDERS_PACKINGSLIP_ADDITIONAL_DATA_TOP', $oID, $additional_content
+#154: 'NOTIFY_ADMIN_PACKINGSLIP_HEADING', '', $extra_headings
+#174: 'NOTIFY_ADMIN_PACKINGSLIP_SORT_DISPLAY', $order->products, $sort_order
+#248: 'NOTIFY_ADMIN_PACKINGSLIP_DATA',  $order->products[$i]['id'], $extra_data
+#322: 'NOTIFY_ADMIN_ORDERS_PACKINGSLIP_ADDITIONAL_DATA_BOTTOM', $oID, $additional_content
 
 ```
 
 #### admin/attributes_controller.php
 ```
-#334: 'NOTIFY_ATTRIBUTE_CONTROLLER_ADD_PRODUCT_ATTRIBUTES', $products_attributes_id
-#479: 'NOTIFY_ATTRIBUTE_CONTROLLER_UPDATE_PRODUCT_ATTRIBUTE', $attribute_id
-#492: 'NOTIFY_ATTRIBUTE_CONTROLLER_DELETE_ATTRIBUTE', ['attribute_id' => $attribute_id], $attribute_id
-#509: 'NOTIFY_ATTRIBUTE_CONTROLLER_DELETE_ALL', ['pID' => $_POST['products_filter']]
-#523: 'NOTIFY_ATTRIBUTE_CONTROLLER_DELETE_OPTION_NAME_VALUES', ['pID' => $_POST['products_filter'], 'options_id' => $_POST['products_options_id_all']]
-#681: 'NOTIFY_ATTRIBUTE_CONTROLLER_ADDITIONAL_ACTIONS_DROPDOWN_UPPER', $zc_products, $action, $products_filter, $current_category_id
-#687: 'NOTIFY_ATTRIBUTE_CONTROLLER_ADDITIONAL_ACTIONS_DROPDOWN_SUBMENU', $zc_products, $action, $products_filter, $current_category_id
+#337: 'NOTIFY_ATTRIBUTE_CONTROLLER_ADD_PRODUCT_ATTRIBUTES', $products_attributes_id
+#485: 'NOTIFY_ATTRIBUTE_CONTROLLER_UPDATE_PRODUCT_ATTRIBUTE', $attribute_id
+#498: 'NOTIFY_ATTRIBUTE_CONTROLLER_DELETE_ATTRIBUTE', ['attribute_id' => $attribute_id], $attribute_id
+#515: 'NOTIFY_ATTRIBUTE_CONTROLLER_DELETE_ALL', ['pID' => $_POST['products_filter']]
+#529: 'NOTIFY_ATTRIBUTE_CONTROLLER_DELETE_OPTION_NAME_VALUES', ['pID' => $_POST['products_filter'], 'options_id' => $_POST['products_options_id_all']]
+#695: 'NOTIFY_ATTRIBUTE_CONTROLLER_ADDITIONAL_ACTIONS_DROPDOWN_UPPER', $zc_products, $action, $products_filter, $current_category_id, $additional_actions
+#710: 'NOTIFY_ATTRIBUTE_CONTROLLER_ADDITIONAL_ACTIONS_DROPDOWN_SUBMENU', $zc_products, $action, $products_filter, $current_category_id, $additional_actions
 
 ```
 
 #### admin/product.php
 ```
-#14: 'NOTIFY_BEGIN_ADMIN_PRODUCTS', $action, $action
+#26: 'NOTIFY_BEGIN_ADMIN_PRODUCTS', $action, $action
 
 ```
 
@@ -1288,34 +1367,38 @@ from https://github.com/lat9/notifier_report
 
 #### admin/category_product_listing.php
 ```
-#308: 'NOTIFY_ADMIN_PROD_LISTING_DEFAULT_ACTION'
-#602: 'NOTIFY_ADMIN_PROD_LISTING_HEADERS_B4_QTY', '', $extra_headings
-#637: 'NOTIFY_ADMIN_PROD_LISTING_HEADERS_AFTER_QTY', '', $extra_headings
-#720: 'NOTIFY_ADMIN_PROD_LISTING_ADD_ICON_CATEGORY', $category, $additional_icons
-#792: 'NOTIFY_ADMIN_PROD_LISTING_PRODUCTS_QUERY', '', $extra_select, $extra_from, $extra_joins, $extra_ands, $order_by
-#892: 'NOTIFY_ADMIN_PROD_LISTING_DATA_B4_QTY', $product, $extra_data
-#923: 'NOTIFY_ADMIN_PROD_LISTING_DATA_AFTER_QTY', $product, $extra_data
-#936: 'NOTIFY_ADMIN_PROD_LISTING_ADD_ICON', $product, $additional_icons
+#284: 'NOTIFY_ADMIN_PROD_LISTING_DEFAULT_ACTION', $action, $clearAction
+#573: 'NOTIFY_ADMIN_PROD_LISTING_HEADERS_B4_QTY', '', $extra_headings
+#615:  'NOTIFY_ADMIN_CATEGORY_LISTING_HEADERS', [ 'categories' => $categories, 'categories_sql' => $sql, 'showing_products' => $show_prod_labels, ], $extra_headings 
+#653: 'NOTIFY_ADMIN_PROD_LISTING_HEADERS_AFTER_QTY', '', $extra_headings
+#734: 'NOTIFY_ADMIN_CATEGORY_LISTING_DATA', $category, $extra_data
+#775: 'NOTIFY_ADMIN_PROD_LISTING_ADD_ICON_CATEGORY', $category, $additional_icons
+#848: 'NOTIFY_ADMIN_PROD_LISTING_PRODUCTS_QUERY', '', $extra_select, $extra_from, $extra_joins, $extra_ands, $order_by, $extra_search_fields
+#949: 'NOTIFY_ADMIN_PROD_LISTING_DATA_B4_QTY', $product, $extra_data
+#980: 'NOTIFY_ADMIN_PROD_LISTING_DATA_AFTER_QTY', $product, $extra_data
+#993: 'NOTIFY_ADMIN_PROD_LISTING_ADD_ICON', $product, $additional_icons
+#1212: 'NOTIFY_ADMIN_PROD_LISTING_DEFAULT_INFOBOX', $action, $heading, $contents
+#1237: 'NOTIFY_ADMIN_PROD_LISTING_SKIP_ACTIONS', $current_category_id, $zc_skip_products, $zc_skip_categories, $messageSubCategories
 
 ```
 
 #### admin/admin_activity.php
 ```
-#305: 'NOTIFY_ADMIN_ACTIVITY_LOG_RESET'
+#309: 'NOTIFY_ADMIN_ACTIVITY_LOG_RESET'
 
 ```
 
 #### admin/includes/classes/class.admin.zcObserverLogEventListener.php
 ```
 #59: $this->notifier->notify('NOTIFY_ADMIN_FIRE_LOG_WRITERS', $log_data
-#194: $this->notifier->notify('NOTIFY_ADMIN_FIRE_LOG_WRITER_RESET'
-#210: 'NOTIFY_ADMIN_ACTIVITY_LOG_EVENT', $message, $severity
+#176: $this->notifier->notify('NOTIFY_ADMIN_FIRE_LOG_WRITER_RESET'
+#192: 'NOTIFY_ADMIN_ACTIVITY_LOG_EVENT', $message, $severity
 
 ```
 
 #### admin/includes/init_includes/init_sanitize.php
 ```
-#269: 'NOTIFY_ADMIN_CONFIGURATION_SPECIAL_CHARACTERS', [], $extra_configs_with_special_characters
+#271: 'NOTIFY_ADMIN_CONFIGURATION_SPECIAL_CHARACTERS', [], $extra_configs_with_special_characters
 
 ```
 
@@ -1333,7 +1416,7 @@ from https://github.com/lat9/notifier_report
 
 #### admin/includes/init_includes/init_admin_auth.php
 ```
-#71: 'NOTIFY_ADMIN_NONSUPERUSER_ACTION'
+#73: 'NOTIFY_ADMIN_NONSUPERUSER_ACTION'
 
 ```
 
@@ -1362,13 +1445,13 @@ from https://github.com/lat9/notifier_report
 
 #### admin/includes/functions/functions_help.php
 ```
-#168: 'NOTIFIER_PLUGIN_HELP_PAGE_URL_LOOKUP', $page, $help_page
+#171: 'NOTIFIER_PLUGIN_HELP_PAGE_URL_LOOKUP', $page, $help_page
 
 ```
 
 #### admin/includes/functions/general.php
 ```
-#399: 'NOTIFIER_ADMIN_ZEN_REMOVE_ORDER', array(), $order_id, $restock
+#392: 'NOTIFIER_ADMIN_ZEN_REMOVE_ORDER', array(), $order_id, $restock
 
 ```
 
@@ -1380,51 +1463,63 @@ from https://github.com/lat9/notifier_report
 
 #### admin/includes/modules/update_product.php
 ```
-#29: 'NOTIFY_MODULES_UPDATE_PRODUCT_START', ['action' => $action, 'products_id' => $products_id]
-#130: 'NOTIFY_MODULES_UPDATE_PRODUCT_END', array('action' => $action, 'products_id' => $products_id)
+#36: 'NOTIFY_MODULES_UPDATE_PRODUCT_START', ['action' => $action, 'products_id' => $products_id]
+#152: 'NOTIFY_MODULES_UPDATE_PRODUCT_END', ['action' => $action, 'products_id' => $products_id]
 
 ```
 
 #### admin/includes/modules/product_free_shipping/collect_info.php
 ```
-#209: 'NOTIFY_ADMIN_PRODUCT_COLLECT_INFO_EXTRA_INPUTS', $pInfo, $extra_product_inputs
+#221: 'NOTIFY_ADMIN_PRODUCT_COLLECT_INFO_EXTRA_INPUTS', $pInfo, $extra_product_inputs
 
 ```
 
 #### admin/includes/modules/document_general/collect_info.php
 ```
-#219: 'NOTIFY_ADMIN_PRODUCT_COLLECT_INFO_EXTRA_INPUTS', $pInfo, $extra_product_inputs
+#235: 'NOTIFY_ADMIN_PRODUCT_COLLECT_INFO_EXTRA_INPUTS', $pInfo, $extra_product_inputs
+
+```
+
+#### admin/includes/modules/collect_info.php
+```
+#221: 'NOTIFY_ADMIN_PRODUCT_COLLECT_INFO_EXTRA_INPUTS', $pInfo, $extra_product_inputs
+
+```
+
+#### admin/includes/modules/search_box.php
+```
+#57: 'NOTIFY_ADMIN_SEARCH_BOX_FORM_GROUP', '', $extra_form_group
 
 ```
 
 #### admin/includes/modules/document_product/collect_info.php
 ```
-#209: 'NOTIFY_ADMIN_PRODUCT_COLLECT_INFO_EXTRA_INPUTS', $pInfo, $extra_product_inputs
-
-```
-
-#### admin/includes/modules/product/collect_info.php
-```
-#212: 'NOTIFY_ADMIN_PRODUCT_COLLECT_INFO_EXTRA_INPUTS', $pInfo, $extra_product_inputs
+#221: 'NOTIFY_ADMIN_PRODUCT_COLLECT_INFO_EXTRA_INPUTS', $pInfo, $extra_product_inputs
 
 ```
 
 #### admin/includes/modules/copy_product_confirm.php
 ```
-#65: 'NOTIFY_MODULES_COPY_PRODUCT_CONFIRM_DUPLICATE_FIELDS', $product, $separately_updated_fields, $casted_fields
-#204: 'NOTIFY_MODULES_COPY_TO_CONFIRM_DUPLICATE', compact('products_id', 'dup_products_id')
+#73: 'NOTIFY_MODULES_COPY_PRODUCT_CONFIRM_DUPLICATE_FIELDS', $product, $separately_updated_fields, $casted_fields
+#230: 'NOTIFY_MODULES_COPY_TO_CONFIRM_DUPLICATE', compact('products_id', 'dup_products_id')
 
 ```
 
 #### admin/includes/modules/product_music/collect_info.php
 ```
-#242: 'NOTIFY_ADMIN_PRODUCT_COLLECT_INFO_EXTRA_INPUTS', $pInfo, $extra_product_inputs
+#268: 'NOTIFY_ADMIN_PRODUCT_COLLECT_INFO_EXTRA_INPUTS', $pInfo, $extra_product_inputs
 
 ```
 
 #### admin/includes/modules/copy_product.php
 ```
-#49: 'NOTIFY_ADMIN_PRODUCT_COPY_TO_ATTRIBUTES', $pInfo, $contents
+#68: 'NOTIFY_ADMIN_PRODUCT_COPY_TO_ATTRIBUTES', $pInfo, $contents
+
+```
+
+#### admin/home.php
+```
+#40: 'NOTIFY_ADMIN_FOOTER_END'
 
 ```
 
@@ -1435,21 +1530,39 @@ from https://github.com/lat9/notifier_report
 
 ```
 
+#### admin/manufacturers.php
+```
+#31: 'NOTIFY_ADMIN_MANUFACTURERS_INSERT_UPDATE', ['action' => $action, 'manufacturers_id' => $manufacturers_id ?? 0], $sql_data_array
+#141: 'NOTIFY_ADMIN_MANUFACTURERS_DEFAULT_ACTION', ['action' => $action]
+#190: 'NOTIFY_ADMIN_MANUFACTURERS_EXTRA_COLUMN_HEADING', [], $extra_headings
+#264: 'NOTIFY_ADMIN_MANUFACTURERS_EXTRA_COLUMN_DATA', $manufacturer, $extra_data
+#325: 'NOTIFY_ADMIN_MANUFACTURERS_NEW', '', $additional_contents
+#371: 'NOTIFY_ADMIN_MANUFACTURERS_EDIT', $mInfo, $additional_contents
+
+```
+
 #### admin/invoice.php
 ```
-#75: 'NOTIFY_ADMIN_ORDERS_INVOICE_ADDITIONAL_DATA_TOP', $oID, $additional_content
-#173: 'NOTIFY_ADMIN_INVOICE_HEADING_B4_TAX', '', $extra_headings
-#214: 'NOTIFY_ADMIN_INVOIVE_HEADERS_AFTER_TAX', '', $extra_headings
-#235: 'NOTIFY_ADMIN_INVOICE_SORT_DISPLAY', $order->products, $sort_order
-#320: 'NOTIFY_ADMIN_INVOICE_DATA_B4_TAX',  $order->products[$i]['id'], $extra_data
-#376: 'NOTIFY_ADMIN_INVOICE_DATA_AFTER_TAX', $order->products[$i]['id'], $extra_data
-#466: 'NOTIFY_ADMIN_ORDERS_INVOICE_ADDITIONAL_DATA_BOTTOM', $oID, $additional_content
+#60: 'NOTIFY_ADMIN_ORDERS_INVOICE_ADDITIONAL_DATA_TOP', $oID, $additional_content
+#158: 'NOTIFY_ADMIN_INVOICE_HEADING_B4_TAX', '', $extra_headings
+#199: 'NOTIFY_ADMIN_INVOIVE_HEADERS_AFTER_TAX', '', $extra_headings
+#220: 'NOTIFY_ADMIN_INVOICE_SORT_DISPLAY', $order->products, $sort_order
+#305: 'NOTIFY_ADMIN_INVOICE_DATA_B4_TAX',  $order->products[$i]['id'], $extra_data
+#361: 'NOTIFY_ADMIN_INVOICE_DATA_AFTER_TAX', $order->products[$i]['id'], $extra_data
+#451: 'NOTIFY_ADMIN_ORDERS_INVOICE_ADDITIONAL_DATA_BOTTOM', $oID, $additional_content
 
 ```
 
 #### admin/whos_online.php
 ```
 #206: 'ADMIN_WHOSONLINE_IP_LINKS', $item, $additional_ipaddress_links, $whois_url
+
+```
+
+#### admin/notifier_report.php
+```
+#46: // Determine if the current line contains a '->notify', continuing if not. // $next_pos = strpos($lines[$i], '->notify'
+#71: '', '', '', '$GLOBALS[\'zco_notifier\']->notify(', '',
 
 ```
 
@@ -1460,13 +1573,14 @@ from https://github.com/lat9/notifier_report
 #156: 'NOTIFY_ADMIN_EZPAGES_UPDATE_LANG_UPDATE', array('pages_id' => (int)$pages_id, 'languages_id' => $language_id), $sql_data_array
 #268: 'NOTIFY_ADMIN_EZPAGES_NEW', '', $parameters
 #342: 'NOTIFY_ADMIN_EZPAGES_FORM_FIELDS', $ezInfo, $extra_page_inputs
-#720: 'NOTIFY_ADMIN_EZPAGES_EXTRA_ACTION_ICONS', $page, $extra_action_icons
+#510: 'NOTIFY_ADMIN_EZPAGES_MENU_LEGEND', [], $extra_legends
+#727: 'NOTIFY_ADMIN_EZPAGES_EXTRA_ACTION_ICONS', $page, $extra_action_icons
 
 ```
 
 #### admin/coupon_admin.php
 ```
-#106: 'ADMIN_COUPON_CODE_EMAILED_TO_CUSTOMER', $coupon_result->fields['coupon_code'], $item['customers_email_address']
+#114: 'ADMIN_COUPON_CODE_EMAILED_TO_CUSTOMER', $coupon_result->fields['coupon_code'], $item['customers_email_address']
 
 ```
 
@@ -1480,48 +1594,48 @@ from https://github.com/lat9/notifier_report
 
 #### admin/customers.php
 ```
-#190: 'NOTIFY_ADMIN_CUSTOMERS_UPDATE_VALIDATE', array(), $error
-#259: 'NOTIFY_ADMIN_CUSTOMERS_CUSTOMER_UPDATE', $customers_id, $sql_data_array
-#326:  'NOTIFY_ADMIN_CUSTOMERS_B4_ADDRESS_UPDATE', array('customers_id' => $customers_id, 'address_book_id' => $default_address_id), $sql_data_array 
-#350:  'NOTIFY_ADMIN_CUSTOMER_UPDATE', (int)$customers_id, $default_address_id, $sql_data_array 
-#442: 'NOTIFIER_ADMIN_ZEN_CUSTOMERS_DELETE_CONFIRM', array('customers_id' => $customers_id) 
-#686: 'NOTIFY_ADMIN_CUSTOMERS_CUSTOMER_EDIT', $cInfo, $additional_fields
-#1316:  'NOTIFY_ADMIN_CUSTOMERS_LISTING_HEADER', array(), $additional_headings 
-#1467:  'NOTIFY_ADMIN_CUSTOMERS_LISTING_NEW_FIELDS', array(), $new_fields, $disp_order 
-#1590:  'NOTIFY_ADMIN_CUSTOMERS_LISTING_ELEMENT', $customer, $additional_columns 
-#1823:  'NOTIFY_ADMIN_CUSTOMERS_PLACE_ORDER_BUTTON', $cInfo, $contents, $place_order_override 
-#1867: 'NOTIFY_ADMIN_CUSTOMERS_MENU_BUTTONS', $cInfo, $contents
-#1920:  'NOTIFY_ADMIN_CUSTOMERS_MENU_BUTTONS_END', (isset($cInfo) ? $cInfo : new stdClass), $contents 
+#181: 'NOTIFY_ADMIN_CUSTOMERS_UPDATE_VALIDATE', [], $error
+#258: 'NOTIFY_ADMIN_CUSTOMERS_CUSTOMER_UPDATE', $customers_id, $sql_data_array
+#346:  'NOTIFY_ADMIN_CUSTOMERS_B4_ADDRESS_UPDATE', ['customers_id' => $customers_id, 'address_book_id' => $default_address_id], $sql_data_array 
+#370:  'NOTIFY_ADMIN_CUSTOMER_UPDATE', $customers_id, $default_address_id, $sql_data_array 
+#464: 'NOTIFIER_ADMIN_ZEN_CUSTOMERS_DELETE_CONFIRM', ['customers_id' => $customers_id]
+#709: 'NOTIFY_ADMIN_CUSTOMERS_CUSTOMER_EDIT', $cInfo, $additional_fields
+#1367: 'NOTIFY_ADMIN_CUSTOMERS_LISTING_HEADER', [], $additional_headings
+#1579:  'NOTIFY_ADMIN_CUSTOMERS_LISTING_NEW_FIELDS', [], $new_fields, $disp_order 
+#1700:  'NOTIFY_ADMIN_CUSTOMERS_LISTING_ELEMENT', array_merge($result, $customer), $additional_columns, $customer 
+#1991:  'NOTIFY_ADMIN_CUSTOMERS_PLACE_ORDER_BUTTON', $cInfo, $contents, $place_order_override 
+#2034: 'NOTIFY_ADMIN_CUSTOMERS_MENU_BUTTONS', $cInfo, $contents
+#2140: 'NOTIFY_ADMIN_CUSTOMERS_MENU_BUTTONS_END', $cInfo ?? new stdClass, $contents
 
 ```
 
 #### admin/orders.php
 ```
-#80: 'NOTIFY_ADMIN_ORDER_PREDISPLAY_HOOK', $oID, $action
-#243: 'NOTIFY_ADMIN_ORDERS_UPDATE_ORDER_START', $oID
-#392: 'NOTIFY_ADMIN_ORDERS_DEFAULT_ACTION', $oID, $order, $action
-#432: 'NOTIFY_ADMIN_ORDERS_HEADING_TITLE', ['action' => $action, 'order_exists' => $order_exists, 'oID' => $oID], $heading_title, $extra_top_content
-#508: 'NOTIFY_ADMIN_ORDERS_EDIT_BEGIN', $oID, $order
-#556: 'NOTIFY_ADMIN_ORDERS_UPPER_BUTTONS', $oID, $left_side_buttons, $right_side_buttons
-#598: 'NOTIFY_ADMIN_ORDERS_ADDRESS_FOOTERS', 'customer', $address_footer_suffix, $order->customer
-#621: 'ADMIN_ORDERS_IP_LINKS', $lookup_ip, $whois_url
-#648: 'NOTIFY_ADMIN_ORDERS_ADDRESS_FOOTERS', 'delivery', $address_footer_suffix, $order->delivery
-#667: 'NOTIFY_ADMIN_ORDERS_ADDRESS_FOOTERS', 'billing', $address_footer_suffix, $order->billing
-#734: <?php 'NOTIFY_ADMIN_ORDERS_PAYMENTDATA_COLUMN2', $oID, $order ?>
-#866: 'NOTIFY_ADMIN_ORDERS_CONTENT_UNDER_PRODUCTS', ['oID' => $oID], $extra_content
-#898: 'NOTIFY_ADMIN_ORDERS_STATUS_HISTORY_EXTRA_COLUMN_HEADING', [], $extra_headings
-#952: 'NOTIFY_ADMIN_ORDERS_STATUS_HISTORY_EXTRA_COLUMN_DATA', $orders_history->fields, $extra_data
-#989: 'NOTIFY_ADMIN_ORDERS_AFTER_STATUS_LISTING', $oID, $additional_content
-#1013: 'NOTIFY_ADMIN_ORDERS_ADDL_HISTORY_INPUTS', []
-#1035: 'NOTIFY_ADMIN_ORDERS_EXTRA_STATUS_INPUTS', $order, $extra_status_inputs
-#1083: 'NOTIFY_ADMIN_ORDERS_EDIT_BUTTONS', $oID, $order, $extra_buttons
-#1113: 'NOTIFY_ADMIN_ORDERS_MENU_LEGEND', [], $extra_legends
-#1177: 'NOTIFY_ADMIN_ORDERS_LIST_EXTRA_COLUMN_HEADING', [], $extra_headings
-#1242: 'NOTIFY_ADMIN_ORDERS_SEARCH_PARMS', $keywords, $search, $search_distinct, $new_fields, $new_table, $order_by
-#1305: 'NOTIFY_ADMIN_ORDERS_SHOW_ORDER_DIFFERENCE', [], $orders->fields, $show_difference, $extra_action_icons
-#1385: 'NOTIFY_ADMIN_ORDERS_LIST_EXTRA_COLUMN_DATA', ($oInfo ?? []), $orders->fields, $extra_data
-#1461: 'NOTIFY_ADMIN_ORDERS_MENU_BUTTONS', $oInfo, $contents
-#1539: 'NOTIFY_ADMIN_ORDERS_MENU_BUTTONS_END', ($oInfo ?? []), $contents
+#74: 'NOTIFY_ADMIN_ORDER_PREDISPLAY_HOOK', $oID, $action
+#237: 'NOTIFY_ADMIN_ORDERS_UPDATE_ORDER_START', $oID
+#386: 'NOTIFY_ADMIN_ORDERS_DEFAULT_ACTION', $oID, $order, $action
+#426: 'NOTIFY_ADMIN_ORDERS_HEADING_TITLE', ['action' => $action, 'order_exists' => $order_exists, 'oID' => $oID], $heading_title, $extra_top_content
+#501: 'NOTIFY_ADMIN_ORDERS_EDIT_BEGIN', $oID, $order
+#549: 'NOTIFY_ADMIN_ORDERS_UPPER_BUTTONS', $oID, $left_side_buttons, $right_side_buttons
+#593: 'NOTIFY_ADMIN_ORDERS_ADDRESS_FOOTERS', 'customer', $address_footer_suffix, $order->customer
+#625: 'ADMIN_ORDERS_IP_LINKS', $lookup_ip, $whois_url
+#664: 'NOTIFY_ADMIN_ORDERS_ADDRESS_FOOTERS', 'delivery', $address_footer_suffix, $order->delivery
+#697: 'NOTIFY_ADMIN_ORDERS_ADDRESS_FOOTERS', 'billing', $address_footer_suffix, $order->billing
+#814: <?php 'NOTIFY_ADMIN_ORDERS_PAYMENTDATA_COLUMN2', $oID, $order ?>
+#986: 'NOTIFY_ADMIN_ORDERS_CONTENT_UNDER_PRODUCTS', ['oID' => $oID], $extra_content
+#1018: 'NOTIFY_ADMIN_ORDERS_STATUS_HISTORY_EXTRA_COLUMN_HEADING', [], $extra_headings
+#1072: 'NOTIFY_ADMIN_ORDERS_STATUS_HISTORY_EXTRA_COLUMN_DATA', $orders_history->fields, $extra_data
+#1109: 'NOTIFY_ADMIN_ORDERS_AFTER_STATUS_LISTING', $oID, $additional_content
+#1133: 'NOTIFY_ADMIN_ORDERS_ADDL_HISTORY_INPUTS', []
+#1155: 'NOTIFY_ADMIN_ORDERS_EXTRA_STATUS_INPUTS', $order, $extra_status_inputs
+#1203: 'NOTIFY_ADMIN_ORDERS_EDIT_BUTTONS', $oID, $order, $extra_buttons
+#1233: 'NOTIFY_ADMIN_ORDERS_MENU_LEGEND', [], $extra_legends
+#1297: 'NOTIFY_ADMIN_ORDERS_LIST_EXTRA_COLUMN_HEADING', [], $extra_headings
+#1362: 'NOTIFY_ADMIN_ORDERS_SEARCH_PARMS', $keywords, $search, $search_distinct, $new_fields, $new_table, $order_by
+#1425: 'NOTIFY_ADMIN_ORDERS_SHOW_ORDER_DIFFERENCE', [], $orders->fields, $show_difference, $extra_action_icons
+#1511: 'NOTIFY_ADMIN_ORDERS_LIST_EXTRA_COLUMN_DATA', ($oInfo ?? []), $orders->fields, $extra_data
+#1590: 'NOTIFY_ADMIN_ORDERS_MENU_BUTTONS', $oInfo, $contents
+#1668: 'NOTIFY_ADMIN_ORDERS_MENU_BUTTONS_END', ($oInfo ?? []), $contents
 
 ```
 
@@ -1529,32 +1643,3 @@ from https://github.com/lat9/notifier_report
 ```
 #182: 'OPTIONS_NAME_MANAGER_DELETE_OPTION', ['option_id' => $option_id, 'options_values_id' => (int)$remove_option_value['products_options_values_id']]
 #301: 'OPTIONS_NAME_MANAGER_UPDATE_OPTIONS_VALUES_DELETE', [ 'products_id' => $all_update_product['products_id'], 'options_id' => $all_options_value['products_options_id'], 'options_values_id' => $all_options_value['products_options_values_id'] ] 
-
-```
-
-#### notifier_report.php
-```
-#46: // Determine if the current line contains a '->notify', continuing if not. // $next_pos = strpos($lines[$i], '->notify'
-#71: '', '', '', '$GLOBALS[\'zco_notifier\']->notify(', '',
-
-```
-
-#### not_for_release/testFramework/Unit/testsNotifiers/NotifierUpdateHandlersTest.php
-```
-#30: $this->base->notify('NOTIFY_TEST_SNAKE_CASE', null, $testVar
-#34: $this->base->notify('NOTIFY_TEST_CAMEL_CASE', null, $testVar
-#38: $this->base->notify('NOTIFY_TEST_UPDATE', null, $testVar
-
-```
-
-#### not_for_release/testFramework/Support/zcNotifierTraitAliasTestObject.php
-```
-#13: 'NOTIFY_ORDER_CART_SUBTOTAL_CALCULATE'
-#20: 'NOTIFIYFOO_ORDER_CART_SUBTOTAL_CALCULATE'
-
-```
-
-#### not_for_release/testFramework/Support/zcNotifierBaseAliasTestObject.php
-```
-#10: 'NOTIFY_ORDER_CART_SUBTOTAL_CALCULATE'
-#17: 'NOTIFIYFOO_ORDER_CART_SUBTOTAL_CALCULATE'
