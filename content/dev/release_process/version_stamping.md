@@ -9,7 +9,7 @@ changed in the release.
 
 Those actions are 
 
- + Update the copyright year in the header of the fie to the current year.
+ + Update the copyright year in the header of the file to the current year.
  + Add/Update the details of what release the file was added/modified
  + Create a list of files that were added/deleted or modified and sort into those sections.
 
