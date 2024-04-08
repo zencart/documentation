@@ -13,8 +13,6 @@ It will notify a shop owner if a new release is available.
 
 You need to have login access to https://servermanager.zen-cart.com/
 
-![Server Manager](/images/sm_dashboard.png)
-
 and then access the `Version Manager > Versions` menu.
 
 We can then create a new release by clicking the "New Version" button.
