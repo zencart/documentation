@@ -65,6 +65,12 @@ Here's what should be in these files for version 1.5.8a:
 
 There are other version related updates to do, but they're not part of the build, so they are detailed in [post release tasks](/dev/release_process/post_release/).
 
+## For Major Releases - Update the Implementation Guide
+
+The implementation guide (`docs/implementation-guide.pdf`) is part of the build and should be updated before the build begins.  See [Implementation Guide](/dev/release_process/implementation_guide/). 
+
+This is mentioned on the next page as well as a reminder, since it's easy to forget. 
+
 ## For Major Releases - set the PHP Version range
 
 Note: The actual PHP version we "support" is nowadays determined by what Laravel version we integrate. And that can be found in the `laravel` directory's `composer.json` file. Then translate it from "8.0.2" to "80002":   8.0.2 = 08.00.02 = 80002

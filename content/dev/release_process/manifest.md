@@ -11,11 +11,15 @@ The manifest api shows a hash of all files in a release.
 
 Its original purpose as to allow for doing diffs/security checks between a customized zen-cart and the original files.
 
-You need have login access to https://ping.zen-cart.com/dashboard
+You need have login access to the version server https://servermanager.zen-cart.com/dashboard
 
-![ Manifest List](/images/manifest-list.png)
+![Server Manager](/images/sm_dashboard.png)
 
-Enter the "New Manifest Tag Name" (the tag name you created in prior steps), and click the "New Version" button.
+Click `Version Manager > Manifests`
+
+Click the `New manifest` button
+
+Enter the "Tag name" (the tag name you created in prior steps), and click the "Create" button.
 
 <div style="text-align:right;" id="next">
    <a class="btn btn-lg btn-primary mr-3 mb-4" href="/dev/release_process/post_release/">
