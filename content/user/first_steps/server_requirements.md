@@ -121,7 +121,7 @@ FYI: [MySQL's Version Support Policy](https://en.wikipedia.org/wiki/MySQL#Releas
 
 ## Apache
 
-Zen Cart works primarily with Apache 2.4 or 2.2
+Zen Cart works primarily with Apache 2.4 (and the now-retired 2.2)
 
 ### Apache modules
 
