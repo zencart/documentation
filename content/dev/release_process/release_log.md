@@ -10,7 +10,7 @@ Built 07 April 2024
 
 first_hash = 6ce2a575ac2be575a067e365898c7754298db178
 
-last_hash = a05d032d388c6dfb88d695c09f83385ef96c3ff5
+last_hash = 7e9875b2ec20a124b7dc703ee32311fb6cb238a5
 
 initial version stamping commit = https://github.com/zencart/zencart/commit/7e9875b2ec20a124b7dc703ee32311fb6cb238a5
 
