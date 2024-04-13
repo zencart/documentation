@@ -68,6 +68,11 @@ A day or two after the build has been released when you're confident that all is
 
 - Take some time to review the What's New and Changed Files documents in the [release folder](/release) to be sure they are complete. 
 
+## One more documentation check:
+- Review the What’s New file for this release (Documentation site in /release/ folder.)  Be sure it doesn't have any more statements like "*New Version* has not yet been released".
+- Review the Changed Files list for this release (Documentation site in /release/ folder.)  Same checks.
+
+
 ## Post-Release Things to Consider 
 
 - Is it time to remove old versions from the plugin version list?
