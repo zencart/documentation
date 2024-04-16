@@ -8,7 +8,7 @@ weight: 1
 
 ## Quick Summary
 
-`HTTP_SERVER` is the domain name of your site (eg: `https://www.YOURSITE.com`). Visiting this URL will take customers to the "webroot" of your domain, whether or not your store is located in that spot.  
+`HTTP_SERVER` is the domain name of your site (eg: `https://www.YOURSITE.com`). Visiting this URL will take customers to the [webroot](/user/first_steps/how_do_i_install/#what-is-my-webroot) of your domain, whether or not your store is located in that spot.  
 
 `DIR_WS_CATALOG` and `DIR_WS_HTTPS_CATALOG` are the subdirectory foldernames that must be added to the URL in order to take customers to your store. 
 
