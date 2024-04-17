@@ -5,7 +5,8 @@ category: payment
 weight: 10
 ---
 
-Older payment modules like `credit card` (`cc.php`) and `CEON Manual Card` (`ceon_manual_card.php`) collect and store credit card details on your server.  This is no longer permitted by PCI rules, and  **significant fines are being levied for non-compliance.**  Under PCI 4, Web Hosting companies are now also financially responsible for breaches. They are all aware and will not allow you to run any manual credit card modules.  See [Manual Credit Card Collection](/user/payment/why_not_manual/) for more details if needed. 
+Older payment modules like `credit card` (`cc.php`) and `CEON Manual Card` (`ceon_manual_card.php`) collect and store credit card details on your server.  This is not permitted by PCI rules, and  significant fines are being levied for non-compliance.  Using non-compliant modules like this may be a violation of your terms of service agreement with your hosting company as well.
+See [Manual Credit Card Collection](/user/payment/why_not_manual/) for more details if needed. 
 
 
 ## Recommendation 1: Switch to PayPal 
