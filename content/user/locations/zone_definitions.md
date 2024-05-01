@@ -1,6 +1,6 @@
 ---
 title: Creating Zone Definitions 
-description: Recipes for common zone such as lower 48 statees 
+description: Recipes for common zone such as lower 48 states 
 category: locations 
 aliases: 
     - /user/localization/zone_definitions
