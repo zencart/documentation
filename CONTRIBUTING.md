@@ -220,7 +220,7 @@ These pages are like linked products - they ensure that someone browsing a categ
 The body of this page is just a link to the new page: 
 
 ```
-Please see [this page](/user/sideboxes/ezpages_sidebox/).
+Please see [this page](/user/ezpages/ezpages_sidebox/).
 ```
 
 Crosslink only pages should have `noindex: yes` in their front matter. 

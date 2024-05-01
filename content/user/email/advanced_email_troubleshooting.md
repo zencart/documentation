@@ -304,7 +304,7 @@ The content of the file should be just one line:
    define('EMAIL_SYSTEM_DEBUG','5');
 </pre>
 
-Then try sending another email. The SMTP handshake information will be dumped to the /logs/myDEBUG-xxxxxx.log folder/files if SMTP/SMTPAUTH is your transport method.
+Then try sending another email. The SMTP handshake information will be dumped to the `/logs/` folder as a debug log if SMTP/SMTPAUTH is your transport method.
 
 Be sure to delete that email_debug.php file when you're done testing; otherwise your store won't work properly because of the bizarre information that gets output to the screen!
 

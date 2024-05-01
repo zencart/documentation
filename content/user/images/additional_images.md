@@ -37,6 +37,14 @@ the directions above to disable additional images.
 
 The popular plugin [Image Handler](/user/images/image_plugins/) allows you to manage multiple product images. 
 
+To add images to a product using Image Handler, 
+
+- Go to Tools > Image Handler
+- On the Image Manger tab, drill down to the category and then the product 
+- Click the button "Click to add a new image to this product."
+
+Note that the product must be enabled for you to do this. 
+
 ### How will additional images appear? 
 
 Additional images are shown below the main product image, and can be clicked on the same way the main image can - see [Popups](/user/images/popups).
