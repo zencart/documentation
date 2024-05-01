@@ -65,6 +65,13 @@ If your cPanel has a "Backup" utility, scroll down to "Download a MySQL Database
 
 ![cPanel Backup](/images/cpanel_backup.png)
 
+Some cPanels have "Backup Manager" instead of "Backup."  If yours does, scroll down until you see "Other cPanel Backup Plugins" and click on "cPanel Backups."
+
+![cPanel Backup Manager](/images/cpanel_backup_manager.png)
+
+Then you'll see the screen which allows you to "Download a MySQL Database Backup" (as seen in the first image in this section).
+
+
 ### C) Using the Backup MySQL Plugin 
 
 On hosts that permit the use of `exec()`, you can use the 
