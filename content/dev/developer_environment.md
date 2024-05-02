@@ -15,7 +15,7 @@ weight: 10
 
 Line-endings in the github repo are (or are expected to be) `LF`.
 
-Zen Cart uses [PSR-2 formatting](https://www.php-fig.org/psr/psr-2/) standards for "new" code.
+Zen Cart uses [PSR-12 formatting](https://www.php-fig.org/psr/psr-12/) standards for "new" code.
 
 OLDER code uses a "modified" PSR-2 which embraces "2 spaces" for indentation, and often leaves the "opening curly brace" of classes and functions on the prior line, instead of starting on a new line.
 
