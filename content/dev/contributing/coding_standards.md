@@ -210,7 +210,19 @@ If possible, do this:
 ```
 
 ## PHP Short Echo Tags 
-At this time, PHP Short Echo Tags (`<?=` in lieu of `<?php echo`) are not preferred. 
+PHP Short Echo Tags (`<?=` in lieu of `<?php echo`) are allowed. In such cases you may skip the closing semi-colon.
+
+## PHP Semi-colon
+The closing semi-colon for a PHP statement should be included: the only exception is "echo" statements.
+
+Simple reference:
+
+|statement|standard|
+|-----|-----|
+|`<=` | may/should end without semicolon.|
+|`<?php echo` | may end without semicolon.|
+|`<php` | must end with semicolon.|
+
 
 ## More Information
 More information is provided in [PHP Idioms](/dev/code/php_idioms/).
