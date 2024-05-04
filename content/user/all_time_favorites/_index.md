@@ -57,6 +57,8 @@ Once you know [what Zen Cart is](/user/about_us/what_is_zen_cart/), you might wa
 
 * Multiple Images per Product - Learn how to configure [multiple product images](/user/images/additional_images/).
 
+* Multiple versions of PHP - How to run [multiple versions of PHP](/user/upgrading/multiple_php_versions/) on a single server.
+
 * PayPal Standard (IPN) - why [you shouldn't use PayPal Standard](/user/payment/paypal_standard/) and how to [switch to PayPal Express](/user/payment/paypal_express_checkout/). 
 
 * [Release History for Zen Cart](/user/about_us/release_history/) - Timeline of when each version was released with links to release notes.  (See also [Security Patches](/user/about_us/security_releases/)). 
