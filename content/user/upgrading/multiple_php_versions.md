@@ -84,3 +84,11 @@ define('DIR_WS_HTTPS_CATALOG', '/');
 
 since you've put the files in the `test` folder just above webroot, rather than a subfolder under `test` (even if your live store is in a subfolder). 
 
+## Checking your Installation
+
+1. Login to your admin, then go to the [Version](/user/admin_pages/tools/server_info/) page. Check that the configuration you see matches your expectations. 
+
+- PHP Version (can be updated in cPanel's MultiPHP Manager)
+- PHP Memory Limit (can be updated in cPanel's MultiPHP INI Editor)
+
+2. Place an order and then check the `/logs` folder to be sure everything is ok.  

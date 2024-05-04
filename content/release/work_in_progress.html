@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<!-- This document is INTENTIONALLY in HTML (not Markdown) so that its contents
+    may be merged into a release notes file (which are all HTML documents). 
+-->
 <html lang="en">
 <!--
     /**
@@ -37,8 +40,49 @@
         </div>
     </section> <!-- End pageHeader //-->
     
+
+    <br><br>
+    <font color="red"><b>PLEASE NOTE: The builds listed below have not yet been released, and this document is a work in progress.</b></font>
+
+    
+    <section id="whatsNew">
+        <div>
+            <h1>
+                What's Next ... Upcoming changes from prior versions
+            </h1>
+
+            <h2>v2.1.x</h2>
+                The fixes/changes targeted for v2.1.x include:  
+                <br><br>
+            <ul>
+                <li>Core: Shipping modules now inherit from ZenShipping base class to reduce code duplication and ensure consistency.</li>
+                <li>Core: The <a href="https://vinosdefrutastropicales.com/product_extra_files/options_stock/readme.html">Products Options Stock</a> plugin will be integrated with Zen Cart. </li>
+                <li>Core: <a href="https://github.com/zencart/zencart/discussions/6428">Child Templates</a> will be supported, so that storeowners can more easily determine what has been changed from the base release of a template. (This may slip to a follow on release depending on schedules.)</li>
+                <li>Admin: The Zen Cart admin will be secured with <a href="https://github.com/zencart/zencart/pull/6350">Multi Factor Authentication</a>. </li>
+                <li>Admin: The <a href="/dev/code/template_settings/">template settings file</a> may now be viewed from your admin page.</li>
+            </ul>
+            <br><br>
+
+            <h2>v2.0.1</h2>
+                The fixes/changes targeted for v2.0.1 include:  
+                <br><br>
+
+            <ul>
+                <li>Admin: NOTIFY_ADMIN_CUSTOMERS_LISTING_ELEMENT notifier enhanced to pass entire customer query result.</li>
+                <li>Core: Many PHP8 logs have been fixed.  If you are getting debug logs, please apply this update..</li>
+                <li>Storefront: New Products listing now shows new products as configured.</li>
+                <li>Storefront: Shopping Cart class in_cart_check() function fixed.</li>
+            </ul>
+
+            <div class="back-to-top">
+                ^^ <a href="#pageHeader">Back to Top</a> ^^
+            </div>
+        </div>
+    </section> <!-- End whatsNew //-->
+
+    <hr>
+
     <section id="zenTeamMessage">
-        <h1>Welcome to Zen Cart&trade;</h1>    
         <div class="alert add-shadow">
             <em>Dear Zen Cart User</em>,
             <p>
@@ -57,39 +101,6 @@
             </p>
         </div>
     </section> <!-- End zenTeamMessage //-->
-
-    <br><br>
-    <font color="red"><b>PLEASE NOTE: The builds listed below have not yet been released, and this document is a work in progress.</b></font>
-
-    
-    <section id="whatsNew">
-        <div>
-            <h1>
-                What's Upcoming ... Changes from prior versions
-            </h1>
-
-            <h2>
-                The fixes/changes targeted for v2.1.x include:  
-            </h2>
-            <ul>
-                <li>Core: Shipping modules now inherit from ZenShipping base class to reduce code duplication and ensure consistency.</li>
-            </ul>
-            <br><br>
-            <h2>
-                The fixes/changes targeted for v2.0.1 include:  
-            </h2>
-            <ul>
-                <li>Admin: NOTIFY_ADMIN_CUSTOMERS_LISTING_ELEMENT notifier enhanced to pass entire customer query result.</li>
-                <li>Core: Many PHP8 logs have been fixed.  If you are getting debug logs, please apply this update..</li>
-                <li>Storefront: New Products listing now shows new products as configured.</li>
-                <li>Storefront: Shopping Cart class in_cart_check() function fixed.</li>
-            </ul>
-
-            <div class="back-to-top">
-                ^^ <a href="#pageHeader">Back to Top</a> ^^
-            </div>
-        </div>
-    </section> <!-- End whatsNew //-->
     
     <section id="helpSupport">
         <div>
@@ -127,6 +138,7 @@
             </p>
         </div>
     </section> <!-- End footerBlock //-->
+
 
 </div>
 </body>

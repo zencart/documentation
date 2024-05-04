@@ -15,6 +15,7 @@ It also allows template authors to distribute configuration settings with their 
 
 > NOTE: This can be used in tandem with the `init_site_specific_non_db_settings.php` feature available since Zen Cart v1.5.8 - see [Site Specific Overrides](/user/customizing/site_specific_overrides/).
 
+Starting in Zen Cart 2.1.0, the template settings file may be viewed from your admin page.
 
 ## Requirements
 

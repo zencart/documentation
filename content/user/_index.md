@@ -17,3 +17,5 @@ Quick Links: &nbsp;
 &nbsp; [Release Docs](/release/) 
 
 What's New with Zen Cart?  [Click here to find out](/user/about_us/whats_new/).
+
+What's Next for Zen Cart? [Click here to find out](/release/work_in_progress.html).
