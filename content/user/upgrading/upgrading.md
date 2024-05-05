@@ -1,5 +1,5 @@
 ---
-title: Upgrading - Quick Reference
+title: Upgrading - Reference Guide
 description: Summary of Key Points For Upgrading
 category: Upgrading 
 weight: 1
