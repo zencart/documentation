@@ -5,7 +5,7 @@ category: Upgrading
 weight: 7
 ---
 
-This guide assumes for simplicity that you have Zen Cart installed in a folder called `store`.  This configuration (placing your store in a subdirectory) allows you to run your old store and your new store side by side for testing before going live.  If you didn't install your current store in a [subfolder](/user/installing/subfolder/), you can still install your new store in a subfolder for testing, and then remove the subfolder and install at the top level when it's time to go live.  
+This guide assumes for simplicity that you have Zen Cart installed in a folder.   The folder will likely be called something like `store` but in the interests of clarity, we'll call it `old_store`.  This configuration (placing your store in a subdirectory) allows you to run your old store and your new store side by side for testing before going live.  If you didn't install your current store in a [subfolder](/user/installing/subfolder/), you can still install your new store in a subfolder for testing, and then remove the subfolder and install at the top level when it's time to go live.  
 
 Note that if you are installing a test version of your cart that uses a different version of PHP than your live site, see [Multiple PHP Versions](/user/upgrading/multiple_php_versions/) for instructions, since the procedure is a little different. 
 
@@ -62,7 +62,7 @@ When you're done with your testing, remove the `demo` directory and the `demo` d
 # 1\. Preparation
 
 ## Make backups
-Make a [full backup of your live database (dump to SQL file)](/user/running/backup/#b-backup-your-database). Store this file on your PC for later reference.
+Make a [full backup of your live database (dump to SQL file)](/user/running/backup/#b-backup-your-database). Save this file on your PC for later reference.
 
 Make a [full backup of your live site files (ftp to your PC and zip it up for safe-keeping)](/user/running/backup/#a-backup-your-files). 
 
@@ -70,9 +70,9 @@ Make a [full backup of your live site files (ftp to your PC and zip it up for sa
 
 On your PC create a directory/folder to hold your store's "old" files. 
 
-For this document we will assume you named this folder `store`. 
+For this document we will assume you named this folder `old_store`. 
 
-Remember that backup you just made? Place an unzipped copy of your website's files in this `store` directory.
+Remember that backup you just made? Place an unzipped copy of your website's files in this `old_store` directory.
 
 
 ## Build a list of all your existing customizations
@@ -108,12 +108,12 @@ Now let's find out the differences/customizations between your site and the orig
 
 Unzip a copy of the original Zen Cart files for the version you _originally installed_ or last upgraded from (ie: perhaps v1.3.9 or even 1.5.1). This should be placed in a separate working folder on your PC (perhaps `zen_orig`).
 
-Run a tool like [WinMerge](https://winmerge.org/) to compare the "Original" Zen Cart files in `zen_orig` against your current live store files in `store`. 
+Run a tool like [WinMerge](https://winmerge.org/) to compare the "Original" Zen Cart files in `zen_orig` against your current live store files in `old_store`. 
 
-So, in WinMerge, in 2-way-compare mode, you would open the `zen_orig` directory in the left column, and the `store` directory in the right column.
-This way, in the right column you'll see all the ways in which your store's files are different from the original files on the left.
+So, in WinMerge, in 2-way-compare mode, you would open the `zen_orig` directory in the left column, and the `old_store` directory in the right column.
+This way, in the right column you'll see all the ways in which your live store's files are different from the original files on the left.
 
-> This document is written with the assumption that you're using only a 2-way-capable comparison tool. If you have a 3-way compare tool (WinMerge can do that) things will go much faster: column 1 is `zc_orig`, column 2 is `store` and column 3 is `zc_new` ... and you merge (copy) any changes between columns 2-3 into column 2 where they don't clash with column 1. Anything changed between columns 1-2 is a customization you made or a plugin has made, so you want to keep that or at least merge it with whatever is new in column 3 if anything. This sounds complicated when just reading it in words, but in practice it becomes visually quite intuitive.
+> This document is written with the assumption that you're using only a 2-way-capable comparison tool. If you have a 3-way compare tool (WinMerge can do that) things will go much faster: column 1 is `zc_orig`, column 2 is `old_store` and column 3 is `zc_new` ... and you merge (copy) any changes between columns 2-3 into column 2 where they don't clash with column 1. Anything changed between columns 1-2 is a customization you made or a plugin has made, so you want to keep that or at least merge it with whatever is new in column 3 if anything. This sounds complicated when just reading it in words, but in practice it becomes visually quite intuitive.
 
 
 Here we are taking a list of how your actual site is customized vs the original files.
@@ -132,7 +132,7 @@ Here are some examples of how WinMerge will allow you to see differences in file
 #### Types of File Differences
 There will be many differences:
 
-- language defines for displayed text - those will be simple to carry forward.
+- language defines for displayed text - once your language files are in the [array based format](/user/localization/158_language_files/), those will be simple to carry forward.  If you are going from define based (Zen Cart 1.5.7 or older) language files to the array based format, it's more work, and the recommendation is to start with only [basic language customizations](/user/localization/basic_158_language_customizations/).
 - actual programming/code differences -- for these you will need to make detailed notes in order to carry over those changes to the new version.
 - plugins/addons you've installed -- these often contain numerous programming changes, and may not be fully compatible with the newer Zen Cart release or a newer PHP version.  Be sure to check if there's a more up to date version of a plugin you are using during an upgrade.
 
@@ -158,15 +158,15 @@ If you have modified the structure of your database to add custom date fields, p
 
 # 2\. Execution
 
-Download and unzip the latest Zen Cart version to your PC. This will be in a 3rd directory (perhaps `store_new`), separate from the other two folders compared above (eg `store` and `zen_orig`).
+Download and unzip the latest Zen Cart version to your PC. This will be in a 3rd directory (call it `new_store`), separate from the other two folders compared above (eg `old_store` and `zen_orig`).
 
 Using the list of files you made earlier, go through each "changed" file, and re-make your changes from the old version onto the new version.
 
-> IMPORTANT: You always want to build on the latest set of Zen Cart files.  This means `store_new` contains the current version of Zen Cart, and you apply your changes to that.  **DO NOT** start with your old version and apply the changes from the latest version of Zen Cart. 
+> IMPORTANT: You always want to build on the latest set of Zen Cart files.  This means `new_store` contains the current version of Zen Cart, and you apply your changes to that.  **DO NOT** start with your old version and apply the changes from the latest version of Zen Cart. 
 
-> Clarification: here you are essentially re-building your `store` customizations onto the `store_new` directory.
+> Clarification: here you are essentially re-building your `old_store` customizations onto the `new_store` directory.
 
-- Simple language edits will be just a matter of copy-and-paste (or if you're using WinMerge you might be able to click to copy over individual customized lines).
+- Simple language edits will be just a matter of copy-and-paste of the strings you want to  use. Be cautious about the move from 1.5.7 and before define based language files and 1.5.8 and higher  [array based format](/user/localization/158_language_files/).
 
 - Programming changes in core Zen Cart files will be more difficult and require significant testing.
 
@@ -187,14 +187,14 @@ Using the list of files you made earlier, go through each "changed" file, and re
 
 - Install updated versions of plugins. This includes unzipping and moving the updated files into their respective directories, and doing any installation/upgrade steps their documentation mentions. If database updates are required too, do them. <br>
 **Also make detailed notes of these steps you take so you can re-do them on your live store when it comes time to do the real upgrade with real data.**
-Also read the plugin's upgrade documentation to note whether it says that some "old" files (from older versions of the plugin) are no longer needed. Be sure that you don't accidentally copy those old files from the old `store` dir into the `store_new`! You will want to be sure to make note of these specific files so that you can double-check the live server later after the upgrade is done to make sure you delete the necessary files there too.
+Also read the plugin's upgrade documentation to note whether it says that some "old" files (from older versions of the plugin) are no longer needed. Be sure that you don't accidentally copy those old files from the old `old_store` dir into the `new_store`! You will want to be sure to make note of these specific files so that you can double-check the live server later after the upgrade is done to make sure you delete the necessary files there too.
 
 - For any plugins/addons you are no longer using, do any uninstall instructions associated with them, including removing their files and removing any database components. If some of this can be done to your "live" site before actually going "live" then sometimes this makes the go-live step simpler.
 
 
 # 3\. Testing
 
-**Note:** As an alternative, rather than testing on your server, you can [set up a local development environment](/user/running/local_testing/) and test there. This is particularly important if your old cart version uses a PHP version that's older than the minimum version required by the new Zen Cart version.  In this case, you won't be able to run old and new side by side on the same server. 
+**Note:** As an alternative, rather than testing on your server, you can [set up a local development environment](/user/running/local_testing/) and test there. This is particularly important if your old cart version uses a PHP version that's older than the minimum version required by the new Zen Cart version.  
 
 
 
@@ -213,7 +213,7 @@ Use the backup that you just made from your live site to fill the database with 
 
 ## Prepare the configure.php files
 
-On your PC, in your `store_new` folder, copy 
+On your PC, in your `new_store` folder, copy 
 
 - `includes/dist-configure.php` to `includes/configure.php`
 - `admin/includes/dist-configure.php` to `admin/includes/configure.php`
@@ -224,7 +224,7 @@ Edit these two files and set all the parameters, using your existing live store 
 - Set `DB_SERVER_USERNAME` and `DB_SERVER_PASSWORD` to the new database user and password you created in the first step
 
 ## Upload the files to a temporary directory on your server
-Upload the files from your modified `store_new` directory on your PC (created in step 2) into a temporary directory on your server, perhaps also called `store_new`.
+Upload the files from your modified `new_store` directory on your PC (created in step 2) into a temporary directory on your server, perhaps also called `new_store`.
 
 Note that if you are installing an upgraded version of your cart that uses a different version of PHP than your live site, see [Multiple PHP Versions](/user/upgrading/multiple_php_versions/) for instructions, since the procedure is a little different. 
 
@@ -232,7 +232,7 @@ Note that if you are installing an upgraded version of your cart that uses a dif
 
 > Clarification: a couple steps earlier we created a new database in cPanel, and restored your backup database to that new database. Thus it contains a (slightly) older copy of your store's data. Here we're doing an upgrade on that data so that its structure matches what is needed for the new Zen Cart version we're testing in these steps. THIS IS NOT THE FINAL STEP, and the data is NOT THE FINAL DATA. This is only temporary for testing, but we're using a copy of your prior data as a way to test that things "work" and have a sense of confidence that the data showing up is "familiar" and "reasonable".
 
-In your browser, run `store_new/zc_install/index.php` and choose "_Upgrade_" when prompted. (Don't select "Clean Install", or you will overwrite your database.) 
+In your browser, run `new_store/zc_install/index.php` and choose "_Upgrade_" when prompted. (Don't select "Clean Install", or you will overwrite your database.) 
 
 ![Use the upgrade button!](/images/upgrade_button.png)
 
@@ -287,14 +287,14 @@ Same step from earlier. This is for safekeeping, and in case anything goes badly
 ### Go live
 To go live, do the following: 
 
-- look at the live `store` folder's `/includes/configure.php` file and note the DB_DATABASE name
-- rename your live `store` folder to `store_old`
-- rename `store_new` to `store`
+- look at the live `store` folder's `/includes/configure.php` file and note the `DB_DATABASE` name
+- rename your live `store` folder to `old_store`
+- rename `new_store` to `store`
 - Edit the `includes/configure.php` and `admin/includes/configure.php` files to:
-  - change the folder references from `store_new` to `store`
-  - change the DB_DATABASE name to match the OLD database
+  - change the folder references from `new_store` to `store`
+  - change the `DB_DATABASE` name to match the OLD database
 
-  > You're using the "old" DB_DATABASE name here, because you're actually going to keep using the REAL database, so you don't lose any data.
+  > You're using the "old" `DB_DATABASE` name here, because you're actually going to keep using the REAL database, so you don't lose any data.
 
 > Remember that your `configure.php` files on your server are typically set to `read-only`, and thus in order to upload these edits will require that you mark those files `read-write` before uploading.
 
@@ -319,7 +319,7 @@ If you have small problems to repair, turn "Down for maintenance" on and off aga
 
 ### Cleanup
 
-- On the server, delete your `store_old` directory. (Don't leave old stuff sitting on the server because it can lead to security issues or unexpected bad side-effects. You don't want anyone to buy something from the old site!) If you need to keep it for reference or in case you want to downgrade, be sure to rename it to include the date and something random, and set a reminder on your calendar to remove it within the next week! (Downgrading is never recommended anyway.)
+- On the server, delete your `old_store` directory. (Don't leave old stuff sitting on the server because it can lead to security issues or unexpected bad side-effects. You don't want anyone to buy something from the old site!) If you need to keep it for reference or in case you want to downgrade, be sure to rename it to include the date and something random, and set a reminder on your calendar to remove it within the next week! (Downgrading is never recommended anyway.)
 
 - Update your lists of plugins/templates/customizations that you prepared. Make sure it's thorough and that your brain will understand it next time you do an upgrade. You will thank yourself later for making sure your notes make sense.
 
@@ -342,50 +342,50 @@ Suppose you are currently running Zen Cart 1.5.1 and you want to upgrade to Zen 
 
 At a high level, these are the steps to use (we will skip over the New code familiarization step).
 
-- Download your live store files, and put them in a folder called `store`.
+- Download your live store files, and put them in a folder called `old_store`.
 - Download a fresh copy of Zen Cart 1.5.1, and put it in a folder called `zen_orig`.
-- In WinMerge compare the files in `store` to the files in `zen_orig`, noting your changes/customizations/plugins/etc.
-- Download a fresh copy of Zen Cart 1.5.6c, and put it in a folder called `store_new`. Apply the changes you found in the prior step to `store_new`.
+- In WinMerge compare the files in `old_store` to the files in `zen_orig`, noting your changes/customizations/plugins/etc.
+- Download a fresh copy of Zen Cart 1.5.6c, and put it in a folder called `new_store`. Apply the changes you found in the prior step to `new_store`.
 
-> If using a 3-way compare tool, the two bullet-points above can be combined into one, so the 3-way-compare tool can visually empower you to do the copying of changes necessary. In this case you'd open all 3: `zen_orig`, `store`, `store_new`, and copy the differences between `zen_orig` and `store` into `store_new`. As well as still upgrading all your overrides in `store_new` override subdirectories.
+> If using a 3-way compare tool, the two bullet-points above can be combined into one, so the 3-way-compare tool can visually empower you to do the copying of changes necessary. In this case you'd open all 3: `zen_orig`, `old_store`, `new_store`, and copy the differences between `zen_orig` and `old_store` into `new_store`. As well as still upgrading all your overrides in `new_store` override subdirectories.
 
-- In `store_new`, create the new configure files: 
+- In `new_store`, create the new configure files: 
     - copy `includes/dist-configure.php` to `includes/configure.php`
     - copy `admin/includes/dist-configure.php` to `admin/includes/configure.php`
-    - modify these two files, setting the values in them from your original configure files in `store`.  
-    - In each file, you want two changes: `DIR_FS_CATALOG` setting should refer to `store_new` and not `_store`, and `DB_DATABASE` should refer to a new database name, not the original one (since we're only testing at this point).
+    - modify these two files, setting the values in them from your original configure files in `old_store`.  
+    - In each file, you want two changes: `DIR_FS_CATALOG` setting should refer to `new_store` and not `old_store`, and `DB_DATABASE` should refer to a new database name, not the original one (since we're only testing at this point).
 
-- Upload `store_new` to your server.  
+- Upload `new_store` to your server.  
 - Make a fresh backup of your live database. 
 - Create a NEW database in cPanel, using the new `DB_DATABASE` name you used in the last step of updating your configuration files. Fill this database from the backup that you just made.
-- point your browser to `store_new/zc_install`, which will take you through the database update process.
+- point your browser to `new_store/zc_install`, which will take you through the database update process.
 - do any install/remove steps relevant to any addons you're adding/removing
 - [Update your PHP version](/user/upgrading/php_version/) if appropriate. 
-- test `store_new`, going through the shopping, buying and order fulfillment process.
+- test `new_store`, going through the shopping, buying and order fulfillment process.
 - When you're ready to go live, do the following: 
   - take a final backup of your live store database for safekeeping
   - In your live store, go to `Admin > Configuration > Website Maintenance`. Put the store in maintenance mode, and add your IP to the list in the `Down For Maintenance (exclude this IP-Address)` field.
-  - rename your live store folder to `store_old`.
-  - rename `store_new` to `store`.  Edit the `includes/configure.php` and `admin/includes/configure.php` files to change the `DIR_FS_CATALOG` references from `store_new` to `store`, and change the `DB_DATABASE` references back to the original database name.
+  - rename your live store folder to `old_store`.
+  - rename `new_store` to `store`.  Edit the `includes/configure.php` and `admin/includes/configure.php` files to change the `DIR_FS_CATALOG` references from `new_store` to `store`, and change the `DB_DATABASE` references back to the original database name.
   - run the `store/zc_install` process to upgrade your live database.
   - do any install/remove steps relevant to any addons you're adding/removing
   - You're now LIVE!
   - test your upgrade 
   - take your store out of maintenance mode so customers can use it again
-  - delete `store_old`
+  - delete `old_store`
 
 # Plugin Considerations
 
-In the discussions earlier on this page we assume the changes you have made are things like language file changes or maybe small code tweaks you did.  If the changes are plugins, there may be a better way than just porting the old changes forward to the new version: you can check the [Plugins Library](https://www.zen-cart.com/downloads.php) for an updated version of the plugin.  If you don't see one, you can ask on the plugin's support thread. It may be best to remove a plugin's "old" version's files before installing its new files (consult its documentation and file structure to see if much has changed), in case it's important that older files be sure to be removed.
+In the discussions earlier on this page we assume the changes you have made are things like language file changes or maybe small code tweaks you did.  If the changes are plugins, there may be a better way than just porting the old changes forward to the new version: you can check the [Plugins Library](https://www.zen-cart.com/downloads.php) for an updated version of the plugin.  If you don't see one, you can ask on the plugin's support thread. 
 
 
 # Templates
 
 When it comes to templates, if you obtained your template from the Plugins Library, the advice above applies. If your template came from a commercial vendor, you should approach that vendor and ask about an upgrade.
 
-If you are upgrading from 1.5.4 or below, you have another decision to make: Zen Cart 1.5.5 and above are designed to be used on mobile devices as well as desktop devices.  Your older template is likely not mobile friendly, so you may wish to get one that is.  The built-in [responsive classic](/user/template/other_templates/#responsive-classic-template-product-page) template introduced in v1.5.5 is a good start. 
+If you are upgrading from 1.5.4 or below, you have another decision to make: Zen Cart 1.5.5 and above are designed to be used on mobile devices as well as desktop devices.  Your older template is likely not mobile friendly, so you may wish to get one that is.  The built-in [responsive classic](/user/template/other_templates/#responsive-classic-template-product-page) template introduced in v1.5.5 is a good start.  An even better option is to use the  [Bootstrap template](/user/template/bootstrap/), which is expertly maintained and completely up to date.
 
-HOWEVER: If you are changing your template, YOU SHOULD CONSIDER **TREATING A CHANGE OF TEMPLATE AS A SEPARATE STEP** FROM YOUR UPGRADE. 
+Start with as as few template changes as possible. 
 
 > Tweaking templates "to perfection" can endlessly delay implementing an upgrade if you aren't diligent. 
 
