@@ -19,6 +19,9 @@ weight: 1
 - [Standard Upgrade](/user/upgrading/detailed_upgrading/) - preserving your customizations
 - [Database-Only Upgrade](/user/upgrading/db_only_upgrade/) - quickie upgrade if you want to start over; does not preserve customizations
 
+## Verifying your Upgrade
+- [Creating a Test Store on Your Server](https://myzencarthost.com/index.php?rp=/knowledgebase/1/Creating-a-Test-Site-with-cPanel.html) - contributed by a community member.  Requires cPanel.  This is a combination of the articles [Testing on your Server](/user/running/local_testing/#testing-on-your-server) and [Multiple PHP Versions](/user/upgrading/multiple_php_versions/).
+
 ## After Upgrading
 - [Keep Your JavaScript Scripts Updated](/user/upgrading/javascript_updates/)
 - [Should I Change My Database Character Set to UTF8?](/user/upgrading/convert_to_utf8/)
