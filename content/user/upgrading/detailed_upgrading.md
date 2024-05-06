@@ -385,7 +385,7 @@ When it comes to templates, if you obtained your template from the Plugins Libra
 
 If you are upgrading from 1.5.4 or below, you have another decision to make: Zen Cart 1.5.5 and above are designed to be used on mobile devices as well as desktop devices.  Your older template is likely not mobile friendly, so you may wish to get one that is.  The built-in [responsive classic](/user/template/other_templates/#responsive-classic-template-product-page) template introduced in v1.5.5 is a good start.  An even better option is to use the  [Bootstrap template](/user/template/bootstrap/), which is expertly maintained and completely up to date.
 
-Start with as as few template changes as possible. 
+Start with as few template changes as possible. 
 
 > Tweaking templates "to perfection" can endlessly delay implementing an upgrade if you aren't diligent. 
 
