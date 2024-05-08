@@ -125,7 +125,7 @@ The `update` method may be passed _up to_ 11 parameters:
 
 1. `&$callingClass`. This is a reference to the class in which the event occurred.  If the event is triggered by a class other than the `base` (e.g. the `order` or `shopping_cart` class), then this variable can be used to manipulate any ***public*** properties within the calling class. (eg: if the event is called from the `order` class, then inside the observer you would refer to the `order` class's `$this->info` property using `$class->info`)
 2. `$eventID`. The name of the event triggered.
-3. `$param1`.  _Read-only_ data.  The value is dependent on the `$eventID`.
+3. `$param1`.  _Read-only_ data.  The value is dependent on the `$eventID`.  Sometimes named `$paramsArray` if it's an array rather than a single value. 
 4. `&$param2` through `&$param9`.  _Updateable_ variables provided by the code triggering the event. These values are dependent on the `$eventID`.
 
 ***Note***: Instead of the generic `update()` method that fires irrespective of which eventID was triggered, you can also choose to use [event-specific update-methods](#event-specific-update-methods) to handle event-related processing.
@@ -185,6 +185,10 @@ By following a naming convention Zen Cart will both load and instantiate your Ob
 
 1. The file is in the `/includes/classes/observers` sub-directory and named like: `auto.your_plugin.php`. Note the **auto.** prefix.  All files in this directory that start with **auto.** will be included (i.e. loaded).
 2. The file defines a class named **zcObserver** + the [CamelCased](http://en.wikipedia.org/wiki/CamelCase) filename with no underscores. For example, a file named `auto.your_plugin.php` will contain a class named  `zcObserverYourPlugin`.  (For debugging assistance, a myDEBUG\*.log file will be generated if a properly-named file is loaded, but the class name doesn't conform to these rules.)
+
+```
+   class zcObserverYourPlugin extends base { 
+```
 
 **Note:** This technique will work so long as your class doesn't have any special requirements on its load point (auto-loaded classes are loaded at point `175`, after all other system dependencies are loaded). Most observers won't need to be loaded "before" all other regular dependencies, so load-point 175 is fine in most cases. If your observer needs to be loaded earlier, then don't use this special naming convention, but instead manual loading, which is described below.   An example of a notifier whose observer should not use auto loading is ZEN_GET_PRODUCTS_STOCK.  This fires from the shopping cart class, which has a load point of 80.  If you need to observe this notifier, you will want to load earlier than 80. 
 
