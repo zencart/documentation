@@ -33,7 +33,7 @@ Here are the required steps:
 
 - Go to Admin > Locations > Zones Definitions.  Press the Insert button. 
 - Enter a name (we will use "Non Continental US") and a description (Alaska and Hawaii). Press Enter
-- A new row appears with the zone name "Non Continental US." In the Infobox on the right, press the Details button. 
+- A new row appears with the zone name "Non Continental US." In the infobox on the right, press the Details button. 
 - Press Insert, and select Country = "United States" and Zone = "Alaska".  Press Insert. 
 - Press Insert, and select Country = "United States" and Zone = "Hawaii".  Press Insert. 
 - You're done!  You now have a new zone you can use anywhere Zone restriction is allowed, such as a shipping module's configuration. 

@@ -57,7 +57,7 @@ Once you have mastered this technique, you can figure out how to do it in other 
 There are other kinds of caching which can be set up server-side that you might need to check or disable during development, or your changes won't be immediately visible.  For example, 
 
 - Some hosters (notably SiteGround) run a utility called Dynamic Cache
-- CloudFlare has built-in caching 
+- [Cloudflare](/user/security/cloudflare/) has built-in caching 
 - Some sites running Securi and/or WordPress have caching 
 - [FPM](/user/running/fpm) based servers often cache pages
 
