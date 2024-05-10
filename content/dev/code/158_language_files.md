@@ -49,7 +49,7 @@ Using arrays allows for the following kinds of behavior:
 
 In the process of doing this work, the language files were reviewed for duplicates, and consolidation was done where appropriate to reduce the burden on translators.  So some constant definitions have moved or been renamed - be sure to apply your changes and customizations with this in mind.
 
-### Loading a language file from a Plugin
+### Loading a language file from a Storefront Plugin
 
 If you need to specifically include a **core** language file, logic that was used in Zen Cart 1.5.7 and before was: 
 
@@ -90,6 +90,7 @@ If the plugin is targeted at 1.5.8+ only, the code above can be simplified:
   }
 ```
 
+
 If the file to be loaded was just in `includes/languages/english/` (and not the `modules/order_total` subfolder), the changes to the code above would just be for the first two variables.  To load the file `includes/languages/english/lang.media_common.php` it would be, 
 
 ```
@@ -97,6 +98,7 @@ If the file to be loaded was just in `includes/languages/english/` (and not the 
   $folder = '/';  // end with slash 
 ```
 
+### Loading a language file from an Admin Plugin
 
 If you are loading an admin side language file, you can do something like this.
 Assume the file to 
@@ -105,10 +107,15 @@ be loaded is `admin/includes/languages/english/some-custom-file.php` in 1.5.7 an
 ```
 if (function_exists('zen_get_zcversion') && zen_get_zcversion() >= '1.5.8') { 
    $filename = 'some-custom-file.php';
-   $languageLoader->loadExtraLanguageFiles( DIR_WS_LANGUAGES, $_SESSION['language'],  $filename, '/');  
+   $languageLoader->loadExtraLanguageFiles(DIR_WS_LANGUAGES, $_SESSION['language'],  $filename, '/');  
 } else {
    require 'includes/languages/english/some-custom-file.php'; 
 }
+```
+
+If you are loading a storefront language file on the admin side, the `loadExtraLanguageFiles` first parameter must be preceded by `DIR_FS_CATALOG`, i.e. 
+```
+     $languageLoader->loadExtraLanguageFiles(DIR_FS_CATALOG . DIR_FS_CATALOG . DIR_WS_LANGUAGES,  $_SESSION['language'], $filename, $folder); 
 ```
 
 ### Handling back references within a file 
