@@ -11,7 +11,7 @@ white-space: pre-wrap !important;
 A shipping module applies a shipping cost to an order, based on some calculation method.  Each shipping module requires a minimum of two files:
 
 1. A `class` file: /includes/modules/shipping/`modulename`.php
-1. A `language` file: /includes/languages/`current_language`/modules/shipping/`modulename`.php
+1. A `language` file: /includes/languages/`current_language`/modules/shipping/`lang.modulename`.php (or simply `modulename.php` in 1.5.7 and below).
 
 The `language` file contains all the translatable language text for the module while the `class` file contains the module's processing portion.  A shipping module can include one or more `methods`.
 
