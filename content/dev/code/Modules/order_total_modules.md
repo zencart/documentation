@@ -11,7 +11,7 @@ white-space: pre-wrap !important;
 Zen Cart *order-total* modules are used to calculate (and display) sub-totals, taxes, totals and other intermediary values for an order. *Order-total* modules can also calculate discounts or other subtractions from the amount a customer owes for an order. Each module includes, at a minimum, two files:
 
 1. A `class` file: /includes/modules/order_total/`my_order_total`.php
-1. A `language` file: /includes/languages/`current_language`/modules/order_total/`my_order_total`.php
+1. A `language` file: /includes/languages/`current_language`/modules/order_total/`lang.my_order_total`.php  (or simply `my_order_total.php` in 1.5.7 and below)
 
 The `language` file contains all the translatable language text for the module while the `class` file contains the module's processing portion.
 

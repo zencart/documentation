@@ -1,9 +1,9 @@
 ---
-title: Cloning a Payment Module
+title: Cloning a Payment Module (1.5.7 and below)
 description: Building a new payment module based on an existing one 
 ---
 
-**Note:** These instructions are for Zen Cart 1.5.8 and above.  For Zen Cart 1.5.7 and below, please see [Cloning a Payment Module in 1.5.7 and below](/dev/code/modules/clone_payment_157/).
+**Note:** These instructions are for Zen Cart 1.5.7 and below.  For Zen Cart 1.5.8 and higher, please see [Cloning a Payment Module](/dev/code/modules/clone_payment/).
 
 You can create new Payment Module by making a clone of the closest matching Payment Module to what you are trying to do.
  
@@ -15,11 +15,9 @@ The code file is located in:
 `/includes/modules/payment/moneyorder.php`
   
 The language file is located in:  
-`/includes/languages/english/modules/payment/lang.moneyorder.php`
+`/includes/languages/english/modules/payment/moneyorder.php`
   
-To clone this module, for example, to `venmo.php` you would:
-- copy `moneyorder.php` to `venmo.php`
-- copy `lang.moneyorder.php` to `lang.venmo.php`
+To clone this module, for example, to `venmo.php` you would copy the two `moneyorder.php` files to `venmo.php` 
 
 **Note:** Be sure the filename you choose does not have an underscore (`_`) in it.
   
@@ -52,8 +50,6 @@ $this->code = 'venmo';
 ...
 $this->title = MODULE_PAYMENT_VENMO_TEXT_TITLE;
 ```
-
-Be sure to make this change in the `remove()` function as well.
 
 These plugins might also help: 
 * [Optional Payment Method](https://www.zen-cart.com/downloads.php?do=file&id=1930) 
