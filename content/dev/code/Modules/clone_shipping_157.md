@@ -1,9 +1,9 @@
 ---
-title: Cloning a Shipping Module
+title: Cloning a Shipping Module (1.5.7 and below)
 description: Building a new shipping module based on an existing one 
 ---
 
-**Note:** These instructions are for Zen Cart 1.5.8 and higher.  For Zen Cart 1.5.7 and lower, please see [Cloning a Shipping Module in 1.5.7 and below](/dev/code/modules/clone_shipping_157/).
+**Note:** These instructions are for Zen Cart 1.5.7 and below.  For Zen Cart 1.5.8 and higher, please see [Cloning a Shipping Module](/dev/code/modules/clone_shipping/).
 
 You can create new Shipping Module by making a clone of the closest matching Shipping Module to what you are trying to do.
  
@@ -15,11 +15,9 @@ The code file is located in:
 `/includes/modules/shipping/flat.php`
   
 The language file is located in:  
-`/includes/languages/english/modules/shipping/lang.flat.php`
+`/includes/languages/english/modules/shipping/flat.php`
   
-To clone this module, for example, to `flatfree.php` you would: 
-- copy `flat.php` to `flatfree.php`
-- copy `lang.flat.php` to `lang.flatfree.php`
+To clone this module, for example, to `flatfree.php` you would copy the two `flat.php` files to `flatfree.php` 
 
 **Note:** Be sure the filename you choose does not have an underscore (`_`) in it.
   
@@ -52,9 +50,6 @@ $this->code = 'flatfree';
 ...
 $this->title = MODULE_SHIPPING_FLATFREE_TEXT_TITLE;
 ```
-
-Be sure to make this change in the `remove()` function as well. 
-
 
 Once you have cloned the module then you can alter how it calculates shipping to the method that you need.   This calculation is done in the `quote()` method. 
   
