@@ -52,22 +52,23 @@
             </h1>
 
             <h2>v2.1.x</h2>
-                The fixes/changes targeted for v2.1.x include:  
+                The improvements targeted for v2.1.x include:  
                 <br><br>
             <ul>
-                <li>Core: Shipping modules now inherit from ZenShipping base class to reduce code duplication and ensure consistency.</li>
-                <li>Core: The <a href="https://vinosdefrutastropicales.com/product_extra_files/options_stock/readme.html">Products Options Stock</a> plugin will be integrated with Zen Cart. </li>
-                <li>Core: <a href="https://github.com/zencart/zencart/discussions/6428">Child Templates</a> will be supported, so that storeowners can more easily determine what has been changed from the base release of a template. (This may slip to a follow on release depending on schedules.)</li>
-                <li>Admin: The Zen Cart admin will be secured with <a href="https://github.com/zencart/zencart/pull/6350">Multi Factor Authentication</a>. </li>
+                <li>New Feature: The <a href="https://vinosdefrutastropicales.com/product_extra_files/options_stock/readme.html">Products Options Stock</a> plugin will be integrated with Zen Cart. </li>
+                <li>New Feature: <a href="https://github.com/zencart/zencart/discussions/6428">Child Templates</a> will be supported, so that storeowners can more easily determine what has been changed from the base release of a template. (This may slip to a follow on release depending on schedules.)</li>
+                <li>New Feature: The Zen Cart admin will be secured with <a href="https://github.com/zencart/zencart/pull/6350">Multi Factor Authentication</a>. </li>
                 <li>Admin: The <a href="/dev/code/template_settings/">template settings file</a> may now be viewed from your admin page.</li>
+                <li>Core: Shipping modules now inherit from ZenShipping base class to reduce code duplication and ensure consistency.</li>
             </ul>
             <br><br>
 
             <h2>v2.0.1</h2>
-                The fixes/changes targeted for v2.0.1 include:  
+                The improvements targeted for v2.0.1 include:  
                 <br><br>
 
             <ul>
+                <li>(Note: no database changes between 2.0.0/2.0.1, so no need to run zc_install again if 2.0.0 is already installed.)</li>
                 <li>Admin: NOTIFY_ADMIN_CUSTOMERS_LISTING_ELEMENT notifier enhanced to pass entire customer query result.</li>
                 <li>Admin: For stores with large numbers of coupons, selecting coupons on page 2+ can wind up showing a blank infoBox and the wrong coupon records.</li>
                 <li>Core: Many PHP8 logs have been fixed.  If you are getting debug logs, please apply this update..</li>

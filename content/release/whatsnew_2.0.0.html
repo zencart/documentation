@@ -184,9 +184,12 @@
             </h1>
 
             <h2>
-                The fixes/changes in v2.0.0 since v1.5.8a include:
+                The improvements in v2.0.0 since v1.5.8a include:
             </h2>
             <ul>
+                <li>New Feature: Wholesale pricing is now built-in (based on the Dual Pricing plugin). See <a href="https://docs.zen-cart.com/user/products/wholesale_pricing/">Wholesale Pricing</a></li>
+                <li>New Feature: Coupons can be added to URLs and automatically applied.  See <a href="https://docs.zen-cart.com/user/order_total/coupons/#coupon-referrers">Coupon Referrers</a></li>
+                <li>New Feature: Responsive Classic template product images (main and additional) now shown in a modal dialog rather than a popup when clicked. See <a href="https://docs.zen-cart.com/user/images/popups/">Popups</a>.</li>
                <li>Admin: All Products, New Products, Featured Products and Specials pages are now configured the same way as product listing pages. See <a href="https://docs.zen-cart.com/user/template/new_featured_all_listing_page_configuration/">New/Featured/All Listing Configuration Settings</a>.  
                   (Note: this means the menu items "All Listing," "New Listing" and "Featured Listing" under the Configuration Menu are no longer there; go to the Configuration &gt; Product Listing menu instead.)
                </li>
@@ -196,7 +199,7 @@
                 <li>Admin: Corrected handling of salemaker start date/end date.</li>
                 <li>Admin: Coupon Restrict dropdown only shows products not already selected.</li>
                 <li>Admin: Customers default address id bug fix.</li>
-                <li>Admin: Customers list will now show registration IP if set.  This behavior may also be disabled; see <a href="https://docs.zen-cart.com/user/admin/site_specific_overrides/">admin specific overrides</a>.</li>
+                <li>Admin: Customers list will now show registration IP.  This behavior may also be disabled; see <a href="https://docs.zen-cart.com/user/admin/site_specific_overrides/">admin specific overrides</a>.</li>
                 <li>Admin: Delete product checks to ensure product exists first.</li>
                 <li>Admin: Developers now have a [template settings](/dev/code/template_settings/) file to facilitate template switching.</li>
                 <li>Admin: Orders listing sidebox provides direct link to customer account.</li>
@@ -226,19 +229,17 @@
                 <li>Core: Improved tax calculation accuracy throughout the cart.</li>
                 <li>Core: When $db connection is down, generate fewer logs.</li>
                 <li>Core: Performance improvements for stores with large databases.</li>
-                <li>Core: Wholesale pricing now built-in. See <a href="https://docs.zen-cart.com/user/products/wholesale_pricing/">Wholesale Pricing</a></li>
                 <li>Core: Improve multi-currency handling throughout cart.</li>
                 <li>Core: Fixes for PayPal constant MODULE_PAYMENT_PAYPALDP_MERCHANT_COUNTRY undefined.</li>
+                <li>Database: Correction of known issues with zones.</li>
                 <li>Storefront: Ability to compute category counts by distinct products, to avoid double-counting linked products.  Users wishing this behavior should see <a href="https://docs.zen-cart.com/user/customizing/site_specific_overrides/">site specific overrides</a>.</li>
                 <li>Storefront: Accessibility improvements.</li>
                 <li>Storefront: An <a href="https://docs.zen-cart.com/user/storefront_pages/accessibility/">Accessibility page</a> for storeowners to talk about what they have done to make their store accessible.</li>
                 <li>Storefront: Additional Images are only shown if there is a main image. Users of the Additional Product Images plugin who wish to disable this behavior, see <a href="https://docs.zen-cart.com/user/customizing/site_specific_overrides/">site specific overrides</a>.</li>
                <li>Storefront: All Products, New Products, Featured Products and Specials pages are now laid out the same way as product listing pages. See <a href="https://docs.zen-cart.com/user/template/new_featured_all_listing_page_configuration/">New/Featured/All Listing Configuration Settings</a>.</li>
                 <li>Storefront: Category pages now support fluid listing format.  See <a href="https://docs.zen-cart.com/user/template/listing_columns_categories/">Columnar Layout for Category Listing pages</a></li>
-                <li>Storefront: Coupons can be added to URLs and automatically applied.  See <a href="https://docs.zen-cart.com/user/order_total/coupons/#coupon-referrers">Coupon Referrers</a></li>
                 <li>Storefront: Group Discount tax calculation fixes.</li>
                 <li>Storefront: Coupon with excluded products tax calculation fixes.</li>
-                <li>Storefront: Responsive Classic template product images (main and additional) now shown in a modal dialog rather than a popup when clicked. See <a href="https://docs.zen-cart.com/user/images/popups/">Popups</a>.</li>
                 <li>Storefront: Manufacturers sidebox shows scaled images.</li>
                 <li>Storefront: PayPal date handling standardized.</li>
                 <li>Storefront: PayPal Express Checkout zone and country correctly set for tax handling.</li>
@@ -246,8 +247,7 @@
                 <li>Storefront: State dropdowns are now sorted alphabetically for all countries.</li>
                 <li>System: All "extra" folders are now loaded alphabetically.  In prior releases, they were loaded in filesystem order, which would sometimes result in system-dependent issues.</li>
                 <li>System: The issue that caused the Uncaught IntlException: datefmt_create: invalid locale: U_ILLEGAL_ARGUMENT_ERROR problem for users running PHP 8.1/8.2 no longer requires configure.php changes.</li>
-                <li>Database: Correction of known issues with zones.</li>
-                <li>Installer: Improved UI and progress reporting in zc_install.</li>
+                <li>Upgrade: Improved UI and progress reporting in zc_install.</li>
                 <li>All known v1.5.8/v1.5.8a bugfixes and security fixes are included in v2.0.0.</li>
                 <li>... and many other incremental improvements to make Zen Cart more efficient, more robust and easier to use.</li>
             </ul>
