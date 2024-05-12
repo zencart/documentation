@@ -64,7 +64,7 @@ Zen Cart supports a number of discounting mechanisms:
 ### Can Zen Cart offer tiered, customer specific or bundled pricing? 
 
 - Tiered pricing is available on a per product basis using [Quantity Discounts](/user/products/quantity_discounts/) 
-- Customer specific pricing is not available natively but can be performed with plugins.
+- Customer specific, including wholesale, pricing is available by configuring multiple pricing tiers.
 - Bundled pricing (sometimes called kit or package pricing) is not available natively but can be performed with plugins.
 
 ---
