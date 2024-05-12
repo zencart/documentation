@@ -180,7 +180,7 @@
                 What's New ... Changes from prior versions
             </h1>
             <h2>
-                The fixes/changes in v1.5.8a since v1.5.8 include:
+                The improvements in v1.5.8a since v1.5.8 include:
             </h2>
             <ul>
                 <li>(Note: no database changes between v158/v158a, so no need to run zc_install again if v158 is already installed.)</li>
@@ -208,24 +208,30 @@
                 The most notable improvements and bugfixes in v1.5.8 since v1.5.7 include:
             </h2>
             <ul>
+               <li>New Feature: Manufacturers edit page now allows you to feature specific manufacturers on the storefront Brands page.</li>
+               <li>New Feature: Improved appearance of pages: Manufacturers, EZ-Pages, Countries.</li>
+               <li>New Feature: Warning when downloadable products are misconfigured, both on Downloads Manager and shipping module screens.</li>
+               <li>New Feature: Help now available for modules.</li>
+               <li>New Feature: Customers can now be assigned to multiple groups.</li>
+               <li>New Feature: Stores may be configured to return HTTP 200 for disabled products instead of HTTP 404.</li>
+               <li>New Feature: Event aliasing added so notifier names can be changed without breaking older plugins.</li>
+               <li>New Feature: Shop by Brand page added, listing all your manufacturers, with featured manufacturers at the top.</li>
+               <li>New Feature: About Us page is now built in.</li>
+               <li>New Feature: Site Specific define file provided to permit customization without modifying core files.</li>
+
                <li>Admin: Option Name Comments now have configurable positioning (above or below the option). 
                <li>Admin: Improved dashboard performance.</li>
                <li>Admin: Implement "forget" option for customer deletion to support GDPR.</li>
                <li>Admin: multiple per page javascript now supported in Admin.</li>
                <li>Admin: multiple per page CSS now supported in Admin.</li>
                <li>Admin: more notifiers.</li>
-               <li>Admin: Improved appearance of pages: Manufacturers, EZ-Pages, Countries.</li>
-               <li>Admin: Manufacturers edit page now allows you to feature specific manufacturers on the storefront Brands page.</li>
-               <li>Admin: Warning when downloadable products are misconfigured, both on Downloads Manager and shipping module screens.</li>
                <li>Admin: Product search in admin improved.</li>
                <li>Admin: Show image when viewing categories containing products.</li>
                <li>Admin: Indicate on listing page if product has quantity discounts.</li>
                <li>Admin: Copy product now correctly copies downloads.</li>
                <li>Admin: Copy product works on products with long names.</li>
-               <li>Admin: Help now available for modules.</li>
                <li>Admin: Correct issues in Media Manager.</li>
                <li>Admin: Delete, Move or Copy of product from search results now operates as expected.</li>
-               <li>Admin: Customers can now be assigned to multiple groups.</li>
                <li>Admin: Improve performance of Orders page.</li>
                <li>Admin: Simplify switching display options on orders, invoice and packingslip pages.</li>
                <li>Admin: (Optionally) show zone information on Orders page.</li>
@@ -234,11 +240,9 @@
                <li>Admin: Extend Store Manager's Cleanup Debug Log Files function to remove Square and Bambora logs. </li>
                <li>Admin: Correct counts for queries split over multiple pages. </li>
                <li>Admin: "Send Copy" email fields can now be cleared when not needed. </li>
-               <li>Core: Stores may be configured to return HTTP 200 for disabled products instead of HTTP 404.</li>
                <li>Core: Detect bad URL input and avoid creating PHP logs.</li>
                <li>Core: Rename "Advanced Search" to simply "Search".</li>
                <li>Core: Added notifier hooks on add-to-cart attempt, contact us email, change shipping/payment info.</li>
-               <li>Core: Event aliasing added so notifier names can be changed without breaking older plugins.</li>
                <li>Core: Continued function consolidation initiated in 1.5.7.</li>
                <li>Core: Renaming targeted functions to improve clarity.</li>
                <li>Core: Language loading moved into arrays to prevent PHP duplication notices.</li>
@@ -253,11 +257,8 @@
                <li>Email: Improved appearance of HTML email.</li>
                <li>Storefront: Log account creation IP Address for fraud tracking and GDPR delete requests.</li>
                <li>Storefront: Improve checkout flow labels and descriptions.</li>
-               <li>Storefront: Shop by Brand page added, listing all your manufacturers, with featured manufacturers at the top.</li>
                <li>Storefront: Account History page is now paginated.</li>
-               <li>Storefront: About Us page is now built in.</li>
                <li>Storefront: The Order Status page (from the One Page Checkout plugin) now built in.</li>
-               <li>Storefront: Site Specific define file provided to permit customization without modifying core files.</li>
                <li>Storefront: Continue button on checkout_payment page is disabled if the Terms and Conditions tick box is present and not ticked.</li>
                <li>Storefront: Option Name Comments may now be displayed above or below the option via an admin setting.</li> 
                <li>All known v1.5.7 bugfixes and security fixes are included in v1.5.8.</li>
