@@ -13,7 +13,7 @@ But sometimes you won't be able to use PHP.  Examples of this situation are:
 
 - Modifying a category description to add a link 
 - Modifying a product description to add a link 
-- Modifying an EZ Page to add a link 
+- Modifying an EZ-Page to add a link 
 
 No worries, even though you can't use PHP, you can still create a link to another page using straight HTML.
 
@@ -42,8 +42,8 @@ To link to category 9, the Anvils category, you would use
 <a href="index.php?main_page=index&cPath=9">Anvils</a>
 ```
 
-## Linking to an EZ Page from HTML 
-To link to EZ Page 8, titled "FAQ", you would use 
+## Linking to an EZ-Page from HTML 
+To link to EZ-Page 8, titled "FAQ", you would use 
 
 ```
 <a href="index.php?main_page=page&id=8">FAQ</a>
@@ -97,9 +97,9 @@ $cat_id = 9;
 echo '<a href="' . zen_href_link(FILENAME_DEFAULT, "cPath=".$cat_id) . '">' . zen_get_category_name($cat_id) .'</a>'; 
 ```
 
-## Linking to an EZ Page from PHP 
+## Linking to an EZ-Page from PHP 
 
-To link to EZ Page 19, 
+To link to EZ-Page 19, 
 ``` 
 $pages_id = 19; 
 echo '<a href="' . zen_ez_pages_link($pages_id) . '"></a>';

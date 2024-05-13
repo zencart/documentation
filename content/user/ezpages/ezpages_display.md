@@ -49,7 +49,7 @@ If you're in HTML (say in a list), you would use
 or if it's pure HTML (being edited in plain text editor, for example), to do it without PHP would be 
 
 ```
-<li><a href="index.php?main_page=page&id=19">title-of-ezpage-19</a></li>
+<li><a href="index.php?main_page=page&id=19">title-of-EZ-Page-19</a></li>
 ```
 
 You would define `NEW_PAGE_TITLE` in a file like, `includes/languages/english/extra_definitions/my_ezpages.php` as follows:

@@ -7,7 +7,7 @@ weight: 10
 
 This page continues the FAQ on [customizing the Information Sidebox](/user/sideboxes/information_sidebox/). It is such a common question is has been pulled out to its own page.
 
-The same technique can be used to add a link to the [More Information sidebox](/user/sideboxes/more_information_sidebox/) or the [EZ Page sidebox](/user/sideboxes/ezpages_sidebox/) just by changing the file being edited. 
+The same technique can be used to add a link to the [More Information sidebox](/user/sideboxes/more_information_sidebox/) or the [EZ-Page sidebox](/user/sideboxes/ezpages_sidebox/) just by changing the file being edited. 
 
 To add a link to the Information Sidebox, we create the [override file](/user/first_steps/overrides/) `includes/templates/YOURTEMPLATE/sideboxes/tpl_information.php`.  
 
@@ -54,7 +54,7 @@ $information[] = '<a href="https://www.zen-cart.com/" target="_blank" rel="noref
 
 The same process could be used to add a link to the More Information sidebox, using the `$more_information` array in place of `$information`. 
 
-However, adding a link to the EZ Pages sidebox using this technique would be more involved, since the entries in `$var_linksList` are arrays, not simple strings.
+However, adding a link to the EZ-Pages sidebox using this technique would be more involved, since the entries in `$var_linksList` are arrays, not simple strings.
 
 ### Specification of URLs 
 It's a good practice not to hardcode non-relative URLs, in case your site moves or you want to reconstruct a test instance of it.  So don't do this: 

@@ -90,7 +90,7 @@ The use of PHP in new pages is subject to the following restrictions:
 
 Mechanism | Restrictions 
 ----------|--------------
-EZ Pages  | not allowed
+EZ-Pages  | not allowed
 Built in extra pages | allowed, no restrictions
 Plugins   | allowed, no restrictions (assuming plugin creates a custom page) 
 New Custom Page | allowed, no restrictions 

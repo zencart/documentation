@@ -7,7 +7,7 @@ weight: 10
 
 ## Introduction
 
-Alt text, short for alternative text, is a crucial aspect of web accessibility. It is used to provide a text alternative to non-text content such as images, videos, and graphics. Alt text ensures that users with visual impairments or those using assistive technologies, such as screen readers, can understand the content conveyed by these elements. The good news is that most of your alt text needs are met by the Zen Cart software.  However, images you add to areas other than categories or products (e.g., define_ or EZpages) will need to have alt text added. In this article, we will explore the importance of alt text in web accessibility and recommend some best practices for creating effective alt text.
+Alt text, short for alternative text, is a crucial aspect of web accessibility. It is used to provide a text alternative to non-text content such as images, videos, and graphics. Alt text ensures that users with visual impairments or those using assistive technologies, such as screen readers, can understand the content conveyed by these elements. The good news is that most of your alt text needs are met by the Zen Cart software.  However, images you add to areas other than categories or products (e.g., Define Pages or EZ-Pages) will need to have alt text added. In this article, we will explore the importance of alt text in web accessibility and recommend some best practices for creating effective alt text.
 
 ## The Importance of Alt Text in Web Accessibility
 

@@ -39,7 +39,7 @@ For EVERY INDIVIDUAL page, category, product on your site, look at these parts:
 
 Parts To Look At |
 -----------------|
-Page Title (Product/Category Name, or EZ Page Title) | 
+Page Title (Product/Category Name, or EZ-Page Title) | 
 Page Content (eg: Product/Category description, or Article text) |
 Metatags Title (This will be shown in search results) |
 Metatags Description (This is the sub-text shown in search results) |
@@ -101,7 +101,7 @@ And, if you have products that are related to other products, where it feels lik
 
 
 ### Articles and other content
-EZ Pages can be a place to write articles that can educate customers, celebrate creative uses of your products, and highlight success stories.
+EZ-Pages can be a place to write articles that can educate customers, celebrate creative uses of your products, and highlight success stories.
 
 Articles should contain keywords (phrases) that your customers are searching for. And these articles should contain links to the products that your articles are referring to.
 
