@@ -1,14 +1,15 @@
 ---
-title: XML Site Map Page
-description: A sitemap for search engines 
+title: XML Site Map 
+description: Building a sitemap for search engines 
 category: search 
 weight: 10
 ---
 
+## Building your Site Map
+
 Search engines like Google prefer to consume site maps in XML, which is more efficient than a site map created in HTML, with markup to make it attractive to humans.  Sitemaps produced for search engines are designed using the format defined by [sitemaps.org](https://www.sitemaps.org/index.html).
 
 A plugin is available to produce an [XML sitemap for your store](https://www.zen-cart.com/downloads.php?do=file&id=367).  After installing and running this plugin, you can submit the resultant files to Google for indexing. 
-
 
 The XML sitemap is a series of text files that follow a specific format.  Here's what one entry from the product sitemap might look like:
 
@@ -40,3 +41,8 @@ Submitting a non-canonical URL like this will yield the following from Google:
 ![URL inspection error](/images/URL_inspection.png)
 
 When you switch to a sitemap that uses canonical URLs, the page will be indexed. 
+
+## Submitting your Site Map
+
+The instructions for submitting your sitemap to various crawlers change all the time.  The best way to figure out how to do this is to do a web search for "submit sitemap to `name-of-search-engine`" and look for a page from the search engine provider (Google, Microsoft, etc.).  
+

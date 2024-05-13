@@ -38,7 +38,7 @@ Just follow the pattern as explained:
 // NOTE: If HOME_PAGE_TITLE is left blank (default) then TITLE and SITE_TAGLINE will be used instead.
   define('HOME_PAGE_TITLE', ''); // usually best left blank
 
-// EZ-Pages meta-tags.  Follow this pattern for all ez-pages for which you desire custom metatags. Replace the # with ezpage id.
+// EZ-Pages meta-tags.  Follow this pattern for all ez-pages for which you desire custom metatags. Replace the # with the EZ-Page id.
 // If you wish to use defaults for any of the 3 items for a given page, simply do not define it.
 // (ie: the Title tag is best not set, so that site-wide defaults can be used.)
 // repeat pattern as necessary
