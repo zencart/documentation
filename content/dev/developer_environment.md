@@ -7,9 +7,9 @@ weight: 10
 
 ## Writing PHP code for Zen Cart requires no particularly special environment.
 
-1. A PHP-aware IDE is very useful to highlight basic syntax errors. We use PhpStorm (commercial) but there are various free IDEs available.
-   It's helpful if your editor honors the `.editorconfig` standard which sets out formatting standards for code files.
-2. A LAMP stack is necessary to locally host a working development copy of your store. Common options for this include XAMPP, WAMP/MAMP, Laragon, and even Laravel Valet.
+1. A PHP-aware IDE is very useful to highlight basic syntax errors. We use [PhpStorm](https://www.jetbrains.com/phpstorm/) (commercial) but there are various free IDEs available.
+   It's helpful if your editor honors the `.editorconfig` standard which sets out formatting standards for code files. VS Code can be set up to work as an IDE for PHP.
+2. A LAMP stack is necessary to locally host a working development copy of your store. Common options for this include XAMPP, WAMP/MAMP, Laragon, and even [Herd](https://herd.laravel.com) or [Valet](https://laravel.com/docs/valet).
 
 ## Code Formatting
 
@@ -23,14 +23,14 @@ See [Coding Standards](/dev/contributing/coding_standards) for more details.
 
 ## Version Control
 
-Zen Cart is developed using GitHub version control. We encourage you to create a GitHub account, firstly to become aware of project activity, and secondly to encourage your input. Read the [section on Git](/dev/contributing/github_workflow/)
-to learn about the workflow that the project uses.
+Zen Cart is developed using GitHub version control. We encourage you to create a GitHub account, firstly to become aware of project activity, and secondly to encourage your input. 
+Read the [section on Git](/dev/contributing/github_workflow/) to learn about the workflow that the project uses.
 
 ## Retaining the Default Directory Structure
 
 By default, warnings are displayed if you don't rename the `admin` folder and delete the `zc_install` folder. 
 
-To eliminate these warnings but maintain those folders you may create a file called `admin/includes/extra_configures/dev-skip_admin_rename.php` containing these two constants:
+For local development you can eliminate these warnings but maintain those folders by creating a file called `admin/includes/extra_configures/dev-skip_admin_rename.php` containing these two constants:
 ```php
     define('ADMIN_BLOCK_WARNING_OVERRIDE', 'true');
     define('WARN_INSTALL_EXISTENCE', '0');
@@ -54,7 +54,7 @@ Now when editing an admin option, the constant name will be shown in the InfoBox
 <img src="/images/show_keys.png" alt="Show Configuration Keys in Zen Cart" width="50%" />
 <br><br>
 
-Example use: I need to see if the configuration allows add to cart on out of stock products.  Go to `Admin > Configuration > Stock` and select *Show Sold Out Image in place of Add to Cart*.  You'll see the key value is `SHOW_PRODUCTS_SOLD_OUT_IMAGE`.  So your code would be, 
+Example use: In my store I need to see if the configuration allows add to cart on out of stock products.  Go to `Admin > Configuration > Stock` and select *Show Sold Out Image in place of Add to Cart*.  You'll see the key value is `SHOW_PRODUCTS_SOLD_OUT_IMAGE`.  So your PHP code would be, 
 
 ```
 if (SHOW_PRODUCTS_SOLD_OUT_IMAGE == '0') { 
@@ -89,15 +89,15 @@ The function zen_mail checks for these constants at the moment of processing an 
 
 The function zen_mail could be called from the admin or the catalog, so the constants need to be available in both environments, ideally defined in one place and easily visible to avoid accidental copying to the production site.
 
-One option is to place the constants in a storefront file  
+One option is to place the constants in a storefront file:  
 e.g:
 `/includes/extra_configures/dev-email_overrides.php`
 
-and then "include" this file via an admin file  
+and then "include" this file via an admin file:  
 e.g:
 `ADMIN/includes/extra_configures/dev-email_overrides.php`
 
-containing
+containing:
 
 ```
 <?php
@@ -105,9 +105,9 @@ include DIR_FS_CATALOG . DIR_WS_INCLUDES . 'extra_configures/dev-email_overrides
 ```
 When the admin environment detects these constants as defined, a message is displayed in the admin messageStack to that effect. 
 
-## Innodb Settings 
+## InnoDB Settings 
 
-The Zen Cart installer allows for setting a define to create all Database tables using InnoDb rather than MyIsam.
+The Zen Cart installer allows for setting a define to create all Database tables using InnoDB rather than MyISAM.
 
 To enable this you need to add a define e.g. 
 
