@@ -7,7 +7,15 @@ weight: 10
 
 This page continues the FAQ on [customizing the Information Sidebox](/user/sideboxes/information_sidebox/). It is such a common question is has been pulled out to its own page.
 
-The same technique can be used to add a link to the [More Information sidebox](/user/sideboxes/more_information_sidebox/) or the [EZ-Page sidebox](/user/sideboxes/ezpages_sidebox/) just by changing the file being edited. 
+There are three techniques that can be used to add links to the "Information", [More Information](/user/sideboxes/more_information_sidebox/) and [EZ-Pages](/user/sideboxes/ezpages_sidebox/) (aka "Important Links") sideboxes. 
+
+1. [Using a Template Override](#using-a-template-override)
+2. [Using a Sidebox Module Override](#using-a-sidebox-module-override)
+3. [Using an Observer](#using-an-observer).  Available for Zen Cart versions 2.0.1 and later.
+
+### Techniques
+
+#### Using a Template Override
 
 To add a link to the Information Sidebox, we create the [override file](/user/first_steps/overrides/) `includes/templates/YOURTEMPLATE/sideboxes/tpl_information.php`.  
 
@@ -41,9 +49,9 @@ $content .= '<li><a href="' . zen_href_link(FILENAME_EZPAGES,'id=9') . '">' . "M
 
 or if you don't want to modify code, you can just use the [EZ-Pages sidebox](/user/sideboxes/ezpages_sidebox/), which displays EZ-Pages with sidebox display on and a positive sort order.  
 
-### Alternate Approaches 
+#### Using a Sidebox Module Override 
 
-Purists would argue that it's not a good practice to update the template to add links, and that instead, the relevant module file should be updated. (The approach used above is more beginner friendly and lends itself to copy-and-paste ready examples for all three sideboxes, which is why it was chosen.) 
+Purists would argue that it's not a good practice to update the template to add links, and that instead, the relevant module file should be updated. The approach used above is more beginner friendly and lends itself to copy-and-paste ready examples for all three sideboxes, which is why it was chosen. 
 
 You could accomplish what's done in the first example - add a link to zen-cart.com to the Information sidebox - by creating the 
 [override file](/user/first_steps/overrides/) `includes/modules/sideboxes/YOURTEMPLATE/information.php`, and then modifying it just before the `require` statements to add  
@@ -56,7 +64,84 @@ The same process could be used to add a link to the More Information sidebox, us
 
 However, adding a link to the EZ-Pages sidebox using this technique would be more involved, since the entries in `$var_linksList` are arrays, not simple strings.
 
-### Specification of URLs 
+#### Using an Observer
+
+Starting with Zen Cart 2.0.1, these sideboxes include a notification to enable the insertion of additional links in the sideboxes' displays.  Each notification enables a watching observer to insert additional links into those sideboxes' display, making the template-override techniques above obsolete. 
+
+- "Information" (`/includes/modules/sideboxes/information.php`)
+- "More Information" (`/includes/modules/sideboxes/more_information.php`)
+- "Important Links" (`/includes/modules/sideboxes/ezpages.php`)
+
+Each sidebox's notification provides a numerically-indexed array of links (as HTML anchor tags) to be included in the sidebox's display.
+
+##### Information Sidebox
+
+The "Information" sidebox now includes the following notification:
+
+```php
+$zco_notifier->notify('NOTIFY_INFORMATION_SIDEBOX_ADDITIONS', [], $information);
+```
+
+An observer can `attach` to that notification to insert additional links seamlessly into that sidebox.  Note that the Bootstrap template provides a variable (`$information_classes`) with additional classes to be included in that sidebox link.  A modification that requires support for that template as well as the built-in `responsive_classic` template should, if that variable `isset`, include that variable's value in a `class=` attribute for each inserted link. You'd have code similar to
+
+```php
+$link_class = (isset($information_classes)) ? ('class="' . $information_classes . '"') : '';
+```
+
+##### More Information Sidebox
+
+The "More Information" sidebox now includes the following notification:
+
+```php
+$zco_notifier->notify('NOTIFY_MORE_INFORMATION_SIDEBOX_ADDITIONS', [], $more_information);
+```
+
+An observer can `attach` to that notification to insert additional links seamlessly into that sidebox.  Note that the Bootstrap template provides a variable (`$more_information_classes`) with additional classes to be included in that sidebox link.  A modification that requires support for that template as well as the built-in `responsive_classic` template should, if that variable `isset`, include that variable's value in a `class=` attribute for each inserted link.  You'd have code similar to
+
+```php
+$link_class = (isset($more_information_classes)) ? ('class="' . $more_information_classes . '"') : '';
+```
+
+##### Important Links Sidebox
+
+The "Important Links" sidebox now includes the following notification:
+
+```php
+$zco_notifier->notify('NOTIFY_EZPAGES_SIDEBOX_ADDITIONS', [], $var_linksList);
+```
+
+An observer can `attach` to that notification to insert additional links seamlessly into that sidebox.
+
+##### Common Observer Processing
+
+For each of the above notifications, an observer processes the array of links provided in a similar manner.  Let's say that you want to insert the following link into one of the sideboxes:
+
+```php
+$the_link = '<a href="' . zen_href_link(FILENAME_EZPAGES, 'id=25') . '</a>';
+```
+
+If you are also supporting the Bootstrap template, you'll code that link as (based on the suggested variable name above)
+
+```php
+$the_link = '<a ' . $link_class . ' href="' . zen_href_link(FILENAME_EZPAGES, 'id=25') . '</a>';
+```
+
+Now, to insert that link into the sidebox, you can use a PHP statement similar to the following
+
+```php
+array_splice($links_array, $link_position, 0, $the_link);
+```
+
+where
+
+- `$links_array` is the name of the variable in which you received the original array of sidebox links via the sidebox's notification.
+- `$link_position` is the ***zero-based** position* at which you want to insert that link.  Use a value of `0` to insert the link as the first, `1` for the second and a large number, say `100` to insert that link at the end.
+- `$the_link` is the anchor-link described above.
+
+### General Information
+
+#### Specification of URLs 
+
 It's a good practice not to hardcode non-relative URLs, in case your site moves or you want to reconstruct a test instance of it.  So don't do this: 
 
 ```
@@ -71,9 +156,9 @@ $content .= '<li><a href="index.php?main_page=page&id=25">Important information<
 You can read more about [the importance of relative URLs](/user/first_steps/relative_urls/) to explore this topic in greater depth. 
 
 
-### Mobile
+#### Mobile
 
 You may need to make [additional edits to control the link on mobile displays](/user/template/sideboxes/#controlling-sideboxes-on-mobile-menu).
 
-### More Examples 
+#### More Examples 
 See [creating links to other pages](/user/customizing/creating_links/). 
