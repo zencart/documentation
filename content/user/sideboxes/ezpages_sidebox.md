@@ -17,9 +17,9 @@ For the page to show up in the EZ-Pages sidebox, the Sidebox radio button must b
 
 ### How do I add a new link to the EZ-Page Sidebox? 
 
-We create the [override file](/user/first_steps/overrides/) `includes/templates/YOURTEMPLATE/sideboxes/tpl_ezpages.php`.  
+If you're running on Zen Cart 2.0.1 or later, refer to [Adding a Link to the Information Sidebox](/user/sideboxes/add_link_information_sidebox/) for a way to add the link via an observer.
 
-Then edit this file, and follow the instructions provided in [adding a link to the Information Sidebox](/user/sideboxes/add_link_information_sidebox/). 
+Otherwise, we create the [override file](/user/first_steps/overrides/) `includes/templates/YOURTEMPLATE/sideboxes/tpl_ezpages.php`, edit this file and follow the instructions provided in [Adding a Link to the Information Sidebox](/user/sideboxes/add_link_information_sidebox/). 
 
 
 ### How do I add text to the EZ-Page Sidebox? 
@@ -53,5 +53,4 @@ Next we tell the EZ-Page sidebox to use the text. Open the copy that you made of
 ```
 
 Finally, upload the new files to your server and check the results in your browser.
-
 
