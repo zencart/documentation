@@ -9,7 +9,7 @@
 //-->
 <head>
     <meta charset="utf-8">
-    <title>What's New in Zen Cart&trade; v2.0.0</title>
+    <title>What's New in Zen Cart&trade; v2.0</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="">
@@ -64,7 +64,7 @@
                 About PHP versions
             </h1>
             <p>
-                Zen Cart v2.0.0 is designed for PHP 8.0 to 8.3, with MySQL 5.7.8+ (or MariaDB 10.2.7+) and Apache 2.2/2.4.
+                Zen Cart v2.0.x is designed for PHP 8.0 to 8.3, with MySQL 5.7.8+ (or MariaDB 10.2.7+) and Apache 2.2/2.4.
             </p>
         </div>
     </section> <!-- End aboutPHPVersions //-->
@@ -78,7 +78,7 @@
                 See the online docs for upgrading advice, including Release-Specific considerations to note regarding this version. <a href="https://docs.zen-cart.com/user/upgrading/">https://docs.zen-cart.com/user/upgrading/</a>
                 <br>
                 <br>
-                This document only mentions the actual changes specific to v2.0.0 since v1.5.8a. 
+                This document only mentions the actual changes specific to v2.0.x since v1.5.8a. 
             </p>
             <h2>
                 All Versions
@@ -182,6 +182,18 @@
             <h1>
                 What's New ... Changes from prior versions
             </h1>
+            <h2>
+                The improvements in v2.0.1 since 2.0.0 include:
+            </h2>
+            <ul>
+                <li>(Note: no database changes between 2.0.0/2.0.1, so no need to run zc_install again if 2.0.0 is already installed.)</li>
+                <li>Admin: NOTIFY_ADMIN_CUSTOMERS_LISTING_ELEMENT notifier enhanced to pass entire customer query result.</li>
+                <li>Admin: For stores with large numbers of coupons, selecting coupons on page 2+ can wind up showing a blank infoBox and the wrong coupon records.</li>
+                <li>Core: Many PHP8 logs have been fixed.</li>
+                <li>Storefront: New Products listing now shows new products as configured.</li>
+                <li>Storefront: Shopping Cart class in_cart_check() function fixed.</li>
+                <li>Storefront: notifiers added to shipping modules so storeowners can implement their own exception rules.</li>
+            </ul>
 
             <h2>
                 The improvements in v2.0.0 since v1.5.8a include:
