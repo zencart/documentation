@@ -1,6 +1,6 @@
 ---
-title: Archive of Older Release Documentation
-description: Older Release Notes, changed files lists and other release documents 
+title: Archive of Older Changed Files lists 
+description: Older lists of which files changed in a release
 weight: 10
 noindex: yes
 layout: allpages
