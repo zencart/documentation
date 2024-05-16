@@ -5,7 +5,7 @@ category: about_us
 weight: 10
 ---
 
-> Note: If you want to see What's **Next** for Zen Cart instead, please [click here](/release/work_in_progress.html).
+> Note: If you want to see What's **Next** for Zen Cart instead, please [click here](/release/whatsnext/).
 
 - April 2024: [Zen Cart 2.0.0 Released](https://www.zen-cart.com/showthread.php?230040-Zen-Cart-2-0-0-Released).
 - April 2024: [1.5.7/1.5.8 Address Security Patch](https://www.zen-cart.com/showthread.php?230032-Security-patch-for-Zen-Cart-v1-5-7-series-and-v1-5-8-series) released.  All users running Zen Cart 1.5.7x and 1.5.8x should apply these patches as soon as possible. 
