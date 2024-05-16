@@ -1,0 +1,24 @@
+{{ define "main" }}
+<main>
+<style> .td-main main { padding-top: 2rem; }</style>
+  <div>
+   <h1>{{ .Title }}</h1>
+   <br><br>
+   <ul>
+    {{ range .Pages.ByTitle.Reverse }}
+          {{ if (ne .Params.Category "admin_pages") }}
+             {{ if not .Params.noindex }}
+                {{ if not .Params.url }}
+                   {{ if .Description }}
+                   <li><a href="{{ .Permalink }}">{{ .Title }}</a> &nbsp; {{ .Description }}</li>
+                   {{ else }} 
+                   <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                   {{ end }}
+                {{ end }}
+             {{ end }}
+          {{ end }}
+    {{ end }}
+   </ul>
+  </div>
+</main>
+{{ end }}
