@@ -11,11 +11,9 @@ There are three techniques that can be used to add links to the "Information", [
 
 1. [Using a Template Override](#using-a-template-override)
 2. [Using a Sidebox Module Override](#using-a-sidebox-module-override)
-3. [Using an Observer](#using-an-observer).  Available for Zen Cart versions 2.0.1 and later.
+3. [Using an Observer](#using-an-observer).  Available for Zen Cart versions 2.0.1 and later, but [easily backported](#backporting).
 
-### Techniques
-
-#### Using a Template Override
+## Using a Template Override
 
 To add a link to the Information Sidebox, we create the [override file](/user/first_steps/overrides/) `includes/templates/YOURTEMPLATE/sideboxes/tpl_information.php`.  
 
@@ -49,7 +47,7 @@ $content .= '<li><a href="' . zen_href_link(FILENAME_EZPAGES,'id=9') . '">' . "M
 
 or if you don't want to modify code, you can just use the [EZ-Pages sidebox](/user/sideboxes/ezpages_sidebox/), which displays EZ-Pages with sidebox display on and a positive sort order.  
 
-#### Using a Sidebox Module Override 
+## Using a Sidebox Module Override 
 
 Purists would argue that it's not a good practice to update the template to add links, and that instead, the relevant module file should be updated. The approach used above is more beginner friendly and lends itself to copy-and-paste ready examples for all three sideboxes, which is why it was chosen. 
 
@@ -64,7 +62,7 @@ The same process could be used to add a link to the More Information sidebox, us
 
 However, adding a link to the EZ-Pages sidebox using this technique would be more involved, since the entries in `$var_linksList` are arrays, not simple strings.
 
-#### Using an Observer
+## Using an Observer
 
 Starting with Zen Cart 2.0.1, these sideboxes include a notification to enable the insertion of additional links in the sideboxes' displays.  Each notification enables a watching observer to insert additional links into those sideboxes' display, making the template-override techniques above obsolete. 
 
@@ -74,7 +72,7 @@ Starting with Zen Cart 2.0.1, these sideboxes include a notification to enable t
 
 Each sidebox's notification provides a numerically-indexed array of links (as HTML anchor tags) to be included in the sidebox's display.
 
-##### Information Sidebox
+### Information Sidebox
 
 The "Information" sidebox now includes the following notification:
 
@@ -88,7 +86,7 @@ An observer can `attach` to that notification to insert additional links seamles
 $link_class = (isset($information_classes)) ? ('class="' . $information_classes . '"') : '';
 ```
 
-##### More Information Sidebox
+### More Information Sidebox
 
 The "More Information" sidebox now includes the following notification:
 
@@ -102,7 +100,7 @@ An observer can `attach` to that notification to insert additional links seamles
 $link_class = (isset($more_information_classes)) ? ('class="' . $more_information_classes . '"') : '';
 ```
 
-##### Important Links Sidebox
+### Important Links Sidebox
 
 The "Important Links" sidebox now includes the following notification:
 
@@ -112,7 +110,37 @@ $zco_notifier->notify('NOTIFY_EZPAGES_SIDEBOX_ADDITIONS', [], $var_linksList);
 
 An observer can `attach` to that notification to insert additional links seamlessly into that sidebox.
 
-##### Common Observer Processing
+### Example Observer
+ 
+Create the file `includes/classes/observers/auto.information_sidebox.php` as follows, using your own new links of course: 
+ 
+
+```
+<?php
+class zcObserverInformationSidebox extends base
+{
+    public function __construct()
+    {
+        global $current_page_base;
+        $this->attach(
+            $this,
+            [
+                'NOTIFY_INFORMATION_SIDEBOX_ADDITIONS',
+            ]
+        );
+    }
+
+    protected function update(&$class, $eventID, $not_used, &$information)
+    {
+
+       // Your links would be appended like this: 
+       $information[] = '<a class="list-group-item list-group-item-action" href="' . zen_href_link('forms') . '">' . 'Forms'. '</a>'; 
+
+    }
+}
+```
+
+### Common Observer Processing
 
 For each of the above notifications, an observer processes the array of links provided in a similar manner.  Let's say that you want to insert the following link into one of the sideboxes:
 
@@ -138,9 +166,20 @@ where
 - `$link_position` is the ***zero-based** position* at which you want to insert that link.  Use a value of `0` to insert the link as the first, `1` for the second and a large number, say `100` to insert that link at the end.
 - `$the_link` is the anchor-link described above.
 
-### General Information
+### Backporting 
 
-#### Specification of URLs 
+To backport these notifiers to an earlier versions of Zen Cart, simply modify the relevant file in `includes/modules/sideboxes` (or the override folder if the file is overridden).  For example, to add the Information sidebox notifier, update `includes/modules/sideboxes/YOURTEMPLATE/information.php` and after the last link is appended to the `information` array, add: 
+
+```
+$zco_notifier->notify('NOTIFY_INFORMATION_SIDEBOX_ADDITIONS', [], $information);
+```
+
+- To backport for the EZ-Pages sidebox, modify `includes/modules/sideboxes/ezpages.php` (or the override), and add the `notify` call for `NOTIFY_EZPAGES_SIDEBOX_ADDITIONS`.
+- To backport for the More Information sidebox, modify `includes/modules/sideboxes/more_information.php` (or the override), and add the `notify` call for `NOTIFY_MORE_INFORMATION_SIDEBOX_ADDITIONS`.
+
+## General Information
+
+### Specification of URLs 
 
 It's a good practice not to hardcode non-relative URLs, in case your site moves or you want to reconstruct a test instance of it.  So don't do this: 
 
@@ -156,9 +195,9 @@ $content .= '<li><a href="index.php?main_page=page&id=25">Important information<
 You can read more about [the importance of relative URLs](/user/first_steps/relative_urls/) to explore this topic in greater depth. 
 
 
-#### Mobile
+### Mobile
 
 You may need to make [additional edits to control the link on mobile displays](/user/template/sideboxes/#controlling-sideboxes-on-mobile-menu).
 
-#### More Examples 
+### More Examples 
 See [creating links to other pages](/user/customizing/creating_links/). 
