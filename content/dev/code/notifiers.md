@@ -35,6 +35,7 @@ Here are some 'quick links' to various sections of this documentation:
 
 5. [Additional Information](#additional-information).  This section has references to additional documentation on the observer/notifier system.
 
+6. [Complete Examples](#complete-examples) This section shows examples of using notifiers and observers.
 
 ## Triggering Event Notifications
 
@@ -378,3 +379,8 @@ Some plugins which can be helpful during development when using notifiers includ
 * The [output of the Zen Cart Notifier Report](/dev/code/notifier_report/) run against the current release is provided on the docs site for easy reference by developers.  
 * You may also install the [Notifier Report](https://github.com/lat9/notifier_report) on your own site to get the list of notifiers for your version, which could differ from the official list if you have made changes or are not running the current version. 
 
+## Complete Examples 
+
+- [Creating an exception list for a shipping module](/user/shipping/exceptions/)
+- [Adding a link to the Information, More Information or EZ-Page Sidebox](/user/sideboxes/add_link_information_sidebox/#using-an-observer)
+ 
