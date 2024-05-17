@@ -1,6 +1,6 @@
 ---
-title: Archive of Older What's New 
-description: Older lists of features and bug fixes by release
+title: Archive of What's New documents
+description: Lists of features and bug fixes by release
 weight: 10
 noindex: yes
 layout: allpages
