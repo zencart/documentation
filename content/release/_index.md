@@ -1,6 +1,6 @@
 ---
 title: Release Documentation
-description: Release Notes, changed files lists and other release documents 
+description: Release Notes, lists of changed files, and other documents 
 category: Zen Cart
 no_list: true
 ---
@@ -35,7 +35,7 @@ no_list: true
 - [What's Next](whatsnext)
 
 ## Archive
-- [Older Changed Files Lists](/release/archive_changed/)
-- [Older What's New Lists](/release/archive_whatsnew/)
+- [Changed Files docs for older releases](/release/archive_changed/)
+- [What's New  docs for older releases](/release/archive_whatsnew/)
 
 
