@@ -1,1 +1,9 @@
+# Netlify Redirects - these DO NOT work in your local repo, only 
+# when deployed and running under Netlify.
+#
+# Example: redirect 
+# https://docs.zen-cart.com/release/changed_files-v1-5-6.html
+# to
+# https://docs.zen-cart.com/release/archive_changed/changed_files-v1-5-6
+#
 /release/changed_files-v1-5-6.html /release/archive_changed/changed_files-v1-5-6/ 301
