@@ -227,6 +227,10 @@ Crosslink only pages should have `noindex: yes` in their front matter.
 
 We are no longer using a `url` in the front matter to redirect because it doesn't work reliably. 
 
+## Redirects
+
+If you really really really want a redirect: use the `_redirects` file in `/static`.  Please only do this if you rename an important file that is still active; if you're archiving old content and trying to preserve URLs, this is probably more trouble than it's worth.  Note too that this cannot be tested with a local repo since it's a Netlify function. 
+
 ## Excluding pages from the All FAQs index 
 
 To avoid duplicate entries in the [All FAQs](https://docs.zen-cart.com/user/_allpages/) index, add the following line to the page frontmatter for pages with duplicate content: 
