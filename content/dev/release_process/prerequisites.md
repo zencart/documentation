@@ -23,17 +23,25 @@ To run the release process, you must have the following:
 Once you have these things, you're almost ready to begin.
 
 # Final Steps Before Beginning
+
+## Prepare your branch 
+
+Be sure your copy of the Github repo is up to date, and be sure you're on the right branch for building (either `master` or `prior-version-branch` for a patch).
+
+Create a new branch specifically for the version file changes. 
+
 ## Update the versioning files: 
 
 NOTE: If you are setting up a pre-release, please see [Pre-Release Notes](/dev/release_process/pre_release_notes/).
 
-Before doing the version updates, create a new branch specifically for these changes. 
 
 1. Edit the file `includes/version.php` and update the version.
 
 1. Edit the file `zc_install/includes/version.php` and update the version.
 
-1. Edit the file `zc_install/sql/install/mysql_zencart.sql` and update the version number in the `project_version` and `project_version_history` tables. 
+**For patch releases or any release with no database change SKIP REMAINING VERSION FILE UPDATES.  Go to the next step.**
+
+3. Edit the file `zc_install/sql/install/mysql_zencart.sql` and update the version number in the `project_version` and `project_version_history` tables. 
 
 1. Edit the file `zc_install/sql/updates/mysql_upgrade_zencart_<current>.sql` and update the version number in the `project_version` and `project_version_history` tables. 
 
@@ -43,7 +51,7 @@ Before doing the version updates, create a new branch specifically for these cha
 
 1. Ensure the new version number has been added to `zc_install/includes/modules/pages/database_upgrade/header_php.php`. 
 
-This can be confusing because sometimes the update letter is included and sometimes it isn't.  The thing to remember is that the database version does not include the letter, because the database doesn't change just because of a patch release.  
+This can be confusing because sometimes the patch number / update letter is included and sometimes it isn't.  The thing to remember is that the database version does not include the patch number / letter, because the database doesn't change just because of a patch release.  
 
 Shortcut for editing these 7 files:
 

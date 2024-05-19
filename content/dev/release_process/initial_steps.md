@@ -27,8 +27,8 @@ Message all developers who have merge privileges using the Skype Dev Chat channe
 Before tagging a release we need to:
 
 - Ensure code is up to date.
-- Be sure the version changes you did in the prior steps are checked in and merged. Remember you will have to bypass merge protections since the branch has been locked for merges.
-- Update the [Documentation Website](https:docs.zen-cart.com/release) to ensure that it reflects changes that have happened within the release.
+- Be sure the version changes you did in the prior steps are checked in and merged. If they weren't, remember you will have to bypass merge protections since the branch has been locked for merges.
+- Update the [Documentation Website](https:docs.zen-cart.com/release) to ensure that it reflects changes that have happened within the release.  (Focus on the What's New page; it's easier to build the Changed Files page once the build is complete.)
 
 # Testing Prior to the build 
 Create a new shop using the branch you are about to build, and run through some tests.  You want to be confident that what you're building will work. 
@@ -39,8 +39,8 @@ Create a new shop using the branch you are about to build, and run through some 
 
 The [Documentation Website](https:docs.zen-cart.com/release)  contains details of changes between versions and general installation instructions.
 
-The 2 main pages that need adding/updating are the [Whats New](https://docs.zen-cart.com/release/whatsnew_1.5.7.html)
-and [Changed Files](https://docs.zen-cart.com/release/changed_files-v1-5-7.html) pages.
+The 2 main pages that need adding/updating are the [What's New](https://docs.zen-cart.com/release/whatsnew_2.0.0.html)
+and [Changed Files](https://docs.zen-cart.com/release/changed_files-v2-0-0.html) pages.
 Note: The above links give examples of previous releases.
 
 You will need to have checkout of the Zen Cart documentation website and be able to use the Hugo system to
@@ -49,7 +49,7 @@ edit and test the pages locally before pushing changes,
 While previously we would duplicate content in the `/docs` folder of the release and on the
 https://zen-cart.com/docs folder, these now redirect to the documentation website.
 
-There is a final piece of documentation which needs to be updated, and that is the [Implementation Guide](/dev/release_process/implementation_guide/). 
+There is a final piece of documentation which needs to be updated, and that is the [Implementation Guide](/dev/release_process/implementation_guide/).  This is delivered as part of the build, so it must be up to date before you do the build! 
 
 <div style="text-align:right;" id="next">
    <a class="btn btn-lg btn-primary mr-3 mb-4" href="/dev/release_process/version_stamping/">

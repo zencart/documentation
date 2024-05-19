@@ -15,11 +15,13 @@ You need have login access to the version server https://servermanager.zen-cart.
 
 ![Server Manager](/images/sm_dashboard.png)
 
-Click `Version Manager > Manifests`
+- Login to the Server Manager.
 
-Click the `New manifest` button
+- Click `Version Manager > Manifests`
 
-Enter the "Tag name" (the tag name you created in prior steps), and click the "Create" button.
+- Click the `New manifest` button
+
+- Enter the "Tag name" (the tag name you created in prior steps), and click the "Create" button.
 
 <div style="text-align:right;" id="next">
    <a class="btn btn-lg btn-primary mr-3 mb-4" href="/dev/release_process/post_release/">

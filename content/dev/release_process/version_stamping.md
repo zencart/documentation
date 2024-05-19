@@ -32,7 +32,7 @@ Clone the [https://github.com/zencart/versionstamper](https://github.com/zencart
 
 Follow the instructions in the README. 
 
-### config file
+### config.php file
 
 ```$opts = [
     'prevOfficialRelease' => 'v1.5.7d',
@@ -124,20 +124,15 @@ To actually make changes we would use
 
 `php versionstamp.php app:version-stamp --mode=run`
 
-Once the version stamping is complete, you will need to go to your Zen Cart folder and 
-commit and merge the changes created by the version stamping.
-Remember you will have to bypass merge protections since the branch has been locked for merges.
+## Merging the version stamper updates
 
-Be sure to use a comment which indicates which version number is being stamped (e.g. "Version stamping 2.0.0"). 
+Once the version stamping is complete, you will need to go to your Zen Cart folder and commit and merge the changes created by the version stamping.
 
-```
-git add .
-git commit 
-git push 
--- Merge this change
-git checkout master
--- update your branch
-```
+- Be sure to **merge into the right branch** (`master` for new releases; `patch-version` for patches).
+- Remember you will have to bypass merge protections since the branch has been locked for merges.
+
+**Be sure to use a comment which indicates which version number is being stamped (e.g. "Version stamping 2.0.0").**
+
 
 ## Capturing information in Release Log
 
