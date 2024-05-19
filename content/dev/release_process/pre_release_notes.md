@@ -5,7 +5,9 @@ layout: docs
 category: release_process
 ---
 
-These notes only apply to pre-release version updates, which are done at the time of initiation of a new release. 
+Note: This step only apples to pre-release version updates, which are done at the time of initiation of a new release. 
+
+If you are doing official release, please skip this step and go to the [next step](/dev/release_process/dependency_checks/). 
 
 ## Git Work
 

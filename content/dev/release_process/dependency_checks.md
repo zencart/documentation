@@ -5,7 +5,7 @@ layout: docs
 category: release_process
 ---
 
-Before doing a build (especially a new release vs. a patch), it's a good idea to check and update versions of external utilities that the project uses. It's not necessary to be on the latest version, but you want to ensure that any security patches have been installed.  
+Before doing a major or minor release build, it's a good idea to check and update versions of external utilities that the project uses. It's not necessary to be on the latest version, but you want to ensure that any security patches have been installed.  
 
 **Last minute changes are risky!  Try to do any changes a few weeks before the build so you have time to test.**
 

@@ -39,6 +39,13 @@ https://github.com/zencart/zencart/tags to be sure.  If it's not there, do
 
 `git push upstream --tags`
 
+<hr>
+
+### STOP!  TEST!
+
+This is your last chance to verify your work before pushing it out to the world.  
+
+<hr>
 
 ### Create the Release on Github
 
