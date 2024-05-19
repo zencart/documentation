@@ -3,51 +3,51 @@ title = "Zendocs"
 linkTitle = "Zendocs"
 +++
 
-{{< blocks/cover title="Zen Cart Docs" image_anchor="top" height="full" color="orange" >}}
-<div class="mx-auto">
-    <a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/user" >}}">
-        Storeowner Docs <i class="fas fa-arrow-alt-circle-right ml-2"></i>
-    </a>
-    <a class="btn btn-lg btn-secondary mr-3 mb-4" href={{< relref "/dev" >}}>
-        Developer Docs <i class="fas fa-arrow-alt-circle-right ml-2 "></i>
-    </a>
-    <br>
-    <a class="btn btn-sm btn-info" href="https://github.com/zencart/documentation">
-        Contribute to the docs
-    </a>
-<hr>
+{{< blocks/cover title="Welcome to the Zen Cart Documentation Site!" image_anchor="center" height="auto" >}}
 
-<h2>Latest Release</h2>
-  <a class="btn btn-lg btn-primary mr-3 mb-4" href="/user/first_steps/server_requirements/">
-      Server Requirements <i class="fas fa-arrow-alt-circle-right ml-2"></i>
-  </a>
-    <a class="btn btn-lg btn-primary mr-3 mb-4" href="/release">
-        Release Documentation <i class="fas fa-arrow-alt-circle-right ml-2"></i>
-    </a>
-    <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://github.com/zencart/zencart/releases">
-        Download Current Release<i class="fas fa-arrow-alt-circle-right ml-2"></i>
-    </a>
-    <a class="btn btn-lg btn-primary mr-3 mb-4" href="/history">
-        Download Historic Releases<i class="fas fa-arrow-alt-circle-right ml-2"></i>
-    </a>
+{{< blocks/section color="none"  type="container" >}}
+{{% blocks/feature icon="fa-store-alt" url="/user/" url_text="Documentation for Zen Cart users" %}}
+[Storeowner Docs](/user/)
+{{% /blocks/feature %}}
+{{% blocks/feature icon="fa-code" url="/dev/" url_text="Documentation for Zen Cart developers"%}}
+[Developer Docs](/dev/)
+{{% /blocks/feature %}}
+{{% blocks/feature icon="fa-hands-helping" url="https://github.com/zencart/documentation" url_text="Contribute to the Docs" %}}
+{{% /blocks/feature %}}
+{{< /blocks/section >}}
 
-<hr>
+{{% blocks/lead color="dark" %}}
+Releases
+{{% /blocks/lead %}}
 
-<h2>Next Release</h2>
-<ul class="mainpage_list">
-  <li><a href="https://github.com/zencart/zencart">Github</a></li>
-</ul>
-<hr>
+{{< blocks/section color="primary" type="row" height="min">}}
+{{% blocks/feature icon="fa-file-download" url="https://github.com/zencart/zencart/releases" url_text="Latest release on Github" %}}
+[Download Current Release](https://github.com/zencart/zencart/releases)
+{{% /blocks/feature %}}
+{{% blocks/feature  icon="fa-book" url="/release" url_text="Release notes, lists of changed files" %}}
+[Release Documentation](/release)
+{{% /blocks/feature %}}
+{{% blocks/feature icon="fa-server" url="/user/first_steps/server_requirements/" url_text="PHP, Database, Server Software, SSL" %}}
+[Server Requirements](/user/first_steps/server_requirements/)
+{{% /blocks/feature %}}
+{{% blocks/feature icon="fa-step-forward" url="https://github.com/zencart/zencart" url_text="Github development branch" %}}
+[Next Release](https://github.com/zencart/zencart)
+{{% /blocks/feature %}}
+{{% blocks/feature icon="fa-history" url="/history" url_text="v13x & v15x series" %}}
+[Download Historic Releases](/history)
+{{% /blocks/feature %}}
+{{< /blocks/section >}}
 
-<h2>Latest News</h2>
-<ul class="mainpage_list">
-  <li><a href="https://docs.zen-cart.com/user/about_us/whats_new/">What's New with Zen Cart?</a></li>
-</ul>
-<hr>
+{{< blocks/section color="info" type="row" >}}
+{{% blocks/feature icon="fa-bullhorn" url="/user/about_us/whats_new/" url_text="What's New with Zen Cart?" %}}
+[Latest News](/user/about_us/whats_new/)
+{{% /blocks/feature %}}
+{{< /blocks/section >}}
 
-<h2>Legacy Links</h2>
-(To be removed in the future)
-<ul class="mainpage_list">
-  <li><a href="https://www.zen-cart.com/content.php?2-FAQs-and-Tutorials">Legacy FAQs</a></li>
-</ul>
+{{< blocks/section color="dark" type="row" >}}
+{{% blocks/feature icon="fa-landmark" url="https://www.zen-cart.com/content.php?2-FAQs-and-Tutorials" url_text="Legacy FAQs" %}}
+[Legacy Links (to be removed)](https://www.zen-cart.com/content.php?2-FAQs-and-Tutorials)
+{{% /blocks/feature %}}
+{{< /blocks/section >}}
+
 {{< /blocks/cover >}}
