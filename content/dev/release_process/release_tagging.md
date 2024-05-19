@@ -39,14 +39,6 @@ https://github.com/zencart/zencart/tags to be sure.  If it's not there, do
 
 `git push upstream --tags`
 
-<hr>
-
-### STOP!  TEST!
-
-This is your last chance to verify your work before pushing it out to the world.  
-
-<hr>
-
 ### Create the Release on Github
 
 After this we then need to create the release on github.
@@ -72,9 +64,10 @@ It's a good idea to also check the "Create a discussion for this release" box if
 
 When you're ready, press the **Publish Release** button.
 
-### Verification 
+### STOP!  Do Verification 
 Take some time to verify the build you just published.  Since you already did pre-testing before beginning the build process, hopefully there will be no issues, but if there are, return to the [Possible Remedial Commits](/dev/release_process/release_tagging/#possible-remedial-commits) step. 
 
+Be sure you download the build from the [Github Releases page](https://github.com/zencart/zencart/releases) so you're testing exactly what will be released. 
 
 <div style="text-align:right;" id="next">
    <a class="btn btn-lg btn-primary mr-3 mb-4" href="/dev/release_process/additional_release_tasks/">
