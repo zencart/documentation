@@ -42,9 +42,13 @@ Instructions: see infrastructure repo (team members only).
 
 ## Other Post-Release Tasks 
 
-The first item applies to all releases (other than pre-releases); subsequent items are for major releases only. 
+### All Releases 
 
 - Update the [Release History](/user/about_us/release_history/) page with the new version and date.
+
+- Update the [What's New with Zen Cart](/user/about_us/whats_new/) page.
+
+### Major and Minor Releases Only
 
 - Create a "Known Bugs in <release>" thread on the [Upgrading to 1.5.x subforum](https://www.zen-cart.com/forumdisplay.php?156-Upgrading-to-1-5-x).   Update the release announcement and the [known bugs](/user/about_us/known_bugs/) page with this link.
 
@@ -53,8 +57,6 @@ The first item applies to all releases (other than pre-releases); subsequent ite
 - Update the pages in [Third Party Libraries](/dev/libraries/) if any major library version changes have been made.
 
 - Search the documentation in https://github.com/zencart/documentation for the string RELEASETIME and update those files.
-
-- Update the [What's New with Zen Cart](/user/about_us/whats_new/) page.
 
 - Run the `build_doc` and `view schema` tools.
    - `build_doc` is in the [Zen Cart Tools](https://github.com/scottcwilson/zencart_tools) repo.  It creates the [configuration documentation](https://docs.zen-cart.com/user/admin_pages/configuration/).  Install it in the admin folder for the new release, edit the file and set `TARGET_FOLDER`, then run it; it will update the Zen Cart documentation folder. 
