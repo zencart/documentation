@@ -7,11 +7,11 @@ layout: docs
 noindex: yes
 ---
 
-PLEASE NOTE: The builds listed below have not yet been released, and this document is a work in progress.
+<font color="red">PLEASE NOTE: The builds listed below have not yet been released, and this document is a work in progress.</font>
 
 ## 2.2.0 
 The improvements targeted for v2.2.0 include:  
-- New Feature: The <a href="https://vinosdefrutastropicales.com/product_extra_files/options_stock/readme.html">Products Options Stock</a> plugin will be integrated with Zen Cart. 
+- New Feature: The <a href="https://vinosdefrutastropicales.com/product_extra_files/options_stock/readme.html">Products Options Stock</a> plugin will be integrated with Zen Cart.  This feature will help storeowners who have product variants whose stock needs to be tracked (red large t-shirts vs blue medium t-shirts, for example).  It is designed to replace the various "Stock by Attributes" plugins which are currently in use.
     
 ## 2.1.0 
 The improvements targeted for v2.1.0 include:  
@@ -21,7 +21,7 @@ The improvements targeted for v2.1.0 include:
 - Admin: The date of last password change is now shown on the Users page in admin.
 - Admin: Product Price fields "Gross" and "Net" have been renamed to "Tax Included" and "Tax Excluded."
 - Core: Shipping modules now inherit from ZenShipping base class to reduce code duplication and ensure consistency.
-- Core: Zones module now has exception rules notifier.  See <a href="/user/shipping/exceptions/">this page</a>.</li>
+- Core: Zones module now has exception rules notifier.  See <a href="/user/shipping/exceptions/">this page</a> for details on usage.</li>
 
 ## 2.0.1 
 Release 2.0.1 has been delivered; changes are now listed in [What's New in 2.0.x](/release/whatsnew_2.0.0.html).
