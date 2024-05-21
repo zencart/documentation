@@ -62,7 +62,7 @@ Once you have created your new page, you'll want to link to it. A few options ar
 
 ## Site Map
 
-If you add custom pages to your site, don't forget to add them to your sitemap.  Copy `includes/templates/template_default/templates/tpl_site_map_default.php` to `includes/templates/YOURTEMPLATE/templates/tpl_site_map_default.php` (if the override file is not already there), and add a link to your new page. 
+If you add custom pages to your site, don't forget to add them to your [sitemap](/user/storefront_pages/site_map/).  Copy `includes/templates/template_default/templates/tpl_site_map_default.php` to `includes/templates/YOURTEMPLATE/templates/tpl_site_map_default.php` (if the override file is not already there), and add a link to your new page. 
 
 ## Providing Direct Access to Files 
 
