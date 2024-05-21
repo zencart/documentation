@@ -61,9 +61,7 @@ pre > code {
 	  margin-top:0px!important;
 	    margin-left:1.5rem;
   }
-  .td-navbar-cover {
-    background: $primary!important;
-  }
+
   .navbar-nav.d-none.d-lg-block {
     display:inline-block!important;
 	margin-right:0.2rem;
@@ -137,11 +135,11 @@ nav.foldable-nav .without-child {
 
 /* Homepage - make header background solid on large screens to prevent text overlap */
  
-@media (min-width:869px) {
+
   .td-navbar-cover {
-    background: #955239!important;
+    background: #403F4C!important;
   }	
-}
+
 
 /* Homepage - center body elements */
 
@@ -151,14 +149,11 @@ ul.mainpage_list {
 
 /* Homepage - Correct Color Contrast for Footer Links */
 .col-12.col-sm-4.text-center.py-2.order-sm-2 a {color: #6aafff;}
-.col-12.col-sm-4.text-center.py-2.order-sm-2 a:hover {color: #f2f2f2;}
+.col-12.col-sm-4.text-center.py-2.order-sm-2 a:hover, .col-12.col-sm-4.text-center.py-2.order-sm-2 a:focus {color: #f2f2f2;}
 
 /* Change settings to make the current home page fit on a desktop screen */
-.container.td-overlay__inner {max-width: 100%;}
-section#td-cover-block-0 {padding-top: 1rem;padding-bottom: 0;}
 main.td-main hr {margin-top: 0;margin-bottom: 0;}
-a.nav-link {color: #ffffff !important;}
-a.nav-link:hover {color: #ffdd99;}
+
 
 footer {
     min-height: auto;
@@ -168,3 +163,146 @@ footer {
     }
 }
 
+/* Re-styling homepage */
+
+.td-overlay--dark {
+  background-image: linear-gradient(#E26D1D, #EB9524);
+}
+
+.td-overlay--dark::after, .td-box--0 {
+  background:none;
+}
+
+.navbar-dark .navbar-nav .nav-link {   
+  color:#FFFFFF;	
+  text-shadow:none;
+}
+
+  /* hover,focus colour for homepage header */ 
+.td-home .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+  color: #ADADAD;
+}
+
+  /* hover,focus colour for /user & /dev header */ 
+.td-section .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+  color: #030303;
+}
+
+@media (min-width: 992px) {
+  .col-lg-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+	padding-top:1rem;	
+  }
+}
+
+.col {
+  padding-left:0;
+  padding-right:0;
+}
+
+.col-lg-4 p a {
+  color:#FFFFFF;
+}
+
+.col-lg-4 p a:hover, .col-lg-4 p a:focus {
+  color:#030303;
+}
+
+.row.td-box:nth-child(n+5) {
+  margin-bottom: 1.5rem;
+  border-radius:0.5rem;
+}
+
+.row.td-box:nth-child(6) {
+  border-radius:0 0 0.5rem 0.5rem;
+}
+
+.row.container {
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0;
+}
+
+.row.container .col-lg-4:nth-child(1) {
+  background: #3C7BAF;
+  border-radius:0.5rem 0 0 ;
+}
+
+.row.container .col-lg-4:nth-child(2) {
+  background: #BA5B03;
+  border-radius:0 0.5rem 0 0;
+}
+  
+.row.container .col-lg-4:nth-child(3) {
+  background: #418179;
+  border-radius:0 0 0.5rem 0.5rem;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-top: 1rem;
+}
+
+@media (max-width: 991px) {
+  .col-lg-4 {    
+	padding-top:1rem;
+    margin-bottom:0!important;	
+  }  
+ .row.container .col-lg-4:nth-child(1), .row.container .col-lg-4:nth-child(2), .row.container .col-lg-4:nth-child(3) {
+    margin-bottom:0!important; }
+ .row.container .col-lg-4:nth-child(1){
+    border-radius:0.5rem 0.5rem 0 0!important;
+  }
+  .row.container .col-lg-4:nth-child(2) {
+	border-radius:0!important;	
+  }
+  .row.container .col-lg-4:nth-child(3) {
+    border-radius:0 0 0.5rem 0.5rem!important;
+  }
+} 
+
+.row.row .col-lg-4 {
+  margin:0 auto;
+}
+
+.td-default main section {
+  padding-top:2rem;
+  padding-bottom:2rem;
+}
+
+@media (min-width: 869px) {
+  .td-default main > section:first-of-type {
+    padding-top: 6rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 868px) {
+  .td-default main > section:first-of-type {
+    padding-top: 0rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .td-default main > section:first-of-type {
+    padding-top: 4rem;
+  }
+}
+
+.mb-0 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+section.row:nth-child(10) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > p:nth-child(1) > a:nth-child(1):hover, section.row:nth-child(10) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > p:nth-child(1) > a:nth-child(1):focus, section.row:nth-child(10) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > p:nth-child(4) > a:nth-child(1):hover, section.row:nth-child(10) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > p:nth-child(4) > a:nth-child(1):focus {
+  color:#ADADAD;
+}
+
+section.row:nth-child(4) {
+  background-color:#403F4C;
+  border-radius:0.5rem 0.5rem 0 0;
+} 
+
+section.row:nth-child(4) .td-arrow-down:before {
+border-color: #403F4C transparent transparent transparent;
+}

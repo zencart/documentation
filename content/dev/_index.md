@@ -8,6 +8,11 @@ menu:
     weight: 20
 layout: docs
 ---
+<style>
+.td-navbar {
+  background:#BA5B03;
+}
+</style>
 
 Store owners, please also see [storeowner docs](/user/). 
 
