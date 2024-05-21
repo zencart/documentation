@@ -149,7 +149,7 @@ ul.mainpage_list {
 
 /* Homepage - Correct Color Contrast for Footer Links */
 .col-12.col-sm-4.text-center.py-2.order-sm-2 a {color: #6aafff;}
-.col-12.col-sm-4.text-center.py-2.order-sm-2 a:hover {color: #f2f2f2;}
+.col-12.col-sm-4.text-center.py-2.order-sm-2 a:hover, .col-12.col-sm-4.text-center.py-2.order-sm-2 a:focus {color: #f2f2f2;}
 
 /* Change settings to make the current home page fit on a desktop screen */
 main.td-main hr {margin-top: 0;margin-bottom: 0;}
@@ -165,19 +165,28 @@ footer {
 
 /* Re-styling homepage */
 
-.navbar-dark .navbar-nav .nav-link {   
-  color:#FFFFFF;	 
+.td-overlay--dark {
+  background-image: linear-gradient(#E26D1D, #EB9524);
 }
 
+.td-overlay--dark::after, .td-box--0 {
+  background:none;
+}
+
+.navbar-dark .navbar-nav .nav-link {   
+  color:#FFFFFF;	
+  text-shadow:none;
+}
+
+  /* hover,focus colour for homepage header */ 
 .td-home .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
   color: #ADADAD;
 }
 
+  /* hover,focus colour for /user & /dev header */ 
 .td-section .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-  color: #2B2B2B;
+  color: #030303;
 }
-
-
 
 @media (min-width: 992px) {
   .col-lg-4 {
@@ -186,8 +195,6 @@ footer {
 	padding-top:1rem;	
   }
 }
-
-
 
 .col {
   padding-left:0;
@@ -198,17 +205,13 @@ footer {
   color:#FFFFFF;
 }
 
-.col-lg-4 p a:hover {
-  color:#050505;
+.col-lg-4 p a:hover, .col-lg-4 p a:focus {
+  color:#030303;
 }
 
 .row.td-box:nth-child(n+5) {
   margin-bottom: 1.5rem;
   border-radius:0.5rem;
-}
-
-.row.td-box:nth-child(4) {
-  border-radius:0.5rem 0.5rem 0 0;
 }
 
 .row.td-box:nth-child(6) {
@@ -227,7 +230,7 @@ footer {
 }
 
 .row.container .col-lg-4:nth-child(2) {
-  background: #BA5803;
+  background: #BA5B03;
   border-radius:0 0.5rem 0 0;
 }
   
@@ -242,36 +245,29 @@ footer {
 @media (max-width: 991px) {
   .col-lg-4 {    
 	padding-top:1rem;
-margin-bottom:0!important;	
-  }
+    margin-bottom:0!important;	
+  }  
  .row.container .col-lg-4:nth-child(1), .row.container .col-lg-4:nth-child(2), .row.container .col-lg-4:nth-child(3) {
     margin-bottom:0!important; }
-.row.container .col-lg-4:nth-child(1){
-border-radius:0.5rem 0.5rem 0 0!important;
-}
-	.row.container .col-lg-4:nth-child(2) {
-	border-radius:0!important;
-	
-	}
-	.row.container .col-lg-4:nth-child(3) {
-border-radius:0 0 0.5rem 0.5rem!important;
-}
+ .row.container .col-lg-4:nth-child(1){
+    border-radius:0.5rem 0.5rem 0 0!important;
+  }
+  .row.container .col-lg-4:nth-child(2) {
+	border-radius:0!important;	
+  }
+  .row.container .col-lg-4:nth-child(3) {
+    border-radius:0 0 0.5rem 0.5rem!important;
+  }
 } 
-  
-  
-  
-
 
 .row.row .col-lg-4 {
   margin:0 auto;
 }
 
-
-  .td-default main section {
-    padding-top:2rem;
-    padding-bottom:2rem;
-  }
-
+.td-default main section {
+  padding-top:2rem;
+  padding-bottom:2rem;
+}
 
 @media (min-width: 869px) {
   .td-default main > section:first-of-type {
@@ -298,6 +294,15 @@ border-radius:0 0 0.5rem 0.5rem!important;
   line-height: 1.2;
 }
 
-section.row:nth-child(10) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > p:nth-child(1) > a:nth-child(1):hover, section.row:nth-child(10) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > p:nth-child(4) > a:nth-child(1):hover {
+section.row:nth-child(10) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > p:nth-child(1) > a:nth-child(1):hover, section.row:nth-child(10) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > p:nth-child(1) > a:nth-child(1):focus, section.row:nth-child(10) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > p:nth-child(4) > a:nth-child(1):hover, section.row:nth-child(10) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > p:nth-child(4) > a:nth-child(1):focus {
   color:#ADADAD;
+}
+
+section.row:nth-child(4) {
+  background-color:#403F4C;
+  border-radius:0.5rem 0.5rem 0 0;
+} 
+
+section.row:nth-child(4) .td-arrow-down:before {
+border-color: #403F4C transparent transparent transparent;
 }
