@@ -166,7 +166,7 @@ footer {
 /* Re-styling homepage */
 
 .td-overlay--dark {
-  background-image: linear-gradient(#E26D1D, #EB9524);
+  background: #d77115;
 }
 
 .td-overlay--dark::after, .td-box--0 {
@@ -209,6 +209,7 @@ footer {
   color:#030303;
 }
 
+
 .row.td-box:nth-child(n+5) {
   margin-bottom: 1.5rem;
   border-radius:0.5rem;
@@ -223,19 +224,23 @@ footer {
   margin-left: 0;
   padding: 0;
 }
+.row.container .col-lg-4, .row.row .col-lg-4 {
+    border-color: #562d08;
+    border-style: solid;
+}
 
 .row.container .col-lg-4:nth-child(1) {
-  background: #3C7BAF;
+  background: #157BD7;
   border-radius:0.5rem 0 0 ;
 }
 
 .row.container .col-lg-4:nth-child(2) {
-  background: #BA5B03;
+  background: #157BD7;
   border-radius:0 0.5rem 0 0;
 }
   
 .row.container .col-lg-4:nth-child(3) {
-  background: #418179;
+  background: #157BD7;
   border-radius:0 0 0.5rem 0.5rem;
   flex: 0 0 100%;
   max-width: 100%;
@@ -299,10 +304,10 @@ section.row:nth-child(10) > div:nth-child(1) > div:nth-child(1) > div:nth-child(
 }
 
 section.row:nth-child(4) {
-  background-color:#403F4C;
+  background-color:#a95910;
   border-radius:0.5rem 0.5rem 0 0;
 } 
 
 section.row:nth-child(4) .td-arrow-down:before {
-border-color: #403F4C transparent transparent transparent;
+border-color: #a95910 transparent transparent transparent;
 }
