@@ -143,12 +143,17 @@ nav.foldable-nav .without-child {
 
 /* Homepage - center body elements */
 
+h1.display-1.mt-0.mt-md-5.pb-4 {
+  color: #4f4e5b;
+}
+
 ul.mainpage_list {
   padding-left:0;
 }
 
 /* Homepage - Correct Color Contrast for Footer Links */
-.col-12.col-sm-4.text-center.py-2.order-sm-2 a {color: #6aafff;}
+.col-12.col-sm-4.text-center.py-2.order-sm-2 a {text-decoration: underline;color: #ffffff;/* Changed from #6aafff */}
+.bg-dark {background-color: #585764 !important;/* Changed from #403f4c!important */}
 .col-12.col-sm-4.text-center.py-2.order-sm-2 a:hover, .col-12.col-sm-4.text-center.py-2.order-sm-2 a:focus {color: #f2f2f2;}
 
 /* Change settings to make the current home page fit on a desktop screen */
@@ -166,7 +171,7 @@ footer {
 /* Re-styling homepage */
 
 .td-overlay--dark {
-  background: #d77115;
+  background-image: linear-gradient(#ff9929,#ffd132);/* changed from #E26D1D,#EB9524 - lightened by 40% */
 }
 
 .td-overlay--dark::after, .td-box--0 {
@@ -209,6 +214,15 @@ footer {
   color:#030303;
 }
 
+.td-box--primary {
+  color: #ffffff;
+  background-color: #5c9bcf;/* Changed from #3c7baf */
+}
+
+.td-box--secondary {
+  color: #fff;
+  background-color:#61a199; /* Changed from #418179 */
+}
 
 .row.td-box:nth-child(n+5) {
   margin-bottom: 1.5rem;
@@ -224,23 +238,19 @@ footer {
   margin-left: 0;
   padding: 0;
 }
-.row.container .col-lg-4, .row.row .col-lg-4 {
-    border-color: #562d08;
-    border-style: solid;
-}
 
 .row.container .col-lg-4:nth-child(1) {
-  background: #157BD7;
+  background: #5c9bcf;/* Changed from #3c7baf */
   border-radius:0.5rem 0 0 ;
 }
 
 .row.container .col-lg-4:nth-child(2) {
-  background: #157BD7;
+  background: #dc7d25;/* Changed from #ba5b03 */
   border-radius:0 0.5rem 0 0;
 }
   
 .row.container .col-lg-4:nth-child(3) {
-  background: #157BD7;
+  background: #61a199;/* Changed from #418179 */
   border-radius:0 0 0.5rem 0.5rem;
   flex: 0 0 100%;
   max-width: 100%;
@@ -304,10 +314,10 @@ section.row:nth-child(10) > div:nth-child(1) > div:nth-child(1) > div:nth-child(
 }
 
 section.row:nth-child(4) {
-  background-color:#a95910;
+  background-color: #585764;/* Changed from #403f4c */
   border-radius:0.5rem 0.5rem 0 0;
 } 
 
 section.row:nth-child(4) .td-arrow-down:before {
-border-color: #a95910 transparent transparent transparent;
+border-color: #403F4C transparent transparent transparent;
 }
