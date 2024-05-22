@@ -51,7 +51,8 @@ An "uninstall" SQL script should be included as well so the end user can uninsta
 - Obfuscating or encrypting (such as via ionCube, Zend Guard, etc.) is *not* acceptable.
 
 ## Documentation Requirements
-1. Complete documentation for the contribution must be contained in the contribution's distribution zip file, preferably in a file named `README-addonnamehere.TXT` (or `README.md`). Using a URL shortcut/link to point to another website for readme and/or install/uninstall documentation is not acceptable.
+1. A README file (in text or markdown format) must be included with the plugin, and include basic details like the purpose of the plugin and how to install and uninstall it.
+1. Complete documentation for the contribution may be either in a README file in the contribution's distribution zip file OR in the contribution's [Github repo](/dev/plugins/github/).  
 1. The author should be acknowledged - and a single link to their site is acceptable, as is a tasteful request for donations. 
 1. Prior authors/contributors should be acknowledged.
 1. Documentation should include clear steps outlining what to do once the contribution has been unzipped, including where to put the unzipped files and how to do any database updates/changes.
@@ -71,4 +72,8 @@ When doing an update, it is appropriate to acknowledge prior work done by other 
 The Zen Cart team reserves the right at its own discretion to reject or deny any contribution and/or update, with or without notification, especially if it fails to comply with these published standards or if it risks being dangerous or confusing to those who might try to use it.
 
 Submitting a contribution means you agree with the GPL and consent for your contribution to be used under the terms of the GPL.
+
+## Using Github as a Repository for your plugin
+
+There are many [advantages to storing your plugin on Github](/dev/plugins/github/); please consider doing so.
 

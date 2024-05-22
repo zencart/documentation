@@ -27,7 +27,7 @@ This is what it looks like when `Columns Per Row` is set to 1.  Using this setti
 ## Fluid Mode in Bootstrap
 In the Bootstrap template, the recommended value of `Columns Per Row` is 0, which allows the template to determine how many columns will fit on the screen dynamically.  A smaller window will have fewer columns, and a larger window will have more.  
 
-Setting `Columns Per Row` to 0 is called *fluid mode* in the Bootstrap template.   The Bootstrap template is best run in either rows mode or fluid mode.
+Setting `Columns Per Row` to 0 is called *fluid mode* in the Bootstrap template.   The Bootstrap template is best run in either rows mode or fluid mode.  (Setting `Columns Per Row` to 1 is called *rows mode* in both Bootstrap and Responsive Classic.)
 
 Here's a Bootstrap listing page in fluid mode in a wide window (around 1500px): 
 
