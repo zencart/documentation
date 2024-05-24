@@ -10,7 +10,7 @@ layout: docs
 ---
 <style>
 .td-navbar {
-  background:#BA5B03;
+  background:#B4661D;
 }
 </style>
 
