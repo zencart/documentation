@@ -6,8 +6,9 @@ weight: 100
 layout: docs
 noindex: yes
 ---
+# :construction: UNDER CONSTRUCTION! :construction:
 
-<font color="red">PLEASE NOTE: The releases listed below have not yet been finalized, and this document is a work in progress.  <br>
+:stop_sign: <font color="red">PLEASE NOTE: The releases listed below have not yet been finalized, and this document is a work in progress.  <br>
 These are goals, not commitments.  Any of the improvements listed here might be delayed beyond the stated target release.</font>
 
 ## 2.2.0 
@@ -21,6 +22,8 @@ The improvements targeted for v2.1.0 include:
  - Admin: The <a href="/dev/code/template_settings/">template settings file</a> may now be viewed from your admin page.
 - Admin: The date of last password change is now shown on the Users page in admin.
 - Admin: Product Price fields "Gross" and "Net" have been renamed to "Tax Included" and "Tax Excluded."
+- Core: Retired Notifiers and Observers can be set to generate deprecated logs automatically.
+- Core: The introduction of the `Product` class continues the modernization of Zen Cart.  
 - Core: Shipping modules now inherit from ZenShipping base class to reduce code duplication and ensure consistency.
 - Core: Zones module now has exception rules notifier.  See <a href="/user/shipping/exceptions/">this page</a> for details on usage.</li>
 

@@ -21,4 +21,6 @@ There are a small number of exceptions to the two rules noted above, which are:
 |-----|------------|------|----|
 |SECURITY_CODE_LENGTH|16|Admin > Configuration > GV Coupons| Integer| 
 |PRODUCTS_MANUFACTURERS_STATUS|3|Admin > Configuration > Maximum Values| String|
+|SHOW_SALE_DISCOUNT_DECIMALS|18|Admin > Configuration > Product Info|Integer|
 
+Note that the Max and Min values are converted to Integers at constant creation time in newer versions of Zen Cart in `laravel/app/Models/Configuration.php`.

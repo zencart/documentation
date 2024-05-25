@@ -24,7 +24,12 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 - If you use a custom template, you will want to perform your own [accessibility review](/user/accessibility/accessibility/).  
 
-### Zen Cart 2.0.0 
+### Zen Cart 2.1.0 :stop_sign: <font color="red">NOT RELEASED YET</font> :stop_sign:
+
+- This release introduces a `Product` class to consolidate product-related operations and queries.   
+- The `NOTIFY_GET_PRODUCT_DETAILS` notifier has been deprecated in favor of `NOTIFY_GET_PRODUCT_OBJECT_DETAILS`, which uses different arguments.  Any use of the former will product a deprecation debug log. 
+
+### Zen Cart 2.0.x
 
 - [Shipping Dimensions](/user/shipping/shipping_dimensions) are now part of product data.  Users of the "Canada Post" and "Numinix Product Fields" plugins should be aware that the field `products_ready_to_ship` has been renamed `product_ships_in_own_box`, and the `zc_install` upgrade script will do the rename for you. 
 - The load order of all `extra` folders is now done alphabetically.  Prior to this, file system order was used.  
