@@ -19,13 +19,17 @@ The improvements targeted for v2.2.0 include:
 The improvements targeted for v2.1.0 include:  
 - New Feature: <a href="https://github.com/zencart/zencart/discussions/6428">Child Templates</a> will be supported, so that storeowners can more easily determine what has been changed from the base release of a template. 
 - New Feature: The Zen Cart admin will be secured with <a href="https://github.com/zencart/zencart/pull/6350">Multi Factor Authentication</a>. 
- - Admin: The <a href="/dev/code/template_settings/">template settings file</a> may now be viewed from your admin page.
+- Admin: FIXED - Searching for customers from the orders page would occasionally lead to a blank right hand infoBox.
+- Admin: FIXED - Selecting coupons on pages other than the first page would occasionally fail.
+- Admin: The <a href="/dev/code/template_settings/">template settings file</a> may now be viewed from your admin page.
 - Admin: The date of last password change is now shown on the Users page in admin.
 - Admin: Product Price fields "Gross" and "Net" have been renamed to "Tax Included" and "Tax Excluded."
 - Core: Retired Notifiers and Observers can be set to generate deprecated logs automatically.
-- Core: The introduction of the `Product` class continues the modernization of Zen Cart.  
+- Core: The introduction of the `Product` class continues the modernization of Zen Cart.
 - Core: Shipping modules now inherit from ZenShipping base class to reduce code duplication and ensure consistency.
 - Core: Zones module now has exception rules notifier.  See <a href="/user/shipping/exceptions/">this page</a> for details on usage.</li>
+- Storefront: Additional image matching rules now are enforced more strictly; see [this page](/user/images/additional_images/#additional-images-filename-matching-rules).  This behavior can be disabled in the [site specific overrides file](/user/customizing/site_specific_overrides/). 
+- Extras: Improved the modernized utilities in the `/extras` folder.
 
 ## 2.0.1 
 Release 2.0.1 has been delivered; changes are now listed in [What's New in 2.0.x](/release/whatsnew_2.0.0.html).

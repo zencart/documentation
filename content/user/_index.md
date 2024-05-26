@@ -8,14 +8,8 @@ menu:
 layout: docs
 ---
 
-Quick Links: &nbsp;
-&nbsp; [All FAQs](/user/_allpages/) &nbsp; | 
-&nbsp; [Top FAQs](/user/all_time_favorites/) &nbsp; | 
-&nbsp; [All Admin Menus](/user/admin_pages/menu_sections/) &nbsp; | 
-&nbsp; [All Configs](/user/admin_pages/configuration/all/) &nbsp; | 
-&nbsp; [Glossary](/user/first_steps/glossary/) &nbsp; | 
-&nbsp; [Release Docs](/release/) 
+### :rocket: &nbsp; [All FAQs](/user/_allpages/) &nbsp; | &nbsp; [Top FAQs](/user/all_time_favorites/) &nbsp; | &nbsp; [All Admin Menus](/user/admin_pages/menu_sections/) &nbsp; | &nbsp; [All Configs](/user/admin_pages/configuration/all/) &nbsp; | &nbsp; [Glossary](/user/first_steps/glossary/) &nbsp; | &nbsp; [Release Docs](/release/) 
 
-What's New with Zen Cart?  [Click here to find out](/user/about_us/whats_new/).
+### [:new: What's New with Zen Cart?](/user/about_us/whats_new/)
 
-What's Next for Zen Cart? [Click here to find out](/release/whatsnext/).
+### [:fast_forward: What's Next for Zen Cart?](/release/whatsnext/)
