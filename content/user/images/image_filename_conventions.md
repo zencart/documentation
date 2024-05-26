@@ -19,23 +19,27 @@ directory via the drop down.
 
 Now you use your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) to upload additional images to `/images/dvd`. 
 
-*   a_bugs_life_01.gif
-*   a_bugs_life_02.gif
-*   a_bugs_life_03.gif
-*   a_bugs_life_04.gif
+Name them with the original filename and a suffix starting with `_`.  
 
-I used the numbers so these would load in order, as the additional images are loaded alpha/numeric.  
+For example, since the original filename was `a_bugs_life.gif` we willl name our additional images as follows: 
 
-For the large image (used in popups) I use FTP and upload:  
+*   `a_bugs_life_01.gif`
+*   `a_bugs_life_02.gif`
+*   `a_bugs_life_03.gif`
+*   `a_bugs_life_04.gif`
 
-*   /images/large/dvd/a_bugs_life_01_LRG.gif
-*   /images/large/dvd/a_bugs_life_02_LRG.gif
-*   /images/large/dvd/a_bugs_life_03_LRG.gif
-*   /images/large/dvd/a_bugs_life_04_LRG.gif
+Using numbers means these would load in order, as the additional images are loaded by alphanumeric sort.  
+
+For the large image (used in popups) use FTP and upload:  
+
+*   `/images/large/dvd/a_bugs_life_01_LRG.gif`
+*   `/images/large/dvd/a_bugs_life_02_LRG.gif`
+*   `/images/large/dvd/a_bugs_life_03_LRG.gif`
+*   `/images/large/dvd/a_bugs_life_04_LRG.gif`
 
 For the medium image (used as the main image on the product_info page) I upload via FTP:  
 
-*   /images/medium/dvd/a_bugs_life_MED.gif
+*   `/images/medium/dvd/a_bugs_life_MED.gif`
 
 **NOTE:** There is <font color="#ff0000">ONLY ONE Medium Image</font> used per Product on the Product Info page: (pages named product_info, product_music_info etc.) The naming is related directly to the original image.  
 
@@ -43,9 +47,9 @@ Now you do not need to use subdirectories for loading your images.
 
 All images can be loaded to:  
 
-*   /images
-*   /images/large
-*   /images/medium
+*   `/images`
+*   `/images/large`
+*   `/images/medium`
 
 ## Suffixes
 
@@ -156,7 +160,7 @@ b. You can edit the `_MED` and `_LRG` defined suffixes in [Admin > Configuration
 # TIPS
 
 **NOTE:** Do no use the following symbols in your image filenames: 
-<font color="#ff0000">**+ [ ] $ ' " \ / ()  **</font>
+```+ [ ] $ ' " \ / ( )```
 
 Also, in case it's not self-evident, the files have to actually exist on your server. So, if you're selecting the "Use an image on the server" instead of uploading a file directly, and things aren't showing up, then that probably means the image file you specified doesn't actually exist on the server.  
 

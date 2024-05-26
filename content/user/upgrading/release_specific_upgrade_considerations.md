@@ -26,7 +26,7 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 ### Zen Cart 2.1.0 :stop_sign: <font color="red">NOT RELEASED YET</font> :stop_sign:
 
-- This release introduces a `Product` class to consolidate product-related operations and queries.   
+- Storefront: Additional image matching rules now are enforced more strictly; see [this page](/user/images/additional_images/#additional-images-filename-matching-rules).  This behavior can be disabled in the [site specific overrides file](/user/customizing/site_specific_overrides/). 
 - The `NOTIFY_GET_PRODUCT_DETAILS` notifier has been deprecated in favor of `NOTIFY_GET_PRODUCT_OBJECT_DETAILS`, which uses different arguments.  Any use of the former will product a deprecation debug log. 
 
 ### Zen Cart 2.0.x

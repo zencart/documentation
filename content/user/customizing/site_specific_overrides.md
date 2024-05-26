@@ -29,6 +29,7 @@ Many behaviors can be enabled or disabled by this file, such as:
 - set category counts to count only distinct products: if a product is in two different sub categories of a parent category it will only be counted once (```'COUNT_DISTINCT_PRODUCTS'```).
 - for Checkout Shipping, when no shipping method is available, substitute the Continue button with a Contact Us button (```$show_contact_us_instead_of_continue```).
 - for Product Listing: enable the legacy sorting by column heading (```$show_table_header_row```).
+- Enable legacy additional filename matching logic (```$use_legacy_additional_image_matching```). See [this page](/user/images/additional_images/#additional-images-filename-matching-rules) for details.
 
 See the file itself for further details.
 
