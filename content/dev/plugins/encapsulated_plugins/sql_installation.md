@@ -5,14 +5,11 @@ weight: 40
 layout: docs
 ---
 
-Plugins may need to create/alter database tables and/or insert/amend data in database tables.
-
-The plugin installer allows two methods for doing this. Using `.sql` files containing just sql statements or
-using a class based migration system.
+Plugins might need to create/alter database tables and/or insert/amend data in database tables. The plugin installer allows two methods for doing this. Using `.sql` files containing just sql statements or using a class based migration system.
 
 ## Plain SQL Files
 
-Create a plain .sql file called `install.sql` with the SQL statements you need for installation. Be sure to make your installation robust in the face of prior partial or failed installs (e.g. use `IF NOT EXISTS`, `INSERT IGNORE` and so forth). 
+Create a plain SQL file called `install.sql` with the SQL statements you need for installation. Be sure to make your installation robust in the face of prior partial or failed installs (e.g. use `IF NOT EXISTS`, `INSERT IGNORE` and so forth). 
 
     CREATE TABLE IF NOT EXISTS reward_master (
                                rewards_products_id INT( 11 ) NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -23,7 +20,7 @@ Create a plain .sql file called `install.sql` with the SQL statements you need f
                                redeem_ratio DOUBLE( 15, 4 ) NULL,
                                redeem_points DOUBLE( 15, 4 ) NULL,
                                UNIQUE unique_id ( scope , scope_id ));
-
+    
     INSERT IGNORE INTO reward_master
     (rewards_products_id ,scope ,scope_id ,point_ratio ,bonus_points, redeem_ratio, redeem_points)
     VALUES (NULL , '0', '0', '1.0000', NULL, 0.01, NULL);
@@ -33,7 +30,7 @@ The sql file should reside in
 
 - zc_plugins
 
-    - rewardPoints
+    - PluginName
 
         - v1.0.0
 
@@ -65,28 +62,29 @@ Note that an uninstall script (called `uninstall.sql`) may be placed in the same
 - CREATE INDEX \<index name> ON \<table name> \<additional sql>;
 - SELECT \<fields> FROM \<table name> \<additional sql>;
 - SELECT \<fields> FROM \<table name> \<join type> JOIN \<table name> \<additional sql>
-    
+  
+
 Where: 
 - \<table name> is the name of the table(s) which may require a suffix adding
 - \<additional sql> is additional valid sql for the statement. **It must not contain any table names that may require prefixing**
 - \<index name> is the name of the index to be created/dropped
 - \<join type> is the type  INNER, OUTER, etc.
-    
-Note:
+  
+
+***Notes***:
+
 - There must be exactly one space before \<table name>.
 - The statement before the first \< must be single spaced.
 - There can be multiple JOIN statements in a select.
-- Every statement must end with ";".
+- Every statement must end with a semi-colon (`;`).
 - Sub selects are not available.    
 
 
 ## SQL Installer Classes
 
-If you have more complex needs when creating schemas or seeding the database, instead of 
-using a plain SQL install file as above, you can use a class based method.
+If you have more complex needs when creating schemas or seeding the database, instead of using a plain SQL install file as above, you can use a class based method.
 
 An example of this is provided in the `DisplayLogs` plugin, in `zc_plugins/DisplayLogs`.  The class `ScriptedInstallBase` may be extended to permit the execution of complex logic during the install and uninstall process. 
 
 The two key methods that must be implemented in a class which extends `ScriptedInstallBase` are `executeInstall` and `executeUninstall`, which run the installation and de-installation logic.  
-
 

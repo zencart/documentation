@@ -6,8 +6,6 @@ layout: docs
 type: codepage
 ---
 
-**Note:** At the current time, only *admin* side plugins may be encapsulated.  The intention is to support catalog side plugin encapsulation in a future release. 
-
 **Note** For simplicity, files like `license.txt`, `README.txt` and `docs` are omitted; no changes are made to those files, which are not deployed. 
 
 Converting an older plugin to use the encapsulated architecture can be done 
@@ -15,9 +13,7 @@ following these steps:
 
 ### 1. Create the plugin's file hierarchy. 
 
-As a general rule, this just means moving the files you currently have in the 
-plugin's top level folder under a new folder with the name 
-<i>Plugin Name/Version</i>. 
+As a general rule, this just means moving the files you currently have in the plugin's top level folder under a new folder with the name `Plugin Name/Version`. 
 
 For example, the [Mod List](https://www.zen-cart.com/downloads.php?do=file&id=2039) files, prior to conversion, were: 
 
@@ -100,11 +96,9 @@ Now the file hierarchy looks  like this:
 
 ### Things to watch for in the conversion 
 
-a) Scope of variables in `extra_configures` and `extra_datafiles`
+#### Scope of variables in `extra_configures` and `extra_datafiles`
 
-In the encapsulated plugin architecture, 
-the files in `extra_configures` and `extra_datafiles` are run in the 
-context of  the `FileSystem` class, 
+In the encapsulated plugin architecture, the files in `extra_configures` and `extra_datafiles` are run in the context of  the `FileSystem` class, 
 and therefore any variables created will be scoped into that class and not the global scope.
 
 This means if you have a file that was in `admin/includes/extra_configures/my_plugin.php` which created a variable (say, `$my_list`), this variable will not be available to the plugin anymore.  
@@ -115,6 +109,6 @@ Some options for overcoming this are:
 
 - Make the variables into defined constants (which by definition have global scope). 
 
-b) Explicit `include` or `require` of storefront files 
+#### Explicit `include` or `require` of storefront files 
 
 TBD 

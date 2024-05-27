@@ -17,6 +17,7 @@ e.g.
          - manifest.php
       
       
+
 The  manifest file should look like:
 
 ```
@@ -54,13 +55,9 @@ A human readable string for the plugin author.
 
 ### PluginId
 
-The `id` number assigned by the Zen Cart forum site when submitting the plugin for review.
-e.g. https://www.zen-cart.com/downloads.php?do=file&id=1583
-This is used by the store's Plugin Manager to check for whether new versions have been submitted.
+The `id` number assigned by the Zen Cart forum site when submitting the plugin for review, e.g. https://www.zen-cart.com/downloads.php?do=file&id=1583. This is used by the store's Plugin Manager to check for whether new versions have been submitted.
 
-The Plugin Manager only alerts about new versions of this plugin if the store's Zen Cart version matches one of the versions specified in a given update on the Zen Cart Plugins Library. 
-
-Set it to `0` if you're writing a plugin that you're not submitting to the Plugins Library. (eg: a commercial plugin)
+The Plugin Manager only alerts about new versions of this plugin if the store's Zen Cart version matches one of the versions specified in a given update on the Zen Cart Plugins Library.  Set it to `0` if you're writing a plugin that you're not submitting to the Plugins Library. (eg: a commercial plugin)
 
 ### changelog
 
