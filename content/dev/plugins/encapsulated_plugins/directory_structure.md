@@ -14,16 +14,11 @@ Note that the `admin` sub-directory *must* be called `admin` here (not renamed) 
 e.g.
 
 - zc_plugins
-
     - PluginName
-
         - v1.0.0
             - manifest.php
-        
             - Installer
-
             - admin
-        
                 - includes
                     - auto_loaders
                     - classes
@@ -31,41 +26,38 @@ e.g.
                     - extra_configures
                     - extra_datafiles
                     - functions
-                  - extra_functions
-                  - init_includes
-                  - javascript
-                - languages
-                    - english
-                      - extra_definitions
-          - catalog
-            - includes
+                        - extra_functions
+                    - init_includes
+                    - javascript
+                    - languages
+                        - english
+                            - extra_definitions
+            - catalog
+                - includes
                   - auto_loaders
                   - classes
-                      - ajax
-                      - observers
+                    - ajax
+                    - observers
                   - extra_configures
                   - extra_datafiles
                   - functions
-                      - extra_functions
+                    - extra_functions
                   - init_includes
                   - languages
-                      - english
-                          - extra_definitions
+                    - english
+                      - extra_definitions
                   - modules
-                      - pages
-                      - sideboxes
+                    - pages
+                    - sideboxes
                   - templates
-                      - default
-                          - common (note that only *additional* common files will be loaded!)
-                          - css
-                          - images
-                          - jscript
-                          - templates
-          
+                    - default
+                      - common (note that only *additional* common files will be loaded!)
+                      - css
+                      - images
+                      - jscript
+                      - templates
         - v1.0.1
             - Uses a similar structure to v1.0.0, with any files added/modified/removed since that version
-            
-    
 
 ***Notes***:
 
