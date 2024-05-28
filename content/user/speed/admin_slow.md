@@ -34,7 +34,7 @@ Each of these settings has its own documentation.
 Sometimes one of the widgets on the dashboard is the cause of the slowness.  You can tweak these to improve performance at the cost of less functionality.  These are things you can try: 
 
 In 1.5.8 or above: 
-- Use the [Admin Site Specific Overrides](/user/admin/site_specific_overrides/) file, and set `$includeAttributesInProductDetailRows` and `$includeAttributesInPopoverRows` to false.
+- Use the [Admin Site Specific Overrides](/user/admin/site_specific_overrides/) file, and set `$includeAttributesInProductDetailRows` and `$includeAttributesInPopoverRows` to false.  You may also lower `$recentOrdersMaxRows` in this same file to show fewer new orders on the dashboard.
 
 
 In 1.5.7 or below: 
@@ -43,6 +43,6 @@ In 1.5.7 or below:
 - modify `admin/orders.php` and set `$includeAttributesInProductDetailRows` to `false`. 
 
 
-You may also wish to disable specific widgets by modifying `admin/index_dashboard.php`.
+You may also wish to disable specific widgets by modifying `admin/index_dashboard.php`.  See [Admin Dashboard - Customizing](/user/admin_pages/admin_dashboard/#customizing).
 
 

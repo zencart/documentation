@@ -15,4 +15,5 @@ During checkout, if your payment methods aren't showing up, go into Admin> Modul
 3. Do you have any Zone Restrictions associated with this payment module? If so, then likely by removing the Zone Restriction from the payment module will allow you to use it during checkout.
     You can use Zone Restrictions to limit which modules show up for different customer-billing-addresses (ie: different countries). To do this requires that you create zones to fully match the zones to your customers' addresses. If you are applying restrictions, always be sure to have at least one payment method WITHOUT any zones added to it, or else there will be customers who cannot go through checkout, and then you'll lose a sale!
 
+4. Is JavaScript enabled?  Some payment modules will not activate unless JavaScript is enabled in your browser.   JavaScript-enabled is the default condition for modern browsers, but can it still be disabled from the browser's Settings menu.  Note that running extensions like NoScript may (in some cases) behave like disabling JavaScript. 
 

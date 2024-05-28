@@ -13,6 +13,7 @@ Note: If a term is not in this list, use a web search to learn more about it.  T
 - Centerbox - a [centerbox](/user/template/centerboxes/) is a block of content in the middle of the page.  
 - Character Set - A [character set](/user/upgrading/detailed_upgrading/#character-set) is a group of codes which represent a written language. Current versions of Zen Cart use the utf8mb4 character set. 
 - Collation: A setting which determines how strings are compared during a sort.
+- COWOA - Checkout without Account, another term for [guest checkout](/user/miscellaneous/can_zen_cart/#can-customers-purchase-from-my-zen-cart-shop-without-creating-an-account).
 - cPanel - a branded hosting control panel which is very popular.  See [Hosting and Domain concepts](/user/first_steps/hosting/). 
 - Default Files - The file provided by the base software that provides some functionality which can be overridden using a template file.  See [Default files, template default and overrides](/user/first_steps/overrides/).
 - Define Pages - [Define pages](/user/template/define_pages/) are special pieces of content that appear above normal page content for certain pages.
@@ -25,7 +26,7 @@ Note: If a term is not in this list, use a web search to learn more about it.  T
 - EZ-Pages - Zen Cart provides the ability for storeowners to create their own content pages without a developer through the [EZ-Pages](/user/ezpages/) facility. 
 - Hoster - a company that provides servers for you to run your site on. See [hosting and domain concepts](/user/first_steps/hosting/).
 - Index Listing Page - sometimes the  [product listing page](/user/storefront_pages/listing_pages/) is called the index listing page.  There is no difference between the two terms. 
-- Infobox - an infobox is like a sidebox for the admin.  When an item from a list is selected, an infobox appears on the right with more details on that item. For example, on the customers page, details on the selected customer would appear; on the orders page, details on that order.
+- Infobox - an infobox is like a sidebox for the admin.  When an item from a list is selected, an infobox appears on the right with more details on that item. For example, on the customers page, details on the selected customer would appear; on the orders page, details on the selected order.
 - IP Address - a number assigned to a piece of hardware connected to the Internet.  Computers identify each other by IP Address.  See [hosting and domain concepts](/user/first_steps/hosting/).
 - JavaScript - a scripting language that adds dynamic effects to your website. 
 - Linked Product - a [linked product](/user/products/linked_product/) is a product which exists in multiple categories (categories other than the product's master category).
