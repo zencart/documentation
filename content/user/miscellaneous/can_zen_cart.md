@@ -30,7 +30,14 @@ Yes.  See [Linked Products](/user/products/linked_product/).
 
 ### Does Zen Cart support my preferred shipper? 
 
-Zen Cart supports UPS, USPS, Canada Post, and [many other shippers](/user/shipping/). 
+Zen Cart supports 
+- [UPS](/user/shipping/ups/)
+- [USPS](/user/shipping/usps/) 
+- [FedEx](/user/shipping/fedex/)
+- [Royal Mail](https://www.zen-cart.com/downloads.php?do=file&id=190)
+- [Canada Post](https://www.zen-cart.com/downloads.php?do=file&id=4) 
+
+and [many other shippers](/user/shipping/). 
 
 ---
 
@@ -46,7 +53,12 @@ No, but Zen Cart is supported by [ShipStation](https://www.shipstation.com), whi
 ---
 
 ### Does Zen Cart support my preferred payment provider? 
-Zen Cart supports PayPal, Authorize, Square, and [many other payment processors](/user/payment/). 
+Zen Cart supports 
+- [PayPal](/user/payment/paypal_overview/) 
+- [Authorize](/user/payment/authorizenet_aim/) 
+- [Square](/user/payment/square/) 
+
+and [many other payment processors](/user/payment/). 
 
 ---
 ### Can Zen Cart discount products?
@@ -95,10 +107,10 @@ color, size, or any other product variant to your products with no limitations.
 
 ### Can Zen Cart track the stock of products with variants? 
 
-At the current time, Zen Cart does not track the stock of individual product variants (a t-shirt's stock of large versus medium, for example).  There are commercial modifications that address this requirement however, such as 
-the [Products' Options' Stock Manager (POSM)](https://vinosdefrutastropicales.com/product_extra_files/options_stock/readme.html). 
+At the current time, Zen Cart does not track the stock of individual product variants (a t-shirt's stock of large versus medium, for example).  There are commercial modifications that address this requirement however, such as the [Products' Options' Stock Manager](https://vinosdefrutastropicales.com/product_extra_files/options_stock/readme.html). 
+Note that this plugin is sometimes called "Products Options Stock Manager" (without the apostrophes) or just "POSM."
 
-Note that this plugin is sometimes called Products Options Stock Manager (without the apostrophes). 
+This capability may be built in to a future release of Zen Cart. 
 
 There are also open source plugins which provide this capability; search for "Stock by Attributes." 
 
@@ -113,7 +125,7 @@ The POSM plugin referenced above also does this.
 ---
 
 ### Can Zen Cart allow me to create restricted admin accounts? 
-Yes - you can limit admin users to a subset of the superuser capabilities using
+Yes - you can limit admin users to a subset of capabilities using
 [Admin Profiles](/user/admin_pages/admins/admin_profiles/). 
 
 ---
@@ -143,7 +155,7 @@ Yes, there are several ways you can [add a new page](/user/customizing/add_pages
 Yes, and many of the product's features can be seen by installing with the demo data.  See [demo data](/user/first_steps/demo_data/) for details. 
 
 --- 
-<!-- please keep this at the end --> 
+<!-- please keep these final questions at the end --> 
 ### Is there a list of features that Zen Cart currently offers? 
 Yes - see [What features does Zen Cart offer?](/user/about_us/features/)
 
@@ -152,4 +164,5 @@ Yes - see [What features does Zen Cart offer?](/user/about_us/features/)
 ### Is there a roadmap of Zen Cart features planned for the future? 
 There is a subforum called [Development Road Map](https://www.zen-cart.com/forumdisplay.php?4-Development-Road-Map).
 
+There is also a [What's Next](/release/whatsnext/) page.
 

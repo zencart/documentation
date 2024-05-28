@@ -29,7 +29,7 @@ The improvements targeted for v2.1.0 include:
 - Core: Shipping modules now inherit from ZenShipping base class to reduce code duplication and ensure consistency.
 - Core: Zones module now has exception rules notifier.  See <a href="/user/shipping/exceptions/">this page</a> for details on usage.</li>
 - Storefront: Additional image matching rules now are enforced more strictly; see [this page](/user/images/additional_images/#additional-images-filename-matching-rules).  This behavior can be disabled in the [site specific overrides file](/user/customizing/site_specific_overrides/). 
-- Extras: Improved the modernized utilities in the `/extras` folder.
+- Extras: Improved and modernized utilities in the `/extras` folder.
 
 ## 2.0.1 
 Release 2.0.1 has been delivered; changes are now listed in [What's New in 2.0.x](/release/whatsnew_2.0.0.html).
