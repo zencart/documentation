@@ -21,7 +21,7 @@ Now you use your [FTP tool](/user/first_steps/useful_tools/#ftp-tools) to upload
 
 Name them with the original filename and a suffix starting with `_`.  
 
-For example, since the original filename was `a_bugs_life.gif` we willl name our additional images as follows: 
+For example, since the original filename was `a_bugs_life.gif` we will name our additional images as follows: 
 
 *   `a_bugs_life_01.gif`
 *   `a_bugs_life_02.gif`
