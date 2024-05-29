@@ -28,7 +28,7 @@ The improvements targeted for v2.1.0 include:
 - Core: The introduction of the `Product` class continues the modernization of Zen Cart.
 - Core: Shipping modules now inherit from ZenShipping base class to reduce code duplication and ensure consistency.
 - Core: Zones module now has exception rules notifier.  See <a href="/user/shipping/exceptions/">this page</a> for details on usage.</li>
-- Storefront: Additional image matching rules now are enforced more strictly; see [this page](/user/images/additional_images/#additional-images-filename-matching-rules).  This behavior can be disabled in the [site specific overrides file](/user/customizing/site_specific_overrides/). 
+- Storefront: Additional image matching rules now are enforced more strictly for new installs; see [this page](/user/images/additional_images/#additional-images-filename-matching-rules) for details.  
 - Extras: Improved and modernized utilities in the `/extras` folder.
 
 ## 2.0.1 
