@@ -17,11 +17,9 @@ conventions set out in [Image Filename conventions](/user/images/image_filename_
 
 Using an underscore and more characters after the base filename is the best practice for ensuring your additional images work as expected.  See [Image Filename Conventions](/user/images/image_filename_conventions/) for details. 
 
-Prior to Zen Cart 2.1.0, image matching did not enforce the check of a `_` suffix when looking for additional product images in the "images/" directory (but it DID require the `_` in any "images/whatever/" subdirectories). Since v2.1.0 the `_` is required in both locations. 
+Prior to Zen Cart 2.1.0, image matching did not enforce the check of a `_` suffix when looking for additional product images in the "images/" directory (but it DID require the `_` in any `images/whatever/` subdirectories). Starting with Zen Cart v2.1.0 a stricter matching pattern requires the `_` in both locations, by default, but can be overridden. 
 
-Stores that are upgrading and wish to retain the old functionality can enable the legacy mode via the [site specific overrides file](/user/customizing/site_specific_overrides/) by setting $use_legacy_additional_image_matching to true.
-
-
+Stores that are upgrading from pre-2.1.0 will automatically retain the old functionality by default, but can switch over to strict mode by changing the [Admin > Images >Additional Image matching pattern](/user/admin_pages/configuration/configuration_images/) setting from `legacy` to `strict`.
 
 ### How do I disable the additional images feature? 
 

@@ -26,7 +26,7 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 ### Zen Cart 2.1.0 :stop_sign: <font color="red">NOT RELEASED YET</font> :stop_sign:
 
-- Storefront: Additional image matching rules now are enforced more strictly; see [this page](/user/images/additional_images/#additional-images-filename-matching-rules).  This behavior can be disabled in the [site specific overrides file](/user/customizing/site_specific_overrides/). 
+- Storefront: Additional image matching rules may (optionally) be enforced more strictly; see [this page](/user/images/additional_images/#additional-images-filename-matching-rules).  This behavior can be controlled via the configuration value `ADDITIONAL_IMAGES_MODE` in [Admin > Configuration > Images](/user/admin_pages/configuration/configuration_images/). 
 - The `NOTIFY_GET_PRODUCT_DETAILS` notifier has been deprecated in favor of `NOTIFY_GET_PRODUCT_OBJECT_DETAILS`, which uses different arguments.  Any use of the former will product a deprecation debug log. 
 
 ### Zen Cart 2.0.x
