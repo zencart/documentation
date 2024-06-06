@@ -46,6 +46,10 @@ hugo server
 
 The repository is based on the [Docsy](https://www.docsy.dev/docs/) Documentation Template, in case you need a reference for troubleshooting purposes.
 
+### Docker 
+
+A docker-compose.yml is included. Please see documentation for your OS for installing docker & docker-comppose. 
+using `docker-compose up` you can access the server on `localhost:1313`
 
 ### Security
 
