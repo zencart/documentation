@@ -11,14 +11,17 @@ noindex: yes
 :stop_sign: <font color="red">PLEASE NOTE: The releases listed below have not yet been finalized, and this document is a work in progress.  <br>
 These are goals, not commitments.  Any of the improvements listed here might be delayed beyond the stated target release.</font>
 
+## Future Releases (Not Yet Scheduled) 
+- New Feature: <a href="https://github.com/zencart/zencart/discussions/6428">Child Templates</a> will be supported, so that storeowners can more easily determine what has been changed from the base release of a template. 
+
 ## 2.2.0 
 The improvements targeted for v2.2.0 include:  
 - New Feature: The <a href="https://vinosdefrutastropicales.com/product_extra_files/options_stock/readme.html">Products Options Stock</a> plugin will be integrated with Zen Cart.  This feature will help storeowners who have product variants whose stock needs to be tracked (red large t-shirts vs blue medium t-shirts, for example).  It is designed to replace the various "Stock by Attributes" plugins which are currently in use.
     
 ## 2.1.0 
 The improvements targeted for v2.1.0 include:  
-- New Feature: <a href="https://github.com/zencart/zencart/discussions/6428">Child Templates</a> will be supported, so that storeowners can more easily determine what has been changed from the base release of a template. 
-- New Feature: The Zen Cart admin will be secured with <a href="https://github.com/zencart/zencart/pull/6350">Multi Factor Authentication</a>. 
+- New Feature: The Zen Cart admin will be secured with 
+[Multi Factor Authentication](/user/security/multifactor/). 
 - Admin: FIXED - Searching for customers from the orders page would occasionally lead to a blank right hand infoBox.
 - Admin: FIXED - Selecting coupons on pages other than the first page would occasionally fail.
 - Admin: The <a href="/dev/code/template_settings/">template settings file</a> may now be viewed from your admin page.

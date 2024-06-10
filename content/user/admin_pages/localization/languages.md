@@ -48,7 +48,9 @@ If you need to change the information about an existing language, click on the n
 
 To remove a language, click on the named language so that the right arrow appears in the Action column, then click on the _Delete_ button. If this is not the default language, you will be asked to confirm. Click on the _delete_ button again to delete the language, or _cancel_ if you do not wish to delete this language. If this is the default language, only the _cancel_ button will appear, as you cannot delete the default language.
 
-## Creating a multi-language store 
+## Installing A Language Pack
+
+You can create a multi-language store by installing language packs and then adding Languages as described above. 
 
 Language packs may be found in the [Plugins Library](https://www.zen-cart.com/downloads.php?do=cat&id=6).
 
@@ -56,3 +58,5 @@ Language packs are structured to correspond to your cart folders, so you can jus
 rename the admin folder, if one exists, and then upload all the files. 
 
 If you're not familiar with installing a Zen Cart plugin, follow the instructions on [how to install a plugin](/user/plugins/how_to_install_a_plugin/). 
+
+{{% language_help_links %}}
