@@ -11,7 +11,7 @@ Note: depending on the age of the plugin, you may need to do the [PHP 7 updates]
 ## Array Based Language Files 
 To avoid duplicate define notices from PHP, Zen Cart 1.5.8 uses [Array Based Language Files](/dev/code/158_language_files/).
 
-If you need to load a language file that's not already being loaded by the [default language file loading process](/dev/plugins/language_files/), see [loading a language file](/dev/code/158_language_files/#loading-a-language-file)
+If you need to load a language file that's not already being loaded by the [default language file loading process](/dev/plugins/language_files/), see [loading a language file](/dev/code/158_language_files/#loading-a-language-file).
 
 If your plugin creates its own new language file, you are not required to update it; unique legacy language files will still be loaded.  See [Language Files - New vs Legacy in 1.5.8](/dev/code/158_order_language_files/).
 

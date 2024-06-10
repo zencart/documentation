@@ -5,7 +5,7 @@ weight: 10
 layout: docs
 ---
 
-In Zen Cart 1.5.8, the language file structure was modified so that the PHP `define` statement is no longer used directly to set a language constant.  The reason for this is that newer versions of PHP will emit warning messages when a constant is redefined (in an override vs core file), so the old approach would create debug logs if something wasn't done.
+In Zen Cart 1.5.8, the language file structure was modified so that the PHP `define` statement is no longer used directly to set a language constant.  The reason for this is that newer versions of PHP will emit warning messages when a constant is redefined (in an override *and* a core file), so the old approach would create debug logs if something wasn't done.
 
 The new design builds an array of language definitions which are built into constants once all of them are read.  For this reason, the new files are called *array based language files* (as opposed to the older *define based language files*).
 
