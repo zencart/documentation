@@ -5,6 +5,7 @@ category: security
 weight: 10
 ---
 
+## Pros and Cons
 Cloudflare offers several benefits for an e-commerce business, but there are also some potential drawbacks to consider.
 
 **Pros:**
@@ -34,4 +35,13 @@ Cloudflare offers several benefits for an e-commerce business, but there are als
 6. **Caching** While caching delivers content more quickly, it also means that changes you make to your site aren't presented immediately.  This can be frustrating if you're making changes and want to see how they look.
 
 7. **Email**.  If you are using `smtpauth` with the `EMAIL_SMTPAUTH_MAIL_SERVER` set to your domain (and not a subdomain), you may not be able to get email to work and may need to switch to an [external SMTP server](/user/email/external_smtp_servers/) for your email. 
+
+## Example Use Cases
+
+### 1. Mitigating Attacks
+We were having problems with huge spikes of traffic from certain IP addresses and ranges from Singapore, Russia and Pakistan. Wanting a way to block the entire country led us to Cloudflare. Go to Your Website > Security > WAF, where you can set up a custom rule for specific countries to either challenge them with a CAPTCHA or outright block them:
+
+![Cloudflare Rule](/images/cloudflare_rule.jpg)
+
+To find our exactly what countries you may be getting attacked from, it is worth looking at either the website logs if any are being created, the server logs including access logs, which detail the IPs that are most often connecting to the website. Checking these IPs via a whois checker online, and you will know what countries they are from. 
 

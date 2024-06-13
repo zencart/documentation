@@ -25,6 +25,7 @@ Enter the admin email address, and wait for your new password to arrive by email
 - <b>Password Managers:</b> If you are using a [password manager](/user/first_steps/security/#use-a-password-manager), the password manager *may* be overwriting what you are filling in so your password change doesn't work.  Try changing your password in a browser where you are not running (or logged out of) your password manager, and then save your new password in your password manager.
 - <b>www vs non-www:</b> Your hoster may be configured to redirect `www.mystore.com` to `mystore.com`.  If this is the case, you will want to specify the non-www site (i.e. `https://mystore.com`) in your `admin/includes/configure.php` file. 
 - <b>Browser Plugins:</b> The same advice applies with other browser plugins - they might be breaking the Zen Cart admin login.  Try a browser you don't normally use and see if you can login successfully there. 
+- <b>MFA:</b> If [multifactor authentication](/user/security/multifactor/) is enabled on your store, you will also have to correctly authenticate that way to successfully log in.
 
 ## 5. Use phpMyAdmin 
 If the techniques above don't work, use phpMyAdmin to create a temporary admin user directly in the database. You must have database control to do this.
@@ -40,7 +41,7 @@ VALUES ('Admin', 'admin@localhost', '351683ea4e19efe34874b501fdbf9792:9b', 1);
 
 `DELETE FROM zc_admin` and `INSERT INTO zc_admin` in the commands above. 
 
-> **NOTE**: If you are using a very old version of Zen Cart then the field names above may be different than your database has. See https://www.zen-cart.com/content.php?44-how-do-i-change-or-reset-my-admin-password for additional information.
+> **NOTE**: If you are using a very old version of Zen Cart then the field names above may be different than your database has. Use phpMyAdmin and check the `admin` table. 
 
 <b>You should now be able to login using the following details:</b><br>
 <b>Username: Admin</b><br>
