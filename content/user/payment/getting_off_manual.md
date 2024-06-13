@@ -39,22 +39,11 @@ For businesses in this situation, it might be preferable to use [Auth Only](/use
 
 The [PayPal RESTful](https://github.com/lat9/paypalr/wiki/Admin-Handling) documentation provides some good examples of using an Auth Only then later Capture process for orders.
 
-### Dealing with Balance Owing amounts 
+### Dealing with Balance Owed amounts 
 
-Auth Only then capture works well if the order size is reduced, and some payment gateways will even allow a small increase in the capture amount (PayPal supports up to 15%, for example).  But what if the balance owing becomes significant?
+Auth Only then capture works well if the order size is reduced, and some payment gateways will even allow a small increase in the capture amount (PayPal supports up to 15%, for example).  But what if the balance owed becomes significant?
 
-#### Balance Owing Option 1: Take Payment through Your Admin (Authorize.NET CIM)
-
-[Authorize.NET CIM](/user/payment/authorizenet_cim/) provides a mechanism for direct charges to a stored customer card if there is a balance owing (the "Get Money" button).  
- 
-#### Balance Owing Option 2: Invoice the Customer 
-
-Most credit card gateways and PayPal will allow you to send the customer a payable invoice.  Keep the order in Pending status until the invoice has been paid.
-
-#### Balance Owing Option 3: Take Payment through Your Cart Storefront
-
-Create a $1 item in your store called "Pay outstanding balance" or something like that.  Set the item to Free Shipping, and be sure the [Free Shipping](/user/shipping/free_shipping/) shipping module is enabled.  Then [place an order](/user/running/login_as_customer/) for the customer with the balance, buying as many of the $1 item as are needed to satisfy the amount owed. 
-
+Options for collecting these payments are discussed in [balance owed payments](/user/payment/balance_owed/).
 
 ## Recommendation 4: Using Offline Payment methods 
 
