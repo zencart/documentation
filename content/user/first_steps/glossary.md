@@ -53,6 +53,7 @@ Note: If a term is not in this list, use a web search to learn more about it.  T
 - Template Files - The individual files (css, js, php, and some images) involved in providing the Template for the site.  See [Default files, template default and overrides](/user/first_steps/overrides/).
 - UTF8 - A variable width character set which can represent a large number of characters. 
 - VPS - Virtual Private Server - a hosting configuration that puts you on your own dedicated server.  See [Hosting and Domain concepts](/user/first_steps/hosting/). 
+- WAF - Web Application Firewall
 - Webroot - The top level folder that is visible to someone using a web browser.  See [how do I install Zen Cart](/user/first_steps/how_do_i_install/). 
 - Webserver - the computer associated with your hosting account that runs your website *or* the program on that hosting account that serves web pages (e.g. Apache).  See [hosting and domain concepts](/user/first_steps/hosting/).
 - YOURACCOUNTFOLDER - the folder  in your hosting account which holds your site's files. See [basic terms](/user/first_steps/basic_terms/). Webroot will be under this folder.  For example, if YOURACCOUNTFOLDER was `/home/scott`, your webroot would (probably) be `/home/scott/public_html`. See [basic terms](/user/first_steps/basic_terms/). 

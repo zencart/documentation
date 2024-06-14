@@ -13,13 +13,13 @@ Sometimes the payment you received for an order is just not enough
 
 In cases like this, you must take another action to collect payment
 
-### Option 1: Invoice the Customer 
+### Option 1: Invoice the Customer from your Payment Processor
 
 Most credit card gateways and PayPal will allow you to send the customer a payable invoice.  Keep the order in Pending status until the invoice has been paid.
 
-This image shows the [Square WebPay](/user/payment/square/) invoicing page:
+This image shows the [Square](/user/payment/square/) invoicing page:
 
-![Square WebPay invoice](/images/square_invoice.png)
+![Square invoice](/images/square_invoice.png)
 
 
 ### Option 2: Take Payment through Your Cart Storefront
@@ -29,4 +29,8 @@ Create a $1 item in your store called "Pay outstanding balance" or something lik
 ### Option 3: Take Payment through Your Admin (Authorize.NET CIM)
 
 If this is a very common situation for your business, you may consider using [Authorize.NET CIM](/user/payment/authorizenet_cim/) for payment processing.  CIM provides a mechanism for direct charges to a stored customer card if there is a balance owed (the "Get Money" button).  
+
+### Option 4: Invoice through Quickbooks Online 
+
+If you use QBO for bookkeeping, you can [create an invoice in Quickbooks Online](https://quickbooks.intuit.com/learn-support/en-us/help-article/invoicing/create-invoices-quickbooks-online/L7gSzvCld_US_en_US).  Your customers can pay by credit card, PayPal, Venmo or ACH. 
  
