@@ -39,9 +39,13 @@ Cloudflare offers several benefits for an e-commerce business, but there are als
 ## Example Use Cases
 
 ### 1. Mitigating Attacks
-We were having problems with huge spikes of traffic from certain IP addresses and ranges from Singapore, Russia and Pakistan. Wanting a way to block the entire country led us to Cloudflare. Go to Your Website > Security > WAF, where you can set up a custom rule for specific countries to either challenge them with a CAPTCHA or outright block them:
+Store is having problems with huge spikes of traffic from certain IP addresses and ranges.  Investigation showed IPs were from Singapore, Russia and Pakistan. 
+
+Cloudflare facilitates blocking of an entire country.  
+Go to Your Website > Security > WAF, and set up a custom rule for specific countries. 
+You may either challenge them with a CAPTCHA or outright block them:
 
 ![Cloudflare Rule](/images/cloudflare_rule.jpg)
 
-To find our exactly what countries you may be getting attacked from, it is worth looking at either the website logs if any are being created, the server logs including access logs, which detail the IPs that are most often connecting to the website. Checking these IPs via a whois checker online, and you will know what countries they are from. 
+To find our exactly what countries you may be getting attacked from, it is worth looking at either the website logs if any are being created, the server logs including access logs.  These will detail the IPs that are most often connecting to the website. Check these IPs via a whois checker online, and you will know what countries they are from. 
 

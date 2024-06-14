@@ -64,7 +64,7 @@ Zen Cart requires a few PHP modules/extensions installed:
  - `gd`
  - `getimagesize()`
  - `iconv`
- - `intl`  (required since v2.0.x)
+ - `intl`  (required since v2.0.0)
  - `json`
  - `mysqli`, `pdo_mysql`
  - `pcre`

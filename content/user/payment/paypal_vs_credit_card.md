@@ -38,6 +38,8 @@ However, some customers are not given this option, and are required to create a 
 
 ![PayPal Account Optional](/images/paypal_account_optional.png)
 
+* Even with the changes described above, sometimes PayPal will still require an account for some customers.  This is outside the control of Zen Cart.  If this is a problem for your store, and your customers are unwilling to create a PayPal account, you should add a credit card gateway such as [Square](/user/payment/square/) or [Authorize AIM](/user/payment/authorizenet_aim/) to your store. 
+
 *   The **PayPal Payments Pro** product (which you must pay a monthly fee to PayPal to use, and is only available to US, UK, and Canadian merchants) adds the ability to accept Credit Card payments directly on your website without the customer even knowing that they are being processed by PayPal.  [Contact your PayPal representative for information](https://www.zen-cart.com/partners/paypal) and to sign up for this service.
 
 
