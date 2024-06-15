@@ -81,4 +81,13 @@ In your `test_store` folder, update the `includes/configure.php` and `admin/incl
 - Be sure your cart uses relative paths when creating links.  For example, if you hand-code a link in the [define page](/user/template/define_pages/) `define_main_page.php` to `YOURSTORE.com/index.php?main_page=product_info&products_id=27`, then when you click this link from your test site, you will go to your live site, which is not what you want.  Instead, use the link `index.php?main_page=product_info&products_id=27`.  
 - Be careful not to precede any hand-coded links with a slash (don't use `/index.php` in other words), or the link won't work if the test shop is in a subfolder.  The same advice goes for image files; use `images/my-image.jpg` not `/images/my-image.jpg` or `YOURSTORE.com/images/my-image.jpg` to ensure you're looking at the image in your test store hierarchy (which might be different from what's in your live store).
 
+### Ensuring your test site doesn't get out to the world 
+
+You'd think it would be unlikely that Google (or any other crawler) would find your test site and index it, but it does happen.  Some precautions you can take are: 
+
+- Password protecting the test site folder through cPanel 
+- Password protecting the test site using .htaccess 
+
+Note that simply using a robots.txt file is not considered sufficient [per Google](https://developers.google.com/search/docs/crawling-indexing/remove-information?sjid=7603083228680003051-NA&visit_id=638540594000074710-2247229824&rd=1). 
+
 
