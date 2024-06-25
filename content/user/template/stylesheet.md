@@ -38,7 +38,7 @@ The CSS files are sent to the browser in this order: (and alphabetically within 
 
 The `stylesheet.css` always loads first and should contain the bulk of your CSS selectors. Each file loaded takes priority over previously loaded file(s). To save loading time, only new selectors or selectors whose properties you wish to change should be in the subsequent optional CSS files. You can have different overrides for the same page, in different languages, because the two would never be called at the same time.
 
-`If someone selected the French language on your site, the `french_stylesheet.css` would also be loaded. It should only contain the site-wide changes you want to make to `stylesheet.css`. 
+If someone selected the French language on your site, the `french_stylesheet.css` would also be loaded. It should only contain the site-wide changes you want to make to `stylesheet.css`. 
 
 If someone went to any of the other pages, that page's CSS file would be loaded. Possibly you want different `background-image` & `background-color` on each of `page_x` pages. Possibly you do not want a border around `.plainBox` most of the time, but on a couple of pages you do, and on one of those pages you want it in black and the other in red.
 
