@@ -69,13 +69,16 @@ If you wish to override the defaults, the images should go here:
 `includes/templates/YOURTEMPLATE/images/icons`
 
 ```
-cc1.gif = Visa
-cc2.gif = MC
-cc3.gif = Amex
-cc4.gif = Diners
-cc5.gif = Discover
-cc6.gif = JCB
-cc7.gif = AustralianBankCard
+cc1.gif   = Visa
+cc2.gif   = MC
+cc3.gif   = Amex
+cc4.gif   = Diners
+cc5.gif   = Discover
+cc6.gif   = JCB
+cc7.gif   = AustralianBankCard
+cc8.gif   = Solo
+cc9.gif   = Debit Card
+cc10.gif  = Maestro
 ```
 
 ---
