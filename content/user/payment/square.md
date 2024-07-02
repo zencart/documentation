@@ -87,7 +87,7 @@ If your access token goes bad, you can get into a state where you have to delete
 ## Upgrading to Square Web Payments from Square Payments Form 
 
 1. Go to Admin > Modules > Payment > Square, click **Edit**, and set Enable Square Module to false, then click **Update**.
-1. Login at [https://connect.squareup.com/apps](https://connect.squareup.com/apps) and rename your existing Square app to something like "OLD Webstore".
+1. Login at [https://connect.squareup.com/apps](https://connect.squareup.com/apps).  Note that you will need to pick a new name from your existing Square app .  Unfortunately you cannot rename apps. 
 1. Use the Installation instructions above. 
 1. Once you are certain Square Web Payments is working, Go to Admin > Modules > Payment > Square and click **Remove**. 
 
