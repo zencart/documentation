@@ -39,6 +39,10 @@ Be sure your `admin/includes/configure.php` file has all URL settings using `htt
 
 Use an admin username other than `admin` (or `nimda`).  Make it hard to guess.
 
+Want more security?  Secure access to your admin URL using a .htaccess file that limits access to specific IP Addresses.  (You may need to work with your hoster to figure out how to do this).
+
+Want even more security?  In Zen Cart 2.1.0, two factor authentication is introduced, protecting your admin even more. See [Multi-factor authentication in Zen Cart](/user/security/multifactor/).
+
 ## Secure cPanel Access 
 
 Just because you run an SSL on your site doesn't mean your cPanel access is secure.  Look for the padlock in your browser's address bar, and tell your hoster to fix it if it's not there! 
@@ -85,4 +89,7 @@ Your own computer is also a potential target for bad guys, and if it gets infect
 ## PCI DSS 
 
 PCS DSS is a set of security standards from the credit card industry.  If you handle credit cards, you must comply with the [PCI](/user//payment/pci/) rules. 
+
+## No Manual Card Processing
+A long time ago it was acceptable to store credit card information in your database.  That time has passed!  To be compliant with modern security standards, [do not do manual card processing](/user/payment/why_not_manual/) anymore. See [migrating away from manual card processing](/user/payment/getting_off_manual/) if you need ideas for alternate methods. 
 

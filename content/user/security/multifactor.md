@@ -5,7 +5,7 @@ category: security
 weight: 10
 ---
 
-Zen Cart 2.1.0 introduces multi-factor authentication (MFA) for access to the **admin area**.
+Zen Cart 2.1.0 introduces multi-factor authentication (sometimes called MFA or 2FA) for access to the **admin area**.
 
 To be clear: It is only used for accessing the **admin area**. 
 Customers shopping on your storefront are not affected by it.
