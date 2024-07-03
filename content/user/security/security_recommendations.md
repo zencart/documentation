@@ -225,3 +225,6 @@ You should only keep backups that are essential for business recovery or financi
 
 (Consider: you wouldn't leave customers' credit card details in papers laying all over your file cabinets and cupboards and drawers: you'd put them in one central safe spot. Do the same with your backups, and destroy copies that don't need to be kept. This includes not leaving thumb-drives with private data on them sitting around unaccounted-for. Put the important ones someplace safe, and delete the ones that no longer have a purpose.)
 
+### 16. Use Two Factor Authentication
+Zen Cart 2.1.0 introduces [Multi factor authentication](/user/security/multifactor/) for admin access.  This is a big step forward for security, and is something you should implement on your cart at the earliest opportunity. 
+
