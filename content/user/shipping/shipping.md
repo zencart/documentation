@@ -51,18 +51,19 @@ The list of available shipping modules may be seen by going to [Admin > Modules 
 
 Zen Cart has a number of built-in shipping modules which allow you to charge for shipping based on various factors in the order: 
 
-- Flat - Charge a single flat rate on all shipments
-- Item - Charge per item
-- [Zones](/user/shipping/zones/) - Charge different rates for delivering to different zones 
+- Flat - Charge a single flat rate on all shipments.
+- Item - Charge per item.
+- StorePickup - Customer picks up items at physical location.
 - [Table](/user/shipping/table/) - Charge according to a table of rates based on weight, item count or item price, entered as [colon-separated pairs](/user/running/colon-separated-pairs/). 
+- [Zones](/user/shipping/zones/) - Charge different rates for delivering to different zones.
 
 Zen Cart also integrates with a number of shipping vendors using plugins:
 
+- [Canada Post](https://www.zen-cart.com/downloads.php?do=file&id=4)
+- [FedEx](/user/shipping/fedex)
+- [Royal Mail](https://www.zen-cart.com/downloads.php?do=file&id=190)
 - [UPS](/user/shipping/ups/)
 - [USPS](/user/shipping/usps)
-- [FedEx](/user/shipping/fedex)
-- [Canada Post](https://www.zen-cart.com/downloads.php?do=file&id=4)
-- [Royal Mail](https://www.zen-cart.com/downloads.php?do=file&id=190)
 
 More shipping plugins may be found in the [Shipping module section of the Plugins Library](https://www.zen-cart.com/downloads.php?do=cat&id=11).
 

@@ -11,24 +11,24 @@ The list of available payment modules may be seen by going to [Admin > Modules >
 
 Zen Cart has a number of built-in payment modules: 
 
-- Authorize.net - [AIM](/user/payment/authorizenet_aim/) is available.
+- [Authorize.net AIM](/user/payment/authorizenet_aim/)
 - Check/Money Order - Receive payment by check
 - Cash on Delivery - COD or in-person payment
 - Free Order - required if you have free products in your store
-- PayPal - payment processing by [PayPal](/user/payment/paypal/)
+- [PayPal](/user/payment/paypal/)
 
 If you are just evaluating Zen Cart or running a test-only installation, 
 then using the Check/Money Order module to process payments is the best option.
 
 More payment modules may be found in the [Payment module section of the Plugins Library](https://www.zen-cart.com/downloads.php?do=cat&id=8).
 
-- [Square](/user/payment/square/)
-- [Stripe](https://www.zen-cart.com/downloads.php?do=file&id=1548)
-- [Authorize.net CIM Card on file](https://www.zen-cart.com/downloads.php?do=file&id=2272)
-- [Braintree Payments](https://www.zen-cart.com/downloads.php?do=file&id=1781)
-- [Quote](https://www.zen-cart.com/downloads.php?do=file&id=2199)
+- [Authorize.net CIM](https://www.zen-cart.com/downloads.php?do=file&id=2272)
+- [Braintree](https://www.zen-cart.com/downloads.php?do=file&id=1781)
 - [Invoice](https://www.zen-cart.com/downloads.php?do=file&id=131)
 - [NMI Gateway Processing Service-GPS Payment Module](https://www.zen-cart.com/downloads.php?do=file&id=2265)
+- [Quote](https://www.zen-cart.com/downloads.php?do=file&id=2199)
+- [Square](/user/payment/square/)
+- [Stripe](https://www.zen-cart.com/downloads.php?do=file&id=1548)
 
 Developers wishing to create a payment module should see the [dev FAQs on modules](/dev/code/modules/). 
 

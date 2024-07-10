@@ -107,12 +107,7 @@ color, size, or any other product variant to your products with no limitations.
 
 ### Can Zen Cart track the stock of products with variants? 
 
-At the current time, Zen Cart does not track the stock of individual product variants (a t-shirt's stock of large versus medium, for example).  There are commercial modifications that address this requirement however, such as the [Products' Options' Stock Manager](https://vinosdefrutastropicales.com/product_extra_files/options_stock/readme.html). 
-Note that this plugin is sometimes called "Products Options Stock Manager" (without the apostrophes) or just "POSM."
-
-This capability may be built in to a future release of Zen Cart. 
-
-There are also open source plugins which provide this capability; search for "Stock by Attributes." 
+Please see [Variant Stock](/user/running/posm/).
 
 ---
 
