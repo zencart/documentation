@@ -46,8 +46,7 @@ The configuration setting `Products status in Catalog when out of stock should b
 
 ## What about Variant Stock? 
 
-At the current time, Zen Cart does not track the stock of individual product variants (a t-shirt's stock of large versus medium, for example).  There are commercial modifications that address this requirement however, such as 
-the [Products' Options' Stock Manager (POSM)](https://vinosdefrutastropicales.com/product_extra_files/options_stock/readme.html). 
+Please see [Variant Stock](/user/running/posm/).
 
 ## What LIFO stock tracking or ERP? 
 
