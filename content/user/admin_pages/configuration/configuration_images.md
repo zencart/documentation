@@ -137,6 +137,13 @@ Path: <b>Configuration > Images</b><br />
 Description: Product Info Large Image Suffix<br />Default = _LRG</div>
 
 
+<h2 id="additional_images_matching_pattern">Additional Images matching pattern</h2>
+
+<div class='indent'>Key: <b>ADDITIONAL_IMAGES_MODE</b><br />
+Path: <b>Configuration > Images</b><br />
+Description: &quot;strict&quot; = always use &quot;_&quot; suffix<br>&quot;legacy&quot; = only use &quot;_&quot; suffix in subdirectories<br>(Before v210 legacy was the default)<br>Default = strict</div>
+
+
 <h2 id="product_info__number_of_additional_images_per_row">Product Info - Number of Additional Images per Row</h2>
 
 <div class='indent'>Key: <b>IMAGES_AUTO_ADDED</b><br />

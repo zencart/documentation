@@ -179,6 +179,13 @@ Path: <b>Configuration > My Store</b><br />
 Description: What is your Store Status<br />0= Normal Store<br />1= Showcase no prices<br />2= Showcase with prices</div>
 
 
+<h2 id="mfa_multifactor_authentication_required">MFA Multi-Factor Authentication Required</h2>
+
+<div class='indent'>Key: <b>MFA_ENABLED</b><br />
+Path: <b>Configuration > My Store</b><br />
+Description: 2-Factor authentication for Admin users</div>
+
+
 <h2 id="padss_admin_session_timeout_enforced">PA-DSS Admin Session Timeout Enforced?</h2>
 
 <div class='indent'>Key: <b>PADSS_ADMIN_SESSION_TIMEOUT_ENFORCED</b><br />

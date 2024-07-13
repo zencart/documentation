@@ -88,14 +88,14 @@ Path: <b>Configuration > Product Listing</b><br />
 Description: What Sort Order Default should be used for New Products Display?<br />Default= 6 for Date New to Old<br /><br />1= Products Name<br />2= Products Name Desc<br />3= Price low to high, Products Name<br />4= Price high to low, Products Name<br />5= Model<br />6= Date Added desc<br />7= Date Added<br />8= Product Sort Order</div>
 
 
-<h2 id="sort_order_default__featured">Sort Order Default - Featured</h2>
+<h2 id="sort_order_default__featured_products">Sort Order Default - Featured Products</h2>
 
 <div class='indent'>Key: <b>PRODUCT_FEATURED_LIST_SORT_DEFAULT</b><br />
 Path: <b>Configuration > Product Listing</b><br />
 Description: What Sort Order Default should be used for Featured Product Display?<br />Default= 1 for Product Name<br /><br />1= Products Name<br />2= Products Name Desc<br />3= Price low to high, Products Name<br />4= Price high to low, Products Name<br />5= Model<br />6= Date Added desc<br />7= Date Added<br />8= Product Sort Order</div>
 
 
-<h2 id="sort_order_default__allproducts">Sort Order Default - All-Products</h2>
+<h2 id="sort_order_default__allproducts_page">Sort Order Default - All-Products page</h2>
 
 <div class='indent'>Key: <b>PRODUCT_ALL_LIST_SORT_DEFAULT</b><br />
 Path: <b>Configuration > Product Listing</b><br />
