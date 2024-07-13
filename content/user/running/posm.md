@@ -55,3 +55,10 @@ For more details on this screen, see [Manage Options' Stock](https://github.com/
 
 For more details on this screen, see [Options' Stock View All](https://github.com/lat9/options_stock_support/wiki/Admin-User-Interface-Changes#catalog--options-stock-view-all) in the POSM help. 
 
+## Dependent Attributes
+
+Attributes in POSM-controlled products are dependent by default.  You must choose attributes in the order in which they are presented (which is by the sort order set when creating the Product Options). 
+
+![POSM Dependent attributes](/images/dependent_attributes.png)
+
+In the example shown above, you must choose Size before you can choose Media Type.

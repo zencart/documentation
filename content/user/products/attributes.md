@@ -221,7 +221,7 @@ For more information, see [configuring downloadable attributes](/user/products/d
 
 Dependent attributes are these whose range of values depend on the values of previously set attributes.  For example, the values for Car Model depend on the value of Car Make. 
 
-In Zen Cart 2.1 and higher, the built-in [POSM](/user/running/posm) utility provides dependent attribute functionality. 
+In Zen Cart 2.1 and higher, the built-in [POSM](/user/running/posm) utility provides dependent attribute functionality.  See [dependent attributes](/user/running/posm/#dependent-attributes).
 
 Older versions of Zen Cart do not natively support this feature but plugins can provide dependent attribute support; see [POSM](/user/running/posm). 
 
