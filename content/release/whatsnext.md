@@ -16,10 +16,12 @@ These are goals, not commitments.  Any of the improvements listed here might be 
 
 ## 2.1.0 
 The improvements targeted for v2.1.0 include:  
-- New Feature: The <a href="https://vinosdefrutastropicales.com/product_extra_files/options_stock/readme.html">Products Options Stock Manager</a> (POSM) plugin will be integrated with Zen Cart.  This feature will help storeowners who have product variants whose stock needs to be tracked (red large t-shirts vs blue medium t-shirts, for example).  It is designed to replace the various "Stock by Attributes" plugins which are currently in use.
+- New Feature: The <a href="https://vinosdefrutastropicales.com/product_extra_files/options_stock/readme.html">Products Options Stock Manager</a> (POSM) plugin will be integrated with Zen Cart.  This feature will help storeowners who have product variants whose stock needs to be tracked (red large t-shirts vs blue medium t-shirts, for example).  It is designed to replace the various "Stock by Attributes" plugins which are currently in use.  See [Variant Stock](/user/running/posm/) for more details.
 - New Feature: The Zen Cart admin will be secured with 
 [Multi Factor Authentication](/user/security/multifactor/). 
-- Admin: FIXED - Searching for customers from the orders page would occasionally lead to a blank right hand infoBox.
+- Admin: FIXED - CKEditor security warning fix is built-in.
+- Admin: FIXED - Viewing customer records would occasionally lead to a blank right hand infoBox.
+- Admin: FIXED - Viewing orders would occasionally lead to a blank right hand infoBox.
 - Admin: FIXED - Selecting coupons on pages other than the first page would occasionally fail.
 - Admin: The <a href="/dev/code/template_settings/">template settings file</a> may now be viewed from your admin page.
 - Admin: The date of last password change is now shown on the Users page in admin.

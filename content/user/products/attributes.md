@@ -145,7 +145,15 @@ Navigate through the category with the Previous/Next buttons or choose a product
 
 **b) Add the Attribute Option Name+Value Pairs**  
 
-Once the required Product is selected, go to the Adding New Attributes box  
+Once the required Product is selected, go to the Adding New Attributes box (the "A" on the right hand side). 
+
+<img src="/images/products_icons.png" alt="Admin Product Listing Icons showing Attributes" style="float: right" />
+<br clear="all" />
+
+- If the "A" is black, there are no attributes.  Clicking the "A" will take you straight to the Attributes Controller. 
+- If the "A" is blue, there are attributes.  Clicking the "A" will open an infoBox on the right; click Edit Attributes to go to the Attributes Controller.
+
+In the Attributes Controller, the product is already selected.
 
 1\. Select the Option Name.  
 This will display all the Option Values defined for that Name.
@@ -200,6 +208,9 @@ You can always edit or delete them after adding.
 
 When done, you may update the sort orders for the product to the Option Value default sort order by choosing that Additional Action, at the top of the page..  
 
+### Assigning Stock Levels to Product Variants 
+See [Variant Stock](/user/running/posm/) for instructions.
+
 ### Downloadable Products
 
 Note: if you plan on using downloads, be sure you have configured your Attribute Settings for handling files. See **Admin > Configuration > Attribute Settings**.  
@@ -210,5 +221,7 @@ For more information, see [configuring downloadable attributes](/user/products/d
 
 Dependent attributes are these whose range of values depend on the values of previously set attributes.  For example, the values for Car Model depend on the value of Car Make. 
 
-Zen Cart does not natively support this feature but plugins can provide [dependent attribute](/user/miscellaneous/can_zen_cart/#can-zen-cart-configure-products-with-dependent-attributes) support.
+In Zen Cart 2.1 and higher, the built-in [POSM](/user/running/posm) utility provides dependent attribute functionality. 
+
+Older versions of Zen Cart do not natively support this feature but plugins can provide dependent attribute support; see [POSM](/user/running/posm). 
 

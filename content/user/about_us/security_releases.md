@@ -1,6 +1,6 @@
 ---
 title: Zen Cart Security 
-description: How the project handles discovered vulnerabilities
+description: Security patches and vulnerability handling process 
 category: about_us
 weight: 10
 ---
