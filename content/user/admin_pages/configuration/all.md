@@ -82,6 +82,9 @@ nosearch: true
 # Configuration ≫ EZ-Pages Settings
 {{% include "/user/admin_pages/configuration/configuration_ezpagessettings.md" %}}
 
+# Configuration ≫ Options' Stock Manager
+{{% include "/user/admin_pages/configuration/configuration_optionsstockmanager.md" %}}
+
 <style>
 #endcontent {
    display: none; 
