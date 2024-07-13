@@ -13,7 +13,7 @@ If your plugin creates a new page, the ability to provide help has been built-in
 
 Use the [observer autoloading](https://docs.zen-cart.com/dev/code/notifiers/#auto-loaded-observers) feature of Zen Cart admin observers (available since Zen Cart 1.5.7), and create a new file called `admin/includes/classes/observers/auto.myplugin_help.php`.  (Be sure to follow the naming conventions for observer autoloading!)
 
-As an example, here's the observer that adds the help for [POSM](/user/running/posm/) in Zen Cart 2.1.0: 
+As an example, here's the observer that adds the help for [POSM](/user/running/posm/) in Zen Cart 2.1.0.  It's in the encapsulated version of POSM under `admin/includes/classes/observers/auto.posm_help.php`.
 
 ```
 <?php
@@ -27,9 +27,9 @@ class zcObserverPosmHelp extends base
 
     protected function update(&$class, $eventID, $page, &$help_page)
     {
-        if ($page == FILENAME_PRODUCTS_OPTIONS_STOCK) {
+        if ($page === FILENAME_PRODUCTS_OPTIONS_STOCK) {
             $help_page = 'https://docs.zen-cart.com/user/admin_pages/catalog/options_stock_manager/'; 
-        } elseif ($page == FILENAME_PRODUCTS_OPTIONS_STOCK_VIEW_ALL) {
+        } elseif ($page === FILENAME_PRODUCTS_OPTIONS_STOCK_VIEW_ALL) {
             $help_page = 'https://docs.zen-cart.com/user/admin_pages/catalog/options_stock_view_all/'; 
         }
     }
