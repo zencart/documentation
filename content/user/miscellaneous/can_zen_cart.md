@@ -116,7 +116,7 @@ Please see details on the POSM plugin under [Variant Stock](/user/running/posm/)
 Dependent attributes describes a situation where the options for one attribute can only be determined when a prior attribute has been set to a specific value.  For example, the values for Car Model depend on the value of Car Make.
 
 The [POSM plugin](/user/running/posm/) referenced above also does this. 
-
+See [dependent attributes](/user/running/posm/#dependent-attributes).
 ---
 
 ### Can Zen Cart allow me to create restricted admin accounts? 
