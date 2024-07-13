@@ -11,23 +11,30 @@ weight: 10
 
 If your plugin creates a new page, the ability to provide help has been built-in since Zen Cart 1.5.8.  If you are not yet using this version or higher, you can merge [this PR](https://github.com/zencart/zencart/pull/4243/commits/ea92e4a950ba0c373ec081a3472d16f5030a70c1) into your cart. 
 
-Use the [observer autoloading](https://docs.zen-cart.com/dev/code/notifiers/#auto-loaded-observers) feature of Zen Cart admin observers (available since Zen Cart 1.5.7), and create a new file called `admin/includes/classes/observers/auto.MyPluginHelp.php`.  (Be sure to follow the naming conventions for observer autoloading!)
+Use the [observer autoloading](https://docs.zen-cart.com/dev/code/notifiers/#auto-loaded-observers) feature of Zen Cart admin observers (available since Zen Cart 1.5.7), and create a new file called `admin/includes/classes/observers/auto.myplugin_help.php`.  (Be sure to follow the naming conventions for observer autoloading!)
+
+As an example, here's the observer that adds the help for [POSM](/user/running/posm/) in Zen Cart 2.1.0: 
 
 ```
 <?php
-class zcObserverMyPluginHelp extends base {
-  function __construct() {
-    $this->attach($this, array('NOTIFIER_PLUGIN_HELP_PAGE_URL_LOOKUP'));
-  }
 
-  function update(&$class, $eventID, $page, &$help_page) {
-     if ($eventID == 'NOTIFIER_PLUGIN_HELP_PAGE_URL_LOOKUP') {
-        if ($page == FILENAME_MYPLUGIN_NAME) {
-           $help_page = "link-to-your-help-page"; 
+class zcObserverPosmHelp extends base
+{
+    public function __construct()
+    {
+        $this->attach($this, ['NOTIFIER_PLUGIN_HELP_PAGE_URL_LOOKUP']);
+    }
+
+    protected function update(&$class, $eventID, $page, &$help_page)
+    {
+        if ($page == FILENAME_PRODUCTS_OPTIONS_STOCK) {
+            $help_page = 'https://docs.zen-cart.com/user/admin_pages/catalog/options_stock_manager/'; 
+        } elseif ($page == FILENAME_PRODUCTS_OPTIONS_STOCK_VIEW_ALL) {
+            $help_page = 'https://docs.zen-cart.com/user/admin_pages/catalog/options_stock_view_all/'; 
         }
-     }
-  }
+    }
 }
+
 ```
 
 If you are not running Zen Cart 1.5.7 or higher, you will need to pull in [this PR](https://github.com/zencart/zencart/commit/bc195baf258c11b73f29de41020e1c0505e4d462) to your cart to get admin observers to autoload. 
