@@ -43,7 +43,7 @@ Dollar Sign | use the [products price manager](/user/admin_pages/catalog/product
 Asterisk | use the [meta tags editor](/user/admin_pages/catalog/products_meta_tags_editor/). 
 
 
-Some of these icons change color depending on the product:
+Some of these icons change color depending on the product's configuration:
 
 Button | Meaning
 -------|-------

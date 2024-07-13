@@ -1,6 +1,6 @@
 ---
-title: Plugin Security Patches 
-description: List of all Security Patches for Plugins
+title: Security Patches for Plugins 
+description: List of all Plugin Security Patches 
 category: security
 weight: 10
 ---
