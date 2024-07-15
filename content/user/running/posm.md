@@ -62,3 +62,10 @@ Attributes in POSM-controlled products are dependent by default.  You must choos
 ![POSM Dependent attributes](/images/dependent_attributes.png)
 
 In the example shown above, you must choose Size before you can choose Media Type.
+
+If the product were not POSM-controlled, all attribute settings would be available at the same time.
+
+![Regular attributes](/images/regular_attributes.png)
+
+The dependent attribute feature is highly configurable; see [Configuration Settings for Options' Stock Manager](/user/admin_pages/configuration/configuration_optionsstockmanager/). 
+
