@@ -47,22 +47,23 @@ The pages listed below are considered Define Pages, since their content is contr
 
 Page Name | File| URL 
 ----------|-----|-----
-About Us| `define_about_us.php` | `index.php?main_page=about_us` (1.5.8 and above)
-Accessibility| `define_accessibility.php` | `index.php?main_page=accessibility` (2.0.0 and above)
-Ask a Question | `define_ask_a_question.php` | `index.php?main_page=ask_a_question`  (1.5.7 and above)
-Contact Us | `define_contact_us.php` | `index.php?main_page=contact_us` 
-Privacy | `define_privacy.php` | `index.php?main_page=privacy`  
-Shipping Info | `define_shippinginfo.php` | `index.php?main_page=shippinginfo` 
-Conditions of Use | `define_conditions.php` | `index.php?main_page=conditions` 
+[About Us](/user/storefront_pages/about_us/)| `define_about_us.php` | `index.php?main_page=about_us` (1.5.8 and above)
+[Accessibility](/user/storefront_pages/accessibility/)| `define_accessibility.php` | `index.php?main_page=accessibility` (2.0.0 and above)
+[Ask a Question](/user/storefront_pages/ask_a_question/) | `define_ask_a_question.php` | `index.php?main_page=ask_a_question`  (1.5.7 and above)
+[Conditions of Use](/user/storefront_pages/conditions/) | `define_conditions.php` | `index.php?main_page=conditions` 
+[Contact Us](/user/storefront_pages/contact_us/) | `define_contact_us.php` | `index.php?main_page=contact_us` 
 Discount Coupon | `define_discount_coupon.php` | `index.php?main_page=coupons` 
-Site Map  | `define_site_map.php` | `index.php?main_page=site_map`  
-Page 2 |  `define_page_2.php` | `index.php?main_page=page_2`
-Page 3 |  `define_page_3.php` | `index.php?main_page=page_3` 
-Page 4 | `define_page_4.php` | `index.php?main_page=page_4`  
+[Privacy](/user/storefront_pages/privacy/) | `define_privacy.php` | `index.php?main_page=privacy`  
+[Shipping Info](/user/storefront_pages/shippinginfo/) | `define_shippinginfo.php` | `index.php?main_page=shippinginfo` 
+[Site Map](/user/storefront_pages/site_map/) | `define_site_map.php` | `index.php?main_page=site_map`  
+[Page Not Found](/user/storefront_pages/page_not_found/) | `define_page_not_found.php` | *non-existent page*
+[Page 2](/user/storefront_pages/page_x/) |  `define_page_2.php` | `index.php?main_page=page_2`
+[Page 3](/user/storefront_pages/page_x/) |  `define_page_3.php` | `index.php?main_page=page_3` 
+[Page 4](/user/storefront_pages/page_x/) | `define_page_4.php` | `index.php?main_page=page_4`  
 
 <br>
 
-These pages have other content, and define page content is embedded along side that: 
+These pages have other information in addition to the define page content: 
 
 
 Page Name |  File | URL 

@@ -28,6 +28,7 @@ Page | index.php?main_page=page | Displays an EZ-Page
 Page 2 | index.php?main_page=page_2 | 
 Page 3 | index.php?main_page=page_3 | 
 Page 4 | index.php?main_page=page_4 | 
+Page Not Found | index.php?main_page=page_not_found|
 Privacy | index.php?main_page=privacy | Privacy Policy
 Product Listing |  index.php?main_page=index&cPath=NNN | Shows products in a category 
 Product Reviews Info | index.php?main_page=product_reviews_info | Read a specific review 
