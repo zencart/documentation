@@ -69,3 +69,7 @@ If the product were not POSM-controlled, all attribute settings would be availab
 
 The dependent attribute feature is highly configurable; see [Configuration Settings for Options' Stock Manager](/user/admin_pages/configuration/configuration_optionsstockmanager/). 
 
+## My Variants have different prices and weights? 
+
+A commercial plugin called [POSM Price/Weight](https://vinosdefrutastropicales.com/index.php?main_page=product_info&cPath=2_7&products_id=60) exists to solve this very problem. 
+

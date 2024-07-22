@@ -8,11 +8,35 @@ weight: 10
 Products shown on a [product listing page](/user/storefront_pages/listing_pages/) are sorted in one of two ways: 
 
 - Using the per-product sort order set on the [product editing](/user/products/product_edit/) page. 
-- Using the value [PRODUCT_LISTING_DEFAULT_SORT_ORDER](/user/admin_pages/configuration/configuration_productlisting/#display_product_listing_default_sort_order) from the Admin > Configuration > Product Listing page.
+- Using the key [PRODUCT_LISTING_DEFAULT_SORT_ORDER](/user/admin_pages/configuration/configuration_productlisting/#display_product_listing_default_sort_order) from the Admin > Configuration > Product Listing page.  This key is called "Sort Order Default - Product Listing" in Zen Cart 2.0.0 and above; it was formerly called "Display Product Listing Default Sort Order."
 
 When `PRODUCT_LISTING_DEFAULT_SORT_ORDER` is set to blank, the per-product sort order is used. 
 
-When it is non-blank, it is interpreted as follows: 
+Otherwise, the interpretation is different in Zen Cart 2.0.0 and forward, when compared to older versions of Zen Cart.
+
+## Zen Cart 2.0.0 and forward 
+The configuration setting `PRODUCT_LISTING_DEFAULT_SORT_ORDER` may have any of these values: 
+
+#### Sort Order Options Table
+
+|Value|Text String|Meaning| 
+|-----|-----|------|
+|8|Recommended|ORDER BY p.products_sort_order, pd.products_name|
+|1|Product Name|ORDER BY pd.products_name |
+|2|Product Name - desc|ORDER BY pd.products_name DESC |
+|3|Price - low to high|ORDER BY p.products_price_sorter, pd.products_name |
+|4|Price - high to low|ORDER BY p.products_price_sorter DESC, pd.products_name |
+|5|Model|ORDER BY p.products_model |
+|6|Date Added - New to Old|ORDER BY p.products_date_added DESC, pd.products_name |
+|7|Date Added - Old to New|ORDER BY p.products_date_added, pd.products_name|
+
+Note the use of `p.products_price_sorter` rather than `p.products_price` - see 
+"Update ALL Products Price Sorter" in [Store Manager](/user/admin_pages/tools/store_manager/).
+
+These values correspond to the sort order dropdown shown on the listing page in 2.0.0 and forward. If an older style value such as "4a" is used in `PRODUCT_LISTING_DEFAULT_SORT_ORDER`, it is overridden to be "8" (Recommended). 
+
+## Zen Cart 1.5.8 and prior 
+When `PRODUCT_LISTING_DEFAULT_SORT_ORDER` is non-blank, it is interpreted as follows: 
 
 - There are a list of Display *field name* settings on the Admin > Configuration > Product Listing page.  In 1.5.7, they are: 
   - Display Product Image 
