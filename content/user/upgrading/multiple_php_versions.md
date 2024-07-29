@@ -13,6 +13,12 @@ First, you should verify that the desired [PHP Version is available](/user/upgra
 
 Generally your host will only allow you to run one version of PHP per domain.  But if you create one or more subdomains, each subdomain may also have its own version of PHP.  
 
+Before proceeding, determine whether your hoster allows you to have multiple versions of PHP per domain (generally by using a `.htaccess` file).  If they do, you may just use that technique, and deploy your test site under `public_html` in a different folder than live, or you may follow these steps (for better separation of test and live), and simply use the `.htaccess` file to set the PHP version, in lieu of using MultiPHP or a similar tool. 
+
+-----
+
+# Creating a site under an alternate webroot
+
 ## Create an alternate webroot 
 With cPanel’s File Manager, navigate to `/home/YOURACCOUNT/`. This is known as "above webroot." If your cPanel File Manager loads with `/public_html`, just click on "Up One Level" to be “above the root.”  This is where you will place your test site.  Create a folder called "test" to hold the contents of your test site.
 
