@@ -17,9 +17,9 @@ no_list: true
 
 ## New Features and Bug Fixes
 
-- [New in v2.0.x](whatsnew_2.0.0.html)
-- [New in v1.5.8](whatsnew_1.5.8.html)
-- [New in v1.5.7](whatsnew_1.5.7.html)
+- [What's New in v2.0.x](whatsnew_2.0.0.html)
+- [What's New in v1.5.8](whatsnew_1.5.8.html)
+- [What's New in v1.5.7](whatsnew_1.5.7.html)
 
 ## Changed Files
 
@@ -35,7 +35,7 @@ no_list: true
 - [What's Next](whatsnext)
 
 ## Archive
-- [Changed Files docs for older releases](/release/archive_changed/)
 - [What's New  docs for older releases](/release/archive_whatsnew/)
+- [Changed Files docs for older releases](/release/archive_changed/)
 
 
