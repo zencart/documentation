@@ -10,6 +10,8 @@ Zen Cart has a configuration setting called [DISABLED_PRODUCTS_TRIGGER_HTTP200](
 
 ## SEO URLs 
 
+The phrase "SEO URLs" is sometimes used to describe the process of rewriting URLs to contain keywords.   Some experts believe this process is beneficial to your site. 
+
 The default installation of Zen Cart does not create "SEO URLs" (URLs that are self-describing).  Some plugins are available to do this:
 
 - [Ultimate SEO URLs](https://www.zen-cart.com/downloads.php?do=file&id=132)

@@ -11,18 +11,26 @@ If you are unfamiliar with the terms webroot, YOURACCOUNT and YOURSITE, please s
 
 First, you should verify that the desired [PHP Version is available](/user/upgrading/php_version/) on your host.
 
-Generally your host will only allow you to run one version of PHP per domain.  But if you create one or more subdomains, each subdomain may also have its own version of PHP.  
+Some hosting configurations allow only one version of PHP per domain; others permit multiple versions of PHP.  Before proceeding, determine whether your hoster allows you to have multiple versions of PHP per domain (generally by using a `.htaccess` file).  
 
-Before proceeding, determine whether your hoster allows you to have multiple versions of PHP per domain (generally by using a `.htaccess` file).  If they do, you may just use that technique, and deploy your test site under `public_html` in a different folder than live, or you may follow these steps (for better separation of test and live), and simply use the `.htaccess` file to set the PHP version, in lieu of using MultiPHP or a similar tool. 
+# Creating a test site under your domain 
+
+If your hoster allows you to control the PHP version on a per-folder basis, 
+you may use that technique, and deploy your test site to a different folder under `public_html`.  We'll assume the name of this folder is `test`.  Here is how things would look: 
+
+- If your live site is directly under `public_html`, put your test site in a subfolder under `public_html` named `test`.  So your live site would be accessed as `https://www.YOURSITE.com/` and your test site would be accessed as `https://www.YOURSITE.com/test/`.  If you use [URL Rewriting](/user/seo/other_topics/#seo-urls), you may need some changes to your `.htaccess` file. 
+- If your live site is already in a folder under `public_html`, put your test site in a differently named folder.  For example, if your live site is in the folder `store`, your live site would be accessed as `https://www.YOURSITE.com/store/` and your test site would be accessed as `https://www.YOURSITE.com/test/`. 
+
+Alternately, you may create a new subdomain and follow the steps below (for better separation of test and live).  You would use the `.htaccess` file to set the PHP version, in lieu of using MultiPHP or a similar tool. 
 
 -----
 
-# Creating a site under an alternate webroot
+# Creating a test site under a new subdomain 
 
 ## Create an alternate webroot 
 With cPanel’s File Manager, navigate to `/home/YOURACCOUNT/`. This is known as "above webroot." If your cPanel File Manager loads with `/public_html`, just click on "Up One Level" to be “above the root.”  This is where you will place your test site.  Create a folder called "test" to hold the contents of your test site.
 
-## Creating a Subdomain.
+## Create a Subdomain.
 In cPanel, navigate to the Domains Section.  Click the icon called "Domains."  Then, click on the "Create a New Domain" option. 
 
 ![Subdomain](/images/sub_domain_1.png)
@@ -37,20 +45,18 @@ Make sure the Share document root is not checked, and that the folder we just cr
 
 You now have a subdomain of `test.YOURSITE.com` ready to be set up.
 
-## Setting the PHP for the Subdomain
-If your cPanel does NOT have a Software Section with a selection of MultiPHP Manager, you may need your host’s help on this step.
-
-If you don’t have MultiPHP Manager, ask your host to set the PHP for the `test` folder that you created.  (Emphasize that it is above webroot, i.e. in `/home/YOURACCOUNT/test`.)
+## Set the PHP version for the Subdomain
+If your cPanel does NOT have a Software Section with a selection of MultiPHP Manager, you may need your host’s help on this step.  Ask your host to set the PHP for the `test` folder that you created.  (Emphasize that it is above webroot, i.e. in `/home/YOURACCOUNT/test`.)
 
 If you do have MultiPHP Manager, go to the Software Section in the cPanel and open MultiPHP Manager. Set the PHP version appropriately.
 
-If `test.YOURSITE.com` is not already listed with the needed version of PHP, select the box in front of `test.YOURSITE.com` and select a version of PHP in the drop-down titled PHP Version above the listing area.
+- If `test.YOURSITE.com` is not already listed with the needed version of PHP, select the box in front of `test.YOURSITE.com` and select a version of PHP in the drop-down titled PHP Version above the listing area.
 
-The PHP version you select should be the latest supported version that works with your version of Zen Cart. The PHP Version Matrix will show you the versions of PHP that work well with the version of Zen Cart you are testing.
+- The PHP version you select should be the latest supported version that works with your version of Zen Cart. The PHP Version Matrix will show you the versions of PHP that work well with the version of Zen Cart you are testing.
 
-For instance, with Zen Cart 1.5.8a, you could use PHP 7.4, 8.0, 8.1 or 8.2.  (See [Server Requirements for running Zen Cart](/user/first_steps/server_requirements/#php-version) for other versions.)
+For instance, with Zen Cart 2.0.1, you could use PHP 8.0, 8.1, 8.2 or 8.3.  See [Server Requirements for running Zen Cart](/user/first_steps/server_requirements/#php-version) for other versions.
 
-## Installing your new version
+## Install your new site 
 
 Upload your software to the folder `/home/YOURACCOUNT/test.YOURSITE.com/`. Be sure the two `configure.php` files use this folder as `DIR_FS_CATALOG`, and that all of the `HTTP*_SERVER` settings use the subdomain URL, not the main domain URL.  For example, 
 
@@ -58,10 +64,7 @@ Upload your software to the folder `/home/YOURACCOUNT/test.YOURSITE.com/`. Be su
 define('HTTPS_SERVER', 'https://test.YOURSITE.com');
 ```
 
-## SSL 
-You may need to take steps at this point to get your SSL certificate for your new subdomain.  On cPanel, go to SSL/TLS Status, select your new domain and run AutoSSL.
-
-## Configure Files 
+## Tweak your Configure Files 
 
 You'll have to tweak your configure files as shown below. 
 
@@ -90,7 +93,11 @@ define('DIR_WS_HTTPS_CATALOG', '/');
 
 since you've put the files in the `test` folder just above webroot, rather than a subfolder under `test` (even if your live store is in a subfolder). 
 
-## Checking your Installation
+## Check your SSL 
+You may need to take steps at this point to get your SSL certificate for your new subdomain.  On cPanel, go to SSL/TLS Status, select your new domain and run AutoSSL.
+
+
+## Verify your Installation
 
 1. Login to your admin, then go to the [Version](/user/admin_pages/tools/server_info/) page. Check that the configuration you see matches your expectations. 
 

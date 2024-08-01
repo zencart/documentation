@@ -19,27 +19,29 @@ However, if this is done:
 - the file must not be overridden
 - the file's definitions must be unique for the page on which they are included
 
-If these rules are not followed, duplicate definition logs will be produced.  With this in mind, let's look at how the current system of array based language files works.
+If these rules are not followed, duplicate definition logs will be produced.  
+
+Now let's look at how array based language files work.
 
 ### Example
 
-So for example, in Zen Cart 1.5.7, the file `includes/languages/english/login.php` would have: 
+In Zen Cart 1.5.7, the language file for the login page is `includes/languages/english/login.php`.  To set the value `HEADING_TITLE`, it uses 
 
 ```
 define('HEADING_TITLE', 'Welcome, Please Sign In');
 ```
 
-In Zen Cart 1.5.8, the file `includes/languages/english/lang.login.php` would have: 
+In Zen Cart 1.5.8, the language file is renamed to `includes/languages/english/lang.login.php`.  To do the same setting, it uses 
 
 ```
 $define = [
 ...
     'HEADING_TITLE' => 'Welcome, Please Sign In',
 ... ]; 
-
+return $define; 
 ```
 
-with a `define` to be done later after all the strings had been gathered.
+with a PHP `define` to be done later after all the strings are gathered (thus preventing duplicate errors).
 
 Using arrays allows for the following kinds of behavior: 
 
@@ -49,9 +51,9 @@ Using arrays allows for the following kinds of behavior:
 
 In the process of doing this work, the language files were reviewed for duplicates, and consolidation was done where appropriate to reduce the burden on translators.  So some constant definitions have moved or been renamed - be sure to apply your changes and customizations with this in mind.
 
-### Loading a language file from a Storefront Plugin
+### Loading a storefront language file 
 
-If you need to specifically include a **core** language file, logic that was used in Zen Cart 1.5.7 and before was: 
+If you need to specifically include a core language file, logic that was used in Zen Cart 1.5.7 and before was: 
 
 ```
   $langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . '/modules/order_total/' .  'ot_group_pricing.php';
@@ -98,7 +100,7 @@ If the file to be loaded was just in `includes/languages/english/` (and not the 
   $folder = '/';  // end with slash 
 ```
 
-### Loading a language file from an Admin Plugin
+### Loading an admin language file 
 
 If you are loading an admin side language file, you can do something like this.
 Assume the file to 
@@ -113,7 +115,7 @@ if (function_exists('zen_get_zcversion') && zen_get_zcversion() >= '1.5.8') {
 }
 ```
 
-If you are loading a storefront language file on the admin side, the `loadExtraLanguageFiles` first parameter must be preceded by `DIR_FS_CATALOG`, i.e. 
+As noted above, if you are loading a storefront language file on the admin side, the `loadExtraLanguageFiles` first parameter must be preceded by `DIR_FS_CATALOG`, i.e. 
 ```
      $languageLoader->loadExtraLanguageFiles(DIR_FS_CATALOG . DIR_FS_CATALOG . DIR_WS_LANGUAGES,  $_SESSION['language'], $filename, $folder); 
 ```

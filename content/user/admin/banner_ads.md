@@ -19,6 +19,7 @@ You are not obligated to show any of the banners distributed with Zen Cart.
 
 Images used in banners are typically uploaded to your server's `/images/banners` directory.
 
+Banners are organized into banner groups.  Each of the three header banner positions and three footer banner positions in a template can display one banner group.  The mapping from position to group is done in the Layout Settings configuration page, as shown below.
 
 ## Banner Styles
 There are 2 styles of banners: **sidebox** banners and **wide** banners
@@ -52,6 +53,10 @@ In the default template the following are where these banners will be displayed:
 
 <img src="/images/banners_footer.png" alt="Footer Positions for Banner Groups">
 
+
+To set each of these three header and three footer areas to a banner group, use these settings in [Admin > Configuration > Layout Settings](/user/admin_pages/configuration/configuration_layoutsettings/): 
+
+![Banner fields in Layout Settings](/images/layout_settings_banners.png)
 
 #### Technical note for coders:
 
