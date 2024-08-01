@@ -28,7 +28,8 @@ you will also want to change these language defines in `includes/languages/YOURT
    - `TEXT_SHIPPING_WEIGHT`
 This way your storefront will show the correct units. 
 
-Your admin will show the units which are indicated  by the setting of the two constants above, `SHIPPING_WEIGHT_UNITS` and `SHIPPING_DIMENSION_UNITS`.
+Your admin will show the units which are indicated by the setting of the two constants above, `SHIPPING_WEIGHT_UNITS` and `SHIPPING_DIMENSION_UNITS`. Except for the orders detail and products attribute preview pages, to change this you need to change the language defines in `YOURADMIN/includes/languages/lang.english.php`
+   - `TEXT_PRODUCT_WEIGHT_UNIT`
 
 The screenshot below shows the new fields in the Product Edit and Configuration > Shipping screens: 
 
