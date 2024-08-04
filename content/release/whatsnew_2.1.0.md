@@ -83,7 +83,7 @@ For developers with language skills wishing to provide a translation, [developer
 
 ## 2.1.0 
 The improvements in v2.1.0 include:  
-- New Feature: The <a href="https://vinosdefrutastropicales.com/product_extra_files/options_stock/readme.html">Products Options Stock Manager</a> (POSM) plugin will be integrated with Zen Cart.  This feature will help storeowners who have product variants whose stock needs to be tracked (red large t-shirts vs blue medium t-shirts, for example).  It is designed to replace the various "Stock by Attributes" plugins which are currently in use.  See [Variant Stock](/user/running/posm/) for more details.
+- New Feature: The [Products Options Stock Manager](https://vinosdefrutastropicales.com/product_extra_files/options_stock/readme.html) plugin (sometimes called POSM) is integrated with Zen Cart as an encapsulated plugin. This feature will help storeowners who have product variants whose stock needs to be tracked (red large t-shirts vs blue medium t-shirts, for example). It is designed as an alternative the various “Stock by Attributes” plugins which are currently in use. See [Variant Stock](/user/running/posm/) for more details.
 - New Feature: The Zen Cart admin will be secured with 
 [Multi Factor Authentication](/user/security/multifactor/). 
 - Admin: FIXED - Sales Report with Graphs monthly pagination now works.

@@ -14,9 +14,13 @@ There are also open source plugins which provide this capability; search for "St
 In version 2.1.0 of Zen Cart, POSM has been added as a core feature.
 See [the POSM wiki](https://github.com/lat9/options_stock_support/wiki) for detailed information. 
 
-To track variant stock in Zen Cart 2.1.0 and higher, go to Admin > Modules > Plugin Manager, and install Products' Options' Stock Manager. 
+To track variant stock in Zen Cart 2.1.0 and higher using POSM: 
+- go to Admin > Modules > Plugin Manager 
+- install Products' Options' Stock Manager. 
+- Users of the Responsive Classic template will need to change the configuration value [Dependent Attributes: Outer Selector](/user/admin_pages/configuration/configuration_optionsstockmanager/#dependent_attributes_outer_selector).
+- Users of Zen Cart 1.5.8a, 2.0.0 and 2.0.1 may use the encapsulated version of POSM provided in v2.1.0, but must follow [these instructions on Upgrading POSM](https://github.com/lat9/options_stock_support/wiki/Release%E2%80%90Specific-Upgrade-Notes#upgrading-posm-to-v500-and-later).
 
-Then, on Admin > Catalog > Categories/Products, drill down to a product with attributes.  You'll be able to spot products with attributes because the "A" icon on the right will be blue rather than black. 
+Once POSM is installed, on Admin > Catalog > Categories/Products, drill down to a product with attributes.  You'll be able to spot products with attributes because the "A" icon on the right will be blue rather than black. 
 
 <img src="/images/products_icons_attrs.png" alt="Admin Product Listing Icons showing Attributes" style="float: right" />
 <br clear="all" />
