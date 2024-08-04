@@ -17,12 +17,14 @@ no_list: true
 
 ## New Features and Bug Fixes
 
+- [What's New in v2.1.x](whatsnew_2.1.0)
 - [What's New in v2.0.x](whatsnew_2.0.0.html)
 - [What's New in v1.5.8](whatsnew_1.5.8.html)
 - [What's New in v1.5.7](whatsnew_1.5.7.html)
 
 ## Changed Files
 
+- [Changed in v2.1.x](changed_files-v2-1-0)
 - [Changed in v2.0.x](changed_files-v2-0-0.html)
 - [Changed in v1.5.8](changed_files-v1-5-8.html)
 - [Changed in v1.5.7](changed_files-v1-5-7.html)

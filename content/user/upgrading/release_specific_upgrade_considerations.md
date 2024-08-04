@@ -31,6 +31,20 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 ### Zen Cart 2.0.x
 
+- The Mobile Detect library has changed, so if you have plugins or custom code that uses it, you must change it from: 
+```
+if (!class_exists('Mobile_Detect')) {
+  include_once(DIR_WS_CLASSES . 'Mobile_Detect.php');
+}
+$detect = new Mobile_Detect;
+```
+to
+```
+if (!class_exists('MobileDetect')) {
+    include_once(DIR_WS_CLASSES . 'Mobile_Detect.php');
+}
+$detect = new Detection\MobileDetect;
+```
 - [Shipping Dimensions](/user/shipping/shipping_dimensions) are now part of product data.  Users of the "Canada Post" and "Numinix Product Fields" plugins should be aware that the field `products_ready_to_ship` has been renamed `product_ships_in_own_box`, and the `zc_install` upgrade script will do the rename for you. 
 - The load order of all `extra` folders is now done alphabetically.  Prior to this, file system order was used.  
 - This release modifies the configuration of the Specials/New/All/Featured pages so that they all use the same settings that the product listing pages do.  See [New/Featured/All Listing Configuration Settings](/user/template/new_featured_all_listing_page_configuration/).  Note: this means the menu items "All Listing," "New Listing" and "Featured Listing" under the Configuration Menu are no longer there; go to the Configuration &gt; Product Listing menu instead.

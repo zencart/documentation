@@ -104,7 +104,7 @@ Documentation Files:
 
 Other considerations: 
 - `/composer.json`
-- `/laravel` - long before release, the bundled Laravel code should be matching PHP dependencies)
+- `/laravel` - long before release, the bundled Laravel code should match PHP dependencies
 - Update github workflows so tests run on desired versions
 
 ## Copyright Updates
