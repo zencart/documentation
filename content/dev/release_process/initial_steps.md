@@ -27,7 +27,7 @@ Message all developers who have merge privileges using the Skype Dev Chat channe
 Before tagging a release we need to:
 
 - Ensure code is up to date.
-- Be sure the version changes you did in the prior steps are checked in and merged. If they weren't, remember you will have to bypass merge protections since the branch has been locked for merges.
+- Be sure the versioning file changes you did in the prior steps are checked in and merged. If they weren't, remember you will have to bypass merge protections since the branch has been locked for merges.
 - Update the [Documentation Website](https:docs.zen-cart.com/release) to ensure that it reflects changes that have happened within the release.  (Focus on the What's New page; it's easier to build the Changed Files page once the build is complete.)
 
 # Testing Prior to the build 

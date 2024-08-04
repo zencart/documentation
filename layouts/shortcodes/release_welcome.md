@@ -1,6 +1,6 @@
 <div style="border: 2px solid #ff9d2c; margin: 5px; padding: 10px;">
 
-## Welcome to Zen Cart™ [![Zen Cart®](https://www.zen-cart.com/images/styles/zencart/style/zen-cart-logo.png "Zen Cart®")](./index.html)
+## Welcome to Zen Cart™ [![Zen Cart®](/release/zen-cart-logo.png "Zen Cart®")](./index.html)
 
 _Dear Zen Cart User_,
 

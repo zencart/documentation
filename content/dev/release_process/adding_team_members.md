@@ -5,6 +5,6 @@ layout: docs
 category: release_process
 ---
 
-This content has been moved to 
-the infrastructure repo (team members only).
+This content has been moved to the
+[infrastructure repo](https://github.com/zencart/infrastructure).  (Team members only.)
 

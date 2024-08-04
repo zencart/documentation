@@ -19,7 +19,7 @@ The following chart shows the association between jQuery and Zen Cart versions.
 
 jQuery | Zen Cart 
 -----------|--------------
-jQuery 3.6.1 | ZC 1.5.8-2.0.0
+jQuery 3.6.1 | ZC 1.5.8-2.1.x
 jQuery 3.5.1 | ZC 1.5.7 
 jQuery 3.4.0 | ZC 1.5.6
 jQuery 1.12.4 | ZC 1.5.5
@@ -30,7 +30,7 @@ The [jQuery UI library](https://jqueryui.com/) has been used in the Zen Cart adm
 
 jQuery UI | Zen Cart 
 -----------|--------------
-jQuery UI 1.13.2 | ZC 1.5.8-2.0.0
+jQuery UI 1.13.2 | ZC 1.5.8-2.1.x
 jQuery UI 1.12.1 | ZC 1.5.6-1.5.7
 
 

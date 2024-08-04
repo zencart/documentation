@@ -12,9 +12,13 @@ Starting from the initial page, select a category and product to work on.  Remem
 
 ![POSM page](/images/posm_page.png)
 
-Products which are configured for POSM will show fields for setting each variant's quantity. 
+Products which are configured for POSM will show fields for setting each variant's quantity.   Here's a product with a download variant and a physical variant.
 
 ![POSM quantity levels](/images/posm_new_2.png)
+
+The number of rows is the product of all the possible combinations.  Here's a product with two models and three memory options. 
+
+![POSM quantity levels multiple attributes](/images/posm_new_3.png)
 
 See [variant stock](/user/running/posm/) 
 as well as the [POSM Help](https://github.com/lat9/options_stock_support/wiki/)

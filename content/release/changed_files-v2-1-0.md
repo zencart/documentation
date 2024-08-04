@@ -20,7 +20,7 @@ You may also consult the [Zen Cart® Support Forum](https://www.zen-cart.com/for
 Consult the online docs for Release-Specific considerations to note regarding this version. [https://docs.zen-cart.com/user/upgrading/](https://docs.zen-cart.com/user/upgrading/)  
   
 A detailed list of all edits to all files can be seen on Github at:  
-[v1.5.8a...v2.0.0](https://github.com/zencart/zencart/compare/v1.5.8a...v2.0.0)  
+[v2.0.0...v2.1.0](https://github.com/zencart/zencart/compare/v2.0.0...master)  
 
 CHANGED Files in v2.1.0
 =======================
