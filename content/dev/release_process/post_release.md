@@ -38,7 +38,8 @@ click Save
 <img src="/images/plugin_version_selection.png"> 
 <br><br>
 
-Instructions: see infrastructure repo (team members only). 
+Instructions: see the 
+[infrastructure repo](https://github.com/zencart/infrastructure).  (Team members only.)
 
 ## Other Post-Release Tasks 
 
@@ -50,7 +51,9 @@ Instructions: see infrastructure repo (team members only).
 
 ### Major and Minor Releases Only
 
-- Create a "Known Bugs in <release>" thread on the [Upgrading to 1.5.x subforum](https://www.zen-cart.com/forumdisplay.php?156-Upgrading-to-1-5-x).   Update the release announcement and the [known bugs](/user/about_us/known_bugs/) page with this link.
+- Create a "Known Bugs in <release>" thread in the appropriate subforum under [Upgrading Your Zen Cart](https://www.zen-cart.com/forumdisplay.php?10-Upgrading-Your-Zen-Cart).   Update the release announcement and the [known bugs](/user/about_us/known_bugs/) page with this link.
+
+If you need to create a new subforum ("Updating to Y.x.x"), follow the guidance on the [infrastructure repo](https://github.com/zencart/infrastructure).  (Team members only.)
 
 - Ensure the [Release Specific Upgrade Considerations](/user/upgrading/release_specific_upgrade_considerations/) doc has a statement about this release.
 

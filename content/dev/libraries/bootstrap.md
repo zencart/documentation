@@ -19,7 +19,7 @@ The following chart shows the association between Bootstrap and Zen Cart version
 
 Bootstrap | Zen Cart 
 -----------|--------------
-BS 3.4.1 | ZC 1.5.6-2.0.0
+BS 3.4.1 | ZC 1.5.6-2.1.0
 BS 3.3.7 | ZC 1.5.5
 
 There is work underway to move the Zen Cart admin to Bootstrap 5. 
