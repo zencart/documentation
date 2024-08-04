@@ -26,6 +26,7 @@ The following list shows the PHP versions compatible with each version of Zen Ca
 
 Please note that the  lower versions of PHP in a supported range are only intended to allow you to get through the upgrade process more easily.  The goal should be to use the highest version of PHP supported by your version, since it will have the most current fixes and security patches.
 
+*   <font color="#ff0000">**Zen Cart v2.1.x** is designed for PHP 8.0 through PHP 8.3</font><br>
 *   <font color="#ff0000">**Zen Cart v2.0.x** is designed for PHP 8.0 through PHP 8.3</font><br>
 *   <font color="#ff0000">**Zen Cart v1.5.8** (latest version: 1.5.8a) is designed for PHP 7.3 through PHP 8.3 (with PHP 8.1 recommended and PHP 8.2 or less required for `zc_install`)</font><br>
 *   <font color="#ff0000">**Zen Cart v1.5.7** (latest version: 1.5.7d) is designed for PHP 5.6 through PHP 8.0 (with PHP 7.4 recommended)</font><br>
