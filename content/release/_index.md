@@ -15,7 +15,7 @@ no_list: true
 - [Upgrading Zen Cart](2.readme_how_to_upgrade.html)
 - [Securing your Zen Cart Store](important_site_security_recommendations.html)
 
-## New Features and Bug Fixes
+## What's New - Features and Bug Fixes
 
 - [What's New in v2.1.x](whatsnew_2.1.0)
 - [What's New in v2.0.x](whatsnew_2.0.0.html)

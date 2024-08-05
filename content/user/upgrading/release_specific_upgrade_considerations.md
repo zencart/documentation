@@ -22,7 +22,7 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 - If you use a custom template, check it against [the template changes list](/user/template/template_changes/). 
 
-- If you use a custom template, you will want to perform your own [accessibility review](/user/accessibility/accessibility/).  
+- Do an [accessibility review](/user/accessibility/accessibility/) of your site.  This is especially important if you use template other than [Bootstrap](/user/template/bootstrap/), since many older templates were not built to be accessible.
 
 ### Zen Cart 2.1.0 :stop_sign: <font color="red">NOT RELEASED YET</font> :stop_sign:
 
