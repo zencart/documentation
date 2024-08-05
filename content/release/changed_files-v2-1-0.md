@@ -24,31 +24,32 @@ A detailed list of all edits to all files can be seen on Github at:
 
 CHANGED Files in v2.1.0
 =======================
--
--
+- TBD
 
 NEW Folders in v2.1.0
 =====================
 
 For each of these, assume the entire directory is new.
 
-*   admin/includes/fontawesome
-*   admin/includes/fonts
-*   includes/classes/vendors/PHPMailer/
-*   laravel
-*   vendor
-*   zc\_install
-*   zc\_plugins
+- admin/includes/fontawesome
+- admin/includes/fonts
+- includes/classes/vendors/PHPMailer/
+- laravel
+- vendor
+- zc_install
+- zc_plugins
 
 NEW Files in v2.1.0
 ===================
--
--
+- TBD
 
 DELETED Files in 2.1.0 (since v2.0.1)
 =====================================
--
--
+- includes/classes/boxes.php
+- includes/initsystem.php
+- includes/modules/extra_definitions.php
+- admin/includes/initsystem.php
+ 
 
 ---
 

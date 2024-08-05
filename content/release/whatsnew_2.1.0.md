@@ -19,7 +19,7 @@ Zen Cart v2.1.x is designed for PHP 8.0 to 8.3, with MySQL 5.7.8+ (or MariaDB 10
 Upgrade Instructions
 ====================
 
-See the online docs for upgrading advice, including Release-Specific considerations to note regarding this version. [https://docs.zen-cart.com/user/upgrading/](https://docs.zen-cart.com/user/upgrading/)  
+See the [online docs](/user/upgrading/) for upgrading advice, including Release-Specific considerations to note regarding this version. 
   
 This document only mentions the actual changes specific to v2.1.x since v2.0.1.
 
@@ -55,38 +55,39 @@ Upgrader Notes About Changes to `template_default`
 
 Upgraders should make sure they update *BOTH* `template_default` *AND* their custom templates as described here
 
-In Zen Cart the _template\_default_ directory contains the master copy of all storefront page templates.
+In Zen Cart the `template_default` directory contains the master copy of all storefront page templates.
 
-The normal procedure for customizing template files for use in your own personalized template is to make a copy of the corresponding file from template\_default, put it into your own template folder (and matching folder structure), and make your customizations in that copy of the file.
+The normal procedure for customizing template files for use in your own personalized template is to make a copy of the corresponding file from `template_default`, put it into your own template folder (and matching folder structure), and make your customizations in that copy of the file.
 
-This way the only files you need in your personalized template folder are those that you have altered in some way from template\_default.
+This way the only files you need in your personalized template folder are those that you have altered in some way from `template_default`.
 
-With that explained, it is important that whenever you upgrade your site, you should also inspect ALL the template\_default files to determine which changes in those files need to be replicated in your customized files. Comparison/Merging Tools are essential for this process; see the [Zen Cart Developer Tools](https://docs.zen-cart.com/user/first_steps/useful_tools/) for recommendations.
+With that explained, it is important that whenever you upgrade your site, you should also inspect ALL the `template_default` files to determine which changes in those files need to be replicated in your customized files. Comparison/Merging Tools are essential for this process; see the [Zen Cart Developer Tools](https://docs.zen-cart.com/user/first_steps/useful_tools/) for recommendations.
 
-The process is simple: compare the template\_default directory files from your _\*old\*_ version to the template\_default files in the _\*new\*_ version, and replicate any differences in the files in your custom/personalized template in your store. If you based your template on responsive\_classic, you should also compare and merge any changes from that template.
+The process is simple: compare the `template_default` directory files from your *old* version to the `template_default` files in the *new* version, and replicate any differences in the files in your custom/personalized template in your store. If you based your template on `responsive_classic`, you should also compare and merge any changes from that template.
 
-Then, and only after you have done all those comparisons and updated your customized files in your custom template folder, you will copy the template\_default files from the new version into the template\_default directory of your store.
+Then, and only after you have done all those comparisons and updated your customized files in your custom template folder, you will copy the `template_default` files from the new version into the `template_default` directory of your store.
 
-This way you will be left with updated personalized files _\*and\*_ updated template\_default files.
+This way you will be left with updated personalized files *and* updated `template_default` files.
 
 Language Files in Zen Cart 1.5.8 and above
 ==========================================
 
-Upgraders from prior versions of Zen Cart will notice a signficant change to the language files in this version. Because of new stricter PHP standards, simply doing a _define_ on language file constants (with multiple define operations being done when overrides were present) was not an approach that could be used.
+Upgraders from prior versions of Zen Cart will notice a signficant change to the language files in this version. Because of new stricter PHP standards, simply doing a `define` on language file constants (with multiple `define` operations being done when overrides were present) was not an approach that could be used.
 
 Zen Cart now uses [Array based language files](https://docs.zen-cart.com/user/localization/158_language_files/). For plugins with language files which are not overridden, the older style may still be used.
 
-If you're doing an upgrade from a pre-1.5.8 Zen Cart version and are worried about all the language file changes you'll have to figure out, there is another option. Rather than porting \*all\* your customizations, you may want to start small and add customizations as they are needed. Many older templates made unnecessary changes which you will not want to carry forward. See [basic language file customizations](https://docs.zen-cart.com/user/localization/basic_158_language_customizations/) for a minimal starting list.
+If you're doing an upgrade from a pre-1.5.8 Zen Cart version and are worried about all the language file changes you'll have to figure out, there is another option. Rather than porting *all* your customizations, you may want to start small and add customizations as they are needed. Many older templates made unnecessary changes which you will not want to carry forward. See [basic language file customizations](https://docs.zen-cart.com/user/localization/basic_158_language_customizations/) for a minimal starting list.
 
-For developers with language skills wishing to provide a translation, [developer information on Array based language files](https://docs.zen-cart.com/dev/languages/158_language_files/) is provided.
+For developers with language skills who would like to build a new translation, [developer information on Array based language files](https://docs.zen-cart.com/dev/languages/158_language_files/) is provided.
 
 
 ## 2.1.0 
 The improvements in v2.1.0 include:  
 - New Feature: The [Products Options Stock Manager](https://vinosdefrutastropicales.com/product_extra_files/options_stock/readme.html) plugin (sometimes called POSM) is integrated with Zen Cart as an encapsulated plugin. This feature will help storeowners who have product variants whose stock needs to be tracked (red large t-shirts vs blue medium t-shirts, for example). It is designed as an alternative the various “Stock by Attributes” plugins which are currently in use. See [Variant Stock](/user/running/posm/) for more details.
-- New Feature: The Zen Cart admin will be secured with 
+- New Feature: The Zen Cart admin may now be secured with 
 [Multi Factor Authentication](/user/security/multifactor/). 
-- Admin: FIXED - Sales Report with Graphs monthly pagination now works.
+- Admin: FIXED - Salemaker sales with be enabled/disabled by clicking the status icon.
+- Admin: FIXED - Sales Report with Graphs monthly pagination now works; dates in legend no longer truncated.
 - Admin: FIXED - CKEditor security warning fix is built-in.
 - Admin: FIXED - Enabling and disabling sales by clicking icon works. 
 - Admin: FIXED - Viewing customer records would occasionally lead to a blank right hand infoBox.
@@ -97,9 +98,10 @@ The improvements in v2.1.0 include:
 - Admin: Product Price fields "Gross" and "Net" have been renamed to "Tax Included" and "Tax Excluded."
 - Core: Retired Notifiers and Observers can be set to generate deprecated logs automatically.
 - Core: Zones module now has exception rules notifier.  See <a href="/user/shipping/exceptions/">this page</a> for details on usage.
+- Core: Many improvements in multi-language handling.
 - Extras: Improved and modernized utilities in the `/extras` folder.
 - Modernization: A `Product` class has been introduced to encapsulate product-specific logic.
-- Modernization: Shipping modules now inherit from ZenShipping base class to reduce code duplication and ensure consistency.
+- Modernization: Shipping modules now inherit from the `ZenShipping` base class to reduce code duplication and ensure consistency.
 - Storefront: Fixes for attribute pricing display.
 - Storefront: Fixes for fractional product quantities.
 - Storefront: Gift Certificate FAQ page layout improvements.

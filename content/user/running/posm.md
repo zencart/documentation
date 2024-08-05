@@ -16,9 +16,10 @@ See [the POSM wiki](https://github.com/lat9/options_stock_support/wiki) for deta
 
 To track variant stock in Zen Cart 2.1.0 and higher using POSM: 
 - go to Admin > Modules > Plugin Manager 
-- install Products' Options' Stock Manager. 
+- install Products' Options' Stock Manager
 - Users of the Responsive Classic template will need to change the configuration value [Dependent Attributes: Outer Selector](/user/admin_pages/configuration/configuration_optionsstockmanager/#dependent_attributes_outer_selector).
-- Users of Zen Cart 1.5.8a, 2.0.0 and 2.0.1 may use the encapsulated version of POSM provided in v2.1.0, but must follow [these instructions on Upgrading POSM](https://github.com/lat9/options_stock_support/wiki/Release%E2%80%90Specific-Upgrade-Notes#upgrading-posm-to-v500-and-later).
+
+Users of Zen Cart 1.5.8a, 2.0.0 and 2.0.1 may use the encapsulated version of POSM provided in v2.1.0, but must follow [these instructions on Upgrading POSM](https://github.com/lat9/options_stock_support/wiki/Release%E2%80%90Specific-Upgrade-Notes#upgrading-posm-to-v500-and-later).
 
 Once POSM is installed, on Admin > Catalog > Categories/Products, drill down to a product with attributes.  You'll be able to spot products with attributes because the "A" icon on the right will be blue rather than black. 
 
@@ -47,7 +48,9 @@ Once you have a product with a blue "A", and you want to track stock on each var
 Set the quantities of each variant under the Qty label and press update.
 Note that you may also provide specific SKUs for each variant using the Option Model/SKU.
 
-For more details on this screen, see [Manage Options' Stock](https://github.com/lat9/options_stock_support/wiki/Admin-User-Interface-Changes#catalog--manage-options-stock) in the POSM help. 
+For more details on this screen, see the 
+[admin help page for Manage Options' Stock](/user/admin_pages/catalog/options_stock_manager/) and the 
+[Manage Options' Stock](https://github.com/lat9/options_stock_support/wiki/Admin-User-Interface-Changes#catalog--manage-options-stock) in the POSM help. 
 
 ## Managing Variant Stock Levels 
 
@@ -57,7 +60,9 @@ For more details on this screen, see [Manage Options' Stock](https://github.com/
 
 ![POSM View All screen](/images/posm_view_all.png)
 
-For more details on this screen, see [Options' Stock View All](https://github.com/lat9/options_stock_support/wiki/Admin-User-Interface-Changes#catalog--options-stock-view-all) in the POSM help. 
+For more details on this screen, see the 
+[admin help page for Options Stock - View All](/user/admin_pages/catalog/options_stock_view_all/) and the 
+[Options' Stock View All](https://github.com/lat9/options_stock_support/wiki/Admin-User-Interface-Changes#catalog--options-stock-view-all) in the POSM help. 
 
 ## Dependent Attributes
 
@@ -73,7 +78,10 @@ If the product were not POSM-controlled, all attribute settings would be availab
 
 The dependent attribute feature is highly configurable; see [Configuration Settings for Options' Stock Manager](/user/admin_pages/configuration/configuration_optionsstockmanager/). 
 
-## My Variants have different prices and weights? 
+## My Variants have different prices and weights!
 
-A commercial plugin called [POSM Price/Weight](https://vinosdefrutastropicales.com/index.php?main_page=product_info&cPath=2_7&products_id=60) exists to solve this very problem. 
+POSM solves the problem of tracking stock for variants.   
+
+If your variants also have differing prices and weights, look at the 
+commercial plugin [POSM Price/Weight](https://vinosdefrutastropicales.com/index.php?main_page=product_info&cPath=2_7&products_id=60).
 
