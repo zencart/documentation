@@ -5,11 +5,7 @@ weight: 120
 layout: docs
 ---
 
-{{% alert title="Warning" color="warning" %}}
-The documentation in this section is Work in progress and relates to features that might not be available yet.
-{{% /alert %}}
-
-# Introduction
+{{% wip %}}
 
 Language define files for modules follow the same format as normal array based language defines.
 

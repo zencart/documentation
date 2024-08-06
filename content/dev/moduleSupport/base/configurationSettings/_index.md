@@ -5,11 +5,7 @@ weight: 80
 layout: docs
 ---
 
-{{% alert title="Warning" color="warning" %}}
-The documentation in this section is Work in progress and relates to features that might not be available yet.
-{{% /alert %}}
-
-# Introduction
+{{% wip %}}
 
 In Zen Cart modules written before this module infrastructure code, configuration settings used SQL statements for those settings.
 
