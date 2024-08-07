@@ -10,25 +10,20 @@ layout: docs
 
 Payment modules can define a number of methods to interact with the checkout/order flow.
 
-## update_status
+While the `contract` for payment modules enforces that you must define all of these methods, the `PaymentConcerns` trait 
 
-## javascript_validation
+ensures that stubs for these methods are added to you payment module and you only need to override method in you module that are actually used.
 
-## selection
 
-## pre_confirmation_check
-
-## confirmation
-
-## process_button
-
-## clear_payments
-
-## before_process
-
-## after_order_create
-
-## after_process
-
-## admin_notification
+## public function update_status();
+## public function javascript_validation(): string;
+## public function selection(): array;
+## public function pre_confirmation_check();
+## public function confirmation();
+## public function process_button();
+## public function clear_payments();
+## public function before_process();
+## public function after_order_create($orderId);
+## public function after_process();
+## public function admin_notification($orderId);
 

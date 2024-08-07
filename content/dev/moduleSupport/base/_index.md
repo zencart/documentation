@@ -34,7 +34,7 @@ The module name is taken from the $code class variable of the module, and the de
 In previous versions of Zen Cart,these configuration values were accessed directly using the key that was stored in the database, however using 
 the new module support classes we access them through a helper method.
 
-e.g In legacy code we might have done 
+e.g. In legacy code we might have done 
 
 `$this->sort_order = defined('MODULE_PAYMENT_COD_SORT_ORDER') ? MODULE_PAYMENT_COD_SORT_ORDER : null;`
 

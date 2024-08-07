@@ -46,7 +46,7 @@ $define = [
 return $define;
 ```
 
-Note: also if you want to provide a different tiile in the admin interface you can add something like 
+Note: also if you want to provide a different title in the admin interface you can add something like 
 
 `MODULE_PAYMENT_STRIPE_PAY_TEXT_TITLE_ADMIN' => 'Stripe Checkout(ADMIN)`
 
