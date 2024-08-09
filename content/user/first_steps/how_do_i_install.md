@@ -56,7 +56,9 @@ Your webhoster's control panel - often [cPanel](https://cPanel.net) but sometime
 ### 5\. Have you created a database? 
 
 If your hosting account has cPanel, 
-scroll down to the Databases section and click on MySQL Databases.  The Create New Database form should be pre-filled with the username you used to log in to your cPanel.
+scroll down to the Databases section and click on "MySQL Databases".  Note that some cPanel versions call this "Manage My Databases."
+
+The Create New Database form should be pre-filled with the username you used to log in to your cPanel.
 
 Enter a name for your database (the version is often used for easy recognition in multi-database environments) and click on Create Database.  Then, click the Go Back button to return to the Databases page.
 

@@ -43,6 +43,11 @@ An "uninstall" SQL script should be included as well so the end user can uninsta
 
 * Updates: If you are submitting an update to a contribution, please be sure to include the full set of files comprising that contribution. There should not be a need to install a prior version before installing your update. Each submission should be complete.
 
+### Naming Conventions for Files and Folders 
+- Please use standard names as shown in this documentation for the admin folder (`YOUR_ADMIN`) and the current template (`YOUR_TEMPLATE`).  
+- Please *do not* use embedded spaces in filenames or folder names.  For example, instead of `modified files`, use `modified_files`.
+
+
 ## Unacceptable Submissions
 - It is *not* acceptable to submit crippled modules which are only teasers for paid services. ie:  a "limited" module with a sales pitch for a "full featured" commercial add-on is not permitted.
 - Having "donate to me" buttons in the add-on, either admin-side or storefront-side or is not permitted. A single statement about where to send donations may be added to the documentation, but should be discrete and not plastered all over the place.
