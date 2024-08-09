@@ -14,10 +14,12 @@ The phrase "SEO URLs" is sometimes used to describe the process of rewriting URL
 
 The default installation of Zen Cart does not create "SEO URLs" (URLs that are self-describing).  Some plugins are available to do this:
 
-- [Ultimate SEO URLs](https://www.zen-cart.com/downloads.php?do=file&id=132)
-- [CEON URI Mapping](https://github.com/JSWebSteve/Ceon-URI-Mapping-V5.1.0)
+- [Ultimate SEO URLs](https://www.zen-cart.com/downloads.php?do=file&id=132) - This plugin is well supported by @lat9 and is the recommended solution for people who want a URL rewriter.
 
-Please note that the plugin [Simple SEO URLs](https://www.zen-cart.com/downloads.php?do=file&id=1754) is no longer supported.
+- [CEON URI Mapping](https://github.com/JSWebSteve/Ceon-URI-Mapping-V5.1.0) - Since the author's death, support for this plugin has been inconsistent.  Note that CEON URI Mapping does not automatically add mappings for EXISTING Categories/Products/Manufacturers/EZ-Pages!  You must either edit these items one by one or purchase the URI Mappings Manager from CEON if you are using a pre-existing database.  
+
+The plugin [Simple SEO URLs](https://www.zen-cart.com/downloads.php?do=file&id=1754) is no longer supported.
+
 
 ## Images and SEO
 Image alt text is used by search engines and can improve your SEO.  See [Alt Text](/user/accessibility/concerns/alt_text/) for more details. 
