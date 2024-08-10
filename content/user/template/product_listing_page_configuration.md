@@ -28,7 +28,7 @@ a) How products are sorted when displayed on an index listing page:
 
 By default, the sort order of products is done according to the sort order field on the products editing page. 
 
-This can be changed using [Display Product Listing Default Sort Order](/user/admin_pages/configuration/configuration_productlisting/#display_product_listing_default_sort_order) on the Admin > Configuration > Product Listing page.  See [sort order](/user/customizing/sort_order/) for more details. When this value is set, one of the fields above (name, price, quantity, etc.) will be used to sort the products. 
+This can be changed using [Sort Order Default - Product Listing](/user/admin_pages/configuration/configuration_productlisting/#sort_order_default__product_listing) on the Admin > Configuration > Product Listing page.  See [sort order](/user/customizing/sort_order/) for more details. When this value is set, one of the fields above (name, price, quantity, etc.) will be used to sort the products. 
 
 In the storefront, it can also be changed using the Sort Order dropdown. 
 

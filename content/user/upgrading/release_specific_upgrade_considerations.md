@@ -31,6 +31,9 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 ### Zen Cart 2.0.x
 
+- The way product sort order is interpreted has changed - see [Sort Order](/user/customizing/sort_order/).  If you are upgrading from an older version 
+and still have an alphanumeric value in [Sort Order Default - Product Listing](/user/admin_pages/configuration/configuration_productlisting/#sort_order_default__product_listing), update it to a numeric value, as shown in [Sort Order Options](/user/customizing/sort_order/#sort-order-options-table).  Note that this field was formerly called "Display Product Listing Default Sort Order."
+
 - The Mobile Detect library has changed, so if you have plugins or custom code that uses it, you must change it from: 
 ```
 if (!class_exists('Mobile_Detect')) {
