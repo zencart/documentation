@@ -8,7 +8,7 @@ weight: 10
 Products shown on a [product listing page](/user/storefront_pages/listing_pages/) are sorted in one of two ways: 
 
 - Using the per-product sort order set on the [product editing](/user/products/product_edit/) page. 
-- Using the key [PRODUCT_LISTING_DEFAULT_SORT_ORDER](/user/admin_pages/configuration/configuration_productlisting/#display_product_listing_default_sort_order) from the Admin > Configuration > Product Listing page.  This key is called "Sort Order Default - Product Listing" in Zen Cart 2.0.0 and above; it was formerly called "Display Product Listing Default Sort Order."
+- Using the key [PRODUCT_LISTING_DEFAULT_SORT_ORDER](/user/admin_pages/configuration/configuration_productlisting/#sort_order_default__product_listing) from the Admin > Configuration > Product Listing page.  This key is called "Sort Order Default - Product Listing" in Zen Cart 2.0.0 and above; it was formerly called "Display Product Listing Default Sort Order."
 
 When `PRODUCT_LISTING_DEFAULT_SORT_ORDER` is set to blank, the per-product sort order is used. 
 
@@ -21,7 +21,7 @@ The configuration setting `PRODUCT_LISTING_DEFAULT_SORT_ORDER` may have any of t
 
 |Value|Text String|Meaning| 
 |-----|-----|------|
-|8|Recommended|ORDER BY p.products_sort_order, pd.products_name|
+|8|Recommended|ORDER BY p.products_sort_order, pd.products_name (default)|
 |1|Product Name|ORDER BY pd.products_name |
 |2|Product Name - desc|ORDER BY pd.products_name DESC |
 |3|Price - low to high|ORDER BY p.products_price_sorter, pd.products_name |
