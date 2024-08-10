@@ -1,6 +1,6 @@
 ---
 title: Variant Stock 
-description: Tracking quantities of products with variants 
+description: Using POSM and tracking quantities of products with variants 
 category: Running
 weight: 10
 ---
@@ -80,8 +80,30 @@ The dependent attribute feature is highly configurable; see [Configuration Setti
 
 ## My Variants have different prices and weights!
 
-POSM solves the problem of tracking stock for variants.   
+There are two ways to handle this situation: 
 
-If your variants also have differing prices and weights, look at the 
-commercial plugin [POSM Price/Weight](https://vinosdefrutastropicales.com/index.php?main_page=product_info&cPath=2_7&products_id=60).
+#### a) No Plugins 
+
+The built-in solution to this problem uses attribute prices and weights.
+
+The [Attributes Controller](/user/admin_pages/catalog/attributes_controller/) allows you to set prices and weights for attribute values.  In this example from the demo data, the Premium model is $100 more, the 8mb memory is $50 more, and the 16mb memory is $75 more. 
+
+See [Attribute Pricing](/user/products/attribute_pricing/) for more information about doing this.
+
+![Attribute Prices](/images/attribute_prices.jpg)
+
+These values are displayed on the storefront as offsets from the base price. 
+
+![Attributes Prices Storefront](/images/attribute_prices_storefront.jpg)
+
+#### b) Using the POSM-PW plugin 
+
+The commercial plugin [POSM Price/Weight](https://vinosdefrutastropicales.com/index.php?main_page=product_info&cPath=2_7&products_id=60) allows you to set the weights and prices of variant products on a variant-by-variant basis, rather than attribute-by-attribute. 
+
+
+![POSM Product Prices](/images/posmpw_prices.jpg)
+
+These values are displayed on the storefront as final prices once all attributes are selected. 
+
+![Attributes Prices Storefront](/images/posmpw_prices_storefront.jpg)
 

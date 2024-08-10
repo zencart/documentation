@@ -47,7 +47,6 @@ Its a good idea to pre plan which attributes you want on which products as you w
     *  `-` will subtract the attribute weight
 
 ![Prices and Weights](/images/attributes_controller_prices.png) 
-[Larger Image](/images/attributes_controller_prices.png)
 
 There are other pricing options also available besides the standard prices.
 See [Attribute Pricing](/user/products/attribute_pricing/) for an explanation of these options. 
