@@ -13,6 +13,7 @@ Note: If a term is not in this list, use a web search to learn more about it.  T
 - Centerbox - a [centerbox](/user/template/centerboxes/) is a block of content in the middle of the page.  
 - Character Set - A [character set](/user/upgrading/detailed_upgrading/#character-set) is a group of codes which represent a written language. Current versions of Zen Cart use the utf8mb4 character set. 
 - Collation: A setting which determines how strings are compared during a sort.
+- Control Panel: A web application which gives you easy access to system utilities in your hosting account. [cPanel](/user/first_steps/cpanel/) is the most popular control panel, but some hosters have created their own proprietary control panels. 
 - COWOA - Checkout without Account, another term for [guest checkout](/user/miscellaneous/can_zen_cart/#can-customers-purchase-from-my-zen-cart-shop-without-creating-an-account).
 - cPanel - a branded hosting control panel which is very popular.  See [Hosting and Domain concepts](/user/first_steps/hosting/) and [cPanel](/user/first_steps/cpanel). 
 - Default Files - The file provided by the base software that provides some functionality which can be overridden using a template file.  See [Default files, template default and overrides](/user/first_steps/overrides/).
