@@ -10,6 +10,8 @@ weight: 10
 - A copy of all your Zen Cart files, and  
 - A copy of your database
 
+The  procedure depends on whether or not your site has [cPanel](/user/first_steps/cpanel/).
+
 # Step 1: Backup your files 
 
 ### A) If your site has cPanel: 
