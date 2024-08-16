@@ -6,7 +6,7 @@ weight: 10
 ---
 
 As noted in [Basics - Hosting and Domain concepts](/user/first_steps/hosting/#hosting-companies): 
-- Your easiest installation option will be a Linux host running Apache with cPanel.
+- Your easiest installation option will be a Linux host running Apache with [cPanel](/user/first_steps/cpanel/).  Be sure you verify that the control panel is cPanel and not a hoster-built application.
 - The decision on whether to use Shared or VPS hosting will be determined by your budget, but VPS is recommended.
 - The Zen Cart project recommends a number of hosting providers on
 their [Recommended Services](https://www.zen-cart.com/content.php?3-services) page.

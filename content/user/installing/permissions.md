@@ -45,7 +45,9 @@ All of these folders to "writable" (often this means 755).
 
 ### Using cPanel
 
-In cPanel, you have File Manager.
+Not sure if you have cPanel? [Read this cPanel help page](/user/first_steps/cpanel/). 
+
+In cPanel, you have File Manager application.
 
 Open File Manager, and browse to the folder where you have put your Zen Cart files, and make the changes to particular files/folders as needed.
 
