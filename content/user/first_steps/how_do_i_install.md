@@ -51,7 +51,7 @@ If No stop.  You will need a [text editor](/user/first_steps/useful_tools/#php-h
 
 ### 4\. Do you have access to your webhosting control panel?
 
-Your webhoster's control panel - often [cPanel](https://cPanel.net) but sometimes a hoster-built tool -  is where you will create a MySQL database and user.
+Your webhoster's control panel - often [cPanel](/user/first_steps/cpanel) but sometimes a hoster-built tool -  is where you will create a MySQL database and user.
 
 ### 5\. Have you created a database? 
 

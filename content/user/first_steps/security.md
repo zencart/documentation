@@ -45,7 +45,7 @@ Want even more security?  In Zen Cart 2.1.0, two factor authentication is introd
 
 ## Secure cPanel Access 
 
-Just because you run an SSL on your site doesn't mean your cPanel access is secure.  Look for the padlock in your browser's address bar, and tell your hoster to fix it if it's not there! 
+Just because you run an SSL on your site doesn't mean your [cPanel](/user/first_steps/cpanel/) access is secure.  Look for the padlock in your browser's address bar, and tell your hoster to fix it if it's not there! 
 
 **Don't let this be you!**
 
