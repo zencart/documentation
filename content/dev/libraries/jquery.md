@@ -19,7 +19,8 @@ The following chart shows the association between jQuery and Zen Cart versions.
 
 jQuery | Zen Cart 
 -----------|--------------
-jQuery 3.6.1 | ZC 1.5.8-2.1.x
+jQuery 3.7.1 | ZC 2.1.0
+jQuery 3.6.1 | ZC 1.5.8-2.0.1
 jQuery 3.5.1 | ZC 1.5.7 
 jQuery 3.4.0 | ZC 1.5.6
 jQuery 1.12.4 | ZC 1.5.5

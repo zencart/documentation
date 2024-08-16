@@ -85,8 +85,7 @@ Zen Cart project recommends Linux with Apache (or Linux with Nginx),
 but **not** Windows with IIS. 
 
 Most users will want a hosting account that offers a Control Panel, such
-as cPanel.  The control panel gives you easy access to the underlying 
-operating system functionality. 
+as [cPanel](/user/first_steps/cpanel).  The Control Panel gives you easy access to the underlying operating system functionality. 
 
 The Zen Cart project recommends a number of hosting providers on 
 their [Recommended Services](https://www.zen-cart.com/content.php?3-services) page.

@@ -24,21 +24,21 @@ Each of these values is set the same way, with a zero (indicating do not display
 
 There are two things about the display of index listing pages that can be changed using admin controls: 
 
-a) How products are sorted when displayed on an index listing page:
+### a) How products are sorted when displayed on an index listing page:
 
 By default, the sort order of products is done according to the sort order field on the products editing page. 
 
 This can be changed using [Sort Order Default - Product Listing](/user/admin_pages/configuration/configuration_productlisting/#sort_order_default__product_listing) on the Admin > Configuration > Product Listing page.  See [sort order](/user/customizing/sort_order/) for more details. When this value is set, one of the fields above (name, price, quantity, etc.) will be used to sort the products. 
 
-In the storefront, it can also be changed using the Sort Order dropdown. 
+In Zen Cart 2.0.0 and above, in the storefront, the sort order can also be changed using the Sort Order dropdown.  
 
-In Zen Cart 2.0.0 and above, the values for Display Product Listing Default Sort Order correspond to the options shown in this dropdown, as shown in [this table](/user/customizing/sort_order/#sort-order-options-table).
+In Zen Cart 2.0.0 and above, the values for Sort Order Default - Product Listing correspond to the options shown in this dropdown, as shown in [this table](/user/customizing/sort_order/#sort-order-options-table).
 
 ![Listing Page Sort Order Dropdown](/images/listing_page_sort_order.png)
 
 In Zen Cart 1.5.8 and below, the values for Display Product Listing Default are explained [here](/user/customizing/sort_order/#zen-cart-158-and-prior).
 
-b) How each product is displayed on the listing page.
+### b) How each product is displayed on the listing page.
 
 The "Display" controls described above indicate whether a particular field is shown for a product.  The layout in which they are shown has three columns per row of listed products: 
 

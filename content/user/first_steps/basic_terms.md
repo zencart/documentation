@@ -70,7 +70,7 @@ is just
 
 ### YOURACCOUNT
 The variable `YOURACCOUNT` is used to refer to the name of your hosting company
-gives to your account.  For cPanel users, this will often be your login username.
+gives to your account.  For [cPanel](/user/first_steps/cpanel) users, this will often be your login username.
 
 
 ### YOURACCOUNTFOLDER 

@@ -35,6 +35,11 @@ Note the use of `p.products_price_sorter` rather than `p.products_price` - see
 
 These values correspond to the sort order dropdown shown on the listing page in 2.0.0 and forward. If an older style value such as "4a" is used in `PRODUCT_LISTING_DEFAULT_SORT_ORDER`, it is overridden to be "8" (Recommended). 
 
+
+The Sort Order dropdown is enabled by setting [Include Product Listing Alpha Sorter Dropdown](/user/admin_pages/configuration/configuration_productlisting/#include_product_listing_alpha_sorter_dropdown) to true.
+
+![Listing Page Sort Order Dropdown](/images/listing_page_sort_order.png)
+
 ## Zen Cart 1.5.8 and prior 
 When `PRODUCT_LISTING_DEFAULT_SORT_ORDER` is non-blank, it is interpreted as follows: 
 
