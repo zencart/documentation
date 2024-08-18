@@ -12,6 +12,22 @@ template dependent, with each template making its own choices.
 
 Template Default in general will use the same version as the admin does. 
 
+To see which jQuery version your template uses, look at `includes/templates/YOUR_TEMPLATE/common/html_header.php`.  You will see something like 
+
+```
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+```
+
+which shows you version 3.6.1 is in use.
+
+You can also open a browser window to the storefront, open the Chrome Developer Tools console and type 
+
+```
+jQuery().jquery
+```
+
+to see the jQuery version.
+
 ## jQuery in Zen Cart Admin
 
 jQuery has been used in the Zen Cart admin since Zen Cart version 1.5.5.
