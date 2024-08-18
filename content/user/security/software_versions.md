@@ -31,3 +31,8 @@ MySQL version.
 JavaScript libraries such as jQuery are updated as issues are found.  It's best to use the most current version of each library you use. 
 
 The easiest way to check if your JavaScript libraries are up to date is to use the [Google Lighthouse](/user/upgrading/javascript_updates/) tool.  
+
+## Libraries used by Zen Cart 
+You can find information about libraries used by Zen Cart (such as Bootstrap and jQuery) in the [third party libraries](/dev/libraries/) documentation. 
+
+

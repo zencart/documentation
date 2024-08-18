@@ -36,9 +36,8 @@ Cloudflare offers several benefits for an e-commerce business, but there are als
 
 7. **Email**.  If you are using `smtpauth` with the `EMAIL_SMTPAUTH_MAIL_SERVER` set to your domain (and not a subdomain), you may not be able to get email to work and may need to switch to an [external SMTP server](/user/email/external_smtp_servers/) for your email. 
 
-## Example Use Cases
+## Example Use Case: Mitigating Attacks
 
-### 1. Mitigating Attacks
 Store is having problems with huge spikes of traffic from certain IP addresses and ranges.  Investigation showed IPs were from Singapore, Russia and Pakistan. 
 
 Cloudflare facilitates blocking of an entire country.  
