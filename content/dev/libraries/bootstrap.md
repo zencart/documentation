@@ -34,7 +34,7 @@ You may follow this effort by monitoring [this PR](https://github.com/zencart/ze
 Bootstrap has been used in the Zen Cart upgrader (`zc_install`) since Zen Cart version 2.1.0. 
 The following chart shows the association between Bootstrap and Zen Cart versions. 
 
-Bootstrap Version| Zen Cart Admin 
+Bootstrap Version| Zen Cart zc_install 
 -----------|--------------
 BS 5.3.3 | ZC 2.1.0
 
