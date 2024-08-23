@@ -7,7 +7,17 @@ weight: 10
 This page allows you to select which [sideboxes](/user/template/sideboxes/) are shown 
 on your storefront, and where they should be placed.  
 
-This page changed significantly in Zen Cart 1.5.8 due to 
+# Layout Boxes Controller in 2.1.0 
+This page changed significantly in Zen Cart 2.1.0.
+
+Instead of going through the sideboxes one-by-one, this update makes use of jQuery UI's sortable widget to enable the sideboxes to drag-and-drop in the various areas for display.
+
+See the on-screen notes for additional information.
+![layout Boxes Controller](/images/jquery_layout_boxes_controller.png)
+
+# Layout Boxes Controller in 1.5.8 
+
+This page changed in Zen Cart 1.5.8 due to 
 the introduction of the `$uses_single_column_layout_settings` entry in the [template_info](/user/template/template_info/) file. 
 
 For templates that have `$uses_single_column_layout_settings` set to true  
@@ -39,7 +49,7 @@ The reset settings tool only shows templates which exist under `includes/templat
 Users of releases prior to 1.5.8 should also use the [Copy Sideboxes](https://www.zen-cart.com/downloads.php?do=file&id=1828) plugin to copy sidebox settings.
 
 
-### Layout Boxes Controller prior to 1.5.8
+# Layout Boxes Controller prior to 1.5.8
 
 Here is a picture of screen prior to 1.5.8: 
 
