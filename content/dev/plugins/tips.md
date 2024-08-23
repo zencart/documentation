@@ -13,6 +13,13 @@ It is wise to ensure that ALL your PHP plugin files include a line near the top 
 
 Other variations for specific use in either admin or catalog might check whether it is set to boolean `true`/`false`.
 
+## Encapsulation
+
+If it is possible to create your plugin as an [encapsulated plugin](/dev/plugins/encapsulated_plugins/), please consider doing so.  Encapsulated plugins are easier for end-users to install (less copying various files to various subdirectories). 
+
+
+
+
 
 ## Optimizing the use of Overrides 
 

@@ -1,6 +1,6 @@
 ---
 title: Introduction
-description: Introduction for Developing Language Packs for Zen Cart 
+description: Introduction for Language Packs for Zen Cart 
 weight: 10
 layout: docs
 ---

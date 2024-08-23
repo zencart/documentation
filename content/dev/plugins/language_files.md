@@ -17,7 +17,7 @@ It will be able to use language definitions from the following files, which will
 
 - The page's own language file, `includes/languages/english/lang.newpage.php` 
 
-- Language files which are a substring match of the name of the main file - for example, `includes/languages/english/lang.newpage_process.php` and `includes/languages/english/lang.newpage_success.php`.  Note that this behavior may be disabled for specific files - see [substring matching for language files](/dev/code/158_order_language_files/#substring-matching).
+- Language files which are a substring match of the name of the main file - for example, `includes/languages/english/lang.newpage_process.php` and `includes/languages/english/lang.newpage_success.php`.  Note that this behavior may be disabled for specific files - see [substring matching for language files](/dev/languages/158_order_language_files/#substring-matching).
 
-If you need to load a language file that's not loaded by these conventions, follow the instructions in [loading a language file](/dev/code/158_language_files/#loading-a-language-file). 
+If you need to load a language file that's not loaded by these conventions, follow the instructions in [loading a language file](/dev/languages/158_language_files/#loading-a-language-file). 
 

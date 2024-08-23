@@ -1,9 +1,8 @@
 ---
 title: Languages
-description: Developing Language Packs for Zen Cart 
+description: Language Packs in Zen Cart 
 weight: 100 
 layout: docs
 ---
 
-Please also see [Code](/dev/code) for more language pack information. 
-
+See also [information on language files in the storefront](/user/languages/).

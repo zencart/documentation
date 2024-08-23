@@ -29,7 +29,7 @@ define('MY_CONSTANT', 'This is my information');
 ```
 
 The advantage of these "define statements" is that text information can be included in your template files using a constant rather than a hardcoded value, 
-allowing you to easily change templates but preserve your language customizations.  It also facilitates [making your store multi-language](/user/localization/languages/).
+allowing you to easily change templates but preserve your language customizations.  It also facilitates [making your store multi-language](/user/languages/languages/).
 
 ## **Examples and Usage**
 

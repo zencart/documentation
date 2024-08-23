@@ -74,16 +74,16 @@ Language Files in Zen Cart 1.5.8 and above
 
 Upgraders from prior versions of Zen Cart will notice a signficant change to the language files in this version. Because of new stricter PHP standards, simply doing a `define` on language file constants (with multiple `define` operations being done when overrides were present) was not an approach that could be used.
 
-Zen Cart now uses [Array based language files](https://docs.zen-cart.com/user/localization/158_language_files/). For plugins with language files which are not overridden, the older style may still be used.
+Zen Cart now uses [Array based language files](/user/localization/158_language_files/). For plugins with language files which are not overridden, the older style may still be used.
 
 If you're doing an upgrade from a pre-1.5.8 Zen Cart version and are worried about all the language file changes you'll have to figure out, there is another option. Rather than porting *all* your customizations, you may want to start small and add customizations as they are needed. Many older templates made unnecessary changes which you will not want to carry forward. See [basic language file customizations](https://docs.zen-cart.com/user/localization/basic_158_language_customizations/) for a minimal starting list.
 
-For developers with language skills who would like to build a new translation, [developer information on Array based language files](https://docs.zen-cart.com/dev/languages/158_language_files/) is provided.
+For developers with language skills who would like to build a new translation, [developer information on Array based language files](/dev/languages/158_language_files/) is provided.
 
 
 ## 2.1.0 
 The improvements in v2.1.0 include:  
-- New Feature: The [Products Options Stock Manager](https://vinosdefrutastropicales.com/product_extra_files/options_stock/readme.html) plugin (sometimes called POSM) is integrated with Zen Cart as an encapsulated plugin. This feature will help storeowners who have product variants whose stock needs to be tracked (red large t-shirts vs blue medium t-shirts, for example). It is designed as an alternative the various “Stock by Attributes” plugins which are currently in use. See [Variant Stock](/user/running/posm/) for more details.
+- **New Feature:** The [Products Options Stock Manager](https://vinosdefrutastropicales.com/product_extra_files/options_stock/readme.html) plugin (sometimes called POSM) is integrated with Zen Cart as an encapsulated plugin. This feature will help storeowners who have product variants whose stock needs to be tracked (red large t-shirts vs blue medium t-shirts, for example). It is designed as an alternative to the various “Stock by Attributes” plugins which are currently in use. See [Variant Stock](/user/running/posm/) for more details.
 - New Feature: The Zen Cart admin may now be secured with 
 [Multi Factor Authentication](/user/security/multifactor/). 
 - Admin: FIXED - Salemaker sales with be enabled/disabled by clicking the status icon.
