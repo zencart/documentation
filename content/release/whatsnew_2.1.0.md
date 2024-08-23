@@ -86,6 +86,7 @@ The improvements in v2.1.0 include:
 - **New Feature:** The [Products Options Stock Manager](https://vinosdefrutastropicales.com/product_extra_files/options_stock/readme.html) plugin (sometimes called POSM) is integrated with Zen Cart as an encapsulated plugin. This feature will help storeowners who have product variants whose stock needs to be tracked (red large t-shirts vs blue medium t-shirts, for example). It is designed as an alternative to the various “Stock by Attributes” plugins which are currently in use. See [Variant Stock](/user/running/posm/) for more details.
 - New Feature: The Zen Cart admin may now be secured with 
 [Multi Factor Authentication](/user/security/multifactor/). 
+- New Feature: [Layout Boxes Controller](/admin_pages/tools/layout_boxes_controller/) made more user friendly. 
 - Admin: FIXED - Salemaker sales with be enabled/disabled by clicking the status icon.
 - Admin: FIXED - Sales Report with Graphs monthly pagination now works; dates in legend no longer truncated.
 - Admin: FIXED - CKEditor security warning fix is built-in.
