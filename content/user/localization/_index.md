@@ -1,6 +1,6 @@
 ---
 title: Localization 
-description: What you need to know about Languages, Currencies and Order Statuses 
+description: What you need to know about Currencies and Order Statuses 
 weight: 100 
 layout: docs
 ---

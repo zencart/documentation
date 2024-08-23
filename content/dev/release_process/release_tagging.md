@@ -41,7 +41,7 @@ https://github.com/zencart/zencart/tags to be sure.  If it's not there, do
 
 ### Create the Release on Github
 
-After this we then need to create the release on github.
+Now we need to create the release on github.
 
 https://github.com/zencart/zencart/tags
 
@@ -58,12 +58,13 @@ For Pre-Releases:
 - Don't forget to check the pre-release box 
 
 For Official Releases: 
+- Flick the "Generate Release Notes" button to auto-generate a list of changes and contributors
 - The textarea below the Release title should reference the https://docs.zen-cart.com/release release documentation.
 
 It's a good idea to also check the "Create a discussion for this release" box if it's not a pre-release. 
 
 When you're ready, press the **Publish Release** button.
-
+ 
 ### STOP!  Do Verification 
 Take some time to verify the build you just published.  Since you already did pre-testing before beginning the build process, hopefully there will be no issues, but if there are, return to the [Possible Remedial Commits](/dev/release_process/release_tagging/#possible-remedial-commits) step. 
 

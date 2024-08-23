@@ -23,7 +23,7 @@ Many behaviors can be enabled or disabled by this file, such as:
 - displaying the [Accessibility Page](/user/storefront_pages/accessibility/) link in the Information sidebox (```$flag_show_accessibility_sidebox_link```).
 - displaying the [Brands page](/user/storefront_pages/brands/) link in the Information sidebox (```$flag_show_brand_sidebox_link```).
 - (developers) whether to enable debug on the `zcDate` class (```$zen_date_debug```).
-- (developers) whether to bypass loading string-matches of legacy language files (```'NO_LANGUAGE_SUBSTRING_MATCH'```)  (see [Substring Matching](/dev/code/158_order_language_files/) for details).
+- (developers) whether to bypass loading string-matches of legacy language files (```'NO_LANGUAGE_SUBSTRING_MATCH'```)  (see [Substring Matching](/dev/languages/158_order_language_files/) for details).
 - (developers) whether to disable loading the [Font Awesome](/user/template/font_awesome/) v4 shim if backwards compatibility is not needed (```$disableFontAwesomeV4Compatibility```).
 - whether a product's additional images should be displayed if the product has no 'main' image defined (```$enable_additional_images_without_main_image```).
 - set category counts to count only distinct products: if a product is in two different sub categories of a parent category it will only be counted once (```'COUNT_DISTINCT_PRODUCTS'```).

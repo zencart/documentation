@@ -7,11 +7,11 @@ layout: docs
 
 This documentation is for Zen Cart 1.5.8 and above; if you need the older documentation, please see [Pre 1.5.8 Language Files](/dev/languages/pre_158/).
 
-If you are not familiar with the new language file format for Zen Cart 1.5.8 and above, please see [Developer Information on Array based Language files](/dev/code/158_language_files/). 
+If you are not familiar with the new language file format for Zen Cart 1.5.8 and above, please see [Developer Information on Array based Language files](/dev/languages/158_language_files/). 
 
 <hr>
 
-If you're multilingual, we'd love to have your help building new language packs.  We have [a few updated language packs](/user/localization/updated_language_packs/) but we need more. 
+If you're multilingual, we'd love to have your help building new language packs.  We have [a few updated language packs](/user/languages/updated_language_packs/) but we need more. 
 
 Developers seeking to build new translations for 1.5.8 and above have two options: 
 
@@ -59,7 +59,7 @@ grep "'[A-Z0-9_]*'[\s]*," *.php | grep -v "=>"
 
 ### Available Array Based Language Packs for Zen Cart 1.5.8 and above
 
-Please see [User information on Array based Language files](/user/localization/158_language_files/). 
+Please see [User information on Array based Language files](/user/languages/158_language_files/). 
 
 ## Code Conversion 
 

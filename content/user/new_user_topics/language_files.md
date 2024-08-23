@@ -27,7 +27,7 @@ The information in language files (other than the define pages described above) 
 In older versions, constants were defined directly in language files; this was changed in Zen Cart 1.5.8 because of new restrictions on the re-definition of constants in PHP 8. 
 
 The advantage of separating out language strings is that text information can be included in your template files using a constant rather than a hardcoded value, 
-allowing you to easily change templates but preserve your language customizations.  It also facilitates [making your store multi-language](/user/localization/languages/).
+allowing you to easily change templates but preserve your language customizations.  It also facilitates [making your store multi-language](/user/languages/languages/).
 
 ## **Examples and Usage**
 
