@@ -28,7 +28,7 @@ Here's what should be in these files for version 2.0.0-alpha1:
 |5|`zc_install/includes/systemChecks.yml`|Top `checkDBVersion*` block should look for `version: '2.0.0'`|
 |6|`zc_install/includes/version_upgrades.php`|`'2.0.0'=>array('required'=>'1.5.8'),`||
 
-Shortcut for editing these 7 files: 
+Shortcut for editing these 6 files: 
 
 ```
 vi includes/version.php zc_install/includes/version.php zc_install/sql/install/mysql_zencart.sql zc_install/sql/updates/mysql_upgrade_zencart_200.sql zc_install/includes/systemChecks.yml zc_install/includes/version_upgrades.php
