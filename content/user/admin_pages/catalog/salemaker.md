@@ -1,7 +1,7 @@
 ---
 title: Salemaker 
 category: admin_pages
-weight: 130
+weight: 135
 ---
 
 This page allows you to view, add, edit or delete sales. 

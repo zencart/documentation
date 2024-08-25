@@ -17,6 +17,7 @@ Once you have created some featured products, Zen Cart has a number of ways for 
 You may also configure featured products to appear in the following places: 
 
 - on an empty shopping cart page with the setting on [Admin > Configuration > Stock](/user/admin_pages/configuration/configuration_stock/)
+- on the [main page](/user/storefront_pages/home_page/) using the settings on [Admin > Configuration > Index Listing](/user/admin_pages/configuration/configuration_indexlisting/)
 - below a [product listing page](/user/storefront_pages/listing_pages/) using the settings on [Admin > Configuration > Index Listing](/user/admin_pages/configuration/configuration_indexlisting/)
 
 Adding a product to the featured products list is done on the [Admin > Catalog > Featured Products](/user/admin_pages/catalog/featured/) page. 
@@ -24,3 +25,5 @@ Adding a product to the featured products list is done on the [Admin > Catalog >
 The display of items on the Featured Products page is controlled as follows: 
 - In v2.0.0 and higher, on the [Admin > Configuration > Product Listing page](/user/admin_pages/configuration/configuration_productlisting/).  Setting the Display values on this page is described in greater detail in [New Listing - Featured Listing - All Listing configuration settings](/user/template/new_featured_all_listing_page_configuration/). 
 - In v1.5.8a and lower, on the [Admin > Configuration > Featured Listing page](/user/admin_pages/configuration/configuration_featuredlisting/).  Setting the Display values on this page is described in greater detail in [New Listing - Featured Listing - All Listing configuration settings for v1.x.x](/user/template/new_featured_all_listing_page_configuration/). 
+
+Note: Zen Cart 2.1.0 introduces the ability to [feature categories](/user/admin_pages/catalog/featured_categories/) as well as products. 

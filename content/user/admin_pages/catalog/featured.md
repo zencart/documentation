@@ -26,4 +26,4 @@ When selection by ID is used, the same window is shown, but instead of providing
 
 Featured products are displayed prominently when customers browse your store.  To learn more about this, read [how featured products are handled in the storefront](/user/products/featured_products/). 
 
-
+Note: Zen Cart 2.1.0 introduces the ability to [feature categories](/user/admin_pages/catalog/featured_categories/) as well as products. 

@@ -4,7 +4,7 @@ category: admin_pages
 weight: 132
 ---
 
-Zen Cart 2.1.0 introduced the ability to feature categories as well as products.
+Zen Cart 2.1.0 introduced the ability to feature categories as well as [products](/user/products/featured_products/).
 
 This page allows you to manage the list of featured categories.  Categories may be added to or removed from this list, and their dates for being on the list may optionally be set.
 
@@ -26,6 +26,9 @@ When selection by ID is used, the infoBox on the right side allows the entry of 
 
 ![featured categories by ID](/images/featured_by_id_categories.jpg)
 
-<!-- Featured categories are displayed prominently when customers browse your store.  To learn more about this, read [how featured products are handled in the storefront](/user/products/featured_categories/).  -->
-
+Featured categories may be displayed in the following places: 
+- Categories [Sidebox]((/user/template/sideboxes/))
+- Featured Categories [Sidebox](/user/template/sideboxes/) 
+- On the [main page](/user/storefront_pages/home_page/) using the settings on [Admin > Configuration > Index Listing](/user/admin_pages/configuration/configuration_indexlisting/)
+- Below a [product listing page](/user/storefront_pages/listing_pages/) using the settings on [Admin > Configuration > Index Listing](/user/admin_pages/configuration/configuration_indexlisting/)
 

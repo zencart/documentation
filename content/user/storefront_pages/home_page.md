@@ -5,7 +5,10 @@ category: storefront_pages
 weight: 10
 ---
 
-FIXME needs content
+The Home page of your store shows the following content: 
+- The `define_main_page.php` content from [Define Pages](/user/template/define_pages/)
+- The centerboxes configured in [Admin > Configuration > Index Listing](/user/admin_pages/configuration/configuration_indexlisting/)
+
 
 Relevant links:
 
