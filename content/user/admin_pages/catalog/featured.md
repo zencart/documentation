@@ -24,6 +24,6 @@ When selection by ID is used, the same window is shown, but instead of providing
 
 ![featured products by ID](/images/featured_by_id.png)
 
-Featured products are displayed prominently when your customers browser your catalog.  To learn more about this, read [how featured products are handled in the storefront](/user/products/featured_products/). 
+Featured products are displayed prominently when customers browse your store.  To learn more about this, read [how featured products are handled in the storefront](/user/products/featured_products/). 
 
 
