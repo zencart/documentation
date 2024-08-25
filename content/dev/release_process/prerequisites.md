@@ -47,16 +47,14 @@ NOTE: If you are setting up a pre-release, please see [Pre-Release Notes](/dev/r
 
 1. Ensure the version number in `zc_install/includes/systemChecks.yml` is the current version. 
 
-1. Ensure the new version number has been added to `zc_install/ajaxLoadUpdatesSql.php`.
+1. Ensure the new version number has been added to `zc_install/includes/version_updates.php`. 
 
-1. Ensure the new version number has been added to `zc_install/includes/modules/pages/database_upgrade/header_php.php`. 
+The thing to remember is that the database version does not include the patch number / letter, because the database doesn't change just because of a patch release.  
 
-This can be confusing because sometimes the patch number / update letter is included and sometimes it isn't.  The thing to remember is that the database version does not include the patch number / letter, because the database doesn't change just because of a patch release.  
-
-Shortcut for editing these 7 files:
+Shortcut for editing these 6 files:
 
 ```
-vi includes/version.php zc_install/includes/version.php zc_install/sql/install/mysql_zencart.sql zc_install/sql/updates/mysql_upgrade_zencart_200.sql zc_install/includes/systemChecks.yml zc_install/ajaxLoadUpdatesSql.php zc_install/includes/modules/pages/database_upgrade/header_php.php
+vi includes/version.php zc_install/includes/version.php zc_install/sql/install/mysql_zencart.sql zc_install/sql/updates/mysql_upgrade_zencart_200.sql zc_install/includes/systemChecks.yml zc_install/includes/version_updates.php
 ```
 
 Here's what should be in these files for version 2.0.0: 
@@ -68,8 +66,8 @@ Here's what should be in these files for version 2.0.0:
 |3|`zc_install/sql/install/mysql_zencart.sql`|`project_version_major` and `project_version_minor` for the two `Zen-Cart Main` rows should be `2` and `0.0`.<br>`project_version_patch1` for the two `Zen-Cart Database` rows should be `New Installation-v200`<br><br>CHECK CAREFULLY - look at `project_version_major, project_version_minor, project_version_patch1,project_version_comment`|
 |4|`zc_install/sql/updates/mysql_upgrade_zencart_200.sql`|`project_version_comment` for the two version rows should be `Version Update 1.5.8->2.0.0`<br><br>CHECK CAREFULLY - look at `project_version_major, project_version_minor, project_version_patch1,project_version_comment`|
 |5|`zc_install/includes/systemChecks.yml`|Top `checkDBVersion` block should be `version: '2.0.0'`|
-|6|`zc_install/ajaxLoadUpdatesSql.php`|`'2.0.0'=>array('required'=>'1.5.8'),`|
-|7|`zc_install/includes/modules/pages/database_upgrade/header_php.php`|`$versionArray[] = '2.0.0';`|
+|6|`zc_install/includes/version_updates.php`|`'2.0.0'=>array('required'=>'1.5.8'),`|
+
 
 There are other version related updates to do, but they're not part of the build, so they are detailed in [post release tasks](/dev/release_process/post_release/).
 
