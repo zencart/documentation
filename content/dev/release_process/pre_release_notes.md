@@ -26,13 +26,12 @@ Here's what should be in these files for version 2.0.0-alpha1:
 |3|`zc_install/sql/install/mysql_zencart.sql`|`project_version_major` and `project_version_minor` for the two `Zen-Cart Main` rows should be `2` and `0.0-alpha1`.<br>CHECK CAREFULLY - look at all rows|
 |4|`zc_install/sql/updates/mysql_upgrade_zencart_200.sql`|`project_version_major` and `project_version_minor` should match the install file.  `project_version_comment` for the two version rows should be `Version Update 1.5.8->2.0.0-alpha1`<br><br>CHECK CAREFULLY - look at all rows|
 |5|`zc_install/includes/systemChecks.yml`|Top `checkDBVersion*` block should look for `version: '2.0.0'`|
-|6|`zc_install/ajaxLoadUpdatesSql.php`|`'2.0.0'=>array('required'=>'1.5.8'),`||
-|7|`zc_install/includes/modules/pages/database_upgrade/header_php.php`|`$versionArray[] = '2.0.0';`|
+|6|`zc_install/includes/version_upgrades.php`|`'2.0.0'=>array('required'=>'1.5.8'),`||
 
 Shortcut for editing these 7 files: 
 
 ```
-vi includes/version.php zc_install/includes/version.php zc_install/sql/install/mysql_zencart.sql zc_install/sql/updates/mysql_upgrade_zencart_200.sql zc_install/includes/systemChecks.yml zc_install/ajaxLoadUpdatesSql.php zc_install/includes/modules/pages/database_upgrade/header_php.php
+vi includes/version.php zc_install/includes/version.php zc_install/sql/install/mysql_zencart.sql zc_install/sql/updates/mysql_upgrade_zencart_200.sql zc_install/includes/systemChecks.yml zc_install/includes/version_upgrades.php
 ```
 
 ## PHP Compatibility 
