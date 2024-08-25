@@ -19,7 +19,7 @@ The following should be checked:
 |PHPMailer|`includes/classes/vendors/PHPMailer`|https://github.com/PHPMailer/PHPMailer|
 |Mobile Detect|`includes/classes/Mobile_Detect.php`|https://github.com/serbanghita/Mobile-Detect/|
 |jQuery|`includes/templates/responsive_classic/jscript/jquery.min.js`<br>`includes/templates/template_default/jscript/jquery.min.js`<br>`admin/includes/javascript/jquery.min.js`|https://jquery.com/|
-|jQuery UI|`admin/includes/javascript/jquery-ui-i18n.min.js`|https://jqueryui.com/|
+|jQuery UI|`admin/includes/javascript/jquery-ui.min.js`|https://jqueryui.com/|
 |Font Awesome|`admin/includes/css/font-awesome.min.css`|https://fontawesome.com/|
 |Bootstrap|`admin/includes/css/bootstrap.min.css`|https://getbootstrap.com/|
 |YAML|`zc_install/includes/vendors/yaml`|https://yaml.org/|
