@@ -49,6 +49,8 @@ Once you press the Upgrade button, the screen will show you a list of updates to
 
 Once this action completes, you have an up to date copy of your database.
 
+Be sure to check for `zc_install` created logfiles, which could indicate an issue during your upgrade.  Seeing new debug logs from normal storefront operation could indicate a problem which occurred during database upgrading; see [Unknown column error after upgrade](/user/upgrading/unknown_column/) for an example.
+
 ### Database Changes
 
 - Go to Admin > Tools > Template Selection and set your template to Responsive Classic (since your old template won't exist on your updated site).  
