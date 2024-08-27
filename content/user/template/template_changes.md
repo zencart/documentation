@@ -84,6 +84,10 @@ Please note: many Zen Cart templates were written to work under PHP 5 (or even P
 
 If you do wish to update an older template, see [Upgrading plugins to work with 1.5.8/PHP 8.0+](/dev/plugins/upgrading_to_158/) and [PHP 7 updates](/user/upgrading/php_warnings/). 
 
+## Mobile
+
+Rather than simply using the EZ-Pages from the header to build your mobile menu by including `ezpages_bar_header.php` in `includes/templates/responsive_classic/templates/tpl_modules_mobile_menu.php`, you may include `ezpages_mobile.php` instead, which allows you to use a separate list of links.  See [this PR](https://github.com/zencart/zencart/pull/6697).
+
 ## Notifiers 
 Notifiers are commonly added to each Zen Cart release.  If your custom template is using a notifier-based plugin, you will need to make sure it has all the latest notifiers. 
 

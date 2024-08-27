@@ -88,6 +88,7 @@ Some logs will follow special file naming conventions to make them more easily i
 
 - `myDEBUG-bounced-email-adm-` failure to send email from admin
 - `myDEBUG-bounced-email-` failure to send email from storefront
+- `zcInstallLog_` - log created by the `zc_install` process.
 
 ### Utilities
 The following tools are available for working with debug log files:

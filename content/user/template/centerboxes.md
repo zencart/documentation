@@ -13,12 +13,13 @@ This is the Featured Products centerbox.
 
 ![Featured Products Centerbox](/images/featured_products_centerbox.png)
 
-There are four centerboxes that are built in to Zen Cart: 
+The following centerboxes are built in to Zen Cart: 
 
 - New Products
 - Featured Products
 - Special Products
 - Upcoming Products
+- Featured Categories (added in Zen Cart 2.1.0)
 
 ### Centerboxes and Mobile
 
@@ -38,6 +39,7 @@ Specials  | Maximum Display of Specials Products - Main Page | Products on Speci
 New Products | New Products Module | New Products Centerbox
 Featured Products | Maximum Display of Featured Products - Main Page | Featured Products Centerbox 
 Upcoming Products | Upcoming Products | Upcoming Products Centerbox 
+Featured Categories | N/A | Featured Products and Categories Centerbox (2.1.x+)
 
 <br>
 
