@@ -46,5 +46,11 @@ related pages which are connected by a table of contents.
 
 (ii) Give all pages in the same collection the same Chapter number.
 
+# Changes to EZ-Pages 
+
+- Zen Cart 2.1.0 removed the "Page is SSL" flag, since most sites now operate as fully SSL.
+- Zen Cart 2.1.0 added a "Mobile" column to indicate that a link to this page should show in the mobile menu.  See [this PR](https://github.com/zencart/zencart/pull/6697).
+- Zen Cart 1.5.6 added the `visible` flag so that EZ-Pages not in a store's header, footer or sideboxes could still be linked to in the storefront.
+- Zen Cart 1.5.6 separated out the content for EZ-Pages into a separate table so that multi-lingual stores could have EZ-Pages in all their supported languages.
 
 For more information, see the [EZ-Page FAQs](/user/ezpages/). 
