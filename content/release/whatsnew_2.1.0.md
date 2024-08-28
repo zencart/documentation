@@ -89,6 +89,8 @@ The improvements in v2.1.0 include:
 - New Feature: The Zen Cart admin may now be secured with 
 [Multi Factor Authentication](/user/security/multifactor/). 
 - New Feature: [Layout Boxes Controller](/admin_pages/tools/layout_boxes_controller/) made more user friendly. 
+- New Feature: Templates may now have a separate list of links for  their mobile menus vs simply re-using the header links.  See [this PR](https://github.com/zencart/zencart/pull/6697) for details.
+- Admin: FIXED - Search in Options Values Manager.
 - Admin: FIXED - Salemaker sales with be enabled/disabled by clicking the status icon.
 - Admin: FIXED - Sales Report with Graphs monthly pagination now works; dates in legend no longer truncated.
 - Admin: FIXED - CKEditor security warning fix is built-in.
@@ -99,6 +101,7 @@ The improvements in v2.1.0 include:
 - Admin: The <a href="/dev/code/template_settings/">template settings file</a> may now be viewed from your admin page.
 - Admin: The date of last password change is now shown on the Users page in admin.
 - Admin: Product Price fields "Gross" and "Net" have been renamed to "Tax Included" and "Tax Excluded."
+- Core: For robustness, missing language constants will now fall back to their English definitions.
 - Core: Add parameter to Customer class notifier to allow data to be added to class.
 - Core: Retired Notifiers and Observers can be set to generate deprecated logs automatically.
 - Core: Zones module now has exception rules notifier.  See <a href="/user/shipping/exceptions/">this page</a> for details on usage.

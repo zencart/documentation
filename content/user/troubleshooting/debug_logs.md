@@ -89,6 +89,9 @@ Some logs will follow special file naming conventions to make them more easily i
 - `myDEBUG-bounced-email-adm-` failure to send email from admin
 - `myDEBUG-bounced-email-` failure to send email from storefront
 - `zcInstallLog_` - log created by the `zc_install` process.
+- `zcDEBUG-*` - fatal errors which occurred during the `zc_install` process 
+
+Another kind of special log also exists with the `zcInstallLog_` prefix.   It tracks the progress of the `zc_install` operation for debugging.  These files are removed upon login to the Admin.
 
 ### Utilities
 The following tools are available for working with debug log files:
