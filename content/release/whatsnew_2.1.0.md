@@ -89,7 +89,7 @@ The improvements in v2.1.0 include:
 - New Feature: The Zen Cart admin may now be secured with [Multi Factor Authentication](/user/security/multifactor/). 
 - New Feature: [Layout Boxes Controller](/admin_pages/tools/layout_boxes_controller/) made more user friendly. 
 - New Feature: Templates may now have a separate list of links for  their mobile menus.  (In prior releases, the mobile menu would reuse the desktop header link list.)  See [this PR](https://github.com/zencart/zencart/pull/6697) for details.
-- Admin: Better support for language translations.  See [Admin Language conversion](/dev/languages/admin_language_translation/).
+- Admin: UI has better multi-language support.  See [Admin Language conversion](/dev/languages/admin_language_translation/).
 - Admin: FIXED - Search in Options Values Manager.
 - Admin: FIXED - Salemaker sales with be enabled/disabled by clicking the status icon.
 - Admin: FIXED - Sales Report with Graphs monthly pagination now works; dates in legend no longer truncated.
