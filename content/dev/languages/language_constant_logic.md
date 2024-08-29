@@ -5,7 +5,7 @@ weight: 100
 layout: docs
 ---
 
-This documentation is for Zen Cart 1.5.8 and above. 
+This documentation is for Zen Cart 1.5.8 and above.  The exact behavior specified here is fully implemented in Zen Cart 2.1.0, with some minor variances in 2.0.x and 1.5.8. 
 
 If you are not familiar with the new language file format for Zen Cart 1.5.8 and above, please see [Developer Information on Array based Language files](/dev/languages/158_language_files/). 
 
@@ -24,7 +24,8 @@ The file-system sources for the associated language files is dependent on the en
 
 - If a `lang.` file exists in the same directory as an un-prefixed file (e.g. `lang.stuff.php` and `stuff.php`), the un-prefixed file *is not loaded*, i.e. any definitions comes from the `lang.` file.
 - While a `zc_plugin` cannot override a base language file, e.g. `lang.english.php`, it _can_ override constants defined in the base file via files in its `extra_definitions` sub-directory.
-- Files in a language's `extra_definitions` sub-directory are loaded alphabetically and, if a constant is present in multiple files, the last-loaded value is what will be used for the constant.
+- Files in a language's `extra_definitions` sub-directory are loaded in alphabetic order.
+- When `zc_plugins` language file(s) are loaded, each enabled plugin is checked in alphabetical order by based on its "Plugin Key" (e.g. `DisplayLogs` for the "Display logs" plugin).
 
 ## Admin Language Loading
 
@@ -36,19 +37,20 @@ For the admin, the language constants loaded depend on:
 
 The `/admin/includes/languages` and `/zc_plugins/plugin_key/version/admin/includes/languages` directories hold all `.php` files that provide a site's admin language constants.
 
-The actual text associated with an admin language-constant is determined by the constant's presence, based on this order:
+The actual text associated with an admin language-constant is determined by language array files' _load order_, with possible fallback to any 'english' language files. 
 
-1. If a constant is found in a file in `/admin/includes/languages/spanish/extra_definitions`, it'll be used; otherwise ...
-2. If a constant is found in a file in a `zc_plugin`'s  `admin/includes/languages/spanish/extra_definitions`, it'll be used; otherwise ...
-3. If a constant is found in `/admin/includes/languages/spanish/lang.current_page.php`, it'll be used; otherwise ...
-4. If a constant is found in a `zc_plugin`'s  `admin/includes/languages/spanish/lang.current_page.php`, it'll be used; otherwise ...
-5. If a constant is found in `/admin/includes/languages/lang.spanish.php`, it'll be used; otherwise ...
-6. If a constant is found in a file in `/admin/includes/languages/english/extra_definitions`, it'll be used; otherwise ...
-7. If a constant is found in a file in a `zc_plugin`'s  `admin/includes/languages/english/extra_definitions`, it'll be used; otherwise ...
-8. If a constant is found in `/admin/includes/languages/english/lang.current_page.php`, it'll be used; otherwise ...
-9. If a constant is found in a `zc_plugin`'s  `admin/includes/languages/english/lang.current_page.php`, it'll be used; otherwise ...
-10. If a constant is found in `/admin/includes/languages/lang.english.php`, it'll be used; otherwise ...
-11. A PHP Fatal error will most likely result, due to the language-constant's missing value.
+Once **all** the admin language arrays are loaded, language constant definitions are created for any definitions that don't already exist.
+
+1. The 'base' language file, e.g. `lang.english.php` is loaded.  Language constant-definitions present in **all** other files loaded *override any previously-loaded constant-definition*!
+2. If the active admin language is other than 'english', that 'base' language file, e.g. `lang.spanish.php` is loaded.
+3. The language file for the current page, e.g. `english/lang.current_page.php`, is loaded.
+4. If the active admin language is other than 'english', the language-specific file (e.g. `spanish/lang.current_page.php`) is loaded.
+5. Any `english/lang.current_page.php` files found in enabled `zc_plugins` are loaded.
+6. If the active admin language is other than 'english', the language-specific (e.g. `spanish/lang.current_page.php`) files found in enabled `zc_plugins` are loaded.
+7. All `lang.*.php` files found in the `english/extra_definitions` directory are loaded in alphabetical order.
+8. If the active admin language is other than 'english', all `lang.*.php` found in the language-specific directory (e.g. `spanish/extra_definitions`) are loaded in alphabetical order.
+9. All `lang.*.php` files found in enabled `zc_plugins`' `english/extra_definitions` directories are loaded in alphabetical order.
+10. If the active admin language is other than 'english', all `lang.*.php` files found in enabled `zc_plugins`' language-specific directories (e.g. `spanish/extra_definitions`) are loaded in alphabetical order. 
 
 ## Storefront Language Loading
 
@@ -60,8 +62,6 @@ On the storefront, the language constants loaded depend on:
 4. The presence of any language-related files in enabled `zc_plugins`.
 
 The `/includes/languages` and `/zc_plugins/plugin_key/version/catalog/includes/languages` directories hold all `.php` files that provide a site's storefront language constants.
-
-Each plugin (alphabetically loaded by its "Plugin Key", e.g. `DisplayLogs` for the "Display logs" plugin) is checked to see if it has supplied _additional_ constants for the current page.
 
 ### Storefront Global Language Constants
 

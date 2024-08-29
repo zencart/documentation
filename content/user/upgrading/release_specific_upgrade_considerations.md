@@ -100,6 +100,8 @@ Zen Cart 1.5.8a will provide aliases for these functions so that the old names w
 
 - The constant `ROBOTS_PAGES_TO_SKIP` was previously located in the language file `meta_tags.php` despite not being language-related.   
 It has been moved to its own file in `/includes/extra_configures/robots_pages_to_skip.php`.  
+- The notifier `NOTIFY_OT_COUPON_USES_PER_USER_CHECK` had its arguments changed.  See `includes/modules/order_total/ot_coupon.php`.
+
 Plugin pages that do not require indexing (such as Back In Stock subscribe/unsubscribe) should be added to the list in the constant definition.
 
 ### Zen Cart 1.5.7 

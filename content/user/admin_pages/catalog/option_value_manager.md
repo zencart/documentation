@@ -6,7 +6,7 @@ weight: 50
 
 The Option Value Manager allows you to manage option values for each option name. 
 
-![Option Value Manager](/images/option_value_manager.png)
+![Option Value Manager](/images/option_value_manager.jpg)
 
 Before you create option values you need to create option names in [Admin - Catalog - Option Name Manager](/user/admin_pages/catalog/option_name_manager/).
 
@@ -32,6 +32,10 @@ To edit an option value click Edit and once changes are made click Update.
 Since Zen Cart 1.5.7, you have been able to filter the list of option values to only those for a particular option name.  This makes it much easier to work on large lists of option values. 
 
 ![Option Value Filter](/images/option_value_filter.png)
+
+### Searching for Option Name or Value
+
+Since Zen Cart 1.5.8, you have been able to search for option names and values.  Please note that a defect prevented this from fully working prior to Zen Cart 2.1.0, but you can backport the fix to Zen Cart 1.5.8 and 2.0.x from [this PR](https://github.com/zencart/zencart/pull/6698).
 
 ### Global Features 
 

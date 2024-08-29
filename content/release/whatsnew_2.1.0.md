@@ -85,11 +85,11 @@ For developers with language skills who would like to build a new translation, [
 The improvements in v2.1.0 include:  
 - **New Feature:** The [Products Options Stock Manager](https://vinosdefrutastropicales.com/product_extra_files/options_stock/readme.html) plugin (sometimes called POSM) is integrated with Zen Cart as an encapsulated plugin. This feature will help storeowners who have product variants whose stock needs to be tracked (red large t-shirts vs blue medium t-shirts, for example). It is designed as an alternative to the various “Stock by Attributes” plugins which are currently in use. See [Variant Stock](/user/running/posm/) for more details.
 - New Feature: shipping/payment/order-total modules may now be delivered as [encapsulated plugins](/dev/plugins/encapsulated_plugins/).  Developers are encouraged to do so since encapsulated plugins are easier for end-users to install.  Note that any encapsulated shipping/payment/order-total modules *must* have an associated [array based language file](/dev/languages/158_language_files/).  The use of the older `define` based language files is not supported for encapsulated modules.  
-- New Feature: Categories may now be featured, in addition to products.  See [Featured Categories](/user/admin_pages/catalog/featured_categories/) for details.
-- New Feature: The Zen Cart admin may now be secured with 
-[Multi Factor Authentication](/user/security/multifactor/). 
+- New Feature: Categories may now be featured.  (Prior releases only allowed featuring individual products.)  See [Featured Categories](/user/admin_pages/catalog/featured_categories/) for details.
+- New Feature: The Zen Cart admin may now be secured with [Multi Factor Authentication](/user/security/multifactor/). 
 - New Feature: [Layout Boxes Controller](/admin_pages/tools/layout_boxes_controller/) made more user friendly. 
-- New Feature: Templates may now have a separate list of links for  their mobile menus vs simply re-using the header links.  See [this PR](https://github.com/zencart/zencart/pull/6697) for details.
+- New Feature: Templates may now have a separate list of links for  their mobile menus.  (In prior releases, the mobile menu would reuse the desktop header link list.)  See [this PR](https://github.com/zencart/zencart/pull/6697) for details.
+- Admin: Better support for language translations.  See [Admin Language conversion](/dev/languages/admin_language_translation/).
 - Admin: FIXED - Search in Options Values Manager.
 - Admin: FIXED - Salemaker sales with be enabled/disabled by clicking the status icon.
 - Admin: FIXED - Sales Report with Graphs monthly pagination now works; dates in legend no longer truncated.
@@ -101,7 +101,7 @@ The improvements in v2.1.0 include:
 - Admin: The <a href="/dev/code/template_settings/">template settings file</a> may now be viewed from your admin page.
 - Admin: The date of last password change is now shown on the Users page in admin.
 - Admin: Product Price fields "Gross" and "Net" have been renamed to "Tax Included" and "Tax Excluded."
-- Core: For robustness, missing language constants will now fall back to their English definitions.
+- Core: For robustness, in multi-language stores, missing non-English language constants will now fall back to their English definitions.
 - Core: Add parameter to Customer class notifier to allow data to be added to class.
 - Core: Retired Notifiers and Observers can be set to generate deprecated logs automatically.
 - Core: Zones module now has exception rules notifier.  See <a href="/user/shipping/exceptions/">this page</a> for details on usage.
@@ -111,8 +111,8 @@ The improvements in v2.1.0 include:
 - Modernization: A `Product` class has been introduced to encapsulate product-specific logic.
 - Modernization: Shipping modules now inherit from the `ZenShipping` base class to reduce code duplication and ensure consistency.
 - Storefront: FIXED - Second Place Order done from admin before completing first one works as expected.
-- Storefront: Fixes for attribute pricing display.
-- Storefront: Fixes for fractional product quantities.
+- Storefront: FIXED attribute pricing display issues.
+- Storefront: FIXED fractional product quantities handling.
 - Storefront: Gift Certificate FAQ page layout improvements.
 - Storefront: Additional image matching rules now are enforced more strictly for new installs; see [this page](/user/images/additional_images/#additional-images-filename-matching-rules) for details.  
 
