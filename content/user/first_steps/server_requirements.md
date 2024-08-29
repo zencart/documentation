@@ -100,8 +100,9 @@ The following list shows the MySQL versions compatible with each version of Zen 
 
 (If your store uses non-english characters in product names/descriptions, or if your customers might use emojis in order comments, you should be using MySQL 5.7.2 or newer, and the [utf8mb4 character set](/user/upgrading/convert_to_utf8/) and upgrading to the latest Zen Cart version.)
 
-*   Zen Cart v2.0.x requires MySQL 5.7.8+ or MariaDB 10.2.7+ (where "+" means "or newer")
-*   Zen Cart v1.5.8 requires MySQL 5.7.8+ or MariaDB 10.2.7+ (where "+" means "or newer")
+*   Zen Cart v2.1.x prefers MySQL 8.x or 9.x (but supports MySQL 5.7.8+), or MariaDB 11.x (but works with 10.2.7+)
+*   Zen Cart v2.0.x requires MySQL 5.7.8+ or 8.x/9.x, or MariaDB 10.2.7 or higher
+*   Zen Cart v1.5.8 requires MySQL 5.7.8+ or 8.x, or MariaDB 10.2.7 or higher
 *   Zen Cart v1.5.7 expects MySQL 5.1 to 8.0, or MariaDB 10.1 to 10.5
 *   Zen Cart v1.5.6 expects MySQL 5.1 to 5.7, or MariaDB 10.1 to 10.4 ("strict" errors may occur with 5.7 or 10.2-10.5)
 *   Zen Cart v1.5.5 expects MySQL 5.1 to 5.7, or MariaDB 10.1 ("strict" errors may occur with 5.7 or 10.2)
