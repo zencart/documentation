@@ -107,7 +107,7 @@ The improvements in v2.1.0 include:
 - Core: Zones module now has exception rules notifier.  See <a href="/user/shipping/exceptions/">this page</a> for details on usage.
 - Core: Many improvements in multi-language handling.
 - Extras: Improved and modernized utilities in the `/extras` folder.
-- Installer: `zc_install` now uses Bootstrap 5.  Zurb Foundation is no longer used.
+- Installer: `zc_install` now uses Bootstrap 5.  Zurb Foundation is no longer used.  UI greatly improved. 
 - Modernization: A `Product` class has been introduced to encapsulate product-specific logic.
 - Modernization: Shipping modules now inherit from the `ZenShipping` base class to reduce code duplication and ensure consistency.
 - Storefront: FIXED - Second Place Order done from admin before completing first one works as expected.
