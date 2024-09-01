@@ -54,7 +54,7 @@ By clicking on the ... on the far right hand side we can create a release.
 
 The Release title should be the same name as the tag name.
 
-For Pre-Releases: 
+For Pre-Releases (alpha, beta, release-candidate): 
 - Don't forget to check the pre-release box 
 
 For Official Releases: 
