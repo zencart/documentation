@@ -15,6 +15,14 @@ You can see all the available sideboxes in the [sidebox list](/user/sideboxes/si
 The Information Sidebox, for example, is just a list of links. 
 The Specials Sidebox, on the other hand, shows product images and information. 
 
+Most sideboxes are designed to be displayed on the left or right side of the page, with the following exceptions: 
+
+- filename contains `ezpages_bar`: treated as possible header/footer
+- filename ends in `_header.php`: treated as header (eg: `search_header.php`, `ezpages_bar_header.php`, `currencies_header.php`, etc)
+- filename ends in `_footer.php`: treated as footer (eg: `ezpages_bar_footer.php`)
+
+Content boxes designed to go in the center of the page are different - see [centerboxes](/user/template/centerboxes/) for details on those.
+
 <br>
 <div style="float: left;">
   <div style="float: left; margin-right: 10px;">

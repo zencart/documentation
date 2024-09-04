@@ -10,7 +10,10 @@ This page allows you to add additional language(s) in order to internationalize 
 
 To add a new language, click on the _new language_ button. A form will appear. Enter the information, then click on the _insert_ button to add the new language. Click on the _cancel_ button if you change your mind.
 
-Adding the new language also populates the `orders_status` table with order statuses in the *current* language.  Go to Admin > Localization > Orders Status and update them to the new language. 
+Adding the new language also makes the following database changes: 
+- populates the `orders_status` table with order statuses in the *current* language.  Go to Admin > Localization > Orders Status and update them to the new language. 
+- if [POSM](/user/running/posm/) is installed, populates the `products_options_stock_names` table in the current language.  Go to Localization >Out-of-Stock Labels and update them to the new language.
+
 
 ### Name
 

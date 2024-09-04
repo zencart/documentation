@@ -46,4 +46,7 @@ Featured Categories | N/A | Featured Products and Categories Centerbox (2.1.x+)
 ###  Creating your own centerbox 
 
 In addition to the four built-in centerboxes described above, other centerboxes are available in the [Zen Cart plugins library](https://www.zen-cart.com/downloads.php).  Try searching for both "centerbox" and "centerboxes" in the Advanced Search with "Search Titles Only" set. 
+### Sideboxes
+Centerboxes should not be confused with [sideboxes](/user/template/sideboxes/), which are designed to go on the left or right hand side of the page (and in some cases, in the header or footer). 
+
 
