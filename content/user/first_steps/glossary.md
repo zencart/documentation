@@ -35,6 +35,7 @@ Note: If a term is not in this list, use a web search to learn more about it.  T
 - Master Category - The category in which a product was originally created.  Products can be added to other categories by creating linked products.  See [product management](/user/products/product_management_admin/) and [linked products](/user/products/linked_product/).
 - MFA - A mechanism by which an additional check beyond just password verification is made on login.  See [Multi-factor Authentication](/user/security/multifactor/).  Also sometimes called "two factor authentication." 
 - Name Server - a piece of Internet infrastructure that converts a domain name to an IP Address.  See [hosting and domain concepts](/user/first_steps/hosting/).
+- NVP - An acronym that stands for "name-value pairs."  The original PayPal integration for ZenCart is based on the PayPal NVP API.
 - Order Total - an [order total module](/user/order_total/order_total/) allows you to add a fee or a discount to an order.
 - Overrides - Zen Cart provides the capability of partitioning your changes from the base software; this is called the override feature.  See [Default files, template default and overrides](/user/first_steps/overrides/).  Note that the term "overrides" is also used in two other places: [site specific overrides](/user/customizing/site_specific_overrides/) and the four [subfolders named "overrides"](/user/template/template_overrides/#files-in-other-places).
 - PCI - A set of rules for data security adopted by credit card companies.  See [PCI](/user/payment/pci).

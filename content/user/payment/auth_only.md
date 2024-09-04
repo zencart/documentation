@@ -7,8 +7,13 @@ weight: 10
 
 While many businesses will want to take payment immediately online, sometimes the business model requires that the customer's card be authorized but **not charged** until the goods have been shipped.
 
-Most gateways allow you to `authorize only` for the payment, and then within a week `capture` the payment when you ship the goods. 
-The length of time allowed before `capture` depends on the contract you have with the Gateway (based on their rules, and on the kind of business you run).
+Most gateways allow your customers to authorize the payment but not actually pay.  You would then capture the payment when you actually ship the goods.  This must be done within a limited time window.  Also, typically you can only capture (up to) the amount authorized, although some gateways will give you a small amount of wiggle room.  
+
+- For PayPal, the authorization window is 29 days, and the captured amount may be up to 115% of the authorized amount.
+- For Square, the authorization window is 7 days, and the captured amount may be up to 100% of the authorized amount.
+
+If additional funds need to be captured beyond what is allowed, see [balanced owed payments](/user/payment/balance_owed/). 
+
 
 ## Authorize-Only
 To enable this, check whether your module has an option to specify `Authorize-Only` mode, and enable it. (As opposed to `Charge` or `Capture` mode.)

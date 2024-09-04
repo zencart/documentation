@@ -62,7 +62,7 @@ If you need to create a new subforum ("Updating to Y.x.x"), follow the guidance 
 - Search the documentation in https://github.com/zencart/documentation for the string RELEASETIME and update those files.
 
 - Run the `build_doc` and `view schema` tools.
-   - `build_doc` is in the [Zen Cart Tools](https://github.com/scottcwilson/zencart_tools) repo.  It creates the [configuration documentation](https://docs.zen-cart.com/user/admin_pages/configuration/).  Install it in the admin folder for the new release, edit the file and set `TARGET_FOLDER`, then run it; it will update the Zen Cart documentation folder. 
+   - `build_doc` is in the [Zen Cart Tools](https://github.com/scottcwilson/zencart_tools) repo.  It creates the [configuration documentation](https://docs.zen-cart.com/user/admin_pages/configuration/).  Install it in the `admin` folder for the new release, edit the file and set `TARGET_FOLDER`, then run it; it will update the Zen Cart documentation folder. 
    - `view_schema` is a plugin located [here](https://www.zen-cart.com/downloads.php?do=file&id=2270). It creates the [schema documentation](https://docs.zen-cart.com/dev/schema/).  Install the plugin, then do an Inspect in Google Chrome on the output and copy the element with id="pageWrapper" into a new file in `zencart_documentation/content/dev/schema`.  Remove the opening and closing div tags, and copy in the Hugo frontmatter and styling from the prior schema file.
 
 - **Emergency Re-release:** If something was missed and you have to do a re-release, go back to [Remedial Commits](/dev/release_process/release_tagging/#possible-remedial-commits). 
@@ -74,17 +74,17 @@ A day or two after the build has been released when you're confident that all is
 - Take some time to review the What's New and Changed Files documents in the [release folder](/release) to be sure they are complete. 
 
 ## One more documentation check:
-- Review the What’s New file for this release (Documentation site in /release/ folder.)  Be sure it doesn't have any more statements like "*New Version* has not yet been released".
-- Review the Changed Files list for this release (Documentation site in /release/ folder.)  Same checks.
+- Review the What’s New file for this release (Documentation repo in the `/release/` folder.)  Be sure it doesn't have any more statements like "*New Version* has not yet been released".
+- Review the Changed Files list for this release (Documentation repo in the `/release/` folder.)  Same checks.
 
 
 ## Post-Release Things to Consider 
 
 - Is it time to remove old versions from the plugin version list?
 
-- Is it time to hide older what's new / changed files documents in the [releases](/releases) folder? 
+- Is it time to hide older what's new / changed files documents in the [release](/release) folder? 
 
 - Are there old stuck posts on the forum that should be unstuck? 
 
-- Check the Zen Cart and Zen Cart Documentation projects for tags that mark things that need to be taken care of - there might be a 'Post Release 2.0.0' tag or something like that, for example. 
+- Check the Zen Cart and Zen Cart Documentation projects for tags that mark things that need to be taken care of - there might be a 'Post Release X.y.z' tag or something like that, for example. 
 
