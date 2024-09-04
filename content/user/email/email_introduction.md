@@ -7,6 +7,18 @@ weight: 1
 
 Zen Cart's email infrastructure is largely dependent on the services available to your webserver. This includes internet connection issues, available ports, as well as PHP configuration options and the programs/services running on your server.
 
+## Prerequisites
+1. If you are sending email via a 3rd-party service, all you need is the SMTP auth credentials for connecting to that server, and enter them into Admin > Config > Email. Minimum required values are the provider's `hostname`, `port`, `username`, `password`. And you will need to use `SMTPAUTH` as the Transport Method.
+    * You must also have an unrestricted connection to the mail service you're using, over the SMTP port they tell you to use. Ensure this is open in your hoster's firewall.
+    * You should work with that 3rd-party provider to ensure SPF and DKIM are properly set up for your domain (they know all about that, although it is discussed in multiple places in our docs as well), both to allow your server to send email, but also to protect against spam.
+
+2. Alternatively, if you are going to use your own store's webserver for sending email:
+    * Your webserver must have a mail service enabled. For Linux/Unix hosts, this is typically done via sendmail.
+    * Your webserver's PHP configuration must allow email connections from PHP.
+    * If you are using sendmail options, then the PHP configuration for sendmail functions must be configured properly on the server.
+    * You must have an unrestricted connection to the mailserver you're sending through. That includes having the SMTP port open on the server's firewall.
+    * Ensure that you have configured SPF and DKIM for your domain. See related docs.
+
 ## Zen Cart Email Infrastructure Explained
 
 Here's how Zen Cart's email interface works:
@@ -24,15 +36,6 @@ Here's how Zen Cart's email interface works:
     *   If the transport is a sendmail function, then the server attempts to use the sendmail program on your webserver.
 5.  If email archiving is enabled and no error message is encountered (ie: the email is delivered without being rejected by the sending server), the email is stored to the `email_archive` database table. Note that if you wish to use email archiving, you probably also want to use the [Email Archive Manager](/user/email/email_archive_manager/). 
 6.  If an error occurs, then the error details are logged into the /logs/ folder as "myDEBUG-xxxxxx.log" files.  See [reading a myDEBUG log](/user/troubleshooting/debug_logs/). 
-
-## Prerequisites
-
-1.  Your webserver must have a mail service enabled. For Linux/Unix hosts, this is typically done via sendmail or exim or qmail daemons. On Windows servers, this may be done via services offered with IIS.
-2.  Your webserver must allow email connections from PHP.
-3.  If you are using sendmail options, then the PHP configuration for sendmail functions must be configured properly on the server.
-4.  You must have an unrestricted connection to the mailserver you're sending through.
-    *   If you are running from a home-based server (ie: for testing), note that your ISP may automatically have port 25 blocked so that you have to send mail through their server. In this case, use SMTP for your transport method, and supply your ISP's mailserver as your SMTP host.
-    *   If your webhost mailserver is reachable on another port, supply that port number in the SMTP settings.
 
 ## Diagnosing Problems
 
