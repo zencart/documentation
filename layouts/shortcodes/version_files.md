@@ -17,3 +17,5 @@ Shortcut for editing these 6 files:
 vi includes/version.php zc_install/includes/version.php zc_install/sql/install/mysql_zencart.sql zc_install/sql/updates/mysql_upgrade_zencart_210.sql zc_install/includes/systemChecks.yml zc_install/includes/version_upgrades.php
 ```
 
+Note that in most cases, `includes/version.php` and `zc_install/includes/version.php` will be identical. 
+

@@ -58,7 +58,7 @@ For Pre-Releases (alpha, beta, release-candidate):
 - Don't forget to check the pre-release box 
 
 For Official Releases: 
-- Flick the "Generate Release Notes" button to auto-generate a list of changes and contributors
+- Click the "Generate Release Notes" button to auto-generate a list of changes and contributors
 - The textarea below the Release title should reference the https://docs.zen-cart.com/release release documentation.
 
 It's a good idea to also check the "Create a discussion for this release" box if it's not a pre-release. 
