@@ -7,13 +7,11 @@ layout: docs
 
 ## Installer Classes
 
-For most cases the base installer class can be used without customisation to install a plugin.
+In many cases you may not need anything custom done for a plugin beyond merely some SQL queries, which would be done in `install.sql` and removed via `uninstall.sql`. (But upgrades cannot be done merely via `.sql` files.)
 
-However there may be times when a plugin needs to override the default installer behavior.
+However there may be times when a plugin needs to override the default installer behavior. Or handle database-changes during an Upgrade from a prior plugin version.
 
-For example a plugin may need to check some pre-requisites before allowing installation.
-
-This may be the availability of a php extension or maybe the plugin relies on another plugin being installed.
+For example a plugin may need to check some pre-requisites before allowing installation, such as the availability of a PHP extension or maybe the plugin relies on another plugin being installed.
 
 In these cases the plugin can define its own installer class that extends the base installer.
 
