@@ -6,83 +6,58 @@ layout: docs
 ---
 
 ## Class Autoloading
+"Class Autoloading" means: "when I want to use a class, I simply attempt to instantiate it (ie: `new Foo()`) and PHP will automatically find the right file, load it (so I don't have to `include()` or `require()` it manually), and then do the requested creation of an instance of it". In most cases this is the best way.
 
 Encapsulated plugins allow you to Autoload classes based on 2 scenarios.
 
- - Where the class follows PSR4 and the filename is the same as the class name
- - Where the filename is different to the class name
+ - Where the class follows PSR4 and the filename is the same as the class name (This is the best way). Naming should be CamelCased.
+ - Where the filename is different to the class name (This should be rare).
 
 ## PSR4 based classes 
 
-Encapsulated plugins manage these automatically, by placing the classes in specific diectories.
+Formula for catalog:
+- place your class in the plugin's `[version]/catalog/includes/classes/` directory
+- name the class and its filename the same (ie: `includes/classes/DrawPrettyGraph.php` should contain a class named `DrawPrettyGraph`)
+- set the `namespace`: `namespace Zencart\Plugins\Catalog\SalesGraphs;` if the plugin's name is `Sales Graphs`
 
-e.g for admin I can place a class in the plugins `admin/includes/classes/` directory
+Formula for admin:
+- place your class in the plugin's `[version]/admin/includes/classes/` directory
+- name the class and its filename the same (ie: `admin/includes/classes/DrawPrettyGraph.php` should contain a class named `DrawPrettyGraph`)
+- set the `namespace`: `namespace Zencart\Plugins\Admin\SalesGraphs;` if the plugin's name is `Sales Graphs`
 
-As an example lets use the current DisplayLogs plugin.
-
-In its `admin/includes/classes/` directory lets add a new class called `Cache.php`
-I've named this to see how it doesn't interfere with the current cache class that Zen Cart uses.
-
-This class looks like 
-
+Example, for a plugin named `Sales Graphs`:
+Filename: `zc_plugins/SalesGraphs/vX.Y/admin/includes/classes/DrawPrettyGraph.php` containing:
 ```php 
 <?php
-
 namespace Zencart\Plugins\Admin\DisplayLogs;
 
-class Cache
+class DrawPrettyGraph
 {
-    public function test()
+    public function output()
     {
-        echo 'FOOOOO';
+        echo 'Look at my pretty graph!';
     }
 }
 ```
-now in the `admin/display_logs.php` file, I can call this after the line 
-```require 'includes/application_top.php';```
+now in any file you can invoke it directly:
+`$myGraph = (new ZenCart\Plugins\Admin\SalesGraphs\DrawPrettyGraph)->output()`
 
-```php
-$cache = new Cache();
-$cache->test
-```
-Note: we also need to add 
-```php
-use Zencart\Plugins\Admin\DisplayLogs\Cache;
-```
-to the beginning of the file.
+Or if you'd like to split the namespace out separately, use 2 steps:
+1)At the top of whatever file you wish to use it, add a line: `use Zencart\Plugins\Admin\SalesGraphs\DrawPrettyGraph;`
+2)Then call it: `$myGraph = (new DrawPrettyGraph)->output();
 
-When the DisplayLogs plugin is installed we should see the `FOOOOO`output when navigating to its menu entry.
 
 ## Custom class filenames
 
 When the filename of a class does not match the class name, we need to do a bit more work.
 
-Again lets create a new class file in the plugin's `admin/includes/classes` directory.
-
-Lets call this file `class.some_weird_class_filename.php`
-with the contents 
+From the example above, if we had a class filename of `class.some_weird_class_filename.php` and the class name was `myClass`, then we would have to set up autoloading manually at tthe top of whatever file needs it. The following would need to be called after the line
+`require 'includes/application_top.php';`:
 
 ```php
-<?php
-
-namespace Zencart\Plugins\Admin\DisplayLogs;
-
-Class myClass
-{
-    public function test()
-    {
-        echo 'BARRRRR';
-    }
-}
+$psr4Autoloader->setClassFile('Zencart\Plugins\Admin\SalesGraphs\myClass', $filePathPluginAdmin['SalesGraphs'] . 'class.some_weird_class_filename.php');
+$myClass = new Zencart\Plugins\Admin\SalesGraphs\myClass();
+$myClass->output();
 ```
 
-now in the `admin/display_logs.php` file, I can add this call after the line
-`require 'includes/application_top.php';
-
-```php
-$psr4Autoloader->setClassFile('Zencart\Plugins\Admin\DisplayLogs\myClass', $filePathPluginAdmin['DisplayLogs'] . 'class.some_weird_class_filename.php');
-$myClass = new Zencart\Plugins\Admin\DisplayLogs\myClass();
-$myClass->test();
-```
-
-This should output `'BARRRRR'` on the Display logs page in admin
+This would output `'Look at my pretty graph!'`
