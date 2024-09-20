@@ -5,9 +5,7 @@ weight: 90
 layout: docs
 ---
 
-Once you have created an encapsulated plugin, upgrading it is 
-mostly a matter of creating a new version number under the plugin name,
-and then making your changes. 
+Once you have created an encapsulated plugin, upgrading it is mostly a matter of creating a new version number under the plugin name, and then making your changes. 
 
 So if the old plugin was structured like this: 
 
@@ -15,7 +13,7 @@ So if the old plugin was structured like this:
 zc_plugins/MyPlugin/1.0.0
 ```
 
-you can rename this to 
+you can duplicate this to 
 
 ```
 zc_plugins/MyPlugin/1.0.1
@@ -23,7 +21,9 @@ zc_plugins/MyPlugin/1.0.1
 
 and make your changes.  Once you release, people will upload the new version and run through the upgrade process using Admin > Modules > Plugin Manager. 
 
-**Note:** One constraint is that even if your first version did not use 
-[SQL Installer Classes](/dev/plugins/encapsulated_plugins/sql_installation/#sql-installer-classes), your update must do so if there are database changes. 
-The plain .sql files in the Installer folder are not run on an upgrade. 
+**Note:** An `Installer/install.sql` file is ONLY run on NEW installs, not upgrades. 
+So if your plugin makes any database changes, be sure to update:
+- `Installer/install.sql` to include (in addition to any prior queries) any new things added by your upgraded version
+- `Installer/uninstall.sql` to include all (in addition to any prior) removals required to fully remove
+- `Installer/ScriptedInstaller.php` to use `doUpgrade()` to perform any queries (if any) needed to actually upgrade to this version.
 
