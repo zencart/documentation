@@ -23,7 +23,7 @@ and make your changes.  Once you release, people will upload the new version and
 
 **Note:** An `Installer/install.sql` file is ONLY run on NEW installs, not upgrades. 
 So if your plugin makes any database changes, be sure to update:
-- `Installer/install.sql` to include (in addition to any prior queries) any new things added by your upgraded version
-- `Installer/uninstall.sql` to include all (in addition to any prior) removals required to fully remove
-- `Installer/ScriptedInstaller.php` to use `executeUpgrade()` to perform any queries (if any) needed to actually upgrade to this version.
+- `Installer/install.sql` to include (in addition to any prior queries) any new things added by your upgraded version.
+- `Installer/uninstall.sql` to include all (in addition to any prior) removals required to fully remove.
+- `Installer/ScriptedInstaller.php` to use `executeUpgrade()` to perform any queries (if any) required by the new version. (This is the only way to apply db updates in an upgrade.)
 
