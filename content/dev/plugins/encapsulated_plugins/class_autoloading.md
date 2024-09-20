@@ -1,5 +1,5 @@
 ---
-title: Class autoloading
+title: Class Autoloading
 description: 
 weight: 35 
 layout: docs
@@ -15,18 +15,20 @@ Encapsulated plugins allow you to Autoload classes based on 2 scenarios.
 
 ## PSR4 based classes 
 
-Formula for catalog:
+**Formula for catalog:**
 - place your class in the plugin's `[version]/catalog/includes/classes/` directory
-- name the class and its filename the same (ie: `includes/classes/DrawPrettyGraph.php` should contain a class named `DrawPrettyGraph`)
+- name the class and its filename the same (ie: `catalog/includes/classes/DrawPrettyGraph.php` should contain a class named `DrawPrettyGraph`)
 - set the `namespace`: `namespace Zencart\Plugins\Catalog\SalesGraphs;` if the plugin's name is `Sales Graphs`
 
-Formula for admin:
+**Formula for admin:** (basically, change "catalog" to "admin" for directory name and namespace)
 - place your class in the plugin's `[version]/admin/includes/classes/` directory
 - name the class and its filename the same (ie: `admin/includes/classes/DrawPrettyGraph.php` should contain a class named `DrawPrettyGraph`)
 - set the `namespace`: `namespace Zencart\Plugins\Admin\SalesGraphs;` if the plugin's name is `Sales Graphs`
 
-Example, for a plugin named `Sales Graphs`:
-Filename: `zc_plugins/SalesGraphs/vX.Y/admin/includes/classes/DrawPrettyGraph.php` containing:
+### Example, for a plugin named `Sales Graphs`:
+#### Filename
+`zc_plugins/SalesGraphs/vX.Y/admin/includes/classes/DrawPrettyGraph.php`
+#### Contents
 ```php 
 <?php
 namespace Zencart\Plugins\Admin\DisplayLogs;
@@ -39,10 +41,11 @@ class DrawPrettyGraph
     }
 }
 ```
+#### Invoking
 now in any file you can invoke it directly:
 `$myGraph = (new ZenCart\Plugins\Admin\SalesGraphs\DrawPrettyGraph)->output();`
 
-Or if you'd like to split the namespace out separately, use 2 steps:
+Or if you'd like to split the namespace out separately to make lines shorter, use 2 steps:
 - At the top of whatever file you wish to use it, add a line: `use Zencart\Plugins\Admin\SalesGraphs\DrawPrettyGraph;`
 - Then call it: `$myGraph = (new DrawPrettyGraph)->output();`
 
