@@ -12,24 +12,25 @@ While most language constants for the plugin installer are managed internally th
 For example, if the plugin needs to test some pre-requisites before installing, the error messages for when those
 pre-requisites fail will need to be defined.  In these cases the plugin system allows for loading custom language files.
 
-The main custom language file would reside in the `plugin version directory`/languages/`language name`/main
-.php file.
+**NOTE** These files use `define()` statements. The array-based language-file format is not supported here.
+
+The main custom language file would reside in the `[plugin version directory]/languages/[language name]/main.php` file.
 
 e.g.
 
-- zc_plugins
+- `zc_plugins`
 
     - PluginName
 
-        - v1.0.0
+        - `v1.0.0`
 
-            - Installer
+            - `Installer`
 
-            - languages
+                - `languages`
 
-                - english
+                    - `english`
 
-                    - `main.php`
+                        - `main.php`
 
 
 If the plugin needs more customization and wants to split off other language defines into separate files it can also load the language files separately. A helper method in the installer class can be used to do this.
