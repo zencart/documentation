@@ -6,7 +6,7 @@ layout: docs
 ---
 
 ## Class Autoloading
-"Class Autoloading" means: "when I want to use a class, I simply attempt to instantiate it (ie: `new Foo()`) and PHP will automatically find the right file, load it (so I don't have to `include()` or `require()` it manually), and then do the requested creation of an instance of it". In most cases this is the best way.
+"_Class Autoloading_" means: "when I want to use a class, I simply attempt to instantiate it (ie: `new Foo()`) and PHP will automatically find the right file, load it (so I don't have to `include()` or `require()` it manually), and then do the requested creation of an instance of it". In most cases this is the best way.
 
 Encapsulated plugins allow you to Autoload classes based on 2 scenarios.
 
