@@ -40,11 +40,11 @@ class DrawPrettyGraph
 }
 ```
 now in any file you can invoke it directly:
-`$myGraph = (new ZenCart\Plugins\Admin\SalesGraphs\DrawPrettyGraph)->output()`
+`$myGraph = (new ZenCart\Plugins\Admin\SalesGraphs\DrawPrettyGraph)->output();`
 
 Or if you'd like to split the namespace out separately, use 2 steps:
-1)At the top of whatever file you wish to use it, add a line: `use Zencart\Plugins\Admin\SalesGraphs\DrawPrettyGraph;`
-2)Then call it: `$myGraph = (new DrawPrettyGraph)->output();
+- At the top of whatever file you wish to use it, add a line: `use Zencart\Plugins\Admin\SalesGraphs\DrawPrettyGraph;`
+- Then call it: `$myGraph = (new DrawPrettyGraph)->output();`
 
 
 ## Custom class filenames
