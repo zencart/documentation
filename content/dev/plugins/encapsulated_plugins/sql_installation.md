@@ -82,9 +82,10 @@ Where:
 
 ## SQL Installer Classes
 
-If you have more complex needs when creating schemas or seeding the database, instead of using a plain SQL install file as above, you can use a class based method.
+If you have more complex needs when creating schemas or seeding the database, instead of using a plain SQL install file as above, you can use a class based method, by extending ScriptedInstallBase as `/Installer/ScriptedInstaller.php` in your plugin.
 
-An example of this is provided in the `DisplayLogs` plugin, in `zc_plugins/DisplayLogs`.  The class `ScriptedInstallBase` may be extended to permit the execution of complex logic during the install and uninstall process. 
+An example of this is provided in the `DisplayLogs` plugin, in `zc_plugins/DisplayLogs/Installer/ScriptedInstaller.php`.
 
-The two key methods that must be implemented in a class which extends `ScriptedInstallBase` are `executeInstall` and `executeUninstall`, which run the installation and de-installation logic.  
+Three key methods that must be implemented in a class which extends `ScriptedInstallBase` are `executeInstall` and `executeUninstall` and `executeUpgrade`, which run the installation, de-installation and upgrade logic, respectively. They should return `true` on success, and `false` on failure. They can set `$this->errorContainer->addError($severity=0, $logMessage, $booleanShowLogToUser, $userMessage)` if any errors need to be logged and/or shown to the user.
+
 
