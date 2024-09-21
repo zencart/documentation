@@ -63,20 +63,32 @@ The skeleton of this class should look like :
 
 ### Important Notes for coding in the context of a ScriptedInstaller
 
+#### Database Querying
 - Using the alternate query functions below will allow the ScriptedInstaller to report query failures so that the install aborts with a logged and displayed message.
 - Avoid making `$db->` calls directly (tip: if you have to `global $db` then you're not doing it right! ... in this context.
-- For non-SELECT queries, instead of `$db->Execute($sql)` use `$this->executeInstallerSql($sql)`.
+- For non-SELECT queries, instead of `$db->Execute($sql)` use `$this->executeInstallerSql($sql)`
 - For a SELECT query use `$this->executeInstallerSelectQuery($sql)` instead of `$db->Execute($sql)`
-- Instead of `zen_db_perform()` use `$this->executeInstallerDbPerform()`
+- Instead of `zen_db_perform()` use `$this->executeInstallerDbPerform()` with the same usual parameters.
 - The record ID of a single record created by a db query can be accessed with `$insert_id = $this->dbConn->insert_ID();`
 - The number of rows affected by a query can be accessed with `$rows = $this->dbConn->affectedRows();`
 - Use `$this->dbConn->` instead of `$db->` if you really need to access the `queryFactory` object directly.
-- NEW database TABLES need to have a constant defined in the `/catalog/includes/extra_datafiles/database_tables.php` file (or /admin/ instead of catalog) (can be other than `database_tables.php`, but that's a clear name).
-- If you need to inspect the database, use the `global $sniffer` class, as you normally would.
+- If you need to inspect the database schema, use the `global $sniffer` class, as you normally would.
+
+#### Database DEFINES
+- NEW database TABLES need to have constants defined!!!!
+    - `/catalog/includes/extra_datafiles/database_tables.php` if you need to use the table catalog-side
+    - `/admin/includes/extra_datafiles/database_tables.php` if you need to use the table admin-side
+    - and inside your `ScriptedInstaller.php`, at the top of the class or at least before you use the constant
+
+#### Configuration and Configuration_Group records
 - Many helper functions for `configuration` and `configuration_group` tables are shown in the example template below
 - Consult `/includes/classes/PluginSupport/ScriptedInstallHelpers.php` for more insight on the many helper functions available
+
+#### Handling Errors
 - ERROR messages may be triggered via `$this->errorContainer->addError(0, 'message to log', false, 'message to show to user');`
-- In the template below, returning `true` (if no errors were triggered) will mark the plugin installed. Returning `false` or triggering an error will abort and not mark it installed.
+- If errors are added to `errorContainer`, then no matter how much progress was done, the errors will be displayed in the messageStack and the plugin version will NOT be marked as installed/upgraded.
+- It is best to `return false;` immediately after you trigger an error so that no further processing is done; else it will keep going and more errors will be collected.
+- When returning from `executeInstall()`, `executeUninstall()`, and `executeUpgrade()`, returning `false` or triggering an error will abort and not mark it installed. If no errors are set and `true` is returned, the plugin will be marked as installed (or if upgrading, the new version will be set as the active one).
 
 #### Building Upgrades From Prior Versions
 When building upgrades in `ScriptedInstaller` remember:
