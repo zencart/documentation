@@ -82,10 +82,12 @@ Where:
 
 ## SQL Installer Classes
 
-If you have more complex needs when creating schemas or seeding the database, instead of using a plain SQL install file as above, you can use a class based method, by extending ScriptedInstallBase as `/Installer/ScriptedInstaller.php` in your plugin.
+If you have more complex needs when creating schemas or seeding the database, instead of using a plain SQL install file as above, you can use a class based method, by extending ScriptedInstallBase as `/Installer/ScriptedInstaller.php` in your plugin. See [Installer Classes](/dev/plugins/encapsulated_plugins/installer_classes/) for details.
 
-An example of this is provided in the `DisplayLogs` plugin, in `zc_plugins/DisplayLogs/Installer/ScriptedInstaller.php`.
+IF YOUR PLUGIN PROVIDES UPGRADES WHICH NEED DATABASE CHANGES, then you MUST use the [Installer Classes](/dev/plugins/encapsulated_plugins/installer_classes/), since there is no way to offer plain `.sql` file upgrades.
 
-Three key methods that must be implemented in a class which extends `ScriptedInstallBase` are `executeInstall` and `executeUninstall` and `executeUpgrade`, which run the installation, de-installation and upgrade logic, respectively. They should return `true` on success, and `false` on failure. They can set `$this->errorContainer->addError($severity=0, $logMessage, $booleanShowLogToUser, $userMessage)` if any errors need to be logged and/or shown to the user.
+An example is provided in the `DisplayLogs` plugin, in `zc_plugins/DisplayLogs/[version]/Installer/ScriptedInstaller.php`.
+
+Briefly, three key methods that must be implemented in a class which extends `ScriptedInstallBase` are `executeInstall` and `executeUninstall` and `executeUpgrade`, which run the installation, de-installation and upgrade logic, respectively. They should return `true` on success, and `false` on failure. They can set `$this->errorContainer->addError($severity=0, $logMessage, $booleanShowLogToUser, $userMessage)` if any errors need to be logged and/or shown to the user.
 
 
