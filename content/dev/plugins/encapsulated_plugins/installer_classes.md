@@ -61,7 +61,7 @@ The skeleton of this class should look like :
         }
     }
 
-### Important Notes for coding in the context of a ScriptedInstaller
+### Important Notes for coding in the context of a `ScriptedInstaller` class
 
 #### Database Querying
 - Using the alternate query functions below will allow the ScriptedInstaller to report query failures so that the install aborts with a logged and displayed message.
@@ -96,7 +96,7 @@ When building upgrades in `ScriptedInstaller` remember:
 - `executeUninstall()` is to remove ALL changes for the plugin even after multiple upgrades (you might choose to NOT drop columns from db, to avoid user-error by accidental uninstall of the plugin)
 - `executeUpgrade()` should include ALL upgrades from ALL prior versions, since users can skip a version and therefore you need to cover all scenarios
 
-### Example ScriptedInstaller Template
+### Example `ScriptedInstaller` Template
 
 ```php
 <?php
