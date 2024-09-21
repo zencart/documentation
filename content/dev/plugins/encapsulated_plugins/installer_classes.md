@@ -95,6 +95,14 @@ When building upgrades in `ScriptedInstaller` remember:
 - `executeInstall()` is for NEW installs, so should also include anything that an upgrade from previous version would do
 - `executeUninstall()` is to remove ALL changes for the plugin even after multiple upgrades (you might choose to NOT drop columns from db, to avoid user-error by accidental uninstall of the plugin)
 - `executeUpgrade()` should include ALL upgrades from ALL prior versions, since users can skip a version and therefore you need to cover all scenarios
+- While `executeUpgrade($oldVersion)` provides the version from which the upgrade is being done, it is better to code assuming none of any upgrades are done, by checking and performing all updates that would be needed to get any version up-to-date.
+
+#### Informational Properties
+A few properties exist to assist:
+- `$this->pluginDir` refers to the parent directory of the version you're currently working in.
+- `$this->pluginKey` is the name of the plugin's database key identifier.
+- `$this->version` is the version you're currently "in".
+- `$this->oldVersion`, which is only available when upgrading (otherwise null), indicates the version being upgraded from.
 
 ### Example `ScriptedInstaller` Template
 
