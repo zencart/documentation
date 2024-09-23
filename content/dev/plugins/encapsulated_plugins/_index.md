@@ -11,8 +11,6 @@ The plugin architecture allows plugins to be encapsulated into a hierarchical di
 
 The admin's ***Modules :: Plugin Manager*** page allows for the plugin to be installed/un-installed and enabled/disabled.
 
-***Note***: If your site is running a version of Zen Cart prior to 2.1.0, you'll need to apply these changes to some 'core' files for storefront/catalog plugins to operate correctly:
+***Note***: If your site is running a version of Zen Cart prior to 2.1.0, you'll need to apply these changes to some 'core' files for storefront/catalog plugins to operate correctly.  See https://gist.github.com/lat9/9deb64d3325081d18bb0db5534bcf142.
 
-- https://github.com/zencart/zencart/pull/6462
-- https://github.com/zencart/zencart/pull/6480
-- https://github.com/zencart/zencart/pull/6493
+

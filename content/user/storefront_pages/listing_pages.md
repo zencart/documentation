@@ -54,22 +54,34 @@ index.php?main_page=index&cPath=3_5
 ```
 would be a product listing page, showing products 4, 5 and 6.  The category path for this page would be _3_5_. 
 
-In the cases above, the category path for the 
-
 The listing pages described above are built-in to Zen Cart; no extra work is required to create them.
 
-Here's an example of what a product listing page might look like on a desktop computer: 
+Here's an example of what a product listing page in [rows mode](/user/template/listing_columns/) might look like on a desktop computer: 
 
 ![Product Listing Page](/images/product_listing.png) 
 
-And here's the Featured Products listing page showing a different layout: 
-
+And here's the Featured Products listing page in rows mode showing a different layout: 
 ![Featured Products Listing Page](/images/product_listing_featured.png) 
 
 The layout for listing pages is described in more detail in [listing page layout](/user/template/listing_page_layout/). 
+
+Listing pages may also be configured to have multiple columns per row. 
+
+![3 Columns per Row](/images/listing_col_3.png)
+
+See [Columnar Layout for Product Listing pages](/user/template/listing_columns/) for more details. 
 
 The configuration settings for the New Products, Featured Products and All Products listing pages are version dependant: 
 - For Zen Cart v2.x.x, they are the same as for product listing pages.  See [listing page configuration](/user/template/product_listing_page_configuration/).
 - For Zen Cart v1.x.x, see [new/featured/all products listing page configuration in v1.x.x](/user/template/new_featured_all_listing_page_configuration_v1/). 
 
 The configuration settings for the Product Listing pages are explained in [listing page configuration](/user/template/product_listing_page_configuration/).
+
+## Featured Products Page Details 
+The Featured Products page shows products which have been set to Featured.  See [Admin > Catalog > Featured Products](/user/admin_pages/catalog/featured/) for details on how this is done. 
+
+## New Products Page Details 
+The New Products page shows products which are "new" according to the definition specified in the [New Product Listing - Limited to ...](/user/admin_pages/configuration/configuration_maximumvalues/#new_product_listing__limited_to_) setting on the [Admin > Configuration > Maximum Values](/user/admin_pages/configuration/configuration_maximumvalues/) page.
+
+You may limit new products to those created in the last 7 days, 14 days, and several other settings all the way back to 120 days, or have no limit at all so any entry in your catalog will be shown as a new product. 
+
