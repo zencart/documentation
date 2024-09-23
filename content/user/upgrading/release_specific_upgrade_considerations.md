@@ -26,7 +26,9 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 ### Zen Cart 2.1.0 :stop_sign: <font color="red">NOT RELEASED YET</font> :stop_sign:
 
-- Storefront: Additional image matching rules may (optionally) be enforced more strictly; see [this page](/user/images/additional_images/#additional-images-filename-matching-rules).  This behavior can be controlled via the configuration value `ADDITIONAL_IMAGES_MODE` in [Admin > Configuration > Images](/user/admin_pages/configuration/configuration_images/). 
+- Improvements were made to the encapsulated plugin manager to permit storefront plugins to do more.  If you need to backport these changes to 2.0.1 or 2.0.0 (say, to run [POSM](/user/running/posm/) on those versions), see https://gist.github.com/lat9/9deb64d3325081d18bb0db5534bcf142.
+- `tpl_{product-type-page}_display.php` files have been consolidated.  If you use product types other than "product general" and require special behavior for a specific product type, you will need to override the appropriate file. 
+- Additional image matching rules may (optionally) be enforced more strictly; see [this page](/user/images/additional_images/#additional-images-filename-matching-rules).  This behavior can be controlled via the configuration value `ADDITIONAL_IMAGES_MODE` in [Admin > Configuration > Images](/user/admin_pages/configuration/configuration_images/). 
 - The `NOTIFY_GET_PRODUCT_DETAILS` notifier has been deprecated in favor of `NOTIFY_GET_PRODUCT_OBJECT_DETAILS`, which uses different arguments.  Any use of the former will product a deprecation debug log. 
 - If you are using a template other than Bootstrap or Responsive Classic, you may need to update the [template_info](/user/template/template_info/) file to add the `uses_mobile_sidebox_settings` entry. 
 - If you are using a template other than Bootstrap or Responsive Classic, you may wish to use the `/includes/modules/ezpages_mobile.php` file to build your mobile menu.  See [this PR](https://github.com/zencart/zencart/pull/6697).

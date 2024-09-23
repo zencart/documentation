@@ -110,6 +110,7 @@ The improvements in v2.1.0 include:
 - Installer: `zc_install` now uses Bootstrap 5.  Zurb Foundation is no longer used.  UI greatly improved. 
 - Modernization: A `Product` class has been introduced to encapsulate product-specific logic.
 - Modernization: Shipping modules now inherit from the `ZenShipping` base class to reduce code duplication and ensure consistency.
+- Storefront: `tpl_{product-type-page}_display.php` files have been consolidated to reduce code duplication.
 - Storefront: FIXED - Second Place Order done from admin before completing first one works as expected.
 - Storefront: FIXED attribute pricing display issues.
 - Storefront: FIXED fractional product quantities handling.

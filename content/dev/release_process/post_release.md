@@ -55,6 +55,8 @@ Instructions: see the
 
 If you need to create a new subforum ("Updating to Y.x.x"), follow the guidance on the [infrastructure repo](https://github.com/zencart/infrastructure).  (Team members only.)
 
+- Update the file `.github/security.md` in the main Zen Cart repo if needed.
+
 - Ensure the [Release Specific Upgrade Considerations](/user/upgrading/release_specific_upgrade_considerations/) doc has a statement about this release.
 
 - Update the pages in [Third Party Libraries](/dev/libraries/) if any major library version changes have been made.

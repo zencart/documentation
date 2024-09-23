@@ -5,15 +5,13 @@ category: payment
 weight: 10
 ---
 
-There are two Square modules for Zen Cart: 
-- A newer module, based on the Square Web Payments API, which is currently available as the [Square Web Payments API plugin](https://www.zen-cart.com/downloads.php?do=file&id=2345). 
-- An older module, based on the Square Payments Form library.  This module was built in to Zen Cart from 1.5.5 to 1.5.8.  However, Square has deprecated this library, so the older module no longer works.  The [Square Payments Form documentation](/user/payment/square_payments_form/) is maintained for historical purposes. 
+This page discusses Square WebPay, the currently supported interface to Square.
 
-This page is about the newer module, Square Web Pay.
+There was an older Square module, based on the Square Payments Form library, which was built in to Zen Cart from 1.5.5 to 1.5.8.  However, Square has deprecated this library, so the older module no longer works.  The [Square Payments Form documentation](/user/payment/square_payments_form/) is maintained for historical purposes. 
 
 ## Square WebPay
-The newer Square module is available in the Plugins library as [Square Web Payments API plugin](https://www.zen-cart.com/downloads.php?do=file&id=2345) for PHP7.  For PHP 8 and above, the module should be purchased from [the developer](https://mxworks.cc/?product=zen-cart-square-plugin-for-php-8-x).
-
+- For PHP 7, the Square WebPay is an open source module available in the Plugins library as [Square Web Payments API plugin](https://www.zen-cart.com/downloads.php?do=file&id=2345).
+- For PHP 8 and above, Square WebPay is a commercial extension which should be purchased from [the developer](/user/payment/square_commercial_module/). 
 
 ![Square Modules](/images/square_payment_modules.png)
 - The top one ("Square") is the old deprecated Square module.
@@ -49,7 +47,7 @@ Once you have installed and successfully tested Square Webpay, you will want to 
  
 ## Updating Square Web Payments 
 
-1. Follow the guidance provided by [the developer](https://mxworks.cc/?product=zen-cart-square-plugin-for-php-8-x).
+1. Follow the guidance provided by [the developer](/user/payment/square_commercial_module/). 
 2. You may need to update your app to change the API version.  See [Square API Version](/user/payment/square_api_version/).
 
 
