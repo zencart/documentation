@@ -8,10 +8,11 @@ The Zen Cart core is updated for the current release of PHP as each release is d
 
 But what about plugins?  
 
-Well, updating plugins needs to be done by the community.  The first person to check with, of course, would be the plugin author, but they may not be able to do the work (for whatever reason). In this case, it could be an [orphan plugin that needs adoption](/dev/plugins/adoption/).  
+Well, updating plugins needs to be done by the community.  The first person to check with, of course, would be the plugin author, but they may not be able to do the work (for whatever reason). In this case, it could be an [orphan plugin that needs adoption](/dev/plugins/adoption/) ... or collaboration.  
 
 The following guidance is available for upgraders from PHP.net: 
 
+- [Migrating from PHP 8.2.x to PHP 8.3.x](https://www.php.net/manual/en/migration83.php)
 - [Migrating from PHP 8.1.x to PHP 8.2.x](https://www.php.net/manual/en/migration82.php)
 - [Migrating from PHP 8.0.x to PHP 8.1.x](https://www.php.net/manual/en/migration81.php)
 - [Migrating from PHP 7.4.x to PHP 8.0.x](https://www.php.net/manual/en/migration80.php)
