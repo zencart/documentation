@@ -18,6 +18,8 @@ e.g.
         - v1.0.0
             - manifest.php
             - Installer
+                - languages
+                    - english
             - admin
                 - includes
                     - auto_loaders
