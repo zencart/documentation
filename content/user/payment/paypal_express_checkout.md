@@ -40,8 +40,8 @@ Here's how to put Zen Cart and Express Checkout to work for your business.
         4.  Choose to upgrade to a Business account and follow instructions to complete the upgrade.
         5.  If you haven't already, add a bank account to become a Verified member. Follow the instructions on the PayPal site. (This process may take 2-3 business days.)
 *   **Step 3: Setup API Access**  
-    1. Get [your API credentials](https://www.paypal.com/us/cgi-bin/webscr?cmd=_get-api-signature&generic-flow=true).
-    2. Click the "Show" link under API Username, API Password and Signature and note all three values.
+    1. Go to [https://www.paypal.com/businessmanage/account/accountAccess/unifiedsettings/apiaccess](https://www.paypal.com/businessmanage/account/accountAccess/unifiedsettings/apiaccess) and click "NVP/SOAP API Integration (Classic)." 
+    2. You will see the API Username, API Password and Signature. Note all three values.
     3. At the top right hand side of the page, click your account name, then click Account Settings.  Navigate to **Business Information** and note your **Merchant ID**.  It will look like *FDEFDEFDEFDE11*. 
     4. Use the values from the prior step in Admin > Configuration > Payment to configure the PayPal Express fields **API Signature**, **API Signature -- Password**, and **API Signature** and **Merchant ID**. 
 
