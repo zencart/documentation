@@ -224,6 +224,10 @@ Simple reference:
 |`<php` | must end with semicolon.|
 
 
+## File and Directory Names 
+
+Do not use spaces in file or folder names.  Use underscores or Camel Case instead. 
+
 ## More Information
 More information is provided in [PHP Idioms](/dev/code/php_idioms/).
 

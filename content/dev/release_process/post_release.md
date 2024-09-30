@@ -45,7 +45,7 @@ Instructions: see the
 
 ### All Releases 
 
-- Update the [Release History](/user/about_us/release_history/) page with the new version and date.
+- Update the [Release History](/user/about_us/release_history/) page with the new version and date.  (Skip this step for pre-releases.)
 
 - Update the [What's New with Zen Cart](/user/about_us/whats_new/) page.
 

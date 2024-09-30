@@ -7,7 +7,8 @@ weight: 10
 
 > Note: If you want to see What's **Next** for Zen Cart instead, please [click here](/release/whatsnext/).
 
-- August 2024: Test builds for [Zen Cart 2.1.0](/release/whatsnew_2.1.0/) have begun.
+- September 2024: Beta testing builds for [Zen Cart 2.1.0](/release/whatsnew_2.1.0/) have begun.
+- August 2024: Alpha testing builds for [Zen Cart 2.1.0](/release/whatsnew_2.1.0/) have begun.
 - July 2024: Zen Cart publishes a patch for the [admin CKEditor tool](https://www.zen-cart.com/downloads.php?do=file&id=1098).
 - May 2024: Styling enhancements for [Documentation Home Page](https://docs.zen-cart.com/).
 - May 2024: [Zen Cart 2.0.1 Released](https://www.zen-cart.com/showthread.php?230139-Zen-Cart-2-0-1-Released).
