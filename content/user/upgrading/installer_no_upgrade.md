@@ -14,4 +14,9 @@ See [this article](/user/miscellaneous/configure/) for a discussion of the value
 
 When everything is configured correctly, you should see this at the bottom of the screen on the first page of `zc_install`: 
 
+![Use the upgrade button!](/images/upgrade_button_210.png)
+
+Older versions of Zen Cart have buttons like this: 
+
 ![Use the upgrade button!](/images/upgrade_button.png)
+
