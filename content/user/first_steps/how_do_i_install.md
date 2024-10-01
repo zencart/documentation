@@ -207,23 +207,29 @@ Or, to start the installer directly, use: `http://www.mydomain.com/catalog/zc_in
 
 ### Welcome
 
-You will be presented with a "Welcome to Zen Cart" page, explaining the features of Zen Cart.  
+You will be presented with a "Welcome to Zen Cart" page.  In the first section, press the "CLICK HERE to begin installation" link. 
 
-### License
+![Welcome Screen](/images/install_welcome.jpg)
 
-Clicking on Continue takes you to the license screen where you are asked to read and confirm acceptance of the GPL licensing agreement.  
+### Install Screen 1: System Inspection
 
-### System Inspection
+Next, you will see the System Inspection screen.  
+![System Inspection](/images/install_system_inspection.jpg)
 
-Next, it will examine your server for compliance with technical requirements for running Zen Cart, presenting you with several items you may need or want to address with your host. Anything marked in red or with an "X" must be addressed before the installer can continue. Things marked with an orange or yellow "caution" symbol are simply warnings that may or may not apply to your setup now. The image folders and others as described earlier in this document are also noted. If you make changes to your server, you can click Re-Check or press F5 in your browser to refresh the display and reflect the changes you've made before proceeding.  
+This screen will examine your server for compliance with technical requirements for running Zen Cart, presenting you with several items you may need or want to address with your host. Anything marked in red or with an "X" must be addressed before the installer can continue. Things marked with an orange or yellow "caution" symbol are simply warnings that may or may not apply to your setup now. The image folders and others as described earlier in this document are also noted. If you make changes to your server, you can click Re-Check or press F5 in your browser to refresh the display and reflect the changes you've made before proceeding.  
 
 If a previous version of Zen Cart is found on your server, the installer will attempt to determine the database patch level and display that on the screen as well. In this case, an "upgrade" button will display at the bottom of the screen offering you the ability to upgrade if needed. 
 
-Once you are satisfied that the "pre-flight-check" inspection is OK for your needs (ideally, all green check-marks), you may click the "Install" button at the bottom of the screen.  
+**Note:** If you have a previous version of Zen Cart installed but don't see the "Upgrade" button, there's a problem with your `configure.php` files.  See [Installer does not show an Upgrade button](/user/upgrading/installer_no_upgrade/).
 
-### System Setup
+Once you are satisfied that the "pre-flight-check" inspection is OK for your needs, you may click the "Continue" button at the bottom of the screen.  
 
-On the System Setup page you will need to complete the information we described in "Before Running the Installer" earlier in this document.  
+### Install Screen 2: System Setup
+
+Next, you will see the System Setup screen.  
+![System Setup](/images/install_system_setup.jpg)
+
+On the System Setup page you will need to complete the information we described in "Before Running the Installer" earlier in this document.   You will also need to agree to the license terms. 
 
 Indicate if you want to Enable SSL (the secure pages where required, in Login, Checkout, and optionally Admin areas) on your server. If you do not have an SSL certificate yet, **do not enable this feature now**.It can be changed at a later date. (See the [SSL FAQ](/user/installing/enable_ssl/) for detailed instructions).  
 
@@ -235,9 +241,12 @@ Note: If you receive any of the following error messages, go through the above s
  
 
 
-### Database Setup
+### Install Screen 3: Database Setup
 
-On the next screen, you are asked for Database Information about your MySQL database, username and password. These can be obtained from your cPanel or equivalent control screen provided by your host. If you do not have a clean MySQL database setup with a username and password, you will need to create one.
+Next, you will see the Database Setup screen.  
+![System Setup](/images/install_database_setup.jpg)
+
+On this screen, you are asked for Database Information about your MySQL database, username and password. These can be obtained from your cPanel or equivalent control screen provided by your host. If you do not have a clean MySQL database setup with a username and password, you will need to create one.
 
 Contact your Hosting site if you need assistance in creating a MySQL database table and/or username and password. **Note that you need to have your database and userID created before the Zen Cart installer can continue past this screen**.  
 
@@ -248,13 +257,10 @@ Other information on this screen:
 
 *   We recommend that you store your Database Sessions in your database for security purposes.
 
-### Store Setup
+This screen also allows you to install the demo data if you are 
+evaluating Zen Cart. 
 
-Now, complete the Store Information about your Shop.  
-
-Note: except for "demo data", all of the information here can be (re)configured later in the Admin area of your shop.  
-
-### Demo Data       
+#### Demo Data 
 If you would like to install the demo data, select yes.  
 
 We recommend that you install the demo data to familiarize yourself with many of the examples created that explain and demonstrate the vast number of features available in Zen Cart.  
@@ -265,18 +271,28 @@ After you click Save Store Settings, there will be some hesitation as the databa
 
 For a list of features shown by the demo data, please see [demo data](/user/first_steps/demo_data). 
 
-### Demo Images 
+#### Demo Images 
 After 1.5.8, the demo images are no longer automatically installed; to install them, see the instructions in [demo images](/user/first_steps/demo_data/#demo-images).
 
-### Admin Setup
+### Install Screen 4: Admin Setup
 
-Now, complete the Admin Information to set your Login name, Admin email address and password.  
+The last screen requiring input is the Admin Setup screen.
+![Admin Setup](/images/install_admin_setup.jpg)
+
+
+Complete the Admin Information to set your Login name, Admin email address and password.  
 
 **NOTE:** both the login name and password are case sensitive.  
 
 Save the Admin settings and your installation is now complete!  
 
+### Install Screen 5: Finished
+
+![Finished Screen](/images/install_finished.jpg)
+
 Providing there were no errors during installation, you should be able to now enter the Admin or the Catalog.  
+
+
 
 ---
 ## G. After Installation

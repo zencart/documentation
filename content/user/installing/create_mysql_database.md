@@ -19,7 +19,7 @@ To use Zen Cart, you need a database.
 
 That's it !!  
 
-Now in the Zen Cart Installer, on the Database Setup section, supply all of the database information you just set up: name, user, password, and host. Usually the "host" is "localhost" unless your hosting company uses a specific different configuration.  
+Now in the [Zen Cart Installer](/user/first_steps/how_do_i_install/#f-run-the-installer), when you get to the Database Setup section, supply all of the database information from the prior section: name, user, password, and host. Usually the "host" is "localhost" unless your hosting company uses a specific different configuration.  
 
 ## What Database Permissions/Privileges Do I Give to my Database User?
 

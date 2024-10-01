@@ -37,6 +37,10 @@ where the problems, if any will happen
 7.  Run the installer at `https://www.YOURSITE.com/zc_install`.  **Note:** if your current PHP version is very old, you may need to change it to run the installer.  This will likely take down your live store.  If you aren't sure you can get this whole procedure done quickly, consider [setting up a test environment](/user/running/local_testing/) and doing the upgrade there. 
 8.  Choose the *Upgrade* option
 
+![Use the upgrade button!](/images/upgrade_button_210.png)
+
+Older versions of Zen Cart have buttons like this: 
+
 ![Use the upgrade button!](/images/upgrade_button.png)
 
 ### The zc_install process 
