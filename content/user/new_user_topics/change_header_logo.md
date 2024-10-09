@@ -55,7 +55,7 @@ To right align the logo use `float: right;`
 ## Admin Header 
 A similar change can be made on the admin side.  These definitions are in `admin/includes/languages/lang.english.php`; they contain the same four PHP define statements. You might use a different image in your admin. The filename mentioned here refers to a *different* file and location than the one used above for the storefront. 
 
-To override these defintions, create a new file here: `admin/includes/languages/extra_defintions/lang.myChanges.php`.  As long as the file is in the `extra_defintions` directory and starts with `lang.`, you can name it whatever you would like.  Copy the code below, into the file, and you will now have overriden the admin image without modifying any core code:
+To override these definitions, create a new file here: `admin/includes/languages/extra_definitions/lang.myChanges.php`.  As long as the file is in the `extra_definitions` directory and starts with `lang.`, you can name it whatever you would like.  Copy the code below, into the file, and you will now have overriden the admin image without modifying any core code:
 
 ```
 <?php
