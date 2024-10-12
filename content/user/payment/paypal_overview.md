@@ -15,7 +15,7 @@ There are several integrations available, and the one(s) you choose will depend 
 
 - PayPal Standard (sometimes also called "PayPal Website Payments Standard" or "PayPal IPN") was the earliest PayPal integration, and is no longer recommended because it is less reliable.  See [PayPal Standard - Potential Problems](/user/payment/paypal_standard/) for details.
 
-- [PayPal RESTful](/user/payment/paypal_restful/) is the next generation of PayPal integration, which is expected to replace both PayPal Express and PayPal Website Payments Pro. It is currently still in development. You can ask questions about this payment method on the [support subforum for PayPal RESTful](https://www.zen-cart.com/forumdisplay.php?170-PayPal-RESTful-support).
+- [PayPal RESTful](/user/payment/paypal_restful/) is the next generation of PayPal integration, which is expected to replace both PayPal Express and PayPal Website Payments Pro in the future. It requires Zen Cart 1.5.8 or higher.  You can ask questions about this payment method on the [support subforum for PayPal RESTful](https://www.zen-cart.com/forumdisplay.php?170-PayPal-RESTful-support).
 
 A new feature called [payment module retirement](/user/payment/retirement/) is available to ease the transition between PayPal Website Payments Pro and/or Express to PayPal RESTful. 
 
