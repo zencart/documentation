@@ -1,6 +1,6 @@
 ---
-title: Purchasing the latest Square module 
-description: How to collect payments with Square 
+title: Square for PHP 8+ 
+description: How to purchase the latest Square module
 category: payment
 weight: 10
 ---
