@@ -90,6 +90,8 @@ The improvements in v2.1.0 include:
 - New Feature: [Layout Boxes Controller](/admin_pages/tools/layout_boxes_controller/) made more user friendly. 
 - New Feature: Templates may now have a separate list of links for  their mobile menus.  (In prior releases, the mobile menu would reuse the desktop header link list.)  See [this PR](https://github.com/zencart/zencart/pull/6697) for details.
 - Admin: The plugin formerly known as [Mod List](https://www.zen-cart.com/downloads.php?do=file&id=2039) is now included in the core and named "System Inspection."  It is an [encapsulated plugin](/dev/plugins/encapsulated_plugins/), so it can be installed using Admin > Modules > Plugin Manager.
+- Admin: Manufacturer Part Number (MPN) field added in Zen Cart 2.0.0 can now be edited in the admin. 
+- Admin: Manufacturer Part Number (MPN) field is now included in the admin search list of fields to be checked.
 - Admin: The UI for the Plugin Manager has been re-arranged for easier viewing.
 - Admin: UI has better multi-language support.  See [Admin Language conversion](/dev/languages/admin_language_translation/).
 - Admin: FIXED - Search in Options Values Manager.
