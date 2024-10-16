@@ -44,6 +44,11 @@ Copy this file to
 
 and customize to taste. The settings that may be altered in this file are listed in the file `includes/init_includes/init_non_db_settings.php`.
 
+## Bootstrap Template Setting Overrides 
+
+Users of the [Bootstrap template](/user/template/bootstrap/) may override its css using the [site_specific_styles.php file](https://github.com/lat9/ZCA-Bootstrap-Template/wiki/Frequently-Asked-Questions).
+
+
 ## Related Links 
 - [Template Settings](/dev/code/template_settings/) file
 

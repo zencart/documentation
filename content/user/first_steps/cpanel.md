@@ -25,6 +25,12 @@ https://YOURSITE.com/cpanel
 https://YOURSITE.com:2083/
 ```
 
+On some hosters, you will have to login to your hosting account first, then click a button to get to cPanel.
+
+![cPanel via Hosting account](/images/cpanel_via_hosting.png)
+
+## Non-cPanel control panels
+
 Here is a screenshot of a control panel that is *not* cPanel. 
 
 ![Proprietary Control Panel](/images/not_cpanel.png)
