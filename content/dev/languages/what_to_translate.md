@@ -7,52 +7,63 @@ layout: docs
 
 With Zen Cart v2.1.0 language can be switched smoothly, even admin menus, modules and plugins.
 
-Unfortunately for language pack makers, finding strings to translate might be a challenge. Here is a list of places where you will find these strings. Then few tools are provided to convert to Zen Cart language files constants, ready for translation.
+Language-pack creators and maintainers will appreciate that sometimes finding strings to translate might be a challenge. Here is a list of places where you will find these strings. Then a few tools are provided to convert to Zen Cart language files constants, ready for translation.
 
 <hr>
 
-### Language files:
+## Language files:
 
 Strings to translate are already in files where they will be used, no extra formatting is necessary.
 
-**Zen Cart core language files:**
+### Zen Cart core language files:
 
-These are the eaisiest to find and prepare for translation. You only have to copy all the 'english' folders and rename them to your new language, then you are ready to translate content.
+These are the easiest to find and prepare for translation: You only have to copy all the 'english' folders and rename them to your new language, then you are ready to translate content.
 
-- admin/includes/languages/english/
-- includes/languages/english/
-- zc_install/includes/languages/english/
-- zc_plugins/DisplayLogs/vx.x.x/admin/includes/languages/english/
-- zc_plugins/POSM/vx.x.x/admin/includes/languages/english/
-- zc_plugins/POSM/vx.x.x/catalog/includes/languages/english/
-- zc_plugins/POSM/vx.x.x/installer/languages/english/
-- zc_plugins/SystemInspection/x.x.x/admin/includes/languages/english/
-- zc_plugins/SystemInspection/x.x.x/installer/languages/english/
+    - admin/includes/languages/english/
+    - includes/languages/english/
+    - zc_install/includes/languages/english/
+    - zc_plugins/{plugin_name}/{version}/admin/includes/languages/english/
+    - zc_plugins/{plugin_name}/{version}/catalog/includes/languages/english/
+    - zc_plugins/{plugin_name}/{version}/installer/languages/english/
 
 
-Note: 'x' represent numbers depending on plugin version.
+Note: `{plugin_name}` represents the name of a plugin directory, and `{version}` will be various numbers denoting plugin version.
 
-**Images (buttons):**
+### Images (buttons):
 
-Those are actually images files used for buttons. You will need an image editor to create new buttons. They can be replaced by css buttons in admin setting. In this case you don't need to recreate new buttons. If you do, don't forget to rename your new buttos' folder to your language.
+Those are actually image files used for buttons, used in older templates. You will need an image editor to create new buttons. 
 
-- includes/templates/template_default/buttons/english
+Newer templates ignore these button-images and use CSS buttons instead, by enabling an admin setting. In this case you don't need to recreate new buttons. 
 
-**Hard coded strings:**
+If you do create new button images, make a copy of the `english` subdirectory, and generate your new images there.
 
-This text is only visible once before installing ZC and you try to load the index of your site. At this time there is no language system loaded and it is why these strings are hard coded in files. If instead of loading index page, you load ZC installer directly (../zc_installer), you won't even see this. Choice is yours to translate it or not.
+    - includes/templates/template_default/buttons/english
 
-- includes/templates/template_default/templates/tpl_zc_install_suggested_default.php
-- includes/templates/template_default/templates/tpl_zc_phpupgrade_default.php
+### Hard-coded strings related to installation:
+
+This text is only visible once before installing Zen Cart if you try to load the index of your site directly instead of directly going to `/zc_install`. 
+
+At this stage there is no language system loaded and it is why these strings are hard coded in files. 
+
+If instead of loading index page, you load ZC installer directly (`../zc_install`), you won't even see this. 
+
+Choice is yours to translate it or not. There is no language-specific way to store separate translations.
+
+    - includes/templates/template_default/templates/tpl_zc_install_suggested_default.php
+    - includes/templates/template_default/templates/tpl_zc_phpupgrade_default.php
 
 
-### Database fields:
+## Database fields:
 
-**Database configuration menus:**
+### Database configuration menus:
 
-These are all the admin menus and submenus. You can find them in files before intallation, but on an installed English cart, they are in database, at least for parts that have been installed. Most of the standards admin configuration strings go in the file `lang.configuration.php` but for modules and plugins, it is more complicated and it will be expained in a 'Formatting' chapter below. In any case, reformating these strings into PHP constants format will be necessary.
+These are all the admin menus and submenus. You can find them in SQL files before intallation, but on an installed English cart, they are in the database, at least for parts that have been installed. 
 
-##### IN FILES:
+Most of the standard admin configuration strings go in the file `lang.configuration.php` but for modules and plugins, it is more complicated and it will be expained in the 'Formatting' section below. 
+
+To translate them, reformating these strings into PHP constants format will be necessary.
+
+#### IN FILES:
 
 ***Standard admin configuration settings***
 
@@ -90,25 +101,27 @@ Another possibilty is to look in admin menu for this plugin related menus, but c
 If the plugin does not install automatically, chances are there is an SQL file to import. Here too, strings we are looking for are in those queries to configuration and configuration_group tables.
 
 
-##### IN DATABASE:
+#### IN DATABASE:
 
 Modules or plugins not installed won't have their English strings registered in database! Everything installed will be in one of these tables:
 
 - Table `'configuration'`, fields `'configuration_title'` and `'configuration_description'`.
-
 - Table `'configuration_group'`, fields `'configuration_title'` and `'configuration_description'` (not really used).
-
-- Table `'product_types'`, field `'type_name'`.
-
-- Table `'product_type_layout'`, fields `'configuration_title'` and `'configuration_description'`.
-
 - Table `'plugin_control'`,  fields `'name'` and `'description'`.
+- Table `'product_types'`, field `'type_name'`.
+- Table `'product_type_layout'`, fields `'configuration_title'` and `'configuration_description'`.
 
 
 ### Database fields to be translated through admin interface:
 
-These are dependant on data imput by users like adding products and other customization and by definition are subject to change. Admin interface will allow you to add or update these strings in all installed languages.
+These do not require translation in a language-pack.
 
+These are dependent on data input by users like adding products and other customization and by definition are subject to change. 
+
+The Admin interface will allow you to add or update these strings in all installed languages.
+
+#### Edit using the Admin Interface:
+The following are the areas where language-specific text can be edited by admin users, directly, after a language-pack has been installed:
 
 Table **`'categories_description'`**, fields `'categories_name'` and `'categories_description'`.
 Menu : **Catalog::Categories/Products -> Click on 'Edit' icon for a category**.
@@ -149,11 +162,13 @@ Menu : **Catalog::Manage Options' Stock -> Click on 'Define Labels' button -> Se
 
 ## Formating database language strings for translation and use:
 
-As we have seen above, language strings in database are not easy to retrieve and even translated they need to be formated to fit in language files. Here is a possible worflow that will makes things easier.
+As we have seen above, language strings in the database are not easy to retrieve and even translated they need to be formatted to fit in language files. 
 
-First step is to copy all lines from file `zc_install/sql/install/mysql_zencart.sql` that contain these strings, as decribed in chapter abobe, to a new text or php file.
+Following is a possible worflow that will make things easier.
 
-Then using a text editor with regular expression capabilities, second step is to convert these lines to PHP constants definition format like those used in language files.
+First step is to copy all lines from file `zc_install/sql/install/mysql_zencart.sql` that contain these strings, as decribed in section above, to a new text or php file.
+
+Then **using a text editor with regular expression capabilities**, second step is to convert these lines to PHP constants definition format like those used in language files.
 
 Third step is to put these constants definitions in the right language file where they are ready to be translated and used.
 
@@ -232,7 +247,7 @@ Unfortunately, SQL queries in installer files are very variable and conversion c
 
 **Create a new file `zc_plugins/PLUGIN_NAME/PLUGIN_VERSION/admin/languages/NEW_LANGUAGE/extra_definitions/lang.PLUGIN_NAME.php`** with this content, replacing key, title and description by each plugin actual data:
 
-```
+```php
 <?php
 $define = [
     'ADMIN_PLUGIN_MANAGER_NAME_FOR_module_key' => 'MODULE NAME',
@@ -241,7 +256,6 @@ $define = [
 
 return $define;
 ```
-
 
 For *admin menus* and *submenus*, convert using appropriate regular expression and add results to file created above.
 
@@ -272,9 +286,10 @@ Add result to file created above.
 
 #### Non-encapsulated plugins admin menus and submenus:
 
-In this case, as seen above, data to translate would be in a `admin/includes/init_includes/init_PLUGIN_NAME.php` file or a separate SQL file.
+In this case, as seen above, data to translate could be in an `admin/includes/init_includes/init_PLUGIN_NAME.php` file or a separate SQL file.
+
 Like for encapsulated plugins a new language file needs to be created but in `admin/includes/languages/NEW_LANGUAGE/extra_definitions/lang.PLUGIN_NAME.php`. Actual filename is not important, it is yours to choose. Content at first should be like this:
-```
+```php
 <?php
 $define = [
     'CFGTITLE_plugin_key' => 'PLUGIN KEY TITLE',
@@ -287,7 +302,7 @@ $define = [
 return $define;
 ```
 Here is an example for the French version of Image Handler plugin:
-```
+```php
 <?php
 
 $define = [
