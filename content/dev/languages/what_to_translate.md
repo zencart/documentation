@@ -1,5 +1,5 @@
 ---
-title: What to translate
+title: What to Translate
 description: Finding strings to translate and format them to ZC constants and languages files before translation
 weight: 100 
 layout: docs
@@ -17,7 +17,7 @@ Strings to translate are already in files where they will be used, no extra form
 
 ### Zen Cart core language files:
 
-These are the easiest to find and prepare for translation: You only have to copy all the 'english' folders and rename them to your new language, then you are ready to translate content.
+These are the easiest to find and prepare for translation: You only have to copy all the `english` folders and rename them to your new language, then you are ready to translate content.
 
     - admin/includes/languages/english/
     - includes/languages/english/
