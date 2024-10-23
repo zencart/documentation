@@ -94,6 +94,7 @@ The improvements in v2.1.0 include:
 - Admin: Manufacturer Part Number (MPN) field is now included in the admin search list of fields to be checked.
 - Admin: The UI for the Plugin Manager has been re-arranged for easier viewing.
 - Admin: UI has better multi-language support.  See [Admin Language conversion](/dev/languages/admin_language_translation/).
+- Admin: FIXED - Check All and Uncheck All in Edit Profiles.
 - Admin: FIXED - Search in Options Values Manager.
 - Admin: FIXED - Salemaker sales with be enabled/disabled by clicking the status icon.
 - Admin: FIXED - Sales Report with Graphs monthly pagination now works; dates in legend no longer truncated.
