@@ -185,7 +185,7 @@ Find:
 `^INSERT (IGNORE ){0,1}INTO configuration \(configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added\) VALUES \('(.*)', '([A-Z_0-9]*)', '.*', '(.*)', '?\d+'?, '?\d+'?, now\(\)\);$`
 
 Replace with:
-`\s{4}'CFGTITLE_$3' => '$2',\r\s{4}'CFGDESC_$3' => '$4',`
+`    'CFGTITLE_$3' => '$2',\r    'CFGDESC_$3' => '$4',`
 
 Result goes in file **`admin/includes/languages/YOUR_NEW_LANGUAGE/lang.configuration.php`**.
 
@@ -195,7 +195,7 @@ Find:
 `^INSERT INTO configuration_group VALUES \([0-9]*, '((\S*)|((\S*)\s(\S*))|((\S*)\s(\S*)\s(\S*)))', '(.*)', '?\d+'?, '?\d+'?\);$`
 
 Replace with:
-`\s{4}'CFG_GRP_TITLE_\U$2${3:+$4_$5:}${6:+$7_$8_$9:}\E' => '$10',`
+`    'CFG_GRP_TITLE_\U$2${3:+$4_$5:}${6:+$7_$8_$9:}\E' => '$10',`
 
 Result goes in file **`admin/includes/languages/YOUR_NEW_LANGUAGE/lang.configuration.php`**.
 
@@ -205,7 +205,7 @@ Find:
 `^INSERT INTO product_types VALUES \([0-9]*, '(((\S*)\s-\s(\S*))|((\S*)\s-\s(\S*)\s(\S*)))', '.*\);$`
 
 Replace with:
-`\s{4}'PRODUCT_TYPE_NAME_FOR_HANDLER_\U${2:+$3_$4:}${5:+$6_$7_$8:}\E' => '$1',`
+`    'PRODUCT_TYPE_NAME_FOR_HANDLER_\U${2:+$3_$4:}${5:+$6_$7_$8:}\E' => '$1',`
 
 Result goes in file **`admin/includes/languages/YOUR_NEW_LANGUAGE/lang.product_types.php`**.
 
@@ -215,7 +215,7 @@ Find:
 `^INSERT INTO product_type_layout \(.*\) VALUES \('(.*)', '([A-Z_0-9]*)', '\d+', '(.*)', '?\d+'?, '?\d+'?,.*, now\(\)\);$`
 
 Replace with:
-`\s{4}'PRODUCT_TYPE_LAYOUT_TITLE_FOR_$2' => '$1',\r\s{4}'PRODUCT_TYPE_LAYOUT_DESC_FOR_$2' => '$3',`
+`    'PRODUCT_TYPE_LAYOUT_TITLE_FOR_$2' => '$1',\r    'PRODUCT_TYPE_LAYOUT_DESC_FOR_$2' => '$3',`
 
 Result goes in file **`admin/includes/languages/YOUR_NEW_LANGUAGE/lang.product_types.php`**.
 
@@ -228,7 +228,7 @@ Find:
 `^\s*\$db->Execute.* \('(.*)', '([A-Z_0-9]*)'?, '.*', '(.*)', '?\d+'?, '?\d+'?,? ?'?.*'?, now\(\)\)"\);$`
 
 Replace with:
-`\s{4}'CFGTITLE_$2' => '$1',\r\s{4}'CFGDESC_$2' => '$3',`
+`    'CFGTITLE_$2' => '$1',\r    'CFGDESC_$2' => '$3',`
 
 For **shipping modules**, result goes in file **`includes/languages/YOUR_NEW_LANGUAGE/modules/shipping/lang.MODULE_NAME.php`**.
 
@@ -266,7 +266,7 @@ Find:
 `^.*addConfigurationKey\('([A-Z_0-9]+).*configuration_title' => '(.*)',\s+'configuration_value' =>\s+'.*',\s*'configuration_description' => '(.*)',$`
 
 Replace with:
-`\s{4}'CFGTITLE_$1' => '$2',\r\s{4}'CFGDESC_$1' => '$3',`
+`    'CFGTITLE_$1' => '$2',\r    'CFGDESC_$1' => '$3',`
 
 Add result to file created above.
 
@@ -278,7 +278,7 @@ Find:
 `^\s*\('(.*)', '([A-Z_0-9]*)', '.*', '(.*)', \$.*$`
 
 Replace with:
-`\s{4}'CFGTITLE_$2' => '$1',\r\s{4}'CFGDESC_$2' => '$3',`
+`    'CFGTITLE_$2' => '$1',\r    'CFGDESC_$2' => '$3',`
 
 Add result to file created above.
 
