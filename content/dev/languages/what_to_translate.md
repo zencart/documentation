@@ -245,7 +245,7 @@ There are actually 3 encapsulated plugins, `Display logs`, `Products' Options' S
 Plugin *name* and *description* language strings are in manifest files (**`zc_plugins/PLUGIN_NAME/PLUGIN_VERSION/manifest.php`**) and *menus* and *submenus*, if they exist, are in installer files (**`zc_plugins/PLUGIN_NAME/PLUGIN_VERSION/Installer/ScriptedInstaller.php`**).
 Unfortunately, SQL queries in installer files are very variable and conversion can not be done with only one regular expression.
 
-**Create a new file `zc_plugins/PLUGIN_NAME/PLUGIN_VERSION/admin/languages/NEW_LANGUAGE/extra_definitions/lang.PLUGIN_NAME.php`** with this content, replacing key, title and description by each plugin actual data:
+**Create a new file `zc_plugins/PLUGIN_NAME/PLUGIN_VERSION/admin/includes/languages/NEW_LANGUAGE/extra_definitions/lang.PLUGIN_NAME.php`** with this content, replacing key, title and description by each plugin actual data:
 
 ```php
 <?php
