@@ -91,13 +91,13 @@ On all lines starting by:
 
 ***Encapsulated plugins admin menus:***
 
-`zc_plugins/PLUGIN_NAME/PLUGIN_VERSION/Installer/ScriptedInstaller.php`, look for SQL queries (structure depending on plugins) on configuration and configuration_group tables. You should find key title and descrition.
+`zc_plugins/PLUGIN_NAME/PLUGIN_VERSION/Installer/ScriptedInstaller.php`, look for SQL queries (structure depending on plugins) on configuration and configuration_group tables. You should find key, title and description.
 
 ***Non-encapsulated plugins admin menus:***
 
 If the plugin auto install when opening admin page, then settings definitions to translate should be in a file like this:
 `admin/includes/init_includes/init_PLUGIN_NAME.php`, look for SQL queries on configuration and configuration_group tables.
-Another possibilty is to look in admin menu for this plugin related menus, but chance to miss some of them is high.
+Another possibilty is to look in admin menu for this plugin related menus, but it is easy to miss some of them.
 If the plugin does not install automatically, chances are there is an SQL file to import. Here too, strings we are looking for are in those queries to configuration and configuration_group tables.
 
 
@@ -260,7 +260,7 @@ return $define;
 For *admin menus* and *submenus*, convert using appropriate regular expression and add results to file created above.
 
 ***Regular expression for Display Logs:***
-Copy lines from **`$this->addConfigurationKey(`** to **`'configuration_description' =>`** and regroup them in one line. Do this for each query, then apply regular expression.
+Copy lines from **`$this->addConfigurationKey(`** to **`'configuration_description' =>`** and regroup them into one line. Do this for each query, then apply regular expression.
 
 Find:
 `^.*addConfigurationKey\('([A-Z_0-9]+).*configuration_title' => '(.*)',\s+'configuration_value' =>\s+'.*',\s*'configuration_description' => '(.*)',$`
