@@ -55,7 +55,9 @@ Use this plugin to convert your data to UTF8 (AFTER MAKING AND TESTING A DATABAS
 
 If you encounter errors converting certain tables due to bad data in them, simply fix the bad data and then re-run the script. While a full list of possible database-problems is beyond the scope of this article, common bad-data issues might include the following: 
 - [bad date formats](/user/upgrading/date_standardization/) in existing data
-- [broken tables](/user/upgrading/fixing_broken_tables/), such as broken auto-increments or corrupt indexes
+- [broken tables](/user/upgrading/fixing_broken_tables/), such as corrupt indexes
+- [indexes on long fields](/user/upgrading/long_field_indexes/) such as 255 character name fields
+- [incorrectly defined tables](/user/upgrading/bad_tables/) such as those using an auto increment field and not making it a primary key
 
 The converter gives nicely formatted error output that allows you to isolate any issues. 
 
