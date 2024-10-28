@@ -27,7 +27,7 @@ The debug log which is produced when a bad date is present will look like this:
 --> PHP Fatal error: 1292:Incorrect datetime value: '0000-00-00 00:00:00' for column 'customers_dob' at row 3048 :: ALTER TABLE zen_customers ADD tax_exempt tinyint(1) default 0; ==> (as called by) /Users/scott/Sites/store/admin/sqlpatch.php on line 291 <== in /Users/scott/Sites/store/includes/classes/db/mysql/query_factory.php on line 170.
 ```
 
-Examples of plugins which add a 'bad' datetime or date field are: 
+Examples of plugins which add the invalid value `0000-00-00` in a `datetime` or `date` field are: 
 
 - [Order Delivery Date](https://www.zen-cart.com/downloads.php?do=file&id=683).  It adds a `datetime` field called `order_delivery_date` to the `orders` table. (Note: Some earlier versions of the plugin created this field as a `date`.)
 - [Ceon Back In Stock Notifications](https://www.zen-cart.com/downloads.php?do=file&id=773).  It creates a `datetime` field called `date_subscribed` in a new table called `back_in_stock_notification_subscriptions`. 

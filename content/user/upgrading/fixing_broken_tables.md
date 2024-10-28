@@ -7,7 +7,6 @@ weight: 10
 
 Common problems in this class include: 
 
-- broken auto-increments 
 - corrupt indexes 
 
 Methods of fixing them are as follows: 

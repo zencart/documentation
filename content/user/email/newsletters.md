@@ -36,6 +36,8 @@ Some names you might have heard of are Constant Contact, SendInBlue, and Sendy.
 
 If you want to look for other options, do a web search for "newsletter provider service."
 
+If you sell high-risk, adult oriented, or firearms related products, be sure to check the terms of service, because some ESPs may not accept you as a client.
+
 ### Hosting Requirements
 With the current emphasis on [SPF, DKIM, and DMARC](/user/email/advanced_email_troubleshooting/#11-spf-dkim-and-dmarc) to verify your site's emails, you may be required to add a couple of extra settings in your site's DNS to include your Email Service Provider.  Especially if your email is hosted other than at MailChimp or one of its alternatives/competitors.  Without this setting you will probably receive a multitude of bounces.  Unfortunately, those bounces may not be reported to you or your customer.  If your Email Service Provider does not provide this setting, you will most likely have problems reaching all your customers with your latest promotion.
 
