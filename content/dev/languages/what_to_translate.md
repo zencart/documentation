@@ -78,6 +78,7 @@ On all lines starting by:
 
 `'INSERT INTO product_type_layout'`, look for values of fields `'configuration_title'` and `'configuration_description'`.
 
+You might find some in here too: `zc_install/sql/install/mysql_utf8.sql` and `admin/includes/functions/add_cookie_path_switch.php`.
 
 ***For modules shipping, payment and order total:***
 
@@ -168,7 +169,7 @@ Following is a possible worflow that will make things easier.
 
 First step is to copy all lines from file `zc_install/sql/install/mysql_zencart.sql` that contain these strings, as decribed in section above, to a new text or php file.
 
-Then **using a text editor with regular expression capabilities**, second step is to convert these lines to PHP constants definition format like those used in language files.
+Then **using a text editor with regular expression capabilities** or an **online regular expressions tester** like `regex101`, second step is to convert these lines to PHP constants definition format like those used in language files.
 
 Third step is to put these constants definitions in the right language file where they are ready to be translated and used.
 
@@ -182,7 +183,7 @@ As written above there are four SQL tables of interest, `'configuration'`, `'con
 
 ***Table configuration:***
 Find:
-`^INSERT (IGNORE ){0,1}INTO configuration \(configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added\) VALUES \('(.*)', '([A-Z_0-9]*)', '.*', '(.*)', '?\d+'?, '?\d+'?, now\(\)\);$`
+`^INSERT (IGNORE ){0,1}INTO configuration \(configuration_title, configuration_key,.*\) VALUES \('([^']+)' ?, ?'([A-Z_0-9^']*)', '.*', '(.*)', ?'?\d+'?, ?('?\d+'?| NULL),? ?'?.*'?\);$`
 
 Replace with:
 `    'CFGTITLE_$3' => '$2',\r    'CFGDESC_$3' => '$4',`
@@ -195,7 +196,7 @@ Find:
 `^INSERT INTO configuration_group VALUES \([0-9]*, '((\S*)|((\S*)\s(\S*))|((\S*)\s(\S*)\s(\S*)))', '(.*)', '?\d+'?, '?\d+'?\);$`
 
 Replace with:
-`    'CFG_GRP_TITLE_\U$2${3:+$4_$5:}${6:+$7_$8_$9:}\E' => '$10',`
+`    'CFG_GRP_TITLE_\U$2${3:+$4_$5:}${6:+$7_$8_$9:}\E' => '$1',`
 
 Result goes in file **`admin/includes/languages/YOUR_NEW_LANGUAGE/lang.configuration.php`**.
 
