@@ -183,7 +183,7 @@ As written above there are four SQL tables of interest, `'configuration'`, `'con
 
 ***Table configuration:***
 Find:
-`^INSERT (IGNORE ){0,1}INTO configuration \(configuration_title, configuration_key,.*\) VALUES \('([^']+)' ?, ?'([A-Z_0-9^']*)', '.*', '(.*)', ?'?\d+'?, ?('?\d+'?| NULL),? ?'?.*'?\);$`
+`^INSERT (IGNORE ){0,1}INTO configuration \(configuration_title, configuration_key,.*\) VALUES \('([^']+)' ?, ?'([A-Z_0-9]*)', '.*', '(.*)', ?'?\d+'?, ?('?\d+'?| NULL),? ?'?.*'?\);$`
 
 Replace with:
 `    'CFGTITLE_$3' => '$2',\r    'CFGDESC_$3' => '$4',`
@@ -226,7 +226,7 @@ Result goes in file **`admin/includes/languages/YOUR_NEW_LANGUAGE/lang.product_t
 To get all language strings you need to go through each modules files in **`includes/modules/`** respectively `shipping`, `payment` and `order_total` folders. After converting these put the results in modules respective language file `lang.MODULE_NAME.php`. This will make updates and maintenance easier.
 
 Find:
-`^\s*\$db->Execute.* \('(.*)', '([A-Z_0-9]*)'?, '.*', '(.*)', '?\d+'?, '?\d+'?,? ?'?.*'?, now\(\)\)"\);$`
+`^\s*\$db->Execute.* \('(.*)' ?, '([A-Z_0-9]*)'?, {0,2}'.*', '(.*)', '?\d+'?, '?\d+'?,? ?'?.*'?, {0,2}now\(\),? ?'?.*'?\);?"\);$`
 
 Replace with:
 `    'CFGTITLE_$2' => '$1',\r    'CFGDESC_$2' => '$3',`
