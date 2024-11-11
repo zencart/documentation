@@ -52,6 +52,12 @@ Choice is yours to translate it or not. There is no language-specific way to sto
     - includes/templates/template_default/templates/tpl_zc_install_suggested_default.php
     - includes/templates/template_default/templates/tpl_zc_phpupgrade_default.php
 
+### Hard-coded strings for templates descriptions:
+
+The template's description visible in `Admin->Tools->Template Selection` is saved in a PHP variable in ``../includes/templates/TEMPLATE NAME/template_info.php`` file.
+
+Like any hard-coded string, only one language can be used and if you translate it, it will always display in the new language. 
+
 
 ## Database fields:
 
@@ -289,9 +295,10 @@ Add result to file created above.
 
 In this case, as seen above, data to translate could be in an `admin/includes/init_includes/init_PLUGIN_NAME.php` file or a separate SQL file.
 
-Like for encapsulated plugins a new language file needs to be created but in `admin/includes/languages/NEW_LANGUAGE/extra_definitions/lang.PLUGIN_NAME.php`. Actual filename is not important, it is yours to choose. Content at first should be like this:
+Like for encapsulated plugins a new language file needs to be created but in `admin/includes/languages/NEW_LANGUAGE/extra_definitions/lang.config_PLUGIN_NAME.php`. Actual filename is not important, it is yours to choose. Content at first should be like this:
 ```php
 <?php
+
 $define = [
     'CFGTITLE_plugin_key' => 'PLUGIN KEY TITLE',
     'CFGDESC_plugin_key' => 'PLUGIN KEY DESCRIPTION',
