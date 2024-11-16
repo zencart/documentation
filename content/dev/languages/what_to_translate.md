@@ -185,7 +185,7 @@ Third step is to put these constants definitions in the right language file wher
 
 #### Standard admin menus and submenus:
 
-As written above there are four SQL tables of interest, `'configuration'`, `'configuration_group'`, `'product_types'` and `'product_type_layout'`. It is eaier to take care of them one by one. After copying SQL INSERT queries from **`zc_install/sql/install/mysql_zencart.sql`** file, the following regular expressions will be very handy:
+As written above there are four SQL tables of interest, `'configuration'`, `'configuration_group'`, `'product_types'` and `'product_type_layout'`. It is easier to take care of them one by one. After copying SQL INSERT queries from **`zc_install/sql/install/mysql_zencart.sql`** file, the following regular expressions will be very handy:
 
 ***Table configuration:***
 Find:
@@ -204,6 +204,7 @@ Find:
 Replace with:
 `    'CFG_GRP_TITLE_\U$2${3:+$4_$5:}${6:+$7_$8_$9:}\E' => '$1',`
 
+The `key` used here is actually the English group title stripped from non-alphanumeric characters and where spaces are replaced by `_` and all letters are uppercase.
 Result goes in file **`admin/includes/languages/YOUR_NEW_LANGUAGE/lang.configuration.php`**.
 
 
@@ -257,13 +258,13 @@ Unfortunately, SQL queries in installer files are very variable and conversion c
 ```php
 <?php
 $define = [
-    'ADMIN_PLUGIN_MANAGER_NAME_FOR_module_key' => 'MODULE NAME',
-    'ADMIN_PLUGIN_MANAGER_DESCRIPTION_FOR_module_key' => 'MODULE DESCRIPTION',
+    'ADMIN_PLUGIN_MANAGER_NAME_FOR_plugin_key' => 'PLUGIN NAME',
+    'ADMIN_PLUGIN_MANAGER_DESCRIPTION_FOR_plugin_key' => 'PLUGIN DESCRIPTION',
 ];
 
 return $define;
 ```
-
+You can find the `plugin_key` in Zen Cart's plugin manager; it corresponds to column `Plugin Key` but with all letters in uppercase.
 For *admin menus* and *submenus*, convert using appropriate regular expression and add results to file created above.
 
 ***Regular expression for Display Logs:***
