@@ -52,6 +52,12 @@ Choice is yours to translate it or not. There is no language-specific way to sto
     - includes/templates/template_default/templates/tpl_zc_install_suggested_default.php
     - includes/templates/template_default/templates/tpl_zc_phpupgrade_default.php
 
+### Hard-coded strings for templates descriptions:
+
+The template's description visible in `Admin->Tools->Template Selection` is saved in a PHP variable in ``../includes/templates/TEMPLATE NAME/template_info.php`` file.
+
+Like any hard-coded string, only one language can be used and if you translate it, it will always display in the new language. 
+
 
 ## Database fields:
 
@@ -78,6 +84,7 @@ On all lines starting by:
 
 `'INSERT INTO product_type_layout'`, look for values of fields `'configuration_title'` and `'configuration_description'`.
 
+You might find some in here too: `zc_install/sql/install/mysql_utf8.sql` and `admin/includes/functions/add_cookie_path_switch.php`.
 
 ***For modules shipping, payment and order total:***
 
@@ -168,7 +175,7 @@ Following is a possible worflow that will make things easier.
 
 First step is to copy all lines from file `zc_install/sql/install/mysql_zencart.sql` that contain these strings, as decribed in section above, to a new text or php file.
 
-Then **using a text editor with regular expression capabilities**, second step is to convert these lines to PHP constants definition format like those used in language files.
+Then **using a text editor with regular expression capabilities** or an **online regular expressions tester** like `regex101`, second step is to convert these lines to PHP constants definition format like those used in language files.
 
 Third step is to put these constants definitions in the right language file where they are ready to be translated and used.
 
@@ -178,11 +185,11 @@ Third step is to put these constants definitions in the right language file wher
 
 #### Standard admin menus and submenus:
 
-As written above there are four SQL tables of interest, `'configuration'`, `'configuration_group'`, `'product_types'` and `'product_type_layout'`. It is eaier to take care of them one by one. After copying SQL INSERT queries from **`zc_install/sql/install/mysql_zencart.sql`** file, the following regular expressions will be very handy:
+As written above there are four SQL tables of interest, `'configuration'`, `'configuration_group'`, `'product_types'` and `'product_type_layout'`. It is easier to take care of them one by one. After copying SQL INSERT queries from **`zc_install/sql/install/mysql_zencart.sql`** file, the following regular expressions will be very handy:
 
 ***Table configuration:***
 Find:
-`^INSERT (IGNORE ){0,1}INTO configuration \(configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added\) VALUES \('(.*)', '([A-Z_0-9]*)', '.*', '(.*)', '?\d+'?, '?\d+'?, now\(\)\);$`
+`^INSERT (IGNORE ){0,1}INTO configuration \(configuration_title, configuration_key,.*\) VALUES \('([^']+)' ?, ?'([A-Z_0-9]*)', '.*', '(.*)', ?'?\d+'?, ?('?\d+'?| NULL),? ?'?.*'?\);$`
 
 Replace with:
 `    'CFGTITLE_$3' => '$2',\r    'CFGDESC_$3' => '$4',`
@@ -195,8 +202,9 @@ Find:
 `^INSERT INTO configuration_group VALUES \([0-9]*, '((\S*)|((\S*)\s(\S*))|((\S*)\s(\S*)\s(\S*)))', '(.*)', '?\d+'?, '?\d+'?\);$`
 
 Replace with:
-`    'CFG_GRP_TITLE_\U$2${3:+$4_$5:}${6:+$7_$8_$9:}\E' => '$10',`
+`    'CFG_GRP_TITLE_\U$2${3:+$4_$5:}${6:+$7_$8_$9:}\E' => '$1',`
 
+The `key` used here is actually the English group title stripped from non-alphanumeric characters and where spaces are replaced by `_` and all letters are uppercase.
 Result goes in file **`admin/includes/languages/YOUR_NEW_LANGUAGE/lang.configuration.php`**.
 
 
@@ -225,7 +233,7 @@ Result goes in file **`admin/includes/languages/YOUR_NEW_LANGUAGE/lang.product_t
 To get all language strings you need to go through each modules files in **`includes/modules/`** respectively `shipping`, `payment` and `order_total` folders. After converting these put the results in modules respective language file `lang.MODULE_NAME.php`. This will make updates and maintenance easier.
 
 Find:
-`^\s*\$db->Execute.* \('(.*)', '([A-Z_0-9]*)'?, '.*', '(.*)', '?\d+'?, '?\d+'?,? ?'?.*'?, now\(\)\)"\);$`
+`^\s*\$db->Execute.* \('(.*)' ?, '([A-Z_0-9]*)'?, {0,2}'.*', '(.*)', '?\d+'?, '?\d+'?,? ?'?.*'?, {0,2}now\(\),? ?'?.*'?\);?"\);$`
 
 Replace with:
 `    'CFGTITLE_$2' => '$1',\r    'CFGDESC_$2' => '$3',`
@@ -250,13 +258,13 @@ Unfortunately, SQL queries in installer files are very variable and conversion c
 ```php
 <?php
 $define = [
-    'ADMIN_PLUGIN_MANAGER_NAME_FOR_module_key' => 'MODULE NAME',
-    'ADMIN_PLUGIN_MANAGER_DESCRIPTION_FOR_module_key' => 'MODULE DESCRIPTION',
+    'ADMIN_PLUGIN_MANAGER_NAME_FOR_plugin_key' => 'PLUGIN NAME',
+    'ADMIN_PLUGIN_MANAGER_DESCRIPTION_FOR_plugin_key' => 'PLUGIN DESCRIPTION',
 ];
 
 return $define;
 ```
-
+You can find the `plugin_key` in Zen Cart's plugin manager; it corresponds to column `Plugin Key` but with all letters in uppercase.
 For *admin menus* and *submenus*, convert using appropriate regular expression and add results to file created above.
 
 ***Regular expression for Display Logs:***
@@ -288,9 +296,10 @@ Add result to file created above.
 
 In this case, as seen above, data to translate could be in an `admin/includes/init_includes/init_PLUGIN_NAME.php` file or a separate SQL file.
 
-Like for encapsulated plugins a new language file needs to be created but in `admin/includes/languages/NEW_LANGUAGE/extra_definitions/lang.PLUGIN_NAME.php`. Actual filename is not important, it is yours to choose. Content at first should be like this:
+Like for encapsulated plugins a new language file needs to be created but in `admin/includes/languages/NEW_LANGUAGE/extra_definitions/lang.config_PLUGIN_NAME.php`. Actual filename is not important, it is yours to choose. Content at first should be like this:
 ```php
 <?php
+
 $define = [
     'CFGTITLE_plugin_key' => 'PLUGIN KEY TITLE',
     'CFGDESC_plugin_key' => 'PLUGIN KEY DESCRIPTION',
