@@ -54,7 +54,7 @@ Choice is yours to translate it or not. There is no language-specific way to sto
 
 ### Hard-coded strings for templates descriptions:
 
-The template's description visible in `Admin->Tools->Template Selection` is saved in a PHP variable in ``../includes/templates/TEMPLATE NAME/template_info.php`` file.
+The template's description visible in `Admin->Tools->Template Selection` is saved in a PHP variable in ``../includes/templates/YOURTEMPLATE/template_info.php`` file.
 
 Like any hard-coded string, only one language can be used and if you translate it, it will always display in the new language. 
 
