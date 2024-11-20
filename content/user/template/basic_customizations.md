@@ -1,4 +1,4 @@
----
+                               ---
 title: Basic Template Customizations 
 description: What are the most common template changes people do first? 
 category: template
@@ -166,31 +166,7 @@ Click [Layout Settings](/user/admin_pages/catalog/product_types_edit_layout/) an
 
 ## How do I change weight from pounds to Kilograms
 
-### Using Kilograms - 1.5.8 and above 
-Edit `includes/languages/YOURTEMPLATE/lang.english.php`. (Copy `includes/languages/lang.english.php` to `includes/languages/YOURTEMPLATE/lang.english.php` if the override file doesn't already exist.)
-
-Find the following lines of code:
-
-```
-    'TEXT_PRODUCT_WEIGHT_UNIT' => ' lbs',
-...
-    'TEXT_SHIPPING_WEIGHT' => ' lbs',
-```
-
-Change the highlighted portions, making sure that the single quote marks are not left out.
-
-### Using Kilograms - 1.5.7 and below
-Edit `includes/languages/YOURTEMPLATE/english.php`.  (Copy `includes/languages/english.php` to `includes/languages/YOURTEMPLATE/english.php` if the override file doesn't already exist.)
-
-Find the following lines of code:
-
-```
-define('TEXT_PRODUCT_WEIGHT_UNIT','lbs');
-
-define('TEXT_SHIPPING_WEIGHT','lbs');
-```
-
-Change the highlighted portions, making sure that the single quote marks are not left out.
+See [changing weight to kg](/user/localization/changing_weight_to_kg/) under localization for details.
 
 ---
 
