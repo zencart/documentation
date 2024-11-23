@@ -19,7 +19,7 @@ While doing the initial steps of the release process, at least up to the tagging
 we need to ensure that no commits/merges are created against the release branch and the main branch,
 except where necessary for the release.
 
-Message all developers who have merge privileges using the Skype Dev Chat channel, and then lock the branch you are building.  Go to [the branches page](https://github.com/zencart/zencart/settings/branches) and set a branch protection rule.  If there is no branch protection rule for the branch you are building, add one.  Click on the checkbox for *Require a pull request before merging* then set the required approvals to 6, and the branch will be effectively locked.  
+Message all developers who have merge privileges using the Skype Dev Chat channel, and then lock the branch you are building (**probably "master"**).  Go to [the branches page](https://github.com/zencart/zencart/settings/branches) and set a branch protection rule.  If there is no branch protection rule for the branch you are building, add one.  Click on the checkbox for *Require a pull request before merging* then set the required approvals to 6, and the branch will be effectively locked.  
 
 
 # Updating Code

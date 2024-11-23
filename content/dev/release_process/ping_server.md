@@ -11,7 +11,7 @@ The Server Manager controlls the endpoint that allows for a call home from withi
 
 It will notify a shop owner if a new release is available.
 
-You need to have login access to https://servermanager.zen-cart.com/
+You need to have login access to https://servermanager.zen-cart.com/dashboard
 
 and then access the `Version Manager > Versions` menu.
 
