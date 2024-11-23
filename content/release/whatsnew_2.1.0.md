@@ -7,8 +7,6 @@ layout: docs
 noindex: yes
 ---
 
-{{% construction %}}
-
 {{% release_welcome %}}
 
 About PHP versions
