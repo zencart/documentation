@@ -12,6 +12,7 @@ These bugs are fixed in the next release, so if you are not on the latest
 release, [doing an upgrade](/user/upgrading/) is the best way to get the fix. 
 
 
+*   [Known Bugs in Zen Cart 2.1.x](https://www.zen-cart.com/showthread.php?230454-Known-Bugs-in-2-1-0)
 *   [Known Bugs in Zen Cart 2.0.x](https://www.zen-cart.com/showthread.php?230039-Known-Bugs-in-2-0-0)
 *   Users of Zen Cart 1.5.8x/1.5.7x should install [Address Security Patch (April 2024)](https://www.zen-cart.com/showthread.php?230032-Security-patch-for-Zen-Cart-v1-5-7-series-and-v1-5-8-series) 
 *   Users of Zen Cart 1.5.8x running PHP 8+ should install: [PHP Fatal error:  Uncaught IntlException: datefmt_create: invalid locale: U_ILLEGAL_ARGUMENT_ERROR](https://www.zen-cart.com/showthread.php?229771-IntlDateFormatter-php-issue)
