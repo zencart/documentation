@@ -18,6 +18,8 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 - Another part of staying up to date is keeping your PHP version current. As you do this, you may need to address various [common issues with PHP version incompatibility](/user/upgrading/php_warnings/).
 
+- [Convert your database to UTF8MB4](/user/upgrading/convert_to_utf8/), if you haven't already done so.
+
 - Be sure external links are constructed with `rel="noreferrer noopener"`.
 
 - If you use a custom template, check it against [the template changes list](/user/template/template_changes/). 

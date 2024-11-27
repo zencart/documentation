@@ -379,6 +379,8 @@ At a high level, these are the steps to use (we will skip over the New code fami
   - test your upgrade 
   - take your store out of maintenance mode so customers can use it again
   - delete `old_store`
+  - If your database was created before Zen Cart 1.5.6, follow the instructions to [update your database to UTF8MB4](/user/upgrading/convert_to_utf8/#pre-conversion-to-utf8).
+
 
 # Plugin Considerations
 
@@ -407,7 +409,7 @@ As of Zen Cart v1.5.0 all **new** sites created database tables with the UTF8 ch
 
 As of Zen Cart v1.5.6 all **new** sites created database tables with the UTF8MB4 character-set.
 
-If your site was created using a Zen Cart version prior to 1.5.6, you may want to consider updating your character set.  Using utf8mb4 is currently considered the best practice; it allows you to support a variety of languages, as well as emojis.  For guidance on changing your character set, please see [this article](/user/upgrading/convert_to_utf8). 
+If your site was created using a Zen Cart version prior to 1.5.6, you may want to consider updating your character set.  Using utf8mb4 is currently considered the best practice; it allows you to support a variety of languages, as well as emojis.  For guidance on changing your character set, please see [how to upgrade your database to UTF8MB4](/user/upgrading/convert_to_utf8). 
 
 Other terms you might hear which are related to character set:
 
