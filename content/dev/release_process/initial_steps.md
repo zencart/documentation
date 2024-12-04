@@ -28,7 +28,7 @@ Before tagging a release we need to:
 
 - Ensure code is up to date.
 - Be sure the versioning file changes you did in the prior steps are checked in and merged. If they weren't, remember you will have to bypass merge protections since the branch has been locked for merges.
-- Update the [Documentation Website](https:docs.zen-cart.com/release) to ensure that it reflects changes that have happened within the release.  (Focus on the What's New page; it's easier to build the Changed Files page once the build is complete.)
+- Update the [Documentation Website](/release) to ensure that it reflects changes that have happened within the release.  (Focus on the What's New page; it's easier to build the Changed Files page once the build is complete.)
 
 # Testing Prior to the build 
 Create a new shop using the branch you are about to build, and run through some tests.  You want to be confident that what you're building will work. 
@@ -37,7 +37,7 @@ Create a new shop using the branch you are about to build, and run through some 
 
 # Release Documentation
 
-The [Documentation Website](https:docs.zen-cart.com/release)  contains details of changes between versions and general installation instructions.
+The [Documentation Website](/release)  contains details of changes between versions and general installation instructions.
 
 The 2 main pages that need adding/updating are the [What's New](https://docs.zen-cart.com/release/whatsnew_2.0.0.html)
 and [Changed Files](https://docs.zen-cart.com/release/changed_files-v2-0-0.html) pages.
