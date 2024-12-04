@@ -19,7 +19,7 @@ Admin Passwords must meet the following requirements:
 
 Disabling this check makes your site makes your site NON-COMPLIANT with PA-DSS rules. Disabling should only be used by developers who are working on sites that are not available over the public Internet.
 
-The setting `PADSS_PWD_EXPIRY_ENFORCED` is on the screen [Admin > Configuration > My Store](/admin_pages/configuration/configuration_mystore). 
+The setting `PADSS_PWD_EXPIRY_ENFORCED` is on the screen [Admin > Configuration > My Store](/user/admin_pages/configuration/configuration_mystore). 
 
 ### Changing Customer Passwords
 - Customers may change their own passwords using the screen My Account > Change my Account Password.
