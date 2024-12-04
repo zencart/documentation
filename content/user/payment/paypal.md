@@ -7,7 +7,7 @@ weight: 10
 
 If you have already decided to use PayPal Express, see [Setup instructions for PayPal Express Checkout](/user/payment/paypal_express_checkout/). 
 
-Zen Cart recommends using Express Checkout instead of PayPal Standard.  Another option is a newer module, called [PayPal RESTful](/user/payments/paypal_restful/), which will be available soon, and will eventually replace both PayPal Express and PayPal Website Payments Pro.
+Zen Cart recommends using Express Checkout instead of PayPal Standard.  Another option is a newer module, called [PayPal RESTful](/user/payment/paypal_restful/), which will be available soon, and will eventually replace both PayPal Express and PayPal Website Payments Pro.
 
 **PayPal Express Checkout**  gives the customer two options: They can jump over to the PayPal site to login to their account BEFORE completing checkout on your store (which allows them to select their address information there and never have to re-type their address details on YOUR site, thus the "express" part of the transaction) and then choosing shipping choices and discounts/coupons etc before completing the order ....... OR they can go to the PayPal site to login to their account AFTER making shipping/payment/coupon selections on your site (and creating an account on your store and typing their address info on your store), much like they do with Standard.    
 
