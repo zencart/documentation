@@ -24,7 +24,7 @@ Each admin user will set up their own MFA individually. You have a choice of aut
 - Receiving a code by email at every login attempt
 
 ## Resetting MFA for a specific user
-If an Admin user has set up MFA on their account but they're having trouble using it and need to reset it to set it up fresh again (or changed MFA apps and need to set it up new), or wish to switch MFA methods (app vs email), you can use the Reset button next to their name on the [Admin > Admins > Admin Users](/user/admin_pages/admins/admin_users/) screen.
+If an Admin user has set up MFA on their account but they're having trouble using it and need to reset it to set it up fresh again (or they changed MFA apps and need to set it up new), or wish to switch MFA methods (app vs email), you can use the Reset button next to their name on the [Admin > Admins > Admin Users](/user/admin_pages/admins/admin_users/) screen.
 Simply click the Reset button, and then click the Confirm button.
 
 This will clear all prior MFA codes for their account (meaning they should delete all old MFA setups for your Admin area, within their One-Time-passcode apps).
@@ -39,9 +39,9 @@ If they have MFA set up on their account already, you can use the Reset button (
 Then click the Exempt button.  This will disable MFA for the selected user, starting with their next login. Only their password will be required, as usual.
 
 NOTE: 3rd-party logins, particularly those that are automated via external services, will require this Exemption process. 
-Example: ShipStation's plugin logs into your store using its own Admin User account, but since it's automated it won't be able to use MFA. Simple Exempt that user for it to work.
+Example: ShipStation's plugin logs into your store using its own Admin User account, but since it's automated it won't be able to use MFA. Simply Exempt that user for it to work.
 
 
 ## Turning off MFA for the entire site
-If after using MFA you decide you don't want to use it any more, you may either exempt individual users (see above), or turn it off for all users on the Admin > Configuration > My Store screen.
+If after using MFA you decide you don't want to use it anymore, you may either exempt individual users (described above), or turn it off for all users on the Admin > Configuration > My Store screen.
 
