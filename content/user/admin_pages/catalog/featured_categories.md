@@ -27,7 +27,7 @@ When selection by ID is used, the infoBox on the right side allows the entry of 
 ![featured categories by ID](/images/featured_by_id_categories.jpg)
 
 Featured categories may be displayed in the following places: 
-- Categories [Sidebox]((/user/template/sideboxes/))
+- Categories [Sidebox](/user/template/sideboxes/)
 - Featured Categories [Sidebox](/user/template/sideboxes/) 
 - On the [main page](/user/storefront_pages/home_page/) using the settings on [Admin > Configuration > Index Listing](/user/admin_pages/configuration/configuration_indexlisting/)
 - Below a [product listing page](/user/storefront_pages/listing_pages/) using the settings on [Admin > Configuration > Index Listing](/user/admin_pages/configuration/configuration_indexlisting/)
