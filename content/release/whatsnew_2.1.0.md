@@ -85,7 +85,7 @@ The improvements in v2.1.0 include:
 - New Feature: shipping/payment/order-total modules may now be delivered as [encapsulated plugins](/dev/plugins/encapsulated_plugins/).  Developers are encouraged to do so since encapsulated plugins are easier for end-users to install.  Note that any encapsulated shipping/payment/order-total modules *must* have an associated [array based language file](/dev/languages/158_language_files/).  The use of the older `define` based language files is not supported for encapsulated modules.  
 - New Feature: Categories may now be featured.  (Prior releases only allowed featuring individual products.)  See [Featured Categories](/user/admin_pages/catalog/featured_categories/) for details.
 - New Feature: The Zen Cart admin may now be secured with [Multi Factor Authentication](/user/security/multifactor/). 
-- New Feature: [Layout Boxes Controller](/admin_pages/tools/layout_boxes_controller/) made more user friendly. 
+- New Feature: [Layout Boxes Controller](/user/admin_pages/tools/layout_boxes_controller/) made more user friendly. 
 - New Feature: Templates may now have a separate list of links for  their mobile menus.  (In prior releases, the mobile menu would reuse the desktop header link list.)  See [this PR](https://github.com/zencart/zencart/pull/6697) for details.
 - Admin: The plugin formerly known as [Mod List](https://www.zen-cart.com/downloads.php?do=file&id=2039) is now included in the core and named "System Inspection."  It is an [encapsulated plugin](/dev/plugins/encapsulated_plugins/), so it can be installed using Admin > Modules > Plugin Manager.
 - Admin: Manufacturer Part Number (MPN) field added in Zen Cart 2.0.0 can now be edited in the admin. 
