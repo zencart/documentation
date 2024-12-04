@@ -6,7 +6,7 @@ weight: 10
 type: codepage
 ---
 
-The [Font Awesome library](https://fontawesome.com/) provides a set of vector icons and social logos for your website.   It is one of the most popular icon sets available. See [Font Awesome](/user/template/fontawesome/) for storeowner docs.
+The [Font Awesome library](https://fontawesome.com/) provides a set of vector icons and social logos for your website.   It is one of the most popular icon sets available. See [Font Awesome](/user/template/font_awesome/) for storeowner docs.
 
 ## Font Awesome Versions in Zen Cart 
 Both the admin and provided storefront templates (`template_default` and `responsive_classic`) use the same version.
