@@ -13,5 +13,5 @@ For more information on security in Zen Cart, please see [Security Releases](/us
 
 ## Security Patches for Plugins 
 
-Please see [Security Patches for Plugins](/user/security/plugins/). 
+Please see [Security Patches for Plugins](/user/security/plugin_patches/). 
 
