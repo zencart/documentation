@@ -37,7 +37,7 @@ The gID of each submenu can be ascertained by hovering the cursor over each subm
 
 eg. for Minimum Values:  https://MYWEBSITE/MY_ADMIN/index.php?cmd=configuration&**gID=2**
 
-The default value of this constant it '1', which means that by default, only Configuration > My Store is alphabetically sorted; other configuration menus are sorted according to the `sort_order` value of each entry in a configuration group. 
+The default value of this constant is '1', which means that by default, only Configuration > My Store is alphabetically sorted; other configuration menus are sorted according to the `sort_order` value of each entry in a configuration group. 
 
 ### Zen Cart 1.5.7
 In release 1.5.7, to sort a Configuration submenu listing (such as My Store) by name, `admin/configuration.php` must be modified manually to check for the `gID` of the desired menu and alter the SELECT query at the start of the tbody, to `ORDER BY configuration_title` instead of `ORDER BY sort_order` for that menu.
