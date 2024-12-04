@@ -24,7 +24,7 @@ Each admin user will set up their own MFA individually. You have a choice of aut
 - Receiving a code by email at every login attempt
 
 ## Resetting MFA for a specific user
-If an Admin user has set up MFA on their account but they're having trouble using it and need to reset it to set it up fresh again (or changed MFA apps and need to set it up new), or wish to switch MFA methods (app vs email), you can use the Reset button next to their name on the [Admin > Admins > Admin Users](user/admin_pages/admins/admin_users/) screen.
+If an Admin user has set up MFA on their account but they're having trouble using it and need to reset it to set it up fresh again (or changed MFA apps and need to set it up new), or wish to switch MFA methods (app vs email), you can use the Reset button next to their name on the [Admin > Admins > Admin Users](/user/admin_pages/admins/admin_users/) screen.
 Simply click the Reset button, and then click the Confirm button.
 
 This will clear all prior MFA codes for their account (meaning they should delete all old MFA setups for your Admin area, within their One-Time-passcode apps).
@@ -32,7 +32,7 @@ This will clear all prior MFA codes for their account (meaning they should delet
 At next login they will be prompted to set up MFA fresh again.
 
 ## Disabling MFA for a specific user
-You may disable MFA per-user on the [Admin > Admins > Admin Users](user/admin_pages/admins/admin_users/) screen.  
+You may disable MFA per-user on the [Admin > Admins > Admin Users](/user/admin_pages/admins/admin_users/) screen.  
 
 If they have MFA set up on their account already, you can use the Reset button (and confirm) to remove it. 
 
