@@ -6,6 +6,9 @@ enableRobotsTXT = true
 # Hugo allows theme composition (and inheritance). The precedence is from left to right.
 theme = ["github.com/google/docsy", "github.com/google/docsy/dependencies"]
 
+# Allow old and new Hugo versions to build without warnings
+ignoreErrors = ["error-disable-taxonomy"]
+
 # Will give values to .Lastmod etc.
 enableGitInfo = true
 
@@ -16,7 +19,7 @@ defaultContentLanguageInSubdir = false
 # Useful when translating.
 enableMissingTranslationPlaceholders = false
 
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy"]
 
 # Highlighting config
 pygmentsCodeFences = true
