@@ -20,3 +20,10 @@ It looks like this:
 Be sure to specify the correct version on the Credentials page for your App when you first install Square Webpay, and every time you update. 
 
 ![Square API Version](/images/square_api_version.png)
+
+To change the API version, go to https://connect.squareup.com/apps and click on the app you want to update (remembering that the live and the test app, if one exists, will be separate).
+
+Then, under the heading API Version, click the Change Version button. Set it to the version in the file shown above.  
+
+Remember that the API Version may be different for Sandbox vs Production. 
+
