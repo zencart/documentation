@@ -30,7 +30,11 @@ Create a $1 item in your store called "Pay outstanding balance" or something lik
 
 If this is a very common situation for your business, you may consider using [Authorize.NET CIM](/user/payment/authorizenet_cim/) for payment processing.  CIM provides a mechanism for direct charges to a stored customer card if there is a balance owed (the "Get Money" button).  
 
-### Option 4: Invoice through Quickbooks Online 
+### Option 4: Take payment through your processor's virtual terminal
+
+Many payment processors offer their customers a virtual terminal, which is a web form that allows you to process payments electronically without a physical point of sale (POS) terminal.  For example, Square, PayPal and Authorize.Net all have a virtual terminal offering. Contact your payment processor for details. 
+
+### Option 5: Invoice through Quickbooks Online 
 
 If you use QBO for bookkeeping, you can [create an invoice in Quickbooks Online](https://quickbooks.intuit.com/learn-support/en-us/help-article/invoicing/create-invoices-quickbooks-online/L7gSzvCld_US_en_US).  Your customers can pay by credit card, PayPal, Venmo or ACH. 
  
