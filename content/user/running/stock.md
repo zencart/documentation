@@ -48,6 +48,8 @@ The configuration setting `Products status in Catalog when out of stock should b
 
 Please see [Variant Stock](/user/running/posm/).
 
+Note: Enabling [POSM](/user/running/posm/) forces `Subtract stock = true`.
+
 ## What LIFO stock tracking or ERP? 
 
 Zen Cart does not provide ERP functionality that some larger businesses may require.  Please see [ERP](/user/running/erp/) for ideas.

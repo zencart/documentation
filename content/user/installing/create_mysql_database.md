@@ -11,7 +11,7 @@ To use Zen Cart, you need a database.
 
 1.  Open your hosting account's control panel.
 2.  Find the "Databases" section
-3.  Choose the MySQL option
+3.  Click the icon for database creation - it will be called something like "Manage My Databases" or "MySQL Databases."  Some versions of phpMyAdmin also allow you to create a database.
 4.  Click on the option to Create a database.  Enter a name for it and submit. (Record the name so you can use it later in Zen Cart).
     If you are given an option for choosing a Character Set, choose `utf8mb4`; if offered a Collation option, choose `utf8mb4_0900_ai_ci` or `utf8mb4_unicode_520_ci`.
 6.  Now create a user and password. (Record these for use in Zen Cart)

@@ -17,7 +17,7 @@ It looks like this:
     public const SQUARE_VERSION = '2024-01-18';
 ``` 
 
-Be sure to specify the correct version on the Credentials page for your App when you first install Square Webpay, and every time you update. 
+Be sure to specify the correct version on the Credentials page for your App when you first install Square Webpay, and every time you update the Square Webpay software.  To change the version, go to https://connect.squareup.com/apps, select your app and click the "Change version" button under the "API version" heading.
 
 ![Square API Version](/images/square_api_version.png)
 
