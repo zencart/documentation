@@ -61,6 +61,7 @@ Here's an example of what a product listing page in [rows mode](/user/template/l
 ![Product Listing Page](/images/product_listing.png) 
 
 And here's the Featured Products listing page in rows mode showing a different layout: 
+
 ![Featured Products Listing Page](/images/product_listing_featured.png) 
 
 The layout for listing pages is described in more detail in [listing page layout](/user/template/listing_page_layout/). 
