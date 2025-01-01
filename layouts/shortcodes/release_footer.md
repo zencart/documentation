@@ -18,7 +18,7 @@ OSI Certified is a certification mark of the Open Source Initiative.
 </span>
 <br clear="all">
 <br>
-Copyright 2003 - 2024 Zen Ventures, LLC  
+Copyright 2003 - 2025 Zen Ventures, LLC  
   
 Zen Cart®  
 [www.zen-cart.com](https://www.zen-cart.com)

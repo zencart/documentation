@@ -16,15 +16,15 @@ The presentation of the page depends on the Zen Cart version you are running:
 
 The default sort order is "the date the special was created, newest-created first".
 
-## Specials in v2.0.0 (table)
-![Specials 2.0.0 Table](/images/specials_200_table.png)
+## Specials in v2.x.x (table)
+![Specials 2.x.x Table](/images/specials_200_table.png)
 
 
-## Specials in v2.0.0 (grid)
-![Specials 2.0.0 Grid](/images/specials_200_grid.png)
+## Specials in v2.x.x (grid)
+![Specials 2.x.x Grid](/images/specials_200_grid.png)
 
 
-## Specials in v1.0.0 
+## Specials in v1.x.x 
 ![Specials Page](/images/specials_page.png)
 
 Other places specials are shown: 
