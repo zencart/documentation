@@ -26,6 +26,10 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 - Do an [accessibility review](/user/accessibility/accessibility/) of your site.  This is especially important if you use template other than [Bootstrap](/user/template/bootstrap/), since many older templates were not built to be accessible.
 
+### Zen Cart 2.2.0 :stop_sign: <font color="red">NOT RELEASED YET</font> :stop_sign:
+
+- The notifier `NOTIFY_ADMIN_INVOICE_HEADERS_AFTER_TAX` was misspelled in older releases as `NOTIFY_ADMIN_INVOIVE_HEADERS_AFTER_TAX`.  Users of this notifier should update to the corrected spelling. 
+
 ### Zen Cart 2.1.0 
 
 - Improvements were made to the encapsulated plugin manager to permit storefront plugins to do more.  If you need to backport these changes to 2.0.1 or 2.0.0 (say, to run [POSM](/user/running/posm/) on those versions), see https://gist.github.com/lat9/9deb64d3325081d18bb0db5534bcf142.

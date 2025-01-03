@@ -7,6 +7,7 @@ weight: 10
 
 > Note: If you want to see What's **Next** for Zen Cart instead, please [click here](/release/whatsnext/).
 
+- January 2025: Updates for [PayPal RESTful](https://www.zen-cart.com/downloads.php?do=file&id=2382). 
 - November 2024: [Zen Cart 2.1.0 Released](https://www.zen-cart.com/showthread.php?230453-Zen-Cart-2-1-0-Released!&p=1404295). 
 - September 2024: Beta testing builds for [Zen Cart 2.1.0](/release/whatsnew_2.1.0/) have begun.
 - August 2024: Alpha testing builds for [Zen Cart 2.1.0](/release/whatsnew_2.1.0/) have begun.
