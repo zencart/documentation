@@ -3,7 +3,7 @@ command = "hugo -b https://docs.zen-cart.com"
 publish = "public"
 
 [context.production.environment]
-HUGO_VERSION = "0.103.0"
+HUGO_VERSION = "0.140.2"
 HUGO_ENV = "production"
 
 [[redirects]]
