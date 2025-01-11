@@ -15,3 +15,5 @@ Viewing an order in Edit Orders looks the same as viewing it in the Order Detail
 
 ![Edit Orders](/images/edit_orders.jpg)
 
+Note that using Edit Orders to increase the value of an order means you will have to manually [collect the balance owed](/user/payment/balance_owed/); this is not done automatically.
+
