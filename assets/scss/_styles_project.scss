@@ -23,6 +23,10 @@ pre > code {
   flex-grow: unset; 
 }
 
+footer {
+  min-height: auto;
+}
+
 /* Hide description on leaf pages */ 
 .td-page {
   .td-content {
