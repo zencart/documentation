@@ -5,7 +5,12 @@ category: shipping
 weight: 10
 ---
 
-The [USPS Shipping Module](https://www.zen-cart.com/downloads.php?do=file&id=1292) is provided as a [plugin for Zen Cart](/user/plugins/why_plugins/). 
+There are two USPS Shipping Modules.
+Both are provided as [plugins for Zen Cart](/user/plugins/why_plugins/). 
+
+
+## WebTools USPS Module
+Module Link: [WebTools USPS Shipping Module](https://www.zen-cart.com/downloads.php?do=file&id=1292).
 
 In order to use the USPS module, you need to have a USPS WebTools account registered for access to their production RatesV4 and IntlV2 APIs. You must have a separate WebTools user ID for each web store.
 
@@ -15,17 +20,23 @@ Here is the [link for registering](https://www.usps.com/business/web-tools-apis/
 
 Several steps are required to get everything you need; please see the instructions for [Getting USPS Credentials](https://github.com/lat9/usps/wiki/Initial-Install:-Getting-USPS-Credentials). 
 
-## Setup
+### Setup
 In your Zen Cart admin area, make sure you have a zip code entered at: Admin > Configuration > Shipping/Packaging > Postal Code.
 
 In your Zen Cart admin area, go to Admin > Modules > Shipping, and click on the USPS shipping module, click Install, and fill out the various configuration information fields.
 
 You must complete all the steps in [Getting USPS Credentials](https://github.com/lat9/usps/wiki/Initial-Install:-Getting-USPS-Credentials) before you will be able to go live.
 
-## Troubleshooting Rate Calculations 
+### Troubleshooting Rate Calculations 
 
 The USPS module has a setting called "Debug Mode" which you can configure when you go to Admin > Modules > Shipping > USPS > Edit.  Turning debug on (i.e. to `Email`, `Logs` or `Screen`) will show you the raw responses from the USPS server. 
-## USPS Password Now Required
+### USPS Password Now Required
 
 The USPS now requires that you enter your password in the config; see [the USPS wiki](https://github.com/lat9/usps/wiki/Forgot-or--Lost-Your-USPS-API-Password%3F) for instructions on retrieval if you have forgotten it.
+
+## RESTful USPS Module
+Module Link: [RESTful USPS Shipping Module](https://www.zen-cart.com/downloads.php?do=file&id=2395).
+
+This module is provided since the WebTools API from USPS will eventually be deprecated.  At the current time, you can continue to use the WebTools module if that still works for you.
+
 
