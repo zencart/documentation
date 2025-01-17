@@ -61,7 +61,7 @@ Within a class that extends the Zen Cart `base` class, e.g.:
 class shopping_cart extends base
 ```
 
-&hellip; events can be triggered via the `$this` keyword:
+&hellip; events can be triggered via the `$this` keyword:
 
 ```php
 $this->notify('EVENT_NAME');
@@ -126,7 +126,8 @@ The `update` method may be passed _up to_ 11 parameters:
 
 1. `&$callingClass`. This is a reference to the class in which the event occurred.  If the event is triggered by a class other than the `base` (e.g. the `order` or `shopping_cart` class), then this variable can be used to manipulate any ***public*** properties within the calling class. (eg: if the event is called from the `order` class, then inside the observer you would refer to the `order` class's `$this->info` property using `$class->info`)
 2. `$eventID`. The name of the event triggered.
-3. `$param1`.  _Read-only_ data.  The value is dependent on the `$eventID`.  Sometimes named `$paramsArray` if it's an array rather than a single value. 
+3. `$param1`.  _Read-only_ data.  The value is dependent on the `$eventID`.  Sometimes named `$paramsArray` if it's an array rather than a single value.  
+Note that if you are type-hinting your code/parameters, the type of variable being passed may vary per notifier.
 4. `&$param2` through `&$param9`.  _Updateable_ variables provided by the code triggering the event. These values are dependent on the `$eventID`.
 
 ***Note***: Instead of the generic `update()` method that fires irrespective of which eventID was triggered, you can also choose to use [event-specific update-methods](#event-specific-update-methods) to handle event-related processing.
