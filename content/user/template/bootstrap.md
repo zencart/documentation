@@ -39,3 +39,7 @@ Some documentation on the colors is provided in the [template's Wiki](https://gi
 ### Icons in the Bootstrap Template 
 
 The Bootstrap template uses [FontAwesome](/user/template/font_awesome/).  Technical details on versions are provided in [Font Awesome in Zen Cart](/dev/libraries/font_awesome/). 
+
+### Plugins for the Bootstrap Template 
+
+- [Flexible Footer for Bootstrap](https://www.zen-cart.com/downloads.php?do=file&id=2397) - adds a multi-column footer to the Bootstrap template.

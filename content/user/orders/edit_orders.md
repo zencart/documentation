@@ -17,3 +17,7 @@ Viewing an order in Edit Orders looks the same as viewing it in the Order Detail
 
 Note that using Edit Orders to increase the value of an order means you will have to manually [collect the balance owed](/user/payment/balance_owed/); this is not done automatically.
 
+## Edit Orders Plugins 
+
+- [Edit Orders Detail Record Copy](https://www.zen-cart.com/downloads.php?do=file&id=2292) is a plugin that preserves the contents of the `orders_products` table records for an order being edited.  This is useful for users of plugins which append to the `orders_products` table, such as [Drop Ship Purchase Orders](https://www.zen-cart.com/downloads.php?do=file&id=688).
+
