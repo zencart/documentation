@@ -15,6 +15,7 @@ noindex: yes
 - Modernization: support for older `define` based language files will be dropped.  Moving forward, only [Array based language files](/dev/languages/158_language_files/) will be supported. 
 
 ## 2.2.0 
+- Admin: Added capability to customize the upper right link bar using a notifier. 
 - Admin: Fixed - Deprecated "Passing null to parameter #1" log will be created when viewing Admin Packingslip or Admin Invoice.
 - Core: Typo in notifier name `NOTIFY_ADMIN_INVOICE_HEADERS_AFTER_TAX` corrected.
 - Core: Updates to POSM to support [Edit Orders](https://www.zen-cart.com/downloads.php?do=file&id=1513).

@@ -22,6 +22,8 @@ Once checkout has been confirmed, a success page is shown.
 ## Confirmation Page 
 ![Payment Page](/images/confirmation_page.gif)
 
+The confirmation page may also include a mandatory checkbox for [Terms and Conditions](/user/storefront_pages/conditions/).
+
 ## Success Page 
 ![Success Page](/images/success_page.gif)
 
