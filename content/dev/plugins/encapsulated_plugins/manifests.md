@@ -18,7 +18,7 @@ e.g.
       
       
 
-The  manifest file should look like:
+An example manifest file would look like:
 
 ```
 <?php
@@ -69,7 +69,7 @@ A link to the plugin's github repo, if one exists.
 
 ### zcVersions
 
-An array of the Zen Cart versions the plugin supports. (eg: `['v157']`, or `['v157','v158']`).
+An array of the Zen Cart versions the plugin supports. (eg: `['v157']`, or `['v157','v158']`). Note the `v` prefix and the 3 digits and the lack of decimals ("`.`").
 
 ### pluginGroups
 
