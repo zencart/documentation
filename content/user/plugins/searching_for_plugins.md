@@ -5,7 +5,9 @@ category: plugins
 weight: 10
 ---
 
-Unfortunately, the plugin search is not great.  But there is a way to search for a specific plugin. 
+Occasionally the plugin directory search index gets damaged. We're working on fixing that.
+
+In the meantime there is a way to search for a specific plugin: 
 
 Go to google.com and search for 
 
