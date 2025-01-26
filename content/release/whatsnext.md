@@ -17,11 +17,14 @@ noindex: yes
 ## 2.2.0 
 - Admin: Added capability to customize the upper right link bar using a notifier. 
 - Admin: Fixed - Deprecated "Passing null to parameter #1" log will be created when viewing Admin Packingslip or Admin Invoice.
+- Core: Improved PHP 8.4 compatibility.
 - Core: Typo in notifier name `NOTIFY_ADMIN_INVOICE_HEADERS_AFTER_TAX` corrected.
-- Core: Updates to POSM to support [Edit Orders](https://www.zen-cart.com/downloads.php?do=file&id=1513).
+- Core: Updates to POSM to support [Edit Orders 5.0](https://www.zen-cart.com/downloads.php?do=file&id=1513).
 - Core: Password reset via URL (versus emailing a temporary password) is being added to the core.  Credit to forum users Numinix and Retched for inspiration.
+- Storefront: Updated - Refreshed look for responsive classic template.  See [this repo from contributor chadlly2003](https://github.com/chadlly2003/zencart_responsive_classic_redesign).
+- Storefront: Fixed - Customer's wholesale status captured when order is placed.
 - Storefront: Fixed - PHP log created when empty shipping quote returned.
-- Storefront: Fixed - JavaScript problems can occur when gv_balance is null. This is an important fix for JavaScript heavy checkouts (OPC, some payment modules).
+- Storefront: Fixed - JavaScript problems can occur when `gv_balance` is null. This is an important fix for JavaScript heavy checkouts (OPC, some payment modules).
 
 ## 2.1.0 
 Zen Cart 2.1.0 has been released; changes are now listed in [What's New in 2.1.x](/release/whatsnew_2.1.0).
