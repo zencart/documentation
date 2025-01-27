@@ -13,3 +13,6 @@ There were formerly two other options,
 [UPS Shipping Module](https://www.zen-cart.com/downloads.php?do=file&id=1293) and 
 [UPS XML](https://www.zen-cart.com/downloads.php?do=file&id=126), 
 but both of those have been deprecated by UPS.
+
+![UPS Shipping](/images/ups.jpeg)
+

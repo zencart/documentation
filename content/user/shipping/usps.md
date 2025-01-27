@@ -39,4 +39,4 @@ Module Link: [RESTful USPS Shipping Module](https://www.zen-cart.com/downloads.p
 
 This module is provided since the WebTools API from USPS will eventually be deprecated.  At the current time, you can continue to use the WebTools module if that still works for you.
 
-
+![USPS shipping](/images/usps.jpeg)
