@@ -6,16 +6,19 @@ weight: 10
 ---
 
 [Centerboxes](/user/template/centerboxes/)
-are pieces of content that are displayed in the middle of the screen in the Zen Cart storefront.
+are pieces of content that are displayed in the middle of the screen in the Zen Cart storefront.  Some places you might see them are on the Index page or the Shopping Cart page. 
 
 This article is about controlling centerboxes from the admin. 
 
-As the title of this article suggests, there are four built-in Centerboxes: 
+As the title of this article suggests, Zen Cart has these built-in Centerboxes, which have admin controls: 
 
 - New Products 
 - Featured Products
 - Special Products
 - Upcoming Products
+
+Newer versions have more centerboxes: 
+- Featured Categories (added in Zen Cart 2.1.0)
 
 Each of these blocks can be displayed on a number of pages. Using the New Products centerbox as an example, the following settings exist:
 
@@ -43,7 +46,8 @@ For example:
 | Purpose | Pre-1.5.8| 1.5.8 and higher| 
 |---------|----------|-----------|
 |The number of items in the New Products centerbox |New Products Module | New Products Centerbox|
-| The number of items in the Featured Products centerbox | Maximum Display of Featured Products - Main Page | Featured Products Centerbox|
+| The number of items in the Featured Products centerbox | Maximum Display of Featured Products - Main Page | Featured Products Centerbox <br>Featured Products And Categories Centerbox (2.1.0 and higher)|
 |The number of items in the Special Products centerbox |Maximum Display of Specials Products - Main Page |Products on Special Centerbox|
 |The number of items in the Upcoming Products centerbox | Upcoming Products |Upcoming Products Centerbox |
+|The number of items in the Featured Categories centerbox | N/A | Featured Products And Categories Centerbox (2.1.0 and higher)|
 
