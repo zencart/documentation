@@ -30,7 +30,7 @@ Please note: do NOT remove the old Square files from your Zen Cart installation.
 1. Login at [https://connect.squareup.com/apps](https://connect.squareup.com/apps) to view the apps you've connected to your account.
 1. Click **+** to create a New Application for your Zen Cart store. Give it a name, such as "WebPay". **You cannot delete the app or change its name once it is created, so choose carefully.**  If it's for a test installation of your site with a different URL, call it WebPay-Test or something like that.
 1. Ensure you have selected the correct API version.  See [Square API Version](/user/payment/square_api_version/).
-    - Version 2.0.0 of Square Web Payments requires API Version 2024-11-20.
+    - Version 2.0.x of Square Web Payments requires API Version 2024-11-20.
     - Version 1.2.0 of Square Web Payments requires API Version 2024-02-22.
     - Version 1.0.1 of Square Web Payments requires API Version 2022-02-16.
 1. Click on the application icon that was just created (named "WebPay" or whatever name you used).
@@ -49,8 +49,17 @@ Once you have installed and successfully tested Square Webpay, you will want to 
 ## Updating Square Web Payments 
 
 1. Follow the guidance provided by [the developer](/user/payment/square_commercial_module/). 
-2. You may need to update your app to change the API version.  See [Square API Version](/user/payment/square_api_version/).
+2. You may need to update your Square app on https://connect.squareup.com/apps to change the API version.  See [Square API Version](/user/payment/square_api_version/).
+3. If you are switching between a test and live website, you must remove and re-install the module in Zen Cart admin.  See the remarks in the next section.
 
+## Installing Square Web Payments in a Test environment
+If you import a live site database into a test environment, please be sure to deelte and re-add the Square Web Payments app per the instructions above.  You cannot just replace the Application ID and Secret, you must reinstall the app. 
+
+The error you will see if you try this without reinstalling will look something like this:
+
+```
+Your transaction failed due to an error: [INVALID_CARD_DATA] Card nonce not found in this application environment. Please ensure an application ID belonging to the same environment is used when generating the nonce.
+```
 
 ## Handling Refunds, Captures, Voids
 

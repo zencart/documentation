@@ -51,3 +51,7 @@ For example:
 |The number of items in the Upcoming Products centerbox | Upcoming Products |Upcoming Products Centerbox |
 |The number of items in the Featured Categories centerbox | N/A | Featured Products And Categories Centerbox (2.1.0 and higher)|
 
+In addition to the centerboxes discussed above, the following centerboxes are available:
+
+- The [Also Purchased](/user/template/also_purchased) centerbox may be displayed on the product info page using the setting "Also Purchased Products Columns per Row" on [Admin > Configuration > Product Info](/user/admin_pages/configuration/configuration_productinfo/).
+
