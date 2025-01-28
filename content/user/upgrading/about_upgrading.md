@@ -53,3 +53,12 @@ Staying up to date with your software is actually required by [PCI](/user/paymen
 
 In many cases, you will not be able to use newer plugins on an older version of Zen Cart.  Plugins often say things like "Requires Zen Cart 1.5.6b or higher."  This means they depend on internal changes in Zen Cart that were made in that version and carried forward.  They literally will not work on older versions of Zen Cart. 
 
+## But what if I upgrade and there's a release a week later? 
+
+You're still much better off for having upgraded even if you don't have the absolute latest version. 
+
+- Any newer version is more secure than an older version.
+- Any newer version will run on a more up-to-date version of PHP than an older version.
+- Any newer version will have additional fixes and enhancements over an older version. 
+- It's much easier to upgrade from the last release to the current release than from a very old release to the current release. 
+

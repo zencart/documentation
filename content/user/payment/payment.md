@@ -45,6 +45,10 @@ Other payment modules, like PayPal Express, collect payment offsite. They take t
 
 ![PayPal Express](/images/paypal_payment.png)
 
+## Google Pay and Apple Pay
+
+These payment methods are available in the most recent version of the [Square WebPay module](/user/payment/square/).
+
 ## Manual Credit Card Processing 
 
 In recent versions of Zen Cart, great care has been taken to handle payment details securely.  This means that older methods of capturing credit cards, such as the `cc` and `Ceon Manual Card` modules, are no longer recommended.  [Read more about why you shouldn't process credit cards manually](/user/payment/why_not_manual).
