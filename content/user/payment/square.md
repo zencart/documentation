@@ -53,7 +53,7 @@ Once you have installed and successfully tested Square Webpay, you will want to 
 3. If you are switching between a test and live website, you must remove and re-install the module in Zen Cart admin.  See the remarks in the next section.
 
 ## Installing Square Web Payments in a Test environment
-If you import a live site database into a test environment, please be sure to deelte and re-add the Square Web Payments app per the instructions above.  You cannot just replace the Application ID and Secret, you must reinstall the app. 
+If you import a live site database into a test environment, please be sure to delete and re-add the Square Web Payments app per the instructions above.  You cannot just replace the Application ID and Secret, you must reinstall the app. 
 
 The error you will see if you try this without reinstalling will look something like this:
 
