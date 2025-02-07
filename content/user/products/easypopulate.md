@@ -1,13 +1,23 @@
 ---
-title: EasyPopulate 
+title: DbIo and EasyPopulate 
 description: Creating products from a CSV 
 category: products
 weight: 10
 ---
 
+Rather than enter products one-by-one in the admin panel, some storeowners prefer to use tools that will import a CSV containing product information.  
+
+## DbIo - an alternative to EasyPopulate 
+
+The most up to date and well maintained of these tools is [Database I/O Manager (DbIo)](https://www.zen-cart.com/downloads.php?do=file&id=2091). 
+
+You can read [the help for DbIo](https://htmlpreview.github.io/?https://github.com/lat9/dbio/blob/master/docs/dbio/readme.html) to learn more. 
+
 ### EasyPopulate 
 
-Rather than enter products one-by-one in the admin panel, some storeowners prefer to use tools that will import a CSV containing product information.  One such tool is called EasyPopulate.  Other spellings of this name include:
+EasyPopulate is the other tool that does CSV uploads. 
+
+Other spellings of this name include:
 
 - "Easy Populate"
 - "EZPopulate" 
@@ -18,10 +28,6 @@ You can find [EasyPopulate in the Plugins Library](https://www.zen-cart.com/down
 Notes on using EasyPopulate: 
 - Loading data is a two-step process: first you upload the file, then you import the data.
 - The key for product data imports is the model number field.  You may wish to use [Find Duplicate Models](https://www.zen-cart.com/downloads.php?do=file&id=1323) as an aid to making your model numbers unique if you suspect you have duplicates. 
-
-## DbIo - an alternative to EasyPopulate 
-
-Please see [Database I/O Manager (DbIo)](https://www.zen-cart.com/downloads.php?do=file&id=2091). 
 
 
 ## Custom Population Scripts
