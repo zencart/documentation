@@ -61,5 +61,5 @@ Zen Cart does not provide ERP functionality that some larger businesses may requ
 - [Inventory Updater](https://www.zen-cart.com/downloads.php?do=file&id=2279)
 - [Quick Quantity Update](https://www.zen-cart.com/downloads.php?do=file&id=1847) 
 
-See also [EasyPopulate and DbIo](/user/products/easypopulate/). 
+See also [DbIo and EasyPopulate](/user/products/easypopulate/). 
 
