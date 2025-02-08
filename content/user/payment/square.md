@@ -21,7 +21,7 @@ There was an older Square module, based on the Square Payments Form library, whi
 1. You must be using SSL on your website
 1. You will need a Square account, already validated and connected with your bank. You may [create a Square merchant account here](https://squareup.com/t/f_partnerships/d_partnerpage/p_zencart/c_general/o_free_processing/u_signup/l_us?route=signup%3Fsignup_token%3D6BB5B2E676).
 
-Please note: do NOT remove the old Square files from your Zen Cart installation.  
+Please note: do NOT remove the old Square files from your Zen Cart installation  if you are running Zen Cart 1.5.7 or 1.5.8.  (These have been removed from 2.0.0 and above.)
 
 ## Installing Square Web Payments - first time 
 1. If you are a developer, ask your client to turn off 2FA on Square momentarily so you can login and do this work; they can turn it back on when you're done.
@@ -48,7 +48,7 @@ Once you have installed and successfully tested Square Webpay, you will want to 
  
 ## Updating Square Web Payments 
 
-1. Follow the guidance provided by [the developer](/user/payment/square_commercial_module/). 
+1. Follow the guidance provided by [the Square WebPay developer](/user/payment/square_commercial_module/). 
 2. You may need to update your Square app on https://connect.squareup.com/apps to change the API version.  See [Square API Version](/user/payment/square_api_version/).
 3. If you are switching between a test and live website, you must remove and re-install the module in Zen Cart admin.  See the remarks in the next section.
 
