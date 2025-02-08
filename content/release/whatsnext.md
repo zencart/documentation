@@ -21,6 +21,7 @@ noindex: yes
 - Core: Typo in notifier name `NOTIFY_ADMIN_INVOICE_HEADERS_AFTER_TAX` corrected.
 - Core: Updates to POSM to support [Edit Orders 5.0](https://www.zen-cart.com/downloads.php?do=file&id=1513).
 - Core: Password reset via URL (versus emailing a temporary password) is being added to the core.  Credit to forum users Numinix and Retched for inspiration.
+- Storefront: Updated embedded MobileDetect to latest version for `responsive_classic` template.
 - Storefront: Updated - Refreshed look for responsive classic template.  See [this repo from contributor chadlly2003](https://github.com/chadlly2003/zencart_responsive_classic_redesign).
 - Storefront: Fixed - Customer's wholesale status captured when order is placed.
 - Storefront: Fixed - PHP log created when empty shipping quote returned.

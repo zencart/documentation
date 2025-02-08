@@ -47,7 +47,7 @@ Other payment modules, like PayPal Express, collect payment offsite. They take t
 
 ## Google Pay and Apple Pay
 
-These payment methods are available in the most recent version of the [Square WebPay module](/user/payment/square/).
+These payment methods are available in the most recent version of the [Square WebPay module](/user/payment/square/), which is available from [the Square WebPay developer](/user/payment/square_commercial_module/). 
 
 ## Manual Credit Card Processing 
 
