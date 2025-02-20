@@ -5,9 +5,29 @@ weight: 40
 layout: docs
 ---
 
-Plugins might need to create/alter database tables and/or insert/amend data in database tables. The plugin installer allows two methods for doing this. Using `.sql` files containing just sql statements or using a class based migration system.
+Plugins might need to create/alter database tables and/or insert/amend data in database tables. 
+
+The plugin installer allows two methods for doing this: 
+
+1. A class-based approach where each database alteration is done with PHP code. This approach also allows for upgrading between versions when you release updates.
+2. Using `.sql` files containing just SQL statements. This should only be used in VERY simple scenarios, where upgrades will never be needed.
+
+
+## SQL Installer Classes
+
+If you have more complex needs when creating schemas or seeding the database, instead of using a plain SQL install file as above, you can use a class based method, by extending ScriptedInstallBase as `/Installer/ScriptedInstaller.php` in your plugin. See [Installer Classes](/dev/plugins/encapsulated_plugins/installer_classes/) for details.
+
+IF YOUR PLUGIN PROVIDES UPGRADES WHICH NEED DATABASE CHANGES, then you MUST use the [Installer Classes](/dev/plugins/encapsulated_plugins/installer_classes/), since there is no way to offer plain `.sql` file upgrades.
+
+An example is provided in the `DisplayLogs` plugin, in `zc_plugins/DisplayLogs/[version]/Installer/ScriptedInstaller.php`.
+
+Briefly, three key methods that must be implemented in a class which extends `ScriptedInstallBase` are `executeInstall` and `executeUninstall` and `executeUpgrade`, which run the installation, de-installation and upgrade logic, respectively. They should return `true` on success, and `false` on failure. They can set `$this->errorContainer->addError($severity=0, $logMessage, $booleanShowLogToUser, $userMessage)` if any errors need to be logged and/or shown to the user.
+
+
 
 ## Plain SQL Files
+
+If your needs are VERY simple, and upgrades will never be necessary, you could use just a plain .sql file:
 
 Create a plain SQL file called `install.sql` with the SQL statements you need for installation. Be sure to make your installation robust in the face of prior partial or failed installs (e.g. use `IF NOT EXISTS`, `INSERT IGNORE` and so forth). 
 
@@ -37,10 +57,10 @@ The sql file should reside in
             - Installer
 
                 - install.sql
+                - uninstall.sql
 
 
-**Warning** As Zen Cart currently uses mainly `MyISAM` tables, there is no way to safely roll back any
-  installer sql if an error occurs. Some support for rollback may be added later (using generated migrations).
+**Warning** With this `install.sql` approach, there is no way to safely roll back any installer SQL if an error occurs.
 
 Note that an uninstall script (called `uninstall.sql`) may be placed in the same folder. 
 
@@ -78,16 +98,5 @@ Where:
 - There can be multiple JOIN statements in a select.
 - Every statement must end with a semi-colon (`;`).
 - Sub selects are not available.    
-
-
-## SQL Installer Classes
-
-If you have more complex needs when creating schemas or seeding the database, instead of using a plain SQL install file as above, you can use a class based method, by extending ScriptedInstallBase as `/Installer/ScriptedInstaller.php` in your plugin. See [Installer Classes](/dev/plugins/encapsulated_plugins/installer_classes/) for details.
-
-IF YOUR PLUGIN PROVIDES UPGRADES WHICH NEED DATABASE CHANGES, then you MUST use the [Installer Classes](/dev/plugins/encapsulated_plugins/installer_classes/), since there is no way to offer plain `.sql` file upgrades.
-
-An example is provided in the `DisplayLogs` plugin, in `zc_plugins/DisplayLogs/[version]/Installer/ScriptedInstaller.php`.
-
-Briefly, three key methods that must be implemented in a class which extends `ScriptedInstallBase` are `executeInstall` and `executeUninstall` and `executeUpgrade`, which run the installation, de-installation and upgrade logic, respectively. They should return `true` on success, and `false` on failure. They can set `$this->errorContainer->addError($severity=0, $logMessage, $booleanShowLogToUser, $userMessage)` if any errors need to be logged and/or shown to the user.
 
 
