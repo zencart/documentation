@@ -54,6 +54,8 @@ Or if you'd like to split the namespace out separately to make lines shorter, us
 
 When the filename of a class does not match the class name, we need to do a bit more work.
 
+The best situation is to avoid using custom class filenames, and to follow the standards provided above. Your IDE/editor will also be happier in such cases as well.
+
 From the example above, if we had a class filename of `class.some_weird_class_filename.php` and the class name was `myClass`, then we would have to set up autoloading manually at tthe top of whatever file needs it. The following would need to be called after the line
 `require 'includes/application_top.php';`:
 
