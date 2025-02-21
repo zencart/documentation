@@ -64,6 +64,14 @@ For more details on this screen, see the
 [admin help page for Options Stock - View All](/user/admin_pages/catalog/options_stock_view_all/) and the 
 [Options' Stock View All](https://github.com/lat9/options_stock_support/wiki/Admin-User-Interface-Changes#catalog--options-stock-view-all) in the POSM help. 
 
+## Displaying Stock Statuses 
+
+When POSM is enabled, indicators like "In Stock" or "Back Ordered" are shown in various places, such as on the shopping cart page.
+
+![POSM Stock Statuses](/images/posm_stock_status.jpg) 
+
+These may be disabled using Admin > Configuration > Options Stock Manager > Stock Status Display: Show Messages?
+
 ## Dependent Attributes
 
 Attributes in POSM-controlled products are dependent by default.  You must choose attributes in the order in which they are presented (which is by the sort order set when creating the Product Options). 
