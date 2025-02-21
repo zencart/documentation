@@ -15,12 +15,15 @@ noindex: yes
 - Modernization: support for older `define` based language files will be dropped.  Moving forward, only [Array based language files](/dev/languages/158_language_files/) will be supported. 
 
 ## 2.2.0 
+- Admin: Improvements in Sales Report with Graphs.
+- Admin: TinyMCE added as the admin HTML editor. 
 - Admin: Added capability to customize the upper right link bar using a notifier. 
 - Admin: Fixed - Deprecated "Passing null to parameter #1" log will be created when viewing Admin Packingslip or Admin Invoice.
 - Core: Improved PHP 8.4 compatibility.
 - Core: Typo in notifier name `NOTIFY_ADMIN_INVOICE_HEADERS_AFTER_TAX` corrected.
 - Core: Updates to POSM to support [Edit Orders 5.0](https://www.zen-cart.com/downloads.php?do=file&id=1513).
 - Core: Password reset via URL (versus emailing a temporary password) is being added to the core.  Credit to forum users Numinix and Retched for inspiration.
+- Extras: Curltester now includes REST API endpoints for USPS and PayPal. 
 - Storefront: Updated embedded MobileDetect to latest version for `responsive_classic` template.
 - Storefront: Updated - Refreshed look for responsive classic template.  See [this repo from contributor chadlly2003](https://github.com/chadlly2003/zencart_responsive_classic_redesign).
 - Storefront: Fixed - Customer's wholesale status captured when order is placed.

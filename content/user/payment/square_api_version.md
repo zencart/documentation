@@ -25,5 +25,5 @@ To change the API version, go to https://connect.squareup.com/apps and click on 
 
 Then, under the heading API Version, click the Change Version button. Set it to the version in the file shown above.  
 
-Remember that the API Version may be different for Sandbox vs Production. 
+You may use different API Versions for Sandbox vs Production (again assuming you have both a live and a test app).  This can be convenient in situations like testing an upgrade. 
 

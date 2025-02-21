@@ -9,7 +9,7 @@ Sometimes it is convenient to offer payment methods where payment does not occur
 
 These payment methods appear on the checkout payment page (or the one page checkout page), but require a second step from your customer before you process and fill the order.  Most Zen Cart storeowners use the "Pending" order status to indicate that this second step has not yet been completed.
 
-Note: The options below are payment modules, which are designed to be used for an order.  If you need additional payment for an order which has already been placed, see [balance owed payments](/user/payment/balance_owed/).
+Note: The options below are payment modules, which are designed to be used during the checkout process.  If you need additional payment for an order which has already been placed, see [balance owed payments](/user/payment/balance_owed/).
 
 ## Check/Money Order
 
