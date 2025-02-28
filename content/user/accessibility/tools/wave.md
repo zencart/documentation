@@ -10,7 +10,7 @@ weight: 30
 WAVE (Web Accessibility Evaluation Tool) was developed by the Web Accessibility In Mind (WebAIM) organization. WAVE is a user-friendly web accessibility evaluation tool that provides valuable insights into potential accessibility issues on websites. In this article, we will explore how you can effectively use WAVE to meet accessibility standards.
 
 ## Accessing WAVE 
-You can go to the [WebAIM website](https://wave.webaim.org/) to access the WAVE browser extension.  Alternatively, Chrome users can install it from the Chrome Web Store.
+You can go to the [WebAIM website](https://wave.webaim.org/) to access the WAVE evaluation tool.  Alternatively, a browser extension is available for most major browsers, the latest of which can be found on [WebAIM's extension page](https://wave.webaim.org/extension/).
 
 ## Understanding WebAIM's WAVE
 

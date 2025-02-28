@@ -16,7 +16,7 @@ To get started with ANDI, you can install the extension in your preferred browse
 
 ## Understanding ANDI
 
-ANDI is available for Google Chrome and Mozilla Firefox. It is designed to help you evaluate the accessibility of web elements and assess how screen readers interpret the content. ANDI assists in identifying potential issues related to alternative text for images, ARIA (Accessible Rich Internet Applications) attributes, and other accessibility features.
+ANDI is available for most of the major desktop browsers. It is designed to help you evaluate the accessibility of web elements and assess how screen readers interpret the content. ANDI assists in identifying potential issues related to alternative text for images, ARIA (Accessible Rich Internet Applications) attributes, and other accessibility features.
 
 * **Examining Alternative Text for Images** - A significant aspect of web accessibility is providing alternative text for images. With ANDI, you can easily examine the alt attributes of images on your website. It allows you to ensure that every image is equipped with descriptive and meaningful alternative text, enabling users with visual impairments to comprehend the content conveyed by images.
 

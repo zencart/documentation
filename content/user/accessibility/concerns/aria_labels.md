@@ -25,7 +25,7 @@ ARIA labels are attributes that can be added to HTML elements to define their ro
 
 ## Fixing ARIA Label Problems
 
-* **Identify Missing ARIA Labels** - Use accessibility auditing tools, such as Siteimprove's Chrome extension, Axe Dev Tools, or WAVE, to identify elements with missing or incomplete ARIA labels. The tools will highlight elements that require ARIA labels to improve accessibility.
+* **Identify Missing ARIA Labels** - Use accessibility auditing tools, such as Siteimprove's browser extension, Axe Dev Tools, or WAVE, to identify elements with missing or incomplete ARIA labels. The tools will highlight elements that require ARIA labels to improve accessibility.
 
 * **Add Descriptive ARIA Labels** - For interactive elements like buttons, links, and form fields, add descriptive ARIA labels that explain their purpose or action. ARIA labels should be concise and meaningful, conveying essential information about the element.
 
