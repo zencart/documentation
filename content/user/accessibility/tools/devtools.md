@@ -15,7 +15,7 @@ You can find the Axe DevTools free version in the respective browser's extension
 
 ## Understanding Axe DevTools Free Version
 
-Axe DevTools is an open-source accessibility testing and debugging tool provided as a browser extension for Google Chrome and Mozilla Firefox and Microsoft Edge. The free version empowers you to assess web pages for accessibility issues without any additional cost. With its user-friendly interface and robust features, Axe DevTools helps you identify barriers that hinder accessibility and provides guidance on how to improve your websites for all users.
+Axe DevTools is an open-source accessibility testing and debugging tool provided as a browser extension for Google Chrome, Mozilla Firefox and Microsoft Edge. The free version empowers you to assess web pages for accessibility issues without any additional cost. With its user-friendly interface and robust features, Axe DevTools helps you identify barriers that hinder accessibility and provides guidance on how to improve your websites for all users.
 
 
 * **Activating Axe DevTools** - When visiting a webpage, you can activate Axe DevTools by clicking on the extension's icon in the browser's toolbar. The extension will then analyze the page and identify potential accessibility issues.
