@@ -21,7 +21,7 @@ This is the name of the language, probably best as expressed _in itself_, e.g. F
 
 ### Code
 
-This is the two-letter ISO 639 language code, e.g. en for English, fr for Francais, es for Español, etc. If you don't know the code, you can find it on Wikipedia [here](http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
+This is the two-letter ISO 639 language code, e.g. en for English, fr for Francais, es for Español, etc. If you don't know the code, you can find it on Wikipedia [here](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes). In the rare case that you need to localize languages you can use [localization tags](https://www.ietf.org/rfc/bcp/bcp47.txt) (`en_GB` instead of `en`) but you will need to install each as separate languages.
 
 ### Image
 
@@ -29,7 +29,7 @@ This would be a small icon used to identify the language. This would most likely
 
 ### Directory
 
-This directory is where the translated php source files for this language are contained. For example, enter '*english*' the directory for the English language is located at 
+This directory is where the translated PHP source files for this language are contained. For example, enter '*english*' the directory for the English language is located at 
 `/includes/languages/english`. 
 
 ### Sort order
