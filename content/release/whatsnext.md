@@ -19,6 +19,7 @@ noindex: yes
 - Admin: TinyMCE added as the admin HTML editor. 
 - Admin: Added capability to customize the upper right link bar using a notifier. 
 - Admin: Fixed - Deprecated "Passing null to parameter #1" log will be created when viewing Admin Packingslip or Admin Invoice.
+- Core: Improved handling of `product` table records which do not have associated `products_description` records.
 - Core: Improved PHP 8.4 compatibility.
 - Core: Typo in notifier name `NOTIFY_ADMIN_INVOICE_HEADERS_AFTER_TAX` corrected.
 - Core: Updates to POSM to support [Edit Orders 5.0](https://www.zen-cart.com/downloads.php?do=file&id=1513).

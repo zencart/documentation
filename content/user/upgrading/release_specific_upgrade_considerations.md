@@ -38,6 +38,7 @@ This document lists things you may wish to take into account as you upgrade.  Th
 - The `NOTIFY_GET_PRODUCT_DETAILS` notifier has been deprecated in favor of `NOTIFY_GET_PRODUCT_OBJECT_DETAILS`, which uses different arguments.  Any use of the former will product a deprecation debug log. 
 - If you are using a template other than Bootstrap or Responsive Classic, you may need to update the [template_info](/user/template/template_info/) file to add the `uses_mobile_sidebox_settings` entry. 
 - If you are using a template other than Bootstrap or Responsive Classic, you may wish to use the `/includes/modules/ezpages_mobile.php` file to build your mobile menu.  See [this PR](https://github.com/zencart/zencart/pull/6697).
+- Go to Admin > Tools > EZ-Pages to review the "Mobile" settings for your EZ-Pages.  Any pages you wish to appear in your mobile menu will need to be set to "Yes" with a sort order greater than 0.
 
 ### Zen Cart 2.0.x
 

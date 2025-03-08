@@ -47,7 +47,10 @@ Module Link: [RESTful USPS Shipping Module](https://www.zen-cart.com/downloads.p
 
 This module is different from the original USPS module in that in order to authenticate in, you must have a [USPS.com account](https://reg.usps.com/entreg/RegistrationAction_input) to sign up for the OAuth API. While a personal account will work, it's strongly recommended that you make a separate account for your business. (Your WebTools Username and Password will **NOT** work with this module.)
 
-After you create your account, you need to set up your "app" to obtain your credentials. You do this through the [USPS Developer Portal](https://developers.usps.com/). You can follow the [full steps to create your credentials](https://github.com/retched/ZC-USPSRestful/wiki/Getting-Started#installing) on the USPS RESTful wiki.
+After you create your account, you need to set up your "app" to obtain your API credentials. You do this through the [USPS Developer Portal](https://developers.usps.com/). You can follow the [full steps to create your API credentials](https://github.com/retched/ZC-USPSRestful/wiki/Getting-Started#installing) on the USPS RESTful wiki.  This will give you the "USPS API Consumer Key" and "USPS API Consumer Secret" required during the installation phase.
+
+### Documentation
+[USPS Restful Readme](https://htmlpreview.github.io/?https://github.com/retched/ZC-USPSRestful/blob/main/README.html)
 
 ### Installation
 
@@ -59,7 +62,7 @@ If you are using the non-encapsulated version, simply unzip the zip folder into 
 
 In your ZenCart admin area, visit Admin > Modules > Shipping, and click on USPS RESTful module. Click Install and fill out the necessary fields.
 
-You will need to obtain your API Credentials before you will be able to go live with these. (Again, your old WebTools API credentials will NOT work with the RESTful module.)
+You will need to obtain your API Credentials ("USPS API Consumer Key" and "USPS API Consumer Secret") before you will be able to get quotes. (Again, your old WebTools API credentials will NOT work with the RESTful module.)
 
 ### Troubleshooting RESTful
 
