@@ -146,6 +146,10 @@ Yes you can.  See [Master Password capabilities](/user/admin/master_password/).
 Yes, there are several ways you can [add a new page](/user/customizing/add_pages/). 
 
 --- 
+### Can Zen Cart do Cross Sells? 
+Yes.  See the [Cross Sell Advanced](/user/products/xsell) plugin.
+
+--- 
 ### Does Zen Cart come with demo data? 
 
 Yes, and many of the product's features can be seen by installing with the demo data.  See [demo data](/user/first_steps/demo_data/) for details. 

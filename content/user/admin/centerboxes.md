@@ -55,3 +55,4 @@ In addition to the centerboxes discussed above, the following centerboxes are av
 
 - The [Also Purchased](/user/template/also_purchased) centerbox may be displayed on the product info page using the setting "Also Purchased Products Columns per Row" on [Admin > Configuration > Product Info](/user/admin_pages/configuration/configuration_productinfo/).
 
+- The [Cross Sell Advanced](/user/products/xsell) plugin creates its own centerbox, which is displayed on the product info page.

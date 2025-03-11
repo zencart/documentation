@@ -84,3 +84,5 @@ Resolution
 
 Although linked products show up in multiple categories, there is only one product record in your database for you to maintain.  This means that any change made to the Samsung MX701080 in the main product category will automatically change all the linked products. 
 
+To add or remove linked categories, click the checkbox next to the category name(s), then click the large blue "Update Category Links" button to the right.
+
