@@ -19,5 +19,5 @@ A value larger than 1 (say "3") means "Display also purchased products only if t
 
 ![Also Purchased Products](/images/also_purchased.png)
 
-
+See also the [Cross Sell Advanced](/user/products/xsell) plugin.
 
