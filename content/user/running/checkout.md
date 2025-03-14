@@ -25,3 +25,11 @@ Via a plugin, Zen Cart also offers [One Page Checkout](https://www.zen-cart.com/
 Successful completion of one page checkout also redirects to the standard Zen Cart checkout success page [shown here](/user/storefront_pages/checkout/#success-page). 
 
 Many more details on One Page Checkout are provided in the [Github Repo for OPC](https://github.com/lat9/one_page_checkout). 
+
+## Guest Checkout 
+Guest Checkout is a subfeature of One Page Checkout. It collects only the required information to process an order.
+
+![Guest Checkout](/images/guest.jpg)
+
+You can read more about Guest Checkout on the [Customer Address Management](https://github.com/lat9/one_page_checkout/wiki/Customer-Address-Management) page of the OPC documentation.
+
