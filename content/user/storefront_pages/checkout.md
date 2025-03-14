@@ -29,6 +29,8 @@ The confirmation page may also include a mandatory checkbox for [Terms and Condi
 
 
 ## One Page Checkout
-Via a plugin, Zen Cart also offers [One Page Checkout](https://www.zen-cart.com/downloads.php?do=file&id=2095).  Some storeowners find this a more friendly experience for their customers. More information and a screenshot of this page is shown in the [Checkout FAQ](/user/running/checkout/).
+Via a plugin, Zen Cart also offers 
+[One Page Checkout](/user/running/checkout/#one-page-checkout).
+Some storeowners find this a more friendly experience for their customers. More information and a screenshot of this page is shown in the [Checkout FAQ](/user/running/checkout/).
 
 

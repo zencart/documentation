@@ -18,7 +18,8 @@ If you are looking for integration with a specific package, it's always worth se
 
 At this time all customers must register with their full name, address and other information before going to the checkout. 
 
-However, the [One Page Checkout](https://www.zen-cart.com/downloads.php?do=file&id=2095) plugin has a built-in guest checkout feature which might meet your needs.
+However, the [One Page Checkout](/user/running/checkout/#one-page-checkout) 
+plugin has a built-in guest checkout feature which might meet your needs.
 
 ---
 

@@ -38,8 +38,8 @@ Plugins which are pretty much universally useful and have earned honorable menti
 - [Backup MySQL](https://www.zen-cart.com/downloads.php?do=file&id=7)
 - [Edit Orders](/user/orders/edit_orders/)
 - [Email Archive Manager](/user/email/email_archive_manager)
-- [EasyPopulate](https://www.zen-cart.com/downloads.php?do=file&id=2069)
+- [EasyPopulate and DbIo](/user/products/easypopulate)
 - [MailChimp Integration](https://www.zen-cart.com/downloads.php?do=file&id=425)
-- [One Page Checkout](https://www.zen-cart.com/downloads.php?do=file&id=2095) 
+- [One Page Checkout](/user/running/checkout/#one-page-checkout) 
 - [Sales Report](https://www.zen-cart.com/downloads.php?do=file&id=9)
 
