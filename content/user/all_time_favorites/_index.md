@@ -31,6 +31,8 @@ Once you know [what Zen Cart is](/user/about_us/what_is_zen_cart/), you might wa
 
 * [Customizing my site](/user/customizing/appearance/) - Changing the look and feel of your cart.
 
+* [Demos](/user/template/demos/) - Are there online demos of Zen Cart?
+
 * [Development environment](/user/running/local_testing/) - how do I set up a development environment for testing? 
 
 * [Documentation ](/user/first_steps/documentation/) - Hints and examples for using this documentation
