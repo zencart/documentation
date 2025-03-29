@@ -77,6 +77,9 @@ It is **not** recommended to run both at the same time.
   - You can block entire countries in cPHulk if needed.
 It is important to review the CSF or cPHulk logs regularly to ensure that legitimate users are not being inadvertently blocked and to adjust the CSF settings accordingly. Additionally, you can configure CSF to send email alerts when certain events occur, such as when an IP address is blocked or unblocked. This can help you stay informed about the activity on your server and ensure that your server is protected against various security threats.
 
+## Spam Assassin
+Apache SpamAssassin is a tool that can run on your server and identify unsolicited bulk email for deletion or filing separate from your Inbox.  It's part of cPanel, and sometimes non-cPanel hosters can configure it for you.
+
 ## Access Blocker 
 If you wish to block IP addresses independently from your store's Admin (whether you also use Cloudflare or not) you might consider installing the [Access Blocker plugin](https://www.zen-cart.com/downloads.php?do=file&id=2237)
 

@@ -5,7 +5,7 @@ category: email
 weight: 10
 ---
 
-[Edit Orders](https://www.zen-cart.com/downloads.php?do=file&id=1513) is a plugin which allows you to modify orders after they have been placed. This can be useful in a number of situations: 
+Edit Orders is a plugin which allows you to modify orders after they have been placed. This can be useful in a number of situations: 
 
 - Refunds or cancelled orders 
 - Customer changed their mind or made a mistake 
@@ -16,6 +16,14 @@ Viewing an order in Edit Orders looks the same as viewing it in the Order Detail
 ![Edit Orders](/images/edit_orders.jpg)
 
 Note that using Edit Orders to increase the value of an order means you will have to manually [collect the balance owed](/user/payment/balance_owed/); this is not done automatically.
+
+## Edit Orders Versions 
+- [Edit Orders 5 for Zen Cart 2.1.x+](https://www.zen-cart.com/downloads.php?do=file&id=2400)
+- [Edit Orders 4 for Zen Cart 1.5.x](https://www.zen-cart.com/downloads.php?do=file&id=1513).
+
+## Edit Orders Documentation
+- [Edit Orders 5 Documentation](https://github.com/lat9/edit_orders/wiki)
+- [Edit Orders 4 Documentation](https://github.com/lat9/eo-4-wiki/wiki)
 
 ## Edit Orders Plugins 
 
