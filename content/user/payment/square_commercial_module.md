@@ -15,6 +15,11 @@ The current version of Square WebPay supports
 - Apple Pay
 - Google Pay
 
+You may enable or disable each of these independently.  Here's a site with all three: 
+
 ![Square Payment](/images/square_v2.jpeg)
 
+And here's a site with just Apple Pay:
+
+![Apple Pay only via Square](/images/apple_pay_enabled.jpg)
 

@@ -22,7 +22,7 @@ noindex: yes
 - Core: Improved handling of `product` table records which do not have associated `products_description` records.
 - Core: Improved PHP 8.4 compatibility.
 - Core: Typo in notifier name `NOTIFY_ADMIN_INVOICE_HEADERS_AFTER_TAX` corrected.
-- Core: Updates to POSM to support [Edit Orders 5.0](https://www.zen-cart.com/downloads.php?do=file&id=1513).
+- Core: Updates to POSM to support [Edit Orders 5.0](https://www.zen-cart.com/downloads.php?do=file&id=2400).
 - Core: Password reset via URL (versus emailing a temporary password) is being added to the core.  Credit to forum users Numinix and Retched for inspiration.
 - Extras: Curltester now includes REST API endpoints for USPS and PayPal. 
 - Storefront: Updated embedded MobileDetect to latest version for `responsive_classic` template.

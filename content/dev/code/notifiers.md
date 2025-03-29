@@ -309,7 +309,7 @@ The following approach is a way to trick the update method into "interpreting" t
 
 For the procedural-coding thinker, this switch-case approach allows the same code to be used for multiple notifiers if you are also using event-specific methods in the same file.
 
-Here's an example from the Edit Orders plugin.  Each of the monitored events uses different parameters, so the formal parameters used in the `update` function declaration are generic.
+Here's an example from the [Edit Orders](/user/orders/edit_orders/) plugin.  Each of the monitored events uses different parameters, so the formal parameters used in the `update` function declaration are generic.
 
 ```
     public function update(&$class, $eventID, $p1, &$p2, &$p3, &$p4, &$p5) 
