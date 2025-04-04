@@ -13,3 +13,4 @@ Responsive Classic is a template which is [responsive](/user/template/responsive
 ### Responsive Classic Template - Product Page (Mobile) 
 ![Responsive Classic Template Product Page on Mobile](/images/responsive_classic_full.png)
 
+Note: For information about the redesigned version of this template, please see [Responsive Classic Redesign](/user/template/responsive_classic_redesign/).
