@@ -25,6 +25,7 @@ noindex: yes
 - Core: Updates to POSM to support [Edit Orders 5.0](https://www.zen-cart.com/downloads.php?do=file&id=2400).
 - Core: Password reset via URL (versus emailing a temporary password) is being added to the core.  Credit to forum users Numinix and Retched for inspiration.
 - Extras: Curltester now includes REST API endpoints for USPS and PayPal. 
+- Storefront: Notifier added for additional product details.
 - Storefront: Updated embedded MobileDetect to latest version for `responsive_classic` template.
 - Storefront: Updated - Refreshed look for responsive classic template.  See [this repo from contributor chadlly2003](https://github.com/chadlly2003/zencart_responsive_classic_redesign).
 - Storefront: Fixed - Customer's wholesale status captured when order is placed.

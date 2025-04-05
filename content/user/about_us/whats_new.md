@@ -7,6 +7,10 @@ weight: 10
 
 > Note: If you want to see What's **Next** for Zen Cart instead, please [click here](/release/whatsnext/).
 
+- April 2025: [Helcim Payments module](https://www.zen-cart.com/downloads.php?do=file&id=2402) released.  
+- April 2025: [Responsive Classic Redesign](https://docs.zen-cart.com/user/template/responsive_classic_redesign/) official documentation and template support thread created.
+- March 2025: [Demo links for Zen Cart](https://docs.zen-cart.com/user/template/demos/) posted.
+- March 2025: [Edit Orders 5](https://www.zen-cart.com/downloads.php?do=file&id=2400) for Zen Cart 2.1.0 released.
 - January 2025: Updates for [PayPal RESTful](https://www.zen-cart.com/downloads.php?do=file&id=2382). 
 - November 2024: [Zen Cart 2.1.0 Released](https://www.zen-cart.com/showthread.php?230453-Zen-Cart-2-1-0-Released!&p=1404295). 
 - September 2024: Beta testing builds for [Zen Cart 2.1.0](/release/whatsnew_2.1.0/) have begun.
