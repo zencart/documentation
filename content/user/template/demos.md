@@ -8,16 +8,21 @@ weight: 5
 These are demos of the storefront using different templates.
 
 ## Bootstrap 
-- [Template Information](/user/template/bootstrap/) 
 - [Author's Demo Site](https://zc158.vinosdefrutastropicales.com/zc158/index.php)
 - [Demo Site showing different colors](https://jeandret.com/)
+- [Template Information](/user/template/bootstrap/) 
+- [Forum Support Thread](https://www.zen-cart.com/showthread.php?223910)
+- [Download Link](https://www.zen-cart.com/downloads.php?do=file&id=2191)
 
 ## Responsive Classic Redesign
-- [Template Information](https://github.com/chadlly2003/zencart_responsive_classic_redesign/) - see Discussions tab
 - [Author's Demo Site](https://www.zencartdemo.com/)
+- [Template Information](/user/template/responsive_classic_redesign/)
+- [Forum Support Thread](https://www.zen-cart.com/showthread.php?230683)
+- [Download Link](https://github.com/chadlly2003/zencart_responsive_classic_redesign/)
 
 ## Responsive Classic 
-- [Template Information](/user/template/responsive_classic/)
 - [Demo Site](https://thatsoftwareguy2.com/thatsoft_demo_5/)
+- [Template Information](/user/template/responsive_classic/)
+- [Forum Support Thread](https://www.zen-cart.com/showthread.php?219735)
 
 If you're looking for demos of the backend, please see [admin demos](/user/admin/demos/).
