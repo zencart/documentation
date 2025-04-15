@@ -16,7 +16,7 @@ noindex: yes
 
 ## 2.2.0 
 - Admin: Improvements in Sales Report with Graphs.
-- Admin: TinyMCE added as the admin HTML editor. 
+- Admin: TinyMCE added as the default admin  [HTML Editor](/user/running/html_editors).
 - Admin: Added capability to customize the upper right link bar using a notifier. 
 - Admin: Fixed - Deprecated "Passing null to parameter #1" log will be created when viewing Admin Packingslip or Admin Invoice.
 - Core: Improved handling of `product` table records which do not have associated `products_description` records.

@@ -113,7 +113,7 @@ If you try to set a combination of HTML Content, Internal Link and/or External L
 
 <b>WARNING</b>
 
-When using Editors such as CKEditor, if you hit enter in the HTML Content area,
+When using [HTML Editors](/user/running/html_editors) such as CKEditor, if you hit enter in the HTML Content area,
 whitespace will be added. These will be detected as "content" and will override any Internal Link URL or External Link URL.  
 
 ### Other options for adding pages 

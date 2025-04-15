@@ -52,7 +52,7 @@ weight: 10
 - Automatic detection of search engine spiders
 - Intelligent generation of metatags content for search engines
 - Upgrade Detection notifies administrators of new versions at login
-- CKEditor integration available for WYSIWYG editing of site content
+-  [HTML Editor](/user/running/html_editors) integration available for WYSIWYG editing of site content
 - Tight security on password handling, login/logout, and more
 - Customizable email generated at all relevant points of ordering process: when a new account is created, when stock is depleted, after a customer order, as order is processed by storeowner, when product availability changes, when customer reviews are received, and more
 - Storeowner email addresses are protected from abuse, as they are not displayed on-screen 

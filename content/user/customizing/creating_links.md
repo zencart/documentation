@@ -19,7 +19,7 @@ No worries, even though you can't use PHP, you can still create a link to anothe
 
 Note that all link hrefs should start with `index.php` *not* `/index.php`.  This will allow you to move the site to a subfolder, for example during testing. 
 
-If you are doing this in CKEditor, be sure to press the **Source** button so that you may enter straight HTML source code.  If you are using Plain Text, you can just enter the HTML code in.  
+If you are doing this in an [HTML Editor](/user/running/html_editors), be sure to press the **Source** button so that you may enter straight HTML source code.  If you are using Plain Text, you can just enter the HTML code in.  
 
 ## Linking to a Product from HTML
 To link to product 6, the Widget product, you would use 
