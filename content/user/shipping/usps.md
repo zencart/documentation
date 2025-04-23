@@ -50,11 +50,11 @@ This module is different from the original USPS module in that in order to authe
 After you create your account, you need to set up your "app" to obtain your API credentials. You do this through the [USPS Developer Portal](https://developers.usps.com/). You can follow the [full steps to create your API credentials](https://github.com/retched/ZC-USPSRestful/wiki/Getting-Started#installing) on the USPS RESTful wiki.  This will give you the "USPS API Consumer Key" and "USPS API Consumer Secret" required during the installation phase.
 
 ### Documentation
-[USPS Restful Readme](https://htmlpreview.github.io/?https://github.com/retched/ZC-USPSRestful/blob/main/README.html)
+[USPS RESTful Readme](https://htmlpreview.github.io/?https://github.com/retched/ZC-USPSRestful/blob/main/README.html)
 
 ### Installation
 
-If you are using the Encapsulated module, meaning you downloaded the zip file and unzipped it to the `zc_plugins` directory, you must activate it in the **Plugin Manager**. To do this, simply visit the Plugin Manager, find the row for the USPS Restful module, and install it.
+If you are using the Encapsulated module, meaning you downloaded the zip file and unzipped it to the `zc_plugins` directory, you must activate it in the **Plugin Manager**. To do this, simply visit the Plugin Manager, find the row for the USPS RESTful module, and install it.
 
 If you are using the non-encapsulated version, simply unzip the zip folder into your installation directory as directed in the readme.
 
