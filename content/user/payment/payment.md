@@ -15,20 +15,27 @@ Zen Cart has a number of built-in payment modules:
 - Check/Money Order - Receive payment by check
 - Cash on Delivery - COD or in-person payment
 - Free Order - required if you have free products in your store
-- [PayPal](/user/payment/paypal/)
+- [PayPal](/user/payment/paypal/) using the older NVP/SOAP interface.
 
 If you are just evaluating Zen Cart or running a test-only installation, 
 then using the Check/Money Order module to process payments is the best option.
 
 More payment modules may be found in the [Payment module section of the Plugins Library](https://www.zen-cart.com/downloads.php?do=cat&id=8).
 
+The following integrations are highly recommended and well supported by their authors: 
 - [Authorize.net CIM](https://www.zen-cart.com/downloads.php?do=file&id=2272)
-- [Braintree](https://www.zen-cart.com/downloads.php?do=file&id=1781)
-- [Invoice](https://www.zen-cart.com/downloads.php?do=file&id=131)
-- [NMI Gateway Processing Service-GPS Payment Module](https://www.zen-cart.com/downloads.php?do=file&id=2265)
-- [Quote](https://www.zen-cart.com/downloads.php?do=file&id=2199)
+- [Helcim](https://www.zen-cart.com/downloads.php?do=file&id=2402)
+- [PayPal RESTful](/user/payment/paypal_restful/)
 - [Square](/user/payment/square/)
+
+Other options are: 
+- [Braintree](https://www.zen-cart.com/downloads.php?do=file&id=1781)
+- [NMI Gateway Processing Service-GPS Payment Module](https://www.zen-cart.com/downloads.php?do=file&id=2265)
 - [Stripe](https://www.zen-cart.com/downloads.php?do=file&id=1548)
+
+Some offline payment methods are also available: 
+- [Invoice](https://www.zen-cart.com/downloads.php?do=file&id=131)
+- [Quote](https://www.zen-cart.com/downloads.php?do=file&id=2199)
 
 Developers wishing to create a payment module should see the [dev FAQs on modules](/dev/code/modules/). 
 
