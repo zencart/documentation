@@ -35,6 +35,15 @@ These become:
 ```
 **Note** It is not necessary to rename admin in the plugin directory hierarchy 
 
+***For Zen Cart versions 2.1.0 and later, only array-based language files are supported for encapsulated plugins***.  Using the example above, the admin folder's files will be
+
+```
+./zc_plugins/ModList/1.4.0/admin/includes/languages/english/extra_definitions/lang.mod_list.php
+./zc_plugins/ModList/1.4.0/admin/includes/languages/english/lang.mod_list.php
+./zc_plugins/ModList/1.4.0/admin/includes/extra_configures/mod_list.php
+./zc_plugins/ModList/1.4.0/admin/mod_list.php
+```
+
 ### 2. Add the Manifest 
 
 Create a [manifest file](/dev/plugins/encapsulated_plugins/manifests/). In our example, this will be placed in 
