@@ -13,4 +13,5 @@ The following plugins may be useful to you in keeping your images folder organiz
 - [Image Handler](https://www.zen-cart.com/downloads.php?do=file&id=2169)
 
 ### Image Handler and Multiple Images
-If you would prefer not to have to learn the [Image Filename Conventions](/user/images/image_filename_conventions/), you can use Image Handler to add [additional images to a product](/user/images/additional_images/). 
+If you would prefer not to have to learn the [Image Filename Conventions](/user/images/image_filename_conventions/), you can [use Image Handler to add additional images to a product](/user/images/additional_images/#is-there-an-easier-way-to-manage-multiple-product-images).
+

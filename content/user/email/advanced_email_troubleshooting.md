@@ -8,6 +8,7 @@ aliases:
     - /user/email/advanced_email_troubleshooting_2/
 ---
 
+
 If you're having difficulties with email and your online store, this article will hopefully assist in resolving those problems.  Be sure you have reviewed the guidance in [introduction to email](/user/email/email_introduction/) and [emails not received](/user/email/emails_not_received/) before reading this.
 
 ## Basic Troubleshooting
@@ -158,10 +159,17 @@ Domain-based Message Authentication, Reporting, and Conformance (DMARC) builds o
 DMARC requires a valid SPF and DKIM record set in your domain's DNS in order for it to work.
 
 A good DMARC to add for your domain is:
-`\_dmarc 14400 IN TXT v=DMARC1\;p=quarantine\;`
+
+```
+\_dmarc 14400 IN TXT v=DMARC1\;p=quarantine\;
+```
 
 An advanced DMARC record with all its options would look something like, but study all these settings for yourself before implementing them.
-`\_dmarc 14400 IN TXT v=DMARC1\;p=quarantine\;sp=none\;adkim=s\;aspf=s\;pct=100\;fo=0\;rf=afrf\;ri=86400\;rua=mailto:mymailbox\@mydomain.com\;ruf=mailto:mymailbox\@mydomain.com`
+
+```
+\_dmarc 14400 IN TXT v=DMARC1\;p=quarantine\;sp=none\;adkim=s\;aspf=s\;pct=100\;fo=0\;rf=afrf\;
+ri=86400\;rua=mailto:mymailbox\@mydomain.com\;ruf=mailto:mymailbox\@mydomain.com
+```
 
 Here is what each option in the TEXT portion above means in layman's terms:
 
@@ -192,7 +200,7 @@ Like the DKIM, you should make sure the DMARC is properly created for any extra 
 
 ## 2\. Email Addresses
 
-If you received an email today from `JeffyB@gmail.com` offering to make you rich by selling your product for you, what would you do?  What if the email came from `JeffB@amazon.com`?  I bet that second one really got your attention.  Email can make it look like your company is run out of your mother's basement or is soon to be on the fortune 500 list.  I don't think `JeffyB@gmail.com` would even be considered.  On your way to making that 500 list, there are some email addresses that are required in the United States and, while not specificallly demanded in other areas, the GDPR is getting close.
+If you received an email today from `JeffyB@gmail.com` offering to make you rich by selling your product for you, what would you do?  What if the email came from `JeffB@amazon.com`?  I bet that second one really got your attention.  Email can make it look like your company is run out of your mother's basement or is soon to be on the Fortune 500 list.  I don't think `JeffyB@gmail.com` would even be considered.  On your way to making that 500 list, there are some email addresses that are required in the United States and, while not specificallly demanded in other areas, the GDPR is getting close.
 
 When you purchased your domain, hopefully you also gained the right to create some email addresses for your account at no extra charge.  Some hosts may be charging for emails accounts.  Some actually charge for each account added.  This may be due to the tightening of email rules.  Those hosts see a new revenue stream as most folks require or need several email accounts.
 
@@ -232,7 +240,7 @@ Redirects and forwards should be evaluated to see if they will need a response. 
 
 ### Autoresponders
 
-We've all sent an email before and got a return email that says "JeffB is out of the office for two weeks curising, golfing, skiing, or mountain climbing".  This can be helpful but also a problem.  You need to make sure the emails you are responding to are not coming from a bot that also has an autoresponder.  You could get back from your afternoon at the lake (you're NOT Jeff B from that A place) and find that you inbox is full from two bots spending the afternoon going back and forth with "Hello?" - "Hello?"  They will not stop until your inbox is full.  The really bad news is that your postmaster and abuse boxes will start to fill up next.  Temporary Autoresponders are great.  A permanent autoresponder to `unsubscribe@yourDomain.com` saying, "We're sorry to see you go but have removed your email address from our system.  Please allow X days for this to be fully implemented in our system."  Or, an autoresponder to `webmaster@yourDomain.com` might say, "Our webmaster is looking into the problem and will get back to you soon".
+We've all sent an email before and got a return email that says "JeffB is out of the office for two weeks golfing, skiing, or mountain climbing".  This can be helpful but also a problem.  You need to make sure the emails you are responding to are not coming from a bot that also has an autoresponder.  You could get back from your afternoon at the lake (you're NOT Jeff B from that A place) and find that you inbox is full from two bots spending the afternoon going back and forth with "Hello?" - "Hello?"  They will not stop until your inbox is full.  The really bad news is that your postmaster and abuse boxes will start to fill up next.  Temporary Autoresponders are great.  A permanent autoresponder to `unsubscribe@yourDomain.com` saying, "We're sorry to see you go but have removed your email address from our system.  Please allow X days for this to be fully implemented in our system."  Or, an autoresponder to `webmaster@yourDomain.com` might say, "Our webmaster is looking into the problem and will get back to you soon".
 
 Autoresponders should be at a minimum and thoroughly tested to ensure you are not creating a bot war.
 
