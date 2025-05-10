@@ -5,7 +5,13 @@ category: email
 weight: 10
 ---
 
-Since Zen Cart 1.5.7, the capability to add a static message to the admin order update email has been built in.  The file containing the message is located at 'admin/includes/languages/english/email_extras.php'.  Edit this file, and set the defined constant `EMAIL_ORDER_UPDATE_MESSAGE` with your additional message and save the file.  
+Since Zen Cart 1.5.7, the capability to add a static message to the admin order update email has been built in.  
+
+In Zen Cart 1.5.8 and higher, the file containing the message is located at `admin/includes/languages/english/lang.email_extras.php`.  
+
+In Zen Cart 1.5.7, the file containing the message is located at `admin/includes/languages/english/email_extras.php`.  
+
+Edit this file, and set the defined constant `EMAIL_ORDER_UPDATE_MESSAGE` with your additional message and save the file.  
 
 There is also a notifier called `ZEN_UPDATE_ORDERS_HISTORY_SET_ORDER_UPDATE_MESSAGE` which fires when the message is being added, providing the opportunity for customization.
 
