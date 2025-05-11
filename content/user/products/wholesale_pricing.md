@@ -75,10 +75,14 @@ Customers who are eligible for Wholesale Pricing are not eligible for Sales, Spe
 A wholesale price can be applied to
 - A product's base price (via the product-specific edit)
 - A product's overall quantity-discounts (via the admin's Products Price Manager)
-- A product-attribute's base price (via the admin's Attributes Controller)
+- A product-attribute's base price (via the admin's Attributes Controller).
 
 A wholesale price cannot be applied to
-- A product-attribute's quantity price discount
+- A product-attribute's quantity price discount.
 
-Customers who get wholesale prices do not also get Sales or Specials.
+Customers who get wholesale prices 
+- do not get Sales or Specials 
+- do not get attribute quantity discounts.
+
+
 
