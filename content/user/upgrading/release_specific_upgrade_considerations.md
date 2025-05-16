@@ -89,6 +89,13 @@ Zen Cart 1.5.8a will provide aliases for these functions so that the old names w
 
 <br>
  
+- Some functions have been consolidated.  
+  - Instead of `zen_get_metatags_description`, `zen_get_metatags_keywords`, and `zen_get_metatags_description`, 
+a general function called `zen_get_product_metatag_fields` is provided, with an argument for the desired field if you don't want all fields.
+  - Instead of `zen_get_category_metatags_title`, `zen_get_category_metatags_description`, and `zen_get_category_metatags_keywords`, 
+a general function called `zen_get_category_metatag_fields`is provided, with an argument for the desired field if you don't want all fields.
+
+
 - Language files were changed to a new format.  See [Developer Information on Array based Language files](/dev/languages/158_language_files/) for more details.  If you are upgrading, you may wish to consider doing only the [basic language file customizations](/user/languages/basic_158_language_customizations/) rather than port all the changes you had from prior releases.  Core language files must be overridden in the new format to prevent PHP Warnings; plugin language files may use the old or the new file format. 
 
 - Because of the changes to language files, additional steps will need to be taken if you are trying to create global variables.  In prior releases, defining a new variable in a language file was sufficient; now you will need to explicitly global it: 
