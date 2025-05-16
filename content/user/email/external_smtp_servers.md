@@ -77,6 +77,8 @@ You may have to have your host make some changes to your domain's `MX` records i
 
 You may also have to open your webserver's firewall to allow access to Google's servers and whatever port you're using to communicate with them. Your hosting company's server administrator will know how to identify the correct address and how to fix their firewall accordingly.
 
+As of early 2025, additional steps are required to make Gmail work, as documented in [this forum post](https://www.zen-cart.com/showthread.php?230666-Gmail-using-Oauth-March-14-2025-notice). 
+
 ## Office 365 
 
 **NOTE:** These instructions may no longer work.  Your fallback option is to switch to one of the [real SMTP email service providers](/user/email/external_smtp_servers/#email-service-providers).
