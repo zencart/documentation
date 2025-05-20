@@ -6,6 +6,9 @@ publish = "public"
 HUGO_VERSION = "0.103.0"
 HUGO_ENV = "production"
 
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.103.0"
+
 [[redirects]]
   from = "https://zencartdocs.netlify.com/*"
   to = "https://docs.zen-cart.com/:splat"
