@@ -43,3 +43,6 @@ The Bootstrap template uses [FontAwesome](/user/template/font_awesome/).  Techni
 ### Plugins for the Bootstrap Template 
 
 - [Flexible Footer for Bootstrap](https://www.zen-cart.com/downloads.php?do=file&id=2397) - adds a multi-column footer to the Bootstrap template.
+- [Bootstrap Template for One Page Checkout](https://www.zen-cart.com/downloads.php?do=file&id=2305) - required styling changes for when the [One Page Checkout](https://www.zen-cart.com/downloads.php?do=file&id=2095) plugin is used with the Bootstrap template.
+
+
