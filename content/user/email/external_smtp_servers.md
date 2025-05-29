@@ -13,7 +13,7 @@ See here: for a [list of common server SMTP addresses](http://www.arclab.com/pro
 
 **Note:** Many customers prefer that you have a legitimate email address matching your domain name, not something like `billys-store@gmail.com` which is rather less authentic-looking. Build credibility with your customers by getting proper email addresses to match your domain name!
 
-**NOTE:** Using GMail, Office 365, Yahoo or GoDaddy for Zen Cart email are no longer recommended.  You will have much less trouble choosing one of the [real SMTP email service providers](/user/email/external_smtp_servers/#email-service-providers) instead.
+**NOTE:** Using Gmail, Office 365, Yahoo or GoDaddy for Zen Cart email may work but are no longer recommended.  You will have much less trouble choosing one of the [real SMTP email service providers](/user/email/external_smtp_servers/#email-service-providers) instead.
 
 ## SMTP over TLS
 
@@ -45,7 +45,7 @@ If you're hosting someplace other than Yahoo but trying to send email through yo
 
 Gmail / Google Apps Mail requires that your email communications occur over a secure channel, which means you need to send on port `587` for TLS. 
 
-Zen Cart supports this by using the following settings in [Admin > Configuration > Email](/user/admin_pages/configuration/configuration_email/):
+Zen Cart allows the use of Gmail by using the following settings in [Admin > Configuration > Email](/user/admin_pages/configuration/configuration_email/):
 
 ### Gmail
 
@@ -77,7 +77,15 @@ You may have to have your host make some changes to your domain's `MX` records i
 
 You may also have to open your webserver's firewall to allow access to Google's servers and whatever port you're using to communicate with them. Your hosting company's server administrator will know how to identify the correct address and how to fix their firewall accordingly.
 
-As of early 2025, additional steps are required to make Gmail work, as documented in [this forum post](https://www.zen-cart.com/showthread.php?230666-Gmail-using-Oauth-March-14-2025-notice). 
+As of early 2025, additional steps are required to make Gmail work:
+
+- Go to your Account Security settings and turn on Two Factor Authentication.
+- Then go to Apps and add a custom app.  If you don't see a link for creating a custom app, try going to [https://myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords)
+- give your app a meaningful name like "zencartmail"
+- create an application password
+- set Zen Cart's SMTP Email Account Password field to this new password.  Do not change the SMTP Email Account Mailbox value; it should still be the email address being used.
+
+Thanks to the author of [this forum post](https://www.zen-cart.com/showthread.php?230666-Gmail-using-Oauth-March-14-2025-notice) for reporting this new procedure. 
 
 ## Office 365 
 
