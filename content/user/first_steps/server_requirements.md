@@ -26,7 +26,7 @@ The following list shows the PHP versions compatible with each version of Zen Ca
 
 Please note that the  lower versions of PHP in a supported range are only intended to allow you to get through the upgrade process more easily.  The goal should be to use the highest version of PHP supported by your version, since it will have the most current fixes and security patches.
 
-*   <font color="#ff0000">**Zen Cart v2.2.x** is designed for PHP 8.0 through PHP 8.4</font><br>
+*   <font color="#ff0000">**Zen Cart v2.2.x** (expected in 2025) is designed for PHP 8.0 through PHP 8.4</font><br>
 *   <font color="#ff0000">**Zen Cart v2.1.x** is designed for PHP 8.0 through PHP 8.3</font> (v2.1.0 WILL trigger some deprecation messages on PHP 8.4)<br>
 *   <font color="#ff0000">**Zen Cart v2.0.x** is designed for PHP 8.0 through PHP 8.3</font> (v2.0.x and older WILL trigger errors on PHP 8.4)<br>
 *   <font color="#ff0000">**Zen Cart v1.5.8** (latest version: 1.5.8a) is designed for PHP 7.3 through PHP 8.3 (with PHP 8.1 recommended and PHP 8.2 or less required for `zc_install`)</font><br>
@@ -70,6 +70,7 @@ Zen Cart requires a few PHP modules/extensions installed:
  - `iconv`
  - `intl`  (required since v2.0.0)
  - `json`
+ - `mbstring` (required since v2.2.0; always recommended)
  - `mysqli`, `pdo_mysql`
  - `pcre`
  - `zip`
@@ -77,7 +78,7 @@ Zen Cart requires a few PHP modules/extensions installed:
  
 It is recommended to also enable the following PHP extensions:
 
- - `mbstring`, `pcntl`, `pdo_sqlite`
+ - `pcntl`, `pdo_sqlite`
 
 ### PHP Memory Recommendations
 
