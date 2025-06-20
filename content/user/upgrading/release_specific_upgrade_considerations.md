@@ -37,7 +37,7 @@ This document lists things you may wish to take into account as you upgrade.  Th
 - Additional image matching rules may (optionally) be enforced more strictly; see [this page](/user/images/additional_images/#additional-images-filename-matching-rules).  This behavior can be controlled via the configuration value `ADDITIONAL_IMAGES_MODE` in [Admin > Configuration > Images](/user/admin_pages/configuration/configuration_images/). 
 - The `NOTIFY_GET_PRODUCT_DETAILS` notifier has been deprecated in favor of `NOTIFY_GET_PRODUCT_OBJECT_DETAILS`, which uses different arguments.  Any use of the former will product a deprecation debug log. 
 - If you are using a template other than Bootstrap or Responsive Classic, you may need to update the [template_info](/user/template/template_info/) file to add the `uses_mobile_sidebox_settings` entry. 
-- If you are using a template other than Bootstrap or Responsive Classic, you may wish to use the `/includes/modules/ezpages_mobile.php` file to build your mobile menu.  See [this PR](https://github.com/zencart/zencart/pull/6697).
+- If you are using a template other than Bootstrap or Responsive Classic, you may wish to use the `includes/modules/ezpages_mobile.php` file to build your mobile menu.  See [this PR](https://github.com/zencart/zencart/pull/6697).
 - Go to Admin > Tools > EZ-Pages to review the "Mobile" settings for your EZ-Pages.  Any pages you wish to appear in your mobile menu will need to be set to "Yes" with a sort order greater than 0.
 
 ### Zen Cart 2.0.x
@@ -74,7 +74,7 @@ $detect = new Detection\MobileDetect;
 
 - A new file, `includes/init_includes/init_non_db_settings.php`, was introduced. Defined constants which are not language specific were migrated out of language files into this file.
 
-- Most "functions" (both admin and non-admin) have been consolidated into files located in `/includes/functions/`. Some have been merged together. Some changes are listed below.  This change was done to eliminate the duplication of identical (or nearly identical) functions between the storefront and admin that was present in prior releases.
+- Most "functions" (both admin and non-admin) have been consolidated into files located in `includes/functions/`. Some have been merged together. Some changes are listed below.  This change was done to eliminate the duplication of identical (or nearly identical) functions between the storefront and admin that was present in prior releases.
 
 - Some functions have been renamed. 
 Zen Cart 1.5.8a will provide aliases for these functions so that the old names will still work, but will create a deprecation log. (To fix the log, change the function call from using the old name to the new name.)
@@ -115,14 +115,15 @@ a general function called `zen_get_category_metatag_fields`is provided, with an 
 - The misspelled notifier `NOTIFIY_ORDER_CART_SUBTOTAL_CALCULATE` has been deprecated and replaced by `NOTIFY_ORDER_CART_SUBTOTAL_CALCULATE`. Code that references the misspelled notifier will continue to work (due to the [event aliasing](/dev/code/notifiers/#event-aliasing) feature), but plugins should be updated to use the corrected name.
 
 - The constant `ROBOTS_PAGES_TO_SKIP` was previously located in the language file `meta_tags.php` despite not being language-related.   
-It has been moved to its own file in `/includes/extra_configures/robots_pages_to_skip.php`.  
+It has been moved to its own file in `includes/extra_configures/robots_pages_to_skip.php`.  
+Plugin pages that do not require indexing (such as Back In Stock subscribe/unsubscribe) should be added to the list in the constant definition.
+
 - The notifier `NOTIFY_OT_COUPON_USES_PER_USER_CHECK` had its arguments changed.  See `includes/modules/order_total/ot_coupon.php`.
 
-Plugin pages that do not require indexing (such as Back In Stock subscribe/unsubscribe) should be added to the list in the constant definition.
 
 ### Zen Cart 1.5.7 
 
-- The configuration constant `UPLOAD_FILENAME_EXTENSIONS` was removed from the database and replaced with an entry in `includes/classes/upload.php`.   If you have modified this constant from its original setting of `jpg,jpeg,gif,png,eps,cdr,ai,pdf,tif,tiff,bmp,zip` you will want to add a custom define (in a new file) in both your `/includes/extra_configures/` and `YOUR_ADMIN/includes/extra_configures/` directories to set all the allowed extensions you want to support site-wide.
+- The configuration constant `UPLOAD_FILENAME_EXTENSIONS` was removed from the database and replaced with an entry in `includes/classes/upload.php`.   If you have modified this constant from its original setting of `jpg,jpeg,gif,png,eps,cdr,ai,pdf,tif,tiff,bmp,zip` you will want to add a custom define (in a new file) in both your `includes/extra_configures/` and `YOUR_ADMIN/includes/extra_configures/` directories to set all the allowed extensions you want to support site-wide.
 
 - Internal changes necessitated removing the following inclusions from `admin/includes/auto_loaders/currency_cron.core.php`: 
     - `class.base.php`
