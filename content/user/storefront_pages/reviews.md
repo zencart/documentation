@@ -1,6 +1,6 @@
 ---
 title: Reviews Page
-description: Allowing customers to provide product feedback
+description: Allowing customers to provide testimonials
 category: storefront_pages
 weight: 10
 ---

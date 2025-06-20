@@ -15,7 +15,8 @@ on the main page called Upcoming Products.  This can be configured with the sett
 You may also configure upcoming products to appear in the following places: 
 
 - in a centerbox on an empty shopping cart page with the setting *Show Upcoming Products on Main Page* on [Admin > Configuration > Stock](/user/admin_pages/configuration/configuration_stock/)
-- in a centerbox below a [product listing page](/user/storefront_pages/listing_pages/) using the settings on [Admin > Configuration > Index Listing](/user/admin_pages/configuration/configuration_indexlisting/)
+- in a centerbox below a [product listing page](/user/storefront_pages/listing_pages/) using the settings *Show Upcoming Products - below Product Listing* on [Admin > Configuration > Index Listing](/user/admin_pages/configuration/configuration_indexlisting/)
+- Two other similar centerbox settings exist on this page: *Show Upcoming Products on Main Page - Category with SubCategories* and *Show Upcoming Products on Main Page - Errors and Missing Products Page*.
 
 Some stores will set the [products status](/user/products/products_status/) of an upcoming product to Disabled until the release date is reached.  In this case, a storeowner may wish to automate the transition to products status Enabled by using the [enable disabled product by available date](/user/admin_pages/configuration/configuration_stock/#enable_disabled_product_by_available_date) feature, which has been available since Zen Cart 1.5.7. Otherwise, moving a product to enabled must be done using the Admin panel or perhaps a cron job. 
 
