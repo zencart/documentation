@@ -6,4 +6,4 @@ weight: 10
 noindex: yes
 ---
 
-Please see [missing language constants](/user/localization/missing_language_constants/).
+Please see [missing language constants](/user/languages/missing_language_constants/).
