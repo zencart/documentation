@@ -132,7 +132,7 @@ Here are some examples of how WinMerge will allow you to see differences in file
 #### Types of File Differences
 There will be many differences:
 
-- language defines for displayed text - once your language files are in the [array based format](/user/localization/158_language_files/), those will be simple to carry forward.  If you are going from define based (Zen Cart 1.5.7 or older) language files to the array based format, it's more work, and the recommendation is to start with only [basic language customizations](/user/localization/basic_158_language_customizations/).
+- language defines for displayed text - once your language files are in the [array based format](/user/languages/158_language_files/), those will be simple to carry forward.  If you are going from define based (Zen Cart 1.5.7 or older) language files to the array based format, it's more work, and the recommendation is to start with only [basic language customizations](/user/languages/basic_158_language_customizations/).
 - actual programming/code differences -- for these you will need to make detailed notes in order to carry over those changes to the new version.
 - plugins/addons you've installed -- these often contain numerous programming changes, and may not be fully compatible with the newer Zen Cart release or a newer PHP version.  Be sure to check if there's a more up to date version of a plugin you are using during an upgrade.
 
@@ -166,7 +166,7 @@ Using the list of files you made earlier, go through each "changed" file, and re
 
 > Clarification: here you are essentially re-building your `old_store` customizations onto the `new_store` directory.
 
-- Simple language edits will be just a matter of copy-and-paste of the strings you want to  use. Be cautious about the move from 1.5.7 and before define based language files and 1.5.8 and higher  [array based format](/user/localization/158_language_files/).
+- Simple language edits will be just a matter of copy-and-paste of the strings you want to  use. Be cautious about the move from 1.5.7 and before define based language files and 1.5.8 and higher  [array based format](/user/languages/158_language_files/).
 
 - Programming changes in core Zen Cart files will be more difficult and require significant testing.
 

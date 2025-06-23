@@ -19,3 +19,4 @@ So: you can do this, many people do this, but it has a cost and you'll need to d
 
 - If your additional software is for sending email (such as phpList), consider migrating to a paid email service provider. The FAQ on [Newsletters](/user/email/newsletters/) provides some suggestions. 
 
+- See [Deployment Configurations](/user/first_steps/deployment_configurations/) for ideas on where to place Zen Cart and where to place the additional software you'd like to use. 

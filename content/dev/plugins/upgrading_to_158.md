@@ -197,7 +197,7 @@ If you get a debug log like this:
 [04-Aug-2023 11:50:03 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "SOME_CONSTANT" in /Users/scott/Sites/gh_demo_200/...
 ```
 
-please see [missing language constants](/user/localization/missing_language_constants/).
+please see [missing language constants](/user/languages/missing_language_constants/).
 
 
 {{% code_help_links %}} 
