@@ -10,12 +10,12 @@ The Open Source community has many great benefits. One such benefit is the abili
 ## Acceptable Contributions
 Addon/Contribution/Plugin authors who wish to discuss and support their addon via the Zen Cart support site must post their contribution to the "Plugins" area of the Zen Cart support site.   Modules which are not in the Plugins area are not to be discussed on the Zen Cart support forum.
 
-The Zen Cart Support Forum is the place to explore and create new ideas and features; it is not a venue for advertising and promotion. Paid/commercial addons will not be accepted for the Downloads section, and advertisements for such will not be allowed on the forum.
+The Zen Cart Support Forum is the place to explore and create new ideas and features; it is not a venue for advertising and promotion. Paid/commercial addons will not be accepted for the Plugin Library, and advertisements for such will not be allowed on the forum.
 
 Contributions containing content which could be construed as objectionable or unsuited for general use are not acceptable and will thus be rejected.
 
 ## Addon/Contribution Requirements
-Contributed Addons which are hosted in the Zen Cart "downloads" area must comply with the following standards:
+Contributed Addons which are hosted in the Zen Cart Plugins Library must comply with the following standards:
 
 * License: Must be GPL, since it's integrating into Zen Cart core code, which is GPL. A complete copy of the license should be included in the contribution files, preferably as a separate file. If an addon is free-standing (ie: doesn't use *any* existing Zen Cart files in order to operate) then it can be licensed under another license provided that license is fully compatible with GPL.
 
