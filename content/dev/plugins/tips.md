@@ -5,6 +5,9 @@ category: plugins
 weight: 1
 ---
 
+## Avoid modifying core files 
+Whereever possible, try to use the [Observer/Notifier](/dev/code/notifiers/) system, rather than changing core files.  
+
 ## Security
 
 It is wise to ensure that ALL your PHP plugin files include a line near the top which checks whether `IS_ADMIN_FLAG` is defined. This way if you have a file that's accessed via unauthorized methods then it will just abort. For example:
