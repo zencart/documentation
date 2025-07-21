@@ -10,7 +10,7 @@ Thanks to the efforts of our volunteers, these updated language files are ready 
 - [Dutch](https://www.zen-cart.com/downloads.php?do=file&id=2376)
 - [Finnish](https://www.zen-cart.com/downloads.php?do=file&id=242)
 - [French](https://www.zen-cart.com/downloads.php?do=file&id=2391)
-- Italian coming soon from the Zen Cart Italia team!
+- [Italian](https://www.zen-cart.com/downloads.php?do=file&id=2411)
 - [Japanese](https://www.zen-cart.com/downloads.php?do=file&id=2359)
 - [Spanish](https://github.com/torvista/Zen_Cart-Spanish_Language_Pack) 
 

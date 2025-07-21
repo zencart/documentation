@@ -99,3 +99,5 @@ A description of the changes and conversion procedure is provided in the develop
 
 Developers wishing to work on language packs are referred to the [Creating a Language Pack](/dev/languages/creating_a_language_pack/) page.
 
+See [Updated Language Packs](/user/languages/updated_language_packs/) for a list of language packs ready for Zen Cart 1.5.8+.
+
