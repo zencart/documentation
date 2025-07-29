@@ -11,7 +11,8 @@ Rather than enter products one-by-one in the admin panel, some storeowners prefe
 
 The most up to date and well maintained of these tools is [Database I/O Manager (DbIo)](https://www.zen-cart.com/downloads.php?do=file&id=2091). 
 
-You can read [the help for DbIo](https://htmlpreview.github.io/?https://github.com/lat9/dbio/blob/master/docs/dbio/readme.html) to learn more. 
+You can read [the Wiki for DbIo](https://github.com/lat9/dbio/wiki)
+to learn more. 
 
 ### EasyPopulate 
 
