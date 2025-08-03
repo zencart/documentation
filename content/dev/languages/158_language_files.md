@@ -159,5 +159,8 @@ This is no longer permitted; the constant must be replaced by a string.
 define('ABOUT', '<li><a href="' . zen_href_link(FILENAME_ABOUT_US) . '">' . 'About Us' . '</a></li>');
 ```
 
+### Overriding language files
+{{% language_overrides %}} 
+
 {{% language_help_links %}}
 

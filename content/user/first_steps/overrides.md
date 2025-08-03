@@ -90,3 +90,6 @@ many fewer files than the default template.
 
 When you're ready, you can [read more about overrides](/user/new_user_topics/overrides/).
 
+### Overriding language files
+{{% language_overrides %}} 
+

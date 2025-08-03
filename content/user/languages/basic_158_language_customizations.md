@@ -75,4 +75,7 @@ Notice that the anchor text is `$define['TABLE_HEADING_FEATURED_PRODUCTS']` rath
 
 You can read more about array based language files in [Language Files - Developer Information on Array based Language files](/dev/languages/158_language_files/). 
 
+## Overriding language files
+{{% language_overrides %}} 
+
 {{% language_help_links %}}
