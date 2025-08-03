@@ -109,6 +109,11 @@ you can incorporate the changes into your override files.
 
 Save the changed files and upload them to your server.
 
+
+**Overriding language files**
+
+{{% language_overrides %}} 
+
 --- 
 ### Next Steps
 Ready to read more about overrides? [Go here](/user/template/template_overrides/).
