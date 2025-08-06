@@ -8,7 +8,7 @@ weight: 5
 These are demos of the storefront using different templates, along with related information for each template.
 
 ## Bootstrap 
-- [Author's Demo Site](https://zc158.vinosdefrutastropicales.com/zc158/index.php)
+- [Author's Demo Site](https://zc210.vinosdefrutastropicales.com/)
 - [Demo Site showing different colors](https://jeandret.com/)
 - [Template Information](/user/template/bootstrap/) 
 - [Forum Support Thread](https://www.zen-cart.com/showthread.php?223910)
