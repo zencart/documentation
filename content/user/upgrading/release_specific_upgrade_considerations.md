@@ -29,6 +29,7 @@ This document lists things you may wish to take into account as you upgrade.  Th
 ### Zen Cart 2.2.0 :stop_sign: <font color="red">NOT RELEASED YET</font> :stop_sign:
 
 - The notifier `NOTIFY_ADMIN_INVOICE_HEADERS_AFTER_TAX` was misspelled in older releases as `NOTIFY_ADMIN_INVOIVE_HEADERS_AFTER_TAX`.  Users of this notifier should update to the corrected spelling. 
+- The `fields` property in the `Product` class has been removed.  Plugins should use the `getData()` or `getDataForLanguage()` methods of the `Product` class instead.
 
 ### Zen Cart 2.1.0 
 
