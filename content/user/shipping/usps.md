@@ -10,36 +10,12 @@ weight: 10
 
 There are two USPS Shipping Modules.
 Both are provided as [plugins for Zen Cart](/user/plugins/why_plugins/). 
+The older Webtools module will cease to work in 2026, so you should 
+be migrating to the newer RESTful USPS module. 
 
 ## Pre-requiste Setup
 
 In your ZenCart admin area, make sure you have a zipcode entered at: Admin > Configuration > Shipping/Packaging > Postal Code. Both versions of the USPS Module (WebTools and RESTful) need this to work.
-
-## WebTools USPS Module
-
-Module Link: [WebTools USPS Shipping Module](https://www.zen-cart.com/downloads.php?do=file&id=1292).
-
-In order to use the USPS module, you need to have a USPS WebTools account registered for access to their production RatesV4 and IntlV2 APIs. You must have a separate WebTools user ID for each web store.
-
-If you have an account with USPS for using shipping assistance, this is not the same as the WebTools user ID needed for the shopping cart.
-
-Here is the [link for registering](https://www.usps.com/business/web-tools-apis/welcome.htm).
-
-Several steps are required to get everything you need; please see the instructions for [Getting USPS Credentials](https://github.com/lat9/usps/wiki/Initial-Install:-Getting-USPS-Credentials).
-
-### Setup WebTools
-
-In your Zen Cart admin area, go to Admin > Modules > Shipping, and click on the USPS shipping module, click Install, and fill out the various configuration information fields.
-
-You must complete all the steps in [Getting USPS Credentials](https://github.com/lat9/usps/wiki/Initial-Install:-Getting-USPS-Credentials) before you will be able to go live.
-
-### Troubleshooting WebTools
-
-The USPS module has a setting called "Debug Mode" which you can configure when you go to Admin > Modules > Shipping > USPS > Edit.  Turning debug on (i.e. to `Email`, `Logs` or `Screen`) will show you the raw responses from the USPS server.
-
-### USPS Password Now Required
-
-The USPS now requires that you enter your password in the config; see [the USPS wiki](https://github.com/lat9/usps/wiki/Forgot-or--Lost-Your-USPS-API-Password%3F) for instructions on retrieval if you have forgotten it.
 
 ## RESTful USPS Module
 
@@ -67,6 +43,32 @@ You will need to obtain your API Credentials ("USPS API Consumer Key" and "USPS 
 ### Troubleshooting RESTful
 
 Much like the WebTools module, there is a "Debug Mode" that can be used to see what the responses are like from the USPS Server (as well as the raw outgoing requests).
+
+## WebTools USPS Module
+
+Module Link: [WebTools USPS Shipping Module](https://www.zen-cart.com/downloads.php?do=file&id=1292).
+
+In order to use the USPS module, you need to have a USPS WebTools account registered for access to their production RatesV4 and IntlV2 APIs. You must have a separate WebTools user ID for each web store.
+
+If you have an account with USPS for using shipping assistance, this is not the same as the WebTools user ID needed for the shopping cart.
+
+Here is the [link for registering](https://www.usps.com/business/web-tools-apis/welcome.htm).
+
+Several steps are required to get everything you need; please see the instructions for [Getting USPS Credentials](https://github.com/lat9/usps/wiki/Initial-Install:-Getting-USPS-Credentials).
+
+### Setup WebTools
+
+In your Zen Cart admin area, go to Admin > Modules > Shipping, and click on the USPS shipping module, click Install, and fill out the various configuration information fields.
+
+You must complete all the steps in [Getting USPS Credentials](https://github.com/lat9/usps/wiki/Initial-Install:-Getting-USPS-Credentials) before you will be able to go live.
+
+### Troubleshooting WebTools
+
+The USPS module has a setting called "Debug Mode" which you can configure when you go to Admin > Modules > Shipping > USPS > Edit.  Turning debug on (i.e. to `Email`, `Logs` or `Screen`) will show you the raw responses from the USPS server.
+
+### USPS Password Now Required
+
+The USPS now requires that you enter your password in the config; see [the USPS wiki](https://github.com/lat9/usps/wiki/Forgot-or--Lost-Your-USPS-API-Password%3F) for instructions on retrieval if you have forgotten it.
 
 ### "Why are there two modules?"
 

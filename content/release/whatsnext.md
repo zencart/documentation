@@ -28,6 +28,8 @@ noindex: yes
 - Core: Correct PHP warnings when added product isn't POSM-managed 
 - Core: Password reset via URL (versus emailing a temporary password) is being added to the core.  Credit to forum users Numinix and Retched for inspiration.
 - Extras: Curltester now includes REST API endpoints for USPS and PayPal. 
+- Storefront: Tax descriptions may now be multilingual.
+- Storefront: Password forgotten now disallowed for banned email addresses.
 - Storefront: Correct `get_template_dir` loading behavior for CSS, JS and PHP.
 - Storefront: Notifier added for additional product details.
 - Storefront: Updated embedded MobileDetect to latest version for `responsive_classic` template.
