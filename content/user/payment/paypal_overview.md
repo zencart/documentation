@@ -9,13 +9,13 @@ PayPal is the most commonly used online payment method in the ecommerce world.
 
 There are several integrations available, and the one(s) you choose will depend on your needs.
 
-- [PayPal Express](/user/payment/paypal_express_checkout/) is the most commonly recommended integration.  It allows your customers to pay by their credit card or PayPal account, which they do offsite (not on your website).  You can ask questions about this payment method on the [support subforum for PayPal Express](https://www.zen-cart.com/forumdisplay.php?149-PayPal-Express-Checkout-support).
+- [PayPal RESTful](/user/payment/paypal_restful/) is the most up-to-date PayPal integration, and is expected to replace all the other (listed below) PayPal modules in Summer 2025. It supports accepting payments from your customer by credit card or their PayPal account, with or without PayPal branding (where possible). It requires Zen Cart 1.5.8 or higher.  You can ask questions about this payment method on the [support subforum for PayPal RESTful](https://www.zen-cart.com/forumdisplay.php?170-PayPal-RESTful-support).
+
+- [PayPal Express](/user/payment/paypal_express_checkout/) has been most commonly recommended integration (before the REST module was developed), as it supports most sites' needs directly.  It allows your customers to pay by their credit card or PayPal account, which they do offsite (not on your website).  You can ask questions about this payment method on the [support subforum for PayPal Express](https://www.zen-cart.com/forumdisplay.php?149-PayPal-Express-Checkout-support).
 
 - PayPal Website Payments Pro allows customers to enter their credit card details on your site during the checkout process.  This more seamless experience is preferred by some vendors, but has a fee and minimum requirements.  Talk to your PayPal account rep to see if this is a good choice for you.  You can [read about setting up PayPal Pro](/user/payment/paypal_express_checkout/#configuring-zen-cart-to-accept-credit-cards-directly-on-your-site), and ask questions about this payment method on the [support subforum for PayPal Website Payments Pro](https://www.zen-cart.com/forumdisplay.php?152-PayPal-Website-Payments-Pro-support).
 
 - PayPal Standard (sometimes also called "PayPal Website Payments Standard" or "PayPal IPN") was the earliest PayPal integration, and is no longer recommended because it is less reliable.  See [PayPal Standard - Potential Problems](/user/payment/paypal_standard/) for details.
-
-- [PayPal RESTful](/user/payment/paypal_restful/) is the next generation of PayPal integration, which is expected to replace both PayPal Express and PayPal Website Payments Pro in the future. It requires Zen Cart 1.5.8 or higher.  You can ask questions about this payment method on the [support subforum for PayPal RESTful](https://www.zen-cart.com/forumdisplay.php?170-PayPal-RESTful-support).
 
 A new feature called [payment module retirement](/user/payment/retirement/) is available to ease the transition between PayPal Website Payments Pro and/or Express to PayPal RESTful. 
 
