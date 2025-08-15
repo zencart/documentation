@@ -26,6 +26,8 @@ b) indirection - use of `$$foo['bar']['baz']` needs to be rewritten as `${$foo['
 
 c) `switch()` statements cannot have multiple `default:` blocks.
 
+d) Null coalesce operator (`??`) was added: `$username = $_GET['user'] ?? 'guest';` is equivalent to `$username = isset($_GET['user']) ? $_GET['user'] : 'guest';`
+
 ### PHP 7.1
 In PHP 7.1 there were numerous changes, but few likely to impact regular Zen Cart use
 
