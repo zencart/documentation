@@ -17,6 +17,8 @@ e.g.
     - PluginName
         - v1.0.0
             - manifest.php
+            - database_tables.php (auto loads for both catalog and admin, since ZC v2.2.0)
+            - filenames.php (auto loads for both catalog and admin, since ZC v2.2.0)
             - Installer
                 - languages
                     - english
@@ -60,6 +62,7 @@ e.g.
                       - templates
         - v1.0.1
             - Uses a similar structure to v1.0.0, with any files added/modified/removed since that version
+            - EVERY subsequent version MUST BE able to exist on its own without any prior versions installed. ie: must be a complete fileset.
 
 ***Notes***:
 
