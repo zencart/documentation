@@ -115,20 +115,28 @@ Here is a gist containing some [regex patterns which can be used to identify inc
 
 
 ### PHP 8.0
-Functions added: `str_contains()`, `str_starts_with()`, `str_ends_with()`; `get_debug_type()`, `preg_last_error_msg()`, `fdiv()`, `DateTimeInterface::createFromInterface()`
+Added: `str_contains()`, `str_starts_with()`, `str_ends_with()`
 
-Added: Named arguments, attributes (#[...])
+Added: `get_debug_type()`, `preg_last_error_msg()`, `fdiv()`, `DateTimeInterface::createFromInterface()`
 
 Added: constructor property promotion (ie: automatically set $this->var when $var is passed to a typed constructor var)
 
-Added: union types, `match` expression, nullsafe operator (`?->`)
+Added: `match(){};` expression
 
-Deprecated: cannot have function/class parameters with a default before a required parameter.
+Added: nullsafe operator (`?->`). ie: `$foo?->value` safely returns `null` if there's no accessible `value` property.
+
+Added: Attributes (#[...])
+
+Added: union types
+
+Deprecated: cannot have function/class parameters with a default value before a required parameter: ie: cannot do: `function foo($required1 = '', $required2)`
 
 ### PHP 8.1
-Added: `array_is_list()`
+Deprecated: can no longer pass `null` to a non-nullable scalar type declaration (ie: `string $var = null` must be either `?string = null` or `string = ''`)
 
 Added: [`enum`](https://www.php.net/manual/en/language.enumerations.php) support
+
+Added: `array_is_list()`
 
 Added: `readonly` properties
 
@@ -138,7 +146,6 @@ Added: intersection types
 
 Added: `never` return type
 
-Deprecated: can no longer pass `null` to a non-nullable scalar type declaration (ie: `string $var = null` must be either `?string = null` or `string = ''`)
 
 ### PHP 8.2
 Added: [`readonly`](https://www.php.net/manual/en/language.oop5.basic.php#language.oop5.basic.class.readonly) classes
@@ -151,25 +158,21 @@ Deprecated: dynamic class properties no longer allowed. ie: cannot refer to `$th
 
 Deprecated: The `${var}` and `${expr}` style of string interpolation is deprecated. Use `$var`/`{$var}` and `{${expr}}`, respectively.
 
-Deprecated: `glob()` now returns an empty `array` if all paths are restricted by `open_basedir`. Previously it returned `false`.
-
 Deprecated: `utf8_encode()` and `utf8_decode()` functions are deprecated. (Moved to mbstring extension in PHP 8.4)
+
+Deprecated: `glob()` now returns an empty `array` if all paths are restricted by `open_basedir`. Previously it returned `false`.
 
 ### PHP 8.3
 Added: `json_validate()` (to validate JSON without decoding first)
 
 Added: `mb_str_pad()`
 
-Added: Typed class constants
+Added: Typed class constants `const string TEXT_MESSAGE = 'message';`
 
-`number_format()` now handles negative decimals.
+Change: `number_format()` now handles negative decimals.
 
 ### PHP 8.4
-Added: `request_parse_body()`
-
-Added: `fpow()`
-
-Change: `utf8_encode()` and `utf8_decode()` functions are now only present if `mbstring` is installed.
+Change: `utf8_encode()` and `utf8_decode()` functions are now only present if `mbstring` extension is installed.
 
 Syntax: May now chain `new` expressions, ie: `(new A)->b()->c()`
 
@@ -179,12 +182,16 @@ Deprecated: E_USER_ERROR, ie: `trigger_error(..., E_USER_ERROR)`
 
 Deprecated: class named `_` no longer allowed.
 
+Added: `request_parse_body()`
+
+Added: `fpow()`
+
 ### PHP 8.5
+Added functions: `array_first()`, `array_last()`, `get_error_handler()`, `get_exception_handler()`
+
 Added: Pipe operator (`|>`) for enabling functional pipelines.
 
 Added: `final` property promotion
-
-Added functions: `array_first()`, `array_last()`, `get_error_handler()`, `get_exception_handler()`
 
 Added: constant expressions may now contain closures and first-class callables.
 
