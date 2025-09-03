@@ -20,28 +20,50 @@ For much more detailed lists of changes, see the [official PHP documentation on 
 ### PHP 7.0
 In PHP 7.0 the following functionality/features changed:
 
-a) class `constructors` must be called `__construct` and not just be the same function name as the class anymore.
+a) class `constructors` must be named `__construct` and not just be the same function name as the class anymore.
 
 b) indirection - use of `$$foo['bar']['baz']` needs to be rewritten as `${$foo['bar']['baz']}` else it will be seen as `($$foo)['bar']['baz']`. Also, `$foo->$bar['baz']` has to be rewritten as `$foo->{$bar['baz']}` if that's what was intended.
 
 c) `switch()` statements cannot have multiple `default:` blocks.
 
-d) Null coalesce operator (`??`) was added: `$username = $_GET['user'] ?? 'guest';` is equivalent to `$username = isset($_GET['user']) ? $_GET['user'] : 'guest';`
+Added: Null coalesce operator (`??`) was added: `$username = $_GET['user'] ?? 'guest';` is equivalent to `$username = isset($_GET['user']) ? $_GET['user'] : 'guest';`
+
+Added: spaceship `<=>` comparison operator
+
+Added: `define()` can now define arrays.
+
+Added: `preg_replace_callback_array()`, `random_bytes()`, `random_int()`, `error_clear_last()`
+
+Added: Scalar type declarations and return type declarations.
 
 ### PHP 7.1
-In PHP 7.1 there were numerous changes, but few likely to impact regular Zen Cart use
+Zen Cart: ZC sites using PHP 7.0 can safely use 7.1 without issue.
 
-PHP 7.1 is nearly identical to PHP 7.0 in terms of compatibility, but 7.1 is faster, so there's no point in using 7.0 if 7.1 is available to you!
+Added: `null`able types (ie: `?` prefix)
+
+Added: `void` return type
+
+Added: array destructuring with `[]`, including in `foreach`
+
+Added: class constants can now declare visibility (protected, private, public)
+
+Added: `is_iterable()` and `iterable` pseudo-type
+
+Deprecated: `mcrypt`
 
 
 ### PHP 7.2
-For PHP 7.2 the following changes are required:
+Deprecated: calls to `each()` are deprecated; use `foreach()` instead. 
+For upgrading code related to Zen Cart, see some code examples here: [Refactor each() to foreach() for compatibility with PHP 7.2](https://github.com/zencart/zencart/pull/1377)
 
-a) calls to `each()` are deprecated; use `foreach()` instead. See examples here: [Refactor each() to foreach() for compatibility with PHP 7.2](https://github.com/zencart/zencart/pull/1377)
+Deprecated: `create_function()` is deprecated. Use anonymous functions ("Closures") instead.
 
-b) `create_function()` is deprecated. Use anonymous functions ("Closures") instead.
+Deprecated: The `__autoload()` mechanism is deprecated in favor of `spl_autoload_register()` instead.
 
-c) The `__autoload()` mechanism is deprecated in favor of `spl_autoload_register()` instead.
+Deprecated: calls to missing/undefined constants now trigger E_WARNING
+
+Added: Argon2 added to password functions
+
 
 ### PHP 7.3
 For PHP 7.3 the only change found necessary in Zen Cart (over PHP 7.2 compatibility) was:
@@ -52,11 +74,43 @@ Other notes about 7.3:
 - calls to `compact()` with undefined variables will cause errors
 - In case of troubleshooting rare problems that could be caused by the very few SPL autoloads in ZC, that any SPL Autoloads that fail will cause all subsequents to fail too, instead of just a warning in previous PHP versions.
 
+Added: `array_key_first()`, `array_key_last()`, `is_countable()`, `hrtime()`, `gc_status()`, `fpm_get_status()`
+
+Added: `DateTime::createFromImmutable()`
+
+Deprecated: case-insensitive constants
+
 ### PHP 7.4
-- nested ternary operator calls should be checked for clarity, and extra parentheses added as necessary
-- added Null coalescing assignment operator: `??=`
+Zen Cart note: nested ternary operator calls should be checked for clarity, and extra parentheses added as necessary
+
+Added:  Null coalescing assignment operator: `??=`
+
+Added: Arrow functions, ie: `fn($n) => $n > 0`
+
+Added: class properties now support type declarations (ie: `int`, `string`, etc)
+
+Added: `password_algos()`, `mb_str_split()`
+
+Added: array unpacking in array literals (`...$arr`)
+
+Added: numeric literal separators (`1_000_000`)
+
+Deprecated: curly-brace array/string offsets. Use `$var[$idx]` instead of `$var{$idx}`
+
+Deprecated: `allow_url_include` INI option
+
+Deprecated: `implode()` MUST specify the separator as the first param (previously the param order could be reversed)
+
+Deprecated: The `is_real()` function is deprecated, use `is_float()` instead.
+
+Deprecated: Using `array_key_exists()` on objects. Instead either `isset()` or `property_exists()` should be used.
+
+Deprecated: The `get_magic_quotes_gpc()` and `get_magic_quotes_runtime()` functions are deprecated. They always return `false`.
+
+Deprecated: `money_format()` replaced by the intl `NumberFormatter` functionality.
 
 
+### TOOL FOR PHP 5,7 INSPECTION:
 Here is a gist containing some [regex patterns which can be used to identify incompatible old PHP code for PHP 5 and PHP 7](https://gist.github.com/drbyte/c188f448137fc149c609)
 
 
