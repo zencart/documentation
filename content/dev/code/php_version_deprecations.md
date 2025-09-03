@@ -113,6 +113,7 @@ Deprecated: `money_format()` replaced by the intl `NumberFormatter` functionalit
 ### TOOL FOR PHP 5,7 INSPECTION:
 Here is a gist containing some [regex patterns which can be used to identify incompatible old PHP code for PHP 5 and PHP 7](https://gist.github.com/drbyte/c188f448137fc149c609)
 
+## PHP 8
 
 ### PHP 8.0
 Added: `str_contains()`, `str_starts_with()`, `str_ends_with()`
