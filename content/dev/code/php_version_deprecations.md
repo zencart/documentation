@@ -6,13 +6,11 @@ weight: 10
 type: codepage
 ---
 
-# PHP Version Changes and Deprecations
-
 PLEASE NOTE THE OFFICIAL PHP VERSION SUPPORT TIMELINE: [https://php.net/supported-versions.php](https://php.net/supported-versions.php)
 
-NOTE: This post assumes some pretty solid PHP knowledge, because all the changes listed will require adapting your code to find a new way to do whatever it was doing before.
+NOTE: This page assumes some pretty solid PHP knowledge, because all the changes listed will require adapting your code to find a new way to do whatever it was doing before.
 
-NOTE: This is not the complete official list of changes. This list caters mostly to the topics that might affect people writing plugins for Zen Cart. 
+NOTE: This is not the complete official list of PHP language changes. This list caters mostly to the topics that might affect people writing plugins for Zen Cart. 
 For much more detailed lists of changes, see the [official PHP documentation on migrating between PHP versions](http://www.php.net/manual/en/appendices.php).
 
 ## PHP 7
