@@ -253,19 +253,20 @@ There are actually 3 encapsulated plugins, `Display logs`, `Products' Options' S
 Plugin *name* and *description* language strings are in manifest files (**`zc_plugins/PLUGIN_NAME/PLUGIN_VERSION/manifest.php`**) and *menus* and *submenus*, if they exist, are in installer files (**`zc_plugins/PLUGIN_NAME/PLUGIN_VERSION/Installer/ScriptedInstaller.php`**).
 Unfortunately, SQL queries in installer files are very variable and conversion can not be done with only one regular expression.
 
-**Create a new file `zc_plugins/PLUGIN_NAME/PLUGIN_VERSION/admin/includes/languages/NEW_LANGUAGE/extra_definitions/lang.menu.php`** with this content, replacing `plugin_key`, `PLUGIN NAME` and `PLUGIN DESCRIPTION` by each plugin actual data. The file name must be `lang.menu.php` to allow loading of plugins name and description even if the plugin is not installed or deactivated. If the name is different, those language constants will only be loaded when the plugin is installed and activated.
+**Create a new file `zc_plugins/PLUGIN_NAME/PLUGIN_VERSION/admin/includes/languages/NEW_LANGUAGE/extra_definitions/lang.menu.php`** with the following content, replacing `plugin_key`, `PLUGIN NAME` and `PLUGIN DESCRIPTION` with each plugin's actual data. The filename must be `lang.menu.php` to allow loading of the plugin's name and description even if the plugin is not installed or is deactivated. If the name is different, those language constants will only be loaded when the plugin is installed and activated.
 
 ```php
 <?php
+// lang.menu.php
 $define = [
     'ADMIN_PLUGIN_MANAGER_NAME_FOR_plugin_key' => 'PLUGIN NAME',
     'ADMIN_PLUGIN_MANAGER_DESCRIPTION_FOR_plugin_key' => 'PLUGIN DESCRIPTION',
 ];
-
 return $define;
 ```
 You can find the `plugin_key` in Zen Cart's plugin manager; it corresponds to column `Plugin Key` but with all letters in uppercase. It is also the plugin folder name under `zc_plugins` folder.
-For *admin menus* and *submenus*, convert using appropriate regular expression and add results to file created above.
+
+For *admin menus* and *submenus*, the following regular expressions will help you prepare entries to add to the file created above.
 
 ***Regular expression for Display Logs:***
 Copy lines from **`$this->addConfigurationKey(`** to **`'configuration_description' =>`** and regroup them into one line. Do this for each query, then apply regular expression.
