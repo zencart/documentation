@@ -85,7 +85,7 @@ Added:  Null coalescing assignment operator: `??=`
 
 Added: Arrow functions, ie: `fn($n) => $n > 0`
 
-Added: class properties now support type declarations (ie: `int`, `string`, etc)
+Added: [class properties now support type declarations](https://php.watch/versions/7.4/typed-properties) (ie: `int`, `string`, `array` etc)
 
 Added: `password_algos()`, `mb_str_split()`
 
