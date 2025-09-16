@@ -26,10 +26,10 @@ The following list shows the PHP versions compatible with each version of Zen Ca
 
 Please note that the  lower versions of PHP in a supported range are only intended to allow you to get through the upgrade process more easily.  The goal should be to use the highest version of PHP supported by your version, since it will have the most current fixes and security patches.
 
-*   <font color="#ff0000">**Zen Cart v2.2.x** (expected in 2025) is designed for PHP 8.0 through PHP 8.4</font><br>
+*   <font color="#ff0000">**Zen Cart v2.2.x** (expected in Q3 2025) is designed for PHP 8.0 through PHP 8.4</font><br>
 *   <font color="#ff0000">**Zen Cart v2.1.x** is designed for PHP 8.0 through PHP 8.3</font> (v2.1.0 WILL trigger some deprecation messages on PHP 8.4)<br>
 *   <font color="#ff0000">**Zen Cart v2.0.x** is designed for PHP 8.0 through PHP 8.3</font> (v2.0.x and older WILL trigger errors on PHP 8.4)<br>
-*   <font color="#ff0000">**Zen Cart v1.5.8** (latest version: 1.5.8a) is designed for PHP 7.3 through PHP 8.3 (with PHP 8.1 recommended and PHP 8.2 or less required for `zc_install`)</font><br>
+*   <font color="#ff0000">**Zen Cart v1.5.8** (latest version: 1.5.8a) is designed for PHP 7.3 through PHP 8.3 (with PHP 8.1 recommended, and PHP 8.2 or less required for `zc_install`)</font><br>
 *   **Zen Cart v1.5.7** (latest version: 1.5.7d) is designed for PHP 5.6 through PHP 8.0 (with PHP 7.4 recommended)<br>
 (If you are using PHP 8.0 with v1.5.7, be sure to [suppress logging duplicate-language definitions](/user/troubleshooting/constant_already_defined/)). 
 *   **Zen Cart v1.5.6** is designed for PHP 5.5 through PHP 7.3
@@ -102,6 +102,7 @@ The following list shows the MySQL versions compatible with each version of Zen 
 
 (If your store uses non-english characters in product names/descriptions, or if your customers might use emojis in order comments, you should be using MySQL 5.7.2 or newer, and the [utf8mb4 character set](/user/upgrading/convert_to_utf8/) and upgrading to the latest Zen Cart version.)
 
+*   Zen Cart v2.2.x prefers MySQL 8.x or 9.x (but supports MySQL 5.7.8+), or MariaDB 11.x (but works with 10.2.7+)
 *   Zen Cart v2.1.x prefers MySQL 8.x or 9.x (but supports MySQL 5.7.8+), or MariaDB 11.x (but works with 10.2.7+)
 *   Zen Cart v2.0.x requires MySQL 5.7.8+ or 8.x/9.x, or MariaDB 10.2.7 or higher
 *   Zen Cart v1.5.8 requires MySQL 5.7.8+ or 8.x, or MariaDB 10.2.7 or higher
