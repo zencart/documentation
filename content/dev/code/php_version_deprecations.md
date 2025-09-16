@@ -41,7 +41,7 @@ Added: `null`able types (ie: `?` prefix)
 
 Added: `void` return type
 
-Added: array destructuring with `[]`, including in `foreach`
+Added: [array destructuring](https://stitcher.io/blog/array-destructuring-with-list-in-php) with `[]`, including in `foreach`
 
 Added: class constants can now declare visibility (protected, private, public)
 
