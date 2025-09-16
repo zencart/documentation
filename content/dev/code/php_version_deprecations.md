@@ -32,7 +32,7 @@ Added: `define()` can now define arrays.
 
 Added: `preg_replace_callback_array()`, `random_bytes()`, `random_int()`, `error_clear_last()`
 
-Added: Scalar type declarations and return type declarations.
+Added: [Scalar type declarations and return type declarations](https://www.php.net/manual/en/migration70.new-features.php): string, int, float, bool, array, callable, class names and interfaces.
 
 ### PHP 7.1
 Zen Cart: ZC sites using PHP 7.0 can safely use 7.1 without issue.
@@ -166,11 +166,13 @@ Added: `json_validate()` (to validate JSON without decoding first)
 
 Added: `mb_str_pad()`
 
-Added: Typed class constants `const string TEXT_MESSAGE = 'message';`
+Added: [Typed class constants](https://php.watch/versions/8.3/typed-constants) `const string TEXT_MESSAGE = 'message';`
 
 Change: `number_format()` now handles negative decimals.
 
 ### PHP 8.4
+Added: New `mb_trim`, `mb_ltrim`, and `mb_rtrim` functions
+
 Change: `utf8_encode()` and `utf8_decode()` functions are now only present if `mbstring` extension is installed.
 
 Syntax: May now chain `new` expressions, ie: `(new A)->b()->c()`
@@ -181,6 +183,8 @@ Deprecated: E_USER_ERROR, ie: `trigger_error(..., E_USER_ERROR)`
 
 Deprecated: class named `_` no longer allowed.
 
+Deprecated: `E_STRICT` constant deprecated
+
 Added: `request_parse_body()`
 
 Added: `fpow()`
@@ -188,9 +192,11 @@ Added: `fpow()`
 ### PHP 8.5
 Added functions: `array_first()`, `array_last()`, `get_error_handler()`, `get_exception_handler()`
 
-Added: Pipe operator (`|>`) for enabling functional pipelines.
+Added: [Pipe operator](https://php.watch/versions/8.5/pipe-operator) (`|>`) for enabling functional pipelines.
 
 Added: `final` property promotion
 
 Added: constant expressions may now contain closures and first-class callables.
+
+Deprecated: [Non-canonical scalar type casts (boolean|double|integer|binary)](https://php.watch/versions/8.5/boolean-double-integer-binary-casts-deprecated)
 
