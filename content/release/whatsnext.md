@@ -15,7 +15,8 @@ noindex: yes
 - Modernization: support for older `define` based language files will be dropped.  Moving forward, only [Array based language files](/dev/languages/158_language_files/) will be supported. 
 
 ## 2.2.0 
-- Admin: Banner manager crashes when no image provided on update.
+- Admin: Modules now grouped by status and sort order. 
+- Admin: Fixed - Banner manager crashes when no image provided on update.
 - Admin: Improvements in Sales Report with Graphs.
 - Admin: TinyMCE added as the default admin  [HTML Editor](/user/running/html_editors). (CKEditor is locked at an older version; no updates planned.)
 - Admin: Added capability to customize the upper right link bar using a notifier. 
@@ -27,6 +28,7 @@ noindex: yes
 - Core: Updates to POSM to support [Edit Orders 5.0](https://www.zen-cart.com/downloads.php?do=file&id=2400).
 - Core: Correct PHP warnings when added product isn't POSM-managed 
 - Core: Password reset via URL (versus emailing a temporary password) is being added to the core.  Credit to forum users Numinix and Retched for inspiration.
+- Core: Improvements for International use.
 - Extras: Curltester now includes REST API endpoints for USPS and PayPal. 
 - Storefront: Tax descriptions may now be multilingual.
 - Storefront: Password forgotten now disallowed for banned email addresses.
