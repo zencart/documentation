@@ -36,8 +36,8 @@ However, the polyfill only deals with missing functions. The following language 
 - PHP 7.1 added `nullable types`, ie: `?string`, `?int`, `?array`
 - PHP 7.4 added null coalesce assignment `??=`
 - PHP 7.4 added arrow functions `fn($n) => $n > 0`
-- PHP 8.0 added `#[...]` Attributes
 - PHP 8.0 added `match` syntax
+- PHP 8.0 added `#[...]` Attributes
 
 More details on all of these can be found in the rest of this document, and on the PHP.net website.
 
@@ -156,7 +156,7 @@ Added: `match(){};` expression
 
 Added: nullsafe operator (`?->`). ie: `$foo?->value` safely returns `null` if there's no accessible `value` property.
 
-Added: Attributes (#[...])
+Added: Attributes (`#[...]`)
 
 Added: union types (`(int|string)` which is "or" matching, eg: `int|string` means could be an int or a string)
 
@@ -213,7 +213,7 @@ Deprecated: Implicitly nullable parameters. Must specify `?` or `null` if defaul
 
 Deprecated: E_USER_ERROR, ie: `trigger_error(..., E_USER_ERROR)`
 
-Deprecated: class named `_` no longer allowed.
+Deprecated: classes named `_` no longer allowed.
 
 Deprecated: `E_STRICT` constant deprecated
 
