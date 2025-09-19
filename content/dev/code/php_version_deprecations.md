@@ -13,6 +13,38 @@ NOTE: This page assumes some pretty solid PHP knowledge, because all the changes
 NOTE: This is not the complete official list of PHP language changes. This list caters mostly to the topics that might affect people writing plugins for Zen Cart. 
 For much more detailed lists of changes, see the [official PHP documentation on migrating between PHP versions](http://www.php.net/manual/en/appendices.php).
 
+## Zen Cart code compatibility notes
+#### The following PHP changes required core ZC code changes for compatibility _when upgrading from prior versions_:
+- PHP 7.0 requires classes to use `__construct` as the function name instead of just using the name of the class as a constructor.
+- PHP 7.2 deprecated the `each()` function, which was used prolifically before then.
+- PHP 7.4 requires implode/explode to provide the separator as first arg.
+- PHP 8.0 requires that any optional function params come after non-optional.
+- PHP 8.2 requires class properties (`$this->var's`) to be declared before referring to them in class code.
+- PHP 8.4 requires that nullable parameters be declared as such in function signatures.
+- PHP 8.4 Deprecated `E_USER_ERROR` ie: `trigger_error(..., E_USER_ERROR)`
+
+#### The following PHP changes are important to note when _backporting code to older ZC versions_:
+- To add support for most **PHP functions added to the PHP language since PHP 7.0**, use the [php_polyfill.php](https://github.com/zencart/zencart/blob/master/includes/functions/php_polyfills.php) (in v1.5.7c or newer, replace it in /includes/functions. In v1.5.7b or older, put it into your `extra_configures` folders in *both* *admin and non-admin*)
+ 
+However, the polyfill only deals with missing functions. The following language constructs, if you're using them, will require changing your syntax to older-style PHP approaches, in order to work on older PHP versions:
+- PHP 7.0 added null coalesce (`??`) operator
+- PHP 7.0 added function/class `return types`
+- PHP 7.0 added the spaceship `<=>` operator
+- PHP 7.0 added `yield from` syntax
+- PHP 7.0 added `Throwable`
+- PHP 7.0 added `declare strict_types` syntax
+- PHP 7.1 added `nullable types`, ie: `?string`, `?int`, `?array`
+- PHP 7.4 added null coalesce assignment `??=`
+- PHP 7.4 added arrow functions `fn($n) => $n > 0`
+- PHP 8.0 added `#[...]` Attributes
+- PHP 8.0 added `match` syntax
+
+More details on all of these can be found in the rest of this document, and on the PHP.net website.
+
+---
+
+# PHP Language History (abbreviated summary)
+
 ## PHP 7
 
 ### PHP 7.0
