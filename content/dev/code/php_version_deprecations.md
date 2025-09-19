@@ -126,7 +126,7 @@ Added: nullsafe operator (`?->`). ie: `$foo?->value` safely returns `null` if th
 
 Added: Attributes (#[...])
 
-Added: union types
+Added: union types (`(int|string)` which is "or" matching, eg: `int|string` means could be an int or a string)
 
 Deprecated: cannot have function/class parameters with a default value before a required parameter: ie: cannot do: `function foo($required1 = '', $required2)`
 
@@ -141,7 +141,7 @@ Added: `readonly` properties
 
 Added: first-class callable syntax (`foo(...)`)
 
-Added: intersection types
+Added: intersection types (`A&B` where A and B are interfaces, both of which must be implemented)
 
 Added: `never` return type
 
