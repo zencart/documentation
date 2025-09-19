@@ -14,6 +14,8 @@ NOTE: This is not the complete official list of PHP language changes. This list 
 For much more detailed lists of changes, see the [official PHP documentation on migrating between PHP versions](http://www.php.net/manual/en/appendices.php).
 
 ## Zen Cart code compatibility notes
+Refer to the [Zen Cart PHP version compatibility matrix](/user/first_steps/server_requirements/#php-version)
+
 #### The following PHP changes required core ZC code changes for compatibility _when upgrading from prior versions_:
 - PHP 7.0 requires classes to use `__construct` as the function name instead of just using the name of the class as a constructor.
 - PHP 7.2 deprecated the `each()` function, which was used prolifically before then.
