@@ -15,18 +15,24 @@ Please take these as examples, not exact matches for every log you might come ac
 
 ## Logs related to PHP8 
 
-PHP8 is a *major change*.  Zen Cart 1.5.8 is designed to work with PHP 8, but older versions and older plugins will give you problems.  Here are some notes on [updating plugins to work with PHP8](/dev/plugins/upgrading_to_158/).
+PHP 8 is a *major change*.  Zen Cart 1.5.8 is designed to work with PHP 8, but older versions and older plugins will give you problems.  Here are some notes on [updating plugins to work with PHP 8](/dev/plugins/upgrading_to_158/).
 
 If you are using PHP 8.0 with v1.5.7, be sure to [suppress logging duplicate-language definitions](/user/troubleshooting/constant_already_defined/).
 
 ### Logs related to PHP 8.2
 
-PHP 8.2 is *the deprecation release*.  We have tried to shake out as many of the issues in the core as we could prior to release, but there may be some lingering, and there will absolutely be issues with plugins.  See [upgrading plugins to work with 1.5.8/PHP 8.0+](/dev/plugins/upgrading_to_158/) for ideas on how to fix the issues you encounter.  You may also wish to [track development of Zen Cart on Github](https://github.com/zencart/zencart/) to see what we're preparing for the next release.
+PHP 8.2 is *the deprecation release*.  We have tried to shake out as many of the issues in the core as we could prior to release, but there may be some lingering, and there will absolutely be issues with plugins.  See [upgrading plugins to work with 1.5.8/PHP 8.0+](/dev/plugins/upgrading_to_158/) for ideas on how to fix the issues you encounter.
+
+You may also wish to [track development of Zen Cart on Github](https://github.com/zencart/zencart/) to see what we're preparing for the next release.
+
+---
 
 ## Undefined constant 
-
+(Fatal error since PHP 8.0, gave warnings since PHP 7.2)
 ```
---> PHP Warning: Use of undefined constant MODULE_SHIPPING_BOXES_MANAGER_STATUS - assumed 'MODULE_SHIPPING_BOXES_MANAGER_STATUS' (this will throw an Error in a future version of PHP) in /public_html/zen-cart-v1.5.7/includes/modules/shipping/fedexwebservices.php on line 85.
+--> PHP Warning: Use of undefined constant MODULE_SHIPPING_BOXES_MANAGER_STATUS - assumed 'MODULE_SHIPPING_BOXES_MANAGER_STATUS' in fedexwebservices.php on line 85.
+or
+--> PHP Fatal error: Uncaught Error: Undefined constant 'MODULE_SHIPPING_BOXES_MANAGER_STATUS' in fedexwebservices.php on line 85.
 ```
 
 When you get a message like this, it means you are referencing a constant that hasn't been defined.  You can work around this by defining the constant or just by putting a check in where the constant is referenced.  The latter would be done as follows: 
@@ -59,9 +65,9 @@ define('BUTTON_IMAGE_ADD_TO_CART', 'button_add_to_cart.gif');
 
 
 ## Methods with the same name as their class ...  
-
+(Since PHP 7.0)
 ```
---> PHP Deprecated: Methods with the same name as their class will not be constructors in a future version of PHP; fedexwebservices has a deprecated constructor in /public_html/zen-cart-v1.5.7/includes/modules/shipping/fedexwebservices.php on line 2.
+--> PHP Deprecated: Methods with the same name as their class will not be constructors in a future version of PHP; fedexwebservices has a deprecated constructor in fedexwebservices.php on line 2.
 ```
 
 To fix this, change the class constructor from being the same as the name of the class like this:
@@ -84,36 +90,38 @@ class fedexwebservices
 }
 ```
 
-## Cannot use string offset as an array
+## Warning: Trying to access array offset on value of type string or Cannot use string offset as an array
+(Since PHP 7.0)
 
-In older versions of PHP, it was acceptable to initialize a variable as an empty string even though it was later being accessed as an array. So in some older code you might have something like this:
+In older versions of PHP, it was acceptable to initialize a variable as an empty string even though it was later being accessed as an array. 
+
+So in some older code you might have something like this:
 
 ```
 $list_box_contents = ''; 
 ```
 
-where newer versions require the correct initialization as:
-
-```
-$list_box_contents = array();
-```
-
-(or you may see the more modern "short array syntax" like this):
+*The correct initialization* is:
 
 ```
 $list_box_contents = [];
 ```
 
+(or you may see the older format):
+
+```
+$list_box_contents = array();
+```
+
 
 ## `each()` deprecated
+(Since PHP 7.2)
 
-```
-PHP Deprecated: The each() function is deprecated. This message will be suppressed on further calls in /includes/functions/extra_functions/sfl_functions.php on line 160.
-```
+`PHP Deprecated: The each() function is deprecated.` (meaning it should no longer be used).
 
-The direction for PHP 7.2+ is to refactor `each` to `foreach` as follows: 
+The direction is to refactor all uses of `each` to `foreach` as follows: 
 
-1. `foreach()` doesn't need a `reset()` to be called before it runs, so those can be removed.
+1. `foreach()` doesn't need a `reset()` to be called before it runs, so those `reset()` statements can be removed.
 
 2. There are 3 syntax formats, depending on how the parameters are presented in the `list()` call:
 
@@ -129,8 +137,9 @@ The direction for PHP 7.2+ is to refactor `each` to `foreach` as follows:
 
 
 ## `ereg_replace` deprecated
+(gave warnings since PHP 5.3, and fatal errors since PHP 7.0)
 
-Some older functions were removed from PHP. The `ereg` series can usually be replaced with a `preg` equivalent, but note that the "pattern" parameter needs to have a delimiter added. In many cases a `/` or `~` is used for the delimiter ... this must be adapted to your situation.
+These older POSIX functions were removed from PHP. The `ereg` series can usually be replaced with a `preg` equivalent, but note that the "pattern" parameter needs to have a delimiter added. In many cases a `/` or `~` is used for the delimiter ... this must be adapted to your situation.
 
 `ereg('searchtext', 'a_string', $optionalVar)` becomes `preg_match('/searchtext/', 'a_string', $optionalVar)`
 
@@ -149,7 +158,7 @@ Some older functions were removed from PHP. The `ereg` series can usually be rep
 
 
 ## syntax error, unexpected '['
-
+(Since PHP 7.0)
 
 This may be a result of new indirection syntax (or "variable variables" syntax), where double-dollar-signs are used.
 
@@ -193,9 +202,10 @@ Since PHP 5.5 the `mysql_xxxxx()` functions were removed in favor of the `mysqli
 
 You cannot just rename the functions. 
 
-While on the surface it may seem simple to rewrite the functions to the new syntax, a MUCH BETTER approach is to rewrite your code to use Zen Cart's own DB querying logic, which is both more secure and more consistent across the application.
+While on the surface it may seem simple to rewrite the functions to the new syntax, a MUCH BETTER approach is to [rewrite your code to use Zen Cart's own DB querying logic](/dev/code/database_querying/), which is both more secure and more consistent across the application.
 
 ## Undefined constant warnings in module files
+(Since PHP 8.0 `Fatal error: Uncaught Error: Undefined constant "FOO"`, and from PHP 7.2 to 7.4 it gave `Warning: Use of undefined constant FOO – assumed 'FOO'.`)
 
 Files under `/includes/modules/payment`, `/includes/modules/shipping` and `/includes/modules/order_total` were updated in Zen Cart 1.5.6 so that module defines were not referenced until it was determined that the module had been installed.  
 
@@ -214,7 +224,7 @@ Newer versions of Zen Cart check the sort order as an indication that a module h
       if (null === $this->sort_order) return false;
 ``` 
 
-If you have custom modules, you should make the analagous change to those files to avoid creating PHP warnings. 
+If you have custom modules, you should make the analagous changes to those files to avoid creating PHP errors. (Fatal errors give blank pages.)
 
 ## Sizeof and related issues
 
@@ -224,20 +234,19 @@ Older PHP code might check to see if a string is null using something like:
     if (sizeof($categories->fields['categories_image']) == 0) 
 ```
 
-The newer way to test this is to use the `empty` PHP function: 
-
+The newer/better way to test this is to use the `empty` PHP function: 
 
 ```
     if (empty($categories->fields['categories_image'])) 
 ```
 
-Similarly, checks for a non-empty array may need changes: 
+Similarly, checks for a non-empty array may need changes if the variable is not actually an array. Example, the following: 
 
 ```
     if (sizeof($array) > 0) {
 ```
 
-Could give a PHP warning like:
+... could give a PHP warning like:
 
 ```
 Warning: sizeof(): Parameter must be an array or an object that implements Countable
@@ -261,20 +270,20 @@ produces the error message
 --> PHP Warning: Undefined array key 38 
 ```
 
-You can use an empty check to handle this, as shown above, or you can use the null coalescing operator:  
+then you can use an empty() check to handle this, as shown above, or you can use the null coalescing operator:  
 
 ```
     $this->ccv_response= ($response[38] ?? '');
 ```
 
 ## Undefined array key
+(Since PHP 7.0)
 
-Checking to see if an optional array element is set has changed - you can no longer do 
+Checking to see if an optional array element is set has changed - you can no longer do the following unless you are certain the array element `var1` exists: 
 
 ```
 if ($response['var1'] != '') {
 ```
-unless you are certain the array element `var1` exists. 
 
 If you do this, and the element does not exist, you will get a PHP Warning
 
@@ -318,10 +327,13 @@ $order->info['comments'] = ($_SESSION['order_add_comment'] ?? '');
 ```
 
 ## Array and string offset access syntax with curly braces is no longer supported
+(Fatal since PHP 8.0, gave warnings since PHP 7.4)
 
 In older versions of PHP, you could refer to an array entry using curly braces instead of square brackets. 
 
-PHP 7.4 deprecated this syntax, and in higher versions of PHP it becomes a fatal error.  Fortunately, This is one of the easiest syntax errors to fix. Simply change the curly braces to square brackets.  So for example, change 
+PHP 7.4 deprecated this syntax, and in PHP 8.0 it became a fatal error.
+
+Fortunately, This is one of the easiest syntax errors to fix. Simply change the curly braces to square brackets.  So for example, change 
 
 ```
         $c = $s{$i};
