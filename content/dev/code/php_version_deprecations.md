@@ -25,6 +25,8 @@ Refer to the [Zen Cart PHP version compatibility matrix](/user/first_steps/serve
 - PHP 8.4 requires that nullable parameters be declared as such in function signatures.
 - PHP 8.4 Deprecated `E_USER_ERROR` ie: `trigger_error(..., E_USER_ERROR)`
 
+See related upgrade docs for [mitigation guidance](/user/upgrading/php_warnings/) on these topics.
+
 #### The following PHP changes are important to note when _backporting code to older ZC versions_:
 - To add support for most **PHP functions added to the PHP language since PHP 7.0**, use the [php_polyfill.php](https://github.com/zencart/zencart/blob/master/includes/functions/php_polyfills.php) (in v1.5.7c or newer, replace it in /includes/functions. In v1.5.7b or older, put it into your `extra_configures` folders in *both* *admin and non-admin*)
  
@@ -68,8 +70,10 @@ Added: `preg_replace_callback_array()`, `random_bytes()`, `random_int()`, `error
 
 Added: [Scalar type declarations and return type declarations](https://www.php.net/manual/en/migration70.new-features.php): string, int, float, bool, array, callable, class names and interfaces.
 
+Removed: The POSIX "ereg" family of functions was fully removed: `ereg(), eregi(), ereg_replace(), eregi_replace(), split(), spliti()`. See [mitigation](/user/upgrading/php_warnings/#ereg_replace-deprecated)
+
 ### PHP 7.1
-Zen Cart: ZC sites using PHP 7.0 can safely use 7.1 without issue.
+Zen Cart: ZC sites using PHP 7.0 can safely jump to PHP 7.1 without issue.
 
 Added: `null`able types (ie: `?` prefix)
 
@@ -85,14 +89,14 @@ Deprecated: `mcrypt`
 
 
 ### PHP 7.2
-Deprecated: calls to `each()` are deprecated; use `foreach()` instead. 
+Deprecated: calls to `each()` are deprecated; [use `foreach()` instead]((/user/upgrading/php_warnings/#each-deprecated)).
 For upgrading code related to Zen Cart, see some code examples here: [Refactor each() to foreach() for compatibility with PHP 7.2](https://github.com/zencart/zencart/pull/1377)
 
 Deprecated: `create_function()` is deprecated. Use anonymous functions ("Closures") instead.
 
 Deprecated: The `__autoload()` mechanism is deprecated in favor of `spl_autoload_register()` instead.
 
-Deprecated: calls to missing/undefined constants now trigger E_WARNING
+Deprecated: calls to missing/undefined constants now trigger `E_WARNING: Warning: Use of undefined constant FOO – assumed 'FOO'.` (Now a fatal error since PHP 8.0)
 
 Added: Argon2 added to password functions
 
@@ -163,6 +167,9 @@ Added: Attributes (`#[...]`)
 Added: union types (`(int|string)` which is "or" matching, eg: `int|string` means could be an int or a string)
 
 Deprecated: cannot have function/class parameters with a default value before a required parameter: ie: cannot do: `function foo($required1 = '', $required2)`
+
+Deprecated: calls to undefined constants now throw `Fatal error: Uncaught Error: Undefined constant "FOO"`
+
 
 ### PHP 8.1
 Deprecated: can no longer pass `null` to a non-nullable scalar type declaration (ie: `string $var = null` must be either `?string = null` or `string = ''`)
