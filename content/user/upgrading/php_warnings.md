@@ -1,6 +1,6 @@
 ---
 title: PHP Errors, Warnings and Deprecated messages after upgrading
-description: How to fix the most common PHP7+ messages
+description: How to fix the most common PHP7 and PHP8+ messages
 category: upgrading 
 weight: 10
 ---
