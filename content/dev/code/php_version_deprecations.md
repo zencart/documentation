@@ -89,7 +89,7 @@ Deprecated: `mcrypt`
 
 
 ### PHP 7.2
-Deprecated: calls to `each()` are deprecated; [use `foreach()` instead]((/user/upgrading/php_warnings/#each-deprecated)).
+Deprecated: calls to `each()` are deprecated; [use `foreach()` instead](/user/upgrading/php_warnings/#each-deprecated).
 For upgrading code related to Zen Cart, see some code examples here: [Refactor each() to foreach() for compatibility with PHP 7.2](https://github.com/zencart/zencart/pull/1377)
 
 Deprecated: `create_function()` is deprecated. Use anonymous functions ("Closures") instead.
