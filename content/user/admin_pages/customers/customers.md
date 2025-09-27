@@ -9,6 +9,7 @@ The Customers page allows you to view your customers.
 It shows your customers in a paginated list, with one line per customer. 
 The most recently added customer is shown first. 
 
+## Customer Listing 
 <img src="/images/customers_list.png" alt="Zen Cart Customers" />
 <br><br>
 
@@ -24,14 +25,18 @@ The columns in the list are:
 - Customers [Gift Certificate](/user/order_total/gift_certificates/) balance (if any)
 - Customer's [authorization status](/user/orders/customer_approval/) (You can ban a customer by clicking the green icon so it turns red)
  
+## Customer Infobox
 Clicking a customers record selects that customer and opens a preview on the right hand side of the page.  From there, the customer record may be edited or deleted.  Other available actions are 
 
 - view the customer's orders
 - email the customer
 - reset the customer's password (since 1.5.5) 
 - [login as a customer](/user/running/login_as_customer/) and place an order (since 1.5.7) 
+- IP Address used in account creation and last login (since 1.5.8).
 
 ![Customers sidebar](/images/customers_sidebar.png)
+
+## Editing a Customer 
 
 Editing the customer record takes you to the customer details screen, which shows the customer's default address, telephone number and email address, as well as other settings specific to that customer. 
 

@@ -137,18 +137,25 @@ Path: <b>Configuration > Images</b><br />
 Description: Product Info Large Image Suffix<br />Default = _LRG</div>
 
 
-<h2 id="additional_images_matching_pattern">Additional Images matching pattern</h2>
-
-<div class='indent'>Key: <b>ADDITIONAL_IMAGES_MODE</b><br />
-Path: <b>Configuration > Images</b><br />
-Description: &quot;strict&quot; = always use &quot;_&quot; suffix<br>&quot;legacy&quot; = only use &quot;_&quot; suffix in subdirectories<br>(Before v210 legacy was the default)<br>Default = strict</div>
-
-
 <h2 id="product_info__number_of_additional_images_per_row">Product Info - Number of Additional Images per Row</h2>
 
 <div class='indent'>Key: <b>IMAGES_AUTO_ADDED</b><br />
 Path: <b>Configuration > Images</b><br />
 Description: Product Info - Enter the number of additional images to display per row<br />Default = 3</div>
+
+
+<h2 id="additional_images_handling">Additional Images Handling</h2>
+
+<div class='indent'>Key: <b>ADDITIONAL_IMAGES_HANDLING</b><br />
+Path: <b>Configuration > Images</b><br />
+Description: Product Images can be handled in two ways: &quot;Database&quot; or &quot;Filename-Matching&quot;.<br> Use &quot;Database&quot; to allow additional images (any filename/filetype) to be added via the Admin Product Edit page.<br> Use &quot;Filename-Matching&quot; to autodetect additional images based on filename matching (legacy method) where we scan your images directory for files with names that <a href="https://docs.zen-cart.com/user/images/additional_images/" target="_blank">match the primary image filename plus suffixes</a>. This requires manually uploading images to your server via FTP or other methods, but avoids needing to assign images to products via the Admin page. <br> NOTE: a &quot;Scan Product Images To Database&quot; tool is available for installation via the Plugins module and then accessible via the Tools menu.<br>The scanner creates database entries for all additional images that match legacy naming conventions, subsequently allowing all image management from the Product Edit page. The scanner does not modify the images, and can be run periodically to sync new images to the database as needed.</div>
+
+
+<h2 id="additional_images_filename_matching_pattern">Additional Images filename matching pattern</h2>
+
+<div class='indent'>Key: <b>ADDITIONAL_IMAGES_MODE</b><br />
+Path: <b>Configuration > Images</b><br />
+Description: &quot;strict&quot; = always use &quot;_&quot; suffix<br>&quot;legacy&quot; = only use &quot;_&quot; suffix in subdirectories<br>(Before v210 legacy was the default)<br>Default = strict</div>
 
 
 <h2 id="image__product_listing_width">Image - Product Listing Width</h2>
@@ -193,14 +200,14 @@ Path: <b>Configuration > Images</b><br />
 Description: Default = 80</div>
 
 
-<h2 id="image__featured_products_width">Image - Featured Products Width</h2>
+<h2 id="image__featured_products_and_categories_width">Image - Featured Products And Categories Width</h2>
 
 <div class='indent'>Key: <b>IMAGE_FEATURED_PRODUCTS_LISTING_WIDTH</b><br />
 Path: <b>Configuration > Images</b><br />
 Description: Default = 100</div>
 
 
-<h2 id="image__featured_products_height">Image - Featured Products Height</h2>
+<h2 id="image__featured_products_and_categories_height">Image - Featured Products And Categories Height</h2>
 
 <div class='indent'>Key: <b>IMAGE_FEATURED_PRODUCTS_LISTING_HEIGHT</b><br />
 Path: <b>Configuration > Images</b><br />
@@ -221,18 +228,18 @@ Path: <b>Configuration > Images</b><br />
 Description: Default = 80</div>
 
 
-<h2 id="product_image__no_image_status">Product Image - No Image Status</h2>
+<h2 id="product_and_category_image__no_image_status">Product And Category Image - No Image Status</h2>
 
 <div class='indent'>Key: <b>PRODUCTS_IMAGE_NO_IMAGE_STATUS</b><br />
 Path: <b>Configuration > Images</b><br />
-Description: Use automatic No Image when none is added to product<br />0= off<br />1= On</div>
+Description: Use automatic No Image when none is added to product or category<br>0= off<br />1= On</div>
 
 
-<h2 id="product_image__no_image_picture">Product Image - No Image picture</h2>
+<h2 id="product_and_category_image__no_image_picture">Product And Category Image - No Image picture</h2>
 
 <div class='indent'>Key: <b>PRODUCTS_IMAGE_NO_IMAGE</b><br />
 Path: <b>Configuration > Images</b><br />
-Description: Use automatic No Image when none is added to product<br />Default = no_picture.gif</div>
+Description: Use automatic No Image when none is added to product or category<br>Default = no_picture.gif</div>
 
 
 <h2 id="image__use_proportional_images_on_products_and_categories">Image - Use Proportional Images on Products and Categories</h2>

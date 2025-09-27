@@ -214,14 +214,14 @@ Path: <b>Configuration > Maximum Values</b><br />
 Description: Maximum number of attributes downloads to display in the Downloads Manager page</div>
 
 
-<h2 id="featured_products__number_to_display_admin">Featured Products - Number to Display Admin</h2>
+<h2 id="featured_products_and_categories__number_to_display_admin">Featured Products And Categories - Number to Display Admin</h2>
 
 <div class='indent'>Key: <b>MAX_DISPLAY_SEARCH_RESULTS_FEATURED_ADMIN</b><br />
 Path: <b>Configuration > Maximum Values</b><br />
 Description: Number of featured products to list per screen - Admin</div>
 
 
-<h2 id="featured_products_centerbox">Featured Products Centerbox</h2>
+<h2 id="featured_products_and_categories_centerbox">Featured Products And Categories Centerbox</h2>
 
 <div class='indent'>Key: <b>MAX_DISPLAY_SEARCH_RESULTS_FEATURED</b><br />
 Path: <b>Configuration > Maximum Values</b><br />

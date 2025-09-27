@@ -15,6 +15,10 @@ noindex: yes
 - Modernization: support for older `define` based language files will be dropped.  Moving forward, only [Array based language files](/dev/languages/158_language_files/) will be supported. 
 
 ## 2.2.0 
+- Admin: [Customer account activation](/user/orders/customer_approval/#customer-account-activation) for customer accounts added.
+- Admin: The page Admins > Admin Page Registration has been removed.
+- Admin: Configuration screen now allows all values in a group to be updated at once.  See [Configuration in Zen Cart 2.2.x](/user/admin_pages/configuration/v2.2.0/).
+- Admin: Fixed Undefined constant error in `includes/functions/functions_exchange_rates.php`.
 - Admin: Modules now grouped by status and sort order. 
 - Admin: Fixed - Banner manager crashes when no image provided on update.
 - Admin: Improvements in Sales Report with Graphs.
@@ -23,7 +27,7 @@ noindex: yes
 - Admin: Fixed - Deprecated "Passing null to parameter #1" log will be created when viewing Admin Packingslip or Admin Invoice.
 - Core: Improved handling of `product` table records which do not have associated `products_description` records.
 - The `DB_CHARSET` setting in the `dist-configure.php` files (Storefront and Admin) has been updated to `utf8mb4`, which is the character set your database should be using at this point.  If it isn't, see [Converting to UTF8MB4](/user/upgrading/convert_to_utf8/) for instructions.
-- Core: Improved PHP 8.4 compatibility.
+- Core: Improved PHP 8.4 compatibility. Note that plugins may require updating to run without warnings under PHP 8.4. 
 - Core: Typo in notifier name `NOTIFY_ADMIN_INVOICE_HEADERS_AFTER_TAX` corrected.
 - Core: Updates to POSM to support [Edit Orders 5.0](https://www.zen-cart.com/downloads.php?do=file&id=2400).
 - Core: Correct PHP warnings when added product isn't POSM-managed 
