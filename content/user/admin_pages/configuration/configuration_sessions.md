@@ -57,7 +57,7 @@ Description: Prevent known spiders from starting a session.</div>
 
 <div class='indent'>Key: <b>SESSION_RECREATE</b><br />
 Path: <b>Configuration > Sessions</b><br />
-Description: Recreate the session to generate a new session ID when the customer logs on or creates an account (PHP >=4.1 needed).</div>
+Description: Recreate the session to generate a new session ID when the customer logs on or creates an account.</div>
 
 
 <h2 id="ip_to_host_conversion_status">IP to Host Conversion Status</h2>

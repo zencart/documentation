@@ -83,6 +83,13 @@ Path: <b>Configuration > Layout Settings</b><br />
 Description: Show Featured Products Link in the Categories Box</div>
 
 
+<h2 id="categories_box__show_featured_category_link">Categories Box - Show Featured Category Link</h2>
+
+<div class='indent'>Key: <b>SHOW_CATEGORIES_BOX_FEATURED_CATEGORIES</b><br />
+Path: <b>Configuration > Layout Settings</b><br />
+Description: Show Featured Categories Link in the Categories Box</div>
+
+
 <h2 id="categories_box__show_products_all_link">Categories Box - Show Products All Link</h2>
 
 <div class='indent'>Key: <b>SHOW_CATEGORIES_BOX_PRODUCTS_ALL</b><br />
@@ -332,6 +339,6 @@ Description: The login page can be displayed in two modes: Split or Vertical.<br
 
 <div class='indent'>Key: <b>IMAGE_USE_CSS_BUTTONS</b><br />
 Path: <b>Configuration > Layout Settings</b><br />
-Description: CSS Buttons<br />Use CSS buttons instead of images (GIF/JPG)?<br />Button styles must be configured in the stylesheet if you enable this option.</div>
+Description: CSS Buttons<br>Use CSS buttons instead of images (GIF/JPG)?<br>Button styles must be configured in the stylesheet if you enable this option.<br>Yes - Use CSS buttons<br>No - Use images buttons<br>Found - Use images if exist, else use CSS buttons</div>
 
 

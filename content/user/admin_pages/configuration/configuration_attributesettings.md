@@ -4,7 +4,7 @@ category: admin_pages
 weight: 110 
 ---
 
-See also <a href="/user/admin_pages/catalog/attributes_controller/">Admin > Catalog > Attributes Controller</a> for attribute pricing settings.
+See also <a href="/user/admin_pages/catalog/attribute_controller/">Admin > Catalog > Attributes Controller</a> for attribute pricing settings.
 
 <h2 id="enable_downloads">Enable Downloads</h2>
 

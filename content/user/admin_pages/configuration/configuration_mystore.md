@@ -102,18 +102,18 @@ Path: <b>Configuration > My Store</b><br />
 Description: Count recursively how many products are in each category</div>
 
 
-<h2 id="show_category_counts__admin">Show Category Counts - Admin</h2>
-
-<div class='indent'>Key: <b>SHOW_COUNTS_ADMIN</b><br />
-Path: <b>Configuration > My Store</b><br />
-Description: Show Category Counts in Admin?</div>
-
-
 <h2 id="show_linked_status_for_categories">Show linked status for categories</h2>
 
 <div class='indent'>Key: <b>SHOW_CATEGORY_PRODUCTS_LINKED_STATUS</b><br />
 Path: <b>Configuration > My Store</b><br />
 Description: Show Category products linked status?</div>
+
+
+<h2 id="show_category_counts__admin">Show Category Counts - Admin</h2>
+
+<div class='indent'>Key: <b>SHOW_COUNTS_ADMIN</b><br />
+Path: <b>Configuration > My Store</b><br />
+Description: Show Category Counts in Admin?</div>
 
 
 <h2 id="tax_decimal_places">Tax Decimal Places</h2>
@@ -186,13 +186,6 @@ Path: <b>Configuration > My Store</b><br />
 Description: 2-Factor authentication for Admin users</div>
 
 
-<h2 id="padss_admin_session_timeout_enforced">PA-DSS Admin Session Timeout Enforced?</h2>
-
-<div class='indent'>Key: <b>PADSS_ADMIN_SESSION_TIMEOUT_ENFORCED</b><br />
-Path: <b>Configuration > My Store</b><br />
-Description: PA-DSS Compliance requires that any Admin login sessions expire after 15 minutes of inactivity. <strong>Disabling this makes your site NON-COMPLIANT with PA-DSS rules, thus invalidating any certification.</strong></div>
-
-
 <h2 id="padss_strong_password_rules_enforced">PA-DSS Strong Password Rules Enforced?</h2>
 
 <div class='indent'>Key: <b>PADSS_PWD_EXPIRY_ENFORCED</b><br />
@@ -205,6 +198,13 @@ Description: PA-DSS Compliance requires that admin passwords must be changed aft
 <div class='indent'>Key: <b>PADSS_AJAX_CHECKOUT</b><br />
 Path: <b>Configuration > My Store</b><br />
 Description: PA-DSS Compliance requires that for some inbuilt payment methods, that we use ajax to draw the checkout confirmation screen. While this will only happen if one of those payment methods is actually present, some people may want the traditional checkout flow <strong>Disabling this makes your site NON-COMPLIANT with PA-DSS rules, thus invalidating any certification.</strong></div>
+
+
+<h2 id="padss_admin_session_timeout_enforced">PA-DSS Admin Session Timeout Enforced?</h2>
+
+<div class='indent'>Key: <b>PADSS_ADMIN_SESSION_TIMEOUT_ENFORCED</b><br />
+Path: <b>Configuration > My Store</b><br />
+Description: PA-DSS Compliance requires that any Admin login sessions expire after 15 minutes of inactivity. <strong>Disabling this makes your site NON-COMPLIANT with PA-DSS rules, thus invalidating any certification.</strong></div>
 
 
 <h2 id="admin_session_time_out_in_seconds">Admin Session Time Out in Seconds</h2>
@@ -268,6 +268,13 @@ Description: Where to request external currency updates from (Secondary source)<
 <div class='indent'>Key: <b>HTML_EDITOR_PREFERENCE</b><br />
 Path: <b>Configuration > My Store</b><br />
 Description: Please select the HTML/Rich-Text editor you wish to use for composing Admin-related emails, newsletters, and product descriptions</div>
+
+
+<h2 id="tinymce_editor_api_key">TinyMCE Editor API Key</h2>
+
+<div class='indent'>Key: <b>TINYMCE_EDITOR_API_KEY</b><br />
+Path: <b>Configuration > My Store</b><br />
+Description: Basic editor features are free, in GPL mode.<br>Optionally enable premium editor features in the TinyMCE editor by providing your account API key and register your store website domain in your Tiny account.<br>Sign up at <a href="https://www.tiny.cloud/auth/signup/" target="_blank">www.tiny.cloud</a><br><br>Default value: <strong>GPL</strong> for free-unregistered mode with basic features.</div>
 
 
 <h2 id="default_for_notify_customer_on_order_status_update">Default for Notify Customer on Order Status Update?</h2>

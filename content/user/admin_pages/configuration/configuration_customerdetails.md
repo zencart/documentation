@@ -81,11 +81,46 @@ Path: <b>Configuration > Customer Details</b><br />
 Description: Customer should be asked about product notifications after checkout success and in account preferences<br />0= Never ask<br />1= Ask (ignored on checkout if has already selected global notifications)<br /><br />Note: Sidebox must be turned off separately</div>
 
 
+<h2 id="password_reset_token_length">Password Reset Token Length</h2>
+
+<div class='indent'>Key: <b>PASSWORD_RESET_TOKEN_LENGTH</b><br />
+Path: <b>Configuration > Customer Details</b><br />
+Description: Number of characters in a generated password-reset token. Default is 24. Allowed: 12-100, but it affects the URL length, so 12-30 is most ideal</div>
+
+
+<h2 id="password_reset_token_valid_for">Password Reset Token Valid For</h2>
+
+<div class='indent'>Key: <b>PASSWORD_RESET_TOKEN_MINUTES_VALID</b><br />
+Path: <b>Configuration > Customer Details</b><br />
+Description: How many minutes a password-reset token is valid for. Default: 60 minutes (1 hour). Allowed: 1-1440. Best is 60-120 minutes.</div>
+
+
 <h2 id="customer_shop_status__view_shop_and_prices">Customer Shop Status - View Shop and Prices</h2>
 
 <div class='indent'>Key: <b>CUSTOMERS_APPROVAL</b><br />
 Path: <b>Configuration > Customer Details</b><br />
 Description: Customer must be approved to shop<br />0= Not required<br />1= Must login to browse<br />2= May browse but no prices unless logged in<br />3= Showroom Only<br /><br />It is recommended that Option 2 be used for the purposes of Spiders if you wish customers to login to see prices.</div>
+
+
+<h2 id="account_activation_required">Account Activation Required?</h2>
+
+<div class='indent'>Key: <b>CUSTOMERS_ACTIVATION_REQUIRED</b><br />
+Path: <b>Configuration > Customer Details</b><br />
+Description: Require customer-account activation? If set to <code>true</code>, an activation link is sent to the email address supplied by the customer. The customer must click on that link to activate their account.</div>
+
+
+<h2 id="account_activation_token_length">Account Activation Token Length</h2>
+
+<div class='indent'>Key: <b>CUSTOMERS_ACTIVATION_TOKEN_LENGTH</b><br />
+Path: <b>Configuration > Customer Details</b><br />
+Description: Number of characters in a generated account-activation token. Default is 24. Allowed: 12-100, but it affects the URL length, so 10-30 is most ideal</div>
+
+
+<h2 id="account_activation_token_valid_for">Account Activation Token Valid For</h2>
+
+<div class='indent'>Key: <b>CUSTOMERS_ACTIVATION_TOKEN_MINUTES_VALID</b><br />
+Path: <b>Configuration > Customer Details</b><br />
+Description: How many minutes an account-activation token is valid for. Default: 60 minutes (1 hour). Allowed: 1-1440. Best is 60-120 minutes.</div>
 
 
 <h2 id="customer_approval_status__authorization_pending">Customer Approval Status - Authorization Pending</h2>

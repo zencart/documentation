@@ -32,6 +32,13 @@ Path: <b>Configuration > Index Listing</b><br />
 Description: Show Upcoming Products on Main Page<br />0= off or set the sort order</div>
 
 
+<h2 id="show_featured_categories_on_main_page">Show Featured Categories on Main Page</h2>
+
+<div class='indent'>Key: <b>SHOW_PRODUCT_INFO_MAIN_FEATURED_CATEGORIES</b><br />
+Path: <b>Configuration > Index Listing</b><br />
+Description: Show Featured Categories on Main Page<br>0= off or set the sort order</div>
+
+
 <h2 id="show_new_products_on_main_page__category_with_subcategories">Show New Products on Main Page - Category with SubCategories</h2>
 
 <div class='indent'>Key: <b>SHOW_PRODUCT_INFO_CATEGORY_NEW_PRODUCTS</b><br />
@@ -123,11 +130,11 @@ Path: <b>Configuration > Index Listing</b><br />
 Description: New Products Columns per Row</div>
 
 
-<h2 id="featured_products_columns_per_row">Featured Products Columns per Row</h2>
+<h2 id="featured_products_and_categories_columns_per_row">Featured Products And Categories Columns per Row</h2>
 
 <div class='indent'>Key: <b>SHOW_PRODUCT_INFO_COLUMNS_FEATURED_PRODUCTS</b><br />
 Path: <b>Configuration > Index Listing</b><br />
-Description: Featured Products Columns per Row</div>
+Description: Featured Products And Categories Columns per Row</div>
 
 
 <h2 id="special_products_columns_per_row">Special Products Columns per Row</h2>

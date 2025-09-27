@@ -39,13 +39,6 @@ Path: <b>Configuration > Email</b><br />
 Description: Email address of Store Owner.  Used as "display only" when informing customers of how to contact you.</div>
 
 
-<h2 id="email_address_sent_from">Email Address (sent FROM)</h2>
-
-<div class='indent'>Key: <b>EMAIL_FROM</b><br />
-Path: <b>Configuration > Email</b><br />
-Description: Address from which email messages will be "sent" by default. Can be over-ridden at compose-time in admin modules.</div>
-
-
 <h2 id="emails_must_send_from_known_domain">Emails must send from known domain?</h2>
 
 <div class='indent'>Key: <b>EMAIL_SEND_MUST_BE_STORE</b><br />
@@ -53,11 +46,11 @@ Path: <b>Configuration > Email</b><br />
 Description: Does your mailserver require that all outgoing emails have their "from" address match a known domain that exists on your webserver?<br /><br />This is often required in order to prevent spoofing and spam broadcasts.  If set to Yes, this will cause the email address (sent FROM) to be used as the "from" address on all outgoing mail.</div>
 
 
-<h2 id="email_admin_format">Email Admin Format?</h2>
+<h2 id="email_address_sent_from">Email Address (sent FROM)</h2>
 
-<div class='indent'>Key: <b>ADMIN_EXTRA_EMAIL_FORMAT</b><br />
+<div class='indent'>Key: <b>EMAIL_FROM</b><br />
 Path: <b>Configuration > Email</b><br />
-Description: Please select the Admin extra email format (Note: Enable HTML Emails must be on for HTML option to work)</div>
+Description: Address from which email messages will be "sent" by default. Can be over-ridden at compose-time in admin modules.</div>
 
 
 <h2 id="send_copy_of_order_confirmation_emails_to">Send Copy of Order Confirmation Emails To</h2>
@@ -65,6 +58,13 @@ Description: Please select the Admin extra email format (Note: Enable HTML Email
 <div class='indent'>Key: <b>SEND_EXTRA_ORDER_EMAILS_TO</b><br />
 Path: <b>Configuration > Email</b><br />
 Description: Send COPIES of order confirmation emails to the following email addresses, in this format: Name 1 &lt;email@address1&gt;, Name 2 &lt;email@address2&gt;</div>
+
+
+<h2 id="email_admin_format">Email Admin Format?</h2>
+
+<div class='indent'>Key: <b>ADMIN_EXTRA_EMAIL_FORMAT</b><br />
+Path: <b>Configuration > Email</b><br />
+Description: Please select the Admin extra email format (Note: Enable HTML Emails must be on for HTML option to work)</div>
 
 
 <h2 id="send_copy_of_create_account_emails_to__status">Send Copy of Create Account Emails To - Status</h2>
@@ -193,18 +193,11 @@ Path: <b>Configuration > Email</b><br />
 Description: When displaying lists of available audiences/recipients, should the recipients-count be included? <br /><em>(This may make things slower if you have a lot of customers or complex audience queries)</em></div>
 
 
-<h2 id="smtp_email_account_mailbox">SMTP Email Account Mailbox</h2>
+<h2 id="smtp_email_mail_server_port">SMTP Email Mail Server Port</h2>
 
-<div class='indent'>Key: <b>EMAIL_SMTPAUTH_MAILBOX</b><br />
+<div class='indent'>Key: <b>EMAIL_SMTPAUTH_MAIL_SERVER_PORT</b><br />
 Path: <b>Configuration > Email</b><br />
-Description: Enter the mailbox account name (me@mydomain.com) supplied by your host. This is the account name that your host requires for SMTP authentication.<br />Only required if using SMTP Authentication for email.</div>
-
-
-<h2 id="smtp_email_account_password">SMTP Email Account Password</h2>
-
-<div class='indent'>Key: <b>EMAIL_SMTPAUTH_PASSWORD</b><br />
-Path: <b>Configuration > Email</b><br />
-Description: Enter the password for your SMTP mailbox. <br />Only required if using SMTP Authentication for email.</div>
+Description: Enter the IP port number that your SMTP mailserver operates on.<br />Only required if using SMTP Authentication for email.<br><br>Default: 25<br>Typical values are:<br>25 - normal unencrypted SMTP<br>587 - encrypted SMTP<br>465 - older MS SMTP port</div>
 
 
 <h2 id="smtp_email_mail_host">SMTP Email Mail Host</h2>
@@ -214,11 +207,18 @@ Path: <b>Configuration > Email</b><br />
 Description: Enter the DNS name of your SMTP mail server.<br />ie: mail.mydomain.com<br />or 55.66.77.88<br />Only required if using SMTP Authentication for email.</div>
 
 
-<h2 id="smtp_email_mail_server_port">SMTP Email Mail Server Port</h2>
+<h2 id="smtp_email_account_password">SMTP Email Account Password</h2>
 
-<div class='indent'>Key: <b>EMAIL_SMTPAUTH_MAIL_SERVER_PORT</b><br />
+<div class='indent'>Key: <b>EMAIL_SMTPAUTH_PASSWORD</b><br />
 Path: <b>Configuration > Email</b><br />
-Description: Enter the IP port number that your SMTP mailserver operates on.<br />Only required if using SMTP Authentication for email.<br><br>Default: 25<br>Typical values are:<br>25 - normal unencrypted SMTP<br>587 - encrypted SMTP<br>465 - older MS SMTP port</div>
+Description: Enter the password for your SMTP mailbox. <br />Only required if using SMTP Authentication for email.</div>
+
+
+<h2 id="smtp_email_account_mailbox">SMTP Email Account Mailbox</h2>
+
+<div class='indent'>Key: <b>EMAIL_SMTPAUTH_MAILBOX</b><br />
+Path: <b>Configuration > Email</b><br />
+Description: Enter the mailbox account name (me@mydomain.com) supplied by your host. This is the account name that your host requires for SMTP authentication.<br />Only required if using SMTP Authentication for email.</div>
 
 
 <h2 id="convert_currencies_for_text_emails">Convert currencies for Text emails</h2>
