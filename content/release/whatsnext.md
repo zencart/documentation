@@ -10,14 +10,22 @@ noindex: yes
 {{% construction %}}
 
 ## 3.0.0 
-- New Feature: <a href="https://github.com/zencart/zencart/discussions/6428">Child Templates</a> will be supported, so that storeowners can more easily determine what has been changed from the base release of a template. 
+
+The improvements in v3.0.0 include the following.  The changes which are most notable are bolded.
+
+- **New Feature: <a href="https://github.com/zencart/zencart/discussions/6428">Child Templates</a> will be supported, so that storeowners can more easily determine what has been changed from the base release of a template.**
 - Modernization: Zen Cart 3.0 will use Bootstrap 5. 
 - Modernization: support for older `define` based language files will be dropped.  Moving forward, only [Array based language files](/dev/languages/158_language_files/) will be supported. 
 
 ## 2.2.0 
-- Admin: [Customer account activation](/user/orders/customer_approval/#customer-account-activation) for customer accounts added.
+
+The improvements in v2.2.0 include the following.  The changes which are most notable are bolded.
+
+- **Admin: Additional images may now be specified in the database rather than using the older [filename matching mechanism](/user/images/image_filename_conventions/).  See [Additional Images Handling](/user/images/database/) for details.**
+- Admin: Customers page now has a legend explaining the icons used in the Authorized column.
+- **Admin: [Customer account activation](/user/orders/customer_approval/#customer-account-activation) for customer accounts added.  Stores may now require that new accounts authenticate their email addresses for fraud control.**
 - Admin: The page Admins > Admin Page Registration has been removed.
-- Admin: Configuration screen now allows all values in a group to be updated at once.  See [Configuration in Zen Cart 2.2.x](/user/admin_pages/configuration/v2.2.0/).
+- **Admin: Configuration screen now allows all values in a group to be updated at once.  See [Configuration in Zen Cart 2.2.x](/user/admin_pages/configuration/v2.2.0/).**
 - Admin: Fixed Undefined constant error in `includes/functions/functions_exchange_rates.php`.
 - Admin: Modules now grouped by status and sort order. 
 - Admin: Fixed - Banner manager crashes when no image provided on update.
@@ -39,7 +47,7 @@ noindex: yes
 - Storefront: Correct `get_template_dir` loading behavior for CSS, JS and PHP.
 - Storefront: Notifier added for additional product details.
 - Storefront: Updated embedded MobileDetect to latest version for `responsive_classic` template.
-- Storefront: Updated - Refreshed look for responsive classic template.  See [this repo from contributor chadlly2003](https://github.com/chadlly2003/zencart_responsive_classic_redesign).
+- **Storefront: Updated - Refreshed look for responsive classic template.  See [this repo from contributor chadlly2003](https://github.com/chadlly2003/zencart_responsive_classic_redesign).**
 - Storefront: Fixed - Customer's wholesale status captured when order is placed.
 - Storefront: Fixed - PHP log created when empty shipping quote returned.
 - Storefront: Fixed - JavaScript problems can occur when `gv_balance` is null. This is an important fix for JavaScript heavy checkouts (OPC, some payment modules).

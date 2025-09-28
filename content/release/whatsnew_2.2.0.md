@@ -81,7 +81,7 @@ For developers with language skills who would like to build a new translation, [
 
 ## 2.2.0 
 The improvements in v2.2.0 include:  
-- TBD
+- At release time, this list will be populated.  For now, please see [this file](/release/whatsnext/#220)
 
 ---
 

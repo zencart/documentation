@@ -14,3 +14,11 @@ Clicking the "View" button shows the associated order.
 
 ![Order view](/images/ahi_top.jpg)
 
+Clicking the "View or change my account information" link allows you to update your name, email address, telephone and fax number and whether you wish to receive TEXT or HTML email. 
+
+![Order view](/images/my_account.png)
+
+Note that changing the email address on Zen Cart sites with [account activation](/user/orders/customer_approval/#customer-account-activation) will  trigger
+the sending of a validation email, and the customer may not checkout until they
+click the link in this email.
+

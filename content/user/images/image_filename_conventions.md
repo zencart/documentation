@@ -7,6 +7,8 @@ weight: 30
 
 Zen Cart permits you to associate [multiple images with a single product](/user/images/additional_images/), but doing so requires knowledge of how products and images are associated. 
 
+In Zen Cart 2.2.0, a new mechanism for specifying additional images was introduced; please see [Additional Images Handling](/user/images/database/) for details.
+
 ## A Product Owns One Filename 
 
 Note: the base image name is the original image name loaded for the product.

@@ -15,6 +15,8 @@ conventions set out in [Image Filename conventions](/user/images/image_filename_
 
 ### Additional images filename matching rules
 
+In Zen Cart 2.2.0, a new mechanism for specifying additional images was introduced; please see [Additional Images Handling in the Database](/user/images/database/) for details.
+
 Using an underscore and more characters after the base filename is the best practice for ensuring your additional images work as expected.  See [Image Filename Conventions](/user/images/image_filename_conventions/) for details. 
 
 Prior to Zen Cart 2.1.0, image matching did not enforce the check of a `_` suffix when looking for additional product images in the "images/" directory (but it DID require the `_` in any `images/whatever/` subdirectories). Starting with Zen Cart v2.1.0 a stricter matching pattern requires the `_` in both locations, by default, but can be overridden. 

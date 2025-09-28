@@ -45,3 +45,6 @@ Compare this to the product listing page for an approved account:
 ![Product Listing Page](/images/product_listing.png)
 
 The product info page is handled similarly, with no add to cart button for unapproved accounts.
+
+Note that using the Customer Account Activation feature puts your store into 
+Customer Approval Status "3."  Customers may browse and see prices, but they must login to an approved account to add items to their cart. 
