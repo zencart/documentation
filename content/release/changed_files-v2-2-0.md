@@ -22,7 +22,7 @@ A detailed list of all edits to all files can be seen on Github at:
 
 CHANGED Files in v2.2.0
 =======================
-- TBD
+- TBD - these lists will be populated at release time.
 
 
 NEW Folders in v2.2.0

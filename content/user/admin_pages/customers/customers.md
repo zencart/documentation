@@ -23,7 +23,7 @@ The columns in the list are:
 - Customer's wholesale level if [wholesale pricing](/user/products/wholesale_pricing/) is enabled (since 2.0.0)
 - Customer's [pricing group](/user/admin_pages/customers/group_pricing/) (if set) 
 - Customers [Gift Certificate](/user/order_total/gift_certificates/) balance (if any)
-- Customer's [authorization status](/user/orders/customer_approval/) (You can ban a customer by clicking the green icon so it turns red)
+- Customer's [authorization status](/user/orders/customer_approval/). You can ban a customer by clicking the green icon so it turns red, or [activate](/user/orders/customer_approval/#customer-account-activation) them by clicking the brown icon so it turns green (in Zen Cart 2.2.0 and above). 
  
 ## Customer Infobox
 Clicking a customers record selects that customer and opens a preview on the right hand side of the page.  From there, the customer record may be edited or deleted.  Other available actions are 
