@@ -72,7 +72,7 @@ already been done.
 
 ## Automatic New Version checks 
 
-Use `plugin_version_check_for_updates` to call the Zen Cart plugin server so that users will know if you have a new release. See how this is done in an existing plugin such as [USPS](https://www.zen-cart.com/downloads.php?do=file&id=1292) or [Square Web Payments](https://www.zen-cart.com/downloads.php?do=file&id=2345). 
+Use `plugin_version_check_for_updates` to call the Zen Cart plugin server so that users will know if you have a new release. See how this is done in an existing plugin such as [USPSRESTFul](https://www.zen-cart.com/downloads.php?do=file&id=2395).
 
 ```
 $new_version_details = plugin_version_check_for_updates(self::USPS_ZEN_CART_PLUGIN_ID, self::USPS_CURRENT_VERSION);
