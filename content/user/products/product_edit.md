@@ -37,7 +37,7 @@ when adding or editing a product are:
 - Products Description - details about the product 
 - Products Quantity - quantity in inventory 
 - [Products Model](/user/products/product_model/) - model number or SKU 
-- Products Image - main photo for product 
+- Products Image - main image for product.  Starting in Zen Cart 2.2.0, you may also manage [additional product images](/user/images/additional_images_database) on this page. 
 - Products URL - if there is another web page that provides more information, add the URL here 
 - Products Shipping Weight - weight before adding packing materials 
 - Length, Width and Height: Since Zen Cart 2.0.0 it has been possible to add [product dimensions](/user/shipping/shipping_dimensions/) to a product.

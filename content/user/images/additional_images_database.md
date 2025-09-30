@@ -12,6 +12,12 @@ In Zen Cart 2.2.0, a new mechanism for specifying additional images was introduc
 To specify additional images names in the database, follow these steps:
 
 - Go to Admin > Configuration > Images and set Additional Images Handling to "Database."
-- Go to Admin > Modules > Plugin Manager > Scan For Additional Product Image Files for Database.  Install this plugin.
-- Go to Tools > Scan Product Images To Database
-FIXME 
+- Go to Admin > Modules > Plugin Manager > Scan Additional Product Images to Database.  Install this plugin.
+- Go to Tools > Scan Product Images To Database.
+
+Once you run the scan tool, the new `products_additional_images` table will be populated, and you may use the product editing page directly to manage your additional images. 
+
+![Additional Images on Product Edit page](/images/additional_images_product_edit.png)
+
+
+
