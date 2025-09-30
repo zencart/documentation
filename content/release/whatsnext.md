@@ -21,13 +21,14 @@ The improvements in v3.0.0 include the following.  The changes which are most no
 
 The improvements in v2.2.0 include the following.  The changes which are most notable are bolded.
 
-- **Admin: Additional images may now be specified in the database rather than using the older [filename matching mechanism](/user/images/image_filename_conventions/).  See [Additional Images Handling](/user/images/database/) for details.**
+- **Admin: Additional images may now be specified in the database rather than using the older [filename matching mechanism](/user/images/image_filename_conventions/).  See [Additional Images Handling](/user/images/additional_images_database/) for details.**
 - Admin: Customers page now has a legend explaining the icons used in the Authorized column.
 - **Admin: [Customer account activation](/user/orders/customer_approval/#customer-account-activation) for customer accounts added.  Stores may now require that new accounts authenticate their email addresses for fraud control.**
 - Admin: The page Admins > Admin Page Registration has been removed.
 - **Admin: Configuration screen now allows all values in a group to be updated at once.  See [Configuration in Zen Cart 2.2.x](/user/admin_pages/configuration/v2.2.0/).**
 - Admin: Fixed Undefined constant error in `includes/functions/functions_exchange_rates.php`.
-- Admin: Modules now grouped by status and sort order. 
+- Admin: Payment, Shipping and Order Total Modules now grouped by status and sort order. 
+- Admin: Plugin Manager Modules now grouped by status and sort order. 
 - Admin: Fixed - Banner manager crashes when no image provided on update.
 - Admin: Improvements in Sales Report with Graphs.
 - Admin: TinyMCE added as the default admin  [HTML Editor](/user/running/html_editors). (CKEditor is locked at an older version; no updates planned.)
@@ -39,7 +40,7 @@ The improvements in v2.2.0 include the following.  The changes which are most no
 - Core: Typo in notifier name `NOTIFY_ADMIN_INVOICE_HEADERS_AFTER_TAX` corrected.
 - Core: Updates to POSM to support [Edit Orders 5.0](https://www.zen-cart.com/downloads.php?do=file&id=2400).
 - Core: Correct PHP warnings when added product isn't POSM-managed 
-- Core: Password reset via URL (versus emailing a temporary password) is being added to the core.  Credit to forum users Numinix and Retched for inspiration.
+- **Core: Password reset via URL (versus emailing a temporary password) is being added to the core.  Credit to forum users Numinix and Retched for inspiration.**
 - Core: Improvements for International use.
 - Extras: Curltester now includes REST API endpoints for USPS and PayPal. 
 - Storefront: Tax descriptions may now be multilingual.

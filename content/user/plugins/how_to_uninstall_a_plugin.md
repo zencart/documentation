@@ -5,6 +5,8 @@ category: plugins
 weight: 10
 ---
 
+This help file describes older style plugins that are copied directly into the `includes` and `admin` folders.  For information on uninstalling encapsulated plugins, see [How to uninstall an encapsulated plugin](/user/plugins/uninstalling_encapsulated/).
+
 Uninstalling a plugin is harder than installing one; there are no
 two ways around it. 
 

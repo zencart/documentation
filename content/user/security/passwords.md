@@ -24,6 +24,7 @@ The setting `PADSS_PWD_EXPIRY_ENFORCED` is on the screen [Admin > Configuration 
 ### Changing Customer Passwords
 - Customers may change their own passwords using the screen My Account > Change my Account Password.
 - Customers may reset their passwords using the "Forgot your password" link on the login page.
+- Since 2.2.0, the "Forgot your password" link emails a password reset link rather than a temporary password.
 - Since 1.5.5, admins may reset customer passwords from the [Admin > Customers > Customers](/user/admin_pages/customers/customers/) screen.
 
 ### Changing Admin Passwords 
