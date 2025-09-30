@@ -74,6 +74,8 @@ already been done.
 
 Use `plugin_version_check_for_updates` to call the Zen Cart plugin server so that users will know if you have a new release. See how this is done in an existing plugin such as [USPSRESTFul](https://www.zen-cart.com/downloads.php?do=file&id=2395).
 
+NOTE: This should only be done when `IS_ADMIN_FLAG` is `true`. Under normal circumstances you never want to check version status on Catalog-side pages/operations.
+
 ```
 $new_version_details = plugin_version_check_for_updates(self::USPS_ZEN_CART_PLUGIN_ID, self::USPS_CURRENT_VERSION);
 if ($new_version_details !== false) {
