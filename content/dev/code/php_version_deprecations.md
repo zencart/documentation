@@ -170,6 +170,8 @@ Deprecated: cannot have function/class parameters with a default value before a 
 
 Deprecated: calls to undefined constants now throw `Fatal error: Uncaught Error: Undefined constant "FOO"`
 
+Removed: `Function curl_close() has no effect anymore since PHP 8.0, is deprecated since 8.5`
+
 
 ### PHP 8.1
 Deprecated: can no longer pass `null` to a non-nullable scalar type declaration (ie: `string $var = null` must be either `?string = null` or `string = ''`)
@@ -238,6 +240,8 @@ Added: [Pipe operator](https://php.watch/versions/8.5/pipe-operator) (`|>`) for 
 Added: `final` property promotion
 
 Added: constant expressions may now contain closures and first-class callables.
+
+Deprecated: `curl_close()` - `PHP Deprecated: Function curl_close() is deprecated since 8.5, as it has no effect since PHP 8.0`
 
 Deprecated: [Non-canonical scalar type casts (boolean|double|integer|binary)](https://php.watch/versions/8.5/boolean-double-integer-binary-casts-deprecated)
 
