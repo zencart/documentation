@@ -5,6 +5,8 @@ category: plugins
 weight: 10
 ---
 
+This help file describes older style plugins that are copied directly into the `includes` and `admin` folders.  For information on encapsulated plugins, see [How to install an encapsulated plugin](/user/plugins/installing_encapsulated/).
+
 If you installed your Zen Cart using Fantastico or perhaps had a friend or subcontractor install it for you, installing a plugin might seem daunting. Don't worry - there's nothing to it as long as you follow some basic principles.  
 
 ## Reading the instructions
