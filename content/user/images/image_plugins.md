@@ -15,3 +15,5 @@ The following plugins may be useful to you in keeping your images folder organiz
 ### Image Handler and Multiple Images
 If you would prefer not to have to learn the [Image Filename Conventions](/user/images/image_filename_conventions/), you can [use Image Handler to add additional images to a product](/user/images/additional_images/#is-there-an-easier-way-to-manage-multiple-product-images).
 
+Alternately, you may upgrade to Zen Cart 2.2.0, which uses the database to manage additional images - see [Additional Image Handling in the Database](/user/images/additional_images_database/).
+
