@@ -31,9 +31,12 @@ To prepare to run the Unit Test and Feature Test suites:
 * download and install according to your operating system
 * follow the Getting Started instructions.
 
-3. Run `composer install` from inside the root directory of your Zen Cart files, on your PC. This will install the base test-tool dependencies.
+2. Run `composer install` from inside the root directory of your Zen Cart files, on your PC. This will install the base test-tool dependencies.
 
-4. Then, if your PHP version is newer than PHP 8.3+, also run `composer update` to patch the test-tool dependencies to more modern versions.
+3. Then, if your PHP version is newer than PHP 8.3+, also run `composer update` to patch the test-tool dependencies to more modern versions.
+
+While probably unnecessary unless upgrading the PHP version, you could re-run `composer update` periodically to grab latest updates of the test-tool dependencies.
+
 
 ## Unit Tests
 
@@ -61,7 +64,7 @@ It is planned in the future to allow interactions with pages that rely on javasc
 **WARNING: Feature tests rely on Re-creating the database on each separate test suite. This means it will destroy your database content.**
 However, given that you should only be testing on a local development environment, this shouldn't be a problem.
 
-Feature tests can be run using 
+Feature tests can be run using the following in the root directory of your Zen Cart install.
 
 - `composer feature-tests` will run all feature tests
 - `composer feature-tests-store` will run feature tests just for the store
@@ -121,4 +124,5 @@ As with other configure files noted above the actual configure file should be na
 The example referred to above shows settings for using a local `Mailpit` (an email server emulator) instance, which is an application you would need to install separately.
 Yes, you could specify your own real mail server, but beware that when the tests send repeated similar messages they may get falsely treated as spam and may mess with your sender-reputation score. 
 Mailtrap.io is a developer-friendly tool with a free-tier to accommodate email testing, and is easy to configure.
+
 
