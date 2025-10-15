@@ -11,7 +11,7 @@ The manifest api shows a hash of all files in a release.
 
 Its original purpose as to allow for doing diffs/security checks between a customized zen-cart and the original files.
 
-You need have login access to the version server https://servermanager.zen-cart.com/dashboard
+On the Server Manager dashboard:
 
 ![Server Manager](/images/sm_dashboard.png)
 
