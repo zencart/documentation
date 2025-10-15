@@ -7,15 +7,13 @@ category: release_process
 
 Note: if you are doing a pre-release rather than an official release, please skip this step and go to the [next step](/dev/release_process/release_links/). 
 
-The Server Manager controlls the endpoint that allows for a call home from within Zen Cart admin.  (It was formerly called the Ping Server, or `ping.zen-cart.com`.) 
+The Server Manager controls the endpoint that allows for a call home from within Zen Cart admin.  (It was formerly called the Ping Server, or `ping.zen-cart.com`.) 
 
 It will notify a shop owner if a new release is available.
 
-You need to have login access to https://servermanager.zen-cart.com/dashboard
+On the Server Manager site dashboard, access the `Version Manager > Versions` menu.
 
-and then access the `Version Manager > Versions` menu.
-
-We can then create a new release by clicking the "New Version" button.
+Create a new release by clicking the "New Version" button.
 
 ![ Ping Version Edit](/images/sm-version-edit.png)
 
@@ -24,7 +22,7 @@ For a full release we need to edit
 + Version major
 + Version minor
 + Version detail
-+ Version download url
++ Version download URL
 
 ## Version major
 
