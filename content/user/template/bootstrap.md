@@ -18,7 +18,9 @@ The Bootstrap template is built on the [Bootstrap](https://getbootstrap.com/) fr
 |Orientation Handling|Built in|Requires different CSS for landscape vs portrait on mobile devices|
 |Device Support|Device independent|Lists specific devices|
 
-Again, each of these points of difference is actually an advantage for Bootstrap; the way it does things is more modern and suited to a mobile-first world.  Note further that the disadvantages of Responsive Classic are also present in the older Picaflor Azul Responsive templates and most templates from stores like ThemeForest.  **The Bootstrap Template is really your best option.** 
+Again, each of these points of difference is actually an advantage for Bootstrap; the way it does things is more modern and suited to a mobile-first world.  Note further that the disadvantages of Responsive Classic are also present in the older Picaflor Azul Responsive templates(*) and most templates from stores like ThemeForest.  **The Bootstrap Template is really your best option.** 
+
+(*) Such as Responsive Sheffield Blue, Winchester Responsive, Fluorspar, etc.
 
 Bootstrap template version 3.X is based on [Bootstrap 4](https://getbootstrap.com/docs/4.6/getting-started/introduction/).  You can find the exact version of Bootstrap (`major.minor.patch`) in use by looking at the file `includes/templates/bootstrap/common/html_header.php`, which pulls in the Bootstrap javascript and css.
 

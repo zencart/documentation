@@ -7,7 +7,7 @@ weight: 10
 
 The initSystem refers to all of those files that are automatically included/initialised before any `command` scripts can be run.
 
-Zen Cart v1.x uses a (non Object Oriented) page controller pattern to decide the scripts to run, based on `HTTP_GET` parameters. The most important of these is the `main_page` parameter. Depending on that parameter, a command script is then run. Each commmand script resides in a directory in `/includes/modules/pages`.
+Zen Cart v1.x.x and v2.x.x both use a (non Object Oriented) page controller pattern to decide the scripts to run, based on `HTTP_GET` parameters. The most important of these is the `main_page` parameter. Depending on that parameter, a command script is then run. Each commmand script resides in a directory in `/includes/modules/pages`.
 
 For example if `main_page=login` the command script would be taken from the `/includes/modules/pages/login/` directory. 
 
