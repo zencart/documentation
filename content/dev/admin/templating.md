@@ -5,7 +5,7 @@ weight: 10
 ---
 
 
-In Zen Cart v1.x the Admin section is driven by pages that combine a lot of business logic with presentation logic. 
+In Zen Cart v1.x.x, the Admin section is driven by pages that combine a lot of business logic with presentation logic. 
 That is, there isn't much of a "template" system, especially when compared to the Storefront side of the application.
 
 While it embraces an MVC structure, it doesn't currently fully separate presentation from backend logic.
