@@ -60,6 +60,6 @@ Note: If a term is not in this list, use a web search to learn more about it.  T
 - Webserver - the computer associated with your hosting account that runs your website *or* the program on that hosting account that serves web pages (e.g. Apache).  See [hosting and domain concepts](/user/first_steps/hosting/).
 - YOURACCOUNTFOLDER - the folder  in your hosting account which holds your site's files. See [basic terms](/user/first_steps/basic_terms/). Webroot will be under this folder.  For example, if YOURACCOUNTFOLDER was `/home/scott`, your webroot would (probably) be `/home/scott/public_html`. See [basic terms](/user/first_steps/basic_terms/). 
 - YOURLANGUAGE - the language your site is presented in, which is english by default.  See [basic terms](/user/first_steps/basic_terms/). 
-- YOURSITE - the domain name you are using.  See [basic terms](/user/first_steps/basic_terms/). 
+- YOURSITE - the domain name you are using.  See [basic terms](/user/first_steps/basic_terms/).  Sometimes `YOURSTORE` is used for the same purpose.
 - YOURTEMPLATE - the template you are using.  See [basic terms](/user/first_steps/basic_terms/). 
 
