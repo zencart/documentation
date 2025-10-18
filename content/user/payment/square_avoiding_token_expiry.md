@@ -24,5 +24,5 @@ php PATH_TO_STORE/squareWebPay_handler.php
 or 
 
 ```
-/usr/bin/wget https://YOURSTORE/squareWebPay_handler.php
+/usr/bin/wget https://www.YOURSITE.com/squareWebPay_handler.php
 ```
