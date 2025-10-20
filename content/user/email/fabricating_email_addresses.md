@@ -21,7 +21,7 @@ In `includes/functions/functions_email.php`, right before the check of `EMAIL_MO
     if (defined('EMAIL_MODULES_TO_SKIP') && in_array($module,explode(",",constant('EMAIL_MODULES_TO_SKIP')))) return false;
 ```
 
-add code that checks a defined constant containing valid addresses at your domain.  Skip sending if the email has your domain name but is not in this list. 
+add code that checks a defined constant (`LIVE_EMAIL`) containing valid addresses at your domain.  Skip sending if the email has your domain name but is not in this list. 
 
 ```
     $mail_parts = explode('@',strtolower($to_address)); 
@@ -39,4 +39,12 @@ add code that checks a defined constant containing valid addresses at your domai
        }
     } 
 ```
+
+The constant `LIVE_EMAIL` would be created in Admin > Tools > Install SQL Patches like this: 
+
+```
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, last_modified, date_added, use_function, set_function) VALUES ('Known Good Emails', 'LIVE_EMAIL', '', 'Comma separated list of good emails at YOURDOMAIN.com', 12, 125, NULL, now(), NULL, NULL);
+```
+
+and then accessed in Admin > Configuration > Email Options.
 

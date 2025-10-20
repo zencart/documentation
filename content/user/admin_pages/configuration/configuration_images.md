@@ -155,7 +155,7 @@ Description: Product Images can be handled in two ways: &quot;Database&quot; or 
 
 <div class='indent'>Key: <b>ADDITIONAL_IMAGES_MODE</b><br />
 Path: <b>Configuration > Images</b><br />
-Description: &quot;strict&quot; = always use &quot;_&quot; suffix<br>&quot;legacy&quot; = only use &quot;_&quot; suffix in subdirectories<br>(Before v210 legacy was the default)<br>Default = strict</div>
+Description: In Filename-Matching mode, you can use an &quot;_&quot; suffix in two formats:<br>&quot;strict&quot; = always use &quot;_&quot; suffix<br>&quot;legacy&quot; = only use &quot;_&quot; suffix in subdirectories<br>(Before v210 legacy was the default)<br>Default = strict</div>
 
 
 <h2 id="image__product_listing_width">Image - Product Listing Width</h2>

@@ -4,6 +4,8 @@ category: admin_pages
 weight: 70 
 ---
 
+Note that the first group of settings (from Display Product Image to Display Product Weight) can be 0 (meaning do not show) or a positive number, meaning show, using this number as a sort order.
+
 <h2 id="display_product_image">Display Product Image</h2>
 
 <div class='indent'>Key: <b>PRODUCT_LIST_IMAGE</b><br />
