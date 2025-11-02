@@ -43,6 +43,7 @@ The improvements in v2.2.0 include the following.  The changes which are most no
 - **Core: Password reset via URL (versus emailing a temporary password) is being added to the core.  Credit to forum users Numinix and Retched for inspiration.**
 - Core: Improvements for International use.
 - Extras: Curltester now includes REST API endpoints for USPS and PayPal. 
+- Storefront: Wholesale customers are shown a header message acknowledging their wholesale status.
 - Storefront: Tax descriptions may now be multilingual.
 - Storefront: Password forgotten now disallowed for banned email addresses.
 - Storefront: Correct `get_template_dir` loading behavior for CSS, JS and PHP.
