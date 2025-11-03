@@ -16,9 +16,9 @@ Creating a Github repo for your contribution is nice but not required.  The adva
 It's good to include updated docs (or improve the docs if they're weak), and include a brief "changelog" in the docs to denote what was done "when" and what versions of Zen Cart and PHP the latest update is compatible with.
 
 Useful references:
-[PHP version feature changes and deprecations](/dev/code/php_version_deprecations/)
-[Zen Cart requirements](/user/first_steps/server_requirements/#php-version)
-[Encapsulated Plugins](/dev/plugins/encapsulated_plugins/)
+- [PHP version feature changes and deprecations](/dev/code/php_version_deprecations/)
+- [Zen Cart requirements](/user/first_steps/server_requirements/#php-version)
+- [Encapsulated Plugins](/dev/plugins/encapsulated_plugins/)
 
 
 ## Do's and Don'ts
