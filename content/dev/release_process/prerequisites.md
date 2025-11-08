@@ -51,7 +51,7 @@ NOTE: If you are setting up a pre-release, please see [Pre-Release Notes](/dev/r
 
 The thing to remember is that the database version does not include the patch number / letter, because the database doesn't change just because of a patch release.  
 
-Here's what should be in these files for version 2.1.0: 
+Here's what should be in these files for version 2.2.0 build:  
 
 {{% version_files %}}
 

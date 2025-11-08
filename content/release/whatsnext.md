@@ -26,7 +26,8 @@ The improvements in v2.2.0 include the following.  The changes which are most no
 - **Admin: [Customer account activation](/user/orders/customer_approval/#customer-account-activation) for customer accounts added.  Stores may now require that new accounts authenticate their email addresses for fraud control.**
 - Admin: The page Admins > Admin Page Registration has been removed.
 - **Admin: Configuration screen now allows all values in a group to be updated at once.  See [Configuration in Zen Cart 2.2.x](/user/admin_pages/configuration/v2.2.0/).**
-- Admin: Fixed Undefined constant error in `includes/functions/functions_exchange_rates.php`.
+- Admin: Fixed - Payment modules with Zone restrictions could falsely show message "The configuration of the order's payment module has changed."
+- Admin: Fixed - Undefined constant error in `includes/functions/functions_exchange_rates.php`.
 - Admin: Payment, Shipping and Order Total Modules now grouped by status and sort order. 
 - Admin: Plugin Manager Modules now grouped by status and sort order. 
 - Admin: Fixed - Banner manager crashes when no image provided on update.
