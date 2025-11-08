@@ -35,11 +35,11 @@ Follow the instructions in the README.
 ### config.php file
 
 ```$opts = [
-    'prevOfficialRelease' => 'v1.5.7d',
-    'newVersion' => 'v1.5.8', // note at this point we don't have to have a tag
-    'prevStampedVersion' => 'v1.5.8', // note at this point we don't have to have a tag
-    'commitDate' => '2022', //the date that will be used for the updatecommit
-    'copyrightDate' => '2022', //the date that will be used for the copyright date
+    'prevOfficialRelease' => 'v2.1.0',
+    'newVersion' => 'v2.2.0-alpha', // note at this point we don't have to have a tag
+    'prevStampedVersion' => 'v2.1.0', // note at this point we don't have to have a tag
+    'commitDate' => '2025', //the date that will be used for the updatecommit
+    'copyrightDate' => '2025', //the date that will be used for the copyright date
     'firstHash' => '28b79ce2120771411d08ef2c7cce5058e42a2cc3', // usually the hash of tagged prior release
     'lastHash' => '3bb5429b64095b89c671aae8f3e31cc9163b86b9', // usually the hash of the last commit for this new release
     'ignoreDirectories' => ['includes/classes/vendors', '.circleci', '.github', 'laravel', 'not_for_release'],
@@ -51,7 +51,7 @@ Follow the instructions in the README.
 
 + prevOfficialRelease The most recent official release e.g. v1.5.7d
 + prevStampedVersion The name of the most recent release that was version stamped (may have been a pre-release)
-+ newVersion - the version name of the release being worked on e.g. v1.5.8
++ newVersion - the version name of the release being worked on e.g. v1.5.8.  Should be the same as what's in `includes/version.php`.
 + commitDate - the year to use for updating the commit date - will be deprecated for auto setting
 + copyrightDate - the tear to use for the copyright date  - will be deprecated for auto setting
 + firstHash - the hash of the first commit in this branch - see below

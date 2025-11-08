@@ -17,7 +17,7 @@ The master branch is now the current release.  If a patch is being done from a r
 
 Before doing the version updates, create a new branch specifically for these changes. 
 
-Here's what should be in these files for version 2.1.0:
+Here's what should be in these files for version 2.2.0 build:
 
 {{% version_files %}}
 
