@@ -30,6 +30,17 @@ In addition to the settings mentioned above, additional settings you may wish to
 
 Each of these settings has its own documentation.
 
+### Page Specific Slowness 
+
+1. If the slowness is on the Admin > Catalog > Category/Products page, try making these two config changes: 
+
+- Admin > Configuration > Layout Settings > Show linked status for categories = false 
+- Admin > Configuration > Layout Settings > Show Category Counts - Admin = false
+
+2. If the slowness is on the Admin > Customers > Customers page, see if there are unused customer accounts that can be deleted (by [Delete Spam Customers](https://www.zen-cart.com/downloads.php?do=file&id=2253), for example).
+
+3. If the slowness is on the Admin > Customers > Orders page, look at some of the [Admin Setting Overrides](/user/admin/site_specific_overrides/) that can be done to speed up that page (notably `$quick_view_popover_enabled` and `$includeAttributesInProductDetailRows`).
+
 ### Software Changes to consider 
 Sometimes one of the widgets on the dashboard is the cause of the slowness.  You can tweak these to improve performance at the cost of less functionality.  These are things you can try: 
 
