@@ -34,8 +34,8 @@ Each of these settings has its own documentation.
 
 1. If the slowness is on the Admin > Catalog > Category/Products page, try making these two config changes: 
 
-- Admin > Configuration > Layout Settings > Show linked status for categories = false 
-- Admin > Configuration > Layout Settings > Show Category Counts - Admin = false
+- Admin > Configuration > My Store > Show linked status for categories = false 
+- Admin > Configuration > My Store > Show Category Counts - Admin = false
 
 2. If the slowness is on the Admin > Customers > Customers page, see if there are unused customer accounts that can be deleted (by [Delete Spam Customers](https://www.zen-cart.com/downloads.php?do=file&id=2253), for example).
 
