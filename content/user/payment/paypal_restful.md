@@ -16,7 +16,7 @@ Links:
 - [PayPal RESTful Download](https://www.zen-cart.com/downloads.php?do=file&id=2382)
 - [Installation Instructions for PayPal RESTful](https://github.com/lat9/paypalr/wiki)
 
-PayPal RESTful will run on Zen Cart 1.5.8a and higher. 
+PayPal RESTful will run on Zen Cart 1.5.7 and higher, and PHP 7.0-to-8.5
 
 ![PayPal RESTful](/images/paypal_restful.png)
 
