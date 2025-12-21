@@ -5,11 +5,11 @@ category: payment
 weight: 10
 ---
 
-If you have already decided to use PayPal Express, see [Setup instructions for PayPal Express Checkout](/user/payment/paypal_express_checkout/). 
+**NOTE:** Zen Cart recommends using **[PayPal RESTful](/user/payment/paypal_restful/)** instead of any of the modules discussed on this page. 
 
-Zen Cart recommends using Express Checkout instead of PayPal Standard.  Another option is a newer module, called [PayPal RESTful](/user/payment/paypal_restful/), which will be available soon, and will eventually replace both PayPal Express and PayPal Website Payments Pro.
+If you are preparing to use PayPal Express, see [Setup instructions for PayPal Express Checkout](/user/payment/paypal_express_checkout/). 
 
-The built-in PayPal integration described in the remainder of this article uses NVP/SOAP, which is a legacy technology.  As noted above, the newer integration is [PayPal RESTful](/user/payment/paypal_restful/).
+The built-in PayPal integration described in the remainder of this article uses NVP/SOAP, which is a legacy technology, which PayPal has indicated they plan to "sunset" (retire) in 2026.  As noted above, the newer integration is [PayPal RESTful](/user/payment/paypal_restful/).
 
 **PayPal Express Checkout**  gives the customer two options: They can jump over to the PayPal site to login to their account BEFORE completing checkout on your store (which allows them to select their address information there and never have to re-type their address details on YOUR site, thus the "express" part of the transaction) and then choosing shipping choices and discounts/coupons etc before completing the order ....... OR they can go to the PayPal site to login to their account AFTER making shipping/payment/coupon selections on your site (and creating an account on your store and typing their address info on your store), much like they do with Standard.    
 
@@ -17,7 +17,7 @@ The built-in PayPal integration described in the remainder of this article uses 
 
 One important benefit is that Express Checkout does not rely entirely on the IPN communications to your store in order to release the order. Instead, it stores the order immediately when payment is completed. It doesn't have to rely on the PayPal server to talk to your server in order to store the order.  Granted, you will still want PayPal's server to be able to send IPN updates to you for any orders, in case you do refunds or adjustments to the order... so that those updates are reflected in your store's order history.  
 
-[PayPal Standard is no longer recommended](/user/payment/paypal_standard).  You should NOT be using Payments Standard; you should be using Express Checkout which is far more reliable.
+[PayPal Standard is no longer recommended](/user/payment/paypal_standard).  You should NOT be using Payments Standard; you should be using RESTful (or, formerly Express Checkout) which is far more reliable.
 
 Express Checkout has all the same features as PayPal Standard, but is more reliable because it completes the transaction directly while the customer is actively engaged on your site. It supports all the currencies, payment methods, etc, just the same, but more efficiently. There is no monthly fee for using Express Checkout.  
 
@@ -49,7 +49,6 @@ Zen Cart does not have built-in support for the US Payflow Pro service. However,
 
 Please see PayPal's website for more [Payflow and PayPal](https://www.zen-cart.com/partners/paypal) information.  
 
-**PayPal Commerce** is another PayPal offering.  It is not supported at this time by Zen Cart, and adding it is not on the roadmap.
 
 ### Where can I learn more about PayPal? 
 
