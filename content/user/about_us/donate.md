@@ -99,7 +99,7 @@ One-time donations of any amount may be made using the following direct link:
 </div>
 
 <div style="width: 500px; padding: 10px; margin-top: 20px; border: 1px solid black; margin: auto; clear: both;">
-For those that prefer to send through banking, you may send via Zelle&reg; using the tag `zencart`
+For those that prefer to send through banking, you may send via Zelle&reg; using the tag <strong>zencart</strong>
 </div>
 
 Please note: Zen Ventures, LLC is not a charity, but your gift can be written off as a normal business expense.
