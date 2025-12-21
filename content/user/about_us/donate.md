@@ -99,14 +99,7 @@ One-time donations of any amount may be made using the following direct link:
 </div>
 
 <div style="width: 500px; padding: 10px; margin-top: 20px; border: 1px solid black; margin: auto; clear: both;">
-
-For those that prefer to send a business check, please make checks or money orders to: **Zen Ventures, LLC**  
-
-Mail to:  
-Zen Ventures, LLC  
-3939 South 6th Street #201  
-Klamath Falls, OR 97603
-
+For those that prefer to send through banking, you may send via Zelle&reg; using the tag `zencart`
 </div>
 
 Please note: Zen Ventures, LLC is not a charity, but your gift can be written off as a normal business expense.
