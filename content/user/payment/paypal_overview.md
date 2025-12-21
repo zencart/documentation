@@ -9,7 +9,7 @@ PayPal is the most commonly used online payment method in the ecommerce world.
 
 There are several integrations available, and the one(s) you choose will depend on your needs.
 
-- [PayPal RESTful](/user/payment/paypal_restful/) is the most up-to-date PayPal integration, and replaces all the other (listed below) PayPal modules as of December 2025. It supports accepting payments from your customer by credit card or their PayPal account, with or without PayPal branding (where possible). It requires Zen Cart 1.5.8 or higher.  You can ask questions about this payment method on the [support subforum for PayPal RESTful](https://www.zen-cart.com/forumdisplay.php?170-PayPal-RESTful-support).
+- [PayPal RESTful](/user/payment/paypal_restful/) is the most up-to-date PayPal integration, and replaces all the other (listed below) PayPal modules as of December 2025. It supports accepting payments from your customer by credit card or their PayPal account, with or without PayPal branding (where possible). It requires Zen Cart 1.5.7 or higher, and works on PHP 7.0-to-8.5.  You can ask questions about this payment method on the [support subforum for PayPal RESTful](https://www.zen-cart.com/forumdisplay.php?170-PayPal-RESTful-support).
 
 - [PayPal Express](/user/payment/paypal_express_checkout/) has been most commonly recommended integration (before the REST module was developed), as it supports most sites' needs directly.  It allows your customers to pay by their credit card or PayPal account, which they do offsite (not on your website).  You can ask questions about this payment method on the [support subforum for PayPal Express](https://www.zen-cart.com/forumdisplay.php?149-PayPal-Express-Checkout-support). Its features are now built-in to the REST module already.
 
