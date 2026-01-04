@@ -28,7 +28,7 @@ Please note: do NOT remove the old Square files from your Zen Cart installation 
 1. Install the Square Web Payments module files.  Then to go to Admin > Modules > Payments > Square WebPay, and click **Install**. 
 1. Double check - did you just install the module "Square WebPay"?  If you're on the module "Square," it will look very similar but won't work. 
 1. Login at [https://connect.squareup.com/apps](https://connect.squareup.com/apps) to view the apps you've connected to your account.
-1. Click **+** to create a New Application for your Zen Cart store. Give it a name, such as "WebPay". **You cannot delete the app or change its name once it is created, so choose carefully.**  If it's for a test installation of your site with a different URL, call it WebPay-Test or something like that.
+1. Click **+** to create a New Application for your Zen Cart store. Give it a name, such as "WebPay".  If it's for a test installation of your site with a different URL, call it WebPay-Test or something like that.
 1. Ensure you have selected the correct API version.  See [Square API Version](/user/payment/square_api_version/).
     - Version 2.0.x of Square Web Payments requires API Version 2024-11-20.
     - Version 1.2.0 of Square Web Payments requires API Version 2024-02-22.

@@ -21,6 +21,8 @@ The improvements in v3.0.0 include the following.  The changes which are most no
 
 The improvements in v2.2.0 include the following.  The changes which are most notable are bolded.
 
+- Admin: Permit the saving of configuration values as HTML character codes.
+- Admin: Updates to System Inspection plugin.
 - **Admin: Additional images may now be specified in the database rather than using the older [filename matching mechanism](/user/images/image_filename_conventions/).  See [Additional Images Handling](/user/images/additional_images_database/) for details.**
 - Admin: Customers page now has a legend explaining the icons used in the Authorized column.
 - **Admin: [Customer account activation](/user/orders/customer_approval/#customer-account-activation) for customer accounts added.  Stores may now require that new accounts authenticate their email addresses for fraud control.**
