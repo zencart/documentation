@@ -32,7 +32,7 @@ In the `__construct` method of the payment module, below the check which ensures
      if (IS_ADMIN_FLAG !== true) { 
        $allowed_group = 1; 
        if (!(zen_is_logged_in() && zen_customer_belongs_to_group((int)$_SESSION['customer_id'],$allowed_group, true))) {
-          return false; 
+          $this->enabled = false;
        } 
      } 
 ```
