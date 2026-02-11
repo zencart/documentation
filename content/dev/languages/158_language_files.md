@@ -83,7 +83,7 @@ Plugin authors may want to make their code compatible with both 1.5.7 and 1.5.8.
 
 If the plugin is targeted at 1.5.8+ only, the code above can be simplified: 
 ```
-  $filename = 'ot_group_pricing.php'; 
+  $filename = 'ot_group_pricing.php';  // Exclude "lang." prefix
   $folder = '/modules/order_total/';  // end with slash 
   $new_langfile = DIR_WS_LANGUAGES . $_SESSION['language'] . $folder .  'lang.' . $filename; 
   if (file_exists($new_langfile)) {
@@ -96,7 +96,7 @@ If the plugin is targeted at 1.5.8+ only, the code above can be simplified:
 If the file to be loaded was just in `includes/languages/english/` (and not the `modules/order_total` subfolder), the changes to the code above would just be for the first two variables.  To load the file `includes/languages/english/lang.media_common.php` it would be, 
 
 ```
-  $filename = 'media_common.php'; 
+  $filename = 'media_common.php';  // Exclude "lang." prefix
   $folder = '/';  // end with slash 
 ```
 
@@ -108,7 +108,7 @@ be loaded is `admin/includes/languages/english/some-custom-file.php` in 1.5.7 an
 
 ```
 if (function_exists('zen_get_zcversion') && zen_get_zcversion() >= '1.5.8') { 
-   $filename = 'some-custom-file.php';
+   $filename = 'some-custom-file.php';  // Exclude "lang." prefix
    $languageLoader->loadExtraLanguageFiles(DIR_WS_LANGUAGES, $_SESSION['language'],  $filename, '/');  
 } else {
    require 'includes/languages/english/some-custom-file.php'; 

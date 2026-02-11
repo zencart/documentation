@@ -9,8 +9,10 @@ Plugins that call the function `plugin_version_check_for_updates` will phone hom
 
 This messaging may or may not always be desirable; for modules with external interfaces, it can be critical to stay up to date, but for plugins that do other things, updates may be optional. 
 
-If you do want to disable checking for a particular plugin, try the following: 
+If you want to disable checking for a particular plugin, try the following: 
 
 - Check the plugin's Admin page and see if it has a setting to disable version checking.
 - Comment out the call to `plugin_version_check_for_updates` in this plugin's code.
+
+If you want to disable plugin version checking globally, Zen Cart 1.5.7 and above provide a defined constant `ENABLE_PLUGIN_VERSION_CHECKING` which you can set to `false`.   
 
