@@ -87,6 +87,7 @@ You can also provide a configuration flag for your plugin to disable these check
 
 If you want to do this, look at the example in [Colorbox for Zen Cart](https://www.zen-cart.com/downloads.php?do=file&id=1322). Search for `this_plugin_version_check_for_updates`. 
 
+Ensure that you respect the flag `ENABLE_PLUGIN_VERSION_CHECKING` - see [How do I disable plugin version checking?](/user/plugins/version_check).
 
 ## Database change checks 
 

@@ -57,3 +57,6 @@ In 1.5.7 or below:
 You may also wish to disable specific widgets by modifying `admin/index_dashboard.php`.  See [Admin Dashboard - Customizing](/user/admin_pages/admin_dashboard/#customizing).
 
 
+### Disabling Plugin Version Checks
+Some plugins [call the Zen Cart server to check for a new version](/dev/plugins/tips/#automatic-new-version-checks).  You can disable this behavior - see [How do I disable plugin version checking?](/user/plugins/version_check).
+
