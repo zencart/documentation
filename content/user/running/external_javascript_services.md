@@ -24,10 +24,10 @@ The simplest way to install this basic code snippet is:
 
 ## Advanced e-commerce analytics
 
-On the Zen Cart plugins library you will find some [ecommerce-specific plugins for Google Analytics](https://www.zen-cart.com/downloads.php?do=file&id=1997) 
-which capture product/sale data in greater detail and transmit those to Google as part of their Analytics mining of your site.
+On the Zen Cart plugins library you will find an [ecommerce-specific plugin for Google Analytics](https://www.zen-cart.com/downloads.php?do=file&id=2368) 
+which captures product/sale data in greater detail and transmits those to Google as part of their Analytics mining of your site.
 
-If you install one of those plugins, you should delete the "basic" code snippet file mentioned above, else you will get conflicting data. 
+If you install this plugin, you should delete the "basic" code snippet file mentioned above, else you will get conflicting data. 
 Simply use one or the other, not both.
 
 
