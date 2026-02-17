@@ -44,3 +44,12 @@ In this order, the first history entry is from when the order was placed, the se
 For more information, see the [customer and order FAQs](/user/orders/). 
 
 Some display features on this page may be switched off and on - see [switchable features on order pages](/user/admin_pages/customers/order_display_options/).
+
+## Colors
+
+In Zen Cart 2.2 and above, [order statuses may be color coded](/user/admin_pages/localization/orders_status#color-coding).  The status column on the orders page will then show the order status in its color code.
+
+![Orders page with color coded statuses](/images/orders_color_coded.jpg)
+
+
+

@@ -21,6 +21,7 @@ The improvements in v3.0.0 include the following.  The changes which are most no
 
 The improvements in v2.2.0 include the following.  The changes which are most notable are bolded.
 
+- **Admin: Order statuses are now color coded.** See [Orders Status](/user/admin_pages/localization/orders_status#color-coding).  This change makes the [Admin > Orders](/user/admin_pages/customers/orders#colors) screen easier to scan. 
 - Admin: Permit the saving of configuration values as HTML character codes.
 - Admin: Updates to System Inspection plugin.
 - **Admin: Additional images may now be specified in the database rather than using the older [filename matching mechanism](/user/images/image_filename_conventions/).  See [Additional Images Handling](/user/images/additional_images_database/) for details.**
