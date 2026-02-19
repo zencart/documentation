@@ -12,7 +12,7 @@ noindex: yes
 About PHP versions
 ==================
 
-Zen Cart v2.2.x is designed for PHP 8.0 to 8.4, with MySQL 5.7.8+ (or MariaDB 10.2.7+) and Apache 2.2/2.4.
+Zen Cart v2.2.x is designed for PHP 8.2 to 8.4, with MySQL 5.7.8+ (or MariaDB 10.2.7+) and Apache 2.2/2.4.
 
 Upgrade Instructions
 ====================
