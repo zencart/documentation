@@ -86,7 +86,6 @@ Documentation Files:
 
 Other considerations: 
 - `/composer.json`
-- `/laravel` - long before release, the bundled Laravel code should match PHP dependencies
 - Update github workflows so tests run on desired versions
 
 ## Copyright Updates
@@ -94,8 +93,7 @@ Other considerations:
 Do copyright updates in the following files: 
 
 1. docs/INSTALL.TXT
-1. what's new file for this release (Documentation site in `/release/` folder.)
-1. changed files list for this release (Documentation site in `/release/` folder.)
+1. what's new and changes files list for this release (common footer in doc repo `/layouts/shortcodes/release_footer.md`.)
 
 ## Check in! 
 

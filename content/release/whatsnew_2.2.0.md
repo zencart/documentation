@@ -1,6 +1,6 @@
 ---
-title: What's New in Version 2.2.0
-description: Features and fixes in Zen Cart 2.2.0
+title: What's New in Version 2.2.1
+description: Features and fixes in Zen Cart 2.2.1
 category: release
 weight: 100
 layout: docs
@@ -12,7 +12,7 @@ noindex: yes
 About PHP versions
 ==================
 
-Zen Cart v2.2.x is designed for PHP 8.2 to 8.4, with MySQL 5.7.8+ (or MariaDB 10.2.7+) and Apache 2.2/2.4.
+Zen Cart v2.2.x is designed for PHP 8.2 to 8.5, with MySQL 5.7.8+ (or MariaDB 10.2.7+) and Apache 2.2/2.4.
 
 Upgrade Instructions
 ====================
@@ -39,7 +39,7 @@ Always review the [Release Specific Upgrade Considerations](https://docs.zen-car
 CHANGELOG - List of Changed Files
 =================================
 
-For a list of files that have been changed since v2.0.1, see the [changed_files-v2.2.0](/release/changed_files-v2-2-0/) document.
+For a list of files that have been changed since v2.1.0, see the [changed_files-v2.2.0](/release/changed_files-v2-2-0/) document.
 
 Upgrading to a Responsive Template
 ==================================
@@ -79,9 +79,9 @@ If you're doing an upgrade from a pre-1.5.8 Zen Cart version and are worried abo
 For developers with language skills who would like to build a new translation, [developer information on Array based language files](/dev/languages/158_language_files/) is provided.
 
 
-## 2.2.0 
+## 2.2.1 
 
-The improvements in v2.2.0 include the following.  The changes which are most notable are bolded.
+The improvements in v2.2.1 include the following.  The changes which are most notable are bolded.
 
 - **Admin: Order statuses are now color coded.** See [Orders Status](/user/admin_pages/localization/orders_status#color-coding).  This change makes the [Admin > Orders](/user/admin_pages/customers/orders#colors) screen easier to scan. 
 - Admin: Permit the saving of configuration values as HTML character codes.
