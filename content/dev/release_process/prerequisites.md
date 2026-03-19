@@ -65,8 +65,6 @@ This is mentioned on the next page as well as a reminder, since it's easy to for
 
 ## For Major Releases - set the PHP Version range
 
-Note: The actual PHP version we "support" is nowadays determined by what Laravel version we integrate. And that can be found in the `laravel` directory's `composer.json` file. Then translate it from "8.0.2" to "80002":   8.0.2 = 08.00.02 = 80002
-
 Update these places: 
 
 Uses of `PHP_VERSION_ID` (for the minimum version): 
@@ -83,7 +81,7 @@ Other Code Files:
 
 Documentation Files: 
 - [Server Requirements](/user/first_steps/server_requirements/#php-version) in `user/first_steps/server_requirements.md`.
-- What's New file for this release, e.g. [What's New in 1.5.8](https://docs.zen-cart.com/release/whatsnew_1.5.8.html) under "About PHP Versions".  This file is in the `release` folder.
+- What's New file for this release, e.g. [What's New in 2.2](https://docs.zen-cart.com/release/whatsnew_2.2.html) under "About PHP Versions".  This file is in the `release` folder.
 - `README.md` under [Zen Cart github home page](https://github.com/zencart/zencart)
 
 Other considerations: 

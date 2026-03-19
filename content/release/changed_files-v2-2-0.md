@@ -18,14 +18,14 @@ You may also consult the [Zen Cart® Support Forum](https://www.zen-cart.com/for
 Consult the online docs for Release-Specific considerations to note regarding this version. [https://docs.zen-cart.com/user/upgrading/](https://docs.zen-cart.com/user/upgrading/)  
   
 A detailed list of all edits to all files can be seen on Github at:  
-[v2.1.0...v2.2.0](https://github.com/zencart/zencart/compare/v2.1.0...v2.2.0)  
+[v2.1.0...v2.2.1](https://github.com/zencart/zencart/compare/v2.1.0...v2.2.1)  
 
-CHANGED Files in v2.2.0
+CHANGED Files in v2.2.1
 =======================
 - TBD - these lists will be populated at release time.
 
 
-NEW Folders in v2.2.0
+NEW Folders in v2.2.1
 =====================
 
 For each of these, assume the entire directory is new.
@@ -33,19 +33,18 @@ For each of these, assume the entire directory is new.
 - admin/includes/fontawesome
 - admin/includes/fonts
 - includes/classes/vendors/
-- laravel
 - vendor
 - zc_install
 - zc_plugins
 
-NEW Files in v2.2.0
+NEW Files in v2.2.1
 ===================
 - TBD
 
 
-DELETED Files in 2.2.0 (since v2.1.0)
+DELETED Files in 2.2.1 (since v2.1.0)
 =====================================
-- TBD
+- laravel - entire folder
  
 
 ---
