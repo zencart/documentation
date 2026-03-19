@@ -49,6 +49,8 @@ edit and test the pages locally before pushing changes,
 While previously we would duplicate content in the `/docs` folder of the release and on the
 https://zen-cart.com/docs folder, these now redirect to the documentation website.
 
+There is a [branching page](/dev/contributing/branching), which should be updated if the [code branches](https://github.com/zencart/zencart/branches) have been changed (typically following a major release).
+
 There is a final piece of documentation which needs to be updated, and that is the [Implementation Guide](/dev/release_process/implementation_guide/).  This is delivered as part of the build, so it must be up to date before you do the build! 
 
 <div style="text-align:right;" id="next">

@@ -14,6 +14,16 @@ If you want to disable checking for a particular plugin, try the following:
 - Check the plugin's Admin page and see if it has a setting to disable version checking.
 - Comment out the call to `plugin_version_check_for_updates` in this plugin's code.
 
-If you want to disable plugin version checking globally, Zen Cart 1.5.7 and above refer to a defined constant `ENABLE_PLUGIN_VERSION_CHECKING` which you can set to `false`.   
+If you want to disable plugin version checking globally, Zen Cart 1.5.7 and above refer to a defined constant `ENABLE_PLUGIN_VERSION_CHECKING` which you can set to `false`.   (Note this is `false` without quotes, not `'false'`.)
 
+Create the file, 
 
+`admin/includes/extra_configures/version_check.php`
+
+with the contents: 
+
+```
+<?php
+define('ENABLE_PLUGIN_VERSION_CHECKING', false);
+```
+ 
