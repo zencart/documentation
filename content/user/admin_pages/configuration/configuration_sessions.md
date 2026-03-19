@@ -25,13 +25,6 @@ Path: <b>Configuration > Sessions</b><br />
 Description: Force the use of sessions when cookies are only enabled.</div>
 
 
-<h2 id="check_ssl_session_id">Check SSL Session ID</h2>
-
-<div class='indent'>Key: <b>SESSION_CHECK_SSL_SESSION_ID</b><br />
-Path: <b>Configuration > Sessions</b><br />
-Description: Validate the SSL_SESSION_ID on every secure HTTPS page request.</div>
-
-
 <h2 id="check_user_agent">Check User Agent</h2>
 
 <div class='indent'>Key: <b>SESSION_CHECK_USER_AGENT</b><br />

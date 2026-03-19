@@ -10,49 +10,49 @@ Note that the first group of settings (from Display Product Image to Display Pro
 
 <div class='indent'>Key: <b>PRODUCT_LIST_IMAGE</b><br />
 Path: <b>Configuration > Product Listing</b><br />
-Description: Do you want to display the Product Image?</div>
+Description: Do you want to display the Product Image?<br>0 - Not displayed.<br>n - Displayed, with the number n defining the display order relative to similar options on the product listing page.</div>
 
 
 <h2 id="display_product_manufacturer_name">Display Product Manufacturer Name</h2>
 
 <div class='indent'>Key: <b>PRODUCT_LIST_MANUFACTURER</b><br />
 Path: <b>Configuration > Product Listing</b><br />
-Description: Do you want to display the Product Manufacturer Name?</div>
+Description: Do you want to display the Product Manufacturer Name?<br>0 - Not displayed.<br>n - Displayed, with the number n defining the display order relative to similar options on the product listing page.</div>
 
 
 <h2 id="display_product_model">Display Product Model</h2>
 
 <div class='indent'>Key: <b>PRODUCT_LIST_MODEL</b><br />
 Path: <b>Configuration > Product Listing</b><br />
-Description: Do you want to display the Product Model?</div>
+Description: Do you want to display the Product Model?<br>0 - Not displayed.<br>n - Displayed, with the number n defining the display order relative to similar options on the product listing page.</div>
 
 
 <h2 id="display_product_name">Display Product Name</h2>
 
 <div class='indent'>Key: <b>PRODUCT_LIST_NAME</b><br />
 Path: <b>Configuration > Product Listing</b><br />
-Description: Do you want to display the Product Name?</div>
+Description: Do you want to display the Product Name?<br>0 - Not displayed.<br>n - Displayed, with the number n defining the display order relative to similar options on the product listing page.</div>
 
 
 <h2 id="display_product_priceadd_to_cart">Display Product Price/Add to Cart</h2>
 
 <div class='indent'>Key: <b>PRODUCT_LIST_PRICE</b><br />
 Path: <b>Configuration > Product Listing</b><br />
-Description: Do you want to display the Product Price/Add to Cart</div>
+Description: Do you want to display the Product Price/Add to Cart?<br>0 - Not displayed.<br>n - Displayed, with the number n defining the display order relative to similar options on the product listing page.</div>
 
 
 <h2 id="display_product_quantity">Display Product Quantity</h2>
 
 <div class='indent'>Key: <b>PRODUCT_LIST_QUANTITY</b><br />
 Path: <b>Configuration > Product Listing</b><br />
-Description: Do you want to display the Product Quantity?</div>
+Description: Do you want to display the Product Quantity?<br>0 - Not displayed.<br>n - Displayed, with the number n defining the display order relative to similar options on the product listing page.</div>
 
 
 <h2 id="display_product_weight">Display Product Weight</h2>
 
 <div class='indent'>Key: <b>PRODUCT_LIST_WEIGHT</b><br />
 Path: <b>Configuration > Product Listing</b><br />
-Description: Do you want to display the Product Weight?</div>
+Description: Do you want to display the Product Weight?<br>0 - Not displayed.<br>n - Displayed, with the number n defining the display order relative to similar options on the product listing page.</div>
 
 
 <h2 id="display_product_priceadd_to_cart_column_width">Display Product Price/Add to Cart Column Width</h2>
