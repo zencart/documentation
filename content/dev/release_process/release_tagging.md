@@ -63,12 +63,18 @@ For Official Releases:
 
 It's a good idea to also check the "Create a discussion for this release" box if it's not a pre-release. 
 
-When you're ready, press the **Publish Release** button.
+When you're ready, press the **Save Draft** button (note: don't press the **Publish Release** button just yet).
  
 ### STOP!  Do Verification 
 Take some time to verify the build you just published.  Since you already did pre-testing before beginning the build process, hopefully there will be no issues, but if there are, return to the [Possible Remedial Commits](/dev/release_process/release_tagging/#possible-remedial-commits) step. 
 
 Be sure you download the build from the [Github Releases page](https://github.com/zencart/zencart/releases) so you're testing exactly what will be released. 
+
+### Ship it when ready
+
+On the Releases page, click the pencil, scroll to the bottom and press the **Publish Release** button. 
+
+
 
 <div style="text-align:right;" id="next">
    <a class="btn btn-lg btn-primary mr-3 mb-4" href="/dev/release_process/additional_release_tasks/">
@@ -102,8 +108,8 @@ git push upstream --tags
 ```
 
 Then re-run these steps of the build: 
-- Create the release on Github (as detailed above)
-- Note new commit hash and update [Release Log]({{< ref "release_log" >}} "release log") 
+- Create the release on Github (as detailed above).  Note that you will have to delete prior releases of the same name.
+- Note new commit hash.  Edit the [Release Log]({{< ref "release_log" >}} "release log") and update the `last_hash` field.
 - Update the [Release Manifest](/dev/release_process/manifest/) (you can get the SHA hash from here)
 - Update the [zip file SHA on the Home page](/dev/release_process/release_links/).
 - Check the [Releases Page](https://github.com/zencart/zencart/releases) and be sure the build you just did has been published and the old one has been removed.

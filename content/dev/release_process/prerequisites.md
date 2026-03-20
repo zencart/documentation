@@ -34,6 +34,7 @@ Create a new branch specifically for the version file changes.
 
 NOTE: If you are setting up a pre-release, please see [Pre-Release Notes](/dev/release_process/pre_release_notes/).
 
+Remember we are using [Semantic Versioning](/user/about_us/versioning/) in post 2.0 releases.  So a reelease number is MAJOR.MINOR.PATCH.
 
 1. Edit the file `includes/version.php` and update the version.
 
@@ -51,7 +52,7 @@ NOTE: If you are setting up a pre-release, please see [Pre-Release Notes](/dev/r
 
 The thing to remember is that the database version does not include the patch number / letter, because the database doesn't change just because of a patch release.  
 
-Here's what should be in these files for version 2.2.0 build:  
+Here's what should be in these files for a (hypothetical) version 2.2.3 build:  
 
 {{% version_files %}}
 
