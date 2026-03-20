@@ -15,8 +15,7 @@ On the Server Manager dashboard:
 
 ![Server Manager](/images/sm_dashboard.png)
 
-- Login to the Server Manager.
-
+- Login to the Server Manager. For instructions, see the [infrastructure repo](https://github.com/zencart/infrastructure).  (Team members only.)
 - Click `Version Manager > Manifests`
 
 - Click the `New manifest` button

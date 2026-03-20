@@ -14,22 +14,20 @@ category: release_process
 <img src="/images/forum_version_selection.png"> 
 <br><br>
 
-Instructions: 
-```
-- Login to the admin panel for zen-cart.com
+Steps: 
+
+- Login to the admin panel for zen-cart.com.  For instructions, see 
+[infrastructure repo](https://github.com/zencart/infrastructure).  (Team members only.)
 - Thread Prefixes -> Thread prefix manager 
 - Where it says "Zen Cart version", click on Add Prefix 
-```
 
 <img src="/images/thread_prefix_manager.png"> 
 <br><br>
 
-```
-then set prefix id, title (both) to the version 
+- then set prefix id, title (both) to the version 
 e.g. v158
-leave display order as 10 
-click Save
-```
+- leave display order as 10 
+- click Save
 
 ### Add the new version as a checkbox to the plugin version list. 
 
@@ -38,8 +36,6 @@ click Save
 <img src="/images/plugin_version_selection.png"> 
 <br><br>
 
-Instructions: see the 
-[infrastructure repo](https://github.com/zencart/infrastructure).  (Team members only.)
 
 ## Other Post-Release Tasks 
 
@@ -90,5 +86,5 @@ A day or two after the build has been released when you're confident that all is
 
 - Are there old stuck posts on the forum that should be unstuck? 
 
-- Check the Zen Cart and Zen Cart Documentation projects for tags that mark things that need to be taken care of - there might be a 'Post Release X.y.z' tag or something like that, for example. 
+- Check the Zen Cart and Zen Cart Documentation projects for tags that mark things that need to be taken care of - there might be a `Post Release X.y.z` tag or something like that, for example. 
 

@@ -11,7 +11,7 @@ Release links are placed on the [Home page](https://www.zen-cart.com) of the Zen
 
 ![ Download Links](/images/download_links.png)
 
-To change the links etc, you will need `admin` permissions for the Zen Cart forum.
+To change the links etc, you will need `admin` permissions for the Zen Cart forum.  See the [infrastructure repo](https://github.com/zencart/infrastructure).  (Team members only.)
 
 ![ Frontpage edit](/images/frontpage_edit.png)
 

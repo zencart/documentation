@@ -186,18 +186,18 @@ Path: <b>Configuration > My Store</b><br />
 Description: 2-Factor authentication for Admin users</div>
 
 
-<h2 id="padss_strong_password_rules_enforced">PA-DSS Strong Password Rules Enforced?</h2>
-
-<div class='indent'>Key: <b>PADSS_PWD_EXPIRY_ENFORCED</b><br />
-Path: <b>Configuration > My Store</b><br />
-Description: PA-DSS Compliance requires that admin passwords must be changed after 90 days and cannot re-use the last 4 passwords. <strong>Disabling this makes your site NON-COMPLIANT with PA-DSS rules, thus invalidating any certification.</strong></div>
-
-
 <h2 id="padss_ajax_checkout">PA-DSS Ajax Checkout?</h2>
 
 <div class='indent'>Key: <b>PADSS_AJAX_CHECKOUT</b><br />
 Path: <b>Configuration > My Store</b><br />
 Description: PA-DSS Compliance requires that for some inbuilt payment methods, that we use ajax to draw the checkout confirmation screen. While this will only happen if one of those payment methods is actually present, some people may want the traditional checkout flow <strong>Disabling this makes your site NON-COMPLIANT with PA-DSS rules, thus invalidating any certification.</strong></div>
+
+
+<h2 id="padss_strong_password_rules_enforced">PA-DSS Strong Password Rules Enforced?</h2>
+
+<div class='indent'>Key: <b>PADSS_PWD_EXPIRY_ENFORCED</b><br />
+Path: <b>Configuration > My Store</b><br />
+Description: PA-DSS Compliance requires that admin passwords must be changed after 90 days and cannot re-use the last 4 passwords. <strong>Disabling this makes your site NON-COMPLIANT with PA-DSS rules, thus invalidating any certification.</strong></div>
 
 
 <h2 id="padss_admin_session_timeout_enforced">PA-DSS Admin Session Timeout Enforced?</h2>

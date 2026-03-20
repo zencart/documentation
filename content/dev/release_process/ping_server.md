@@ -11,6 +11,8 @@ The Server Manager controls the endpoint that allows for a call home from within
 
 It will notify a shop owner if a new release is available.
 
+Login details for the Server Manager are in the [infrastructure repo](https://github.com/zencart/infrastructure).  (Team members only.)
+
 On the Server Manager site dashboard, access the `Version Manager > Versions` menu.
 
 Create a new release by clicking the "New Version" button.

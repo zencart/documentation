@@ -6,11 +6,11 @@ category: release_process
 ---
 # v2.2.1
 
-Built 19 March 2026
+Built 20 March 2026
 
 first_hash = 912249e2d8e672b2997372caddca8449aaddc66b
 
-last_hash = 4964f84439670a268918228cf648cc35e231512d
+last_hash = 317c7c313776645b344b5b0ca85a3cb13c6847f2
 
 initial version stamping commit = https://github.com/zencart/zencart/commit/5a71afdccf3ed55789bfc0d4136c3f40af60f4eb 
 

@@ -155,7 +155,7 @@ Description: Product Images can be handled in two ways: &quot;Database&quot; or 
 
 <div class='indent'>Key: <b>ADDITIONAL_IMAGES_MODE</b><br />
 Path: <b>Configuration > Images</b><br />
-Description: &quot;strict&quot; = always use &quot;_&quot; suffix<br>&quot;legacy&quot; = only use &quot;_&quot; suffix in subdirectories<br>(Before v210 legacy was the default)<br>Default = strict</div>
+Description: In Filename-Matching mode, you can use an &quot;_&quot; suffix in two formats:<br>&quot;strict&quot; = always use &quot;_&quot; suffix<br>&quot;legacy&quot; = only use &quot;_&quot; suffix in subdirectories<br>(Before v210 legacy was the default)<br>Default = strict</div>
 
 
 <h2 id="image__product_listing_width">Image - Product Listing Width</h2>
@@ -232,14 +232,14 @@ Description: Default = 80</div>
 
 <div class='indent'>Key: <b>PRODUCTS_IMAGE_NO_IMAGE_STATUS</b><br />
 Path: <b>Configuration > Images</b><br />
-Description: Use automatic No Image when none is added to product or category<br>0= off<br />1= On</div>
+Description: Use automatic No Image when none is added to product<br />0= off<br />1= On</div>
 
 
 <h2 id="product_and_category_image__no_image_picture">Product And Category Image - No Image picture</h2>
 
 <div class='indent'>Key: <b>PRODUCTS_IMAGE_NO_IMAGE</b><br />
 Path: <b>Configuration > Images</b><br />
-Description: Use automatic No Image when none is added to product or category<br>Default = no_picture.gif</div>
+Description: Use automatic No Image when none is added to product<br />Default = no_picture.gif</div>
 
 
 <h2 id="image__use_proportional_images_on_products_and_categories">Image - Use Proportional Images on Products and Categories</h2>
