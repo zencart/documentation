@@ -256,6 +256,13 @@ Path: <b>Configuration > Maximum Values</b><br />
 Description: Number of products to display in the Products on Special centerbox</div>
 
 
+<h2 id="random_featured_categories_for_sidebox">Random Featured Categories for SideBox</h2>
+
+<div class='indent'>Key: <b>MAX_RANDOM_SELECT_FEATURED_CATEGORIES</b><br />
+Path: <b>Configuration > Maximum Values</b><br />
+Description: Number of random FEATURED categories to rotate in the sidebox<br>Enter the number of categories to display in this sidebox at one time.<br><br>How many categories do you want to display in this sidebox?</div>
+
+
 <h2 id="new_product_listing__limited_to_">New Product Listing - Limited to ...</h2>
 
 <div class='indent'>Key: <b>SHOW_NEW_PRODUCTS_LIMIT</b><br />
