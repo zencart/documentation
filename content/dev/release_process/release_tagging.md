@@ -11,7 +11,7 @@ as you will have merged the version stamping changes.
 
 Now we tag the release.
 
-Go to your Zen Cart folder, which now is on the branch you are releasing (e.g. 1.5.8) and has all the updates from stamping. 
+Go to your Zen Cart folder, which now is on the branch you are releasing (e.g. 2.2.1) and has all the updates from stamping. 
 
 ### Prerequisites
 If you have not pulled the current list of tags, do so now: 
@@ -30,7 +30,7 @@ git tag --list
 
 **Note:** The tag *must* be the same as the `newVersion` setting in the versionstamper's `config.php` file. 
 
-`git tag v1.5.8` 
+`git tag v2.2.1` 
 
 obviously replacing the release name as appropriate.
 
@@ -101,15 +101,17 @@ it is difficult to re-run the version stamper.**
 If you have added extra commits you will need to update the release tag.
 
 ```
-git tag -d v1.5.8
-git push --delete upstream v1.5.8
-git tag v1.5.8
+git tag -d v2.2.1
+git push --delete upstream v2.2.1
+git tag v2.2.1
 git push upstream --tags
 ```
 
 Then re-run these steps of the build: 
-- Create the release on Github (as detailed above).  Note that you will have to delete prior releases of the same name.
+- Create the release on Github (as detailed above) from the [tags page](https://github.com/zencart/zencart/tags).  Note that once you do this, you will have to delete prior releases of the same name on the [releases page](https://github.com/zencart/zencart/releases).
 - Note new commit hash.  Edit the [Release Log]({{< ref "release_log" >}} "release log") and update the `last_hash` field.
+
+Once you have published the build on the Releases page:
 - Update the [Release Manifest](/dev/release_process/manifest/) (you can get the SHA hash from here)
 - Update the [zip file SHA on the Home page](/dev/release_process/release_links/).
 - Check the [Releases Page](https://github.com/zencart/zencart/releases) and be sure the build you just did has been published and the old one has been removed.
