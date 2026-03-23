@@ -134,7 +134,7 @@ Description: New Products Columns per Row</div>
 
 <div class='indent'>Key: <b>SHOW_PRODUCT_INFO_COLUMNS_FEATURED_PRODUCTS</b><br />
 Path: <b>Configuration > Index Listing</b><br />
-Description: Featured Products Columns per Row</div>
+Description: Featured Products And Categories Columns per Row</div>
 
 
 <h2 id="special_products_columns_per_row">Special Products Columns per Row</h2>

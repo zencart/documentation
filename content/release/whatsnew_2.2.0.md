@@ -1,6 +1,6 @@
 ---
-title: What's New in Version 2.2.1
-description: Features and fixes in Zen Cart 2.2.1
+title: What's New in Version 2.2.x
+description: Features and fixes in Zen Cart 2.2.x
 category: release
 weight: 100
 layout: docs
@@ -39,7 +39,7 @@ Always review the [Release Specific Upgrade Considerations](https://docs.zen-car
 CHANGELOG - List of Changed Files
 =================================
 
-For a list of files that have been changed since v2.1.0, see the [changed_files-v2.2.0](/release/changed_files-v2-2-0/) document.
+For a list of files that have been changed since v2.1.0, see the [changed_files-v2.2.0](/release/changed_files-v2-2-x/) document.
 
 Upgrading to a Responsive Template
 ==================================
