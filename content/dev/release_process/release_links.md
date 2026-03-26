@@ -7,11 +7,7 @@ category: release_process
 
 Note: if you are doing a pre-release rather than an official release, please skip this step and go to the [next step](/dev/release_process/manifest/). 
 
-You'll need to do two things: 
-1. Post to the [Release Announcements](https://www.zen-cart.com/forumdisplay.php/2-Zen-Cart-Release-Announcements) subforum. 
-2. Update the release links on the [Home page](https://www.zen-cart.com) of the Zen Cart Web Site.
-
-The remainder of this article deals with #2.
+You'll need to update the release links on the [Home page](https://www.zen-cart.com) of the Zen Cart Web Site.
 
 ![ Download Links](/images/download_links.png)
 
@@ -19,7 +15,7 @@ To change the links etc, you will need `admin` permissions for the Zen Cart foru
 
 ![ Frontpage edit](/images/frontpage_edit.png)
 
-Clicking on the edit icon in the top right will allow you to change the front page details.
+Clicking on the edit icon in the top left will allow you to change the front page details.
 
 The actual content that manages the release information looks like 
 

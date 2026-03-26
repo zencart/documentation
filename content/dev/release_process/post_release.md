@@ -47,9 +47,7 @@ e.g. v158
 
 ### Major and Minor Releases Only
 
-- Create a "Known Bugs in <release>" thread in the appropriate subforum under [Upgrading Your Zen Cart](https://www.zen-cart.com/forumdisplay.php?10-Upgrading-Your-Zen-Cart).   Update the release announcement and the [known bugs](/user/about_us/known_bugs/) page with this link.
-
-If you need to create a new subforum ("Updating to Y.x.x"), follow the guidance on the [infrastructure repo](https://github.com/zencart/infrastructure).  (Team members only.)
+- If you need to create a new subforum ("Updating to Y.x.x"), follow the guidance on the [infrastructure repo](https://github.com/zencart/infrastructure).  (Team members only.)
 
 - Update the file `.github/security.md` in the main Zen Cart repo if needed.
 
