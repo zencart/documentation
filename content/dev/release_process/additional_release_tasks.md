@@ -11,6 +11,9 @@ Some final actions need to be done to wrap up the release.
 
 - Create a release announcement on the Zen Cart Forum.  Create it as a sticky post (click Administrative > Stick Thread).  Here is an [example release announcement](https://www.zen-cart.com/showthread.php?229041-Zen-Cart-1-5-8-Released!).   You should also take the time here to unstick prior release announcements and updates as appropriate.
 
+- Create a "Known Bugs in <release>" thread in the appropriate subforum under [Upgrading Your Zen Cart](https://www.zen-cart.com/forumdisplay.php?10-Upgrading-Your-Zen-Cart).   Update the release announcement and the [known bugs](/user/about_us/known_bugs/) page with this link.
+
+
  <div style="text-align:right;" id="next">
    <a class="btn btn-lg btn-primary mr-3 mb-4" href="/dev/release_process/ping_server/">
         Next - Ping Server<i class="fas fa-arrow-alt-circle-right ml-2"></i>
