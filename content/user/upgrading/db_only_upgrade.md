@@ -64,6 +64,9 @@ Follow the instructions to [update your database to UTF8MB4](/user/upgrading/con
 - Go to Admin > Tools > Template Selection and set your template to Responsive Classic (since your old template won't exist on your updated site).  
 - Visit each of the admin pages Modules > Shipping, Modules > Payment, Modules > Order Total to allow your modules to insert any missing keys.   Some modules may require re-installation to add keys. 
 
+## Plugin Updates
+{{% plugin_upgrades %}}
+
 ### Copy from live site 
 - Copy the `/images` folder from your live site onto your test site.
 - Copy in any new images you created from your live site's `includes/templates/YOURTEMPLATE/images` folder to the test site's `includes/templates/responsive_classic/images` folder.

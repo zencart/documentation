@@ -25,6 +25,17 @@ The following should be checked:
 |YAML|`zc_install/includes/vendors/yaml`|https://yaml.org/|
 |Laravel|`laravel/vendor/*`|https://laravel.com/|
 
+## Zen Cart Plugins
+Be sure these are up to date in the `zc_plugins/` folder.
+
+You may view the plugin page for any of these plugins with URL: 
+
+https://www.zen-cart.com/downloads.php?do=file&id=PLUGIN_ID
+
+|Plugin|Plugin ID|
+|-------|---------|
+|PayPal Restful (Encapsulated)|2434|
+
 ## References within Files 
 
 Embedded references to external files that may require updating: 

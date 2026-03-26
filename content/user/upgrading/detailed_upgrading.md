@@ -260,6 +260,10 @@ Be sure to check for `zc_install` created logfiles, which could indicate an issu
 - Visit each of the admin pages Modules > Shipping, Modules > Payment, Modules > Order Total to allow your modules to insert any missing keys.   Some modules may require re-installation to add keys. 
 - Run any install/upgrade steps for any plugins you've installed/upgraded. And removals for any plugins you're removing.
 
+## Plugin Updates
+{{% plugin_upgrades %}}
+
+
 ## Test the temporary new store
 Test your customizations. Edit as needed. Compare with the test/demo install performed earlier, as needed.
 

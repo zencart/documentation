@@ -39,7 +39,7 @@ Always review the [Release Specific Upgrade Considerations](https://docs.zen-car
 CHANGELOG - List of Changed Files
 =================================
 
-For a list of files that have been changed since v2.1.0, see the [changed_files-v2.2.0](/release/changed_files-v2-2-x/) document.
+For a list of files that have been changed since v2.1.0, see the [changed_files-v2.2.x](/release/changed_files-v2-2-0/) document.
 
 Upgrading to a Responsive Template
 ==================================
