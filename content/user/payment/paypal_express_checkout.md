@@ -5,7 +5,7 @@ category: payment
 weight: 10
 ---
 
-**Please note**: This page refers to an older PayPal integration which may no longer be available.  If these steps don't work for you, use [PayPal RESTful](/user/payment/paypal_restful/) instead.
+{{% use_rest %}}
 
 ## PayPal Express Checkout
 
@@ -22,7 +22,7 @@ weight: 10
 
 ## Configuring Zen Cart to use PayPal Express Checkout 
 
-**Please note**: This page refers to an older PayPal integration which may no longer be available.  If these steps don't work for you, use [PayPal RESTful](/user/payment/paypal_restful/) instead.
+{{% use_rest %}}
 
 Here's how to put Zen Cart and Express Checkout to work for your business.
 
@@ -48,7 +48,7 @@ Here's how to put Zen Cart and Express Checkout to work for your business.
 
 ## Configuring Zen Cart to accept credit cards directly on your site 
 
-**Please note**: This page refers to an older PayPal integration which may no longer be available.  If these steps don't work for you, use [PayPal RESTful](/user/payment/paypal_restful/) instead.
+{{% use_rest %}}
 
 Here's how to add your own merchant account and accept credit cards without sending your customers off-site
 

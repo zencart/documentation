@@ -1,0 +1,1 @@
+**Please note**: This page refers to the older NVP/SOAP PayPal integration, which is no longer recommended.  Zen Cart recommends [PayPal RESTful](/user/payment/paypal_restful/) instead.  You can read an overview of these options on the [PayPal Overview page](/user/payment/paypal_overview/).
