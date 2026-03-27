@@ -1,8 +1,8 @@
 ---
-title: Image Filename conventions 
+title: Filename Conventions for Images
 description: How are products and images associated? 
 category: images
-weight: 30
+weight: 10
 ---
 
 Zen Cart permits you to associate [multiple images with a single product](/user/images/additional_images/), but doing so requires knowledge of how products and images are associated. 

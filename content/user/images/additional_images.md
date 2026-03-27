@@ -1,8 +1,8 @@
 ---
-title: Working with Additional Images 
+title: Additional Image files
 description: Having multiple images for a product
 category: images 
-weight: 20
+weight: 10
 ---
 
 ### How do I enable the additional images feature? 

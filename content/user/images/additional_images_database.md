@@ -5,6 +5,8 @@ category: images
 weight: 10
 ---
 
+Please note: This page refers to Zen Cart 2.2.x and above.  If you use an older version of Zen Cart, please see [this page](/user/images/additional_images/).
+
 In earlier versions of Zen Cart, additional images for a product were required to use the [filename matching mechanism](/user/images/image_filename_conventions/).
 
 In Zen Cart 2.2.0, a new mechanism for specifying additional images was introduced.  The Configuration setting [Additional Images Handling](/user/admin_pages/configuration/configuration_images/#additional_images_handling) allows you to specify additional images in database fields, rather than relying on the older [filename matching mechanism](/user/images/image_filename_conventions/).

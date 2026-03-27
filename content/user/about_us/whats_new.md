@@ -7,8 +7,9 @@ weight: 10
 
 > Note: If you want to see What's **Next** for Zen Cart instead, please [click here](/release/whatsnext/).
 
-- March 2026: Zen Cart 2.2.1 released
-- Fall 2025: We are finalizing the next release of Zen Cart, 2.2.0.
+- March 2026: New plugin created for maintenance of the PayPal REST bundled into Zen Cart 2.2.1 and higher; see [https://www.zen-cart.com/downloads.php?do=file&id=2434](https://www.zen-cart.com/downloads.php?do=file&id=2434).
+- March 2026: Zen Cart 2.2.1 released!  Here's the [Zen Cart 2.2.1 Release Announcement](https://www.zen-cart.com/showthread.php/231062-Zen-Cart-2-2-1-Released!).
+- Fall 2025: We are finalizing the next release of Zen Cart, which will be version 2.2.
 - Summer 2025: USPS has re-affirmed its commitment to migrating to a REST API.  You should be migrating to [USPS RESTful](/user/shipping/usps/#restful-usps-module) if you are still using the older USPS Webtools module. 
 - April 2025: [Helcim Payments module](https://www.zen-cart.com/downloads.php?do=file&id=2402) released.  
 - April 2025: [Responsive Classic Redesign](https://docs.zen-cart.com/user/template/responsive_classic_redesign/) official documentation and template support thread created.
