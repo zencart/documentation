@@ -5,7 +5,7 @@ category: payment
 weight: 10
 ---
 
-**NOTE:** Zen Cart recommends using **[PayPal RESTful](/user/payment/paypal_restful/)** instead of any of the modules discussed on this page. 
+{{% use_rest %}}
 
 If you are preparing to use PayPal Express, see [Setup instructions for PayPal Express Checkout](/user/payment/paypal_express_checkout/). 
 

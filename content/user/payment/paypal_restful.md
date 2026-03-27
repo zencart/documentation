@@ -5,10 +5,10 @@ category: payment
 weight: 10
 ---
 
-Migrating to the RESTful module is highly recommended, and is quite straightforward.
-
 PayPal RESTful is a new integration with PayPal which uses the [PayPal REST API](https://developer.paypal.com/api/rest/).
-It replaces both PayPal Express and PayPal Website Payments Pro ... and also replaces PayPal Standard.
+It replaces both PayPal Express and PayPal Website Payments Pro ... and also replaces PayPal Standard.  (You may sometimes hear these integrations referred to as the "NVP/SOAP API integrations.")
+
+If you are using one of the older PayPal integrations, migrating to the RESTful module is highly recommended, and is quite straightforward.
 
 Links: 
 - [PayPal RESTful Download](https://www.zen-cart.com/downloads.php?do=file&id=2382) (for Zen Cart versions prior to 2.2.1).  This is a non-encapsulated version.
