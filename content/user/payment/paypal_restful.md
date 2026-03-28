@@ -10,12 +10,7 @@ It replaces both PayPal Express and PayPal Website Payments Pro ... and also rep
 
 If you are using one of the older PayPal integrations, migrating to the RESTful module is highly recommended, and is quite straightforward.
 
-Links: 
-- [PayPal RESTful Download](https://www.zen-cart.com/downloads.php?do=file&id=2382) (for Zen Cart versions prior to 2.2.1).  This is a non-encapsulated version.
-- [PayPal RESTful (Encapsulated) Download](https://www.zen-cart.com/downloads.php?do=file&id=2434) (built into Zen Cart versions 2.2.1 and later)
-- [Installation Instructions for PayPal RESTful](https://github.com/lat9/paypalr/wiki)
-
-PayPal RESTful will run on Zen Cart 1.5.8a and higher, and PHP 7.0-to-8.5
+{{% paypal_restful_links %}}
 
 ![PayPal RESTful](/images/paypal_restful.png)
 
