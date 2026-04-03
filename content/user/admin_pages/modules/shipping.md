@@ -13,7 +13,7 @@ As of Zen Cart 2.2.0, the built-in shipping modules are:
 - flat 
 - freeoptions 
 - freeshipper 
-- [item](/user/shipping/item/)
+- [item](/user/shipping/per_item_shipping/)
 - perweightunit
 - storepickup
 - [table](/user/shipping/table/)
