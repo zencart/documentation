@@ -82,7 +82,7 @@ Other Code Files:
 
 Documentation Files: 
 - [Server Requirements](/user/first_steps/server_requirements/#php-version) in `user/first_steps/server_requirements.md`.
-- What's New file for this release, e.g. [What's New in 2.2](https://docs.zen-cart.com/release/whatsnew_2.2.html) under "About PHP Versions".  This file is in the `release` folder.
+- What's New file for this release, e.g. [What's New in 2.2](https://docs.zen-cart.com/release/whatsnew_2.2.0/) under "About PHP Versions".  This file is in the `release` folder.
 - `README.md` under [Zen Cart github home page](https://github.com/zencart/zencart)
 
 Other considerations: 
