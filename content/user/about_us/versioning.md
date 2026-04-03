@@ -20,7 +20,7 @@ Patch releases are about smaller bug-fixes applied to minor releases; they are s
 
 Read below for how to understand better what a version number may mean to you and your store.
 
-If you are a contributor, you may also wish to read the [branching page](dev/contributing/branching/).
+If you are a contributor, you may also wish to read the [branching page](/dev/contributing/branching/).
 
 ----
 ## Factors considered by the Zen Cart team when bumping version numbers
