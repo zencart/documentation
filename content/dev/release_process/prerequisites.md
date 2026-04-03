@@ -14,7 +14,7 @@ To run the release process, you must have the following:
 
 - Admin access to the main Zen Cart website 
 
-- Admin access to the Server Manager (https://servermanager.zen-cart.com/)
+- Admin access to the team's Server Manager console
 
 - an up to date copy of the master branch for Zen Cart. 
 
