@@ -52,7 +52,7 @@ Remember we are using [Semantic Versioning](/user/about_us/versioning/) in post 
 
 The thing to remember is that the database version does not include the patch number / letter, because the database doesn't change just because of a patch release.  
 
-Here's what should be in these files for a (hypothetical) version 2.2.3 build:  
+Here's what should be in these files for a (hypothetical) version 2.3.0 build:  
 
 {{% version_files %}}
 

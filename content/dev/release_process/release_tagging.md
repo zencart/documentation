@@ -34,8 +34,7 @@ git tag --list
 
 obviously replacing the release name as appropriate.
 
-Typically this tag will be updated on the remote too.  Check 
-https://github.com/zencart/zencart/tags to be sure.  If it's not there, do 
+Now push the file to the remote. 
 
 `git push upstream --tags`
 
