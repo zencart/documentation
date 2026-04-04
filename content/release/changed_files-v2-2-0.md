@@ -18,8 +18,11 @@ You may also consult the [Zen Cart® Support Forum](https://www.zen-cart.com/for
 Consult the online docs for Release-Specific considerations to note regarding this version. [https://docs.zen-cart.com/user/upgrading/](https://docs.zen-cart.com/user/upgrading/)  
   
 A detailed list of all edits to all files can be seen on Github at:  
-[v2.1.0...v2.2.1](https://github.com/zencart/zencart/compare/v2.1.0...v2.2.1)  
+[v2.1.0...v2.2.2](https://github.com/zencart/zencart/compare/v2.1.0...v2.2.2)  
 
+CHANGED Files in v2.2.2
+=======================
+- zc_install/includes/version.php
 
 NEW Folders in v2.2.1
 =====================

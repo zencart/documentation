@@ -29,6 +29,8 @@ Full releases contain more feature content and file changes, and may modify the 
 --- 
 This is the release history of the Zen Cart product.
 
+04/04/2026 - v2.2.2
+
 03/26/2026 - v2.2.1
 
 11/23/2024 - v2.1.0 

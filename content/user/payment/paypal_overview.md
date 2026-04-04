@@ -13,6 +13,8 @@ PayPal is the most commonly used online payment method in the ecommerce world.
 
 {{% paypal_restful_links %}}
 
+To learn more, please see the [PayPal RESTful](/user/payment/paypal_restful/) page.
+
 ## Older Integrations
 
 The older integrations (sometimes called the NVP/SOAP APIs) still work but are considered deprecated, and PayPal has stated they will stop supporting them at some point in the future.

@@ -78,6 +78,10 @@ If you're doing an upgrade from a pre-1.5.8 Zen Cart version and are worried abo
 
 For developers with language skills who would like to build a new translation, [developer information on Array based language files](/dev/languages/158_language_files/) is provided.
 
+## 2.2.2
+The improvements in v2.2.1 include the following.  The changes which are most notable are bolded.
+
+- Upgrade: Fix issue in `zc_install` version file.
 
 ## 2.2.1 
 

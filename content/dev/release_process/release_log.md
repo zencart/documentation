@@ -4,6 +4,16 @@ weight: 100
 layout: docs
 category: release_process
 ---
+# v2.2.2
+
+Built 4 April 2026
+
+first_hash = 420cccd696d0f2c88e71be68582718e126e8b503
+
+last_hash = 6091deb27615c3f79a217f3e778e709476b696f5
+
+initial version stamping commit = https://github.com/zencart/zencart/commit/63cf0ec3324d49767d25a07d168cdecb829e4d2a
+
 # v2.2.1
 
 Built 20 March 2026

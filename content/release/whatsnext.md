@@ -17,7 +17,7 @@ The improvements under consideration for inclusion in v3.0.0 are as follows.  Th
 
 - **New Enhancement: Admin modernization** as demonstrated in [this PR](https://github.com/zencart/zencart/pull/7458).
 - **New Feature: <a href="https://github.com/zencart/zencart/discussions/6428">Child Templates</a> will be supported, so that storeowners can more easily determine what has been changed from the base release of a template. (Still TBD)** 
-- Modernization: Zen Cart 3.0 will use Bootstrap 5. 
+- Modernization: Zen Cart 3.0 will use Bootstrap 5 in both the storefront and back end. 
 - Modernization: support for older `define` based language files will be dropped.  Moving forward, only [Array based language files](/dev/languages/158_language_files/) will be supported. 
 - Modernization: Encapsulated plugins will have the ability to insert template content.
 - Test: Major updates to test framework.

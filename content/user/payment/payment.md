@@ -15,6 +15,7 @@ Zen Cart has a number of built-in payment modules:
 - Check/Money Order - Receive payment by check
 - Cash on Delivery - COD or in-person payment
 - Free Order - required if you have free products in your store
+- [PayPal RESTful](/user/payment/paypal_restful/) - Built in to Zen Cart 2.2.1 and above; available as a download for 1.5.8-2.1.0.
 - [PayPal](/user/payment/paypal/) using the older NVP/SOAP interface.
 
 If you are just evaluating Zen Cart or running a test-only installation, 
@@ -25,7 +26,6 @@ More payment modules may be found in the [Payment module section of the Plugins 
 The following integrations are highly recommended and well supported by their authors: 
 - [Authorize.net CIM](https://www.zen-cart.com/downloads.php?do=file&id=2272)
 - [Helcim](https://www.zen-cart.com/downloads.php?do=file&id=2402)
-- [PayPal RESTful](/user/payment/paypal_restful/)
 - [Square](/user/payment/square/)
 
 Other options are: 
@@ -43,7 +43,9 @@ If you don't already have an account, please use these [direct links to the paym
 
 ## Credit Card Payments 
 
-Some credit card payment modules, such as Square, provide onsite payment.  The checkout payment page displays a form that captures the customer's credit card details.  
+Some credit card payment modules, such as PayPal RESTful and Square, allow onsite payment.  The checkout payment page displays a form that captures the customer's credit card details.  
+
+![PayPal RESTful](/images/paypal_restful.png)
 
 ![Square Payment Form](/images/square_payment.jpg)
 

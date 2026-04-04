@@ -128,7 +128,7 @@ To actually make changes we would use
 
 Once the version stamping is complete, you will need to go to your Zen Cart folder and commit and merge the changes created by the version stamping.
 
-- Be sure to **merge into the right branch** (`master` for new releases; `patch-version` for patches).
+- Be sure to **merge into the right branch** (`master` for new releases; *number-of-patch-version* (e.g. `2.2`) for patches).
 - Remember you will have to bypass merge protections since the branch has been locked for merges.
 
 **Be sure to use a comment which indicates which version number is being stamped (e.g. "Version stamping 2.1.0").**
