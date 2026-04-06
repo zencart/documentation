@@ -56,11 +56,41 @@ and replace with:
     'ENTRY_DATE_OF_BIRTH_TEXT' => '* (eg. 21/05/1970 or 1970-05-21)',
 ```
 
-### 2. 1.5.8 only: Open file `includes/functions/functions_dates.php` 
 
-**NB. As of version 1.5.8a and above, this step is not necessary; go straight to [step 3](#3-create-file-adminincludeslanguagesenglishextra_definitionslangadmin_overridesphp)**
+### 2. Create file `admin/includes/languages/english/extra_definitions/lang.admin_overrides.php`
 
-### 2a. find `zen_date_raw`
+(if it already exists simply add the lines below excluding the first line `<?php` )
+
+### 2a. insert the following lines
+
+```
+<?php
+@setlocale(LC_TIME, ['en_GB', 'en_GB.utf8', 'en']);
+
+$define['DATE_FORMAT'] = 'd/m/Y';
+$define['DATE_FORMAT_SHORT'] = '%d/%m/%Y';
+$define['DATE_FORMAT_SPIFFYCAL'] = 'dd/MM/yyyy';
+$define['ENTRY_DATE_OF_BIRTH_ERROR'] = '&nbsp;<span class="errorText">(eg. 21/05/1970)</span>';
+$define['PHP_DATE_TIME_FORMAT'] = 'd/m/Y H:i:s';
+
+return $define;
+
+```
+
+**For 1.5.8a and above, you're done.**
+
+<hr>
+
+<details>
+<summary>1.5.8 (first release, pre-1.5.8a) only requires one extra step.  Open if this applies to you.</summary>
+
+<br>
+
+### 3. 1.5.8 only: Open file <code>includes/functions/functions_dates.php</code>
+
+**NB: As of version 1.5.8a and above, this step is not necessary.**
+
+### 3a. find `zen_date_raw`
 
 change
 ```
@@ -97,27 +127,4 @@ to:
 }  
 ```
 
-
-
-### 3. Create file `admin/includes/languages/english/extra_definitions/lang.admin_overrides.php`
-
-(if it already exists simply add the lines below excluding the first line `<?php` )
-
-### 3a. insert the following lines
-
-```
-<?php
-@setlocale(LC_TIME, ['en_GB', 'en_GB.utf8', 'en']);
-
-$define['DATE_FORMAT'] = 'd/m/Y';
-$define['DATE_FORMAT_SHORT'] = '%d/%m/%Y';
-$define['DATE_FORMAT_SPIFFYCAL'] = 'dd/MM/yyyy';
-$define['ENTRY_DATE_OF_BIRTH_ERROR'] = '&nbsp;<span class="errorText">(eg. 21/05/1970)</span>';
-$define['PHP_DATE_TIME_FORMAT'] = 'd/m/Y H:i:s';
-
-return $define;
-
-```
-
-And that's it, you're done!  
-
+</details>
