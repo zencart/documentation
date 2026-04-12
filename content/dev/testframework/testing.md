@@ -5,13 +5,21 @@ weight: 300
 layout: docs
 ---
 
-The Test Framework resides within the `not_for_release/testFramework` directory. This directory is only really available
-if you `checkout` the Zen Cart code using `git`. It is not available if you just download the Zen Cart code as a zip file 
-via a `release` link.
+The Test Framework resides within the `not_for_release/testFramework` directory. This directory is only available if you
+checkout the Zen Cart code using `git`. It is not available if you download the Zen Cart code as a zip file via a release
+link.
 
 ALERT: Running Zen Cart tests locally has the potential to **overwrite your Zen Cart database and destroy local data.**
 
-FIXME - work in progress
+The preferred repeatable runtime for CI and plugin testing is the Zen Cart test-runner container published to GitHub
+Container Registry:
+
+```text
+ghcr.io/zencart/zencart-test-runner
+```
+
+The container provides PHP, Composer, required PHP extensions, MySQL client tooling, and shell utilities. The container does
+not contain Zen Cart source code; you mount or checkout the Zen Cart repository into the container.
 
 ## Initial Setup
 
@@ -21,9 +29,15 @@ FIXME - work in progress
 
 3. Also create a new database specific for testing. The feature-tests below are destructive and will make many changes to the database, so should not be used on a database that you share for a real store. See the Feature Tests section below for how to specify the database in special config files.
 
+4. If you want the container-based runtime, install Docker and pull the PHP version you want to test against:
+
+```bash
+docker pull ghcr.io/zencart/zencart-test-runner:php-8.4
+```
+
 ## Preparation
 
-To prepare to run the Unit Test and Feature Test suites:
+To prepare to run the Unit Test and Feature Test suites on your host machine:
 
 1. Install Composer on your PC:
 
@@ -37,13 +51,61 @@ To prepare to run the Unit Test and Feature Test suites:
 
 While probably unnecessary unless upgrading the PHP version, you could re-run `composer update` periodically to grab latest updates of the test-tool dependencies.
 
+When using the container, run Composer inside the image instead:
+
+```bash
+docker run --rm \
+  -v "$PWD:/var/www/html" \
+  -w /var/www/html \
+  ghcr.io/zencart/zencart-test-runner:php-8.4 \
+  composer install
+```
+
+## Composer Test Commands
+
+All supported Composer test commands now start with `tests-`.
+
+Common commands:
+
+- `composer tests-unit` runs the unit tests.
+- `composer tests-feature` runs the aggregate feature-test flow.
+- `composer tests-feature-store` runs storefront feature-test buckets.
+- `composer tests-feature-admin` runs admin feature-test buckets.
+- `composer tests-plugin` discovers and runs plugin-local tests under `zc_plugins/<PluginName>/<version>/tests`.
+- `composer tests-ci` runs the top-level CI-style unit and feature flow.
+- `composer tests-ci-local` runs the top-level CI-style flow with local worker database defaults.
+- `composer tests-report-feature-groups` reports feature-test grouping.
+- `composer tests-report-feature-groups-strict` fails if feature-test grouping is incomplete or contradictory.
+- `composer tests-db-prepare-workers` prepares the base and worker databases used by parallel feature tests.
+- `composer tests-runtime-describe` prints the derived database, log, progress, artifact, and plugin paths for the current environment.
+
+Most runners accept normal PHPUnit arguments after `--`.
+
+Examples:
+
+```bash
+composer tests-unit -- --filter RuntimeConfigTest
+composer tests-feature -- --dry-run --filter BasicPluginInstallTest
+composer tests-feature-store -- --filter SearchInProcessTest
+composer tests-plugin -- --plugin gdpr-dsar
+```
+
+Inside the test-runner container, the command shape is the same:
+
+```bash
+docker run --rm \
+  -v "$PWD:/var/www/html" \
+  -w /var/www/html \
+  ghcr.io/zencart/zencart-test-runner:php-8.4 \
+  composer tests-unit
+```
 
 ## Unit Tests
 
 Unit tests can be run using:
 
 ```
-composer unit-tests
+composer tests-unit
 ```
 
 in the root directory of your Zen Cart install.
@@ -66,14 +128,62 @@ However, given that you should only be testing on a local development environmen
 
 Feature tests can be run using the following in the root directory of your Zen Cart install.
 
-- `composer feature-tests` will run all feature tests
-- `composer feature-tests-store` will run feature tests just for the store
-- `composer feature-tests-admin` will run feature tests just for the admin
+- `composer tests-feature` will run the aggregate feature-test flow.
+- `composer tests-feature-store` will run storefront feature-test buckets.
+- `composer tests-feature-admin` will run admin feature-test buckets.
+- `composer tests-feature -- --dry-run` will preview the selected feature-test buckets without executing them.
+- `composer tests-feature-parallel` will run the lower-level aggregate parallel feature runner.
 
 
 ### Configuration for Feature Tests
 
-Feature tests override the standard `configure.php` files used by Zen Cart and require you to create special new configuration files just for testing purposes.
+Feature tests override the standard `configure.php` files used by Zen Cart.
+
+The current test runner includes runner configuration files in:
+
+```text
+not_for_release/testFramework/Support/configs
+```
+
+The runner can also load environment files from:
+
+```text
+not_for_release/testFramework/Support/configs/test-runner.env
+not_for_release/testFramework/Support/configs/test-runner.local.env
+```
+
+Use these files or environment variables to control database host, port, user, password, and worker database settings.
+
+Useful environment variables include:
+
+- `ZC_TEST_DB_HOST`
+- `ZC_TEST_DB_PORT`
+- `ZC_TEST_DB_USER`
+- `ZC_TEST_DB_PASSWORD`
+- `ZC_TEST_DB_BASE_NAME`
+- `ZC_TEST_DB_WORKERS`
+- `ZC_TEST_DB_INCLUDE_BASE`
+
+You can preview the resolved runtime settings with:
+
+```bash
+composer tests-runtime-describe
+```
+
+Prepare worker databases with:
+
+```bash
+composer tests-db-prepare-workers
+```
+
+Preview the planned database changes without mutating MySQL:
+
+```bash
+composer tests-db-prepare-workers -- --dry-run
+```
+
+Older checkouts may still use user-specific configure files. In those checkouts, feature tests require special new
+configuration files just for testing purposes.
 
 Your configure files should be created in the `not_for_release/testFramework/Support/configs` directory and will be named 
 `_USER_.store.configure.php` and `_USER_.admin.configure.php` where the `_USER_` must be replaced by the user that your local environment runs as (ie: the username that you're logged into your PC with).
@@ -87,6 +197,281 @@ These files are exactly the same format as standard Zen Cart `configure.php` fil
 
 It is inside these special configure.php files where you will **specify the testing database**.
 
+## Plugin-Local Tests
+
+Plugins can keep tests with the plugin under:
+
+```text
+zc_plugins/<PluginName>/<version>/tests
+```
+
+Recommended plugin-local layout:
+
+- `tests/FeatureAdmin/*Test.php` for admin feature tests.
+- `tests/FeatureStore/*Test.php` for storefront feature tests.
+- `tests/Unit/*Test.php` for isolated unit tests.
+- `tests/Fixtures/` for plugin-owned fixtures.
+- `tests/Seeders/` for plugin-owned seeders.
+- `tests/bootstrap.php` for optional plugin bootstrap code.
+- `tests/plugin-test.php` for optional plugin test metadata.
+
+Plugin-local tests should extend the normal Zen Cart test framework base classes:
+
+- `Tests\Support\zcInProcessFeatureTestCaseAdmin`
+- `Tests\Support\zcInProcessFeatureTestCaseStore`
+- `Tests\Support\zcUnitTestCase`
+
+Run all plugin-local tests:
+
+```bash
+composer tests-plugin
+```
+
+Run tests for one plugin:
+
+```bash
+composer tests-plugin -- --plugin gdpr-dsar
+```
+
+Run one plugin and suite:
+
+```bash
+composer tests-plugin -- --plugin gdpr-dsar --suite FeatureAdmin
+composer tests-plugin -- --plugin gdpr-dsar --suite FeatureStore
+composer tests-plugin -- --plugin gdpr-dsar --suite Unit
+```
+
+Run plugin-local filesystem mutation tests:
+
+```bash
+composer tests-plugin -- --plugin gdpr-dsar --require-group plugin-filesystem --group plugin-filesystem
+```
+
+Plugin-local tests that install, uninstall, enable, disable, or mutate plugin filesystem state should be tagged:
+
+```php
+/**
+ * @group serial
+ * @group plugin-filesystem
+ */
+```
+
+Read-only plugin-local tests can use:
+
+```php
+/**
+ * @group parallel-candidate
+ */
+```
+
+Plugin repositories should run plugin-local tests by checking out Zen Cart, copying the plugin into
+`zc_plugins/<PluginName>/<version>`, and running `composer tests-plugin` inside the published test-runner container.
+
+The container is version-neutral. The Zen Cart version under test is selected by the Git checkout ref; the PHP version is
+selected by the container tag.
+
+For example:
+
+```text
+PHP version      -> ghcr.io/zencart/zencart-test-runner:php-8.4
+Zen Cart version -> actions/checkout ref
+Plugin version   -> zc_plugins/<PluginName>/<version>
+```
+
+## Plugin GitHub Actions
+
+A plugin repository can run its own tests by checking out Zen Cart during the workflow, installing the plugin into the
+checked-out Zen Cart tree, and then running Zen Cart's `composer tests-plugin` command inside the published test-runner
+container.
+
+The plugin repository should contain only plugin-owned files:
+
+```text
+manifest.php
+catalog/
+admin/
+tests/
+.github/workflows/plugin-tests.yml
+```
+
+The workflow should create this runtime layout:
+
+```text
+workspace/
+  plugin/
+  zencart/
+    composer.json
+    not_for_release/testFramework/
+    zc_plugins/
+      gdpr-dsar/
+        v1.0.2/
+          manifest.php
+          catalog/
+          admin/
+          tests/
+```
+
+Use workflow environment variables for plugin and Zen Cart targeting so releases are easy to update:
+
+```yaml
+env:
+  ZC_CORE_REPOSITORY: zencart/zencart
+  ZC_CORE_REF: master
+  ZC_PLUGIN_NAME: gdpr-dsar
+  ZC_PLUGIN_VERSION: v1.0.2
+  ZC_TEST_RUNNER_IMAGE: ghcr.io/zencart/zencart-test-runner
+```
+
+If the test-runner package is public, the workflow can pull it without logging in. If the package is private, add repository
+secrets such as `GHCR_TOKEN` and optionally `GHCR_USERNAME`, then log in before running `docker run`.
+
+Example workflow:
+
+```yaml
+name: Plugin Tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+env:
+  ZC_CORE_REPOSITORY: zencart/zencart
+  ZC_CORE_REF: master
+  ZC_PLUGIN_NAME: gdpr-dsar
+  ZC_PLUGIN_VERSION: v1.0.2
+  ZC_TEST_RUNNER_IMAGE: ghcr.io/zencart/zencart-test-runner
+
+jobs:
+  plugin-tests:
+    name: PHP ${{ matrix.php-version }} Plugin Tests
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: read
+
+    strategy:
+      matrix:
+        php-version:
+          - "8.4"
+
+    services:
+      mysql:
+        image: mysql:5.7
+        env:
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_DATABASE: db
+          MYSQL_USER: db
+          MYSQL_PASSWORD: root
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping -h 127.0.0.1 -uroot -proot"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=6
+
+    steps:
+      - name: Checkout Plugin
+        uses: actions/checkout@v4
+        with:
+          path: plugin
+
+      - name: Checkout Zen Cart
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.ZC_CORE_REPOSITORY }}
+          ref: ${{ env.ZC_CORE_REF }}
+          path: zencart
+
+      - name: Install Plugin Into Zen Cart
+        run: |
+          mkdir -p "zencart/zc_plugins/${ZC_PLUGIN_NAME}/${ZC_PLUGIN_VERSION}"
+          rsync -a --delete \
+            --exclude '.git/' \
+            --exclude '.github/' \
+            plugin/ "zencart/zc_plugins/${ZC_PLUGIN_NAME}/${ZC_PLUGIN_VERSION}/"
+
+      - name: Install Zen Cart Dependencies
+        run: |
+          docker run --rm \
+            --network host \
+            -v "${GITHUB_WORKSPACE}/zencart:/var/www/html" \
+            -w /var/www/html \
+            "${ZC_TEST_RUNNER_IMAGE}:php-${{ matrix.php-version }}" \
+            composer install --no-progress --no-interaction --no-ansi --no-scripts
+
+      - name: Patch Vendored Dependencies
+        run: |
+          docker run --rm \
+            --network host \
+            -v "${GITHUB_WORKSPACE}/zencart:/var/www/html" \
+            -w /var/www/html \
+            "${ZC_TEST_RUNNER_IMAGE}:php-${{ matrix.php-version }}" \
+            sh -c 'composer update --no-progress --no-interaction --no-ansi --no-scripts && sh not_for_release/testFramework/copyVendorFiles.sh'
+
+      - name: Run Plugin Tests
+        run: |
+          docker run --rm \
+            --network host \
+            -v "${GITHUB_WORKSPACE}/zencart:/var/www/html" \
+            -w /var/www/html \
+            -e ZC_TEST_DB_BASE_NAME=db \
+            -e ZC_TEST_DB_WORKERS=2 \
+            -e ZC_TEST_DB_INCLUDE_BASE=0 \
+            "${ZC_TEST_RUNNER_IMAGE}:php-${{ matrix.php-version }}" \
+            composer tests-plugin -- --plugin "${ZC_PLUGIN_NAME}"
+
+      - name: Upload Test Artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: plugin-test-artifacts-php-${{ matrix.php-version }}
+          path: zencart/not_for_release/testFramework/logs/console
+          if-no-files-found: ignore
+          retention-days: 30
+```
+
+This example uses `docker run --network host` rather than a job-level `container:` block because the current Zen Cart
+runner configuration expects MySQL at `127.0.0.1`. The MySQL service is exposed on the GitHub Actions host at port `3306`,
+and the test-runner container can reach it through host networking.
+
+If the test-runner image is private, add this before the first `docker run` step:
+
+```yaml
+- name: Login to GHCR
+  if: ${{ env.GHCR_TOKEN != '' }}
+  env:
+    GHCR_TOKEN: ${{ secrets.GHCR_TOKEN }}
+    GHCR_USERNAME: ${{ secrets.GHCR_USERNAME }}
+  run: |
+    echo "${GHCR_TOKEN}" | docker login ghcr.io \
+      -u "${GHCR_USERNAME:-${GITHUB_ACTOR}}" \
+      --password-stdin
+```
+
+For the first workflow, use a single PHP version and one Zen Cart ref. Once that is stable, expand to a matrix:
+
+```yaml
+strategy:
+  matrix:
+    php-version:
+      - "8.3"
+      - "8.4"
+      - "8.5"
+    zencart-ref:
+      - master
+      - v2.1.0
+```
+
+Then use the matrix value in the Zen Cart checkout:
+
+```yaml
+ref: ${{ matrix.zencart-ref }}
+```
+
+Only test against Zen Cart refs that include the `tests-plugin` Composer command and plugin-local test framework support.
+Older Zen Cart releases need the test framework backported before this workflow can run against them.
 
 ### Migrations and Seeders
 
@@ -124,5 +509,3 @@ As with other configure files noted above the actual configure file should be na
 The example referred to above shows settings for using a local `Mailpit` (an email server emulator) instance, which is an application you would need to install separately.
 Yes, you could specify your own real mail server, but beware that when the tests send repeated similar messages they may get falsely treated as spam and may mess with your sender-reputation score. 
 Mailtrap.io is a developer-friendly tool with a free-tier to accommodate email testing, and is easy to configure.
-
-
