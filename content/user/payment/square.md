@@ -29,11 +29,14 @@ Please note: do NOT remove the old Square files from your Zen Cart installation 
 1. Double check - did you just install the module "Square WebPay"?  If you're on the module "Square," it will look very similar but won't work. 
 1. Login at [https://connect.squareup.com/apps](https://connect.squareup.com/apps) to view the apps you've connected to your account.
 1. Click **+** to create a New Application for your Zen Cart store. Give it a name, such as "WebPay".  If it's for a test installation of your site with a different URL, call it WebPay-Test or something like that.
+1. There's a permission confirm dialog you'll have to accept. 
 1. Ensure you have selected the correct API version.  See [Square API Version](/user/payment/square_api_version/).
     - Version 3.0.x of Square Web Payments requires API Version 2025-01-23.
     - Version 2.0.x of Square Web Payments requires API Version 2024-11-20.
     - Version 1.2.0 of Square Web Payments requires API Version 2024-02-22.
     - Version 1.0.1 of Square Web Payments requires API Version 2022-02-16.
+
+    Note that if it is the first time you are creating the app, you may have to wait until after you finish and then click "App details" on the left sidebar.
 1. Click on the application icon that was just created (named "WebPay" or whatever name you used).
 1. The environment will be Sandbox by default.  Click "Production".
 1. Copy and Paste the Production Application ID into your Square WebPay configuration *Application ID* field in Zen Cart admin. 
@@ -103,3 +106,6 @@ If your access token goes bad, you can get into a state where you have to delete
 ## Square Errors 
 If you get an error from Square (in particular, "The provided OAuth access token has expired"), see [Square Error Messages](/user/payment/square_errors/). 
 
+## ApplePay
+
+Remember that ApplePay only works in the Safari browser.  You must also register your domain with Apple Pay for it to work.  See: https://developer.squareup.com/docs/web-payments/apple-pay#production-configuration
