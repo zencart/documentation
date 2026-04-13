@@ -1,6 +1,6 @@
 ---
 title: Release Process Documentation
-weight: 200
+weight: 800
 layout: docs
 ---
 This is documentation for the Zen Cart release process.  It is only intended for people doing official Zen Cart builds. 

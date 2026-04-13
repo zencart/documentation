@@ -223,5 +223,33 @@ Configuration Name | Configuration Value
 ### Tips & Tricks
 Procedurally, all configuration options for a shipping module names `myshipping` should be named `MODULE_SHIPPING_`MYSHIPPING`_*`, as should all language constants for the module, to ensure uniqueness of those constants.
 
+### Converting a shipping module to extend ZenShipping
+
+Since 2.1.0 shipping modules have been changed to extend the `ZenShipping` base class.  To convert an older module to this new style, make the following changes: 
+
+- Change the class declaration to say `extends ZenShipping`.
+- You won't need to declare the standard variables anymore; `includes/classes/ZenShipping.php` declares the following: 
+```
+    protected $_check;
+    public string $code;
+    public string $description;
+    public bool $enabled;
+    public array $debug = [];
+    public string $icon;
+    public array $quotes;
+    public $sort_order;
+    public string $tax_basis;
+    public $tax_class;
+    public string $title;
+```
+- Be sure the following functions have signatures that are compatible with the base class: 
+```
+function quote($method = '') : array {
+function install() : void {
+function remove() : void {
+function keys() : array {
+```  
+- Be sure any early return from `quote()` returns an empty array. 
+
 ### Troubleshooting
 Since the admin-level processing by *Modules > Shipping* loads all `.php` modules present in the `/includes/modules/shipping` folder, make sure that any backup files in that directory have the `.php` extension changed, e.g. `.php~` or `.php.old`, or errors will result during the admin loading.
