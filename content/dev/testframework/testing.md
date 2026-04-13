@@ -152,7 +152,8 @@ not_for_release/testFramework/Support/configs/test-runner.env
 not_for_release/testFramework/Support/configs/test-runner.local.env
 ```
 
-Use these files or environment variables to control database host, port, user, password, and worker database settings.
+Use these files or environment variables to control database host, port, user, password, worker database settings, and
+optional test mailserver settings.
 
 Useful environment variables include:
 
@@ -163,6 +164,29 @@ Useful environment variables include:
 - `ZC_TEST_DB_BASE_NAME`
 - `ZC_TEST_DB_WORKERS`
 - `ZC_TEST_DB_INCLUDE_BASE`
+- `ZC_TEST_USE_MAILSERVER`
+- `ZC_TEST_MAILSERVER_HOST`
+- `ZC_TEST_MAILSERVER_PORT`
+- `ZC_TEST_MAILSERVER_USER`
+- `ZC_TEST_MAILSERVER_PASSWORD`
+
+Values already set in the shell or CI environment take precedence over values in the environment files. If both
+`test-runner.env` and `test-runner.local.env` exist, `test-runner.local.env` is loaded after `test-runner.env` and can
+override local defaults.
+
+For example, to send feature-test email through Mailpit in a DDEV-style environment, add this to
+`not_for_release/testFramework/Support/configs/test-runner.local.env`:
+
+```bash
+ZC_TEST_USE_MAILSERVER=true
+ZC_TEST_MAILSERVER_HOST=mailpit
+ZC_TEST_MAILSERVER_PORT=1025
+ZC_TEST_MAILSERVER_USER=ddev
+ZC_TEST_MAILSERVER_PASSWORD=mailpit
+```
+
+When `ZC_TEST_USE_MAILSERVER` is enabled, the test database bootstrap enables email sending and seeds Zen Cart's email
+configuration to use the configured SMTP catcher.
 
 You can preview the resolved runtime settings with:
 
@@ -419,6 +443,7 @@ jobs:
             -e ZC_TEST_DB_BASE_NAME=db \
             -e ZC_TEST_DB_WORKERS=2 \
             -e ZC_TEST_DB_INCLUDE_BASE=0 \
+            -e ZC_TEST_USE_MAILSERVER=false \
             "${ZC_TEST_RUNNER_IMAGE}:php-${{ matrix.php-version }}" \
             composer tests-plugin -- --plugin "${ZC_PLUGIN_NAME}"
 
@@ -498,14 +523,24 @@ replacing `StoreWizardSeeder` with the name of your seeder class.
 ### Mail Server Emulation
 
 **By default the Test Framework disables the sending of emails.** 
-This can be overridden by usng another configure file: 
-An example exists at `not_for_release/testFramework/Support/configs/main.configure.php.example`
+Enable `ZC_TEST_USE_MAILSERVER` when a feature or plugin test needs to assert email behavior through an SMTP catcher such
+as Mailpit.
+
+Local example:
+
+```bash
+ZC_TEST_USE_MAILSERVER=true
+ZC_TEST_MAILSERVER_HOST=mailpit
+ZC_TEST_MAILSERVER_PORT=1025
+ZC_TEST_MAILSERVER_USER=ddev
+ZC_TEST_MAILSERVER_PASSWORD=mailpit
+```
+
+For container-based plugin CI, pass the same values with `docker run -e ...`. The SMTP host must be reachable from inside
+the test-runner container. With `docker run --network host`, a host-level mail catcher is usually reached through
+`127.0.0.1`; in Docker Compose or DDEV-style networks it is usually reached by its service name, such as `mailpit`.
 
 Note: Any misconfiguration here will likely result in failing tests.
 
-As with other configure files noted above the actual configure file should be named 
-`_USER_.store.configure.php` with `_USER_` being replaced by the user running the tests.
-
-The example referred to above shows settings for using a local `Mailpit` (an email server emulator) instance, which is an application you would need to install separately.
-Yes, you could specify your own real mail server, but beware that when the tests send repeated similar messages they may get falsely treated as spam and may mess with your sender-reputation score. 
+Yes, you could specify your own real mail server, but beware that when the tests send repeated similar messages they may get falsely treated as spam and may mess with your sender-reputation score.
 Mailtrap.io is a developer-friendly tool with a free-tier to accommodate email testing, and is easy to configure.
