@@ -333,7 +333,7 @@ workspace/
           manifest.php
           catalog/
           admin/
-          Installer
+          Installer/
           tests/
 ```
 
