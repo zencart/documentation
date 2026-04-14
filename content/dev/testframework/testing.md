@@ -314,6 +314,7 @@ The plugin repository should contain only plugin-owned files:
 manifest.php
 catalog/
 admin/
+Installer/
 tests/
 .github/workflows/plugin-tests.yml
 ```
@@ -332,6 +333,7 @@ workspace/
           manifest.php
           catalog/
           admin/
+          Installer
           tests/
 ```
 
