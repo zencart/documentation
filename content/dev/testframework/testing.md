@@ -48,6 +48,42 @@ The supported Composer scripts are:
 
 Most runner scripts accept normal PHPUnit arguments after `--`.
 
+The Composer commands are convenience aliases for shell scripts in `not_for_release/testFramework/`. You can also run those scripts directly.
+
+`composer tests-ci` runs the top-level CI-style flow as-is, using the currently resolved environment and test profile.
+
+`composer tests-ci-local` runs the same flow but applies local worker-database defaults when they are not already set, currently:
+
+- `ZC_TEST_DB_BASE_NAME=db`
+- `ZC_TEST_DB_WORKERS=2`
+- `ZC_TEST_DB_INCLUDE_BASE=0`
+
+`composer tests-db-prepare-workers` is lower-level. It prepares or previews the worker databases expected by the parallel feature runners, but it does not run the test suites itself.
+
+Examples of direct script usage:
+
+```bash
+bash not_for_release/testFramework/run-tests-ci.sh
+bash not_for_release/testFramework/run-store-feature-tests-ci.sh --filter SearchInProcessTest
+bash not_for_release/testFramework/prepare-worker-databases.sh --dry-run
+bash not_for_release/testFramework/report-feature-test-groups.sh --summary-only
+```
+
+Using Composer is usually the simpler choice:
+
+- shorter commands
+- script names are centralized in `composer.json`
+- easier for contributors who expect the documented `composer tests-*` entrypoints
+
+Running the scripts directly is useful when you need more control:
+
+- clearer visibility into which underlying runner is being executed
+- easier to call a specific shell script while debugging
+- convenient in CI or ad-hoc shell automation where you want to bypass the Composer alias layer
+- avoids Composer script timeout behavior in environments where Composer is configured with a process time limit
+
+The tradeoff is mostly ergonomics. Composer is easier to remember and document, while direct script execution is more explicit and sometimes easier to debug.
+
 Examples:
 
 ```bash
@@ -294,11 +330,82 @@ not_for_release/testFramework/Support/database/Seeders/
 
 Seeder classes are autoloaded with the `Seeders\` namespace and must implement `Tests\Services\Contracts\TestSeederInterface`.
 
+Use a custom seeder when a test needs database state beyond the standard bootstrap, for example:
+
+- a specific configuration value
+- extra products, coupons, or tax data
+- a setup sequence that would be noisy or repetitive to build inline in every test
+
+The seeder interface is simple:
+
+```php
+namespace Tests\Services\Contracts;
+
+interface TestSeederInterface
+{
+    public function run(array $parameters = []): void;
+}
+```
+
+A typical seeder updates or inserts rows using `Tests\Support\Database\TestDb`.
+
+Example:
+
+```php
+<?php
+
+namespace Seeders;
+
+use Tests\Services\Contracts\TestSeederInterface;
+use Tests\Support\Database\TestDb;
+
+class StoreWizardSeeder implements TestSeederInterface
+{
+    public function run(array $parameters = []): void
+    {
+        TestDb::update(
+            'configuration',
+            ['configuration_value' => 'Zencart Store Name'],
+            'configuration_key = :config_key',
+            [':config_key' => 'STORE_NAME']
+        );
+
+        TestDb::update(
+            'configuration',
+            ['configuration_value' => 'Zencart Store Owner'],
+            'configuration_key = :config_key',
+            [':config_key' => 'STORE_OWNER']
+        );
+    }
+}
+```
+
 From a test case that uses the database concerns helpers, run a custom seeder with:
 
 ```php
 self::runCustomSeeder('StoreWizardSeeder');
 ```
+
+That call resolves the class as `Seeders\StoreWizardSeeder` and executes its `run()` method.
+
+A typical usage pattern in a feature test looks like this:
+
+```php
+final class ExampleStoreTest extends \Tests\Support\zcInProcessFeatureTestCaseStore
+{
+    public function test_store_uses_seeded_configuration(): void
+    {
+        self::runCustomSeeder('StoreWizardSeeder');
+
+        $response = $this->get('/');
+
+        $response->assertOk();
+        $response->assertSee('Zencart Store Name');
+    }
+}
+```
+
+Keep seeders focused and test-specific. If a seeder becomes broadly useful across many tests, give it a descriptive name and keep the setup logic reusable rather than embedding one-off assertions or test flow inside the seeder itself.
 
 ## Container-based runs
 
