@@ -1,8 +1,8 @@
 ---
-title: Github as a source and documentation repository  
-description: Putting your Plugin on Github
+title: Using GitHub for Plugin Source and Documentation
+description: Managing plugin source code and documentation on GitHub
 category: plugins
-weight: 10
+weight: 90
 ---
 
 Your plugins are submitted to the Plugins Library to make them accessible to Zen Cart users, but you may wish to consider taking an additional steps, and put your plugin under source control on Github.com.
@@ -20,4 +20,3 @@ Examples of best-in-class Github repos that feature documentation are:
 - [PayPal RESTful API Payment Module](https://github.com/lat9/paypalr)
 
 Clicking the "Wiki" link at the top of any of these repos will show you examples of plugin documentation.
-

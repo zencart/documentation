@@ -5,7 +5,7 @@ weight: 100
 layout: docs
 ---
 
-This documentation is for Zen Cart 1.5.8 and above; if you need the older documentation, please see [Pre 1.5.8 Language Files](/dev/languages/pre_158/).
+This documentation is for Zen Cart 1.5.8 and above; if you need the older documentation, please see [Pre 1.5.8 Language Files](/dev/languages/legacy/).
 
 If you are not familiar with the new language file format for Zen Cart 1.5.8 and above, please see [Developer Information on Array based Language files](/dev/languages/158_language_files/). 
 

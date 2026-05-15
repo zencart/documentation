@@ -1,12 +1,12 @@
 ---
-title: Tips on creating a plugin 
-description: Things to remember when creating a plugin for Zen Cart 
+title: Plugin Authoring Tips
+description: Practical guidance for creating Zen Cart plugins
 category: plugins
-weight: 1
+weight: 20
 ---
 
 ## Avoid modifying core files 
-Whereever possible, try to use the [Observer/Notifier](/dev/code/notifiers/) system, rather than changing core files.  
+Whereever possible, try to use the [Observer/Notifier](/dev/architecture/notifiers/) system, rather than changing core files.  
 
 ## Security
 
@@ -18,7 +18,7 @@ Other variations for specific use in either admin or catalog might check whether
 
 ## Encapsulation
 
-If it is possible to create your plugin as an [encapsulated plugin](/dev/plugins/encapsulated_plugins/), please consider doing so.  Encapsulated plugins are easier for end-users to install (less copying various files to various subdirectories). 
+If it is possible to create your plugin as an [encapsulated plugin](/dev/plugins/encapsulated/), please consider doing so.  Encapsulated plugins are easier for end-users to install (less copying various files to various subdirectories). 
 
 
 
@@ -91,7 +91,7 @@ Ensure that you respect the flag `ENABLE_PLUGIN_VERSION_CHECKING` - see [How do 
 
 ## Database change checks 
 
-- Ensure your schema is correct.  See `tableCheckup` in `includes/modules/payment/paypal.php` for an example of how to do this.  You can also read more about the [sniffer object](/dev/code/database_querying/#sniffer-object) that does the required work. 
+- Ensure your schema is correct.  See `tableCheckup` in `includes/modules/payment/paypal.php` for an example of how to do this.  You can also read more about the [sniffer object](/dev/database/database_querying/#sniffer-object) that does the required work. 
 
 ```
 $fieldOkay1 = (method_exists($sniffer, 'field_type')) ? $sniffer->field_type(TABLE_PAYPAL, 'txn_id', 'varchar(20)', true) : -1;
@@ -140,11 +140,11 @@ Since Zen Cart 1.5.8, all modules (shipping, payment and order_total) have suppo
 
 ## Other Resources 
 
-- [Creating a menu item](/dev/code/creating_menu/)
+- [Creating a menu item](/dev/admin/creating_menu/)
 
-- [Creating or altering tables](/dev/code/creating_tables/)
+- [Creating or altering tables](/dev/database/creating_tables/)
 
-- [Building a form](/dev/code/forms/)
+- [Building a form](/dev/storefront/forms/)
 
 
 ## Forum Resources 

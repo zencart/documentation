@@ -1,8 +1,8 @@
 ---
-title: Upgrading 1.3.X era plugins 
-description: Upgrading old Zen Cart plugins for 1.5 Compatibility
+title: Upgrading 1.3.x Plugins for Zen Cart 1.5
+description: Updating older Zen Cart plugins for 1.5 compatibility
 category: plugins
-weight: 1
+weight: 70
 ---
 
 
@@ -26,10 +26,8 @@ tags and must use POSTs for all CRUD actions, leaving GETs for only filter-relat
 
 ## Moving to the Encapsulated Plugin manager 
 
-As an recommended next step, follow the guide [Converting an older plugin](/dev/plugins/encapsulated_plugins/converting/) to use the new encapsulated plugin manager.  
+As an recommended next step, follow the guide [Converting an older plugin](/dev/plugins/encapsulated/converting/) to use the new encapsulated plugin manager.  
 
 ## Upgrading for PHP8+/Zen Cart 1.5.8+
 
 Please see [Upgrading plugins to work with PHP8+/1.5.8+](https://docs.zen-cart.com/dev/plugins/upgrading_to_158/).
-
-

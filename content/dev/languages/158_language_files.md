@@ -1,6 +1,8 @@
 ---
 title: Language Files - Developer Information on Array based Language files
 description: Structure of Language Packs for Zen Cart 1.5.8 and above 
+aliases:
+  - /dev/code/158_language_files/
 weight: 10 
 layout: docs
 ---

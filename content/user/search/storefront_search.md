@@ -41,7 +41,7 @@ meta_tags_products_description | metatags_description [^2]
 [^1]: if the `Search in Product Descriptions` checkbox is checked, or if the search is done from one of the search sideboxes. 
 [^2]: if the configuration setting [Include meta-tags in product search?](/user/admin_pages/configuration/configuration_mystore/#include_metatags_in_product_search) is set to `true`.  
 
-You can see [the database schema](/dev/schema/) if you wish to learn more about how the database is structured. 
+You can see [the database schema](/dev/database/schema-history/) if you wish to learn more about how the database is structured. 
 
 The _Search in Product Descriptions_ checkbox is provided because sometimes searching the product description produces false positive search results.   
 

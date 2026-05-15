@@ -1,8 +1,8 @@
 ---
-title: Adding a configuration setting 
-description: How to add a new defined value to the database 
+title: Adding Configuration Settings
+description: Adding a plugin configuration setting that can be managed in admin
 category: plugins
-weight: 10
+weight: 35
 ---
 
 If you are creating a plugin or customizing some code, and you want to create a setting which can be changed in the admin without modifying code, you can put it in the database in an appropriate configuration group.  For example, a value relating to shipping should go in configuration group 7 (Shipping and Packaging).

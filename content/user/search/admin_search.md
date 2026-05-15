@@ -17,6 +17,6 @@ Table | Fields
 `products_description` | `products_name`, `products_description`
 `products`| `products_id`, `products_model`
 
-You can see [the database schema](/dev/schema/) if you wish to learn more about how the database is structured. 
+You can see [the database schema](/dev/database/schema-history/) if you wish to learn more about how the database is structured. 
 
 To add a field to the admin search (such as `products_mpn`, for example), use the notifier `NOTIFY_BUILD_KEYWORD_SEARCH` or modify `admin/category_product_listing.php` and change the first argument to `zen_build_keyword_where_clause`.   Note that `products_mpn` is added to the admin search in Zen Cart 2.1.0. 

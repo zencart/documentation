@@ -19,7 +19,7 @@ Here's a screenshot of phpMyAdmin viewing the records in the specials table, whi
 
 ![Specials table](/images/phpmyadmin_specials.png)
 
-You can view the [database schema for Zen Cart](/dev/schema/) to learn more about how the data is structured .
+You can view the [database schema for Zen Cart](/dev/database/schema-history/) to learn more about how the data is structured .
 
 ### What about all the files in Zen Cart? 
 

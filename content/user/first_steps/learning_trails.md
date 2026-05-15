@@ -52,9 +52,9 @@ Take a look at [exploring the documentation](/user/first_steps/documentation/) t
 
 ## Learn Zen Cart Development 
 - [Technologies used in Zen Cart](/user/first_steps/technologies/)
-- [Querying the Database](/dev/code/database_querying/)
-- [Observer/Notifier System](/dev/code/notifiers/)
-- [Sanitization](/dev/code/admin_sanitization/)
-- [Auto Inclusion](/dev/code/inclusion/)
+- [Querying the Database](/dev/database/database_querying/)
+- [Observer/Notifier System](/dev/architecture/notifiers/)
+- [Sanitization](/dev/admin/admin_sanitization/)
+- [Auto Inclusion](/dev/architecture/inclusion/)
 - [Github Workflow for Zen Cart](/dev/contributing/github_workflow/)
 - [Plugins for Developers](/dev/plugins/)

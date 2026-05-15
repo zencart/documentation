@@ -17,7 +17,7 @@ Once you know [what Zen Cart is](/user/about_us/what_is_zen_cart/), you might wa
 
 * [Add a Link](/user/sideboxes/add_link_information_sidebox/) - How do I add links to the Information sidebox? 
 
-* [Add a New Field](/dev/code/add_field_products/) How do I add a custom field to the products table?
+* [Add a New Field](/dev/database/add_field_products/) How do I add a custom field to the products table?
 
 * [Admin Password Reset](/user/troubleshooting/reset_admin_password/) - How to update your password if you have forgotten it.
 

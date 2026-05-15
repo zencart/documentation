@@ -5,7 +5,7 @@ category: template
 weight: 10
 type: codepage
 ---
-Developers: please see [developer information on Font Awesome](/dev/libraries/font_awesome/) for technical details.
+Developers: please see [developer information on Font Awesome](/dev/storefront/font_awesome/) for technical details.
 
 The [Font Awesome library](https://fontawesome.com/) provides a set of vector icons and social logos for your website.   It is one of the most popular icon sets available. 
 

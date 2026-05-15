@@ -7,13 +7,13 @@ weight: 10
 
 There are several places in the Zen Cart code where e-mails to the customer are constructed. To create a consistent feel for all your communication with the customer, you will want to make sure you modify all these places whenever you modify one. 
 
-Don't forget to use the [template overrides system](/user/template/template_overrides/) wherever possible when making your changes and if this is not available look for notifiers and use the [observer/notifier system](/dev/code/notifiers/) to make your changes.
+Don't forget to use the [template overrides system](/user/template/template_overrides/) wherever possible when making your changes and if this is not available look for notifiers and use the [observer/notifier system](/dev/architecture/notifiers/) to make your changes.
 
 The e-mail's structure is determined in one of two ways: if you are sending plain text e-mails, it is determined by the way you put together the various items (customer greeting, order number, link to detailed invoice, etc) in a string variable that is then passed to the `zen_mail()` function. If you are sending HTML e-mails, the structure is determined by the template you use.
 
 ## Plain text e-mails
 
-You can rearrange, add, or delete items in a plain text e-mail. To do so, you will need to either, use the [template overrides system](/user/template/template_overrides/),  the [observer/notifier system](/dev/code/notifiers/) or as  a last resort edit the Zen Cart files where the e-mail is created. For example, if you want to edit the order confirmation e-mail, you will need to edit the file `includes/classes/order.php`.
+You can rearrange, add, or delete items in a plain text e-mail. To do so, you will need to either, use the [template overrides system](/user/template/template_overrides/),  the [observer/notifier system](/dev/architecture/notifiers/) or as  a last resort edit the Zen Cart files where the e-mail is created. For example, if you want to edit the order confirmation e-mail, you will need to edit the file `includes/classes/order.php`.
 
 In our example, we open up `includes/classes/order.php` and scroll down to the bottom of the file, in the function `send_order_email()`. There you will see the lines that construct the plain text e-mail message:
 
@@ -37,7 +37,7 @@ In our example, we open up `includes/classes/order.php` and scroll down to the b
                         EMAIL_SEPARATOR . "\n";
 ```
 
-and so on. In this file, the variable that holds the plain text e-mail message is called `$email_order`; it generally has a different name in each file, such as `$email` or `$email_text`. Whatever its name, this is the place where you can make your changes, if you cannot use [overrides](/user/template/template_overrides/) or  [notifiers](/dev/code/notifiers/). You can add, delete, and rearrange the order of the items to suit your wishes.
+and so on. In this file, the variable that holds the plain text e-mail message is called `$email_order`; it generally has a different name in each file, such as `$email` or `$email_text`. Whatever its name, this is the place where you can make your changes, if you cannot use [overrides](/user/template/template_overrides/) or  [notifiers](/dev/architecture/notifiers/). You can add, delete, and rearrange the order of the items to suit your wishes.
 
 Remember if you change core files you will have to do it for every upgrade.
 

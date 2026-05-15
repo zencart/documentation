@@ -25,4 +25,4 @@ This capability to set defaults and appearance on a per product type basis is pr
 
 ![Product Type Sidebar](/images/product_general_sidebar.png)
 
-If you are a developer, see [technical information on product types](/dev/code/product_types/). 
+If you are a developer, see [technical information on product types](/dev/architecture/product_types/). 

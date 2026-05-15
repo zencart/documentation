@@ -1,8 +1,8 @@
 ---
-title: Technical - Building help for your admin plugin 
-description: Creating easy-to-access help for your Zen Cart admin-side modification
+title: Adding Help to an Admin Plugin
+description: Creating accessible help for admin-side plugin pages
 category: plugins
-weight: 10
+weight: 60
 ---
 
 {{< technical >}}
@@ -11,7 +11,7 @@ weight: 10
 
 If your plugin creates a new page, the ability to provide help has been built-in since Zen Cart 1.5.8.  If you are not yet using this version or higher, you can merge [this PR](https://github.com/zencart/zencart/pull/4243/commits/ea92e4a950ba0c373ec081a3472d16f5030a70c1) into your cart. 
 
-Use the [observer autoloading](https://docs.zen-cart.com/dev/code/notifiers/#auto-loaded-observers) feature of Zen Cart admin observers (available since Zen Cart 1.5.7), and create a new file called `admin/includes/classes/observers/auto.myplugin_help.php`.  (Be sure to follow the naming conventions for observer autoloading!)
+Use the [observer autoloading](https://docs.zen-cart.com/dev/architecture/notifiers/#auto-loaded-observers) feature of Zen Cart admin observers (available since Zen Cart 1.5.7), and create a new file called `admin/includes/classes/observers/auto.myplugin_help.php`.  (Be sure to follow the naming conventions for observer autoloading!)
 
 As an example, here's the observer that adds the help for [POSM](/user/running/posm/) in Zen Cart 2.1.0.  It's in the encapsulated version of POSM under `admin/includes/classes/observers/auto.posm_help.php`.
 
@@ -110,4 +110,3 @@ echo '</pre>';
 ### Putting help files on a server 
 
 If you are deploying help files to a newly created folder, be sure to follow the guidelines in [Direct Access to Files](/user/customizing/add_pages/#direct-access-to-files). 
-

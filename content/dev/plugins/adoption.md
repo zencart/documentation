@@ -1,8 +1,8 @@
 ---
-title: Adopting an orphan plugin 
-description: Stepping forward to take care of an abandoned plugin
+title: Adopting an Orphaned Plugin
+description: Taking over maintenance of an abandoned plugin
 category: plugins
-weight: 10
+weight: 80
 ---
 
 For a variety of reasons, plugins sometimes get abandoned by their creators. 
@@ -16,9 +16,9 @@ Creating a Github repo for your contribution is nice but not required.  The adva
 It's good to include updated docs (or improve the docs if they're weak), and include a brief "changelog" in the docs to denote what was done "when" and what versions of Zen Cart and PHP the latest update is compatible with.
 
 Useful references:
-- [PHP version feature changes and deprecations](/dev/code/php_version_deprecations/)
+- [PHP version feature changes and deprecations](/dev/php/php_version_deprecations/)
 - [Zen Cart requirements](/user/first_steps/server_requirements/#php-version)
-- [Encapsulated Plugins](/dev/plugins/encapsulated_plugins/)
+- [Encapsulated Plugins](/dev/plugins/encapsulated/)
 
 
 ## Do's and Don'ts
@@ -28,6 +28,5 @@ Useful references:
 - Make an effort to reach out to the original author to be sure the work has been abandoned.  It could be that the author just doesn't think more work is needed.
 - Familiarize yourself with the [rules for plugins](/dev/plugins/rules/).
 - Follow the [migration guides](/dev/plugins/php_updating/) to bring the plugin up to the current level of PHP.
-- Whereever possible, try to use the [Observer/Notifier](/dev/code/notifiers/) system, rather than changing core files.  See the other [tips for plugin authors](/dev/plugins/tips/) as well.  
+- Whereever possible, try to use the [Observer/Notifier](/dev/architecture/notifiers/) system, rather than changing core files.  See the other [tips for plugin authors](/dev/plugins/tips/) as well.  
 - When you have completed your work, submit the update as a new version to the Plugin Library. 
-

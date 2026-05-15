@@ -72,8 +72,8 @@ You may need to do one or more of these things.
 
 ## How do I find products incorrectly configured with zero weight? 
 
-- You could [build a report](/dev/code/reports/) to show items with zero weight. 
-- You could [build a dashboard widget](/dev/code/widget/) to display zero weight items on your admin home page.
+- You could [build a report](/dev/admin/reports/) to show items with zero weight. 
+- You could [build a dashboard widget](/dev/admin/widget/) to display zero weight items on your admin home page.
  
 - You could run a SQL query from phpMyAdmin.  
 ```

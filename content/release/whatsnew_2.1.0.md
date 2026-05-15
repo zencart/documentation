@@ -102,7 +102,7 @@ The improvements in v2.1.0 include the following.  The changes which are most no
 - Admin: FIXED - Viewing customer records would occasionally lead to a blank right hand infoBox.
 - Admin: FIXED - Viewing orders would occasionally lead to a blank right hand infoBox.
 - Admin: FIXED - Selecting coupons on pages other than the first page would occasionally fail.
-- Admin: The <a href="/dev/code/template_settings/">template settings file</a> may now be viewed from your admin page.
+- Admin: The <a href="/dev/storefront/template_settings/">template settings file</a> may now be viewed from your admin page.
 - Admin: The date of last password change is now shown on the Users page in admin.
 - Admin: Product Price fields "Gross" and "Net" have been renamed to "Tax Included" and "Tax Excluded."
 - Core: For robustness, in multi-language stores, missing non-English language constants will now fall back to their English definitions.

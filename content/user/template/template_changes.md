@@ -187,6 +187,6 @@ specials_index.php: NOTIFY_MODULES_SPECIALS_INDEX_B4_LIST_BOX
 ./ezpages.php: NOTIFY_END_EZPAGES_SIDEBOX
 ```
 
-Other notifiers may have been added to non-overridable files as well; you can compare the [complete list of notifiers](/dev/code/notifiers_list/) to what you have in your files using the [Notifier Report](https://github.com/lat9/notifier_report).
+Other notifiers may have been added to non-overridable files as well; you can compare the [complete list of notifiers](/dev/architecture/notifiers_list/) to what you have in your files using the [Notifier Report](https://github.com/lat9/notifier_report).
 
 

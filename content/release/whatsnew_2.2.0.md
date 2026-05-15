@@ -92,7 +92,7 @@ The improvements in v2.2.1 include the following.  The changes which are most no
 - Admin: Updates to System Inspection plugin.
 - **Admin: Additional images may now be specified in the database rather than using the older [filename matching mechanism](/user/images/image_filename_conventions/).  See [Additional Images Handling](/user/images/additional_images_database/) for details.**
 - Admin: Customers page now has a legend explaining the icons used in the Authorized column.
-- Admin: A sample cron job is provided for storeowners who wish to enable upcoming products at a specific time.  See [Cron Jobs within Zen Cart](/dev/code/admin_cron/#existing-cron-jobs-within-zen-cart).
+- Admin: A sample cron job is provided for storeowners who wish to enable upcoming products at a specific time.  See [Cron Jobs within Zen Cart](/dev/admin/admin_cron/#existing-cron-jobs-within-zen-cart).
 - **Admin: [Customer account activation](/user/orders/customer_approval/#customer-account-activation) for customer accounts added.  Stores may now require that new accounts authenticate their email addresses for fraud control.**
 - Admin: The page Admins > Admin Page Registration has been removed.
 - **Admin: Configuration screen now allows all values in a group to be updated at once.  See [Configuration in Zen Cart 2.2.x](/user/admin_pages/configuration/v2.2.0/).**

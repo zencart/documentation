@@ -1,6 +1,8 @@
 ---
 title: Language Files - New vs Legacy in 1.5.8+
 description: How legacy language defines are handled for Zen Cart 1.5.8 and above 
+aliases:
+  - /dev/code/158_order_language_files/
 weight: 10 
 layout: docs
 ---

@@ -5,7 +5,7 @@ category: template
 weight: 10
 ---
 
-**Note:** Users of Zen Cart 2.0.0 and above have access to the even more powerful [template settings](/dev/code/template_settings/) file feature. 
+**Note:** Users of Zen Cart 2.0.0 and above have access to the even more powerful [template settings](/dev/storefront/template_settings/) file feature. 
 
 The process of changing templates can be done using the [Template Selection](/user/admin_pages/tools/template_selection/) screen under Admin > Tools. 
 

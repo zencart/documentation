@@ -1,8 +1,8 @@
 ---
-title: Admin HEAD content 
-description: New standards for head element in admin files 
+title: Admin HTML Head Content
+description: Managing HEAD content for admin pages and plugins
 category: plugins
-weight: 10
+weight: 50
 ---
 
 Starting in Zen Cart 1.5.7, a new file `admin/includes/admin_html_head.php` was introduced to consolidate the code required to build the `<head>` element in an admin page.  This includes such things as: 
@@ -33,4 +33,3 @@ You will also want to remove references to the old `init()` javascript function.
 
 
 If you maintain a plugin which needs to work on both older and newer versions of Zen Cart simultaneously, see the [Email Archive Manager](/user/email/email_archive_manager/) plugin, which does this. 
-

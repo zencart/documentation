@@ -33,6 +33,6 @@ JavaScript libraries such as jQuery are updated as issues are found.  It's best 
 The easiest way to check if your JavaScript libraries are up to date is to use the [Google Lighthouse](/user/upgrading/javascript_updates/) tool.  
 
 ## Libraries used by Zen Cart 
-You can find information about libraries used by Zen Cart (such as Bootstrap and jQuery) in the [third party libraries](/dev/libraries/) documentation. 
+You can find information about libraries used by Zen Cart (such as Bootstrap and jQuery) in the [third party libraries](/dev/storefront/) documentation. 
 
 

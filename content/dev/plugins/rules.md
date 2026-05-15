@@ -2,7 +2,7 @@
 title: Rules for Plugins
 description: How to build a plugin that will be accepted 
 category: plugins
-weight: 1
+weight: 100
 ---
 ## What is a Contribution/Addon/Plugin?
 The Open Source community has many great benefits. One such benefit is the ability for many people to collectively share their knowledge, creativity, and expertise by extending the capabilities of existing software products.  It's very common for someone to install a product such as Zen Cart and want to make some customizations unique to their business, and then share those changes by contributing back to the Zen Cart community for everyone's benefit.  Packaging up the new/changed files along with instructions on how to implement those onto another site is essentially what a contribution/addon comprises.
@@ -81,4 +81,3 @@ Submitting a contribution means you agree with the GPL and consent for your cont
 ## Using Github as a Repository for your plugin
 
 There are many [advantages to storing your plugin on Github](/dev/plugins/github/); please consider doing so.
-
