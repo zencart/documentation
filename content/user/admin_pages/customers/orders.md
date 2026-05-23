@@ -21,7 +21,7 @@ The columns in the list are:
 - [Order Status](/user/localization/orders_status/)
 - Customer comments on the order are indicated by a yellow square.  
 
-To the left of the order id, a red dot indicates that the order's shipping address is different from the billing address. Such orders are a greater fraud risk, which is why they are flagged in this way. 
+To the left of the order id, the presence of a red dot indicates that the order's shipping address is different from the billing address. Such orders are a greater fraud risk, which is why they are flagged in this way.  (BTW, you can prevent orders like this - see [Ensuring shipping and billing addresses match](/user/running/one_address).)
 
 Clicking an order selects it and opens a preview on the right hand side of the page.  From there, the order may be opened or deleted.  The invoice or packingslip for an order may also be opened from the preview. 
 
