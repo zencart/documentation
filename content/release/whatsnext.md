@@ -31,6 +31,7 @@ The improvements which will be included in v2.2.3 (if released) are as follows. 
 
 - Fixed: Call for Price products should not display a price.
 - Fixed: Contact Us page shows "main_page" in the Full Name field.
+- Fixed: MFA login loop for non-superusers.
 
 ## 2.2.2
 Zen Cart 2.2.2 has been released; changes are now listed in [What's New in 2.2.x](/release/whatsnew_2.2.0).
