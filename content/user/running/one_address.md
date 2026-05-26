@@ -9,4 +9,4 @@ Some stores want to force the shipping and billing addresses to be the same to l
 
 The easiest way to do this is to set [MAX_ADDRESS_BOOK_ENTRIES](/user/admin_pages/configuration/configuration_maximumvalues) to **1** in the Admin > Configuration > Maxiumum Values page.
 
-Just bear in mind that doing so means your store will not be able to allow customers to send gifts to their friends and familes at different addresses.
+Just bear in mind that doing so means your store will not be able to allow customers to send gifts to their friends and families at different addresses.
