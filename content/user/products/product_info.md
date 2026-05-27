@@ -16,6 +16,6 @@ The information which appears on the product info page is governed by the
 product type and the [product type layout settings](/user/admin_pages/catalog/product_types_edit_layout/) for that product type. 
 
 Almost everyone uses the product type `Product - General` only, but other
-product types are available, and you may develop new ones to meet your needs.  See [Product Types](/dev/code/product_types/) for more information.
+product types are available, and you may develop new ones to meet your needs.  See [Product Types](/dev/architecture/product_types/) for more information.
 
 For more information, please see [product info page](/user/storefront_pages/product_info/). 

@@ -1,1 +1,8 @@
-{{ T "post_last_mod"}} {{ .Lastmod.Format .Site.Params.time_format_default }}{{ with .GitInfo }} by {{.AuthorName}} <a href="{{ $.Site.Params.github_repo }}/commit/{{ .Hash }}">({{ .AbbreviatedHash }})</a>.{{end }}
+{{- $timeFormat := .Site.Params.time_format_default -}}
+{{- $lastmod := .Lastmod -}}
+{{- $git := .GitInfo -}}
+{{- if and $lastmod (not $lastmod.IsZero) -}}
+{{ T "post_last_mod"}} {{ $lastmod.Format $timeFormat }}{{ with $git }} by {{ .AuthorName }} <a href="{{ $.Site.Params.github_repo }}/commit/{{ .Hash }}">({{ .AbbreviatedHash }})</a>.{{ end }}
+{{- else if $git -}}
+{{ T "post_last_mod"}} {{ $git.AuthorDate.Format $timeFormat }} by {{ $git.AuthorName }} <a href="{{ $.Site.Params.github_repo }}/commit/{{ $git.Hash }}">({{ $git.AbbreviatedHash }})</a>.
+{{- end -}}

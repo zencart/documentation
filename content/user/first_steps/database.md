@@ -47,6 +47,6 @@ You can see a list of them by looking at the file `includes/database_tables.php`
 
 ## What is the schema for Zen Cart? 
 
-Recent releases have a schema file stored in the documentation.  Go to the [Zen Cart Schema page](/dev/schema/) to find the version which corresponds to your Zen Cart version.   If you're not sure what version you are running, take a look at the FAQ [how to find your Zen Cart version](/user/first_steps/version/). 
+Recent releases have a schema file stored in the documentation.  Go to the [Zen Cart Schema page](/dev/database/schema-history/) to find the version which corresponds to your Zen Cart version.   If you're not sure what version you are running, take a look at the FAQ [how to find your Zen Cart version](/user/first_steps/version/). 
 
 

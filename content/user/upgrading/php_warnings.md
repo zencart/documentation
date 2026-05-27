@@ -202,7 +202,7 @@ Since PHP 5.5 the `mysql_xxxxx()` functions were removed in favor of the `mysqli
 
 You cannot just rename the functions. 
 
-While on the surface it may seem simple to rewrite the functions to the new syntax, a MUCH BETTER approach is to [rewrite your code to use Zen Cart's own DB querying logic](/dev/code/database_querying/), which is both more secure and more consistent across the application.
+While on the surface it may seem simple to rewrite the functions to the new syntax, a MUCH BETTER approach is to [rewrite your code to use Zen Cart's own DB querying logic](/dev/database/database_querying/), which is both more secure and more consistent across the application.
 
 ## Undefined constant warnings in module files
 (Since PHP 8.0 `Fatal error: Uncaught Error: Undefined constant "FOO"`, and from PHP 7.2 to 7.4 it gave `Warning: Use of undefined constant FOO – assumed 'FOO'.`)
@@ -292,7 +292,7 @@ If you do this, and the element does not exist, you will get a PHP Warning
 ```
 
 
-If the array element is referenced in the middle of a statement, use the [null coalescing operator](/dev/code/php_idioms/#null-coalescing-operator) to prevent invalid references. 
+If the array element is referenced in the middle of a statement, use the [null coalescing operator](/dev/php/php_idioms/#null-coalescing-operator) to prevent invalid references. 
 
 So for example, if `$response['var1']` might not be set, change 
 

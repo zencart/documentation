@@ -1,0 +1,111 @@
+---
+title: Prerequisites
+aliases:
+  - /dev/release_process/prerequisites/
+weight: 20
+layout: docs
+category: release
+---
+To run the release process, you must have the following:
+
+- Running at least PHP 8.1. (This means `php -v` must run without an alias and must show php 8.1 or higher.)  Here are [guidelines for upgrading to PHP 8.1 on a Mac](https://stitcher.io/blog/php-81-upgrade-mac). 
+
+- `Maintainer` access to the Zen Cart github repository.
+
+- A local copy of the [VersionStamper](https://github.com/zencart/versionstamper) application.
+
+- Admin access to the main Zen Cart website 
+
+- Admin access to the team's Server Manager console
+
+- an up to date copy of the master branch for Zen Cart. 
+
+- an up to date copy of the documentation repo. 
+
+Once you have these things, you're almost ready to begin.
+
+# Final Steps Before Beginning
+
+## Prepare your branch 
+
+Be sure your copy of the Github repo is up to date, and be sure you're on the right branch for building (either `master` or `prior-version-branch` for a patch).
+
+Create a new branch specifically for the version file changes. 
+
+## Update the versioning files: 
+
+NOTE: If you are setting up a pre-release, please see [Pre-Release Notes](/dev/release/pre_release_notes/).
+
+Remember we are using [Semantic Versioning](/user/about_us/versioning/) in post 2.0 releases.  So a reelease number is MAJOR.MINOR.PATCH.
+
+1. Edit the file `includes/version.php` and update the version.
+
+1. Edit the file `zc_install/includes/version.php` and update the version.
+
+**For patch releases or any release with no database change SKIP REMAINING VERSION FILE UPDATES.  Go to the next step.**
+
+3. Edit the file `zc_install/sql/install/mysql_zencart.sql` and update the version number in the `project_version` and `project_version_history` tables. 
+
+1. Edit the file `zc_install/sql/updates/mysql_upgrade_zencart_<current>.sql` and update the version number in the `project_version` and `project_version_history` tables. 
+
+1. Ensure the version number in `zc_install/includes/systemChecks.yml` is the current version. 
+
+1. Ensure the new version number has been added to `zc_install/includes/version_updates.php`. 
+
+The thing to remember is that the database version does not include the patch number / letter, because the database doesn't change just because of a patch release.  
+
+Here's what should be in these files for a (hypothetical) version 2.3.0 build:  
+
+{{% version_files %}}
+
+There are other version related updates to do, but they're not part of the build, so they are detailed in [post release tasks](/dev/release/post_release/).
+
+## For Major Releases - Update the Implementation Guide
+
+The implementation guide (`docs/implementation-guide.pdf`) is part of the build and should be updated before the build begins.  See [Implementation Guide](/dev/release/implementation_guide/). 
+
+This is mentioned on the next page as well as a reminder, since it's easy to forget. 
+
+## For Major Releases - set the PHP Version range
+
+Update these places: 
+
+Uses of `PHP_VERSION_ID` (for the minimum version): 
+- `zc_install/index.php`
+- `includes/application_top.php`
+- `admin/includes/application_bootstrap.php`
+- `admin/includes/application_top.php`
+
+Other Code Files: 
+
+- `zc_install/includes/languages/en_us/main.php` (set `TEXT_ERROR_PHP_VERSION`)
+- `zc_install/includes/systemChecks.yml` (set `checkPhpVersion`)
+- `zc_install/index.php` (only change if zc_install itself needs a newer PHP version: we want zc_install to run for inspection even on older PHP)
+
+Documentation Files: 
+- [Server Requirements](/user/first_steps/server_requirements/#php-version) in `user/first_steps/server_requirements.md`.
+- What's New file for this release, e.g. [What's New in 2.2](https://docs.zen-cart.com/release/whatsnew_2.2.0/) under "About PHP Versions".  This file is in the `release` folder.
+- `README.md` under [Zen Cart github home page](https://github.com/zencart/zencart)
+
+Other considerations: 
+- `/composer.json`
+- Update github workflows so tests run on desired versions
+
+## Copyright Updates
+
+Do copyright updates in the following files: 
+
+1. docs/INSTALL.TXT
+1. what's new and changes files list for this release (common footer in doc repo `/layouts/shortcodes/release_footer.md`.)
+
+## Check in! 
+
+You'll want to check in all these changes so they get version stamped correctly.  Merge the branch you created for these changes. 
+
+
+
+<div style="text-align:right;" id="next">
+   <a class="btn btn-lg btn-primary mr-3 mb-4" href="/dev/release/initial_steps/">
+        Next - Initial Steps<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+   </a>
+</div>

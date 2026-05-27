@@ -58,5 +58,5 @@ Users of the [Responsive Classic template](/user/template/responsive_classic/) m
 - Since Zen Cart 2.0.0, the `site_specific_styles.php` file allows you to modify the template's CSS.  A sample file (`dist-site_specific_styles.php`) is provided since Zen Cart 2.2.0. 
 
 ## Related Links 
-- [Template Settings](/dev/code/template_settings/) file
+- [Template Settings](/dev/storefront/template_settings/) file
 

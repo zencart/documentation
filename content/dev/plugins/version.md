@@ -1,8 +1,8 @@
 ---
-title: Zen Cart Version Checking in your Plugin 
-description: Determining which version of Zen Cart you are running
+title: Checking Zen Cart Version in a Plugin
+description: Determining which version of Zen Cart your plugin is running on
 category: plugins
-weight: 10
+weight: 30
 ---
 
 The function `zen_get_zcversion` was created for this purpose. 
@@ -33,4 +33,3 @@ In some cases, it might make more sense to use `function_exists`.  For example, 
          echo zen_draw_products_pull_down(...); 
       }
 ```
-

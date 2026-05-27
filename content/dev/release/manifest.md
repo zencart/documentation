@@ -1,0 +1,31 @@
+---
+title: Release Manifests
+aliases:
+  - /dev/release_process/manifest/
+weight: 90
+layout: docs
+category: release
+---
+
+Note: if you are doing a pre-release rather than an official release, please skip this step and go to the [next step](/dev/release/post_release/). 
+
+The manifest api shows a hash of all files in a release. 
+
+Its original purpose as to allow for doing diffs/security checks between a customized zen-cart and the original files.
+
+On the Server Manager dashboard:
+
+![Server Manager](/images/sm_dashboard.png)
+
+- Login to the Server Manager. For instructions, see the [infrastructure repo](https://github.com/zencart/infrastructure).  (Team members only.)
+- Click `Version Manager > Manifests`
+
+- Click the `New manifest` button
+
+- Enter the "Tag name" (the tag name you created in prior steps), and click the "Create" button.
+
+<div style="text-align:right;" id="next">
+   <a class="btn btn-lg btn-primary mr-3 mb-4" href="/dev/release/post_release/">
+        Next - Post Release Tasks<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+   </a>
+</div>

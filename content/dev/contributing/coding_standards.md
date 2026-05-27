@@ -229,5 +229,5 @@ Simple reference:
 Do not use spaces in file or folder names.  Use underscores or Camel Case instead. 
 
 ## More Information
-More information is provided in [PHP Idioms](/dev/code/php_idioms/).
+More information is provided in [PHP Idioms](/dev/php/php_idioms/).
 

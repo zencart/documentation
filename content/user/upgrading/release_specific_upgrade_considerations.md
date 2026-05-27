@@ -113,7 +113,7 @@ a general function called `zen_get_category_metatag_fields`is provided, with an 
 
 - The function `zen_cfg_read_only` has been added.  This means any plugin authors who provided their own version of this function should remove it from their plugin for 1.5.8, or wrap it in `if (!function_exists('zen_cfg_read_only'))` if support is needed for older versions of Zen Cart. 
 
-- The misspelled notifier `NOTIFIY_ORDER_CART_SUBTOTAL_CALCULATE` has been deprecated and replaced by `NOTIFY_ORDER_CART_SUBTOTAL_CALCULATE`. Code that references the misspelled notifier will continue to work (due to the [event aliasing](/dev/code/notifiers/#event-aliasing) feature), but plugins should be updated to use the corrected name.
+- The misspelled notifier `NOTIFIY_ORDER_CART_SUBTOTAL_CALCULATE` has been deprecated and replaced by `NOTIFY_ORDER_CART_SUBTOTAL_CALCULATE`. Code that references the misspelled notifier will continue to work (due to the [event aliasing](/dev/architecture/notifiers/#event-aliasing) feature), but plugins should be updated to use the corrected name.
 
 - The constant `ROBOTS_PAGES_TO_SKIP` was previously located in the language file `meta_tags.php` despite not being language-related.   
 It has been moved to its own file in `includes/extra_configures/robots_pages_to_skip.php`.  

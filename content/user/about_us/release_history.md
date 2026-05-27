@@ -11,7 +11,7 @@ weight: 10
 
 [Security Patches](/user/about_us/security_releases/) are also announced on the forum. 
 
-See also [Zen Cart Database Schema](/dev/schema/), 
+See also [Zen Cart Database Schema](/dev/database/schema-history/), 
 [Zen Cart Known Bugs](/user/about_us/known_bugs/), 
 and
 [PHP version compatibility with Zen Cart](/user/first_steps/server_requirements/#php-version). 

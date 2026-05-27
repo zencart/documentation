@@ -5,7 +5,7 @@ category: template
 weight: 10
 ---
 
-Developers: please see [developer information on Bootstrap](/dev/libraries/bootstrap/) for technical details.
+Developers: please see [developer information on Bootstrap](/dev/storefront/bootstrap/) for technical details.
 
 The [Bootstrap template](https://www.zen-cart.com/downloads.php?do=file&id=2191) is a well supported, standards-based, [responsive](/user/template/responsive/) template which was built by the Zen Cart community. 
 
@@ -40,7 +40,7 @@ Some documentation on the colors is provided in the [template's Wiki](https://gi
 
 ### Icons in the Bootstrap Template 
 
-The Bootstrap template uses [FontAwesome](/user/template/font_awesome/).  Technical details on versions are provided in [Font Awesome in Zen Cart](/dev/libraries/font_awesome/). 
+The Bootstrap template uses [FontAwesome](/user/template/font_awesome/).  Technical details on versions are provided in [Font Awesome in Zen Cart](/dev/storefront/font_awesome/). 
 
 Note that recent versions of the template use Font Awesome 6. The Brand icons may be optionally loaded.  See the section below for information about the Soft Configurations.
 

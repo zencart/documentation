@@ -30,10 +30,10 @@ a number of facilities are provided:
 
 * [Overrides](/user/template/template_overrides/)
 * [Site Specific Overrides](/user/customizing/site_specific_overrides/)
-* [Notifiers/Observers](/dev/code/notifiers/)
-* [Init System](/dev/code/init_system/)
-* [Extra folders](/dev/code/extra_folders/) 
-* [Auto Inclusion](/dev/code/inclusion/) 
+* [Notifiers/Observers](/dev/architecture/notifiers/)
+* [Init System](/dev/architecture/init_system/)
+* [Extra folders](/dev/architecture/extra_folders/) 
+* [Auto Inclusion](/dev/architecture/inclusion/) 
 
 ### More Information 
 

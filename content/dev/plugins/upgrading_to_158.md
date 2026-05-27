@@ -1,7 +1,8 @@
 ---
-title: Upgrading plugins to work with PHP8+/1.5.8+
-description: Upgrading old Zen Cart plugins to work with PHP 8.x and Zen Cart 1.5.8+
+title: Upgrading Plugins for PHP 8 and Zen Cart 1.5.8+
+description: Updating older Zen Cart plugins for PHP 8.x and Zen Cart 1.5.8+
 category: plugins
+weight: 75
 ---
 
 PHP8 is a major change, and many older plugins will require attention before they can be used without problems.   Be sure to verify plugins in [a test environment](/user/running/local_testing/) before pushing them to a live store. 
@@ -201,4 +202,3 @@ please see [missing language constants](/user/languages/missing_language_constan
 
 
 {{% code_help_links %}} 
-
