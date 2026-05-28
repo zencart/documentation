@@ -18,8 +18,6 @@ The improvements included and under consideration for inclusion in v3.0.0 are as
 - **New Enhancement: Admin modernization** as demonstrated in [this PR](https://github.com/zencart/zencart/pull/7458).
 - **New Feature: <a href="https://github.com/zencart/zencart/discussions/7570">Encapsulated Templates</a> will be supported, so that all template related files will be under a single folder.**
 - **New Feature: <a href="https://github.com/zencart/zencart/discussions/6428">Child Templates</a> will be supported, so that storeowners can more easily determine what has been changed from the base release of a template. (Still TBD)** 
-- Fixed: Call for Price products should not display a price.
-- Fixed: Contact Us page shows "main_page" in the Full Name field.
 - Modernization: Zen Cart 3.0 will use Bootstrap 5 in both the storefront and back end. 
 - Modernization: support for older `define` based language files will be dropped.  Moving forward, only [Array based language files](/dev/languages/158_language_files/) will be supported. 
 - Modernization: Encapsulated plugins will have the ability to insert template content.
@@ -32,6 +30,7 @@ The improvements which will be included in v2.2.3 (if released) are as follows. 
 - Fixed: Call for Price products should not display a price.
 - Fixed: Contact Us page shows "main_page" in the Full Name field.
 - Fixed: MFA login loop for non-superusers.
+- Fixed: Featured Categories page does not show any featured categories
 
 ## 2.2.2
 Zen Cart 2.2.2 has been released; changes are now listed in [What's New in 2.2.x](/release/whatsnew_2.2.0).
