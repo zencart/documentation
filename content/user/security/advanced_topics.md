@@ -124,10 +124,7 @@ Be cautious with:
 payment=()
 ```
 
-Most regular Zen Cart stores do not use the browser Payment Request API, so disabling it is usually fine. But if a store uses Apple Pay / Google Pay / Payment Request integrations, payment=() could interfere. Safer generic baseline:
-```
-Permissions-Policy: camera=(), microphone=(), geolocation=(), usb=(), bluetooth=(), accelerometer=(), gyroscope=(), magnetometer=()
-```
+Most regular Zen Cart stores do not use the browser Payment Request API, so disabling it is usually fine. But if a store uses Apple Pay / Google Pay / Payment Request integrations, payment=() could interfere. Safer generic baseline: omit `payment=()` unless you are sure it won't affect your checkout flow.
 
 Optional stricter version:
 ```
@@ -275,7 +272,7 @@ autoindex off;
 8. Set secure cookies where possible
 Session cookies should use Secure, HttpOnly, and an appropriate SameSite value. For ecommerce, SameSite=Lax is often safer than Strict because payment/checkout redirects may need to preserve session behavior.
 9. Test after enabling headers
-Use browser dev tools, checkout test orders, admin login, payment redirects, 3-D Secure flows, CAPTCHA, analytics, and any iframe/payment widgets. Mozilla Observatory is useful for scanning header posture. (MDN Web Docs)
+Use browser dev tools, checkout test orders, admin login, payment redirects, 3-D Secure flows, CAPTCHA, analytics, and any iframe/payment widgets. Mozilla Observatory is useful for scanning header posture.
 
 The “safe starter recommendation”:
 
