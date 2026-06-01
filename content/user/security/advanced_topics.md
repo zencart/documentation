@@ -1,6 +1,6 @@
 ---
 title: Advanced Topics in site security
-description: Crafting your site's Header and CSP
+description: Crafting your site's headers and CSP
 category: security
 weight: 10
 ---
@@ -16,7 +16,7 @@ These are safe, broadly applicable starting points:
 Strict-Transport-Security: max-age=31536000
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
-Content-Security-Policy: frame-ancestors 'self'
+Content-Security-Policy: frame-ancestors 'self'; upgrade-insecure-requests
 Referrer-Policy: strict-origin-when-cross-origin
 Permissions-Policy: camera=(), microphone=(), geolocation=(), usb=(), bluetooth=(), accelerometer=(), gyroscope=(), magnetometer=()
 ```
@@ -164,7 +164,7 @@ Optional: For older Apache versions where the expr= syntax is unsupported, use t
 ```
 
 ### Nginx
-Nginx headers must be set in server/location config by someone with server/admin access. They cannot be set through `.htaccess.`
+Nginx headers must be set in server/location config by someone with server/admin access. They cannot be set through `.htaccess`.
 
 Inside the HTTPS server {} block:
 
@@ -236,7 +236,7 @@ These usually require hosting/server admin intervention:
 - firewall/fail2ban
 - PHP-FPM pool settings
 
-### Headers I would NOT recommend generically
+### Headers not recommended as generic defaults
 Avoid these as blanket ecommerce recommendations:
 - Cross-Origin-Embedder-Policy: require-corp
 - Cross-Origin-Opener-Policy: same-origin
@@ -250,7 +250,7 @@ It is obsolete and should not be relied on. Modern guidance focuses on CSP and c
 
 ---------
 ## Ecommerce-specific hardening guidance
-For a Zen Cart audience, I would add these non-header recommendations:
+For a Zen Cart audience, consider these non-header recommendations:
 1. Force HTTPS everywhere
 Storefront, admin, checkout, login, account pages, images, CSS, JS, and canonical URLs should all use HTTPS.
 2. Keep admin renamed/protected
