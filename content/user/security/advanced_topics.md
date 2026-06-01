@@ -18,7 +18,7 @@ X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
 Content-Security-Policy: frame-ancestors 'self'
 Referrer-Policy: strict-origin-when-cross-origin
-Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), bluetooth=(), accelerometer=(), gyroscope=(), magnetometer=()
+Permissions-Policy: camera=(), microphone=(), geolocation=(), usb=(), bluetooth=(), accelerometer=(), gyroscope=(), magnetometer=()
 ```
 
 Notes on each:
@@ -33,7 +33,12 @@ We do not generically recommend `includeSubDomains` or `preload` unless the merc
 
 For confident stores:
 ```
-Strict-Transport-Security: max-age=31536000; includeSubDomainsFor highly confident stores that understand preload consequences:
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+```
+
+
+For highly confident stores that understand preload consequences:
+```
 Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
 ```
 
@@ -244,7 +249,7 @@ Also avoid recommending X-XSS-Protection
 It is obsolete and should not be relied on. Modern guidance focuses on CSP and correct output escaping rather than the old browser XSS filter.
 
 ---------
-Ecommerce-specific hardening guidance
+## Ecommerce-specific hardening guidance
 For a Zen Cart audience, I would add these non-header recommendations:
 1. Force HTTPS everywhere
 Storefront, admin, checkout, login, account pages, images, CSS, JS, and canonical URLs should all use HTTPS.
@@ -260,8 +265,14 @@ Deny public access to .sql, .bak, .old, .zip, .tar, .gz, .env, .log, .ini, .yml,
 Headers help, but they do not compensate for vulnerable PHP code, abandoned plugins, or outdated payment modules.
 7. Disable directory listing
 On Apache/LiteSpeed:
-Options -IndexesOn Nginx:
-autoindex off;8. Set secure cookies where possible
+```
+Options -Indexes
+```
+On Nginx:
+```
+autoindex off;
+```
+8. Set secure cookies where possible
 Session cookies should use Secure, HttpOnly, and an appropriate SameSite value. For ecommerce, SameSite=Lax is often safer than Strict because payment/checkout redirects may need to preserve session behavior.
 9. Test after enabling headers
 Use browser dev tools, checkout test orders, admin login, payment redirects, 3-D Secure flows, CAPTCHA, analytics, and any iframe/payment widgets. Mozilla Observatory is useful for scanning header posture. (MDN Web Docs)
