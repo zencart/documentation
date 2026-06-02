@@ -46,7 +46,8 @@ Here, the `$sql` variable is reset to the parsed response of the bindVars call.
 
 The first parameter is `$sql` which is the query from the code example above.
 
-The second parameter is the placeholder. Notice the use of the `:` prefix. The string here must be unique and only appear in the query once, as `bindVars` does a search-and-replace (`str_replace`) of this value using the next parameter:
+The second parameter is the placeholder. Notice the use of the `:` prefix. The string here must be unique and only appear in the query once, as `bindVars` does a search-and-replace (`str_replace`) of this value using the next parameter. 
+In Zen Cart code you will see cases where the `:` is used both as a prefix only, or also added as a suffix; both forms are acceptable.
 
 The third parameter is the value to be substituted in place of the second parameter.
 
@@ -137,18 +138,18 @@ $prod_name = $results->fields['products_name'];
 #### Multiple Row Responses
 If there are multiple rows returned, the most efficient way to iterate through the results is using a `foreach()` loop:
 
-```
+```php
 foreach($results as $result) {
   echo 'Product ID: ' . $result['products_id'] . ': ' . $result['products_name'] . "<br>\n";
 }
 ```
 This has worked since Zen Cart 1.5.5. 
 
-An older more verbose syntax exists in legacy code. The following accomplishes the same as the `foreach` above:
+An older more verbose syntax exists in legacy code. The following accomplishes the same as the `foreach` above, but is not preferred:
 
-```
+```php
 while (!$results->EOF) {
-  echo 'Product ID: ' . $result->fields['products_id'] . ': ' . $result->fields['products_name'] . "<br>\n";
+  echo 'Product ID: ' . $results->fields['products_id'] . ': ' . $results->fields['products_name'] . "<br>\n";
   $results->MoveNext();
 }
 ```
@@ -169,25 +170,26 @@ In core code this is typically done in sideboxes and centerboxes when showing th
 Also note that randomizing the data like this means the page cannot be cached, so if you're using external caching systems to index your page (like Cloudflare), you may not see the randomized results change on every page hit due to stale cache.
 
 
-## SQL Injection 
+## SQL Injection Protection
 
 Your best defense against potential SQL injection attacks is to sanitize inputs as noted above.  Simply using a POSTed variable in a query is not safe! 
 
-```
+```php
 $query = $db->Execute("UPDATE " . TABLE_CUSTOMERS . " SET customers_firstname = '" . $_POST['name'] . "'");    // DO NOT DO THIS! 
 ```
 Instead, use `bindVars` as described above. 
 
-```
+```php
 $query = "UPDATE " . TABLE_CUSTOMERS . " SET customers_firstname = :name:";    // DO THIS INSTEAD! 
 $query = $db->bindVars($query, ':name:', $_POST['name'], 'string');
 $db->Execute($query);
 ```
 
-## Sniffer Object 
+# Sniffer Object 
 
-The file `includes/classes/sniffer.php` defines the `sniffer` class.  The purpose
-of this class is to allow you to deduce the presence (or absence) of various things in the database.  Its methods are: 
+The file `includes/classes/sniffer.php` defines the `sniffer` class.  
+The purpose of this class is to allow you to deduce the presence (or absence) of various things in the database.  
+Its methods are: 
 
 - `field_exists` - is a particular column in a table? 
 - `field_type` - what is the type of a particular column in table? 
