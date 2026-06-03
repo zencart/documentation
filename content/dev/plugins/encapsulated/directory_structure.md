@@ -21,6 +21,7 @@ e.g.
             - manifest.php
             - database_tables.php (auto loads for both catalog and admin, since ZC v2.2.0)
             - filenames.php (auto loads for both catalog and admin, since ZC v2.2.0)
+            - vendor  (if distributing a composer-package-driven vendor directory; your code will need to manually call the autoloader)
             - Installer
                 - languages
                     - english
