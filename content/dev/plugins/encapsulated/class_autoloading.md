@@ -33,7 +33,7 @@ Encapsulated plugins allow you to Autoload classes based on 2 scenarios.
 #### Contents
 ```php 
 <?php
-namespace Zencart\Plugins\Admin\DisplayLogs;
+namespace Zencart\Plugins\Admin\SalesGraphs;
 
 class DrawPrettyGraph
 {
