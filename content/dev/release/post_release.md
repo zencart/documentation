@@ -47,6 +47,8 @@ e.g. v158
 
 - Update the [What's New with Zen Cart](/user/about_us/whats_new/) page.
 
+- Update the README.md file in the Zen Cart repo.  The first text block indicates the number of the latest major release.
+
 ### Major and Minor Releases Only
 
 - If you need to create a new subforum ("Updating to Y.x.x"), follow the guidance on the [infrastructure repo](https://github.com/zencart/infrastructure).  (Team members only.)
