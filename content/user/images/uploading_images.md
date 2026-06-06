@@ -7,7 +7,17 @@ weight: 20
 
 The majority of the images for your site will be product images, which will be handled either through the [product editing page](/user/products/product_edit/) or the [additional images feature](/user/images/additional_images_database/). 
 
-But you may also have images on your home page or perhaps on other pages.  How can you get these images to your site so that you can reference their URLs when editing a page? 
+But you may also have images on your home page or perhaps on other pages.  CKEditor requires a URL to reference an image.  How can you get these images to your site so that you can reference their URLs when editing a page? 
+
+Two solutions: 
+
+## Solution 1: TinyMCE 
+
+Versions 2.2.1 and above of Zen Cart come with the TinyMCE HTML Editor, which supports drag-and-drop (no URL needed).  Switch to TinyMCE using Admin > Configuration > My Store > HTML Editor > TinyMCE.
+
+If you are running an older verison of Zen Cart, see [this page](/user/running/html_editors/) for a link to the PR which shows you how to add TinyMCE to your site.
+
+## Solution 2: Use cPanel File Manager to transfer images to your site
 
 Most developers will use an [FTP program](/user/first_steps/useful_tools/#ftp-tools) to transfer images from their computer to their host.  If you are not familiar with FTP, there is another easier method provided by cPanel's File Manager Tool.
 
@@ -30,3 +40,8 @@ Steps are as follows:
 ![File Manager Upload page](/images/fm3.png)
 
 Once the image has uploaded, press the "Go Back" link at the bottom of the screen.  You may upload more images if you need to. 
+
+To add images to a particular define page using CKEditor, use the "Insert/edit image" button.
+
+![Insert/edit Image](/images/insert_image_ckeditor.png)
+
