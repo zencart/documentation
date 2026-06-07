@@ -25,4 +25,4 @@ Plugins provide a number of additional fee and discount options:
 
 More order total plugins may be found in the [Other Modules section of the Plugins Library](https://www.zen-cart.com/downloads.php?do=cat&id=7).
 
-Developers wishing to create an order total module should see the [order total dev FAQs](/dev/code/modules/). 
+Developers wishing to create an order total module should see the [order total dev FAQs](/dev/modules/). 
