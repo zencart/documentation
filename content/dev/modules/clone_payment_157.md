@@ -6,7 +6,7 @@ aliases:
   - /dev/modules/clone_payment_157/
 ---
 
-**Note:** These instructions are for Zen Cart 1.5.7 and below.  For Zen Cart 1.5.8 and higher, please see [Cloning a Payment Module](/dev/code/modules/clone_payment/).
+**Note:** These instructions are for Zen Cart 1.5.7 and below.  For Zen Cart 1.5.8 and higher, please see [Cloning a Payment Module](/dev/modules/clone_payment/).
 
 You can create new Payment Module by making a clone of the closest matching Payment Module to what you are trying to do.
  
