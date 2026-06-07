@@ -16,4 +16,4 @@ And here is what the on-screen results look like:
 
 ![Sales Report](/images/sales_report.jpg) 
 
-For recent versions of Zen Cart, Sales Report is distributed as an [encapsulated plugin](/dev/plugins/encapsulated_plugins/).
+For recent versions of Zen Cart, Sales Report is distributed as an [encapsulated plugin](/dev/plugins/encapsulated/).
