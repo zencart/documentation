@@ -23,7 +23,7 @@ The mechanism for doing this in Zen Cart is to set the Order Status for the Chec
 
 Note: The Check/Money Order module can be used for *any* payment method where transfer of funds does not take place within the checkout flow.  For example, you can accept payment by Venmo simply by modifying the language defines in in `./includes/languages/english/modules/payment/moneyorder.php`.  
 
-Alternately, you may [clone the moneyorder payment module](/dev/code/modules/clone_payment/) to build a Venmo module with its own rules and behaviors.
+Alternately, you may [clone the moneyorder payment module](/dev/modules/clone_payment/) to build a Venmo module with its own rules and behaviors.
 
 ## Other Built-In Offline payment methods 
 
