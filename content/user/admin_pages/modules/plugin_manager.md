@@ -4,7 +4,7 @@ category: admin_pages
 weight: 40
 ---
 
-The Plugin Manager page provides a single place to install and uninstall plugins created in accordance with the new [encapsulated plugin architecture](/dev/plugins/encapsulated_plugins/) introduced in 1.5.7. 
+The Plugin Manager page provides a single place to install and uninstall plugins created in accordance with the new [encapsulated plugin architecture](/dev/plugins/encapsulated/) introduced in 1.5.7. 
 
 It is accessed using Admin > Modules > Plugin Manager.
 
@@ -16,7 +16,7 @@ Other notable plugins that have been converted to use encapsulation are:
 - [Clone a Template](https://www.zen-cart.com/downloads.php?do=file&id=2087)
 - [Mod List](https://www.zen-cart.com/downloads.php?do=file&id=2039) 
 
-Developers seeking more information about this topic should read [the dev documents on encapsulation](/dev/plugins/encapsulated_plugins/).
+Developers seeking more information about this topic should read [the dev documents on encapsulation](/dev/plugins/encapsulated/).
 
 Starting in version 2.2.0, the plugin manager shows modules grouped by status and sort order.
 
