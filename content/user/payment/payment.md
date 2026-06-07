@@ -33,7 +33,7 @@ Some offline payment methods are also available:
 - [Invoice](https://www.zen-cart.com/downloads.php?do=file&id=131)
 - [Quote](https://www.zen-cart.com/downloads.php?do=file&id=2199)
 
-Developers wishing to create a payment module should see the [dev FAQs on modules](/dev/code/modules/). 
+Developers wishing to create a payment module should see the [dev FAQs on modules](/dev/modules/). 
 
 If you don't already have an account, please use these [direct links to the payment processors Zen Cart supports](https://www.zen-cart.com/content.php?14-Payment-Processing). By signing up via one of our links, you help support the Zen Cart project with small commissions that these providers give back to Zen Cart. Thank you in advance.
 
