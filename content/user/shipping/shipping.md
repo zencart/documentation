@@ -71,4 +71,4 @@ To learn how to create a new zone, see [creating zone definitions](/user/locatio
 
 ## Considering Developing A Shipping Module?
 
-Developers wishing to create a shipping module should see the [dev FAQs on modules](/dev/code/modules/). 
+Developers wishing to create a shipping module should see the [dev FAQs on modules](/dev/modules/). 
