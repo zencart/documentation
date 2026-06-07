@@ -6,7 +6,7 @@ aliases:
   - /dev/modules/clone_shipping_157/
 ---
 
-**Note:** These instructions are for Zen Cart 1.5.7 and below.  For Zen Cart 1.5.8 and higher, please see [Cloning a Shipping Module](/dev/code/modules/clone_shipping/).
+**Note:** These instructions are for Zen Cart 1.5.7 and below.  For Zen Cart 1.5.8 and higher, please see [Cloning a Shipping Module](/dev/modules/clone_shipping/).
 
 You can create new Shipping Module by making a clone of the closest matching Shipping Module to what you are trying to do.
  
