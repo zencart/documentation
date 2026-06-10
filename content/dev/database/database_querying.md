@@ -46,7 +46,7 @@ Here, the `$sql` variable is reset to the parsed response of the bindVars call.
 
 The first parameter is `$sql` which is the query from the code example above.
 
-The second parameter is the placeholder. Notice the use of the `:` prefix. The string here must be unique and only appear in the query once, as `bindVars` does a search-and-replace (`str_replace`) of this value using the next parameter. 
+The second parameter is the placeholder. Notice the use of the `:` prefix. The string here must be unique and only appear in the query once, as `bindVars` does a search-and-replace (`str_replace`) on the query text.
 In Zen Cart code you will see cases where the `:` is used both as a prefix only, or also added as a suffix; both forms are acceptable.
 
 The third parameter is the value to be substituted in place of the second parameter.
@@ -81,6 +81,92 @@ $sql = "SELECT p.products_id, p.products_model, pd.products_name
 
 **NOTE:** `zen_db_input()` is an alias for `$db->prepare_input()`, which runs `mysqli_real_escape_string()` on its argument.
 
+## INSERT and UPDATE Queries
+
+Data-changing queries follow the same safety rules: build the SQL carefully, sanitize all external values, then execute the query.
+
+### INSERT Example Using `bindVars`
+
+```php
+$sql = "INSERT INTO " . TABLE_PRODUCTS_DESCRIPTION . "
+          (products_id, language_id, products_name)
+        VALUES
+          (:products_id, :language_id, :products_name)";
+
+$sql = $db->bindVars($sql, ':products_id', $products_id, 'integer');
+$sql = $db->bindVars($sql, ':language_id', $_SESSION['languages_id'], 'integer');
+$sql = $db->bindVars($sql, ':products_name', $products_name, 'string');
+
+$db->Execute($sql);
+$inserted_record_id = $db->insert_ID();
+```
+
+Use `insert_ID()` after an `INSERT` into a table with an auto-increment column when you need the new record's ID.
+
+### UPDATE Example Using `bindVars`
+
+```php
+$sql = "UPDATE " . TABLE_CUSTOMERS . "
+        SET customers_firstname = :firstname,
+            customers_lastname = :lastname
+        WHERE customers_id = :customers_id";
+
+$sql = $db->bindVars($sql, ':firstname', $_POST['firstname'], 'string');
+$sql = $db->bindVars($sql, ':lastname', $_POST['lastname'], 'string');
+$sql = $db->bindVars($sql, ':customers_id', $_SESSION['customer_id'], 'integer');
+
+$db->Execute($sql);
+$affected_rows = $db->affectedRows();
+```
+
+Use `affectedRows()` after an `UPDATE`, `INSERT`, `REPLACE`, or `DELETE` when you need to know how many rows were changed.
+
+### Using `zen_db_perform()`
+
+For common `INSERT` and `UPDATE` operations, Zen Cart also provides `zen_db_perform()`, which can be simpler than manually building SQL.
+
+You pass the table name, an associative array of column/value pairs, and optionally the action and `WHERE` clause.
+
+#### INSERT with `zen_db_perform()`
+
+```php
+$sql_data_array = [
+    'products_id' => (int)$products_id,
+    'language_id' => (int)$_SESSION['languages_id'],
+    'products_name' => zen_db_prepare_input($products_name),
+];
+
+zen_db_perform(TABLE_PRODUCTS_DESCRIPTION, $sql_data_array);
+$inserted_record_id = $db->insert_ID();
+```
+
+#### UPDATE with `zen_db_perform()`
+
+```php
+$sql_data_array = [
+    'customers_firstname' => zen_db_prepare_input($_POST['firstname']),
+    'customers_lastname' => zen_db_prepare_input($_POST['lastname']),
+];
+
+zen_db_perform(
+    TABLE_CUSTOMERS,
+    $sql_data_array,
+    'update',
+    "customers_id = " . (int)$_SESSION['customer_id']
+);
+
+$affected_rows = $db->affectedRows();
+```
+
+When using `zen_db_perform()`:
+
+- the array keys are column names
+- the array values are the values to store
+- for updates, the fourth parameter is the `WHERE` clause
+- integer values should still be cast explicitly
+- string values should still be prepared appropriately before being passed in
+
+`zen_db_perform()` is particularly useful in admin pages, installers, and other code that maps form fields directly to table columns.
 
 ## Running the Query
 
@@ -165,10 +251,9 @@ a) instead of `$db->Execute()`, call `$db->ExecuteRandomMulti()` when running th
 
 b) instead of `$db->MoveNext()`, call `$db->MoveNextRandom()` when iterating through the results
 
-In core code this is typically done in sideboxes and centerboxes when showing things like Specials and Featured Products, so that the customer doesn't always see only the most recently edited items. It's also helpful for search engines to not always see exactly the same content on every visit.
+In core code this is typically done in sideboxes and centerboxes when showing things like Specials and Featured Products, so that the customer doesn't always see only the most recently edited items.
 
-Also note that randomizing the data like this means the page cannot be cached, so if you're using external caching systems to index your page (like Cloudflare), you may not see the randomized results change on every page hit due to stale cache.
-
+Also note that randomizing the data like this means the page cannot be cached, so if you're using external caching systems to index your page (like Cloudflare), you may not see the randomized results.
 
 ## SQL Injection Protection
 
@@ -197,4 +282,3 @@ Its methods are:
 - `rowExistsComposite` - does a row exist where the specified columns have the specified values? 
 
 See [database change checks](/dev/plugins/tips/#database-change-checks) for an example of using the sniffer object. 
-
