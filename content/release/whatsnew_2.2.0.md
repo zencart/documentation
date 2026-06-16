@@ -78,6 +78,28 @@ If you're doing an upgrade from a pre-1.5.8 Zen Cart version and are worried abo
 
 For developers with language skills who would like to build a new translation, [developer information on Array based language files](/dev/languages/158_language_files/) is provided.
 
+## 2.2.3
+
+**Please note: 2.2.3 has not been released yet**
+
+- Admin — Fix infinite loop on MFA screen for non-superusers
+- Admin — Expandable textarea in define-pages editor
+- Admin — Template version now shown in template pulldown
+- Admin — Config settings with >2 options now use a dropdown
+- Admin — Show language icon toggle when 2 languages are active
+- Admin — Restore product-views reset in Store Manager 
+- Admin - Updated configuration tool to correct oversanitization
+- Core — Email logo alt text and title text are now separate fields
+- Core — Correct fallback in loadExtraLanguageFiles
+- Security — CSRF header support for Ajax calls
+- Security — Admin notices now restricted to authorized users only
+- Security — Non-captcha validation added to ask-a-question page
+- Search — Allow legitimate long query strings 
+- Storefront — "Call for price" products were still showing a price
+- Storefront - State field fixes (required/alignment/JS) affecting checkout
+- Storefront, correct WSOD when clicking "Buy Now" button during local testing
+- Storefront, correct search with prices when prices are displayed with tax
+
 ## 2.2.2
 The improvements in v2.2.1 include the following.  The changes which are most notable are bolded.
 
