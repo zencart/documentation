@@ -94,11 +94,13 @@ For developers with language skills who would like to build a new translation, [
 - Security — CSRF header support for Ajax calls
 - Security — Admin notices now restricted to authorized users only
 - Security — Non-captcha validation added to ask-a-question page
+- Security - Fix order display on status page
 - Search — Allow legitimate long query strings 
+- Storefront - Fixed Featured Categories error when none to display.
 - Storefront — "Call for price" products were still showing a price
 - Storefront - State field fixes (required/alignment/JS) affecting checkout
-- Storefront, correct WSOD when clicking "Buy Now" button during local testing
-- Storefront, correct search with prices when prices are displayed with tax
+- Storefront - Correct WSOD when clicking "Buy Now" button during local testing
+- Storefront - Correct search with prices when prices are displayed with tax
 
 ## 2.2.2
 The improvements in v2.2.1 include the following.  The changes which are most notable are bolded.
