@@ -72,3 +72,11 @@ To test your shop,
 
 The first 3 values should help you cross reference your orders to the Authorize.net system.   
 The 4th value AVS (Address Verification System) should help you determine fraud or not.
+
+Note: In Zen Cart 3.x, the status of the order in real time is shown.
+
+![Pending Capture](/images/auth_aim_pending_capture.png)
+
+![Pending Settlement](/images/auth_aim_pending_settlement.png)
+
+
