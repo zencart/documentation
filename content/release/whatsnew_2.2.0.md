@@ -89,9 +89,10 @@ For developers with language skills who would like to build a new translation, [
 - Admin — Show language icon toggle when 2 languages are active
 - Admin — Restore product-views reset in Store Manager 
 - Admin - Updated configuration tool to correct oversanitization
+- Admin - Display Logs plugin restricted to Super-Admins
 - Core — Email logo alt text and title text are now separate fields
 - Core — Correct fallback in loadExtraLanguageFiles
-- Security — CSRF header support for Ajax calls
+- Security — HTTP_X_CSRF_TOKEN header support for Ajax calls
 - Security — Admin notices now restricted to authorized users only
 - Security — Non-captcha validation added to ask-a-question page
 - Security - Fix order display on status page
