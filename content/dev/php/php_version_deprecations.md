@@ -182,7 +182,7 @@ Added: [`enum`](https://www.php.net/manual/en/language.enumerations.php) support
 
 Added: `array_is_list()`
 
-Added: `readonly` properties
+Added: [`readonly` properties](https://www.php.net/manual/en/language.oop5.properties.php#language.oop5.properties.readonly-properties)
 
 Added: first-class callable syntax (`foo(...)`)
 
@@ -192,7 +192,7 @@ Added: `never` return type
 
 
 ### PHP 8.2
-Added: [`readonly`](https://www.php.net/manual/en/language.oop5.basic.php#language.oop5.basic.class.readonly) classes
+Added: [`readonly` classes](https://www.php.net/manual/en/language.oop5.basic.php#language.oop5.basic.class.readonly)
 
 Added: constants in traits
 
