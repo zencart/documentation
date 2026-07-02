@@ -49,7 +49,7 @@ Note that recent versions of the template use Font Awesome 6. The Brand icons ma
 Users of the [Bootstrap template](/user/template/bootstrap/) may customize it in the following ways: 
 
 - The [Bootstrap Template site_specific_styles.php file](https://github.com/lat9/ZCA-Bootstrap-Template/wiki/Frequently-Asked-Questions) allows you to modify the template's CSS.
-- The [Bootstrap Template site-specific-bootstrap-settings.php file](https://github.com/lat9/ZCA-Bootstrap-Template/wiki/%22Soft%22-Configuration-Settings) allows you to implement some commonly-requested tweaks (Soft Configurations) of the template's behavior.
+- The [Bootstrap Template site-specific-bootstrap-settings.php file](https://github.com/lat9/ZCA-Bootstrap-Template/wiki/Soft-Configuration-Settings) allows you to implement some commonly-requested tweaks (Soft Configurations) of the template's behavior.
 
 Additional documentation is provided in the [Bootstrap Template Wiki](https://github.com/lat9/ZCA-Bootstrap-Template/wiki).
 
