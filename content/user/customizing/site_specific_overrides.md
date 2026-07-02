@@ -49,7 +49,7 @@ and customize to taste. The settings that may be altered in this file are listed
 Users of the [Bootstrap template](/user/template/bootstrap/) may customize it in the following ways: 
 
 - The [Bootstrap Template site_specific_styles.php file](https://github.com/lat9/ZCA-Bootstrap-Template/wiki/Frequently-Asked-Questions) allows you to modify the template's CSS.
-- The [Bootstrap Template site-specific-bootstrap-settings.php file](https://github.com/lat9/ZCA-Bootstrap-Template/wiki/%22Soft%22-Configuration-Settings) allows you to implement some commonly-requested tweaks (Soft Configurations) of the template's behavior.
+- The [Bootstrap Template site-specific-bootstrap-settings.php file](https://github.com/lat9/ZCA-Bootstrap-Template/wiki/Soft-Configuration-Settings) allows you to implement some commonly-requested tweaks (Soft Configurations) of the template's behavior.
 
 ## Responsive Classic Template Setting Overrides 
 
