@@ -97,14 +97,16 @@ For developers with language skills who would like to build a new translation, [
 - Security — Non-captcha validation added to ask-a-question page
 - Security - Fix order display on status page
 - Search — Allow legitimate long query strings 
+- Storefront - the "Sort by" dropdown on the product listing page may now be suppressed using a soft configuration variable.
 - Storefront - Fixed Featured Categories error when none to display.
+- Storefront - Fixed Contact Us page showing "main_page" in the Full Name field.
 - Storefront — "Call for price" products were still showing a price
 - Storefront - State field fixes (required/alignment/JS) affecting checkout
 - Storefront - Correct WSOD when clicking "Buy Now" button during local testing
 - Storefront - Correct search with prices when prices are displayed with tax
 
 ## 2.2.2
-The improvements in v2.2.1 include the following.  The changes which are most notable are bolded.
+The improvements in v2.2.2 include the following.  The changes which are most notable are bolded.
 
 - Upgrade: Fix issue in `zc_install` version file.
 
