@@ -24,8 +24,11 @@ The improvements included and under consideration for inclusion in v3.0.0 are as
 - POSM: POSM-managed products are now being disabled when a product's overall quantity is zero (if so configured).
 - Test: Major updates to test framework.
 
-## 2.2.3 
-The improvements which will be included in v2.2.3 are as listed in [the What's Next page](/release/whatsnew_2.2.0/#223).
+## 2.3.0 
+The improvements which will be included in v2.3.0 are as listed in [the What's Next page](/release/whatsnew_2.3.0/).
+
+## 2.2.3
+The size of 2.2.3 grew to the point where we felt a new minor release was required.  The release will be called 2.3.0.
 
 ## 2.2.2
 Zen Cart 2.2.2 has been released; changes are now listed in [What's New in 2.2.x](/release/whatsnew_2.2.0).
