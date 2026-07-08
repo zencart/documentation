@@ -123,7 +123,7 @@ no = 'Sorry to hear that. Please <a href="https://github.com/zencart/documentati
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
 [[params.links.user]]
     name = "Mailing List"
-    url = "https://zen-cart.us2.list-manage.com/subscribe/post?u=be6e7e81b710d494302cc72bf&id=dabb02f6c1"
+    url = "https://zen-cart.us2.list-manage.com/subscribe/?u=be6e7e81b710d494302cc72bf&id=dabb02f6c1"
     icon = "fa fa-envelope"
         desc = "Occasional emails related to Zen Cart"
 [[params.links.user]]
