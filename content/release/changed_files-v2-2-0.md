@@ -1,6 +1,6 @@
 ---
 title: Changed Files in Version 2.2.x
-description: A list of file and folder changes in Zen Cart 2.2x.
+description: A list of file and folder changes in Zen Cart 2.2.x.
 category: release
 weight: 100
 layout: docs

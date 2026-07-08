@@ -1,6 +1,6 @@
 ---
-title: What's New in Version 2.2.x
-description: Features and fixes in Zen Cart 2.2.x
+title: What's New in Version 2.3.x
+description: Features and fixes in Zen Cart 2.3.x
 category: release
 weight: 100
 layout: docs
@@ -12,14 +12,14 @@ noindex: yes
 About PHP versions
 ==================
 
-Zen Cart v2.2.x is designed for PHP 8.2 to 8.5, with MySQL 5.7.8+ (or MariaDB 10.2.7+) and Apache 2.2/2.4.
+Zen Cart v2.3.x is designed for PHP 8.2 to 8.5, with MySQL 5.7.8+ (or MariaDB 10.2.7+) and Apache 2.2/2.4.
 
 Upgrade Instructions
 ====================
 
 See the [online docs](/user/upgrading/) for upgrading advice, including Release-Specific considerations to note regarding this version. 
   
-This document only mentions the actual changes specific to v2.2.x since v2.1.0.
+This document only mentions the actual changes specific to v2.3.x since v2.2.2.
 
 All Versions
 ------------
@@ -39,7 +39,7 @@ Always review the [Release Specific Upgrade Considerations](https://docs.zen-car
 CHANGELOG - List of Changed Files
 =================================
 
-For a list of files that have been changed since v2.1.0, see the [changed_files-v2.2.x](/release/changed_files-v2-2-0/) document.
+For a list of files that have been changed since v2.2.2, see the [changed_files-v2.3.x](/release/changed_files-v2-3-0/) document.
 
 Upgrading to a Responsive Template
 ==================================
@@ -78,57 +78,49 @@ If you're doing an upgrade from a pre-1.5.8 Zen Cart version and are worried abo
 
 For developers with language skills who would like to build a new translation, [developer information on Array based language files](/dev/languages/158_language_files/) is provided.
 
-## 2.2.3
-The size of 2.2.3 grew to the point where we felt a new minor release was required.  The release will be called 2.3.0.  Please see [What's New in 2.3.0](/release/whatsnew_2.3.0).
+## 2.3.0
 
-## 2.2.2
-The improvements in v2.2.2 include the following.  The changes which are most notable are bolded.
+**Please note: 2.3.0 has not been released yet**
 
-- Upgrade: Fix issue in `zc_install` version file.
+- Admin - Coupon min/max data entry clamping — guards against bad values entered in the admin
+- Admin - Fix: Additional images not copied when cloning a product — when using database mode for additional images, "Copy/Clone Product" now correctly associates the same image filenames with the new product ID
+- Admin — Fix infinite loop on MFA screen for non-superuser
+- Admin — Expandable textarea in define-pages edito
+- Admin — Template version now shown in template pulldow
+- Admin — Config settings with >2 options now use a dropdow
+- Admin — Show language icon toggle when 2 languages are activ
+- Admin — Restore product-views reset in Store Manager
+- Admin - Updated configuration tool to correct oversanitizatio
+- Admin - Display Logs plugin restricted to Super-Admin
+- Core - Non-breaking hyphen converted to dash in text-only emails (#7837) — fixes display issues in plain-text email clients
+- Core — Email logo alt text and title text are now separate field
+- Core — Correct fallback in loadExtraLanguageFile
+- Core - Updates to legacy PayPal modules
+- Plugins - Disabled plugins: sideboxes no longer loaded
+- Plugins - Disabled plugins: shipping and order_total modules no longer loaded
+- Plugins - Updated POSM, PayPalRestful.
+- Security -  Throttling on reviews, gift voucher redemptions, and MFA — rate limiting added to prevent abuse on `product_reviews_write`, `gv_redeem`, and the admin MFA page
+- Security - Admin order comments sanitized
+- Security - Idempotency guard in Authorize.net — prevents duplicate charge submissions
+- Security - Reject emails with invalid headers (`functions_email.php`) — header injection mitigation
+- Security - X-Content-Type-Options: nosniff header added to `responsive_classic` and `template_default` versions of `html_header`
+- Security - Improved log/export redaction — admin activity log and configuration export now better redact sensitive values
+- Security - Improved downloadable and customer-uploaded file handling — stricter controls in upload.php, `shopping_cart.php`, downloads manager, and attributes controller
+- Security — `HTTP_X_CSRF_TOKEN` header support for Ajax call
+- Security — Admin notices now restricted to authorized users onl
+- Security — Non-captcha validation added to ask-a-question pag
+- Security - Fix order display on status pag
+- Search — Allow legitimate long query strings
+- Storefront - Broken mobile menu in responsive_classic fixed
+- Storefront: Coupon race condition fixed — now revalidates at checkout time; previously a coupon could be applied but then become invalid (use-limit reached, time expired) between the payment page and the actual order write
+- Storefront - the "Sort by" dropdown on the product listing page may now be suppressed using a soft configuration variable
+- Storefront - Fixed Featured Categories error when none to display
+- Storefront - Fixed Contact Us page showing `main_page` in the Full Name field
+- Storefront — "Call for price" products were still showing a price
+- Storefront - State field fixes (required/alignment/JS) affecting checkout
+- Storefront - Correct WSOD when clicking "Buy Now" button during local testing
+- Storefront - Correct search with prices when prices are displayed with tax
 
-## 2.2.1 
-
-The improvements in v2.2.1 include the following.  The changes which are most notable are bolded.
-
-- **Admin: Order statuses are now color coded.** See [Orders Status](/user/admin_pages/localization/orders_status#color-coding).  This change makes the [Admin > Orders](/user/admin_pages/customers/orders#colors) screen easier to scan. 
-- Admin: Permit the saving of configuration values as HTML character codes.
-- Admin: Updates to System Inspection plugin.
-- **Admin: Additional images may now be specified in the database rather than using the older [filename matching mechanism](/user/images/image_filename_conventions/).  See [Additional Images Handling](/user/images/additional_images_database/) for details.**
-- Admin: Customers page now has a legend explaining the icons used in the Authorized column.
-- Admin: A sample cron job is provided for storeowners who wish to enable upcoming products at a specific time.  See [Cron Jobs within Zen Cart](/dev/admin/admin_cron/#existing-cron-jobs-within-zen-cart).
-- **Admin: [Customer account activation](/user/orders/customer_approval/#customer-account-activation) for customer accounts added.  Stores may now require that new accounts authenticate their email addresses for fraud control.**
-- Admin: The page Admins > Admin Page Registration has been removed.
-- **Admin: Configuration screen now allows all values in a group to be updated at once.  See [Configuration in Zen Cart 2.2.x](/user/admin_pages/configuration/v2.2.0/).**
-- Admin: Fixed - Payment modules with Zone restrictions could falsely show message "The configuration of the order's payment module has changed."
-- Admin: Fixed - Undefined constant error in `includes/functions/functions_exchange_rates.php`.
-- Admin: Payment, Shipping and Order Total Modules now grouped by status and sort order. 
-- Admin: Plugin Manager Modules now grouped by status and sort order. 
-- Admin: Fixed - Banner manager crashes when no image provided on update.
-- Admin: Improvements in Sales Report with Graphs.
-- Admin: TinyMCE added as the default admin  [HTML Editor](/user/running/html_editors). (CKEditor is locked at an older version; no updates planned.)
-- Admin: Added capability to customize the upper right link bar using a notifier. 
-- Admin: Fixed - Deprecated "Passing null to parameter #1" log created when viewing Admin Packingslip or Admin Invoice.
-- Core: We are simplifying the distribution by removing Laravel.
-- Core: Improved handling of `product` table records which do not have associated `products_description` records.
-- The `DB_CHARSET` setting in the `dist-configure.php` files (Storefront and Admin) has been updated to `utf8mb4`, which is the character set your database should be using at this point.  If it isn't, see [Converting to UTF8MB4](/user/upgrading/convert_to_utf8/) for instructions.
-- **Core: PayPal RESTful pulled in to core.  This updated integration is intended to replace the older PayPal integrations, which will be deprecated at some point in the future by PayPal.  All Zen Cart users are encouraged to upgrade.  For more information, see [PayPal RESTful](/user/payment/paypal_restful/).**
-- Core: Improved PHP 8.4 compatibility. Note that plugins may require updating to run without warnings under PHP 8.4. 
-- Core: Typo in notifier name `NOTIFY_ADMIN_INVOICE_HEADERS_AFTER_TAX` corrected.
-- Core: Updates to POSM to support [Edit Orders 5.0](https://www.zen-cart.com/downloads.php?do=file&id=2400).
-- Core: Correct PHP warnings when added product isn't POSM-managed 
-- **Core: Password reset via URL (versus emailing a temporary password) is being added to the core.  Credit to forum users Numinix and Retched for inspiration.**
-- Core: Improvements for International use.
-- Extras: Curltester now includes REST API endpoints for USPS and PayPal. 
-- Storefront: Wholesale customers are shown a header message acknowledging their wholesale status.
-- Storefront: Tax descriptions may now be multilingual.
-- Storefront: Password forgotten now disallowed for banned email addresses.
-- Storefront: Correct `get_template_dir` loading behavior for CSS, JS and PHP.
-- Storefront: Notifier added for additional product details.
-- Storefront: Updated embedded MobileDetect to latest version for `responsive_classic` template.
-- **Storefront: Updated - Refreshed look for responsive classic template.  See [this repo from contributor chadlly2003](https://github.com/chadlly2003/zencart_responsive_classic_redesign), and [the Responsive Classic Redesign help file](/user/template/responsive_classic_redesign/).**
-- Storefront: Fixed - Customer's wholesale status captured when order is placed.
-- Storefront: Fixed - PHP log created when empty shipping quote returned.
-- Storefront: Fixed - JavaScript problems can occur when `gv_balance` is null. This is an important fix for JavaScript heavy checkouts (OPC, some payment modules).
 
 ---
 

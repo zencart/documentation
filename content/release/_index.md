@@ -17,6 +17,7 @@ no_list: true
 
 ## What's New - Features and Bug Fixes
 
+- [What's New in v2.3.x](whatsnew_2.3.0)
 - [What's New in v2.2.x](whatsnew_2.2.0)
 - [What's New in v2.1.x](whatsnew_2.1.0)
 - [What's New in v2.0.x](whatsnew_2.0.0.html)
@@ -25,6 +26,7 @@ no_list: true
 
 ## Changed Files
 
+- [Changed in v2.3.x](changed_files-v2-3-0)
 - [Changed in v2.2.x](changed_files-v2-2-0)
 - [Changed in v2.1.x](changed_files-v2-1-0)
 - [Changed in v2.0.x](changed_files-v2-0-0.html)
