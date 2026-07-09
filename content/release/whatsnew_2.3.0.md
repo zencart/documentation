@@ -7,7 +7,10 @@ layout: docs
 noindex: yes
 ---
 
+### Zen Cart 2.3.0 is :stop_sign: <font color="red">NOT RELEASED YET</font> :stop_sign:  We anticipate release delivery in July 2026.
+
 {{% release_welcome %}}
+
 
 About PHP versions
 ==================
@@ -28,7 +31,7 @@ If you are upgrading from the prior release, please do a [standard site upgrade]
 
 If you are upgrading from a release which is older than the prior release, you may wish to consider starting again using a [database only upgrade](https://docs.zen-cart.com/user/upgrading/db_only_upgrade/).
 
-Many older templates are going to be difficult to bring forward. If you are using an older template - especially one that is not [responsive](https://docs.zen-cart.com/user/template/responsive/) - you may wish to consider migrating to [Responsive Classic](https://docs.zen-cart.com/user/template/responsive_classic/) or [Bootstrap](https://docs.zen-cart.com/user/template/bootstrap/).
+Many older templates are going to be difficult to bring forward. If you are using an older template - especially one that is not [responsive](https://docs.zen-cart.com/user/template/responsive/) - you may wish to update your template too. See the section below called [Upgrading to a Responsive Template](/release/whatsnew_2.3.0/#upgrading-to-a-responsive-template). 
 
 Be sure to review all the links in this article, including tips on staging the upgrade in a separate directory/folder.
 
@@ -46,7 +49,7 @@ Upgrading to a Responsive Template
 
 If your site doesn't look good on a mobile phone or a tablet, it's likely because it's using an older non-responsive template. You can read about [Responsive Templates](https://docs.zen-cart.com/user/template/responsive/) on the help site to learn more.
 
-If you are upgrading an older site, we recommend that you use a responsive template (rather than `template_default` or any older non-responsive template) as the starting point for your upgraded site. Both the [Responsive Classic](https://docs.zen-cart.com/user/template/responsive_classic/) and [Bootstrap](https://docs.zen-cart.com/user/template/bootstrap/) templates are good candidates.
+If you are upgrading an older site, we recommend that you use a responsive template (rather than `template_default` or any older non-responsive template) as the starting point for your upgraded site. Both the [Responsive Classic](https://docs.zen-cart.com/user/template/responsive_classic/) and [Bootstrap](https://docs.zen-cart.com/user/template/bootstrap/) templates are good candidates.  And if you like Responsive Classic, be sure to look at the [Responsive Classic Redesign](https://docs.zen-cart.com/user/template/responsive_classic_redesign/).
 
 Upgrader Notes About Changes to `template_default`
 =================================================
@@ -83,18 +86,18 @@ For developers with language skills who would like to build a new translation, [
 **Please note: 2.3.0 has not been released yet**
 
 - Admin - Coupon min/max data entry clamping — guards against bad values entered in the admin
-- Admin - Fix: Additional images not copied when cloning a product — when using database mode for additional images, "Copy/Clone Product" now correctly associates the same image filenames with the new product ID
-- Admin — Fix infinite loop on MFA screen for non-superuser
-- Admin — Expandable textarea in define-pages edito
-- Admin — Template version now shown in template pulldow
-- Admin — Config settings with >2 options now use a dropdow
-- Admin — Show language icon toggle when 2 languages are activ
-- Admin — Restore product-views reset in Store Manager
+- Admin - Additional images not copied when cloning a product — when using database mode for additional images, "Copy/Clone Product" now correctly associates the same image filenames with the new product ID
+- Admin - Fix infinite loop on MFA screen for non-superuser
+- Admin - Expandable textarea in define-pages edito
+- Admin - Template version now shown in template pulldow
+- Admin - Config settings with >2 options now use a dropdow
+- Admin - Show language icon toggle when 2 languages are activ
+- Admin - Restore product-views reset in Store Manager
 - Admin - Updated configuration tool to correct oversanitizatio
 - Admin - Display Logs plugin restricted to Super-Admin
 - Core - Non-breaking hyphen converted to dash in text-only emails (#7837) — fixes display issues in plain-text email clients
-- Core — Email logo alt text and title text are now separate field
-- Core — Correct fallback in loadExtraLanguageFile
+- Core - Email logo alt text and title text are now separate field
+- Core - Correct fallback in loadExtraLanguageFile
 - Core - Updates to legacy PayPal modules
 - Plugins - Disabled plugins: sideboxes no longer loaded
 - Plugins - Disabled plugins: shipping and order_total modules no longer loaded
@@ -106,17 +109,17 @@ For developers with language skills who would like to build a new translation, [
 - Security - X-Content-Type-Options: nosniff header added to `responsive_classic` and `template_default` versions of `html_header`
 - Security - Improved log/export redaction — admin activity log and configuration export now better redact sensitive values
 - Security - Improved downloadable and customer-uploaded file handling — stricter controls in upload.php, `shopping_cart.php`, downloads manager, and attributes controller
-- Security — `HTTP_X_CSRF_TOKEN` header support for Ajax call
-- Security — Admin notices now restricted to authorized users onl
-- Security — Non-captcha validation added to ask-a-question pag
+- Security - `HTTP_X_CSRF_TOKEN` header support for Ajax call
+- Security - Admin notices now restricted to authorized users onl
+- Security - Non-captcha validation added to ask-a-question pag
 - Security - Fix order display on status pag
-- Search — Allow legitimate long query strings
+- Search - Allow legitimate long query strings
 - Storefront - Broken mobile menu in responsive_classic fixed
-- Storefront: Coupon race condition fixed — now revalidates at checkout time; previously a coupon could be applied but then become invalid (use-limit reached, time expired) between the payment page and the actual order write
+- Storefront - Coupon race condition fixed — now revalidates at checkout time; previously a coupon could be applied but then become invalid (use-limit reached, time expired) between the payment page and the actual order write
 - Storefront - the "Sort by" dropdown on the product listing page may now be suppressed using a soft configuration variable
 - Storefront - Fixed Featured Categories error when none to display
 - Storefront - Fixed Contact Us page showing `main_page` in the Full Name field
-- Storefront — "Call for price" products were still showing a price
+- Storefront - "Call for price" products were still showing a price
 - Storefront - State field fixes (required/alignment/JS) affecting checkout
 - Storefront - Correct WSOD when clicking "Buy Now" button during local testing
 - Storefront - Correct search with prices when prices are displayed with tax

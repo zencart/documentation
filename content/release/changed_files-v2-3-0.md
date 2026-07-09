@@ -7,6 +7,7 @@ layout: docs
 noindex: yes
 ---
 
+### Zen Cart 2.3.0 is :stop_sign: <font color="red">NOT RELEASED YET</font> :stop_sign:  We anticipate release delivery in July 2026.
 
 {{% release_welcome %}}
 
@@ -18,7 +19,7 @@ You may also consult the [Zen Cart® Support Forum](https://www.zen-cart.com/for
 Consult the online docs for Release-Specific considerations to note regarding this version. [https://docs.zen-cart.com/user/upgrading/](https://docs.zen-cart.com/user/upgrading/)  
   
 A detailed list of all edits to all files can be seen on Github at:  
-[v2.2.0...v2.3.0](https://github.com/zencart/zencart/compare/v2.2.0...v2.3.0)  
+[v2.2.2...v2.3.0](https://github.com/zencart/zencart/compare/v2.2.2...v2.3.0)  
 
 CHANGED Files in v2.3.0
 =======================
@@ -40,7 +41,7 @@ NEW Files in v2.3.0
 ===================
 - TBD
 
-DELETED Files in 2.3.0 (since v2.2.0)
+DELETED Files in 2.3.0 (since v2.2.2)
 =====================================
 - TBD
  
