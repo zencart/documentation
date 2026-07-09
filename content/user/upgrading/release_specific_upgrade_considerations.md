@@ -26,6 +26,9 @@ This document lists things you may wish to take into account as you upgrade.  Th
 
 - Do an [accessibility review](/user/accessibility/accessibility/) of your site.  This is especially important if you use template other than [Bootstrap](/user/template/bootstrap/), since many older templates were not built to be accessible.
 
+### Zen Cart 2.3.0 
+- No specific warnings.
+
 ### Zen Cart 2.2.0 
 
 - The notifier `NOTIFY_ADMIN_INVOICE_HEADERS_AFTER_TAX` was misspelled in older releases as `NOTIFY_ADMIN_INVOIVE_HEADERS_AFTER_TAX`.  Users of this notifier should update to the corrected spelling. 

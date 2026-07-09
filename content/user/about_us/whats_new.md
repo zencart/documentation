@@ -7,6 +7,7 @@ weight: 10
 
 > Note: If you want to see What's **Next** for Zen Cart instead, please [click here](/release/whatsnext/).
 
+- July 2026: Preparing for the release of [Zen Cart 2.3.0](/release/whatsnew_2.3.0/).
 - May 2026: Redesign of the Zen Cart forum moves into test; feedback from community is being integrated as work moves forward.  See [New Website Feedback](https://www.zen-cart.com/showthread.php/231090-Announcements).  
 - April 2026: Zen Cart 2.2.2 released to fix a small installer issue.  Here's the [Zen Cart 2.2.2 Release Announcement](https://www.zen-cart.com/showthread.php/231075-Zen-Cart-2-2-2-Released).
 - March 2026: New plugin created for maintenance of the PayPal REST bundled into Zen Cart 2.2.1 and higher; see [https://www.zen-cart.com/downloads.php?do=file&id=2434](https://www.zen-cart.com/downloads.php?do=file&id=2434).
