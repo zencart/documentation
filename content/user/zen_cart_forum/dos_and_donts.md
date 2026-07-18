@@ -12,7 +12,7 @@ Above all, *be polite*.
 - If you're asking for help, the people trying to help you are volunteers, _not your staff_.  Is your tone appropriate? 
 - Don't take your frustrations out on people in the forum.
 
-If you behave rudely, the people best positioned to help you may [block you](/user/zen_cart_forum/ignore/), preventing you from getting the help you need. 
+If you behave rudely, the people best positioned to help you may [block your private messages](/user/zen_cart_forum/ignore/). This won't stop you from posting or reading replies in the forum itself, but it does mean that person will no longer be reachable by you (or reach you) through private message. 
 
 ### Do:
 
