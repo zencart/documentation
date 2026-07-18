@@ -35,7 +35,7 @@ Happy to be Zenning today
 
 5.  You may not have any sales/marketing material.
 
-7.  You may not exceed 250 characters in your signature. (The forum software will technically accept longer signatures, but 250 characters is house policy and moderators may ask you to shorten a longer one.)
+7.  You may not exceed 250 characters in your signature. This is enforced by the forum software - it will not let you save a longer signature.
 
 9.  You may not have any content or links that reference material that is offensive or may be considered to be offensive.  
 
