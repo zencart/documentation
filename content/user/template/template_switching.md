@@ -5,9 +5,9 @@ category: template
 weight: 10
 ---
 
-**Note:** Users of Zen Cart 2.0.0 and above have access to the even more powerful [template settings](/dev/storefront/template_settings/) file feature. 
+The process of changing templates (and recording that selection in the database) is done using the [Template Selection](/user/admin_pages/tools/template_selection/) tool, available under the admin's "Tools" menu. 
 
-The process of changing templates can be done using the [Template Selection](/user/admin_pages/tools/template_selection/) screen under Admin > Tools. 
+**Note:** The feature described below is no longer supported as of Zen Cart 3.0.0. Template-specific settings for templates supporting Zen Cart 2.0.0 and later should use the (more powerful) [template settings](/dev/storefront/template_settings/) feature. 
 
 But what if the templates you are switching between expect different configuration values?  It's tedious to do these by hand, especially if you're switching back and forth doing tests.
 
