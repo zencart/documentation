@@ -11,7 +11,7 @@ weight: 10
 
 *   Check the [Zen Cart documentation](/user/)
 
-*   [Search the forum](https://www.zen-cart.com/search.php)
+*   [Search the forum](https://www.zen-cart.com/search)
 
 *   Read the Implementation Guide for a possible answer to your problem.  A link to the most current PDF Implementation Guide can be found at the top of [the release docs page](https://www.zen-cart.com/docs/).
 

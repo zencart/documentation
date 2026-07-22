@@ -7,16 +7,13 @@ weight: 10
 
 Sometimes you'll read about a plugin and want to try it yourself. 
 
-Here's how to find it in the Plugins Library: 
+Here's how to find it:
 
-- Go to Plugin Library
-https://www.zen-cart.com/downloads.php
+- Go to the [Plugin Library](https://www.zen-cart.com/plugins) and browse by
+  category, or use the type filter and sort options on that page.
 
-- click Advanced Search
-
-- Enter the plugin name in the search box, and set the dropdown to Search Titles only.
-
-This should find the plugin for you if it is in the Plugins Library. 
+- Or use the sitewide [search](https://www.zen-cart.com/search) and enter the
+  plugin name - search results include plugins alongside forum threads and pages.
 
 Another option is to use Google to search for a plugin.  
 

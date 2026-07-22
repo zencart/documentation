@@ -7,7 +7,8 @@ weight: 10
 
 ## Signature Line Guidelines
 
-Updated August 2011
+You can add a signature from your [profile](https://www.zen-cart.com/profile) - it will
+appear underneath every post you make.
 
 ### You may:
 
@@ -34,7 +35,7 @@ Happy to be Zenning today
 
 5.  You may not have any sales/marketing material.
 
-7.  You may not exceed 250 characters in your signature.
+7.  You may not exceed 250 characters in your signature. This is enforced by the forum software - it will not let you save a longer signature.
 
 9.  You may not have any content or links that reference material that is offensive or may be considered to be offensive.  
 
@@ -64,4 +65,3 @@ Buy my shoes! Cheap knocks offs at myShoesCheap.com
 If your site contains material not suitable for certain audiences, please be sure to provide a warning!
 
 The Zen Cart founders and moderators will be the final arbiters of any dispute over the interpretation of these rules.
-
