@@ -13,3 +13,4 @@ If you wish to create accounts from your admin, several options are available:
 - [Add Customers from Admin by dbltoe](https://www.zen-cart.com/downloads.php?do=file&id=2445)
 - [Add Customers from Admin for 1.5.x by lat9](https://www.zen-cart.com/downloads.php?do=file&id=1477)
 
+A feature comparison between the two newer plugins is provided [here](https://github.com/dbltoe/admin_add_customer/blob/main/comparison.md).
