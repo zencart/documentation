@@ -11,7 +11,7 @@ There are many cases where it is beneficial to login to a customer's account.
 - Placing an order on their behalf 
 - Pre-loading the cart for them to complete an order.
 
-The [Login as Customer](/user/running/login_as_customer/) feature allows you to 
+The [Place Order](/user/running/login_as_customer/) feature, available since Zen Cart 1.5.7,  allows you to 
 select a customer's account in Admin > Customers and login as them using your admin credentials
 by clicking the "Place Order" button on the side box showing their account. 
 
