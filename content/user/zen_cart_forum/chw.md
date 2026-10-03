@@ -5,12 +5,17 @@ category: zen_cart_forum
 weight: 10
 ---
 
-The [Commercial Help Wanted](https://www.zen-cart.com/forumdisplay.php?138-Commercial-Help-Wanted) forum allows users who want to hire a web pro do so 
-within the Zen Cart forum.  It's free to post jobs, but to see the posts,
-developers have to pay a subscription fee, so it helps the project.
+The Commercial Help Wanted forum lets users who want to hire a web pro post a job
+within the Zen Cart forum. It's free to post a job.
 
-### HOW IT WORKS: 
-People who have paid to subscribe in order to see all the posts in this area (so they can respond to your requests) will see your post when they next look at their unread forum posts. Then if they think you've given them enough information and they think that their skills are enough to provide what you're asking for, they will send you a [private message](/user/zen_cart_forum/pm/) - also called a PM - with an offer to help.
+> **Status:** the paid-subscription-to-view model described below is the intended
+> design for this forum on the new site, but it is not yet turned on. Membership
+> plans have not been configured, so the forum is currently staff-only while
+> that work is finished. Check back here, or ask on the forum, before relying
+> on this section.
+
+### HOW IT WORKS (once configured):
+Developers who subscribe to a paid membership plan (via [Account &gt; Billing](https://www.zen-cart.com/account/billing)) will be able to see posts in this forum and respond to them. If a subscribed developer thinks you've given them enough information and that their skills match what you're asking for, they will send you a private message (also called a PM - see [Private Messages](/user/zen_cart_forum/pm/)) with an offer to help.
 
 ### IF YOU GET NO RESPONSE: 
 It could be for many reasons, including possibly: not enough information to understand what you're needing, they don't think they know how to do it, they don't feel you would be willing to pay them appropriately, or maybe they just haven't logged in yet and haven't seen what you've posted.
@@ -21,11 +26,9 @@ It could be for many reasons, including possibly: not enough information to unde
 - indicate your timeline so they can determine whether they are available to do the work in the timeframe you require it;
 
 ### I'M A DEVELOPER - HOW DO I JOIN? 
-Use the [CHW Payment Page](https://www.zen-cart.com/payments.php) on the Zen Cart forum. 
+Once membership plans are live, you'll subscribe from [Account &gt; Billing](https://www.zen-cart.com/account/billing) on your account.
 
 ### NO WARRANTY
 AS WITH ANY PAID HELP SCENARIO, YOU MUST DO YOUR OWN INDEPENDENT ASSESSMENT OF A SERVICE-PROVIDER BEFORE ENGAGING IN A CONTRACT WITH THEM.
 
 ZEN CART DOES NOT WARRANTY THE QUALITY OF ANY RESPONSE YOU MAY RECEIVE FROM POSTING.
-.
-
