@@ -7,7 +7,7 @@ layout: docs
 noindex: yes
 ---
 
-### Zen Cart 2.3.0 is :stop_sign: <font color="red">NOT RELEASED YET</font> :stop_sign:  We anticipate release delivery in July 2026.
+### Zen Cart 2.3.0 is :stop_sign: <font color="red">NOT RELEASED YET</font> :stop_sign:  
 
 {{% release_welcome %}}
 
