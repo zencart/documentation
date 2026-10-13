@@ -9,24 +9,15 @@ This content applies to [Square Webpay](/user/payment/square/) only.
 
 **Please note the specific versions below are examples only - the current version may use different dates.  Be sure to get the correct API version for your copy of Square WebPayments.**
 
-For versions 3.x and above, the Square API version is set in the file 
-`includes/modules/payment/square_webPay/square/square/src/Legacy/ConfigurationDefaults.php`
+The API version in use is shown in Admin > Modules > Payment > Square WebPay at the top of the screen.  It looks like this: 
 
-It looks like this:
-```
-    public const SQUARE_VERSION = '2025-01-23';
-``` 
+![Square API Version in Zen Admin](/images/square_api_version_zc.png)
 
-For versions 2.x and below, the Square API version is set in the file 
-`includes/modules/payment/square_webPay/square/square/src/ConfigurationDefaults.php`
+<br>
 
-It looks like this:
-```
-    public const SQUARE_VERSION = '2024-01-18';
-``` 
+This means the version you will want to specify in the Square app (see below) is "2026-01-22"
 
-
-Be sure to specify the correct version on the Credentials page for your App when you first install Square Webpay, and every time you update the Square Webpay software.  To change the version for your site, go to https://connect.squareup.com/apps, select your app, then click "App details" on the left sidebar.  
+Be sure to specify the correct version on the Credentials page for your Square App (in connect.squareup.com) when you first install Square Webpay, and every time you update the Square Webpay software.  To change the version for your site, go to https://connect.squareup.com/apps, select your app, then click "App details" on the left sidebar.  
 
 ![Square App Details](/images/square_app_details.png)
 
