@@ -7,27 +7,10 @@ weight: 10
 
 ### You can ...
 
-*   Click on your Username inside any post
+*   Click on a username inside any post to open that member's profile.
 
-*   Select "Find other posts by this user" from the pulldown menu.
+*   On the profile page, choose the "Posts" tab to see all of that member's posts,
+    or the "Threads" tab to see all of the threads they started.
 
-### OR ...
-
-*   Click on the "Settings" link in the upper-right forum nav bar.
-
-*   Pick "Find more posts by this member" or "Find all threads started by this member".
-
-### OR ...
-
-*   Click "Quick Links" in the forum menu bar
-
-*   Choose the "Members List"
-
-*   Click the Search Members or look through the alphabetical lists.
-
-*   Click the forum member's name to view their profile.
-
-*   Choose the Statistics tab
-
-*   Click the "Find all posts by..." or "Find all threads started by ..." link
-
+This works the same way for your own profile - click your own username, or open
+your profile from the account menu, to see your own Posts and Threads tabs.
