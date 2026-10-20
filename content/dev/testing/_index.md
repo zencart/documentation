@@ -523,124 +523,243 @@ The container supplies PHP and tooling. Zen Cart source code is still mounted fr
 - The `zc_install` directory must be present for database bootstrap and demo-data loading.
 {{% /tab %}}
 {{% tab header="v2.x" %}}
-The Test Framework resides within the `not_for_release/testFramework` directory. This directory is only really available
-if you `checkout` the Zen Cart code using `git`. It is not available if you just download the Zen Cart code as a zip file 
-via a `release` link.
+This tab describes the test framework as it exists on the `2.2` branch (and `2.1`, where noted). The framework lives in `not_for_release/testFramework` and is only present if you clone the Zen Cart repository with `git`. It is not included in release zip downloads.
 
-ALERT: Running Zen Cart tests locally has the potential to **overwrite your Zen Cart database and destroy local data.**
+> **Warning:** Feature tests rebuild the database they are pointed at, on every test class. Never point them at a database that holds real store data. Use a dedicated test database.
 
-FIXME - work in progress
+## How it works
 
-## Initial Setup
+- **PHPUnit 9** runs three suites, defined in `phpunit.xml`: `Unit`, `FeatureStore` and `FeatureAdmin`.
+- **Unit tests** run in the PHPUnit process with `--process-isolation`. They need no database and no web server.
+- **Feature tests** drive a real, running copy of Zen Cart over HTTP using Symfony's `HttpBrowser`. The test code fetches pages and submits forms from `HTTP_SERVER`, and checks the HTML that comes back. They do not run JavaScript.
+- Before each feature test class, the framework drops and rebuilds the test database from `zc_install/sql/install/mysql_zencart.sql`, `mysql_utf8.sql` and `sql/demo/mysql_demo.sql`, and then runs the `InitialSetupSeeder`. Every test class therefore starts from the same demo-data store, and the `zc_install` directory must be present.
+- The web server that serves `HTTP_SERVER` and the PHPUnit process both need to read the same database settings. When the web server receives a request from the test browser (or is started with the environment variable `ZENCART_TESTFRAMEWORK_RUNNING=1`), Zen Cart loads a test configure file in place of `includes/configure.php`.
 
-1. All of the tests are run using the command-line. If you're on Windows, you need to use the WSL2 (Windows Subsystem for Linux). On Mac, you can use the built-in Terminal, or install iTerm for a more user-friendly terminal experience. On Linux use Terminal.
+## Initial setup
 
-2. In a new directory, used specifically for running tests, use git to checkout the latest Zen Cart code. This can be done with command-line tools or GUI tools. 
+1. Run everything from the command line. On Windows use WSL2. On macOS and Linux use the normal terminal.
+2. Use a separate clone of the Zen Cart repository for testing, at the branch you want to test.
+3. Create an empty database for testing. The database user needs permission to drop and create tables in it.
+4. Have a web server serving the clone at a URL you will set as `HTTP_SERVER` in the configure files below. Two common choices:
+   - **DDEV**: the framework recognises a DDEV project automatically. Its example configure files use `https://zencart.ddev.site`, database host `db`, and user, password and database name of `root`, `root` and `db`.
+   - **PHP's built-in server**, which is what the GitHub Actions workflows use (see [Using the PHP built-in server](#using-the-php-built-in-server)).
 
-3. Also create a new database specific for testing. The feature-tests below are destructive and will make many changes to the database, so should not be used on a database that you share for a real store. See the Feature Tests section below for how to specify the database in special config files.
+## Installing the test tools
 
-## Preparation
+1. Install [Composer](https://getcomposer.org/).
+2. From the root of the clone, run:
 
-To prepare to run the Unit Test and Feature Test suites:
+   ```bash
+   composer install
+   ```
 
-1. Install Composer on your PC:
+   This installs PHPUnit, Symfony BrowserKit, HttpClient and the other test-only dependencies from `composer.json`.
 
-* go to `getcomposer.org`
-* download and install according to your operating system
-* follow the Getting Started instructions.
+3. If your PHP version is 8.4 or newer and the install fails, or tests fail with errors from inside `vendor`, run `composer update` to move the test tools to newer versions. Running it again from time to time is also a reasonable way of picking up updates.
 
-2. Run `composer install` from inside the root directory of your Zen Cart files, on your PC. This will install the base test-tool dependencies.
+## Running the tests
 
-3. Then, if your PHP version is newer than PHP 8.3+, also run `composer update` to patch the test-tool dependencies to more modern versions.
+| Command | Runs |
+| --- | --- |
+| `composer unit-tests` | The `Unit` suite only |
+| `composer feature-tests` | `FeatureStore` and `FeatureAdmin` together |
+| `composer feature-tests-store` | Storefront feature tests |
+| `composer feature-tests-admin` | Admin feature tests |
 
-While probably unnecessary unless upgrading the PHP version, you could re-run `composer update` periodically to grab latest updates of the test-tool dependencies.
+Each is a shortcut in `composer.json` for a `phpunit --testsuite ...` command. You can also call PHPUnit directly, which is useful for running one test class or method:
 
-
-## Unit Tests
-
-Unit tests can be run using:
-
+```bash
+vendor/bin/phpunit --testsuite FeatureStore --filter CreateAccountTest
+vendor/bin/phpunit --testsuite Unit --process-isolation --filter DiscountCouponsTest
 ```
-composer unit-tests
+
+Logs written by the application during a test run are copied to `not_for_release/testFramework/logs/console/store/` or `.../admin/`, which is also what the CI jobs upload as artifacts when a run fails.
+
+## Unit tests
+
+Unit tests live in `not_for_release/testFramework/Unit/`, in a directory per area (for example `testsCategories/` and `testsNotifiers/`). Test files must end in `Test.php`.
+
+Extend `Tests\Support\zcUnitTestCase`. Its `setUp()` defines the constants and loads the files a test needs to run Zen Cart classes on their own (paths, `database_tables.php`, `filenames.php`, a notifier instance and the polyfills), so call `parent::setUp()` first. It also provides `mockIterator()` and `assertURLGenerated()`.
+
+```php
+namespace Tests\Unit\testsExample;
+
+use Tests\Support\zcUnitTestCase;
+
+class ExampleTest extends zcUnitTestCase
+{
+    public function setUp(): void
+    {
+        parent::setUp();
+        require_once DIR_FS_CATALOG . DIR_WS_CLASSES . 'category_tree.php';
+    }
+
+    public function testSomething()
+    {
+        $this->assertTrue(true);
+    }
+}
 ```
 
-in the root directory of your Zen Cart install.
+No local configuration is needed to run unit tests. The CI job only creates an empty `includes/configure.php` first.
 
-Currently there are no local configuration requirements needed to run unit tests.
+## Feature tests
 
-## Feature Tests
+### Configure files
 
-(Before running Feature Tests, you will need to set the Feature Test Configuration Files as described in the next section.)
+Feature tests need configure files that tell Zen Cart which URL, directory and database to use during a test run. Put them in `not_for_release/testFramework/Support/configs/`. They are ignored by git.
 
-While unit tests allow testing of functions/classes and other small fragments of code, feature tests allow 
-testing of the application as a whole. The tests will typically emulate a browser to access the application via URLs and inspect the resulting HTML returned by those URLs.
-Feature tests can also interact with the application, by setting form values and submitting those forms.
+You need one file for each of these contexts:
 
-> NOTE: Current feature tests don't support javascript so interactions with pages that rely on javascript operating may not be possible.
-It is planned in the future to allow interactions with pages that rely on javascript using something like `Selenium` or `Panther`.
+| File | Used by |
+| --- | --- |
+| `<name>.store.configure.php` | The storefront, and `FeatureStore` tests |
+| `<name>.admin.configure.php` | The admin, and `FeatureAdmin` tests |
+| `<name>.main.configure.php` | The test runner itself (optional, see [Mail server](#mail-server-emulation)) |
 
-**WARNING: Feature tests rely on Re-creating the database on each separate test suite. This means it will destroy your database content.**
-However, given that you should only be testing on a local development environment, this shouldn't be a problem.
+Copy `store.configure.php.example` and `admin.configure.php.example` as starting points. They have the same format as the normal Zen Cart `configure.php` files. Set at least `HTTP_SERVER` (and `HTTPS_SERVER` for the store), `DIR_FS_CATALOG` and the `DB_*` settings. **The test database is specified here.** The store and admin files must use the same database.
 
-Feature tests can be run using the following in the root directory of your Zen Cart install.
+**Choosing `<name>`**
 
-- `composer feature-tests` will run all feature tests
-- `composer feature-tests-store` will run feature tests just for the store
-- `composer feature-tests-admin` will run feature tests just for the admin
+- On the `2.2` branch the framework looks for files for these names, in this order: your login user, then `ddev`, then `runner`. Under DDEV the user is always `ddev`. To see which user the framework detects:
 
+  ```bash
+  php not_for_release/testFramework/detectUser.php
+  ```
 
-### Configuration for Feature Tests
+- For each name, it first looks for a file specific to the branch you are on, and then for the generic one. For example, on `2.2` it tries `ddev.2.2.store.configure.php` and then `ddev.store.configure.php`. This lets one working copy keep separate settings for several branches. The branch is taken from the environment variables `ZENCART_TESTFRAMEWORK_BRANCH_FAMILY`, `ZENCART_TESTFRAMEWORK_BASE_BRANCH` or `GITHUB_BASE_REF`, otherwise from your checked-out branch if it is `master` or `2.2`, otherwise from whichever of those two is nearest in the git history. Set `ZENCART_TESTFRAMEWORK_BRANCH_CANDIDATES` (default `master,2.2`) to change the branches considered.
+- The `runner.*.configure.php` files are committed to the repository for GitHub Actions. They use `127.0.0.1` for the database and `HTTP_SERVER` from the environment, but `DIR_FS_CATALOG` is a GitHub runner path. Do not use them locally without changing that. Create your own files instead.
+- On the `2.1` branch there is no fallback and no branch matching. The files must be named exactly `<user>.store.configure.php` and so on, where `<user>` is the value from `detectUser.php` (`ddev` under DDEV).
 
-Feature tests override the standard `configure.php` files used by Zen Cart and require you to create special new configuration files just for testing purposes.
+If no matching file is found the tests stop with a message naming the directory they searched.
 
-Your configure files should be created in the `not_for_release/testFramework/Support/configs` directory and will be named 
-`_USER_.store.configure.php` and `_USER_.admin.configure.php` where the `_USER_` must be replaced by the user that your local environment runs as (ie: the username that you're logged into your PC with).
+### Using the PHP built-in server
 
-You can find that `user` by running the following from the root of your installation.
+You do not need Apache or DDEV. In one terminal, start the server from the root of the clone:
 
-`php ./not_for_release/testFramework/detectUser.php`
+```bash
+HTTP_SERVER=http://localhost:8000 \
+ZENCART_TESTFRAMEWORK_RUNNING=1 \
+ZENCART_TESTFRAMEWORK_CONFIG_USER=<name> \
+php -d auto_prepend_file="$PWD/not_for_release/testFramework/Support/php_server_prepend.php" \
+    -S localhost:8000 -t .
+```
 
-These files are exactly the same format as standard Zen Cart `configure.php` files and you can copy the 
-`admin.configure.php.example` and `store.configure.php.example` files as starting points.
+where `<name>` is the prefix of your configure files. In another terminal run the tests with `HTTP_SERVER=http://localhost:8000` set in the environment. This is the same sequence as in `.github/workflows/zc_feature_test_store_suite.yml`, which you can copy from.
 
-It is inside these special configure.php files where you will **specify the testing database**.
+### Writing a feature test
 
+Feature tests live in `not_for_release/testFramework/FeatureStore/` and `FeatureAdmin/`. Extend the matching base class:
 
-### Migrations and Seeders
+- `Tests\Support\zcFeatureTestCaseStore`
+- `Tests\Support\zcFeatureTestCaseAdmin`
 
-As the functional tests rely on a populated database, the test framework uses the `mysql` install files and demo data found within 
-the `zc_install` folder, so this directory needs to be present.
+They provide `$this->browser` (a Symfony `HttpBrowser` with cookie support), and helper methods from these traits, which they already use:
 
-#### Adding extra database content for new tests
-There may be times though where you may want to alter the data to test a specific bug. 
-An example may be when a search is not finding a product that contains certain strings, 
-or a salemaker with specific data is not applying correctly.
+| Trait | Helpers |
+| --- | --- |
+| `GeneralConcerns` | `buildStoreLink($page)`, `buildAdminLink($cmd)`, `browserAdminLogin()`, `locateElementInPageSource()`, and the plugin file helpers `installPluginToFilesystem()` and `removePlugin()` |
+| `CustomerAccountConcerns` | `createCustomerAccountOrLogin($profile)`, `loginCustomer()`, `logoutCustomer()`, gift voucher and group-discount setup |
+| `ConfigurationSettingsConcerns` | `setConfiguration($key, $value)`, `getConfigurationSetting($key)`, and switches for tax-inclusive pricing and shipping tax |
+| `DiscountCouponConcerns` | `createCoupon($profile)` |
+| `LowOrderFeeConcerns` | `switchLowOrderFee($mode)` |
+| `LogFileConcerns` | `logFilesExists()` |
 
-In these cases you can create your own data seeder to add this data just for your test.
+Customer and admin details come from named profiles in `Support/helpers/ProfileManager.php`, such as `florida-basic1` or `admin`. The admin login is `Admin` / `password`.
 
-Custom seeders are created in the `not_for_release/testFramework/Support/database/Seeders/` directory.
+For direct database checks use `Tests\Support\Database\TestDb` (`selectOne()`, `selectValue()`, `insert()`, `update()`, `truncate()`). It uses prepared statements and is available on `2.2`. On `2.1`, tests query the database through Eloquent models (for example `App\Models\Customer`) instead.
 
-An example is `not_for_release/testFramework/Support/database/Seeders/CustomSeeders/StoreWizardSeeder.php`
+```php
+namespace Tests\FeatureStore\CreateAccount;
 
-You can run a custom seeder in your tests using 
+use Tests\Support\Database\TestDb;
+use Tests\Support\Traits\CustomerAccountConcerns;
+use Tests\Support\zcFeatureTestCaseStore;
 
-`$this->runCustomSeeder('StoreWizardSeeder');`
+class CreateAccountTest extends zcFeatureTestCaseStore
+{
+    use CustomerAccountConcerns;
 
-replacing `StoreWizardSeeder` with the name of your seeder class.
+    public function testCreateAccount()
+    {
+        $profile = $this->createCustomerAccountOrLogin('florida-basic1');
 
-### Mail Server Emulation
+        $customer = TestDb::selectOne(
+            'SELECT customers_firstname FROM customers WHERE customers_email_address = :email LIMIT 1',
+            [':email' => $profile['email_address']]
+        );
+        $this->assertSame($profile['firstname'], $customer['customers_firstname']);
+    }
+}
+```
 
-**By default the Test Framework disables the sending of emails.** 
-This can be overridden by usng another configure file: 
-An example exists at `not_for_release/testFramework/Support/configs/main.configure.php.example`
+To check a page directly, use the browser:
 
-Note: Any misconfiguration here will likely result in failing tests.
+```php
+$this->browser->request('GET', $this->buildStoreLink('shopping_cart'));
+$this->assertEquals(200, $this->browser->getResponse()->getStatusCode());
+```
 
-As with other configure files noted above the actual configure file should be named 
-`_USER_.store.configure.php` with `_USER_` being replaced by the user running the tests.
+### Seeders
 
-The example referred to above shows settings for using a local `Mailpit` (an email server emulator) instance, which is an application you would need to install separately.
-Yes, you could specify your own real mail server, but beware that when the tests send repeated similar messages they may get falsely treated as spam and may mess with your sender-reputation score. 
-Mailtrap.io is a developer-friendly tool with a free-tier to accommodate email testing, and is easy to configure.
+Custom seeders add or change database rows for one test. They live in `not_for_release/testFramework/Support/database/Seeders/` in the `Seeders` namespace, with a `run()` method. Run one from a test:
+
+```php
+$this->runCustomSeeder('StoreWizardSeeder');
+```
+
+Replace `StoreWizardSeeder` with the name of your class. Existing seeders include `StoreWizardSeeder` (store name and owner), `CouponTableSeeder`, `CompoundTaxesSeeder` and `DisplayLogsSeeder`.
+
+```php
+namespace Seeders;
+
+use Tests\Support\Database\TestDb;
+
+class MySeeder
+{
+    public function run()
+    {
+        TestDb::update(
+            'configuration',
+            ['configuration_value' => 'My Test Store'],
+            'configuration_key = :config_key',
+            [':config_key' => 'STORE_NAME']
+        );
+    }
+}
+```
+
+### Mail server emulation
+
+By default the framework disables sending of email. A `main` configure file can switch on an SMTP test server, for example [Mailpit](https://mailpit.axllc.net/) (included with DDEV). It returns an array:
+
+```php
+<?php
+return [
+    'use-server' => true,
+    'use-mailserver' => true,
+    'mailserver-host' => 'localhost',
+    'mailserver-port' => 1025,
+    'mailserver-user' => 'ddev',
+    'mailserver-password' => 'mailpit',
+];
+```
+
+Save it as `<name>.main.configure.php`. The committed `runner.main.configure.php` shows the same keys with `use-mailserver` set to `false`. In the `2.2` set-up code both `use-server` and `use-mailserver` must be present and true, which is why the example sets both. A wrong setting here usually shows up as failing tests. Avoid pointing it at a real mail server, since repeated similar test messages may get flagged as spam.
+
+### Plugin tests
+
+`FeatureAdmin/PluginTests/` shows how to test plugin installation. The sample plugin used is in `Support/plugins/zenTestPlugin/`. A test copies it into `zc_plugins/` with `installPluginToFilesystem()` and removes it with `removePlugin()`.
+
+## Running in CI
+
+The repository has three GitHub Actions workflows, `zc_unit_test_suite.yml`, `zc_feature_test_store_suite.yml` and `zc_feature_test_admin_suite.yml`. They run against several PHP versions, start MySQL as a service, start the built-in PHP server with the `runner` profile, and then run the relevant suite. Use them as a reference for setting up your own CI.
+
+## Troubleshooting
+
+- **"could not find config file" or "No test config file found"**: there is no configure file for your user, branch and context. Check the name against the list in [Configure files](#configure-files).
+- **Feature tests fail straight away with connection errors**: `HTTP_SERVER` in your store and admin configure files is not reachable from where PHPUnit runs, or the web server is not running.
+- **Database errors during set-up**: the database user cannot drop or create tables, or the store and admin configure files use different databases.
+- **Pages work but data is missing**: the framework rebuilds the database for each test class. A test that needs extra data should set it up itself, with a seeder or with `TestDb`.
 {{% /tab %}}
 {{< /tabpane >}}
