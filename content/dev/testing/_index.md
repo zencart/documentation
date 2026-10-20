@@ -17,6 +17,7 @@ Feature tests are destructive. They rebuild and reseed test databases, so do not
 - `phpunit.xml` defines three suites: `Unit`, `FeatureStore`, and `FeatureAdmin`.
 - Composer installs only development and test dependencies. Zen Cart production bootstrap still uses its own runtime autoloading.
 - Feature tests run in-process through helpers under `not_for_release/testFramework/Support/InProcess/`.
+- [Infection](https://infection.github.io/) is available for mutation testing of selected classes against the unit tests. It is a developer aid and is not run in CI. See [Mutation testing](#mutation-testing).
 
 ## Install dependencies
 
@@ -47,6 +48,8 @@ The supported Composer scripts are:
 - `composer tests-report-feature-groups`
 - `composer tests-report-feature-groups-strict`
 - `composer tests-runtime-describe`
+- `composer infection`
+- `composer infection-fast`
 
 Most runner scripts accept normal PHPUnit arguments after `--`.
 
@@ -111,6 +114,88 @@ Tests\Support\zcUnitTestCase
 ```
 
 `zcUnitTestCase` initializes the unit-test bootstrap for you in `setUp()`.
+
+## Mutation testing
+
+Line coverage tells you which code a test ran, not whether the test would notice if that code were wrong. [Infection](https://infection.github.io/) fills that gap. It makes small changes ("mutants") to the production code, such as removing a concatenated path segment, flipping a comparison, or dropping an `rtrim()`, and re-runs the unit tests. A mutant that no test fails on has "escaped". Each escaped mutant points to behavior that is not pinned down by a test.
+
+Mutation testing is a developer aid for finding gaps while you write tests. It is not run in CI, and the score is not a gate for merging.
+
+### Requirements
+
+Infection needs a code-coverage driver, either PCOV (preferred, much faster) or Xdebug in coverage mode. The `infection/infection` package is installed by `composer install`.
+
+With DDEV, PCOV can be added to the web container with a small override file such as `.ddev/config.pcov.yaml`:
+
+```yaml
+webimage_extra_packages: ["php${DDEV_PHP_VERSION}-pcov"]
+```
+
+then run `ddev restart`. Run Infection inside the container, for example `ddev composer infection`.
+
+Infection also downloads the PHPUnit XML schema referenced in `phpunit.xml` from `schema.phpunit.de`, so a run fails if that site is unavailable.
+
+### Running it
+
+Run it over the full configured scope:
+
+```bash
+composer infection
+```
+
+or only over the lines you have changed relative to `master`, which is much quicker and is usually what you want while working on a branch:
+
+```bash
+composer infection-fast
+```
+
+You can also limit a run to particular source files by passing them as arguments, and pass any other Infection option after `--`:
+
+```bash
+composer infection -- includes/classes/Category.php includes/classes/category_tree.php
+```
+
+The summary prints in the terminal. Detailed reports, including an HTML report that shows each escaped mutant as a diff, are written to `tmp/infection/`:
+
+- `tmp/infection/infection.html`
+- `tmp/infection/infection.log`
+- `tmp/infection/summary.log`
+
+A full run over the current scope takes roughly 10 to 15 minutes. Mutants are run in parallel, using four threads by default.
+
+### How it is set up
+
+Configuration lives in `infection.json5` in the project root.
+
+- **Scope.** Infection only mutates an allow-list of files under `includes/classes`. The allow-list is a single regular expression in `source.excludes`, because Infection accepts directories but not individual files as sources. Everything not named in the expression is excluded.
+- **Tests.** Infection runs the `Infection` suite defined in `phpunit.xml`, not the whole `Unit` suite. The full unit suite cannot share one PHPUnit process (see the notes on global constants and function declarations above), so the `Infection` suite lists the test directories that cover the mutated classes and runs with `--process-isolation`.
+- **Coverage.** The Composer scripts pass `--only-covering-test-cases`, so each mutant is tested only by the tests that cover it.
+- **Bootstrap.** Infection loads the classes it mutates in its own process, which does not run the PHPUnit bootstrap. `not_for_release/testFramework/Support/infection-bootstrap.php` defines the constants some classes need in order to load, for example `IS_ADMIN_FLAG`.
+- **Thresholds.** `minMsi` and `minCoveredMsi` are set slightly below the current score so that a regression is flagged. The MSI (Mutation Score Indicator) is the percentage of mutants that were detected.
+
+### Adding a class to the scope
+
+1. Make sure the class has unit tests that run reliably, and that they are in a test directory included in the `Infection` suite in `phpunit.xml`. Add the directory if it is not.
+2. Add the file or directory to the allow-list expression in `source.excludes` in `infection.json5`.
+3. Run Infection against just that file to get a baseline, then work through the escaped mutants.
+
+### Working through escaped mutants
+
+Open `tmp/infection/infection.html` or the log and read the diff for each escaped mutant. Typical fixes:
+
+- Assert the exact value, path, or SQL string a method builds, not just that it returns something.
+- Test both sides of a condition, including boundary values and empty inputs.
+- Check ordering and de-duplication of lists, and that array keys are re-indexed.
+- Call protected methods through a test subclass or a bound closure, so that a mutant that narrows their visibility is detected.
+
+Not every escaped mutant is a real gap. Some are equivalent, meaning the changed code behaves identically, for example an extra `rtrim()` whose effect is repeated by the next step, or an early `return` on an empty array. Review each one and move on when it cannot be observed. Do not add contrived tests just to raise the score.
+
+### Test helpers
+
+Two helpers under `not_for_release/testFramework/Support/` make it easier to unit test classes that use the global `$db`:
+
+- `Tests\Support\ScriptedDatabase` is a trait that replaces `$db` with a mocked `queryFactory`. Register responses with `respondTo($regex, $rows)`; the first matching pattern wins. Executed SQL is recorded so a test can assert on the exact statement and on the limit, cache flag, and cache lifetime passed to `Execute()`.
+- `Tests\Support\InMemoryTemplateSelectDatabase` is a trait that models the `template_select` table in memory for the `TemplateSelect` tests.
 
 ## Feature tests
 
