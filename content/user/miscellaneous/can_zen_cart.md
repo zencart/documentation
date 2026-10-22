@@ -49,7 +49,7 @@ You may offer [free shipping](/user/shipping/free_shipping/) or price shipping a
 ---
 ### Can Zen Cart create shipping labels? 
 
-No, but Zen Cart is supported by [ShipStation](https://www.shipstation.com), which is a popular postage and label creation solution.  Some other options are discussed in the [shipping labels FAQ](/user/shipping/labels/).
+No, but Zen Cart is supported by [ShipStation](/user/running/shipstation/), which is a popular postage and label creation solution.  Some other options are discussed in the [shipping labels FAQ](/user/shipping/labels/).
 
 ---
 

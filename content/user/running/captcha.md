@@ -21,11 +21,13 @@ The checkbox is shown on the following pages:
 
 ## Cloudflare Turnstile
 [Cloudflare Turnstile](https://www.zen-cart.com/plugins/cloudflare-turnstile)
-is another option.  
+is another option.  Cloudflare does have a checkbox, but it often verifies in the background so the user never sees it.
 
 ![Cloudflare Turnstile](/images/turnstile.png)
 
 It protects the following pages: 
+- Ask A Question
+- Contact Us
 - Create Account
-- Contact Us 
+- Write Review 
 

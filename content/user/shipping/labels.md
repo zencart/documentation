@@ -20,7 +20,7 @@ You enter the details of the shipment (address, package dimensions), select a se
 Their fees are often better than many of the other companies providing broader services.
 
 ## ShipStation 
-[ShipStation](https://www.shipstation.com) allows you to pring pre-paid mailing labels for Zen Cart orders.
+[ShipStation](/user/running/shipstation/) allows you to print pre-paid mailing labels for Zen Cart orders.
 
 ## Plugins
 
