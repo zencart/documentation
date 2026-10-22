@@ -39,7 +39,7 @@ If they have MFA set up on their account already, you can use the Reset button (
 Then click the Exempt button.  This will disable MFA for the selected user, starting with their next login. Only their password will be required, as usual.
 
 NOTE: 3rd-party logins, particularly those that are automated via external services, will require this Exemption process. 
-Example: ShipStation's plugin logs into your store using its own Admin User account, but since it's automated it won't be able to use MFA. Simply Exempt that user for it to work.
+Example: The [ShipStation](/user/running/shipstation/) plugin logs into your store using its own Admin User account, but since it's automated it won't be able to use MFA. Simply Exempt that user for it to work.
 
 
 ## Turning off MFA for the entire site

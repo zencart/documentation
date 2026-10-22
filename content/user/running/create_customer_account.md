@@ -39,3 +39,7 @@ A feature comparison between the two newer plugins is provided below:
 | AJAX | Yes — country change repopulates state dropdown/text field | Not needed (no address fields) |
 | Docs/extras | Code only, no README | readme.md/readme.html, CSV format guide, good/bad example CSVs, screenshots |
 | Repo activity | 1 commit, no README, no description | 13 commits, documented |
+
+
+A long time ago, this capability was called "Admin Add Customer" - adding this string to help searchers.
+
