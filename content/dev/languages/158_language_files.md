@@ -119,7 +119,7 @@ if (function_exists('zen_get_zcversion') && zen_get_zcversion() >= '1.5.8') {
 
 As noted above, if you are loading a storefront language file on the admin side, the `loadExtraLanguageFiles` first parameter must be preceded by `DIR_FS_CATALOG`, i.e. 
 ```
-     $languageLoader->loadExtraLanguageFiles(DIR_FS_CATALOG . DIR_FS_CATALOG . DIR_WS_LANGUAGES,  $_SESSION['language'], $filename, $folder); 
+     $languageLoader->loadExtraLanguageFiles(DIR_FS_CATALOG . DIR_WS_LANGUAGES,  $_SESSION['language'], $filename, $folder); 
 ```
 
 ### Handling back references within a file 
