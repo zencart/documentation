@@ -127,6 +127,7 @@ Plugin pages that do not require indexing (such as Back In Stock subscribe/unsub
 
 ### Zen Cart 1.5.7 
 
+- The database constants `DISPLAY_PAGE_PARSE_TIME`, `STORE_PAGE_PARSE_TIME`, `STORE_PAGE_PARSE_TIME_LOG`, `STORE_PARSE_DATE_TIME_FORMAT` are no longer supported, and displaying page parse time is no longer supported in the default build.  (See [Performance Troubleshooting Plugins](/user/speed/speed_up_site/#performance-troubleshooting-plugins) for other options.)
 - The configuration constant `UPLOAD_FILENAME_EXTENSIONS` was removed from the database and replaced with an entry in `includes/classes/upload.php`.   If you have modified this constant from its original setting of `jpg,jpeg,gif,png,eps,cdr,ai,pdf,tif,tiff,bmp,zip` you will want to add a custom define (in a new file) in both your `includes/extra_configures/` and `YOUR_ADMIN/includes/extra_configures/` directories to set all the allowed extensions you want to support site-wide.
 
 - Internal changes necessitated removing the following inclusions from `admin/includes/auto_loaders/currency_cron.core.php`: 

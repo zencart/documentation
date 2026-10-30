@@ -57,4 +57,4 @@ Additional documentation is provided in the [Bootstrap Template Wiki](https://gi
 
 - [Flexible Footer for Bootstrap](https://www.zen-cart.com/downloads.php?do=file&id=2397) - adds a multi-column footer to the Bootstrap template.
 - No additional plugins are required for a slideshow; this feature is built in to the template.  See [slideshows](/user/images/slideshow/).
-
+- [Navbar Cart Icons](https://www.zen-cart.com/plugins/navbar-cart-icons) - Puts a Shopping Cart icon and a Checkout icon beside the hamburger button of a ZCA Bootstrap navbar on phones and tablets.
