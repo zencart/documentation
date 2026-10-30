@@ -20,8 +20,7 @@ Go to [Admin > Config > My Store](/user/admin_pages/configuration/configuration_
 Go to [Admin > Tools > Layout Boxes Controller](/user/admin_pages/tools/layout_boxes_controller/). 
     Find the sideboxes/manufacturers.php entry, and turn it "OFF"  
 
-### Disable Products Viewed 
-<font color="red">NEW!</font> 
+### Disable Products Viewed (Older versions only)
 In releases prior to 1.5.7, the Zen Cart "products viewed" feature can cause performance degradation on 
 busy sites.  
 
@@ -98,11 +97,19 @@ In addition to the settings mentioned above, additional settings you may wish to
 
 Each of these settings has its own documentation. 
 
-### Consider additional server tuning
-Consider these [Webserver Tuning Tips](/user/speed/webserver_tuning/).
+### Is search slow?
+- If you don't use meta tags to store product data, try setting Admin > Configuration > My Store > Include meta-tags in product search? to false.  Other configuration values that may be set are discussed in [Search related configuration settings](user/search/search_configs.md). 
+- Disable search in description - see [How can I disable "search in description" in the search sidebox?](/user/search/disable_search_in_description/). 
 
 ### Check for duplicate jQuery libraries 
 In case you haven't already considered this, make sure you're not loading more than one copy of jQuery on your site.  
 
 Many plugins come with their own copy of jquery.js or jquery-min.js (or some numbered version of the same pattern), and you shouldn't be loading them all; only load one, and that should be the latest version. 
+
+### Performance Troubleshooting Plugins 
+- [Page Parsetime Display](https://www.zen-cart.com/plugins/page-parsetime-display-vb2289)
+- [Zen Cart Debug Bar](https://www.zen-cart.com/plugins/zen-cart-debug-bar-vb2436)
+
+### Consider additional server tuning
+Some options are presented in [Webserver Tuning Tips](/user/speed/webserver_tuning/).
 
