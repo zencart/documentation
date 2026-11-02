@@ -75,6 +75,13 @@ A day or two after the build has been released when you're confident that all is
 
 - Take some time to review the What's New and Changed Files documents in the [release folder](/release) to be sure they are complete. 
 
+## Check Github Labels
+- We want to be sure that PRs which change language files have the "Language file change" label.   Claude can check this: 
+   - Find out when the last relevant release was: go to the release page and note the date.  For example, here's the [2.2.2 Release Page](https://github.com/zencart/zencart/releases/tag/v2.2.2), which says the release date was 2026-04-04.
+   - Do the query since then in github.com search: `is:pr is:merged base:master merged:>2026-04-04T10:19:05Z`
+   - Ask Claude: 'Of the PRs in this list (paste in the search), are there any that change language files that are not labelled "Language file change"?'
+   - Update the PRs which are reported back (or ask Claude to do so). 
+
 ## One more documentation check:
 - Review the What’s New file for this release (Documentation repo in the `/release/` folder.)  Be sure it doesn't have any more statements like "*New Version* has not yet been released".
 - Review the Changed Files list for this release (Documentation repo in the `/release/` folder.)  Same checks.

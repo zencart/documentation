@@ -81,6 +81,10 @@ If you're doing an upgrade from a pre-1.5.8 Zen Cart version and are worried abo
 
 For developers with language skills who would like to build a new translation, [developer information on Array based language files](/dev/languages/158_language_files/) is provided.
 
+Language Files changes in this Release
+======================================
+If you are a language file developer trying to figure out what changes need to be made to your language pack for this release, [search for the "Language file changed" label in Github.com](https://github.com/zencart/zencart/pulls?q=is%3Apr+state%3Amerged+base%3A2.3+label%3A%22Language+file+change%22).
+
 ## 2.3.0
 
 **Please note: 2.3.0 has not been released yet**
