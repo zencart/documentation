@@ -80,7 +80,7 @@ Note that whatever tool you select **must have** the ability to do [secure file 
 *   [WinSCP](https://winscp.net/) A great Windows-based secure-FTP program. **RECOMMENDED**
 *   [FileZilla](https://filezilla-project.org/) (Windows, Mac, Linux) <br>
     **NOTE:** download from the official https://filezilla-project.org link only.<br>
-    **NOTE:** do not store passwords in Filezilla; type them in each time
+    **NOTE:** do not store passwords in Filezilla; type them in each time.  Here's how to turn off password storage: https://filezillapro.com/docs/v3/faq/how-to-disable-password-saving/
 *   [CyberDuck FTP](https://www.cyberduck.io) (Windows, Mac)
 
 ### Commercial

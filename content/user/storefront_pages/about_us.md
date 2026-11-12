@@ -22,3 +22,4 @@ A link to the About Us page may optionally be displayed in the [Information Side
 - Prior to this, use the instructions in 
 [adding a link to the Information Sidebox](/user/sideboxes/add_link_information_sidebox/).  
 
+Don't skip adding About Us content!  It is highly recommended by Google and acts as a [trust signal for your business](/user/running/building_trust/).
