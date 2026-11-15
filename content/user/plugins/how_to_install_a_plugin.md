@@ -1,6 +1,6 @@
 ---
 title: How to install a plugin
-description: Adding a plugin to your store
+description: Adding a non-encapsulated plugin to your store
 category: plugins
 weight: 10
 ---

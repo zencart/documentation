@@ -5,11 +5,13 @@ category: plugins
 weight: 10
 ---
 
-This help file describes newer "encapsulated" plugins that are installed under `zc_plugins`.  For older plugines which are copied directly into the `includes` and `admin` folders, see [How to install a plugin](/user/plugins/how_to_install_a_plugin).
+This help file describes newer "encapsulated" plugins that are installed under `zc_plugins`.  For older plugines which are copied directly into the `includes` and `admin` folders, see [How to install a non-encapsulated plugin](/user/plugins/how_to_install_a_plugin).
 
 Encapsulated plugins have been supported in Zen Cart since version 1.5.7, as a way to make plugin installation and maintenance easier for end users.  Developers may learn more by reading [the encapsulated plugin documentation](/dev/plugins/encapsulated/).
 
 Encapsulated plugins are controlled using the [Plugin Manager](/user/admin_pages/modules/plugin_manager).
+
+Information on updating already-installed plugins is provided in [upgrading plugins](/user/plugins/updating_encapsulated/).
 
 ## Getting Started
 
