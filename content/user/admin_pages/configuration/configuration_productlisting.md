@@ -31,7 +31,7 @@ Description: Do you want to display the Product Model?<br>0 - Not displayed.<br>
 
 <div class='indent'>Key: <b>PRODUCT_LIST_NAME</b><br />
 Path: <b>Configuration > Product Listing</b><br />
-Description: Do you want to display the Product Name?<br>0 - Not displayed.<br>n - Displayed, with the number n defining the display order relative to similar options on the product listing page.</div>
+Description: Do you want to display the Product Name and Description?<br>0 - Not displayed.<br>n - Displayed, with the number n defining the display order relative to similar options on the product listing page.</div>
 
 
 <h2 id="display_product_priceadd_to_cart">Display Product Price/Add to Cart</h2>
