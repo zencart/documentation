@@ -51,6 +51,8 @@ e.g. v158
 
 ### Major and Minor Releases Only
 
+- Update the file `.github/SECURITY.md` to add the new version to the supported versions list.  Note that this will need to be done on multiple branches if the release is not being done from the master branch.
+
 - If you need to create a new subforum ("Updating to Y.x.x"), follow the guidance on the [infrastructure repo](https://github.com/zencart/infrastructure).  (Team members only.)
 
 - Update the file `.github/security.md` in the main Zen Cart repo if needed.
