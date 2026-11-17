@@ -9,7 +9,7 @@ The list of security patches for Zen Cart is here: 
 
 {{% security_updates %}}
 
-All of these patches are included in the current release, so if you are running an older version, you should [upgrade](/user/upgrading/upgrading/) as soon as possible. 
+In general, all of these patches are included in the current release, so if you are running an older version, you should [upgrade](/user/upgrading/upgrading/) as soon as possible. (Situations where a new release has not yet been built before patches are posted can happen, but should be short in duration.)
 
 ### Plugin Security Patches 
 Please see [Plugin Security Patches](/user/security/plugin_patches/).
