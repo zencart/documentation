@@ -1,4 +1,13 @@
 <!-- list of security patches for Zen Cart -->
+
+Zen Cart will create a security patch in the event that a vulnerability is found and fixed. 
+
+### Patches for recent versions of Zen Cart
+*   [POSM 5.0.0-6.1.1 (November 2026)](layouts/shortcodes/security_updates.md)
+
+### Patches for older versions of Zen Cart 
+This list is provided for reference. 
+Security fixes are only released for current versions. [Upgrade your Zen Cart installation](/user/upgrading/) to stay protected.  
 *   [1.5.7/1.5.8 Address Security Patch (April 2024)](https://www.zen-cart.com/showthread.php?230032-Security-patch-for-Zen-Cart-v1-5-7-series-and-v1-5-8-series) 
 *   [Patch for 1.5.7/1.5.7a (November 2020)](https://www.zen-cart.com/showthread.php?227448-Security-Patch-for-v157-v157a)
 *   [Notify Patch (July 2019)](https://www.zen-cart.com/showthread.php?225676-Security-Patch-for-all-versions-prior-to-v156c)

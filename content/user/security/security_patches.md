@@ -1,6 +1,6 @@
 ---
 title: Security Patches for Zen Cart 
-description: List of all Security Patches 
+description: List of all Security Patches for the Zen Cart core
 category: security
 weight: 10
 ---
