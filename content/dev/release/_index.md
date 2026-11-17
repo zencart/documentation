@@ -16,3 +16,9 @@ Start with:
 - [Prerequisites](/dev/release/prerequisites/)
 - [Initial steps](/dev/release/initial_steps/)
 - [Release tagging](/dev/release/release_tagging/)
+
+## Patch Process 
+- [Building a Patch](/dev/release/patch/)
+
+## Regular Release Process 
+
