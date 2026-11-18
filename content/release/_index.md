@@ -40,6 +40,10 @@ no_list: true
 ## Coming Soon
 - [What's Next](whatsnext)
 
+## Security Releases and Patches
+- [Security Releases](/user/security/security_patches) 
+- [Plugin Security Patches](/user/security/plugin_patches/)
+
 ## Archive
 - [What's New  docs for older releases](/release/archive_whatsnew/)
 - [Changed Files docs for older releases](/release/archive_changed/)

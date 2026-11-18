@@ -3,7 +3,7 @@
 Zen Cart will create a security patch in the event that a vulnerability is found and fixed. 
 
 ### Patches for recent versions of Zen Cart
-*   [POSM 5.0.0-6.1.1 (November 2026)](layouts/shortcodes/security_updates.md)
+*   [POSM 5.0.0-6.1.1 (November 2026)](https://www.zen-cart.com/threads/207507)
 
 ### Patches for older versions of Zen Cart 
 This list is provided for reference. 
