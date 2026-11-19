@@ -17,7 +17,7 @@ Contributions containing content which could be construed as objectionable or un
 ## Addon/Contribution Requirements
 Contributed Addons which are hosted in the Zen Cart Plugins Library must comply with the following standards:
 
-* License: Must be GPL, since it's integrating into Zen Cart core code, which is GPL. A complete copy of the license should be included in the contribution files, preferably as a separate file. If an addon is free-standing (ie: doesn't use *any* existing Zen Cart files in order to operate) then it can be licensed under another license provided that license is fully compatible with GPL.
+* License: Must be GPLv2 or a license that is compatible with GPLv2 (e.g. GPLv2-or-later), since it is integrating into Zen Cart core code, which is licensed under GPLv2. Licenses that are not GPLv2-compatible (for example GPLv3-only or proprietary licenses) are not acceptable. A complete copy of the license should be included in the contribution files, preferably as a separate file. If an addon is free-standing (ie: doesn't use *any* existing Zen Cart files in order to operate) then it can be licensed under another license provided that license is fully compatible with GPLv2.
 
    You can find the GPL license details at:  http://www.gnu.org/licenses/licenses.html#GPL
 
