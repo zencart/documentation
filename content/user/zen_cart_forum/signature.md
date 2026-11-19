@@ -7,7 +7,7 @@ weight: 10
 
 ## Signature Line Guidelines
 
-You can add a signature from your [profile](https://www.zen-cart.com/profile) - it will
+You can add a signature from your [profile settings](https://www.zen-cart.com/profile?tab=settings) - it will
 appear underneath every post you make.
 
 ### You may:
