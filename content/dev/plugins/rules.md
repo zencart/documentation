@@ -76,7 +76,7 @@ When doing an update, it is appropriate to acknowledge prior work done by other 
 
 The Zen Cart team reserves the right at its own discretion to reject or deny any contribution and/or update, with or without notification, especially if it fails to comply with these published standards or if it risks being dangerous or confusing to those who might try to use it.
 
-Submitting a contribution means you agree with the GPL and consent for your contribution to be used under the terms of the GPL.
+Submitting a contribution means you agree with the GPLv2 and consent for your contribution to be used under the terms of the GPLv2.
 
 ## Using Github as a Repository for your plugin
 
