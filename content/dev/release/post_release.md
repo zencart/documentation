@@ -95,6 +95,6 @@ A day or two after the build has been released when you're confident that all is
 
 - Is it time to hide older what's new / changed files documents in the [release](/release) folder? 
 
-- Are there old stuck posts on the forum that should be unstuck? 
+- Are there old pinned posts on the forum that should be unpinned? 
 
 - Check the Zen Cart and Zen Cart Documentation projects for tags that mark things that need to be taken care of - there might be a `Post Release X.y.z` tag or something like that, for example. 

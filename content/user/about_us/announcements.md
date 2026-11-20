@@ -9,6 +9,6 @@ Subscribing to announcements is a great way to stay up to date on what's happeni
 
 You may sign up for Release Announcements by going to the [forum home page](https://www.zen-cart.com/forums), scrolling down to "Zen Cart Release Announcements," and clicking the **Subscribe** button on the right.   Please note:
 - Even if you signed up before on our old vBulletin forum, you still need to do it again on the new forum.
-- You must be logged in to subscribe to Release Announcements. If you do not have an account, you must create one.  Either login (to an existing account) or register (for a new account) from the [forum home page](https://www.zen-cart.com/forums).
+- You must be logged in to subscribe to Release Announcements. If you do not have an account, you must create one.  Either login (to an existing account) or register (for a new account).  Pressing the Subscribe button will also prompt you to login or create an account.
 
 [See past release announcements](https://www.zen-cart.com/forumdisplay.php?2-Zen-Cart-Release-Announcements).
