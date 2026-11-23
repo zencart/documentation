@@ -85,6 +85,7 @@ Note that whatever tool you select **must have** the ability to do [secure file 
 
 ### Commercial
 
+*   [FTPie](https://ftpie.com/connect/sftp) (Windows)
 *   [Transmit](https://www.panic.com/transmit/) (Mac)
 *   [Forklift](https://www.binarynights.com/) (Mac)
 
