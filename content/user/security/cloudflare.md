@@ -1,6 +1,6 @@
 ---
-title: Cloudflare 
-description: Using Cloudflare with Zen Cart 
+title: Cloudflare Pros and Cons 
+description: Deciding whether to use Cloudflare with Zen Cart 
 category: security
 weight: 10
 ---
@@ -48,3 +48,6 @@ You may either challenge them with a CAPTCHA or outright block them:
 
 To find our exactly what countries you may be getting attacked from, it is worth looking at either the website logs if any are being created, the server logs including access logs.  These will detail the IPs that are most often connecting to the website. Check these IPs via a whois checker online, and you will know what countries they are from. 
 
+## Transitioning to Cloudflare 
+
+Here's a guide to [Moving your Zen Cart to Cloudflare](/user/security/moving_to_cloudflare).
