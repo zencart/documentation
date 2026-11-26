@@ -24,6 +24,9 @@ Again, each of these points of difference is actually an advantage for Bootstrap
 
 Bootstrap template version 3.X is based on [Bootstrap 4](https://getbootstrap.com/docs/4.6/getting-started/introduction/).  You can find the exact version of Bootstrap (`major.minor.patch`) in use by looking at the file `includes/templates/bootstrap/common/html_header.php`, which pulls in the Bootstrap javascript and css.
 
+### Bootstrap Template - Home Page (Desktop) 
+![Bootstrap Template Home Page on Desktop](/images/bootstrap_home.png)
+
 ### Bootstrap Template - Product Page (Desktop) 
 ![Bootstrap Template Product Page on Desktop](/images/bootstrap_desktop.png)
 
@@ -46,7 +49,7 @@ Note that recent versions of the template use Font Awesome 6. The Brand icons ma
 
 ### Customizing the Bootstrap Template 
 
-Users of the [Bootstrap template](/user/template/bootstrap/) may customize it in the following ways: 
+Users of the Bootstrap template may customize it in the following ways: 
 
 - The [Bootstrap Template site_specific_styles.php file](https://github.com/lat9/ZCA-Bootstrap-Template/wiki/Frequently-Asked-Questions) allows you to modify the template's CSS.
 - The [Bootstrap Template site-specific-bootstrap-settings.php file](https://github.com/lat9/ZCA-Bootstrap-Template/wiki/Soft-Configuration-Settings) allows you to implement some commonly-requested tweaks (Soft Configurations) of the template's behavior.
